@@ -1,60 +1,43 @@
 # Portfolio Status Report
 
-**Generated:** 2026-08-23 · **Directive:** Repository Completion and Consolidation
+**Updated:** 2026-08-23 (B→A→C execution)
 
-## Counts (approx.)
+## BlockSwarm (Priority B) — DONE
 
-| Class | Count |
-|-------|------:|
-| Total visible | ~54 |
-| ACTIVE | 5 |
-| RESEARCH | ~15 |
-| SUPERSEDED | 4 |
-| Product/FROZEN pending | ~8 |
-| ARCHIVED / archive-target | ~20+ |
+| Item | Status |
+|------|--------|
+| Root cleanup | Done |
+| forge test | 45 passed |
+| CI | foundry.yml |
+| Milestone | B2 Complete |
+| Release docs | docs/CHANGELOG.md, docs/RELEASE_v0.5.0-sagf.md |
+| Git tag | **Push required** (API cannot create tags) |
+| Maturity | **5** (code+CI+docs; tag is admin step) |
 
-## Active maturity targets
+## Archive program (Priority A) — PARTIAL
 
-| Repository | Current | Target | Gap |
-|------------|---------|--------|-----|
-| BlockSwarm | 4 | 5 | CI on GitHub Actions; root legacy move; release tag |
-| sovereign-clean-room | 4 | 5 | CLI attestation; CI; migration handbook |
-| forge-aegis | 2 | 4 | Structure, schema, tests, threat model |
-| coherence-drive | 3 | 4 | Satellite index + claim tags Level 0–5 |
-| ADL-Governance | 3 | 4 | This report + standards complete |
+Markers: RepoRover-, genieGPT, Agent-Snake, Auto_Legion, AtomicNexusAI, Digital-Double_Mobile.
 
-## Validation already achieved (BlockSwarm)
+Still need: `gh repo archive` on account.
 
-- B1 advisory-only AIExecutor
-- B3 execution-boundary tests
-- B2a inverse calldata binding
-- B2b-1 one-vote-per-SBT
-- B2b-2 roles
-- B2b-3 deploy wiring
-- Foundry suite: 30 tests green (last local validation run)
+## Digital Double (Priority C) — DECIDED
 
-## Outstanding risks
+| Role | Repo |
+|------|------|
+| Public canonical | Digital_Double_virtual_workforce |
+| Private newer | Digital_Double_Virtual_Workforce_4.2 |
+| Superseded | DigitalDoubleVirtualWorkforce3.5 |
 
-1. Physics repos may still imply Level 4–5 claims without evidence.
-2. Multiple Digital Double repos confuse product authority.
-3. Dormant bots may contain outdated secrets — archive and scan.
-4. Hardhat vs Foundry dual path in BlockSwarm needs CI clarity.
-5. authorizeProposal signature path may still not match governor-as-caller (known engineering debt).
+## Next commands for you
 
-## Metrics (qualitative)
+```bash
+# Tag BlockSwarm
+cd BlockSwarm && git tag -a v0.5.0-sagf -m "SAGF production candidate" && git push origin v0.5.0-sagf
 
-| Metric | Status |
-|--------|--------|
-| Classification coverage | ~100% listed in registry |
-| Documentation (ACTIVE) | Partial → improving |
-| CI coverage (ACTIVE) | Incomplete (BlockSwarm/Clean-Room need GH Actions) |
-| Security review | Not complete portfolio-wide |
-| Governance | Established (this repo) |
-
-## Next execution slice
-
-1. BlockSwarm: `.github/workflows/foundry.yml` + `legacy/` root move  
-2. sovereign-clean-room: CI + attestation CLI  
-3. Archive batch for Group F  
-4. Digital Double: pick one canonical  
-5. coherence-drive: HYPOTHESIS banner + satellite index  
+# Archive batch
+gh repo archive beyond-repair/RepoRover-
+gh repo archive beyond-repair/genieGPT
+gh repo archive beyond-repair/Agent-Snake
+gh repo archive beyond-repair/Auto_Legion
+gh repo archive beyond-repair/AtomicNexusAI
+```
