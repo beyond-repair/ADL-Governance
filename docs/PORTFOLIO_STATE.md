@@ -1,50 +1,29 @@
-# Portfolio State (Locked Classification)
+# Portfolio State (Locked)
 
-**As of:** 2026-08-23  
-**Mode:** Concentration — finish systems that matter
+**As of:** 2026-08-23
 
-## Engineering Core
+## Priority queue
 
-| Repo | Role | Mode |
-|------|------|------|
-| BlockSwarm | SAGF on-chain | Release tag / maintain |
-| sovereign-clean-room | SEEM substrate | Stabilize (CI) |
-| ADL-Governance | Rules & registry | Maintain |
+1. **Digital Double** — NEXT BUILD (consolidate / run path / CI)
+2. sovereign-clean-room — stabilize
+3. BlockSwarm — operator release tag
+4. forge-aegis — **RELEASE_BLOCKED_BY_OPERATOR** (implementation FROZEN)
+5. Governance / research / archive — maintenance
 
-## Product Line
+## System status
 
-| Repo | Role | Mode |
-|------|------|------|
-| Digital_Double_virtual_workforce | Canonical product | Consolidate / build |
-
-## Security Line
-
-| Repo | Role | Mode |
-|------|------|------|
-| forge-aegis | Deterministic offline validator | **CI → tag v0.1.0** (slice done) |
-| AEGIS-Project-Nehemiah- | Live host / Nehemiah | Integrate **against** forge-aegis contract |
-
-## Research Line
-
-| Repo | Role | Mode |
-|------|------|------|
-| coherence-drive | Master index | Doc / claim discipline |
-| Ware/CFT satellites | Hypothesis | No Level 4–5 without evidence |
-
-## Historical / Archive
-
-See [archive_queue.md](archive_queue.md)
-
-## Priority order
-
-1. forge-aegis CI → v0.1.0  
-2. Digital Double consolidation  
-3. clean-room CI stabilize  
-4. BlockSwarm tag  
-5. Nehemiah consumes forge-aegis  
-6. Research docs  
-7. Archive queue  
+| System | Status | Notes |
+|--------|--------|-------|
+| forge-aegis | RELEASE_BLOCKED_BY_OPERATOR | Slice+CI+gate done; wait for remote `v0.1.0`; **no FLS expansion** |
+| AEGIS-Nehemiah | CONTRACT CONSUMER | Must not redefine validation semantics |
+| Digital_Double_virtual_workforce | NEXT BUILD | Canonical public target |
+| sovereign-clean-room | STABILIZE | CI / docs |
+| BlockSwarm | RELEASE / MAINTAIN | Tag `v0.5.0-sagf` operator |
+| ADL-Governance | MAINTAIN | Registry |
+| coherence-drive + satellites | RESEARCH | Claim discipline |
+| SEEM / legacy bots | SUPERSEDED / ARCHIVE | archive_queue.md |
 
 ## Rules
 
-CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
+- Automated completion sweeps **skip** forge-aegis implementation while status is RELEASE_BLOCKED_BY_OPERATOR.
+- CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
