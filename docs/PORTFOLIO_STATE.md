@@ -1,48 +1,50 @@
 # Portfolio State (Locked Classification)
 
 **As of:** 2026-08-23  
-**Mode:** Maintenance & governance (not greenfield expansion)
+**Mode:** Concentration — finish systems that matter
 
 ## Engineering Core
 
 | Repo | Role | Mode |
 |------|------|------|
-| BlockSwarm | SAGF on-chain | Release management |
-| sovereign-clean-room | SEEM substrate | Stabilization |
-| ADL-Governance | Rules & registry | Maintenance |
+| BlockSwarm | SAGF on-chain | Release tag / maintain |
+| sovereign-clean-room | SEEM substrate | Stabilize (CI) |
+| ADL-Governance | Rules & registry | Maintain |
 
 ## Product Line
 
 | Repo | Role | Mode |
 |------|------|------|
-| Digital_Double_virtual_workforce | Canonical product | Real engineering still needed |
+| Digital_Double_virtual_workforce | Canonical product | Consolidate / build |
 
 ## Security Line
 
 | Repo | Role | Mode |
 |------|------|------|
-| forge-aegis | FLS / validator | **Active development** |
-| AEGIS-Project-Nehemiah- | Spec sibling | Spec alignment |
+| forge-aegis | Deterministic offline validator | **CI → tag v0.1.0** (slice done) |
+| AEGIS-Project-Nehemiah- | Live host / Nehemiah | Integrate **against** forge-aegis contract |
 
 ## Research Line
 
 | Repo | Role | Mode |
 |------|------|------|
-| coherence-drive | Master index | Doc sync only |
-| Ware/CFT satellites | Hypothesis notes | Claim banners; no Level 4–5 |
+| coherence-drive | Master index | Doc / claim discipline |
+| Ware/CFT satellites | Hypothesis | No Level 4–5 without evidence |
 
-## Historical Line
-
-SEEM family → superseded by sovereign-clean-room → archive when ready
-
-## Archive Line
+## Historical / Archive
 
 See [archive_queue.md](archive_queue.md)
 
+## Priority order
+
+1. forge-aegis CI → v0.1.0  
+2. Digital Double consolidation  
+3. clean-room CI stabilize  
+4. BlockSwarm tag  
+5. Nehemiah consumes forge-aegis  
+6. Research docs  
+7. Archive queue  
+
 ## Rules
 
-1. Prefer consolidation over new forks  
-2. Prefer completion over features  
-3. Prefer documentation over speculation  
-4. No undefined-status repositories  
-5. Physics claims default Level ≤2 without evidence  
+CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
