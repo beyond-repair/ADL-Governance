@@ -2,75 +2,87 @@
 
 # ADL-Governance
 
-### Atomic Dream Labs · Portfolio Constitution
+### The **constitution** of Atomic Dream Labs — so code stays honest
 
-**One registry · Clear claim levels · No undefined repositories**
-
-[![Status](https://img.shields.io/badge/status-ACTIVE-22c55e?style=for-the-badge)](https://github.com/beyond-repair/ADL-Governance)
-[![Org](https://img.shields.io/badge/org-beyond--repair-181717?style=for-the-badge&logo=github)](https://github.com/beyond-repair)
-
-Every **ACTIVE** engineering repo links here.
+[![ACTIVE](https://img.shields.io/badge/status-ACTIVE-22c55e?style=for-the-badge)](https://github.com/beyond-repair/ADL-Governance)
 
 </div>
 
 ---
 
-## Canonical systems
+## Why it is unique
 
-| System | Repository |
-|--------|------------|
-| Offline sovereign control plane | [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) |
-| On-chain SAGF | [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) |
-| Integrity / FLS | [forge-aegis](https://github.com/beyond-repair/forge-aegis) |
-| Product | [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) |
-| Physics research index | [coherence-drive](https://github.com/beyond-repair/coherence-drive) |
+Most orgs grow 50 repos and zero rules.  
+This repo forces **classification, claim levels, lifecycle, and a registry** — research cannot quietly pretend to be a product.
 
 ---
 
-## Documents
-
-| Document | Purpose |
-|----------|---------|
-| [Repository Registry](docs/repository_registry.md) | Full census + classification |
-| [PORTFOLIO_STATE](docs/PORTFOLIO_STATE.md) | Locked priority queue |
-| [PORTFOLIO_FINAL_AUDIT](docs/PORTFOLIO_FINAL_AUDIT.md) | Completion audit |
-| [archive_queue](docs/archive_queue.md) | GitHub archive checklist |
-| [Constitution](docs/CONSTITUTION.md) | Governing principles |
-| [Lifecycle](docs/LIFECYCLE.md) | ACTIVE → ARCHIVED |
-| [Claim Validation](docs/CLAIM_VALIDATION.md) | Levels **0–5** |
-| [Canonical Repos](docs/CANONICAL_REPOS.md) | Official list |
-
----
-
-## Classification
+## Visual workflow
 
 ```text
-ACTIVE  ·  RESEARCH  ·  FROZEN  ·  SUPERSEDED  ·  ARCHIVED
+  ┌──────────────────┐
+  │ 1. IDEA / REPO   │  something lands under beyond-repair
+  └────────┬─────────┘
+           ▼
+  ┌──────────────────┐
+  │ 2. CLASSIFY      │  ACTIVE · RESEARCH · FROZEN · SUPERSEDED · ARCHIVED
+  └────────┬─────────┘
+           ▼
+  ┌──────────────────┐
+  │ 3. CLAIM LEVEL   │  0–5  (physics defaults ≤2 without evidence)
+  └────────┬─────────┘
+           ▼
+  ┌──────────────────┐
+  │ 4. REGISTER      │  repository_registry.md + canonical map
+  └────────┬─────────┘
+           ▼
+  ┌──────────────────┐
+  │ 5. BUILD LOOP    │  implement → test → CI → document → release/archive
+  └────────┬─────────┘
+           ▼
+  ┌──────────────────┐
+  │ 6. AUDIT         │  portfolio state · archive queue · final audit docs
+  └──────────────────┘
 ```
 
-**Rule:** no repository may remain unclassified.
+### Step-by-step — how & why
+
+| Step | How | Why |
+|-----:|-----|-----|
+| **1** | New work appears | Without a gate, duplicates explode |
+| **2** | Assign lifecycle class | Readers know if it is product or history |
+| **3** | Assign claim 0–5 | Stops “hypothesis” reading as “proven engine” |
+| **4** | Enter registry | One source of truth for the org |
+| **5** | Standard eng loop | No repo bypasses test/docs |
+| **6** | Periodic audit | Drift is visible |
 
 ---
 
-## Claim levels (research)
+## How the portfolio fits together
 
-| Level | Meaning |
-|------:|---------|
-| 0 | Idea / design target |
-| 1 | Mathematical framework |
-| 2 | Phenomenological fit |
-| 3 | Independent replication |
-| 4 | Controlled experiment |
-| 5 | Production / operational |
+```text
+                    ┌─ ADL-Governance ─┐
+                    │  rules · claims  │
+                    └────────┬─────────┘
+           ┌─────────────────┼─────────────────┐
+           ▼                 ▼                 ▼
+    ENGINEERING          SECURITY           RESEARCH
+    clean-room           forge-aegis        coherence-drive
+    BlockSwarm           Nehemiah           Ware satellites
+    Digital Double
+```
 
-Default for Ware / CFT work: **≤ 2** unless evidence is cited.
+| Doc | Purpose |
+|-----|---------|
+| [repository_registry.md](docs/repository_registry.md) | Census |
+| [CLAIM_VALIDATION.md](docs/CLAIM_VALIDATION.md) | Levels 0–5 |
+| [LIFECYCLE.md](docs/LIFECYCLE.md) | ACTIVE → ARCHIVED |
+| [CONSTITUTION.md](docs/CONSTITUTION.md) | Principles |
 
 ---
 
 <div align="center">
 
-**[beyond-repair](https://github.com/beyond-repair)** · Atomic Dream Labs
-
-<sub>Govern the portfolio so the code can stay honest.</sub>
+**Every ACTIVE repo should link here.**
 
 </div>
