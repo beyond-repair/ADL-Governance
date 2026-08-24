@@ -1,15 +1,15 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-23 (autonomous Sweep-001)
+**Updated:** 2026-08-24 (autonomous Sweep-002)
 
 ## Executive Summary
 
 | Priority | Target | State | Terminal?
 |----------|--------|-------|----------|
-| P0 | forge-aegis | CI present, early maturity 2, v0.1.0 open | No |
-| P1 | sovereign-clean-room | Structure + tests present, maturity ~4 | Near |
+| P0 | forge-aegis | **CI green** (6 consecutive success); maturity 2; v0.1.0 open | No |
+| P1 | sovereign-clean-room | **CRITICAL: CI red** (Python tests failing on VSA engine restore/part-loader across 30+ consecutive runs) | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Canonical public chosen; private 4.2 newer | Decision made; test verification open |
-| P2 | BlockSwarm | Code+CI+docs ready; **tag push pending** | Near (operator) |
+| P2 | BlockSwarm | **CI green** (Foundry); tag push still pending | Near (operator) |
 | P2 | ADL-Governance | Registry + this report synchronized | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
@@ -21,24 +21,26 @@
 |------|--------|
 | Root cleanup | Done |
 | forge test | 45 passed (prior) |
-| CI | foundry.yml |
+| CI | foundry.yml — **success** on latest main |
 | Milestone | B2 Complete |
 | Release docs | docs/CHANGELOG.md, docs/RELEASE_v0.5.0-sagf.md |
-| Git tag | **PENDING operator** (API cannot create annotated tags safely) |
+| Git tag | **PENDING operator** |
 | Maturity | 5 once tagged |
 
 ## sovereign-clean-room → CI-green + stable CLI
 
-- tests/ directory present
-- .github present
-- Next: live CI inspection + CLI smoke (queued)
+- **CRITICAL CI FAILURE**: Latest run 32714233314 (and prior 30+) conclude failure on "Run tests".
+- Root cause pattern: VSA engine (`CleanRoomVSAEngine`) restore via base64 chunks / part-loader (`_vsa_part_*`) is incomplete or mismatched (loader expects 9 chunks; recent commits upload 0-8).
+- Structure + Stage-1 extraction present; maturity claim of ~4 is invalid while CI is red.
+- Action: halt maturity claims; fix or quarantine VSA restore path before any further promotion.
 
 ## forge-aegis → CI + v0.1.0
 
 - .github/workflows/ci.yml present
+- **CI green** (all recent runs success)
 - python/, fls/, schemas/, examples/ structure
 - Maturity 2; RFC/GOVERNANCE in place
-- Target v0.1.0 still open (content + green CI required)
+- Target v0.1.0 still open (content completeness + release gate)
 
 ## Digital Double → one canonical tested implementation
 
@@ -66,14 +68,14 @@ Operator must execute `gh repo archive`.
 
 ## Residual gaps vs exit criteria
 
-- [ ] No undefined repos (ok)
-- [ ] No stale registry (ok this cycle)
-- [ ] No critical CI failures (not fully live-verified)
-- [ ] No duplicate canonical implementations (Digital Double decision made; verify)
-- [ ] No unresolved critical security issues (none flagged)
-- [ ] No unsupported claims (controlled)
+- [x] No undefined repos
+- [x] No stale registry (this cycle)
+- [ ] No critical CI failures — **FAIL** (sovereign-clean-room)
+- [ ] No duplicate canonical implementations (Digital Double verify open)
+- [x] No unresolved critical security issues
+- [x] No unsupported claims (controlled)
 - [ ] No untracked archive targets (queued)
 
-**Maintenance mode not yet entered.**
+**Maintenance mode not yet entered.** Critical CI blocks progress on P1.
 
 See OPERATOR_QUEUE.md and SWEEP_HISTORY.md.
