@@ -1,13 +1,13 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-25 (autonomous Sweep-005)
+**Updated:** 2026-08-25 (autonomous Sweep-006)
 
 ## Executive Summary
 
 | Priority | Target | State | Terminal?
 |----------|--------|-------|----------|
 | P0 | forge-aegis | **CI green** (6/6 success); maturity 2; v0.1.0 open | No |
-| P1 | sovereign-clean-room | **CRITICAL: CI red** — FileNotFoundError `_vsa_b64_5.txt` (loader range(9); chunks 5–7 missing; present 0–4,8) | No — blocked |
+| P1 | sovereign-clean-room | **CRITICAL: CI red** — FileNotFoundError `_vsa_b64_5.txt` (loader `range(9)`; present 0–4,8; missing 5–7) | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Canonical public chosen; private 4.2 newer | Decision made; test verification open |
 | P2 | BlockSwarm | **CI green** (Foundry); tag push still pending | Near (operator) |
 | P2 | ADL-Governance | Registry + this report synchronized | Yes (self) |
@@ -31,7 +31,7 @@
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 (and 30+ prior) fail on "Run tests".
-- **Root cause (re-verified Sweep-005):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent** → `FileNotFoundError`.
+- **Root cause (re-verified Sweep-006):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent** → `FileNotFoundError`. Several present chunks are 12-byte placeholders.
 - Partial base64 restore incomplete; maturity claim of ~4 invalid while CI red.
 - Action: halt maturity claims; operator must supply missing chunks **or** replace with single full engine module (no part-loader) before any promotion.
 - Additional: acoustic-token-modem (RESEARCH, claim-controlled) observed; no registry change required this cycle.
