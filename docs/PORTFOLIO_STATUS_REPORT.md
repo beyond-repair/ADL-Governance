@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-25 (autonomous Sweep-004)
+**Updated:** 2026-08-25 (autonomous Sweep-005)
 
 ## Executive Summary
 
@@ -31,10 +31,10 @@
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 (and 30+ prior) fail on "Run tests".
-- **Root cause (re-verified Sweep-004):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent** → `FileNotFoundError`.
+- **Root cause (re-verified Sweep-005):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent** → `FileNotFoundError`.
 - Partial base64 restore incomplete; maturity claim of ~4 invalid while CI red.
 - Action: halt maturity claims; operator must supply missing chunks **or** replace with single full engine module (no part-loader) before any promotion.
-- Additional: acoustic-token-modem (new RESEARCH, claim-controlled) observed; no registry change required this cycle.
+- Additional: acoustic-token-modem (RESEARCH, claim-controlled) observed; no registry change required this cycle.
 
 ## forge-aegis → CI + v0.1.0
 
