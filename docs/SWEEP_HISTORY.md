@@ -2,6 +2,50 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-08-27 — Sweep-009 (live re-audit; no priority-target drift)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Scope:** Re-scan all 60 repos; live Actions + tags/releases on P0/P1/P2; confirm VSA failure still current; update status/queue/history. No code changes. No archive. No fabricated VSA source.
+
+### Discover / Audit
+- Total visible: 60 (`user:beyond-repair`)
+- Newest extra surfaces already classified: Sovereign-OS, SovereignOS (private), LegionOS, RealityOS, acoustic-token-modem
+- forge-aegis: 6/6 CI **success** (latest 32707052622); tags=[]
+- BlockSwarm: Foundry CI **success** (latest 32707027387); tags=[]; releases=[]
+- sovereign-clean-room: latest run **32714233314 failure** (2026-08-24T09:56Z). No subsequent green run. Loader still expects `_vsa_b64_0..8`; chunks 5–7 missing.
+
+### Classify
+- No ACTIVE promotions.
+- No new SUPERSEDED/ARCHIVED GitHub-side executions.
+- sovereign-clean-room maturity remains suspended (CI-blocked).
+
+### Plan / Implement
+- Safe: governance doc refresh only.
+- Unsafe / deferred: VSA reconstruction, git tags, `gh repo archive`.
+- Idempotent: documents rewritten to same residual state as Sweep-008 plus verified timestamps.
+
+### Test / CI
+- forge-aegis: Empirical green.
+- BlockSwarm: Empirical green.
+- sovereign-clean-room: Empirical red — blocks P1 terminal state.
+
+### Document / Govern
+- PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history.
+
+### Open residual
+- Operator: restore missing VSA b64 chunks 5–7 **or** single full clean_room_vsa.py
+- Operator: push BlockSwarm v0.5.0-sagf tag + GitHub Release
+- Operator: archive batch (archive_queue.md)
+- Operator: consolidate RealityOS / LegionOS / Sovereign-* family
+- forge-aegis v0.1.0 content + tag still open
+- Digital Double test verification open
+
+**Exit condition check:** Not met (critical CI failure on P1, tag missing, archives pending, OS family unconsolidated).
+
+Next cycle: re-scan after operator VSA fix; otherwise hold on P1 and continue safe governance hygiene. Enter maintenance mode only when all exit criteria satisfied.
+
+---
+
 ## 2026-08-26 — Sweep-008 (re-audit + registry completeness)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -43,8 +87,6 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 - Digital Double test verification open
 
 **Exit condition check:** Not met (critical CI failure on P1, tag missing, archives pending, OS family unconsolidated).
-
-Next cycle: re-scan after operator VSA fix; otherwise hold on P1 and continue safe governance hygiene. Enter maintenance mode only when all exit criteria satisfied.
 
 ---
 
