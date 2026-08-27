@@ -44,8 +44,8 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Public canonical typed virtual-workforce product surface |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE (tests verification open) |
-| **Dependencies** | TypeScript |
+| **Status** | ACTIVE (product CI green: 32707099628) |
+| **Dependencies** | TypeScript / Python smoke |
 | **Successors** | — |
 | **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 (private newer) |
 | **URL** | https://github.com/beyond-repair/Digital_Double_virtual_workforce |
