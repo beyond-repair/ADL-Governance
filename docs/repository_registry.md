@@ -1,8 +1,9 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-08-24 · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-08-26 (Sweep-008) · **Governing source:** this repository
 
-Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: 60. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
+Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
 
 ---
 
@@ -10,12 +11,14 @@ Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEA
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; B1–B2b-3 closed |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 4 | Canonical SEEM substrate; Stage-1 extraction landed |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-08-24 | 0 | 3 | This repo |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; CI green; tag v0.5.0-sagf PENDING |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (missing VSA b64 5–7). Maturity suspended. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI 6/6 green; v0.1.0 open |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-08-26 | 0 | 3 | This repo |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 2 | Product workforce surface |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 2 | Public canonical product surface |
+
+\* Do not treat sovereign-clean-room as maturity 4 while CI is red.
 
 ---
 
@@ -38,8 +41,15 @@ Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEA
 | -text-informational-fork-protocol- | 2 | 0–1 | |
 | The-Origin-Point-Hypothesis. | 2 | 0–1 | |
 | optimization-limit-conjecture | 2 | 1 | |
+| acoustic-token-modem | 2 | 0–1 | Measurement gate explicit |
+| RealityOS | 1 | 0–1 | Decision-infra concept; no Level-5 |
+| LegionOS | 1 | 0–1 | Company holarchy concept |
+| Sovereign-OS | 1 | 0–1 | Public constitutional OS sketch |
+| SovereignOS | 1 | 0–1 | Private sibling; consolidate |
 
 **Canonical Ware law:** `W(n)=0.08*exp(0.23*(n-3))`
+
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy.
 
 ---
 
@@ -54,6 +64,7 @@ Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEA
 | My-mind-A.I. | sovereign-clean-room (TaskAtom / Episode patterns) |
 | Gia---General-Intelligence-Assistant | sovereign-clean-room (CapabilityRegistry patterns) |
 | Auto_Legion | sovereign-clean-room (atomic work-unit concept) |
+| CFT-v3.0 | CFTv3.3-IQG-Unified-Framework (already GitHub-archived) |
 
 ---
 
@@ -61,7 +72,7 @@ Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEA
 
 | Name | Maturity | Action |
 |------|----------|--------|
-| Digital_Double_Virtual_Workforce_4.2 | 2 | Merge remaining value or archive |
+| Digital_Double_Virtual_Workforce_4.2 | 2 | Private newer candidate; merge value into public canonical or keep isolated |
 | DigitalDoubleVirtualWorkforce3.5 | 2 | Archive after verify |
 | Digital_Double_Virtual_Workforce_4. | 1 | Archive |
 | Digital-Double_Mobile / digital-double-mobile | 1–2 | Archive unless mobile surface revived |
@@ -78,12 +89,13 @@ Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEA
 | RepoRover- | Dormant utility |
 | DevelopTool-Unified-Dev-Environment | Stub; many stale issues |
 | -Py2APK-main | One-off |
-| AtomicNexusAI, genieGPT, Agent-Snake | Experiments; patterns absorbed or discarded |
+| AtomicNexusAI, genieGPT, Agent-Snake | Experiments |
 | fantom_trading_bot_2, fantom-smart-contracts-first-bot, ftmA.I.bot | Old bots |
 | smart_home_BCI, automate_passive_income, Quantumclustering | Dormant |
 | quantum_A.I._optimization.py | Stale |
 | test | Empty private stub |
 | new-program-1.01, btc-trading, Code_Generation_AI_Program | Dormant |
+| potential-garbanzo | Empty private stub |
 
 ---
 
@@ -99,9 +111,10 @@ Maturity 1–5: Incomplete → Production Ready. Classifications: ACTIVE | RESEA
 
 ```text
 ADL-Governance (policy · claims · lifecycle)
-    ├── sovereign-clean-room (ACTIVE) ←── SEEM-* + My-mind + Gia patterns
-    ├── BlockSwarm (ACTIVE)
-    ├── forge-aegis (ACTIVE) ←→ AEGIS-Project-Nehemiah-
+    ├── sovereign-clean-room (ACTIVE, CI-blocked) ←── SEEM-* + My-mind + Gia patterns
+    ├── BlockSwarm (ACTIVE, tag pending)
+    ├── forge-aegis (ACTIVE) ↔ AEGIS-Project-Nehemiah-
     ├── Digital_Double_virtual_workforce (ACTIVE product)
-    └── coherence-drive (RESEARCH ≤2) ←── Ware/CFT satellites
+    ├── coherence-drive (RESEARCH ≤2) ←── Ware/CFT satellites
+    └── RealityOS / LegionOS / Sovereign-OS* (RESEARCH; consolidate)
 ```

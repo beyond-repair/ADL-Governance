@@ -20,7 +20,7 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Offline Clean-Room VSA / SEEM constitutional substrate |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE |
+| **Status** | ACTIVE (CI-blocked until VSA restore) |
 | **Dependencies** | Python, NumPy |
 | **Successors** | — |
 | **Predecessors** | SEEM-2.0, SEEM-Cognitive-Microservice(s), seem-block-system |
@@ -38,6 +38,18 @@ Authoritative implementations. All overlapping work must defer here.
 | **Predecessors** | — |
 | **URL** | https://github.com/beyond-repair/forge-aegis |
 
+## Digital_Double_virtual_workforce
+
+| Field | Value |
+|-------|--------|
+| **Purpose** | Public canonical typed virtual-workforce product surface |
+| **Owner** | beyond-repair |
+| **Status** | ACTIVE (tests verification open) |
+| **Dependencies** | TypeScript |
+| **Successors** | — |
+| **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 (private newer) |
+| **URL** | https://github.com/beyond-repair/Digital_Double_virtual_workforce |
+
 ## coherence-drive
 
 | Field | Value |
@@ -53,5 +65,6 @@ Authoritative implementations. All overlapping work must defer here.
 ## Non-canonical (do not treat as authority)
 
 - SEEM-* → use sovereign-clean-room
-- Multiple Digital_Double_* → select one product canonical (TBD)
+- Digital_Double_Virtual_Workforce_4.2 / 3.5 / 4. / mobile variants → public canonical above
 - CFT-v3.0 / v3.1 → prefer CFTv3.3-IQG-Unified-Framework under RESEARCH
+- RealityOS / LegionOS / Sovereign-OS / SovereignOS → RESEARCH only; consolidate before any ACTIVE promotion
