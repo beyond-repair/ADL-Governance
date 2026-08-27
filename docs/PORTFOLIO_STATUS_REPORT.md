@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-27 (autonomous Sweep-010)
+**Updated:** 2026-08-27 (autonomous Sweep-011)
 
 ## Executive Summary
 
@@ -10,22 +10,22 @@
 | P1 | sovereign-clean-room | **CRITICAL: CI red** — latest 32714233314 FileNotFoundError `_vsa_b64_5.txt` | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Public canonical; **CI green** latest 32707099628 | Near (private 4.2 still sibling) |
 | P2 | BlockSwarm | **CI green** (Foundry 32707027387); **tags=[], releases=[]** | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-010) | Yes (self) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-011) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
 | P5 | Legacy / SEEM / archive | Queued; operator archive required | Partial |
 
 Census: 60 visible repositories (`user:beyond-repair` search). No GitHub-archive actions executed this cycle (operator-only).
 
-## Drift since Sweep-009
+## Drift since Sweep-010
 
 | Check | Result |
 |-------|--------|
 | New undefined repos | None |
-| forge-aegis CI | Unchanged green |
+| forge-aegis CI | Unchanged green (latest still 32707052622) |
 | BlockSwarm CI / tags | Unchanged green / empty |
 | sovereign-clean-room CI | Unchanged red; no new commits after 2026-08-24T09:56Z |
-| Digital Double CI | **Corrected:** latest product CI **success** (32707099628). Prior “test verification open” is closed for the public canonical smoke path. |
+| Digital Double CI | Unchanged green (32707099628) |
 | OS family | Still RESEARCH; unconsolidated |
 
 ## BlockSwarm → v0.5.0-sagf
@@ -43,7 +43,7 @@ Census: 60 visible repositories (`user:beyond-repair` search). No GitHub-archive
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 fails on "Run tests".
-- **Root cause (re-verified Sweep-010):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a stub loader. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
+- **Root cause (re-verified Sweep-011):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a stub loader. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
 - Maturity claim of ~4 remains **invalid** while CI red.
 
 ## forge-aegis → CI + v0.1.0
@@ -51,6 +51,7 @@ Census: 60 visible repositories (`user:beyond-repair` search). No GitHub-archive
 - .github/workflows/ci.yml present
 - **CI green** (all 6 runs success; latest 32707052622)
 - Tags empty; v0.1.0 release gate still open
+- Implementation remains RELEASE_BLOCKED_BY_OPERATOR per PORTFOLIO_STATE.md
 
 ## Digital Double → one canonical tested implementation
 
