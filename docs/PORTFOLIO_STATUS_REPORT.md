@@ -1,21 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-26 (autonomous Sweep-008)
+**Updated:** 2026-08-27 (autonomous Sweep-009)
 
 ## Executive Summary
 
 | Priority | Target | State | Terminal? |
 |----------|--------|-------|----------|
-| P0 | forge-aegis | **CI green** (6/6 success); maturity 2; v0.1.0 open | No |
-| P1 | sovereign-clean-room | **CRITICAL: CI red** — FileNotFoundError `_vsa_b64_5.txt` (loader `range(9)`; present 0–4,8; missing 5–7) | No — blocked |
+| P0 | forge-aegis | **CI green** (6/6 success, latest 32707052622); maturity 2; no tags; v0.1.0 open | No |
+| P1 | sovereign-clean-room | **CRITICAL: CI red** — latest 32714233314 FileNotFoundError `_vsa_b64_5.txt` | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Public canonical chosen; private 4.2 newer | Decision made; test verification open |
-| P2 | BlockSwarm | **CI green** (Foundry); **no tags, no releases** | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-008) | Yes (self) |
+| P2 | BlockSwarm | **CI green** (Foundry 32707027387); **tags=[], releases=[]** | Near (operator tag) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-009) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
 | P5 | Legacy / SEEM / archive | Markers set; operator archive required | Partial |
 
-Census: 60 visible repositories. No GitHub-archive actions executed this cycle (operator-only).
+Census: 60 visible repositories (`user:beyond-repair` search). No GitHub-archive actions executed this cycle (operator-only).
+
+## Drift since Sweep-008
+
+| Check | Result |
+|-------|--------|
+| New undefined repos | None |
+| forge-aegis CI | Unchanged green |
+| BlockSwarm CI / tags | Unchanged green / empty |
+| sovereign-clean-room CI | Unchanged red; no new commits after 2026-08-24T09:56Z |
+| OS family | Still RESEARCH; unconsolidated |
 
 ## BlockSwarm → v0.5.0-sagf
 
@@ -32,16 +42,14 @@ Census: 60 visible repositories. No GitHub-archive actions executed this cycle (
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 fails on "Run tests".
-- **Root cause (re-verified Sweep-008):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent**. Several present chunks are 12-byte placeholders. `_vsa_part_0..2.py` exist but are not wired by current loader.
-- Reconstructing the missing engine from incomplete placeholders would fabricate source. Deferred to operator.
+- **Root cause (re-verified Sweep-009):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a stub loader. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
 - Maturity claim of ~4 remains **invalid** while CI red.
 
 ## forge-aegis → CI + v0.1.0
 
 - .github/workflows/ci.yml present
 - **CI green** (all 6 runs success; latest 32707052622)
-- Maturity 2; RFC/GOVERNANCE/RELEASE_GATE in place
-- Target v0.1.0 still open (content completeness + release gate)
+- Tags empty; v0.1.0 release gate still open
 
 ## Digital Double → one canonical tested implementation
 
@@ -68,7 +76,7 @@ Operator must execute `gh repo archive` for remaining queue.
 
 ## Residual gaps vs exit criteria
 
-- [x] No undefined repos (OS family + acoustic-token-modem + potential-garbanzo registered)
+- [x] No undefined repos
 - [x] No stale registry (this cycle)
 - [ ] No critical CI failures — **FAIL** (sovereign-clean-room)
 - [ ] No duplicate canonical implementations (Digital Double test verify open; OS family unconsolidated)
