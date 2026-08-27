@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-08-26 (Sweep-008) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-08-27 (Sweep-010) · **Governing source:** this repository
 
 Visible GitHub search count: 60. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
@@ -14,9 +14,9 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 | [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; CI green; tag v0.5.0-sagf PENDING |
 | [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (missing VSA b64 5–7). Maturity suspended. |
 | [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI 6/6 green; v0.1.0 open |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-08-26 | 0 | 3 | This repo |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-08-27 | 0 | 3 | This repo |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 2 | Public canonical product surface |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 3 | Public canonical; product CI **32707099628 success** |
 
 \* Do not treat sovereign-clean-room as maturity 4 while CI is red.
 
@@ -114,7 +114,7 @@ ADL-Governance (policy · claims · lifecycle)
     ├── sovereign-clean-room (ACTIVE, CI-blocked) ←── SEEM-* + My-mind + Gia patterns
     ├── BlockSwarm (ACTIVE, tag pending)
     ├── forge-aegis (ACTIVE) ↔ AEGIS-Project-Nehemiah-
-    ├── Digital_Double_virtual_workforce (ACTIVE product)
+    ├── Digital_Double_virtual_workforce (ACTIVE product, CI green)
     ├── coherence-drive (RESEARCH ≤2) ←── Ware/CFT satellites
     └── RealityOS / LegionOS / Sovereign-OS* (RESEARCH; consolidate)
 ```
