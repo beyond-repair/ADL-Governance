@@ -1,16 +1,16 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-25 (autonomous Sweep-006)
+**Updated:** 2026-08-26 (autonomous Sweep-007)
 
 ## Executive Summary
 
-| Priority | Target | State | Terminal?
+| Priority | Target | State | Terminal? |
 |----------|--------|-------|----------|
 | P0 | forge-aegis | **CI green** (6/6 success); maturity 2; v0.1.0 open | No |
 | P1 | sovereign-clean-room | **CRITICAL: CI red** — FileNotFoundError `_vsa_b64_5.txt` (loader `range(9)`; present 0–4,8; missing 5–7) | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Canonical public chosen; private 4.2 newer | Decision made; test verification open |
 | P2 | BlockSwarm | **CI green** (Foundry); tag push still pending | Near (operator) |
-| P2 | ADL-Governance | Registry + this report synchronized | Yes (self) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-007) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
 | P5 | Legacy / SEEM / archive | Markers set; operator archive required | Partial |
@@ -31,10 +31,9 @@
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 (and 30+ prior) fail on "Run tests".
-- **Root cause (re-verified Sweep-006):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent** → `FileNotFoundError`. Several present chunks are 12-byte placeholders.
+- **Root cause (re-verified Sweep-007):** `core/clean_room_vsa.py` is a 309-byte loader joining `_vsa_b64_{i}.txt` for `i in range(9)`. On disk: 0–4 and 8 present; **5, 6, 7 absent** → `FileNotFoundError`. Several present chunks are 12-byte placeholders. `_vsa_part_0..2.py` exist but are not wired by current loader.
 - Partial base64 restore incomplete; maturity claim of ~4 invalid while CI red.
 - Action: halt maturity claims; operator must supply missing chunks **or** replace with single full engine module (no part-loader) before any promotion.
-- Additional: acoustic-token-modem (RESEARCH, claim-controlled) observed; no registry change required this cycle.
 
 ## forge-aegis → CI + v0.1.0
 
@@ -54,12 +53,22 @@
 
 Verification of tests on canonical still required.
 
+## New discoveries (Sweep-007)
+
+| Name | Provisional class | Notes |
+|------|-------------------|-------|
+| RealityOS | RESEARCH / early product | Autonomous decision-infrastructure; claim level ≤2 until tests/CI |
+| LegionOS | RESEARCH | Autonomous company OS concept; claim-controlled |
+| Sovereign-OS | RESEARCH | Constitutional OS; claim-controlled |
+| SovereignOS | RESEARCH (private) | Related holarchy surface; consolidate later |
+| acoustic-token-modem | RESEARCH | Explicitly no novelty without measurement |
+
 ## Research claim consistency
 
 - coherence-drive remains RESEARCH (not engineering-validated propulsion)
 - Ware satellites claim levels 0–2 per registry
 - No unsupported Level-5 claims observed in registry
-- acoustic-token-modem: RESEARCH only; no novelty claims without measurement (consistent)
+- acoustic-token-modem / RealityOS / LegionOS / Sovereign-OS: RESEARCH only
 
 ## Archive / SUPERSEDED
 
@@ -71,7 +80,7 @@ Operator must execute `gh repo archive`.
 
 ## Residual gaps vs exit criteria
 
-- [x] No undefined repos
+- [x] No undefined repos (new OS family registered this cycle)
 - [x] No stale registry (this cycle)
 - [ ] No critical CI failures — **FAIL** (sovereign-clean-room)
 - [ ] No duplicate canonical implementations (Digital Double verify open)

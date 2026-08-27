@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-08-25T21:05Z (autonomous Sweep-006)
+**Last updated:** 2026-08-26T00:05Z (autonomous Sweep-007)
 
 Destructive or account-level actions that require human operator. Agent places items here; does not execute.
 
@@ -8,7 +8,7 @@ Destructive or account-level actions that require human operator. Agent places i
 
 | Action | Repo / Target | Command / Notes | Status |
 |--------|---------------|-----------------|--------|
-| **Restore VSA engine for CI** | sovereign-clean-room | Missing `core/_vsa_b64_5.txt`, `_vsa_b64_6.txt`, `_vsa_b64_7.txt` (loader uses `range(9)`). Present: 0–4, 8 (some are 12-byte placeholders). Options: (A) add the three missing base64 chunks so join succeeds, or (B) replace `clean_room_vsa.py` with a single full source module and delete part-loader + partial txts. Re-run Actions after. Halt maturity claims until green. | **CRITICAL — refined Sweep-003…006** |
+| **Restore VSA engine for CI** | sovereign-clean-room | Missing `core/_vsa_b64_5.txt`, `_vsa_b64_6.txt`, `_vsa_b64_7.txt` (loader uses `range(9)`). Present: 0–4, 8 (some are 12-byte placeholders). Options: (A) add the three missing base64 chunks so join succeeds, or (B) replace `clean_room_vsa.py` with a single full source module and delete part-loader + partial txts. Re-run Actions after. Halt maturity claims until green. | **CRITICAL — refined Sweep-003…007** |
 | Create and push git tag | BlockSwarm | `git tag -a v0.5.0-sagf -m "SAGF production candidate" && git push origin v0.5.0-sagf` | PENDING |
 | Archive batch | RepoRover-, genieGPT, Agent-Snake, Auto_Legion, AtomicNexusAI | `gh repo archive beyond-repair/<name>` | PENDING |
 | Archive | Digital-Double_Mobile (if confirmed empty) | after content check | PENDING |
@@ -17,9 +17,10 @@ Destructive or account-level actions that require human operator. Agent places i
 
 | Action | Repo / Target | Notes | Status |
 |--------|---------------|-------|--------|
-| Confirm CI green on main | forge-aegis | **VERIFIED green** (Sweep-002…006) | DONE |
+| Confirm CI green on main | forge-aegis | **VERIFIED green** (Sweep-002…007) | DONE |
 | Confirm CI green + CLI stable | sovereign-clean-room | **FAILED** — missing b64 chunks 5–7 | OPEN |
 | Decide product canonical | Digital_Double_* family | Public: Digital_Double_virtual_workforce; private 4.2 is newer candidate | DECIDED (see STATUS) |
+| Classify / consolidate | RealityOS, LegionOS, Sovereign-OS, SovereignOS | Registered RESEARCH Sweep-007; prefer consolidation over parallel product claims | OPEN |
 
 ## Medium
 
@@ -35,8 +36,9 @@ Destructive or account-level actions that require human operator. Agent places i
 - BlockSwarm root cleanup, tests, CI workflow, release docs (agent + prior)
 - Digital Double role assignment
 - SEEM-* classified SUPERSEDED → sovereign-clean-room
-- forge-aegis CI live-verified green (Sweep-002…006)
-- Sovereign root-cause pinned to missing `_vsa_b64_5/6/7` (Sweep-003…006)
+- forge-aegis CI live-verified green (Sweep-002…007)
+- Sovereign root-cause pinned to missing `_vsa_b64_5/6/7` (Sweep-003…007)
+- New OS family (RealityOS / LegionOS / Sovereign-*) registered RESEARCH (Sweep-007)
 
 ---
 
