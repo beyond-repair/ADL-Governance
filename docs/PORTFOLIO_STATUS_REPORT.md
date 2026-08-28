@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-28T17:20Z (autonomous Sweep-028)
+**Updated:** 2026-08-28T18:10Z (autonomous Sweep-029)
 
 ## Executive Summary
 
@@ -10,14 +10,14 @@
 | P1 | sovereign-clean-room | **CRITICAL: CI red** — latest 32714233314 FileNotFoundError path (`_vsa_b64_5.txt`) | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Public canonical; **CI green** latest 32707099628 (head `117174fec8`) | Near (private 4.2 still sibling) |
 | P2 | BlockSwarm | **CI green** (Foundry 32707027387); **tags=[], releases=[]** | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-028) | Yes (self) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-029) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
 | P5 | Legacy / SEEM / archive | Queued; operator archive required | Partial |
 
 Census: 60 visible repositories (`user:beyond-repair` search; authenticated get_me public_repos=58 plus private siblings). No GitHub-archive actions executed this cycle (operator-only).
 
-## Drift since Sweep-027
+## Drift since Sweep-028
 
 | Check | Result |
 |-------|--------|
@@ -28,6 +28,7 @@ Census: 60 visible repositories (`user:beyond-repair` search; authenticated get_
 | Digital Double CI | Unchanged green (32707099628; head `117174fec8`) |
 | OS family | Still RESEARCH; unconsolidated |
 | VSA files on main | Present `_vsa_b64_{0,1,2,3,4,8}.txt`; **absent 5,6,7**. Also present `_vsa_part_{0,1,2}.py` (incomplete part-loader leftovers). Sizes: 0=524B, 1–3=12B placeholders, 4=904B, 8=904B (4 and 8 share blob SHA `24297275…`). `clean_room_vsa.py`=309B loader. |
+| Security | forge-aegis Dependabot open=0. sovereign-clean-room: **1 medium** Dependabot (PyNaCl < 1.6.2 / GHSA-mrfv-m5wm-5w6w). Not critical. |
 
 ## BlockSwarm → v0.5.0-sagf
 
@@ -44,7 +45,7 @@ Census: 60 visible repositories (`user:beyond-repair` search; authenticated get_
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 fails on "Run tests".
-- **Root cause (re-verified Sweep-028):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a 309-byte stub loader. `_vsa_part_0..2.py` exist but current loader does not use them. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
+- **Root cause (re-verified Sweep-029):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a 309-byte stub loader. `_vsa_part_0..2.py` exist but current loader does not use them. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
 - Maturity claim of ~4 remains **invalid** while CI red.
 
 ## forge-aegis → CI + v0.1.0
@@ -83,7 +84,7 @@ Operator must execute `gh repo archive` for remaining queue.
 - [x] No stale registry (this cycle)
 - [ ] No critical CI failures — **FAIL** (sovereign-clean-room)
 - [ ] No duplicate canonical implementations (Digital Double public CI green; private 4.2 and OS family unconsolidated)
-- [x] No unresolved critical security issues (none flagged in this census)
+- [x] No unresolved *critical* security issues (medium PyNaCl on sovereign-clean-room tracked)
 - [x] No unsupported claims (controlled)
 - [ ] No untracked archive targets (queued; not executed)
 
