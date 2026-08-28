@@ -2,7 +2,7 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-08-28 — Sweep-029 (live re-audit; no priority-target drift)
+## 2026-08-28 — Sweep-030 (live re-audit; no priority-target drift)
 
 **Agent:** Grok (ADL-SEEM governed)
 **Scope:** Re-scan all 60 repos; live Actions + tags/releases on P0/P1/P2; confirm VSA file set + sizes on main; Dependabot on forge-aegis and sovereign-clean-room; update status/queue/history. No VSA source fabrication. No archive. No tags.
@@ -10,7 +10,7 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 ### Discover / Audit
 - Total visible: 60 (`user:beyond-repair` search)
 - Authenticated account: public_repos=58 (search includes additional private siblings such as SovereignOS, Digital_Double_Virtual_Workforce_4.2, CFT-v3.0 archived)
-- No new undefined repositories since Sweep-028
+- No new undefined repositories since Sweep-029
 - forge-aegis: 6/6 CI **success** (latest 32707052622); tags=[]; Dependabot open=0
 - BlockSwarm: Foundry CI **success** (latest 32707027387); tags=[]; releases=[]
 - sovereign-clean-room: latest run **32714233314 failure** (2026-08-24T09:56Z, head `d69f267`). Loader still expects `_vsa_b64_0..8`; chunks 5–7 missing. Live `core/` listing: `_vsa_b64_{0,1,2,3,4,8}.txt` only (sizes 524 / 12 / 12 / 12 / 904 / 904; blobs 4 and 8 identical) plus unused `_vsa_part_{0,1,2}.py`. `clean_room_vsa.py` = 309 bytes. Dependabot: 1 medium PyNaCl.
@@ -25,7 +25,7 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 ### Plan / Implement
 - Safe: governance doc refresh only.
 - Unsafe / deferred: VSA reconstruction, git tags, `gh repo archive`, PyNaCl bump without green VSA baseline.
-- Idempotent: residual operator items unchanged except tracking medium Dependabot.
+- Idempotent: residual operator items unchanged except census date.
 
 ### Test / CI
 - forge-aegis: Empirical green.
@@ -34,7 +34,7 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 - sovereign-clean-room: Empirical red — blocks P1 terminal state.
 
 ### Document / Govern
-- PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history; registry census date → Sweep-029.
+- PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history; registry census date → Sweep-030.
 
 ### Open residual
 - Operator: restore missing VSA b64 chunks 5–7 **or** single full clean_room_vsa.py
@@ -51,6 +51,6 @@ Next cycle: re-scan after operator VSA fix; otherwise hold on P1 and continue sa
 
 ---
 
-## 2026-08-28 — Sweep-028 (live re-audit; no priority-target drift)
+## 2026-08-28 — Sweep-029 (live re-audit; no priority-target drift)
 
-Prior cycle recorded the same live IDs and VSA inventory. See git history for Sweep-001…28.
+Prior cycle recorded the same live IDs and VSA inventory. See git history for Sweep-001…29.
