@@ -1,23 +1,23 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-28T16:05Z (autonomous Sweep-027)
+**Updated:** 2026-08-28T17:20Z (autonomous Sweep-028)
 
 ## Executive Summary
 
 | Priority | Target | State | Terminal? |
 |----------|--------|-------|----------|
-| P0 | forge-aegis | **CI green** (6/6 success, latest 32707052622); maturity 2; no tags; v0.1.0 open | No |
-| P1 | sovereign-clean-room | **CRITICAL: CI red** — latest 32714233314 FileNotFoundError `_vsa_b64_5.txt` | No — blocked |
-| P1 | Digital_Double_virtual_workforce | Public canonical; **CI green** latest 32707099628 | Near (private 4.2 still sibling) |
+| P0 | forge-aegis | **CI green** (6/6 success, latest 32707052622, head `41f077b1`); maturity 2; no tags; v0.1.0 open | No |
+| P1 | sovereign-clean-room | **CRITICAL: CI red** — latest 32714233314 FileNotFoundError path (`_vsa_b64_5.txt`) | No — blocked |
+| P1 | Digital_Double_virtual_workforce | Public canonical; **CI green** latest 32707099628 (head `117174fec8`) | Near (private 4.2 still sibling) |
 | P2 | BlockSwarm | **CI green** (Foundry 32707027387); **tags=[], releases=[]** | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-027) | Yes (self) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-028) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
 | P5 | Legacy / SEEM / archive | Queued; operator archive required | Partial |
 
 Census: 60 visible repositories (`user:beyond-repair` search; authenticated get_me public_repos=58 plus private siblings). No GitHub-archive actions executed this cycle (operator-only).
 
-## Drift since Sweep-026
+## Drift since Sweep-027
 
 | Check | Result |
 |-------|--------|
@@ -44,7 +44,7 @@ Census: 60 visible repositories (`user:beyond-repair` search; authenticated get_
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 fails on "Run tests".
-- **Root cause (re-verified Sweep-027):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a 309-byte stub loader. `_vsa_part_0..2.py` exist but current loader does not use them. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
+- **Root cause (re-verified Sweep-028):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** `clean_room_vsa.py` is a 309-byte stub loader. `_vsa_part_0..2.py` exist but current loader does not use them. Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
 - Maturity claim of ~4 remains **invalid** while CI red.
 
 ## forge-aegis → CI + v0.1.0
