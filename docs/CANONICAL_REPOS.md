@@ -26,6 +26,18 @@ Authoritative implementations. All overlapping work must defer here.
 | **Predecessors** | SEEM-2.0, SEEM-Cognitive-Microservice(s), seem-block-system |
 | **URL** | https://github.com/beyond-repair/sovereign-clean-room |
 
+## ADL-SEEM
+
+| Field | Value |
+|-------|--------|
+| **Purpose** | SEEM-specific Systems Engineering Standard (constitution, claim policy, response contract v3.0) |
+| **Owner** | beyond-repair |
+| **Status** | ACTIVE |
+| **Dependencies** | ADL-Governance (parent portfolio rules) |
+| **Successors** | — |
+| **Predecessors** | — |
+| **URL** | https://github.com/beyond-repair/ADL-SEEM |
+
 ## forge-aegis
 
 | Field | Value |
@@ -64,7 +76,7 @@ Authoritative implementations. All overlapping work must defer here.
 
 ## Non-canonical (do not treat as authority)
 
-- SEEM-* → use sovereign-clean-room
+- SEEM-* → use sovereign-clean-room (runtime) + ADL-SEEM (rules)
 - Digital_Double_Virtual_Workforce_4.2 / 3.5 / 4. / mobile variants → public canonical above
 - CFT-v3.0 / v3.1 → prefer CFTv3.3-IQG-Unified-Framework under RESEARCH
 - RealityOS / LegionOS / Sovereign-OS / SovereignOS → RESEARCH only; consolidate before any ACTIVE promotion
