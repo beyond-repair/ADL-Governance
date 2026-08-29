@@ -1,8 +1,8 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-08-29 (Sweep-038) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-08-29 (Sweep-038+) · **Governing source:** this repository
 
-Visible GitHub search count: 60. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: 61+. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
 
 ---
@@ -15,6 +15,7 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 | [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (missing VSA b64 5–7). Maturity suspended. Medium Dependabot: PyNaCl. |
 | [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI 6/6 green; v0.1.0 open |
 | [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-08-29 | 0 | 3 | This repo |
+| [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution, claim policy, response contract v3.0 |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
 | [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 3 | Public canonical; product CI **32707099628 success** |
 
@@ -111,7 +112,8 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 ```text
 ADL-Governance (policy · claims · lifecycle)
-    ├── sovereign-clean-room (ACTIVE, CI-blocked) ←── SEEM-* + My-mind + Gia patterns
+    ├── ADL-SEEM (SEEM-specific constitution · response contract v3.0)
+    │       └── sovereign-clean-room (ACTIVE, CI-blocked) ←── SEEM-* + My-mind + Gia patterns
     ├── BlockSwarm (ACTIVE, tag pending)
     ├── forge-aegis (ACTIVE) ↔ AEGIS-Project-Nehemiah-
     ├── Digital_Double_virtual_workforce (ACTIVE product, CI green)
