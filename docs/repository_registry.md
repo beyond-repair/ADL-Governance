@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-08-31 (Sweep-044) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-08-31 (Sweep-046) · **Governing source:** this repository
 
 Visible GitHub search count: 62. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
