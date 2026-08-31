@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-08-31T16:10Z (autonomous Sweep-043)
+**Updated:** 2026-08-31T16:20Z (autonomous Sweep-044)
 
 ## Executive Summary
 
@@ -10,7 +10,7 @@
 | P1 | sovereign-clean-room | **CRITICAL: CI red** — latest 32714233314 FileNotFoundError path (`_vsa_b64_5.txt`) | No — blocked |
 | P1 | Digital_Double_virtual_workforce | Public canonical; **CI green** latest 32707099628 (head `117174fec8`) | Near (private 4.2 still sibling) |
 | P2 | BlockSwarm | **CI green** (Foundry 32707027387); **tags=[], releases=[]** | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-043) | Yes (self) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-044) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel to forge-aegis |
 | P4 | coherence-drive + satellites | RESEARCH, claim level controlled | Ongoing |
 | P5 | Legacy / SEEM / archive | Queued; operator archive required | Partial |
@@ -18,7 +18,7 @@
 
 Census: 62 visible repositories (`user:beyond-repair` search total_count=62). Authenticated `public_repos=60` (search includes private). No new names since Sweep-041. No GitHub-archive actions executed this cycle (operator-only). No VSA source written.
 
-## Drift since Sweep-042
+## Drift since Sweep-043
 
 | Check | Result |
 |-------|--------|
@@ -27,11 +27,12 @@ Census: 62 visible repositories (`user:beyond-repair` search total_count=62). Au
 | BlockSwarm CI / tags | Unchanged green / empty |
 | sovereign-clean-room CI | Unchanged red; no new commits after 2026-08-24T09:56Z (head `d69f267ca60c899f63fc6b7ccffbaafa25360c67`) |
 | Digital Double CI | Unchanged green (32707099628; head `117174fec8`) |
+| RESEARCH satellite activity | coherence-drive pushed 2026-08-31T14:13Z; ware-constant-phenomenology / momentum-closure / stress-tensor-modification pushed same day. Classification unchanged (RESEARCH). |
 | OS family | Still RESEARCH; unconsolidated |
 | VSA files on main | Present `_vsa_b64_{0,1,2,3,4,8}.txt`; **absent 5,6,7**. Also present `_vsa_part_{0,1,2}.py` (incomplete part-loader leftovers). |
-| Security | sovereign-clean-room: medium PyNaCl Dependabot remains queued (not critical). Digital_Double: open Dependabot includes **high** brace-expansion / js-yaml / nanoid (dev/lockfile surface) plus medium vite/postcss. Not classified as unresolved *critical* production-runtime issues; queued for operator bump. |
+| Security | sovereign-clean-room: medium PyNaCl Dependabot remains queued (not critical). Digital_Double: open Dependabot includes **high** brace-expansion / js-yaml / nanoid (dev/lockfile surface; nanoid also marked runtime in one lockfile) plus medium vite/postcss. Not classified as unresolved *critical* production-runtime issues; queued for operator bump. |
 
-## Live-check (Sweep-043)
+## Live-check (Sweep-044)
 
 | Repo | Latest run | Conclusion | Tags |
 |------|------------|------------|------|
@@ -55,7 +56,7 @@ Census: 62 visible repositories (`user:beyond-repair` search total_count=62). Au
 ## sovereign-clean-room → CI-green + stable CLI
 
 - **CRITICAL CI FAILURE**: Latest run 32714233314 fails on "Run tests".
-- **Root cause (re-verified Sweep-043):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
+- **Root cause (re-verified Sweep-044):** loader joins `_vsa_b64_{i}.txt` for `i in range(9)`. Present: 0–4 and 8. **Missing: 5, 6, 7.** Reconstructing missing engine from placeholders would fabricate source. Deferred to operator.
 - File sizes (prior verification, unchanged): 0=524B, 1–3=12B placeholders, 4=904B, 8=904B (4 and 8 share SHA `24297275`).
 - Maturity claim of ~4 remains **invalid** while CI red.
 
@@ -93,7 +94,7 @@ Operator must execute `gh repo archive` for remaining queue.
 ## Residual gaps vs exit criteria
 
 - [x] No undefined repos (census 62; ExoAxis-1 already registered)
-- [x] No stale registry (census 62; Sweep-043)
+- [x] No stale registry (census 62; Sweep-044)
 - [ ] No critical CI failures — **FAIL** (sovereign-clean-room)
 - [ ] No duplicate canonical implementations (Digital Double public CI green; private 4.2 and OS family unconsolidated)
 - [x] No unresolved *critical* security issues (high Dependabot on Digital Double lockfiles tracked; not critical runtime CI)

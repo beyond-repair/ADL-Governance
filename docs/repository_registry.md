@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-08-31 (Sweep-043) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-08-31 (Sweep-044) · **Governing source:** this repository
 
 Visible GitHub search count: 62. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
@@ -27,13 +27,13 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 | Name | Maturity | Claim level (default) | Notes |
 |------|----------|----------------------|-------|
-| coherence-drive | 3 | 1 | Master physics index |
-| ware-constant-phenomenology | 3 | 1–2 | |
+| coherence-drive | 3 | 1 | Master physics index; last push 2026-08-31 |
+| ware-constant-phenomenology | 3 | 1–2 | last push 2026-08-31 |
 | -ware-constant-derivation | 2 | 1 | |
 | CFTv3.3-IQG-Unified-Framework | 2 | 1 | Prefer over CFT-v3.x |
 | CFT-v3.1 | 2 | 1 | Prefer 3.3 |
-| momentum-closure | 2 | 1 | Satellite |
-| stress-tensor-modification | 2 | 1 | Satellite |
+| momentum-closure | 2 | 1 | Satellite; last push 2026-08-31 |
+| stress-tensor-modification | 2 | 1 | Satellite; last push 2026-08-31 |
 | m2-renormalization-law | 2 | 1 | Satellite |
 | topological-pinch | 2 | 1 | Satellite |
 | thrust-target-30 | 2 | 1 | Engineering *target*, not Level 5 |
