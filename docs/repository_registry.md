@@ -1,8 +1,8 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-01 (Sweep-047) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-02 (Sweep-048) · **Governing source:** this repository
 
-Visible GitHub search count: 62. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: 63. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
 
 ---
@@ -14,7 +14,7 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 | [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; CI green (32707027387); tag v0.5.0-sagf PENDING |
 | [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (missing VSA b64 5–7). Maturity suspended. Medium Dependabot: PyNaCl. |
 | [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI 6/6 green; v0.1.0 open |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-01 | 0 | 3 | This repo |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-02 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution, claim policy, response contract v3.0 |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
 | [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 3 | Public canonical; product CI **32707099628 success**; lockfile Dependabot high/medium queued |
@@ -27,6 +27,7 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 | Name | Maturity | Claim level (default) | Notes |
 |------|----------|----------------------|-------|
+| blacksite | 1 | 0–1 | Private JS game prototype (created 2026-09-02); **no CI**; do not promote ACTIVE until tests+CI exist |
 | coherence-drive | 3 | 1 | Master physics index; last push 2026-08-31 |
 | ware-constant-phenomenology | 3 | 1–2 | last push 2026-08-31 |
 | -ware-constant-derivation | 2 | 1 | |
@@ -51,7 +52,7 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 **Canonical Ware law:** `W(n)=0.08*exp(0.23*(n-3))`
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product.
 
 ---
 
@@ -120,5 +121,6 @@ ADL-Governance (policy · claims · lifecycle)
     ├── Digital_Double_virtual_workforce (ACTIVE product, CI green)
     ├── coherence-drive (RESEARCH ≤2) ←── Ware/CFT satellites
     ├── ExoAxis-1 (RESEARCH ≤1; README-only)
+    ├── blacksite (RESEARCH ≤1; private game prototype; no CI)
     └── RealityOS / LegionOS / Sovereign-OS* (RESEARCH; consolidate)
 ```
