@@ -80,3 +80,4 @@ Authoritative implementations. All overlapping work must defer here.
 - Digital_Double_Virtual_Workforce_4.2 / 3.5 / 4. / mobile variants → public canonical above
 - CFT-v3.0 / v3.1 → prefer CFTv3.3-IQG-Unified-Framework under RESEARCH
 - RealityOS / LegionOS / Sovereign-OS / SovereignOS → RESEARCH only; consolidate before any ACTIVE promotion
+- blacksite → RESEARCH game prototype; not an ACTIVE product surface until tests+CI exist
