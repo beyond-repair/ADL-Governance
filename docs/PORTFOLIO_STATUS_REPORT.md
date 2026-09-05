@@ -1,59 +1,135 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-05T16:55Z (MAINT-001 / maintenance-mode drift scan)
-
-## Mode
-
-**MAINTENANCE** — periodic drift re-scan (user-invoked). Not a full random-select product sweep.
+**Updated:** 2026-09-05T16:55Z (autonomous Sweep-064)
+**Census:** 73 visible repositories (`user:beyond-repair` search, incomplete_results=false).
 
 ## Executive Summary
 
-| Priority | Target | State | Terminal? |
-|----------|--------|-------|----------|
-| P0 | forge-aegis | CI **success** 33904082644; tags=[] | Near (operator tag) |
-| P1 | sovereign-clean-room | CI **success** 33904047312 (VSA Path A restored) | Near; PyNaCl MEDIUM open |
-| P1 | Digital_Double_virtual_workforce | Product CI green (prior sweeps); nanoid HIGH open | No |
-| P2 | BlockSwarm | Foundry **success** 33949194624; tags=[] releases=[] | Near (operator tag) |
-| P2 | ADL-Governance | This report + queue synchronized | Yes (self) |
-| Meta | sunder / census / matrix / graph / adapters | New surfaces since Sweep-009; claim-capped descriptions | Classify ongoing |
-| P4 | coherence-drive + satellites | RESEARCH | Ongoing |
-| P5 | Archive queue | Operator-only | Pending |
+| Priority | Target | Live state (Sweep-064) | Terminal? |
+|----------|--------|------------------------|----------|
+| P0 | forge-aegis | CI **success** run 33904082644; tags=[]; releases=[] | No |
+| P1 | sovereign-clean-room | CI **success** run 33904047312; PyNaCl MEDIUM GHSA-mrfv-m5wm-5w6w open | No |
+| P1 | Digital_Double_virtual_workforce | Product CI **success** run 33904118205; Dependabot HIGH nanoid open (alerts 147/148/153/154) | No |
+| P2 | BlockSwarm | Foundry **success** run 33949194624; tags=[]; releases=[] | Near (operator tag) |
+| P2 | ADL-Governance | This report + queue + history synchronized | Yes (self) |
+| Closed residual | thrust-target-30 | unit-identity.yml **success** runs 33958768662 and 33958771694; RESEARCH claim 0 | Yes for that residual |
 
-Census: **73** visible (`user:beyond-repair`). Delta vs Sweep-009 baseline (60): **+13**.
+Portfolio-wide exit criteria: **NOT MET**. Sweep stops after this cycle.
 
-## Drift vs Sweep-009 (2026-08-27)
+## Phase 2 classification (directive four-state map)
 
-| Check | Sweep-009 | MAINT-001 |
-|-------|-----------|-----------|
-| sovereign-clean-room CI | **RED** (missing b64 5–7) | **GREEN** (Path A static engine; loader partials removed) |
-| forge-aegis CI | GREEN | GREEN |
-| BlockSwarm CI | GREEN | GREEN |
-| BlockSwarm tags | empty | empty |
-| forge-aegis tags | empty | empty |
-| Repo count | 60 | 73 |
+Directive allows exactly: ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+Registry historically also used FROZEN. Sweep-064 maps FROZEN → SUPERSEDED or ARCHIVED *candidates* (operator archive only).
 
-**Material positive drift:** P1 critical CI failure resolved by operator (Path A). Exit criteria that previously blocked on critical CI are now **clear** on that axis.
+### ACTIVE (7)
 
-## New / recently active surfaces (register awareness)
+ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
 
-Claim-capped meta and product adjacent (not promoted ACTIVE without registry line + tests):
+### RESEARCH
 
-- `sunder` — local-first agent; architecture open for LLM wiring
-- `ADL-Portfolio-Census`, `adl-capability-matrix`, `adl-function-census`, `aegis-repo-graph`
-- `sunder-cleanroom-vsa-adapter`, `seem-sunder-bridge`, `seem-identity-unifier`, `os-family-constitution-map`
-- `Project-Cold-Boot`, `blacksite` (private), `ExoAxis-1`, `ADL-SEEM`
+Mapping/census layer (9): ADL-Portfolio-Census, aegis-repo-graph, adl-capability-matrix, adl-function-census, sunder, sunder-cleanroom-vsa-adapter, seem-sunder-bridge, seem-identity-unifier, os-family-constitution-map.
 
-## Residual gaps vs portfolio exit
+Physics/theory: coherence-drive, ware-constant-phenomenology, -ware-constant-derivation, CFTv3.3-IQG-Unified-Framework, CFT-v3.1, momentum-closure, stress-tensor-modification, m2-renormalization-law, topological-pinch, thrust-target-30, sierpinski-geometry-045, acoustic-token-modem, optimization-limit-conjecture, The-Origin-Point-Hypothesis., -Entanglement-and-Emergence, -text-informational-fork-protocol-.
 
-- [ ] Tags + Releases on BlockSwarm (`v0.5.0-sagf`) and forge-aegis (`v0.1.0`)
-- [ ] Archive batch (`docs/archive_queue.md`)
-- [ ] Dependabot: PyNaCl MEDIUM on sovereign-clean-room; nanoid HIGH on Digital Double
-- [ ] OS-family consolidation (map repo exists; product canonical still soft)
-- [x] No critical CI failure on P0/P1 primary surfaces (recovered)
-- [x] Claim levels on physics cluster controlled (RESEARCH)
+OS concepts: RealityOS, LegionOS, Sovereign-OS, SovereignOS.
 
-**Portfolio-wide termination: not met** (tags + archives + security bumps).
+Other RESEARCH: Project-Cold-Boot, blacksite, ExoAxis-1, VigilE.S.A.-Enhanced-Security (claim-capped; archive operator-only).
 
-**Maintenance mode: ENTERED** (periodic re-scan). Next: operator tag/archive or next drift scan on request.
+### SUPERSEDED
 
-See OPERATOR_QUEUE.md and SWEEP_HISTORY.md.
+SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system → sovereign-clean-room.
+My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → pattern absorption (sovereign-clean-room).
+CFT-v3.0 → CFTv3.3 (already GitHub-archived).
+Digital Double lineage (3.5 / 4. / 4.2 / mobile pair) → public canonical Digital_Double_virtual_workforce.
+
+### ARCHIVED / archive-queue candidates
+
+CFT-v3.0 already archived. Remaining names in `docs/archive_queue.md` are **not** GitHub-archived. Operator-only.
+
+Profile repo `beyond-repair` is not a product surface.
+
+## Phase 3 — Mandatory live verification
+
+| Repo | Latest product CI | Conclusion | Tags | Releases | Security |
+|------|-------------------|------------|------|----------|----------|
+| forge-aegis | 33904082644 forge-aegis CI | success | [] | [] | Dependabot not re-enumerated this sweep (prior open=0) |
+| sovereign-clean-room | 33904047312 Python tests | success | [] | [] | PyNaCl <1.6.2 MEDIUM alert #1 |
+| BlockSwarm | 33949194624 Foundry | success | [] | [] | prior Dependabot open=0 |
+| Digital_Double_virtual_workforce | 33904118205 Digital Double CI | success | [] | [] | nanoid HIGH alerts 147,148,153,154 (CVE-2026-73086) |
+
+**Code-review readiness:** PASS WITH FINDINGS for all four (CI green; missing tags/releases; two open Dependabot families).
+
+## Capability matrix (claim-capped)
+
+| Feature | State |
+|---------|-------|
+| forge-aegis FLS docs + python package + CI | VERIFIED (Actions success) |
+| forge-aegis production host-integrity product | PLANNED / UNVERIFIED |
+| sovereign-clean-room Python test suite | VERIFIED (Actions success) |
+| sovereign-clean-room complete VSA / SEEM runtime | UNVERIFIED |
+| BlockSwarm Foundry test workflow | VERIFIED |
+| BlockSwarm on-chain production deployment | UNVERIFIED (no tag/release) |
+| Digital Double product CI | VERIFIED |
+| Digital Double lockfile supply-chain clean | FAIL (HIGH nanoid) |
+| thrust-target-30 unit identity 30 μN/kW = 3e-8 N/W | VERIFIED (Actions 33958771694) |
+| thrust-target-30 measured thrust | NOT CLAIMED |
+
+## Dependency graph (Stage-1 boundary)
+
+```text
+ADL-Governance
+  ├─ ADL-SEEM → sovereign-clean-room ← SEEM-* SUPERSEDED
+  ├─ forge-aegis ↔ AEGIS-Project-Nehemiah-
+  ├─ BlockSwarm → OpenZeppelin / Foundry (external)
+  ├─ Digital_Double_virtual_workforce → npm + Python smoke
+  ├─ coherence-drive ← Ware / CFT satellites (RESEARCH)
+  └─ mapping layer (census / graph / adapters) RESEARCH only
+```
+
+No runtime cycle verified. Mapping-layer interop remains contract-only.
+
+External: Python/NumPy/PyNaCl; npm/nanoid; Solidity/Foundry/OpenZeppelin.
+
+## Security summary
+
+| Finding | Severity | Repo | Status |
+|---------|----------|------|--------|
+| GHSA-mrfv-m5wm-5w6w / CVE-2025-69277 PyNaCl <1.6.2 | MEDIUM | sovereign-clean-room | OPEN |
+| GHSA-xwg4-73v4-xw9w / CVE-2026-73086 nanoid | HIGH | Digital_Double_virtual_workforce | OPEN (multiple alerts) |
+
+No critical Dependabot on forge-aegis / BlockSwarm observed in prior locked sweeps; not re-opened this cycle as new evidence.
+
+## Gap summary
+
+| Capability | Severity |
+|------------|----------|
+| Git tags + GitHub Releases on four ACTIVE product targets | High (lifecycle) |
+| Unresolved HIGH nanoid lockfile | High (security exit) |
+| Unresolved MEDIUM PyNaCl | Medium |
+| GitHub archive batch still pending | Medium (governance) |
+| FROZEN registry class not in directive four-state set | Low (taxonomy) |
+| VSA completeness | Medium (claim integrity) |
+
+## Canonical ownership
+
+See `docs/CANONICAL_REPOS.md`. One capability → one owner:
+
+- Governance: ADL-Governance (+ ADL-SEEM for SEEM contract)
+- Agent / FLS integrity: forge-aegis
+- Clean-room substrate: sovereign-clean-room
+- Distributed on-chain: BlockSwarm
+- Workforce product: Digital_Double_virtual_workforce
+
+## Exit criteria checklist
+
+- [x] No undefined repositories in 73-name census
+- [x] All repositories classified (FROZEN mapped as residual taxonomy)
+- [x] Dependencies mapped at Stage-1
+- [x] Demonstrated vs planned distinguished
+- [ ] No stale registry claim-level drift (thrust-target-30 registry row still shows claim 1 vs Sweep-063 claim 0)
+- [ ] No unresolved critical security findings (HIGH nanoid blocks exit)
+- [ ] No missing tags on ACTIVE four
+- [ ] Archive candidates not yet GitHub-archived
+- [x] Status report / operator queue / sweep history updated this cycle
+
+**Maintenance mode not entered.**
