@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-05T07:05Z (Sweep-058 — live re-verify)
+**Last updated:** 2026-09-05T07:08Z (Sweep-059 — live re-verify)
 
 Destructive or account-level actions that require human operator. Agent places items here; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases.
@@ -32,10 +32,11 @@ gh release create v0.5.0-sagf --title "v0.5.0-sagf" --notes-file docs/CHANGELOG.
 | Wire real supervisor LLM into SUNDER | sunder | Architecture ready | OPEN |
 | Classify / consolidate | RealityOS / LegionOS / Sovereign-OS | RESEARCH | OPEN |
 | Digital_Double release | Digital_Double_virtual_workforce | After lockfile bumps | OPEN |
+| Light-classify census leftovers | optimization-limit-conjecture, The-Origin-Point-Hypothesis., CFT-v3.1, -Entanglement-and-Emergence, -text-informational-fork-protocol- | RESEARCH default until audited | OPEN |
 
 ## Closed this sweep
 
-- **Sweep-058:** Live re-verify of four mandatory targets confirmed Sweep-057 Actions IDs still current. No new CI runs since Sweep-057. No contradiction with live API.
+- **Sweep-059:** Live re-verify of four mandatory targets confirmed Sweep-057/058 Actions IDs still current. No new product CI on those four since last recorded success. No contradiction with live API.
 
 ## Rule
 
