@@ -1,43 +1,59 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-05T09:44Z (autonomous Sweep-063)
+**Updated:** 2026-09-05T16:55Z (MAINT-001 / maintenance-mode drift scan)
+
+## Mode
+
+**MAINTENANCE** — periodic drift re-scan (user-invoked). Not a full random-select product sweep.
 
 ## Executive Summary
 
 | Priority | Target | State | Terminal? |
 |----------|--------|-------|----------|
-| Sweep-063 | thrust-target-30 | RESEARCH claim 0; unit-identity CI added | Near (Actions first-run pending) |
-| Sweep-062 | VigilE.S.A.-Enhanced-Security | RESEARCH; claim-capped docs | Near (archive operator-only) |
-| P0 | forge-aegis | CI **success** run 33904082644; tags=[] | No |
-| P1 | sovereign-clean-room | CI **success** run 33904047312; PyNaCl MEDIUM open | No |
-| P1 | Digital_Double_virtual_workforce | Product CI **success** run 33904118205; Dependabot HIGH nanoid open | No |
-| P2 | BlockSwarm | ACTIVE; Foundry **success** run 33949194624; tags=[] | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-063) | Yes (self) |
+| P0 | forge-aegis | CI **success** 33904082644; tags=[] | Near (operator tag) |
+| P1 | sovereign-clean-room | CI **success** 33904047312 (VSA Path A restored) | Near; PyNaCl MEDIUM open |
+| P1 | Digital_Double_virtual_workforce | Product CI green (prior sweeps); nanoid HIGH open | No |
+| P2 | BlockSwarm | Foundry **success** 33949194624; tags=[] releases=[] | Near (operator tag) |
+| P2 | ADL-Governance | This report + queue synchronized | Yes (self) |
+| Meta | sunder / census / matrix / graph / adapters | New surfaces since Sweep-009; claim-capped descriptions | Classify ongoing |
+| P4 | coherence-drive + satellites | RESEARCH | Ongoing |
+| P5 | Archive queue | Operator-only | Pending |
 
-Census: **73** visible (`user:beyond-repair`). Sweep-063 randomly selected `thrust-target-30`.
+Census: **73** visible (`user:beyond-repair`). Delta vs Sweep-009 baseline (60): **+13**.
 
-## Sweep-063 selected repo
+## Drift vs Sweep-009 (2026-08-27)
 
-| Field | Value |
-|-------|-------|
-| Repo | [thrust-target-30](https://github.com/beyond-repair/thrust-target-30) |
-| Classification | **RESEARCH** |
-| Claim level | **0** (design target, not measurement) |
-| Constant | F/P = 3e-8 N/W = 30 μN/kW |
-| Solver / hardware | None |
-| Docs added | GOVERNANCE.md, constants/target.json, tests/test_unit_identity.py, workflow |
-| Commits | fd46a3fd, 4f4115a1, e40f09f5 |
+| Check | Sweep-009 | MAINT-001 |
+|-------|-----------|-----------|
+| sovereign-clean-room CI | **RED** (missing b64 5–7) | **GREEN** (Path A static engine; loader partials removed) |
+| forge-aegis CI | GREEN | GREEN |
+| BlockSwarm CI | GREEN | GREEN |
+| BlockSwarm tags | empty | empty |
+| forge-aegis tags | empty | empty |
+| Repo count | 60 | 73 |
 
-**Claim cap:** Green unit-identity CI does not raise physics claim level.
+**Material positive drift:** P1 critical CI failure resolved by operator (Path A). Exit criteria that previously blocked on critical CI are now **clear** on that axis.
+
+## New / recently active surfaces (register awareness)
+
+Claim-capped meta and product adjacent (not promoted ACTIVE without registry line + tests):
+
+- `sunder` — local-first agent; architecture open for LLM wiring
+- `ADL-Portfolio-Census`, `adl-capability-matrix`, `adl-function-census`, `aegis-repo-graph`
+- `sunder-cleanroom-vsa-adapter`, `seem-sunder-bridge`, `seem-identity-unifier`, `os-family-constitution-map`
+- `Project-Cold-Boot`, `blacksite` (private), `ExoAxis-1`, `ADL-SEEM`
 
 ## Residual gaps vs portfolio exit
 
-- [ ] Tags on four mandatory ACTIVE targets
-- [ ] Archive batch pending operator
-- [ ] Dependabot: PyNaCl MEDIUM; Digital Double HIGH nanoid
-- [x] thrust-target-30 documented + unit check (Sweep-063)
-- [x] VigilE.S.A. undocumented-claim surface reduced (Sweep-062)
+- [ ] Tags + Releases on BlockSwarm (`v0.5.0-sagf`) and forge-aegis (`v0.1.0`)
+- [ ] Archive batch (`docs/archive_queue.md`)
+- [ ] Dependabot: PyNaCl MEDIUM on sovereign-clean-room; nanoid HIGH on Digital Double
+- [ ] OS-family consolidation (map repo exists; product canonical still soft)
+- [x] No critical CI failure on P0/P1 primary surfaces (recovered)
+- [x] Claim levels on physics cluster controlled (RESEARCH)
 
-**Maintenance mode not entered.** Portfolio exit **not met**.
+**Portfolio-wide termination: not met** (tags + archives + security bumps).
 
-See `docs/OPERATOR_QUEUE.md` and `docs/SWEEP_HISTORY.md`.
+**Maintenance mode: ENTERED** (periodic re-scan). Next: operator tag/archive or next drift scan on request.
+
+See OPERATOR_QUEUE.md and SWEEP_HISTORY.md.
