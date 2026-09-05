@@ -2,205 +2,58 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-05 — Sweep-066 (random select: acoustic-token-modem)
+## 2026-09-05 — Sweep-067 (random select: Digital_Double_Virtual_Workforce_4.2)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** PRNG seed 20260905 over the 74-name census (`user:beyond-repair` search); result `acoustic-token-modem`.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST (local pytest) → CI → DOCUMENT → GOVERN → RE-AUDIT.
+**Selection method:** PRNG over the 74-name `user:beyond-repair` census; result `Digital_Double_Virtual_Workforce_4.2`.
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs) → DOCUMENT → GOVERN → RE-AUDIT.
 
 ### Discover
-- Tree SHA `013305daeeb54c6c1d51372f22d8ace134736976` (pre-sweep main).
-- Package `src/acoustic_token_modem/` with tokenizer, protocol (packet/CRC/framing), FSK modulation, channel sim, metrics, FEC/interleave stubs.
-- Placeholders: OFDM/PSK/QAM, some demod/metrics modules (expected RESEARCH stubs).
-- Tests: 9 files under `tests/`; central invariant in `test_roundtrip.py`.
-- Docs: README claim-capped RESEARCH ≤1; RESEARCH.md survey table empty; SECURITY.md present.
-- **No `.github/workflows` before this sweep.**
-- Description already states research-only / no novelty without measurement.
+- Tree includes agents/ (Python orchestrator, role stubs, committed `__pycache__`), selfheal/ (TS/JS), scripts/, docs/detailed/, config/system_config.yaml, SECURITY.md, CANONICAL_NOTE.md, ~74 MiB GGUF under models/.
+- No root README before this sweep.
+- No product GitHub Actions required for SUPERSEDED target.
+- Existing CANONICAL_NOTE already pointed at Digital_Double_virtual_workforce as public face.
 
 ### Audit vs ADL-Governance
-- Already classified RESEARCH in README and PORTFOLIO_STATUS_REPORT.
-- Claim level ≤1 consistent with CLAIM_VALIDATION (simulation ≠ hardware validation).
-- Missing product CI was the primary governance gap for a tested Python package.
-- OFDM/PSK/QAM stubs are documented as later milestones; not undocumented surfaces.
-- No critical security findings in this tree (numpy-only runtime dep).
+- CANONICAL_REPOS.md: non-canonical; predecessor of public Digital_Double_virtual_workforce.
+- repository_registry.md listed 4.2 under extra-legal FROZEN bucket (“private newer candidate”).
+- Directive four-state set has no FROZEN; correct mapping is SUPERSEDED (or ARCHIVED after operator archive).
+- Duplicate lineage with 3.5 / 4. / mobile variants.
+- Committed pycache and large binary are hygiene issues, not product defects for this class.
+- No new critical security advisory scanned on this tree this cycle (no lockfile product surface).
 
 ### Classify
-- **RESEARCH** (claim level ≤1).
-- Justification: experimental acoustic simulation; no hardware measurement; prior-art survey incomplete; OFDM not implemented. CI does not promote to ACTIVE.
+- **SUPERSEDED**.
+- Justification: public canonical already ACTIVE with product CI; this tree is an isolated merge source. Feature work must stop. Archive remains operator-only until unique assets are ported or waived.
 
 ### Plan / target this cycle
-- Add pytest GitHub Actions workflow.
-- Reaffirm claim cap in README.
-- Do not implement OFDM or hardware I/O.
-- Do not raise claim level.
+- Add root README successor banner.
+- Add SUPERSEDED.md.
+- Tighten CANONICAL_NOTE.
+- Queue archive + GGUF LFS decision.
+- Do not delete model or rewrite history.
+- Do not claim workforce production readiness.
 
 ### Implement
-- acoustic-token-modem `main` commit `3d4db951669d2c5bda1485ec7b155651e9baaa68`:
-  - `.github/workflows/pytest.yml`
-  - README Sweep-066 note + CI disclaimer
+- Digital_Double_Virtual_Workforce_4.2 `main` `c3375cb7f49fe3755da8a6ec947f1b01ba398112`: README.md, SUPERSEDED.md, CANONICAL_NOTE.md.
 - This file + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
 
 ### Test / CI
-- Local: `PYTHONPATH=src pytest tests/ -q` → **12 passed** in 0.13s (numpy 2.4.4).
-- Remote Actions: workflow added; first run pending after push (not yet treated as green).
+- No product test suite executed on 4.2 (SUPERSEDED; successor owns CI).
+- Successor product CI remains run 33904118205 success (carried).
 
 ### Exit for this repo
-- Undocumented components: stubs remain labeled as later milestones.
-- Unsupported claims: remain capped.
-- Critical CI: workflow present; first remote result pending.
+- Classification documented.
+- Unique-asset port UNVERIFIED → blocks GitHub archive.
 - Portfolio-wide termination: **not** met (HIGH nanoid, missing ACTIVE tags, archive queue).
 
 ---
 
-## 2026-09-05 — Sweep-065 (random select: VigilE.S.A.-Enhanced-Security)
+## Prior sweeps
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** PRNG seed 202609051706 over the 73-name census; result `VigilE.S.A.-Enhanced-Security`.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN → RE-AUDIT.
-
-### Discover (live tree, SHA main after prior Sweep-062 `daf2ded`)
-- Rust-shaped `src/` with agents (ebpf, wasm), core (cloud, incident, network/mitm, vulnerability), modules (enclave, hsm, password_audit).
-- Deployments: docker / kubernetes / terraform stubs.
-- Tests: `tests/security/network_tests.rs` only.
-- Workflow: `.github/workflows/security_pipeline.yml` (checkout + SAST + cosign installer; no `cargo test`).
-- Docs already claim-capped: README.md, CLAIMS.md, GOVERNANCE.md, SECURITY.md.
-- Duplicate root file `README .md` still present.
-- **No Cargo.toml / Cargo.lock.** Compilable product crate remains UNVERIFIED.
-
-### Audit vs ADL-Governance
-- Classification RESEARCH / claim 0 still correct.
-- Production Zero Trust / HSM / SGX / SEV / blockchain-log / AI-detection claims remain capped at level 0.
-- Offensive-adjacent paths (`arp_spoof.rs`, `cracker.rs`) remain stubs. Agent MUST NOT implement them.
-- Missing product CI and build manifest accepted for RESEARCH target (not an ACTIVE promotion).
-- No new critical Dependabot evidence collected this cycle on this repo (no Cargo/npm lockfile to scan).
-
-### Classify
-- **RESEARCH** (claim level 0). Not ACTIVE. Archive is operator-only.
-- Justification: incomplete scaffolding, missing build manifest, unverifiable capability claims.
-
-### Plan / target this cycle
-- Re-audit Sweep-062 state; refresh README sweep marker; do not add Cargo workspace; do not implement offensive modules; do not archive.
-
-### Implement
-- Vigil `main` commit `56850e814f2ce862b80a1a0874a00bf164502d4d`: README Sweep-065 re-audit note.
-- This file + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-
-### Test / CI
-- No local `cargo test` possible (no manifest). SAST workflow is not treated as product-green.
-
-### Exit for this repo
-- Undocumented components: no new undocumented surfaces found beyond prior register.
-- Unsupported claims: remain capped.
-- GitHub archive: **not** executed (operator).
-- Portfolio-wide termination: **not** met (HIGH nanoid, missing tags, archive queue).
-
----
-
-## 2026-09-05 — Sweep-064b (security PR open — PyNaCl + nanoid)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Scope:** Execute the two open P0 dependency pins identified in Sweep-061/064 via branch + PR (code-review path). No tags. No archive. No FLS expansion.
-
-### Discover / Evidence
-- sovereign-clean-room `requirements.txt`: `pynacl==1.5.0` (affected <1.6.2 per GHSA-mrfv-m5wm-5w6w / CVE-2025-69277).
-- Digital_Double_virtual_workforce `package.json`: `nanoid: ^5.0.6` (affected window ≥4.0.0 ≤5.1.10 per GHSA-xwg4-73v4-xw9w / CVE-2026-73086; later non-secure loop fixed in 5.1.16).
-- Stale Dependabot group PR Digital_Double#3 (2025-07) not used as vehicle.
-
-### Implement
-- **sovereign-clean-room PR #1** — branch `fix/pynacl-1.6.2-cve-2025-69277`
-  - `pynacl==1.5.0` → `pynacl>=1.6.2`
-  - URL: https://github.com/beyond-repair/sovereign-clean-room/pull/1
-- **Digital_Double_virtual_workforce PR #4** — branch `fix/nanoid-5.1.11-ghsa-xwg4`
-  - `nanoid: ^5.0.6` → `^5.1.16`
-  - URL: https://github.com/beyond-repair/Digital_Double_virtual_workforce/pull/4
-  - Note: lockfile regenerate (`npm install`) still required before merge.
-- ADL-Governance OPERATOR_QUEUE.md updated to PR-OPEN status.
-
-### Validation pending
-- CI green on both PR branches.
-- Digital Double: operator lockfile refresh.
-- Merge is operator decision after review.
-
-### Exit
-- P0 advisory code path advanced to PR. Tags, archives, and lockfile still operator.
-- Portfolio exit **not met**.
-
----
-
-## 2026-09-05 — Sweep-064 (live re-verify + residual close)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Scope:** One governed sweep. Phase 1 census (73) + Phase 3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Close Sweep-063 Actions residual on thrust-target-30. Update required deliverables. Stop.
-
-### Discover
-- Search `user:beyond-repair` total_count=73, incomplete_results=false.
-- ADL-Governance last push prior to this commit: 2026-09-05T09:44:36Z (Sweep-063).
-
-### Audit (live Actions / releases / tags / Dependabot)
-- forge-aegis: run **33904082644 success** (2026-09-04); tags=[]; releases=[].
-- sovereign-clean-room: run **33904047312 success**; Dependabot open=1 MEDIUM PyNaCl GHSA-mrfv-m5wm-5w6w / CVE-2025-69277 (alert #1).
-- BlockSwarm: run **33949194624 success** (2026-09-05); tags=[]; releases=[].
-- Digital_Double_virtual_workforce: product CI **33904118205 success**; HIGH nanoid GHSA-xwg4-73v4-xw9w / CVE-2026-73086 alerts 147,148,153,154 (lockfiles at repo root and digital_double/).
-- thrust-target-30: unit-identity runs **33958768662** and **33958771694** both **success** (closes Sweep-063 OPEN item).
-
-### Classify
-- Four mandatory targets remain ACTIVE with findings.
-- thrust-target-30 remains RESEARCH claim 0.
-- FROZEN registry bucket is extra-legal vs directive four-state set; treated as SUPERSEDED/ARCHIVED candidates, not executed.
-
-### Implement
-- Documentation only in ADL-Governance: PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md.
-- No product code changes. No history rewrite. No archive. No tags (unsupported in connected tool set).
-
-### Exit
-- This sweep complete.
-- Portfolio exit **not met** (HIGH nanoid, missing tags, archive queue, registry claim-level drift).
-- Per Master Directive: record residuals, stop, do not loop.
-
----
-
-## 2026-09-05 — Sweep-063 (random select: thrust-target-30)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** PRNG seed 20260905 over the 73-name census; result `thrust-target-30`.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST (local unit identity) → DOCUMENT → GOVERN.
-
-### Discover
-- Tree: README.md, CLAIM_STATUS.md, LICENSE only (pre-sweep).
-- No solver, no hardware, no CI.
-- Stated constant: F/P = 3e-8 N/W = 30 μN/kW as a design goal.
-- Upstream pointers: ware-constant-phenomenology, coherence-drive, CFTv3.3.
-
-### Audit vs ADL-Governance
-- Already labeled RESEARCH / claim 0 in CLAIM_STATUS.md; experimental_validation false.
-- Registry listed thrust-target-30 as RESEARCH maturity 2, claim 1 (yardstick vs idea). Harmonized to **claim 0** (design target is not a mathematical framework by itself).
-- Missing GOVERNANCE binding, machine-readable constant, and any CI.
-- No unsupported Level 4/5 thrust claims in README (already capped).
-
-### Classify
-- **RESEARCH** (claim level 0).
-- Justification: constants/intent repository; no measurement; CI cannot raise physics claim level (CLAIM_VALIDATION.md rule 3).
-
-### Plan / target this cycle
-- Bind governance; freeze constant in JSON; add deterministic unit-identity check + workflow.
-- Do not add a propulsion solver or raise claim level.
-
-### Implement
-- thrust-target-30 `main`:
-  - GOVERNANCE.md + constants/target.json (`fd46a3fd`)
-  - tests/test_unit_identity.py + .github/workflows/unit-identity.yml (`4f4115a1`)
-  - README claim-cap / pointers (`e40f09f5`)
-- Local deterministic check: `30 * 1e-9 N/W == 3e-8 N/W` holds.
-- Actions later confirmed success in Sweep-064.
-
-### Exit for this repo
-- Undocumented components: reduced.
-- Unsupported claims: none found beyond the explicit design-goal statement.
-- Physics validation: **not** claimed.
-- Portfolio-wide termination: **not** met.
-
----
-
-## 2026-09-05 — Sweep-062 (random select: VigilE.S.A.-Enhanced-Security)
-
-See git history for full Sweep-062 body and earlier cycles Sweep-001…56. Exit condition not met.
+Sweep-066 acoustic-token-modem RESEARCH ≤1 + pytest CI.
+Sweep-065 VigilE.S.A. RESEARCH claim 0 re-audit.
+Sweep-064b security PRs PyNaCl + nanoid.
+Sweep-064 live re-verify ACTIVE four.
+Sweep-063 thrust-target-30 RESEARCH claim 0.
+See git history for Sweep-001…62.
