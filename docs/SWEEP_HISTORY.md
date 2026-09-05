@@ -2,6 +2,50 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-05 — Sweep-056 (random select: BlockSwarm)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selected repo:** beyond-repair/BlockSwarm (random pick from census 73; older Solidity ACTIVE candidate)
+**Scope:** DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe docs) → DOCUMENT → GOVERN. No contract rewrite. No tag. No archive.
+
+### Discover
+- Language: Solidity + Foundry (`foundry.toml`, `.github/workflows/foundry.yml`)
+- Contracts: AIExecutor, DAOGovernor, GovernanceNFT, KnowledgeLedger, MerkleVerifier, OrchestrationEngine, RevertTokenLayer + MerkleProof library
+- Tests: six Foundry suites under `test/`
+- Docs: CHANGELOG, FORMAL_INVARIANTS, MERKLE, B2* validation notes, RELEASE_v0.5.0-sagf.md
+- Tags/releases: empty (operator queue)
+- Legacy: `legacy/` preserved, not deleted
+
+### Audit
+- Missing vs LIFECYCLE ACTIVE promote: SECURITY.md was absent; GOVERNANCE.md absent; README lacked explicit claim-cap footer.
+- No undefined modules in tree relative to README tools metaphor.
+- Duplicate implementations: none vs other repos (unique Solidity stack).
+- Critical CI: prior empirical Foundry green (Sweep-050 run 32707027387). Not re-executed this cycle (no Foundry in agent sandbox).
+- Contradiction note: OPERATOR_QUEUE Sweep-055 lists sovereign-clean-room CI green; Sweep-052 history lists it red. **Not resolved this cycle.** Do not treat VSA as validated here.
+
+### Classify
+- **ACTIVE** — documented purpose, tests present, CI workflow present, historical green CI, not superseded.
+- Justification: candidate SAGF stack with claim-capped invariants; not RESEARCH-only theory; not ARCHIVED.
+
+### Plan / Implement (idempotent, safe)
+- Added `GOVERNANCE.md` (claim cap, CI pointer, lifecycle).
+- Added `SECURITY.md` (ACTIVE reporting + no-audit-claim).
+- README footer + governance badge. Aesthetic banner preserved.
+- Commits on BlockSwarm: `5f977eaf`, `c74ddab7`, `a5b89d77`.
+
+### Test / CI
+- Agent did not run `forge test` (no Foundry toolchain in this environment).
+- Pending validation: operator or Actions re-run after docs-only commits (docs should not fail Foundry).
+
+### Govern / Release
+- Tag `v0.5.0-sagf` remains operator-only.
+- No destructive actions.
+
+**Exit condition for BlockSwarm:** Near. Remaining: operator tag + live CI confirmation after this push.
+**Portfolio exit:** Not met (tags empty; archive batch pending; VSA CI contradiction unresolved).
+
+---
+
 ## 2026-09-05 — Sweep-052 (census 73; profile master-pro; mapping layer registered)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -53,100 +97,4 @@ Next cycle: re-scan after operator deposits full static engine. One governed swe
 
 ---
 
-## 2026-09-04 — Sweep-051 (Path A structural fix on sovereign-clean-room; full engine still missing)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Scope:** User command "Fix". Address P0 VSA loader under LOADER_HARDENING Path A. No engine source invention. Governance refresh. One sweep; stop.
-
-### Discover / Audit
-- Census still 64. No new names.
-- Recoverable source inventory: `_vsa_part_0..2.py` are partial class fragments only (~170 lines total, mid-method cuts). `_vsa_b64_0..4,8` present; 5–7 never existed. Historical commits claiming "full 654-line engine" contain stubs/placeholders.
-- forge-aegis / BlockSwarm / Digital_Double product CI still green (unchanged run IDs).
-- BlockSwarm tags/releases still empty.
-
-### Implement (safe only)
-- **Path A structural step applied:** replaced `core/clean_room_vsa.py` base64+exec loader with static fail-closed module.
-  - Commit: `9bcfa378380690a203b6e68a67565d47e952a1b2` on sovereign-clean-room.
-  - Import now raises explicit ImportError directing operator to supply complete static engine.
-  - Eliminates import-time `exec` (security/maintainability win per LOADER_HARDENING).
-  - Does **not** invent CleanRoomVSAEngine / CleanRoomGate / jump_start_v01 body.
-- Leftover `_vsa_b64_*.txt` and `_vsa_part_*.py` left in place for operator reference; unused by new module.
-
-### Test / CI
-- sovereign-clean-room: still expected red until operator supplies full static source. Failure mode is now clear ImportError instead of FileNotFoundError on missing chunk.
-- Other priority targets: unchanged green.
-
-### Document / Govern
-- OPERATOR_QUEUE.md, this history updated.
-
-### Open residual (unchanged operator gates)
-- Operator: supply complete static `CleanRoomVSAEngine` (+ Gate, DEFAULT_PROTECTED_ATOMS, jump_start_v01, save/load, …) then delete leftover part/b64 files; re-run Actions.
-- Operator: BlockSwarm `v0.5.0-sagf` tag + Release.
-- Operator: archive batch.
-- Operator: OS-family consolidation; PyNaCl pin after VSA green; Digital Double lockfile bumps.
-
-**Exit condition check:** Not met (P1 CI still blocked by missing full engine source).
-
-Next cycle: re-scan after operator deposits full static engine. One governed fix this run; stop.
-
----
-
-## 2026-09-04 — Sweep-050 (census 64; Cold-Boot activity; priority CI unchanged)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Scope:** Discover all user:beyond-repair repos; read ADL-Governance as source of truth; live-check CI and tags for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce; classify; safe governance-doc update only. No VSA source fabrication. No archive. No tags. One sweep; stop.
-
-### Discover / Audit
-- Total visible: 64 (`user:beyond-repair` search total_count=64)
-- **New since Sweep-049:** none (name set unchanged)
-- **Non-canonical activity:** Project-Cold-Boot last push 2026-09-04T07:13Z (head `bb564e2a`, message “Handoff: max foundation + NEXT_AI_AND_TOOLS guide…”). Workflows total_count=0. Remains RESEARCH.
-- forge-aegis: 6/6 CI **success** (latest 32707052622); tags=[]
-- BlockSwarm: Foundry CI **success** (latest 32707027387); tags=[]; releases=[]
-- sovereign-clean-room: latest run **32714233314 failure** (2026-08-24T09:56Z, head `d69f267`). Loader still expects `_vsa_b64_0..8`; chunks 5–7 missing. Re-listed `core/` this sweep.
-- Digital_Double_virtual_workforce: workflow “Digital Double CI” latest **32707099628 success** (head `117174fec8c54dc68056d43346f2ec9d75e4349f`).
-- Digital Double Dependabot (first page): high nanoid + brace-expansion; medium @humanfs/node / vite / postcss. Queued; not treated as critical runtime CI.
-- sovereign-clean-room Dependabot: PyNaCl medium GHSA-mrfv-m5wm-5w6w still open.
-
-### Classify
-- ACTIVE: BlockSwarm, sovereign-clean-room (CI-blocked), forge-aegis, ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah-, Digital_Double_virtual_workforce
-- RESEARCH: Project-Cold-Boot; blacksite; coherence-drive + Ware/CFT satellites; RealityOS / LegionOS / Sovereign-OS / SovereignOS; acoustic-token-modem; ExoAxis-1; other theory repos per registry
-- SUPERSEDED: SEEM-* family, My-mind-A.I., Gia, Auto_Legion, CFT-v3.0
-- FROZEN / archive-target: Digital Double siblings, VigilE.S.A., FortiTrade, legacy bots/stubs
-- ARCHIVED (GitHub-side): CFT-v3.0 only
-- No ACTIVE promotions this cycle.
-
-### Plan / Implement
-- Safe: governance doc refresh (this history, PORTFOLIO_STATUS_REPORT, OPERATOR_QUEUE, registry census date).
-- Unsafe / deferred: VSA reconstruction, git tags, `gh repo archive`, PyNaCl bump without green VSA baseline, Digital Double lockfile bumps, game-prototype CI creation.
-- Idempotent: residual operator items unchanged except sweep id + Cold-Boot last-push note.
-
-### Test / CI
-- forge-aegis: Empirical green.
-- BlockSwarm: Empirical green.
-- Digital_Double_virtual_workforce: Empirical green (product CI).
-- sovereign-clean-room: Empirical red — blocks P1 terminal state.
-- blacksite / Project-Cold-Boot / ExoAxis-1: no CI present (expected for RESEARCH stubs).
-
-### Document / Govern
-- PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history; registry census date → Sweep-050.
-
-### Open residual
-- Operator: restore missing VSA b64 chunks 5–7 **or** single full clean_room_vsa.py
-- Operator: push BlockSwarm v0.5.0-sagf tag + GitHub Release
-- Operator: archive batch (archive_queue.md)
-- Operator: consolidate RealityOS / LegionOS / Sovereign-* family
-- forge-aegis v0.1.0 content + tag still open
-- Private Digital_Double_Virtual_Workforce_4.2 remains a sibling (not merged)
-- Pin PyNaCl >= 1.6.2 after VSA restore
-- ExoAxis-1 remains RESEARCH until tests/CI exist
-- blacksite remains RESEARCH until tests/CI exist
-- Project-Cold-Boot remains RESEARCH until tests/CI exist
-- Operator: Digital Double lockfile bumps (high Dependabot)
-
-**Exit condition check:** Not met (critical CI failure on P1, tags missing, archives pending, OS family unconsolidated).
-
-Next cycle: re-scan after operator VSA fix; otherwise hold on P1 and continue safe governance hygiene. Enter maintenance mode only when all exit criteria satisfied. One governed sweep this run; stop.
-
----
-
-Prior cycles Sweep-001…49: see git history. Exit condition not met.
+Prior cycles Sweep-001…55: see git history. Exit condition not met.
