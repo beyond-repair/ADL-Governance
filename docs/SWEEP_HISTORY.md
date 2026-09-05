@@ -2,6 +2,37 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-05 — Sweep-064b (security PR open — PyNaCl + nanoid)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Scope:** Execute the two open P0 dependency pins identified in Sweep-061/064 via branch + PR (code-review path). No tags. No archive. No FLS expansion.
+
+### Discover / Evidence
+- sovereign-clean-room `requirements.txt`: `pynacl==1.5.0` (affected <1.6.2 per GHSA-mrfv-m5wm-5w6w / CVE-2025-69277).
+- Digital_Double_virtual_workforce `package.json`: `nanoid: ^5.0.6` (affected window ≥4.0.0 ≤5.1.10 per GHSA-xwg4-73v4-xw9w / CVE-2026-73086; later non-secure loop fixed in 5.1.16).
+- Stale Dependabot group PR Digital_Double#3 (2025-07) not used as vehicle.
+
+### Implement
+- **sovereign-clean-room PR #1** — branch `fix/pynacl-1.6.2-cve-2025-69277`
+  - `pynacl==1.5.0` → `pynacl>=1.6.2`
+  - URL: https://github.com/beyond-repair/sovereign-clean-room/pull/1
+- **Digital_Double_virtual_workforce PR #4** — branch `fix/nanoid-5.1.11-ghsa-xwg4`
+  - `nanoid: ^5.0.6` → `^5.1.16`
+  - URL: https://github.com/beyond-repair/Digital_Double_virtual_workforce/pull/4
+  - Note: lockfile regenerate (`npm install`) still required before merge.
+- ADL-Governance OPERATOR_QUEUE.md updated to PR-OPEN status.
+
+### Validation pending
+- CI green on both PR branches.
+- Digital Double: operator lockfile refresh.
+- Merge is operator decision after review.
+
+### Exit
+- P0 advisory code path advanced to PR. Tags, archives, and lockfile still operator.
+- Portfolio exit **not met**.
+
+---
+
 ## 2026-09-05 — Sweep-064 (live re-verify + residual close)
 
 **Agent:** Grok (ADL-SEEM governed)
