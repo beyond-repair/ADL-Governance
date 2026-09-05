@@ -1,8 +1,8 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-04 (Sweep-050) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-05 (Sweep-052) · **Governing source:** this repository
 
-Visible GitHub search count: 64. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: **73**. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
 
 ---
@@ -11,13 +11,13 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; CI green (32707027387); tag v0.5.0-sagf PENDING |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (missing VSA b64 5–7). Maturity suspended. Medium Dependabot: PyNaCl. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI 6/6 green; v0.1.0 open |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-04 | 0 | 3 | This repo |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; CI green; tag v0.5.0-sagf PENDING |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (VSA incomplete). Maturity suspended. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI green; v0.1.0 open |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-05 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution, claim policy, response contract v3.0 |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 3 | Public canonical; product CI **32707099628 success**; lockfile Dependabot high/medium queued |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 3 | Public canonical; product CI green; lockfile Dependabot queued |
 
 \* Do not treat sovereign-clean-room as maturity 4 while CI is red.
 
@@ -25,35 +25,46 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 ## RESEARCH (Claim level ≤ 2)
 
+### Mapping / Census Layer (registered Sweep-052)
+
+| Name | Maturity | Claim level | Notes |
+|------|----------|-------------|-------|
+| [ADL-Portfolio-Census](https://github.com/beyond-repair/ADL-Portfolio-Census) | 1 | 0–1 | Deterministic SCAN/FORK/ANCHOR inventory; claim-capped |
+| [aegis-repo-graph](https://github.com/beyond-repair/aegis-repo-graph) | 1 | 0–1 | FLS-aligned Artifact Graph of the portfolio; claim-capped |
+| [adl-capability-matrix](https://github.com/beyond-repair/adl-capability-matrix) | 1 | 0–1 | Cluster matrix + compatible-build queue; claim-capped |
+| [adl-function-census](https://github.com/beyond-repair/adl-function-census) | 1 | 0–1 | Module-surface function census; claim-capped |
+| [sunder](https://github.com/beyond-repair/sunder) | 1 | 0–1 | Local-first autonomous coding agent; claim-capped |
+| [sunder-cleanroom-vsa-adapter](https://github.com/beyond-repair/sunder-cleanroom-vsa-adapter) | 1 | 0–1 | VSA surface adapter (contract only); claim-capped |
+| [seem-sunder-bridge](https://github.com/beyond-repair/seem-sunder-bridge) | 1 | 0–1 | Interop contract; claim-capped |
+| [seem-identity-unifier](https://github.com/beyond-repair/seem-identity-unifier) | 1 | 0–1 | SEEM identity map; claim-capped |
+| [os-family-constitution-map](https://github.com/beyond-repair/os-family-constitution-map) | 1 | 0–1 | Identity map for Sovereign-OS family; claim-capped |
+
+### Other RESEARCH
+
 | Name | Maturity | Claim level (default) | Notes |
 |------|----------|----------------------|-------|
-| Project-Cold-Boot | 1 | 0–1 | Public GDScript game prototype (created 2026-09-03; last push 2026-09-04); **no CI**; do not promote ACTIVE until tests+CI exist |
-| blacksite | 1 | 0–1 | Private JS game prototype (created 2026-09-02; last push 2026-09-03); **no CI**; do not promote ACTIVE until tests+CI exist |
-| coherence-drive | 3 | 1 | Master physics index; last push 2026-08-31 |
-| ware-constant-phenomenology | 3 | 1–2 | last push 2026-08-31 |
+| Project-Cold-Boot | 1 | 0–1 | Public GDScript game prototype; **no CI** |
+| blacksite | 1 | 0–1 | Private JS game prototype; **no CI** |
+| coherence-drive | 3 | 1 | Master physics index |
+| ware-constant-phenomenology | 3 | 1–2 | |
 | -ware-constant-derivation | 2 | 1 | |
 | CFTv3.3-IQG-Unified-Framework | 2 | 1 | Prefer over CFT-v3.x |
-| CFT-v3.1 | 2 | 1 | Prefer 3.3 |
-| momentum-closure | 2 | 1 | Satellite; last push 2026-08-31 |
-| stress-tensor-modification | 2 | 1 | Satellite; last push 2026-08-31 |
+| momentum-closure | 2 | 1 | Satellite |
+| stress-tensor-modification | 2 | 1 | Satellite |
 | m2-renormalization-law | 2 | 1 | Satellite |
 | topological-pinch | 2 | 1 | Satellite |
 | thrust-target-30 | 2 | 1 | Engineering *target*, not Level 5 |
 | sierpinski-geometry-045 | 2 | 1 | Geometry |
-| -Entanglement-and-Emergence | 2 | 0–1 | |
-| -text-informational-fork-protocol- | 2 | 0–1 | |
-| The-Origin-Point-Hypothesis. | 2 | 0–1 | |
-| optimization-limit-conjecture | 2 | 1 | |
 | acoustic-token-modem | 2 | 0–1 | Measurement gate explicit |
-| RealityOS | 1 | 0–1 | Decision-infra concept; no Level-5 |
+| RealityOS | 1 | 0–1 | Decision-infra concept |
 | LegionOS | 1 | 0–1 | Company holarchy concept |
 | Sovereign-OS | 1 | 0–1 | Public constitutional OS sketch |
 | SovereignOS | 1 | 0–1 | Private sibling; consolidate |
-| ExoAxis-1 | 1 | 0–1 | README-only (2026-08-30); network-pharmacology docs; no CI |
+| ExoAxis-1 | 1 | 0–1 | README-only; network-pharmacology docs; no CI |
 
 **Canonical Ware law:** `W(n)=0.08*exp(0.23*(n-3))`
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer.
 
 ---
 
@@ -107,7 +118,7 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 | Name | Notes |
 |------|-------|
-| beyond-repair | Profile README — point at canonical ACTIVE set |
+| beyond-repair | Profile README — master-pro standard (Sweep-052) |
 
 ---
 
@@ -121,8 +132,15 @@ ADL-Governance (policy · claims · lifecycle)
     ├── forge-aegis (ACTIVE) ↔ AEGIS-Project-Nehemiah-
     ├── Digital_Double_virtual_workforce (ACTIVE product, CI green)
     ├── coherence-drive (RESEARCH ≤2) ←── Ware/CFT satellites
+    ├── Mapping / Census layer (RESEARCH claim-capped)
+    │       ├── ADL-Portfolio-Census
+    │       ├── aegis-repo-graph
+    │       ├── adl-capability-matrix
+    │       ├── adl-function-census
+    │       ├── sunder + adapters/bridges
+    │       └── os-family-constitution-map / seem-identity-unifier
     ├── ExoAxis-1 (RESEARCH ≤1; README-only)
     ├── blacksite (RESEARCH ≤1; private game prototype; no CI)
     ├── Project-Cold-Boot (RESEARCH ≤1; public GDScript prototype; no CI)
-    └── RealityOS / LegionOS / Sovereign-OS* (RESEARCH; consolidate)
+    └── RealityOS / LegionOS / Sovereign-OS* (RESEARCH; partially mapped)
 ```
