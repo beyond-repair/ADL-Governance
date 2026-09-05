@@ -2,6 +2,56 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-05 — Sweep-066 (random select: acoustic-token-modem)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** PRNG seed 20260905 over the 74-name census (`user:beyond-repair` search); result `acoustic-token-modem`.
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST (local pytest) → CI → DOCUMENT → GOVERN → RE-AUDIT.
+
+### Discover
+- Tree SHA `013305daeeb54c6c1d51372f22d8ace134736976` (pre-sweep main).
+- Package `src/acoustic_token_modem/` with tokenizer, protocol (packet/CRC/framing), FSK modulation, channel sim, metrics, FEC/interleave stubs.
+- Placeholders: OFDM/PSK/QAM, some demod/metrics modules (expected RESEARCH stubs).
+- Tests: 9 files under `tests/`; central invariant in `test_roundtrip.py`.
+- Docs: README claim-capped RESEARCH ≤1; RESEARCH.md survey table empty; SECURITY.md present.
+- **No `.github/workflows` before this sweep.**
+- Description already states research-only / no novelty without measurement.
+
+### Audit vs ADL-Governance
+- Already classified RESEARCH in README and PORTFOLIO_STATUS_REPORT.
+- Claim level ≤1 consistent with CLAIM_VALIDATION (simulation ≠ hardware validation).
+- Missing product CI was the primary governance gap for a tested Python package.
+- OFDM/PSK/QAM stubs are documented as later milestones; not undocumented surfaces.
+- No critical security findings in this tree (numpy-only runtime dep).
+
+### Classify
+- **RESEARCH** (claim level ≤1).
+- Justification: experimental acoustic simulation; no hardware measurement; prior-art survey incomplete; OFDM not implemented. CI does not promote to ACTIVE.
+
+### Plan / target this cycle
+- Add pytest GitHub Actions workflow.
+- Reaffirm claim cap in README.
+- Do not implement OFDM or hardware I/O.
+- Do not raise claim level.
+
+### Implement
+- acoustic-token-modem `main` commit `3d4db951669d2c5bda1485ec7b155651e9baaa68`:
+  - `.github/workflows/pytest.yml`
+  - README Sweep-066 note + CI disclaimer
+- This file + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+
+### Test / CI
+- Local: `PYTHONPATH=src pytest tests/ -q` → **12 passed** in 0.13s (numpy 2.4.4).
+- Remote Actions: workflow added; first run pending after push (not yet treated as green).
+
+### Exit for this repo
+- Undocumented components: stubs remain labeled as later milestones.
+- Unsupported claims: remain capped.
+- Critical CI: workflow present; first remote result pending.
+- Portfolio-wide termination: **not** met (HIGH nanoid, missing ACTIVE tags, archive queue).
+
+---
+
 ## 2026-09-05 — Sweep-065 (random select: VigilE.S.A.-Enhanced-Security)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -153,64 +203,4 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 
 ## 2026-09-05 — Sweep-062 (random select: VigilE.S.A.-Enhanced-Security)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Deterministic PRNG seed 20260905 over a candidate subset of the 73-repo census; result `VigilE.S.A.-Enhanced-Security`.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN.
-
-### Discover
-- Tree: Rust-shaped `src/` (agents/ebpf, agents/wasm, core/{cloud,incident,network,vulnerability}, modules/{enclave,hsm,password_audit}), deployments (docker/k8s/terraform), tests/security/network_tests.rs, workflow `.github/workflows/security_pipeline.yml`.
-- Duplicate root docs: `README.md` and `README .md`.
-- **No Cargo.toml, no Cargo.lock.** `src/main.rs` references tokio + unpublished modules.
-- Workflow: checkout + shiftleft/scan-action + cosign-installer. No `cargo test`.
-- Last prior push recorded 2025-01-31 in census; still public, not GitHub-archived.
-
-### Audit vs ADL-Governance
-- Unsupported production-security claims in README (Zero Trust, HSM, SGX/SEV, blockchain logs, AI detection) without Level 5 evidence.
-- Offensive-adjacent filenames (`arp_spoof.rs`, `cracker.rs`) present as small stubs.
-- Registry already listed the repo under FROZEN / product (select or archive).
-- Missing tests/CI as product gates; missing SECURITY.md before this sweep.
-
-### Classify
-- **RESEARCH** (claim level 0). Not ACTIVE. Archive is operator-only; agent did not archive.
-- Justification: incomplete scaffolding, missing build manifest, unverifiable capability claims, stale last engineering activity relative to 2026 ACTIVE set.
-
-### Plan / target state this cycle
-- Cap claims; bind to ADL-Governance; record operator archive option.
-- Do not implement Cargo workspace or offensive modules.
-
-### Implement
-- Pushed commit `daf2ded9851a4165d906d0c6f06f6aecbe2531ea` on Vigil `main`: README.md, CLAIMS.md, GOVERNANCE.md, SECURITY.md.
-- Governance updates: this file, PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md.
-
-### Test / CI
-- No local `cargo test` possible (no manifest). Did not treat SAST workflow as product-green.
-
-### Exit for this repo
-- Documented components: improved.
-- Critical CI as product suite: still absent (accepted for RESEARCH).
-- Unsupported claims: capped.
-- GitHub archive: **not** executed (operator).
-- Portfolio-wide termination: **not** met.
-
----
-
-## 2026-09-05 — Sweep-061 (live re-verify; no implementation change)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selected work:** Re-verify forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce against live Actions, releases/tags, Dependabot.
-
-### Audit (live)
-- forge-aegis: run **33904082644 success**; tags=[]; releases=[]; Dependabot open=0.
-- sovereign-clean-room: run **33904047312 success**; Dependabot open=1 MEDIUM PyNaCl GHSA-mrfv-m5wm-5w6w / CVE-2025-69277.
-- BlockSwarm: run **33949194624 success**; Dependabot open=0; tags=[]; releases=[].
-- Digital_Double_virtual_workforce: run **33904118205 success**; HIGH nanoid alerts 153/154; tags=[]; releases=[].
-
-### Exit
-- Portfolio exit **not met**. Stop after that governed sweep.
-
----
-
-## 2026-09-05 — Sweep-060 / Sweep-059 / Sweep-058 / Sweep-057
-
-Live re-verify cycles. Four-target Actions IDs first locked in Sweep-057.
-Prior cycles Sweep-001…56: see git history. Exit condition not met.
+See git history for full Sweep-062 body and earlier cycles Sweep-001…56. Exit condition not met.
