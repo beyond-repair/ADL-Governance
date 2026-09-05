@@ -1,9 +1,9 @@
 # Operator Queue
 
-**Last updated:** 2026-09-05T07:16Z (Sweep-061 — live re-verify)
+**Last updated:** 2026-09-05T07:20Z (Sweep-062)
 
 Destructive or account-level actions that require human operator. Agent places items here; does not execute.
-**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases.
+**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules.
 
 ## Immediate (P0)
 
@@ -14,6 +14,15 @@ Destructive or account-level actions that require human operator. Agent places i
 | Bump PyNaCl ≥1.6.2 | **sovereign-clean-room** | Pin in requirements.txt; re-run Python tests | OPEN (MEDIUM GHSA-mrfv-m5wm-5w6w / CVE-2025-69277) |
 | Bump lockfile deps | **Digital_Double_virtual_workforce** | nanoid ≥3.3.12 / 5.1.11; re-run CI | OPEN (HIGH GHSA-xwg4-73v4-xw9w alerts 153/154) |
 | Archive batch | archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
+
+## Sweep-062 (VigilE.S.A.)
+
+| Action | Notes | Status |
+|--------|-------|--------|
+| Optional GitHub archive | `gh repo archive beyond-repair/VigilE.S.A.-Enhanced-Security --yes` after confirming no unique production value | PENDING operator |
+| Do **not** implement `arp_spoof` / password cracker | Offensive; out of agent safety scope | LOCKED |
+| Duplicate `README .md` | History-preserving leftover; ignore or operator-delete | OPEN |
+| Add Cargo.toml + tests | Only if product is revived under non-offensive scope | NOT QUEUED as required |
 
 ### BlockSwarm — v0.5.0-sagf
 
@@ -35,7 +44,7 @@ gh release create v0.5.0-sagf --title "v0.5.0-sagf" --notes-file docs/CHANGELOG.
 
 ## Closed this sweep
 
-- **Sweep-061:** Live re-verify of four mandatory targets confirmed Sweep-057/060 Actions IDs still current. No new product CI on those four since last recorded success. No contradiction with live API.
+- **Sweep-062:** Claim-capped VigilE.S.A. docs on `main` (`daf2ded`). No offensive implementation. No archive executed.
 
 ## Rule
 
