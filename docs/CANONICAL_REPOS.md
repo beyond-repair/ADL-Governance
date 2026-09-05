@@ -12,6 +12,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | OpenZeppelin upgradeable contracts, Foundry |
 | **Successors** | — |
 | **Predecessors** | Root Solidity sketches (now `legacy/`) |
+| **Live CI (Sweep-057)** | Foundry run 33949194624 success |
 | **URL** | https://github.com/beyond-repair/BlockSwarm |
 
 ## sovereign-clean-room
@@ -20,10 +21,11 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Offline Clean-Room VSA / SEEM constitutional substrate |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE (CI-blocked until VSA restore) |
-| **Dependencies** | Python, NumPy |
+| **Status** | ACTIVE (CI green on Actions; VSA completeness UNVERIFIED) |
+| **Dependencies** | Python, NumPy, PyNaCl (MEDIUM advisory open) |
 | **Successors** | — |
 | **Predecessors** | SEEM-2.0, SEEM-Cognitive-Microservice(s), seem-block-system |
+| **Live CI (Sweep-057)** | Python tests run 33904047312 success |
 | **URL** | https://github.com/beyond-repair/sovereign-clean-room |
 
 ## ADL-SEEM
@@ -48,6 +50,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | AEGIS-Project-Nehemiah- (spec sibling) |
 | **Successors** | — |
 | **Predecessors** | — |
+| **Live CI (Sweep-057)** | forge-aegis CI run 33904082644 success |
 | **URL** | https://github.com/beyond-repair/forge-aegis |
 
 ## Digital_Double_virtual_workforce
@@ -56,10 +59,11 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Public canonical typed virtual-workforce product surface |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE (product CI green: 32707099628) |
+| **Status** | ACTIVE (product CI green; lockfile Dependabot HIGH open) |
 | **Dependencies** | TypeScript / Python smoke |
 | **Successors** | — |
 | **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 (private newer) |
+| **Live CI (Sweep-057)** | Digital Double CI run 33904118205 success |
 | **URL** | https://github.com/beyond-repair/Digital_Double_virtual_workforce |
 
 ## coherence-drive

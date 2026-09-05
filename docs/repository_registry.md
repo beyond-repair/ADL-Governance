@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-05 (Sweep-052) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-05 (Sweep-057) · **Governing source:** this repository
 
 Visible GitHub search count: **73**. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
@@ -11,15 +11,15 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-08-24 | 0 | 4 | SAGF; CI green; tag v0.5.0-sagf PENDING |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-08-24 | 0 | 2* | Canonical SEEM substrate; **CI red** (VSA incomplete). Maturity suspended. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-08-24 | 0 | 2 | FLS early; CI green; v0.1.0 open |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-09-05 | 0 | 4 | SAGF; Foundry run 33949194624 success; tag v0.5.0-sagf PENDING |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-09-04 | 0 | 3 | Canonical SEEM substrate; **CI success** 33904047312. VSA completeness UNVERIFIED. PyNaCl MEDIUM open. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-09-04 | 0 | 2 | FLS early; CI success 33904082644; v0.1.0 tag open |
 | [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-05 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution, claim policy, response contract v3.0 |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-08-24 | 1 | 3 | Public canonical; product CI green; lockfile Dependabot queued |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-09-04 | 1 | 3 | Public canonical; product CI success 33904118205; lockfile Dependabot HIGH nanoid |
 
-\* Do not treat sovereign-clean-room as maturity 4 while CI is red.
+Do not treat sovereign-clean-room VSA as production-complete. CI green is only an Actions conclusion.
 
 ---
 
@@ -127,10 +127,10 @@ Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VA
 ```text
 ADL-Governance (policy · claims · lifecycle)
     ├── ADL-SEEM (SEEM-specific constitution · response contract v3.0)
-    │       └── sovereign-clean-room (ACTIVE, CI-blocked) ←── SEEM-* + My-mind + Gia patterns
-    ├── BlockSwarm (ACTIVE, tag pending)
+    │       └── sovereign-clean-room (ACTIVE, CI green, VSA UNVERIFIED) ←── SEEM-* + My-mind + Gia patterns
+    ├── BlockSwarm (ACTIVE, tag pending, Foundry green)
     ├── forge-aegis (ACTIVE) ↔ AEGIS-Project-Nehemiah-
-    ├── Digital_Double_virtual_workforce (ACTIVE product, CI green)
+    ├── Digital_Double_virtual_workforce (ACTIVE product, CI green, lockfile HIGH)
     ├── coherence-drive (RESEARCH ≤2) ←── Ware/CFT satellites
     ├── Mapping / Census layer (RESEARCH claim-capped)
     │       ├── ADL-Portfolio-Census
