@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-05 (Sweep-057) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-05 (Sweep-060) · **Governing source:** this repository
 
 Visible GitHub search count: **73**. Classifications: ACTIVE | RESEARCH | FROZEN | SUPERSEDED | ARCHIVED.
 Maturity 1–5: Incomplete → Production Ready. Claim levels 0–5 per CLAIM_VALIDATION.md.
@@ -61,6 +61,11 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 | Sovereign-OS | 1 | 0–1 | Public constitutional OS sketch |
 | SovereignOS | 1 | 0–1 | Private sibling; consolidate |
 | ExoAxis-1 | 1 | 0–1 | README-only; network-pharmacology docs; no CI |
+| optimization-limit-conjecture | 1 | 0–1 | Formal obstruction-floor research; Sweep-060 light-classified |
+| The-Origin-Point-Hypothesis. | 1 | 0–1 | TeX research; Sweep-060 light-classified |
+| CFT-v3.1 | 1 | 0–1 | Prefer CFTv3.3; Sweep-060 light-classified |
+| -Entanglement-and-Emergence | 1 | 0–1 | Emergent-spacetime notes; Sweep-060 light-classified |
+| -text-informational-fork-protocol- | 1 | 0–1 | Falsifiable protocol notes; Sweep-060 light-classified |
 
 **Canonical Ware law:** `W(n)=0.08*exp(0.23*(n-3))`
 

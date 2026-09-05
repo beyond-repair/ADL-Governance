@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-05T07:08Z (autonomous Sweep-059)
+**Updated:** 2026-09-05T07:15Z (autonomous Sweep-060)
 
 ## Executive Summary
 
@@ -10,15 +10,15 @@
 | P1 | sovereign-clean-room | CI **success** run 33904047312 (2026-09-04); PyNaCl MEDIUM open | No |
 | P1 | Digital_Double_virtual_workforce | Product CI **success** run 33904118205; Dependabot HIGH nanoid open | No |
 | P2 | BlockSwarm | ACTIVE; Foundry **success** run 33949194624; tags=[] | Near (operator tag) |
-| P2 | ADL-Governance | Registry + this report synchronized (Sweep-059) | Yes (self) |
+| P2 | ADL-Governance | Registry + this report synchronized (Sweep-060) | Yes (self) |
 | P3 | AEGIS-Project-Nehemiah- | Spec sibling | Parallel |
 | P4 | coherence-drive + satellites | RESEARCH | Ongoing |
 | P5 | Legacy / SEEM / archive | Queued | Partial |
 | Mapping | 9 claim-capped repos | RESEARCH / metadata | Registered |
 
-Census: **73** visible (`user:beyond-repair`). Sweep-059 is a live re-verification cycle. No new implementation claims.
+Census: **73** visible (`user:beyond-repair`). Sweep-060 is a live re-verification cycle. No new implementation claims.
 
-## Live verification (Sweep-059)
+## Live verification (Sweep-060)
 
 | Repo | Workflow | Latest product/CI run | Conclusion | Tags | Releases | Open Dependabot |
 |------|----------|------------------------|------------|------|----------|-----------------|
@@ -42,15 +42,16 @@ Census: **73** visible (`user:beyond-repair`). Sweep-059 is a live re-verificati
 | BlockSwarm Foundry suite this agent | PARTIAL (Actions green; local forge not run) |
 | Digital Double lockfile patch | PLANNED |
 | GitHub Archive batch | PLANNED |
+| Census leftovers light-classified RESEARCH | VERIFIED (Sweep-060 docs) |
 
 ## Residual gaps vs exit criteria
 
-- [x] Four-target live Actions re-verified Sweep-059 (same run IDs as Sweep-057/058; no newer product CI)
+- [x] Four-target live Actions re-verified Sweep-060 (same run IDs as Sweep-057–059; no newer product CI)
+- [x] Light classification of previously lightly classified census names → RESEARCH default
 - [ ] No tags on four mandatory targets
 - [ ] Archive batch pending operator
 - [ ] Duplicate Digital Double private siblings
 - [ ] Open Dependabot: PyNaCl MEDIUM; Digital Double HIGH nanoid (dev lockfile)
-- [ ] Registry drift: a few visible names (e.g. `optimization-limit-conjecture`, `The-Origin-Point-Hypothesis.`, `CFT-v3.1`, `-Entanglement-and-Emergence`, `-text-informational-fork-protocol-`) are census-listed but lightly classified
 
 **Maintenance mode not entered.** Portfolio exit **not met**.
 
