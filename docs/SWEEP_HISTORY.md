@@ -2,6 +2,39 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-06 — Sweep-081 (random select: VigilE.S.A.-Enhanced-Security)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Next public repo from `user:beyond-repair` updated-desc inventory not processed in Sweep-071…080 (trading / Digital Double / OS / sunder cluster). Seed cycle after Sweep-080.
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN → STOP.
+
+### Discover
+- Tree count=49. Rust sketch: `src/main.rs`, agents (ebpf, wasm), core (cloud, incident, network/mitm/arp_spoof, vulnerability), modules (enclave, hsm, password_audit/cracker), deployments (docker/k8s/terraform), `config/security.toml`.
+- Docs already claim-capped Sweep-065: README, CLAIMS.md, GOVERNANCE.md, SECURITY.md.
+- Duplicate blob `README .md` still present.
+- **No Cargo.toml / Cargo.lock.**
+- Workflow: `.github/workflows/security_pipeline.yml` — checkout + `shiftleft/scan-action@v3` + `sigstore/cosign-installer@v3`. No `cargo test`.
+- Actions API this cycle: run **33992096428** (2026-09-05, head `56850e81`) conclusion=`failure`; prior run 33952217890 also `failure`.
+- Offensive-named stubs present; bodies not expanded this cycle.
+
+### Classify
+- **RESEARCH** (unchanged from Sweep-065).
+- Justification: incomplete scaffolding, missing crate manifest, CI not product tests, capability names UNVERIFIED. Not ACTIVE. Not SUPERSEDED (no successor named with import evidence). Archive remains operator-only.
+
+### Implement
+- Target repo README / CLAIMS / GOVERNANCE Sweep-081 lock — commit `9cfc0eaaef8f2fa0233d47f7c2c801766f68be00`.
+- Did **not** implement arp_spoof / cracker / MITM (operator/safety).
+- Did **not** add Cargo.toml (would imply product crate without evidence).
+- Did **not** GitHub-archive. No history rewrite. No tag.
+
+### Exit
+- Classification + claim-cap: met.
+- CI green product suite: **not** met (recorded failure).
+- Portfolio-wide termination: **not** met.
+- Stop after this governed sweep (no infinite loop this turn).
+
+---
+
 ## 2026-09-06 — Sweep-080 (select: sunder README claim-cap + Phase 3 re-poll)
 
 **Agent:** Grok (ADL-SEEM governed)
