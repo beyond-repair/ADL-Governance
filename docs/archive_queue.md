@@ -5,8 +5,9 @@ Repositories with `ARCHIVED.md` (or superseded) that still need **GitHub Archive
 Check off when `gh repo archive` succeeds.
 
 **Gate:** Do not archive until Stage-1 extraction rows in sovereign-clean-room/docs/EXTRACTION_LEGACY.md are VERIFIED and tests green.
+**Sweep-076 extra gate:** do not archive `digital-double-mobile` until committed `.env` credentials are rotated.
 
-## Priority batch (extraction complete 2026-08-24 — archive after VERIFIED)
+## Priority batch
 
 - [ ] beyond-repair/RepoRover-
 - [ ] beyond-repair/genieGPT
@@ -22,12 +23,12 @@ Check off when `gh repo archive` succeeds.
 - [ ] beyond-repair/Quantumclustering
 - [ ] beyond-repair/-Py2APK-main
 - [ ] beyond-repair/quantum_A.I._optimization.py
-- [ ] beyond-repair/Digital-Double_Mobile
-- [ ] beyond-repair/digital-double-mobile
+- [ ] beyond-repair/Digital-Double_Mobile  (stub; SUPERSEDED.md + ARCHIVED.md present)
+- [ ] beyond-repair/digital-double-mobile  (Sweep-076 banner; **rotate .env first**)
 - [ ] beyond-repair/DigitalDoubleVirtualWorkforce3.5
-- [ ] beyond-repair/Digital_Double_Virtual_Workforce_4.  (Sweep-075: empty predecessor; banner applied)
-- [ ] beyond-repair/My-mind-A.I. (branch main2) — **patterns extracted**
-- [ ] beyond-repair/Gia---General-Intelligence-Assistant — **patterns extracted**
+- [ ] beyond-repair/Digital_Double_Virtual_Workforce_4.  (Sweep-075 banner)
+- [ ] beyond-repair/My-mind-A.I. (branch main2)
+- [ ] beyond-repair/Gia---General-Intelligence-Assistant
 - [ ] beyond-repair/new-program-1.01
 - [ ] beyond-repair/FortiTrade_Multi-Strategy
 - [ ] beyond-repair/btc-trading
@@ -47,9 +48,3 @@ gh repo archive OWNER/REPO --yes
 ```
 
 Do not delete. Preserve history.
-
-## Stage-1 note
-
-2026-08-24: TaskAtom / Episode / promote_memskill / CapabilityRegistry landed in
-sovereign-clean-room (commit on main). Run tests/test_stage1_extraction.py before
-checking boxes above.

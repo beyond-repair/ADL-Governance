@@ -2,87 +2,69 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-06 — Sweep-075 (select: Digital_Double_Virtual_Workforce_4.)
+## 2026-09-06 — Sweep-076 (select: digital-double-mobile)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Operator-queue residual (SUPERSEDED banner still OPEN after Sweep-067/074).
+**Selection method:** Operator-queue residual (mobile-pair SUPERSEDED banner still OPEN after Sweep-075).
 **Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN → STOP.
 
 ### Discover
-- Live `get_file_contents` on default branch: **409 empty repository** (no `refs/heads/main` before this sweep).
-- No source, tests, workflows, tags, or releases.
+- Tree includes historical `backend/`, `frontend/`, `server.js`, committed `node_modules`, placeholder empty assets, `SUPERSEDED.md` (one-liner), and a marketing README whose feature list is **not** treated as demonstrated.
+- No `.github/workflows` observed this cycle.
+- Sibling `Digital-Double_Mobile` is an empty stub with SUPERSEDED.md + ARCHIVED.md.
 - Successor already listed in CANONICAL_REPOS.md: Digital_Double_virtual_workforce.
+- **Security:** `.env` is a file on default branch. Contents were **not** copied into governance docs.
 
 ### Live verification (mandatory four)
-- forge-aegis: CI **success** 33904082644; tags=[]; releases=[].
-- sovereign-clean-room: Python tests **success** 33979476402 on main `33a1caca`; open Dependabot list empty this cycle.
-- BlockSwarm: Foundry **success** 33986287866 on `a79c83f0`; tags=[]; releases=[].
-- Digital_Double_virtual_workforce: main CI **success** 33979714262; PR CI **success** 33979889902 (#6), 33979881954 (#5); Dependabot HIGH still **open** (#153 nanoid, #155/#157 browserslist).
+- forge-aegis: CI **success** 33904082644; tags/releases missing.
+- sovereign-clean-room: Python tests **success** 33979476402 on main `33a1caca`.
+- BlockSwarm: Foundry **success** 33986287866 on `a79c83f0`; tags/releases missing.
+- Digital_Double_virtual_workforce: main CI **success** 33979714262; PR CI **success** #5/#6; Dependabot HIGH still **open**.
 
 ### Classify
 - **SUPERSEDED**.
-- Justification: empty predecessor name in the Digital Double lineage; product surface lives on the public canonical; no demonstrated features.
+- Justification: mobile-adjacent predecessor / sketch; product surface lives on the public canonical; README features are planning text; no product CI.
 
 ### Implement
-- Target repo: README SUPERSEDED banner commit `2d235a931e3de34e2bd472968e68fcc61eb45027`.
-- This repository: PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md, archive_queue.md.
-- No history rewrite. No archive execution (operator-only).
+- Target repo: README Sweep-076 claim-cap banner commit `4327361f8fa7430f5038c599a0c657a6236b0f9e`.
+- This repository: PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md, archive_queue.md, repository_registry.md.
+- No history rewrite. No archive execution. `.env` not deleted this cycle (operator must rotate first).
 
 ### Exit
 - Per-repo target (documented SUPERSEDED + successor pointer + banner) met.
-- GitHub `archived` flag still false — queued.
-- Portfolio-wide termination **not** met (HIGH Dependabot on canonical Digital Double, missing ACTIVE tags, archive queue).
+- GitHub `archived` flag still false — queued after secret rotation.
+- Portfolio-wide termination **not** met (HIGH Dependabot on canonical Digital Double, committed `.env` on mobile sketch, missing ACTIVE tags, archive queue).
 - Stop after this governed sweep (no infinite loop).
+
+---
+
+## 2026-09-06 — Sweep-075 (select: Digital_Double_Virtual_Workforce_4.)
+
+**Classify:** SUPERSEDED. Banner `2d235a931e3de34e2bd472968e68fcc61eb45027`.
 
 ---
 
 ## 2026-09-06 — Sweep-074 (random select: DigitalDoubleVirtualWorkforce3.5)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Python `random.seed(20260906)` over 75-name `user:beyond-repair` census → `beyond-repair/DigitalDoubleVirtualWorkforce3.5`.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN → STOP.
-
-### Discover
-- Tree: README (already SUPERSEDED banner), pytest.ini, requirements.txt, src/ (including paste-filename artifacts under src/core/), tests/conftest.py only, docs/CHANGELOG.md.
-- No `.github/workflows`. No tags/releases observed this cycle.
-- Successor already listed in CANONICAL_REPOS.md: Digital_Double_virtual_workforce.
-
-### Classify
-- **SUPERSEDED**.
-- Justification: predecessor of the public canonical Digital Double product; README already forbids feature work; source is historical/fragmented; CI product surface lives on the successor.
-
-### Implement
-- Target repo docs: README Sweep-074 banner, docs/CHANGELOG.md, docs/SWEEP_074.md.
-- This repository: PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md.
-- No history rewrite. No archive execution (operator-only).
-
-### Exit
-- Per-repo target (documented SUPERSEDED + successor pointer) met for classification/docs.
-- GitHub `archived` flag still false — queued.
-- Portfolio-wide termination **not** met (HIGH Dependabot on canonical Digital Double, missing ACTIVE tags, archive queue).
-- Stop after this governed sweep (no infinite loop).
+**Classify:** SUPERSEDED.
 
 ---
 
 ## 2026-09-06 — Sweep-073 (random select: LegionOS)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** SHA-256(`2026-09-06-cycle-sweep-adl`) mod 75 over `user:beyond-repair` census → index 6 → `beyond-repair/LegionOS`.
 **Classify:** RESEARCH / claim 0.
 
 ---
 
 ## 2026-09-06 — Sweep-072 (random select: genieGPT)
 
-**Classify:** ARCHIVED candidate.
-**Implement:** `dad74fd4dd32df481e84521347ac9ad9dc00d385`.
+**Classify:** ARCHIVED candidate. Implement `dad74fd4dd32df481e84521347ac9ad9dc00d385`.
 
 ---
 
 ## 2026-09-06 — Sweep-071 (random select: btc-trading)
 
-**Classify:** ARCHIVED candidate.
-**Implement:** `a5fc3f893bf5b00907aa1ebbaa40df3e757354f6`.
+**Classify:** ARCHIVED candidate. Implement `a5fc3f893bf5b00907aa1ebbaa40df3e757354f6`.
 
 ---
 
