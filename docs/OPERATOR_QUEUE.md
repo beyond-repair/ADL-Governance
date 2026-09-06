@@ -1,9 +1,9 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T21:12Z (Sweep-087 — smart_home_BCI ARCHIVED lock)
+**Last updated:** 2026-09-06T22:10Z (Sweep-088 — RepoRover- ARCHIVED lock)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
-**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing simulation/BCI code. Agent will not invent CI green without a workflow run.
+**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing simulation/BCI/v2 intelligence code. Agent will not invent CI green without a workflow run.
 
 ## Immediate (P0)
 
@@ -15,14 +15,15 @@ Destructive or account-level actions that require a human operator. Agent record
 | Review then merge Dependabot | **Digital_Double_virtual_workforce** | Open PRs **#3 #4 #5 #6**. #5 grouped npm incl. Vite **major** 5.4.14→8.2.2. CI green on #5/#6. Do not squash-merge blindly. | **OPEN** |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 | GitHub-archive | **smart_home_BCI** | `gh repo archive beyond-repair/smart_home_BCI --yes` after Sweep-087 docs lock `881844c1` | PENDING |
+| GitHub-archive | **RepoRover-** | `gh repo archive beyond-repair/RepoRover- --yes` after Sweep-088 docs lock `4aa25674` | PENDING |
 
-### Closed this cycle (Sweep-087)
+### Closed this cycle (Sweep-088)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit smart_home_BCI | ARCHIVED lock; workflows=0; commit `881844c1` | **DONE** |
+| Re-audit RepoRover- | ARCHIVED lock; product CI absent; commit `4aa25674` | **DONE** |
 
-### Still open from Sweep-067…086
+### Still open from Sweep-067…087
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -51,6 +52,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Do not promote ADL-Nexus to ACTIVE without CI + tag | Sweep-086 | DEFERRED |
 | Optional: add `python-tests.yml` to ADL-Nexus | Operator/product decision; agent did not invent passing CI | OPEN |
 | Do not execute smart_home_bci.py against live Hue/door hardware | Sketch unlocks door; undefined imports | DEFERRED |
+| Do not resurrect RepoRover v2 dashboard | Mapping already in census/governance | DEFERRED |
 
 ### BlockSwarm — v0.5.0-sagf
 

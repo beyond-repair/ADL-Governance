@@ -2,18 +2,17 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-06 — Sweep-087 (select: smart_home_BCI)
+## 2026-09-06 — Sweep-088 (select: RepoRover-)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Random eligible public repo not used as *primary* target in Sweep-071…086. `smart_home_BCI` was on `docs/archive_queue.md` with a one-line ARCHIVED.md and a README still advertising resurrection.
+**Selection method:** Next archive-queue public repo not used as *primary* target in Sweep-071…087. `RepoRover-` had `ARCHIVED.md` (2026-08-23) while README (2026-09-05) advertised a v2 resurrection.
 **Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → Phase 3 re-poll four → DOCUMENT → GOVERN → STOP.
 
 ### Discover
-- Census total_count=75, incomplete_results=false.
-- Tree SHA `25aae80f6180d1ab0c2570f71ab099bc1357dea5` (pre-lock): `.gitignore`, `ARCHIVED.md` (39 bytes), `LICENSE`, `README.md`, `smart_home_bci.py`.
-- **Absent:** tests, requirements, device adapters, `.github/workflows`.
-- Actions list workflows total_count=0. Branch: main only.
-- Script imports `bci` and constructs `SmartHome('192.168.0.1')` with no in-tree definitions.
+- Census total_count=75, incomplete_results=false. Authenticated user public_repos=72.
+- Tree SHA `a74b77b5a020ebc2f0d7f6cd94a0c2518f6dbd06` (pre-lock): `ARCHIVED.md`, `README.md`, `RepoRover/{README.md,RepoRover.py,readmeMD.csv,requirements.txt}`.
+- **Absent:** tests, product `.github/workflows`, LICENSE at root, tags, releases.
+- Actions: Dependabot Updates only. Branch: main only.
 
 ### Live CI (mandatory four, this cycle)
 - forge-aegis CI run 33904082644 success.
@@ -24,12 +23,12 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 
 ### Classify
 - **ARCHIVED** (locked).
-- Justification: historical unrunnable sketch; already on archive_queue; README resurrection language contradicted ARCHIVED.md (drift).
-- Not ACTIVE. Not RESEARCH (terminal historical). Not SUPERSEDED (no named product successor).
+- Justification: historical untested scraper; already on archive_queue; README resurrection contradicted ARCHIVED.md (drift). Mapping capability already exists in census/governance RESEARCH+ACTIVE docs.
+- Not ACTIVE. Not RESEARCH (terminal historical). Successor for *portfolio map* is ADL-Governance + census layer, not a new runtime.
 
 ### Implement
-- ARCHIVED.md + CLAIM_STATUS.md + README Sweep-087 lock — commit `881844c1ee0abda0a37296fd6567f83a8a8e85ef`.
-- Did **not** invent `bci` / Hue / door adapters.
+- ARCHIVED.md + CLAIM_STATUS.md + README Sweep-088 lock — commit `4aa25674dc55b3e2030b48ac1dee5d39c508f9d4`.
+- Did **not** invent v2 dashboard or tests.
 - Did **not** GitHub-archive (`gh repo archive` is operator-only).
 - No history rewrite. No tag.
 
@@ -40,35 +39,32 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 
 ---
 
-## 2026-09-06 — Sweep-086 (select: ADL-Nexus)
+## 2026-09-06 — Sweep-087 (select: smart_home_BCI)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Next public repo from inventory not processed as *primary* target in Sweep-071…085 (after ExoAxis-1 Sweep-085).
+**Selection method:** Random eligible public repo not used as *primary* target in Sweep-071…086.
 **Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → Phase 3 re-poll four → DOCUMENT → GOVERN → STOP.
 
 ### Discover
 - Census total_count=75, incomplete_results=false.
-- Tree SHA `57cd80b5a91294ec137d91460c1d1423e666cf0e` (pre-lock).
-- Present: core/, layers 0–8 (4/6/8 scaffold), adapters, client (Godot + web), tests (5 files), docs.
-- Actions list workflows total_count=0. Releases=[] Tags=[]. Branch: main only.
+- Tree SHA `25aae80f6180d1ab0c2570f71ab099bc1357dea5` (pre-lock).
+- Actions list workflows total_count=0. Branch: main only.
 
 ### Classify
-- **RESEARCH** (locked).
-
-### Implement
-- RESEARCH.md + README + CLAIM_STATUS Sweep-086 lock — commit `2a1224530ec801a8ec5679cfe625adc42ccd34f2`.
+- **ARCHIVED** (locked). Commit `881844c1ee0abda0a37296fd6567f83a8a8e85ef`.
 
 ### Exit
 - Portfolio-wide termination: **not** met.
 
 ---
 
-## 2026-09-06 — Sweep-085 (select: ExoAxis-1)
+## 2026-09-06 — Sweep-086 (select: ADL-Nexus)
 
-RESEARCH; essay-only; no chemistry tree. Commit `c76b3eeb449c4949ca918d92197975472e6831d2`.
+**RESEARCH** lock commit `2a1224530ec801a8ec5679cfe625adc42ccd34f2`.
 
 ## Prior sweeps
 
+Sweep-085 ExoAxis-1 RESEARCH.
 Sweep-084 -Entanglement-and-Emergence RESEARCH.
 Sweep-083 momentum-closure RESEARCH; tensor ABSENT.
 Sweep-082 CFTv3.3-IQG-Unified-Framework RESEARCH.
