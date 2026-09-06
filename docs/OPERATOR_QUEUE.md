@@ -1,9 +1,9 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T20:04Z (Sweep-084 — -Entanglement-and-Emergence claim-cap)
+**Last updated:** 2026-09-06T20:20Z (Sweep-085 — ExoAxis-1 claim-cap)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
-**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing simulation code or figures.
+**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing simulation/chemical code.
 
 ## Immediate (P0)
 
@@ -15,13 +15,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Review then merge Dependabot | **Digital_Double_virtual_workforce** | PRs #5 (grouped npm incl. Vite **major** 5.4.14→8.2.2) and #6 (rollup 4.24.0→4.63.1). CI green. Do not squash-merge blindly: Vite major needs operator review. After merge, confirm alerts #153/#155/#157 close (nanoid CVE-2026-73086 + browserslist CVE-2026-73088). | **OPEN** |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Closed this cycle (Sweep-084)
+### Closed this cycle (Sweep-085)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit -Entanglement-and-Emergence | RESEARCH; workflows=0; figures/sims ABSENT; lock commits `29beb880` / `e63f41ad` | **DONE** |
+| Re-audit ExoAxis-1 | RESEARCH; workflows=0; tree=README+LICENSE; lock commit `c76b3eeb` | **DONE** |
 
-### Still open from Sweep-067…083
+### Still open from Sweep-067…084
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -46,6 +46,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Consider GitHub-archive VigilE.S.A.-Enhanced-Security | After operator freeze decision; currently RESEARCH documented | PENDING |
 | Do not GitHub-archive CFTv3.3-IQG-Unified-Framework | Remains CFT symbol ledger | DEFERRED |
 | Do not invent Entanglement figures or simulation tree | Essay-only RESEARCH | DEFERRED |
+| Do not invent ExoAxis-1 chemistry / synthesis tree | Essay-only RESEARCH Sweep-085 | DEFERRED |
 
 ### BlockSwarm — v0.5.0-sagf
 
