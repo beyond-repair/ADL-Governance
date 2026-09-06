@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T03:15Z (Sweep-071 — random select btc-trading)
+**Last updated:** 2026-09-06T13:30Z (Sweep-072 — random select genieGPT)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`.
@@ -11,19 +11,18 @@ Destructive or account-level actions that require a human operator. Agent record
 |--------|------|----------------|--------|
 | Tag + Release | **BlockSwarm** | See v0.5.0-sagf block | READY |
 | Tag + Release | **forge-aegis** | `git tag -a v0.1.0` + `gh release create` | READY |
-| Confirm Dependabot HIGH closed | **Digital_Double_virtual_workforce** | Alerts 153 (nanoid) and 155 (browserslist) | **OPEN** |
+| Confirm Dependabot HIGH closed | **Digital_Double_virtual_workforce** | Open HIGH includes #153 nanoid, #155/#157 browserslist, #122 brace-expansion, #112/#111 js-yaml, #101/#99 postcss, additional nanoid dupes | **OPEN** |
 | Merge remaining Dependabot PRs | Digital_Double #5, #6 | Operator merge after review | OPEN |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Closed this cycle (Sweep-071)
+### Closed this cycle (Sweep-072)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Observe SovereignOS docs-ci | Run 34008124640 **success** on `6e87431f` | **DONE** |
-| Claim-cap btc-trading | README product/NN-RL claims removed; ARCHIVED.md added; head `a5fc3f89` | **DONE (docs)** |
-| Classify btc-trading | ARCHIVED candidate; GitHub flag still false | **DONE (docs)** |
+| Claim-cap genieGPT | README/ARCHIVED/SECURITY; head `dad74fd4` | **DONE (docs)** |
+| Classify genieGPT | ARCHIVED candidate; GitHub flag still false | **DONE (docs)** |
 
-### Still open from Sweep-067/068/069/070
+### Still open from Sweep-067/068/069/070/071
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -34,7 +33,8 @@ Destructive or account-level actions that require a human operator. Agent record
 | Consolidate OS-family sketches | RealityOS / LegionOS / Sovereign-OS / SovereignOS | OPEN |
 | Do not implement spend/ads/billing agents in LegionOS or SovereignOS | Attack/spend surface without gates | DEFERRED |
 | Wire real supervisor LLM into SUNDER | Architecture ready; not implemented | OPEN |
-| GitHub-archive btc-trading | Now documented; execute `gh repo archive` | PENDING |
+| GitHub-archive btc-trading | Documented Sweep-071; execute `gh repo archive` | PENDING |
+| GitHub-archive genieGPT | Documented Sweep-072; execute `gh repo archive beyond-repair/genieGPT --yes` | PENDING |
 
 ### BlockSwarm — v0.5.0-sagf
 

@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-06T03:15Z (autonomous Sweep-071)
+**Updated:** 2026-09-06T13:30Z (autonomous Sweep-072)
 **Census:** 75 visible repositories (`user:beyond-repair` search, `incomplete_results=false`). Profile `public_repos` field reported 72; search inventory is the governing count this cycle.
 
 ## Executive Summary
@@ -9,11 +9,9 @@
 |----------|--------|------------|----------|
 | P0 | forge-aegis | CI **success** run 33904082644; tags=[]; releases=[] | No |
 | P1 | sovereign-clean-room | Product CI **success** run 33979476402; Dependabot open=[] | Near |
-| P1 | Digital_Double_virtual_workforce | Product CI **success** 33979714262 (main); Dependabot HIGH #153 nanoid + #155 browserslist still **open**; PRs #5 #6 open | No |
+| P1 | Digital_Double_virtual_workforce | Product CI **success** 33979714262 (main); Dependabot HIGH still **open** (nanoid, browserslist, plus additional lockfile HIGH); PRs #5 #6 open | No |
 | P2 | BlockSwarm | Foundry **success** 33986287866; tags=[]; releases=[] | Near (operator tag) |
-| P2 | LegionOS | docs-ci **success** 34003175517 (prior) | Classification yes |
-| P2 | SovereignOS | docs-ci **success** 34008124640 on `6e87431f` | Classification yes |
-| P2 | btc-trading (Sweep-071) | Claim-capped ARCHIVED candidate `a5fc3f89` | Classification yes |
+| P2 | genieGPT (Sweep-072) | Empty stub; claim-capped ARCHIVED candidate `dad74fd4` | Classification yes |
 | P2 | ADL-Governance | This report + queue + history synchronized | Yes (self this cycle) |
 
 Portfolio-wide exit criteria: **NOT MET**.
@@ -44,19 +42,19 @@ Unchanged from Sweep-069 (SEEM-* → sovereign-clean-room; Digital Double lineag
 
 ### ARCHIVED / archive-queue candidates
 
-CFT-v3.0 already GitHub-archived. `btc-trading` is now **documented** as an archive candidate (Sweep-071) but the GitHub `archived` flag remains **false** (operator-only).
+CFT-v3.0 already GitHub-archived. `btc-trading` (Sweep-071) and `genieGPT` (Sweep-072) are **documented** as archive candidates; GitHub `archived` flag remains **false** (operator-only).
 
-## Sweep-071 selected repo — btc-trading
+## Sweep-072 selected repo — genieGPT
 
 | Field | Value |
 |-------|--------|
-| Selection | PRNG seed `20260906` over 75-name census → `btc-trading` |
-| Tree before | README (describes missing NN/RL/API files), `BTC-USD.csv`, `kucoin btc.py`, `requirements.txt` |
-| Last census push | 2023-06-12 |
-| Claims before | Training NN + PPO live-trading narrative without those files |
+| Selection | PRNG seed `202609062` over 75-name census → `genieGPT` |
+| Tree before | `README.md` (title only), `ARCHIVED.md` (one-line banner), `LICENSE` |
+| Application code | ABSENT |
+| CI / tests / tags / releases | ABSENT / empty |
 | Classification | **ARCHIVED** candidate (GitHub flag false) |
 | Implement | Claim-capped README, ARCHIVED.md, SECURITY.md |
-| Head | `a5fc3f893bf5b00907aa1ebbaa40df3e757354f6` |
+| Head | `dad74fd4dd32df481e84521347ac9ad9dc00d385` |
 
 No promotion. No GitHub archive executed. No history rewrite.
 
@@ -67,17 +65,17 @@ No promotion. No GitHub archive executed. No history rewrite.
 | forge-aegis | success 33904082644 | [] | [] | not re-listed this cycle |
 | sovereign-clean-room | success 33979476402 | n/a this cycle | [] | [] |
 | BlockSwarm | success 33986287866 | [] | [] | not re-listed |
-| Digital_Double_virtual_workforce | success 33979714262 main; PR CI green #5 #6 | [] | [] | HIGH #153 #155 still open |
+| Digital_Double_virtual_workforce | success 33979714262 main; PR CI green #5 #6 | [] | [] | HIGH still open: #153 nanoid, #155/#157 browserslist, plus additional lockfile HIGH (js-yaml, postcss, brace-expansion, nanoid dupes) |
 
 ## Capability inventory (demonstrated vs planned)
 
-Unchanged for ACTIVE four. btc-trading:
+Unchanged for ACTIVE four. genieGPT:
 
 | Feature | State |
 |---------|-------|
-| CSV + KuCoin script on disk | PRESENT |
-| NN / PPO / CoinAPI modules described in old README | ABSENT |
-| Production trading | UNVERIFIED |
+| LICENSE + archive notice on disk | PRESENT |
+| GPT / inference / training runtime | ABSENT |
+| Product chatbot | UNVERIFIED (no code) |
 
 ## Gap summary
 
@@ -91,8 +89,8 @@ Unchanged for ACTIVE four. btc-trading:
 ## Exit criteria checklist
 
 - [x] 75-name census classified
-- [x] btc-trading claim language capped; ARCHIVED candidate documented
-- [x] SovereignOS docs-ci observed green (34008124640)
+- [x] genieGPT claim language capped; ARCHIVED candidate documented
+- [x] Mandatory four CI re-observed
 - [ ] No unresolved HIGH security findings (Digital_Double Dependabot)
 - [ ] No missing tags on ACTIVE four
 - [ ] Archive candidates not yet GitHub-archived
