@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T18:05Z (Sweep-081 — VigilE.S.A. re-audit)
+**Last updated:** 2026-09-06T18:12Z (Sweep-082 — CFTv3.3 ledger re-audit)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history.
@@ -12,16 +12,16 @@ Destructive or account-level actions that require a human operator. Agent record
 | **Rotate + remove committed `.env`** | **digital-double-mobile** | 1) Rotate every credential that ever appeared in `.env`. 2) Delete `.env` from `main` after rotation. 3) `.gitignore` already updated Sweep-077 (`4e33b669`). 4) Do **not** force-push unless separately authorized after rotation. | **OPEN** |
 | Tag + Release | **BlockSwarm** | See v0.5.0-sagf block | READY |
 | Tag + Release | **forge-aegis** | `git tag -a v0.1.0` + `gh release create` | READY |
-| Review then merge Dependabot | **Digital_Double_virtual_workforce** | PRs #5 (grouped npm incl. Vite **major** 5.4.14→8.2.2) and #6 (rollup 4.24.0→4.63.1). CI green. Do not squash-merge blindly: Vite major needs operator review. After merge, confirm alerts #153/#155/#157 close (nanoid + browserslist CVE-2026-73088). | **OPEN** |
+| Review then merge Dependabot | **Digital_Double_virtual_workforce** | PRs #5 (grouped npm incl. Vite **major** 5.4.14→8.2.2) and #6 (rollup 4.24.0→4.63.1). CI green. Do not squash-merge blindly: Vite major needs operator review. After merge, confirm alerts #153/#155/#157 close (nanoid CVE-2026-73086 + browserslist CVE-2026-73088). | **OPEN** |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Closed this cycle (Sweep-081)
+### Closed this cycle (Sweep-082)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit VigilE.S.A. claim register | RESEARCH claim 0; CI failure 33992096428 recorded; commit `9cfc0eaa` | **DONE** |
+| Re-audit CFTv3.3-IQG-Unified-Framework | RESEARCH ledger; workflows=0; commit `6b45ab0e` | **DONE** |
 
-### Still open from Sweep-067…080
+### Still open from Sweep-067…081
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -43,6 +43,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Do not implement VigilE arp_spoof / password cracker / MITM | Stubs only; offensive surface | DEFERRED |
 | Fix or disable VigilE Security Pipeline | run 33992096428 failure; SAST action is not product CI. Optional: delete duplicate `README .md` | OPEN |
 | Consider GitHub-archive VigilE.S.A.-Enhanced-Security | After operator freeze decision; currently RESEARCH documented | PENDING |
+| Do not GitHub-archive CFTv3.3-IQG-Unified-Framework | Remains CFT symbol ledger | DEFERRED |
 
 ### BlockSwarm — v0.5.0-sagf
 
