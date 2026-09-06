@@ -1,29 +1,30 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-06T20:20Z (autonomous Sweep-085)
+**Updated:** 2026-09-06T21:05Z (autonomous Sweep-086)
 **Census:** 75 visible repositories (`user:beyond-repair` search, `incomplete_results=false`).
 
-## Sweep-085 selected repo — ExoAxis-1
+## Sweep-086 selected repo — ADL-Nexus
 
 | Field | Value |
 |-------|--------|
-| Selection | Next public RESEARCH target not processed as *primary* in Sweep-071…084 |
+| Selection | Next public repo not processed as *primary* in Sweep-071…085 |
 | Classification | **RESEARCH** (locked) |
-| Tree at audit | 2 blobs (README, LICENSE); SHA `65d9878f6c5400c7adb70f62c83b78b5609fa6a4` |
-| After lock | RESEARCH.md + README Sweep-085; commit `c76b3eeb449c4949ca918d92197975472e6831d2` |
+| Tree at audit | SHA `57cd80b5a91294ec137d91460c1d1423e666cf0e` |
+| After lock | RESEARCH.md + README + CLAIM_STATUS; commit `2a1224530ec801a8ec5679cfe625adc42ccd34f2` |
 | CI / workflows | total_count=**0** |
 | Releases / tags | none |
-| Implement | Docs only. No code invented. |
+| Local tests | 5 files present; **not** CI-executed this cycle |
+| Implement | Docs only. No product code invented. |
 
 ## Executive Summary
 
-| Priority | Target | Live state (Sweep-085) | Terminal? |
+| Priority | Target | Live state (Sweep-086) | Terminal? |
 |----------|--------|------------------------|----------|
 | P0 | forge-aegis | CI **success** run 33904082644 | No (no tag) |
 | P1 | sovereign-clean-room | Python tests **success** run 33979476402 | Near |
-| P1 | Digital_Double_virtual_workforce | Main CI **success** 33979714262; open PRs **#5 #6**; Dependabot HIGH still OPEN | No |
+| P1 | Digital_Double_virtual_workforce | Main CI **success** 33979714262; open PRs **#3 #4 #5 #6** | No |
 | P2 | BlockSwarm | Foundry **success** 33986287866; tags/releases=[] | Near |
-| P2 | ExoAxis-1 | RESEARCH; workflows=0; essay only | Classification yes |
+| P2 | ADL-Nexus | RESEARCH; workflows=0; local tests UNVERIFIED | Classification yes |
 | P2 | digital-double-mobile | SUPERSEDED; `.env` blob still tracked | Archive pending |
 | P2 | ADL-Governance | This report + queue + history synchronized | Yes (self this cycle) |
 
@@ -37,7 +38,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH
 
-Includes ExoAxis-1 (Sweep-085 lock), -Entanglement-and-Emergence, momentum-closure, CFTv3.3-IQG-Unified-Framework, LegionOS, SovereignOS, Sovereign-OS, RealityOS, sunder, VigilE.S.A.-Enhanced-Security, coherence-drive, acoustic-token-modem, Project-Cold-Boot, blacksite, ADL-Nexus, CFT-v3.1, ware/CFT satellites, optimization-limit-conjecture, Gia---General-Intelligence-Assistant, Auto_Legion, Agent-Snake, AtomicNexusAI, DevelopTool-Unified-Dev-Environment, RepoRover-, smart_home_BCI, Sovereign-Epistemic-Reality-Engine, seem-identity-unifier, seem-sunder-bridge, sunder-cleanroom-vsa-adapter, adl-function-census, adl-capability-matrix, aegis-repo-graph, ADL-Portfolio-Census, os-family-constitution-map, thrust-target-30, stress-tensor-modification, ware-constant-phenomenology, sierpinski-geometry-045, -ware-constant-derivation, m2-renormalization-law, topological-pinch, The-Origin-Point-Hypothesis., -text-informational-fork-protocol-.
+Includes **ADL-Nexus (Sweep-086 lock)**, ExoAxis-1, -Entanglement-and-Emergence, momentum-closure, CFTv3.3-IQG-Unified-Framework, LegionOS, SovereignOS, Sovereign-OS, RealityOS, sunder, VigilE.S.A.-Enhanced-Security, coherence-drive, acoustic-token-modem, Project-Cold-Boot, blacksite, CFT-v3.1, ware/CFT satellites, optimization-limit-conjecture, Gia---General-Intelligence-Assistant, Auto_Legion, Agent-Snake, AtomicNexusAI, DevelopTool-Unified-Dev-Environment, RepoRover-, smart_home_BCI, Sovereign-Epistemic-Reality-Engine, seem-identity-unifier, seem-sunder-bridge, sunder-cleanroom-vsa-adapter, adl-function-census, adl-capability-matrix, aegis-repo-graph, ADL-Portfolio-Census, os-family-constitution-map, thrust-target-30, stress-tensor-modification, ware-constant-phenomenology, sierpinski-geometry-045, -ware-constant-derivation, m2-renormalization-law, topological-pinch, The-Origin-Point-Hypothesis., -text-informational-fork-protocol-.
 
 ### SUPERSEDED
 
@@ -47,7 +48,7 @@ SEEM-* product runtimes → sovereign-clean-room; Digital Double lineage (3.5 / 
 
 CFT-v3.0 already GitHub-archived (`archived=true`). Documented ARCHIVED with flag still false: fantom_trading_bot_2, btc-trading, genieGPT, plus queue in `docs/archive_queue.md`.
 
-## Phase 3 — Mandatory live verification (Sweep-085 re-poll)
+## Phase 3 — Mandatory live verification (Sweep-086 re-poll)
 
 Evidence = GitHub Actions API this cycle.
 
@@ -56,13 +57,13 @@ Evidence = GitHub Actions API this cycle.
 | forge-aegis | `ci.yml` | run **33904082644** success | success | **[]** |
 | sovereign-clean-room | `python-tests.yml` | run **33979476402** success | success | **[]** |
 | BlockSwarm | `foundry.yml` | run **33986287866** success | success | **[]** |
-| Digital_Double_virtual_workforce | `ci.yml` | run **33979714262** success | success | **[]** |
-| ExoAxis-1 | none | n/a | no product CI | **[]** |
+| Digital_Double_virtual_workforce | `ci.yml` | run **33979714262** success (main); PR #5/#6 also success | success | **[]** |
+| ADL-Nexus | none | n/a | no product CI | **[]** |
 
 Security findings (operator, not agent-closed):
 
 - digital-double-mobile: committed `.env` still on `main` (Critical).
-- Digital_Double_virtual_workforce: Dependabot HIGH OPEN; PRs #5/#6 unmerged.
+- Digital_Double_virtual_workforce: Dependabot / grouped npm PRs **#3 #4 #5 #6** still OPEN. #5 includes Vite 5.4.14→8.2.2 major.
 
 ## Capability matrix
 
@@ -76,9 +77,10 @@ Security findings (operator, not agent-closed):
 | BlockSwarm v0.5.0-sagf tag | PLANNED |
 | Digital Double product CI on main | VERIFIED |
 | Digital Double Dependabot HIGH closed | PLANNED |
-| ExoAxis-1 README + LICENSE | VERIFIED present |
-| ExoAxis-1 implementation / data / CI | UNVERIFIED (absent) |
-| ExoAxis-1 clinical / synthesis claims | FORBIDDEN |
+| ADL-Nexus source tree + claim docs | VERIFIED present |
+| ADL-Nexus GitHub Actions | UNVERIFIED (absent) |
+| ADL-Nexus live adapters / full workforce | UNVERIFIED / false |
+| ADL-Nexus production OS / company autonomy | FORBIDDEN |
 
 ## Dependency graph (internal, claim-capped)
 
@@ -86,7 +88,8 @@ Security findings (operator, not agent-closed):
 - sovereign-clean-room ← SEEM-* predecessors (SUPERSEDED)
 - Digital_Double_virtual_workforce ← 3.5 / 4. / 4.2 / mobile variants (SUPERSEDED)
 - BlockSwarm → OpenZeppelin / Foundry (external)
-- ExoAxis-1 — **orphan** (no internal code dependents; census metadata only in aegis-repo-graph / adl-function-census / ADL-Portfolio-Census)
+- ADL-Nexus → **optional** adapters for `sunder` and `sovereign-clean-room` (stub-safe; live path UNVERIFIED)
+- ADL-Nexus does **not** supersede those canonical owners
 
 No new dependency cycle detected this sweep.
 
@@ -95,10 +98,10 @@ No new dependency cycle detected this sweep.
 | Capability | Severity |
 |------------|----------|
 | digital-double-mobile committed `.env` | Critical |
-| Digital_Double Dependabot HIGH + unmerged PRs | Critical (process) |
+| Digital_Double unmerged Dependabot PRs #3–#6 | Critical (process) |
 | Missing tags/releases on ACTIVE four | Medium |
 | Archive candidates not GitHub-archived | Medium |
-| ExoAxis-1 no executable surface | Low (expected for RESEARCH) |
+| ADL-Nexus no CI / no release | Medium (expected until promoted) |
 
 ## Canonical ownership map
 
@@ -109,24 +112,24 @@ No new dependency cycle detected this sweep.
 | Offline VSA / clean-room runtime | sovereign-clean-room |
 | On-chain SAGF | BlockSwarm |
 | Virtual workforce product | Digital_Double_virtual_workforce |
-| Health / network-pharmacology sketch | ExoAxis-1 (RESEARCH, not product) |
+| Integration sketch / party client | ADL-Nexus (RESEARCH, not product) |
 | CFT / IQG symbol ledger | CFTv3.3-IQG-Unified-Framework (RESEARCH) |
 
-## Code review readiness (Sweep-085 target)
+## Code review readiness (Sweep-086 target)
 
-ExoAxis-1: **FAIL** as product review; **PASS** as RESEARCH documentation lock (no false implementation claims remaining after Sweep-085).
+ADL-Nexus: **FAIL** as product review (no CI, no tags, claim level 2). **PASS WITH FINDINGS** as RESEARCH lock after Sweep-086 docs.
 
 Mandatory four product CI: **PASS** on last polled runs; release pipeline **FAIL** (no tags).
 
 ## Exit criteria checklist
 
 - [x] 75-name census classified
-- [x] ExoAxis-1 re-audited and claim-capped Sweep-085
+- [x] ADL-Nexus re-audited and claim-capped Sweep-086
 - [x] Phase 3 four re-polled this cycle
 - [ ] `.env` blob removed after rotation
 - [ ] No unresolved HIGH security findings
 - [ ] No missing tags on ACTIVE four
 - [ ] Archive candidates GitHub-archived
-- [ ] Dependabot PRs #5/#6 merged after Vite major review
+- [ ] Dependabot PRs merged after Vite major review
 
 **Maintenance mode not entered.**
