@@ -2,61 +2,43 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-06 — Sweep-088 (select: RepoRover-)
+## 2026-09-06 — Sweep-089 (select: sierpinski-geometry-045)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Next archive-queue public repo not used as *primary* target in Sweep-071…087. `RepoRover-` had `ARCHIVED.md` (2026-08-23) while README (2026-09-05) advertised a v2 resurrection.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → Phase 3 re-poll four → DOCUMENT → GOVERN → STOP.
+**Selection method:** Random eligible public repo not used as *primary* target in Sweep-071…088. Mid-list RESEARCH geometry generator (last push 2026-08-28 before this cycle).
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (tests + CI + claim-cap) → DOCUMENT → GOVERN → STOP.
 
 ### Discover
-- Census total_count=75, incomplete_results=false. Authenticated user public_repos=72.
-- Tree SHA `a74b77b5a020ebc2f0d7f6cd94a0c2518f6dbd06` (pre-lock): `ARCHIVED.md`, `README.md`, `RepoRover/{README.md,RepoRover.py,readmeMD.csv,requirements.txt}`.
-- **Absent:** tests, product `.github/workflows`, LICENSE at root, tags, releases.
-- Actions: Dependabot Updates only. Branch: main only.
-
-### Live CI (mandatory four, this cycle)
-- forge-aegis CI run 33904082644 success.
-- sovereign-clean-room Python tests run 33979476402 success.
-- BlockSwarm Foundry run 33986287866 success.
-- Digital_Double_virtual_workforce CI run 33979714262 success on main; PR runs 33979881954 (#5) and 33979889902 (#6) success.
-- Open PRs on Digital Double: #3 #4 #5 #6 (unchanged).
+- Census total_count=75, incomplete_results=false. Profile public_repos=72.
+- Pre-change tree SHA `86fcc7692dea911422b856db86327f5759e812db`: `CLASS_B_GEOMETRY_ROLE.md`, `LICENSE`, `README.md`, `sierpinski_generator.py`.
+- **Absent before Sweep-089:** tests, requirements.txt, `.github/workflows`, CLAIM_STATUS.md, tags, releases.
+- Implementation: NumPy tetrahedron face-subdivision with α=0.45; STL + barycentric samples. Explicitly geometry-only in module docstring.
 
 ### Classify
-- **ARCHIVED** (locked).
-- Justification: historical untested scraper; already on archive_queue; README resurrection contradicted ARCHIVED.md (drift). Mapping capability already exists in census/governance RESEARCH+ACTIVE docs.
-- Not ACTIVE. Not RESEARCH (terminal historical). Successor for *portfolio map* is ADL-Governance + census layer, not a new runtime.
+- **RESEARCH** (locked).
+- Justification: documented mesh generator for Coherence Drive research line; claim level 1 (CLAIM_VALIDATION.md). No field/force/energy computation. Not ACTIVE (no product contract). Not SUPERSEDED (no successor generator). Not ARCHIVED (still the canonical shape source).
 
 ### Implement
-- ARCHIVED.md + CLAIM_STATUS.md + README Sweep-088 lock — commit `4aa25674dc55b3e2030b48ac1dee5d39c508f9d4`.
-- Did **not** invent v2 dashboard or tests.
-- Did **not** GitHub-archive (`gh repo archive` is operator-only).
-- No history rewrite. No tag.
+- Local pytest: 7 passed (`test_sierpinski_generator.py`).
+- Commit `c8f81089b9570d222ee6e5d6c263947ae848f59d` on `sierpinski-geometry-045` main: tests, `requirements.txt`, `.github/workflows/python-tests.yml`, `CLAIM_STATUS.md`, README claim-cap.
+- First GitHub Actions run: **pending at documentation time** (`list_workflow_runs` total_count=0 immediately after push). Do not pre-claim green.
+- No tag. No GitHub-archive. No physics claim elevation.
 
 ### Exit
-- Classification + claim-cap: met for this repo.
+- Repo target for Sweep-089 (documented RESEARCH + tests + workflow file): met at software-doc level.
+- CI conclusion: **not yet observed** (pending first run).
 - Portfolio-wide termination: **not** met (secrets, tags, archives, HIGH alerts).
-- Stop after this governed sweep (no infinite loop this turn).
+- Stop after this governed sweep.
 
 ---
+
+## 2026-09-06 — Sweep-088 (select: RepoRover-)
+
+**ARCHIVED** lock commit `4aa25674dc55b3e2030b48ac1dee5d39c508f9d4`.
 
 ## 2026-09-06 — Sweep-087 (select: smart_home_BCI)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Random eligible public repo not used as *primary* target in Sweep-071…086.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → Phase 3 re-poll four → DOCUMENT → GOVERN → STOP.
-
-### Discover
-- Census total_count=75, incomplete_results=false.
-- Tree SHA `25aae80f6180d1ab0c2570f71ab099bc1357dea5` (pre-lock).
-- Actions list workflows total_count=0. Branch: main only.
-
-### Classify
-- **ARCHIVED** (locked). Commit `881844c1ee0abda0a37296fd6567f83a8a8e85ef`.
-
-### Exit
-- Portfolio-wide termination: **not** met.
-
----
+**ARCHIVED** lock commit `881844c1ee0abda0a37296fd6567f83a8a8e85ef`.
 
 ## 2026-09-06 — Sweep-086 (select: ADL-Nexus)
 

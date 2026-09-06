@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T22:10Z (Sweep-088 — RepoRover- ARCHIVED lock)
+**Last updated:** 2026-09-06T22:20Z (Sweep-089 — sierpinski-geometry-045 RESEARCH lock)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing simulation/BCI/v2 intelligence code. Agent will not invent CI green without a workflow run.
@@ -16,14 +16,15 @@ Destructive or account-level actions that require a human operator. Agent record
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 | GitHub-archive | **smart_home_BCI** | `gh repo archive beyond-repair/smart_home_BCI --yes` after Sweep-087 docs lock `881844c1` | PENDING |
 | GitHub-archive | **RepoRover-** | `gh repo archive beyond-repair/RepoRover- --yes` after Sweep-088 docs lock `4aa25674` | PENDING |
+| Confirm first Actions run | **sierpinski-geometry-045** | Workflow `python-tests.yml` added Sweep-089 (`c8f81089`). Poll `gh run list`. Local pytest 7 passed; first remote conclusion pending at lock time. | **OPEN** |
 
-### Closed this cycle (Sweep-088)
+### Closed this cycle (Sweep-089)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit RepoRover- | ARCHIVED lock; product CI absent; commit `4aa25674` | **DONE** |
+| Re-audit sierpinski-geometry-045 | RESEARCH lock; tests + workflow added; no physics claim | **DONE** |
 
-### Still open from Sweep-067…087
+### Still open from Sweep-067…088
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -53,6 +54,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Optional: add `python-tests.yml` to ADL-Nexus | Operator/product decision; agent did not invent passing CI | OPEN |
 | Do not execute smart_home_bci.py against live Hue/door hardware | Sketch unlocks door; undefined imports | DEFERRED |
 | Do not resurrect RepoRover v2 dashboard | Mapping already in census/governance | DEFERRED |
+| Do not treat sierpinski mesh CI as thrust validation | Claim level remains 1 | DEFERRED |
 
 ### BlockSwarm — v0.5.0-sagf
 
