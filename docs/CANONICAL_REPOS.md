@@ -12,7 +12,8 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | OpenZeppelin upgradeable contracts, Foundry |
 | **Successors** | — |
 | **Predecessors** | Root Solidity sketches (now `legacy/`) |
-| **Live CI (Sweep-057)** | Foundry run 33949194624 success |
+| **Live CI (Sweep-078)** | Foundry run 33986287866 success |
+| **Releases** | none |
 | **URL** | https://github.com/beyond-repair/BlockSwarm |
 
 ## sovereign-clean-room
@@ -21,11 +22,12 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Offline Clean-Room VSA / SEEM constitutional substrate |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE (CI green on Actions; VSA completeness UNVERIFIED) |
-| **Dependencies** | Python, NumPy, PyNaCl (MEDIUM advisory open) |
+| **Status** | ACTIVE (CI green on Actions; VSA completeness UNVERIFIED beyond unit tests) |
+| **Dependencies** | Python, NumPy, PyNaCl >= 1.6.2 |
 | **Successors** | — |
 | **Predecessors** | SEEM-2.0, SEEM-Cognitive-Microservice(s), seem-block-system |
-| **Live CI (Sweep-057)** | Python tests run 33904047312 success |
+| **Live CI (Sweep-078)** | Python tests run 33979476402 success |
+| **Releases** | none |
 | **URL** | https://github.com/beyond-repair/sovereign-clean-room |
 
 ## ADL-SEEM
@@ -50,7 +52,8 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | AEGIS-Project-Nehemiah- (spec sibling) |
 | **Successors** | — |
 | **Predecessors** | — |
-| **Live CI (Sweep-057)** | forge-aegis CI run 33904082644 success |
+| **Live CI (Sweep-078)** | forge-aegis CI run 33904082644 success |
+| **Releases** | none |
 | **URL** | https://github.com/beyond-repair/forge-aegis |
 
 ## Digital_Double_virtual_workforce
@@ -59,11 +62,12 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Public canonical typed virtual-workforce product surface |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE (product CI green; lockfile Dependabot HIGH open) |
+| **Status** | ACTIVE (product CI green; Dependabot PRs #5/#6 unmerged) |
 | **Dependencies** | TypeScript / Python smoke |
 | **Successors** | — |
 | **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 (private newer) |
-| **Live CI (Sweep-057)** | Digital Double CI run 33904118205 success |
+| **Live CI (Sweep-078)** | Digital Double CI run 33979714262 success |
+| **Releases** | none |
 | **URL** | https://github.com/beyond-repair/Digital_Double_virtual_workforce |
 
 ## coherence-drive
@@ -77,6 +81,19 @@ Authoritative implementations. All overlapping work must defer here.
 | **Successors** | — |
 | **Predecessors** | Fragmented satellite papers |
 | **URL** | https://github.com/beyond-repair/coherence-drive |
+
+## sunder (not product-canonical)
+
+| Field | Value |
+|-------|--------|
+| **Purpose** | Local-first coding-agent experiment (VSA + gate + forks) |
+| **Owner** | beyond-repair |
+| **Status** | RESEARCH |
+| **Dependencies** | Python 3.11+, rich; supervisor LLM PLANNED |
+| **Live CI (Sweep-078)** | SUNDER CI run 33996778685 success |
+| **URL** | https://github.com/beyond-repair/sunder |
+
+Do **not** treat sunder as the portfolio ACTIVE agent runtime. Offline constitutional runtime remains sovereign-clean-room.
 
 ## Non-canonical (do not treat as authority)
 
