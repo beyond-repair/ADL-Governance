@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T03:10Z (Sweep-070 — random select SovereignOS)
+**Last updated:** 2026-09-06T03:15Z (Sweep-071 — random select btc-trading)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`.
@@ -14,16 +14,16 @@ Destructive or account-level actions that require a human operator. Agent record
 | Confirm Dependabot HIGH closed | **Digital_Double_virtual_workforce** | Alerts 153 (nanoid) and 155 (browserslist) | **OPEN** |
 | Merge remaining Dependabot PRs | Digital_Double #5, #6 | Operator merge after review | OPEN |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
-| Observe SovereignOS docs-ci | **SovereignOS** | First Actions run after `6e87431f` | OPEN |
 
-### Closed this cycle (Sweep-070)
+### Closed this cycle (Sweep-071)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Claim-cap SovereignOS | README product language removed; RESEARCH.md + docs-ci added | **DONE (docs)** |
-| Classify SovereignOS | RESEARCH / claim 0; not ACTIVE | **DONE (docs)** |
+| Observe SovereignOS docs-ci | Run 34008124640 **success** on `6e87431f` | **DONE** |
+| Claim-cap btc-trading | README product/NN-RL claims removed; ARCHIVED.md added; head `a5fc3f89` | **DONE (docs)** |
+| Classify btc-trading | ARCHIVED candidate; GitHub flag still false | **DONE (docs)** |
 
-### Still open from Sweep-067/068/069
+### Still open from Sweep-067/068/069/070
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -34,6 +34,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Consolidate OS-family sketches | RealityOS / LegionOS / Sovereign-OS / SovereignOS | OPEN |
 | Do not implement spend/ads/billing agents in LegionOS or SovereignOS | Attack/spend surface without gates | DEFERRED |
 | Wire real supervisor LLM into SUNDER | Architecture ready; not implemented | OPEN |
+| GitHub-archive btc-trading | Now documented; execute `gh repo archive` | PENDING |
 
 ### BlockSwarm — v0.5.0-sagf
 
