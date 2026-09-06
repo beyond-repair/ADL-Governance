@@ -2,6 +2,38 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-06 — Sweep-079 (random select: fantom_trading_bot_2)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random among parsed `user:beyond-repair` search names (75 visible; seed 20260906).
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN → STOP.
+
+### Discover
+- Tree (4 blobs): `.gitignore`, `ARCHIVED.md`, `README.md` (24 bytes pre-sweep), `fantom 19.py` (8152 bytes).
+- No tests, no `.github/workflows`, no requirements, no CI.
+- `ARCHIVED.md` already present from a prior pass.
+- `fantom 19.py`: strategy enum + placeholder helpers; syntax is incomplete (split identifiers, missing `if __name__`). Helpers hardcode `0.0`/`True`/`False`/`print`.
+- No secrets file observed in tree this cycle.
+
+### Classify
+- **ARCHIVED**.
+- Justification: historical stub; no runnable market integration; prior ARCHIVED.md; cannot be ACTIVE or RESEARCH-with-tests.
+- Not SUPERSEDED: no proven unique-asset port into a named successor this cycle. Related names exist (`fantom-smart-contracts-first-bot`, `ftmA.I.bot`, `FortiTrade_Multi-Strategy`) without import-graph evidence.
+
+### Implement
+- Target repo README claim-cap + ARCHIVED.md Sweep-079 lock — commit `0662d4850f3e41d18be8bd963847dbed06ccc7db`.
+- Did **not** implement FrontRunning/SandwichBot bodies (operator/safety: MEV attack surface).
+- Did **not** GitHub-archive (operator-only).
+- No history rewrite. No tag (tools cannot create tags).
+
+### Exit
+- Classification + claim-cap: met.
+- GitHub `archived=true`: **not** met (queued).
+- Portfolio-wide termination: **not** met.
+- Stop after this governed sweep (no infinite loop this turn).
+
+---
+
 ## 2026-09-06 — Sweep-078 (select: sunder + Phase 3 live four)
 
 **Agent:** Grok (ADL-SEEM governed)
