@@ -1,9 +1,9 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T19:08Z (Sweep-083 — momentum-closure claim-cap)
+**Last updated:** 2026-09-06T20:04Z (Sweep-084 — -Entanglement-and-Emergence claim-cap)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
-**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing `tensor.py`.
+**Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`. Agent will not rewrite history. Agent will not fabricate missing simulation code or figures.
 
 ## Immediate (P0)
 
@@ -15,13 +15,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Review then merge Dependabot | **Digital_Double_virtual_workforce** | PRs #5 (grouped npm incl. Vite **major** 5.4.14→8.2.2) and #6 (rollup 4.24.0→4.63.1). CI green. Do not squash-merge blindly: Vite major needs operator review. After merge, confirm alerts #153/#155/#157 close (nanoid CVE-2026-73086 + browserslist CVE-2026-73088). | **OPEN** |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Closed this cycle (Sweep-083)
+### Closed this cycle (Sweep-084)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit momentum-closure | RESEARCH; workflows=0; tensor.py ABSENT; claim-cap commits `1d2b49ae` / `e1a4f1ee` | **DONE** |
+| Re-audit -Entanglement-and-Emergence | RESEARCH; workflows=0; figures/sims ABSENT; lock commits `29beb880` / `e63f41ad` | **DONE** |
 
-### Still open from Sweep-067…082
+### Still open from Sweep-067…083
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -45,6 +45,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Fix or disable VigilE Security Pipeline | run 33992096428 failure; SAST action is not product CI. Optional: delete duplicate `README .md` | OPEN |
 | Consider GitHub-archive VigilE.S.A.-Enhanced-Security | After operator freeze decision; currently RESEARCH documented | PENDING |
 | Do not GitHub-archive CFTv3.3-IQG-Unified-Framework | Remains CFT symbol ledger | DEFERRED |
+| Do not invent Entanglement figures or simulation tree | Essay-only RESEARCH | DEFERRED |
 
 ### BlockSwarm — v0.5.0-sagf
 
