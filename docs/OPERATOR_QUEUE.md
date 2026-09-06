@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-05T23:10Z (Sweep-067 — Digital_Double_Virtual_Workforce_4.2)
+**Last updated:** 2026-09-06T01:10Z (Sweep-068 — LegionOS)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`.
@@ -15,7 +15,15 @@ Destructive or account-level actions that require a human operator. Agent record
 | Bump nanoid ≥5.1.11 | **Digital_Double_virtual_workforce** | PR **#4** open; run `npm install` to refresh lockfile | **PR OPEN** — merge after lockfile + CI |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Sweep-067 new operator items
+### Sweep-068 new operator items
+
+| Action | Notes | Status |
+|--------|-------|--------|
+| Confirm LegionOS docs-ci green on `89486578` | Actions may lag write | OPEN |
+| Consolidate OS-family sketches | RealityOS / LegionOS / Sovereign-OS / SovereignOS — pick one concept home or keep all RESEARCH | OPEN |
+| Do not implement spend/ads/billing agents in LegionOS | Would create a live attack/spend surface without validated gates | DEFERRED |
+
+### Sweep-067 items (still open)
 
 | Action | Notes | Status |
 |--------|-------|--------|
@@ -46,14 +54,14 @@ gh release create v0.5.0-sagf --title "v0.5.0-sagf" --notes-file docs/CHANGELOG.
 | Action | Repo / Target | Notes | Status |
 |--------|---------------|-------|--------|
 | Wire real supervisor LLM into SUNDER | sunder | Architecture ready; not implemented | OPEN |
-| Classify / consolidate | RealityOS / LegionOS / Sovereign-OS | RESEARCH | OPEN |
 | Classify new repo | Sovereign-Epistemic-Reality-Engine | Appeared in Sweep-066 census | OPEN |
+| Classify new repo | ADL-Nexus | Appeared in Sweep-068 census | OPEN |
 | Digital_Double release | Digital_Double_virtual_workforce | After lockfile bumps + PR#4 merge | OPEN |
 | Harmonize registry claim row for thrust-target-30 to 0 | repository_registry.md | Still lists claim 1 vs Sweep-063 claim 0 | OPEN (docs) |
 
 ## Closed this sweep
 
-- **Sweep-067:** Digital_Double_Virtual_Workforce_4.2 classified SUPERSEDED; README + SUPERSEDED.md + CANONICAL_NOTE on `c3375cb`. No archive. No delete. No history rewrite.
+- **Sweep-068:** LegionOS classified RESEARCH claim 0; claim-capped README + docs CI on `89486578`. No archive. No delete. No history rewrite. No product brains implemented.
 
 ## Rule
 

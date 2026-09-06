@@ -1,18 +1,18 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-05T23:10Z (autonomous Sweep-067)
-**Census:** 74 visible repositories (`user:beyond-repair` search, incomplete_results=false).
+**Updated:** 2026-09-06T01:10Z (autonomous Sweep-068)
+**Census:** 75 visible repositories (`user:beyond-repair` search, incomplete_results=false).
 
 ## Executive Summary
 
 | Priority | Target | Live state | Terminal? |
 |----------|--------|------------|----------|
-| Cycle target | Digital_Double_Virtual_Workforce_4.2 | **SUPERSEDED** → Digital_Double_virtual_workforce; README + SUPERSEDED.md pushed `c3375cb` | Yes for classification/docs; archive operator-only |
+| Cycle target | LegionOS | **RESEARCH** claim 0; claim-capped README + docs-ci pushed `89486578` | Classification/docs yes; product ACTIVE no |
 | P0 | forge-aegis | CI **success** run 33904082644; tags=[]; releases=[] | No |
 | P1 | sovereign-clean-room | CI **success** run 33904047312; PyNaCl PR #1 open | No |
-| P1 | Digital_Double_virtual_workforce | Product CI **success** run 33904118205; nanoid PR #4 open; lockfile pending | No |
+| P1 | Digital_Double_virtual_workforce | Product CI **success** run 33904118205; nanoid PR #4 open | No |
 | P2 | BlockSwarm | Foundry **success** run 33949194624; tags=[]; releases=[] | Near (operator tag) |
-| P2 | ADL-Governance | This report + queue + history synchronized | Yes (self) |
+| P2 | ADL-Governance | This report + queue + history synchronized | Yes (self this cycle) |
 
 Portfolio-wide exit criteria: **NOT MET**.
 
@@ -30,36 +30,36 @@ Mapping/census layer (9): ADL-Portfolio-Census, aegis-repo-graph, adl-capability
 
 Physics/theory: coherence-drive, ware-constant-phenomenology, -ware-constant-derivation, CFTv3.3-IQG-Unified-Framework, CFT-v3.1, momentum-closure, stress-tensor-modification, m2-renormalization-law, topological-pinch, thrust-target-30, sierpinski-geometry-045, acoustic-token-modem, optimization-limit-conjecture, The-Origin-Point-Hypothesis., -Entanglement-and-Emergence, -text-informational-fork-protocol-.
 
-OS concepts: RealityOS, LegionOS, Sovereign-OS, SovereignOS.
+OS concepts: RealityOS, **LegionOS** (Sweep-068 claim-capped), Sovereign-OS, SovereignOS.
 
-Other RESEARCH: Project-Cold-Boot, blacksite, ExoAxis-1, VigilE.S.A.-Enhanced-Security, Sovereign-Epistemic-Reality-Engine (until registry row exists).
+Other RESEARCH: Project-Cold-Boot, blacksite, ExoAxis-1, VigilE.S.A.-Enhanced-Security, Sovereign-Epistemic-Reality-Engine, ADL-Nexus (new in census; not ACTIVE this cycle).
 
 ### SUPERSEDED
 
 SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system → sovereign-clean-room.
 My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → pattern absorption (sovereign-clean-room).
 CFT-v3.0 → CFTv3.3 (already GitHub-archived).
-**Digital_Double_Virtual_Workforce_4.2** (Sweep-067 banner + SUPERSEDED.md) → Digital_Double_virtual_workforce.
-Digital Double lineage remainder (3.5 / 4. / mobile pair) → same public canonical (banners not all applied this cycle).
+Digital_Double_Virtual_Workforce_4.2 (Sweep-067) → Digital_Double_virtual_workforce.
+Digital Double lineage remainder (3.5 / 4. / mobile pair) → same public canonical.
 
 ### ARCHIVED / archive-queue candidates
 
 CFT-v3.0 already archived. Remaining names in `docs/archive_queue.md` are **not** GitHub-archived. Operator-only.
 
-## Sweep-067 subject — Digital_Double_Virtual_Workforce_4.2
+## Sweep-068 subject — LegionOS
 
 | Check | Result |
 |-------|--------|
-| Classification | SUPERSEDED |
-| Successor | Digital_Double_virtual_workforce |
-| Root README | ADDED (was missing) |
-| SUPERSEDED.md | ADDED |
-| Feature work | STOPPED |
+| Classification | RESEARCH |
+| Claim level | 0 (Idea) |
+| Implementation | Docs only |
+| LICENSE | ADDED (MIT) |
+| SECURITY.md | ADDED (docs policy) |
+| Docs CI workflow | ADDED (`.github/workflows/ci.yml`) |
+| Product CI | N/A |
+| Unsupported autonomy/revenue claims | REMOVED from README |
 | GitHub archive | NOT executed |
-| Unique asset port | UNVERIFIED |
-| ~74 MiB GGUF in `models/` | PRESERVED; LFS/size review operator |
-| Product CI on this repo | Not required for SUPERSEDED |
-| Unsupported AGI/self-heal claims | Capped; not claimed |
+| OS-family merge | NOT executed (operator) |
 
 ## Phase 3 — Mandatory live verification (carried; not re-run this cycle)
 
@@ -69,6 +69,7 @@ CFT-v3.0 already archived. Remaining names in `docs/archive_queue.md` are **not*
 | sovereign-clean-room | 33904047312 | success | [] | [] | PyNaCl PR #1 |
 | BlockSwarm | 33949194624 | success | [] | [] | prior open=0 |
 | Digital_Double_virtual_workforce | 33904118205 | success | [] | [] | nanoid PR #4; lockfile pending |
+| LegionOS | docs-ci on `89486578` | PENDING at write time | [] | [] | no lockfile |
 
 ## Security summary
 
@@ -80,11 +81,11 @@ CFT-v3.0 already archived. Remaining names in `docs/archive_queue.md` are **not*
 
 ## Exit criteria checklist
 
-- [x] Sweep-067 subject classified SUPERSEDED and documented
+- [x] Sweep-068 subject classified RESEARCH and claim-capped
 - [x] Status report / operator queue / sweep history updated this cycle
+- [ ] LegionOS docs-ci conclusion observed
 - [ ] No unresolved HIGH security findings (nanoid lockfile)
 - [ ] No missing tags on ACTIVE four
 - [ ] Archive candidates not yet GitHub-archived
-- [ ] Unique 4.2 assets not confirmed ported
 
 **Maintenance mode not entered.**
