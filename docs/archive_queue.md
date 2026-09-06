@@ -25,6 +25,7 @@ Check off when `gh repo archive` succeeds.
 - [ ] beyond-repair/Digital-Double_Mobile
 - [ ] beyond-repair/digital-double-mobile
 - [ ] beyond-repair/DigitalDoubleVirtualWorkforce3.5
+- [ ] beyond-repair/Digital_Double_Virtual_Workforce_4.  (Sweep-075: empty predecessor; banner applied)
 - [ ] beyond-repair/My-mind-A.I. (branch main2) — **patterns extracted**
 - [ ] beyond-repair/Gia---General-Intelligence-Assistant — **patterns extracted**
 - [ ] beyond-repair/new-program-1.01

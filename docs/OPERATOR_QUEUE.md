@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T14:05Z (Sweep-074 — random select DigitalDoubleVirtualWorkforce3.5)
+**Last updated:** 2026-09-06T14:15Z (Sweep-075 — Digital_Double_Virtual_Workforce_4.)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`.
@@ -15,21 +15,22 @@ Destructive or account-level actions that require a human operator. Agent record
 | Merge remaining Dependabot PRs | Digital_Double #5, #6 | Operator merge after review | OPEN |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Closed this cycle (Sweep-074)
+### Closed this cycle (Sweep-075)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Apply SUPERSEDED banner to DigitalDoubleVirtualWorkforce3.5 | README + Sweep-074 docs pushed | **DONE (docs)** |
+| Apply SUPERSEDED banner to Digital_Double_Virtual_Workforce_4. | Empty repo initialized with README only (`2d235a93`) | **DONE (docs)** |
 
-### Still open from Sweep-067/068/069/070/071/072/073
+### Still open from Sweep-067/068/069/070/071/072/073/074
 
 | Action | Notes | Status |
 |--------|-------|--------|
 | Confirm unique 4.2 assets ported (or waived) | agents/, selfheal/, docs/detailed/, scripts/ | OPEN |
 | Decide fate of `models/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf` | ~74 MiB in git | OPEN |
 | GitHub-archive Digital_Double_Virtual_Workforce_4.2 | Only after port/waiver | PENDING |
-| Apply SUPERSEDED banner to 4. / mobile pair | Same successor | OPEN |
+| Apply SUPERSEDED banner to mobile pair | Same successor | OPEN |
 | GitHub-archive DigitalDoubleVirtualWorkforce3.5 | `gh repo archive beyond-repair/DigitalDoubleVirtualWorkforce3.5 --yes` | PENDING |
+| GitHub-archive Digital_Double_Virtual_Workforce_4. | `gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4. --yes` | PENDING |
 | Consolidate OS-family sketches | RealityOS / LegionOS / Sovereign-OS / SovereignOS | OPEN |
 | Do not implement spend/ads/billing agents in LegionOS or SovereignOS | Attack/spend surface without gates | DEFERRED |
 | Wire real supervisor LLM into SUNDER | Architecture ready; not implemented | OPEN |
