@@ -2,32 +2,27 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-06 — Sweep-080 (random select: CFTv3.3-IQG-Unified-Framework)
+## 2026-09-06 — Sweep-080 (select: sunder README claim-cap + Phase 3 re-poll)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random among 64 names not in the Sweep-071…079 recent set (seed 202609061307). First draw with seed 20260906 was DigitalDoubleVirtualWorkforce3.5 (already Sweep-074); discarded as no-op.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs only) → DOCUMENT → GOVERN → STOP.
+**Selection method:** Operator-queue item “align sunder README badge” (docs-only allowed remediation) after Sweep-079 archive lock on fantom_trading_bot_2.
+**Scope:** DISCOVER (75-name census) → Phase 3 re-poll four + Dependabot → IMPLEMENT sunder README → DOCUMENT → GOVERN → STOP.
 
 ### Discover
-- Tree (5 blobs pre-sweep): `CFTv3.3-IQG-Unified-Framework.md`, `.tex`, `CONSISTENCY.md`, `LICENSE`, `README.md`.
-- No `src/`, no tests, no `.github/workflows`, no releases (`list_releases` = []).
-- README already claim-capped (≤2) with RESEARCH badge and successor pointers (ware-constant-phenomenology, coherence-drive).
-- CONSISTENCY.md last audit was 2026-08-17; Bullet Cluster r0/c FAIL; SPARC χ²_red ~9.1 open.
-
-### Classify
-- **RESEARCH**.
-- Justification: synthesis/consistency ledger for CFT+IQG symbols. Not ACTIVE (no product CI, no runtime). Not SUPERSEDED (CFT-v3.0/v3.1 point here). Not ARCHIVED (still the living symbol register).
+- Census total_count=75, incomplete_results=false.
+- Mandatory four: workflows present; latest product CI conclusions unchanged (all success); Releases API still `[]` for all four.
+- Digital_Double open PRs: #5 (grouped npm, Vite major), #6 (rollup). CI success on both PR heads.
+- Dependabot OPEN HIGH: #153 nanoid (CVE-2026-73086), #155/#157 browserslist (CVE-2026-73088).
+- sunder README previously advertised `[ACTIVE]` badge while code and Sweep-078 classification are RESEARCH.
 
 ### Implement
-- Target repo: `RESEARCH.md` lock + CONSISTENCY.md audit date Sweep-080 — commit `24e190964850324c0bfc1e8971b6354efaa1b58c`.
-- Did not add CI (no executable surface).
-- Did not tag (tools cannot create tags).
-- Did not GitHub-archive.
-- No history rewrite.
+- sunder README: RESEARCH badge + claim table (VERIFIED tests / PLANNED LLM / UNVERIFIED product agent). Commit `7ca2d2aa9fb50db0702ee07028bb2429316269ff`.
+- Did **not** merge Dependabot PRs (Vite major in #5 requires operator review).
+- Did **not** delete `.env`, archive repos, create tags, or rewrite history.
 
 ### Exit
-- Classification + claim lock: met.
-- Portfolio-wide termination: **not** met.
+- sunder claim-policy mismatch: **met**.
+- Portfolio-wide termination: **not** met (secrets, tags, archives, HIGH alerts).
 - Stop after this governed sweep (no infinite loop this turn).
 
 ---
@@ -99,25 +94,77 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 
 ## 2026-09-06 — Sweep-077 (random select: digital-double-mobile)
 
-**Classify:** SUPERSEDED. `.gitignore` `.env` hygiene `4e33b669`. SUPERSEDED.md `30657113`.
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random among parsed `user:beyond-repair` names (75 visible).
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe hygiene + docs) → DOCUMENT → GOVERN → STOP.
+
+### Discover (re-audit)
+- Tree: historical `backend/`, `frontend/`, `server.js`, `workspace.js`, committed `node_modules`, empty placeholder assets (`ar-view.html`, `dashboard.html`, `favicon.ico` SHA e69de29b), `SUPERSEDED.md`, marketing README already claim-capped Sweep-076 (`4327361f`).
+- `.gitignore` previously ignored `node_modules` only; `.env` was tracked.
+- No `.github/workflows` observed.
+- Successor: Digital_Double_virtual_workforce (CANONICAL_REPOS + SUPERSEDED.md).
+- Security: `.env` still present on default branch. Contents not copied into governance docs.
+
+### Classify
+- **SUPERSEDED** (unchanged from Sweep-076).
+- Justification: predecessor/sketch; product surface is public canonical; no product CI; feature list UNVERIFIED.
+
+### Implement
+- Target repo: `.gitignore` now includes `.env` / `.env.*` except `.env.example` — commit `4e33b66945a285fefa5c114642078fed3a91d925`.
+- SUPERSEDED.md re-affirmed Sweep-077 — commit `306571135e94070d32b7254fbdcb95dc72e216b8`.
+- `.env` blob **not** deleted (operator must rotate first).
+- `node_modules` **not** removed this cycle (queued).
+- No history rewrite. No GitHub archive flag.
+
+### Exit
+- Classification + successor pointer + claim-cap: met.
+- Per-repo security/hygiene termination: **not** met (committed `.env` still on main; `node_modules` in tree; GitHub archived=false).
+- Portfolio-wide termination **not** met.
+- Stop after this governed sweep (no infinite loop this turn).
+
+---
 
 ## 2026-09-06 — Sweep-076 (select: digital-double-mobile)
 
-**Classify:** SUPERSEDED. README banner `4327361f`.
+**Classify:** SUPERSEDED. README banner `4327361f8fa7430f5038c599a0c657a6236b0f9e`.
+
+---
 
 ## 2026-09-06 — Sweep-075 (select: Digital_Double_Virtual_Workforce_4.)
 
-**Classify:** SUPERSEDED.
+**Classify:** SUPERSEDED. Banner `2d235a931e3de34e2bd472968e68fcc61eb45027`.
+
+---
 
 ## 2026-09-06 — Sweep-074 (random select: DigitalDoubleVirtualWorkforce3.5)
 
 **Classify:** SUPERSEDED.
 
+---
+
+## 2026-09-06 — Sweep-073 (random select: LegionOS)
+
+**Classify:** RESEARCH / claim 0.
+
+---
+
+## 2026-09-06 — Sweep-072 (random select: genieGPT)
+
+**Classify:** ARCHIVED candidate. Implement `dad74fd4dd32df481e84521347ac9ad9dc00d385`.
+
+---
+
+## 2026-09-06 — Sweep-071 (random select: btc-trading)
+
+**Classify:** ARCHIVED candidate. Implement `a5fc3f893bf5b00907aa1ebbaa40df3e757354f6`.
+
+---
+
 ## Prior sweeps
 
-Sweep-073 LegionOS RESEARCH / claim 0.
-Sweep-072 genieGPT ARCHIVED candidate.
-Sweep-071 btc-trading ARCHIVED candidate.
 Sweep-070 SovereignOS RESEARCH / claim 0.
 Sweep-069 live re-verify + registry catch-up.
+Sweep-068 LegionOS RESEARCH / claim 0.
+Sweep-067 Digital_Double_Virtual_Workforce_4.2 SUPERSEDED.
+Sweep-066 acoustic-token-modem RESEARCH ≤1 + pytest CI.
 See git history for Sweep-001…67.
