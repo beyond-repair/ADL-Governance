@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T13:30Z (Sweep-072 — random select genieGPT)
+**Last updated:** 2026-09-06T13:40Z (Sweep-073 — random select LegionOS)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 **Constraint:** Connected GitHub tools cannot create git tags or GitHub Releases. Agent will not implement offensive security modules. Agent will not `gh repo archive`.
@@ -11,18 +11,17 @@ Destructive or account-level actions that require a human operator. Agent record
 |--------|------|----------------|--------|
 | Tag + Release | **BlockSwarm** | See v0.5.0-sagf block | READY |
 | Tag + Release | **forge-aegis** | `git tag -a v0.1.0` + `gh release create` | READY |
-| Confirm Dependabot HIGH closed | **Digital_Double_virtual_workforce** | Open HIGH includes #153 nanoid, #155/#157 browserslist, #122 brace-expansion, #112/#111 js-yaml, #101/#99 postcss, additional nanoid dupes | **OPEN** |
+| Confirm Dependabot HIGH closed | **Digital_Double_virtual_workforce** | Open HIGH includes #153 nanoid, #155/#157 browserslist | **OPEN** |
 | Merge remaining Dependabot PRs | Digital_Double #5, #6 | Operator merge after review | OPEN |
 | Archive batch | docs/archive_queue.md | `gh repo archive beyond-repair/<name> --yes` | PENDING |
 
-### Closed this cycle (Sweep-072)
+### Closed this cycle (Sweep-073)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Claim-cap genieGPT | README/ARCHIVED/SECURITY; head `dad74fd4` | **DONE (docs)** |
-| Classify genieGPT | ARCHIVED candidate; GitHub flag still false | **DONE (docs)** |
+| Re-audit LegionOS | RESEARCH claim 0 confirmed; head `5d471c16` | **DONE (docs)** |
 
-### Still open from Sweep-067/068/069/070/071
+### Still open from Sweep-067/068/069/070/071/072
 
 | Action | Notes | Status |
 |--------|-------|--------|
