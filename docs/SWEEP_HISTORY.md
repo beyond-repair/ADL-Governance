@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-06 — Sweep-070 (random select: SovereignOS)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Python `random.seed(20260905)` over 75-name `user:beyond-repair` census; pick `beyond-repair/SovereignOS`.
+**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST/CI (docs gate pushed) → DOCUMENT → GOVERN → RE-AUDIT.
+
+### Discover
+- Tree before change: README.md, .gitignore, docs/{architecture,comparison,control-plane,human-kernel,open-questions,security}.md, placeholder READMEs in brains/, control_plane/, kernel/, knowledge_graph/.
+- No LICENSE, no root SECURITY.md, no GOVERNANCE.md, no tests, no CI, no sandbox/mvs implementation.
+- README described synthesis of Reality OS + LegionOS as if product-real ("All pros, zero cons"; MVS phase 6 profitability/uptime targets).
+- Related RESEARCH siblings: RealityOS, LegionOS, Sovereign-OS.
+
+### Audit vs ADL-Governance
+- Status report already listed SovereignOS under RESEARCH OS concepts.
+- LIFECYCLE: cannot promote to ACTIVE (no implemented modules, no product CI, no evidenced claims).
+- CLAIM_VALIDATION: prior README language exceeded Level 0.
+- Duplicate OS-family concepts remain; consolidation is operator-level (do not merge trees this cycle).
+
+### Classify
+- **RESEARCH**.
+- Justification: documentation + empty stubs only; no executable sovereignty surface; claim level **0**.
+
+### Implement
+- SovereignOS `main` `6e87431f338796baf967c38200854e19276c6867`: README claim-cap, RESEARCH.md, LICENSE, SECURITY.md, GOVERNANCE.md, docs/interfaces.md, tests/test_docs.py, .github/workflows/ci.yml.
+
+### Test / CI
+- Docs-ci workflow created. First Actions run not observed in this cycle (pending GitHub Actions pickup).
+
+### Exit for this repo
+- Classification documented RESEARCH / claim 0.
+- Portfolio-wide termination: **not** met.
+- Stop after this governed sweep (no infinite loop).
+
+---
+
 ## 2026-09-06 — Sweep-069 (governed live re-verify + registry catch-up)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -39,52 +74,20 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 **Selection method:** SHA-256 seed `2026-09-05T21:08:00-sweep-cycle-1` over 75-name `user:beyond-repair` census; pick `beyond-repair/LegionOS`.
 **Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST/CI (docs gate) → DOCUMENT → GOVERN → RE-AUDIT.
 
-### Discover
-- Tree before change: README.md + docs/{architecture,open-questions,security}.md only.
-- No `brains/`, `knowledge_graph/`, `sandbox/`, `mva/`, no LICENSE, no CI, no tests.
-- README described a 5-layer holarchy and MVA profitability/uptime targets as if product-real.
-- Related RESEARCH siblings: RealityOS, Sovereign-OS, SovereignOS. Auto_Legion remains SUPERSEDED → sovereign-clean-room.
-
-### Audit vs ADL-Governance
-- Registry already listed LegionOS as RESEARCH maturity 1 claim 0–1.
-- LIFECYCLE: cannot promote to ACTIVE (no implemented modules, no product CI, no evidenced claims).
-- CLAIM_VALIDATION: prior README language exceeded Level 0.
-- Missing SECURITY.md at root (lifecycle promote-to-ACTIVE requirement; added as docs policy).
-- No lockfile / no runtime → no CVE surface that cycle.
-- Duplicate OS-family concepts remain; consolidation is operator-level (do not merge trees this cycle).
-
 ### Classify
-- **RESEARCH**.
-- Justification: documentation-only concept sketch; no executable autonomy surface; claim level **0**.
+- **RESEARCH**. Claim level **0**.
 
 ### Implement
-- LegionOS `main` `89486578debdcb5404189a2670a41f5b64593aa9`: README claim-cap, RESEARCH.md, LICENSE, SECURITY.md, GOVERNANCE.md, docs/interfaces.md, tests/test_docs.py, .github/workflows/ci.yml.
+- LegionOS `main` `89486578debdcb5404189a2670a41f5b64593aa9`.
 
 ### Test / CI
 - Sweep-069 observed docs-ci run 34003175517 **success**.
-
-### Exit for this repo
-- Classification documented RESEARCH / claim 0.
-- Portfolio-wide termination: **not** met.
-
----
-
-## 2026-09-05 — Sweep-067 (random select: Digital_Double_Virtual_Workforce_4.2)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** PRNG over the 74-name `user:beyond-repair` census; result `Digital_Double_Virtual_Workforce_4.2`.
-**Scope:** SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (docs) → DOCUMENT → GOVERN → RE-AUDIT.
-
-### Classify
-- **SUPERSEDED** → Digital_Double_virtual_workforce.
-
-### Implement
-- Digital_Double_Virtual_Workforce_4.2 `main` `c3375cb7f49fe3755da8a6ec947f1b01ba398112`.
 
 ---
 
 ## Prior sweeps
 
+Sweep-067 Digital_Double_Virtual_Workforce_4.2 SUPERSEDED.
 Sweep-066 acoustic-token-modem RESEARCH ≤1 + pytest CI.
 Sweep-065 VigilE.S.A. RESEARCH claim 0 re-audit.
 Sweep-064b security PRs PyNaCl + nanoid.
