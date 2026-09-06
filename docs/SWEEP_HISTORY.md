@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-06 — Sweep-091 (select: Digital-Double_Mobile)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Deterministic RNG `random.seed(20260906); randint(1,74)` → index 48 of `user:beyond-repair` search (75 items).
+**Classification:** SUPERSEDED (archive-candidate). Dual labels in-tree (`SUPERSEDED.md` + `ARCHIVED.md`) resolved to directive SUPERSEDED until GitHub archive flag is set.
+
+### Discover
+
+- Tree: only `ARCHIVED.md`, `SUPERSEDED.md` (pre-change); no source, no workflow, no LICENSE, no description.
+- Size reported 0; language none; `archived=false`; last push 2026-08-23.
+- Successor already named: `Digital_Double_virtual_workforce`.
+- Distinct from `digital-double-mobile` (has code + P0 `.env`).
+
+### Audit
+
+- Compliance gap: missing README banner (LIFECYCLE.md requires successor banner in README).
+- No tests/CI required (no code).
+- No security surface in this stub.
+- GitHub Archive remains operator-only.
+
+### Implement
+
+- Added `README.md` on `Digital-Double_Mobile` main (idempotent banner + successor link).
+- Governance docs refreshed (this file, PORTFOLIO_STATUS_REPORT, OPERATOR_QUEUE).
+
+### Exit (this repo)
+
+- Undefined components: none remaining after README.
+- Stale registry: row already listed SUPERSEDED; confirmed.
+- Critical CI: N/A.
+- Duplicate canonical: successor already ACTIVE.
+- Critical security: none in this stub.
+- Unsupported claims: none.
+- Target state (documented SUPERSEDED stub): **met**.
+- Portfolio-wide termination: **not** met.
+
+---
+
 ## 2026-09-06 — Sweep-090 (registry + Phase-3 live re-verify)
 
 **Agent:** Grok (ADL-SEEM governed)
