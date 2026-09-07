@@ -1,33 +1,45 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T22:15Z (autonomous Sweep-114)
+**Updated:** 2026-09-07T23:05Z (autonomous Sweep-115)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `sierpinski-geometry-045` RESEARCH lock.
+**This cycle:** subject `adl-capability-matrix` RESEARCH lock.
 
-## Sweep-114 scope
+## Sweep-115 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs |
-| Subject | sierpinski-geometry-045 |
+| Subject | adl-capability-matrix |
 | Product mutation | GOVERNANCE / CLAIM_STATUS / README |
-| Geometry / physics invention | NOT invented |
+| Matrix row invention | NOT invented |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (sierpinski-geometry-045)
+## Subject verification (adl-capability-matrix)
 
 | Field | Value |
 |-------|--------|
-| Prior head | bea3705c8a122bd3253a8eb10d70c09d7627716f |
-| New head | 768b9a24559247c9b9cbc726f04e608f93bf0829 |
-| Pre-sweep product CI | success 34063280255, 34063349923 |
-| Sweep-114 CI | first post-lock pytest PENDING |
+| Prior head | 50ce48524c372f628137c0bd3b7901c5c7c10ba5 |
+| New head | 3e40d40e3d04178b8d3f32a3ce9b704025e19ab7 |
+| Pre-sweep product CI | listed success 33932359958 |
+| Sweep-115 CI | first post-lock pytest PENDING |
 | Releases / tags | none |
 | Classification | RESEARCH |
-| GitHub archived flag | false |
-| Claim | ≤1; field / thrust / energy **UNSUPPORTED** |
+| Locked JSON rows | 67 (2026-09-04) |
+| Live census | 75 |
+| Claim | dated snapshot only; live completeness **UNSUPPORTED** |
+
+## Phase-3 live verification (this cycle)
+
+| Repo | Releases | Tags | Tree evidence | Last listed CI |
+|------|----------|------|---------------|----------------|
+| forge-aegis | none | none | python pipeline + tests + ci.yml present | 33904082644 success |
+| sovereign-clean-room | none | none | core/*.py + tests/* present | 33979476402 success |
+| BlockSwarm | none | none | contracts + foundry.toml + test/ present | 33986287866 success |
+| Digital_Double_virtual_workforce | none | none | TS src + tests + workflows present | 33979714262 main / 34084870372 PR #7 success |
+
+No new Actions run IDs were listed this cycle. Prior listed conclusions remain the last **verified** CI state. VSA completeness remains **UNVERIFIED** beyond unit CI.
 
 ## Classification (canonical)
 
@@ -39,7 +51,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
+`adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110. Mapping/census siblings (`aegis-repo-graph`, `adl-function-census`, `os-family-constitution-map`, `seem-*` adapters) remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
@@ -51,7 +63,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT` (Sweep-111).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT`.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -63,7 +75,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Gap | Severity | State |
 |-----|----------|-------|
 | Product releases empty on ACTIVE quartet | Medium | OPEN (operator tag) |
-| adl-capability-matrix row count vs live 75 | Medium | OPEN |
+| adl-capability-matrix row count 67 vs live 75 | Medium | OPEN (Sweep-115 documented; rows not invented) |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
@@ -71,32 +83,30 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Duplicate OS / agent / SEEM surfaces | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED |
-| Acoustic hardware bitrate / novelty | High (claim) | CAPPED Sweep-110 |
-| momentum-closure tensor + tests | High (claim) | ABSENT / CAPPED Sweep-113 |
-| Sweep-114 pytest first run | Medium | PENDING |
-| Sweep-113 docs-presence first run | Medium | PENDING |
+| Acoustic hardware bitrate / novelty | High (claim) | CAPPED |
+| momentum-closure tensor + tests | High (claim) | ABSENT / CAPPED |
+| Sweep-115 pytest first run | Medium | PENDING |
 
 ## Dependency notes (this cycle)
 
 Internal (documented, not runtime-verified):
 
-- sierpinski-geometry-045 → stress-tensor-modification / coherence-drive / ware-constant-phenomenology (conceptual)
-- momentum-closure → stress-tensor-modification (evaluator sibling; conceptual)
-- momentum-closure → coherence-drive (index)
-- ADL-Nexus → sovereign-clean-room (adapter stub)
-- ADL-Nexus → sunder (adapter stub)
+- adl-capability-matrix → ADL-Governance (authoritative live registry)
+- adl-capability-matrix → aegis-repo-graph / ADL-Portfolio-Census (sibling census tools)
 - forge-aegis → AEGIS-Project-Nehemiah- (spec sibling)
+- Digital Double name-forks → Digital_Double_virtual_workforce (SUPERSEDED mapping)
+- SEEM name-forks → sovereign-clean-room (SUPERSEDED mapping)
 
-No new dependency cycle proven this cycle.
+No new dependency cycle proven this cycle. No runtime import graph executed this cycle.
 
 ## Exit criteria
 
-| Criterion | Sweep-114 |
+| Criterion | Sweep-115 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| sierpinski-geometry-045 classified RESEARCH | MET |
-| Subject unsupported claims | CAPPED |
-| Product physics invented | NOT DONE (correct) |
+| adl-capability-matrix classified RESEARCH | MET |
+| Subject unsupported completeness claim | CAPPED |
+| 75-row matrix invented | NOT DONE (correct) |
 | GitHub archive flag on genieGPT / smart_home_BCI | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |

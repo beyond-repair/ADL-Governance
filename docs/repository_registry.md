@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-07 (Sweep-114) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-07 (Sweep-115) · **Governing source:** this repository
 
 Visible GitHub search count: **75**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
 
@@ -24,9 +24,9 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 ## RESEARCH (Claim level ≤ 2)
 
-`sierpinski-geometry-045` locked Sweep-114 (generator + tests + CI success 34063349923; GOVERNANCE + UNSUPPORTED tokens). `momentum-closure` locked Sweep-113 (geometry helpers present; tensor ABSENT; product pytest withheld). `ADL-Nexus` locked Sweep-112. Mapping / census layer and other RESEARCH rows unchanged except census count 75. See PORTFOLIO_STATUS_REPORT.md for the full name list this cycle.
+`adl-capability-matrix` locked Sweep-115 (67-row dated JSON; live census 75; GOVERNANCE + UNSUPPORTED completeness). `sierpinski-geometry-045` locked Sweep-114. `momentum-closure` locked Sweep-113. `ADL-Nexus` locked Sweep-112. Mapping / census layer and other RESEARCH rows unchanged except census count 75. See PORTFOLIO_STATUS_REPORT.md for the full name list this cycle.
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 75-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law.
 
 ---
 
@@ -46,7 +46,7 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 | Digital_Double_Virtual_Workforce_4. | Digital_Double_virtual_workforce |
 | Digital_Double_Virtual_Workforce_4.2 | Digital_Double_virtual_workforce |
 | Digital-Double_Mobile | Digital_Double_virtual_workforce |
-| digital-double-mobile | Digital_Double_virtual_workforce (Sweep-076) |
+| digital-double-mobile | Digital_Double_virtual_workforce |
 
 ---
 
