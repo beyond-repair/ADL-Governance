@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T01:15Z (Sweep-094 — aegis-repo-graph)
+**Last updated:** 2026-09-07T01:25Z (Sweep-095 — LegionOS + Phase-3 re-verify)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -13,7 +13,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success; head `7b3d421c`) |
 | Review then merge or reject Dependabot #5 (Vite major group) and #6 (rollup) | Digital_Double_virtual_workforce | **OPEN** |
 | `gh repo archive` batch | archive_queue + smart_home_BCI + RepoRover- + Digital-Double_Mobile | PENDING |
-| Optional tag v0.1.0 after Sweep-094 CI on new head | aegis-repo-graph | PENDING (docs-only commit `1a5a2fde`; pre-change CI 33928255440 green) |
+| Optional tag v0.1.0 after Sweep-094 CI on new head | aegis-repo-graph | PENDING |
 
 ## High-risk / do-not-implement
 
@@ -29,13 +29,14 @@ Destructive or account-level actions that require a human operator. Agent record
 | Revive Digital-Double_Mobile as a product | Empty stub; canonical is Digital_Double_virtual_workforce |
 | Treat aegis-repo-graph as a live GitHub inventory SLA | Snapshot dated 2026-09-04 |
 | Treat sunder as ACTIVE agent runtime | RESEARCH; canonical offline runtime is sovereign-clean-room |
+| Treat LegionOS as a shipped company OS | Docs-only; claim level 0 |
 
-## Closed this cycle (Sweep-094)
+## Closed this cycle (Sweep-095)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Discover/audit aegis-repo-graph | CI 33928255440 success | **DONE** |
-| Add CLAIM_STATUS + README sweep note | commit `1a5a2fde` | **DONE** |
+| Phase-3 live re-verify four ACTIVE product repos | Same run IDs as Sweep-093; still success | **DONE** |
+| LegionOS RESEARCH re-confirm | docs-ci 34036540383; commit `e3ce1f51` | **DONE** |
 | Refresh portfolio status + sweep history | Docs only | **DONE** |
 
 ## Still open (inherited)
