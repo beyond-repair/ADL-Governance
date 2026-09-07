@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T23:05Z (Sweep-115 — adl-capability-matrix)
+**Last updated:** 2026-09-07T23:13Z (Sweep-116 — ware-constant-phenomenology)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -23,6 +23,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-116 docs-presence re-run | ware-constant-phenomenology | **PENDING** |
 | Confirm Sweep-115 pytest conclusion | adl-capability-matrix | **PENDING** |
 | Confirm Sweep-114 pytest conclusion | sierpinski-geometry-045 | **PENDING** |
 | Confirm Sweep-113 docs-presence conclusion | momentum-closure | **PENDING** |
@@ -36,18 +37,19 @@ Destructive or account-level actions that require a human operator. Agent record
 |------|--------|
 | Invent 8 new matrix rows + cluster/cap | Would fabricate metadata claims |
 | Invent `tensor.py` or claim pytest-21 | ABSENT |
+| Promote ware-constant-phenomenology to ACTIVE | Phenomenology only; no experimental artifacts |
 | Promote adl-capability-matrix to ACTIVE | Dated 67-row snapshot; live drift |
 | Promote momentum-closure / ADL-Nexus / sierpinski to ACTIVE | Evidence incomplete |
 | Delete any repository / rewrite history | Immutable |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 | Tag releases without operator review | Operator-gated |
+| Treat docs-presence CI as SPARC/χ²/thrust validation | File presence ≠ physics |
 
-## Closed this cycle (Sweep-115)
+## Closed this cycle (Sweep-116)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Classify + claim-cap adl-capability-matrix | RESEARCH; 67 vs 75 drift explicit | **DONE** (pytest re-run PENDING) |
-| Phase-3 tree + release/tag reaffirm | Releases/tags still empty on quartet | **DONE** |
+| Re-audit ware-constant-phenomenology | RESEARCH; claims capped ≤2 | **DONE** (docs-presence re-run PENDING) |
 
 ## Rule
 

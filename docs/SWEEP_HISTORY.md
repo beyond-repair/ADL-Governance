@@ -2,56 +2,46 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-07 — Sweep-115 (select: adl-capability-matrix)
+## 2026-09-07 — Sweep-116 (select: ware-constant-phenomenology)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** After Sweep-114 (`sierpinski-geometry-045`), next unused first-page governance surface with an OPEN gap → `adl-capability-matrix`.
-**Subject prior head:** `50ce48524c372f628137c0bd3b7901c5c7c10ba5`
-**Subject new head:** `3e40d40e3d04178b8d3f32a3ce9b704025e19ab7`
+**Selection method:** After Sweep-115 (`adl-capability-matrix`), unused first-page physics scoring surface not locked this session → `ware-constant-phenomenology`.
+**Subject prior head:** `09bbdf20d5fa208e04603e5b8d2d0cf26494e30e`
+**Subject new head:** `7f4915378982d7aa5169e233abefe4ce8b336f67`
 **Classification:** **RESEARCH**
 
 ### DISCOVER
 
-Python package `matrix/` with `capability_matrix.json` (inventory_count 67), `load.py`, tests, CI. CLAIM_STATUS already documented 67-vs-75 drift (Sweep-100). GOVERNANCE.md absent pre-sweep. Tags/releases empty.
+Python scoring scripts (`sparc_run.py`, `killgate_verification.py`, lensing helpers), TeX notes, CLAIM_STATUS, GOVERNANCE, docs-presence workflow only. No unit-test suite. No releases/tags.
 
 ### AUDIT
 
 - Live search this cycle: total_count **75**, incomplete_results=false.
-- Expanding JSON without per-row evidence would fabricate claim caps.
-- Last listed product CI: 33932359958 success (2026-09-05). Not re-listed this cycle.
+- Last listed CI: docs-presence run **34150611709** success (2026-09-07). File presence only.
+- SPARC χ² pass, thrust, energy extraction, Bullet Cluster resolution remain **UNSUPPORTED**.
+- Master index remains `coherence-drive`.
 
 ### IMPLEMENT (docs only)
 
-- Added `GOVERNANCE.md`.
-- Tightened `CLAIM_STATUS.md` and README Sweep-115 matrix.
-- No rows invented. No ACTIVE promotion. No archive API. No tags.
-
-### Phase-3
-
-| Repo | Releases/tags | Tree | Last listed CI |
-|------|---------------|------|----------------|
-| forge-aegis | none | pipeline + tests + ci.yml | 33904082644 success |
-| sovereign-clean-room | none | core + tests | 33979476402 success |
-| BlockSwarm | none | contracts + foundry + test | 33986287866 success |
-| Digital_Double_virtual_workforce | none | src + tests + workflows | 33979714262 / 34084870372 success |
+- Updated `CLAIM_STATUS.md` and `GOVERNANCE.md` to Sweep-116.
+- No new physics. No ACTIVE promotion. No archive API. No tags.
 
 ### Exit
 
-Subject lock complete. First Sweep-115 pytest conclusion PENDING. Portfolio-wide termination **not** met. One governed sweep; stop.
+Subject lock complete. Portfolio-wide termination **not** met. One governed sweep; stop.
 
 ---
 
-## 2026-09-07 — Sweep-114 (select: sierpinski-geometry-045)
+## 2026-09-07 — Sweep-115 (select: adl-capability-matrix)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Subject prior head:** `bea3705c8a122bd3253a8eb10d70c09d7627716f`
-**Subject new head:** `768b9a24559247c9b9cbc726f04e608f93bf0829`
+**Subject prior head:** `50ce48524c372f628137c0bd3b7901c5c7c10ba5`
+**Subject new head:** `3e40d40e3d04178b8d3f32a3ce9b704025e19ab7`
 **Classification:** **RESEARCH**
 
-See git history of this file prior to Sweep-115 for full body.
+See git history of this file prior to Sweep-116 for full body.
 
 ---
 
 ## Prior
 
-Sweep-113…001 — see git history.
+Sweep-114…001 — see git history.
