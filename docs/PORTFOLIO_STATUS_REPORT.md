@@ -1,46 +1,42 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T18:20Z (autonomous Sweep-109)
+**Updated:** 2026-09-07T19:10Z (autonomous Sweep-110)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Phase-3 live re-verify of ACTIVE quartet + residual CI repair on `The-Origin-Point-Hypothesis.` + RESEARCH lock on `ware-constant-phenomenology`.
+**This cycle:** Random select `acoustic-token-modem`; RESEARCH lock + claim-cap docs.
 
-## Sweep-109 scope
+## Sweep-110 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | Phase-3 live verification + one RESEARCH lock + one residual CI fix |
-| Subjects | forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ware-constant-phenomenology, The-Origin-Point-Hypothesis. |
-| Product mutation | Docs + docs-presence only on RESEARCH subjects |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs on selected repo |
+| Subject | acoustic-token-modem |
+| Product mutation | GOVERNANCE.md + CLAIM_STATUS UNSUPPORTED tokens + README note |
 | Archive / release / history rewrite | NOT executed |
 
-## Phase-3 live verification (no assumption)
-
-| Repo | Latest product CI | Conclusion | Releases | Classification |
-|------|-------------------|------------|----------|----------------|
-| forge-aegis | run 33904082644 (2026-09-04) | success | none | ACTIVE |
-| sovereign-clean-room | Python tests 33979476402 (2026-09-05) | success | none | ACTIVE |
-| BlockSwarm | Foundry 33986287866 (2026-09-05) | success | none | ACTIVE |
-| Digital_Double_virtual_workforce | main 33979714262 success; PR #7 34084870372 success | success | none | ACTIVE |
-
-VSA completeness remains **UNVERIFIED** beyond unit CI. Product tags remain operator-pending.
-
-## Subject verification (ware-constant-phenomenology)
+## Subject verification (acoustic-token-modem)
 
 | Field | Value |
 |-------|--------|
-| Prior head | 7fecf95d9ff153a322b676d449976747077d5fbd |
-| New head | 09bbdf20d5fa208e04603e5b8d2d0cf26494e30e |
-| Prior CI | none |
+| Prior head | cf2ee6220e4399686a60459c72870f7c14f8e87f |
+| New head | 1e61fca2a29130cdf387e4fb9db432d4fb38a168 |
+| Last listed pytest | 34068585607 success (Sweep-092); Sweep-110 run PENDING |
 | Releases | none |
 | Classification | RESEARCH |
 | GitHub archived flag | false |
-| Claim | ≤2 phenomenology; SPARC pass / thrust / extraction FORBIDDEN |
+| Claim | ≤1 simulation; hardware bitrate / novelty / OFDM stubs FORBIDDEN |
 
-## Residual repair (The-Origin-Point-Hypothesis.)
+## Phase-3 last listed (unchanged this hour)
 
-Sweep-108 docs-presence run **34150166072 failed** because `CLAIM_STATUS.md` lacked the token `UNSUPPORTED` required by the workflow grep. Sweep-109 added the token and re-pushed head `f46deb8ddbdb369c823bc573a2d7730fb3857979`. First success after this push is **PENDING** until Actions lists it.
+| Repo | Latest product CI | Conclusion | Classification |
+|------|-------------------|------------|----------------|
+| forge-aegis | 33904082644 | success | ACTIVE |
+| sovereign-clean-room | 33979476402 | success | ACTIVE |
+| BlockSwarm | 33986287866 | success | ACTIVE |
+| Digital_Double_virtual_workforce | 33979714262 / PR#7 34084870372 | success | ACTIVE |
+
+VSA completeness remains **UNVERIFIED** beyond unit CI.
 
 ## Classification (canonical)
 
@@ -52,7 +48,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — galactic-style scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
+`acoustic-token-modem` — simulation modem; Sweep-110 lock. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — galactic-style scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
@@ -65,7 +61,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 ### ARCHIVED
 
 Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`.
-GitHub `archived=true`: `CFT-v3.0` only. Remainder of recommended queue in `docs/archive_queue.md` (flags not executed).
+GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
 
@@ -76,28 +72,24 @@ GitHub `archived=true`: `CFT-v3.0` only. Remainder of recommended queue in `docs
 | Gap | Severity | State |
 |-----|----------|-------|
 | Product releases empty on ACTIVE quartet | Medium | OPEN (operator tag) |
-| adl-capability-matrix row count vs live 75 | Medium | OPEN (do not invent rows) |
+| adl-capability-matrix row count vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
-| Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN (operator rotate) |
+| Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Archive flags not applied | Low–Medium | OPEN |
-| Duplicate OS / agent / SEEM surfaces | Medium | OPEN (SUPERSEDE notes only) |
+| Duplicate OS / agent / SEEM surfaces | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
-| Physics novelty / 92% pinch figure | High (claim) | CAPPED unverified |
-| CFT/IQG experimental confirmation | High (claim) | CAPPED; ledger only |
-| Origin Point SPARC / dark-matter claims | High (claim) | CAPPED Sweep-108/109 |
-| Ware SPARC χ² as a pass | High (claim) | CAPPED Sweep-109 |
-| smart_home_BCI GitHub archive flag | Low | OPEN (operator) |
-| Origin Point docs-presence first success | Medium | PENDING after Sweep-109 repair |
+| Physics novelty / 92% pinch figure | High (claim) | CAPPED |
+| Acoustic hardware bitrate / novelty | High (claim) | CAPPED Sweep-110 |
+| Sweep-110 pytest after docs push | Medium | PENDING |
 
 ## Exit criteria
 
-| Criterion | Sweep-109 |
+| Criterion | Sweep-110 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Quartet CI last listed conclusion | success (stale vs this hour; last listed runs remain green) |
-| ware-constant-phenomenology classified RESEARCH | MET |
+| acoustic-token-modem classified RESEARCH | MET |
 | Subject unsupported claims | CAPPED |
-| Origin Point docs-presence first success listed | PENDING |
+| Subject Sweep-110 pytest listed | PENDING |
 | Releases present | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |

@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T18:20Z (Sweep-109 — ware-constant-phenomenology + Origin Point CI residual)
+**Last updated:** 2026-09-07T19:10Z (Sweep-110 — acoustic-token-modem)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -20,46 +20,30 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
-| Refresh capability_matrix.json to live census (75) with verified cluster/cap per new row | adl-capability-matrix | **OPEN** (do not invent rows) |
-| Optional tag v0.1.0 after green CI | adl-capability-matrix | PENDING |
-| Optional tag v0.1.0 | aegis-repo-graph | PENDING |
+| Confirm pytest after Sweep-110 docs push | acoustic-token-modem | PENDING (prior 34068585607 success) |
+| Optional date-stamped research tag | acoustic-token-modem | OPTIONAL (not hardware validation) |
+| Refresh capability_matrix.json to live census (75) | adl-capability-matrix | **OPEN** |
 | Optional tag after green tests | sovereign-clean-room | READY (CI 33979476402) |
-| Add docs CI to ADL-Governance | ADL-Governance | OPTIONAL |
-| Optional LICENSE on profile README repo | beyond-repair | OPTIONAL |
-| Optional date-stamped research tag | topological-pinch | OPTIONAL |
-| Optional date-stamped research tag | CFTv3.3-IQG-Unified-Framework | OPTIONAL |
-| Confirm docs-presence success after Sweep-109 repair | The-Origin-Point-Hypothesis. | PENDING (run 34150166072 was failure) |
+| Confirm docs-presence success after Sweep-109 repair | The-Origin-Point-Hypothesis. | PENDING |
 | Confirm first docs-presence Actions run | ware-constant-phenomenology | PENDING |
-| Optional date-stamped research tag | ware-constant-phenomenology | OPTIONAL (not physics validation) |
 
 ## High-risk / do-not-implement
 
 | Item | Reason |
 |------|--------|
+| Treat acoustic FSK CI as speaker/mic validation | M10 absent; claim ≤1 |
+| Report theoretical bitrate as achieved | UNSUPPORTED |
+| Treat PSK/QAM/OFDM stubs as working modulators | Stubs |
 | Fabricate matrix rows for unenumerated repos | Unsupported metadata claim |
-| Implement missing `bci` / `SmartHome` in smart_home_BCI | ARCHIVED |
-| Execute smart_home_BCI against live LAN | Hard-coded unlock path |
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
-| Treat 92% aft-face pinch as measured | Unverified; RESEARCH cap |
-| Treat CFT/IQG field equation as experimentally confirmed | Ledger only; claim ≤ 2 |
-| Treat Origin Point as SPARC-validated or dark-matter replacement | Sweep-108/109 cap; claim ≤ 1 |
-| Treat SPARC χ²_red ~9 as a pass | Recorded open |
-| Treat Bullet Cluster r0/c as resolved | Recorded FAIL / UNSUPPORTED |
 | Delete any repository / rewrite history | Immutable |
-| Treat RESEARCH census tools or profile README as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
-| Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
-| Add SPARC runners or mesh generators into CFTv3.3-IQG-Unified-Framework | Wrong canonical home |
-| Invent a computational Origin Point solver in the sketch repo | Wrong home |
-| Treat ware-constant-phenomenology scripts as experimental confirmation | Claim ≤ 2 only |
 
-## Closed this cycle (Sweep-109)
+## Closed this cycle (Sweep-110)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Phase-3 re-list quartet Actions | last listed conclusions remain success | **DONE** |
-| Classify + claim-cap ware-constant-phenomenology | RESEARCH lock; docs-presence workflow | **DONE** |
-| Repair Origin Point docs-presence token mismatch | CLAIM_STATUS now contains UNSUPPORTED | **DONE** (success listing PENDING) |
+| Classify + claim-cap acoustic-token-modem | RESEARCH; GOVERNANCE.md; UNSUPPORTED tokens | **DONE** |
 
 ## Rule
 

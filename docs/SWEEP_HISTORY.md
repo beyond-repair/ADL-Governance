@@ -2,6 +2,38 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-07 — Sweep-110 (select: acoustic-token-modem)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** SHA-256(`2026-09-07T15:08:EDT-sweep`) mod first-page census slice (38 named) → `acoustic-token-modem`.
+**Subject prior head:** `cf2ee6220e4399686a60459c72870f7c14f8e87f`
+**Subject new head:** `1e61fca2a29130cdf387e4fb9db432d4fb38a168`
+**Classification:** **RESEARCH**
+
+### DISCOVER
+
+Python package `src/acoustic_token_modem` (tokenizer, protocol/CRC/framing, FSK modulation, channel simulation, metrics). Tests under `tests/`. CI `.github/workflows/pytest.yml`. Docs present. Stubs: PSK/QAM/OFDM, latency metric, several experiments.
+
+### AUDIT
+
+- Last pytest run **34068585607** conclusion **success** (Sweep-092).
+- Claim level already 1; hardware M10 absent.
+- CLAIM_STATUS lacked explicit `UNSUPPORTED` token required by other docs-presence greps.
+- No GOVERNANCE.md.
+- Empty `benchmarks/results/`.
+
+### IMPLEMENT (idempotent docs only)
+
+- Added `GOVERNANCE.md`.
+- Added explicit **UNSUPPORTED** tokens to `CLAIM_STATUS.md`.
+- README Sweep-110 note. No product code, no claim elevation, no tag.
+
+### Exit
+
+Subject lock complete. Portfolio-wide termination **not** met. One governed sweep; stop.
+
+---
+
 ## 2026-09-07 — Sweep-109 (Phase-3 + ware-constant-phenomenology + Origin Point residual)
 
 **Agent:** Grok (ADL-SEEM governed)
