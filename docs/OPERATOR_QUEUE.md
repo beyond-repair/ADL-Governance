@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T17:20Z (Sweep-107 — smart_home_BCI)
+**Last updated:** 2026-09-07T18:10Z (Sweep-108 — The-Origin-Point-Hypothesis.)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -28,6 +28,8 @@ Destructive or account-level actions that require a human operator. Agent record
 | Optional LICENSE on profile README repo | beyond-repair | OPTIONAL |
 | Optional date-stamped research tag | topological-pinch | OPTIONAL (docs-ci only; not physics validation) |
 | Optional date-stamped research tag | CFTv3.3-IQG-Unified-Framework | OPTIONAL (docs-ci only; not physics validation) |
+| Confirm first docs-presence Actions run | The-Origin-Point-Hypothesis. | PENDING |
+| Optional date-stamped research tag | The-Origin-Point-Hypothesis. | OPTIONAL (not physics validation) |
 
 ## High-risk / do-not-implement
 
@@ -39,6 +41,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
 | Treat 92% aft-face pinch as measured | Unverified; RESEARCH cap |
 | Treat CFT/IQG field equation as experimentally confirmed | Ledger only; claim ≤ 2 |
+| Treat Origin Point as SPARC-validated or dark-matter replacement | Sweep-108 cap; claim ≤ 1 |
 | Treat SPARC χ²_red ~9.1 as a pass | Recorded open |
 | Treat Bullet Cluster r0/c as resolved | Recorded FAIL |
 | Delete any repository / rewrite history | Immutable |
@@ -46,13 +49,14 @@ Destructive or account-level actions that require a human operator. Agent record
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 | Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
 | Add SPARC runners or mesh generators into CFTv3.3-IQG-Unified-Framework | Wrong canonical home |
+| Invent a computational Origin Point solver in this sketch repo | Wrong home; derivation repos exist |
 
-## Closed this cycle (Sweep-107)
+## Closed this cycle (Sweep-108)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit smart_home_BCI | ARCHIVED lock + docs; no product code | **DONE** |
-| Push subject commit | 79382034ef59896eab672adce8cb98efbb45384b | **DONE** |
+| Classify + claim-cap Origin Point repo | RESEARCH lock; docs-presence workflow | **DONE** |
+| Push subject commit | 74e31ad3cee77bc26111a0557f988f9975062afb | **DONE** |
 
 ## Rule
 

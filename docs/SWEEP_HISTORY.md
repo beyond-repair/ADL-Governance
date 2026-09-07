@@ -2,6 +2,66 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-07 — Sweep-108 (select: The-Origin-Point-Hypothesis.)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Deterministic random from live census (`random.seed(202609071403)` over 75 names) → `The-Origin-Point-Hypothesis.`
+**Classification:** **RESEARCH**
+
+### Discover
+
+Prior tree at `274d8e346376e6c194c222eaf050358ab32a255c`:
+- `README.md` (strong SPARC / dark-matter language)
+- `The Origin Point Hypothesis.pdf`
+- `origin-point-core.tex`
+No workflows. No tests. No LICENSE. Language metadata: none (docs/TeX).
+
+### Audit
+
+| Check | Result |
+|-------|--------|
+| Undefined components | No executable modules; PDF/TeX undocumented claim status |
+| Stale registry | Name present in census; no prior dedicated lock |
+| Critical CI | Absent → added docs-presence only |
+| Duplicate canonical | CFT/Ware law lives in derivation/phenomenology + CFTv3.3; this repo is a sketch |
+| Critical security | None (no code) |
+| Unsupported claims | SPARC consistency + dark-matter elimination **capped** |
+| Index convention | Prior \(M_2\) used \((n-1)\); governance canonical is \(W(n)=0.08 e^{0.23(n-3)}\) |
+
+### Classify justification
+
+RESEARCH: ontological hypothesis notes only; no tests of physics; not ACTIVE; not superseded by a single successor (feeds several CFT/Ware repos). Not ARCHIVED (still referenced as substrate narrative).
+
+### Plan / Implement
+
+Safe docs + presence CI on subject:
+- README claim-cap rewrite
+- CLAIM_STATUS.md, GOVERNANCE.md
+- `.github/workflows/docs-presence.yml`
+No PDF rewrite. No physics code invented. No archive.
+
+Subject commit: `74e31ad3cee77bc26111a0557f988f9975062afb`.
+
+### Test → CI
+
+Docs-presence workflow added; first run depends on Actions enablement (not claimed green until listed success).
+
+### Exit (this repo)
+
+| Termination item | Status |
+|------------------|--------|
+| Undefined/undocumented components | MET (documented as sketch) |
+| Stale registry on subject | MET this sweep |
+| Critical CI failures | N/A pending first run; no product tests |
+| Duplicate canonical | MET (pointers, no merge) |
+| Critical security | N/A |
+| Unsupported claims | CAPPED |
+| Target state | RESEARCH lock MET |
+
+Portfolio-wide termination **not** met.
+
+---
+
 ## 2026-09-07 — Sweep-107 (select: smart_home_BCI)
 
 **Agent:** Grok (ADL-SEEM governed)

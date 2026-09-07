@@ -1,31 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T17:20Z (autonomous Sweep-107)
+**Updated:** 2026-09-07T18:10Z (autonomous Sweep-108)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Randomized select `smart_home_BCI`. Re-audit only. Classification **ARCHIVED** unchanged.
+**This cycle:** Randomized select `The-Origin-Point-Hypothesis.`. Classification **RESEARCH**. Claims capped.
 
-## Sweep-107 scope
+## Sweep-108 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | Random single-repo completion sweep |
-| Subject | smart_home_BCI |
-| Product mutation | Docs lock only (no bci/SmartHome implementation) |
-| Archive / release / history rewrite | NOT executed (operator queue) |
+| Subject | The-Origin-Point-Hypothesis. |
+| Product mutation | Docs + docs-presence workflow; no physics implementation |
+| Archive / release / history rewrite | NOT executed |
 
 ## Subject verification
 
 | Field | Value |
 |-------|--------|
-| Prior head | 881844c1ee0abda0a37296fd6567f83a8a8e85ef |
-| New head | 79382034ef59896eab672adce8cb98efbb45384b |
-| Prior CI | none (workflows=0) |
+| Prior head | 274d8e346376e6c194c222eaf050358ab32a255c |
+| New head | 74e31ad3cee77bc26111a0557f988f9975062afb |
+| Prior CI | none |
 | Releases | none |
-| Classification | ARCHIVED |
-| GitHub archived flag | false (PENDING operator) |
-| Claim | historical sketch only; medical/BCI/production FORBIDDEN |
+| Classification | RESEARCH |
+| GitHub archived flag | false |
+| Claim | Level 0–1 hypothesis; SPARC/dark-matter language FORBIDDEN without artifacts |
 
 ## Classification (canonical)
 
@@ -35,9 +35,9 @@ Exactly one class per repository. Unlisted public names default to **RESEARCH** 
 
 ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
 
-### RESEARCH (profile + remainder)
+### RESEARCH (named locks + remainder)
 
-`beyond-repair` — profile README (Sweep-103). `topological-pinch` — hypothesis lock (Sweep-096 + Sweep-105). `CFTv3.3-IQG-Unified-Framework` — synthesis ledger (Sweep-082 + Sweep-106). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
+`beyond-repair` — profile README (Sweep-103). `topological-pinch` — hypothesis lock (Sweep-096 + Sweep-105). `CFTv3.3-IQG-Unified-Framework` — synthesis ledger (Sweep-082 + Sweep-106). `The-Origin-Point-Hypothesis.` — ontological sketch lock (Sweep-108). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
@@ -69,16 +69,17 @@ GitHub `archived=true`: `CFT-v3.0` only. Remainder of recommended queue in `docs
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED unverified |
 | CFT/IQG experimental confirmation | High (claim) | CAPPED; ledger only |
+| Origin Point SPARC / dark-matter claims | High (claim) | CAPPED Sweep-108 |
 | smart_home_BCI GitHub archive flag | Low | OPEN (operator) |
 
 ## Exit criteria
 
-| Criterion | Sweep-107 |
+| Criterion | Sweep-108 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified ARCHIVED | MET |
+| Subject classified RESEARCH | MET |
 | Subject unsupported claims | CAPPED |
-| Subject GitHub archive flag | NOT MET (operator) |
+| Subject docs-presence CI first success listed | PENDING (Actions) |
 | Releases present | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
