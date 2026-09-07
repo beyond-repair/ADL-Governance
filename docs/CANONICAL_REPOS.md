@@ -12,7 +12,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | OpenZeppelin upgradeable contracts, Foundry |
 | **Successors** | — |
 | **Predecessors** | Root Solidity sketches (now `legacy/`) |
-| **Live CI (Sweep-101)** | Foundry run 33986287866 success |
+| **Live CI (Sweep-112)** | Foundry run 33986287866 success |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/BlockSwarm |
 
@@ -26,7 +26,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | Python, NumPy, PyNaCl >= 1.6.2 |
 | **Successors** | — |
 | **Predecessors** | SEEM-2.0, SEEM-Cognitive-Microservice(s), seem-block-system |
-| **Live CI (Sweep-101)** | Python tests run 33979476402 success |
+| **Live CI (Sweep-112)** | Python tests run 33979476402 success |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/sovereign-clean-room |
 
@@ -52,7 +52,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | AEGIS-Project-Nehemiah- (spec sibling) |
 | **Successors** | — |
 | **Predecessors** | — |
-| **Live CI (Sweep-101)** | forge-aegis CI run 33904082644 success |
+| **Live CI (Sweep-112)** | forge-aegis CI run 33904082644 success |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/forge-aegis |
 
@@ -66,7 +66,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | TypeScript / Python smoke |
 | **Successors** | — |
 | **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 |
-| **Live CI (Sweep-101)** | Digital Double CI run 33979714262 success (main); 34084870372 success (PR #7) |
+| **Live CI (Sweep-112)** | Digital Double CI run 33979714262 success (main); 34084870372 success (PR #7) |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/Digital_Double_virtual_workforce |
 
@@ -82,6 +82,19 @@ Authoritative implementations. All overlapping work must defer here.
 | **Predecessors** | Fragmented satellite papers |
 | **URL** | https://github.com/beyond-repair/coherence-drive |
 
+## ADL-Nexus (not product-canonical)
+
+| Field | Value |
+|-------|--------|
+| **Purpose** | Local-first integration scaffold + Party client |
+| **Owner** | beyond-repair |
+| **Status** | RESEARCH (Sweep-112) |
+| **Dependencies** | Python 3.10+ stdlib; optional sibling adapters |
+| **Live CI (Sweep-112)** | workflow added; first run PENDING |
+| **URL** | https://github.com/beyond-repair/ADL-Nexus |
+
+Do **not** treat ADL-Nexus as the portfolio ACTIVE agent runtime or workforce product.
+
 ## sunder (not product-canonical)
 
 | Field | Value |
@@ -90,7 +103,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Owner** | beyond-repair |
 | **Status** | RESEARCH |
 | **Dependencies** | Python 3.11+, rich; supervisor LLM PLANNED |
-| **Live CI (Sweep-078)** | SUNDER CI run 33996778685 success (not re-run Sweep-101) |
+| **Live CI (Sweep-078)** | SUNDER CI run 33996778685 success (not re-run Sweep-112) |
 | **URL** | https://github.com/beyond-repair/sunder |
 
 Do **not** treat sunder as the portfolio ACTIVE agent runtime. Offline constitutional runtime remains sovereign-clean-room.

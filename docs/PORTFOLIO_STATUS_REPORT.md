@@ -1,42 +1,53 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T20:05Z (autonomous Sweep-111)
+**Updated:** 2026-09-07T20:12Z (autonomous Sweep-112)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random-eligible select `genieGPT`; ARCHIVED lock + claim-cap docs.
+**This cycle:** Phase-3 live Actions re-list + subject `ADL-Nexus` RESEARCH lock + first product CI workflow.
 
-## Sweep-111 scope
+## Sweep-112 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs on selected repo |
-| Subject | genieGPT |
-| Product mutation | GOVERNANCE.md + CLAIM_STATUS.md + README/ARCHIVED notes |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs+CI on selected repo |
+| Subject | ADL-Nexus |
+| Product mutation | CLAIM_STATUS / GOVERNANCE / README + `.github/workflows/ci.yml` |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (genieGPT)
+## Subject verification (ADL-Nexus)
 
 | Field | Value |
 |-------|--------|
-| Prior head | dad74fd4dd32df481e84521347ac9ad9dc00d385 |
-| New head | 17d13c93dd6fcb7e0327bec4bc69afadaa887b79 |
-| CI | ABSENT (no workflows) |
+| Prior head | bb48456a04115e7bd88412ba4b5d82e664f6c6d0 |
+| New head | c2b9603608e4cd923f2ba0b993899ab48f8612bc |
+| Pre-sweep product CI | ABSENT (Dependabot graph workflow only) |
+| Sweep-112 CI | ADDED pytest + docs-presence; first run **PENDING** |
 | Releases | none |
-| Classification | ARCHIVED |
+| Classification | RESEARCH |
 | GitHub archived flag | false |
-| Claim | 0; GPT product / runtime / weights **UNSUPPORTED** |
+| Claim | ≤2; live adapters / full workforce / production platform **UNSUPPORTED** |
 
-## Phase-3 last listed (unchanged this hour)
+## Phase-3 live listed (Sweep-112)
 
-| Repo | Latest product CI | Conclusion | Classification |
-|------|-------------------|------------|----------------|
-| forge-aegis | 33904082644 | success | ACTIVE |
-| sovereign-clean-room | 33979476402 | success | ACTIVE |
-| BlockSwarm | 33986287866 | success | ACTIVE |
-| Digital_Double_virtual_workforce | 33979714262 / PR#7 34084870372 | success | ACTIVE |
+| Repo | Latest product CI | Conclusion | Releases / tags | Classification |
+|------|-------------------|------------|-----------------|----------------|
+| forge-aegis | 33904082644 | success | none | ACTIVE |
+| sovereign-clean-room | 33979476402 | success | none | ACTIVE |
+| BlockSwarm | 33986287866 | success | none | ACTIVE |
+| Digital_Double_virtual_workforce | 33979714262 / PR#7 34084870372 | success | none | ACTIVE |
 
 VSA completeness remains **UNVERIFIED** beyond unit CI.
+
+Code-review readiness (this cycle, evidence = Actions conclusion + empty releases):
+
+| Repo | Readiness |
+|------|-----------|
+| forge-aegis | PASS WITH FINDINGS (no release tag) |
+| sovereign-clean-room | PASS WITH FINDINGS (VSA completeness UNVERIFIED; no tag) |
+| BlockSwarm | PASS WITH FINDINGS (no v0.5.0-sagf tag) |
+| Digital_Double_virtual_workforce | PASS WITH FINDINGS (open Dependabot #5/#6 and evidence PR #7) |
+| ADL-Nexus | FAIL vs ACTIVE bar; RESEARCH ok; first product CI PENDING |
 
 ## Classification (canonical)
 
@@ -48,7 +59,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`acoustic-token-modem` — simulation modem; Sweep-110 lock. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — galactic-style scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
+`ADL-Nexus` — integration scaffold + Party client; Sweep-112 lock. `acoustic-token-modem` — simulation modem; Sweep-110. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
@@ -60,7 +71,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT` (Sweep-111 reconfirm).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT` (Sweep-111).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -75,25 +86,40 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | adl-capability-matrix row count vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
+| Open Dependabot HIGH on digital-double-mobile (e.g. browserslist #85, nanoid #83) | High | OPEN |
 | Archive flags not applied (`genieGPT` included) | Low–Medium | OPEN |
 | Duplicate OS / agent / SEEM surfaces | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED |
 | Acoustic hardware bitrate / novelty | High (claim) | CAPPED Sweep-110 |
 | Sweep-110 pytest after docs push | Medium | PENDING |
+| Sweep-112 first ADL-Nexus Actions run | Medium | PENDING |
+
+## Dependency notes (this cycle)
+
+Internal (documented, not runtime-verified):
+
+- ADL-Nexus → sovereign-clean-room (adapter stub)
+- ADL-Nexus → sunder (adapter stub)
+- ADL-Nexus → ADL-Governance / ADL-SEEM (policy)
+- forge-aegis → AEGIS-Project-Nehemiah- (spec sibling)
+- sunder-cleanroom-vsa-adapter / seem-sunder-bridge → contract-only mapping
+
+No new dependency cycle proven this cycle. Orphans remain the pre-2024 experiment set (see archive_queue).
 
 ## Exit criteria
 
-| Criterion | Sweep-111 |
+| Criterion | Sweep-112 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| genieGPT classified ARCHIVED | MET |
+| ADL-Nexus classified RESEARCH | MET |
 | Subject unsupported claims | CAPPED |
-| GitHub archive flag on genieGPT | NOT MET (operator) |
-| Releases present | NOT MET |
+| First ADL-Nexus product CI listed success | NOT MET (PENDING) |
+| GitHub archive flag on genieGPT / smart_home_BCI | NOT MET (operator) |
+| Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
-| Archive flags executed | NOT MET |
+| digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
 One governed sweep; residuals recorded; stop.
