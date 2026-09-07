@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T15:14Z (Sweep-105 — topological-pinch)
+**Last updated:** 2026-09-07T16:09Z (Sweep-106 — CFTv3.3-IQG-Unified-Framework)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -27,6 +27,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Add docs CI to ADL-Governance | ADL-Governance | OPTIONAL |
 | Optional LICENSE on profile README repo | beyond-repair | OPTIONAL |
 | Optional date-stamped research tag | topological-pinch | OPTIONAL (docs-ci only; not physics validation) |
+| Optional date-stamped research tag | CFTv3.3-IQG-Unified-Framework | OPTIONAL (docs-ci only; not physics validation) |
 
 ## High-risk / do-not-implement
 
@@ -37,17 +38,21 @@ Destructive or account-level actions that require a human operator. Agent record
 | Execute smart_home_BCI against live LAN | Hard-coded unlock path |
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
 | Treat 92% aft-face pinch as measured | Unverified; RESEARCH cap |
+| Treat CFT/IQG field equation as experimentally confirmed | Ledger only; claim ≤ 2 |
+| Treat SPARC χ²_red ~9.1 as a pass | Recorded open |
+| Treat Bullet Cluster r0/c as resolved | Recorded FAIL |
 | Delete any repository / rewrite history | Immutable |
 | Treat RESEARCH census tools or profile README as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 | Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
+| Add SPARC runners or mesh generators into CFTv3.3-IQG-Unified-Framework | Wrong canonical home |
 
-## Closed this cycle (Sweep-105)
+## Closed this cycle (Sweep-106)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit topological-pinch | RESEARCH lock + docs tests | **DONE** |
-| Push subject commit | 9a6d3be436632e7c8e0c8cb16461b137d1bd6838 | **DONE** |
+| Re-audit CFTv3.3-IQG-Unified-Framework | RESEARCH lock + docs tests + CI | **DONE** |
+| Push subject commits | d07d1c50… then 99a07454… | **DONE** |
 
 ## Rule
 

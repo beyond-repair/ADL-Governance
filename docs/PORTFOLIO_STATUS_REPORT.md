@@ -1,30 +1,30 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T15:14Z (autonomous Sweep-105)
+**Updated:** 2026-09-07T16:09Z (autonomous Sweep-106)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Randomized select `topological-pinch`. Safe docs + tests. Classification RESEARCH unchanged.
+**This cycle:** Randomized select `CFTv3.3-IQG-Unified-Framework`. Safe docs + tests. Classification RESEARCH unchanged.
 
-## Sweep-105 scope
+## Sweep-106 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | Random single-repo completion sweep |
-| Subject | topological-pinch |
-| Product mutation | Docs/tests only |
+| Subject | CFTv3.3-IQG-Unified-Framework |
+| Product mutation | Docs/tests/CI only |
 | Archive / release / history rewrite | NOT executed |
 
 ## Subject verification
 
 | Field | Value |
 |-------|--------|
-| Prior head | 2c6f395339da41e17882ad9597f6d27d8d76c656 |
-| New head | 9a6d3be436632e7c8e0c8cb16461b137d1bd6838 |
-| Prior CI | 34074889279 docs-ci success |
+| Prior head | 6b45ab0eb6383e78bc40ec0b891618c8f5e429a1 |
+| New head | 99a07454c66fb4cb5ce71bbba8ef498b432d536f |
+| Prior CI | none |
 | Releases | none |
 | Classification | RESEARCH |
-| Claim | 0–1; 92% aft-face **unverified** |
+| Claim | ≤ 2 ledger; ontology 0–1; Bullet r0/c FAIL |
 
 ## Classification (canonical)
 
@@ -36,7 +36,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (profile + remainder)
 
-`beyond-repair` — profile README (Sweep-103). `topological-pinch` — hypothesis lock (Sweep-096 + Sweep-105). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
+`beyond-repair` — profile README (Sweep-103). `topological-pinch` — hypothesis lock (Sweep-096 + Sweep-105). `CFTv3.3-IQG-Unified-Framework` — synthesis ledger (Sweep-082 + Sweep-106). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
@@ -66,10 +66,11 @@ GitHub `archived=true`: `CFT-v3.0` only. Recommended queue remains in `docs/arch
 | Duplicate OS / agent / SEEM surfaces | Medium | OPEN (SUPERSEDE notes only) |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED unverified |
+| CFT/IQG experimental confirmation | High (claim) | CAPPED; ledger only |
 
 ## Exit criteria
 
-| Criterion | Sweep-105 |
+| Criterion | Sweep-106 |
 |-----------|-----------|
 | Named census of 75 | MET |
 | Subject classified RESEARCH | MET |

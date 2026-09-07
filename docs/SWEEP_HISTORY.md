@@ -2,48 +2,47 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-07 — Sweep-105 (select: topological-pinch)
+## 2026-09-07 — Sweep-106 (select: CFTv3.3-IQG-Unified-Framework)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random draw from live 75-name census (`RANDOM_PICK topological-pinch`).
-**Classification:** **RESEARCH** (hypothesis narrative; no mesh/solver in-repo).
+**Selection method:** Uniform random draw from live census names (`RANDOM_PICK` seed 20260907 → CFTv3.3-IQG-Unified-Framework).
+**Classification:** **RESEARCH** (synthesis / consistency ledger; no physics runtime in-tree).
 
 ### Discover
 
-Tree at prior head `2c6f395339da41e17882ad9597f6d27d8d76c656`:
-README.md, GOVERNANCE.md, CLAIM_STATUS.md, LICENSE, tests/test_docs.py, .github/workflows/ci.yml.
-No mesh, no solver, no experimental data files.
-Releases: none.
-Branches: `main`, `docs-momentum-link`.
+Tree at prior head `6b45ab0eb6383e78bc40ec0b891618c8f5e429a1`:
+README.md, RESEARCH.md, CONSISTENCY.md, LICENSE, CFTv3.3-IQG-Unified-Framework.md, CFTv3.3-IQG-Unified-Framework.tex.
+No solvers, no SPARC runner, no mesh, no releases.
+Language metadata: TeX.
 
 ### Audit
 
 | Check | Result |
 |-------|--------|
-| Undefined components | Hypothesis docs only |
-| Stale registry | Sweep-096 lock present; refreshed Sweep-105 |
-| Critical CI | Prior run 34074889279 success (docs-ci) |
-| Duplicate canonical | Geometry/solvers live in sibling repos |
+| Undefined components | Ledger docs only |
+| Stale registry | Sweep-082 lock present; refreshed Sweep-106 |
+| Critical CI | Previously none; docs-ci added |
+| Duplicate canonical | Executables live in satellite repos |
 | Critical security | None observed (docs + pytest) |
-| Unsupported claims | 92% figure already capped unverified |
+| Unsupported claims | Already capped claim ≤ 2; Bullet FAIL recorded |
 
 ### Classify justification
 
-RESEARCH: no mesh/BEM implementation here. Claim level 0–1. Does not meet ACTIVE promotion (no SECURITY.md product gate; CI is docs-presence only).
+RESEARCH: symbol/conflict ledger. Claim ≤ 2. Does not meet ACTIVE promotion (no product runtime; CI is docs-presence only). CFT-v3.0 remains SUPERSEDED by this repo.
 
 ### Plan / Implement
 
-Safe docs + test strengthen on subject:
-- GOVERNANCE.md Sweep-105 note + promotion gate.
-- CLAIM_STATUS.md re-audit row.
-- README Sweep-105 line.
-- tests/test_docs.py: README RESEARCH/hypothesis check.
+Safe docs + tests:
+- GOVERNANCE.md Sweep-106 + promotion gate.
+- RESEARCH.md / CONSISTENCY.md re-audit.
+- README Sweep-106 line.
+- tests/test_docs.py + .github/workflows/ci.yml.
 
-Subject commit: `9a6d3be436632e7c8e0c8cb16461b137d1bd6838`.
+Subject commits: `d07d1c50208adbf02d21fe42ac4898eaad6c85be`, `99a07454c66fb4cb5ce71bbba8ef498b432d536f`.
 
 ### Test → CI
 
-Workflow `docs-ci` will run on push. Prior conclusion success. Green CI ≠ physics validation.
+Workflow `docs-ci` runs on push. Green CI ≠ physics validation.
 No operator archive/release.
 
 ### Exit (this repo)
@@ -52,66 +51,24 @@ No operator archive/release.
 |------------------|--------|
 | Undefined/undocumented components | MET (docs lock) |
 | Stale registry on subject | MET |
-| Critical CI failures | Prior MET; new run pending |
+| Critical CI failures | Pipeline added; first run pending |
 | Duplicate canonical | MET (siblings named) |
 | Critical security | MET |
 | Unsupported claims | CAPPED |
 | Target state | RESEARCH docs lock MET |
 
-Portfolio-wide termination **not** met (releases, matrix 75 rows, archive flags).
+Portfolio-wide termination **not** met.
 
 ---
+
+## 2026-09-07 — Sweep-105 (select: topological-pinch)
+
+See prior body in git history. Classification RESEARCH. Subject head `9a6d3be436632e7c8e0c8cb16461b137d1bd6838`.
 
 ## 2026-09-07 — Sweep-104 (Phase-3 re-verify)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Master directive Phases 1–3 this cycle (one governed sweep).
-**Subjects:** live `user:beyond-repair` census; mandatory verify of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
-
-### Discover
-
-Live `user:beyond-repair` search: **total_count=75**, incomplete_results=false.
-Profile `public_repos=72` (do not silently overwrite; search list used as inventory this cycle).
-
-### Verify
-
-| Repo | CI | Releases |
-|------|----|----------|
-| forge-aegis | 33904082644 success | none observed |
-| sovereign-clean-room | 33979476402 success | none observed |
-| BlockSwarm | 33986287866 success | none observed |
-| Digital_Double_virtual_workforce | 33979714262 success (main); 34084870372 success (PR #7) | none observed |
-
-No new product commits on quartet main since Sweep-102. No product-repo mutation this cycle.
-
-### Classify
-
-ACTIVE set unchanged (7). SUPERSEDED / ARCHIVED-candidate lists unchanged. Remaining census rows RESEARCH by default.
-
-### Plan / Implement
-
-Safe docs only in ADL-Governance (`PORTFOLIO_STATUS_REPORT.md`, `OPERATOR_QUEUE.md`, this file). No archive execution. No release tagging.
-
-### Exit (this sweep)
-
-| Termination item | Status |
-|------------------|--------|
-| Quartet CI critical failure | MET (none) |
-| Named census of 75 | MET |
-| Releases | NOT MET |
-| Matrix 75 verified rows | NOT MET |
-| Duplicate surfaces | NOT MET |
-| Archive flags | NOT MET |
-| Portfolio-wide termination | NOT MET |
-
-Stop after this governed sweep.
-
----
-
-## 2026-09-07 — Sweep-103 (select: beyond-repair)
-
-See git history for full body.
+Live census 75. Quartet CI green. Portfolio-wide termination NOT MET.
 
 ## Prior
 
-Sweep-102…001 — see git history.
+Sweep-103…001 — see git history.
