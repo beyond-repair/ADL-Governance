@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T14:20Z (Sweep-103 — select: beyond-repair)
+**Last updated:** 2026-09-07T15:05Z (Sweep-104 — Phase-3 re-verify)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -38,13 +38,14 @@ Destructive or account-level actions that require a human operator. Agent record
 | Delete any repository / rewrite history | Immutable |
 | Treat RESEARCH census tools or profile README as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
+| Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
 
-## Closed this cycle (Sweep-103)
+## Closed this cycle (Sweep-104)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Discover/audit/classify `beyond-repair` profile repo | RESEARCH; GOVERNANCE.md + CLAIM_STATUS.md + README lock | **DONE** |
-| Subject commit | `06c5d00b4430d8a447f5d9759f7f2d5f212dd51b` | **DONE** |
+| Re-verify quartet Actions | IDs unchanged from Sweep-102; still success | **DONE** |
+| Refresh named 75-row census in status report | Search total_count=75 | **DONE** |
 
 ## Rule
 
