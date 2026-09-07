@@ -1,30 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T16:09Z (autonomous Sweep-106)
+**Updated:** 2026-09-07T17:20Z (autonomous Sweep-107)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Randomized select `CFTv3.3-IQG-Unified-Framework`. Safe docs + tests. Classification RESEARCH unchanged.
+**This cycle:** Randomized select `smart_home_BCI`. Re-audit only. Classification **ARCHIVED** unchanged.
 
-## Sweep-106 scope
+## Sweep-107 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | Random single-repo completion sweep |
-| Subject | CFTv3.3-IQG-Unified-Framework |
-| Product mutation | Docs/tests/CI only |
-| Archive / release / history rewrite | NOT executed |
+| Subject | smart_home_BCI |
+| Product mutation | Docs lock only (no bci/SmartHome implementation) |
+| Archive / release / history rewrite | NOT executed (operator queue) |
 
 ## Subject verification
 
 | Field | Value |
 |-------|--------|
-| Prior head | 6b45ab0eb6383e78bc40ec0b891618c8f5e429a1 |
-| New head | 99a07454c66fb4cb5ce71bbba8ef498b432d536f |
-| Prior CI | none |
+| Prior head | 881844c1ee0abda0a37296fd6567f83a8a8e85ef |
+| New head | 79382034ef59896eab672adce8cb98efbb45384b |
+| Prior CI | none (workflows=0) |
 | Releases | none |
-| Classification | RESEARCH |
-| Claim | ≤ 2 ledger; ontology 0–1; Bullet r0/c FAIL |
+| Classification | ARCHIVED |
+| GitHub archived flag | false (PENDING operator) |
+| Claim | historical sketch only; medical/BCI/production FORBIDDEN |
 
 ## Classification (canonical)
 
@@ -48,7 +49,8 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-GitHub `archived=true`: `CFT-v3.0` only. Recommended queue remains in `docs/archive_queue.md` (flags not executed).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 + Sweep-107).
+GitHub `archived=true`: `CFT-v3.0` only. Remainder of recommended queue in `docs/archive_queue.md` (flags not executed).
 
 ## Named census (75)
 
@@ -67,14 +69,16 @@ GitHub `archived=true`: `CFT-v3.0` only. Recommended queue remains in `docs/arch
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED unverified |
 | CFT/IQG experimental confirmation | High (claim) | CAPPED; ledger only |
+| smart_home_BCI GitHub archive flag | Low | OPEN (operator) |
 
 ## Exit criteria
 
-| Criterion | Sweep-106 |
+| Criterion | Sweep-107 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified RESEARCH | MET |
+| Subject classified ARCHIVED | MET |
 | Subject unsupported claims | CAPPED |
+| Subject GitHub archive flag | NOT MET (operator) |
 | Releases present | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |

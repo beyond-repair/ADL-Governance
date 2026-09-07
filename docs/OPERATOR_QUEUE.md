@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T16:09Z (Sweep-106 — CFTv3.3-IQG-Unified-Framework)
+**Last updated:** 2026-09-07T17:20Z (Sweep-107 — smart_home_BCI)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -13,7 +13,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success) |
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
-| `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
+| `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** (reconfirmed Sweep-107) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 
 ## Medium (documentation / census)
@@ -47,12 +47,12 @@ Destructive or account-level actions that require a human operator. Agent record
 | Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
 | Add SPARC runners or mesh generators into CFTv3.3-IQG-Unified-Framework | Wrong canonical home |
 
-## Closed this cycle (Sweep-106)
+## Closed this cycle (Sweep-107)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit CFTv3.3-IQG-Unified-Framework | RESEARCH lock + docs tests + CI | **DONE** |
-| Push subject commits | d07d1c50… then 99a07454… | **DONE** |
+| Re-audit smart_home_BCI | ARCHIVED lock + docs; no product code | **DONE** |
+| Push subject commit | 79382034ef59896eab672adce8cb98efbb45384b | **DONE** |
 
 ## Rule
 
