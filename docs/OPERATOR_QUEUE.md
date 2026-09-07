@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T14:10Z (Sweep-102 — census + Phase-3 re-verify)
+**Last updated:** 2026-09-07T14:20Z (Sweep-103 — select: beyond-repair)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -25,6 +25,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Optional tag v0.1.0 | aegis-repo-graph | PENDING |
 | Optional tag after green tests | sovereign-clean-room | READY (CI 33979476402) |
 | Add docs CI to ADL-Governance | ADL-Governance | OPTIONAL |
+| Optional LICENSE on profile README repo | beyond-repair | OPTIONAL |
 
 ## High-risk / do-not-implement
 
@@ -35,16 +36,15 @@ Destructive or account-level actions that require a human operator. Agent record
 | Execute smart_home_BCI against live LAN | Hard-coded unlock path |
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
 | Delete any repository / rewrite history | Immutable |
-| Treat RESEARCH census tools as ACTIVE products | Wrong lifecycle |
+| Treat RESEARCH census tools or profile README as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 
-## Closed this cycle (Sweep-102)
+## Closed this cycle (Sweep-103)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Live re-verify four ACTIVE product repos | CI green; releases empty; advisories empty | **DONE** |
-| Re-enumerate public census | search total_count 75; names published in PORTFOLIO_STATUS_REPORT | **DONE** |
-| Governance docs update | PORTFOLIO_STATUS_REPORT, SWEEP_HISTORY, this file | **DONE** |
+| Discover/audit/classify `beyond-repair` profile repo | RESEARCH; GOVERNANCE.md + CLAIM_STATUS.md + README lock | **DONE** |
+| Subject commit | `06c5d00b4430d8a447f5d9759f7f2d5f212dd51b` | **DONE** |
 
 ## Rule
 
