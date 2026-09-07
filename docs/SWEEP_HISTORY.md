@@ -2,114 +2,81 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-07 — Sweep-099 (select: smart_home_BCI)
+## 2026-09-07 — Sweep-100 (select: adl-capability-matrix)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random draw from a 34-name public-portfolio subset (Python `random.choice`). Draw result: `smart_home_BCI`.
-**Classification:** **ARCHIVED** (reaffirmed; first locked Sweep-087).
+**Selection method:** Uniform random draw from public-portfolio subset (Python `random.choice`, excluded prior subject `smart_home_BCI`). Draw: `adl-capability-matrix`.
+**Classification:** **RESEARCH** (governance census tool; claim-capped).
 
 ### Discover
 
-Tree on `main` (SHA `881844c1ee0abda0a37296fd6567f83a8a8e85ef`, truncated=false, 6 blobs):
+Tree on prior head `84c57f26514350419c33ee3a6772fd2ee224913d` (14 entries):
 
 | Path | Role |
 |------|------|
-| `smart_home_bci.py` | 2023-era single-file sketch |
-| `README.md` | ARCHIVED banner |
-| `ARCHIVED.md` | Classification + safety |
-| `CLAIM_STATUS.md` | Claim table |
-| `LICENSE` | Preserved |
-| `.gitignore` | Preserved |
+| `matrix/capability_matrix.json` | 67-row locked inventory |
+| `matrix/load.py` | load + validate_matrix |
+| `tests/test_matrix.py` | 6 tests (caps, count, queue, rejects) |
+| `.github/workflows/ci.yml` | pytest on 3.12 |
+| `pyproject.toml` / `requirements.txt` | package + pytest |
+| `README.md` | claim / non-claim banners |
 
-No `.github/workflows`. No tests. No `requirements.txt`.
+No `CLAIM_STATUS.md` before this sweep.
 
-Imports observed in sketch (do not invent implementations): `bci` (absent), `speech_recognition`, `phue`, Keras `Sequential`/`Dense`, `sqlite3`, `numpy`. Constructor `SmartHome('192.168.0.1')` is undefined in-tree. Hard-coded LAN `192.168.0.1`; `home.door.unlock()` present in command map.
-
-### Audit vs ADL-Governance
+### Audit
 
 | Check | Result |
 |-------|--------|
-| Undefined components | YES — `bci`, `SmartHome` not in tree |
-| Stale registry | Listed on archive_queue; GitHub `archived` still `false` |
-| Critical CI | N/A — zero workflows (historical sketch) |
-| Duplicate canonical | No; not a product domain |
-| Critical security if executed | Hard-coded LAN + door unlock + untrained health stub |
-| Unsupported claims | Capped in CLAIM_STATUS.md |
-| Target state | Docs lock MET; GitHub archive flag NOT MET (operator) |
+| Undefined components | None critical; public API is load/validate |
+| Stale registry | **YES** — inventory_count=67 vs live census 75 (Sweep-098) |
+| Critical CI | Latest product run **33932359958 success** on prior head |
+| Duplicate canonical | No (matrix is metadata census, not product runtime) |
+| Critical security | None observed |
+| Unsupported claims | README already capped; inventory currency was overstated by omission |
 
 ### Classify justification
 
-ARCHIVED: incomplete historical experiment, no tests/CI, missing modules, unsafe hardware hooks if executed, medical claim forbidden. Promotion to ACTIVE forbidden without a *new successor* repo. Do not fabricate adapters.
+RESEARCH: census/claim-cap tool, not a production service. Does not meet ACTIVE promotion gates (no release tag; inventory intentionally snapshot-dated; not a runtime product).
 
 ### Plan / Implement
 
-- No mutation of `smart_home_bci.py` (preserve historical work; do not fake completeness).
-- No new CI on this repo (would imply product intent).
-- Governance docs only this cycle.
-- Queue remains: `gh repo archive beyond-repair/smart_home_BCI --yes`.
+Safe, idempotent docs only on subject:
+- Added `CLAIM_STATUS.md` (allowed/forbidden claims; drift note).
+- Updated `README.md` to state snapshot date and live-census drift.
+- Did **not** invent cluster/cap rows for the 8 net-new repos (would be unsupported metadata).
+
+Subject commit: `50ce48524c372f628137c0bd3b7901c5c7c10ba5`.
 
 ### Test → CI
 
-Not applicable on subject repo (zero workflows by design for archived sketch). Governance change is documentation-only.
+Prior CI green (33932359958). Docs-only change; JSON/tests unchanged → validator still passes. New workflow run expected on push; not blocking documentation target.
 
 ### Exit (this repo)
 
 | Termination item | Status |
 |------------------|--------|
-| Undefined components documented | MET |
-| Stale registry noted | MET (queue row exists) |
-| Critical CI | N/A |
+| Undefined/undocumented components | MET (CLAIM_STATUS added) |
+| Stale registry | DOCUMENTED (refresh OPEN, not faked) |
+| Critical CI failures | None on last green product run |
 | Duplicate canonical | MET |
-| Critical security if executed | DOCUMENTED; do not execute |
+| Critical security | MET |
 | Unsupported claims | CAPPED |
-| GitHub archive flag | NOT MET — operator |
+| Target state | RESEARCH docs lock MET; full inventory refresh PENDING |
 
-Subject-repo *documentation* target met. GitHub read-only lock is operator-only. Stop work on this repo pending archive flag.
+Stop further mutation this cycle. Portfolio-wide termination **not** met.
 
-Portfolio-wide termination: **not** met (P0 `.env`, unmerged Dependabot, untagged ACTIVE releases, archive flags, duplicate families).
+---
+
+## 2026-09-07 — Sweep-099 (select: smart_home_BCI)
+
+**Classification:** ARCHIVED (reaffirm Sweep-087). Docs lock MET; GitHub archive flag operator-pending.
 
 ---
 
 ## 2026-09-07 — Sweep-098 (Phase-3 live re-verify)
 
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Master directive Phase-3 mandatory set. No product-repo mutation.
-**Classification:** ACTIVE product quartet unchanged.
-
-### Discover
-
-- Census: `user:beyond-repair` search total_count **75**, incomplete_results=false.
-- ADL-Governance docs present from Sweep-097.
-
-### Phase-3 live verify (prior cycle API)
-
-| Repo | Workflow | Run ID | Event | Conclusion | Head |
-|------|----------|--------|-------|------------|------|
-| forge-aegis | forge-aegis CI | 33904082644 | push main | success | 7b3d421c |
-| sovereign-clean-room | Python tests | 33979476402 | push main | success | 33a1caca |
-| BlockSwarm | Foundry | 33986287866 | push main | success | a79c83f0 |
-| Digital_Double_virtual_workforce | Digital Double CI | 33979714262 | push main | success | c69ba6f6 |
-
-Releases: none on all four (`list_releases` empty).
-DD Dependabot PR CI: 33979881954 (#5) success; 33979889902 (#6) success; PRs unmerged.
-DD Dependabot graph-update 33979635812: failure (not product workflow).
-
-### Exit
-
-- Selected Phase-3 set documented + live-verified: **met**.
-- Portfolio-wide termination: **not** met.
-
----
+ACTIVE product quartet CI success; releases empty; portfolio termination not met.
 
 ## Prior
 
-Sweep-097 Phase-3 live re-verify.
-Sweep-096 topological-pinch RESEARCH.
-Sweep-095 LegionOS RESEARCH.
-Sweep-094 aegis-repo-graph RESEARCH.
-Sweep-093 Phase-3.
-Sweep-092 acoustic-token-modem RESEARCH.
-Sweep-091 Digital-Double_Mobile SUPERSEDED.
-Sweep-090 registry + Phase-3.
-Sweep-087 smart_home_BCI first ARCHIVED lock.
-See git history for Sweep-001…089.
+Sweep-097…001 — see git history.
