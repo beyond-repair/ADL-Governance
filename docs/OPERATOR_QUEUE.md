@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T18:10Z (Sweep-108 — The-Origin-Point-Hypothesis.)
+**Last updated:** 2026-09-07T18:20Z (Sweep-109 — ware-constant-phenomenology + Origin Point CI residual)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -13,7 +13,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success) |
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
-| `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** (reconfirmed Sweep-107) |
+| `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 
 ## Medium (documentation / census)
@@ -26,10 +26,11 @@ Destructive or account-level actions that require a human operator. Agent record
 | Optional tag after green tests | sovereign-clean-room | READY (CI 33979476402) |
 | Add docs CI to ADL-Governance | ADL-Governance | OPTIONAL |
 | Optional LICENSE on profile README repo | beyond-repair | OPTIONAL |
-| Optional date-stamped research tag | topological-pinch | OPTIONAL (docs-ci only; not physics validation) |
-| Optional date-stamped research tag | CFTv3.3-IQG-Unified-Framework | OPTIONAL (docs-ci only; not physics validation) |
-| Confirm first docs-presence Actions run | The-Origin-Point-Hypothesis. | PENDING |
-| Optional date-stamped research tag | The-Origin-Point-Hypothesis. | OPTIONAL (not physics validation) |
+| Optional date-stamped research tag | topological-pinch | OPTIONAL |
+| Optional date-stamped research tag | CFTv3.3-IQG-Unified-Framework | OPTIONAL |
+| Confirm docs-presence success after Sweep-109 repair | The-Origin-Point-Hypothesis. | PENDING (run 34150166072 was failure) |
+| Confirm first docs-presence Actions run | ware-constant-phenomenology | PENDING |
+| Optional date-stamped research tag | ware-constant-phenomenology | OPTIONAL (not physics validation) |
 
 ## High-risk / do-not-implement
 
@@ -41,22 +42,24 @@ Destructive or account-level actions that require a human operator. Agent record
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
 | Treat 92% aft-face pinch as measured | Unverified; RESEARCH cap |
 | Treat CFT/IQG field equation as experimentally confirmed | Ledger only; claim ≤ 2 |
-| Treat Origin Point as SPARC-validated or dark-matter replacement | Sweep-108 cap; claim ≤ 1 |
-| Treat SPARC χ²_red ~9.1 as a pass | Recorded open |
-| Treat Bullet Cluster r0/c as resolved | Recorded FAIL |
+| Treat Origin Point as SPARC-validated or dark-matter replacement | Sweep-108/109 cap; claim ≤ 1 |
+| Treat SPARC χ²_red ~9 as a pass | Recorded open |
+| Treat Bullet Cluster r0/c as resolved | Recorded FAIL / UNSUPPORTED |
 | Delete any repository / rewrite history | Immutable |
 | Treat RESEARCH census tools or profile README as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 | Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
 | Add SPARC runners or mesh generators into CFTv3.3-IQG-Unified-Framework | Wrong canonical home |
-| Invent a computational Origin Point solver in this sketch repo | Wrong home; derivation repos exist |
+| Invent a computational Origin Point solver in the sketch repo | Wrong home |
+| Treat ware-constant-phenomenology scripts as experimental confirmation | Claim ≤ 2 only |
 
-## Closed this cycle (Sweep-108)
+## Closed this cycle (Sweep-109)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Classify + claim-cap Origin Point repo | RESEARCH lock; docs-presence workflow | **DONE** |
-| Push subject commit | 74e31ad3cee77bc26111a0557f988f9975062afb | **DONE** |
+| Phase-3 re-list quartet Actions | last listed conclusions remain success | **DONE** |
+| Classify + claim-cap ware-constant-phenomenology | RESEARCH lock; docs-presence workflow | **DONE** |
+| Repair Origin Point docs-presence token mismatch | CLAIM_STATUS now contains UNSUPPORTED | **DONE** (success listing PENDING) |
 
 ## Rule
 
