@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T20:12Z (Sweep-112 — ADL-Nexus)
+**Last updated:** 2026-09-07T21:20Z (Sweep-113 — Gia---General-Intelligence-Assistant)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -15,41 +15,35 @@ Destructive or account-level actions that require a human operator. Agent record
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
 | `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
-| `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** (Sweep-111 docs lock done) |
+| `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** |
+| `gh repo archive beyond-repair/Gia---General-Intelligence-Assistant --yes` | Gia---General-Intelligence-Assistant | **PENDING** (Sweep-113 docs lock done) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 
 ## Medium (documentation / census)
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm first Sweep-113 docs-presence conclusion | Gia---General-Intelligence-Assistant | **PENDING** |
 | Confirm first Sweep-112 Actions conclusion | ADL-Nexus | **PENDING** |
 | Confirm pytest after Sweep-110 docs push | acoustic-token-modem | PENDING (prior 34068585607 success) |
-| Optional date-stamped research tag | acoustic-token-modem | OPTIONAL (not hardware validation) |
 | Refresh capability_matrix.json to live census (75) | adl-capability-matrix | **OPEN** |
 | Optional tag after green tests | sovereign-clean-room | READY (CI 33979476402) |
-| Confirm docs-presence success after Sweep-109 repair | The-Origin-Point-Hypothesis. | PENDING |
-| Confirm first docs-presence Actions run | ware-constant-phenomenology | PENDING |
 
 ## High-risk / do-not-implement
 
 | Item | Reason |
 |------|--------|
-| Promote ADL-Nexus to ACTIVE | First product CI not yet listed success; live adapters UNSUPPORTED |
-| Treat ADL-Nexus as canonical VSA or workforce runtime | Those remain sovereign-clean-room / Digital_Double_virtual_workforce |
-| Treat acoustic FSK CI as speaker/mic validation | M10 absent; claim ≤1 |
-| Report theoretical bitrate as achieved | UNSUPPORTED |
-| Treat PSK/QAM/OFDM stubs as working modulators | Stubs |
-| Fabricate matrix rows for unenumerated repos | Unsupported metadata claim |
-| Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
+| Treat Gia as a working AGI / Mistral runtime | Incomplete tree; claims UNSUPPORTED |
+| Feature-develop Gia instead of successor | SUPERSEDED → sovereign-clean-room |
+| Promote ADL-Nexus to ACTIVE | First product CI not yet listed success |
 | Delete any repository / rewrite history | Immutable |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
-| Treat genieGPT as a GPT product | Empty stub; claim 0 |
 
-## Closed this cycle (Sweep-112)
+## Closed this cycle (Sweep-113)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Classify + claim-cap ADL-Nexus | RESEARCH; UNSUPPORTED tokens; pytest/docs-presence workflow added | **DONE** (first run PENDING) |
+| Classify + claim-cap Gia | SUPERSEDED; UNSUPPORTED tokens; docs-presence workflow added | **DONE** (archive flag PENDING) |
 
 ## Rule
 

@@ -2,6 +2,42 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-07 — Sweep-113 (select: Gia---General-Intelligence-Assistant)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** `random.seed(202609071714)` over live search census (75 names) → `Gia---General-Intelligence-Assistant`.
+**Subject prior head:** `63c33a3098877f3af1cf3cf84a61a7e87364ab6f`
+**Subject new head:** `50d30cf811bd823d17205d13321a9af1bd03af4a`
+**Classification:** **SUPERSEDED** (successor `sovereign-clean-room`; already in Sweep-112 SUPERSEDED list)
+
+### DISCOVER
+
+Nested prototype under `gia-general-intelligents-assistant/project/`:
+FastAPI backend agent files + Vite/React UI. CodeQL only. No tests.
+`main.py` imports missing `app.models.*`. Duplicate `backend ` path (trailing space).
+README claims AGI-class autonomy and Mistral-7B; clone path `gia.git` is stale.
+
+### AUDIT
+
+- Registry already listed this name SUPERSEDED → sovereign-clean-room.
+- Missing GOVERNANCE.md, CLAIM_STATUS.md, SUPERSEDED.md, explicit UNSUPPORTED tokens.
+- Product pytest absent; models package absent; claims overstated.
+- GitHub `archived=false`.
+
+### IMPLEMENT (idempotent docs + docs-presence CI)
+
+- Added GOVERNANCE.md, CLAIM_STATUS.md (UNSUPPORTED tokens), SUPERSEDED.md, ARCHIVED.md (flag pending).
+- Claim-capped README.
+- Added `.github/workflows/docs-presence.yml`.
+- No product logic, no model weights, no history rewrite, no archive API, no tags.
+
+### Exit
+
+Subject lock complete. First docs-presence Actions conclusion PENDING.
+Portfolio-wide termination **not** met. One governed sweep; stop.
+
+---
+
 ## 2026-09-07 — Sweep-112 (select: ADL-Nexus + Phase-3)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -46,127 +82,9 @@ Subject lock complete. First Actions conclusion PENDING. Portfolio-wide terminat
 ## 2026-09-07 — Sweep-111 (select: genieGPT)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** After Sweep-110 (`acoustic-token-modem`), next unused first-page name not already locked this calendar day → `genieGPT`.
-**Subject prior head:** `dad74fd4dd32df481e84521347ac9ad9dc00d385`
-**Subject new head:** `17d13c93dd6fcb7e0327bec4bc69afadaa887b79`
 **Classification:** **ARCHIVED**
-
-### DISCOVER
-
-Four-file stub (pre-sweep): README, ARCHIVED.md, LICENSE, SECURITY.md. No application code, tests, workflows, models, or APIs. GitHub `archived=false`.
-
-### AUDIT
-
-- Sweep-072 already classified ARCHIVED and wrote ARCHIVED.md.
-- Missing GOVERNANCE.md and CLAIM_STATUS.md with explicit UNSUPPORTED tokens.
-- Archive flag still operator-only.
-
-### IMPLEMENT (idempotent docs only)
-
-- Added `GOVERNANCE.md` and `CLAIM_STATUS.md`.
-- Updated README / ARCHIVED.md Sweep-111 notes.
-- No product code, no history rewrite, no GitHub archive API.
-
-### Exit
-
-Subject lock complete. Portfolio-wide termination **not** met. One governed sweep; stop.
-
----
-
-## 2026-09-07 — Sweep-110 (select: acoustic-token-modem)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** SHA-256(`2026-09-07T15:08:EDT-sweep`) mod first-page census slice (38 named) → `acoustic-token-modem`.
-**Subject prior head:** `cf2ee6220e4399686a60459c72870f7c14f8e87f`
-**Subject new head:** `1e61fca2a29130cdf387e4fb9db432d4fb38a168`
-**Classification:** **RESEARCH**
-
-### DISCOVER
-
-Python package `src/acoustic_token_modem` (tokenizer, protocol/CRC/framing, FSK modulation, channel simulation, metrics). Tests under `tests/`. CI `.github/workflows/pytest.yml`. Docs present. Stubs: PSK/QAM/OFDM, latency metric, several experiments.
-
-### AUDIT
-
-- Last pytest run **34068585607** conclusion **success** (Sweep-092).
-- Claim level already 1; hardware M10 absent.
-- CLAIM_STATUS lacked explicit `UNSUPPORTED` token required by other docs-presence greps.
-- No GOVERNANCE.md.
-- Empty `benchmarks/results/`.
-
-### IMPLEMENT (idempotent docs only)
-
-- Added `GOVERNANCE.md`.
-- Added explicit **UNSUPPORTED** tokens to `CLAIM_STATUS.md`.
-- README Sweep-110 note. No product code, no claim elevation, no tag.
-
-### Exit
-
-Subject lock complete. Portfolio-wide termination **not** met. One governed sweep; stop.
-
----
-
-## 2026-09-07 — Sweep-109 (Phase-3 + ware-constant-phenomenology + Origin Point residual)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Mandatory Phase-3 re-verify of the ACTIVE quartet, plus residual CI from Sweep-108, plus RESEARCH lock of `ware-constant-phenomenology` (stale vs 107–108 subjects).
-
-### Phase-3 (live Actions list)
-
-| Repo | Run | Conclusion |
-|------|-----|------------|
-| forge-aegis | 33904082644 | success |
-| sovereign-clean-room | 33979476402 | success |
-| BlockSwarm | 33986287866 | success |
-| Digital_Double_virtual_workforce | 33979714262 (main), 34084870372 (PR #7) | success |
-
-No new product tags. VSA completeness still UNVERIFIED.
-
-### ware-constant-phenomenology
-
-Prior head `7fecf95d9ff153a322b676d449976747077d5fbd`. No workflows. Scripts + TeX + CLAIM_STATUS already present.
-Classification **RESEARCH**. Added GOVERNANCE.md, tightened CLAIM_STATUS (UNSUPPORTED tokens), docs-presence workflow.
-New head `09bbdf20d5fa208e04603e5b8d2d0cf26494e30e`.
-No physics implementation invented. SPARC χ² not treated as a pass.
-
-### The-Origin-Point-Hypothesis. residual
-
-Sweep-108 run 34150166072 **failure**: workflow grepped `UNSUPPORTED` in CLAIM_STATUS; file used "not granted". Sweep-109 inserted the token. New head `f46deb8ddbdb369c823bc573a2d7730fb3857979`. Success listing PENDING.
-
-### Exit
-
-Portfolio-wide termination **not** met. One governed sweep; stop.
-
----
-
-## 2026-09-07 — Sweep-108 (select: The-Origin-Point-Hypothesis.)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Deterministic random from live census (`random.seed(202609071403)` over 75 names) → `The-Origin-Point-Hypothesis.`
-**Classification:** **RESEARCH**
-Subject commit: `74e31ad3cee77bc26111a0557f988f9975062afb`.
-Docs-presence first run later observed **failure** (Sweep-109).
-
----
-
-## 2026-09-07 — Sweep-107 (select: smart_home_BCI)
-
-**Classification:** **ARCHIVED** (Sweep-087 lock reconfirmed).
-Subject commit: `79382034ef59896eab672adce8cb98efbb45384b`.
-
----
-
-## 2026-09-07 — Sweep-106 (select: CFTv3.3-IQG-Unified-Framework)
-
-**Classification:** RESEARCH.
-
-## 2026-09-07 — Sweep-105 (select: topological-pinch)
-
-Classification RESEARCH.
-
-## 2026-09-07 — Sweep-104 (Phase-3 re-verify)
-
-Live census 75. Quartet CI green. Portfolio-wide termination NOT MET.
+Subject new head: `17d13c93dd6fcb7e0327bec4bc69afadaa887b79`.
 
 ## Prior
 
-Sweep-103…001 — see git history.
+Sweep-110…001 — see git history.
