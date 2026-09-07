@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T02:15Z (Sweep-097 — Phase-3 live re-verify)
+**Last updated:** 2026-09-07T03:10Z (Sweep-098 — Phase-3 live re-verify)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -12,11 +12,10 @@ Destructive or account-level actions that require a human operator. Agent record
 | Tag + Release v0.5.0-sagf | BlockSwarm | READY (Foundry 33986287866 success; head `a79c83f0`) |
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success; head `7b3d421c`) |
 | Review then merge or reject Dependabot #5 (Vite major group) and #6 (rollup) | Digital_Double_virtual_workforce | **OPEN** |
-| Bump browserslist to ≥4.28.7 (CVE-2026-73088 / GHSA-73wf-gq98-2v4g) in root and `digital_double/` lockfiles | Digital_Double_virtual_workforce | **OPEN HIGH** |
-| Confirm nanoid advisory GHSA-xwg4-73v4-xw9w is fully patched in all lockfiles | Digital_Double_virtual_workforce | **OPEN** |
+| Confirm browserslist ≥4.28.7 (CVE-2026-73088) is on *main* lockfiles, not only PR #5 | Digital_Double_virtual_workforce | **OPEN HIGH** |
+| Confirm nanoid advisory GHSA-xwg4-73v4-xw9w is fully patched in all lockfiles | Digital_Double_virtual_workforce | **OPEN** (main has restore commit; verify remaining trees) |
 | `gh repo archive` batch | archive_queue + smart_home_BCI + RepoRover- + Digital-Double_Mobile | PENDING |
 | Optional tag v0.1.0 after Sweep-094 CI on new head | aegis-repo-graph | PENDING |
-| Confirm first docs-ci run on topological-pinch after `2c6f395` | topological-pinch | PENDING (Sweep-096 recorded success 34074889279; operator may re-check) |
 
 ## High-risk / do-not-implement
 
@@ -36,17 +35,16 @@ Destructive or account-level actions that require a human operator. Agent record
 | Quote 92% aft-face localization as measured | topological-pinch CLAIM_STATUS: unverified |
 | Merge Vite 8 major without operator review | Breaking major; PR CI success ≠ product acceptance |
 
-## Closed this cycle (Sweep-097)
+## Closed this cycle (Sweep-098)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Live re-verify Phase-3 product CI | Same run IDs as Sweep-095/093; still success | **DONE** |
-| Re-query Dependabot on Phase-3 set | DD HIGH findings recorded; others empty | **DONE** |
+| Live re-query Phase-3 product CI + releases | Same run IDs as Sweep-097; still success; releases still empty | **DONE** |
 | Refresh portfolio status + sweep history | Docs only; no product mutation | **DONE** |
 
 ## Still open (inherited)
 
-`.env` rotation; archive flags; Dependabot majors + browserslist/nanoid; missing tensor module (coherence program); GGUF blob; OS-family consolidation (LegionOS / RealityOS / Sovereign-OS / SovereignOS); AEGIS-Project-Nehemiah- CI freshness; VigilE Cargo.toml not to be invented without a real crate; acoustic-token-modem M4–M12 and prior-art table; no GitHub Releases on ACTIVE product repos.
+`.env` rotation; archive flags; Dependabot majors + browserslist/nanoid confirmation; missing tensor module (coherence program); GGUF blob; OS-family consolidation (LegionOS / RealityOS / Sovereign-OS / SovereignOS); AEGIS-Project-Nehemiah- CI freshness; VigilE Cargo.toml not to be invented without a real crate; acoustic-token-modem M4–M12; no GitHub Releases on ACTIVE product repos.
 
 ## Rule
 
