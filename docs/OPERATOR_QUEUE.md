@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T19:10Z (Sweep-110 — acoustic-token-modem)
+**Last updated:** 2026-09-07T20:05Z (Sweep-111 — genieGPT)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -14,6 +14,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
 | `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
+| `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** (Sweep-111 docs lock done) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 
 ## Medium (documentation / census)
@@ -38,12 +39,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
 | Delete any repository / rewrite history | Immutable |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
+| Treat genieGPT as a GPT product | Empty stub; claim 0 |
 
-## Closed this cycle (Sweep-110)
+## Closed this cycle (Sweep-111)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Classify + claim-cap acoustic-token-modem | RESEARCH; GOVERNANCE.md; UNSUPPORTED tokens | **DONE** |
+| Classify + claim-cap genieGPT | ARCHIVED; GOVERNANCE + CLAIM_STATUS UNSUPPORTED | **DONE** |
 
 ## Rule
 

@@ -1,31 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T19:10Z (autonomous Sweep-110)
+**Updated:** 2026-09-07T20:05Z (autonomous Sweep-111)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `acoustic-token-modem`; RESEARCH lock + claim-cap docs.
+**This cycle:** Random-eligible select `genieGPT`; ARCHIVED lock + claim-cap docs.
 
-## Sweep-110 scope
+## Sweep-111 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs on selected repo |
-| Subject | acoustic-token-modem |
-| Product mutation | GOVERNANCE.md + CLAIM_STATUS UNSUPPORTED tokens + README note |
+| Subject | genieGPT |
+| Product mutation | GOVERNANCE.md + CLAIM_STATUS.md + README/ARCHIVED notes |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (acoustic-token-modem)
+## Subject verification (genieGPT)
 
 | Field | Value |
 |-------|--------|
-| Prior head | cf2ee6220e4399686a60459c72870f7c14f8e87f |
-| New head | 1e61fca2a29130cdf387e4fb9db432d4fb38a168 |
-| Last listed pytest | 34068585607 success (Sweep-092); Sweep-110 run PENDING |
+| Prior head | dad74fd4dd32df481e84521347ac9ad9dc00d385 |
+| New head | 17d13c93dd6fcb7e0327bec4bc69afadaa887b79 |
+| CI | ABSENT (no workflows) |
 | Releases | none |
-| Classification | RESEARCH |
+| Classification | ARCHIVED |
 | GitHub archived flag | false |
-| Claim | ≤1 simulation; hardware bitrate / novelty / OFDM stubs FORBIDDEN |
+| Claim | 0; GPT product / runtime / weights **UNSUPPORTED** |
 
 ## Phase-3 last listed (unchanged this hour)
 
@@ -60,7 +60,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT` (Sweep-111 reconfirm).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -75,7 +75,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | adl-capability-matrix row count vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
-| Archive flags not applied | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT` included) | Low–Medium | OPEN |
 | Duplicate OS / agent / SEEM surfaces | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED |
@@ -84,12 +84,12 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-110 |
+| Criterion | Sweep-111 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| acoustic-token-modem classified RESEARCH | MET |
+| genieGPT classified ARCHIVED | MET |
 | Subject unsupported claims | CAPPED |
-| Subject Sweep-110 pytest listed | PENDING |
+| GitHub archive flag on genieGPT | NOT MET (operator) |
 | Releases present | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
