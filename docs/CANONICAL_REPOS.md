@@ -12,7 +12,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | OpenZeppelin upgradeable contracts, Foundry |
 | **Successors** | — |
 | **Predecessors** | Root Solidity sketches (now `legacy/`) |
-| **Live CI (Sweep-078)** | Foundry run 33986287866 success |
+| **Live CI (Sweep-101)** | Foundry run 33986287866 success |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/BlockSwarm |
 
@@ -26,7 +26,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | Python, NumPy, PyNaCl >= 1.6.2 |
 | **Successors** | — |
 | **Predecessors** | SEEM-2.0, SEEM-Cognitive-Microservice(s), seem-block-system |
-| **Live CI (Sweep-078)** | Python tests run 33979476402 success |
+| **Live CI (Sweep-101)** | Python tests run 33979476402 success |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/sovereign-clean-room |
 
@@ -52,7 +52,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Dependencies** | AEGIS-Project-Nehemiah- (spec sibling) |
 | **Successors** | — |
 | **Predecessors** | — |
-| **Live CI (Sweep-078)** | forge-aegis CI run 33904082644 success |
+| **Live CI (Sweep-101)** | forge-aegis CI run 33904082644 success |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/forge-aegis |
 
@@ -62,11 +62,11 @@ Authoritative implementations. All overlapping work must defer here.
 |-------|--------|
 | **Purpose** | Public canonical typed virtual-workforce product surface |
 | **Owner** | beyond-repair |
-| **Status** | ACTIVE (product CI green; Dependabot PRs #5/#6 unmerged) |
+| **Status** | ACTIVE (product CI green; Dependabot PRs #5/#6 unmerged; PR #7 open evidence stub) |
 | **Dependencies** | TypeScript / Python smoke |
 | **Successors** | — |
-| **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 (private newer) |
-| **Live CI (Sweep-078)** | Digital Double CI run 33979714262 success |
+| **Predecessors** | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 |
+| **Live CI (Sweep-101)** | Digital Double CI run 33979714262 success (main); 34084870372 success (PR #7) |
 | **Releases** | none |
 | **URL** | https://github.com/beyond-repair/Digital_Double_virtual_workforce |
 
@@ -90,7 +90,7 @@ Authoritative implementations. All overlapping work must defer here.
 | **Owner** | beyond-repair |
 | **Status** | RESEARCH |
 | **Dependencies** | Python 3.11+, rich; supervisor LLM PLANNED |
-| **Live CI (Sweep-078)** | SUNDER CI run 33996778685 success |
+| **Live CI (Sweep-078)** | SUNDER CI run 33996778685 success (not re-run Sweep-101) |
 | **URL** | https://github.com/beyond-repair/sunder |
 
 Do **not** treat sunder as the portfolio ACTIVE agent runtime. Offline constitutional runtime remains sovereign-clean-room.
