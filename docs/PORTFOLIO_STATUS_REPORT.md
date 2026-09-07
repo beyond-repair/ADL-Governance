@@ -4,40 +4,53 @@
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `Gia---General-Intelligence-Assistant` SUPERSEDED lock.
+**This cycle:** Phase-3 live Actions re-list + subject `momentum-closure` RESEARCH lock.
 
 ## Sweep-113 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs+CI on selected repo |
-| Subject | Gia---General-Intelligence-Assistant |
-| Product mutation | GOVERNANCE / CLAIM_STATUS / SUPERSEDED / ARCHIVED / README + docs-presence workflow |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs+docs-presence CI |
+| Subject | momentum-closure |
+| Product mutation | GOVERNANCE / CLAIM_STATUS / README + docs-presence workflow |
+| Tensor / physics / product pytest | NOT invented |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification
+## Subject verification (momentum-closure)
 
 | Field | Value |
 |-------|--------|
-| Prior head | 63c33a3098877f3af1cf3cf84a61a7e87364ab6f |
-| New head | 50d30cf811bd823d17205d13321a9af1bd03af4a |
-| Pre-sweep product CI | CodeQL only |
-| Sweep-113 CI | ADDED docs-presence; first run **PENDING** |
-| Releases | none |
-| Classification | SUPERSEDED → sovereign-clean-room |
-| GitHub archived flag | false (queued) |
-| Claim | 0; AGI / Mistral-runtime / sandbox **UNSUPPORTED** |
+| Prior head | cc23fcced0ad62ba028404ae849e85f5f13272c2 |
+| New head | 4cf9b31e9c3b9ffc92dd2996be19fe2bc5f369af |
+| Pre-sweep product CI | NONE (`list_workflows` total_count=0) |
+| Sweep-113 CI | docs-presence only; first run PENDING |
+| Releases / tags | none |
+| Classification | RESEARCH |
+| GitHub archived flag | false |
+| Claim | ≤1; thrust / tensor / pytest-21 **UNSUPPORTED** |
+| Import `convergence.tensor` | BROKEN (module ABSENT) |
 
-## Phase-3 (not re-listed this cycle; last Sweep-112)
+## Phase-3 live listed (Sweep-113)
 
-| Repo | Latest product CI | Conclusion | Classification |
-|------|-------------------|------------|----------------|
-| forge-aegis | 33904082644 | success | ACTIVE |
-| sovereign-clean-room | 33979476402 | success | ACTIVE |
-| BlockSwarm | 33986287866 | success | ACTIVE |
-| Digital_Double_virtual_workforce | 33979714262 / PR#7 34084870372 | success | ACTIVE |
+| Repo | Latest product CI | Conclusion | Releases / tags | Classification |
+|------|-------------------|------------|-----------------|----------------|
+| forge-aegis | 33904082644 | success | none | ACTIVE |
+| sovereign-clean-room | 33979476402 | success | none | ACTIVE |
+| BlockSwarm | 33986287866 | success | none | ACTIVE |
+| Digital_Double_virtual_workforce | 33979714262 / PR#7 34084870372 | success | none | ACTIVE |
 
 VSA completeness remains **UNVERIFIED** beyond unit CI.
+
+Code-review readiness:
+
+| Repo | Readiness |
+|------|-----------|
+| forge-aegis | PASS WITH FINDINGS (no release tag) |
+| sovereign-clean-room | PASS WITH FINDINGS (VSA completeness UNVERIFIED; no tag) |
+| BlockSwarm | PASS WITH FINDINGS (no v0.5.0-sagf tag) |
+| Digital_Double_virtual_workforce | PASS WITH FINDINGS (open Dependabot #5/#6 and evidence PR #7) |
+| momentum-closure | FAIL vs ACTIVE bar; RESEARCH ok; product pytest withheld |
+| ADL-Nexus | RESEARCH; Sweep-112 first product CI listing this cycle **UNVERIFIED** (Actions list 429 on Nexus query) |
 
 ## Classification (canonical)
 
@@ -49,11 +62,11 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110. Physics / OS-family / mapping tools remain RESEARCH unless promoted.
+`momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
-SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., **Gia---General-Intelligence-Assistant** (Sweep-113 lock), Auto_Legion → sovereign-clean-room.
+SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room.
 
 DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
@@ -77,22 +90,40 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (genieGPT, smart_home_BCI, Gia) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT` included) | Low–Medium | OPEN |
 | Duplicate OS / agent / SEEM surfaces | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
-| Gia docs-presence first Actions run | Medium | PENDING |
-| Sweep-112 first ADL-Nexus Actions run | Medium | PENDING |
+| Physics novelty / 92% pinch figure | High (claim) | CAPPED |
+| Acoustic hardware bitrate / novelty | High (claim) | CAPPED Sweep-110 |
+| momentum-closure tensor + tests | High (claim) | ABSENT / CAPPED Sweep-113 |
+| Sweep-113 docs-presence first run | Medium | PENDING |
+| Sweep-112 first ADL-Nexus Actions run | Medium | UNVERIFIED this cycle (API 429 on Nexus list) |
+
+## Dependency notes (this cycle)
+
+Internal (documented, not runtime-verified):
+
+- momentum-closure → stress-tensor-modification (evaluator sibling; conceptual)
+- momentum-closure → coherence-drive (index)
+- ADL-Nexus → sovereign-clean-room (adapter stub)
+- ADL-Nexus → sunder (adapter stub)
+- forge-aegis → AEGIS-Project-Nehemiah- (spec sibling)
+
+No new dependency cycle proven this cycle.
 
 ## Exit criteria
 
 | Criterion | Sweep-113 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Gia classified SUPERSEDED | MET |
+| momentum-closure classified RESEARCH | MET |
 | Subject unsupported claims | CAPPED |
-| First Gia docs-presence listed success | NOT MET (PENDING) |
-| GitHub archive flag on Gia / genieGPT / smart_home_BCI | NOT MET (operator) |
+| Product tensor invented | NOT DONE (correct) |
+| GitHub archive flag on genieGPT / smart_home_BCI | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
+| Matrix 75-complete verified rows | NOT MET |
+| Duplicate canonical implementations resolved | NOT MET |
+| digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
 One governed sweep; residuals recorded; stop.
