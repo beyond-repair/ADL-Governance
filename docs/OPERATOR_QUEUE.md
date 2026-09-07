@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T15:05Z (Sweep-104 — Phase-3 re-verify)
+**Last updated:** 2026-09-07T15:14Z (Sweep-105 — topological-pinch)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -26,6 +26,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Optional tag after green tests | sovereign-clean-room | READY (CI 33979476402) |
 | Add docs CI to ADL-Governance | ADL-Governance | OPTIONAL |
 | Optional LICENSE on profile README repo | beyond-repair | OPTIONAL |
+| Optional date-stamped research tag | topological-pinch | OPTIONAL (docs-ci only; not physics validation) |
 
 ## High-risk / do-not-implement
 
@@ -35,17 +36,18 @@ Destructive or account-level actions that require a human operator. Agent record
 | Implement missing `bci` / `SmartHome` in smart_home_BCI | ARCHIVED |
 | Execute smart_home_BCI against live LAN | Hard-coded unlock path |
 | Elevate Coherence Drive / physics novelty claims | Claim level ≤1 |
+| Treat 92% aft-face pinch as measured | Unverified; RESEARCH cap |
 | Delete any repository / rewrite history | Immutable |
 | Treat RESEARCH census tools or profile README as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 | Merge Dependabot vite 8 major bump without operator review | Breaking-change risk |
 
-## Closed this cycle (Sweep-104)
+## Closed this cycle (Sweep-105)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-verify quartet Actions | IDs unchanged from Sweep-102; still success | **DONE** |
-| Refresh named 75-row census in status report | Search total_count=75 | **DONE** |
+| Re-audit topological-pinch | RESEARCH lock + docs tests | **DONE** |
+| Push subject commit | 9a6d3be436632e7c8e0c8cb16461b137d1bd6838 | **DONE** |
 
 ## Rule
 
