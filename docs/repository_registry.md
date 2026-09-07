@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-07 (Sweep-113) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-07 (Sweep-114) · **Governing source:** this repository
 
 Visible GitHub search count: **75**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
 
@@ -24,9 +24,9 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 ## RESEARCH (Claim level ≤ 2)
 
-`momentum-closure` locked Sweep-113 (geometry helpers present; tensor ABSENT; product pytest withheld). `ADL-Nexus` locked Sweep-112. Mapping / census layer and other RESEARCH rows unchanged except census count 75. See PORTFOLIO_STATUS_REPORT.md for the full name list this cycle.
+`sierpinski-geometry-045` locked Sweep-114 (generator + tests + CI success 34063349923; GOVERNANCE + UNSUPPORTED tokens). `momentum-closure` locked Sweep-113 (geometry helpers present; tensor ABSENT; product pytest withheld). `ADL-Nexus` locked Sweep-112. Mapping / census layer and other RESEARCH rows unchanged except census count 75. See PORTFOLIO_STATUS_REPORT.md for the full name list this cycle.
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law.
 
 ---
 

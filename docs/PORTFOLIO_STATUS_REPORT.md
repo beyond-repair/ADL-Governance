@@ -1,53 +1,33 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T22:20Z (autonomous Sweep-114)
+**Updated:** 2026-09-07T22:15Z (autonomous Sweep-114)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Phase-3 live Actions re-list + close Sweep-113 pending conclusions + record ADL-Nexus first product CI failure.
+**This cycle:** subject `sierpinski-geometry-045` RESEARCH lock.
 
 ## Sweep-114 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT governance docs only |
-| Subject | Portfolio residuals (momentum-closure CI close + Gia SUPERSEDED confirm + ADL-Nexus pytest FAIL) |
-| Product mutation | None outside ADL-Governance |
-| Tensor / physics / product pytest | NOT invented |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs |
+| Subject | sierpinski-geometry-045 |
+| Product mutation | GOVERNANCE / CLAIM_STATUS / README |
+| Geometry / physics invention | NOT invented |
 | Archive / release / history rewrite | NOT executed |
 
-## Phase-3 live listed (Sweep-114)
+## Subject verification (sierpinski-geometry-045)
 
-| Repo | Latest product CI | Conclusion | Releases / tags | Classification |
-|------|-------------------|------------|-----------------|----------------|
-| forge-aegis | 33904082644 | success | none | ACTIVE |
-| sovereign-clean-room | 33979476402 | success | none | ACTIVE |
-| BlockSwarm | 33986287866 | success | none | ACTIVE |
-| Digital_Double_virtual_workforce | 33979714262 / PR#7 34084870372 | success | none | ACTIVE |
-
-Published GitHub Security Advisories on the quartet this cycle: **none listed**.
-VSA completeness remains **UNVERIFIED** beyond unit CI.
-
-### Closed pending from Sweep-113
-
-| Item | Evidence | State |
-|------|----------|-------|
-| momentum-closure docs-presence first run | 34162475153 success | CLOSED |
-| Gia SUPERSEDED lock | head `50d30cf8`; SUPERSEDED.md + docs-presence present; CodeQL `disabled_inactivity`; releases none | CONFIRMED SUPERSEDED |
-| ADL-Nexus first Actions run | 34158629167 **failure** (`test (3.11)` failed; `docs-presence` success) | RECORDED |
-
-Code-review readiness:
-
-| Repo | Readiness |
-|------|-----------|
-| forge-aegis | PASS WITH FINDINGS (no release tag) |
-| sovereign-clean-room | PASS WITH FINDINGS (VSA completeness UNVERIFIED; no tag) |
-| BlockSwarm | PASS WITH FINDINGS (no v0.5.0-sagf tag) |
-| Digital_Double_virtual_workforce | PASS WITH FINDINGS (open Dependabot #5/#6 and evidence PR #7) |
-| momentum-closure | FAIL vs ACTIVE bar; RESEARCH ok; product pytest withheld |
-| Gia---General-Intelligence-Assistant | FAIL vs ACTIVE; SUPERSEDED vs sovereign-clean-room |
-| ADL-Nexus | RESEARCH; product pytest **FAILED** run 34158629167 |
-| LegionOS | RESEARCH; docs-ci 34072294960 success; no runtime |
+| Field | Value |
+|-------|--------|
+| Prior head | bea3705c8a122bd3253a8eb10d70c09d7627716f |
+| New head | 768b9a24559247c9b9cbc726f04e608f93bf0829 |
+| Pre-sweep product CI | success 34063280255, 34063349923 |
+| Sweep-114 CI | first post-lock pytest PENDING |
+| Releases / tags | none |
+| Classification | RESEARCH |
+| GitHub archived flag | false |
+| Claim | ≤1; field / thrust / energy **UNSUPPORTED** |
 
 ## Classification (canonical)
 
@@ -59,7 +39,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`ADL-Nexus` — Sweep-112/114 (pytest FAIL). `momentum-closure` — Sweep-113. `acoustic-token-modem` — Sweep-110. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — scoring scripts. `LegionOS` / `SovereignOS` / `Sovereign-OS` / `RealityOS` — OS-family sketches. Mapping/census tools remain RESEARCH.
+`sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110. `beyond-repair` — profile README. `topological-pinch` — hypothesis lock. `CFTv3.3-IQG-Unified-Framework` — synthesis ledger. `The-Origin-Point-Hypothesis.` — ontological sketch. `ware-constant-phenomenology` — scoring scripts (Sweep-109). Mapping/census tools remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY.
 
 ### SUPERSEDED
 
@@ -93,19 +73,19 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Physics novelty / 92% pinch figure | High (claim) | CAPPED |
 | Acoustic hardware bitrate / novelty | High (claim) | CAPPED Sweep-110 |
 | momentum-closure tensor + tests | High (claim) | ABSENT / CAPPED Sweep-113 |
-| Sweep-113 docs-presence first run | Medium | **CLOSED** (34162475153 success) |
-| ADL-Nexus pytest job | Medium | **FAILED** 34158629167 |
+| Sweep-114 pytest first run | Medium | PENDING |
+| Sweep-113 docs-presence first run | Medium | PENDING |
 
 ## Dependency notes (this cycle)
 
 Internal (documented, not runtime-verified):
 
+- sierpinski-geometry-045 → stress-tensor-modification / coherence-drive / ware-constant-phenomenology (conceptual)
 - momentum-closure → stress-tensor-modification (evaluator sibling; conceptual)
 - momentum-closure → coherence-drive (index)
 - ADL-Nexus → sovereign-clean-room (adapter stub)
 - ADL-Nexus → sunder (adapter stub)
 - forge-aegis → AEGIS-Project-Nehemiah- (spec sibling)
-- Gia---General-Intelligence-Assistant → sovereign-clean-room (SUPERSEDED successor; not a runtime dep)
 
 No new dependency cycle proven this cycle.
 
@@ -114,10 +94,9 @@ No new dependency cycle proven this cycle.
 | Criterion | Sweep-114 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Phase-3 quartet product CI success | MET (same run IDs; no new failures) |
-| momentum-closure docs-presence | MET |
-| Gia classified SUPERSEDED | MET |
-| ADL-Nexus product CI green | NOT MET (pytest failure) |
+| sierpinski-geometry-045 classified RESEARCH | MET |
+| Subject unsupported claims | CAPPED |
+| Product physics invented | NOT DONE (correct) |
 | GitHub archive flag on genieGPT / smart_home_BCI | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
