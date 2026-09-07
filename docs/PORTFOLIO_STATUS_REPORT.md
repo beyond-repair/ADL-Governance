@@ -1,65 +1,53 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-06T23:14Z (autonomous Sweep-091)
+**Updated:** 2026-09-07T00:05Z (autonomous Sweep-092)
 **Census:** GitHub search `user:beyond-repair` returned **75** items (`incomplete_results=false`). Profile `public_repos=72`.
 **Governing source:** this repository.
-**This cycle primary:** `Digital-Double_Mobile` (RNG index 48).
+**This cycle primary:** `acoustic-token-modem`.
 
-## Sweep-091 scope
+## Sweep-092 scope
 
 | Mode | Value |
 |------|--------|
-| Primary repo | beyond-repair/Digital-Double_Mobile |
-| Classification | SUPERSEDED (archive-candidate) |
-| Code mutation | README.md banner on stub only |
-| Product CI re-run | Not required (no workflows on stub) |
+| Primary repo | beyond-repair/acoustic-token-modem |
+| Classification | RESEARCH (claim level 1) |
+| Code mutation | `CLAIM_STATUS.md` + README governance lines |
+| Product CI | Prior run **33995308862** success (Sweep-066); docs-only follow-up |
 
-## Discover findings (Digital-Double_Mobile)
+## Discover findings (acoustic-token-modem)
 
-- Pre-sweep tree: `ARCHIVED.md` + `SUPERSEDED.md` only.
-- No language, no tests, no CI, GitHub `archived=false`.
-- Successor already recorded: `Digital_Double_virtual_workforce`.
-- Not the same object as `digital-double-mobile` (P0 `.env` still OPEN on that sibling).
+- Tree SHA pre-change: `3d4db951669d2c5bda1485ec7b155651e9baaa68`.
+- Post-change commit: `cf2ee6220e4399686a60459c72870f7c14f8e87f`.
+- Present: src package, tests (9 files), pytest workflow, MIT LICENSE, protocol/docs.
+- Stubs remain: OFDM/QAM/PSK modules, M10 hardware, empty `benchmarks/results`, prior-art table empty.
+- No committed secrets observed in tree listing.
 
-## Classification (canonical, Sweep-091)
-
-Unchanged ACTIVE / RESEARCH sets from Sweep-090. SUPERSEDED row for Digital-Double_Mobile **confirmed**.
+## Classification (canonical)
 
 ### ACTIVE (7)
 
 ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
 
-Phase-3 product CI from Sweep-090 (not re-queried this cycle; no contradictory evidence):
+### RESEARCH (this cycle primary)
 
-| Repo | Latest product run | Conclusion |
-|------|--------------------|------------|
-| forge-aegis | 33904082644 | success |
-| sovereign-clean-room | 33979476402 | success |
-| BlockSwarm | 33986287866 | success |
-| Digital_Double_virtual_workforce | 33979714262 | success |
+`acoustic-token-modem` — claim level **1**. Green CI ≠ hardware validation.
 
 ### SUPERSEDED (Digital Double lineage)
 
-| Name | Successor |
-|------|-----------|
-| DigitalDoubleVirtualWorkforce3.5 | Digital_Double_virtual_workforce |
-| Digital_Double_Virtual_Workforce_4. | Digital_Double_virtual_workforce |
-| Digital_Double_Virtual_Workforce_4.2 | Digital_Double_virtual_workforce |
-| Digital-Double_Mobile | Digital_Double_virtual_workforce |
-| digital-double-mobile | Digital_Double_virtual_workforce (**P0 .env**) |
+Unchanged from Sweep-091.
 
 ## Exit criteria
 
-| Criterion | Sweep-091 |
+| Criterion | Sweep-092 |
 |-----------|-----------|
-| Digital-Double_Mobile documented | MET (README + existing banners) |
-| No unsupported claims on stub | MET |
-| GitHub archive flag on stub | FAIL (operator) |
+| Claim cap documented | MET (`CLAIM_STATUS.md`) |
+| Critical CI failure | NONE on last recorded pytest run |
+| Hardware / novelty claims | Not asserted |
 | Portfolio-wide termination | NOT MET (`.env`, tags, archive flags, Dependabot) |
 
 **Portfolio-wide termination: NOT MET.** Maintenance mode not entered.
 
 ## Security summary
 
-- This stub: no secrets surface observed.
-- digital-double-mobile `.env`: **still P0** (sibling, not this repo).
+- acoustic-token-modem: no secrets in listed tree.
+- digital-double-mobile `.env`: **still P0** (sibling).

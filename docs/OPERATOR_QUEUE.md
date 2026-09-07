@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-06T23:14Z (Sweep-091 — Digital-Double_Mobile)
+**Last updated:** 2026-09-07T00:05Z (Sweep-092 — acoustic-token-modem)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -19,24 +19,25 @@ Destructive or account-level actions that require a human operator. Agent record
 | Item | Reason |
 |------|--------|
 | Implement VigilE `arp_spoof` / password cracker / MITM | Offensive; RESEARCH stubs only |
-| Elevate Coherence Drive / Sierpinski physics claims | Claim level 1; CI ≠ measurement |
+| Elevate Coherence Drive / Sierpinski / acoustic-modem physics claims | Claim level 1; CI ≠ measurement |
 | ExoAxis synthesis, dosing, CMC | Forbidden |
 | Fabricate Entanglement-and-Emergence figures/code | Checklist item FALSIFIED; do not fake |
 | Delete any repository | Immutable constraint |
 | Rewrite git history | Immutable constraint |
 | Disable VigilE failing workflow without operator review | Workflow is historical SAST; failure is recorded |
 | Revive Digital-Double_Mobile as a product | Empty stub; canonical is Digital_Double_virtual_workforce |
+| Invent OFDM/QAM hardware results in acoustic-token-modem | Stubs only; M10 not implemented |
 
-## Closed this cycle (Sweep-091)
+## Closed this cycle (Sweep-092)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Discover + classify Digital-Double_Mobile | SUPERSEDED empty stub; README banner added | **DONE** |
-| Confirm no application code / CI on stub | tree = banners only | **DONE** |
+| Discover + classify acoustic-token-modem | RESEARCH claim-1; CLAIM_STATUS added | **DONE** |
+| Bind claim cap to existing CI evidence | run 33995308862 success; no elevation | **DONE** |
 
 ## Still open (inherited)
 
-`.env` rotation; archive flags; Dependabot majors; missing tensor module (coherence program); GGUF blob; OS-family consolidation (LegionOS / RealityOS / Sovereign-OS / SovereignOS); AEGIS-Project-Nehemiah- CI freshness; VigilE Cargo.toml not to be invented without a real crate.
+`.env` rotation; archive flags; Dependabot majors; missing tensor module (coherence program); GGUF blob; OS-family consolidation (LegionOS / RealityOS / Sovereign-OS / SovereignOS); AEGIS-Project-Nehemiah- CI freshness; VigilE Cargo.toml not to be invented without a real crate; acoustic-token-modem M4–M12 and prior-art table.
 
 ## Rule
 
