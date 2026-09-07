@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T13:30Z (Sweep-101 — Phase-3 live verify)
+**Last updated:** 2026-09-07T14:10Z (Sweep-102 — census + Phase-3 re-verify)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -24,6 +24,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Optional tag v0.1.0 after green CI | adl-capability-matrix | PENDING |
 | Optional tag v0.1.0 | aegis-repo-graph | PENDING |
 | Optional tag after green tests | sovereign-clean-room | READY (CI 33979476402) |
+| Add docs CI to ADL-Governance | ADL-Governance | OPTIONAL |
 
 ## High-risk / do-not-implement
 
@@ -37,12 +38,12 @@ Destructive or account-level actions that require a human operator. Agent record
 | Treat RESEARCH census tools as ACTIVE products | Wrong lifecycle |
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 
-## Closed this cycle (Sweep-101)
+## Closed this cycle (Sweep-102)
 
 | Action | Notes | Status |
 |--------|-------|--------|
 | Live re-verify four ACTIVE product repos | CI green; releases empty; advisories empty | **DONE** |
-| Re-enumerate public census | search total_count 75 | **DONE** |
+| Re-enumerate public census | search total_count 75; names published in PORTFOLIO_STATUS_REPORT | **DONE** |
 | Governance docs update | PORTFOLIO_STATUS_REPORT, SWEEP_HISTORY, this file | **DONE** |
 
 ## Rule
