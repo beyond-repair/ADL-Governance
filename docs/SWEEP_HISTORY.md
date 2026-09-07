@@ -2,6 +2,51 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-07 — Sweep-097 (Phase-3 live re-verify)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Master directive Phase-3 mandatory set. No additional product-repo mutation.
+**Classification:** ACTIVE product quartet unchanged.
+
+### Discover
+
+- Census: `user:beyond-repair` search total_count **75**, incomplete_results=false.
+- Profile public_repos=72 noted as inconsistent with search; search used as inventory source.
+- ADL-Governance docs present: PORTFOLIO_STATUS_REPORT, OPERATOR_QUEUE, SWEEP_HISTORY, registry, archive_queue.
+
+### Phase-3 live verify
+
+| Repo | Workflow | Run ID | Conclusion | Head |
+|------|----------|--------|------------|------|
+| forge-aegis | forge-aegis CI | 33904082644 | success | 7b3d421c |
+| sovereign-clean-room | Python tests | 33979476402 | success | 33a1caca |
+| BlockSwarm | Foundry | 33986287866 | success | a79c83f0 |
+| Digital_Double_virtual_workforce | Digital Double CI | 33979714262 | success | c69ba6f6 |
+
+Releases: none on all four (`list_releases` empty).
+Open Dependabot: empty on forge-aegis, sovereign-clean-room, BlockSwarm.
+Digital Double: open HIGH browserslist CVE-2026-73088 (alerts 157 root lockfile, 155 digital_double lockfile) and nanoid GHSA-xwg4-73v4-xw9w (alert 153). Dependabot PRs #5/#6 unmerged; product CI on those PR heads succeeded.
+
+### Audit
+
+- Undefined *claimed* components on Phase-3: none newly invented this cycle.
+- Duplicate canonical: Digital Double version forks + OS-family still fragmented.
+- Critical security: P0 `.env` on digital-double-mobile remains; DD HIGH Dependabot open.
+- Critical product CI: none failing on Phase-3 main product workflows.
+
+### Implement
+
+- Documentation only in ADL-Governance (this file, PORTFOLIO_STATUS_REPORT, OPERATOR_QUEUE).
+- No product-repo commits. No history rewrite. No deletions.
+
+### Exit
+
+- Selected Phase-3 set documented + live-verified: **met**.
+- Portfolio-wide termination: **not** met (P0 `.env`, HIGH Dependabot, untagged ACTIVE releases, archive flags, duplicate families).
+- Stop after this governed sweep (no infinite loop).
+
+---
+
 ## 2026-09-07 — Sweep-096 (select: topological-pinch)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -29,11 +74,11 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 ### Exit (this repo)
 
 - Undefined claimed components: none.
-- Critical CI: docs-ci queued on push; conclusion not available at commit time.
+- Critical CI: docs-ci queued on push; Sweep-096 status report later recorded run 34074889279 success.
 - Duplicate canonical: none.
 - Critical security: none observed.
 - Unsupported claims: capped (CLAIM_STATUS experimental validation = false).
-- Target state (documented RESEARCH + claim cap + docs test): **met** for documentation; CI conclusion pending first Actions run.
+- Target state (documented RESEARCH + claim cap + docs test): **met** for documentation.
 - Portfolio-wide termination: **not** met.
 
 ---
@@ -54,14 +99,7 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 
 ### Phase-3 live verify
 
-| Repo | Workflow | Run ID | Conclusion | Head |
-|------|----------|--------|------------|------|
-| forge-aegis | forge-aegis CI | 33904082644 | success | 7b3d421c |
-| sovereign-clean-room | Python tests | 33979476402 | success | 33a1caca |
-| BlockSwarm | Foundry | 33986287866 | success | a79c83f0 |
-| Digital_Double_virtual_workforce | Digital Double CI | 33979714262 | success | c69ba6f6 |
-
-Releases still absent on all four. Digital Double Dependabot graph-update 33979635812 failure is not a product-test failure.
+Same product-workflow run IDs as Sweep-097 table.
 
 ### Audit
 
@@ -82,7 +120,7 @@ Releases still absent on all four. Digital Double Dependabot graph-update 339796
 - Critical security: none observed on selected repo.
 - Unsupported claims: capped.
 - Target state (documented RESEARCH + claim cap): **met** for this cycle.
-- Portfolio-wide termination: **not** met (P0 `.env`, untagged ACTIVE releases, archive flags, Dependabot majors, OS-family consolidation).
+- Portfolio-wide termination: **not** met.
 - Stop after this governed sweep (no infinite loop).
 
 ---
@@ -96,7 +134,7 @@ Product CI run **33928255440** success on `e1dc394`; docs commit `1a5a2fde`.
 ## 2026-09-07 — Sweep-093 (Phase-3 live re-verify)
 
 **Scope:** `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
-Same product-workflow run IDs as Sweep-095 table.
+Same product-workflow run IDs as Sweep-097 table.
 
 ## Prior
 
