@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-07T02:05Z (autonomous Sweep-096)
+**Updated:** 2026-09-07T02:08Z (autonomous Sweep-096)
 **Census:** GitHub search `user:beyond-repair` returned **75** items (`incomplete_results=false`).
 **Governing source:** this repository.
 **This cycle primary:** `topological-pinch` (RESEARCH hypothesis; docs + docs-CI).
@@ -14,6 +14,7 @@
 | Code mutation in product repo | docs + docs-presence pytest + Actions workflow |
 | Classification | RESEARCH (claim level 0–1) |
 | Head after implement | `2c6f395339da41e17882ad9597f6d27d8d76c656` |
+| Product-adjacent CI | docs-ci run **34074889279** **success** on `2c6f395` |
 
 ## Demonstrated vs planned (topological-pinch, claim-capped)
 
@@ -22,7 +23,7 @@
 | README + CLAIM_STATUS claim cap | VERIFIED |
 | GOVERNANCE.md | ADDED Sweep-096 |
 | Mesh / BEM / measured 92% | ABSENT / UNVERIFIED |
-| Docs-presence tests | ADDED; Actions conclusion pending first run |
+| Docs-presence tests | VERIFIED (34074889279 success) |
 | GitHub Release / tag | NONE (not appropriate for hypothesis-only) |
 
 ## Classification (canonical)
@@ -62,8 +63,7 @@ Unchanged from Sweep-092/094/095 registry. GitHub `archived=true` still only con
 | Criterion | Sweep-096 |
 |-----------|-----------|
 | Selected repo documented + claim-capped | MET |
-| Docs-presence tests added | MET |
-| First Actions conclusion | PENDING |
+| Docs-presence tests + CI | MET (34074889279) |
 | Portfolio-wide termination | NOT MET |
 
 **Portfolio-wide termination: NOT MET.** Residuals recorded. One governed sweep; stop.
