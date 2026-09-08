@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-07T23:13Z (Sweep-116 — ware-constant-phenomenology)
+**Last updated:** 2026-09-07T00:10Z (Sweep-117 — BlockSwarm)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -10,7 +10,7 @@ Destructive or account-level actions that require a human operator. Agent record
 |--------|------|--------|
 | Rotate + remove committed `.env` | digital-double-mobile | **OPEN** |
 | Review / patch Dependabot HIGH (browserslist #85, nanoid #83, …) | digital-double-mobile | **OPEN** |
-| Tag + Release v0.5.0-sagf | BlockSwarm | READY (CI 33986287866 success) |
+| Tag + Release v0.5.0-sagf | BlockSwarm | READY (last verified CI 33986287866 success; Sweep-117 Foundry re-run PENDING) |
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success) |
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
@@ -23,6 +23,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-117 Foundry conclusion | BlockSwarm | **PENDING** |
 | Confirm Sweep-116 docs-presence re-run | ware-constant-phenomenology | **PENDING** |
 | Confirm Sweep-115 pytest conclusion | adl-capability-matrix | **PENDING** |
 | Confirm Sweep-114 pytest conclusion | sierpinski-geometry-045 | **PENDING** |
@@ -44,12 +45,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Claim VSA completeness from unit-test CI alone | Insufficient evidence |
 | Tag releases without operator review | Operator-gated |
 | Treat docs-presence CI as SPARC/χ²/thrust validation | File presence ≠ physics |
+| Claim BlockSwarm mainnet / audit / economic security | Claim-capped |
 
-## Closed this cycle (Sweep-116)
+## Closed this cycle (Sweep-117)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit ware-constant-phenomenology | RESEARCH; claims capped ≤2 | **DONE** (docs-presence re-run PENDING) |
+| Re-audit BlockSwarm | ACTIVE; docs lock; no tag executed | **DONE** (Foundry re-run PENDING) |
 
 ## Rule
 

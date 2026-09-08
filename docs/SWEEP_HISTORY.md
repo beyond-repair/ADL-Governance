@@ -2,29 +2,30 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
-## 2026-09-07 — Sweep-116 (select: ware-constant-phenomenology)
+## 2026-09-07 — Sweep-117 (select: BlockSwarm)
 
 **Agent:** Grok (ADL-SEEM governed)
-**Selection method:** After Sweep-115 (`adl-capability-matrix`), unused first-page physics scoring surface not locked this session → `ware-constant-phenomenology`.
-**Subject prior head:** `09bbdf20d5fa208e04603e5b8d2d0cf26494e30e`
-**Subject new head:** `7f4915378982d7aa5169e233abefe4ce8b336f67`
-**Classification:** **RESEARCH**
+**Selection method:** Deterministic PRNG seed 20260907 over non-archived `user:beyond-repair` search names (74 eligible) → `BlockSwarm`.
+**Subject prior head:** `a79c83f0df926bafd0ac379bf384e95a38a21a6c`
+**Subject new head:** `469bcf41585059b327d2a83e33a80974828e671a`
+**Classification:** **ACTIVE**
 
 ### DISCOVER
 
-Python scoring scripts (`sparc_run.py`, `killgate_verification.py`, lensing helpers), TeX notes, CLAIM_STATUS, GOVERNANCE, docs-presence workflow only. No unit-test suite. No releases/tags.
+Solidity SAGF substrate: `contracts/` (AIExecutor, DAOGovernor, GovernanceNFT, KnowledgeLedger, MerkleVerifier, OrchestrationEngine, RevertTokenLayer + MerkleProof lib), Foundry tests under `test/`, `foundry.toml`, `.github/workflows/foundry.yml`, Hardhat deploy script, Foundry deploy script, claim-capped README/GOVERNANCE/SECURITY, validation notes under `docs/`.
 
 ### AUDIT
 
 - Live search this cycle: total_count **75**, incomplete_results=false.
-- Last listed CI: docs-presence run **34150611709** success (2026-09-07). File presence only.
-- SPARC χ² pass, thrust, energy extraction, Bullet Cluster resolution remain **UNSUPPORTED**.
-- Master index remains `coherence-drive`.
+- Last listed Foundry CI: run **33986287866** success (2026-09-05, head a79c83f…).
+- No GitHub Releases; tag `v0.5.0-sagf` remains operator-queued.
+- Invariant "AI advises. It cannot execute." is test-backed in-repo, not a mainnet/audit claim.
+- No critical security issue opened this cycle. No history rewrite. No archive API.
 
 ### IMPLEMENT (docs only)
 
-- Updated `CLAIM_STATUS.md` and `GOVERNANCE.md` to Sweep-116.
-- No new physics. No ACTIVE promotion. No archive API. No tags.
+- Updated subject `GOVERNANCE.md` and `docs/CHANGELOG.md` to Sweep-117.
+- No Solidity mutation.
 
 ### Exit
 
@@ -32,16 +33,15 @@ Subject lock complete. Portfolio-wide termination **not** met. One governed swee
 
 ---
 
-## 2026-09-07 — Sweep-115 (select: adl-capability-matrix)
+## 2026-09-07 — Sweep-116 (select: ware-constant-phenomenology)
 
-**Subject prior head:** `50ce48524c372f628137c0bd3b7901c5c7c10ba5`
-**Subject new head:** `3e40d40e3d04178b8d3f32a3ce9b704025e19ab7`
 **Classification:** **RESEARCH**
+**Subject new head:** `7f4915378982d7aa5169e233abefe4ce8b336f67`
 
-See git history of this file prior to Sweep-116 for full body.
+See git history of this file prior to Sweep-117 for full body.
 
 ---
 
 ## Prior
 
-Sweep-114…001 — see git history.
+Sweep-115…001 — see git history.
