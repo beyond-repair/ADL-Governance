@@ -2,6 +2,42 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-08 — Sweep-125 (select: aegis-repo-graph)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `aegis-repo-graph`.
+**Subject head (pre):** `1a5a2fde5eb95f664beb41cd82ec48ce0e5e1005`
+**Subject lock commit:** `2ab0affe722f5be260017fb2e6d5189505f46a95`
+**Classification:** **RESEARCH**
+
+### DISCOVER
+
+Python Artifact Graph (FLS-aligned). Tree: graph/{__init__,catalog,engine,model}.py, tests/test_graph.py, .github/workflows/ci.yml, CLAIM_STATUS.md, README.md, docs/SWEEP.md, pyproject.toml, requirements.txt, LICENSE, .gitignore. Open issues 0. GitHub archived=false. Language Python. Snapshot catalog locked 2026-09-04.
+
+### AUDIT
+
+- Listed RESEARCH in PORTFOLIO_STATUS_REPORT.md (named locks + remainder).
+- CLAIM_STATUS + engine enforce claim caps, identity uniqueness, referential integrity.
+- CI: workflow present; latest run **34072230795** conclusion **success** on head 1a5a2fde.
+- Tests: 5 unit tests covering validity, uniqueness, governance anchor, dangling, claim-cap.
+- No undefined components, no stale registry entries, no critical CI failures, no duplicate canonical implementations in tree, no unresolved critical security issues, claims properly capped (snapshot only).
+- Catalog internal self-lifecycle was ACTIVE; aligned to RESEARCH in docs (governance SoT).
+
+### IMPLEMENT
+
+- Docs only (CLAIM_STATUS.md, README.md, docs/SWEEP.md): re-affirm RESEARCH, update CI reference, note live census 75 vs locked snapshot.
+- No product mutation; no history rewrite; no archive flag change.
+
+### CLASSIFY
+
+RESEARCH: deterministic validator of a dated catalog; not a live crawler; not production host-integrity product. Target state (CI-green, documented, claim-capped) achieved.
+
+### Exit
+
+Subject termination conditions met. Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-124 (select: BlockSwarm)
 
 **Agent:** Grok (ADL-SEEM governed)

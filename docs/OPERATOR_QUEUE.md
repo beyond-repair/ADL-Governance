@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T17:14Z (Sweep-124 — BlockSwarm)
+**Last updated:** 2026-09-08T18:00Z (Sweep-125 — aegis-repo-graph)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -25,11 +25,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Confirm first Sweep-120 Actions conclusion | optimization-limit-conjecture | **PENDING** |
 | Deduplicate calculate_residual into one module | optimization-limit-conjecture | OPEN (safe refactor; not done this sweep) |
 | Remove or rename malformed `(requirements.txt` blob | optimization-limit-conjecture | OPEN (do not delete without review) |
+| Expand aegis-repo-graph catalog to live 75 (claim-capped) | aegis-repo-graph | OPEN (snapshot locked; operator) |
 
 ## Medium (documentation / census)
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-125 subject lock | aegis-repo-graph | **DONE** (RESEARCH; CI **34072230795** green; terminal) |
 | Confirm Sweep-124 subject lock | BlockSwarm | **DONE** (ACTIVE; CI **34172525021** green; terminal) |
 | Confirm Sweep-123 subject lock | Digital_Double_Virtual_Workforce_4.2 | **DONE** (SUPERSEDED pointer verified) |
 | Confirm Sweep-122 subject lock | m2-renormalization-law | **DONE** (RESEARCH; GOVERNANCE.md + README link) |
@@ -51,12 +53,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Tag releases without operator review | Operator-gated |
 | Promote m2-renormalization-law beyond RESEARCH | Provisional ansatz only; no experimental validation |
 | Resume parallel development on Digital_Double_Virtual_Workforce_4.2 | Explicitly SUPERSEDED |
+| Promote aegis-repo-graph beyond RESEARCH / claim 3 | Snapshot only; not live crawler |
 
-## Closed this cycle (Sweep-124)
+## Closed this cycle (Sweep-125)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit BlockSwarm | ACTIVE terminal confirmed; CI green; no product mutation | **DONE** |
+| Re-audit aegis-repo-graph | RESEARCH terminal confirmed; CI green; docs aligned; no product mutation | **DONE** |
 
 ## Rule
 
