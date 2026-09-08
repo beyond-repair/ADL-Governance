@@ -1,32 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T13:35Z (autonomous Sweep-121)
+**Updated:** 2026-09-08T14:30Z (autonomous Sweep-122)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `seem-block-system` SUPERSEDED confirmation.
+**This cycle:** subject `m2-renormalization-law` RESEARCH lock.
 
-## Sweep-121 scope
+## Sweep-122 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→confirm terminal state |
-| Subject | seem-block-system |
-| Product mutation | NONE (already pure pointer) |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (docs)→confirm terminal state |
+| Subject | m2-renormalization-law |
+| Product mutation | GOVERNANCE.md + README link only |
 | Contract mutation | NONE |
-| Archive / release / history rewrite | NOT executed (archive remains operator) |
+| Archive / release / history rewrite | NOT executed |
 
-## Subject verification (seem-block-system)
+## Subject verification (m2-renormalization-law)
 
 | Field | Value |
 |-------|--------|
-| Head | f13550e18eacce28ed1cdfbd8117df214ef2a5eb |
-| Tree | 1 file (README.md) |
-| Product CI | ABSENT (not required) |
+| Head (lock) | e990037af63f5be87b3d82485e14d24c4ee8eb95 |
+| Tree | LICENSE, README.md, GOVERNANCE.md |
+| Product CI | ABSENT (not required for pure-docs RESEARCH) |
 | Releases / tags | none |
-| Classification | SUPERSEDED |
-| Successor | sovereign-clean-room (docs/BLOCK_SYSTEM.md) |
-| GitHub archived flag | false (queued) |
+| Classification | RESEARCH |
+| Successor / canonical | coherence-drive (MATH_THEORY_CLOSURE); ware-constant-phenomenology ledger |
+| GitHub archived flag | false |
 
 ## Phase-3 live verification
 
@@ -51,7 +51,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
+`m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -89,12 +89,12 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-121 |
+| Criterion | Sweep-122 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified SUPERSEDED | MET |
-| Subject claims capped / pointer correct | MET |
-| Subject product mutation | N/A (already terminal) |
+| Subject classified RESEARCH | MET |
+| Subject claims capped / GOVERNANCE present | MET |
+| Subject product mutation | Docs only (safe) |
 | GitHub archive flag on seem-block-system | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
