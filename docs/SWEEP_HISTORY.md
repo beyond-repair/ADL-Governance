@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-08 — Sweep-121 (select: seem-block-system)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `seem-block-system`.
+**Subject head:** `f13550e18eacce28ed1cdfbd8117df214ef2a5eb`
+**Classification:** **SUPERSEDED**
+
+### DISCOVER
+
+Tree 1 entry: README.md only (955 B). No source, tests, CI, requirements, or releases. Single branch main. Last push 2026-08-21. Open issues 0. GitHub archived=false.
+
+README is a pure legacy pointer with explicit SUPERSEDED/ABSORBED banner naming successor sovereign-clean-room at docs/BLOCK_SYSTEM.md.
+
+### AUDIT
+
+- Already present in SUPERSEDED tables of PORTFOLIO_STATUS_REPORT.md, repository_registry.md, and archive_queue.md.
+- Banner complies with LIFECYCLE.md supersede rules.
+- No undefined components, no stale code, no CI surface, no security issues, no unsupported claims.
+- Archive flag still false (operator action).
+
+### IMPLEMENT
+
+- No product mutation required or performed (pointer already correct).
+- Governance docs updated only.
+
+### CLASSIFY
+
+SUPERSEDED: historical archive pointer; active development consolidated into sovereign-clean-room.
+
+### Exit
+
+Subject termination conditions met (pointer-only SUPERSEDED). Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-120 (select: optimization-limit-conjecture)
 
 **Agent:** Grok (ADL-SEEM governed)

@@ -1,31 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T01:20Z (autonomous Sweep-120)
+**Updated:** 2026-09-08T13:35Z (autonomous Sweep-121)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `optimization-limit-conjecture` RESEARCH lock.
+**This cycle:** subject `seem-block-system` SUPERSEDED confirmation.
 
-## Sweep-120 scope
+## Sweep-121 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT tests+CI+docs |
-| Subject | optimization-limit-conjecture |
-| Product mutation | tests, ci.yml, requirements.txt, GOVERNANCE.md, README cap |
+| Primary | DISCOVER→AUDIT→CLASSIFY→confirm terminal state |
+| Subject | seem-block-system |
+| Product mutation | NONE (already pure pointer) |
 | Contract mutation | NONE |
-| Archive / release / history rewrite | NOT executed |
+| Archive / release / history rewrite | NOT executed (archive remains operator) |
 
-## Subject verification (optimization-limit-conjecture)
+## Subject verification (seem-block-system)
 
 | Field | Value |
 |-------|--------|
-| Prior head | af2c11ca797541e2076f8571a201cb2050780a4c |
-| Lock commit | 5cda19ea37292cb9e9ea80917edae6e703d5f6c4 |
-| Product CI | ADDED (first run pending after this push) |
+| Head | f13550e18eacce28ed1cdfbd8117df214ef2a5eb |
+| Tree | 1 file (README.md) |
+| Product CI | ABSENT (not required) |
 | Releases / tags | none |
-| Classification | RESEARCH |
-| Claim | Finite-depth residual numerics; conjecture not proved; W* not derived |
+| Classification | SUPERSEDED |
+| Successor | sovereign-clean-room (docs/BLOCK_SYSTEM.md) |
+| GitHub archived flag | false (queued) |
 
 ## Phase-3 live verification
 
@@ -78,7 +79,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT` included) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -88,13 +89,13 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-120 |
+| Criterion | Sweep-121 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified RESEARCH | MET |
-| Subject claims capped | MET |
-| Subject tests+CI added | MET (CI conclusion pending Actions) |
-| GitHub archive flag on genieGPT / smart_home_BCI | NOT MET (operator) |
+| Subject classified SUPERSEDED | MET |
+| Subject claims capped / pointer correct | MET |
+| Subject product mutation | N/A (already terminal) |
+| GitHub archive flag on seem-block-system | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |

@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T01:20Z (Sweep-120 — optimization-limit-conjecture)
+**Last updated:** 2026-09-08T13:35Z (Sweep-121 — seem-block-system)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -16,6 +16,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
 | `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
 | `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** |
+| `gh repo archive beyond-repair/seem-block-system --yes` | seem-block-system | **PENDING** (Sweep-121 confirmed SUPERSEDED pointer) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 | Refresh capability_matrix.json to live census (75) with evidence-backed caps | adl-capability-matrix | **OPEN** (do not invent rows) |
 | Reconcile SUPERSEDED lifecycle vs identity non-collapse | SEEM trio + seem-identity-unifier | **OPEN** |
@@ -28,6 +29,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-121 subject lock | seem-block-system | **DONE** (SUPERSEDED pointer verified) |
 | Confirm Sweep-120 subject lock | optimization-limit-conjecture | **DONE** (commit 5cda19ea) |
 | Confirm Sweep-119 subject docs lock | RealityOS | **DONE** |
 | Confirm Sweep-118 subject docs lock | seem-identity-unifier | **DONE** |
@@ -44,11 +46,11 @@ Destructive or account-level actions that require a human operator. Agent record
 | Delete any repository / rewrite history | Immutable |
 | Tag releases without operator review | Operator-gated |
 
-## Closed this cycle (Sweep-120)
+## Closed this cycle (Sweep-121)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit optimization-limit-conjecture | RESEARCH; tests+CI added; claims capped | **DONE** |
+| Re-audit seem-block-system | SUPERSEDED confirmed; pure pointer; archive queued | **DONE** |
 
 ## Rule
 
