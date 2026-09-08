@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T13:35Z (Sweep-121 — seem-block-system)
+**Last updated:** 2026-09-08T14:31Z (Sweep-122 — m2-renormalization-law)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -29,6 +29,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-122 subject lock | m2-renormalization-law | **DONE** (RESEARCH; GOVERNANCE.md + README link) |
 | Confirm Sweep-121 subject lock | seem-block-system | **DONE** (SUPERSEDED pointer verified) |
 | Confirm Sweep-120 subject lock | optimization-limit-conjecture | **DONE** (commit 5cda19ea) |
 | Confirm Sweep-119 subject docs lock | RealityOS | **DONE** |
@@ -45,12 +46,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Invent 8 new matrix rows + cluster/cap | Would fabricate metadata claims |
 | Delete any repository / rewrite history | Immutable |
 | Tag releases without operator review | Operator-gated |
+| Promote m2-renormalization-law beyond RESEARCH | Provisional ansatz only; no experimental validation |
 
-## Closed this cycle (Sweep-121)
+## Closed this cycle (Sweep-122)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit seem-block-system | SUPERSEDED confirmed; pure pointer; archive queued | **DONE** |
+| Lock m2-renormalization-law | RESEARCH; GOVERNANCE.md added; claims already capped | **DONE** |
 
 ## Rule
 
