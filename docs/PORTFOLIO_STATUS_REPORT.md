@@ -1,31 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T22:15Z (autonomous Sweep-126)
+**Updated:** 2026-09-08T23:05Z (autonomous Sweep-127)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `ftmA.I.bot` ARCHIVED classification + docs lock.
+**This cycle:** subject `Project-Cold-Boot` RESEARCH classification + docs lock.
 
-## Sweep-126 scope
+## Sweep-127 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (docs)→confirm terminal state |
-| Subject | ftmA.I.bot |
-| Product mutation | Docs only (ARCHIVED.md, GOVERNANCE.md, README banner) |
+| Subject | Project-Cold-Boot |
+| Product mutation | Docs only (GOVERNANCE.md + README governance link) |
 | Contract mutation | NONE |
-| Archive / release / history rewrite | NOT executed (flag queued) |
+| Archive / release / history rewrite | NOT executed |
 
-## Subject verification (ftmA.I.bot)
+## Subject verification (Project-Cold-Boot)
 
 | Field | Value |
 |-------|--------|
-| Head (lock) | d3710a25a665111780f4bdc35c74ac75fc7b627f |
-| Tree | 87 root-level files (many stub .py, .txt, .csv, install scripts); no .github/, no formal tests/, no main.py |
+| Head (lock) | aba0a189e291e289efe44c605edc2218aeffd988 |
+| Tree | Godot 4.2+ project: godot/ (scenes, scripts, shaders), docs/ (ARCHITECTURE, BIBLE, COMPLETE, ROADMAP, STEAM_PREP, etc.), engine/, LICENSE, CONTRIBUTING, README |
 | Product CI | ABSENT |
 | Releases / tags | none |
-| Classification | **ARCHIVED** |
-| GitHub archived flag | false (operator action queued) |
+| Classification | **RESEARCH** |
+| GitHub archived flag | false |
 
 ## Phase-3 live verification
 
@@ -49,7 +49,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
+`Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -88,11 +88,11 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-126 |
+| Criterion | Sweep-127 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified ARCHIVED | MET |
-| Subject docs lock (ARCHIVED.md + GOVERNANCE.md + README banner) | MET (commit d3710a25) |
+| Subject classified RESEARCH | MET |
+| Subject docs lock (GOVERNANCE.md + README link) | MET (commits 53c1a1b / aba0a189) |
 | Subject product mutation | Docs only (safe) |
 | Releases present on ACTIVE quartet | NOT MET (operator) |
 | Matrix 75-complete verified rows | NOT MET |

@@ -2,6 +2,43 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-08 — Sweep-127 (select: Project-Cold-Boot)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `Project-Cold-Boot`.
+**Subject head (pre):** `ba39aebf1fcafb7792d69c12171468f814b1d025`
+**Subject lock commits:** `53c1a1b803ff2b1f4c494efed47471f57a31594b` (GOVERNANCE.md), `aba0a189e291e289efe44c605edc2218aeffd988` (README)
+**Classification:** **RESEARCH**
+
+### DISCOVER
+
+Godot 4.2+ dual-timeline narrative game foundation. Tree: `godot/` (project.godot, scenes/main_menu + vertical_slice, scripts/GameState.gd + VerticalSlice.gd + MainMenu.gd, shaders/domain_warp_*), `docs/` (ARCHITECTURE.md, BIBLE.md, COMPLETE.md, ROADMAP_TO_1.0.md, STEAM_PREP.md, VISUAL_BIBLE.md, STATUS.md, etc.), `engine/`, LICENSE (MIT), CONTRIBUTING.md, README.md, .gitignore. Open issues 0. GitHub archived=false. Language GDScript/Godot. Last activity foundation lock ~2026-09-03.
+
+### AUDIT
+
+- Present in named census; default RESEARCH until locked.
+- `docs/COMPLETE.md` declares foundation terminal (playable SCAN/SNAP/SUNDER vertical slice, dual SubViewport, domain-warp shaders, MutationLog sim, art direction locked). Commercial 1.0 explicitly unfinished.
+- No `.github/workflows`, no automated tests, no formal CI surface.
+- No critical security issues observed; no committed secrets.
+- Claims in README/docs are prototype-level only; no unsupported production claims.
+- Compatible with LIFECYCLE.md RESEARCH path and CONSTITUTION.md claim integrity.
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `GOVERNANCE.md` (class RESEARCH, claim level 0, allowed/forbidden uses, CI absence noted).
+- Updated `README.md` with governance link and RESEARCH affirmation while preserving original creative content.
+- No product code mutation; no CI addition (Godot manual-play only); no archive flag flip; no history rewrite.
+
+### CLASSIFY
+
+RESEARCH: experimental/playable foundation prototype for a dual-timeline game; unvalidated as commercial product; docs complete and claims capped. Target state achieved for RESEARCH class.
+
+### Exit
+
+Subject termination conditions met for RESEARCH class (docs complete, claims capped, no critical issues, structure preserved). Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-126 (select: ftmA.I.bot)
 
 **Agent:** Grok (ADL-SEEM governed)
