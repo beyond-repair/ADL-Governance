@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-08 — Sweep-122 (select: m2-renormalization-law)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `m2-renormalization-law`.
+**Subject head (pre):** `8c8e13a137d967d53bf1b938772cee3f0249d4dd`
+**Subject lock commits:** `b9aef4d7ba4729d5cb1830acefbe7ceb6307b1b6` (GOVERNANCE.md), `e990037af63f5be87b3d82485e14d24c4ee8eb95` (README)
+**Classification:** **RESEARCH**
+
+### DISCOVER
+
+Tree 2 entries pre-sweep: LICENSE, README.md only. No source code, no tests, no CI workflows, no requirements, no releases/tags. Single branch main. Language none. Open issues 0. GitHub archived=false. Last push prior 2026-08-24.
+
+README is claim-capped provisional ansatz documenting Stage-1 form \(W(n)=0.08 e^{0.23(n-3)}\), deprecated indexing, and Option A (no rescale of galactic \(W_\star\)). Points to coherence-drive MATH_THEORY_CLOSURE and ware-constant-phenomenology.
+
+### AUDIT
+
+- Default RESEARCH (not previously locked in registry tables).
+- No undefined components (pure documentation of scaling ansatz).
+- No stale code, no duplicate implementations, no security surface, no unsupported claims (explicitly provisional).
+- No product CI surface required for pure-docs RESEARCH pointer.
+- Compatible with LIFECYCLE.md and CONSTITUTION.md claim integrity.
+
+### IMPLEMENT (safe, idempotent)
+
+- Added GOVERNANCE.md: RESEARCH class, claim level, allowed/forbidden uses, links to canonical program and ledger.
+- Updated README.md to reference GOVERNANCE.md while preserving all prior claim caps and math.
+- No destructive actions; no history rewrite; no archive flag change.
+
+### CLASSIFY
+
+RESEARCH: provisional scaling ansatz for residual-force / engineering use under Option A; not derived law; not experimentally validated; no product claims.
+
+### Exit
+
+Subject termination conditions met (docs complete, claims capped, no CI surface, no critical issues). Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-121 (select: seem-block-system)
 
 **Agent:** Grok (ADL-SEEM governed)
