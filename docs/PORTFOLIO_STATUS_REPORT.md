@@ -1,31 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T14:30Z (autonomous Sweep-122)
+**Updated:** 2026-09-08T15:35Z (autonomous Sweep-123)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `m2-renormalization-law` RESEARCH lock.
+**This cycle:** subject `Digital_Double_Virtual_Workforce_4.2` SUPERSEDED lock.
 
-## Sweep-122 scope
+## Sweep-123 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (docs)→confirm terminal state |
-| Subject | m2-renormalization-law |
-| Product mutation | GOVERNANCE.md + README link only |
+| Primary | DISCOVER→AUDIT→CLASSIFY→confirm terminal state |
+| Subject | Digital_Double_Virtual_Workforce_4.2 |
+| Product mutation | NONE (pointer already correct) |
 | Contract mutation | NONE |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (m2-renormalization-law)
+## Subject verification (Digital_Double_Virtual_Workforce_4.2)
 
 | Field | Value |
 |-------|--------|
-| Head (lock) | e990037af63f5be87b3d82485e14d24c4ee8eb95 |
-| Tree | LICENSE, README.md, GOVERNANCE.md |
-| Product CI | ABSENT (not required for pure-docs RESEARCH) |
+| Head (lock) | e8a16e3f34222b74ad2787ecc143e29a3e9138f6 |
+| Tree | CANONICAL_NOTE.md + agents/config/docs/models/scripts/selfheal/src/tests/ui-react |
+| Product CI | ABSENT (merge-source only) |
 | Releases / tags | none |
-| Classification | RESEARCH |
-| Successor / canonical | coherence-drive (MATH_THEORY_CLOSURE); ware-constant-phenomenology ledger |
+| Classification | SUPERSEDED |
+| Successor / canonical | Digital_Double_virtual_workforce |
 | GitHub archived flag | false |
 
 ## Phase-3 live verification
@@ -79,7 +79,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -89,13 +89,13 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-122 |
+| Criterion | Sweep-123 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified RESEARCH | MET |
-| Subject claims capped / GOVERNANCE present | MET |
-| Subject product mutation | Docs only (safe) |
-| GitHub archive flag on seem-block-system | NOT MET (operator) |
+| Subject classified SUPERSEDED | MET |
+| Subject pointer verified | MET |
+| Subject product mutation | None (safe) |
+| GitHub archive flag on Digital_Double_Virtual_Workforce_4.2 | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |

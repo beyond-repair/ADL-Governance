@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-08 — Sweep-123 (select: Digital_Double_Virtual_Workforce_4.2)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `Digital_Double_Virtual_Workforce_4.2`.
+**Subject head:** `e8a16e3f34222b74ad2787ecc143e29a3e9138f6`
+**Classification:** **SUPERSEDED**
+
+### DISCOVER
+
+Private merge-source tree. Root: `.gitignore`, `CANONICAL_NOTE.md`, `SECURITY.md`, dirs `agents/`, `config/`, `docs/`, `models/` (GGUF binary), `scripts/`, `selfheal/`, `src/`, `tests/`, `ui-react/`. Contains `__pycache__` artifacts. No root README. Open issues 1. GitHub archived=false.
+
+`CANONICAL_NOTE.md` explicitly states:
+- This private 4.2 tree is a **merge source**, not the public face.
+- Public canonical: https://github.com/beyond-repair/Digital_Double_virtual_workforce
+- After assets ported, mark SUPERSEDED and stop parallel development.
+
+### AUDIT
+
+- Already listed SUPERSEDED → Digital_Double_virtual_workforce in PORTFOLIO_STATUS_REPORT.md.
+- CANONICAL_NOTE satisfies LIFECYCLE supersede rules.
+- No product claims, no required CI surface, no unsupported claims.
+- Residual large binary + pycache = operator hygiene only.
+
+### IMPLEMENT
+
+- No product mutation (pointer already correct and idempotent).
+- Governance docs only.
+
+### CLASSIFY
+
+SUPERSEDED: historical merge-source; active development consolidated into Digital_Double_virtual_workforce.
+
+### Exit
+
+Subject termination conditions met (SUPERSEDED pointer verified). Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-122 (select: m2-renormalization-law)
 
 **Agent:** Grok (ADL-SEEM governed)

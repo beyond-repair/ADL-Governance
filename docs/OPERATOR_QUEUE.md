@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T14:31Z (Sweep-122 — m2-renormalization-law)
+**Last updated:** 2026-09-08T15:35Z (Sweep-123 — Digital_Double_Virtual_Workforce_4.2)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -17,6 +17,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
 | `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** |
 | `gh repo archive beyond-repair/seem-block-system --yes` | seem-block-system | **PENDING** (Sweep-121 confirmed SUPERSEDED pointer) |
+| `gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4.2 --yes` | Digital_Double_Virtual_Workforce_4.2 | **PENDING** (Sweep-123 confirmed SUPERSEDED pointer) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 | Refresh capability_matrix.json to live census (75) with evidence-backed caps | adl-capability-matrix | **OPEN** (do not invent rows) |
 | Reconcile SUPERSEDED lifecycle vs identity non-collapse | SEEM trio + seem-identity-unifier | **OPEN** |
@@ -29,6 +30,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-123 subject lock | Digital_Double_Virtual_Workforce_4.2 | **DONE** (SUPERSEDED pointer verified) |
 | Confirm Sweep-122 subject lock | m2-renormalization-law | **DONE** (RESEARCH; GOVERNANCE.md + README link) |
 | Confirm Sweep-121 subject lock | seem-block-system | **DONE** (SUPERSEDED pointer verified) |
 | Confirm Sweep-120 subject lock | optimization-limit-conjecture | **DONE** (commit 5cda19ea) |
@@ -47,12 +49,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Delete any repository / rewrite history | Immutable |
 | Tag releases without operator review | Operator-gated |
 | Promote m2-renormalization-law beyond RESEARCH | Provisional ansatz only; no experimental validation |
+| Resume parallel development on Digital_Double_Virtual_Workforce_4.2 | Explicitly SUPERSEDED |
 
-## Closed this cycle (Sweep-122)
+## Closed this cycle (Sweep-123)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Lock m2-renormalization-law | RESEARCH; GOVERNANCE.md added; claims already capped | **DONE** |
+| Lock Digital_Double_Virtual_Workforce_4.2 | SUPERSEDED; CANONICAL_NOTE already correct | **DONE** |
 
 ## Rule
 
