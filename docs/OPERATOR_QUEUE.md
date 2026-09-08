@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T15:35Z (Sweep-123 — Digital_Double_Virtual_Workforce_4.2)
+**Last updated:** 2026-09-08T17:14Z (Sweep-124 — BlockSwarm)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -10,7 +10,7 @@ Destructive or account-level actions that require a human operator. Agent record
 |--------|------|--------|
 | Rotate + remove committed `.env` | digital-double-mobile | **OPEN** |
 | Review / patch Dependabot HIGH (browserslist #85, nanoid #83, …) | digital-double-mobile | **OPEN** |
-| Tag + Release v0.5.0-sagf | BlockSwarm | READY (Foundry **34172525021** success on Sweep-117 head 469bcf4) |
+| Tag + Release v0.5.0-sagf | BlockSwarm | READY (Foundry **34172525021** success on Sweep-117 head 469bcf4; re-confirmed Sweep-124) |
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success) |
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
@@ -30,6 +30,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-124 subject lock | BlockSwarm | **DONE** (ACTIVE; CI **34172525021** green; terminal) |
 | Confirm Sweep-123 subject lock | Digital_Double_Virtual_Workforce_4.2 | **DONE** (SUPERSEDED pointer verified) |
 | Confirm Sweep-122 subject lock | m2-renormalization-law | **DONE** (RESEARCH; GOVERNANCE.md + README link) |
 | Confirm Sweep-121 subject lock | seem-block-system | **DONE** (SUPERSEDED pointer verified) |
@@ -51,11 +52,11 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote m2-renormalization-law beyond RESEARCH | Provisional ansatz only; no experimental validation |
 | Resume parallel development on Digital_Double_Virtual_Workforce_4.2 | Explicitly SUPERSEDED |
 
-## Closed this cycle (Sweep-123)
+## Closed this cycle (Sweep-124)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Lock Digital_Double_Virtual_Workforce_4.2 | SUPERSEDED; CANONICAL_NOTE already correct | **DONE** |
+| Re-audit BlockSwarm | ACTIVE terminal confirmed; CI green; no product mutation | **DONE** |
 
 ## Rule
 
