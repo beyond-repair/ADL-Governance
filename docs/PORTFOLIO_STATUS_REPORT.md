@@ -1,41 +1,42 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T01:05Z (autonomous Sweep-119)
+**Updated:** 2026-09-08T01:20Z (autonomous Sweep-120)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `RealityOS` RESEARCH lock.
+**This cycle:** subject `optimization-limit-conjecture` RESEARCH lock.
 
-## Sweep-119 scope
+## Sweep-120 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT docs |
-| Subject | RealityOS |
-| Product mutation | GOVERNANCE.md on subject |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT tests+CI+docs |
+| Subject | optimization-limit-conjecture |
+| Product mutation | tests, ci.yml, requirements.txt, GOVERNANCE.md, README cap |
 | Contract mutation | NONE |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (RealityOS)
+## Subject verification (optimization-limit-conjecture)
 
 | Field | Value |
 |-------|--------|
-| Prior head | a70f5924b65a4f4977ac41e45b0d4cdae414d54a |
-| Lock commit | e9ba820ca4140ea0055a4d39bde3bd9d3ba1f3a3 |
-| Product CI | ABSENT |
-| Dependabot graph | 32996172517 success |
+| Prior head | af2c11ca797541e2076f8571a201cb2050780a4c |
+| Lock commit | 5cda19ea37292cb9e9ea80917edae6e703d5f6c4 |
+| Product CI | ADDED (first run pending after this push) |
 | Releases / tags | none |
 | Classification | RESEARCH |
-| Claim | FastAPI MVP scaffold; not an OS; connectors/tests ABSENT vs README |
+| Claim | Finite-depth residual numerics; conjecture not proved; W* not derived |
 
-## Phase-3 live verification (this cycle)
+## Phase-3 live verification
 
-| Repo | Releases | Tags | Tree evidence | Last listed product CI |
-|------|----------|------|---------------|----------------|
-| forge-aegis | none | not re-listed | prior registry: python pipeline + tests + ci.yml | **33904082644** success |
-| sovereign-clean-room | none | not re-listed | prior registry: core/*.py + tests/* | **33979476402** success |
-| BlockSwarm | none | none listed | contracts + foundry.toml + test/ | **34172525021** success |
-| Digital_Double_virtual_workforce | none | not re-listed | TS src + tests + workflows | PR #7 **34084870372** success; Dependabot #5/#6 open |
+Prior-cycle IDs retained (not re-listed this cycle):
+
+| Repo | Last listed product CI |
+|------|----------------|
+| forge-aegis | **33904082644** success |
+| sovereign-clean-room | **33979476402** success |
+| BlockSwarm | **34172525021** success |
+| Digital_Double_virtual_workforce | PR #7 **34084870372** success; Dependabot #5/#6 open |
 
 VSA completeness remains **UNVERIFIED** beyond unit CI.
 
@@ -49,7 +50,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110. Mapping/census siblings remain RESEARCH. Physics / OS-family / agent-experiment surfaces remain RESEARCH unless promoted with verified tests+CI+SECURITY. OS-family peers (`LegionOS`, `Sovereign-OS`, `SovereignOS`) remain RESEARCH; no unique verified production domain.
+`optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -81,42 +82,23 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
-| RealityOS README vs tree (tests/, connectors/) | Medium | OPEN |
-| RealityOS product tests + CI | High (promotion bar) | ABSENT |
-| Physics novelty / 92% pinch figure | High (claim) | CAPPED |
-| Acoustic hardware bitrate / novelty | High (claim) | CAPPED |
-| momentum-closure tensor + tests | High (claim) | ABSENT / CAPPED |
-| SPARC χ² as pass / Ware thrust | High (claim) | CAPPED |
-
-## Dependency notes (this cycle)
-
-Internal (documented, not runtime-verified):
-
-- RealityOS → FastAPI / SQLAlchemy / SQLite (external; requirements present, not executed this cycle)
-- RealityOS has no verified internal repo import this cycle
-- seem-identity-unifier → SEEM-2.0 / SEEM-Cognitive-Microservice / SEEM-Cognitive_Microservice (mapped identities; no collapse)
-- forge-aegis → AEGIS-Project-Nehemiah- (spec sibling)
-- BlockSwarm → ADL-Governance (lifecycle)
-
-No new dependency cycle proven this cycle. No runtime import graph executed this cycle.
-
-OS-family synergy: RealityOS, LegionOS, Sovereign-OS, SovereignOS, os-family-constitution-map are **duplicate OS-narrative surfaces**. Canonical production runtime remains **sovereign-clean-room** (constitutional) + **Digital_Double_virtual_workforce** (workforce product). No merge executed.
+| OLC triplicate residual functions | Medium | OPEN |
+| OLC malformed `(requirements.txt` blob | Low | OPEN (do not delete without operator) |
+| OLC first CI run | Medium | PENDING |
 
 ## Exit criteria
 
-| Criterion | Sweep-119 |
+| Criterion | Sweep-120 |
 |-----------|-----------|
 | Named census of 75 | MET |
 | Subject classified RESEARCH | MET |
 | Subject claims capped | MET |
-| Phase-3 quartet re-listed | MET |
+| Subject tests+CI added | MET (CI conclusion pending Actions) |
 | GitHub archive flag on genieGPT / smart_home_BCI | NOT MET (operator) |
 | Releases present on ACTIVE quartet | NOT MET |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
-| SUPERSEDED vs identity non-collapse reconciled | NOT MET (recorded) |
-| RealityOS tests+CI | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
 One governed sweep; residuals recorded; stop.
