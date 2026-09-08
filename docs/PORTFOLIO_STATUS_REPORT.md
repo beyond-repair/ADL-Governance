@@ -1,36 +1,33 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T15:35Z (autonomous Sweep-123)
+**Updated:** 2026-09-08T17:14Z (autonomous Sweep-124)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `Digital_Double_Virtual_Workforce_4.2` SUPERSEDED lock.
+**This cycle:** subject `BlockSwarm` ACTIVE re-audit (terminal confirmed).
 
-## Sweep-123 scope
+## Sweep-124 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER→AUDIT→CLASSIFY→confirm terminal state |
-| Subject | Digital_Double_Virtual_Workforce_4.2 |
-| Product mutation | NONE (pointer already correct) |
+| Subject | BlockSwarm |
+| Product mutation | NONE (already CI-green, claim-capped) |
 | Contract mutation | NONE |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (Digital_Double_Virtual_Workforce_4.2)
+## Subject verification (BlockSwarm)
 
 | Field | Value |
 |-------|--------|
-| Head (lock) | e8a16e3f34222b74ad2787ecc143e29a3e9138f6 |
-| Tree | CANONICAL_NOTE.md + agents/config/docs/models/scripts/selfheal/src/tests/ui-react |
-| Product CI | ABSENT (merge-source only) |
-| Releases / tags | none |
-| Classification | SUPERSEDED |
-| Successor / canonical | Digital_Double_virtual_workforce |
+| Head (lock) | 469bcf41585059b327d2a83e33a80974828e671a |
+| Tree | contracts/ + test/ + script/ + docs/ + Foundry CI + GOVERNANCE.md + SECURITY.md |
+| Product CI | Foundry **34172525021** success |
+| Releases / tags | none (operator-gated v0.5.0-sagf) |
+| Classification | ACTIVE |
 | GitHub archived flag | false |
 
 ## Phase-3 live verification
-
-Prior-cycle IDs retained (not re-listed this cycle):
 
 | Repo | Last listed product CI |
 |------|----------------|
@@ -89,14 +86,13 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-123 |
+| Criterion | Sweep-124 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified SUPERSEDED | MET |
-| Subject pointer verified | MET |
+| Subject classified ACTIVE | MET |
+| Subject CI green verified | MET (**34172525021**) |
 | Subject product mutation | None (safe) |
-| GitHub archive flag on Digital_Double_Virtual_Workforce_4.2 | NOT MET (operator) |
-| Releases present on ACTIVE quartet | NOT MET |
+| Releases present on ACTIVE quartet | NOT MET (operator) |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
