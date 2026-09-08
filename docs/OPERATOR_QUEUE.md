@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T18:00Z (Sweep-125 — aegis-repo-graph)
+**Last updated:** 2026-09-08T22:15Z (Sweep-126 — ftmA.I.bot)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -18,6 +18,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** |
 | `gh repo archive beyond-repair/seem-block-system --yes` | seem-block-system | **PENDING** (Sweep-121 confirmed SUPERSEDED pointer) |
 | `gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4.2 --yes` | Digital_Double_Virtual_Workforce_4.2 | **PENDING** (Sweep-123 confirmed SUPERSEDED pointer) |
+| `gh repo archive beyond-repair/ftmA.I.bot --yes` | ftmA.I.bot | **PENDING** (Sweep-126 confirmed ARCHIVED docs) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 | Refresh capability_matrix.json to live census (75) with evidence-backed caps | adl-capability-matrix | **OPEN** (do not invent rows) |
 | Reconcile SUPERSEDED lifecycle vs identity non-collapse | SEEM trio + seem-identity-unifier | **OPEN** |
@@ -31,6 +32,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-126 subject lock | ftmA.I.bot | **DONE** (ARCHIVED; docs d3710a25; terminal) |
 | Confirm Sweep-125 subject lock | aegis-repo-graph | **DONE** (RESEARCH; CI **34072230795** green; terminal) |
 | Confirm Sweep-124 subject lock | BlockSwarm | **DONE** (ACTIVE; CI **34172525021** green; terminal) |
 | Confirm Sweep-123 subject lock | Digital_Double_Virtual_Workforce_4.2 | **DONE** (SUPERSEDED pointer verified) |
@@ -54,12 +56,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote m2-renormalization-law beyond RESEARCH | Provisional ansatz only; no experimental validation |
 | Resume parallel development on Digital_Double_Virtual_Workforce_4.2 | Explicitly SUPERSEDED |
 | Promote aegis-repo-graph beyond RESEARCH / claim 3 | Snapshot only; not live crawler |
+| Resume feature work on ftmA.I.bot | Explicitly ARCHIVED |
 
-## Closed this cycle (Sweep-125)
+## Closed this cycle (Sweep-126)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit aegis-repo-graph | RESEARCH terminal confirmed; CI green; docs aligned; no product mutation | **DONE** |
+| Classify + docs-lock ftmA.I.bot | ARCHIVED; ARCHIVED.md + GOVERNANCE.md + README banner; history preserved | **DONE** |
 
 ## Rule
 

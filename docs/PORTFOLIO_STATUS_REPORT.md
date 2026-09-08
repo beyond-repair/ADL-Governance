@@ -1,31 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T18:00Z (autonomous Sweep-125)
+**Updated:** 2026-09-08T22:15Z (autonomous Sweep-126)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `aegis-repo-graph` RESEARCH re-audit (terminal confirmed).
+**This cycle:** subject `ftmA.I.bot` ARCHIVED classification + docs lock.
 
-## Sweep-125 scope
+## Sweep-126 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→confirm terminal state |
-| Subject | aegis-repo-graph |
-| Product mutation | NONE (already CI-green, claim-capped) |
+| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (docs)→confirm terminal state |
+| Subject | ftmA.I.bot |
+| Product mutation | Docs only (ARCHIVED.md, GOVERNANCE.md, README banner) |
 | Contract mutation | NONE |
-| Archive / release / history rewrite | NOT executed |
+| Archive / release / history rewrite | NOT executed (flag queued) |
 
-## Subject verification (aegis-repo-graph)
+## Subject verification (ftmA.I.bot)
 
 | Field | Value |
 |-------|--------|
-| Head (lock) | 2ab0affe722f5be260017fb2e6d5189505f46a95 |
-| Tree | graph/ + tests/ + .github/workflows/ci.yml + CLAIM_STATUS + docs |
-| Product CI | **34072230795** success (pre-lock) + post-docs expected green |
-| Releases / tags | none (operator-gated) |
-| Classification | RESEARCH |
-| GitHub archived flag | false |
+| Head (lock) | d3710a25a665111780f4bdc35c74ac75fc7b627f |
+| Tree | 87 root-level files (many stub .py, .txt, .csv, install scripts); no .github/, no formal tests/, no main.py |
+| Product CI | ABSENT |
+| Releases / tags | none |
+| Classification | **ARCHIVED** |
+| GitHub archived flag | false (operator action queued) |
 
 ## Phase-3 live verification
 
@@ -61,7 +61,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT`.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT`, **`ftmA.I.bot`** (Sweep-126).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -77,7 +77,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -88,12 +88,12 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-125 |
+| Criterion | Sweep-126 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified RESEARCH | MET |
-| Subject CI green verified | MET (**34072230795**) |
-| Subject product mutation | None (safe) |
+| Subject classified ARCHIVED | MET |
+| Subject docs lock (ARCHIVED.md + GOVERNANCE.md + README banner) | MET (commit d3710a25) |
+| Subject product mutation | Docs only (safe) |
 | Releases present on ACTIVE quartet | NOT MET (operator) |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
