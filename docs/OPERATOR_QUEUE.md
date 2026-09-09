@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-09T00:04Z (Sweep-128 — -text-informational-fork-protocol-)
+**Last updated:** 2026-09-09T17:00Z (Sweep-129 — DigitalDoubleVirtualWorkforce3.5)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -19,6 +19,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | `gh repo archive beyond-repair/seem-block-system --yes` | seem-block-system | **PENDING** (Sweep-121 confirmed SUPERSEDED pointer) |
 | `gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4.2 --yes` | Digital_Double_Virtual_Workforce_4.2 | **PENDING** (Sweep-123 confirmed SUPERSEDED pointer) |
 | `gh repo archive beyond-repair/ftmA.I.bot --yes` | ftmA.I.bot | **PENDING** (Sweep-126 confirmed ARCHIVED docs) |
+| `gh repo archive beyond-repair/DigitalDoubleVirtualWorkforce3.5 --yes` | DigitalDoubleVirtualWorkforce3.5 | **PENDING** (Sweep-129 confirmed SUPERSEDED docs) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 | Refresh capability_matrix.json to live census (75) with evidence-backed caps | adl-capability-matrix | **OPEN** (do not invent rows) |
 | Reconcile SUPERSEDED lifecycle vs identity non-collapse | SEEM trio + seem-identity-unifier | **OPEN** |
@@ -32,6 +33,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-129 subject lock | DigitalDoubleVirtualWorkforce3.5 | **DONE** (SUPERSEDED; GOVERNANCE.md; terminal for class) |
 | Confirm Sweep-128 subject lock | -text-informational-fork-protocol- | **DONE** (RESEARCH; GOVERNANCE.md + README; terminal for class) |
 | Confirm Sweep-127 subject lock | Project-Cold-Boot | **DONE** (RESEARCH; GOVERNANCE.md + README; terminal for class) |
 | Confirm Sweep-126 subject lock | ftmA.I.bot | **DONE** (ARCHIVED; docs d3710a25; terminal) |
@@ -61,12 +63,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Resume feature work on ftmA.I.bot | Explicitly ARCHIVED |
 | Promote Project-Cold-Boot beyond RESEARCH | Foundation prototype only; no commercial validation or CI |
 | Promote -text-informational-fork-protocol- beyond RESEARCH | Protocol design only; no experimental validation |
+| Resume feature work on DigitalDoubleVirtualWorkforce3.5 | Explicitly SUPERSEDED |
 
-## Closed this cycle (Sweep-128)
+## Closed this cycle (Sweep-129)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Classify + docs-lock -text-informational-fork-protocol- | RESEARCH; GOVERNANCE.md + README governance banner; history preserved | **DONE** |
+| Classify + docs-lock DigitalDoubleVirtualWorkforce3.5 | SUPERSEDED; GOVERNANCE.md; history preserved; archive queued | **DONE** |
 
 ## Rule
 

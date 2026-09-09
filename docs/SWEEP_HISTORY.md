@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-09 — Sweep-129 (select: DigitalDoubleVirtualWorkforce3.5)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `DigitalDoubleVirtualWorkforce3.5`.
+**Subject head (pre):** `4524b998db591ca2762177122cb15db4bae5acc7`
+**Subject lock commit:** `fcf093698d762bc771b52f27de55b2052aee8ab9` (GOVERNANCE.md)
+**Classification:** **SUPERSEDED**
+
+### DISCOVER
+
+Legacy 3.5 line of Digital Double Virtual Workforce. Tree includes README (already SUPERSEDED banner), requirements.txt, pytest.ini, docs/CHANGELOG.md, src/ (core with several incomplete/erroneous filename blobs such as "from pathlib import Path.py", models/model_quantizer.py, empty compliance/toolkits packages), tests/conftest.py. Size ~8.7k. Open issues 0. GitHub archived=false. Language Python. Last push 2026-09-06. Description: distributed AI workforce system with fault tolerance and CAP theorem management.
+
+### AUDIT
+
+- Already listed SUPERSEDED in PORTFOLIO_STATUS_REPORT.md (maps to Digital_Double_virtual_workforce).
+- README already carries permanent SUPERSEDED banner naming the canonical public repository and forbidding feature work.
+- No product CI surface, no coherent runnable entrypoint under current tree, multiple malformed filename artifacts consistent with incomplete generation history.
+- No critical security issues (no committed secrets observed), no unsupported active claims, no duplicate canonical implementations requiring resolution beyond the existing pointer.
+- Compatible with LIFECYCLE.md SUPERSEDED path and CONSTITUTION.md claim integrity (Level 0).
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `GOVERNANCE.md` (class SUPERSEDED, claim level 0, canonical pointer, allowed/forbidden uses, CI absence noted, archive operator-gated).
+- No product code mutation; no CI addition; no archive flag flip; no history rewrite; no deletion of malformed historical blobs.
+
+### CLASSIFY
+
+SUPERSEDED: historical 3.5 line superseded by Digital_Double_virtual_workforce; docs complete; no further product action.
+
+### Exit
+
+Subject termination conditions met for SUPERSEDED class (docs complete, claims capped at 0, no critical issues, structure preserved). Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-128 (select: -text-informational-fork-protocol-)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -114,77 +149,6 @@ Subject termination conditions met for ARCHIVED class (docs complete, claims cap
 
 ---
 
-## 2026-09-08 — Sweep-125 (select: aegis-repo-graph)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `aegis-repo-graph`.
-**Subject head (pre):** `1a5a2fde5eb95f664beb41cd82ec48ce0e5e1005`
-**Subject lock commit:** `2ab0affe722f5be260017fb2e6d5189505f46a95`
-**Classification:** **RESEARCH**
-
-### DISCOVER
-
-Python Artifact Graph (FLS-aligned). Tree: graph/{__init__,catalog,engine,model}.py, tests/test_graph.py, .github/workflows/ci.yml, CLAIM_STATUS.md, README.md, docs/SWEEP.md, pyproject.toml, requirements.txt, LICENSE, .gitignore. Open issues 0. GitHub archived=false. Language Python. Snapshot catalog locked 2026-09-04.
-
-### AUDIT
-
-- Listed RESEARCH in PORTFOLIO_STATUS_REPORT.md (named locks + remainder).
-- CLAIM_STATUS + engine enforce claim caps, identity uniqueness, referential integrity.
-- CI: workflow present; latest run **34072230795** conclusion **success** on head 1a5a2fde.
-- Tests: 5 unit tests covering validity, uniqueness, governance anchor, dangling, claim-cap.
-- No undefined components, no stale registry entries, no critical CI failures, no duplicate canonical implementations in tree, no unresolved critical security issues, claims properly capped (snapshot only).
-- Catalog internal self-lifecycle was ACTIVE; aligned to RESEARCH in docs (governance SoT).
-
-### IMPLEMENT
-
-- Docs only (CLAIM_STATUS.md, README.md, docs/SWEEP.md): re-affirm RESEARCH, update CI reference, note live census 75 vs locked snapshot.
-- No product mutation; no history rewrite; no archive flag change.
-
-### CLASSIFY
-
-RESEARCH: deterministic validator of a dated catalog; not a live crawler; not production host-integrity product. Target state (CI-green, documented, claim-capped) achieved.
-
-### Exit
-
-Subject termination conditions met. Portfolio-wide termination not met. One governed sweep; stop.
-
----
-
-## 2026-09-08 — Sweep-124 (select: BlockSwarm)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `BlockSwarm`.
-**Subject head:** `469bcf41585059b327d2a83e33a80974828e671a`
-**Classification:** **ACTIVE**
-
-### DISCOVER
-
-Foundry/Solidity SAGF execution substrate. Tree: contracts/ (AIExecutor, DAOGovernor, GovernanceNFT, KnowledgeLedger, MerkleVerifier, OrchestrationEngine, RevertTokenLayer + libraries/MerkleProof), test/ (6 Foundry test files), script/DeploySAGF.s.sol, scripts/deployment/, docs/ (validation notes, FORMAL_INVARIANTS, MERKLE, CHANGELOG, RELEASE_v0.5.0-sagf), .github/workflows/foundry.yml, GOVERNANCE.md, SECURITY.md, README.md, LICENSE, foundry.toml, hardhat.config.js, legacy/, env.example. Open issues 0. GitHub archived=false. Language Solidity/Python-adjacent tooling.
-
-### AUDIT
-
-- Listed ACTIVE in PORTFOLIO_STATUS_REPORT.md (canonical ACTIVE set).
-- GOVERNANCE.md present: claim-capped, invariant "AI advises. It cannot execute.", CI reference.
-- Tests under test/ cover advisory-only, roles, Merkle, one-vote, inverse binding, deploy wiring.
-- CI: Foundry workflow present; latest run **34172525021** conclusion **success** on head 469bcf4 (Sweep-117 docs).
-- No undefined components, no stale registry entries, no critical CI failures, no duplicate canonical implementations observed in this tree, no unresolved critical security issues (SECURITY.md present), claims properly capped.
-- Release tag v0.5.0-sagf remains operator-gated (already in OPERATOR_QUEUE).
-
-### IMPLEMENT
-
-- No product mutation required (idempotent re-audit; target state already met).
-- Governance docs only (this history + status + queue timestamp).
-
-### CLASSIFY
-
-ACTIVE (P2): governed multi-agent coordination substrate under continuous evidence (Foundry tests + green CI). Target state (CI-green, documented, claim-capped) achieved.
-
-### Exit
-
-Subject termination conditions met. Portfolio-wide termination not met. One governed sweep; stop.
-
----
-
 ## Prior sweeps
 
-Sweep-123 … 001 — see git history of this file for full prior entries.
+Sweep-125 … 001 — see git history of this file for full prior entries.

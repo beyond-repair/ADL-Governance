@@ -1,31 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-09T00:03Z (autonomous Sweep-128)
+**Updated:** 2026-09-09T17:00Z (autonomous Sweep-129)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `-text-informational-fork-protocol-` RESEARCH classification + docs lock.
+**This cycle:** subject `DigitalDoubleVirtualWorkforce3.5` SUPERSEDED classification + GOVERNANCE.md lock.
 
-## Sweep-128 scope
+## Sweep-129 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (docs)→confirm terminal state |
-| Subject | -text-informational-fork-protocol- |
-| Product mutation | Docs only (GOVERNANCE.md + README governance banner) |
+| Subject | DigitalDoubleVirtualWorkforce3.5 |
+| Product mutation | Docs only (GOVERNANCE.md) |
 | Contract mutation | NONE |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (-text-informational-fork-protocol-)
+## Subject verification (DigitalDoubleVirtualWorkforce3.5)
 
 | Field | Value |
 |-------|--------|
-| Head (lock) | 7392cffe3d9bafa54b6945faca6e2fea4b113e78 |
-| Tree | 8 files: README, GOVERNANCE, FIELD_EQUATIONS, IFP_DOC_*, METHODOLOGY_NOTES, REDUCTION_STDS, final_verification.py |
+| Head (lock) | fcf093698d762bc771b52f27de55b2052aee8ab9 |
+| Tree | README (SUPERSEDED banner), GOVERNANCE.md (new), requirements.txt, pytest.ini, docs/CHANGELOG.md, src/ (core + models + empty packages), tests/ |
 | Product CI | ABSENT |
 | Releases / tags | none |
-| Classification | **RESEARCH** |
+| Classification | **SUPERSEDED** |
 | GitHub archived flag | false |
+| Canonical | Digital_Double_virtual_workforce |
 
 ## Phase-3 live verification
 
@@ -55,7 +56,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
 
-DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
+DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
 CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 only).
 
@@ -77,7 +78,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -88,11 +89,11 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-128 |
+| Criterion | Sweep-129 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified RESEARCH | MET |
-| Subject docs lock (GOVERNANCE.md + README banner) | MET (commits 3a3c835 / 7392cffe) |
+| Subject classified SUPERSEDED | MET |
+| Subject docs lock (GOVERNANCE.md) | MET (commit fcf09369) |
 | Subject product mutation | Docs only (safe) |
 | Releases present on ACTIVE quartet | NOT MET (operator) |
 | Matrix 75-complete verified rows | NOT MET |
