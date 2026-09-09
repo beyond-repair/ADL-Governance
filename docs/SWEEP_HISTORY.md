@@ -2,6 +2,43 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-08 — Sweep-128 (select: -text-informational-fork-protocol-)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `-text-informational-fork-protocol-`.
+**Subject head (pre):** `e76c3d3ad9c6f191f5b68db33b048d10caf99f48`
+**Subject lock commits:** `3a3c8358166968d3b668df5055ee5037da274d4f` (GOVERNANCE.md), `7392cffe3d9bafa54b6945faca6e2fea4b113e78` (README)
+**Classification:** **RESEARCH**
+
+### DISCOVER
+
+Companion protocol repository for Informational Fork Protocol (IFP). Tree (8 files): README.md, GOVERNANCE.md (new), FIELD_EQUATIONS.md, IFP_DOC_DCH.md, IFP_DOC_TFM.md, IFP_DOC_ZDP.3.1.md, METHODOLOGY_NOTES.md, REDUCTION_STDS.md, final_verification.py. Pure documentation + single pure-Python verification utility (no external deps). Open issues 0. GitHub archived=false. Language Markdown/Python. Last activity historical theory hardening.
+
+### AUDIT
+
+- Present in named census; default RESEARCH until locked.
+- No `.github/workflows`, no automated test suite, no product CI surface (expected for RESEARCH docs).
+- Claims are hypothesis-grade (Computational Burden Inequality, PIF retrieval); explicitly null-hypothesis driven and falsifiable.
+- Canonical definitions deferred to ware-constant-phenomenology (pointer present).
+- No undefined critical components, no stale registry entries, no critical security issues, no committed secrets, no duplicate canonical implementations.
+- Compatible with LIFECYCLE.md RESEARCH path and CONSTITUTION.md claim integrity (Level 0).
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `GOVERNANCE.md` (class RESEARCH, claim level 0, allowed/forbidden uses, CI absence noted, pointer to canonical source).
+- Updated `README.md` with governance banner and RESEARCH affirmation while preserving original scientific content.
+- No product code mutation; no CI addition (unnecessary for pure RESEARCH docs + script); no archive flag flip; no history rewrite.
+
+### CLASSIFY
+
+RESEARCH: protocol design and instrumentation notes for a falsifiable non-local retrieval hypothesis; unvalidated experimentally; docs complete and claims capped at Level 0. Target state achieved for RESEARCH class.
+
+### Exit
+
+Subject termination conditions met for RESEARCH class (docs complete, claims capped, no critical issues, structure preserved). Portfolio-wide termination not met. One governed sweep; stop.
+
+---
+
 ## 2026-09-08 — Sweep-127 (select: Project-Cold-Boot)
 
 **Agent:** Grok (ADL-SEEM governed)
