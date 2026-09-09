@@ -1,27 +1,27 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-08T23:05Z (autonomous Sweep-127)
+**Updated:** 2026-09-09T00:03Z (autonomous Sweep-128)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `Project-Cold-Boot` RESEARCH classification + docs lock.
+**This cycle:** subject `-text-informational-fork-protocol-` RESEARCH classification + docs lock.
 
-## Sweep-127 scope
+## Sweep-128 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (docs)→confirm terminal state |
-| Subject | Project-Cold-Boot |
-| Product mutation | Docs only (GOVERNANCE.md + README governance link) |
+| Subject | -text-informational-fork-protocol- |
+| Product mutation | Docs only (GOVERNANCE.md + README governance banner) |
 | Contract mutation | NONE |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (Project-Cold-Boot)
+## Subject verification (-text-informational-fork-protocol-)
 
 | Field | Value |
 |-------|--------|
-| Head (lock) | aba0a189e291e289efe44c605edc2218aeffd988 |
-| Tree | Godot 4.2+ project: godot/ (scenes, scripts, shaders), docs/ (ARCHITECTURE, BIBLE, COMPLETE, ROADMAP, STEAM_PREP, etc.), engine/, LICENSE, CONTRIBUTING, README |
+| Head (lock) | 7392cffe3d9bafa54b6945faca6e2fea4b113e78 |
+| Tree | 8 files: README, GOVERNANCE, FIELD_EQUATIONS, IFP_DOC_*, METHODOLOGY_NOTES, REDUCTION_STDS, final_verification.py |
 | Product CI | ABSENT |
 | Releases / tags | none |
 | Classification | **RESEARCH** |
@@ -49,7 +49,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
+`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -88,11 +88,11 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-127 |
+| Criterion | Sweep-128 |
 |-----------|-----------|
 | Named census of 75 | MET |
 | Subject classified RESEARCH | MET |
-| Subject docs lock (GOVERNANCE.md + README link) | MET (commits 53c1a1b / aba0a189) |
+| Subject docs lock (GOVERNANCE.md + README banner) | MET (commits 3a3c835 / 7392cffe) |
 | Subject product mutation | Docs only (safe) |
 | Releases present on ACTIVE quartet | NOT MET (operator) |
 | Matrix 75-complete verified rows | NOT MET |
