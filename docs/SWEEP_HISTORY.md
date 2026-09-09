@@ -2,6 +2,47 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-09 — Sweep-130 (select: seem-identity-unifier)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `seem-identity-unifier`.
+**Subject head (pre/lock):** `03cd4577ac12d90e5dbb7a44149180545a9d9623`
+**Classification:** **RESEARCH** (re-confirmed)
+
+### DISCOVER
+
+Claim-capped identity map module for three SEEM repositories that share vocabulary but must not be collapsed:
+- SEEM-2.0-Self-Evolving-Emergent-Mind (flat_python)
+- SEEM-Cognitive-Microservice (hyphen; flat_plus_core)
+- SEEM-Cognitive_Microservice (underscore; backend_package_plus_frontend)
+
+Tree: unifier/ (engine.py, identities.py, __init__, __main__), tests/test_unifier.py, docs/CLAIM.md, GOVERNANCE.md, README.md, pyproject.toml, requirements.txt (pytest), .github/workflows/ci.yml, LICENSE, .gitignore. Size small. Open issues 0. Language Python. Closes Q-FUNC-003 from adl-function-census. Snapshot date 2026-09-05. CI historically green (run 33941447514).
+
+### AUDIT
+
+- Already locked RESEARCH in PORTFOLIO_STATUS_REPORT.md (Sweep-118).
+- GOVERNANCE.md present with claim cap MODULE_SURFACE, no SUPERSEDES/SAME_AS/EQUIVALENT_TO licensed, CI verified, no live crawler.
+- Deterministic pytest suite + engine validation; layouts differ explicitly; shared surfaces are names only.
+- No undefined/undocumented components, no stale registry entries, no critical CI failures, no duplicate canonical implementations, no unresolved critical security issues, no unsupported claims.
+- Compatible with LIFECYCLE.md RESEARCH path and CONSTITUTION.md claim integrity (Level 0 / MODULE_SURFACE).
+- Portfolio tension with SUPERSEDED lifecycle labels on the three identities is explicitly documented and preserved (non-collapse).
+
+### IMPLEMENT (safe, idempotent)
+
+- No product code, test, CI, or docs mutation required on subject (already terminal).
+- Governance registry updated this cycle (status report + history + operator queue note).
+- No archive flag, no release tag, no history rewrite.
+
+### CLASSIFY
+
+RESEARCH: experimental claim-capped identity map; deterministic validation only; no runtime equivalence claimed; docs and tests complete. Target state achieved for RESEARCH class.
+
+### Exit
+
+Subject termination conditions met for RESEARCH class (all boxes checked). Portfolio-wide termination not met. One governed re-audit sweep; stop.
+
+---
+
 ## 2026-09-09 — Sweep-129 (select: DigitalDoubleVirtualWorkforce3.5)
 
 **Agent:** Grok (ADL-SEEM governed)
