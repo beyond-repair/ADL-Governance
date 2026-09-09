@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-08T23:05Z (Sweep-127 — Project-Cold-Boot)
+**Last updated:** 2026-09-09T00:04Z (Sweep-128 — -text-informational-fork-protocol-)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -32,6 +32,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-128 subject lock | -text-informational-fork-protocol- | **DONE** (RESEARCH; GOVERNANCE.md + README; terminal for class) |
 | Confirm Sweep-127 subject lock | Project-Cold-Boot | **DONE** (RESEARCH; GOVERNANCE.md + README; terminal for class) |
 | Confirm Sweep-126 subject lock | ftmA.I.bot | **DONE** (ARCHIVED; docs d3710a25; terminal) |
 | Confirm Sweep-125 subject lock | aegis-repo-graph | **DONE** (RESEARCH; CI **34072230795** green; terminal) |
@@ -59,12 +60,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote aegis-repo-graph beyond RESEARCH / claim 3 | Snapshot only; not live crawler |
 | Resume feature work on ftmA.I.bot | Explicitly ARCHIVED |
 | Promote Project-Cold-Boot beyond RESEARCH | Foundation prototype only; no commercial validation or CI |
+| Promote -text-informational-fork-protocol- beyond RESEARCH | Protocol design only; no experimental validation |
 
-## Closed this cycle (Sweep-127)
+## Closed this cycle (Sweep-128)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Classify + docs-lock Project-Cold-Boot | RESEARCH; GOVERNANCE.md + README governance link; history preserved | **DONE** |
+| Classify + docs-lock -text-informational-fork-protocol- | RESEARCH; GOVERNANCE.md + README governance banner; history preserved | **DONE** |
 
 ## Rule
 
