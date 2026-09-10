@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-09T20:15Z (Sweep-130 — seem-identity-unifier re-audit)
+**Last updated:** 2026-09-10T03:15Z (Sweep-131 — ADL-Nexus integrity + claim-cap)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -28,11 +28,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Deduplicate calculate_residual into one module | optimization-limit-conjecture | OPEN (safe refactor; not done this sweep) |
 | Remove or rename malformed `(requirements.txt` blob | optimization-limit-conjecture | OPEN (do not delete without review) |
 | Expand aegis-repo-graph catalog to live 75 (claim-capped) | aegis-repo-graph | OPEN (snapshot locked; operator) |
+| Wire ObjectiveEngine / reality / provenance into NexusKernel + PATHWAY_SPEC | ADL-Nexus | OPEN (RESEARCH residual; xfail present) |
 
 ## Medium (documentation / census)
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-131 subject lock | ADL-Nexus | **DONE** (integrity + claim-cap xfail; RESEARCH) |
 | Confirm Sweep-130 subject re-audit | seem-identity-unifier | **DONE** (RESEARCH terminal; no mutation) |
 | Confirm Sweep-129 subject lock | DigitalDoubleVirtualWorkforce3.5 | **DONE** (SUPERSEDED; GOVERNANCE.md; terminal for class) |
 | Confirm Sweep-128 subject lock | -text-informational-fork-protocol- | **DONE** (RESEARCH; GOVERNANCE.md + README; terminal for class) |
@@ -66,12 +68,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote -text-informational-fork-protocol- beyond RESEARCH | Protocol design only; no experimental validation |
 | Resume feature work on DigitalDoubleVirtualWorkforce3.5 | Explicitly SUPERSEDED |
 | Promote seem-identity-unifier beyond RESEARCH | Claim-capped MODULE_SURFACE only; no runtime product |
+| Promote ADL-Nexus beyond RESEARCH | Spine incomplete; live adapters UNSUPPORTED |
 
-## Closed this cycle (Sweep-130)
+## Closed this cycle (Sweep-131)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Re-audit + confirm terminal RESEARCH | seem-identity-unifier; all termination conditions met; no mutation | **DONE** |
+| Integrity surface + CI path restore | ADL-Nexus; 17 pass + 7 xfail; claims accurate | **DONE** |
 
 ## Rule
 
