@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-10T03:15Z (Sweep-131 — ADL-Nexus integrity + claim-cap)
+**Last updated:** 2026-09-10T20:20Z (Sweep-132 — Phase 3 Mandatory Live Verification of ACTIVE quartet)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -10,8 +10,8 @@ Destructive or account-level actions that require a human operator. Agent record
 |--------|------|--------|
 | Rotate + remove committed `.env` | digital-double-mobile | **OPEN** |
 | Review / patch Dependabot HIGH (browserslist #85, nanoid #83, …) | digital-double-mobile | **OPEN** |
-| Tag + Release v0.5.0-sagf | BlockSwarm | READY (Foundry **34172525021** success on Sweep-117 head 469bcf4; re-confirmed Sweep-124) |
-| Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success) |
+| Tag + Release v0.5.0-sagf | BlockSwarm | READY (Foundry **34172525021** success; re-confirmed Sweep-132) |
+| Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success; re-confirmed Sweep-132) |
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
 | `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
@@ -34,6 +34,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-132 Phase 3 verification | ACTIVE quartet | **DONE** (CI green all four; releases still empty) |
 | Confirm Sweep-131 subject lock | ADL-Nexus | **DONE** (integrity + claim-cap xfail; RESEARCH) |
 | Confirm Sweep-130 subject re-audit | seem-identity-unifier | **DONE** (RESEARCH terminal; no mutation) |
 | Confirm Sweep-129 subject lock | DigitalDoubleVirtualWorkforce3.5 | **DONE** (SUPERSEDED; GOVERNANCE.md; terminal for class) |
@@ -70,11 +71,11 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote seem-identity-unifier beyond RESEARCH | Claim-capped MODULE_SURFACE only; no runtime product |
 | Promote ADL-Nexus beyond RESEARCH | Spine incomplete; live adapters UNSUPPORTED |
 
-## Closed this cycle (Sweep-131)
+## Closed this cycle (Sweep-132)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Integrity surface + CI path restore | ADL-Nexus; 17 pass + 7 xfail; claims accurate | **DONE** |
+| Phase 3 live CI verification | forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce all latest runs success | **DONE** |
 
 ## Rule
 
