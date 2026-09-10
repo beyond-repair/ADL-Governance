@@ -1,34 +1,72 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-10T03:15Z (autonomous Sweep-131)
+**Updated:** 2026-09-10T20:20Z (autonomous Sweep-132)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** subject `ADL-Nexus` RESEARCH re-audit + integrity completion + claim-cap xfail for incomplete spine.
+**This cycle:** Phase 3 Mandatory Live Verification of ACTIVE quartet: `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
 
-## Sweep-131 scope
+## Sweep-132 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER→AUDIT→CLASSIFY→IMPLEMENT (safe)→TEST→DOCUMENT |
-| Subject | ADL-Nexus |
-| Product mutation | Minimal (integrity helpers + test alignment) |
-| Contract mutation | CLAIM_STATUS accuracy only |
+| Primary | VERIFY (CI / Releases / Tags / Docs / Security surface) |
+| Subjects | forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce |
+| Product mutation | None |
+| Contract mutation | Status report + history + queue residual notes only |
 | Archive / release / history rewrite | NOT executed |
 
-## Subject verification (ADL-Nexus)
+## Live Verification Results (Phase 3)
 
+### forge-aegis
 | Field | Value |
 |-------|--------|
-| Head (post) | 873134cdf279e1725ef0e6dcf76bd56170683428 |
-| Tree | layers 0–8, core/, adapters/, tests/, docs/, .github/workflows/ci.yml, pyproject.toml |
-| Product CI | Present (ci.yml); prior red on incomplete spine imports; Sweep-131 restores pass+xfail path |
-| Releases / tags | none |
-| Classification | **RESEARCH** |
-| GitHub archived flag | false |
-| Claim cap | Level 2 (local integrity VERIFIED; spine methods UNSUPPORTED) |
+| Head | 7b3d421c52da9c9a860b05eb57bc82a6e3e8f1e9 |
+| CI | Present (forge-aegis CI); latest run 33904082644 **success** (2026-09-04) |
+| Releases / Tags | none |
+| Classification | **ACTIVE** (re-confirmed) |
+| GitHub archived | false |
+| Docs | README, GOVERNANCE.md, CONTRIBUTING, adr/, docs/, rfc/, schemas/ present |
+| Security | No critical findings observed this cycle; CI green |
+| Claim | FLS / AEGIS ontology surface; release READY in OPERATOR_QUEUE |
 
-## Classification (canonical)
+### sovereign-clean-room
+| Field | Value |
+|-------|--------|
+| Head | 33a1caca79a602c2141122dcc75c53c502989e08 |
+| CI | Present (Python tests); latest 33979476402 **success** (2026-09-05); Dependabot graph update success |
+| Releases / Tags | none |
+| Classification | **ACTIVE** (re-confirmed) |
+| GitHub archived | false |
+| Docs | Present (prior locks) |
+| Security | Recent PyNaCl pin to 1.6.2 (CVE-2025-69277 / GHSA-mrfv-m5wm-5w6w) merged; CI green |
+| Claim | VSA Core; unit CI VERIFIED; completeness beyond unit UNVERIFIED |
+
+### BlockSwarm
+| Field | Value |
+|-------|--------|
+| Head | 469bcf41585059b327d2a83e33a80974828e671a |
+| CI | Present (Foundry); latest 34172525021 **success** (2026-09-08) |
+| Releases / Tags | none |
+| Classification | **ACTIVE** (re-confirmed) |
+| GitHub archived | false |
+| Docs | GOVERNANCE lock present |
+| Security | No critical findings this cycle |
+| Claim | SAGF substrate; release v0.5.0-sagf READY in OPERATOR_QUEUE |
+
+### Digital_Double_virtual_workforce
+| Field | Value |
+|-------|--------|
+| Head (main recent) | PR #7 evidence path cbcef8fda6471c2e05da86e1f14db76cd3a1acbf |
+| CI | Present (Digital Double CI); latest relevant 34084870372 **success** (PR #7); Dependabot PRs #5/#6 success |
+| Releases / Tags | none |
+| Classification | **ACTIVE** (re-confirmed) |
+| GitHub archived | false |
+| Docs | Present |
+| Security / Open | Dependabot PRs #5/#6 + evidence PR #7 OPEN for operator merge/reject; no critical secret on this repo this cycle |
+| Claim | Canonical workforce; variants SUPERSEDED |
+
+## Classification (canonical) — unchanged
 
 Exactly one class per repository. Unlisted public names default to **RESEARCH** until an operator promotes them with evidence.
 
@@ -38,7 +76,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / **Sweep-131**. `acoustic-token-modem` — Sweep-110.
+`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -61,7 +99,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 | Gap | Severity | State |
 |-----|----------|-------|
-| Product releases empty on ACTIVE quartet | Medium | OPEN (operator tag) |
+| Product releases empty on ACTIVE quartet | Medium | OPEN (operator tag) — re-confirmed Sweep-132 |
 | adl-capability-matrix row count 67 vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
@@ -78,16 +116,15 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-131 |
+| Criterion | Sweep-132 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Subject classified RESEARCH | MET (re-confirmed) |
-| Subject integrity surface + CI path | MET (17 pass + 7 xfail) |
-| Subject product mutation | Minimal safe only |
-| Releases present on ACTIVE quartet | NOT MET (operator) |
+| Phase 3 subjects live CI verified | MET (all four latest runs success) |
+| Phase 3 releases present | NOT MET (operator) |
+| Subject product mutation | None |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed sweep on ADL-Nexus; integrity completed; spine residual recorded; stop.
+One governed verification sweep on ACTIVE quartet; CI surfaces confirmed green; release and archive residuals recorded; stop.
