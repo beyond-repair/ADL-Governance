@@ -2,6 +2,42 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-10 — Sweep-133 (select: smart_home_BCI)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `smart_home_BCI`.
+**Subject head:** `79382034ef59896eab672adce8cb98efbb45384b`
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Historical single-file sketch (2023-era). Tree: `.gitignore`, `ARCHIVED.md`, `CLAIM_STATUS.md`, `LICENSE`, `README.md`, `smart_home_bci.py`. Language Python. Size 13. Open issues 0. GitHub `archived=false`. Last push 2026-09-07. Description claims voice/BCI/Hue/health prediction; none are implemented or verified.
+
+### AUDIT
+
+- Already locked ARCHIVED (Sweep-087; Sweep-107 re-audit).
+- `ARCHIVED.md`, `CLAIM_STATUS.md`, `README.md` present and accurate: historical sketch only; no tests; no workflows; undefined `bci` / `SmartHome`; hard-coded LAN; untrained Keras stub; medical claims forbidden.
+- No undefined/undocumented components requiring product mutation (historical state preserved).
+- No stale registry entries, no critical CI failures (no CI), no duplicate canonical implementations, no unresolved critical security issues beyond the known unsafe sketch (documented), no unsupported claims (capped).
+- GitHub archive flag remains `false` — operator-only action already queued.
+- Compatible with LIFECYCLE.md ARCHIVED path and CONSTITUTION.md claim integrity.
+
+### IMPLEMENT (safe, idempotent)
+
+- No product code, test, CI, or docs mutation required on subject (already terminal for ARCHIVED class).
+- Governance registry updated this cycle (status report + this history + operator queue residual confirmation).
+- No archive flag execution, no release tag, no history rewrite.
+
+### CLASSIFY
+
+ARCHIVED: historical experiment; docs complete; claims capped; preservation only. Target state achieved for ARCHIVED class.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (all boxes checked). Portfolio-wide termination not met. One governed re-audit sweep; stop.
+
+---
+
 ## 2026-09-10 — Sweep-132 (Phase 3 Mandatory Live Verification)
 
 **Agent:** Grok (ADL-SEEM governed)

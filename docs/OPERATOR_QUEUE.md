@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-10T20:20Z (Sweep-132 — Phase 3 Mandatory Live Verification of ACTIVE quartet)
+**Last updated:** 2026-09-10T23:10Z (Sweep-133 — random select smart_home_BCI ARCHIVED re-audit)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -14,7 +14,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | Tag + Release v0.1.0 | forge-aegis | READY (CI 33904082644 success; re-confirmed Sweep-132) |
 | Review merge/reject Dependabot #5 / #6 | Digital_Double_virtual_workforce | **OPEN** |
 | Review merge/reject PR #7 workforce evidence | Digital_Double_virtual_workforce | **OPEN** (CI 34084870372 success on PR) |
-| `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** |
+| `gh repo archive beyond-repair/smart_home_BCI --yes` | smart_home_BCI | **PENDING** (re-confirmed Sweep-133) |
 | `gh repo archive beyond-repair/genieGPT --yes` | genieGPT | **PENDING** |
 | `gh repo archive beyond-repair/seem-block-system --yes` | seem-block-system | **PENDING** (Sweep-121 confirmed SUPERSEDED pointer) |
 | `gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4.2 --yes` | Digital_Double_Virtual_Workforce_4.2 | **PENDING** (Sweep-123 confirmed SUPERSEDED pointer) |
@@ -34,6 +34,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-133 subject re-audit | smart_home_BCI | **DONE** (ARCHIVED terminal; no mutation) |
 | Confirm Sweep-132 Phase 3 verification | ACTIVE quartet | **DONE** (CI green all four; releases still empty) |
 | Confirm Sweep-131 subject lock | ADL-Nexus | **DONE** (integrity + claim-cap xfail; RESEARCH) |
 | Confirm Sweep-130 subject re-audit | seem-identity-unifier | **DONE** (RESEARCH terminal; no mutation) |
@@ -70,12 +71,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Resume feature work on DigitalDoubleVirtualWorkforce3.5 | Explicitly SUPERSEDED |
 | Promote seem-identity-unifier beyond RESEARCH | Claim-capped MODULE_SURFACE only; no runtime product |
 | Promote ADL-Nexus beyond RESEARCH | Spine incomplete; live adapters UNSUPPORTED |
+| Resume feature work on smart_home_BCI | Explicitly ARCHIVED; historical sketch only |
 
-## Closed this cycle (Sweep-132)
+## Closed this cycle (Sweep-133)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| Phase 3 live CI verification | forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce all latest runs success | **DONE** |
+| smart_home_BCI ARCHIVED re-audit | Docs complete; claims capped; GitHub archive flag residual re-confirmed | **DONE** |
 
 ## Rule
 

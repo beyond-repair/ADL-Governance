@@ -1,70 +1,34 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-10T20:20Z (autonomous Sweep-132)
+**Updated:** 2026-09-10T23:10Z (autonomous Sweep-133)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Phase 3 Mandatory Live Verification of ACTIVE quartet: `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+**This cycle:** Random select `smart_home_BCI` — ARCHIVED re-audit (terminal for class).
 
-## Sweep-132 scope
+## Sweep-133 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | VERIFY (CI / Releases / Tags / Docs / Security surface) |
-| Subjects | forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce |
+| Primary | RE-AUDIT (ARCHIVED class) |
+| Subject | smart_home_BCI |
 | Product mutation | None |
 | Contract mutation | Status report + history + queue residual notes only |
-| Archive / release / history rewrite | NOT executed |
+| Archive / release / history rewrite | NOT executed (operator) |
 
-## Live Verification Results (Phase 3)
+## Live Verification Results (Sweep-133)
 
-### forge-aegis
+### smart_home_BCI
 | Field | Value |
 |-------|--------|
-| Head | 7b3d421c52da9c9a860b05eb57bc82a6e3e8f1e9 |
-| CI | Present (forge-aegis CI); latest run 33904082644 **success** (2026-09-04) |
+| Head | 79382034ef59896eab672adce8cb98efbb45384b |
+| CI | Absent (workflows total_count=0) |
 | Releases / Tags | none |
-| Classification | **ACTIVE** (re-confirmed) |
-| GitHub archived | false |
-| Docs | README, GOVERNANCE.md, CONTRIBUTING, adr/, docs/, rfc/, schemas/ present |
-| Security | No critical findings observed this cycle; CI green |
-| Claim | FLS / AEGIS ontology surface; release READY in OPERATOR_QUEUE |
-
-### sovereign-clean-room
-| Field | Value |
-|-------|--------|
-| Head | 33a1caca79a602c2141122dcc75c53c502989e08 |
-| CI | Present (Python tests); latest 33979476402 **success** (2026-09-05); Dependabot graph update success |
-| Releases / Tags | none |
-| Classification | **ACTIVE** (re-confirmed) |
-| GitHub archived | false |
-| Docs | Present (prior locks) |
-| Security | Recent PyNaCl pin to 1.6.2 (CVE-2025-69277 / GHSA-mrfv-m5wm-5w6w) merged; CI green |
-| Claim | VSA Core; unit CI VERIFIED; completeness beyond unit UNVERIFIED |
-
-### BlockSwarm
-| Field | Value |
-|-------|--------|
-| Head | 469bcf41585059b327d2a83e33a80974828e671a |
-| CI | Present (Foundry); latest 34172525021 **success** (2026-09-08) |
-| Releases / Tags | none |
-| Classification | **ACTIVE** (re-confirmed) |
-| GitHub archived | false |
-| Docs | GOVERNANCE lock present |
-| Security | No critical findings this cycle |
-| Claim | SAGF substrate; release v0.5.0-sagf READY in OPERATOR_QUEUE |
-
-### Digital_Double_virtual_workforce
-| Field | Value |
-|-------|--------|
-| Head (main recent) | PR #7 evidence path cbcef8fda6471c2e05da86e1f14db76cd3a1acbf |
-| CI | Present (Digital Double CI); latest relevant 34084870372 **success** (PR #7); Dependabot PRs #5/#6 success |
-| Releases / Tags | none |
-| Classification | **ACTIVE** (re-confirmed) |
-| GitHub archived | false |
-| Docs | Present |
-| Security / Open | Dependabot PRs #5/#6 + evidence PR #7 OPEN for operator merge/reject; no critical secret on this repo this cycle |
-| Claim | Canonical workforce; variants SUPERSEDED |
+| Classification | **ARCHIVED** (re-confirmed) |
+| GitHub archived | false (operator PENDING) |
+| Docs | ARCHIVED.md, CLAIM_STATUS.md, README present and accurate |
+| Security | Known unsafe sketch (hard-coded LAN, undefined imports); documented; no critical new findings |
+| Claim | Historical sketch only; all product claims UNVERIFIED / FORBIDDEN |
 
 ## Classification (canonical) — unchanged
 
@@ -88,7 +52,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI`, `genieGPT`, **`ftmA.I.bot`** (Sweep-126).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / **133**), `genieGPT`, **`ftmA.I.bot`** (Sweep-126).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -104,7 +68,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -116,10 +80,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-132 |
+| Criterion | Sweep-133 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Phase 3 subjects live CI verified | MET (all four latest runs success) |
+| smart_home_BCI ARCHIVED terminal | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 75-complete verified rows | NOT MET |
@@ -127,4 +91,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed verification sweep on ACTIVE quartet; CI surfaces confirmed green; release and archive residuals recorded; stop.
+One governed ARCHIVED re-audit; docs confirmed; GitHub archive flag residual recorded; stop.
