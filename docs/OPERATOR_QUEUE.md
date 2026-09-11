@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-10T23:10Z (Sweep-133 — random select smart_home_BCI ARCHIVED re-audit)
+**Last updated:** 2026-09-11T17:12Z (Sweep-134 — random select SEEM-Cognitive-Microservice SUPERSEDED claim-cap)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -20,6 +20,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | `gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4.2 --yes` | Digital_Double_Virtual_Workforce_4.2 | **PENDING** (Sweep-123 confirmed SUPERSEDED pointer) |
 | `gh repo archive beyond-repair/ftmA.I.bot --yes` | ftmA.I.bot | **PENDING** (Sweep-126 confirmed ARCHIVED docs) |
 | `gh repo archive beyond-repair/DigitalDoubleVirtualWorkforce3.5 --yes` | DigitalDoubleVirtualWorkforce3.5 | **PENDING** (Sweep-129 confirmed SUPERSEDED docs) |
+| `gh repo archive beyond-repair/SEEM-Cognitive-Microservice --yes` | SEEM-Cognitive-Microservice | **PENDING** (optional; Sweep-134 claim-capped SUPERSEDED) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 | Refresh capability_matrix.json to live census (75) with evidence-backed caps | adl-capability-matrix | **OPEN** (do not invent rows) |
 | Reconcile SUPERSEDED lifecycle vs identity non-collapse | SEEM trio + seem-identity-unifier | **OPEN** |
@@ -34,6 +35,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-134 subject re-audit + claim-cap | SEEM-Cognitive-Microservice | **DONE** (SUPERSEDED terminal; CLAIM_STATUS + CHECKLIST capped) |
 | Confirm Sweep-133 subject re-audit | smart_home_BCI | **DONE** (ARCHIVED terminal; no mutation) |
 | Confirm Sweep-132 Phase 3 verification | ACTIVE quartet | **DONE** (CI green all four; releases still empty) |
 | Confirm Sweep-131 subject lock | ADL-Nexus | **DONE** (integrity + claim-cap xfail; RESEARCH) |
@@ -72,12 +74,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote seem-identity-unifier beyond RESEARCH | Claim-capped MODULE_SURFACE only; no runtime product |
 | Promote ADL-Nexus beyond RESEARCH | Spine incomplete; live adapters UNSUPPORTED |
 | Resume feature work on smart_home_BCI | Explicitly ARCHIVED; historical sketch only |
+| Resume feature work on SEEM-Cognitive-Microservice | Explicitly SUPERSEDED; claim-capped |
 
-## Closed this cycle (Sweep-133)
+## Closed this cycle (Sweep-134)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| smart_home_BCI ARCHIVED re-audit | Docs complete; claims capped; GitHub archive flag residual re-confirmed | **DONE** |
+| SEEM-Cognitive-Microservice SUPERSEDED re-audit + claim-cap | CLAIM_STATUS.md added; CHECKLIST.md historical banner; terminal for class | **DONE** |
 
 ## Rule
 
