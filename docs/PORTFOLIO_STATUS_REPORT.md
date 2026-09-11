@@ -1,34 +1,34 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-10T23:10Z (autonomous Sweep-133)
+**Updated:** 2026-09-11T17:12Z (autonomous Sweep-134)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `smart_home_BCI` — ARCHIVED re-audit (terminal for class).
+**This cycle:** Random select `SEEM-Cognitive-Microservice` — SUPERSEDED re-audit + claim-cap (terminal for class).
 
-## Sweep-133 scope
+## Sweep-134 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | RE-AUDIT (ARCHIVED class) |
-| Subject | smart_home_BCI |
-| Product mutation | None |
+| Primary | RE-AUDIT + claim-cap (SUPERSEDED class) |
+| Subject | SEEM-Cognitive-Microservice |
+| Product mutation | Docs only (CLAIM_STATUS.md + CHECKLIST.md claim-cap) |
 | Contract mutation | Status report + history + queue residual notes only |
 | Archive / release / history rewrite | NOT executed (operator) |
 
-## Live Verification Results (Sweep-133)
+## Live Verification Results (Sweep-134)
 
-### smart_home_BCI
+### SEEM-Cognitive-Microservice
 | Field | Value |
 |-------|--------|
-| Head | 79382034ef59896eab672adce8cb98efbb45384b |
+| Head (post) | 647cb878051c99ac7c9ff5c36b99d3ebd35ae3c5 |
 | CI | Absent (workflows total_count=0) |
 | Releases / Tags | none |
-| Classification | **ARCHIVED** (re-confirmed) |
-| GitHub archived | false (operator PENDING) |
-| Docs | ARCHIVED.md, CLAIM_STATUS.md, README present and accurate |
-| Security | Known unsafe sketch (hard-coded LAN, undefined imports); documented; no critical new findings |
-| Claim | Historical sketch only; all product claims UNVERIFIED / FORBIDDEN |
+| Classification | **SUPERSEDED** (re-confirmed) |
+| GitHub archived | false (operator PENDING optional) |
+| Docs | README SUPERSEDED banner present; CLAIM_STATUS.md added; CHECKLIST.md claim-capped |
+| Security | Historical design surface only; no critical new findings |
+| Claim | All production/validation claims historical / UNVERIFIED; capped |
 
 ## Classification (canonical) — unchanged
 
@@ -44,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### SUPERSEDED
 
-SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
+SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-134 claim-cap), SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
 
 DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
@@ -80,15 +80,15 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-133 |
+| Criterion | Sweep-134 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| smart_home_BCI ARCHIVED terminal | MET |
+| SEEM-Cognitive-Microservice SUPERSEDED terminal (claim-capped) | MET |
 | Phase 3 releases present | NOT MET (operator) |
-| Subject product mutation | None |
+| Subject product mutation | Docs-only claim-cap |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ARCHIVED re-audit; docs confirmed; GitHub archive flag residual recorded; stop.
+One governed SUPERSEDED re-audit + claim-cap; docs confirmed; GitHub archive flag residual recorded; stop.
