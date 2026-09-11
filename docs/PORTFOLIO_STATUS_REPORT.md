@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-11T17:12Z (autonomous Sweep-134)
+**Updated:** 2026-09-11T21:20Z (autonomous Sweep-135)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `SEEM-Cognitive-Microservice` — SUPERSEDED re-audit + claim-cap (terminal for class).
+**This cycle:** Random select `potential-garbanzo` — ARCHIVED terminal docs (empty placeholder lock).
 
-## Sweep-134 scope
+## Sweep-135 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | RE-AUDIT + claim-cap (SUPERSEDED class) |
-| Subject | SEEM-Cognitive-Microservice |
-| Product mutation | Docs only (CLAIM_STATUS.md + CHECKLIST.md claim-cap) |
+| Primary | CLASSIFY + terminal docs (ARCHIVED class) |
+| Subject | potential-garbanzo |
+| Product mutation | Docs only (README.md + ARCHIVED.md + CLAIM_STATUS.md) |
 | Contract mutation | Status report + history + queue residual notes only |
 | Archive / release / history rewrite | NOT executed (operator) |
 
-## Live Verification Results (Sweep-134)
+## Live Verification Results (Sweep-135)
 
-### SEEM-Cognitive-Microservice
+### potential-garbanzo
 | Field | Value |
 |-------|--------|
-| Head (post) | 647cb878051c99ac7c9ff5c36b99d3ebd35ae3c5 |
-| CI | Absent (workflows total_count=0) |
+| Head (post) | c27d2e196e3742dd8cd7cdf7af1788456664b037 |
+| CI | Absent (no workflows) |
 | Releases / Tags | none |
-| Classification | **SUPERSEDED** (re-confirmed) |
-| GitHub archived | false (operator PENDING optional) |
-| Docs | README SUPERSEDED banner present; CLAIM_STATUS.md added; CHECKLIST.md claim-capped |
-| Security | Historical design surface only; no critical new findings |
-| Claim | All production/validation claims historical / UNVERIFIED; capped |
+| Classification | **ARCHIVED** |
+| GitHub archived | false (operator PENDING) |
+| Docs | README ARCHIVED banner; ARCHIVED.md; CLAIM_STATUS.md (level 0) |
+| Security | None (empty) |
+| Claim | None; capped |
 
-## Classification (canonical) — unchanged
+## Classification (canonical)
 
 Exactly one class per repository. Unlisted public names default to **RESEARCH** until an operator promotes them with evidence.
 
@@ -52,7 +52,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / **133**), `genieGPT`, **`ftmA.I.bot`** (Sweep-126).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133), `genieGPT`, `ftmA.I.bot` (Sweep-126), **`potential-garbanzo` (Sweep-135)**.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -68,7 +68,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -80,15 +80,15 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-134 |
+| Criterion | Sweep-135 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| SEEM-Cognitive-Microservice SUPERSEDED terminal (claim-capped) | MET |
+| potential-garbanzo ARCHIVED terminal | MET |
 | Phase 3 releases present | NOT MET (operator) |
-| Subject product mutation | Docs-only claim-cap |
+| Subject product mutation | Docs-only terminal |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed SUPERSEDED re-audit + claim-cap; docs confirmed; GitHub archive flag residual recorded; stop.
+One governed ARCHIVED lock; docs confirmed; GitHub archive flag residual recorded; stop.

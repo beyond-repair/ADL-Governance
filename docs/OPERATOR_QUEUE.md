@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Last updated:** 2026-09-11T17:12Z (Sweep-134 — random select SEEM-Cognitive-Microservice SUPERSEDED claim-cap)
+**Last updated:** 2026-09-11T21:20Z (Sweep-135 — random select potential-garbanzo ARCHIVED terminal)
 
 Destructive or account-level actions that require a human operator. Agent records; does not execute.
 
@@ -21,6 +21,7 @@ Destructive or account-level actions that require a human operator. Agent record
 | `gh repo archive beyond-repair/ftmA.I.bot --yes` | ftmA.I.bot | **PENDING** (Sweep-126 confirmed ARCHIVED docs) |
 | `gh repo archive beyond-repair/DigitalDoubleVirtualWorkforce3.5 --yes` | DigitalDoubleVirtualWorkforce3.5 | **PENDING** (Sweep-129 confirmed SUPERSEDED docs) |
 | `gh repo archive beyond-repair/SEEM-Cognitive-Microservice --yes` | SEEM-Cognitive-Microservice | **PENDING** (optional; Sweep-134 claim-capped SUPERSEDED) |
+| `gh repo archive beyond-repair/potential-garbanzo --yes` | potential-garbanzo | **PENDING** (Sweep-135 ARCHIVED terminal docs) |
 | `gh repo archive` remainder of archive_queue | archive_queue | PENDING |
 | Refresh capability_matrix.json to live census (75) with evidence-backed caps | adl-capability-matrix | **OPEN** (do not invent rows) |
 | Reconcile SUPERSEDED lifecycle vs identity non-collapse | SEEM trio + seem-identity-unifier | **OPEN** |
@@ -35,6 +36,7 @@ Destructive or account-level actions that require a human operator. Agent record
 
 | Action | Repo | Status |
 |--------|------|--------|
+| Confirm Sweep-135 subject lock | potential-garbanzo | **DONE** (ARCHIVED terminal; docs added) |
 | Confirm Sweep-134 subject re-audit + claim-cap | SEEM-Cognitive-Microservice | **DONE** (SUPERSEDED terminal; CLAIM_STATUS + CHECKLIST capped) |
 | Confirm Sweep-133 subject re-audit | smart_home_BCI | **DONE** (ARCHIVED terminal; no mutation) |
 | Confirm Sweep-132 Phase 3 verification | ACTIVE quartet | **DONE** (CI green all four; releases still empty) |
@@ -75,12 +77,13 @@ Destructive or account-level actions that require a human operator. Agent record
 | Promote ADL-Nexus beyond RESEARCH | Spine incomplete; live adapters UNSUPPORTED |
 | Resume feature work on smart_home_BCI | Explicitly ARCHIVED; historical sketch only |
 | Resume feature work on SEEM-Cognitive-Microservice | Explicitly SUPERSEDED; claim-capped |
+| Resume feature work on potential-garbanzo | Explicitly ARCHIVED; empty placeholder |
 
-## Closed this cycle (Sweep-134)
+## Closed this cycle (Sweep-135)
 
 | Action | Notes | Status |
 |--------|-------|--------|
-| SEEM-Cognitive-Microservice SUPERSEDED re-audit + claim-cap | CLAIM_STATUS.md added; CHECKLIST.md historical banner; terminal for class | **DONE** |
+| potential-garbanzo ARCHIVED terminal docs | README + ARCHIVED.md + CLAIM_STATUS.md; head c27d2e19 | **DONE** |
 
 ## Rule
 

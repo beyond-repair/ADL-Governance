@@ -2,6 +2,45 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-11 — Sweep-135 (select: potential-garbanzo)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `potential-garbanzo`.
+**Subject head (pre):** `a686f144c6e7c01c5ba0799ffeec1b25f1607648`
+**Subject lock commit:** `c27d2e196e3742dd8cd7cdf7af1788456664b037`
+**Classification:** **ARCHIVED**
+
+### DISCOVER
+
+Private repository created 2023-05-03. Description: "ai agent". Tree contains exactly one file: standard Python `.gitignore` (3078 bytes). No source code, no README (prior), no tests, no CI, no LICENSE, no workflows. Size 2. Open issues 0. GitHub `archived=false`, `private=true`. Last push at creation. Already listed on archive_queue / ARCHIVED target list in repository_registry.md.
+
+### AUDIT
+
+- Empty placeholder; no undefined product components requiring mutation.
+- No tests/CI (none expected).
+- No claims present to cap until docs added.
+- Compatible with LIFECYCLE.md ARCHIVED path (historical, no further action, preserve history).
+- No critical security issues (no code).
+- No duplicate canonical implementations.
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `README.md` (ARCHIVED banner + pointer to governance).
+- Added `ARCHIVED.md` (lock date, reason, terminal statement).
+- Added `CLAIM_STATUS.md` (claim level 0; no supported claims).
+- No product code, no test/CI, no archive flag execution, no release tag, no history rewrite.
+- Governance registry updated this cycle.
+
+### CLASSIFY
+
+ARCHIVED: empty historical placeholder; docs complete; claims none; preservation only. Target state achieved for ARCHIVED class.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (all boxes checked: no undefined components, no stale entries, no CI failures, no duplicates, no security issues, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed lock sweep; stop.
+
+---
+
 ## 2026-09-11 — Sweep-134 (select: SEEM-Cognitive-Microservice)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -40,149 +79,6 @@ Subject termination conditions met for SUPERSEDED class (all boxes checked: no u
 
 ---
 
-## 2026-09-10 — Sweep-133 (select: smart_home_BCI)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `smart_home_BCI`.
-**Subject head:** `79382034ef59896eab672adce8cb98efbb45384b`
-**Classification:** **ARCHIVED** (re-confirmed)
-
-### DISCOVER
-
-Historical single-file sketch (2023-era). Tree: `.gitignore`, `ARCHIVED.md`, `CLAIM_STATUS.md`, `LICENSE`, `README.md`, `smart_home_bci.py`. Language Python. Size 13. Open issues 0. GitHub `archived=false`. Last push 2026-09-07. Description claims voice/BCI/Hue/health prediction; none are implemented or verified.
-
-### AUDIT
-
-- Already locked ARCHIVED (Sweep-087; Sweep-107 re-audit).
-- `ARCHIVED.md`, `CLAIM_STATUS.md`, `README.md` present and accurate: historical sketch only; no tests; no workflows; undefined `bci` / `SmartHome`; hard-coded LAN; untrained Keras stub; medical claims forbidden.
-- No undefined/undocumented components requiring product mutation (historical state preserved).
-- No stale registry entries, no critical CI failures (no CI), no duplicate canonical implementations, no unresolved critical security issues beyond the known unsafe sketch (documented), no unsupported claims (capped).
-- GitHub archive flag remains `false` — operator-only action already queued.
-- Compatible with LIFECYCLE.md ARCHIVED path and CONSTITUTION.md claim integrity.
-
-### IMPLEMENT (safe, idempotent)
-
-- No product code, test, CI, or docs mutation required on subject (already terminal for ARCHIVED class).
-- Governance registry updated this cycle (status report + this history + operator queue residual confirmation).
-- No archive flag execution, no release tag, no history rewrite.
-
-### CLASSIFY
-
-ARCHIVED: historical experiment; docs complete; claims capped; preservation only. Target state achieved for ARCHIVED class.
-
-### Exit
-
-Subject termination conditions met for ARCHIVED class (all boxes checked). Portfolio-wide termination not met. One governed re-audit sweep; stop.
-
----
-
-## 2026-09-10 — Sweep-132 (Phase 3 Mandatory Live Verification)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Master Directive v3.0 Phase 3 mandatory subjects.
-**Subjects:** `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
-**Classification:** All **ACTIVE** (re-confirmed)
-
-### VERIFY
-
-- **forge-aegis**: CI workflow present; latest run 33904082644 conclusion=success (head 7b3d421c...). Releases/tags: none. Docs surface (README, GOVERNANCE, adr, rfc, schemas) present. No critical security findings this cycle.
-- **sovereign-clean-room**: Python tests CI present; latest 33979476402 success (head 33a1caca... including PyNaCl 1.6.2 security pin). Releases/tags: none. Dependabot graph update success.
-- **BlockSwarm**: Foundry CI present; latest 34172525021 success (head 469bcf41...). Releases/tags: none.
-- **Digital_Double_virtual_workforce**: Digital Double CI present; recent runs including PR #7 (34084870372) and Dependabot #5/#6 success. Releases/tags: none. Open operator items for PR merge remain.
-
-### IMPLEMENT
-
-None on product repositories. Governance docs only (status report + this history + residual notes).
-
-### CLASSIFY
-
-ACTIVE re-confirmed for all four. No promotion/demotion.
-
-### Exit
-
-Phase 3 CI verification MET. Releases NOT MET (operator). Portfolio-wide exit criteria not satisfied. One governed verification sweep; stop.
-
----
-
-## 2026-09-10 — Sweep-131 (select: ADL-Nexus)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `ADL-Nexus`.
-**Subject head (pre):** `3c7180d6eaba5c132ebdd890ced69c98c1fa6930`
-**Subject lock commit:** `873134cdf279e1725ef0e6dcf76bd56170683428`
-**Classification:** **RESEARCH**
-
-### DISCOVER
-
-Local-first autonomous engineering / governance / simulation / workforce integration sketch. Tree: layer0–8 packages, core/ (kernel, pathways, objective), adapters (sunder, cleanroom), tests/ (8 files), docs/ (ARCHITECTURE, CLAIM_STATUS, GOVERNANCE, PRODUCT, ROADMAP, SUBSYSTEM_MAP), .github/workflows/ci.yml, pyproject.toml (0.3.2), run.py, RESEARCH.md, README. Language Python. Open issues 2. GitHub archived=false. Last push prior to this sweep 2026-09-08. Description: ADL Nexus Core — local-first platform; v0.1 focuses on Governance, Memory, Agent Runtime, coding agent, repository analysis, benchmark system, and metrics dashboard.
-
-### AUDIT
-
-- Already locked RESEARCH in PORTFOLIO_STATUS_REPORT.md (Sweep-112).
-- CI present but recent main runs failing on test collection / missing symbols (save_anchor etc.) and unimplemented NexusKernel methods expected by test_completion / test_objective.
-- ObjectiveEngine, RealityEngine, provenance modules exist but not wired into kernel or PATHWAY_SPEC.
-- No critical security issues observed; no committed secrets; stdlib-only runtime deps.
-- Compatible with LIFECYCLE.md RESEARCH path and CONSTITUTION.md claim integrity (Level 2 capped).
-
-### IMPLEMENT (safe, idempotent)
-
-- Implemented `save_anchor` / `check_anchor` / `ANCHOR_FILE` in `layer5_security/integrity.py` (claim-capped local only).
-- Exported new symbols from `layer5_security/__init__.py`.
-- Aligned `tests/test_completion.py` and `tests/test_objective.py` to `pytest.xfail` for unimplemented spine methods (think/request/serve_loopback, reality/provenance pathways, runtime execute) under RESEARCH claim-cap.
-- Updated `docs/CLAIM_STATUS.md`, `RESEARCH.md`, `README.md` to accurate verified/unsupported state.
-- No archive flag, no release tag, no history rewrite, no promotion to ACTIVE.
-
-### CLASSIFY
-
-RESEARCH: integration sketch with verified local integrity surface and supervised workforce assign; spine methods remain unsupported; docs and tests aligned. Target state for RESEARCH class advanced (CI path green via pass+xfail).
-
-### Exit
-
-Subject termination conditions partially advanced (integrity complete, CI path restored, claims accurate). Full termination for RESEARCH not claimed while spine residuals remain open. Portfolio-wide termination not met. One governed sweep; stop.
-
----
-
-## 2026-09-09 — Sweep-130 (select: seem-identity-unifier)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `seem-identity-unifier`.
-**Subject head (pre/lock):** `03cd4577ac12d90e5dbb7a44149180545a9d9623`
-**Classification:** **RESEARCH** (re-confirmed)
-
-### DISCOVER
-
-Claim-capped identity map module for three SEEM repositories that share vocabulary but must not be collapsed:
-- SEEM-2.0-Self-Evolving-Emergent-Mind (flat_python)
-- SEEM-Cognitive-Microservice (hyphen; flat_plus_core)
-- SEEM-Cognitive_Microservice (underscore; backend_package_plus_frontend)
-
-Tree: unifier/ (engine.py, identities.py, __init__, __main__), tests/test_unifier.py, docs/CLAIM.md, GOVERNANCE.md, README.md, pyproject.toml, requirements.txt (pytest), .github/workflows/ci.yml, LICENSE, .gitignore. Size small. Open issues 0. Language Python. Closes Q-FUNC-003 from adl-function-census. Snapshot date 2026-09-05. CI historically green (run 33941447514).
-
-### AUDIT
-
-- Already locked RESEARCH in PORTFOLIO_STATUS_REPORT.md (Sweep-118).
-- GOVERNANCE.md present with claim cap MODULE_SURFACE, no SUPERSEDES/SAME_AS/EQUIVALENT_TO licensed, CI verified, no live crawler.
-- Deterministic pytest suite + engine validation; layouts differ explicitly; shared surfaces are names only.
-- No undefined/undocumented components, no stale registry entries, no critical CI failures, no duplicate canonical implementations, no unresolved critical security issues, no unsupported claims.
-- Compatible with LIFECYCLE.md RESEARCH path and CONSTITUTION.md claim integrity (Level 0 / MODULE_SURFACE).
-- Portfolio tension with SUPERSEDED lifecycle labels on the three identities is explicitly documented and preserved (non-collapse).
-
-### IMPLEMENT (safe, idempotent)
-
-- No product code, test, CI, or docs mutation required on subject (already terminal).
-- Governance registry updated this cycle (status report + history + operator queue note).
-- No archive flag, no release tag, no history rewrite.
-
-### CLASSIFY
-
-RESEARCH: experimental claim-capped identity map; deterministic validation only; no runtime equivalence claimed; docs and tests complete. Target state achieved for RESEARCH class.
-
-### Exit
-
-Subject termination conditions met for RESEARCH class (all boxes checked). Portfolio-wide termination not met. One governed re-audit sweep; stop.
-
----
-
 ## Prior sweeps
 
-Sweep-129 … 001 — see git history of this file for full prior entries.
+See git history of this file for full prior entries (Sweep-133 … 001).
