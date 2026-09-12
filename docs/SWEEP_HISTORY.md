@@ -2,6 +2,46 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-12 — Sweep-138 (select: smart_home_BCI)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `smart_home_BCI`.
+**Subject head (pre):** `79382034ef59896eab672adce8cb98efbb45384b`
+**Subject lock commit:** none (no mutation)
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Tree contains exactly six files: `.gitignore`, `ARCHIVED.md`, `CLAIM_STATUS.md`, `LICENSE`, `README.md`, `smart_home_bci.py`. No tests, no CI workflows, no `.github/`. Size small. Open issues 0. Language Python (single sketch file). GitHub `archived=false`. Last prior activity from prior sweeps. Already locked ARCHIVED in Sweep-087 / 107 / 133 and listed in PORTFOLIO_STATUS_REPORT / OPERATOR_QUEUE / archive_queue.
+
+`smart_home_bci.py` is a 2023-era single-file sketch: imports undefined `bci` and `SmartHome`; hard-coded LAN `192.168.0.1`; untrained Keras health stub; voice/BCI command loop. README and ARCHIVED.md already carry terminal banners and claim caps.
+
+### AUDIT
+
+- Already locked ARCHIVED; docs complete (banner, ARCHIVED.md, CLAIM_STATUS.md level 0).
+- No undefined product components requiring mutation (historical sketch only; implementations of `bci`/`SmartHome` explicitly forbidden).
+- No tests or CI expected or present (ARCHIVED class).
+- Claims already capped; no unsupported medical/product assertions.
+- Compatible with LIFECYCLE.md ARCHIVED path (historical, preserve history, no further action).
+- Residual risk (hard-coded LAN unlock) documented; no critical open security requiring autonomous code change.
+- No duplicate canonical implementations.
+- GitHub archive flag remains operator-only (already queued).
+
+### IMPLEMENT (safe, idempotent)
+
+- No product code, no test/CI, no archive flag execution, no release tag, no history rewrite, no file mutation on subject.
+- Governance registry updated this cycle (status report + history + operator queue residual note).
+
+### CLASSIFY
+
+ARCHIVED: historical 2023 sketch; claim level 0; docs terminal; preservation only. Target state achieved for ARCHIVED class.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (all boxes checked: no undefined/undocumented components, no stale registry entries, no critical CI failures, no duplicates, no unresolved critical security issues, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed re-audit; stop.
+
+---
+
 ## 2026-09-12 — Sweep-137 (select: Digital_Double_Virtual_Workforce_4.2)
 
 **Agent:** Grok (ADL-SEEM governed)

@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-12T16:20Z (autonomous Sweep-137)
+**Updated:** 2026-09-12T20:10Z (autonomous Sweep-138)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `Digital_Double_Virtual_Workforce_4.2` — SUPERSEDED re-audit + CLAIM_STATUS.md lock.
+**This cycle:** Random select `smart_home_BCI` — ARCHIVED re-audit (terminal confirmation; no product mutation).
 
-## Sweep-137 scope
+## Sweep-138 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | CLASSIFY + claim-status lock (SUPERSEDED class) |
-| Subject | Digital_Double_Virtual_Workforce_4.2 |
-| Product mutation | Docs only (CLAIM_STATUS.md on subject) |
+| Primary | CLASSIFY + re-audit (ARCHIVED class) |
+| Subject | smart_home_BCI |
+| Product mutation | None |
 | Contract mutation | Status report + history + operator queue residual |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-137)
+## Live Verification Results (Sweep-138)
 
-### Digital_Double_Virtual_Workforce_4.2
+### smart_home_BCI
 | Field | Value |
 |-------|--------|
-| Head (post) | 2d8875166997e4b7d90b1c0ccbf82a6594e2283e |
-| Visibility | private |
-| Default branch | master |
-| CI | Present under src/.github/workflows (not re-run; SUPERSEDED out of scope) |
+| Head (post) | 79382034ef59896eab672adce8cb98efbb45384b (unchanged) |
+| Visibility | public |
+| Default branch | main |
+| CI | None (expected for ARCHIVED) |
 | Releases / Tags | none |
-| Classification | **SUPERSEDED** |
-| GitHub archived | false |
-| Docs | CANONICAL_NOTE.md (correct pointer); CLAIM_STATUS.md (level 0 historical merge source); SECURITY.md; detailed docs |
-| Security | Large committed model weight (Mistral GGUF); pycache; no critical open Dependabot known this cycle |
-| Claim | Level 0 — merge source only; no product claims |
+| Classification | **ARCHIVED** |
+| GitHub archived | false (operator pending) |
+| Docs | README.md (ARCHIVED banner); ARCHIVED.md; CLAIM_STATUS.md (level 0); LICENSE |
+| Security | Historical hard-coded LAN; documented; no autonomous action |
+| Claim | Level 0 — historical sketch only; no product/medical claims |
 
 ## Classification (canonical)
 
@@ -54,7 +54,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / **138**), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -83,15 +83,15 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-137 |
+| Criterion | Sweep-138 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| Digital_Double_Virtual_Workforce_4.2 SUPERSEDED terminal | MET |
+| smart_home_BCI ARCHIVED terminal | MET |
 | Phase 3 releases present | NOT MET (operator) |
-| Subject product mutation | Docs-only claim-status |
+| Subject product mutation | None |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed SUPERSEDED re-audit + CLAIM_STATUS lock; docs confirmed; stop.
+One governed ARCHIVED re-audit; docs confirmed; stop.
