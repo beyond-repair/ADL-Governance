@@ -1,34 +1,34 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-11T21:20Z (autonomous Sweep-135)
+**Updated:** 2026-09-12T00:19Z (autonomous Sweep-136)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `potential-garbanzo` — ARCHIVED terminal docs (empty placeholder lock).
+**This cycle:** Random select `m2-renormalization-law` — RESEARCH re-audit + CLAIM_STATUS.md lock.
 
-## Sweep-135 scope
+## Sweep-136 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | CLASSIFY + terminal docs (ARCHIVED class) |
-| Subject | potential-garbanzo |
-| Product mutation | Docs only (README.md + ARCHIVED.md + CLAIM_STATUS.md) |
-| Contract mutation | Status report + history + queue residual notes only |
-| Archive / release / history rewrite | NOT executed (operator) |
+| Primary | CLASSIFY + claim-status lock (RESEARCH class) |
+| Subject | m2-renormalization-law |
+| Product mutation | Docs only (CLAIM_STATUS.md) |
+| Contract mutation | Status report + history |
+| Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-135)
+## Live Verification Results (Sweep-136)
 
-### potential-garbanzo
+### m2-renormalization-law
 | Field | Value |
 |-------|--------|
-| Head (post) | c27d2e196e3742dd8cd7cdf7af1788456664b037 |
-| CI | Absent (no workflows) |
+| Head (post) | 3c3ae07d19ac6d1982dc793bba24419fc4e3b80b |
+| CI | Absent (no workflows; docs-only) |
 | Releases / Tags | none |
-| Classification | **ARCHIVED** |
-| GitHub archived | false (operator PENDING) |
-| Docs | README ARCHIVED banner; ARCHIVED.md; CLAIM_STATUS.md (level 0) |
-| Security | None (empty) |
-| Claim | None; capped |
+| Classification | **RESEARCH** |
+| GitHub archived | false |
+| Docs | README claim-capped; GOVERNANCE.md; LICENSE; CLAIM_STATUS.md (level 1) |
+| Security | None (no code) |
+| Claim | Level 1 mathematical framework only; capped |
 
 ## Classification (canonical)
 
@@ -40,7 +40,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
+`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / re-confirmed Sweep-136**. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -52,7 +52,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133), `genieGPT`, `ftmA.I.bot` (Sweep-126), **`potential-garbanzo` (Sweep-135)**.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -80,15 +80,15 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-135 |
+| Criterion | Sweep-136 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| potential-garbanzo ARCHIVED terminal | MET |
+| m2-renormalization-law RESEARCH terminal | MET |
 | Phase 3 releases present | NOT MET (operator) |
-| Subject product mutation | Docs-only terminal |
+| Subject product mutation | Docs-only claim-status |
 | Matrix 75-complete verified rows | NOT MET |
 | Duplicate canonical implementations resolved | NOT MET |
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ARCHIVED lock; docs confirmed; GitHub archive flag residual recorded; stop.
+One governed RESEARCH re-audit + CLAIM_STATUS lock; docs confirmed; stop.
