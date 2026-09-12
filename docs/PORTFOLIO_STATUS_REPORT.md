@@ -1,34 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-12T00:19Z (autonomous Sweep-136)
+**Updated:** 2026-09-12T16:20Z (autonomous Sweep-137)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `m2-renormalization-law` — RESEARCH re-audit + CLAIM_STATUS.md lock.
+**This cycle:** Random select `Digital_Double_Virtual_Workforce_4.2` — SUPERSEDED re-audit + CLAIM_STATUS.md lock.
 
-## Sweep-136 scope
+## Sweep-137 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | CLASSIFY + claim-status lock (RESEARCH class) |
-| Subject | m2-renormalization-law |
-| Product mutation | Docs only (CLAIM_STATUS.md) |
-| Contract mutation | Status report + history |
+| Primary | CLASSIFY + claim-status lock (SUPERSEDED class) |
+| Subject | Digital_Double_Virtual_Workforce_4.2 |
+| Product mutation | Docs only (CLAIM_STATUS.md on subject) |
+| Contract mutation | Status report + history + operator queue residual |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-136)
+## Live Verification Results (Sweep-137)
 
-### m2-renormalization-law
+### Digital_Double_Virtual_Workforce_4.2
 | Field | Value |
 |-------|--------|
-| Head (post) | 3c3ae07d19ac6d1982dc793bba24419fc4e3b80b |
-| CI | Absent (no workflows; docs-only) |
+| Head (post) | 2d8875166997e4b7d90b1c0ccbf82a6594e2283e |
+| Visibility | private |
+| Default branch | master |
+| CI | Present under src/.github/workflows (not re-run; SUPERSEDED out of scope) |
 | Releases / Tags | none |
-| Classification | **RESEARCH** |
+| Classification | **SUPERSEDED** |
 | GitHub archived | false |
-| Docs | README claim-capped; GOVERNANCE.md; LICENSE; CLAIM_STATUS.md (level 1) |
-| Security | None (no code) |
-| Claim | Level 1 mathematical framework only; capped |
+| Docs | CANONICAL_NOTE.md (correct pointer); CLAIM_STATUS.md (level 0 historical merge source); SECURITY.md; detailed docs |
+| Security | Large committed model weight (Mistral GGUF); pycache; no critical open Dependabot known this cycle |
+| Claim | Level 0 — merge source only; no product claims |
 
 ## Classification (canonical)
 
@@ -40,13 +42,13 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / re-confirmed Sweep-136**. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
+`-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / re-confirmed Sweep-136. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
 SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-134 claim-cap), SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
 
-DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
+DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), Digital_Double_Virtual_Workforce_4., **Digital_Double_Virtual_Workforce_4.2 (Sweep-137 claim-cap)**, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
 CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 only).
 
@@ -77,13 +79,14 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | OLC first CI run | Medium | PENDING |
 | aegis-repo-graph catalog snapshot vs live 75 | Low | OPEN (operator expansion) |
 | ADL-Nexus spine (think/request/reality pathways) incomplete | Medium | OPEN (xfail under RESEARCH; ObjectiveEngine present) |
+| Large binary model weight committed in 4.2 merge source | Low (hygiene) | OPEN (do not delete without operator) |
 
 ## Exit criteria
 
-| Criterion | Sweep-136 |
+| Criterion | Sweep-137 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| m2-renormalization-law RESEARCH terminal | MET |
+| Digital_Double_Virtual_Workforce_4.2 SUPERSEDED terminal | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | Docs-only claim-status |
 | Matrix 75-complete verified rows | NOT MET |
@@ -91,4 +94,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed RESEARCH re-audit + CLAIM_STATUS lock; docs confirmed; stop.
+One governed SUPERSEDED re-audit + CLAIM_STATUS lock; docs confirmed; stop.

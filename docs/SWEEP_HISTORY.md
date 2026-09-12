@@ -2,6 +2,46 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-12 — Sweep-137 (select: Digital_Double_Virtual_Workforce_4.2)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `Digital_Double_Virtual_Workforce_4.2`.
+**Subject head (pre):** `e8a16e3f34222b74ad2787ecc143e29a3e9138f6`
+**Subject lock commit:** `2d8875166997e4b7d90b1c0ccbf82a6594e2283e`
+**Classification:** **SUPERSEDED** (re-confirmed)
+
+### DISCOVER
+
+Private repository (default branch master). Tree contains agents/ (core + roles Python), selfheal/ (TS/JS + Python), models/ (large Mistral-7B GGUF), src/ (TypeScript + tests + nested .github/workflows/ci.yml), ui-react/, scripts/, config/, docs/detailed/, CANONICAL_NOTE.md, SECURITY.md, .gitignore. Size ~73k (dominated by model weight). Open issues 1. Language TypeScript. Last prior activity 2026-09-05. Already listed SUPERSEDED in CANONICAL_REPOS.md / PORTFOLIO_STATUS_REPORT.md with successor Digital_Double_virtual_workforce.
+
+CANONICAL_NOTE.md correctly states: private 4.2 tree is merge source, not public face; after assets ported, mark SUPERSEDED and stop parallel development.
+
+### AUDIT
+
+- Already locked SUPERSEDED; successor ACTIVE and CI-green on public canonical.
+- No unsupported product claims remaining after this cycle’s CLAIM_STATUS.md.
+- CI present but out of scope for SUPERSEDED (no mutation).
+- Large binary model weight and pycache committed — hygiene note only; deletion is operator-only.
+- Compatible with LIFECYCLE.md SUPERSEDED path (banner/pointer present, feature work stopped).
+- No critical security findings requiring autonomous action this cycle.
+- No duplicate canonical implementations (this is explicitly non-canonical merge source).
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `CLAIM_STATUS.md` explicitly recording claim level 0 (historical merge source only), supported vs non-claims, and lock date.
+- No product code, no test/CI addition, no archive flag, no release tag, no history rewrite, no binary deletion.
+- Governance registry updated this cycle.
+
+### CLASSIFY
+
+SUPERSEDED: private merge-source tree whose unique assets are intended for (or already partially in) the public canonical Digital_Double_virtual_workforce. Target state achieved for SUPERSEDED class (docs claim-capped, successor identified, no further autonomous development).
+
+### Exit
+
+Subject termination conditions met for SUPERSEDED class (all boxes checked: no undefined product surface requiring mutation, no unsupported claims after claim-cap, no critical CI failures in scope, no duplicates). Portfolio-wide termination not met. One governed re-audit + claim-status lock; stop.
+
+---
+
 ## 2026-09-12 — Sweep-136 (select: m2-renormalization-law)
 
 **Agent:** Grok (ADL-SEEM governed)
