@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-13T13:15Z (autonomous Sweep-139)
+**Updated:** 2026-09-13T23:16Z (autonomous Sweep-140)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `sovereign-clean-room` — ACTIVE re-audit + SECURITY.md addition.
+**This cycle:** Random select `Digital_Double_virtual_workforce` — ACTIVE re-audit + SECURITY.md addition.
 
-## Sweep-139 scope
+## Sweep-140 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (safe docs) |
-| Subject | sovereign-clean-room |
+| Subject | Digital_Double_virtual_workforce |
 | Product mutation | None (docs only) |
 | Contract mutation | Status report + history + SECURITY.md on subject |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-139)
+## Live Verification Results (Sweep-140)
 
-### sovereign-clean-room
+### Digital_Double_virtual_workforce
 | Field | Value |
 |-------|--------|
-| Head (post) | c3c0af474e5ec34a813f01a761f09fcdcbb86259 (SECURITY.md) |
+| Head (post) | 342b7e81c4ec8aa8f47d5787b9b05daa884efc86 (SECURITY.md) |
 | Visibility | public |
 | Default branch | main |
-| CI | Green (Python tests success on latest runs; run #56) |
+| CI | Green (Python smoke on PRs; Dependabot dynamic runs mixed) |
 | Releases / Tags | none (operator pending) |
 | Classification | **ACTIVE** |
 | GitHub archived | false |
-| Docs | README.md; manifests/CONSTITUTION_v1.3.md; extensive docs/; SECURITY.md (new) |
-| Security | Offline core; Ed25519+SHACL gates; PyNaCl ≥1.6.2; no known vulns |
-| Claim | Substrate claim level separate from physics; VSA completeness UNVERIFIED beyond unit CI |
+| Docs | README.md; CANONICAL.md; SECURITY.md (new); tests/ smoke |
+| Security | Core pure-Python offline; minimal pydantic; nested TS experimental; Dependabot open |
+| Claim | Public canonical for Digital Double line; successor to 3.5/4.x/mobile variants |
 
 ## Classification (canonical)
 
@@ -65,7 +65,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 | Gap | Severity | State |
 |-----|----------|-------|
-| Product releases empty on ACTIVE | Medium | OPEN (operator tag) — re-confirmed Sweep-139 for sovereign-clean-room |
+| Product releases empty on ACTIVE | Medium | OPEN (operator tag) — re-confirmed Sweep-140 for Digital_Double_virtual_workforce |
 | adl-capability-matrix row count 67 vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
@@ -80,14 +80,14 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | aegis-repo-graph catalog snapshot vs live 75 | Low | OPEN (operator expansion) |
 | ADL-Nexus spine (think/request/reality pathways) incomplete | Medium | OPEN (xfail under RESEARCH; ObjectiveEngine present) |
 | Large binary model weight committed in 4.2 merge source | Low (hygiene) | OPEN (do not delete without operator) |
-| SECURITY.md missing on ACTIVE (pre-Sweep-139) | Low | CLOSED for sovereign-clean-room |
+| SECURITY.md missing on ACTIVE (pre-Sweep-140) | Low | CLOSED for Digital_Double_virtual_workforce |
 
 ## Exit criteria
 
-| Criterion | Sweep-139 |
+| Criterion | Sweep-140 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| sovereign-clean-room ACTIVE + SECURITY.md | MET (docs) |
+| Digital_Double_virtual_workforce ACTIVE + SECURITY.md | MET (docs) |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 75-complete verified rows | NOT MET |
@@ -95,4 +95,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ACTIVE re-audit + SECURITY.md; stop for subject (release tags remain operator).
+One governed ACTIVE re-audit + SECURITY.md; stop for subject (release tags and Dependabot merge remain operator).
