@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-13 — Sweep-139 (select: sovereign-clean-room)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `sovereign-clean-room`.
+**Subject head (pre):** `33a1caca79a602c2141122dcc75c53c502989e08`
+**Subject lock commit:** `c3c0af474e5ec34a813f01a761f09fcdcbb86259` (SECURITY.md)
+**Classification:** **ACTIVE** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Language Python. Description: Sovereign Clean-Room VSA Core (v1.3 Hyperspherical Geometric Edition). Tree: core/ (capability_registry, clean_room_*, episodic_memory, memskill, provenance, skill_crypto), tests/ (20+ unit/e2e files), docs/, manifests/CONSTITUTION_v1.3.md, schemas/skill_package_v1.json, skills/, bridge/, scripts/, shapes/, keys/, .github/workflows/python-tests.yml, requirements.txt (numpy==1.26.4, pynacl==1.6.2, pytest). Size ~210. Open issues 0 (at audit). Last push 2026-09-05 (PyNaCl security bump). CI present and historically green.
+
+### AUDIT
+
+- Already listed ACTIVE in PORTFOLIO_STATUS_REPORT.
+- Extensive tests + CI workflow; latest runs success (Python tests #56).
+- LIFECYCLE.md promote criteria: SECURITY.md was missing (now added).
+- No unsupported physics claims in core (Ware external/gated only).
+- Dependencies: no known vulns post PyNaCl 1.6.2 pin.
+- No release tags (operator-only gap remains).
+- Compatible with ACTIVE path; VSA completeness beyond unit CI remains UNVERIFIED (claim gap already tracked).
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `SECURITY.md` documenting offline core, Ed25519+SHACL gates, fail-closed design, reporting channel, dependency policy, and historical CVE note.
+- No product code, no test changes, no release tag, no archive flag, no history rewrite.
+- Governance registry updated this cycle.
+
+### CLASSIFY
+
+ACTIVE: production-intent cognitive substrate with tests, CI-green, constitution locked, SECURITY.md now present. Target state for docs/CI met; release tagging remains operator.
+
+### Exit
+
+Subject termination conditions partially met (docs/CI/security policy closed; release tags and VSA empirical completeness remain open). Portfolio-wide termination not met. One governed ACTIVE re-audit + SECURITY.md; stop for further autonomous mutation on subject until operator release or new evidence.
+
+---
+
 ## 2026-09-12 — Sweep-138 (select: smart_home_BCI)
 
 **Agent:** Grok (ADL-SEEM governed)
