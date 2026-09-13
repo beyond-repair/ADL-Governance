@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-12T20:10Z (autonomous Sweep-138)
+**Updated:** 2026-09-13T13:15Z (autonomous Sweep-139)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Random select `smart_home_BCI` — ARCHIVED re-audit (terminal confirmation; no product mutation).
+**This cycle:** Random select `sovereign-clean-room` — ACTIVE re-audit + SECURITY.md addition.
 
-## Sweep-138 scope
+## Sweep-139 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | CLASSIFY + re-audit (ARCHIVED class) |
-| Subject | smart_home_BCI |
-| Product mutation | None |
-| Contract mutation | Status report + history + operator queue residual |
+| Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (safe docs) |
+| Subject | sovereign-clean-room |
+| Product mutation | None (docs only) |
+| Contract mutation | Status report + history + SECURITY.md on subject |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-138)
+## Live Verification Results (Sweep-139)
 
-### smart_home_BCI
+### sovereign-clean-room
 | Field | Value |
 |-------|--------|
-| Head (post) | 79382034ef59896eab672adce8cb98efbb45384b (unchanged) |
+| Head (post) | c3c0af474e5ec34a813f01a761f09fcdcbb86259 (SECURITY.md) |
 | Visibility | public |
 | Default branch | main |
-| CI | None (expected for ARCHIVED) |
-| Releases / Tags | none |
-| Classification | **ARCHIVED** |
-| GitHub archived | false (operator pending) |
-| Docs | README.md (ARCHIVED banner); ARCHIVED.md; CLAIM_STATUS.md (level 0); LICENSE |
-| Security | Historical hard-coded LAN; documented; no autonomous action |
-| Claim | Level 0 — historical sketch only; no product/medical claims |
+| CI | Green (Python tests success on latest runs; run #56) |
+| Releases / Tags | none (operator pending) |
+| Classification | **ACTIVE** |
+| GitHub archived | false |
+| Docs | README.md; manifests/CONSTITUTION_v1.3.md; extensive docs/; SECURITY.md (new) |
+| Security | Offline core; Ed25519+SHACL gates; PyNaCl ≥1.6.2; no known vulns |
+| Claim | Substrate claim level separate from physics; VSA completeness UNVERIFIED beyond unit CI |
 
 ## Classification (canonical)
 
@@ -54,7 +54,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / **138**), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135).
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -65,7 +65,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 | Gap | Severity | State |
 |-----|----------|-------|
-| Product releases empty on ACTIVE quartet | Medium | OPEN (operator tag) — re-confirmed Sweep-132 |
+| Product releases empty on ACTIVE | Medium | OPEN (operator tag) — re-confirmed Sweep-139 for sovereign-clean-room |
 | adl-capability-matrix row count 67 vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
@@ -80,13 +80,14 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | aegis-repo-graph catalog snapshot vs live 75 | Low | OPEN (operator expansion) |
 | ADL-Nexus spine (think/request/reality pathways) incomplete | Medium | OPEN (xfail under RESEARCH; ObjectiveEngine present) |
 | Large binary model weight committed in 4.2 merge source | Low (hygiene) | OPEN (do not delete without operator) |
+| SECURITY.md missing on ACTIVE (pre-Sweep-139) | Low | CLOSED for sovereign-clean-room |
 
 ## Exit criteria
 
-| Criterion | Sweep-138 |
+| Criterion | Sweep-139 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| smart_home_BCI ARCHIVED terminal | MET |
+| sovereign-clean-room ACTIVE + SECURITY.md | MET (docs) |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 75-complete verified rows | NOT MET |
@@ -94,4 +95,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ARCHIVED re-audit; docs confirmed; stop.
+One governed ACTIVE re-audit + SECURITY.md; stop for subject (release tags remain operator).
