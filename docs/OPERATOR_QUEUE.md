@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-140)
+## Open items (as of Sweep-141)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-141: forge-aegis ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags still PENDING operator.
 - Sweep-140: Digital_Double_virtual_workforce ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags and Dependabot merges still PENDING operator.
 - Sweep-139: sovereign-clean-room ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags still PENDING operator.
 - Sweep-138: smart_home_BCI ARCHIVED re-confirmed; no product mutation; GitHub archive flag still PENDING.

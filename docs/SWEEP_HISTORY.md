@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-14 — Sweep-141 (select: forge-aegis)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Phase 3 mandatory live verification priority (forge-aegis among required subjects). Live census total_count 75.
+**Subject head (pre):** `7b3d421c52da9c9a860b05eb57bc82a6e3e8f1e9`
+**Subject lock commit:** `7dd65a15d25d7dc63a56951995002dd925599671` (SECURITY.md)
+**Classification:** **ACTIVE** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Language Python. Description: Forge Language Specification (FLS) and AEGIS domain package for Project Nehemiah — high-assurance endpoint integrity via Artifact Graphs. Tree: python/ (aegis_pipeline.py, aegis_validator.py, tests/), fls/ (FLS-000..005), schemas/, docs/ (THREAT_MODEL, V0_1_VERTICAL_SLICE, RELEASE_GATE), adr/, rfc/, examples/, .github/workflows/ci.yml. Size ~36. Open issues 0. Last push 2026-09-04. CI present.
+
+### AUDIT
+
+- Already listed ACTIVE in PORTFOLIO_STATUS_REPORT.
+- CI workflow runs unit tests + CLI smoke (PASS + FAIL/tamper paths); latest runs conclusion=success (run #8 on head).
+- LIFECYCLE.md promote criteria: SECURITY.md was missing (now added).
+- Reference implementation is pure-Python, offline, deterministic hash pipeline; no third-party runtime deps for core path.
+- No unsupported product claims beyond v0.1 vertical slice and FLS ontology.
+- No release tags (operator gap).
+- Compatible with ACTIVE path.
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `SECURITY.md` documenting offline contract, deterministic integrity, fail-closed behaviour, reporting channel, dependency policy, and non-goals.
+- No product code, no test changes, no release tag, no archive flag, no history rewrite.
+- Governance registry updated this cycle.
+
+### CLASSIFY
+
+ACTIVE: canonical FLS/AEGIS specification + reference pipeline with tests, CI-green, SECURITY.md now present. Target state for docs/CI met; release tagging remains operator.
+
+### Exit
+
+Subject termination conditions partially met (docs/CI/security policy closed; release tags remain open). Portfolio-wide termination not met. One governed ACTIVE re-audit + SECURITY.md; stop for further autonomous mutation on subject until operator release or new evidence.
+
+---
+
 ## 2026-09-13 — Sweep-140 (select: Digital_Double_virtual_workforce)
 
 **Agent:** Grok (ADL-SEEM governed)
