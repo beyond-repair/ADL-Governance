@@ -2,6 +2,47 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-14 — Sweep-142 (select: -Py2APK-main)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `-Py2APK-main`.
+**Subject head (pre):** `60502d4028a92bb9f43c7f0a0e5213f391013481`
+**Subject lock commit:** `7dbb7b0767dd336eb358d5172fe9fff3da368932` (ARCHIVED.md + CLAIM_STATUS.md + README banner)
+**Classification:** **ARCHIVED**
+
+### DISCOVER
+
+Public repository. Language Python. Nested layout (`-Py2APK-main/` root folder). Description absent; README describes Android + Chaquopy + ONNX demo. Tree includes py2apk/ (cli, builder, android_project with Java/Python, utils), build/ (artifacts + pycache), pyproject.toml (name py2apk v1.0.0), frontend-config.json, LICENSE, refactoring_suggestions.md. Size ~45. Open issues 0. Created/pushed 2025-02-08. No CI workflows. No tests runnable without Android/Chaquopy environment. Last activity historical.
+
+### AUDIT
+
+- Already listed in repository_registry.md ARCHIVED queue and archive_queue.md.
+- No tests, no CI, no SECURITY.md, no GOVERNANCE pointer.
+- Nested directory structure is non-canonical and contains build artifacts / __pycache__.
+- Claims in original README are demo-only; no production product assertion.
+- Compatible with LIFECYCLE.md ARCHIVED path (historical, preserve history, no further action).
+- Residual: GitHub `archived=true` flag remains operator-only.
+- No duplicate canonical implementations requiring merge.
+- No critical security issues requiring autonomous code change (demo code only).
+
+### IMPLEMENT (safe, idempotent)
+
+- Added root `ARCHIVED.md` (classification, claim level 0, preservation note).
+- Added root `CLAIM_STATUS.md` (allowed/forbidden statements).
+- Updated nested README.md with ARCHIVED banner pointing to the new files.
+- No product code mutation, no deletion, no history rewrite, no GitHub archive flag.
+- Governance registry updated this cycle.
+
+### CLASSIFY
+
+ARCHIVED: 2025 historical Chaquopy/ONNX Android demo; claim level 0; docs terminal; preservation only. Target state achieved for ARCHIVED class.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (no undefined product components, no stale registry, no CI expected, no duplicates, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed ARCHIVED lock; stop.
+
+---
+
 ## 2026-09-14 — Sweep-141 (select: forge-aegis)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -79,84 +120,6 @@ Subject termination conditions partially met (docs/CI/security policy closed; re
 
 ---
 
-## 2026-09-13 — Sweep-139 (select: sovereign-clean-room)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `sovereign-clean-room`.
-**Subject head (pre):** `33a1caca79a602c2141122dcc75c53c502989e08`
-**Subject lock commit:** `c3c0af474e5ec34a813f01a761f09fcdcbb86259` (SECURITY.md)
-**Classification:** **ACTIVE** (re-confirmed)
-
-### DISCOVER
-
-Public repository. Language Python. Description: Sovereign Clean-Room VSA Core (v1.3 Hyperspherical Geometric Edition). Tree: core/ (capability_registry, clean_room_*, episodic_memory, memskill, provenance, skill_crypto), tests/ (20+ unit/e2e files), docs/, manifests/CONSTITUTION_v1.3.md, schemas/skill_package_v1.json, skills/, bridge/, scripts/, shapes/, keys/, .github/workflows/python-tests.yml, requirements.txt (numpy==1.26.4, pynacl==1.6.2, pytest). Size ~210. Open issues 0 (at audit). Last push 2026-09-05 (PyNaCl security bump). CI present and historically green.
-
-### AUDIT
-
-- Already listed ACTIVE in PORTFOLIO_STATUS_REPORT.
-- Extensive tests + CI workflow; latest runs success (Python tests #56).
-- LIFECYCLE.md promote criteria: SECURITY.md was missing (now added).
-- No unsupported physics claims in core (Ware external/gated only).
-- Dependencies: no known vulns post PyNaCl 1.6.2 pin.
-- No release tags (operator-only gap remains).
-- Compatible with ACTIVE path; VSA completeness beyond unit CI remains UNVERIFIED (claim gap already tracked).
-
-### IMPLEMENT (safe, idempotent)
-
-- Added `SECURITY.md` documenting offline core, Ed25519+SHACL gates, fail-closed design, reporting channel, dependency policy, and historical CVE note.
-- No product code, no test changes, no release tag, no archive flag, no history rewrite.
-- Governance registry updated this cycle.
-
-### CLASSIFY
-
-ACTIVE: production-intent cognitive substrate with tests, CI-green, constitution locked, SECURITY.md now present. Target state for docs/CI met; release tagging remains operator.
-
-### Exit
-
-Subject termination conditions partially met (docs/CI/security policy closed; release tags and VSA empirical completeness remain open). Portfolio-wide termination not met. One governed ACTIVE re-audit + SECURITY.md; stop for further autonomous mutation on subject until operator release or new evidence.
-
----
-
-## 2026-09-12 — Sweep-138 (select: smart_home_BCI)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `smart_home_BCI`.
-**Subject head (pre):** `79382034ef59896eab672adce8cb98efbb45384b`
-**Subject lock commit:** none (no mutation)
-**Classification:** **ARCHIVED** (re-confirmed)
-
-### DISCOVER
-
-Public repository. Tree contains exactly six files: `.gitignore`, `ARCHIVED.md`, `CLAIM_STATUS.md`, `LICENSE`, `README.md`, `smart_home_bci.py`. No tests, no CI workflows, no `.github/`. Size small. Open issues 0. Language Python (single sketch file). GitHub `archived=false`. Last prior activity from prior sweeps. Already locked ARCHIVED in Sweep-087 / 107 / 133 and listed in PORTFOLIO_STATUS_REPORT / OPERATOR_QUEUE / archive_queue.
-
-`smart_home_bci.py` is a 2023-era single-file sketch: imports undefined `bci` and `SmartHome`; hard-coded LAN `192.168.0.1`; untrained Keras health stub; voice/BCI command loop. README and ARCHIVED.md already carry terminal banners and claim caps.
-
-### AUDIT
-
-- Already locked ARCHIVED; docs complete (banner, ARCHIVED.md, CLAIM_STATUS.md level 0).
-- No undefined product components requiring mutation (historical sketch only; implementations of `bci`/`SmartHome` explicitly forbidden).
-- No tests or CI expected or present (ARCHIVED class).
-- Claims already capped; no unsupported medical/product assertions.
-- Compatible with LIFECYCLE.md ARCHIVED path (historical, preserve history, no further action).
-- Residual risk (hard-coded LAN unlock) documented; no critical open security requiring autonomous code change.
-- No duplicate canonical implementations.
-- GitHub archive flag remains operator-only (already queued).
-
-### IMPLEMENT (safe, idempotent)
-
-- No product code, no test/CI, no archive flag execution, no release tag, no history rewrite, no file mutation on subject.
-- Governance registry updated this cycle (status report + history + operator queue residual note).
-
-### CLASSIFY
-
-ARCHIVED: historical 2023 sketch; claim level 0; docs terminal; preservation only. Target state achieved for ARCHIVED class.
-
-### Exit
-
-Subject termination conditions met for ARCHIVED class (all boxes checked: no undefined/undocumented components, no stale registry entries, no critical CI failures, no duplicates, no unresolved critical security issues, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed re-audit; stop.
-
----
-
 ## Prior sweeps
 
-See git history of this file for full prior entries (Sweep-137 … 001).
+See git history of this file for full prior entries (Sweep-141 … 001).

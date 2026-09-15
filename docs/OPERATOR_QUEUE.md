@@ -2,9 +2,9 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-141)
+## Open items (as of Sweep-142)
 
-- Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, and remaining queue entries in archive_queue.md / repository_registry.md.
+- Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
 - Rotate / remove committed `.env` on digital-double-mobile; resolve Dependabot HIGH alerts.
 - Expand adl-capability-matrix to live 75-row census.
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-142: -Py2APK-main ARCHIVED locked (ARCHIVED.md + CLAIM_STATUS.md + README banner); GitHub archive flag still PENDING.
 - Sweep-141: forge-aegis ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags still PENDING operator.
 - Sweep-140: Digital_Double_virtual_workforce ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags and Dependabot merges still PENDING operator.
 - Sweep-139: sovereign-clean-room ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags still PENDING operator.

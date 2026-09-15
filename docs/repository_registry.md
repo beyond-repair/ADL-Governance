@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-12 (Sweep-136) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-14 (Sweep-142) · **Governing source:** this repository
 
 Visible GitHub search count: **75**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
 
@@ -13,7 +13,7 @@ Visible GitHub search count: **75**. Classifications (directive): ACTIVE | RESEA
 | [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-09-05 | 0 | 4 | SAGF; Foundry run 33986287866 success; tag v0.5.0-sagf PENDING |
 | [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-09-05 | 1 | 3 | Canonical SEEM substrate; CI success 33979476402. VSA completeness UNVERIFIED. |
 | [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-09-04 | 0 | 2 | FLS early; CI success 33904082644; v0.1.0 tag open |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-12 | 0 | 3 | This repo |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-14 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
 | [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-09-05 | 4+ | 3 | Public canonical; product CI success 33979714262; Dependabot HIGH open |
@@ -52,7 +52,7 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 ## ARCHIVED (target / recommended; GitHub flag mostly false)
 
-CFT-v3.0 already archived. Queue: RepoRover-, DevelopTool-Unified-Dev-Environment, -Py2APK-main, AtomicNexusAI, genieGPT, Agent-Snake, fantom bots, smart_home_BCI, automate_passive_income, Quantumclustering, quantum_A.I._optimization.py, test, new-program-1.01, btc-trading, Code_Generation_AI_Program, potential-garbanzo, FortiTrade_Multi-Strategy.
+CFT-v3.0 already archived. Queue: RepoRover-, DevelopTool-Unified-Dev-Environment, **-Py2APK-main (Sweep-142 locked)**, AtomicNexusAI, genieGPT, Agent-Snake, fantom bots, smart_home_BCI, automate_passive_income, Quantumclustering, quantum_A.I._optimization.py, test, new-program-1.01, btc-trading, Code_Generation_AI_Program, potential-garbanzo, FortiTrade_Multi-Strategy.
 
 ---
 

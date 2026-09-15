@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-14T03:04Z (autonomous Sweep-141)
+**Updated:** 2026-09-14T23:10Z (autonomous Sweep-142)
 **Census:** Live `user:beyond-repair` search total_count **75** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair` (profile `public_repos=72`; search items 75 — search list is inventory authority this cycle).
 **Governing source:** this repository.
-**This cycle:** Mandatory Phase 3 subject `forge-aegis` — ACTIVE re-audit + SECURITY.md addition.
+**This cycle:** Random select `-Py2APK-main` — ARCHIVED lock + docs.
 
-## Sweep-141 scope
+## Sweep-142 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (safe docs) |
-| Subject | forge-aegis |
+| Subject | -Py2APK-main |
 | Product mutation | None (docs only) |
-| Contract mutation | Status report + history + SECURITY.md on subject |
-| Archive / release / history rewrite | NOT executed |
+| Contract mutation | Status report + history + ARCHIVED.md / CLAIM_STATUS.md on subject |
+| Archive / release / history rewrite | NOT executed (GitHub flag operator) |
 
-## Live Verification Results (Sweep-141)
+## Live Verification Results (Sweep-142)
 
-### forge-aegis
+### -Py2APK-main
 | Field | Value |
 |-------|--------|
-| Head (post) | 7dd65a15d25d7dc63a56951995002dd925599671 (SECURITY.md) |
+| Head (post) | 7dbb7b0767dd336eb358d5172fe9fff3da368932 |
 | Visibility | public |
 | Default branch | main |
-| CI | Green (unit tests + CLI smoke PASS/FAIL on every push/PR; latest run #8 success) |
-| Releases / Tags | none (operator pending) |
-| Classification | **ACTIVE** |
-| GitHub archived | false |
-| Docs | README.md; fls/; docs/THREAT_MODEL.md; V0_1_VERTICAL_SLICE; SECURITY.md (new) |
-| Security | Offline pure-Python reference; deterministic hash pipeline; fail-closed on tamper |
-| Claim | Canonical FLS + AEGIS domain package for Project Nehemiah; v0.1 vertical slice |
+| CI | None |
+| Releases / Tags | none |
+| Classification | **ARCHIVED** |
+| GitHub archived | false (operator pending) |
+| Docs | README (banner), ARCHIVED.md, CLAIM_STATUS.md (new) |
+| Security | Demo code only; no runtime claim |
+| Claim | Historical Chaquopy + ONNX Android demo (level 0) |
 
 ## Classification (canonical)
 
@@ -54,7 +54,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135).
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (75)
@@ -65,12 +65,12 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 | Gap | Severity | State |
 |-----|----------|-------|
-| Product releases empty on ACTIVE | Medium | OPEN (operator tag) — re-confirmed Sweep-141 for forge-aegis |
+| Product releases empty on ACTIVE | Medium | OPEN (operator tag) |
 | adl-capability-matrix row count 67 vs live 75 | Medium | OPEN |
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -80,14 +80,13 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | aegis-repo-graph catalog snapshot vs live 75 | Low | OPEN (operator expansion) |
 | ADL-Nexus spine (think/request/reality pathways) incomplete | Medium | OPEN (xfail under RESEARCH; ObjectiveEngine present) |
 | Large binary model weight committed in 4.2 merge source | Low (hygiene) | OPEN (do not delete without operator) |
-| SECURITY.md missing on ACTIVE (pre-Sweep-141) | Low | CLOSED for forge-aegis |
 
 ## Exit criteria
 
-| Criterion | Sweep-141 |
+| Criterion | Sweep-142 |
 |-----------|-----------|
 | Named census of 75 | MET |
-| forge-aegis ACTIVE + SECURITY.md | MET (docs) |
+| -Py2APK-main ARCHIVED lock | MET (docs) |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 75-complete verified rows | NOT MET |
@@ -95,4 +94,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ACTIVE re-audit + SECURITY.md; stop for subject (release tags remain operator).
+One governed ARCHIVED lock; stop for subject (GitHub archive flag remains operator).
