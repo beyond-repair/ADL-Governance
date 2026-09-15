@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-15T14:40Z (autonomous Sweep-143)
+**Updated:** 2026-09-15T18:10Z (autonomous Sweep-144)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `Open-Energy-Fusion` — RESEARCH lock + CI + GOVERNANCE.md.
+**This cycle:** Random select `fantom_trading_bot_2` — ARCHIVED re-confirmation (docs already terminal).
 
-## Sweep-143 scope
+## Sweep-144 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (safe CI + docs) |
-| Subject | Open-Energy-Fusion |
+| Primary | DISCOVER → AUDIT → CLASSIFY (re-confirm) |
+| Subject | fantom_trading_bot_2 |
 | Product mutation | None |
-| Contract mutation | Status report + history + GOVERNANCE.md + CI workflow on subject |
+| Contract mutation | Status report + history + operator queue note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-143)
+## Live Verification Results (Sweep-144)
 
-### Open-Energy-Fusion
+### fantom_trading_bot_2
 | Field | Value |
 |-------|--------|
-| Head (post) | 257695f9bbae9eb3b55bb172ade52f66ab48eb64 |
+| Head (post) | 0662d4850f3e41d18be8bd963847dbed06ccc7db |
 | Visibility | public |
 | Default branch | main |
-| CI | Added (pytest + campaign smoke) |
+| CI | none (not expected) |
 | Releases / Tags | none |
-| Classification | **RESEARCH** |
-| GitHub archived | false |
-| Docs | README, CLAIM_CAP, AUDIT, ARCHITECTURE, GOVERNANCE.md (new) |
-| Security | Simulation only; no runtime secrets |
-| Claim | Simulation + contract; YELLOW gate; no hardware |
+| Classification | **ARCHIVED** (re-confirmed; Sweep-079 lock intact) |
+| GitHub archived | false (operator pending) |
+| Docs | ARCHIVED.md, README claims table, .gitignore |
+| Security | Stub code only; no secrets |
+| Claim | level 0; execution/profit unsupported; fund safety false |
 
 ## Classification (canonical)
 
@@ -54,7 +54,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144)**.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (76)
@@ -70,7 +70,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -84,10 +84,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-143 |
+| Criterion | Sweep-144 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| Open-Energy-Fusion RESEARCH lock + CI | MET (docs + workflow) |
+| fantom_trading_bot_2 ARCHIVED re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -95,4 +95,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed RESEARCH lock + CI; stop for subject (release remains operator).
+One governed ARCHIVED re-confirmation; stop for subject (GitHub archive flag remains operator).

@@ -2,12 +2,12 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-142)
+## Open items (as of Sweep-144)
 
-- Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, and remaining queue entries in archive_queue.md / repository_registry.md.
+- Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
 - Rotate / remove committed `.env` on digital-double-mobile; resolve Dependabot HIGH alerts.
-- Expand adl-capability-matrix to live 75-row census.
+- Expand adl-capability-matrix to live 76-row census.
 - Operator review of any claim-level elevation requests.
 - History rewrite or force-push: never by agent.
 - Optional: remove or LFS-migrate large committed model weight in Digital_Double_Virtual_Workforce_4.2 (hygiene only; do not delete without operator decision).
@@ -15,6 +15,8 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-144: fantom_trading_bot_2 ARCHIVED re-confirmed (docs already terminal from Sweep-079; no subject mutation); GitHub archive flag still PENDING.
+- Sweep-143: Open-Energy-Fusion RESEARCH locked (GOVERNANCE.md + CI); first CI run PENDING.
 - Sweep-142: -Py2APK-main ARCHIVED locked (ARCHIVED.md + CLAIM_STATUS.md + README banner); GitHub archive flag still PENDING.
 - Sweep-141: forge-aegis ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags still PENDING operator.
 - Sweep-140: Digital_Double_virtual_workforce ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags and Dependabot merges still PENDING operator.

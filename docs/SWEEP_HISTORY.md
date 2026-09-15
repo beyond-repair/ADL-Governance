@@ -2,6 +2,45 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-15 — Sweep-144 (select: fantom_trading_bot_2)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 76). Subject: `fantom_trading_bot_2`.
+**Subject head (pre):** `0662d4850f3e41d18be8bd963847dbed06ccc7db`
+**Subject lock commit:** none (docs already terminal from Sweep-079)
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Language Python (single incomplete file `fantom 19.py`). Tree: `.gitignore`, `ARCHIVED.md`, `README.md`, `fantom 19.py`. Size 9. Open issues 0. Created ~2023 era (sketch). Last activity historical. Description absent. No tests, no CI, no requirements, no LICENSE beyond possible defaults.
+
+Code is a broken sketch: Strategy enum including FrontRunning/SandwichBot stubs, SmartContract class with placeholder methods that call undefined helpers returning constants (0.0 / True / False / print). Syntax errors present (indentation, incomplete defs). No exchange client, no PnL measurement, no runnable entrypoint that executes real trades.
+
+### AUDIT
+
+- Already has root `ARCHIVED.md` (Sweep-079 lock 2026-09-06) and README classification banner with claims table (unsupported execution/profit claims; false for fund safety).
+- Listed in `docs/archive_queue.md` and `repository_registry.md` ARCHIVED queue as "fantom bots".
+- No CI expected or present; no tests required for ARCHIVED historical sketch.
+- No critical security issues (stub code only; no secrets, no live keys).
+- No duplicate canonical implementations requiring merge (related names `fantom-smart-contracts-first-bot`, `ftmA.I.bot`, `FortiTrade_Multi-Strategy` remain separate; BlockSwarm is on-chain SAGF owner).
+- Compatible with LIFECYCLE.md ARCHIVED path (historical, preserve history, no further autonomous action).
+- Residual: GitHub `archived=true` flag remains operator-only.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. Docs already terminal; claims already capped; no product code mutation, no deletion, no history rewrite, no GitHub archive flag.
+- Governance registry updated this cycle (status report + history + operator queue note).
+
+### CLASSIFY
+
+ARCHIVED: 2023-era incomplete Python strategy-name sketch with placeholder stubs; claim level 0; docs terminal; preservation only. Target state achieved for ARCHIVED class.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (no undefined product components, no stale registry entries for this subject, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims remaining, target achieved). Portfolio-wide termination not met. One governed ARCHIVED re-confirmation; stop.
+
+---
+
 ## 2026-09-15 — Sweep-143 (select: Open-Energy-Fusion)
 
 **Agent:** Grok (ADL-SEEM governed)
