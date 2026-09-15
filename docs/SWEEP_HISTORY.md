@@ -2,6 +2,45 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-15 — Sweep-143 (select: Open-Energy-Fusion)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count ~76). Subject: `Open-Energy-Fusion`.
+**Subject head (pre):** `b76e7303c9a5fefff510dd7a5f622a407ba0a112`
+**Subject lock commit:** `257695f9bbae9eb3b55bb172ade52f66ab48eb64` (GOVERNANCE.md + CI workflow)
+**Classification:** **RESEARCH**
+
+### DISCOVER
+
+Public repository created 2026-09-15. Language Python. Description: Open EnergyOS investigation: measurement-first multi-domain energy arbitration. YELLOW gate. Simulation + contract only; no hardware claims. Tree: src/energyos/ (controller, graph, simulate), tests/, sim/ (campaign + results), docs/ (ARCHITECTURE, AUDIT, CLAIM_CAP, MODULE_CONTRACT, PRIOR_ART, SAFETY), protocols/, firmware/ (placeholder), requirements.txt (pytest), LICENSE, README. Size small. Open issues 0. No prior CI workflows (only Dependabot graph). Last activity same day.
+
+### AUDIT
+
+- New repo; not previously in registry.
+- Tests present (physics bounds, energy conservation, campaign invariants).
+- CLAIM_CAP.md and AUDIT.md already enforce YELLOW / no hardware claims.
+- Missing: CI workflow for automated test runs; GOVERNANCE pointer.
+- No critical security issues.
+- Compatible with RESEARCH path (experimental, unvalidated on hardware).
+- No duplicate canonical implementations.
+
+### IMPLEMENT (safe, idempotent)
+
+- Added `.github/workflows/ci.yml` (pytest + campaign smoke on push/PR).
+- Added root `GOVERNANCE.md` (classification RESEARCH, pointer to ADL-Governance, claim level).
+- No product code mutation, no deletion, no history rewrite, no release tag.
+- Governance registry updated this cycle.
+
+### CLASSIFY
+
+RESEARCH: simulation + contract only; YELLOW gate; empirical hardware evidence required for promotion. Target state for docs/CI met; release remains operator.
+
+### Exit
+
+Subject termination conditions partially met (docs/CI closed; release open). Portfolio-wide termination not met. One governed RESEARCH lock + CI; stop for further autonomous mutation on subject until operator release or new evidence.
+
+---
+
 ## 2026-09-14 — Sweep-142 (select: -Py2APK-main)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -78,45 +117,6 @@ ACTIVE: canonical FLS/AEGIS specification + reference pipeline with tests, CI-gr
 ### Exit
 
 Subject termination conditions partially met (docs/CI/security policy closed; release tags remain open). Portfolio-wide termination not met. One governed ACTIVE re-audit + SECURITY.md; stop for further autonomous mutation on subject until operator release or new evidence.
-
----
-
-## 2026-09-13 — Sweep-140 (select: Digital_Double_virtual_workforce)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 75). Subject: `Digital_Double_virtual_workforce`.
-**Subject head (pre):** `c69ba6f6fa5a971d6379c82d27937c6a95b613ed`
-**Subject lock commit:** `342b7e81c4ec8aa8f47d5787b9b05daa884efc86` (SECURITY.md)
-**Classification:** **ACTIVE** (re-confirmed)
-
-### DISCOVER
-
-Public repository. Language mixed (Python core + TypeScript UI). Description: scalable virtual workforce agents. Tree: digital_double/ (core agent/orchestrator/task + nested digital_double/ + src/ React components), tests/test_orchestrator_smoke.py, .github/workflows/ci.yml (Python smoke), pyproject.toml (poetry, pydantic), package.json (frontend), CANONICAL.md, README.md, examples/, docs/. Size ~687. Open issues 0. Open PRs: #5/#6 Dependabot, #7 draft evidence journal. Last push prior to this cycle. CI present; Python smoke historically green on PRs.
-
-### AUDIT
-
-- Already listed ACTIVE in PORTFOLIO_STATUS_REPORT and CANONICAL.md (public canonical for Digital Double line).
-- LIFECYCLE.md promote criteria: SECURITY.md was missing (now added).
-- Python core is minimal offline orchestrator; nested TS and dual package layouts are experimental.
-- Smoke test covers create/assign/complete path.
-- No unsupported product claims beyond workforce automation framing.
-- Dependabot open groups and evidence PR remain operator-reviewed.
-- No release tags (operator gap).
-- Compatible with ACTIVE path.
-
-### IMPLEMENT (safe, idempotent)
-
-- Added `SECURITY.md` documenting core model, reporting channel, dependency policy, and historical notes on superseded lines.
-- No product code, no test changes, no release tag, no archive flag, no history rewrite, no PR merge.
-- Governance registry updated this cycle.
-
-### CLASSIFY
-
-ACTIVE: public canonical workforce module with tests, CI smoke, CANONICAL pointer, SECURITY.md now present. Target state for docs/CI met; release tagging and Dependabot merges remain operator.
-
-### Exit
-
-Subject termination conditions partially met (docs/CI/security policy closed; release tags and open Dependabot remain open). Portfolio-wide termination not met. One governed ACTIVE re-audit + SECURITY.md; stop for further autonomous mutation on subject until operator release or new evidence.
 
 ---
 
