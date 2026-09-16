@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-16T17:20Z (autonomous Sweep-147)
+**Updated:** 2026-09-16T20:05Z (autonomous Sweep-148)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `Digital_Double_virtual_workforce` — ACTIVE re-confirmation (docs/CI/SECURITY already terminal).
+**This cycle:** Random select `CFT-v3.1` — SUPERSEDED re-confirmation + registry lock (docs already terminal).
 
-## Sweep-147 scope
+## Sweep-148 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | Digital_Double_virtual_workforce |
+| Subject | CFT-v3.1 |
 | Product mutation | None |
-| Contract mutation | Status report + history + operator queue note |
+| Contract mutation | Status report + history + registry SUPERSEDED row + operator queue note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-147)
+## Live Verification Results (Sweep-148)
 
-### Digital_Double_virtual_workforce
+### CFT-v3.1
 | Field | Value |
 |-------|--------|
-| Head | 342b7e81c4ec8aa8f47d5787b9b05daa884efc86 |
+| Head | 6eafbdc692edbe970eabc866ec811ec79079daf2 |
 | Visibility | public |
 | Default branch | main |
-| CI | Digital Double CI (python-core smoke) — latest run #17 conclusion=success |
+| CI | none (not required) |
 | Releases / Tags | none |
-| Classification | **ACTIVE** (re-confirmed; Sweep-140 SECURITY.md lineage intact) |
+| Classification | **SUPERSEDED** (re-confirmed; README banner 2026-08-17; registry lock this cycle) |
 | GitHub archived | false |
-| Docs | README.md, CANONICAL.md, SECURITY.md, nested package READMEs |
-| Security | SECURITY.md present; pure-Python core; no committed secrets on this line |
-| Claim | level consistent with ACTIVE public canonical; frontend experimental |
-| Open PRs | #5/#6 Dependabot (operator), #7 draft evidence journal (operator) |
+| Docs | README.md (SUPERSEDED + successor table), two historical .tex papers |
+| Security | static TeX only; no secrets |
+| Claim | level 0 for current validation; prefer v3.3 baseline |
+| Open issues / PRs | 0 |
 
 ## Classification (canonical)
 
@@ -52,6 +52,7 @@ SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-134 cla
 DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), **Digital_Double_Virtual_Workforce_4. (Sweep-146 re-confirm)**, **Digital_Double_Virtual_Workforce_4.2 (Sweep-137 claim-cap)**, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
 CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 only).
+**CFT-v3.1 → CFTv3.3-IQG-Unified-Framework / ware-constant-phenomenology (Sweep-148 registry lock; README banner already present).**
 
 ### ARCHIVED
 
@@ -71,7 +72,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, `CFT-v3.1`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -86,10 +87,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-147 |
+| Criterion | Sweep-148 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| Digital_Double_virtual_workforce ACTIVE re-confirmation | MET |
+| CFT-v3.1 SUPERSEDED re-confirmation + registry lock | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -97,4 +98,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ACTIVE re-confirmation; stop for subject (Dependabot merges, evidence PR #7, and release tags remain operator-only).
+One governed SUPERSEDED re-confirmation + registry lock; stop for subject (GitHub archive flag remains operator-only).
