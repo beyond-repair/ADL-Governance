@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-15T18:10Z (autonomous Sweep-144)
+**Updated:** 2026-09-16T00:20Z (autonomous Sweep-145)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `fantom_trading_bot_2` — ARCHIVED re-confirmation (docs already terminal).
+**This cycle:** Random select `m2-renormalization-law` — RESEARCH re-confirmation + CI workflow for parameter-free lock.
 
-## Sweep-144 scope
+## Sweep-145 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER → AUDIT → CLASSIFY (re-confirm) |
-| Subject | fantom_trading_bot_2 |
-| Product mutation | None |
-| Contract mutation | Status report + history + operator queue note |
+| Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (CI) |
+| Subject | m2-renormalization-law |
+| Product mutation | None (script already terminal) |
+| Contract mutation | Status report + history + operator queue note; subject CI workflow |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-144)
+## Live Verification Results (Sweep-145)
 
-### fantom_trading_bot_2
+### m2-renormalization-law
 | Field | Value |
 |-------|--------|
-| Head (post) | 0662d4850f3e41d18be8bd963847dbed06ccc7db |
+| Head (post) | bf573b4894855e1ddf1fd5837c82a8b7fa5e0790 |
 | Visibility | public |
 | Default branch | main |
-| CI | none (not expected) |
+| CI | workflow added (parameter_free_sweep.py lock) |
 | Releases / Tags | none |
-| Classification | **ARCHIVED** (re-confirmed; Sweep-079 lock intact) |
-| GitHub archived | false (operator pending) |
-| Docs | ARCHIVED.md, README claims table, .gitignore |
-| Security | Stub code only; no secrets |
-| Claim | level 0; execution/profit unsupported; fund safety false |
+| Classification | **RESEARCH** (re-confirmed; Sweep-122/136 lock intact + Sweep-145 CI) |
+| GitHub archived | false |
+| Docs | README, CLAIM_STATUS.md, FALSIFICATION.md, GOVERNANCE.md, LICENSE |
+| Security | Pure numeric lock script; no secrets |
+| Claim | level 1 provisional scaling ansatz; explicit non-claims enforced |
 
 ## Classification (canonical)
 
@@ -42,7 +42,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / re-confirmed Sweep-136. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -81,13 +81,14 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | ADL-Nexus spine (think/request/reality pathways) incomplete | Medium | OPEN (xfail under RESEARCH; ObjectiveEngine present) |
 | Large binary model weight committed in 4.2 merge source | Low (hygiene) | OPEN (do not delete without operator) |
 | Open-Energy-Fusion CI first run | Medium | PENDING (workflow added) |
+| m2-renormalization-law CI first run | Medium | PENDING (workflow added Sweep-145) |
 
 ## Exit criteria
 
-| Criterion | Sweep-144 |
+| Criterion | Sweep-145 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| fantom_trading_bot_2 ARCHIVED re-confirmation | MET |
+| m2-renormalization-law RESEARCH re-confirmation + CI | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -95,4 +96,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ARCHIVED re-confirmation; stop for subject (GitHub archive flag remains operator).
+One governed RESEARCH re-confirmation + CI workflow; stop for subject (first CI run remains pending).
