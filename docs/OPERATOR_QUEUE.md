@@ -2,9 +2,9 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-145)
+## Open items (as of Sweep-146)
 
-- Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, and remaining queue entries in archive_queue.md / repository_registry.md.
+- Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
 - Rotate / remove committed `.env` on digital-double-mobile; resolve Dependabot HIGH alerts.
 - Expand adl-capability-matrix to live 76-row census.
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-146: Digital_Double_Virtual_Workforce_4. SUPERSEDED re-confirmed (docs already terminal from Sweep-075 lineage; empty product surface; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-145: m2-renormalization-law RESEARCH re-confirmed; CI workflow added for parameter_free_sweep.py lock; first CI run PENDING.
 - Sweep-144: fantom_trading_bot_2 ARCHIVED re-confirmed (docs already terminal from Sweep-079; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-143: Open-Energy-Fusion RESEARCH locked (GOVERNANCE.md + CI); first CI run PENDING.
