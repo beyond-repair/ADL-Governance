@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-144)
+## Open items (as of Sweep-145)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-145: m2-renormalization-law RESEARCH re-confirmed; CI workflow added for parameter_free_sweep.py lock; first CI run PENDING.
 - Sweep-144: fantom_trading_bot_2 ARCHIVED re-confirmed (docs already terminal from Sweep-079; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-143: Open-Energy-Fusion RESEARCH locked (GOVERNANCE.md + CI); first CI run PENDING.
 - Sweep-142: -Py2APK-main ARCHIVED locked (ARCHIVED.md + CLAIM_STATUS.md + README banner); GitHub archive flag still PENDING.
@@ -23,7 +24,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Sweep-139: sovereign-clean-room ACTIVE re-confirmed; SECURITY.md added (LIFECYCLE compliance); release tags still PENDING operator.
 - Sweep-138: smart_home_BCI ARCHIVED re-confirmed; no product mutation; GitHub archive flag still PENDING.
 - Sweep-137: Digital_Double_Virtual_Workforce_4.2 SUPERSEDED re-confirmed; CLAIM_STATUS.md added; no further agent work on subject.
-- Sweep-136: m2-renormalization-law RESEARCH re-confirmed; CLAIM_STATUS.md added; no operator action required for subject.
+- Sweep-136: m2-renormalization-law RESEARCH re-confirmed; CLAIM_STATUS.md added; no operator action required for subject (CI added in 145).
 - Sweep-135: potential-garbanzo ARCHIVED docs locked; GitHub archive flag still PENDING.
 - Sweep-134: SEEM-Cognitive-Microservice claim-capped SUPERSEDED; no further agent work.
 
