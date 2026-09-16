@@ -1,36 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-16T00:20Z (autonomous Sweep-145)
+**Updated:** 2026-09-16T16:19Z (autonomous Sweep-146)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `m2-renormalization-law` — RESEARCH re-confirmation + CI workflow for parameter-free lock.
+**This cycle:** Random select `Digital_Double_Virtual_Workforce_4.` — SUPERSEDED re-confirmation (docs already terminal).
 
-## Sweep-145 scope
+## Sweep-146 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (CI) |
-| Subject | m2-renormalization-law |
-| Product mutation | None (script already terminal) |
-| Contract mutation | Status report + history + operator queue note; subject CI workflow |
+| Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
+| Subject | Digital_Double_Virtual_Workforce_4. |
+| Product mutation | None |
+| Contract mutation | Status report + history + operator queue note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-145)
+## Live Verification Results (Sweep-146)
 
-### m2-renormalization-law
+### Digital_Double_Virtual_Workforce_4.
 | Field | Value |
 |-------|--------|
-| Head (post) | bf573b4894855e1ddf1fd5837c82a8b7fa5e0790 |
+| Head | 2d235a931e3de34e2bd472968e68fcc61eb45027 |
 | Visibility | public |
 | Default branch | main |
-| CI | workflow added (parameter_free_sweep.py lock) |
+| CI | none (not expected) |
 | Releases / Tags | none |
-| Classification | **RESEARCH** (re-confirmed; Sweep-122/136 lock intact + Sweep-145 CI) |
+| Classification | **SUPERSEDED** (re-confirmed; Sweep-075 lineage intact) |
 | GitHub archived | false |
-| Docs | README, CLAIM_STATUS.md, FALSIFICATION.md, GOVERNANCE.md, LICENSE |
-| Security | Pure numeric lock script; no secrets |
-| Claim | level 1 provisional scaling ansatz; explicit non-claims enforced |
+| Docs | README.md only (classification banner + successor pointer) |
+| Security | Empty product surface; no secrets |
+| Claim | level 0; empty predecessor |
 
 ## Classification (canonical)
 
@@ -48,7 +48,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-134 claim-cap), SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
 
-DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), Digital_Double_Virtual_Workforce_4., **Digital_Double_Virtual_Workforce_4.2 (Sweep-137 claim-cap)**, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
+DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), **Digital_Double_Virtual_Workforce_4. (Sweep-146 re-confirm)**, **Digital_Double_Virtual_Workforce_4.2 (Sweep-137 claim-cap)**, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
 CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 only).
 
@@ -70,7 +70,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -85,10 +85,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-145 |
+| Criterion | Sweep-146 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| m2-renormalization-law RESEARCH re-confirmation + CI | MET |
+| Digital_Double_Virtual_Workforce_4. SUPERSEDED re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -96,4 +96,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed RESEARCH re-confirmation + CI workflow; stop for subject (first CI run remains pending).
+One governed SUPERSEDED re-confirmation; stop for subject (GitHub archive flag remains operator-only).
