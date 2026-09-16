@@ -1,36 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-16T16:19Z (autonomous Sweep-146)
+**Updated:** 2026-09-16T17:20Z (autonomous Sweep-147)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `Digital_Double_Virtual_Workforce_4.` — SUPERSEDED re-confirmation (docs already terminal).
+**This cycle:** Random select `Digital_Double_virtual_workforce` — ACTIVE re-confirmation (docs/CI/SECURITY already terminal).
 
-## Sweep-146 scope
+## Sweep-147 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | Digital_Double_Virtual_Workforce_4. |
+| Subject | Digital_Double_virtual_workforce |
 | Product mutation | None |
 | Contract mutation | Status report + history + operator queue note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-146)
+## Live Verification Results (Sweep-147)
 
-### Digital_Double_Virtual_Workforce_4.
+### Digital_Double_virtual_workforce
 | Field | Value |
 |-------|--------|
-| Head | 2d235a931e3de34e2bd472968e68fcc61eb45027 |
+| Head | 342b7e81c4ec8aa8f47d5787b9b05daa884efc86 |
 | Visibility | public |
 | Default branch | main |
-| CI | none (not expected) |
+| CI | Digital Double CI (python-core smoke) — latest run #17 conclusion=success |
 | Releases / Tags | none |
-| Classification | **SUPERSEDED** (re-confirmed; Sweep-075 lineage intact) |
+| Classification | **ACTIVE** (re-confirmed; Sweep-140 SECURITY.md lineage intact) |
 | GitHub archived | false |
-| Docs | README.md only (classification banner + successor pointer) |
-| Security | Empty product surface; no secrets |
-| Claim | level 0; empty predecessor |
+| Docs | README.md, CANONICAL.md, SECURITY.md, nested package READMEs |
+| Security | SECURITY.md present; pure-Python core; no committed secrets on this line |
+| Claim | level consistent with ACTIVE public canonical; frontend experimental |
+| Open PRs | #5/#6 Dependabot (operator), #7 draft evidence journal (operator) |
 
 ## Classification (canonical)
 
@@ -85,10 +86,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-146 |
+| Criterion | Sweep-147 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| Digital_Double_Virtual_Workforce_4. SUPERSEDED re-confirmation | MET |
+| Digital_Double_virtual_workforce ACTIVE re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -96,4 +97,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed SUPERSEDED re-confirmation; stop for subject (GitHub archive flag remains operator-only).
+One governed ACTIVE re-confirmation; stop for subject (Dependabot merges, evidence PR #7, and release tags remain operator-only).
