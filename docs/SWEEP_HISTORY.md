@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-16 — Sweep-149 (select: ADL-Governance PORTFOLIO_STATE)
+
+**Agent:** Grok (ADL-SEEM governed / ADL-BASILISK)
+**Selection method:** Highest-value bounded governance drift (PORTFOLIO_STATE.md dated 2026-08-23 vs live 2026-09-16 census and Sweep-148 status).
+**Subject:** ADL-Governance (this repository)
+**Subject head (pre):** ca1462d04401114b4e369ec3a2e7b12bd283a6ad
+**Subject lock commit:** 36b7ad2f113f8716b858dae0dad853e1442690e6 (PORTFOLIO_STATE.md)
+**Classification:** **ACTIVE** (re-confirmed)
+
+### DISCOVER
+
+Live census total_count 76. PORTFOLIO_STATE.md frozen at 2026-08-23 priority queue and status table. PORTFOLIO_STATUS_REPORT.md and repository_registry.md already current to Sweep-148. m2-renormalization-law CI runs 1–3 all success. coherence-drive master audit 2026-09-16 present. Operator queue residual items unchanged (archive flags, tags, Dependabot, .env).
+
+### AUDIT
+
+- Drift between locked state file and current registry/status reports.
+- No product surface mutation required; pure governance alignment.
+- Compatible with LIFECYCLE.md MAINTAIN path for this repo.
+- No security, CI, or claim elevation issues introduced.
+
+### IMPLEMENT (safe, idempotent)
+
+- Updated docs/PORTFOLIO_STATE.md to 2026-09-16 post-Sweep-148 state: refreshed priority queue, system status table, rules (operator-only actions explicit).
+- No other files mutated this slice; history appended separately.
+
+### CLASSIFY
+
+ACTIVE: governing constitution/registry remains authoritative after state refresh.
+
+### Exit
+
+Subject termination for this slice met (state alignment). Portfolio-wide termination not met. One governed state refresh; stop.
+
+---
+
 ## 2026-09-16 — Sweep-148 (select: CFT-v3.1)
 
 **Agent:** Grok (ADL-SEEM governed)
