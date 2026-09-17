@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-17T20:15Z (autonomous Sweep-151)
+**Updated:** 2026-09-17T23:22Z (autonomous Sweep-152)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `Agent-Snake` — ARCHIVED re-confirmation (ARCHIVED.md + README already terminal).
+**This cycle:** Random select `fantom_trading_bot_2` — ARCHIVED re-confirmation (ARCHIVED.md + README already terminal).
 
-## Sweep-151 scope
+## Sweep-152 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | Agent-Snake |
+| Subject | fantom_trading_bot_2 |
 | Product mutation | None |
 | Contract mutation | Status report + history + operator queue residual note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-151)
+## Live Verification Results (Sweep-152)
 
-### Agent-Snake
+### fantom_trading_bot_2
 | Field | Value |
 |-------|--------|
-| Head | 0151577560ff2f839fcb45ca1fc88d3ca63dd7da |
+| Head | 0662d4850f3e41d18be8bd963847dbed06ccc7db |
 | Visibility | public |
 | Default branch | main |
 | CI | none |
-| Local tests | none executable |
+| Local tests | none (syntax-invalid stubs) |
 | Releases / Tags | none |
-| Classification | **ARCHIVED** (re-confirmed; ARCHIVED.md present) |
+| Classification | **ARCHIVED** (re-confirmed; ARCHIVED.md + README present from Sweep-079/144) |
 | GitHub archived | false (flag PENDING operator) |
-| Docs | ARCHIVED.md, README.md (banner), README.txt |
-| Security | no secrets; stub surface only |
-| Claim | none active (historical aspirational only) |
+| Docs | ARCHIVED.md, README.md (claim table + non-claims) |
+| Security | no secrets; historical stubs only (FrontRunning/SandwichBot explicitly unimplemented) |
+| Claim | none active (strategies execute/profit = unsupported; safe = false) |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -57,7 +57,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144)**, **`Agent-Snake` (Sweep-151 re-confirm)**.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144 / Sweep-152)**, **`Agent-Snake` (Sweep-151 re-confirm)**.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (76)
@@ -88,10 +88,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-151 |
+| Criterion | Sweep-152 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| Agent-Snake ARCHIVED re-confirmation | MET |
+| fantom_trading_bot_2 ARCHIVED re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
