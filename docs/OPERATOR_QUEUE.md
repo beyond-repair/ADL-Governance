@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-151)
+## Open items (as of Sweep-152)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-152: fantom_trading_bot_2 ARCHIVED re-confirmed (ARCHIVED.md + README already terminal from Sweep-079/144; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-151: Agent-Snake ARCHIVED re-confirmed (ARCHIVED.md + README already terminal; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-150: seem-identity-unifier RESEARCH re-confirmed (docs/CI/tests/claim contract already terminal from Sweep-118; local pytest 5/5 + CI green; no subject mutation); no new operator action required for subject.
 - Sweep-148: CFT-v3.1 SUPERSEDED re-confirmed (README banner already terminal from 2026-08-17; registry SUPERSEDED row locked this cycle; no subject mutation); GitHub archive flag still PENDING.
