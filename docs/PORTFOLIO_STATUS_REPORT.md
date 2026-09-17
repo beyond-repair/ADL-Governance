@@ -1,36 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-16T20:05Z (autonomous Sweep-148)
+**Updated:** 2026-09-17T02:15Z (autonomous Sweep-150)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `CFT-v3.1` — SUPERSEDED re-confirmation + registry lock (docs already terminal).
+**This cycle:** Random select `seem-identity-unifier` — RESEARCH re-confirmation (docs/CI/tests already terminal).
 
-## Sweep-148 scope
+## Sweep-150 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | CFT-v3.1 |
+| Subject | seem-identity-unifier |
 | Product mutation | None |
-| Contract mutation | Status report + history + registry SUPERSEDED row + operator queue note |
+| Contract mutation | Status report + history + operator queue residual note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-148)
+## Live Verification Results (Sweep-150)
 
-### CFT-v3.1
+### seem-identity-unifier
 | Field | Value |
 |-------|--------|
-| Head | 6eafbdc692edbe970eabc866ec811ec79079daf2 |
+| Head | 03cd4577ac12d90e5dbb7a44149180545a9d9623 |
 | Visibility | public |
 | Default branch | main |
-| CI | none (not required) |
+| CI | green (runs 1–2 success; latest 34172670461) |
+| Local tests | 5 passed (2026-09-17) |
 | Releases / Tags | none |
-| Classification | **SUPERSEDED** (re-confirmed; README banner 2026-08-17; registry lock this cycle) |
+| Classification | **RESEARCH** (re-confirmed; claim-capped MODULE_SURFACE) |
 | GitHub archived | false |
-| Docs | README.md (SUPERSEDED + successor table), two historical .tex papers |
-| Security | static TeX only; no secrets |
-| Claim | level 0 for current validation; prefer v3.3 baseline |
+| Docs | README claim contract, GOVERNANCE.md, docs/CLAIM.md |
+| Security | pure identity map + tests; no secrets |
+| Claim | MODULE_SURFACE; closes Q-FUNC-003; no SUPERSEDES licensed |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -43,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / re-confirmed Sweep-130. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
 
 ### SUPERSEDED
 
@@ -87,10 +88,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-148 |
+| Criterion | Sweep-150 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| CFT-v3.1 SUPERSEDED re-confirmation + registry lock | MET |
+| seem-identity-unifier RESEARCH re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -98,4 +99,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed SUPERSEDED re-confirmation + registry lock; stop for subject (GitHub archive flag remains operator-only).
+One governed RESEARCH re-confirmation; stop for subject (no further autonomous mutation required until drift).
