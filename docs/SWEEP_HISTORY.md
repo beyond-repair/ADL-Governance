@@ -2,6 +2,47 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-17 — Sweep-151 (select: Agent-Snake)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 76). Subject: `Agent-Snake`.
+**Subject head (pre/post):** `0151577560ff2f839fcb45ca1fc88d3ca63dd7da`
+**Subject lock commit:** none (ARCHIVED.md + README banner already terminal)
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Public repository. No primary language declared (stub Python files present). Description absent. Tree (11 entries): ARCHIVED.md, README.md, README.txt, autogpt_agent.py (stub), autogpt_ai_agent (1).py, create_agent (1).py, requirements (1).txt, test (1).py, test_data (1).csv, train_agent (1).py, train_data (1).csv. Size small. Open issues 0. Last activity historical. No CI workflows, no pyproject, no LICENSE, no tests executable without external data assumptions. ARCHIVED.md present stating "This repository is no longer maintained. See ADL-Governance." README.md is minimal stub describing intent as AutoGPT module for Python code generation via ML/NN.
+
+### AUDIT
+
+- Already listed in repository_registry.md ARCHIVED queue and archive_queue.md lineage.
+- ARCHIVED.md present and points to ADL-Governance (LIFECYCLE.md compliance for ARCHIVED state).
+- No CI, no runnable test suite, no claim contracts, no security surface (no secrets, no dependencies locked).
+- Duplicate-named files with "(1)" suffix indicate incomplete/cleanup state; no canonical implementation to preserve beyond historical record.
+- No undefined components relative to terminal ARCHIVED class (historical only).
+- No stale registry entries for this subject beyond the open GitHub archive flag (operator-only).
+- No critical CI failures (none exist).
+- No duplicate canonical implementations requiring merge.
+- No critical security issues.
+- No unsupported claims (README is aspirational/historical only; no active claims).
+- Compatible with ARCHIVED path: historical, no further autonomous action.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. ARCHIVED.md and README already terminal; no product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no file renames.
+- Governance registry updated this cycle (status report + history + operator queue residual note confirming Agent-Snake in archive flag queue).
+
+### CLASSIFY
+
+ARCHIVED: historical AutoGPT-adjacent ML agent experiment; terminal docs present; no active development surface. Target state for ARCHIVED class achieved.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (no undefined components relative to class, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed ARCHIVED re-confirmation; stop.
+
+---
+
 ## 2026-09-16 — Sweep-150 (select: seem-identity-unifier)
 
 **Agent:** Grok (ADL-SEEM governed)

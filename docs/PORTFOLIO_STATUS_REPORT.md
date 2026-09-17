@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-17T02:15Z (autonomous Sweep-150)
+**Updated:** 2026-09-17T20:15Z (autonomous Sweep-151)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `seem-identity-unifier` — RESEARCH re-confirmation (docs/CI/tests already terminal).
+**This cycle:** Random select `Agent-Snake` — ARCHIVED re-confirmation (ARCHIVED.md + README already terminal).
 
-## Sweep-150 scope
+## Sweep-151 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | seem-identity-unifier |
+| Subject | Agent-Snake |
 | Product mutation | None |
 | Contract mutation | Status report + history + operator queue residual note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-150)
+## Live Verification Results (Sweep-151)
 
-### seem-identity-unifier
+### Agent-Snake
 | Field | Value |
 |-------|--------|
-| Head | 03cd4577ac12d90e5dbb7a44149180545a9d9623 |
+| Head | 0151577560ff2f839fcb45ca1fc88d3ca63dd7da |
 | Visibility | public |
 | Default branch | main |
-| CI | green (runs 1–2 success; latest 34172670461) |
-| Local tests | 5 passed (2026-09-17) |
+| CI | none |
+| Local tests | none executable |
 | Releases / Tags | none |
-| Classification | **RESEARCH** (re-confirmed; claim-capped MODULE_SURFACE) |
-| GitHub archived | false |
-| Docs | README claim contract, GOVERNANCE.md, docs/CLAIM.md |
-| Security | pure identity map + tests; no secrets |
-| Claim | MODULE_SURFACE; closes Q-FUNC-003; no SUPERSEDES licensed |
+| Classification | **ARCHIVED** (re-confirmed; ARCHIVED.md present) |
+| GitHub archived | false (flag PENDING operator) |
+| Docs | ARCHIVED.md, README.md (banner), README.txt |
+| Security | no secrets; stub surface only |
+| Claim | none active (historical aspirational only) |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -57,7 +57,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144)**.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144)**, **`Agent-Snake` (Sweep-151 re-confirm)**.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (76)
@@ -73,7 +73,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, `CFT-v3.1`, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, `CFT-v3.1`, **Agent-Snake**, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -88,10 +88,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-150 |
+| Criterion | Sweep-151 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| seem-identity-unifier RESEARCH re-confirmation | MET |
+| Agent-Snake ARCHIVED re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -99,4 +99,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed RESEARCH re-confirmation; stop for subject (no further autonomous mutation required until drift).
+One governed ARCHIVED re-confirmation; stop for subject (no further autonomous mutation required until drift).
