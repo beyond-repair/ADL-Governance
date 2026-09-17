@@ -2,6 +2,48 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-17 — Sweep-152 (select: fantom_trading_bot_2)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 76). Subject: `fantom_trading_bot_2`.
+**Subject head (pre/post):** `0662d4850f3e41d18be8bd963847dbed06ccc7db`
+**Subject lock commit:** none (ARCHIVED.md + README banner already terminal from Sweep-079 / Sweep-144)
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Language: Python (single incomplete file). Description absent. Tree (4 entries): .gitignore, ARCHIVED.md, README.md, "fantom 19.py". Size small. Open issues 0. Last activity historical (pre-governance locks). No CI workflows, no tests, no pyproject, no LICENSE. ARCHIVED.md present (locked Sweep-079: "Archived. Historical trading experiment. Do not use as ACTIVE dependency. Classification locked Sweep-079 (2026-09-06): ARCHIVED."). README.md classifies as ARCHIVED, documents stubs only, explicitly non-claims on execution/profit/safety, points to successor names without SUPERSEDES, and links ADL-Governance.
+
+Code surface: Enum strategies (including FrontRunning/SandwichBot as unimplemented stubs), SmartContract class with placeholder methods returning constants or printing; broken indentation and incomplete function bodies (syntax invalid as Python). No exchange client, no measured PnL, no security surface beyond historical names.
+
+### AUDIT
+
+- Already listed in repository_registry.md ARCHIVED queue and PORTFOLIO_STATUS_REPORT.md (Sweep-079 / re-confirmed Sweep-144).
+- ARCHIVED.md and README present and compliant with LIFECYCLE.md for ARCHIVED state.
+- No CI, no runnable tests, no claim contracts elevating beyond historical, no secrets.
+- No undefined/undocumented components relative to terminal ARCHIVED class (historical sketch only).
+- No stale registry entries requiring agent action beyond open GitHub archive flag (operator-only).
+- No critical CI failures (none exist).
+- No duplicate canonical implementations requiring merge (successors listed as related names only).
+- No critical security issues (stubs; FrontRunning/SandwichBot explicitly non-operational).
+- No unsupported claims (README table: strategies execute/profit = unsupported; safe to run = false).
+- Compatible with ARCHIVED path: historical, no further autonomous action.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. ARCHIVED.md and README already terminal; no product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no file renames, no syntax repair (would alter historical artifact).
+- Governance registry updated this cycle (status report + history + operator queue residual note confirming fantom_trading_bot_2 remains in archive flag queue).
+
+### CLASSIFY
+
+ARCHIVED: historical 2023-era Python trading strategy sketch with placeholder stubs; terminal docs present; no active development surface. Target state for ARCHIVED class achieved.
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (no undefined components relative to class, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed ARCHIVED re-confirmation; stop.
+
+---
+
 ## 2026-09-17 — Sweep-151 (select: Agent-Snake)
 
 **Agent:** Grok (ADL-SEEM governed)
