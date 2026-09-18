@@ -2,6 +2,48 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-18 — Sweep-154 (select: LegionOS)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 76). Subject: `LegionOS`.
+**Subject head (pre/post):** `e3ce1f510b27358bfe67cf11ac755f37332bb64a`
+**Subject lock commit:** none (docs, CI, claim-cap, RESEARCH.md already terminal from Sweep-068/073/095)
+**Classification:** **RESEARCH** (re-confirmed)
+
+### DISCOVER
+
+Public repository. No primary language (docs + pytest only). Description absent on search surface. Tree (15 entries): README.md (RESEARCH / Claim level 0 explicit), RESEARCH.md, GOVERNANCE.md, LICENSE, SECURITY.md, docs/{architecture,interfaces,security,open-questions}.md, tests/test_docs.py, .github/workflows/ci.yml. Size small. Open issues 0. Last push 2026-09-07 (Sweep-095). CI: 3 success runs (latest 34072294960 on head e3ce1f51). No product runtime, no brains/, no knowledge_graph/, no sandbox code.
+
+README states classification RESEARCH, claim level 0 (Idea), maturity 1 (architectural notes only), links ADL-Governance, explicitly non-claims on autonomy/profitability/uptime.
+
+### AUDIT
+
+- Already classified RESEARCH (Sweep-068 claim-cap; re-confirmed Sweep-073 / Sweep-095); RESEARCH.md + README claim contract present and claim-capped at 0.
+- Required docs present and tested; architecture marked INTENT ONLY; forbidden uncapped product phrases gated by tests.
+- CI green (docs-existence only); no executable product surface.
+- No undefined/undocumented components relative to claim level 0 / RESEARCH class.
+- No stale registry entries requiring agent action (listed in census; not in named locks but compliant).
+- No critical CI failures.
+- No duplicate canonical implementations requiring autonomous merge (related OS sketches remain distinct; Auto_Legion SUPERSEDED separately).
+- No critical security issues (docs-only; SECURITY.md present; no secrets/lockfiles).
+- No unsupported claims (explicit non-claims enforced; tests block product language).
+- Compatible with RESEARCH path (experimental holarchy sketch; unvalidated for promotion to ACTIVE).
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. Docs, tests, CI, claim contract, RESEARCH.md already terminal; no product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no file renames.
+- Governance registry updated this cycle (status report + history + operator queue residual note).
+
+### CLASSIFY
+
+RESEARCH: claim-capped level-0 holarchy concept sketch (5-layer Founder/Builder/Growth/Operations/Agent Factory); docs + docs-CI only; no runtime. Target state for RESEARCH class achieved (tests + CI + docs + claim cap).
+
+### Exit
+
+Subject termination conditions met for RESEARCH class (no undefined components relative to cap, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed RESEARCH re-confirmation; stop.
+
+---
+
 ## 2026-09-17 — Sweep-153 (select: SEEM-Cognitive_Microservice)
 
 **Agent:** Grok (ADL-SEEM governed)
