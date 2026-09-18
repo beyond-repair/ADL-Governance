@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-153)
+## Open items (as of Sweep-154)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-154: LegionOS RESEARCH re-confirmed (docs/CI/claim-cap/RESEARCH.md already terminal from Sweep-068/073/095; no subject mutation); no new operator action required for subject.
 - Sweep-153: SEEM-Cognitive_Microservice SUPERSEDED re-confirmed (README banner + registry already terminal; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-152: fantom_trading_bot_2 ARCHIVED re-confirmed (ARCHIVED.md + README already terminal from Sweep-079/144; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-151: Agent-Snake ARCHIVED re-confirmed (ARCHIVED.md + README already terminal; no subject mutation); GitHub archive flag still PENDING.
