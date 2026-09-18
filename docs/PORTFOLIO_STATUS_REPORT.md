@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-17T23:22Z (autonomous Sweep-152)
+**Updated:** 2026-09-17T23:01Z (autonomous Sweep-153)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `fantom_trading_bot_2` — ARCHIVED re-confirmation (ARCHIVED.md + README already terminal).
+**This cycle:** Random select `SEEM-Cognitive_Microservice` — SUPERSEDED re-confirmation (README banner + registry already terminal).
 
-## Sweep-152 scope
+## Sweep-153 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | fantom_trading_bot_2 |
+| Subject | SEEM-Cognitive_Microservice |
 | Product mutation | None |
 | Contract mutation | Status report + history + operator queue residual note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-152)
+## Live Verification Results (Sweep-153)
 
-### fantom_trading_bot_2
+### SEEM-Cognitive_Microservice
 | Field | Value |
 |-------|--------|
-| Head | 0662d4850f3e41d18be8bd963847dbed06ccc7db |
+| Head | 5262fc89259fafc0d1c5155e5cbeb859be4d989f |
 | Visibility | public |
 | Default branch | main |
 | CI | none |
-| Local tests | none (syntax-invalid stubs) |
+| Local tests | none visible |
 | Releases / Tags | none |
-| Classification | **ARCHIVED** (re-confirmed; ARCHIVED.md + README present from Sweep-079/144) |
+| Classification | **SUPERSEDED** (re-confirmed; README banner + registry from prior sweeps) |
 | GitHub archived | false (flag PENDING operator) |
-| Docs | ARCHIVED.md, README.md (claim table + non-claims) |
-| Security | no secrets; historical stubs only (FrontRunning/SandwichBot explicitly unimplemented) |
-| Claim | none active (strategies execute/profit = unsupported; safe = false) |
+| Docs | README.md SUPERSEDED banner → sovereign-clean-room; BLUEPRINT.md present |
+| Security | no secrets; local-first design |
+| Claim | none active (historical surface only) |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -48,7 +48,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### SUPERSEDED
 
-SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-134 claim-cap), SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
+SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-134 claim-cap), **SEEM-Cognitive_Microservice (Sweep-153 re-confirm)**, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room **for new work only** (identity collapse forbidden by seem-identity-unifier).
 
 DigitalDoubleVirtualWorkforce3.5 (Sweep-129 lock), **Digital_Double_Virtual_Workforce_4. (Sweep-146 re-confirm)**, **Digital_Double_Virtual_Workforce_4.2 (Sweep-137 claim-cap)**, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
 
@@ -73,7 +73,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Dependabot PRs #5/#6 + evidence PR #7 on workforce | Medium | OPEN |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN |
 | Open Dependabot HIGH on digital-double-mobile | High | OPEN |
-| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, `CFT-v3.1`, **Agent-Snake**, …) | Low–Medium | OPEN |
+| Archive flags not applied (`genieGPT`, `seem-block-system`, `Digital_Double_Virtual_Workforce_4.2`, `ftmA.I.bot`, `DigitalDoubleVirtualWorkforce3.5`, `smart_home_BCI`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Digital_Double_Virtual_Workforce_4.`, `CFT-v3.1`, **Agent-Snake**, SEEM-Cognitive_Microservice, …) | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN |
 | VSA completeness beyond unit CI | High (claim) | UNVERIFIED |
 | SUPERSEDED vs identity-map non-collapse | Medium | OPEN (documented) |
@@ -88,10 +88,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-152 |
+| Criterion | Sweep-153 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| fantom_trading_bot_2 ARCHIVED re-confirmation | MET |
+| SEEM-Cognitive_Microservice SUPERSEDED re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -99,4 +99,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ARCHIVED re-confirmation; stop for subject (no further autonomous mutation required until drift).
+One governed SUPERSEDED re-confirmation; stop for subject (no further autonomous mutation required until drift).

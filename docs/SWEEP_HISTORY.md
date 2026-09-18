@@ -2,6 +2,48 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-17 — Sweep-153 (select: SEEM-Cognitive_Microservice)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 76). Subject: `SEEM-Cognitive_Microservice`.
+**Subject head (pre/post):** `5262fc89259fafc0d1c5155e5cbeb859be4d989f`
+**Subject lock commit:** none (README SUPERSEDED banner + registry already terminal)
+**Classification:** **SUPERSEDED** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Languages: Python (backend) + TypeScript/React (frontend). Description absent on search surface. Tree (53 entries): README.md (explicit SUPERSEDED banner pointing to sovereign-clean-room), BLUEPRINT.md (Resonator VSA ℂ^16384, BaNEL, Dream Phase, SHACL, L0 Supersede Graph architecture), INSTALLATION.md, MANIFEST.md, STARTUP.md, backend/ (main.py, requirements.txt, seem/{api,core,governance,learning,plugins}), src/ (App.tsx + Dashboard/BaNELMonitor/DreamPhaseViewer/L0GraphViewer/VSAExplorer), package.json + Vite/TS config, no .github/workflows, no tests/, no root LICENSE visible. Size modest. Open issues 0. Last activity pre-governance terminal locks. No CI, no pyproject, no runnable test suite present.
+
+README states: “⚠️ SUPERSEDED: This repository is historical archive only. All active development has consolidated into **sovereign-clean-room**. Parallel naming of the cognitive microservice — do not develop further.”
+
+### AUDIT
+
+- Already listed under SUPERSEDED in PORTFOLIO_STATUS_REPORT.md (with SEEM-Cognitive-Microservice, SEEM-2.0-Self-Evolving-Emergent-Mind, etc.) → sovereign-clean-room for new work only; identity collapse forbidden by seem-identity-unifier.
+- README banner present and compliant with LIFECYCLE.md for SUPERSEDED state.
+- No CI, no executable tests, no active claim contracts elevating beyond historical surface.
+- No undefined/undocumented components relative to terminal SUPERSEDED class.
+- No stale registry entries requiring agent action.
+- No critical CI failures (none exist).
+- No duplicate canonical implementations requiring autonomous merge (successor explicit).
+- No critical security issues (no secrets; local-first design).
+- No unsupported claims (README already non-claims for active use).
+- Compatible with SUPERSEDED path: historical, no further autonomous product mutation.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. README banner and registry already terminal; no product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no file renames.
+- Governance registry updated this cycle (status report + history + operator queue residual note).
+
+### CLASSIFY
+
+SUPERSEDED: historical SEEM 2.0 cognitive microservice (VSA/BaNEL/Dream/SHACL/L0); parallel naming; successor sovereign-clean-room; terminal docs present; no active development surface. Target state for SUPERSEDED class achieved.
+
+### Exit
+
+Subject termination conditions met for SUPERSEDED class (no undefined components relative to class, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed SUPERSEDED re-confirmation; stop.
+
+---
+
 ## 2026-09-17 — Sweep-152 (select: fantom_trading_bot_2)
 
 **Agent:** Grok (ADL-SEEM governed)
