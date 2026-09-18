@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-17T23:01Z (autonomous Sweep-153)
+**Updated:** 2026-09-18T20:13Z (autonomous Sweep-154)
 **Census:** Live `user:beyond-repair` search total_count **76** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `SEEM-Cognitive_Microservice` — SUPERSEDED re-confirmation (README banner + registry already terminal).
+**This cycle:** Random select `LegionOS` — RESEARCH re-confirmation (docs/CI/claim-cap already terminal).
 
-## Sweep-153 scope
+## Sweep-154 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | SEEM-Cognitive_Microservice |
+| Subject | LegionOS |
 | Product mutation | None |
 | Contract mutation | Status report + history + operator queue residual note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-153)
+## Live Verification Results (Sweep-154)
 
-### SEEM-Cognitive_Microservice
+### LegionOS
 | Field | Value |
 |-------|--------|
-| Head | 5262fc89259fafc0d1c5155e5cbeb859be4d989f |
+| Head | e3ce1f510b27358bfe67cf11ac755f37332bb64a |
 | Visibility | public |
 | Default branch | main |
-| CI | none |
-| Local tests | none visible |
+| CI | docs-ci success (run 34072294960) |
+| Local tests | docs-existence (pytest) |
 | Releases / Tags | none |
-| Classification | **SUPERSEDED** (re-confirmed; README banner + registry from prior sweeps) |
-| GitHub archived | false (flag PENDING operator) |
-| Docs | README.md SUPERSEDED banner → sovereign-clean-room; BLUEPRINT.md present |
-| Security | no secrets; local-first design |
-| Claim | none active (historical surface only) |
+| Classification | **RESEARCH** (re-confirmed; claim level 0; Sweep-068/073/095 lineage) |
+| GitHub archived | false |
+| Docs | README RESEARCH/claim-0, RESEARCH.md, GOVERNANCE.md, SECURITY.md, docs/* INTENT ONLY |
+| Security | docs-only surface; no secrets; SECURITY.md present |
+| Claim | level 0 (Idea); no product claims |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -44,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110.
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** .
 
 ### SUPERSEDED
 
@@ -88,10 +88,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-153 |
+| Criterion | Sweep-154 |
 |-----------|-----------|
 | Named census of 76 | MET |
-| SEEM-Cognitive_Microservice SUPERSEDED re-confirmation | MET |
+| LegionOS RESEARCH re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 76-complete verified rows | NOT MET |
@@ -99,4 +99,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed SUPERSEDED re-confirmation; stop for subject (no further autonomous mutation required until drift).
+One governed RESEARCH re-confirmation; stop for subject (no further autonomous mutation required until drift).
