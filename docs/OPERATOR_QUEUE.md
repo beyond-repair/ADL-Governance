@@ -2,26 +2,27 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-154)
+## Open items (as of Sweep-155)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
 - Rotate / remove committed `.env` on digital-double-mobile; resolve Dependabot HIGH alerts.
-- Expand adl-capability-matrix to live 76-row census.
+- Expand adl-capability-matrix to live 77-row census.
 - Operator review of any claim-level elevation requests.
 - History rewrite or force-push: never by agent.
 - Optional: remove or LFS-migrate large committed model weight in Digital_Double_Virtual_Workforce_4.2 (hygiene only; do not delete without operator decision).
-- Review/merge open Dependabot PRs #5/#6 and draft evidence PR #7 on Digital_Double_virtual_workforce.
+- Review/merge open Dependabot PRs #3/#4/#5/#6 and draft evidence PR #7 on Digital_Double_virtual_workforce.
 
 ## Residual notes from recent sweeps
 
+- Sweep-155: Digital_Double_virtual_workforce ACTIVE re-confirmed (docs/CI/SECURITY/CANONICAL already terminal from Sweep-140/147; no subject mutation); Dependabot merges, evidence PR #7, and release tags still PENDING.
 - Sweep-154: LegionOS RESEARCH re-confirmed (docs/CI/claim-cap/RESEARCH.md already terminal from Sweep-068/073/095; no subject mutation); no new operator action required for subject.
 - Sweep-153: SEEM-Cognitive_Microservice SUPERSEDED re-confirmed (README banner + registry already terminal; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-152: fantom_trading_bot_2 ARCHIVED re-confirmed (ARCHIVED.md + README already terminal from Sweep-079/144; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-151: Agent-Snake ARCHIVED re-confirmed (ARCHIVED.md + README already terminal; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-150: seem-identity-unifier RESEARCH re-confirmed (docs/CI/tests/claim contract already terminal from Sweep-118; local pytest 5/5 + CI green; no subject mutation); no new operator action required for subject.
 - Sweep-148: CFT-v3.1 SUPERSEDED re-confirmed (README banner already terminal from 2026-08-17; registry SUPERSEDED row locked this cycle; no subject mutation); GitHub archive flag still PENDING.
-- Sweep-147: Digital_Double_virtual_workforce ACTIVE re-confirmed (docs/CI/SECURITY already terminal from Sweep-140; no subject mutation); Dependabot merges, evidence PR #7, and release tags still PENDING.
+- Sweep-147: Digital_Double_virtual_workforce ACTIVE re-confirmed (docs/CI/SECURITY already terminal from Sweep-140; no subject mutation); Dependabot merges, evidence PR #7, and release tags still PENDING operator.
 - Sweep-146: Digital_Double_Virtual_Workforce_4. SUPERSEDED re-confirmed (docs already terminal from Sweep-075 lineage; empty product surface; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-145: m2-renormalization-law RESEARCH re-confirmed; CI workflow added for parameter_free_sweep.py lock; first CI run PENDING.
 - Sweep-144: fantom_trading_bot_2 ARCHIVED re-confirmed (docs already terminal from Sweep-079; no subject mutation); GitHub archive flag still PENDING.
