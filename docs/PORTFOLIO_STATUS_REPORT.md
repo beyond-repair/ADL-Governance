@@ -1,38 +1,38 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-19T03:03Z (autonomous Sweep-155)
+**Updated:** 2026-09-19T16:25Z (autonomous Sweep-156)
 **Census:** Live `user:beyond-repair` search total_count **77** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `Digital_Double_virtual_workforce` — ACTIVE re-confirmation (docs/CI/SECURITY/CANONICAL already terminal).
+**This cycle:** Random select `-Py2APK-main` — ARCHIVED re-confirmation (docs already terminal from Sweep-142).
 
-## Sweep-155 scope
+## Sweep-156 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → (no subject mutation) |
-| Subject | Digital_Double_virtual_workforce |
+| Subject | -Py2APK-main |
 | Product mutation | None |
 | Contract mutation | Status report + history + operator queue residual note |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-155)
+## Live Verification Results (Sweep-156)
 
-### Digital_Double_virtual_workforce
+### -Py2APK-main
 | Field | Value |
 |-------|--------|
-| Head | 342b7e81c4ec8aa8f47d5787b9b05daa884efc86 |
+| Head | 7dbb7b0767dd336eb358d5172fe9fff3da368932 |
 | Visibility | public |
 | Default branch | main |
-| CI | python-core smoke (test_orchestrator_smoke.py) present |
-| Local tests | smoke create/assign/complete; nested digital_double/tests/* |
+| CI | none |
+| Local tests | historical stubs only |
 | Releases / Tags | none |
-| Classification | **ACTIVE** (re-confirmed; public canonical; Sweep-140/147 lineage) |
-| GitHub archived | false |
-| Docs | README ACTIVE, CANONICAL.md, SECURITY.md |
-| Security | pure-Python core; no listeners/secrets in public core; SECURITY.md present |
-| Claim | ACTIVE surface (typed agents + orchestrator v0.1.0); no inflated metrics |
-| Open issues / PRs | 5 issues; open PRs #3–#7 (Dependabot + draft NEX-INT-006) |
+| Classification | **ARCHIVED** (re-confirmed; Sweep-142 lock) |
+| GitHub archived | false (operator flag pending) |
+| Docs | ARCHIVED.md, CLAIM_STATUS.md, README banner |
+| Security | demo snapshot; no secrets/runtime services |
+| Claim | level 0 (historical sketch / demo only) |
+| Open issues / PRs | 0 |
 
 ## Classification (canonical)
 
@@ -40,7 +40,7 @@ Exactly one class per repository. Unlisted public names default to **RESEARCH** 
 
 ### ACTIVE (7)
 
-ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-room, BlockSwarm, **Digital_Double_virtual_workforce** (Sweep-155 re-confirm).
+ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
 
 ### RESEARCH (named locks + remainder)
 
@@ -57,7 +57,7 @@ CFT-v3.0 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 o
 
 ### ARCHIVED
 
-Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144 / Sweep-152)**, **`Agent-Snake` (Sweep-151 re-confirm)**.
+Documented ARCHIVED (flag pending unless noted): `smart_home_BCI` (Sweep-087 / 107 / 133 / 138), `genieGPT`, `ftmA.I.bot` (Sweep-126), `potential-garbanzo` (Sweep-135), **`-Py2APK-main` (Sweep-142 / Sweep-156 re-confirm)**, **`fantom_trading_bot_2` (Sweep-079 / re-confirmed Sweep-144 / Sweep-152)**, **`Agent-Snake` (Sweep-151 re-confirm)**.
 GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Named census (77)
@@ -88,10 +88,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-155 |
+| Criterion | Sweep-156 |
 |-----------|-----------|
 | Named census of 77 | MET |
-| Digital_Double_virtual_workforce ACTIVE re-confirmation | MET |
+| -Py2APK-main ARCHIVED re-confirmation | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 77-complete verified rows | NOT MET |
@@ -99,4 +99,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed ACTIVE re-confirmation; stop for subject (no further autonomous mutation required until drift).
+One governed ARCHIVED re-confirmation; stop for subject (no further autonomous mutation required until drift).

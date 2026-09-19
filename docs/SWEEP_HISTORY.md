@@ -2,6 +2,48 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-19 — Sweep-156 (select: -Py2APK-main)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 77). Subject: `-Py2APK-main`.
+**Subject head (pre/post):** `7dbb7b0767dd336eb358d5172fe9fff3da368932`
+**Subject lock commit:** none (ARCHIVED.md + CLAIM_STATUS.md + README banner already terminal from Sweep-142)
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Public repository. Language: Python. No description on search surface. Nested layout under `-Py2APK-main/` (historical packaging artifact). Tree includes: ARCHIVED.md (root), CLAIM_STATUS.md (root), LICENSE, README.md (banner + original demo description), frontend-config.json, pyproject.toml, py2apk/ (analyzer, builder, cli, config, gui, signing, utils, android_project with Java/Python/Chaquopy stubs, tests), build/ (stale lib + pycache). Size ~48. Open issues 0. Last push 2026-09-15. No CI workflows visible. No release tags. No product surface beyond 2025-era Chaquopy + ONNX demo sketch.
+
+ARCHIVED.md and CLAIM_STATUS.md explicitly lock classification ARCHIVED, claim level 0, Sweep-142.
+
+### AUDIT
+
+- Already classified ARCHIVED (Sweep-142); listed under ARCHIVED in PORTFOLIO_STATUS_REPORT.
+- Required terminal docs present: ARCHIVED.md, CLAIM_STATUS.md, README banner pointing to them.
+- No active CI, no executable product tests required for ARCHIVED class.
+- No undefined/undocumented components relative to historical claim surface (demo only).
+- No stale registry entries requiring agent action.
+- No critical CI failures (none exist).
+- No duplicate canonical implementations requiring autonomous merge.
+- No critical security issues (demo snapshot; no secrets; no runtime services).
+- No unsupported claims (explicit claim level 0; forbidden product language documented).
+- Compatible with ARCHIVED path: historical, no further autonomous product mutation. GitHub `archived=true` flag remains operator-only.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. ARCHIVED.md, CLAIM_STATUS.md, README banner already terminal; no product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no file renames.
+- Governance registry updated this cycle (status report + history + operator queue residual note).
+
+### CLASSIFY
+
+ARCHIVED: historical 2025-era experiment integrating Python (ONNX) into Android via Chaquopy. Target state for ARCHIVED class achieved (terminal docs + claim lock).
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class (no undefined components relative to class, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed ARCHIVED re-confirmation; stop.
+
+---
+
 ## 2026-09-18 — Sweep-155 (select: Digital_Double_virtual_workforce)
 
 **Agent:** Grok (ADL-SEEM governed)
