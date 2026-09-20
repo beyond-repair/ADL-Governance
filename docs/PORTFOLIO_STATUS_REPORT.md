@@ -1,38 +1,38 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-20T02:20Z (autonomous Sweep-157)
+**Updated:** 2026-09-20T16:16Z (autonomous Sweep-158)
 **Census:** Live `user:beyond-repair` search total_count **77** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `Sovereign-OS` — RESEARCH classification lock (docs-CI + claim-cap added).
+**This cycle:** Random select `momentum-closure` — RESEARCH claim-cap refresh (docs aligned + pytest CI added).
 
-## Sweep-157 scope
+## Sweep-158 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (safe) → TEST/CI → DOCUMENT → GOVERN |
-| Subject | Sovereign-OS |
-| Product mutation | None (docs + schema + CI only) |
-| Contract mutation | RESEARCH.md, SECURITY.md, GOVERNANCE.md, tests, docs-ci workflow, README claim-cap |
+| Subject | momentum-closure |
+| Product mutation | None (docs + unit-test CI only) |
+| Contract mutation | RESEARCH.md, CLAIM_STATUS.md, CLAIMS.md, GOVERNANCE.md, README.md, .github/workflows/ci.yml |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-157)
+## Live Verification Results (Sweep-158)
 
-### Sovereign-OS
+### momentum-closure
 | Field | Value |
 |-------|--------|
-| Head (post) | 07abf398ae1b9a8a730a9dca5e37b00ecfca2fe6 |
+| Head (post) | 47dc46e64ceaafbf4d3aaf4ec302365bb9995206 |
 | Visibility | public |
 | Default branch | main |
-| CI | docs-ci workflow added (pytest docs existence + claim-cap) |
-| Local tests | tests/test_docs.py (required docs, RESEARCH claim 0, constitution invariants, schema JSON) |
+| CI | docs-presence + new pytest ci.yml |
+| Local tests | tests/test_convergence_tensor.py (4 passed) |
 | Releases / Tags | none |
-| Classification | **RESEARCH** (locked Sweep-157) |
+| Classification | **RESEARCH** (re-confirmed Sweep-158) |
 | GitHub archived | false |
-| Docs | RESEARCH.md, SECURITY.md, GOVERNANCE.md, CONSTITUTION.md, architecture, evidence-package, MVS roadmap |
-| Security | docs/schema only; no secrets/runtime services |
-| Claim | level 0 (Idea / architectural constitution) |
-| Open issues / PRs | 0 |
+| Docs | RESEARCH.md, CLAIM_STATUS.md, CLAIMS.md, GOVERNANCE.md, COMPATIBLE_CLOSURE.md, framework review |
+| Security | pure Python bookkeeping; no secrets/runtime services |
+| Claim | level 1 (conceptual / mathematical framework) |
+| Open issues / PRs | 1 |
 
 ## Classification (canonical)
 
@@ -44,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113. `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** .
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . `ADL-Nexus` — Sweep-112 / Sweep-131. `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** .
 
 ### SUPERSEDED
 
@@ -86,13 +86,14 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Open-Energy-Fusion CI first run | Medium | PENDING (workflow added) |
 | m2-renormalization-law CI first run | Medium | PENDING (workflow added Sweep-145) |
 | Sovereign-OS first docs-ci run | Medium | PENDING (workflow added Sweep-157) |
+| momentum-closure first pytest CI run | Medium | PENDING (workflow added Sweep-158) |
 
 ## Exit criteria
 
-| Criterion | Sweep-157 |
+| Criterion | Sweep-158 |
 |-----------|-----------|
 | Named census of 77 | MET |
-| Sovereign-OS RESEARCH lock (docs + CI + claim-cap) | MET |
+| momentum-closure RESEARCH claim-cap refresh + pytest CI | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 77-complete verified rows | NOT MET |
@@ -100,4 +101,4 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | digital-double-mobile `.env` rotation | NOT MET |
 | Portfolio-wide termination | NOT MET |
 
-One governed RESEARCH classification lock with safe docs/CI; stop for subject (first CI run PENDING; no further autonomous product mutation required until drift).
+One governed RESEARCH claim-cap refresh with safe docs + unit-test CI; stop for subject (first pytest CI run PENDING; no further autonomous product mutation required until drift).
