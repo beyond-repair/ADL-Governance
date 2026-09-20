@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-156)
+## Open items (as of Sweep-157)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-157: Sovereign-OS RESEARCH locked (RESEARCH.md + SECURITY.md + GOVERNANCE.md + docs-ci + claim-cap tests + README links); first CI run PENDING; no subject product mutation; no new operator archive/release action required for subject.
 - Sweep-156: -Py2APK-main ARCHIVED re-confirmed (ARCHIVED.md + CLAIM_STATUS.md + README banner already terminal from Sweep-142; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-155: Digital_Double_virtual_workforce ACTIVE re-confirmed (docs/CI/SECURITY/CANONICAL already terminal from Sweep-140/147; no subject mutation); Dependabot merges, evidence PR #7, and release tags still PENDING.
 - Sweep-154: LegionOS RESEARCH re-confirmed (docs/CI/claim-cap/RESEARCH.md already terminal from Sweep-068/073/095; no subject mutation); no new operator action required for subject.
