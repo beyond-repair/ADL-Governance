@@ -2,6 +2,47 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-20 — Sweep-158 (select: momentum-closure)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 77). Subject: `momentum-closure`.
+**Subject head (pre):** `a69dea7ee40fda84cc4a99c269ccbccffeffe1b2`
+**Subject head (post):** `47dc46e64ceaafbf4d3aaf4ec302365bb9995206`
+**Subject lock commits:** RESEARCH.md + CLAIM_STATUS.md + CLAIMS.md + GOVERNANCE.md + README.md + .github/workflows/ci.yml
+**Classification:** **RESEARCH** (re-confirmed / claim-cap refreshed)
+
+### DISCOVER
+
+Public Python repository. Description: Full momentum closure for the Coherence Drive using surface integral of the stress tensor + Poynting flux. Tree: CLAIMS.md, CLAIM_STATUS.md, COMPATIBLE_CLOSURE.md, GOVERNANCE.md, LICENSE, README.md, RESEARCH.md, docs/MOMENTUM_CLOSURE_FRAMEWORK_REVIEW.md, momentum_closure/{__init__.py, convergence/{tensor.py,...}, geometry/*, rf_feed/*}, tests/test_convergence_tensor.py, .github/workflows/docs-presence.yml. Open issues 1. No releases/tags. Last activity 2026-09-16.
+
+### AUDIT
+
+- Already RESEARCH (Sweep-113). Claim ledger and README status table were stale (claimed tensor/tests ABSENT while blobs existed).
+- ConvergenceTensor + 4 unit tests present and pass locally.
+- Docs-presence CI only; no product pytest CI prior.
+- No undefined components relative to claim level 1.
+- No critical CI failures.
+- No duplicate canonical requiring autonomous merge.
+- No critical security issues (pure Python bookkeeping).
+- Physical residual / thrust claims correctly marked UNSUPPORTED.
+- Compatible with RESEARCH path: conceptual + numerical bookkeeping; no physical validation.
+
+### IMPLEMENT (safe, idempotent)
+
+- Updated RESEARCH.md, CLAIM_STATUS.md, CLAIMS.md, GOVERNANCE.md, README.md to reflect live verified state (tensor + tests present; claim level remains 1).
+- Added .github/workflows/ci.yml (pytest on tests/).
+- No product mutation beyond bookkeeping, no deletion, no history rewrite, no claim elevation, no release tag.
+
+### CLASSIFY
+
+RESEARCH: claim-capped level-1 conceptual/mathematical framework + ConvergenceTensor numerical bookkeeping. Target state for RESEARCH class achieved (docs aligned, unit tests + CI workflow present, claim cap enforced).
+
+### Exit
+
+Subject termination conditions met for RESEARCH class relative to autonomous scope (no undefined components relative to cap, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). First pytest CI run PENDING. Portfolio-wide termination not met. One governed RESEARCH claim-cap refresh; stop.
+
+---
+
 ## 2026-09-20 — Sweep-157 (select: Sovereign-OS)
 
 **Agent:** Grok (ADL-SEEM governed)
