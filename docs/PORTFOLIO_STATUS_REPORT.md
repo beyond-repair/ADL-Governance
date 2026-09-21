@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-21T02:08Z (autonomous Sweep-159)
+**Updated:** 2026-09-21T17:10Z (autonomous Sweep-161)
 **Census:** Live `user:beyond-repair` search total_count **77** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `ADL-Nexus` — RESEARCH re-confirm (CI green, local 17 pass / 7 xfail, no product mutation).
+**This cycle:** Random select `m2-renormalization-law` — RESEARCH re-confirm (CI green, parameter-free lock + 6 pytest pass, no product mutation).
 
-## Sweep-159 scope
+## Sweep-161 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → DOCUMENT → GOVERN |
-| Subject | ADL-Nexus |
+| Subject | m2-renormalization-law |
 | Product mutation | None |
-| Contract mutation | None (prior Sweep-131 terminal) |
+| Contract mutation | None (prior Sweep-137/139/145 terminal) |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-159)
+## Live Verification Results (Sweep-161)
 
-### ADL-Nexus
+### m2-renormalization-law
 | Field | Value |
 |-------|--------|
-| Head (post) | 873134cdf279e1725ef0e6dcf76bd56170683428 |
+| Head (post) | ad9957e8283ed0aadab0f3c1484c5aacd668a762 |
 | Visibility | public |
 | Default branch | main |
-| CI | docs-presence + pytest (latest main success, run 14) |
-| Local tests | 17 passed, 7 xfailed (claim-cap) |
+| CI | parameter-free sweep + pytest (latest main success, run 3) |
+| Local tests | parameter_free_sweep OK; 6 passed |
 | Releases / Tags | none |
-| Classification | **RESEARCH** (re-confirmed Sweep-159; prior 112/131) |
+| Classification | **RESEARCH** (re-confirmed Sweep-161; prior 122/136/145) |
 | GitHub archived | false |
-| Docs | RESEARCH.md, CLAIM_STATUS.md, GOVERNANCE.md, PRODUCT.md, ARCHITECTURE.md, ROADMAP.md, SUBSYSTEM_MAP.md |
-| Security | stdlib-only; no secrets/runtime services |
-| Claim | level 2 (local integrity + supervised stubs; live pathways UNSUPPORTED) |
+| Docs | CLAIM_STATUS.md, FALSIFICATION.md, GOVERNANCE.md, README.md |
+| Security | pure numeric; numpy/pytest CI only |
+| Claim | level 1 (provisional ansatz; hybrid ratio rejected; Stage-2 LDOS pending) |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -44,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 (CI)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . **`ADL-Nexus` — Sweep-112 / Sweep-131 / Sweep-159 (re-confirm)** . `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** .
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 / Sweep-161 (CI SUCCESS)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . **`ADL-Nexus` — Sweep-112 / Sweep-131 / Sweep-159 (re-confirm)** . `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** .
 
 ### SUPERSEDED
 
@@ -84,16 +84,16 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | ADL-Nexus spine (think/request/reality pathways) incomplete | Medium | OPEN (xfail under RESEARCH; ObjectiveEngine present) |
 | Large binary model weight committed in 4.2 merge source | Low (hygiene) | OPEN (do not delete without operator) |
 | Open-Energy-Fusion CI first run | Medium | PENDING (workflow added) |
-| m2-renormalization-law CI first run | Medium | PENDING (workflow added Sweep-145) |
+| m2-renormalization-law CI | Low | CLOSED (SUCCESS run 3, Sweep-161) |
 | Sovereign-OS first docs-ci run | Medium | PENDING (workflow added Sweep-157) |
-| momentum-closure first pytest CI run | Medium | PENDING (workflow added Sweep-158) |
+| momentum-closure first pytest CI run | Low | CLOSED (SUCCESS post Sweep-158) |
 
 ## Exit criteria
 
-| Criterion | Sweep-159 |
+| Criterion | Sweep-161 |
 |-----------|-----------|
 | Named census of 77 | MET |
-| ADL-Nexus RESEARCH re-confirm (CI green) | MET |
+| m2-renormalization-law RESEARCH re-confirm (CI green) | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 77-complete verified rows | NOT MET |
