@@ -2,6 +2,45 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-21 — Sweep-159 (select: ADL-Nexus)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 77). Subject: `ADL-Nexus`.
+**Subject head (pre/post):** `873134cdf279e1725ef0e6dcf76bd56170683428`
+**Subject lock commits:** none (prior Sweep-131 already terminal for RESEARCH class)
+**Classification:** **RESEARCH** (re-confirmed)
+
+### DISCOVER
+
+Public Python repository. Description: Local-first autonomous engineering, governance, simulation, and workforce platform. Tree: 9 layers (0–8), adapters (cleanroom/sunder stubs), core (kernel/nexus/objective/pathways), client (Godot + web), docs (ARCHITECTURE/CLAIM_STATUS/GOVERNANCE/PRODUCT/ROADMAP/SUBSYSTEM_MAP), registry YAMLs, tests (8 files), .github/workflows/ci.yml, pyproject.toml, run.py. Version 0.3.2. Open issues 0. CI present. Last push ~2026-09-10 (Sweep-131).
+
+### AUDIT
+
+- Already RESEARCH (Sweep-112 / Sweep-131). Claim level 2; spine pathways (think/request/reality) marked UNSUPPORTED with xfail.
+- Local pytest: 17 passed, 7 xfailed (claim-cap).
+- Latest main CI (run 14): success.
+- No undefined components relative to RESEARCH claim-cap.
+- No critical CI failures.
+- No duplicate canonical requiring autonomous merge.
+- No critical security issues (stdlib-only runtime; no secrets).
+- Live adapters / full workforce / product claims correctly UNSUPPORTED.
+- Compatible with RESEARCH path: layered platform skeleton + local integrity anchors + supervised workforce stubs.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. Prior Sweep-131 already completed integrity anchors + claim-cap xfails + docs alignment. No product mutation, no deletion, no history rewrite, no claim elevation, no release tag.
+- Governance registry updated this cycle (status report + history).
+
+### CLASSIFY
+
+RESEARCH: claim-capped level-2 local-first platform (layers 0–8 present; live adapters and full autonomous pathways UNSUPPORTED). Target state for RESEARCH class achieved (tests + CI green, docs claim-capped).
+
+### Exit
+
+Subject termination conditions met for RESEARCH class relative to autonomous scope (no undefined components relative to cap, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed RESEARCH re-confirmation; stop.
+
+---
+
 ## 2026-09-20 — Sweep-158 (select: momentum-closure)
 
 **Agent:** Grok (ADL-SEEM governed)
