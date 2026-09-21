@@ -2,12 +2,12 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-158)
+## Open items (as of Sweep-160)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
 - Rotate / remove committed `.env` on digital-double-mobile; resolve Dependabot HIGH alerts.
-- Expand adl-capability-matrix to live 77-row census.
+- Expand adl-capability-matrix to live 77-row census (currently locked 67; OPEN but claim-capped).
 - Operator review of any claim-level elevation requests.
 - History rewrite or force-push: never by agent.
 - Optional: remove or LFS-migrate large committed model weight in Digital_Double_Virtual_Workforce_4.2 (hygiene only; do not delete without operator decision).
@@ -15,7 +15,9 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
-- Sweep-158: momentum-closure RESEARCH claim-cap refreshed (RESEARCH.md + CLAIM_STATUS.md + CLAIMS.md + GOVERNANCE.md + README aligned to live tensor/tests; pytest ci.yml added); first pytest CI run PENDING; no subject product mutation; no new operator archive/release action required for subject.
+- Sweep-160: Portfolio discovery reconstruction; PORTFOLIO_STATE refreshed (census 77, momentum-closure CI success, ADL-Nexus re-confirm); no subject product mutation; no new operator archive/release action required.
+- Sweep-159: ADL-Nexus RESEARCH re-confirm (CI green, no mutation); no new operator action required for subject.
+- Sweep-158: momentum-closure RESEARCH claim-cap refreshed (RESEARCH.md + CLAIM_STATUS.md + CLAIMS.md + GOVERNANCE.md + README aligned to live tensor/tests; pytest ci.yml added); first pytest CI run SUCCESS; no subject product mutation; no new operator archive/release action required for subject.
 - Sweep-157: Sovereign-OS RESEARCH locked (RESEARCH.md + SECURITY.md + GOVERNANCE.md + docs-ci + claim-cap tests + README links); first CI run PENDING; no subject product mutation; no new operator archive/release action required for subject.
 - Sweep-156: -Py2APK-main ARCHIVED re-confirmed (ARCHIVED.md + CLAIM_STATUS.md + README banner already terminal from Sweep-142; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-155: Digital_Double_virtual_workforce ACTIVE re-confirmed (docs/CI/SECURITY/CANONICAL already terminal from Sweep-140/147; no subject mutation); Dependabot merges, evidence PR #7, and release tags still PENDING.
