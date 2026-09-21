@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-160)
+## Open items (as of Sweep-161)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-161: m2-renormalization-law RESEARCH re-confirm (CI SUCCESS run 3, parameter-free lock + 6 pytest; no subject mutation); gap "m2 first CI" closed; no new operator archive/release action required for subject.
 - Sweep-160: Portfolio discovery reconstruction; PORTFOLIO_STATE refreshed (census 77, momentum-closure CI success, ADL-Nexus re-confirm); no subject product mutation; no new operator archive/release action required.
 - Sweep-159: ADL-Nexus RESEARCH re-confirm (CI green, no mutation); no new operator action required for subject.
 - Sweep-158: momentum-closure RESEARCH claim-cap refreshed (RESEARCH.md + CLAIM_STATUS.md + CLAIMS.md + GOVERNANCE.md + README aligned to live tensor/tests; pytest ci.yml added); first pytest CI run SUCCESS; no subject product mutation; no new operator archive/release action required for subject.
@@ -29,7 +30,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Sweep-148: CFT-v3.1 SUPERSEDED re-confirmed (README banner already terminal from 2026-08-17; registry SUPERSEDED row locked this cycle; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-147: Digital_Double_virtual_workforce ACTIVE re-confirmed (docs/CI/SECURITY already terminal from Sweep-140; no subject mutation); Dependabot merges, evidence PR #7, and release tags still PENDING operator.
 - Sweep-146: Digital_Double_Virtual_Workforce_4. SUPERSEDED re-confirmed (docs already terminal from Sweep-075 lineage; empty product surface; no subject mutation); GitHub archive flag still PENDING.
-- Sweep-145: m2-renormalization-law RESEARCH re-confirmed; CI workflow added for parameter_free_sweep.py lock; first CI run PENDING.
+- Sweep-145: m2-renormalization-law RESEARCH re-confirmed; CI workflow added for parameter_free_sweep.py lock; first CI run PENDING (now SUCCESS).
 - Sweep-144: fantom_trading_bot_2 ARCHIVED re-confirmed (docs already terminal from Sweep-079; no subject mutation); GitHub archive flag still PENDING.
 - Sweep-143: Open-Energy-Fusion RESEARCH locked (GOVERNANCE.md + CI); first CI run PENDING.
 - Sweep-142: -Py2APK-main ARCHIVED locked (ARCHIVED.md + CLAIM_STATUS.md + README banner); GitHub archive flag still PENDING.
