@@ -2,6 +2,45 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-21 — Sweep-161 (select: m2-renormalization-law)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 77). Subject: `m2-renormalization-law`.
+**Subject head (pre/post):** `ad9957e8283ed0aadab0f3c1484c5aacd668a762`
+**Subject lock commits:** none (prior Sweep-137/139/145 terminal for RESEARCH class)
+**Classification:** **RESEARCH** (re-confirmed)
+
+### DISCOVER
+
+Public Python repository. Provisional scaling ansatz for recursive mesh weight. Tree: CLAIM_STATUS.md, FALSIFICATION.md, GOVERNANCE.md, LICENSE, README.md, m2/{__init__.py, effective_action.py, spectral.py}, scripts/parameter_free_sweep.py, tests/{test_W_law.py, test_spectral_pipeline.py}, .github/workflows/ci.yml. Open issues 0. CI present (parameter-free sweep + pytest). Last push ~2026-09-16 (Sweep-139).
+
+### AUDIT
+
+- Already RESEARCH (Sweep-122 / Sweep-136 / Sweep-145). Claim level 1; provisional ansatz; hybrid ratio rejected.
+- Local: parameter_free_sweep.py OK (W_only and W_times_geom ratios match expected); pytest 6 passed.
+- Latest main CI (run 3): success.
+- No undefined components relative to RESEARCH claim-cap.
+- No critical CI failures.
+- No duplicate canonical requiring autonomous merge.
+- No critical security issues (pure numeric; numpy/pytest only in CI).
+- Physical / propulsion / first-principles claims correctly non-claimed.
+- Compatible with RESEARCH path: locked parameter-free ratios + spectral/LDOS module under claim discipline.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. Prior locks (CLAIM_STATUS, FALSIFICATION, CI) already terminal. No product mutation, no deletion, no history rewrite, no claim elevation, no release tag.
+- Governance registry updated this cycle (status report + history + operator queue residual note).
+
+### CLASSIFY
+
+RESEARCH: claim-capped level-1 provisional renormalization ansatz (W(n) form + parameter-free product ratios locked; Stage-2 LDOS chain pending). Target state for RESEARCH class achieved (tests + CI green, docs claim-capped).
+
+### Exit
+
+Subject termination conditions met for RESEARCH class relative to autonomous scope (no undefined components relative to cap, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed RESEARCH re-confirmation; stop.
+
+---
+
 ## 2026-09-21 — Sweep-160 (select: portfolio discovery reconstruction)
 
 **Agent:** Grok (ADL-SEEM governed / ADL-BASILISK)
