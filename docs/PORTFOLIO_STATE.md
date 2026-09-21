@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-09-16 (post Sweep-148)
+**As of:** 2026-09-21 (post Sweep-159 / Sweep-160 discovery)
 
 ## Priority queue
 
@@ -22,7 +22,14 @@
 | ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo) |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | coherence-drive + satellites | RESEARCH | Claim discipline; Stage-1 symbolic INPUT-COMPLETE; no lab thrust claim |
+| momentum-closure | RESEARCH | Claim-cap refreshed Sweep-158; pytest CI success |
+| ADL-Nexus | RESEARCH | Re-confirmed Sweep-159; CI green |
 | SEEM / legacy bots / CFT-v3.1 / Digital Double predecessors | SUPERSEDED / ARCHIVED targets | archive_queue.md; GitHub flags mostly PENDING operator |
+
+## Live census
+
+- GitHub `user:beyond-repair` search total_count: **77** (2026-09-21)
+- adl-capability-matrix locked inventory: 67 rows (expansion OPEN / operator-gated)
 
 ## Rules
 
