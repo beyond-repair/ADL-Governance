@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-21T17:10Z (autonomous Sweep-161)
+**Updated:** 2026-09-24T17:05Z (autonomous Sweep-162)
 **Census:** Live `user:beyond-repair` search total_count **77** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `m2-renormalization-law` — RESEARCH re-confirm (CI green, parameter-free lock + 6 pytest pass, no product mutation).
+**This cycle:** Random select `CFTv3.3-IQG-Unified-Framework` — RESEARCH re-confirm (docs-ci green, claim ≤ 2 locked, no product mutation).
 
-## Sweep-161 scope
+## Sweep-162 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → DOCUMENT → GOVERN |
-| Subject | m2-renormalization-law |
+| Subject | CFTv3.3-IQG-Unified-Framework |
 | Product mutation | None |
-| Contract mutation | None (prior Sweep-137/139/145 terminal) |
+| Contract mutation | None (prior Sweep-106 terminal) |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-161)
+## Live Verification Results (Sweep-162)
 
-### m2-renormalization-law
+### CFTv3.3-IQG-Unified-Framework
 | Field | Value |
 |-------|--------|
-| Head (post) | ad9957e8283ed0aadab0f3c1484c5aacd668a762 |
+| Head (post) | 99a07454c66fb4cb5ce71bbba8ef498b432d536f |
 | Visibility | public |
 | Default branch | main |
-| CI | parameter-free sweep + pytest (latest main success, run 3) |
-| Local tests | parameter_free_sweep OK; 6 passed |
+| CI | docs-ci (latest main success, runs 1–2) |
+| Local tests | docs-presence pytest (required files + claim language) |
 | Releases / Tags | none |
-| Classification | **RESEARCH** (re-confirmed Sweep-161; prior 122/136/145) |
+| Classification | **RESEARCH** (re-confirmed Sweep-162; prior 106) |
 | GitHub archived | false |
-| Docs | CLAIM_STATUS.md, FALSIFICATION.md, GOVERNANCE.md, README.md |
-| Security | pure numeric; numpy/pytest CI only |
-| Claim | level 1 (provisional ansatz; hybrid ratio rejected; Stage-2 LDOS pending) |
+| Docs | README.md, RESEARCH.md, CONSISTENCY.md, GOVERNANCE.md, LICENSE, CFTv3.3-*.md/.tex |
+| Security | docs-only; no secrets, no runtime |
+| Claim | ≤ 2 (symbol registry + conflict table + pointers; 0–1 for ontology) |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -44,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 / Sweep-161 (CI SUCCESS)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . **`ADL-Nexus` — Sweep-112 / Sweep-131 / Sweep-159 (re-confirm)** . `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** .
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 / Sweep-161 (CI SUCCESS)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . **`ADL-Nexus` — Sweep-112 / Sweep-131 / Sweep-159 (re-confirm)** . `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** . **`CFTv3.3-IQG-Unified-Framework` — Sweep-106 / Sweep-162 (docs-ci green, claim ≤ 2)** .
 
 ### SUPERSEDED
 
@@ -87,13 +87,14 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | m2-renormalization-law CI | Low | CLOSED (SUCCESS run 3, Sweep-161) |
 | Sovereign-OS first docs-ci run | Medium | PENDING (workflow added Sweep-157) |
 | momentum-closure first pytest CI run | Low | CLOSED (SUCCESS post Sweep-158) |
+| CFTv3.3-IQG-Unified-Framework docs-ci | Low | CLOSED (SUCCESS runs 1–2, Sweep-106/162) |
 
 ## Exit criteria
 
-| Criterion | Sweep-161 |
+| Criterion | Sweep-162 |
 |-----------|-----------|
 | Named census of 77 | MET |
-| m2-renormalization-law RESEARCH re-confirm (CI green) | MET |
+| CFTv3.3-IQG-Unified-Framework RESEARCH re-confirm (docs-ci green) | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 77-complete verified rows | NOT MET |
