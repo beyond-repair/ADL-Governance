@@ -2,6 +2,46 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-25 — Sweep-165 (select: btc-trading)
+
+**Agent:** Grok (ADL-SEEM governed)
+**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count ~78). Subject: `btc-trading`.
+**Subject head (pre/post):** `a5fc3f893bf5b00907aa1ebbaa40df3e757354f6`
+**Subject lock commits:** none (prior docs already terminal)
+**Classification:** **ARCHIVED** (re-confirmed)
+
+### DISCOVER
+
+Public historical sketch repository (Python + CSV). Tree: ARCHIVED.md, BTC-USD.csv, README.md, SECURITY.md, `kucoin btc.py`, requirements.txt. Open issues 0. No CI, no tests, no LICENSE, no releases/tags. Last observed activity historical (census notes 2023-era). Description absent; README classifies as ARCHIVED candidate (claim level 0).
+
+Features present: CSV historical prices, single script mixing NN (Keras) + PPO (stable-baselines3) + CoinAPI call. Script references missing `btc_prices.csv` (actual file BTC-USD.csv), contains hardcoded API key placeholder, incomplete TradingEnvironment, missing `import numpy as np`.
+
+### AUDIT
+
+- Already documented ARCHIVED candidate (README + ARCHIVED.md). Claim level 0; no production trading claims; prior NN/PPO descriptions superseded.
+- No tests / CI (acceptable for ARCHIVED).
+- No undefined components relative to ARCHIVED class (historical sketch only).
+- No critical CI failures (none present).
+- No duplicate canonical requiring autonomous merge (distinct from FortiTrade / fantom bots).
+- Security: hardcoded CoinAPI-style key string in script (historical; SECURITY.md already warns against keys). Flag for operator awareness only.
+- Unsupported claims: none (README explicitly non-claims profitability, accuracy, live execution).
+- Compatible with ARCHIVED path: dormant historical sketch; GitHub archive flag PENDING per archive_queue.md.
+
+### IMPLEMENT (safe, idempotent)
+
+- None on subject. README, ARCHIVED.md, SECURITY.md already terminal and claim-capped. No product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no archive flag (operator-only).
+- Governance registry updated this cycle (status report + history + operator queue residual note).
+
+### CLASSIFY
+
+ARCHIVED: dormant historical KuCoin/CSV/NN/PPO sketch (claim 0; no live capability). Target state for ARCHIVED class achieved relative to autonomous scope (docs consistent, no unsupported claims, no agent action required beyond registry).
+
+### Exit
+
+Subject termination conditions met for ARCHIVED class relative to autonomous scope (no undefined components relative to class, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security requiring agent mutation, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed ARCHIVED re-confirmation; stop for subject. GitHub `archived=true` remains operator action.
+
+---
+
 ## 2026-09-24 — Sweep-164 (select: portfolio discovery reconstruction / registry refresh)
 
 **Agent:** Grok (ADL-SEEM governed / ADL-BASILISK)
