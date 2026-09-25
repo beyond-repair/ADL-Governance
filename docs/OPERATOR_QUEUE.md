@@ -2,9 +2,9 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-163)
+## Open items (as of Sweep-165)
 
-- Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, and remaining queue entries in archive_queue.md / repository_registry.md.
+- Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, **btc-trading**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
 - Rotate / remove committed `.env` on digital-double-mobile; resolve Dependabot HIGH alerts.
 - Expand adl-capability-matrix to live 77-row census (currently locked 67; OPEN but claim-capped).
@@ -15,6 +15,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
+- Sweep-165: btc-trading ARCHIVED re-confirm (README + ARCHIVED.md + SECURITY.md terminal, claim 0, hardcoded historical key noted; no subject mutation); GitHub archive flag still PENDING (already in archive_queue.md).
 - Sweep-163: ADL-Nexus RESEARCH re-confirm (CI SUCCESS run 14, claim ≤ 2 locked, no subject mutation); gap closed; no new operator archive/release action required for subject.
 - Sweep-162: CFTv3.3-IQG-Unified-Framework RESEARCH re-confirm (docs-ci SUCCESS runs 1–2, claim ≤ 2 locked, no subject mutation); gap closed; no new operator archive/release action required for subject.
 - Sweep-161: m2-renormalization-law RESEARCH re-confirm (CI SUCCESS run 3, parameter-free lock + 6 pytest; no subject mutation); gap "m2 first CI" closed; no new operator archive/release action required for subject.
