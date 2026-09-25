@@ -1,8 +1,8 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-09-16 (Sweep-148) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-09-24 (Sweep-164) · **Governing source:** this repository
 
-Visible GitHub search count: **76**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: **77**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
 
 ---
 
@@ -10,13 +10,13 @@ Visible GitHub search count: **76**. Classifications (directive): ACTIVE | RESEA
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-09-05 | 0 | 4 | SAGF; Foundry run 33986287866 success; tag v0.5.0-sagf PENDING |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-09-05 | 1 | 3 | Canonical SEEM substrate; CI success 33979476402. VSA completeness UNVERIFIED. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-09-04 | 0 | 2 | FLS early; CI success 33904082644; v0.1.0 tag open |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-16 | 0 | 3 | This repo |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-09-08 | 0 | 4 | SAGF; Foundry success; tag v0.5.0-sagf PENDING |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-09-13 | 1 | 3 | Canonical SEEM substrate; CI green. VSA completeness UNVERIFIED. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-09-14 | 0 | 2 | FLS early; CI success; v0.1.0 tag open; RELEASE_BLOCKED_BY_OPERATOR |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-09-25 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-09-05 | 4+ | 3 | Public canonical; product CI success 33979714262; Dependabot HIGH open |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-09-13 | 5 | 3 | Public canonical; CI green; Dependabot HIGH + evidence PR #7 open (operator) |
 
 Do not treat sovereign-clean-room VSA as production-complete. CI green is only an Actions conclusion.
 
@@ -24,9 +24,9 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 ## RESEARCH (Claim level ≤ 2)
 
-`m2-renormalization-law` locked Sweep-122 / re-confirmed Sweep-136 (GOVERNANCE.md + claim-capped README + CLAIM_STATUS.md level 1; pure docs ansatz under Option A). `adl-capability-matrix` locked Sweep-115 (67-row dated JSON; live census 76; GOVERNANCE + UNSUPPORTED completeness). `sierpinski-geometry-045` locked Sweep-114. `momentum-closure` locked Sweep-113. `ADL-Nexus` locked Sweep-112. Mapping / census layer and other RESEARCH rows unchanged except census count 76. See PORTFOLIO_STATUS_REPORT.md for the full name list this cycle.
+`m2-renormalization-law` locked / re-confirmed Sweep-161 (parameter-free + pytest CI SUCCESS). `ADL-Nexus` re-confirmed Sweep-163 (CI SUCCESS run 14). `CFTv3.3-IQG-Unified-Framework` re-confirmed Sweep-162. `momentum-closure` Sweep-158. `sierpinski-geometry-045`, `ware-constant-phenomenology`, `-ware-constant-derivation`, `coherence-drive`, `optimization-limit-conjecture` and satellites under claim discipline. `adl-capability-matrix` locked 67-row (live census 77; expansion OPEN / operator-gated). See PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md for full list and recent re-confirms.
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 76-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 77-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law, lab thrust demonstration.
 
 ---
 
