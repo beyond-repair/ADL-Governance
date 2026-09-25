@@ -2,6 +2,46 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-09-24 — Sweep-164 (select: portfolio discovery reconstruction / registry refresh)
+
+**Agent:** Grok (ADL-SEEM governed / ADL-BASILISK)
+**Selection method:** BASILISK core loop continuation; reconstruct global state from GitHub + prior sweeps (post Sweep-163).
+**Subject:** ADL-Governance (state files only)
+**Classification:** ACTIVE / MAINTAIN
+
+### DISCOVER
+
+- Authenticated user: beyond-repair (public_repos 73 reported; live search total_count **77**).
+- Key ACTIVE: Digital_Double_virtual_workforce (open PRs #6 Dependabot, #7 draft evidence), sovereign-clean-room, BlockSwarm, forge-aegis (RELEASE_BLOCKED_BY_OPERATOR), ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah-.
+- RESEARCH cluster: coherence-drive satellites (ware-constant-*, momentum-closure, m2-renormalization-law, sierpinski-geometry-045, optimization-limit-conjecture, CFTv3.3-IQG-Unified-Framework), ADL-Nexus, Sovereign-OS, etc. Recent re-confirms Sweep-161/162/163 terminal for their claim-caps.
+- SUPERSEDED / ARCHIVED targets documented; GitHub archive flags mostly PENDING operator.
+- Capability matrix locked at 67 rows; live 77.
+- Operator queue residual unchanged: archive flags, release tags, Dependabot merges, matrix expansion, secret rotation.
+
+### AUDIT
+
+- repository_registry.md census dated 2026-09-16 (Sweep-148); required refresh to 77.
+- PORTFOLIO_STATE dated 2026-09-21; required refresh post Sweep-163.
+- No contradiction with Locked Invariants of claim discipline or operator-only actions.
+- No undefined components requiring autonomous product mutation this cycle.
+- forge-aegis remains RELEASE_BLOCKED_BY_OPERATOR; no FLS expansion.
+
+### IMPLEMENT (safe, idempotent)
+
+- Updated docs/repository_registry.md (census 77, as-of 2026-09-24, recent notes).
+- Updated docs/PORTFOLIO_STATE.md (as-of Sweep-164, census 77, recent re-confirm notes).
+- No product mutation on any subject repo, no deletion, no history rewrite, no claim elevation, no release tag, no archive flag.
+
+### CLASSIFY
+
+Governance maintenance: state reconstruction + registry refresh complete for this pass.
+
+### Exit
+
+Discovery + state refresh complete. Portfolio-wide termination not met. Highest-value next slices remain operator-gated (Dependabot merges, release tags, archive flags) or RESEARCH re-confirms / matrix expansion under claim discipline. Stop.
+
+---
+
 ## 2026-09-24 — Sweep-163 (select: ADL-Nexus)
 
 **Agent:** Grok (ADL-SEEM governed)
@@ -155,45 +195,6 @@ Governance maintenance: state reconstruction complete for this pass.
 ### Exit
 
 Discovery + state refresh complete. Portfolio-wide termination not met. Highest-value next slices remain operator-gated or RESEARCH re-confirms / matrix expansion under claim discipline. Stop.
-
----
-
-## 2026-09-21 — Sweep-159 (select: ADL-Nexus)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count 77). Subject: `ADL-Nexus`.
-**Subject head (pre/post):** `873134cdf279e1725ef0e6dcf76bd56170683428`
-**Subject lock commits:** none (prior Sweep-131 already terminal for RESEARCH class)
-**Classification:** **RESEARCH** (re-confirmed)
-
-### DISCOVER
-
-Public Python repository. Description: Local-first autonomous engineering, governance, simulation, and workforce platform. Tree: 9 layers (0–8), adapters (cleanroom/sunder stubs), core (kernel/nexus/objective/pathways), client (Godot + web), docs (ARCHITECTURE/CLAIM_STATUS/GOVERNANCE/PRODUCT/ROADMAP/SUBSYSTEM_MAP), registry YAMLs, tests (8 files), .github/workflows/ci.yml, pyproject.toml, run.py. Version 0.3.2. Open issues 0. CI present. Last push ~2026-09-10 (Sweep-131).
-
-### AUDIT
-
-- Already RESEARCH (Sweep-112 / Sweep-131). Claim level 2; spine pathways (think/request/reality) marked UNSUPPORTED with xfail.
-- Local pytest: 17 passed, 7 xfailed (claim-cap).
-- Latest main CI (run 14): success.
-- No undefined components relative to RESEARCH claim-cap.
-- No critical CI failures.
-- No duplicate canonical requiring autonomous merge.
-- No critical security issues (stdlib-only runtime; no secrets).
-- Live adapters / full workforce / product claims correctly UNSUPPORTED.
-- Compatible with RESEARCH path: layered platform skeleton + local integrity anchors + supervised workforce stubs.
-
-### IMPLEMENT (safe, idempotent)
-
-- None on subject. Prior Sweep-131 already completed integrity anchors + claim-cap xfails + docs alignment. No product mutation, no deletion, no history rewrite, no claim elevation, no release tag.
-- Governance registry updated this cycle (status report + history).
-
-### CLASSIFY
-
-RESEARCH: claim-capped level-2 local-first platform (layers 0–8 present; live adapters and full autonomous pathways UNSUPPORTED). Target state for RESEARCH class achieved (tests + CI green, docs claim-capped).
-
-### Exit
-
-Subject termination conditions met for RESEARCH class relative to autonomous scope (no undefined components relative to cap, no stale registry entries requiring agent action, no critical CI failures, no duplicate canonicals requiring action, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. One governed RESEARCH re-confirmation; stop.
 
 ---
 
