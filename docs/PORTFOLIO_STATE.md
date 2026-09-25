@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-09-21 (post Sweep-159 / Sweep-160 discovery)
+**As of:** 2026-09-24 (post Sweep-163 / Sweep-164 discovery)
 
 ## Priority queue
 
@@ -16,19 +16,21 @@
 |--------|--------|-------|
 | forge-aegis | RELEASE_BLOCKED_BY_OPERATOR | Slice+CI+gate done; wait for remote `v0.1.0`; **no FLS expansion** |
 | AEGIS-Project-Nehemiah- | CONTRACT CONSUMER / ACTIVE | Must not redefine validation semantics |
-| Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green; Dependabot HIGH + evidence PR open (operator) |
+| Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green; Dependabot HIGH + evidence PR #7 open (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green; VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; Foundry success; tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo) |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); census refreshed Sweep-164 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | coherence-drive + satellites | RESEARCH | Claim discipline; Stage-1 symbolic INPUT-COMPLETE; no lab thrust claim |
 | momentum-closure | RESEARCH | Claim-cap refreshed Sweep-158; pytest CI success |
-| ADL-Nexus | RESEARCH | Re-confirmed Sweep-159; CI green |
+| ADL-Nexus | RESEARCH | Re-confirmed Sweep-163; CI green |
+| CFTv3.3-IQG-Unified-Framework | RESEARCH | Re-confirmed Sweep-162; docs-ci success |
+| m2-renormalization-law | RESEARCH | Re-confirmed Sweep-161; parameter-free + pytest CI success |
 | SEEM / legacy bots / CFT-v3.1 / Digital Double predecessors | SUPERSEDED / ARCHIVED targets | archive_queue.md; GitHub flags mostly PENDING operator |
 
 ## Live census
 
-- GitHub `user:beyond-repair` search total_count: **77** (2026-09-21)
+- GitHub `user:beyond-repair` search total_count: **77** (2026-09-24)
 - adl-capability-matrix locked inventory: 67 rows (expansion OPEN / operator-gated)
 
 ## Rules
