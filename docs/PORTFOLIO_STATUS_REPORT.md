@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-09-24T17:05Z (autonomous Sweep-162)
+**Updated:** 2026-09-24T20:10Z (autonomous Sweep-163)
 **Census:** Live `user:beyond-repair` search total_count **77** (`incomplete_results=false`).
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `CFTv3.3-IQG-Unified-Framework` — RESEARCH re-confirm (docs-ci green, claim ≤ 2 locked, no product mutation).
+**This cycle:** Random select `ADL-Nexus` — RESEARCH re-confirm (CI green, claim ≤ 2 locked, no product mutation).
 
-## Sweep-162 scope
+## Sweep-163 scope
 
 | Mode | Value |
 |------|--------|
 | Primary | DISCOVER → AUDIT → CLASSIFY → DOCUMENT → GOVERN |
-| Subject | CFTv3.3-IQG-Unified-Framework |
+| Subject | ADL-Nexus |
 | Product mutation | None |
-| Contract mutation | None (prior Sweep-106 terminal) |
+| Contract mutation | None (prior Sweep-131 terminal) |
 | Archive / release / history rewrite | NOT executed |
 
-## Live Verification Results (Sweep-162)
+## Live Verification Results (Sweep-163)
 
-### CFTv3.3-IQG-Unified-Framework
+### ADL-Nexus
 | Field | Value |
 |-------|--------|
-| Head (post) | 99a07454c66fb4cb5ce71bbba8ef498b432d536f |
+| Head (post) | 873134cdf279e1725ef0e6dcf76bd56170683428 |
 | Visibility | public |
 | Default branch | main |
-| CI | docs-ci (latest main success, runs 1–2) |
-| Local tests | docs-presence pytest (required files + claim language) |
+| CI | ADL-Nexus CI (latest main success, run 14) |
+| Local tests | pytest (17 passed, 7 xfailed under claim-cap) |
 | Releases / Tags | none |
-| Classification | **RESEARCH** (re-confirmed Sweep-162; prior 106) |
+| Classification | **RESEARCH** (re-confirmed Sweep-163; prior 112/131/159) |
 | GitHub archived | false |
-| Docs | README.md, RESEARCH.md, CONSISTENCY.md, GOVERNANCE.md, LICENSE, CFTv3.3-*.md/.tex |
-| Security | docs-only; no secrets, no runtime |
-| Claim | ≤ 2 (symbol registry + conflict table + pointers; 0–1 for ontology) |
+| Docs | README.md, RESEARCH.md, CLAIM_STATUS.md, GOVERNANCE.md, ARCHITECTURE, etc. |
+| Security | stdlib-only runtime; no secrets |
+| Claim | ≤ 2 (spine pathways UNSUPPORTED; integrity anchors present) |
 | Open issues / PRs | 0 |
 
 ## Classification (canonical)
@@ -44,7 +44,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 / Sweep-161 (CI SUCCESS)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . **`ADL-Nexus` — Sweep-112 / Sweep-131 / Sweep-159 (re-confirm)** . `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** . **`CFTv3.3-IQG-Unified-Framework` — Sweep-106 / Sweep-162 (docs-ci green, claim ≤ 2)** .
+`Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. **`m2-renormalization-law` — Sweep-122 / Sweep-136 / Sweep-145 / Sweep-161 (CI SUCCESS)** . `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. **`seem-identity-unifier` — Sweep-118 / Sweep-130 / Sweep-150 (re-confirm)** . `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. **`momentum-closure` — Sweep-113 / Sweep-158 (claim-cap + pytest CI)** . **`ADL-Nexus` — Sweep-112 / Sweep-131 / Sweep-159 / Sweep-163 (re-confirm)** . `acoustic-token-modem` — Sweep-110. **`LegionOS` — Sweep-068 / Sweep-073 / Sweep-095 / Sweep-154 (re-confirm)** . **`Sovereign-OS` — Sweep-157 (docs-CI + claim-cap)** . **`CFTv3.3-IQG-Unified-Framework` — Sweep-106 / Sweep-162 (docs-ci green, claim ≤ 2)** .
 
 ### SUPERSEDED
 
@@ -91,10 +91,10 @@ GitHub `archived=true`: `CFT-v3.0` only.
 
 ## Exit criteria
 
-| Criterion | Sweep-162 |
+| Criterion | Sweep-163 |
 |-----------|-----------|
 | Named census of 77 | MET |
-| CFTv3.3-IQG-Unified-Framework RESEARCH re-confirm (docs-ci green) | MET |
+| ADL-Nexus RESEARCH re-confirm (CI green) | MET |
 | Phase 3 releases present | NOT MET (operator) |
 | Subject product mutation | None |
 | Matrix 77-complete verified rows | NOT MET |
