@@ -25,7 +25,7 @@ Added `CLAIM_STATUS.md`, `scripts/superseded_guard.py`, `.github/workflows/super
 
 ### TEST / CI
 
-Local dry-run of the guard logic: PASS. Post-push Actions run not observed at governance commit time.
+Local dry-run of the guard logic: PASS. Post-push Actions run 36911252324 success on `c14f50f41a40eab78e0530fa57a73048d2e8c8a2` (superseded-guard, push, 2026-10-01T19:01:44Z).
 
 ### GOVERN
 

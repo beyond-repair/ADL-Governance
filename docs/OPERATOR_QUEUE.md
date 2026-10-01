@@ -4,7 +4,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Open items (as of Sweep-184)
 
-- Sweep-184: random select `digital-double-mobile`. SUPERSEDED reconfirm. Lock `c14f50f41a40eab78e0530fa57a73048d2e8c8a2`. Guard script local PASS. Post-push CI not observed at record time. No archive. No release. Claim 0. Committed `.env` re-observed in tree (1166 bytes). Do not history-rewrite.
+- Sweep-184: random select `digital-double-mobile`. SUPERSEDED reconfirm. Lock `c14f50f41a40eab78e0530fa57a73048d2e8c8a2`. Guard script local PASS. Actions run 36911252324 success. No archive. No release. Claim 0. Committed `.env` re-observed in tree (1166 bytes). Do not history-rewrite.
 - Sweep-183: portfolio discovery + Phase-3 re-verify. Docs only. Search index 82. Phase-3 product CI still green (forge-aegis 36847797174, sovereign-clean-room 36815859875, BlockSwarm 36859452185, Digital_Double_virtual_workforce 36861489156). Releases and tags APIs empty on all four. Critical Dependabot #13 still open. Open Dependabot count re-fetched: 56 (`hasNextPage=false`). Portfolio termination not met.
 - Sweep-182: GAP-GOVERNANCE-CI workflow present. Local checker PASS. Actions 36904879407 and 36904903811 success. No archive. No release.
 - Sweep-181: random select `sunder`. RESEARCH reconfirm. Lock `36d37c247e0e0be2ef8404cc697a1dcd4250de12`. Local pytest 6 passed. Post-push CI not observed. No archive. No release. Claim ≤ 1.

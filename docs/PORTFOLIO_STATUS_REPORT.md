@@ -21,7 +21,7 @@
 | Claim | 0 |
 | Successor | Digital_Double_virtual_workforce |
 | Local guard | PASS (banner tokens + metrics echo) |
-| CI | workflow added; post-push Actions run NOT observed |
+| CI | superseded-guard run 36911252324 success on post head |
 | Releases / Tags | not created |
 | GitHub archived | false |
 | Docs | README.md, SUPERSEDED.md, CLAIM_STATUS.md |
@@ -48,7 +48,7 @@ Exactly one class. No promotions this sweep.
 | Criterion | Sweep-184 |
 |-----------|-----------|
 | Subject undocumented classification | MET (SUPERSEDED + claim 0 ledger) |
-| Subject critical CI failure | NOT OBSERVED (workflow new; run not yet recorded) |
+| Subject guard CI | MET (run 36911252324 success) |
 | Subject committed secret residual | **NOT MET** — `.env` still tracked |
 | Portfolio critical security | **NOT MET** — Dependabot #13 inherited open |
 | Duplicate canonical implementations | **NOT MET** |
