@@ -2,8 +2,9 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-177)
+## Open items (as of Sweep-179)
 
+- Sweep-179: GAP-BRIDGE-ADAPTER-DEFS closed as documented absence. Lock `32a93564` on `sunder-cleanroom-vsa-adapter`. Local pytest 9 passed. No archive/release/history action. Post-push CI not observed. Claim cap unchanged.
 - Sweep-178: random select bloch-coherence-factor2. RESEARCH re-confirm. Lock `77d7063`. Local pytest 11 passed. Main Actions 36881720661 success on pre head. No archive/release/history action. Post-push CI not observed. Optional operator tag would not raise claim level; not applied.
 
 - **Security escalation (critical):** Digital_Double_virtual_workforce Dependabot alert #13 remains **open**. Package `form-data`, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, severity critical. Re-fetched 2026-10-01 Sweep-177. Agent did not bump the lockfile.
@@ -15,15 +16,17 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Decide disposition of `sovereign-clean-room` branch `fix/pynacl-1.6.2-cve-2025-69277` (still present). High+ Dependabot open list on that repo was empty (0).
 - Enable secret scanning on sovereign-clean-room (API 404: feature disabled).
 - Enable or accept absence of code scanning on forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (API 404: no analysis).
-- Add a non-vacuous CI workflow to ADL-Governance (workflows total_count 0).
+- Add a non-vacuous CI workflow to ADL-Governance (workflows total_count 0 at Sweep-177; not re-checked Sweep-179). Next basilisk slice: GAP-GOVERNANCE-CI.
 - Assign cluster/claim caps for the 15 names in `adl-capability-matrix` `matrix/census_gap_2026-10-01.json` (Sweep-175). Do not invent caps.
 - Audit private default-RESEARCH names: `atomicdreamlabs`, `mendthegame`, `blacksite`, `test`, `SovereignOS` (private confirmed Sweep-177; contents not read).
 - Reconcile census drift: profile 77, search 82, direct-get union 86. Do not delete names to force equality.
+- Backfill pass YAML for 171, 172, 175, 177, 178 only from existing history evidence. Do not invent missing bodies.
 - Operator review of any claim-level elevation requests.
 - History rewrite or force-push: never by agent. Repository deletion: never by agent.
 
 ## Residual notes from recent sweeps
 
+- Sweep-179: adapter contract-only AST witness. Lock `32a93564`. Local pytest 9 passed. No runtime import.
 - Sweep-177: portfolio discovery + Phase-3 re-verify. No archive flag, no release tag, no history rewrite, no lockfile bump. Exit criteria failed on critical security and duplicate canonicals. Stop.
 - Sweep-176: seem-sunder-bridge RESEARCH re-confirm. Lock `3ccd7cde`. Local pytest 8 passed. Post-push CI not observed.
 - Sweep-175: adl-capability-matrix RESEARCH. Lock `e57ec52`. Gap 15 unassigned names. Post-push CI success 36889001703.
