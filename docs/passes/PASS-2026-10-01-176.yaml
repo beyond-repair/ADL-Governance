@@ -1,0 +1,72 @@
+PASS:
+  id: PASS-2026-10-01-176
+  parent_pass: PASS-2026-10-01-174
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 67
+  capabilities_verified: 1
+  gaps_remaining: 15
+OBJECTIVE:
+  id: GAP-BRIDGE-SYMBOL-WITNESS
+  description: Re-read seem-sunder-bridge claimed surfaces and lock path-present vs exact-def-present.
+  reason_selected: Census caps are operator-gated; private names are blocked; the Q-003 contract dated 2026-09-05 was the highest public integration claim that could be falsified this pass.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search total_count=82. Latest governance head before this pass 9b4e465.
+    - Sweep-175 recorded 15 unassigned census names. Cluster/cap assignment remains operator-gated.
+    - seem-sunder-bridge paths still exist on default branches.
+    - Exact defs match sunder/vsa.py bind/unbind/similarity/register/query and clean-room bind/unbind/similarity.
+    - Exact defs absent for agent scan/snap/sunder, gate, fork, SEEM cycle/dream/banel, resonator similarity, and adapter engine bind family.
+CHANGES:
+  repositories:
+    - beyond-repair/seem-sunder-bridge
+    - beyond-repair/ADL-Governance
+  files:
+    - bridge/symbol_witness_2026-10-01.json
+    - bridge/witness.py
+    - tests/test_symbol_witness.py
+    - docs/CLAIMS.md
+    - docs/passes/PASS-2026-10-01-176.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - seem-sunder-bridge 3ccd7cdeca373e13c7990e8926ab48d5b358106b
+  capabilities_added_or_changed:
+    - Q-003 symbol witness: path presence IMPLEMENTED and locally TESTED; exact-def coverage PARTIAL; runtime interop NOT_CLAIMED
+VERIFICATION:
+  tests_run:
+    - python -m pytest -q on clone of 3ccd7cde: 8 passed, 0 failed
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Claimed op strings are not exact def names on several locked surfaces.
+  failures:
+    - GitHub code search for def bind in sunder/vsa.py returned 0; raw file read contradicted the index.
+  decisions:
+    - EXTEND the bridge with a witness rather than rewrite SURFACES tuples or create a new repository.
+    - Do not assign census caps.
+REMAINING:
+  incomplete:
+    - PASS yaml for 171, 172, 175 still absent at pass start.
+    - 15 census names unassigned.
+  blockers:
+    - atomicdreamlabs and mendthegame private.
+    - Archive flags and release tags operator-only.
+  new_gaps:
+    - GAP-BRIDGE-ADAPTER-DEFS: adapter/ does not implement bind/unbind/similarity/register/query as defs.
+NEXT:
+  objective_id: GAP-BRIDGE-ADAPTER-DEFS
+  action: Read sunder-cleanroom-vsa-adapter surfaces.py and either document the contract-only ops or add the missing local defs with tests. Do not import sunder or clean-room at runtime.
+  reason: Same interop line; exact-def absence is now evidenced.
+  prerequisites:
+    - Default branch of sunder-cleanroom-vsa-adapter remains readable.
+PROVENANCE:
+  state_commit: pending-governance-commit
+  evidence:
+    - local pytest 8 passed on 3ccd7cdeca373e13c7990e8926ab48d5b358106b
