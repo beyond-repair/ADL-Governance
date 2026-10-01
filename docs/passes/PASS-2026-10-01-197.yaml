@@ -19,6 +19,7 @@ DISCOVERY:
     - adapter/local_ops.py STATUS is CONTRACT_ONLY_NOT_LOCAL_DEFS. CONTRACT_ONLY_OPS are bind, unbind, similarity, register, query.
     - Adapter head 32a93564688ef497911941ea08fed687b3ff9f21. No product mutation this pass.
     - Census gap file still lists 15 UNASSIGNED names. Caps not invented.
+    - scripts/check_passes.py failed on 9993e5cc because condensed SWEEP_HISTORY did not heading-name yaml ids 167-192. Pre-existing relative to the body commit.
 CHANGES:
   repositories:
     - beyond-repair/ADL-Governance
@@ -28,23 +29,28 @@ CHANGES:
     - docs/passes/PASS-2026-10-01-197.yaml
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
-  commits: []
+  commits:
+    - 9993e5cc86efe287413aa9a10338b26ee1a9e82e
   capabilities_added_or_changed:
     - GAP-BRIDGE-ADAPTER-DEFS confirmed closed as documented absence, not as a local algebra
     - machine-readable persistence restored for Sweep-195 and Sweep-196 from existing history text
 VERIFICATION:
   tests_run:
     - python -m pytest -q on clone of 32a93564688ef497911941ea08fed687b3ff9f21: 9 passed, 0 failed
+    - python scripts/check_passes.py on 9993e5cc: FAIL missing headings for PASS-2026-10-01-167 through 192
   code_review: PASS
   security: NOT_RUN
   integration: NOT_RUN
-  invariants: PASS
+  invariants: FAIL
   overall: PASS
+  notes:
+    - overall PASS is the adapter witness and persistence slice. Pass-heading invariant was FAIL on the condensed history and is corrected in the follow-up commit if present.
 KNOWLEDGE:
   confirmed:
     - Contract-only witness is implemented and locally tested on the current adapter default branch.
   failures:
     - Adding local bind/unbind defs would violate the existing test that requires absence.
+    - check_passes is non-vacuous and failed until older yaml ids are heading-named.
   decisions:
     - REUSE the existing witness. Do not add local algebra defs. Do not import sunder or clean-room.
     - Do not assign census caps. Do not merge PR #3. Do not bump lockfiles. Do not archive.
@@ -60,6 +66,7 @@ REMAINING:
     - Claim-level choice operator-only
   new_gaps:
     - GAP-CENSUS-CAP-REFRESH remains open and operator-gated
+    - GAP-SWEEP-HEADING-INDEX: condensed history omitted yaml ids required by check_passes.py
 NEXT:
   objective_id: GAP-MEND-NAME-PRESENCE
   action: Read beyond-repair/mend default branch tree and record NAME_ONLY versus implemented surfaces. Do not invent a cluster cap. Do not archive.
@@ -68,7 +75,8 @@ NEXT:
     - Repository remains readable.
     - Do not treat absence of a README as an implementation claim.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: 9993e5cc86efe287413aa9a10338b26ee1a9e82e
   evidence:
     - local pytest 9 passed on 32a93564688ef497911941ea08fed687b3ff9f21
     - governance parent 70cdae344adb834b0fbb0f3adb705f4e9bf87a9a
+    - check_passes FAIL on 9993e5cc before heading index
