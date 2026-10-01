@@ -1,0 +1,68 @@
+PASS:
+  id: PASS-2026-10-01-195
+  parent_pass: PASS-2026-10-01-194
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 7
+  capabilities_verified: 4
+  gaps_remaining: 8
+OBJECTIVE:
+  id: PHASE3-LIVE-VERIFY-195
+  description: One governed discovery and Phase-3 live verification. Documentation only.
+  reason_selected: Reconstruction from docs/SWEEP_HISTORY.md Sweep-195. Yaml was absent at Sweep-197 start.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 82, incomplete_results false. Public 73. Private 9. archived=true only CFT-v3.0.
+    - Deep live verify recorded for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+    - ftmA.I.bot run 36925900968 still queued on 79d97f92417da64deb6b31f679a7c3a6eb8a2df5. Timestamps 2026-10-01T21:02:13Z. No conclusion.
+    - Product CI success recorded: forge-aegis 36847797174, sovereign-clean-room 36815859875, BlockSwarm 36859452185, Digital_Double_virtual_workforce 36861489156.
+    - Releases API empty on all four. Dependabot critical #13 still open.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - unknown at reconstruction time; narrative only until Sweep-197
+  capabilities_added_or_changed:
+    - none in product repositories
+VERIFICATION:
+  tests_run:
+    - recorded in Sweep-195 narrative; not re-executed by Sweep-197 reconstruction
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  notes:
+    - This file is a reconstruction from docs/SWEEP_HISTORY.md, not a new product verification.
+    - Portfolio exit criteria were recorded as failed.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-195 narrative existed without a pass yaml until this reconstruction.
+  failures:
+    - Exit criteria not met: critical security, duplicate canonicals, archive flags, queued archive-guard.
+  decisions:
+    - No history rewrite. No archive flag. No release tag. No lockfile edit. No repository deletion. No product-repo mutation.
+REMAINING:
+  incomplete:
+    - Critical Dependabot #13
+    - Archive flags
+    - Queued ftmA.I.bot run 36925900968
+  blockers:
+    - Operator-only archive and lockfile actions
+  new_gaps: []
+NEXT:
+  objective_id: SWEEP-196-AS-RECORDED
+  action: Historical next step was Sweep-196 select ADL-Nexus. Do not treat this reconstructed NEXT as a new instruction.
+  reason: Reconstruction must not overwrite later recorded work.
+  prerequisites:
+    - Read Sweep-196 before acting on this file.
+PROVENANCE:
+  state_commit: reconstructed-in-sweep-197
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-195 section as of 70cdae344adb834b0fbb0f3adb705f4e9bf87a9a

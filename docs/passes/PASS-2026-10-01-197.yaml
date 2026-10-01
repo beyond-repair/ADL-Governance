@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-01-197
+  parent_pass: PASS-2026-10-01-196
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 1
+  gaps_remaining: 15
+OBJECTIVE:
+  id: GAP-BRIDGE-ADAPTER-DEFS
+  description: Re-read sunder-cleanroom-vsa-adapter and confirm contract-only ops are absent as local defs, with tests. Persist missing Sweep-195 and Sweep-196 YAML.
+  reason_selected: PASS-176 named this gap. Later sweeps did not leave a machine-readable close. Operator-gated items were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search total_count 82. Governance head before this pass 70cdae344adb834b0fbb0f3adb705f4e9bf87a9a.
+    - docs/passes yaml stopped at PASS-2026-10-01-194 while SWEEP_HISTORY named 195 and 196.
+    - adapter/local_ops.py STATUS is CONTRACT_ONLY_NOT_LOCAL_DEFS. CONTRACT_ONLY_OPS are bind, unbind, similarity, register, query.
+    - Adapter head 32a93564688ef497911941ea08fed687b3ff9f21. No product mutation this pass.
+    - Census gap file still lists 15 UNASSIGNED names. Caps not invented.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-01-195.yaml
+    - docs/passes/PASS-2026-10-01-196.yaml
+    - docs/passes/PASS-2026-10-01-197.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits: []
+  capabilities_added_or_changed:
+    - GAP-BRIDGE-ADAPTER-DEFS confirmed closed as documented absence, not as a local algebra
+    - machine-readable persistence restored for Sweep-195 and Sweep-196 from existing history text
+VERIFICATION:
+  tests_run:
+    - python -m pytest -q on clone of 32a93564688ef497911941ea08fed687b3ff9f21: 9 passed, 0 failed
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Contract-only witness is implemented and locally tested on the current adapter default branch.
+  failures:
+    - Adding local bind/unbind defs would violate the existing test that requires absence.
+  decisions:
+    - REUSE the existing witness. Do not add local algebra defs. Do not import sunder or clean-room.
+    - Do not assign census caps. Do not merge PR #3. Do not bump lockfiles. Do not archive.
+REMAINING:
+  incomplete:
+    - 15 census names UNASSIGNED
+    - ADL-Nexus claim contradiction
+    - Dependabot critical #13
+    - ftmA.I.bot run 36925900968 not re-queried
+  blockers:
+    - atomicdreamlabs and mendthegame private
+    - Archive flags and release tags operator-only
+    - Claim-level choice operator-only
+  new_gaps:
+    - GAP-CENSUS-CAP-REFRESH remains open and operator-gated
+NEXT:
+  objective_id: GAP-MEND-NAME-PRESENCE
+  action: Read beyond-repair/mend default branch tree and record NAME_ONLY versus implemented surfaces. Do not invent a cluster cap. Do not archive.
+  reason: mend was created 2026-10-01 and is in the unassigned census list. It is public and not in the operator destructive queue.
+  prerequisites:
+    - Repository remains readable.
+    - Do not treat absence of a README as an implementation claim.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - local pytest 9 passed on 32a93564688ef497911941ea08fed687b3ff9f21
+    - governance parent 70cdae344adb834b0fbb0f3adb705f4e9bf87a9a

@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-10-01-196
+  parent_pass: PASS-2026-10-01-195
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 7
+  capabilities_verified: 1
+  gaps_remaining: 8
+OBJECTIVE:
+  id: SELECT-ADL-NEXUS-196
+  description: Re-audit ADL-Nexus README CI-pending line. Do not merge PR #3. Do not change claim level.
+  reason_selected: Reconstruction from docs/SWEEP_HISTORY.md Sweep-196. Yaml was absent at Sweep-197 start.
+DISCOVERY:
+  findings:
+    - Selection method recorded as random.SystemRandom().choice over 71 names, excluding ADL-Governance and the 10 most recently updated names.
+    - Subject ADL-Nexus. Pre head bfe24fa7dcec041144a69e959171d0ceeabbcf90. Post head 69ebcbc862ecd87f66998eecbe31b0ae0dbd53e6.
+    - Classification RESEARCH. Claim badge <=1 conflicts with docs/CLAIM_STATUS.md core claim level 2. Not resolved.
+    - Tree 122 paths, truncated false. Prior main CI 36847729267 success.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Nexus
+    - beyond-repair/ADL-Governance
+  files:
+    - ADL-Nexus README.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - ADL-Nexus 69ebcbc862ecd87f66998eecbe31b0ae0dbd53e6
+  capabilities_added_or_changed:
+    - README CI-pending line corrected. Claim contradiction recorded, not resolved.
+VERIFICATION:
+  tests_run:
+    - Actions push run 36938588236 conclusion success on 69ebcbc862ecd87f66998eecbe31b0ae0dbd53e6
+    - Actions dispatch run 36938601015 conclusion success on the same head
+    - Local pytest not re-executed in Sweep-196
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  notes:
+    - Reconstruction from docs/SWEEP_HISTORY.md. Not a new product verification.
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus claim badge and CLAIM_STATUS.md disagree.
+  failures:
+    - Portfolio exit criteria still failed.
+  decisions:
+    - Do not merge PR #3. Do not change product code, lockfiles, or claim level.
+REMAINING:
+  incomplete:
+    - ADL-Nexus claim contradiction
+    - PR #3 unmerged
+  blockers:
+    - Operator must pick one claim level
+  new_gaps: []
+NEXT:
+  objective_id: STOP-AS-RECORDED-196
+  action: Sweep-196 recorded stop. Do not treat this reconstructed NEXT as a new instruction.
+  reason: Later passes must read the newest history heading.
+  prerequisites:
+    - Read Sweep-197 before acting.
+PROVENANCE:
+  state_commit: 70cdae344adb834b0fbb0f3adb705f4e9bf87a9a
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-196 section
+    - ADL-Nexus head 69ebcbc862ecd87f66998eecbe31b0ae0dbd53e6
