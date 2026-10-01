@@ -1,113 +1,233 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-01 (autonomous Sweep-175)
-**Census:** Live `user:beyond-repair` search `total_count` **82** (`incomplete_results=false`) at Sweep-175 select. Profile `public_repos` was **77** at Sweep-171. Not re-fetched this sweep.
-**Authenticated owner:** `beyond-repair`.
-**Governing source:** this repository.
-**This cycle:** Random select `adl-capability-matrix` (SystemRandom over 77 names, excluding Sweep-173 subject and ADL-Governance). Name-only gap file. No caps invented. No archive flags. No release tags. No history rewrite. No claim elevation.
+**Updated:** 2026-10-01 (autonomous Sweep-177)
+**Project / Version:** ADL Portfolio Governance / Sweep-177
+**Authenticated owner:** `beyond-repair`
+**Governing source:** `beyond-repair/ADL-Governance`
+**Evidence rule:** Code > Documentation > Roadmap. Unverified claims stay `PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED`.
 
+## Census (this sweep)
 
-## Sweep-175 scope
+| Source | Count | Notes |
+|--------|------:|-------|
+| Profile `public_repos` | 77 | `github___get_me` at sweep start |
+| Search `user:beyond-repair` | 82 | `incomplete_results=false`; misses 4 forks |
+| `GET /users/beyond-repair/repos?type=all` page 1 | 77 | page 2 empty |
+| Direct `GET /repos/beyond-repair/{name}` union | **86** | list 77 + 9 names present on search but absent from the list endpoint |
+| GitHub `archived=true` | 1 | `CFT-v3.0` only |
+| Forks | 4 | `MyCore`, `SuperAGI`, `bolt.new`, `docs` |
+| Private (sampled + prior) | ≥5 | `atomicdreamlabs`, `mendthegame`, `blacksite`, `test`, `SovereignOS` confirmed `private=true` this sweep. Full private count not re-enumerated. |
 
-| Mode | Value |
-|------|--------|
-| Primary | SELECT → DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (gap file + tests + docs) → DOCUMENT → GOVERN |
-| Subject | adl-capability-matrix |
-| Pre head | `ea940fe405201855747e4d4cd9eed3816f5c9e91` |
-| Lock commit | `e57ec52c85b5a029be62fc7014b436cfacf65f4f` |
-| Classification | **RESEARCH** (re-confirm; no promotion) |
-| Local tests | pytest 8 passed, 0 failed |
-| Locked matrix rows | 67 (unchanged) |
-| Live names absent from locked rows | 15 (UNASSIGNED; cap null) |
-| Locked names absent from live search | 0 |
-| Post-push CI | **success** 36889001703 on `e57ec52` |
-| Releases | not tagged |
-| Archive / history rewrite | NOT executed |
+List-endpoint vs direct-get drift is recorded, not reconciled by deletion or rename.
 
-Evidence rule: the gap file is a dated name set difference. It is not a capability audit. Cap expansion remains operator-gated.
+## Phase 3 — live verification (no assumptions)
 
-## Sweep-173 scope
+| Repo | Latest CI on default path | Runs | Branches | Tags | Releases | Dependabot open | Secret scanning | Code scanning | Review |
+|------|---------------------------|-----:|----------|------|----------|----------------:|-----------------|---------------|--------|
+| forge-aegis | success [36847797174](https://github.com/beyond-repair/forge-aegis/actions/runs/36847797174) `968595a` 2026-10-01 | 10 | `main` | empty | 0 | 0 | enabled, 0 open | 404 no analysis | PASS WITH FINDINGS |
+| sovereign-clean-room | success [36815859875](https://github.com/beyond-repair/sovereign-clean-room/actions/runs/36815859875) `5fbd20b` 2026-10-01 | 61 | `main`, `seem-completion-pass`, `fix/pynacl-1.6.2-cve-2025-69277` | empty | 0 | 0 | **disabled** (API 404) | 404 no analysis | PASS WITH FINDINGS |
+| BlockSwarm | success [36859452185](https://github.com/beyond-repair/BlockSwarm/actions/runs/36859452185) `6e90f6f` 2026-10-01 | 30 | `main`, `finish/foundry-runnable`, `sweep/add-sweep-config` | empty | 0 | 0 | enabled, 0 open | 404 no analysis | PASS WITH FINDINGS |
+| Digital_Double_virtual_workforce | success [36861489156](https://github.com/beyond-repair/Digital_Double_virtual_workforce/actions/runs/36861489156) `24e6a29` 2026-10-01 | 20 | `main` + 3 dependabot + `finish/repair-python-core-ui`, `fix/nanoid-5.1.11-ghsa-xwg4`, `nex-int-workforce-evidence` | empty | 0 | **56** (page of 100), including **critical #13** `form-data` GHSA-fjxv-7rqg-78g4 / CVE-2025-7783 | enabled, 0 open | 404 no analysis | **FAIL** (critical alert open) |
 
-| Mode | Value |
-|------|--------|
-| Primary | SELECT → DISCOVER → AUDIT → CLASSIFY → DOCUMENT → TEST → STOP |
-| Subject | bloch-coherence-factor2 |
-| Pre head | `05571476be6510444a359c93b8e8243d30d9d826` |
-| Lock commit | `3cdbc2e3f7fdbdeae52540555365b3d80dc382ef` |
-| Classification | **RESEARCH** (first registry lock) |
-| Local tests | pytest 11 passed, 0 failed on pre head |
-| Prior main CI | **success** [36844364901](https://github.com/beyond-repair/bloch-coherence-factor2/actions/runs/36844364901) on `05571476` |
-| Post-push CI | **success** 36889001703 on `e57ec52` |
-| Releases | empty (releases API) |
-| Archive / history rewrite | NOT executed |
+ADL-Governance Actions workflows total_count = 0 this sweep. Governance repo itself has no CI workflow. Classification ACTIVE is inherited from governing-source role, not from a green workflow.
 
-Evidence rule: Code > Documentation > Roadmap. The factor of two is an identity of the two-mode reduction in this model. It is not a measured device gap and not a constant of nature. Multimode R is only constrained to (1.5, 2.6) by the existing suite.
+Tests were **not re-executed locally** this sweep. CI success is the verification signal. Test-file presence was not tree-walked for the full portfolio.
 
-## Subject status — bloch-coherence-factor2
+## Classification
 
-| Field | Observed |
-|-------|----------|
-| Default branch | `main` |
-| Tree | theorem docs, `src/bloch_factor2`, `tests/test_factor2.py`, falsify.yml, CLAIM_STATUS.md |
-| CI | success 36844364901 on pre-claim head; loop branch run 36100043944 failed (not re-audited) |
-| Claim | ≤ 1; structural ratio only |
-| Review readiness | **PASS WITH FINDINGS** (post-push CI not observed; loop branch not on main) |
-
-## Classification (canonical)
-
-Exactly one class per repository. Unlisted or unaudited names default to **RESEARCH** until an operator promotes them with evidence.
+Exactly one class. ACTIVE for the four Phase-3 repos is re-confirmed only as maintained+CI-green, not as release-complete. `ADL-SEEM` and `AEGIS-Project-Nehemiah-` remain ACTIVE by Sweep-175 inheritance (not re-audited this cycle) and are labeled inherited. Everything else not in SUPERSEDED/ARCHIVED is RESEARCH.
 
 ### ACTIVE (7)
 
-ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- `forge-aegis` — re-verified CI success; releases empty; code scanning absent.
+- `sovereign-clean-room` — re-verified CI success; secret scanning disabled; pynacl branch still present.
+- `BlockSwarm` — re-verified Foundry CI success; releases empty.
+- `Digital_Double_virtual_workforce` — CI success, but **FAIL** review readiness while critical Dependabot #13 is open. Still the canonical workforce repo; not promoted to clean.
+- `ADL-Governance` — governing source; no Actions workflow observed.
+- `ADL-SEEM` — inherited ACTIVE (Sweep-175). Not re-verified.
+- `AEGIS-Project-Nehemiah-` — inherited ACTIVE (Sweep-175). Not re-verified.
 
-### RESEARCH (named locks + remainder)
+### SUPERSEDED (14)
 
-**`adl-capability-matrix` — Sweep-175** (name gap only; caps still 67). **`bloch-coherence-factor2` — Sweep-173** (classical two-mode lock). **`topological-pinch` — Sweep-172** (graph-proxy lock; 92% remains hypothesis). **`mend` — Sweep-170**. **`informational-flux-identity` — Sweep-168**. `finite-gasket-spectral-derivatives` — Sweep-167. `Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / 136 / 145 / 161. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / 130 / 150. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113 / 158. `ADL-Nexus` — Sweep-112 / 131 / 159 / 163. `acoustic-token-modem` — Sweep-110. `LegionOS` — Sweep-068 / 073 / 095 / 154. `Sovereign-OS` — Sweep-157. `CFTv3.3-IQG-Unified-Framework` — Sweep-106 / 162. `coherence-drive` — research index, not propulsion-validated. `sunder` — research agent, not the ACTIVE runtime.
+Replacement is documentary, not a merge. No deletion.
 
-Unaudited at Sweep-173 (default RESEARCH, not a deep audit): `atomicdreamlabs` (private), `mendthegame` (private; not read).
+| Component | Canonical | Duplicate | Action |
+|-----------|-----------|-----------|--------|
+| Workforce automation | Digital_Double_virtual_workforce | DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile | SUPERSEDE (retain history) |
+| Agent / SEEM runtime | sovereign-clean-room (new work only; identity collapse forbidden) | SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice, seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion | SUPERSEDE |
+| CFT write-up | CFTv3.3-IQG-Unified-Framework (RESEARCH, not validated physics) | CFT-v3.0 (GitHub archived), CFT-v3.1 | SUPERSEDE |
 
-### SUPERSEDED
+### ARCHIVED (documented; GitHub flag mostly unset)
 
-SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice (Sweep-169), SEEM-Cognitive_Microservice (Sweep-153), seem-block-system, My-mind-A.I., Gia---General-Intelligence-Assistant, Auto_Legion → sovereign-clean-room for new work only (identity collapse forbidden by seem-identity-unifier).
+`smart_home_BCI`, `genieGPT`, `ftmA.I.bot`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Agent-Snake`, `btc-trading`, plus forks `MyCore`, `SuperAGI`, `bolt.new`, `docs`. GitHub `archived=true` remains only `CFT-v3.0` (classed SUPERSEDED). Archive-flag application is operator-only.
 
-DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4. (Sweep-166), Digital_Double_Virtual_Workforce_4.2, Digital-Double_Mobile, digital-double-mobile → Digital_Double_virtual_workforce.
+### RESEARCH
 
-CFT-v3.0 and CFT-v3.1 → CFTv3.3-IQG-Unified-Framework (GitHub `archived=true` on CFT-v3.0 only).
+All remaining names in the inventory table. Includes private names not deep-audited: `atomicdreamlabs`, `mendthegame`, `blacksite`, `test`, `SovereignOS`.
 
-### ARCHIVED
+## Capability matrix (demonstrated vs planned)
 
-Documented ARCHIVED (GitHub flag pending unless noted): `smart_home_BCI`, `genieGPT`, `ftmA.I.bot`, `potential-garbanzo`, `-Py2APK-main`, `fantom_trading_bot_2`, `Agent-Snake`, `btc-trading`.
-GitHub `archived=true`: `CFT-v3.0` only.
+Only Phase-3 subjects have a capability row this sweep. Prior sweep locks are not re-quoted as new demonstrations.
+
+| Feature | State |
+|---------|-------|
+| forge-aegis CI workflow `ci.yml` green on `968595a` | VERIFIED |
+| forge-aegis product release / tag | UNVERIFIED (API empty) |
+| sovereign-clean-room Python tests workflow green on `5fbd20b` | VERIFIED |
+| sovereign-clean-room secret scanning | UNVERIFIED (feature disabled) |
+| BlockSwarm Foundry workflow green on `6e90f6f` | VERIFIED |
+| BlockSwarm on-chain deployment or SAGF production claim | PLANNED / not evidenced this sweep |
+| Digital Double CI green on `24e6a29` | VERIFIED |
+| Digital Double dependency hygiene | FAIL — 56 open Dependabot alerts, critical #13 open |
+| Digital Double product release | UNVERIFIED (API empty) |
+| AI Legion / OmniWealth OS / Cold Boot as production systems | PLANNED or RESEARCH — not verified as canonical implementations |
+
+## Dependency graph (observed, not inferred from roadmaps)
+
+| Edge | Evidence |
+|------|----------|
+| seem-sunder-bridge → sunder, sovereign-clean-room, SEEM-2.0 | repo description + Sweep-176 witness (not re-run) |
+| sunder-cleanroom-vsa-adapter → sunder, sovereign-clean-room | name + prior queue; adapter code not re-read |
+| BlockSwarm → forge-std v1.9.4, OpenZeppelin v4.9.6 | commit message on run 36859452185 |
+| Digital_Double_virtual_workforce → npm lock + Python package | Dependabot manifests `digital_double/package-lock.json`, `digital_double/pyproject.toml` |
+| adl-capability-matrix → portfolio names | metadata only; Sweep-175 gap file; caps not expanded |
+
+Cycles: none proven this sweep. Orphans: forks and `test` have no demonstrated dependents. Duplicate infrastructure: workforce family and SEEM family as tabulated. Shared-module extraction: not performed.
 
 ## Gap summary
 
-| Gap | Severity | State |
-|-----|----------|-------|
-| Product releases empty on four named ACTIVE repos | Medium | OPEN (operator tag; not re-checked this sweep) |
-| adl-capability-matrix caps 67 vs live 82 | Medium | OPEN (Sweep-175 recorded 15 unassigned names; caps not invented) |
-| Dependabot / nanoid PRs #3–#6 and draft #7 on workforce | Medium | OPEN (Sweep-171) |
-| Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN (not re-fetched) |
-| Archive flags not applied | Low–Medium | OPEN |
-| Duplicate canonical implementations | Medium | OPEN (classed, not merged) |
-| topological-pinch 92% localization | High (claim) | UNVERIFIED; proxy contradicts 0.92 |
-| bloch loop-correction branch | Medium | OPEN (failed CI; not on main) |
-| Two private census names unaudited | Low | OPEN |
-| PASS yaml missing for 171 and 172 | Low | OPEN (history text exists) |
-| Profile 77 vs search 82 | Low | OPEN |
+| Capability / component | Severity |
+|------------------------|----------|
+| Open critical Dependabot #13 (`form-data`) on canonical workforce repo | Critical |
+| 56 open Dependabot alerts on Digital_Double_virtual_workforce (high: js-yaml, browserslist, nanoid, brace-expansion, among others) | High |
+| Secret scanning disabled on sovereign-clean-room | High |
+| No code scanning analysis on the four Phase-3 repos | Medium |
+| No product releases/tags on the four Phase-3 repos | Medium |
+| ADL-Governance has zero Actions workflows | Medium |
+| GitHub archive flag not applied to documented ARCHIVED set | Medium |
+| Duplicate canonical families retained (required: no deletion) | Medium |
+| Census drift 77 / 82 / 86 | Low |
+| Private repos not deep-audited | Low |
+| Capability-matrix caps still 67 vs larger live name set (Sweep-175) | Medium |
+
+## Canonical ownership map
+
+| Domain | Canonical repo | Class |
+|--------|----------------|-------|
+| Governance | ADL-Governance | ACTIVE (no CI) |
+| Engineering standard | ADL-SEEM | ACTIVE inherited |
+| Agent / artifact graph | forge-aegis | ACTIVE, PASS WITH FINDINGS |
+| AEGIS ontology sibling | AEGIS-Project-Nehemiah- | ACTIVE inherited |
+| Security / VSA clean room | sovereign-clean-room | ACTIVE, PASS WITH FINDINGS |
+| Distributed / Foundry substrate | BlockSwarm | ACTIVE, PASS WITH FINDINGS |
+| Workforce automation | Digital_Double_virtual_workforce | ACTIVE implementation, review FAIL |
+| Research physics / coherence | no single canonical | RESEARCH; do not treat as propulsion-validated |
+
+## Inventory
+
+| Name | Class | Lang | Fork | GH archived | Pushed | Open issues |
+|------|-------|------|------|-------------|--------|------------:|
+| `-Entanglement-and-Emergence` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `-Py2APK-main` | ARCHIVED | Python | false | false | 2026-10-01 | 0 |
+| `-text-informational-fork-protocol-` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `-ware-constant-derivation` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `acoustic-token-modem` | RESEARCH | Python | false | false | 2026-09-07 | 0 |
+| `adl-capability-matrix` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `adl-function-census` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `ADL-Governance` | ACTIVE | — | false | false | 2026-10-01 | 0 |
+| `ADL-Nexus` | RESEARCH | Python | false | false | 2026-10-01 | 3 |
+| `ADL-Portfolio-Census` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `ADL-SEEM` | ACTIVE | — | false | false | 2026-10-01 | 0 |
+| `AEGIS-Project-Nehemiah-` | ACTIVE | — | false | false | 2026-10-01 | 0 |
+| `aegis-repo-graph` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `Agent-Snake` | ARCHIVED | Python | false | false | 2026-10-01 | 0 |
+| `atomicdreamlabs` | RESEARCH | JavaScript | false | false | 2026-10-01 | 0 |
+| `AtomicNexusAI` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `Auto_Legion` | SUPERSEDED | Python | false | false | 2026-10-01 | 0 |
+| `automate_passive_income` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `beyond-repair` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `blacksite` | RESEARCH | JavaScript | false | false | 2026-10-01 | 1 |
+| `bloch-coherence-factor2` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `BlockSwarm` | ACTIVE | Solidity | false | false | 2026-10-01 | 0 |
+| `bolt.new` | ARCHIVED | — | true | false | 2024-12-17 | 0 |
+| `btc-trading` | ARCHIVED | Python | false | false | 2026-10-01 | 0 |
+| `CFT-v3.0` | SUPERSEDED | Python | false | true | 2025-12-25 | 0 |
+| `CFT-v3.1` | SUPERSEDED | TeX | false | false | 2026-10-01 | 0 |
+| `CFTv3.3-IQG-Unified-Framework` | RESEARCH | TeX | false | false | 2026-09-07 | 0 |
+| `Code_Generation_AI_Program` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `coherence-drive` | RESEARCH | — | false | false | 2026-10-01 | 2 |
+| `DevelopTool-Unified-Dev-Environment` | RESEARCH | Python | false | false | 2026-10-01 | 23 |
+| `digital-double-mobile` | SUPERSEDED | TypeScript | false | false | 2026-10-01 | 1 |
+| `Digital-Double_Mobile` | SUPERSEDED | — | false | false | 2026-10-01 | 0 |
+| `Digital_Double_virtual_workforce` | ACTIVE | TypeScript | false | false | 2026-10-01 | 5 |
+| `Digital_Double_Virtual_Workforce_4.` | SUPERSEDED | — | false | false | 2026-10-01 | 0 |
+| `Digital_Double_Virtual_Workforce_4.2` | SUPERSEDED | TypeScript | false | false | 2026-10-01 | 1 |
+| `DigitalDoubleVirtualWorkforce3.5` | SUPERSEDED | Python | false | false | 2026-10-01 | 0 |
+| `docs` | ARCHIVED | MDX | true | false | 2024-02-15 | 0 |
+| `ExoAxis-1` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `fantom-smart-contracts-first-bot` | RESEARCH | Rust | false | false | 2026-10-01 | 0 |
+| `fantom_trading_bot_2` | ARCHIVED | Python | false | false | 2026-10-01 | 0 |
+| `finite-gasket-spectral-derivatives` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `forge-aegis` | ACTIVE | Python | false | false | 2026-10-01 | 0 |
+| `FortiTrade_Multi-Strategy` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `ftmA.I.bot` | ARCHIVED | Python | false | false | 2026-10-01 | 0 |
+| `genieGPT` | ARCHIVED | — | false | false | 2026-10-01 | 0 |
+| `Gia---General-Intelligence-Assistant` | SUPERSEDED | Python | false | false | 2026-10-01 | 2 |
+| `informational-flux-identity` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `LegionOS` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `m2-renormalization-law` | RESEARCH | Python | false | false | 2026-10-01 | 1 |
+| `mend` | RESEARCH | JavaScript | false | false | 2026-10-01 | 0 |
+| `mendthegame` | RESEARCH | JavaScript | false | false | 2026-10-01 | 0 |
+| `momentum-closure` | RESEARCH | Python | false | false | 2026-10-01 | 1 |
+| `My-mind-A.I.` | SUPERSEDED | Python | false | false | 2026-10-01 | 0 |
+| `MyCore` | ARCHIVED | — | true | false | 2023-05-03 | 0 |
+| `new-program-1.01` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `Open-Energy-Fusion` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `optimization-limit-conjecture` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `os-family-constitution-map` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `potential-garbanzo` | ARCHIVED | — | false | false | 2026-10-01 | 0 |
+| `Project-Cold-Boot` | RESEARCH | GDScript | false | false | 2026-09-08 | 0 |
+| `quantum_A.I._optimization.py` | RESEARCH | Python | false | false | 2026-10-01 | 16 |
+| `Quantumclustering` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `RealityOS` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `RepoRover-` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `SEEM-2.0-Self-Evolving-Emergent-Mind` | SUPERSEDED | Python | false | false | 2026-10-01 | 0 |
+| `seem-block-system` | SUPERSEDED | — | false | false | 2026-10-01 | 0 |
+| `SEEM-Cognitive-Microservice` | SUPERSEDED | Python | false | false | 2026-10-01 | 0 |
+| `SEEM-Cognitive_Microservice` | SUPERSEDED | Python | false | false | 2026-10-01 | 2 |
+| `seem-identity-unifier` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `seem-sunder-bridge` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `sierpinski-geometry-045` | RESEARCH | Python | false | false | 2026-09-22 | 0 |
+| `smart_home_BCI` | ARCHIVED | Python | false | false | 2026-10-01 | 0 |
+| `sovereign-clean-room` | ACTIVE | Python | false | false | 2026-10-01 | 1 |
+| `Sovereign-Epistemic-Reality-Engine` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `Sovereign-OS` | RESEARCH | Python | false | false | 2026-09-20 | 0 |
+| `SovereignOS` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `stress-tensor-modification` | RESEARCH | Python | false | false | 2026-10-01 | 2 |
+| `sunder` | RESEARCH | Python | false | false | 2026-09-06 | 1 |
+| `sunder-cleanroom-vsa-adapter` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `SuperAGI` | ARCHIVED | Python | true | false | 2024-04-03 | 15 |
+| `test` | RESEARCH | — | false | false | 2026-10-01 | 0 |
+| `The-Origin-Point-Hypothesis.` | RESEARCH | TeX | false | false | 2026-09-07 | 0 |
+| `thrust-target-30` | RESEARCH | Python | false | false | 2026-10-01 | 0 |
+| `topological-pinch` | RESEARCH | Python | false | false | 2026-10-01 | 1 |
+| `VigilE.S.A.-Enhanced-Security` | RESEARCH | Rust | false | false | 2026-10-01 | 0 |
+| `ware-constant-phenomenology` | RESEARCH | Python | false | false | 2026-09-24 | 0 |
 
 ## Exit criteria
 
-| Criterion | Sweep-173 |
+| Criterion | Sweep-177 |
 |-----------|-----------|
-| Selected repo discovered | MET |
-| Classification assigned | MET (RESEARCH) |
-| Local tests | MET (11 passed) |
-| Post-push CI observed | NOT MET |
-| Releases on ACTIVE | NOT MET |
-| Critical security findings closed | NOT MET (`.env` residual retained) |
-| Duplicate canonical implementations removed | NOT MET |
-| Archive flags applied | NOT MET (operator) |
-| Portfolio-wide termination | NOT MET |
+| No undefined repositories in the 86-name union | MET for the union; list-endpoint drift remains |
+| No stale registry | PARTIAL — this file replaces Sweep-175 status text |
+| No unsupported implementation claims | MET for this file |
+| No unresolved critical CI failures on Phase-3 | MET (latest runs success) |
+| No unresolved critical security findings | **NOT MET** — Dependabot #13 open |
+| No duplicate canonical implementations | **NOT MET** — classed, not merged |
+| No untracked archive candidates | PARTIAL — listed; flags not applied |
+| All repos classified | MET (one class each) |
+| All dependencies mapped | **NOT MET** — only observed edges |
+| Releases on ACTIVE | **NOT MET** |
+| Portfolio termination | **NOT MET** |
 
 One governed sweep. Residuals recorded. Stop. Do not loop.
