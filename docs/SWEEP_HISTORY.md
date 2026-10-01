@@ -2,6 +2,43 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-171 / PASS-2026-10-01-171 (portfolio governance refresh)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Selection method:** Master directive Phase 1 census + Phase 3 mandatory live verification. Not a random single-repo select.
+**Scope:** `user:beyond-repair` search census and named targets `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+**Classification changes:** none.
+**Product commits:** none.
+
+### DISCOVER
+
+Authenticated user `beyond-repair`. Search `user:beyond-repair` returned `total_count=82`, `incomplete_results=false`, 82 items. Profile `public_repos=77` at the same check. No forks in the search page. GitHub `archived=true` observed only on `CFT-v3.0` in that page. ADL-Governance docs already contained PORTFOLIO_STATUS_REPORT, OPERATOR_QUEUE, SWEEP_HISTORY, CANONICAL_REPOS, repository_registry.
+
+### LIVE VERIFY
+
+| Repo | Head | Branches (page) | Latest product CI | Releases API |
+|------|------|-----------------|-------------------|--------------|
+| forge-aegis | 968595a | main only | success 36847797174 | empty |
+| sovereign-clean-room | 5fbd20b | main + 2 | success 36815859875 | empty |
+| BlockSwarm | 6e90f6f | main + 2 | success 36859452185 | empty |
+| Digital_Double_virtual_workforce | 24e6a29 | main + 6 | success 36861489156 | empty |
+
+Open workforce PRs re-confirmed: #3, #4, #5, #6, #7 (draft). Local tests not re-executed. Secret scanning and code scanning not executed. Dependency advisory API not called.
+
+### ACTIONS PERFORMED
+
+Updated `docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, and this file. No repository deletion. No history rewrite. No archive flag. No release tag. No claim elevation.
+
+### FINDINGS
+
+Named ACTIVE CI is green on the latest observed main runs. Exit criteria for portfolio termination fail: empty releases, open dependency PRs, retained `.env` residual, unaudited names, duplicate lines classed but not consolidated, archive flags pending.
+
+### Exit
+
+Governed sweep closed. Residuals recorded in OPERATOR_QUEUE.md. Stop. Do not enter an autonomous review loop.
+
+---
+
 ## 2026-10-01 — Sweep-170 / PASS-2026-10-01-170 (select: mend)
 
 **Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
@@ -80,54 +117,6 @@ Subject re-audit closed for documentation. Stop. Do not treat as portfolio-compl
 
 ---
 
-## 2026-10-01 — Sweep-168 / PASS-2026-10-01-168 (select: informational-flux-identity)
-
-**Agent:** Grok (ADL-SEEM v3.0)
-**Selection method:** Highest-value unaudited census name after Sweep-167 (not random). Also executed the directive Phase 3 live re-verify of the four named targets.
-**Subject:** `informational-flux-identity`
-**Subject head (pre):** `3f5c655092b39f5a4a970cb98a5321f05ec00839`
-**Subject lock commit:** `54fe6907f4f03466bf1b66fb404b9e258491e713` (CLAIM_STATUS.md, tests, workflow)
-**Classification:** **RESEARCH** (first registry lock)
-
-### DISCOVER
-
-Public. Default branch `main`. Pre-change tree: README.md, GASKET.md, witness.json, scripts/flux_identity.py, scripts/gasket_corner_current.py, scripts/gasket_fractional_currents.py. Language Python. Open issues 0. Not archived. No workflows, tests, LICENSE, or releases. README already claim-capped (≤ 1) and disclaims thrust, continuum, and selected W.
-
-### AUDIT
-
-- Not in repository_registry.md (Sweep-167 left it in the default-RESEARCH unaudited set).
-- Implemented: integer rectangle flux ledger and 1D summation-by-parts checks in `scripts/flux_identity.py`. Gasket scripts exist; fractional audit-norm limit remains OPEN in README.
-- Local recompute of `ledger(potential())` matched witness.json: signed net 0, absolute right face 349/366. Numpy available in the agent environment.
-- No secrets. No product duplication of an ACTIVE canonical repo. Parent index remains `coherence-drive` (RESEARCH).
-
-### IMPLEMENT
-
-- Added CLAIM_STATUS.md, `tests/test_flux_identity.py` (witness + Theorem A on a seeded integer flux + boundary source 17), and a numpy Actions workflow.
-- No thrust, selected W, or continuum claim elevation. No history rewrite.
-
-### TEST / CI
-
-Local ledger check passed. Actions run not observed this pass.
-
-### Phase 3 (named targets, live)
-
-| Repo | Latest product CI | Releases | Notes |
-|------|-------------------|----------|-------|
-| forge-aegis | success run 36847797174 (2026-10-01) | none | branch main only; code-scanning 404 (no analysis) |
-| sovereign-clean-room | success run 36815859875 (2026-10-01) | none | Python tests workflow |
-| BlockSwarm | success run 36859452185 (2026-10-01) | none | Foundry; head 6e90f6f |
-| Digital_Double_virtual_workforce | success run 36861489156 (ci.yml) | none | open PRs #3 #4 #5 #6 #7 |
-
-### GOVERN
-
-Registered RESEARCH. Unaudited census remainder at that time: atomicdreamlabs, bloch-coherence-factor2, mend, mendthegame.
-
-### Exit
-
-Subject autonomous slice closed for registration and local witness. Portfolio-wide termination not met (empty ACTIVE releases, archive flags, capability-matrix row gap, Dependabot PRs, duplicate-canonical residual). Stop. No infinite review cycle.
-
----
-
 ## Prior sweeps
 
-See git history of this file for full prior entries (Sweep-167 … 001). Sweep-167 through Sweep-134 summaries that previously lived inline were preserved in git history at `dabfd3fb1c01ffd4c402745aa184566fa1f614f8` and earlier. Sweep-168 body remains inline above.
+See git history of this file for full prior entries (Sweep-168 … 001). Sweep-168 body that previously lived inline was preserved in git history before Sweep-171. Sweep-168 Phase 3 CI run IDs are superseded by Sweep-171.
