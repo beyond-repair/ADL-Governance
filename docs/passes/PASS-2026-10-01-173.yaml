@@ -34,7 +34,7 @@ CHANGES:
     - ADL-Governance/docs/PORTFOLIO_STATUS_REPORT.md
   commits:
     - bloch-coherence-factor2@3cdbc2e3f7fdbdeae52540555365b3d80dc382ef
-    - ADL-Governance@pending-this-commit
+    - ADL-Governance@a5ad9331ae69d7acd922d86a7956f23a01442ada
   capabilities_added_or_changed:
     - bloch-two-mode-ratio: IMPLEMENTED; local pytest TESTED (11/11); prior main Actions VERIFIED on 05571476; post-claim-file Actions NOT_RUN
 VERIFICATION:
@@ -72,8 +72,9 @@ NEXT:
     - Tree listing of beyond-repair/atomicdreamlabs
     - No claim elevation
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: a5ad9331ae69d7acd922d86a7956f23a01442ada
   evidence:
     - bloch-coherence-factor2 commit 3cdbc2e3f7fdbdeae52540555365b3d80dc382ef
     - local pytest 11 passed 0 failed on 05571476
     - Actions run 36844364901 success on 05571476
+    - provenance SHA backfill is a follow-up commit on this file
