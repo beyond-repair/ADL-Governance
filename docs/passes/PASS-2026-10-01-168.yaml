@@ -1,0 +1,15 @@
+sweep: 168
+date: 2026-10-01
+subject: informational-flux-identity
+classification: RESEARCH
+pre_head: 3f5c655092b39f5a4a970cb98a5321f05ec00839
+lock_commit: 54fe6907f4f03466bf1b66fb404b9e258491e713
+claim_ceiling: 1
+local_witness: signed_net_0_absolute_right_349_of_366
+actions_observed: false
+phase3:
+  forge-aegis: {ci: success, run: 36847797174, releases: empty, branch: main}
+  sovereign-clean-room: {ci: success, run: 36815859875, releases: empty}
+  BlockSwarm: {ci: success, run: 36859452185, releases: empty, head: 6e90f6f85c0969fa8a262a70ceba833d618a22db}
+  Digital_Double_virtual_workforce: {ci: success, run: 36861489156, releases: empty, open_prs: [3, 4, 5, 6, 7]}
+exit_portfolio_wide: NOT_MET

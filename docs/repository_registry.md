@@ -1,6 +1,6 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-10-01 (Sweep-167) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-10-01 (Sweep-168) · **Governing source:** this repository
 
 Visible GitHub search count: **82**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
 
@@ -10,13 +10,13 @@ Visible GitHub search count: **82**. Classifications (directive): ACTIVE | RESEA
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-09-08 | 0 | 4 | SAGF; Foundry success; tag v0.5.0-sagf PENDING |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-09-13 | 1 | 3 | Canonical SEEM substrate; CI green. VSA completeness UNVERIFIED. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-09-14 | 0 | 2 | FLS early; CI success; v0.1.0 tag open; RELEASE_BLOCKED_BY_OPERATOR |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-01 | 0 | 4 | SAGF; Foundry success run 36859452185; tag v0.5.0-sagf PENDING; releases empty |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-01 | 1 | 3 | Canonical SEEM substrate; CI success run 36815859875. VSA completeness UNVERIFIED. Releases empty. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-01 | 0 | 2 | FLS early; CI success run 36847797174; v0.1.0 tag open; RELEASE_BLOCKED_BY_OPERATOR |
 | [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-10-01 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-09-13 | 5 | 3 | Public canonical; CI green; Dependabot HIGH + evidence PR #7 open (operator) |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-01 | 5 | 3 | Public canonical; CI success run 36861489156; Dependabot PRs #3–#6 + evidence PR #7 open |
 
 Do not treat sovereign-clean-room VSA as production-complete. CI green is only an Actions conclusion.
 
@@ -24,11 +24,11 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 ## RESEARCH (Claim level ≤ 2)
 
-`finite-gasket-spectral-derivatives` registered Sweep-167 (claim ≤ 1; kernel locally tested; free mult(6) CLAIMED, graph not in-repo). `m2-renormalization-law` locked / re-confirmed Sweep-161 (parameter-free + pytest CI SUCCESS). `ADL-Nexus` re-confirmed Sweep-163 (CI SUCCESS run 14). `CFTv3.3-IQG-Unified-Framework` re-confirmed Sweep-162. `momentum-closure` Sweep-158. `sierpinski-geometry-045`, `ware-constant-phenomenology`, `-ware-constant-derivation`, `coherence-drive`, `optimization-limit-conjecture` and satellites under claim discipline. `adl-capability-matrix` locked 67-row (live census 82; expansion OPEN / operator-gated). See PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md for full list and recent re-confirms.
+`informational-flux-identity` registered Sweep-168 (claim ≤ 1; local witness signed net 0 and absolute right 349/366; Actions not observed). `finite-gasket-spectral-derivatives` registered Sweep-167 (claim ≤ 1; kernel locally tested; free mult(6) CLAIMED, graph not in-repo). `m2-renormalization-law` locked / re-confirmed Sweep-161 (parameter-free + pytest CI SUCCESS). `ADL-Nexus` re-confirmed Sweep-163 (CI SUCCESS run 14). `CFTv3.3-IQG-Unified-Framework` re-confirmed Sweep-162. `momentum-closure` Sweep-158. `sierpinski-geometry-045`, `ware-constant-phenomenology`, `-ware-constant-derivation`, `coherence-drive`, `optimization-limit-conjecture` and satellites under claim discipline. `adl-capability-matrix` locked 67-row (live census 82; expansion OPEN / operator-gated). See PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md for full list and recent re-confirms.
 
-Unaudited names still default RESEARCH until a sweep reads the tree: `atomicdreamlabs`, `bloch-coherence-factor2`, `informational-flux-identity`, `mend`, `mendthegame`.
+Unaudited names still default RESEARCH until a sweep reads the tree: `atomicdreamlabs`, `bloch-coherence-factor2`, `mend`, `mendthegame`.
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 82-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law, lab thrust demonstration, free mult(6) as in-repo verified computation.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 82-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law, lab thrust demonstration, free mult(6) as in-repo verified computation, informational-flux-identity as a force law.
 
 ---
 

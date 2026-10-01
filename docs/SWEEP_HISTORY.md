@@ -2,6 +2,54 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-168 / PASS-2026-10-01-168 (select: informational-flux-identity)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Selection method:** Highest-value unaudited census name after Sweep-167 (not random). Also executed the directive Phase 3 live re-verify of the four named targets.
+**Subject:** `informational-flux-identity`
+**Subject head (pre):** `3f5c655092b39f5a4a970cb98a5321f05ec00839`
+**Subject lock commit:** `54fe6907f4f03466bf1b66fb404b9e258491e713` (CLAIM_STATUS.md, tests, workflow)
+**Classification:** **RESEARCH** (first registry lock)
+
+### DISCOVER
+
+Public. Default branch `main`. Pre-change tree: README.md, GASKET.md, witness.json, scripts/flux_identity.py, scripts/gasket_corner_current.py, scripts/gasket_fractional_currents.py. Language Python. Open issues 0. Not archived. No workflows, tests, LICENSE, or releases. README already claim-capped (≤ 1) and disclaims thrust, continuum, and selected W.
+
+### AUDIT
+
+- Not in repository_registry.md (Sweep-167 left it in the default-RESEARCH unaudited set).
+- Implemented: integer rectangle flux ledger and 1D summation-by-parts checks in `scripts/flux_identity.py`. Gasket scripts exist; fractional audit-norm limit remains OPEN in README.
+- Local recompute of `ledger(potential())` matched witness.json: signed net 0, absolute right face 349/366. Numpy available in the agent environment.
+- No secrets. No product duplication of an ACTIVE canonical repo. Parent index remains `coherence-drive` (RESEARCH).
+
+### IMPLEMENT
+
+- Added CLAIM_STATUS.md, `tests/test_flux_identity.py` (witness + Theorem A on a seeded integer flux + boundary source 17), and a numpy Actions workflow.
+- No thrust, selected W, or continuum claim elevation. No history rewrite.
+
+### TEST / CI
+
+Local ledger check passed. Actions run not observed this pass.
+
+### Phase 3 (named targets, live)
+
+| Repo | Latest product CI | Releases | Notes |
+|------|-------------------|----------|-------|
+| forge-aegis | success run 36847797174 (2026-10-01) | none | branch main only; code-scanning 404 (no analysis) |
+| sovereign-clean-room | success run 36815859875 (2026-10-01) | none | Python tests workflow |
+| BlockSwarm | success run 36859452185 (2026-10-01) | none | Foundry; head 6e90f6f |
+| Digital_Double_virtual_workforce | success run 36861489156 (ci.yml) | none | open PRs #3 #4 #5 #6 #7 |
+
+### GOVERN
+
+Registered RESEARCH. Unaudited census remainder: atomicdreamlabs, bloch-coherence-factor2, mend, mendthegame.
+
+### Exit
+
+Subject autonomous slice closed for registration and local witness. Portfolio-wide termination not met (empty ACTIVE releases, archive flags, capability-matrix row gap, Dependabot PRs, duplicate-canonical residual). Stop. No infinite review cycle.
+
+---
+
 ## 2026-10-01 — Sweep-167 / PASS-2026-10-01-167 (select: finite-gasket-spectral-derivatives)
 
 **Agent:** Grok (ADL-BASILISK / ADL-SEEM)
@@ -33,7 +81,7 @@ Local central-difference check on eigenvalues [0, 2, 6, 6] at W=0.1 matched firs
 
 ### GOVERN
 
-Registered RESEARCH. Unaudited census remainder: atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame.
+Registered RESEARCH. Unaudited census remainder at end of Sweep-167: atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame.
 
 ### Exit
 
@@ -41,92 +89,6 @@ Subject autonomous slice closed for registration and kernel test. Portfolio-wide
 
 ---
 
-## 2026-10-01 — Sweep-166 (select: Digital_Double_Virtual_Workforce_4.)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice (`SystemRandom`) over live `user:beyond-repair` search names (count 82).
-**Subject:** `Digital_Double_Virtual_Workforce_4.`
-**Subject head (pre):** `9187f71ee720cd4b4e7d9c2f91204e10f3232576`
-**Subject lock commit:** `12798ac09d86ff815900e5b39e7656899b1a46f5` (SUPERSEDED.md + CLAIM_STATUS.md + README correction)
-**Classification:** **SUPERSEDED** (re-confirmed)
-
-### DISCOVER
-
-Private repository. Default branch `main`. Recursive tree pre-change: `README.md` only (1888 bytes). Language unset. Open issues 0. Not GitHub-archived. No workflows, tests, tags, or releases. README already bannered SUPERSEDED / claim 0 with successor `Digital_Double_virtual_workforce`, but still asserted an empty ref (HTTP 409 from Sweep-075). That assertion was stale relative to the live tree.
-
-### AUDIT
-
-- Registry already SUPERSEDED (Sweep-075 / Sweep-146) pointing at `Digital_Double_virtual_workforce`. Canonical product remains the ACTIVE un-dotted repo.
-- No application source. No duplicate canonical implementation inside this repo.
-- No CI (acceptable for SUPERSEDED class; nothing to execute).
-- No secrets. No critical security finding.
-- Unsupported claim: README stated the repository was empty / ref 409. Corrected.
-- Archive flag remains operator-only (`archive_queue.md` already lists this name).
-
-### IMPLEMENT (safe, idempotent)
-
-- Added `SUPERSEDED.md` and `CLAIM_STATUS.md` (claim 0; product claims FORBIDDEN).
-- Corrected README empty-tree sentence; linked the new docs; re-confirmed Sweep-166.
-- No product code, no deletion, no history rewrite, no release tag, no archive flag, no claim elevation.
-
-### CLASSIFY
-
-SUPERSEDED: naming-lineage predecessor; governance docs only; successor holds product work. Target state for SUPERSEDED class achieved relative to autonomous scope.
-
-### TEST / CI
-
-No test suite and no workflow. Not a failure for this class. No executable surface to run.
-
-### GOVERN
-
-Census refreshed 78 → 82. Six names not in the prior named list default to RESEARCH until audited: atomicdreamlabs, bloch-coherence-factor2, finite-gasket-spectral-derivatives, informational-flux-identity, mend, mendthegame.
-
-### Exit
-
-Subject termination conditions met for SUPERSEDED class relative to autonomous scope (no undefined components relative to class, registry entry current, no critical CI failures, no duplicate canonical requiring merge, no unresolved critical security, no unsupported claims, target achieved). Portfolio-wide termination not met. GitHub `archived=true` remains operator action.
-
----
-
-## 2026-09-25 — Sweep-165 (select: btc-trading)
-
-**Agent:** Grok (ADL-SEEM governed)
-**Selection method:** Uniform random choice over live `user:beyond-repair` search names (count ~78). Subject: `btc-trading`.
-**Subject head (pre/post):** `a5fc3f893bf5b00907aa1ebbaa40df3e757354f6`
-**Subject lock commits:** none (prior docs already terminal)
-**Classification:** **ARCHIVED** (re-confirmed)
-
-### DISCOVER
-
-Public historical sketch repository (Python + CSV). Tree: ARCHIVED.md, BTC-USD.csv, README.md, SECURITY.md, `kucoin btc.py`, requirements.txt. Open issues 0. No CI, no tests, no LICENSE, no releases/tags. Last observed activity historical (census notes 2023-era). Description absent; README classifies as ARCHIVED candidate (claim level 0).
-
-Features present: CSV historical prices, single script mixing NN (Keras) + PPO (stable-baselines3) + CoinAPI call. Script references missing `btc_prices.csv` (actual file BTC-USD.csv), contains hardcoded API key placeholder, incomplete TradingEnvironment, missing `import numpy as np`.
-
-### AUDIT
-
-- Already documented ARCHIVED candidate (README + ARCHIVED.md). Claim level 0; no production trading claims; prior NN/PPO descriptions superseded.
-- No tests / CI (acceptable for ARCHIVED).
-- No undefined components relative to ARCHIVED class (historical sketch only).
-- No critical CI failures (none present).
-- No duplicate canonical requiring autonomous merge (distinct from FortiTrade / fantom bots).
-- Security: hardcoded CoinAPI-style key string in script (historical; SECURITY.md already warns against keys). Flag for operator awareness only.
-- Unsupported claims: none (README explicitly non-claims profitability, accuracy, live execution).
-- Compatible with ARCHIVED path: dormant historical sketch; GitHub archive flag PENDING per archive_queue.md.
-
-### IMPLEMENT (safe, idempotent)
-
-- None on subject. README, ARCHIVED.md, SECURITY.md already terminal and claim-capped. No product mutation, no deletion, no history rewrite, no claim elevation, no release tag, no archive flag (operator-only).
-- Governance registry updated this cycle (status report + history + operator queue residual note).
-
-### CLASSIFY
-
-ARCHIVED: dormant historical KuCoin/CSV/NN/PPO sketch (claim 0; no live capability). Target state for ARCHIVED class achieved relative to autonomous scope (docs consistent, no unsupported claims, no agent action required beyond registry).
-
-### Exit
-
-Subject termination conditions met for ARCHIVED class relative to autonomous scope. Portfolio-wide termination not met. GitHub `archived=true` remains operator action.
-
----
-
 ## Prior sweeps
 
-See git history of this file for full prior entries (Sweep-164 … 001). Sweep-164 through Sweep-134 summaries that previously lived inline were preserved in git history at `dabfd3fb1c01ffd4c402745aa184566fa1f614f8` and earlier.
+See git history of this file for full prior entries (Sweep-166 … 001). Sweep-166 through Sweep-134 summaries that previously lived inline were preserved in git history at `dabfd3fb1c01ffd4c402745aa184566fa1f614f8` and earlier.
