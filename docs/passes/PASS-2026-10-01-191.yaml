@@ -26,7 +26,7 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - this governance commit
+    - 4ed946ad03cc74ee3588ab6c0d9542295bff9c1c
   capabilities_added_or_changed:
     - ftmA.I.bot archive-guard local invariants re-verified on lock commit: TESTED locally, not GitHub-VERIFIED
 VERIFICATION:
@@ -71,7 +71,8 @@ NEXT:
     - Do not execute trading stubs.
     - Do not claim success until the Actions API reports completed.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: 4ed946ad03cc74ee3588ab6c0d9542295bff9c1c
+  provenance_note: SHA correction commit follows the state commit; do not treat the correction as new verification.
   evidence:
     - https://github.com/beyond-repair/ftmA.I.bot/actions/runs/36925900968
     - head 79d97f92417da64deb6b31f679a7c3a6eb8a2df5
