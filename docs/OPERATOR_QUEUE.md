@@ -20,7 +20,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
-- Sweep-175: random select adl-capability-matrix. RESEARCH re-confirm. Lock `e57ec52`. Local pytest 8 passed. Gap 15 unassigned names, 0 extras. No archive/release/history action. Post-push CI not observed.
+- Sweep-175: random select adl-capability-matrix. RESEARCH re-confirm. Lock `e57ec52`. Local pytest 8 passed. Gap 15 unassigned names, 0 extras. No archive/release/history action. Post-push CI success 36889001703.
 - Sweep-174: portfolio discovery refresh. Census 82 vs profile public_repos 77. Private 9. Archived flag 1 (`CFT-v3.0`). Phase 3 CI still success: forge-aegis 36847797174, sovereign-clean-room 36815859875, BlockSwarm 36859452185, Digital_Double_virtual_workforce 36861489156. Releases and tags empty. New verified residual: Dependabot critical #13. Secret scanning disabled on sovereign-clean-room. No archive/release/history action.
 - Sweep-173: bloch-coherence-factor2 RESEARCH lock. Claim file commit `3cdbc2e3`. Local pytest 11 passed on pre head `05571476`. Main Actions 36844364901 success on that pre head. Releases empty. Loop branch not re-audited (run 36100043944 failed).
 - Sweep-172: topological-pinch RESEARCH re-confirm. Lock commit `3e62e04`. Local pytest 5 passed. Default Voronoi residual proxy 0.5/0.4/0.1, not 0.92.

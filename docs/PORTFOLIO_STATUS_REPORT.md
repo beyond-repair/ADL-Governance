@@ -20,7 +20,7 @@
 | Locked matrix rows | 67 (unchanged) |
 | Live names absent from locked rows | 15 (UNASSIGNED; cap null) |
 | Locked names absent from live search | 0 |
-| Post-push CI | NOT observed |
+| Post-push CI | **success** 36889001703 on `e57ec52` |
 | Releases | not tagged |
 | Archive / history rewrite | NOT executed |
 
@@ -37,7 +37,7 @@ Evidence rule: the gap file is a dated name set difference. It is not a capabili
 | Classification | **RESEARCH** (first registry lock) |
 | Local tests | pytest 11 passed, 0 failed on pre head |
 | Prior main CI | **success** [36844364901](https://github.com/beyond-repair/bloch-coherence-factor2/actions/runs/36844364901) on `05571476` |
-| Post-push CI | NOT observed |
+| Post-push CI | **success** 36889001703 on `e57ec52` |
 | Releases | empty (releases API) |
 | Archive / history rewrite | NOT executed |
 

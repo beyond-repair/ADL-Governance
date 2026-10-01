@@ -25,7 +25,7 @@ Added `matrix/census_gap_2026-10-01.json` (name presence only; cluster and claim
 
 ### TEST / CI
 
-Local `python -m pytest -q`: 8 passed, 0 failed. Post-push Actions on `e57ec52` not observed this pass.
+Local `python -m pytest -q`: 8 passed, 0 failed. Post-push Actions run **36889001703** conclusion **success** on `e57ec52`.
 
 ### GOVERN
 
