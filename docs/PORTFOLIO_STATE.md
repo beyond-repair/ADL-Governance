@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-09-24 (post Sweep-163 / Sweep-164 discovery)
+**As of:** 2026-10-01 (post Sweep-167)
 
 ## Priority queue
 
@@ -9,6 +9,7 @@
 3. BlockSwarm — ACTIVE (operator release tag v0.5.0-sagf)
 4. forge-aegis — ACTIVE / RELEASE_BLOCKED_BY_OPERATOR (implementation FROZEN; wait for remote v0.1.0; no FLS expansion)
 5. Governance / research / archive — maintenance (registry + claim discipline)
+6. Unaudited census remainder — atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame
 
 ## System status
 
@@ -19,9 +20,10 @@
 | Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green; Dependabot HIGH + evidence PR #7 open (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green; VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; Foundry success; tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); census refreshed Sweep-164 |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); census 82; PASS-2026-10-01-167 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
-| coherence-drive + satellites | RESEARCH | Claim discipline; Stage-1 symbolic INPUT-COMPLETE; no lab thrust claim |
+| coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
+| finite-gasket-spectral-derivatives | RESEARCH | Sweep-167; kernel locally tested; mult(6) CLAIMED not machine-verified here |
 | momentum-closure | RESEARCH | Claim-cap refreshed Sweep-158; pytest CI success |
 | ADL-Nexus | RESEARCH | Re-confirmed Sweep-163; CI green |
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Re-confirmed Sweep-162; docs-ci success |
@@ -30,7 +32,7 @@
 
 ## Live census
 
-- GitHub `user:beyond-repair` search total_count: **77** (2026-09-24)
+- GitHub `user:beyond-repair` search total_count: **82** (2026-10-01, Sweep-166/167)
 - adl-capability-matrix locked inventory: 67 rows (expansion OPEN / operator-gated)
 
 ## Rules

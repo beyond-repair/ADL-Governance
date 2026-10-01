@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-01-167
+  parent_pass: SWEEP-166
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 6
+  capabilities_verified: 1
+  gaps_remaining: 5
+OBJECTIVE:
+  id: GAP-CENSUS-FINITE-GASKET
+  description: Audit and claim-cap finite-gasket-spectral-derivatives; test the implemented eigenvalue kernel only.
+  reason_selected: Operator queue listed it among census names defaulting to RESEARCH until audited. Created 2026-10-01 and absent from the registry.
+DISCOVERY:
+  findings:
+    - Authenticated account is beyond-repair; search total_count 82.
+    - Last persisted sweep is Sweep-166 on Digital_Double_Virtual_Workforce_4. (SUPERSEDED).
+    - finite-gasket-spectral-derivatives tree before this pass was README.md, COMPLETION_LOG.md, scripts/spectral_derivatives.py. No tests, no workflow, no LICENSE.
+    - Script implements gamma_loop, dgamma_dw, v_second and a positive-definiteness guard. It does not build a gasket.
+    - Free mult(6) theorem is a prose argument whose graph constructor is in sierpinski-geometry-045, not this tree.
+CHANGES:
+  repositories:
+    - beyond-repair/finite-gasket-spectral-derivatives
+    - beyond-repair/ADL-Governance
+  files:
+    - finite-gasket-spectral-derivatives/CLAIM_STATUS.md
+    - finite-gasket-spectral-derivatives/tests/test_spectral_derivatives.py
+    - finite-gasket-spectral-derivatives/.github/workflows/kernel.yml
+    - ADL-Governance/docs/passes/PASS-2026-10-01-167.yaml
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+    - ADL-Governance/docs/repository_registry.md
+    - ADL-Governance/docs/OPERATOR_QUEUE.md
+    - ADL-Governance/docs/PORTFOLIO_STATE.md
+  commits:
+    - finite-gasket-spectral-derivatives@9b487e1e9a5a2c0c1c6d6900a0fab643a0d93a09
+  capabilities_added_or_changed:
+    - spectral-kernel-sums: IMPLEMENTED, locally TESTED, CI workflow present, Actions NOT_RUN
+VERIFICATION:
+  tests_run:
+    - local central-difference check of dgamma_dw and v_second on [0,2,6,6] at W=0.1: PASS (abs errors ~1e-9 and ~5e-8)
+    - spectral wall W=1/6 raises ValueError: PASS
+    - lambda=6 split identity: PASS
+  code_review: PASS
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Implemented surface is an eigenvalue-list calculator, not a gasket constructor.
+    - Classification RESEARCH, claim <= 1, no force/continuum/selected-W claim.
+  failures:
+    - No Basilisk-named repository or prior PASS yaml existed; Sweep-166 is the parent record.
+  decisions:
+    - REUSE governance registry rather than create a new nexus repository.
+    - Do not treat the mult(6) prose proof as VERIFIED in this repository.
+REMAINING:
+  incomplete:
+    - GitHub Actions conclusion for kernel.yml not observed.
+    - Free mult(6) not machine-checked against gasket_graph.py in this pass.
+  blockers:
+    - Archive flags and release tags remain operator-only.
+  new_gaps:
+    - GAP-CENSUS-REMAINING: atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame still unaudited.
+NEXT:
+  objective_id: GAP-CENSUS-INFORMATIONAL-FLUX
+  action: Audit informational-flux-identity the same way (discover tree, claim-cap, test only implemented functions).
+  reason: Same operator-queue unaudited set; pushed 2026-10-01; adjacent Coherence Drive satellite.
+  prerequisites:
+    - Read-only tree of informational-flux-identity
+    - No claim elevation
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - subject commit 9b487e1e9a5a2c0c1c6d6900a0fab643a0d93a09
+    - local numeric check recorded in this pass

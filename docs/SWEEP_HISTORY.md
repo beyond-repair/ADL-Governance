@@ -2,6 +2,45 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-167 / PASS-2026-10-01-167 (select: finite-gasket-spectral-derivatives)
+
+**Agent:** Grok (ADL-BASILISK / ADL-SEEM)
+**Selection method:** Highest-value bounded gap from OPERATOR_QUEUE unaudited census names (not random). Subject created 2026-10-01 and absent from registry.
+**Subject:** `finite-gasket-spectral-derivatives`
+**Subject head (pre):** `393c59aa4f521187ba3d5b7f809dfdf4ce494f77`
+**Subject lock commit:** `9b487e1e9a5a2c0c1c6d6900a0fab643a0d93a09` (CLAIM_STATUS.md, kernel tests, workflow)
+**Classification:** **RESEARCH** (first registry lock)
+
+### DISCOVER
+
+Public. Default branch `main`. Pre-change tree: README.md, COMPLETION_LOG.md, scripts/spectral_derivatives.py. Language Python. Open issues 0. Not archived. No workflows, tests, LICENSE, or releases. Description already disclaims continuum, selected W, and thrust. Claim badge ≤ 1.
+
+### AUDIT
+
+- Not in repository_registry.md (Sweep-166 left it in the default-RESEARCH unaudited set).
+- Implemented: eigenvalue-list functions `gamma_loop`, `dgamma_dw`, `v_second`, positive-definiteness guard. No gasket builder in tree.
+- Free mult(6) = (3^n-3)/2 is a prose argument depending on `sierpinski-geometry-045` `build_gasket`. State: CLAIMED, not machine-verified here.
+- No secrets. No product duplication of an ACTIVE canonical repo. Parent index remains `coherence-drive` (RESEARCH).
+
+### IMPLEMENT
+
+- Added claim table, unittest for the implemented kernel, and a stdlib Actions workflow.
+- No continuum, selected W, force, or multiplicity claim elevation. No history rewrite.
+
+### TEST / CI
+
+Local central-difference check on eigenvalues [0, 2, 6, 6] at W=0.1 matched first and second derivatives (absolute errors about 1e-9 and 5e-8). W=1/6 raises ValueError. Actions run not observed this pass.
+
+### GOVERN
+
+Registered RESEARCH. Unaudited census remainder: atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame.
+
+### Exit
+
+Subject autonomous slice closed for registration and kernel test. Portfolio-wide termination not met. Machine-readable record: docs/passes/PASS-2026-10-01-167.yaml.
+
+---
+
 ## 2026-10-01 — Sweep-166 (select: Digital_Double_Virtual_Workforce_4.)
 
 **Agent:** Grok (ADL-SEEM governed)

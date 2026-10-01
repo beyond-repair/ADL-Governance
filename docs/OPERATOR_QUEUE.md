@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-166)
+## Open items (as of Sweep-167)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, **btc-trading**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm v0.5.0-sagf, forge-aegis v0.1.0, Digital_Double_virtual_workforce, **sovereign-clean-room v1.3.x**, etc.).
@@ -12,10 +12,11 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - History rewrite or force-push: never by agent.
 - Optional: remove or LFS-migrate large committed model weight in Digital_Double_Virtual_Workforce_4.2 (hygiene only; do not delete without operator decision).
 - Review/merge open Dependabot PRs #3/#4/#5/#6 and draft evidence PR #7 on Digital_Double_virtual_workforce.
-- Audit unlisted census names (default RESEARCH): atomicdreamlabs, bloch-coherence-factor2, finite-gasket-spectral-derivatives, informational-flux-identity, mend, mendthegame.
+- Audit remaining unlisted census names (default RESEARCH): atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame. finite-gasket-spectral-derivatives closed Sweep-167.
 
 ## Residual notes from recent sweeps
 
+- Sweep-167: finite-gasket-spectral-derivatives RESEARCH lock (kernel tests + claim table; free mult(6) remains CLAIMED prose; Actions not observed). No archive/release action.
 - Sweep-166: Digital_Double_Virtual_Workforce_4. SUPERSEDED re-confirm (private; governance docs only; README empty-ref claim corrected; SUPERSEDED.md + CLAIM_STATUS.md added at 12798ac; no product mutation); GitHub archive flag still PENDING.
 - Sweep-165: btc-trading ARCHIVED re-confirm (README + ARCHIVED.md + SECURITY.md terminal, claim 0, hardcoded historical key noted; no subject mutation); GitHub archive flag still PENDING (already in archive_queue.md).
 - Sweep-163: ADL-Nexus RESEARCH re-confirm (CI SUCCESS run 14, claim ≤ 2 locked, no subject mutation); gap closed; no new operator archive/release action required for subject.
