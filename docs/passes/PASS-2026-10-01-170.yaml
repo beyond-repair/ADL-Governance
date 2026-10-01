@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-10-01-170
+  parent_pass: PASS-2026-10-01-169
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 7
+  capabilities_verified: 1
+  gaps_remaining: 4
+OBJECTIVE:
+  id: GAP-CENSUS-MEND
+  description: Audit and claim-cap mend; witness only the published balance formulas.
+  reason_selected: Operator queue unaudited remainder after Sweep-169. Created 2026-10-01 and absent from the registry.
+DISCOVERY:
+  findings:
+    - Authenticated account is beyond-repair; search total_count 82.
+    - Last persisted sweep is Sweep-169 on SEEM-Cognitive-Microservice (SUPERSEDED re-confirm at 56c7aae; governance head cc6ec256).
+    - mend pre-sweep head e71f56d4; no README, no LICENSE, no workflows. Tree includes src/game and committed .vercel/output.
+    - formulas.ts implements clamp, initialSkill, maxHp, xpForLevel, checkChance. Existing npm test does not import it.
+    - mendthegame is private and was not read. No SUPERSEDES claimed.
+CHANGES:
+  repositories:
+    - beyond-repair/mend
+    - beyond-repair/ADL-Governance
+  files:
+    - mend/CLAIM_STATUS.md
+    - mend/scripts/mend-formulas.test.mjs
+    - ADL-Governance/docs/passes/PASS-2026-10-01-170.yaml
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+    - ADL-Governance/docs/repository_registry.md
+    - ADL-Governance/docs/OPERATOR_QUEUE.md
+    - ADL-Governance/docs/PORTFOLIO_STATE.md
+  commits:
+    - mend@5328302f70c4849f759299a60ee41d2d179ffdc4
+    - ADL-Governance@pending-this-commit
+  capabilities_added_or_changed:
+    - mend-balance-formulas: IMPLEMENTED; local contract witness TESTED; source-file binding not executed; CI NOT_RUN
+VERIFICATION:
+  tests_run:
+    - node --test mend-formulas.test.mjs: PASS (1/1). Witness duplicates the formula contract; it does not import formulas.ts.
+  code_review: PASS
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - mend is a browser game scaffold, not a registered shipped product.
+    - Classification RESEARCH, claim <= 1.
+  failures:
+    - Did not install the app or run npm test (dependency scope).
+    - Did not read private mendthegame.
+  decisions:
+    - REUSE governance registry. Do not create a nexus repository.
+    - Do not add a GitHub Actions workflow this pass (no install verification).
+REMAINING:
+  incomplete:
+    - Game client playability untested.
+    - Formula witness is not file-bound to formulas.ts.
+  blockers:
+    - Archive flags and release tags remain operator-only.
+  new_gaps:
+    - GAP-CENSUS-REMAINING: atomicdreamlabs, bloch-coherence-factor2, mendthegame still unaudited.
+NEXT:
+  objective_id: GAP-CENSUS-BLOCH
+  action: Audit bloch-coherence-factor2 (discover tree, claim-cap, test only implemented functions).
+  reason: Remaining public unaudited census name; mendthegame is private and atomicdreamlabs may be a profile/org shell.
+  prerequisites:
+    - Read-only tree of bloch-coherence-factor2
+    - No claim elevation
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - mend commit 5328302f70c4849f759299a60ee41d2d179ffdc4
+    - local node test 1 pass 0 fail

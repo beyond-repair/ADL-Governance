@@ -2,6 +2,43 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-170 / PASS-2026-10-01-170 (select: mend)
+
+**Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
+**Selection method:** Highest-value unaudited census name after Sweep-169 (not random). Created 2026-10-01 and absent from the registry.
+**Subject:** `mend`
+**Subject head (pre):** `e71f56d4f62a23c90043e641b75c807a75341379`
+**Subject lock commit:** `5328302f70c4849f759299a60ee41d2d179ffdc4` (CLAIM_STATUS.md, scripts/mend-formulas.test.mjs)
+**Classification:** **RESEARCH** (first registry lock)
+
+### DISCOVER
+
+Public. Default branch `main`. No README, LICENSE, or workflows. Source is a TanStack Start browser game under `src/` including `src/game/formulas.ts`. `package.json` `test` covers auth/app-data scripts only. Committed `.vercel/output` is a build artifact, not an observed production deploy. Sibling `mendthegame` is private and was not read.
+
+### AUDIT
+
+- Not in repository_registry.md before this pass.
+- Implemented balance helpers: clamp, initialSkill, maxHp, xpForLevel, checkChance. No therapeutic or shipped-product claim in source reviewed.
+- No secrets reviewed in formulas.ts. No product duplication of an ACTIVE canonical repo.
+
+### IMPLEMENT
+
+- Added CLAIM_STATUS.md (claim ≤ 1) and a dependency-free formula witness. No gameplay mutation. No history rewrite. No archive flag.
+
+### TEST / CI
+
+Local `node --test` of the witness: 1 pass, 0 fail. The witness duplicates the formula contract; it does not import `formulas.ts`. Actions not run. `npm test` not run (install out of scope).
+
+### GOVERN
+
+Registered RESEARCH. Unaudited census remainder: atomicdreamlabs, bloch-coherence-factor2, mendthegame.
+
+### Exit
+
+Subject autonomous slice closed for registration and local formula witness. Portfolio-wide termination not met. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-169 / PASS-2026-10-01-169 (select: SEEM-Cognitive-Microservice)
 
 **Agent:** Grok (ADL-SEEM v3.0)
@@ -83,7 +120,7 @@ Local ledger check passed. Actions run not observed this pass.
 
 ### GOVERN
 
-Registered RESEARCH. Unaudited census remainder: atomicdreamlabs, bloch-coherence-factor2, mend, mendthegame.
+Registered RESEARCH. Unaudited census remainder at that time: atomicdreamlabs, bloch-coherence-factor2, mend, mendthegame.
 
 ### Exit
 
