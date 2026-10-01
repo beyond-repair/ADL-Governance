@@ -29,7 +29,7 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - pending_this_push
+    - 81ba2f5a00793b6782092a2fc8df43aab969b144
   capabilities_added_or_changed:
     - ftmA.I.bot archive-guard remote state re-observed: still queued, not GitHub-VERIFIED
     - machine-readable pass persistence restored for Sweep-192 and Sweep-193 from existing history text
@@ -70,14 +70,15 @@ REMAINING:
   new_gaps:
     - Sweep-192 and Sweep-193 were history-only until this reconstruction
 NEXT:
-  objective_id: REFETCH-FTM-ACTIONS-194
-  action: Re-fetch Actions run 36925900968 on a later pass. If completed, record conclusion and job logs. If still queued with zero jobs, leave it and do not rerun. Do not select ftmA.I.bot again until the run completes or the operator cancels it.
-  reason: Remote verification remains the open item on this slice. Repeating the refetch every pass has diminishing value once the queued state is recorded.
+  objective_id: SELECT-NEXT-NON-FTM-SUBJECT
+  action: On the next pass, select a repository other than ftmA.I.bot and ADL-Governance. Leave run 36925900968 queued. Re-fetch it only after a later pass or if the operator asks. Do not rerun it.
+  reason: The queued state is now recorded twice with unchanged timestamps. Further immediate refetches do not close a capability gap.
   prerequisites:
     - Do not execute trading stubs.
-    - Do not claim success until the Actions API reports completed.
+    - Do not claim archive-guard GitHub-VERIFIED until Actions reports completed.
 PROVENANCE:
-  state_commit: pending_this_push
+  state_commit: 81ba2f5a00793b6782092a2fc8df43aab969b144
+  provenance_note: SHA correction commit follows the state commit and is not new verification.
   evidence:
     - https://github.com/beyond-repair/ftmA.I.bot/actions/runs/36925900968
     - head 79d97f92417da64deb6b31f679a7c3a6eb8a2df5
