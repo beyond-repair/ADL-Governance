@@ -28,7 +28,7 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/passes/PASS-2026-10-01-185.yaml
   commits:
-    - pending-push
+    - de24932b406e934d469ed9648a02480c27784225
   capabilities_added_or_changed:
     - governance pass-heading coverage: IMPLEMENTED, locally TESTED, Actions NOT_RUN at authoring
 VERIFICATION:
@@ -69,8 +69,9 @@ NEXT:
     - Do not fabricate tests, run ids, or classifications beyond the sweep log.
     - Do not archive or rewrite history.
 PROVENANCE:
-  state_commit: pending-push
+  state_commit: de24932b406e934d469ed9648a02480c27784225
   evidence:
     - local scripts/check_passes.py FAIL on pre-change tree
     - local scripts/check_passes.py PASS after headings and this file
+    - implementation commit de24932b406e934d469ed9648a02480c27784225
     - governance head before change 46a2b52c668031ea18b49df253fa65aa6a2fe5d3
