@@ -1,0 +1,14 @@
+id: PASS-2026-10-01-190
+sweep: 190
+date: 2026-10-01
+subject: ftmA.I.bot
+classification: RESEARCH
+claim: 0
+selection: random.SystemRandom over 71 search names excluding 11 recent subjects
+pre_head: 56c9af544861183d50b0ea647203809acf4d1e2d
+post_head: 79d97f92417da64deb6b31f679a7c3a6eb8a2df5
+local_tests: 3 passed (unittest, non-executing)
+actions_run: 36925900968
+actions_status_at_record: queued
+github_archived: false
+notes: Archive flag remains operator-only. Trading stubs not executed.
