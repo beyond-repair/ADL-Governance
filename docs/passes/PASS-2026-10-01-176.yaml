@@ -33,6 +33,7 @@ CHANGES:
     - docs/OPERATOR_QUEUE.md
   commits:
     - seem-sunder-bridge 3ccd7cdeca373e13c7990e8926ab48d5b358106b
+    - ADL-Governance bf02426490e88334c03666b3ed477231d23b59df
   capabilities_added_or_changed:
     - Q-003 symbol witness: path presence IMPLEMENTED and locally TESTED; exact-def coverage PARTIAL; runtime interop NOT_CLAIMED
 VERIFICATION:
@@ -67,6 +68,6 @@ NEXT:
   prerequisites:
     - Default branch of sunder-cleanroom-vsa-adapter remains readable.
 PROVENANCE:
-  state_commit: pending-governance-commit
+  state_commit: bf02426490e88334c03666b3ed477231d23b59df
   evidence:
     - local pytest 8 passed on 3ccd7cdeca373e13c7990e8926ab48d5b358106b
