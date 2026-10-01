@@ -69,7 +69,7 @@ Extended `scripts/check_passes.py` so every persisted YAML id must appear in a `
 
 ### TEST
 
-Local `python scripts/check_passes.py` after this file and `docs/passes/PASS-2026-10-01-185.yaml`: recorded in the pass YAML. Actions not yet observed at authoring.
+Local `python scripts/check_passes.py`: PASS (8 yaml). Actions governance-ci 36912214635 success on de24932; 36912233751 success on e027660.
 
 ---
 

@@ -30,19 +30,21 @@ CHANGES:
   commits:
     - de24932b406e934d469ed9648a02480c27784225
   capabilities_added_or_changed:
-    - governance pass-heading coverage: IMPLEMENTED, locally TESTED, Actions NOT_RUN at authoring
+    - governance pass-heading coverage: IMPLEMENTED, locally TESTED, Actions VERIFIED
 VERIFICATION:
   tests_run:
     - python scripts/check_passes.py on pre-change tree with extended checker: FAIL (unnamed 167, 168, 170, 173, 176, 179, 182)
     - python scripts/check_passes.py after index headings and this file: PASS
+    - Actions governance-ci run 36912214635 on de24932b406e934d469ed9648a02480c27784225: success
+    - Actions governance-ci run 36912233751 on e02766098e445c4f5c2fc9ad141ba8c7ca5411f7: success
   code_review: PASS
   security: NOT_RUN
-  integration: NOT_RUN
+  integration: PASS
   invariants: PASS
   overall: PASS
   notes:
     - Did not invent historical pass bodies for 171, 172, 175, 177, 178, 180, 181, 183, or 184.
-    - Post-push Actions not observed at authoring.
+    - Post-push Actions observed success on the implementation commit and the provenance commit.
 KNOWLEDGE:
   confirmed:
     - Condensed history heading-named sweeps that have no YAML and omitted sweeps that have YAML.
@@ -54,7 +56,7 @@ KNOWLEDGE:
     - Index headings point at existing YAML paths only.
 REMAINING:
   incomplete:
-    - GitHub Actions conclusion for this commit not observed.
+    - Later observation commits are not a new capability.
     - Pass YAML bodies for 171, 172, 175, 177, 178, 180, 181, 183, 184 not reconstructed.
   blockers:
     - Private repos atomicdreamlabs, mendthegame, blacksite, test, SovereignOS not read.
@@ -75,3 +77,5 @@ PROVENANCE:
     - local scripts/check_passes.py PASS after headings and this file
     - implementation commit de24932b406e934d469ed9648a02480c27784225
     - governance head before change 46a2b52c668031ea18b49df253fa65aa6a2fe5d3
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/36912214635
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/36912233751
