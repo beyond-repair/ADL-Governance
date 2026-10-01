@@ -18,7 +18,7 @@ DISCOVERY:
     - Authenticated user beyond-repair. Search user:beyond-repair total_count 82, incomplete_results false. Profile public_repos 77.
     - ADL-Governance docs/passes had YAML for 167, 168, 170, 173, 176, 179, 182, 185 and markdown for 174. No YAML for 183 or 184 before this pass.
     - Sweep-183 body recovered from commit 7ba1526492ce167b0ba1a5e71ee40d731b3724c7. Sweep-184 body recovered from commit 46a2b52c668031ea18b49df253fa65aa6a2fe5d3.
-    - Current SWEEP_HISTORY.md already heading-named 184, 185, 186, and 187, but not 183.
+    - Pre-change SWEEP_HISTORY.md heading-named 184, 185, 186, and 187, but not 183.
     - Current history also records Sweep-186 and Sweep-187 without pass YAML.
 CHANGES:
   repositories:
@@ -28,13 +28,15 @@ CHANGES:
     - docs/passes/PASS-2026-10-01-184.yaml
     - docs/passes/PASS-2026-10-01-188.yaml
     - docs/SWEEP_HISTORY.md
-  commits: []
+  commits:
+    - 003c544ee96bfe37c0d7683aa0c755aa5d0dfe78
+    - 20b0aef75f8b3066ae0f82803764269479f5628b
   capabilities_added_or_changed:
     - governance pass YAML coverage for sweeps 183 and 184: IMPLEMENTED and locally TESTED; Actions not observed in this session
 VERIFICATION:
   tests_run:
     - Local YAML parse of 183, 184, and 188 plus heading-coverage simulation of scripts/check_passes.py rules against the updated history: PASS (missing headings [])
-    - Actions governance-ci: NOT_RUN in this session before push
+    - Actions governance-ci: NOT_RUN in this session
   code_review: PASS
   security: NOT_RUN
   integration: NOT_RUN
@@ -43,9 +45,12 @@ VERIFICATION:
   notes:
     - overall PASS is the local transcription check, not a portfolio exit and not an observed Actions run.
     - Abbreviated SHAs in the Sweep-183 source were not expanded.
+    - First push omitted SWEEP_HISTORY.md. Second commit added the required headings. That omission is recorded, not hidden.
 KNOWLEDGE:
-  confirmed: []
-  failures: []
+  confirmed:
+    - Sweep-183 and Sweep-184 bodies already existed in git history and are now machine-readable.
+  failures:
+    - First push did not include the history heading update. Corrected in 20b0aef75f8b3066ae0f82803764269479f5628b.
   decisions:
     - EXTEND existing pass records. Do not create a repository.
     - Do not invent missing YAML for 171, 172, 175, 177, 178, 180, 181, 186, or 187 in this slice.
@@ -64,5 +69,10 @@ NEXT:
     - Do not fabricate tests, run ids, or classifications beyond the sweep log.
     - Do not archive, tag, or rewrite history.
 PROVENANCE:
-  state_commit: null
-  evidence: []
+  state_commit: 20b0aef75f8b3066ae0f82803764269479f5628b
+  evidence:
+    - local YAML parse and heading simulation PASS
+    - https://github.com/beyond-repair/ADL-Governance/commit/003c544ee96bfe37c0d7683aa0c755aa5d0dfe78
+    - https://github.com/beyond-repair/ADL-Governance/commit/20b0aef75f8b3066ae0f82803764269479f5628b
+    - Sweep-183 source commit 7ba1526492ce167b0ba1a5e71ee40d731b3724c7
+    - Sweep-184 source commit 46a2b52c668031ea18b49df253fa65aa6a2fe5d3
