@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-10-01 (post Sweep-170)
+**As of:** 2026-10-01 (post Sweep-173)
 
 ## Priority queue
 
@@ -9,7 +9,7 @@
 3. BlockSwarm — ACTIVE (operator release tag v0.5.0-sagf)
 4. forge-aegis — ACTIVE / RELEASE_BLOCKED_BY_OPERATOR (implementation FROZEN; wait for remote v0.1.0; no FLS expansion)
 5. Governance / research / archive — maintenance (registry + claim discipline)
-6. Unaudited census remainder — atomicdreamlabs, bloch-coherence-factor2, mendthegame
+6. Unaudited census remainder — atomicdreamlabs (private), mendthegame (private)
 
 ## System status
 
@@ -20,9 +20,11 @@
 | Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green; Dependabot HIGH + evidence PR #7 open (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green; VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; Foundry success; tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); census 82; PASS-2026-10-01-170 |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); census 82; PASS-2026-10-01-173 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
+| bloch-coherence-factor2 | RESEARCH | Sweep-173; local pytest 11 passed; main Actions 36844364901 success on pre-claim head; loop branch not promoted |
+| topological-pinch | RESEARCH | Sweep-172; proxy 0.5/0.4/0.1 not 0.92; CI 36881071636 success |
 | mend | RESEARCH | Sweep-170; formula witness local PASS; playable product NOT verified |
 | informational-flux-identity | RESEARCH | Sweep-168; local witness signed net 0; Actions not observed |
 | finite-gasket-spectral-derivatives | RESEARCH | Sweep-167; kernel locally tested; mult(6) CLAIMED not machine-verified here |
@@ -35,7 +37,7 @@
 
 ## Live census
 
-- GitHub `user:beyond-repair` search total_count: **82** (2026-10-01, Sweep-170)
+- GitHub `user:beyond-repair` search total_count: **82** (2026-10-01, Sweep-171; not re-paged Sweep-173)
 - adl-capability-matrix locked inventory: 67 rows (expansion OPEN / operator-gated)
 
 ## Rules

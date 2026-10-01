@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-173 / PASS-2026-10-01-173 (select: bloch-coherence-factor2)
+
+**Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
+**Selection method:** PASS-2026-10-01-170 NEXT (GAP-CENSUS-BLOCH). Sweeps 171–172 did not close it.
+**Subject:** `bloch-coherence-factor2`
+**Subject head (pre):** `05571476be6510444a359c93b8e8243d30d9d826`
+**Subject lock commit:** `3cdbc2e3f7fdbdeae52540555365b3d80dc382ef`
+**Classification:** **RESEARCH** (first registry lock)
+
+### DISCOVER
+
+Public. Default branch `main`. Not archived. Releases API empty. Tree already contained theorem docs, `src/bloch_factor2`, `tests/test_factor2.py`, and `.github/workflows/falsify.yml`. No `CLAIM_STATUS.md` before this pass. README already said RESEARCH and claim ≤ 1.
+
+### AUDIT
+
+Factor of two is a structural ratio of the classical two-mode reduction, not a constant of nature. No thrust, Ware freeze, or CFT-X import on main. Latest main Actions run 36844364901 success on `05571476`. Latest observed run on `14J.5F.1-loop-correction` (36100043944) failed; branch not re-audited.
+
+### IMPLEMENT
+
+Added `CLAIM_STATUS.md` only. No physics change. No archive flag. No release tag.
+
+### TEST / CI
+
+Local `PYTHONPATH=src python -m pytest -q` on clone of `05571476`: 11 passed, 0 failed. Post-push Actions on the claim-file commit not observed.
+
+### GOVERN
+
+Registered RESEARCH, claim ≤ 1. Unaudited remainder: `atomicdreamlabs` (private), `mendthegame` (private; not read).
+
+### Exit
+
+Subject autonomous slice closed for registration and local suite re-run. Portfolio termination not met. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-172 / PASS-2026-10-01-172 (select: topological-pinch)
 
 **Agent:** Grok (ADL-SEEM v3.0)
@@ -40,11 +75,11 @@ Local `python -m pytest -q` on the pre-commit tree: 5 passed, 0 failed. Default 
 | 1 | 0.4 | false |
 | 2 | 0.1 | false |
 
-Post-push Actions run is pending relative to this governance commit. Prior main run 36817680614 was success.
+Post-push Actions run 36881071636 success on `3e62e04` (recorded in PORTFOLIO_STATUS_REPORT after the fact).
 
 ### GOVERN
 
-Classification unchanged: RESEARCH, claim ≤ 1. The 0.5/0.4/0.1 partition is a residual-current proxy, not aft-face localization and not thrust. Portfolio termination not met.
+Classification unchanged: RESEARCH, claim ≤ 1. The 0.5/0.4/0.1 partition is a residual-current proxy, not aft-face localization and not thrust. Portfolio termination not met. Pass yaml for 172 was not present in `docs/passes` at Sweep-173 start.
 
 ### Exit
 
@@ -81,7 +116,7 @@ Updated `docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, and this fi
 
 ### FINDINGS
 
-Named ACTIVE CI is green on the latest observed main runs. Exit criteria for portfolio termination fail: empty releases, open dependency PRs, retained `.env` residual, unaudited names, duplicate lines classed but not consolidated, archive flags pending.
+Named ACTIVE CI is green on the latest observed main runs. Exit criteria for portfolio termination fail: empty releases, open dependency PRs, retained `.env` residual, unaudited names, duplicate lines classed but not consolidated, archive flags pending. Pass yaml for 171 was not present in `docs/passes` at Sweep-173 start.
 
 ### Exit
 

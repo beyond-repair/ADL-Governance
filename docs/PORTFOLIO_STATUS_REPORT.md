@@ -1,37 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-01T15:05Z (autonomous Sweep-172; CI note patched after run 36881071636)
-**Census:** Live `user:beyond-repair` search `total_count` **82** (`incomplete_results=false`) at Sweep-171. Profile `public_repos` was **77** at that check; authenticated search is the census used here (includes private items). Not re-counted name-by-name this sweep.
+**Updated:** 2026-10-01 (autonomous Sweep-173)
+**Census:** Live `user:beyond-repair` search `total_count` **82** (`incomplete_results=false`) at Sweep-171. Profile `public_repos` was **77** at that check. Not re-counted name-by-name this sweep.
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Random select `topological-pinch`. Docs + proxy-lock test. No archive flags. No release tags. No history rewrite. No claim elevation.
+**This cycle:** Select `bloch-coherence-factor2` from PASS-170 NEXT. Claim file only. No archive flags. No release tags. No history rewrite. No claim elevation.
 
-## Sweep-172 scope
+## Sweep-173 scope
 
 | Mode | Value |
 |------|--------|
-| Primary | SELECT (urandom) → DISCOVER → AUDIT → CLASSIFY → IMPLEMENT → TEST → DOCUMENT → STOP |
-| Subject | topological-pinch |
-| Pre head | `5a7f2d04256d7400ce84f56dbc452511250df968` |
-| Lock commit | `3e62e04d92ab26a426cdb1a448114097542cbf15` |
-| Classification | **RESEARCH** (re-confirm) |
-| Local tests | pytest 5 passed, 0 failed |
-| Post-push CI | **success** [36881071636](https://github.com/beyond-repair/topological-pinch/actions/runs/36881071636) on `3e62e04` |
+| Primary | SELECT → DISCOVER → AUDIT → CLASSIFY → DOCUMENT → TEST → STOP |
+| Subject | bloch-coherence-factor2 |
+| Pre head | `05571476be6510444a359c93b8e8243d30d9d826` |
+| Lock commit | `3cdbc2e3f7fdbdeae52540555365b3d80dc382ef` |
+| Classification | **RESEARCH** (first registry lock) |
+| Local tests | pytest 11 passed, 0 failed on pre head |
+| Prior main CI | **success** [36844364901](https://github.com/beyond-repair/bloch-coherence-factor2/actions/runs/36844364901) on `05571476` |
+| Post-push CI | NOT observed |
 | Releases | empty (releases API) |
 | Archive / history rewrite | NOT executed |
 
-Evidence rule: Code > Documentation > Roadmap. Unverified claims stay `PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED`. The 0.5/0.4/0.1 partition is an observed graph proxy under the code default boundary. It is not a measured 92% aft-face localization.
+Evidence rule: Code > Documentation > Roadmap. The factor of two is an identity of the two-mode reduction in this model. It is not a measured device gap and not a constant of nature. Multimode R is only constrained to (1.5, 2.6) by the existing suite.
 
-## Subject status — topological-pinch
+## Subject status — bloch-coherence-factor2
 
 | Field | Observed |
 |-------|----------|
 | Default branch | `main` |
-| Tree | localization.py, tests, claim-cap docs, docs-ci workflow |
-| CI | **success** [36881071636](https://github.com/beyond-repair/topological-pinch/actions/runs/36881071636) on lock commit `3e62e04` |
-| Proxy | levels 2–4, corners 0/1/2: eta = 0.5 / 0.4 / 0.1; historical_92_reproduced = false |
-| Claim | ≤ 1; experimental_validation false |
-| Review readiness | **PASS WITH FINDINGS** (no mesh study; green CI is not physics validation) |
+| Tree | theorem docs, `src/bloch_factor2`, `tests/test_factor2.py`, falsify.yml, CLAIM_STATUS.md |
+| CI | success 36844364901 on pre-claim head; loop branch run 36100043944 failed (not re-audited) |
+| Claim | ≤ 1; structural ratio only |
+| Review readiness | **PASS WITH FINDINGS** (post-push CI not observed; loop branch not on main) |
 
 ## Classification (canonical)
 
@@ -43,9 +43,9 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-**`topological-pinch` — Sweep-172** (graph-proxy lock; 92% remains hypothesis). **`mend` — Sweep-170**. **`informational-flux-identity` — Sweep-168**. `finite-gasket-spectral-derivatives` — Sweep-167. `Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / 136 / 145 / 161. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / 130 / 150. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113 / 158. `ADL-Nexus` — Sweep-112 / 131 / 159 / 163. `acoustic-token-modem` — Sweep-110. `LegionOS` — Sweep-068 / 073 / 095 / 154. `Sovereign-OS` — Sweep-157. `CFTv3.3-IQG-Unified-Framework` — Sweep-106 / 162. `coherence-drive` — research index, not propulsion-validated. `sunder` — research agent, not the ACTIVE runtime.
+**`bloch-coherence-factor2` — Sweep-173** (classical two-mode lock). **`topological-pinch` — Sweep-172** (graph-proxy lock; 92% remains hypothesis). **`mend` — Sweep-170**. **`informational-flux-identity` — Sweep-168**. `finite-gasket-spectral-derivatives` — Sweep-167. `Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / 136 / 145 / 161. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / 130 / 150. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113 / 158. `ADL-Nexus` — Sweep-112 / 131 / 159 / 163. `acoustic-token-modem` — Sweep-110. `LegionOS` — Sweep-068 / 073 / 095 / 154. `Sovereign-OS` — Sweep-157. `CFTv3.3-IQG-Unified-Framework` — Sweep-106 / 162. `coherence-drive` — research index, not propulsion-validated. `sunder` — research agent, not the ACTIVE runtime.
 
-Unaudited at Sweep-172 (default RESEARCH, not a deep audit): `atomicdreamlabs`, `bloch-coherence-factor2`, `mendthegame` (private; not read).
+Unaudited at Sweep-173 (default RESEARCH, not a deep audit): `atomicdreamlabs` (private), `mendthegame` (private; not read).
 
 ### SUPERSEDED
 
@@ -71,17 +71,19 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Archive flags not applied | Low–Medium | OPEN |
 | Duplicate canonical implementations | Medium | OPEN (classed, not merged) |
 | topological-pinch 92% localization | High (claim) | UNVERIFIED; proxy contradicts 0.92 |
-| Three census names unaudited | Low | OPEN |
+| bloch loop-correction branch | Medium | OPEN (failed CI; not on main) |
+| Two private census names unaudited | Low | OPEN |
+| PASS yaml missing for 171 and 172 | Low | OPEN (history text exists) |
 | Profile 77 vs search 82 | Low | OPEN |
 
 ## Exit criteria
 
-| Criterion | Sweep-172 |
+| Criterion | Sweep-173 |
 |-----------|-----------|
 | Selected repo discovered | MET |
 | Classification assigned | MET (RESEARCH) |
-| Local tests | MET (5 passed) |
-| Post-push CI observed | MET (run 36881071636 success) |
+| Local tests | MET (11 passed) |
+| Post-push CI observed | NOT MET |
 | Releases on ACTIVE | NOT MET |
 | Critical security findings closed | NOT MET (`.env` residual retained) |
 | Duplicate canonical implementations removed | NOT MET |

@@ -1,8 +1,8 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-10-01 (Sweep-170) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-10-01 (Sweep-173) · **Governing source:** this repository
 
-Visible GitHub search count: **82**. Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: **82** (Sweep-171; not re-paged Sweep-173). Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
 
 ---
 
@@ -24,11 +24,11 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 ## RESEARCH (Claim level ≤ 2)
 
-`mend` registered Sweep-170 (claim ≤ 1; browser game scaffold; formula witness local PASS, not file-bound, Actions not run; playable product not verified; no SUPERSEDES vs mendthegame). `informational-flux-identity` registered Sweep-168 (claim ≤ 1; local witness signed net 0 and absolute right 349/366; Actions not observed). `finite-gasket-spectral-derivatives` registered Sweep-167 (claim ≤ 1; kernel locally tested; free mult(6) CLAIMED, graph not in-repo). `m2-renormalization-law` locked / re-confirmed Sweep-161 (parameter-free + pytest CI SUCCESS). `ADL-Nexus` re-confirmed Sweep-163 (CI SUCCESS run 14). `CFTv3.3-IQG-Unified-Framework` re-confirmed Sweep-162. `momentum-closure` Sweep-158. `sierpinski-geometry-045`, `ware-constant-phenomenology`, `-ware-constant-derivation`, `coherence-drive`, `optimization-limit-conjecture` and satellites under claim discipline. `adl-capability-matrix` locked 67-row (live census 82; expansion OPEN / operator-gated). See PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md for full list and recent re-confirms.
+`bloch-coherence-factor2` registered Sweep-173 (claim ≤ 1; classical two-mode R=2; local pytest 11 passed on `05571476`; main Actions 36844364901 success on that head; loop branch not promoted; releases empty). `topological-pinch` registered / re-confirmed Sweep-172 (claim ≤ 1; graph proxy 0.5/0.4/0.1 not 0.92; CI 36881071636 success). `mend` registered Sweep-170 (claim ≤ 1; browser game scaffold; formula witness local PASS, not file-bound, Actions not run; playable product not verified; no SUPERSEDES vs mendthegame). `informational-flux-identity` registered Sweep-168 (claim ≤ 1; local witness signed net 0 and absolute right 349/366; Actions not observed). `finite-gasket-spectral-derivatives` registered Sweep-167 (claim ≤ 1; kernel locally tested; free mult(6) CLAIMED, graph not in-repo). `m2-renormalization-law` locked / re-confirmed Sweep-161 (parameter-free + pytest CI SUCCESS). `ADL-Nexus` re-confirmed Sweep-163 (CI SUCCESS run 14). `CFTv3.3-IQG-Unified-Framework` re-confirmed Sweep-162. `momentum-closure` Sweep-158. `sierpinski-geometry-045`, `ware-constant-phenomenology`, `-ware-constant-derivation`, `coherence-drive`, `optimization-limit-conjecture` and satellites under claim discipline. `adl-capability-matrix` locked 67-row (live census 82; expansion OPEN / operator-gated). See PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md for full list and recent re-confirms.
 
-Unaudited names still default RESEARCH until a sweep reads the tree: `atomicdreamlabs`, `bloch-coherence-factor2`, `mendthegame`.
+Unaudited names still default RESEARCH until a sweep reads the tree: `atomicdreamlabs` (private), `mendthegame` (private).
 
-**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 82-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law, lab thrust demonstration, free mult(6) as in-repo verified computation, informational-flux-identity as a force law, mend as a shipped game.
+**Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 82-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law, lab thrust demonstration, free mult(6) as in-repo verified computation, informational-flux-identity as a force law, mend as a shipped game, bloch factor-of-two as a constant of nature or a device stability proof.
 
 ---
 

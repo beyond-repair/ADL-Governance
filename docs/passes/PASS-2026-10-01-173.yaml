@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-01-173
+  parent_pass: PASS-2026-10-01-172
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 8
+  capabilities_verified: 2
+  gaps_remaining: 3
+OBJECTIVE:
+  id: GAP-CENSUS-BLOCH
+  description: Audit bloch-coherence-factor2, claim-cap it, and re-run the existing falsification suite.
+  reason_selected: PASS-2026-10-01-170 NEXT named this public unaudited census item. Sweeps 171-172 did not close it.
+DISCOVERY:
+  findings:
+    - Authenticated account is beyond-repair; prior census total_count 82 retained (not re-paged this pass).
+    - Subject public, default branch main, archived false, releases empty.
+    - Pre head 05571476be6510444a359c93b8e8243d30d9d826. Tree already has model, operator, scan, tests, falsify.yml, theorem docs. No CLAIM_STATUS.md before this pass.
+    - README already states RESEARCH and claim <= 1. Factor of two is a structural ratio, not a constant.
+    - falsify.yml run 36844364901 success on 05571476. Branch 14J.5F.1-loop-correction latest observed run 36100043944 failed. Not re-audited.
+    - docs/passes lacks PASS-171 and PASS-172 yaml even though SWEEP_HISTORY records those sweeps.
+CHANGES:
+  repositories:
+    - beyond-repair/bloch-coherence-factor2
+    - beyond-repair/ADL-Governance
+  files:
+    - bloch-coherence-factor2/CLAIM_STATUS.md
+    - ADL-Governance/docs/passes/PASS-2026-10-01-173.yaml
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+    - ADL-Governance/docs/repository_registry.md
+    - ADL-Governance/docs/OPERATOR_QUEUE.md
+    - ADL-Governance/docs/PORTFOLIO_STATE.md
+    - ADL-Governance/docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - bloch-coherence-factor2@3cdbc2e3f7fdbdeae52540555365b3d80dc382ef
+    - ADL-Governance@pending-this-commit
+  capabilities_added_or_changed:
+    - bloch-two-mode-ratio: IMPLEMENTED; local pytest TESTED (11/11); prior main Actions VERIFIED on 05571476; post-claim-file Actions NOT_RUN
+VERIFICATION:
+  tests_run:
+    - PYTHONPATH=src python -m pytest -q on clone of 05571476: PASS (11 passed, 0 failed)
+  code_review: PASS
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - bloch-coherence-factor2 is a classical two-mode theorem plus truncated Bloch scan. Classification RESEARCH, claim <= 1.
+    - Local suite agrees with the published identities on the condensing fixture.
+  failures:
+    - Did not re-read private atomicdreamlabs or mendthegame.
+    - Did not audit the failed loop-correction branch.
+  decisions:
+    - REUSE existing suite. Do not add a second theorem or promote to ACTIVE.
+    - Do not create a new repository.
+REMAINING:
+  incomplete:
+    - Post-push Actions on the claim-file commit not observed.
+    - Multimode R is a window, not an identity.
+  blockers:
+    - Archive flags and release tags remain operator-only.
+    - atomicdreamlabs and mendthegame are private.
+  new_gaps:
+    - GAP-PASS-YAML-171-172: sweep history exists; pass yaml files for 171 and 172 are absent from docs/passes.
+NEXT:
+  objective_id: GAP-CENSUS-PRIVATE-SHELL
+  action: Read atomicdreamlabs only if the token can list the tree; otherwise record BLOCKED and do not guess contents. mendthegame remains private and unread.
+  reason: Last named unaudited census remainder after this registration.
+  prerequisites:
+    - Tree listing of beyond-repair/atomicdreamlabs
+    - No claim elevation
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - bloch-coherence-factor2 commit 3cdbc2e3f7fdbdeae52540555365b3d80dc382ef
+    - local pytest 11 passed 0 failed on 05571476
+    - Actions run 36844364901 success on 05571476
