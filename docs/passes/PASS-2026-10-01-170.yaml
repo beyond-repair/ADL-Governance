@@ -33,7 +33,7 @@ CHANGES:
     - ADL-Governance/docs/PORTFOLIO_STATE.md
   commits:
     - mend@5328302f70c4849f759299a60ee41d2d179ffdc4
-    - ADL-Governance@pending-this-commit
+    - ADL-Governance@7dd82b1c468254a48820526f83458c10bba1f189
   capabilities_added_or_changed:
     - mend-balance-formulas: IMPLEMENTED; local contract witness TESTED; source-file binding not executed; CI NOT_RUN
 VERIFICATION:
@@ -70,7 +70,8 @@ NEXT:
     - Read-only tree of bloch-coherence-factor2
     - No claim elevation
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: 7dd82b1c468254a48820526f83458c10bba1f189
   evidence:
     - mend commit 5328302f70c4849f759299a60ee41d2d179ffdc4
     - local node test 1 pass 0 fail
+    - provenance SHA backfill is a follow-up commit on this file
