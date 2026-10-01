@@ -51,3 +51,52 @@ Subject slice re-audited. Stop.
 ## Prior sweeps
 
 See git history of this file for full prior entries (Sweep-182 … 001). Sweep-182 and earlier bodies that previously lived inline were preserved in git history before condensation.
+
+
+## 2026-10-01 — Sweep-185 / PASS-2026-10-01-185 (history heading coverage)
+
+**Agent:** Grok (ADL-SEEM v3.0 / ADL-BASILISK)
+**Selection:** PASS-2026-10-01-182 NEXT `GAP-HISTORY-HEADING-COVERAGE`. Sweeps 183 and 184 did not close it. Operator-only items were not selected.
+**Scope:** ADL-Governance only. No product mutation. No archive. No release. No history rewrite.
+
+### DISCOVER
+
+Search `user:beyond-repair` total_count 82, incomplete_results false. Profile public_repos 77. Governance head before this pass `46a2b52c668031ea18b49df253fa65aa6a2fe5d3`. `docs/passes` YAML: 167, 168, 170, 173, 176, 179, 182. Markdown only: 174. Absent YAML: 171, 172, 175, 177, 178, 180, 181, 183, 184. Condensed `SWEEP_HISTORY.md` headings named only PASS-2026-10-01-183 and PASS-2026-10-01-184. Extended checker on that tree: FAIL (seven YAML ids unnamed).
+
+### IMPLEMENT
+
+Extended `scripts/check_passes.py` so every persisted YAML id must appear in a `## ... / PASS-...` heading, not only the latest id. Added index headings below that point at existing YAML paths. Did not invent bodies for missing sweep numbers.
+
+### TEST
+
+Local `python scripts/check_passes.py` after this file and `docs/passes/PASS-2026-10-01-185.yaml`: recorded in the pass YAML. Actions not yet observed at authoring.
+
+---
+
+## Persisted YAML index / PASS-2026-10-01-167
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-167.yaml`. Objective GAP-CENSUS-FINITE-GASKET. No body reconstructed here.
+
+## Persisted YAML index / PASS-2026-10-01-168
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-168.yaml` (flat sweep/date schema). Subject informational-flux-identity. No body reconstructed here.
+
+## Persisted YAML index / PASS-2026-10-01-170
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-170.yaml`. Objective GAP-CENSUS-MEND. No body reconstructed here.
+
+## Persisted YAML index / PASS-2026-10-01-173
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-173.yaml`. Objective GAP-CENSUS-BLOCH. No body reconstructed here.
+
+## Persisted YAML index / PASS-2026-10-01-176
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-176.yaml`. Objective GAP-BRIDGE-SYMBOL-WITNESS. No body reconstructed here.
+
+## Persisted YAML index / PASS-2026-10-01-179
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-179.yaml`. Objective GAP-BRIDGE-ADAPTER-DEFS. No body reconstructed here.
+
+## Persisted YAML index / PASS-2026-10-01-182
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-182.yaml`. Objective GAP-GOVERNANCE-CI. Condensed history had dropped this heading. No body reconstructed here.

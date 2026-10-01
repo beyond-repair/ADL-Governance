@@ -2,7 +2,7 @@
 """Non-vacuous governance pass checks.
 
 Validates every docs/passes/*.yaml parses as YAML and that
-docs/SWEEP_HISTORY.md names the latest pass id derived from filenames.
+docs/SWEEP_HISTORY.md heading-names every persisted pass id, including the latest.
 
 Does not invent missing historical pass bodies. Markdown records are ignored.
 Accepts the two observed schemas:
@@ -21,6 +21,13 @@ import yaml
 PASS_NAME = re.compile(r"^PASS-(\d{4}-\d{2}-\d{2})-(\d+)\.yaml$")
 HEADING = re.compile(r"^## .+\s/\s(PASS-\d{4}-\d{2}-\d{2}-\d+)\b", re.M)
 REQUIRED_NESTED = ("PASS", "STATE", "OBJECTIVE", "VERIFICATION", "NEXT")
+
+
+def pass_id_from_name(name: str) -> str:
+    match = PASS_NAME.match(name)
+    if not match:
+        raise SystemExit(f"unexpected pass filename: {name}")
+    return f"PASS-{match.group(1)}-{int(match.group(2))}"
 
 
 def latest_id(names: list[str]) -> str:
@@ -71,16 +78,24 @@ def main() -> int:
         return 1
     for path in files:
         check_file(path)
+    ids = [pass_id_from_name(path.name) for path in files]
     latest = latest_id([path.name for path in files])
     body = history.read_text(encoding="utf-8")
     named = set(HEADING.findall(body))
+    missing = [pass_id for pass_id in ids if pass_id not in named]
+    if missing:
+        print(
+            f"FAIL: SWEEP_HISTORY.md missing sweep headings for {missing}; named={sorted(named)}",
+            file=sys.stderr,
+        )
+        return 1
     if latest not in named:
         print(
             f"FAIL: SWEEP_HISTORY.md has no sweep heading for {latest}; named={sorted(named)}",
             file=sys.stderr,
         )
         return 1
-    print(f"PASS: {len(files)} yaml files parsed; history heading names {latest}")
+    print(f"PASS: {len(files)} yaml files parsed; history headings name all ids including {latest}")
     return 0
 
 

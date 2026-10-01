@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-10-01-185
+  parent_pass: PASS-2026-10-01-182
+  parent_note: Sweeps 183 and 184 are named in docs/SWEEP_HISTORY.md only. No PASS-2026-10-01-183.yaml or PASS-2026-10-01-184.yaml was present. Last basilisk YAML before this pass was PASS-2026-10-01-182, whose NEXT was GAP-HISTORY-HEADING-COVERAGE.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 5
+  capabilities_verified: 1
+  gaps_remaining: 13
+OBJECTIVE:
+  id: GAP-HISTORY-HEADING-COVERAGE
+  description: Heading-name every persisted docs/passes YAML id and require that coverage in scripts/check_passes.py.
+  reason_selected: PASS-182 NEXT was still open. Sweeps 183 and 184 did not add those headings. Operator-only items were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search user:beyond-repair total_count 82, incomplete_results false. Profile public_repos 77. Census drift retained.
+    - ADL-Governance default branch main, head 46a2b52c668031ea18b49df253fa65aa6a2fe5d3.
+    - docs/passes YAML present for 167, 168, 170, 173, 176, 179, 182. Markdown only for 174. Absent YAML for 171, 172, 175, 177, 178, 180, 181, 183, 184.
+    - Condensed SWEEP_HISTORY.md headings named only PASS-2026-10-01-183 and PASS-2026-10-01-184.
+    - Extended checker on that tree failed for all seven persisted YAML ids, including the latest id 182.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - scripts/check_passes.py
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-01-185.yaml
+  commits:
+    - pending-push
+  capabilities_added_or_changed:
+    - governance pass-heading coverage: IMPLEMENTED, locally TESTED, Actions NOT_RUN at authoring
+VERIFICATION:
+  tests_run:
+    - python scripts/check_passes.py on pre-change tree with extended checker: FAIL (unnamed 167, 168, 170, 173, 176, 179, 182)
+    - python scripts/check_passes.py after index headings and this file: PASS
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  notes:
+    - Did not invent historical pass bodies for 171, 172, 175, 177, 178, 180, 181, 183, or 184.
+    - Post-push Actions not observed at authoring.
+KNOWLEDGE:
+  confirmed:
+    - Condensed history heading-named sweeps that have no YAML and omitted sweeps that have YAML.
+    - Requiring only the latest id would still have failed on head 46a2b52 because 182 was not heading-named.
+  failures:
+    - A substring check remains invalid; headings are the contract.
+  decisions:
+    - EXTEND the existing checker. Do not create a repository.
+    - Index headings point at existing YAML paths only.
+REMAINING:
+  incomplete:
+    - GitHub Actions conclusion for this commit not observed.
+    - Pass YAML bodies for 171, 172, 175, 177, 178, 180, 181, 183, 184 not reconstructed.
+  blockers:
+    - Private repos atomicdreamlabs, mendthegame, blacksite, test, SovereignOS not read.
+    - Operator-only archive, release, secret rotation, and lockfile actions not executed.
+  new_gaps:
+    - GAP-PASS-YAML-183-184: sweep history exists; machine-readable pass YAML is absent.
+NEXT:
+  objective_id: GAP-PASS-YAML-183-184
+  action: Persist PASS-2026-10-01-183.yaml and PASS-2026-10-01-184.yaml by transcribing only facts already in docs/SWEEP_HISTORY.md. Do not add new claims or invent missing evidence.
+  reason: Heading coverage for existing YAML is closed by this pass. The next machine-readable gap is the two documented sweeps that still have no YAML.
+  prerequisites:
+    - Do not fabricate tests, run ids, or classifications beyond the sweep log.
+    - Do not archive or rewrite history.
+PROVENANCE:
+  state_commit: pending-push
+  evidence:
+    - local scripts/check_passes.py FAIL on pre-change tree
+    - local scripts/check_passes.py PASS after headings and this file
+    - governance head before change 46a2b52c668031ea18b49df253fa65aa6a2fe5d3
