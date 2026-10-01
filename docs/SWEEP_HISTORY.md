@@ -20,7 +20,7 @@ No adapter change. Reconstructed `docs/passes/PASS-2026-10-01-195.yaml` and `PAS
 
 ### TEST
 
-Local `python -m pytest -q` on a depth-1 clone of `32a93564688ef497911941ea08fed687b3ff9f21`: 9 passed, 0 failed.
+Local `python -m pytest -q` on a depth-1 clone of `32a93564688ef497911941ea08fed687b3ff9f21`: 9 passed, 0 failed. `scripts/check_passes.py` on `9993e5cc` failed because condensed history did not heading-name older YAML ids. Index added below. Bodies not restored.
 
 ### Exit
 
@@ -111,3 +111,63 @@ Subject slice re-audited. Stop.
 ---
 
 Earlier sweep bodies remain in git history before this condensation.
+
+## Condensed index / PASS-2026-10-01-167
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-168
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-170
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-173
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-176
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-179
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-182
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-183
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-184
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-185
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-188
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-189
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-190
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-191
+
+Heading only. Body remains in git history. Not a new verification.
+
+## Condensed index / PASS-2026-10-01-192
+
+Heading only. Body remains in git history. Not a new verification.
