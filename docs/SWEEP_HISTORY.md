@@ -2,6 +2,36 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-188 / PASS-2026-10-01-188 (GAP-PASS-YAML-183-184)
+
+**Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
+**Selection method:** PASS-185 NEXT still open. Sweeps 186 and 187 did not add YAML for 183 or 184.
+**Subject:** `ADL-Governance`
+**Classification:** ACTIVE / MAINTAIN (unchanged)
+**Implementation commit:** `003c544ee96bfe37c0d7683aa0c755aa5d0dfe78`
+
+### DISCOVER
+
+Recovered Sweep-183 body from commit `7ba1526492ce167b0ba1a5e71ee40d731b3724c7` and Sweep-184 body from commit `46a2b52c668031ea18b49df253fa65aa6a2fe5d3`. Current history heading-named 184 but not 183.
+
+### IMPLEMENT
+
+Added transcribed `docs/passes/PASS-2026-10-01-183.yaml` and `docs/passes/PASS-2026-10-01-184.yaml`. Added this pass record. No product-repo mutation. No archive, tag, lockfile edit, or history rewrite.
+
+### TEST
+
+Local YAML parse and heading-coverage simulation of `scripts/check_passes.py` rules: PASS for the new ids plus existing index headings. Actions observation is not claimed in the implementation commit.
+
+### Exit
+
+Machine-readable gap for 183 and 184 closed. Stop.
+
+---
+
+## Persisted YAML index / PASS-2026-10-01-183
+
+Pointer only. Body is `docs/passes/PASS-2026-10-01-183.yaml`, transcribed from commit `7ba1526492ce167b0ba1a5e71ee40d731b3724c7`.
+
 ## 2026-10-01 — Sweep-187 / PASS-2026-10-01-187 (select: RealityOS)
 
 **Agent:** Grok (ADL-SEEM v3.0)
