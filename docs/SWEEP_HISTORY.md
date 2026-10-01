@@ -2,6 +2,18 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-191 / PASS-2026-10-01-191 (verify: ftmA.I.bot archive-guard)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Parent:** PASS-2026-10-01-190
+**Subject:** `ftmA.I.bot` lock `79d97f92417da64deb6b31f679a7c3a6eb8a2df5`
+**Actions run:** 36925900968 still `queued`; `updated_at` 2026-10-01T21:02:13Z; jobs `total_count` 0.
+**Local test:** `python -m unittest tests.test_archive_invariants` on raw files from that lock: 3 passed. No trading script imported or executed.
+**Classification:** RESEARCH archive-queue. GitHub `archived` flag not set.
+**Exit:** remote verification BLOCKED. Portfolio exit criteria still failed (Dependabot 13, archive flags). Stop.
+
+---
+
 ## 2026-10-01 — Sweep-190 / PASS-2026-10-01-190 (select: ftmA.I.bot)
 
 **Agent:** Grok (ADL-SEEM v3.0)

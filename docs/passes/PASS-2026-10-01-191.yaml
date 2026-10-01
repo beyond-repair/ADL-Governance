@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-01-191
+  parent_pass: PASS-2026-10-01-190
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 7
+  capabilities_verified: 4
+  gaps_remaining: 8
+OBJECTIVE:
+  id: VERIFY-FTM-ARCHIVE-GUARD-191
+  description: Close the Sweep-190 open verification boundary for ftmA.I.bot archive-guard without executing trading stubs.
+  reason_selected: PASS-190 left Actions run 36925900968 queued and explicitly did not claim a conclusion. That was the smallest recoverable uncertainty.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search index inherited total_count 82 from Sweep-189; not re-paged this pass.
+    - ftmA.I.bot head remains 79d97f92417da64deb6b31f679a7c3a6eb8a2df5. GitHub archived flag not changed.
+    - Actions run 36925900968 status queued. created_at and updated_at 2026-10-01T21:02:13Z. jobs total_count 0.
+    - archive-guard workflow runs python -m unittest tests.test_archive_invariants only. No trading imports.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-01-191.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this governance commit
+  capabilities_added_or_changed:
+    - ftmA.I.bot archive-guard local invariants re-verified on lock commit: TESTED locally, not GitHub-VERIFIED
+VERIFICATION:
+  tests_run:
+    - python -m unittest tests.test_archive_invariants on raw files from 79d97f92417da64deb6b31f679a7c3a6eb8a2df5: 3 passed
+    - actions get run 36925900968: queued, jobs 0
+  code_review: PASS
+  security: FAIL
+  integration: NOT_RUN
+  invariants: PASS
+  overall: BLOCKED
+  notes:
+    - overall BLOCKED because remote Actions conclusion is still unknown.
+    - security FAIL is inherited portfolio Dependabot alert 13, not a new ftm finding.
+    - Root key-file invariant only checks repository root names, not nested paths.
+KNOWLEDGE:
+  confirmed:
+    - Lock-commit banners satisfy Claim_0, ARCHIVE, Claim level 0, ARCHIVED.md present, main.py absent, root secret filenames absent.
+    - Remote run has not been assigned a job.
+  failures:
+    - Cannot mark archive-guard GitHub-VERIFIED while status remains queued.
+  decisions:
+    - Do not cancel or rerun the queued dispatch.
+    - Do not set archived=true.
+    - Do not execute flashloan_front_running.py or other trading stubs.
+REMAINING:
+  incomplete:
+    - Actions conclusion for 36925900968
+    - Critical Dependabot 13
+    - Archive flags
+    - Census drift 77/82/86
+  blockers:
+    - GitHub Actions runner has not picked up workflow_dispatch run 36925900968
+    - Operator must approve lockfile bump and archive flags
+  new_gaps:
+    - archive-guard does not scan nested secret filenames
+NEXT:
+  objective_id: REFETCH-FTM-ACTIONS-191
+  action: Re-fetch Actions run 36925900968. If completed, record conclusion and job logs. If still queued with zero jobs, leave it and do not rerun.
+  reason: Remote verification is the only open item on this slice.
+  prerequisites:
+    - Do not execute trading stubs.
+    - Do not claim success until the Actions API reports completed.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - https://github.com/beyond-repair/ftmA.I.bot/actions/runs/36925900968
+    - head 79d97f92417da64deb6b31f679a7c3a6eb8a2df5
+    - local unittest 3 passed on raw lock-commit files

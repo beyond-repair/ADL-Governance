@@ -2,8 +2,9 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-190)
+## Open items (as of Sweep-191)
 
+- Sweep-191: re-verified `ftmA.I.bot` archive-guard locally (3 passed) on lock `79d97f92417da64deb6b31f679a7c3a6eb8a2df5`. Actions run 36925900968 still queued with zero jobs. Do not rerun while that dispatch is queued. No archive flag, no trading-script execution.
 - Sweep-190: random subject `ftmA.I.bot`. RESEARCH archive-queue reconfirmed. Lock `79d97f92417da64deb6b31f679a7c3a6eb8a2df5`. Local unittest 3 passed. Actions run 36925900968 was queued, not success, at record time. No archive flag, no release, no stub deletion, no trading-script execution.
 - Sweep-189: portfolio discovery + Phase-3 re-verify. Docs only. Critical Dependabot #13 still open. Search index 82. Profile `public_repos=77`.
 - Sweep-187: `RealityOS` RESEARCH. Lock `59b15e88fab57aeac7fcb435db92d6abf796bc97`. research-guard run 36918662862 success.
@@ -20,4 +21,4 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes
 
-- Sweep-190 subject slice: docs and non-executing guard committed. Actions conclusion not verified. Portfolio exit criteria failed. Stop.
+- Sweep-191 subject slice: local invariants reconfirmed. Remote Actions conclusion still unknown. Portfolio exit criteria failed. Stop.
