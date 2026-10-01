@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-01-189
+  parent_pass: PASS-2026-10-01-188
+  parent_note: User master directive required a portfolio sweep. PASS-188 NEXT (YAML for 186 and 187) was not the selected slice.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 7
+  capabilities_verified: 4
+  gaps_remaining: 8
+OBJECTIVE:
+  id: PORTFOLIO-SWEEP-189
+  description: Re-discover user beyond-repair and live-verify forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce. Update governance docs only.
+  reason_selected: Master directive Phase 1-11. One governed sweep. No infinite loop.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. public_repos 77. Search user:beyond-repair total_count 82, incomplete_results false.
+    - Phase-3 product CI success runs 36847797174, 36815859875, 36859452185, 36861489156.
+    - Releases API empty and tags API empty on all four Phase-3 repos. BlockSwarm v0.5.0-sagf tag claim is UNVERIFIED.
+    - Digital Double Dependabot alert 13 remains open (form-data, GHSA-fjxv-7rqg-78g4, critical, development scope).
+    - forge-aegis code scanning 404 no analysis. sovereign-clean-room secret scanning 404 disabled.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-01-189.yaml
+  capabilities_added_or_changed:
+    - portfolio status refreshed against live Phase-3 calls: DOCUMENTED
+    - no product capability added
+VERIFICATION:
+  tests_run:
+    - GitHub search, releases, tags, actions list, dependabot list, secret/code scanning list: OBSERVED
+    - Local product tests: NOT_RUN
+    - Actions on this governance commit: NOT_RUN in the authoring session
+  code_review: PASS WITH FINDINGS
+  security: FAIL
+  integration: NOT_RUN
+  invariants: PASS
+  overall: FAIL
+  notes:
+    - overall FAIL is the portfolio exit (critical Dependabot 13), not a failed documentation write.
+    - CI success is not dependency clearance.
+KNOWLEDGE:
+  confirmed:
+    - Four ACTIVE product workflows last completed success on the heads recorded in PORTFOLIO_STATUS_REPORT.md.
+  failures:
+    - Exit criteria not met.
+  decisions:
+    - Do not archive, tag, rewrite history, or edit the Digital Double lockfile.
+REMAINING:
+  incomplete:
+    - Critical Dependabot 13
+    - Archive flags
+    - Import-level dependency graph
+    - Pass YAML for 186 and 187
+  blockers:
+    - Operator must approve lockfile bump and archive flags
+  new_gaps: []
+NEXT:
+  objective_id: OPERATOR-DEPENDABOT-13
+  action: Operator reviews and merges a non-history-rewriting lockfile bump for form-data to at least 4.0.4 on Digital_Double_virtual_workforce, then re-fetches alert 13.
+  reason: Highest-severity verified residual. Agent must not bump the lockfile without that review.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not claim the alert closed until the alerts API says so.
+PROVENANCE:
+  evidence:
+    - search user:beyond-repair total_count 82
+    - actions runs 36847797174, 36815859875, 36859452185, 36861489156
+    - https://github.com/beyond-repair/Digital_Double_virtual_workforce/security/dependabot/13
