@@ -2,6 +2,25 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-177 / PASS-2026-10-01-177 (portfolio governance sweep)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Scope:** Master directive portfolio discovery, classification, Phase-3 live verification, gap/redundancy record. One cycle. No infinite loop.
+**Repositories reviewed:** union of list endpoint, search index, and direct gets = 86 names. Deep live verify: `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+**Actions performed:** documentation only in ADL-Governance (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`). No history rewrite. No archive flag. No release tag. No lockfile edit. No repository deletion.
+**Findings:**
+- Latest CI success: forge-aegis 36847797174, sovereign-clean-room 36815859875, BlockSwarm 36859452185, Digital_Double_virtual_workforce 36861489156.
+- Releases and tags empty on all four.
+- Dependabot open on workforce: 56 on first page; critical #13 `form-data` still open. Review readiness FAIL for that repo.
+- Secret scanning disabled on sovereign-clean-room. Code scanning 404 (no analysis) on all four.
+- ADL-Governance Actions workflows total_count 0.
+- GitHub archived flag still only CFT-v3.0.
+- Census drift: profile 77 / search 82 / direct union 86.
+**Residual risks:** critical dependency alert, duplicate families, unset archive flags, empty releases, disabled secret scanning, unaudited private repos, incomplete dependency graph.
+**Exit:** criteria not met. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-176 / PASS-2026-10-01-176 (select: seem-sunder-bridge)
 
 **Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
@@ -37,41 +56,6 @@ Subject slice closed for symbol-vs-path distinction. Stop.
 
 ---
 
-## 2026-10-01 — Sweep-175 (select: adl-capability-matrix)
-
-**Agent:** Grok (ADL-SEEM v3.0)
-**Selection method:** `random.SystemRandom` over 77 live search names excluding `bloch-coherence-factor2`, `topological-pinch`, `mend`, `informational-flux-identity`, and `ADL-Governance`.
-**Subject:** `adl-capability-matrix`
-**Subject head (pre):** `ea940fe405201855747e4d4cd9eed3816f5c9e91`
-**Subject lock commit:** `e57ec52c85b5a029be62fc7014b436cfacf65f4f`
-**Classification:** **RESEARCH** (re-confirm; no promotion)
-
-### DISCOVER
-
-Public. Default branch `main`. Not archived. Python. Tree: matrix JSON (67 rows), `load.py`, tests, CI workflow, README, CLAIM_STATUS, GOVERNANCE. Prior lock Sweep-115. Open operator item was cap expansion to live census.
-
-### AUDIT
-
-Live search this cycle: `total_count=82`, `incomplete_results=false`. Locked inventory_count 67. Set difference: 15 live names absent from locked rows; 0 locked names absent from live search. Missing names include this repo itself, ADL-Nexus, Open-Energy-Fusion, mend, bloch-coherence-factor2, and three queue-proposed names (`os-family-constitution-map`, `seem-sunder-bridge`, `sunder-cleanroom-vsa-adapter`). Assigning clusters or caps would invent metadata. No secrets in reviewed tree. No product release tag.
-
-### IMPLEMENT
-
-Added `matrix/census_gap_2026-10-01.json` (name presence only; cluster and claim_cap null). Added `tests/test_census_gap.py`. Updated README, CLAIM_STATUS, GOVERNANCE. Did not edit `capability_matrix.json`. No archive flag. No release tag. No history rewrite.
-
-### TEST / CI
-
-Local `python -m pytest -q`: 8 passed, 0 failed. Post-push Actions run **36889001703** conclusion **success** on `e57ec52`.
-
-### GOVERN
-
-Classification unchanged: RESEARCH, claim ≤ 1. Matrix is still not a live SLA. Portfolio termination not met.
-
-### Exit
-
-Subject re-audit closed for name-gap accounting. Cap assignment remains operator-gated. Stop.
-
----
-
 ## Prior sweeps
 
-See git history of this file for full prior entries (Sweep-174 … 001). Sweep-173 and earlier bodies that previously lived inline were preserved in git history before condensation in Sweep-176. Sweep-171 Phase 3 CI run IDs remain the last live verify of the four named ACTIVE targets.
+See git history of this file for full prior entries (Sweep-175 … 001). Sweep-175 and earlier bodies that previously lived inline were preserved in git history before condensation in Sweep-176. Sweep-171 Phase 3 CI run IDs were re-checked in Sweep-177 and remained the latest success runs.
