@@ -30,7 +30,7 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - pending push
+    - 716c2de858b4c69ad441101aa1b6090b5e55e531
   capabilities_added_or_changed:
     - governance pass-record parser: IMPLEMENTED, locally TESTED, Actions NOT_RUN at authoring
 VERIFICATION:
@@ -72,7 +72,8 @@ NEXT:
     - governance-ci.yml exists on main
     - A workflow run exists for the Sweep-182 commit, or the absence is recorded as BLOCKED
 PROVENANCE:
-  state_commit: pending
+  state_commit: 716c2de858b4c69ad441101aa1b6090b5e55e531
   evidence:
-    - local scripts/check_passes.py
-    - Actions list_workflows total_count 0 before this commit
+    - local scripts/check_passes.py PASS (7 yaml files; heading PASS-2026-10-01-182)
+    - Actions list_workflows total_count 0 before commit 716c2de858b4c69ad441101aa1b6090b5e55e531
+    - https://github.com/beyond-repair/ADL-Governance/commit/716c2de858b4c69ad441101aa1b6090b5e55e531

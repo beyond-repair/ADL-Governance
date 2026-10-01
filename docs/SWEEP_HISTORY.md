@@ -8,6 +8,7 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 **Selection method:** Last basilisk NEXT still open. PASS-179 named GAP-GOVERNANCE-CI. Sweeps 180–181 did not add a workflow. `list_workflows` total_count 0 on this pass.
 **Subject:** `ADL-Governance`
 **Subject head (pre):** `3e749f6d229e48673524ac50064fe7786092536c`
+**Subject lock commit:** `716c2de858b4c69ad441101aa1b6090b5e55e531`
 **Classification:** ACTIVE / MAINTAIN (unchanged)
 
 ### DISCOVER
