@@ -32,6 +32,7 @@ CHANGES:
     - docs/OPERATOR_QUEUE.md
   commits:
     - 32a93564688ef497911941ea08fed687b3ff9f21
+    - 5ae3622122ad9d33da21e738b0391873be2ebe19
   capabilities_added_or_changed:
     - CONTRACT_ONLY_NOT_LOCAL_DEFS witness for bind, unbind, similarity, register, query
 VERIFICATION:
@@ -72,8 +73,9 @@ NEXT:
     - Default branch remains main.
     - No archive or history rewrite.
 PROVENANCE:
-  state_commit: PENDING_GOVERNANCE_PUSH
+  state_commit: 5ae3622122ad9d33da21e738b0391873be2ebe19
   evidence:
     - https://github.com/beyond-repair/sunder-cleanroom-vsa-adapter/commit/32a93564688ef497911941ea08fed687b3ff9f21
+    - https://github.com/beyond-repair/ADL-Governance/commit/5ae3622122ad9d33da21e738b0391873be2ebe19
     - local pytest 9 passed
     - re-read adapter/local_ops.py at 32a93564688ef497911941ea08fed687b3ff9f21
