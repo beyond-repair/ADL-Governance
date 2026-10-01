@@ -2,6 +2,56 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-172 / PASS-2026-10-01-172 (select: topological-pinch)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Selection method:** `os.urandom` index over the Sweep-171 live census page (81 names excluding ADL-Governance). Index 65.
+**Subject:** `topological-pinch`
+**Subject head (pre):** `5a7f2d04256d7400ce84f56dbc452511250df968`
+**Subject lock commit:** `3e62e04d92ab26a426cdb1a448114097542cbf15`
+**Classification:** **RESEARCH** (re-confirm; no promotion)
+
+### DISCOVER
+
+Public. Default branch `main`. 12 tree entries. Python. Not archived. Files: `localization.py`, `tests/test_localization.py`, `tests/test_docs.py`, README, CLAIM_STATUS, GOVERNANCE, LICENSE, SPECTRAL_ENDPOINT_POINTER.md, `.github/workflows/ci.yml`. Releases API empty. Latest CI before this commit: success run 36817680614 on `5a7f2d0`.
+
+### AUDIT
+
+- Claim cap already denies experimental validation and the historical 92% figure.
+- GOVERNANCE invariant 4 was stale: it said CI only checks that claim-cap files exist. Workflow installs pytest and numpy and runs the suite, including the graph proxy.
+- No secrets in reviewed tree. No mesh, BEM, or Maxwell-stress integral in-repo.
+- Not a duplicate canonical implementation of `sierpinski-geometry-045` or `stress-tensor-modification` (pointer only).
+- Code search of ADL-Governance for the name returned 0 (index lag or docs not code-indexed). Status report did not name this repo explicitly before this pass.
+
+### IMPLEMENT
+
+- Corrected CI-scope wording in GOVERNANCE.md.
+- Recorded Sweep-172 graph-proxy partition in CLAIM_STATUS.md and README.md.
+- Added `test_default_boundary_partition_is_stable_and_not_92` so a silent 0.92 return fails CI.
+- No physics promotion. No history rewrite. No archive flag. No release tag.
+
+### TEST / CI
+
+Local `python -m pytest -q` on the pre-commit tree: 5 passed, 0 failed. Default `u_corners=[1.0,-0.5,0.0]`, levels 2–4:
+
+| corner | eta | historical_92_reproduced |
+|--------|-----|--------------------------|
+| 0 | 0.5 | false |
+| 1 | 0.4 | false |
+| 2 | 0.1 | false |
+
+Post-push Actions run is pending relative to this governance commit. Prior main run 36817680614 was success.
+
+### GOVERN
+
+Classification unchanged: RESEARCH, claim ≤ 1. The 0.5/0.4/0.1 partition is a residual-current proxy, not aft-face localization and not thrust. Portfolio termination not met.
+
+### Exit
+
+Subject re-audit closed for claim discipline and proxy lock. Stop. Do not treat as portfolio-complete.
+
+---
+
 ## 2026-10-01 — Sweep-171 / PASS-2026-10-01-171 (portfolio governance refresh)
 
 **Agent:** Grok (ADL-SEEM v3.0)
@@ -42,33 +92,15 @@ Governed sweep closed. Residuals recorded in OPERATOR_QUEUE.md. Stop. Do not ent
 ## 2026-10-01 — Sweep-170 / PASS-2026-10-01-170 (select: mend)
 
 **Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
-**Selection method:** Highest-value unaudited census name after Sweep-169 (not random). Created 2026-10-01 and absent from the registry.
+**Selection method:** Highest-value unaudited census name after Sweep-169 (not random).
 **Subject:** `mend`
 **Subject head (pre):** `e71f56d4f62a23c90043e641b75c807a75341379`
-**Subject lock commit:** `5328302f70c4849f759299a60ee41d2d179ffdc4` (CLAIM_STATUS.md, scripts/mend-formulas.test.mjs)
+**Subject lock commit:** `5328302f70c4849f759299a60ee41d2d179ffdc4`
 **Classification:** **RESEARCH** (first registry lock)
 
 ### DISCOVER
 
-Public. Default branch `main`. No README, LICENSE, or workflows. Source is a TanStack Start browser game under `src/` including `src/game/formulas.ts`. `package.json` `test` covers auth/app-data scripts only. Committed `.vercel/output` is a build artifact, not an observed production deploy. Sibling `mendthegame` is private and was not read.
-
-### AUDIT
-
-- Not in repository_registry.md before this pass.
-- Implemented balance helpers: clamp, initialSkill, maxHp, xpForLevel, checkChance. No therapeutic or shipped-product claim in source reviewed.
-- No secrets reviewed in formulas.ts. No product duplication of an ACTIVE canonical repo.
-
-### IMPLEMENT
-
-- Added CLAIM_STATUS.md (claim ≤ 1) and a dependency-free formula witness. No gameplay mutation. No history rewrite. No archive flag.
-
-### TEST / CI
-
-Local `node --test` of the witness: 1 pass, 0 fail. The witness duplicates the formula contract; it does not import `formulas.ts`. Actions not run. `npm test` not run (install out of scope).
-
-### GOVERN
-
-Registered RESEARCH. Unaudited census remainder: atomicdreamlabs, bloch-coherence-factor2, mendthegame.
+Public. Default branch `main`. No README, LICENSE, or workflows at pre-lock. Source is a TanStack Start browser game under `src/` including `src/game/formulas.ts`. Sibling `mendthegame` is private and was not read.
 
 ### Exit
 
@@ -76,47 +108,6 @@ Subject autonomous slice closed for registration and local formula witness. Port
 
 ---
 
-## 2026-10-01 — Sweep-169 / PASS-2026-10-01-169 (select: SEEM-Cognitive-Microservice)
-
-**Agent:** Grok (ADL-SEEM v3.0)
-**Selection method:** Date-seeded random choice over live census of 82 (`random.Random(20261001)`), excluding ADL-Governance.
-**Subject:** `SEEM-Cognitive-Microservice` (hyphen; not `SEEM-Cognitive_Microservice`)
-**Subject head (pre):** `473ef52e46886c411a4570ec756ee86b5be8e222`
-**Subject lock commit:** `56c7aae4011fdfa46f418875e4f8ff3ab3e934de` (SUPERSEDED.md, CLAIM_STATUS.md)
-**Classification:** **SUPERSEDED** (re-confirm; successor sovereign-clean-room; prior Sweep-134)
-
-### DISCOVER
-
-Public. Default branch `main`. 30 tree entries. Python. Open issues 0. Not archived. Modules: `seem.py`, `core/{banel,dream,resonator}.py`, `skills/hybrid_cortex.py`, `plugins/log_to_file.py`, systemd unit, bootstrap. Docs: README, CLAIM_STATUS, CHECKLIST, WHITE_PAPER, TECHNICAL_VSA_FHRR. No `.github/workflows`, no tests, no release tags observed. `config.json` not in tree.
-
-### AUDIT
-
-- Registry already maps this name to sovereign-clean-room. README already carries SUPERSEDED banner and claim 0 badge.
-- Historical prose in WHITE_PAPER / CHECKLIST / TECHNICAL_VSA_FHRR remains unsupported. CLAIM_STATUS already forbids treating it as evidence.
-- `BaNEL.min_invert=0.925` and emergency fidelity `0.85` are code constants, not measurements.
-- Placeholder API key string in `seem.py` is not a committed live secret. Daemon binds localhost. No critical secret in reviewed tree.
-- Duplicate canonical line remains the underscore sibling and SEEM-2.0; identity collapse forbidden.
-- Missing lifecycle file `SUPERSEDED.md` relative to LIFECYCLE.md archive-prep step.
-
-### IMPLEMENT
-
-- Added `SUPERSEDED.md`. Refreshed CLAIM_STATUS review date to Sweep-169.
-- No product code mutation, no history rewrite, no archive flag, no new repository.
-
-### TEST / CI
-
-No test suite and no workflow. Torch-backed CI was not added: it would not validate scientific claims and is out of scope on a superseded line. Actions not run.
-
-### GOVERN
-
-Classification unchanged. Archive flag remains operator-only. Portfolio termination not met.
-
-### Exit
-
-Subject re-audit closed for documentation. Stop. Do not treat as portfolio-complete.
-
----
-
 ## Prior sweeps
 
-See git history of this file for full prior entries (Sweep-168 … 001). Sweep-168 body that previously lived inline was preserved in git history before Sweep-171. Sweep-168 Phase 3 CI run IDs are superseded by Sweep-171.
+See git history of this file for full prior entries (Sweep-169 … 001). Sweep-169 body that previously lived inline was preserved in git history before this condensation. Sweep-171 Phase 3 CI run IDs remain the last live verify of the four named ACTIVE targets.

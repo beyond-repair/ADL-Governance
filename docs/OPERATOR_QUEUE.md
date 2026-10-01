@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-171)
+## Open items (as of Sweep-172)
 
 - Apply GitHub `archived=true` flag to documented ARCHIVED/SUPERSEDED targets: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, **-Py2APK-main**, **fantom_trading_bot_2**, **Digital_Double_Virtual_Workforce_4.**, Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, **CFT-v3.1**, **Agent-Snake**, **SEEM-Cognitive_Microservice**, **SEEM-Cognitive-Microservice** (hyphen; Sweep-169 re-confirm, still `archived=false` at last subject check), **btc-trading**, and remaining queue entries in archive_queue.md / repository_registry.md.
 - Tag product releases on ACTIVE repos (BlockSwarm, forge-aegis, Digital_Double_virtual_workforce, sovereign-clean-room). Live re-verify Sweep-171: all four named targets still have **zero releases** returned by the releases API.
@@ -15,8 +15,11 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Optional: remove or LFS-migrate large committed model weight in Digital_Double_Virtual_Workforce_4.2 (hygiene only).
 - Audit remaining default-RESEARCH names: atomicdreamlabs, bloch-coherence-factor2, mendthegame (private; not read).
 
+No new operator item from Sweep-172. `topological-pinch` stays RESEARCH; do not archive it and do not tag a physics release from the graph proxy.
+
 ## Residual notes from recent sweeps
 
+- Sweep-172: topological-pinch RESEARCH re-confirm. Lock commit `3e62e04`. Local pytest 5 passed. Default Voronoi residual proxy 0.5/0.4/0.1, not 0.92. Releases empty. No archive/release/history action.
 - Sweep-171: portfolio discovery refresh. Census 82 vs profile public_repos 77. Phase 3: forge-aegis CI 36847797174 success; sovereign-clean-room 36815859875 success; BlockSwarm 36859452185 success; Digital_Double_virtual_workforce 36861489156 success. Releases empty. No archive/release/history action.
 - Sweep-170: mend RESEARCH lock (CLAIM_STATUS + dependency-free formula witness; local node test 1/1; witness does not import formulas.ts; Actions not run; npm test not run). No archive/release action. mendthegame not read (private).
 - Sweep-169: SEEM-Cognitive-Microservice SUPERSEDED re-confirm (docs only at 56c7aae; no product mutation; GitHub archive flag still PENDING). Placeholder API key in seem.py is not a committed live secret.
