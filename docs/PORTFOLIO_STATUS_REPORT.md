@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-01T15:05Z (autonomous Sweep-172)
+**Updated:** 2026-10-01T15:05Z (autonomous Sweep-172; CI note patched after run 36881071636)
 **Census:** Live `user:beyond-repair` search `total_count` **82** (`incomplete_results=false`) at Sweep-171. Profile `public_repos` was **77** at that check; authenticated search is the census used here (includes private items). Not re-counted name-by-name this sweep.
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
@@ -16,6 +16,7 @@
 | Lock commit | `3e62e04d92ab26a426cdb1a448114097542cbf15` |
 | Classification | **RESEARCH** (re-confirm) |
 | Local tests | pytest 5 passed, 0 failed |
+| Post-push CI | **success** [36881071636](https://github.com/beyond-repair/topological-pinch/actions/runs/36881071636) on `3e62e04` |
 | Releases | empty (releases API) |
 | Archive / history rewrite | NOT executed |
 
@@ -27,10 +28,10 @@ Evidence rule: Code > Documentation > Roadmap. Unverified claims stay `PLANNED |
 |-------|----------|
 | Default branch | `main` |
 | Tree | localization.py, tests, claim-cap docs, docs-ci workflow |
-| Prior CI | **success** [36817680614](https://github.com/beyond-repair/topological-pinch/actions/runs/36817680614) on `5a7f2d0` |
+| CI | **success** [36881071636](https://github.com/beyond-repair/topological-pinch/actions/runs/36881071636) on lock commit `3e62e04` |
 | Proxy | levels 2–4, corners 0/1/2: eta = 0.5 / 0.4 / 0.1; historical_92_reproduced = false |
 | Claim | ≤ 1; experimental_validation false |
-| Review readiness | **PASS WITH FINDINGS** (no mesh study; post-push CI not yet observed in this report) |
+| Review readiness | **PASS WITH FINDINGS** (no mesh study; green CI is not physics validation) |
 
 ## Classification (canonical)
 
@@ -80,7 +81,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Selected repo discovered | MET |
 | Classification assigned | MET (RESEARCH) |
 | Local tests | MET (5 passed) |
-| Post-push CI observed | NOT MET at report write |
+| Post-push CI observed | MET (run 36881071636 success) |
 | Releases on ACTIVE | NOT MET |
 | Critical security findings closed | NOT MET (`.env` residual retained) |
 | Duplicate canonical implementations removed | NOT MET |
