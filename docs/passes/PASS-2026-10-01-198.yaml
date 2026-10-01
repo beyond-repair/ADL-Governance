@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-10-01-198
+  parent_pass: PASS-2026-10-01-197
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 4
+  gaps_remaining: 15
+OBJECTIVE:
+  id: GAP-PHASE3-LIVE-VERIFY
+  description: Re-fetch CI, releases, tags, and critical Dependabot for the four named product repositories. Re-check the queued ftmA.I.bot archive-guard. Update governance docs only.
+  reason_selected: Master directive Phase 3 named these repositories. Sweep-195 evidence was inherited by later sweeps and had to be re-fetched.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search total_count 82, incomplete_results false, page 2 empty. Public 73. Private 9. GitHub archived=true only CFT-v3.0. Profile public_repos 77.
+    - forge-aegis head 968595a72f50f38b64c9495b180cefd99abde45d equals CI run 36847797174 success.
+    - sovereign-clean-room head 5fbd20b201a02b41b1c8a9e698b78d9954a34da0 equals CI run 36815859875 success.
+    - BlockSwarm head 6e90f6f85c0969fa8a262a70ceba833d618a22db equals CI run 36859452185 success.
+    - Digital_Double_virtual_workforce head 24e6a29fd26c03900a8d98634d6683996eabdac4 equals CI run 36861489156 success.
+    - Releases and tags empty on all four.
+    - Dependabot critical #13 still open. High first page still includes 160, 159, 155, 153.
+    - Secret scanning disabled on sovereign-clean-room (404). Code scanning no analysis on forge-aegis (404).
+    - ftmA.I.bot run 36925900968 still queued. Timestamps 2026-10-01T21:02:13Z. Jobs total_count 0.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-01-198.yaml
+  commits: []
+  capabilities_added_or_changed: []
+VERIFICATION:
+  tests_run:
+    - GitHub Actions list for four product repos
+    - Releases and tags list for four product repos
+    - Dependabot critical lists for four product repos
+    - Dependabot high first page for Digital_Double_virtual_workforce
+    - Secret scanning list sovereign-clean-room
+    - Code scanning list forge-aegis
+    - Workflow run 36925900968
+  code_review: NOT_RUN
+  security: FAIL
+  integration: NOT_RUN
+  invariants: FAIL
+  overall: FAIL
+  notes:
+    - overall FAIL is the portfolio exit, not a product CI failure. Product CI conclusions were success on current heads.
+KNOWLEDGE:
+  confirmed:
+    - Current default-branch heads match last successful product CI SHAs.
+    - Critical alert #13 remains open.
+  failures:
+    - Exit criteria not met. Do not loop.
+  decisions:
+    - Do not bump lockfiles. Do not dispatch another archive-guard. Do not archive. Do not invent tags.
+REMAINING:
+  incomplete:
+    - Dependabot critical #13
+    - duplicate workforce lines
+    - archive flags false
+    - empty releases
+    - ftmA.I.bot run 36925900968 queued
+  blockers:
+    - Archive flags and release tags operator-only
+    - Lockfile bump operator-reviewed
+  new_gaps: []
+NEXT:
+  objective_id: GAP-OPERATOR-SECURITY
+  action: Operator reviews Digital Double lockfile bump for form-data 4.0.4 and the open high alerts. Agent does not merge.
+  reason: Critical security is the blocking exit criterion.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not claim the alert closed until the Dependabot state is fixed.
+PROVENANCE:
+  state_commit: 70ca1fa3a1a571789f4362d13b11a06c9e862a54
+  evidence:
+    - Actions runs 36847797174, 36815859875, 36859452185, 36861489156
+    - Dependabot alert 13 html_url security/dependabot/13
+    - ftmA.I.bot actions/runs/36925900968
