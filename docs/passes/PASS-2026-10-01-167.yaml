@@ -18,7 +18,7 @@ DISCOVERY:
     - Last persisted sweep is Sweep-166 on Digital_Double_Virtual_Workforce_4. (SUPERSEDED).
     - finite-gasket-spectral-derivatives tree before this pass was README.md, COMPLETION_LOG.md, scripts/spectral_derivatives.py. No tests, no workflow, no LICENSE.
     - Script implements gamma_loop, dgamma_dw, v_second and a positive-definiteness guard. It does not build a gasket.
-    - Free mult(6) theorem is a prose argument whose graph constructor is in sierpinski-geometry-045, not this tree.
+    - Free mult(6) theorem is a prose argument whose graph constructor is in sierpinski-geometry-045, not in this tree.
 CHANGES:
   repositories:
     - beyond-repair/finite-gasket-spectral-derivatives
@@ -34,6 +34,7 @@ CHANGES:
     - ADL-Governance/docs/PORTFOLIO_STATE.md
   commits:
     - finite-gasket-spectral-derivatives@9b487e1e9a5a2c0c1c6d6900a0fab643a0d93a09
+    - ADL-Governance@279e81ba2a15c885a0161c5b5af7deb1411d96e6
   capabilities_added_or_changed:
     - spectral-kernel-sums: IMPLEMENTED, locally TESTED, CI workflow present, Actions NOT_RUN
 VERIFICATION:
@@ -71,7 +72,7 @@ NEXT:
     - Read-only tree of informational-flux-identity
     - No claim elevation
 PROVENANCE:
-  state_commit: pending-governance-push
+  state_commit: 279e81ba2a15c885a0161c5b5af7deb1411d96e6
   evidence:
     - subject commit 9b487e1e9a5a2c0c1c6d6900a0fab643a0d93a09
     - local numeric check recorded in this pass
