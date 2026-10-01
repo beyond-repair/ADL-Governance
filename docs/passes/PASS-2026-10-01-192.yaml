@@ -1,0 +1,69 @@
+PASS:
+  id: PASS-2026-10-01-192
+  parent_pass: PASS-2026-10-01-191
+  reconstruction: true
+  reconstructed_on: PASS-2026-10-01-194
+  source: docs/SWEEP_HISTORY.md section Sweep-192 at ADL-Governance d9a4bfcf188bc85440d01c751daf2a462c7428aa
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 7
+  capabilities_verified: 4
+  gaps_remaining: 8
+OBJECTIVE:
+  id: PORTFOLIO-VERIFY-192
+  description: One governed discovery and Phase-3 live verification. No product mutation.
+  reason_selected: Recorded as portfolio verification after Sweep-191.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 82, incomplete_results false. Private in index 9. GitHub archived=true only CFT-v3.0.
+    - ftmA.I.bot run 36925900968 still queued on 79d97f92417da64deb6b31f679a7c3a6eb8a2df5 at Sweep-192 record time.
+    - Product CI success recorded: forge-aegis 36847797174, sovereign-clean-room 36815859875, BlockSwarm 36859452185, Digital_Double_virtual_workforce 36861489156.
+    - Releases and tags APIs empty on those four. Dependabot critical 13 still open. High 160 still open.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - 2b0de90db3021ecfe201df9c4fdbd48c646f62f9
+  capabilities_added_or_changed:
+    - documentation-only portfolio status refresh
+VERIFICATION:
+  tests_run:
+    - Actions status reads recorded in SWEEP_HISTORY; not re-executed in PASS-194 except the ftm run
+  code_review: NOT_RUN
+  security: FAIL
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: BLOCKED
+  notes:
+    - Reconstruction. security FAIL is inherited Dependabot alert 13.
+    - Portfolio exit criteria not met.
+KNOWLEDGE:
+  confirmed:
+    - Phase-3 product CI was success at Sweep-192 record time. Tags and releases were empty.
+  failures:
+    - Cannot close portfolio while critical Dependabot, archive flags, and queued archive-guard remain.
+  decisions:
+    - No lockfile bump. No archive flag. No release tag. No history rewrite.
+REMAINING:
+  incomplete:
+    - Dependabot 13
+    - Archive flags
+    - Queued archive-guard
+  blockers:
+    - Operator approval for lockfile bump and archive flags
+  new_gaps: []
+NEXT:
+  objective_id: SELECT-NEXT-SUBJECT
+  action: Sweep-193 selected DigitalDoubleVirtualWorkforce3.5.
+  reason: Recorded sequence.
+  prerequisites: []
+PROVENANCE:
+  state_commit: 2b0de90db3021ecfe201df9c4fdbd48c646f62f9
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-192 section

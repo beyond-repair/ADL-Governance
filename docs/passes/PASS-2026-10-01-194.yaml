@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-10-01-194
+  parent_pass: PASS-2026-10-01-193
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 7
+  capabilities_verified: 4
+  gaps_remaining: 8
+OBJECTIVE:
+  id: REFETCH-FTM-ACTIONS-194
+  description: Re-fetch ftmA.I.bot archive-guard run 36925900968 and persist the result. Do not dispatch another run.
+  reason_selected: PASS-191 named this as the next recoverable action. Sweep-192 and Sweep-193 left it unchecked. It is the smallest open verification boundary.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search index this pass total_count 82, incomplete_results false. Profile public_repos was 77 at get_me time.
+    - ADL-Governance head before this commit d9a4bfcf188bc85440d01c751daf2a462c7428aa.
+    - docs/passes contained yaml through PASS-2026-10-01-191 only. PASS-192 and PASS-193 files were absent despite SWEEP_HISTORY entries.
+    - ftmA.I.bot Actions run 36925900968 status queued. created_at and updated_at 2026-10-01T21:02:13Z. event workflow_dispatch. head_sha 79d97f92417da64deb6b31f679a7c3a6eb8a2df5. jobs total_count 0.
+    - conclusion field not present because the run is not completed.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-01-192.yaml
+    - docs/passes/PASS-2026-10-01-193.yaml
+    - docs/passes/PASS-2026-10-01-194.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending_this_push
+  capabilities_added_or_changed:
+    - ftmA.I.bot archive-guard remote state re-observed: still queued, not GitHub-VERIFIED
+    - machine-readable pass persistence restored for Sweep-192 and Sweep-193 from existing history text
+VERIFICATION:
+  tests_run:
+    - github actions get_workflow_run 36925900968: status queued, no conclusion
+    - github actions list_workflow_jobs 36925900968: total_count 0
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: BLOCKED
+  notes:
+    - overall BLOCKED because remote Actions conclusion is still unknown.
+    - No trading stub executed. No second workflow_dispatch. No archive flag change.
+    - PASS-192 and PASS-193 yaml are reconstructions from docs/SWEEP_HISTORY.md, not new product verification.
+KNOWLEDGE:
+  confirmed:
+    - Run 36925900968 has not been assigned a job since 2026-10-01T21:02:13Z.
+    - Sweep-193 narrative exists at ADL-Governance d9a4bfcf188bc85440d01c751daf2a462c7428aa without a pass yaml.
+  failures:
+    - Cannot mark archive-guard GitHub-VERIFIED while status remains queued and jobs remain 0.
+  decisions:
+    - Do not cancel or rerun the queued dispatch.
+    - Do not set archived=true.
+    - Do not execute flashloan_front_running.py or other trading stubs.
+    - Persist missing pass records from history rather than inventing a new product slice.
+REMAINING:
+  incomplete:
+    - Actions conclusion for 36925900968
+    - Critical Dependabot 13
+    - Archive flags
+    - Census drift 77/82
+    - Product release tags empty on the four Phase-3 repos last checked in Sweep-192
+  blockers:
+    - GitHub Actions runner has not picked up workflow_dispatch run 36925900968
+    - Operator must approve lockfile bump and archive flags
+  new_gaps:
+    - Sweep-192 and Sweep-193 were history-only until this reconstruction
+NEXT:
+  objective_id: REFETCH-FTM-ACTIONS-194
+  action: Re-fetch Actions run 36925900968 on a later pass. If completed, record conclusion and job logs. If still queued with zero jobs, leave it and do not rerun. Do not select ftmA.I.bot again until the run completes or the operator cancels it.
+  reason: Remote verification remains the open item on this slice. Repeating the refetch every pass has diminishing value once the queued state is recorded.
+  prerequisites:
+    - Do not execute trading stubs.
+    - Do not claim success until the Actions API reports completed.
+PROVENANCE:
+  state_commit: pending_this_push
+  evidence:
+    - https://github.com/beyond-repair/ftmA.I.bot/actions/runs/36925900968
+    - head 79d97f92417da64deb6b31f679a7c3a6eb8a2df5
+    - get_workflow_run status queued updated_at 2026-10-01T21:02:13Z
+    - list_workflow_jobs total_count 0

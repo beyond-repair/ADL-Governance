@@ -2,6 +2,18 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-194 / PASS-2026-10-01-194 (re-fetch: ftmA.I.bot archive-guard)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Parent:** PASS-2026-10-01-193 (narrative existed; yaml was absent until this sweep)
+**Subject:** `ftmA.I.bot` lock `79d97f92417da64deb6b31f679a7c3a6eb8a2df5`
+**Actions run:** 36925900968 still `queued`. `created_at` and `updated_at` `2026-10-01T21:02:13Z`. Jobs `total_count` 0. No conclusion field.
+**Actions performed:** documentation only in ADL-Governance. Reconstructed `docs/passes/PASS-2026-10-01-192.yaml` and `PASS-2026-10-01-193.yaml` from this history file. No second workflow_dispatch. No trading stub executed. No archive flag. No history rewrite. No lockfile edit.
+**Search index:** `user:beyond-repair` total_count 82, incomplete_results false. Profile `public_repos` 77.
+**Exit:** remote verification BLOCKED. Portfolio exit criteria still failed. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-193 / PASS-2026-10-01-193 (select: DigitalDoubleVirtualWorkforce3.5)
 
 **Agent:** Grok (ADL-SEEM v3.0)

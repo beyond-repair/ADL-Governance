@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-01-193
+  parent_pass: PASS-2026-10-01-192
+  reconstruction: true
+  reconstructed_on: PASS-2026-10-01-194
+  source: docs/SWEEP_HISTORY.md section Sweep-193 at ADL-Governance d9a4bfcf188bc85440d01c751daf2a462c7428aa
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 7
+  capabilities_verified: 4
+  gaps_remaining: 8
+OBJECTIVE:
+  id: SELECT-DDVW35-SUPERSEDE-GUARD-193
+  description: Re-audit DigitalDoubleVirtualWorkforce3.5 and add a non-product supersede-guard.
+  reason_selected: Recorded selection was random.SystemRandom().choice over 71 names, excluding ADL-Governance and the 10 most recently updated names.
+DISCOVERY:
+  findings:
+    - Subject head pre 7c9a67ffa38e5941be46e45a529bdee34fd2fb18.
+    - Subject head post 367fb3699da832a902c6c5cb8f3419bb2acb87a0.
+    - Classification SUPERSEDED. Successor Digital_Double_virtual_workforce. Claim 0. GitHub archived false.
+    - tests/ contained conftest.py only and imports missing src.core.agent.
+    - No workflows before the sweep. Dependabot open list empty.
+CHANGES:
+  repositories:
+    - beyond-repair/DigitalDoubleVirtualWorkforce3.5
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md
+    - tests_governance/test_supersede_invariants.py
+    - .github/workflows/supersede-guard.yml
+    - GOVERNANCE.md
+    - docs/CHANGELOG.md
+  commits:
+    - 367fb3699da832a902c6c5cb8f3419bb2acb87a0
+  capabilities_added_or_changed:
+    - supersede-guard on DigitalDoubleVirtualWorkforce3.5
+VERIFICATION:
+  tests_run:
+    - local unittest 3 passed as recorded in SWEEP_HISTORY
+    - Actions run 36932535230 supersede-guard conclusion success on 367fb3699da832a902c6c5cb8f3419bb2acb87a0 as recorded in SWEEP_HISTORY
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  notes:
+    - This file is a reconstruction. Product pytest was not run because src.core.agent is absent.
+    - Portfolio termination was not met.
+KNOWLEDGE:
+  confirmed:
+    - Subject remains SUPERSEDED relative to Digital_Double_virtual_workforce.
+  failures:
+    - Historical changelog claims of a core agent and unit tests are not supported by the tree.
+  decisions:
+    - Do not delete the repo. Do not rename import-statement filenames. Do not treat tests/conftest.py as a product suite.
+REMAINING:
+  incomplete:
+    - GitHub archived flag still false
+  blockers:
+    - Operator confirmation required for archived=true
+  new_gaps: []
+NEXT:
+  objective_id: REFETCH-FTM-ACTIONS-191
+  action: Inherited residual. Not executed in Sweep-193.
+  reason: Sweep-193 stopped after the subject slice.
+  prerequisites:
+    - Do not execute trading stubs.
+PROVENANCE:
+  state_commit: d9a4bfcf188bc85440d01c751daf2a462c7428aa
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-193 section
+    - https://github.com/beyond-repair/DigitalDoubleVirtualWorkforce3.5/actions/runs/36932535230
