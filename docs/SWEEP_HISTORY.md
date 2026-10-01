@@ -21,7 +21,7 @@ Added `scripts/check_passes.py` and `.github/workflows/governance-ci.yml`. Check
 
 ### TEST
 
-Local `python scripts/check_passes.py` after this record: see pass YAML. Post-push Actions not yet observed at authoring time.
+Local `python scripts/check_passes.py`: PASS (7 yaml files; heading PASS-2026-10-01-182). Actions run 36904879407 success on 716c2de. Actions run 36904903811 success on 21cdbc4.
 
 ### Exit
 

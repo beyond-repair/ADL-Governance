@@ -37,13 +37,15 @@ VERIFICATION:
   tests_run:
     - python scripts/check_passes.py on pre-record tree: FAIL (no heading for PASS-2026-10-01-179)
     - python scripts/check_passes.py after Sweep-182 heading and this file: PASS
+    - Actions governance-ci run 36904879407 on 716c2de858b4c69ad441101aa1b6090b5e55e531: success
+    - Actions governance-ci run 36904903811 on 21cdbc44ed55af9473313473bfaed04a814e0611: success
   code_review: PASS
   security: NOT_RUN
-  integration: NOT_RUN
+  integration: PASS
   invariants: PASS
   overall: PASS
   notes:
-    - Post-push Actions not observed at authoring. overall PASS is local only.
+    - Post-push Actions observed success on the implementation commit and the provenance commit.
     - Did not invent historical pass bodies.
 KNOWLEDGE:
   confirmed:
@@ -57,7 +59,7 @@ KNOWLEDGE:
     - Accept the observed flat schema so PASS-168 remains valid.
 REMAINING:
   incomplete:
-    - GitHub Actions conclusion for governance-ci.yml not observed.
+    - GitHub Actions observed success; later provenance commits are not a new capability.
     - Pass YAML bodies for 171, 172, 175, 177, 178, 180, 181 not reconstructed.
   blockers:
     - Private repos atomicdreamlabs, mendthegame, blacksite, test, SovereignOS not read.
@@ -65,15 +67,16 @@ REMAINING:
   new_gaps:
     - GAP-HISTORY-HEADING-COVERAGE: condensed SWEEP_HISTORY.md does not heading-name YAML ids 167, 168, 170, 173, 176, 179.
 NEXT:
-  objective_id: GAP-GOVERNANCE-CI-OBSERVE
-  action: Read the governance-ci.yml workflow run on the Sweep-182 commit. Record success or the exact failure. Do not invent a green result.
-  reason: Local parser pass is not Actions verification.
+  objective_id: GAP-HISTORY-HEADING-COVERAGE
+  action: Add sweep headings that name existing YAML ids 167, 168, 170, 173, 176, and 179 without inventing missing pass bodies. Point each heading at the existing YAML path or git history.
+  reason: GAP-GOVERNANCE-CI-OBSERVE closed by runs 36904879407 and 36904903811. Condensed history still does not heading-name older YAML ids. The checker only requires the latest id.
   prerequisites:
-    - governance-ci.yml exists on main
-    - A workflow run exists for the Sweep-182 commit, or the absence is recorded as BLOCKED
+    - Do not fabricate sweeps 171, 172, 175, 177, 178, 180, or 181 YAML bodies.
 PROVENANCE:
   state_commit: 716c2de858b4c69ad441101aa1b6090b5e55e531
   evidence:
     - local scripts/check_passes.py PASS (7 yaml files; heading PASS-2026-10-01-182)
     - Actions list_workflows total_count 0 before commit 716c2de858b4c69ad441101aa1b6090b5e55e531
     - https://github.com/beyond-repair/ADL-Governance/commit/716c2de858b4c69ad441101aa1b6090b5e55e531
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/36904879407
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/36904903811
