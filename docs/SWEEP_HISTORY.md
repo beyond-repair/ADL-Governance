@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-178 / PASS-2026-10-01-178 (select: bloch-coherence-factor2)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Selection method:** `random.SystemRandom` over 82 live search names (`user:beyond-repair`, incomplete_results=false).
+**Subject:** `bloch-coherence-factor2`
+**Subject head (pre):** `3cdbc2e3f7fdbdeae52540555365b3d80dc382ef`
+**Subject lock commit:** `77d7063a51784be5ac6e39ca3a616dc73fa578c2`
+**Classification:** **RESEARCH** (no promotion)
+
+### DISCOVER
+
+Public. Default branch `main`. Python package `bloch_factor2` (`model.py`, `operator.py`, `scan.py`). Tests in `tests/test_factor2.py`. CI workflow `.github/workflows/falsify.yml`. Docs: theorem, model, operator, two-mode, multimode, stability, falsification, numerics, interpretation fork, loop protocol, line freeze, claim status. License present (non-SPDX).
+
+### AUDIT
+
+Prior Sweep-173 already claim-capped the repo. README layout omitted `LINE_FREEZE.md` and `CLAIM_STATUS.md` even though both files existed. Loop branch not on main. Releases and tags empty. No secrets observed in the tree.
+
+### IMPLEMENT
+
+Docs only: README layout names the two existing files. `CLAIM_STATUS.md` updated to Sweep-178. No theorem rewrite. No loop merge. No archive flag. No release tag.
+
+### TEST / CI
+
+Local `PYTHONPATH=src python3 -m pytest -q` on clone of `3cdbc2e3`: 11 passed, 0 failed. Latest main Actions before this push: success [36881720661](https://github.com/beyond-repair/bloch-coherence-factor2/actions/runs/36881720661) on `3cdbc2e3`. Post-push Actions not observed.
+
+### GOVERN
+
+Classification unchanged: RESEARCH, claim ≤ 1. Factor of two remains a structural ratio of this model, not a constant of nature, not thrust. Portfolio termination not met.
+
+### Exit
+
+Subject slice re-audited. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-177 / PASS-2026-10-01-177 (portfolio governance sweep)
 
 **Agent:** Grok (ADL-SEEM v3.0)

@@ -4,6 +4,8 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Open items (as of Sweep-177)
 
+- Sweep-178: random select bloch-coherence-factor2. RESEARCH re-confirm. Lock `77d7063`. Local pytest 11 passed. Main Actions 36881720661 success on pre head. No archive/release/history action. Post-push CI not observed. Optional operator tag would not raise claim level; not applied.
+
 - **Security escalation (critical):** Digital_Double_virtual_workforce Dependabot alert #13 remains **open**. Package `form-data`, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, severity critical. Re-fetched 2026-10-01 Sweep-177. Agent did not bump the lockfile.
 - **Security escalation (high volume):** same repo has **56** open Dependabot alerts on the first page (`per_page=100`). Newly listed this sweep (not previously in this queue as a count): high alerts include `js-yaml` GHSA-2883-xcg3-v3hh (#160/#159), `browserslist` GHSA-73wf-gq98-2v4g (#155), `nanoid` GHSA-xwg4-73v4-xw9w (#153/#147), `brace-expansion` GHSA-3jxr-9vmj-r5cp (#122), `js-yaml` GHSA-5p4m-2wfm-xmqj (#112/#111). Medium includes `pytest` CVE-2025-71176 (#168) and multiple `vite` advisories. Do not treat CI success as dependency clearance.
 - Apply GitHub `archived=true` only after operator confirmation: genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, -Py2APK-main, fantom_trading_bot_2, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, DigitalDoubleVirtualWorkforce3.5, CFT-v3.1, Agent-Snake, SEEM-Cognitive_Microservice, SEEM-Cognitive-Microservice, btc-trading, and remaining archive_queue.md entries. Sweep-177 still shows `archived=true` only on CFT-v3.0.

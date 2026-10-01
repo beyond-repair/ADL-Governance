@@ -1,10 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-01 (autonomous Sweep-177)
-**Project / Version:** ADL Portfolio Governance / Sweep-177
+**Updated:** 2026-10-01 (autonomous Sweep-178)
+**Project / Version:** ADL Portfolio Governance / Sweep-178
 **Authenticated owner:** `beyond-repair`
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims stay `PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED`.
+
+
+## This cycle — bloch-coherence-factor2 (Sweep-178)
+
+| Field | Value |
+|-------|--------|
+| Selection | `random.SystemRandom` over 82 live search names |
+| Subject | `bloch-coherence-factor2` |
+| Classification | RESEARCH (unchanged) |
+| Claim | ≤ 1 classical two-mode ratio; factor of two is not a constant of nature |
+| Pre head | `3cdbc2e3f7fdbdeae52540555365b3d80dc382ef` |
+| Lock commit | `77d7063a51784be5ac6e39ca3a616dc73fa578c2` |
+| Local tests | pytest 11 passed, 0 failed on pre head |
+| Main CI | **success** [36881720661](https://github.com/beyond-repair/bloch-coherence-factor2/actions/runs/36881720661) on `3cdbc2e3` |
+| Post-push CI | not observed |
+| Releases / tags | empty / empty |
+| Safe change | README layout now lists existing `LINE_FREEZE.md` and `CLAIM_STATUS.md` |
+| Not done | no archive flag, no release tag, loop branch not promoted |
+
+Portfolio termination conditions are not met. Subject slice is re-audited, not a physics promotion.
+
+
 
 ## Census (this sweep)
 
