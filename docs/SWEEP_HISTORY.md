@@ -2,6 +2,47 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-169 / PASS-2026-10-01-169 (select: SEEM-Cognitive-Microservice)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Selection method:** Date-seeded random choice over live census of 82 (`random.Random(20261001)`), excluding ADL-Governance.
+**Subject:** `SEEM-Cognitive-Microservice` (hyphen; not `SEEM-Cognitive_Microservice`)
+**Subject head (pre):** `473ef52e46886c411a4570ec756ee86b5be8e222`
+**Subject lock commit:** `56c7aae4011fdfa46f418875e4f8ff3ab3e934de` (SUPERSEDED.md, CLAIM_STATUS.md)
+**Classification:** **SUPERSEDED** (re-confirm; successor sovereign-clean-room; prior Sweep-134)
+
+### DISCOVER
+
+Public. Default branch `main`. 30 tree entries. Python. Open issues 0. Not archived. Modules: `seem.py`, `core/{banel,dream,resonator}.py`, `skills/hybrid_cortex.py`, `plugins/log_to_file.py`, systemd unit, bootstrap. Docs: README, CLAIM_STATUS, CHECKLIST, WHITE_PAPER, TECHNICAL_VSA_FHRR. No `.github/workflows`, no tests, no release tags observed. `config.json` not in tree.
+
+### AUDIT
+
+- Registry already maps this name to sovereign-clean-room. README already carries SUPERSEDED banner and claim 0 badge.
+- Historical prose in WHITE_PAPER / CHECKLIST / TECHNICAL_VSA_FHRR remains unsupported. CLAIM_STATUS already forbids treating it as evidence.
+- `BaNEL.min_invert=0.925` and emergency fidelity `0.85` are code constants, not measurements.
+- Placeholder API key string in `seem.py` is not a committed live secret. Daemon binds localhost. No critical secret in reviewed tree.
+- Duplicate canonical line remains the underscore sibling and SEEM-2.0; identity collapse forbidden.
+- Missing lifecycle file `SUPERSEDED.md` relative to LIFECYCLE.md archive-prep step.
+
+### IMPLEMENT
+
+- Added `SUPERSEDED.md`. Refreshed CLAIM_STATUS review date to Sweep-169.
+- No product code mutation, no history rewrite, no archive flag, no new repository.
+
+### TEST / CI
+
+No test suite and no workflow. Torch-backed CI was not added: it would not validate scientific claims and is out of scope on a superseded line. Actions not run.
+
+### GOVERN
+
+Classification unchanged. Archive flag remains operator-only. Portfolio termination not met.
+
+### Exit
+
+Subject re-audit closed for documentation. Stop. Do not treat as portfolio-complete.
+
+---
+
 ## 2026-10-01 — Sweep-168 / PASS-2026-10-01-168 (select: informational-flux-identity)
 
 **Agent:** Grok (ADL-SEEM v3.0)
@@ -50,45 +91,6 @@ Subject autonomous slice closed for registration and local witness. Portfolio-wi
 
 ---
 
-## 2026-10-01 — Sweep-167 / PASS-2026-10-01-167 (select: finite-gasket-spectral-derivatives)
-
-**Agent:** Grok (ADL-BASILISK / ADL-SEEM)
-**Selection method:** Highest-value bounded gap from OPERATOR_QUEUE unaudited census names (not random). Subject created 2026-10-01 and absent from registry.
-**Subject:** `finite-gasket-spectral-derivatives`
-**Subject head (pre):** `393c59aa4f521187ba3d5b7f809dfdf4ce494f77`
-**Subject lock commit:** `9b487e1e9a5a2c0c1c6d6900a0fab643a0d93a09` (CLAIM_STATUS.md, kernel tests, workflow)
-**Classification:** **RESEARCH** (first registry lock)
-
-### DISCOVER
-
-Public. Default branch `main`. Pre-change tree: README.md, COMPLETION_LOG.md, scripts/spectral_derivatives.py. Language Python. Open issues 0. Not archived. No workflows, tests, LICENSE, or releases. Description already disclaims continuum, selected W, and thrust. Claim badge ≤ 1.
-
-### AUDIT
-
-- Not in repository_registry.md (Sweep-166 left it in the default-RESEARCH unaudited set).
-- Implemented: eigenvalue-list functions `gamma_loop`, `dgamma_dw`, `v_second`, positive-definiteness guard. No gasket builder in tree.
-- Free mult(6) = (3^n-3)/2 is a prose argument depending on `sierpinski-geometry-045` `build_gasket`. State: CLAIMED, not machine-verified here.
-- No secrets. No product duplication of an ACTIVE canonical repo. Parent index remains `coherence-drive` (RESEARCH).
-
-### IMPLEMENT
-
-- Added claim table, unittest for the implemented kernel, and a stdlib Actions workflow.
-- No continuum, selected W, force, or multiplicity claim elevation. No history rewrite.
-
-### TEST / CI
-
-Local central-difference check on eigenvalues [0, 2, 6, 6] at W=0.1 matched first and second derivatives (absolute errors about 1e-9 and 5e-8). W=1/6 raises ValueError. Actions run not observed this pass.
-
-### GOVERN
-
-Registered RESEARCH. Unaudited census remainder at end of Sweep-167: atomicdreamlabs, bloch-coherence-factor2, informational-flux-identity, mend, mendthegame.
-
-### Exit
-
-Subject autonomous slice closed for registration and kernel test. Portfolio-wide termination not met. Machine-readable record: docs/passes/PASS-2026-10-01-167.yaml.
-
----
-
 ## Prior sweeps
 
-See git history of this file for full prior entries (Sweep-166 … 001). Sweep-166 through Sweep-134 summaries that previously lived inline were preserved in git history at `dabfd3fb1c01ffd4c402745aa184566fa1f614f8` and earlier.
+See git history of this file for full prior entries (Sweep-167 … 001). Sweep-167 through Sweep-134 summaries that previously lived inline were preserved in git history at `dabfd3fb1c01ffd4c402745aa184566fa1f614f8` and earlier. Sweep-168 body remains inline above.
