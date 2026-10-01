@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-01-184
+  parent_pass: PASS-2026-10-01-183
+  parent_note: Transcribed in PASS-2026-10-01-188 from docs/SWEEP_HISTORY.md at commit 46a2b52c668031ea18b49df253fa65aa6a2fe5d3. No new evidence added.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 2
+  capabilities_known: 5
+  capabilities_verified: 1
+  gaps_remaining: 13
+OBJECTIVE:
+  id: SELECT-DIGITAL-DOUBLE-MOBILE-184
+  description: Re-audit digital-double-mobile and record SUPERSEDED claim cap plus a superseded guard.
+  reason_selected: random.SystemRandom over 82 search names, excluding the recent subjects listed in the Sweep-184 log.
+DISCOVERY:
+  findings:
+    - Subject digital-double-mobile, public, default branch main.
+    - Pre head 2220faf392cc51ba8e2624846c4b1318d41b7402. Lock c14f50f41a40eab78e0530fa57a73048d2e8c8a2.
+    - Successor already named Digital_Double_virtual_workforce.
+    - Tree included committed .env (1166 bytes), node_modules, __pycache__, empty placeholder assets, and backend/api/tests/test_business_routes.py importing v1_1_api which was not present.
+    - .gitignore already listed .env and node_modules, but tracked copies remained. .env contents were not copied into the log.
+CHANGES:
+  repositories:
+    - beyond-repair/digital-double-mobile
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md
+    - scripts/superseded_guard.py
+    - .github/workflows/superseded-guard.yml
+    - README.md
+    - SUPERSEDED.md
+  commits:
+    - c14f50f41a40eab78e0530fa57a73048d2e8c8a2
+  capabilities_added_or_changed:
+    - digital-double-mobile superseded guard: IMPLEMENTED and Actions VERIFIED; product claim remains 0
+VERIFICATION:
+  tests_run:
+    - Local dry-run of the guard logic: PASS
+    - Actions superseded-guard run 36911252324 success on c14f50f41a40eab78e0530fa57a73048d2e8c8a2 at 2026-10-01T19:01:44Z
+  code_review: NOT_RUN
+  security: FAIL
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  notes:
+    - security FAIL is the logged residual tracked .env, not a failed guard run.
+    - overall PASS means the re-audit slice completed as logged. Archive flag was not applied.
+KNOWLEDGE:
+  confirmed:
+    - Classification remained SUPERSEDED, claim 0.
+    - No history rewrite and no archive flag.
+  failures:
+    - Historical test importing v1_1_api is not a product gate.
+  decisions:
+    - Did not delete .env, node_modules, or history.
+REMAINING:
+  incomplete:
+    - Operator removal of tracked .env and credential rotation.
+    - GitHub archived=true still pending.
+  blockers:
+    - Operator-only archive and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: UNKNOWN-AT-SWEEP-184
+  action: Not recorded beyond stop.
+  reason: Transcription does not invent a next action that the source omitted.
+  prerequisites:
+    - Do not rewrite history.
+PROVENANCE:
+  state_commit: 46a2b52c668031ea18b49df253fa65aa6a2fe5d3
+  evidence:
+    - docs/SWEEP_HISTORY.md at 46a2b52c668031ea18b49df253fa65aa6a2fe5d3
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/36911252324
+    - lock c14f50f41a40eab78e0530fa57a73048d2e8c8a2

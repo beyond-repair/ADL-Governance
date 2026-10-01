@@ -1,0 +1,68 @@
+PASS:
+  id: PASS-2026-10-01-188
+  parent_pass: PASS-2026-10-01-185
+  parent_note: PASS-185 NEXT was GAP-PASS-YAML-183-184. Sweeps 186 and 187 landed in SWEEP_HISTORY.md without YAML and were not selected for this slice.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 5
+  capabilities_verified: 1
+  gaps_remaining: 12
+OBJECTIVE:
+  id: GAP-PASS-YAML-183-184
+  description: Persist PASS-2026-10-01-183.yaml and PASS-2026-10-01-184.yaml by transcribing only facts already in docs/SWEEP_HISTORY.md.
+  reason_selected: Highest-priority open basilisk NEXT. Operator-only archive, release, and lockfile actions were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search user:beyond-repair total_count 82, incomplete_results false. Profile public_repos 77.
+    - ADL-Governance docs/passes had YAML for 167, 168, 170, 173, 176, 179, 182, 185 and markdown for 174. No YAML for 183 or 184 before this pass.
+    - Sweep-183 body recovered from commit 7ba1526492ce167b0ba1a5e71ee40d731b3724c7. Sweep-184 body recovered from commit 46a2b52c668031ea18b49df253fa65aa6a2fe5d3.
+    - Current SWEEP_HISTORY.md already heading-named 184, 185, 186, and 187, but not 183.
+    - Current history also records Sweep-186 and Sweep-187 without pass YAML.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-01-183.yaml
+    - docs/passes/PASS-2026-10-01-184.yaml
+    - docs/passes/PASS-2026-10-01-188.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - governance pass YAML coverage for sweeps 183 and 184: IMPLEMENTED and locally TESTED; Actions not observed in this session
+VERIFICATION:
+  tests_run:
+    - Local YAML parse of 183, 184, and 188 plus heading-coverage simulation of scripts/check_passes.py rules against the updated history: PASS (missing headings [])
+    - Actions governance-ci: NOT_RUN in this session before push
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  notes:
+    - overall PASS is the local transcription check, not a portfolio exit and not an observed Actions run.
+    - Abbreviated SHAs in the Sweep-183 source were not expanded.
+KNOWLEDGE:
+  confirmed: []
+  failures: []
+  decisions:
+    - EXTEND existing pass records. Do not create a repository.
+    - Do not invent missing YAML for 171, 172, 175, 177, 178, 180, 181, 186, or 187 in this slice.
+REMAINING:
+  incomplete:
+    - Pass YAML for 186 and 187.
+    - Pass YAML for 171, 172, 175, 177, 178, 180, 181.
+  blockers: []
+  new_gaps:
+    - GAP-PASS-YAML-186-187: sweep history exists; machine-readable pass YAML is absent.
+NEXT:
+  objective_id: GAP-PASS-YAML-186-187
+  action: Persist PASS-2026-10-01-186.yaml and PASS-2026-10-01-187.yaml by transcribing only facts already in current docs/SWEEP_HISTORY.md.
+  reason: 183 and 184 close the prior NEXT. 186 and 187 are the newest documented sweeps still missing YAML.
+  prerequisites:
+    - Do not fabricate tests, run ids, or classifications beyond the sweep log.
+    - Do not archive, tag, or rewrite history.
+PROVENANCE:
+  state_commit: null
+  evidence: []
