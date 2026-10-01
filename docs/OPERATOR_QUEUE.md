@@ -2,7 +2,7 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-181)
+## Open items (as of Sweep-182)
 
 - Sweep-181: random select `sunder`. RESEARCH reconfirm. Lock `36d37c247e0e0be2ef8404cc697a1dcd4250de12`. Local pytest 6 passed. Post-push CI not observed. No archive. No release. Claim ≤ 1.
 - Sweep-180: portfolio re-verification only. No archive flag, no release tag, no history rewrite, no lockfile bump. Phase-3 CI still green. Critical Dependabot #13 still open. Portfolio termination not met.
@@ -18,7 +18,8 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Decide disposition of `sovereign-clean-room` branch `fix/pynacl-1.6.2-cve-2025-69277`.
 - Enable secret scanning on sovereign-clean-room (API 404: feature disabled, Sweep-180).
 - Enable or accept absence of code scanning on forge-aegis.
-- Add a non-vacuous CI workflow to ADL-Governance (`list_workflows` total_count 0, Sweep-180). GAP-GOVERNANCE-CI remains open.
+- Sweep-182: GAP-GOVERNANCE-CI implemented locally. Workflow `.github/workflows/governance-ci.yml` and `scripts/check_passes.py` added. Local checker PASS after heading rule. Post-push Actions not observed. No archive. No release.
+- GAP-GOVERNANCE-CI workflow added Sweep-182. Observe Actions before treating it as verified. Do not invent a green run.
 - Assign cluster/claim caps for the 15 names in `adl-capability-matrix` `matrix/census_gap_2026-10-01.json` (Sweep-175). Do not invent caps.
 - Audit private default-RESEARCH names. Contents not read Sweep-181.
 - Reconcile census drift: profile 77, search 82, inherited direct-get union 86.

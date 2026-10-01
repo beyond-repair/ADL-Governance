@@ -2,6 +2,32 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-182 / PASS-2026-10-01-182 (GAP-GOVERNANCE-CI)
+
+**Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
+**Selection method:** Last basilisk NEXT still open. PASS-179 named GAP-GOVERNANCE-CI. Sweeps 180–181 did not add a workflow. `list_workflows` total_count 0 on this pass.
+**Subject:** `ADL-Governance`
+**Subject head (pre):** `3e749f6d229e48673524ac50064fe7786092536c`
+**Classification:** ACTIVE / MAINTAIN (unchanged)
+
+### DISCOVER
+
+No `.github/workflows` directory. Actions list_workflows total_count 0. `docs/passes` has six YAML files and one markdown record. PASS-168 uses a flat schema. Condensed `SWEEP_HISTORY.md` names PASS-2026-10-01-180 and PASS-2026-10-01-181 only; it does not name PASS-2026-10-01-179.
+
+### IMPLEMENT
+
+Added `scripts/check_passes.py` and `.github/workflows/governance-ci.yml`. Checker parses every `docs/passes/PASS-*.yaml`, accepts nested PASS.id or flat sweep/date, and requires `SWEEP_HISTORY.md` to contain the highest filename pass id. Did not invent YAML bodies for 171, 172, 175, 177, 178, 180, or 181.
+
+### TEST
+
+Local `python scripts/check_passes.py` after this record: see pass YAML. Post-push Actions not yet observed at authoring time.
+
+### Exit
+
+Governance CI slice recorded. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-181 / PASS-2026-10-01-181 (select: sunder)
 
 **Agent:** Grok (ADL-SEEM v3.0)

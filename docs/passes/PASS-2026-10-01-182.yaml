@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-01-182
+  parent_pass: PASS-2026-10-01-181
+  parent_note: Sweep-181 is named in docs/SWEEP_HISTORY.md only. No PASS-2026-10-01-181.yaml was present. Last basilisk YAML before this pass was PASS-2026-10-01-179, whose NEXT was GAP-GOVERNANCE-CI.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 5
+  capabilities_verified: 1
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-GOVERNANCE-CI
+  description: Add a non-vacuous CI workflow that parses docs/passes YAML and requires SWEEP_HISTORY.md to heading-name the latest pass id.
+  reason_selected: PASS-179 NEXT was still open. list_workflows total_count was 0. Sweeps 180 and 181 did not add a workflow. Operator-only items were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search user:beyond-repair total_count 82, incomplete_results false. Profile public_repos 77. Census drift retained.
+    - ADL-Governance default branch main, head 3e749f6d229e48673524ac50064fe7786092536c. No .github/workflows path. Actions list_workflows total_count 0.
+    - docs/passes had YAML for 167, 168, 170, 173, 176, 179 and markdown for 174. Absent YAML for 171, 172, 175, 177, 178, 180, 181.
+    - PASS-168 is a flat sweep/date mapping. Other YAML files use nested PASS.id.
+    - Condensed SWEEP_HISTORY.md headings named only PASS-2026-10-01-180 and PASS-2026-10-01-181. A substring check would have false-passed on a negation sentence.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - scripts/check_passes.py
+    - .github/workflows/governance-ci.yml
+    - docs/passes/PASS-2026-10-01-182.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending push
+  capabilities_added_or_changed:
+    - governance pass-record parser: IMPLEMENTED, locally TESTED, Actions NOT_RUN at authoring
+VERIFICATION:
+  tests_run:
+    - python scripts/check_passes.py on pre-record tree: FAIL (no heading for PASS-2026-10-01-179)
+    - python scripts/check_passes.py after Sweep-182 heading and this file: PASS
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  notes:
+    - Post-push Actions not observed at authoring. overall PASS is local only.
+    - Did not invent historical pass bodies.
+KNOWLEDGE:
+  confirmed:
+    - Governance CI was absent at head 3e749f6d.
+    - Condensed history does not heading-name every persisted YAML id.
+  failures:
+    - Substring presence of the latest pass id is not a valid check; a negation sentence contains the id.
+  decisions:
+    - EXTEND ADL-Governance with a workflow. Do not create a repository.
+    - Require a sweep heading, not a bare substring.
+    - Accept the observed flat schema so PASS-168 remains valid.
+REMAINING:
+  incomplete:
+    - GitHub Actions conclusion for governance-ci.yml not observed.
+    - Pass YAML bodies for 171, 172, 175, 177, 178, 180, 181 not reconstructed.
+  blockers:
+    - Private repos atomicdreamlabs, mendthegame, blacksite, test, SovereignOS not read.
+    - Operator-only archive, release, secret-scanning, and lockfile actions not executed.
+  new_gaps:
+    - GAP-HISTORY-HEADING-COVERAGE: condensed SWEEP_HISTORY.md does not heading-name YAML ids 167, 168, 170, 173, 176, 179.
+NEXT:
+  objective_id: GAP-GOVERNANCE-CI-OBSERVE
+  action: Read the governance-ci.yml workflow run on the Sweep-182 commit. Record success or the exact failure. Do not invent a green result.
+  reason: Local parser pass is not Actions verification.
+  prerequisites:
+    - governance-ci.yml exists on main
+    - A workflow run exists for the Sweep-182 commit, or the absence is recorded as BLOCKED
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - local scripts/check_passes.py
+    - Actions list_workflows total_count 0 before this commit
