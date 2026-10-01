@@ -1,10 +1,30 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-01 (autonomous Sweep-173)
-**Census:** Live `user:beyond-repair` search `total_count` **82** (`incomplete_results=false`) at Sweep-171. Profile `public_repos` was **77** at that check. Not re-counted name-by-name this sweep.
+**Updated:** 2026-10-01 (autonomous Sweep-175)
+**Census:** Live `user:beyond-repair` search `total_count` **82** (`incomplete_results=false`) at Sweep-175 select. Profile `public_repos` was **77** at Sweep-171. Not re-fetched this sweep.
 **Authenticated owner:** `beyond-repair`.
 **Governing source:** this repository.
-**This cycle:** Select `bloch-coherence-factor2` from PASS-170 NEXT. Claim file only. No archive flags. No release tags. No history rewrite. No claim elevation.
+**This cycle:** Random select `adl-capability-matrix` (SystemRandom over 77 names, excluding Sweep-173 subject and ADL-Governance). Name-only gap file. No caps invented. No archive flags. No release tags. No history rewrite. No claim elevation.
+
+
+## Sweep-175 scope
+
+| Mode | Value |
+|------|--------|
+| Primary | SELECT → DISCOVER → AUDIT → CLASSIFY → IMPLEMENT (gap file + tests + docs) → DOCUMENT → GOVERN |
+| Subject | adl-capability-matrix |
+| Pre head | `ea940fe405201855747e4d4cd9eed3816f5c9e91` |
+| Lock commit | `e57ec52c85b5a029be62fc7014b436cfacf65f4f` |
+| Classification | **RESEARCH** (re-confirm; no promotion) |
+| Local tests | pytest 8 passed, 0 failed |
+| Locked matrix rows | 67 (unchanged) |
+| Live names absent from locked rows | 15 (UNASSIGNED; cap null) |
+| Locked names absent from live search | 0 |
+| Post-push CI | NOT observed |
+| Releases | not tagged |
+| Archive / history rewrite | NOT executed |
+
+Evidence rule: the gap file is a dated name set difference. It is not a capability audit. Cap expansion remains operator-gated.
 
 ## Sweep-173 scope
 
@@ -43,7 +63,7 @@ ADL-Governance, ADL-SEEM, forge-aegis, AEGIS-Project-Nehemiah-, sovereign-clean-
 
 ### RESEARCH (named locks + remainder)
 
-**`bloch-coherence-factor2` — Sweep-173** (classical two-mode lock). **`topological-pinch` — Sweep-172** (graph-proxy lock; 92% remains hypothesis). **`mend` — Sweep-170**. **`informational-flux-identity` — Sweep-168**. `finite-gasket-spectral-derivatives` — Sweep-167. `Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / 136 / 145 / 161. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / 130 / 150. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113 / 158. `ADL-Nexus` — Sweep-112 / 131 / 159 / 163. `acoustic-token-modem` — Sweep-110. `LegionOS` — Sweep-068 / 073 / 095 / 154. `Sovereign-OS` — Sweep-157. `CFTv3.3-IQG-Unified-Framework` — Sweep-106 / 162. `coherence-drive` — research index, not propulsion-validated. `sunder` — research agent, not the ACTIVE runtime.
+**`adl-capability-matrix` — Sweep-175** (name gap only; caps still 67). **`bloch-coherence-factor2` — Sweep-173** (classical two-mode lock). **`topological-pinch` — Sweep-172** (graph-proxy lock; 92% remains hypothesis). **`mend` — Sweep-170**. **`informational-flux-identity` — Sweep-168**. `finite-gasket-spectral-derivatives` — Sweep-167. `Open-Energy-Fusion` — Sweep-143. `-text-informational-fork-protocol-` — Sweep-128. `Project-Cold-Boot` — Sweep-127. `aegis-repo-graph` — Sweep-125. `m2-renormalization-law` — Sweep-122 / 136 / 145 / 161. `optimization-limit-conjecture` — Sweep-120. `RealityOS` — Sweep-119. `seem-identity-unifier` — Sweep-118 / 130 / 150. `ware-constant-phenomenology` — Sweep-116. `adl-capability-matrix` — Sweep-115. `sierpinski-geometry-045` — Sweep-114. `momentum-closure` — Sweep-113 / 158. `ADL-Nexus` — Sweep-112 / 131 / 159 / 163. `acoustic-token-modem` — Sweep-110. `LegionOS` — Sweep-068 / 073 / 095 / 154. `Sovereign-OS` — Sweep-157. `CFTv3.3-IQG-Unified-Framework` — Sweep-106 / 162. `coherence-drive` — research index, not propulsion-validated. `sunder` — research agent, not the ACTIVE runtime.
 
 Unaudited at Sweep-173 (default RESEARCH, not a deep audit): `atomicdreamlabs` (private), `mendthegame` (private; not read).
 
@@ -65,7 +85,7 @@ GitHub `archived=true`: `CFT-v3.0` only.
 | Gap | Severity | State |
 |-----|----------|-------|
 | Product releases empty on four named ACTIVE repos | Medium | OPEN (operator tag; not re-checked this sweep) |
-| adl-capability-matrix row count 67 vs live 82 | Medium | OPEN |
+| adl-capability-matrix caps 67 vs live 82 | Medium | OPEN (Sweep-175 recorded 15 unassigned names; caps not invented) |
 | Dependabot / nanoid PRs #3–#6 and draft #7 on workforce | Medium | OPEN (Sweep-171) |
 | Committed `.env` on digital-double-mobile | Critical (secret hygiene) | OPEN (not re-fetched) |
 | Archive flags not applied | Low–Medium | OPEN |

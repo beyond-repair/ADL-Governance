@@ -2,6 +2,41 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-01 — Sweep-175 (select: adl-capability-matrix)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Selection method:** `random.SystemRandom` over 77 live search names excluding `bloch-coherence-factor2`, `topological-pinch`, `mend`, `informational-flux-identity`, and `ADL-Governance`.
+**Subject:** `adl-capability-matrix`
+**Subject head (pre):** `ea940fe405201855747e4d4cd9eed3816f5c9e91`
+**Subject lock commit:** `e57ec52c85b5a029be62fc7014b436cfacf65f4f`
+**Classification:** **RESEARCH** (re-confirm; no promotion)
+
+### DISCOVER
+
+Public. Default branch `main`. Not archived. Python. Tree: matrix JSON (67 rows), `load.py`, tests, CI workflow, README, CLAIM_STATUS, GOVERNANCE. Prior lock Sweep-115. Open operator item was cap expansion to live census.
+
+### AUDIT
+
+Live search this cycle: `total_count=82`, `incomplete_results=false`. Locked inventory_count 67. Set difference: 15 live names absent from locked rows; 0 locked names absent from live search. Missing names include this repo itself, ADL-Nexus, Open-Energy-Fusion, mend, bloch-coherence-factor2, and three queue-proposed names (`os-family-constitution-map`, `seem-sunder-bridge`, `sunder-cleanroom-vsa-adapter`). Assigning clusters or caps would invent metadata. No secrets in reviewed tree. No product release tag.
+
+### IMPLEMENT
+
+Added `matrix/census_gap_2026-10-01.json` (name presence only; cluster and claim_cap null). Added `tests/test_census_gap.py`. Updated README, CLAIM_STATUS, GOVERNANCE. Did not edit `capability_matrix.json`. No archive flag. No release tag. No history rewrite.
+
+### TEST / CI
+
+Local `python -m pytest -q`: 8 passed, 0 failed. Post-push Actions on `e57ec52` not observed this pass.
+
+### GOVERN
+
+Classification unchanged: RESEARCH, claim ≤ 1. Matrix is still not a live SLA. Portfolio termination not met.
+
+### Exit
+
+Subject re-audit closed for name-gap accounting. Cap assignment remains operator-gated. Stop.
+
+---
+
 ## 2026-10-01 — Sweep-173 / PASS-2026-10-01-173 (select: bloch-coherence-factor2)
 
 **Agent:** Grok (ADL-BASILISK / ADL-SEEM v3.0)
