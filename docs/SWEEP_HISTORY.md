@@ -9,6 +9,7 @@ Autonomous GitHub portfolio completion agent log for beyond-repair.
 **Subject:** `My-mind-A.I.`
 **Default branch:** `main2`
 **Pre-head:** `b886113ac490560f8b746a24fbda0c494b3b9433`
+**Post-doc commit:** `acd579e7f3912133a50148ef9d88fb67b83e6943` (`CLAIMS.md` only)
 **Classification:** **SUPERSEDED** (confirmed). Successor `sovereign-clean-room`. Claim 0. GitHub `archived=false`. Not promoted.
 
 ### DISCOVER
@@ -49,6 +50,98 @@ Subject slice re-audited. Termination conditions not met. Stop.
 **Exit:** criteria not met. Stop.
 
 Earlier sweep bodies remain in git history before this condensation.
+
+## Heading index (not new executions)
+
+These headings exist only so `scripts/check_passes.py` can find every persisted yaml id. Bodies remain in `docs/passes/` or earlier git history.
+
+## Index / PASS-2026-10-01-167
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-168
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-170
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-173
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-176
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-179
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-182
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-183
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-184
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-185
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-188
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-189
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-190
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-191
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-193
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-194
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-195
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-196
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-197
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-198
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-01-199
+
+Index only. Not a new execution.
+
+## Index / PASS-2026-10-02-200
+
+Index only. Body is the Sweep-200 section above. Not a second execution.
 
 ## Index / PASS-2026-10-02-201
 
