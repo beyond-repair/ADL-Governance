@@ -1,0 +1,4 @@
+# Runtime pin matches .github/workflows/governance-ci.yml (do not edit that file from this repair).
+pyyaml==6.0.2
+# Local tests. CI runs scripts/check_passes.py only.
+pytest==8.3.5

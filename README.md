@@ -55,6 +55,52 @@ Research cannot pretend to be product.
 
 ---
 
+## ▌ CHECK PASS RECORDS
+
+The runnable tool in this repo is `scripts/check_passes.py`. It checks that every `docs/passes/PASS-*.yaml` file parses and matches one of the two schemas already used here, and that `docs/SWEEP_HISTORY.md` has a `## … / PASS-YYYY-MM-DD-N` heading for every persisted id, including the latest.
+
+It does **not** enforce `docs/CONSTITUTION.md`, raise a claim level, or invent missing historical pass bodies. Markdown files under `docs/passes/` are ignored. Claim levels stay in `docs/CLAIM_VALIDATION.md` as policy.
+
+There is no config file and no compile step. The checker reads the checkout you point at (default: this repository).
+
+### Install
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+`requirements.txt` pins `pyyaml==6.0.2` (the same pin as governance CI) and `pytest==8.3.5` for the tests below. On Windows, activate with `.venv\Scripts\activate`.
+
+### Run
+
+```bash
+python scripts/check_passes.py
+```
+
+Optional: `python scripts/check_passes.py /path/to/checkout` checks that tree instead of this one.
+
+- Exit `0` prints `PASS: N yaml files parsed; history headings name all ids including PASS-…`.
+- Exit `1` is a validation failure (message on stderr).
+- Exit `2` means more than one argument was passed.
+
+### Test
+
+```bash
+python -m pytest -q
+```
+
+### Schemas the checker accepts
+
+Nested (most passes): top-level keys `PASS`, `STATE`, `OBJECTIVE`, `VERIFICATION`, `NEXT`, and `PASS.id` equal to the filename id (`PASS-2026-10-02-205` for `PASS-2026-10-02-205.yaml`; numeric suffix is not zero-padded).
+
+Flat (PASS-168 only in the current tree): `sweep` and `date` match the filename (`sweep: 168`, `date: 2026-10-01`).
+
+A new pass is recorded by adding the YAML file and a sweep heading. This checker only reports whether those two artifacts agree.
+
+---
+
 <div align="center">
 
 ```
