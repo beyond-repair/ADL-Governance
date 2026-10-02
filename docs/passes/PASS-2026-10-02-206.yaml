@@ -18,7 +18,7 @@ DISCOVERY:
     - Seed random.Random(20261002206) selected ADL-SEEM.
     - Public. Default branch main. Tree f00657c, 9 entries, not truncated.
     - Workflow count 0 before this cycle. Tags empty. archived false.
-    - CANONICAL.md claimed runtime CI-blocked; Sweep-204 recorded CI success.
+    - CANONICAL.md described the runtime as blocked on missing VSA chunks; Sweep-204 recorded CI success.
 CHANGES:
   repositories:
     - beyond-repair/ADL-SEEM
@@ -33,11 +33,13 @@ CHANGES:
     - docs/passes/PASS-2026-10-02-206.yaml
   commits:
     - 024752a73a77fab1a38b1232b6e2155037103918
+    - 2d042604e1f5fba276b0e83b22bb37041155877a
   capabilities_added_or_changed: []
 VERIFICATION:
   tests_run:
     - get_repository_tree, list_workflows, list_tags on ADL-SEEM
-    - no application suite present
+    - docs-contract run 37075634775 failure (quoted stale token)
+    - docs-contract run 37075801340 success on 2d042604
   code_review: NOT_RUN
   security: NOT_A_PRODUCT_SURFACE
   integration: NOT_RUN
@@ -46,10 +48,11 @@ VERIFICATION:
 KNOWLEDGE:
   confirmed:
     - Classification remains ACTIVE constitution, claim 0.
-    - Stale CI-blocked sentence removed.
-    - No tags. No prior workflow.
+    - Stale blocked-on-chunks sentence removed.
+    - Docs-contract green on 2d042604.
+    - No tags.
   failures:
-    - Docs-contract conclusion not yet observed. Portfolio exit criteria not met.
+    - Portfolio exit criteria not met.
   decisions:
     - Do not archive. Do not tag. Do not elevate claim. Do not re-measure VSA chunks. Do not loop.
 REMAINING:
@@ -57,13 +60,12 @@ REMAINING:
     - Dependabot critical #13 on the canonical workforce repo (not re-fetched)
     - archive flags false
     - empty product releases
-    - docs-contract run conclusion
   blockers:
     - Archive flag and release tags are operator-only
   new_gaps: []
 NEXT:
   objective_id: GAP-OPERATOR-ARCHIVE
-  action: Operator continues archive and release decisions. Do not treat the docs-contract workflow as product validation.
+  action: Operator continues archive and release decisions. Do not treat docs-contract as product validation.
   reason: Portfolio termination still depends on inherited critical alert, archive flags, and empty product releases.
   prerequisites:
     - Do not rewrite history.
@@ -71,6 +73,7 @@ NEXT:
 PROVENANCE:
   state_commit: pending-governance-push
   evidence:
-    - ADL-SEEM commit 024752a73a77fab1a38b1232b6e2155037103918
+    - ADL-SEEM commit 2d042604e1f5fba276b0e83b22bb37041155877a
+    - docs-contract run 37075801340 success
     - pre-head tree f00657c153ed6c324ebe5a987d49b2be0aefde40
     - Sweep-204 CI run 36815859875
