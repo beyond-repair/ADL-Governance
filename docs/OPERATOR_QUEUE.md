@@ -22,7 +22,7 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from recent sweeps
 
-- Sweep-206: `ADL-SEEM` ACTIVE constitution confirmed, claim 0. Stale "CI-blocked" line removed from `docs/CANONICAL.md`. Commit `024752a`. Docs-contract workflow added. No tag. VSA completeness not re-measured.
+- Sweep-206: `ADL-SEEM` ACTIVE constitution confirmed, claim 0. Stale blocked-on-chunks sentence removed from `docs/CANONICAL.md`. Green head `2d042604`. Docs-contract run 37075801340 success. Run 37075634775 failed on a quoted token and was corrected. No tag. VSA completeness not re-measured.
 - Sweep-205: `Digital_Double_Virtual_Workforce_4.2` SUPERSEDED confirmed. Local claim-0 pytest 17 passed. Docs commit `02c0a3d`. No archive flag. No tag.
 - Sweep-204: Phase-3 live re-fetch. Four product CI runs success. Tags and releases empty. #13 still open.
 - Sweep-203: `scale-functional-I` registered RESEARCH claim ≤ 1. Local unittest 1 passed. No workflow.
