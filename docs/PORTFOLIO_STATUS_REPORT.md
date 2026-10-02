@@ -1,51 +1,62 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-02 (autonomous Sweep-202)
-**Project / Version:** ADL Portfolio Governance / Sweep-202
-**Objective:** Random repository discovery through re-audit. No infinite loop.
+**Updated:** 2026-10-02 (autonomous Sweep-204)
+**Project / Version:** ADL Portfolio Governance / Sweep-204
+**Objective:** Master-directive discovery plus mandatory live verification of four named products. One sweep. No infinite loop.
 **Authenticated owner:** `beyond-repair` (id 132061760)
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
-**Assumptions:** A2 Empirical — search index, tree, and workflow list this cycle. A3 Literature — classes not re-walked stay inherited from Sweep-201 / `docs/repository_registry.md`.
+**Assumptions:** A2 Empirical — search index, Actions runs, tags, releases, and Dependabot list this cycle. A3 Literature — classes not re-walked stay inherited from `docs/repository_registry.md` (Sweep-203).
 
-## This cycle
+## Census (Phase 1)
 
-**Selected:** `Digital_Double_Virtual_Workforce_4.`
-**Selection method:** `random.Random(20261002).choice` over 83 names from search `user:beyond-repair` (`incomplete_results=false`).
-**Classification:** SUPERSEDED (confirmed, not newly assigned). Successor `Digital_Double_virtual_workforce`. Claim 0.
-**Visibility:** private.
-**Default branch:** `main`. Pre-head `12798ac09d86ff815900e5b39e7656899b1a46f5`.
-**Post-doc head:** `d8132f3fa830871c395d89c8bdb5e69b069ec1ea` (README). Intermediate `00ab6c29bdc074445950ec9d17c870090f378eb8` (SUPERSEDED.md).
-**GitHub archived:** false.
-**Tree:** `README.md`, `SUPERSEDED.md`, `CLAIM_STATUS.md` only. No application source.
-**CI:** workflow count 0. No test suite to run. No tag. No release.
-**Product mutation:** lifecycle docs only. No history rewrite. No archive flag. No release tag. No deletion.
+Search `user:beyond-repair`, `incomplete_results=false`, `total_count=83`. Profile `public_repos=78`. Private names in the same index: `Digital_Double_Virtual_Workforce_4.`, `blacksite`, `potential-garbanzo`, `SovereignOS`, `test`, `mendthegame`, `atomicdreamlabs`, `Digital_Double_Virtual_Workforce_4.2`, `CFT-v3.0`. GitHub `archived=true` only on `CFT-v3.0`. No forks in this search page.
 
-Census this cycle: search total 83 (Sweep-201 recorded 82). Public repos on profile 78. Private still present in the index. GitHub `archived=true` only `CFT-v3.0` (inherited, not re-listed).
+No undefined name relative to the search result. Registry still does not give every name an individually re-walked tree class. Unaudited private defaults remain `atomicdreamlabs`, `mendthegame` (RESEARCH until a tree read). That is a residual, not a missing census row.
 
-## Phase 3 — subject verification
+## Phase 3 — live verification (this cycle)
 
-| Repo | Head | Latest CI | Releases / tags | Critical Dependabot |
-|------|------|-----------|-----------------|---------------------|
-| Digital_Double_Virtual_Workforce_4. | `d8132f3fa830871c395d89c8bdb5e69b069ec1ea` (`main`) | none (0 workflows) | none in tree; not tagged | not listed (no lockfile) |
+| Repo | Latest product CI | Head | Releases | Tags | Open Dependabot |
+|------|-------------------|------|----------|------|-----------------|
+| forge-aegis | run 36847797174 success (forge-aegis CI) | `968595a72f50f38b64c9495b180cefd99abde45d` | empty list | empty list | none open |
+| sovereign-clean-room | run 36815859875 success (Python tests) | `5fbd20b201a02b41b1c8a9e698b78d9954a34da0` | empty list | empty list | none open |
+| BlockSwarm | run 36859452185 success (Foundry) | `6e90f6f85c0969fa8a262a70ceba833d618a22db` | empty list | empty list | none open |
+| Digital_Double_virtual_workforce | run 36861489156 success (Digital Double CI) | `24e6a29fd26c03900a8d98634d6683996eabdac4` | empty list | empty list | critical #13 open; high alerts also open |
 
-Inherited Phase-3 product heads from Sweep-200 were **not** re-fetched: forge-aegis 36847797174 success, sovereign-clean-room 36815859875 success, BlockSwarm 36859452185 success, Digital_Double_virtual_workforce 36861489156 success with Dependabot #13 still open at Sweep-200.
+CI success is an Actions conclusion on the named head. It is not a release, not a claim-level elevation, and not VSA completeness. sovereign-clean-room VSA completeness remains UNVERIFIED beyond the green unit-test workflow.
+
+Dependabot #13 re-fetched this cycle: state `open`, package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, vulnerable range `>= 4.0.0, < 4.0.4`, patched `4.0.4`. High alerts also open on the same lockfile, including #160 `js-yaml` (GHSA-2883-xcg3-v3hh) and #155 `browserslist` (GHSA-73wf-gq98-2v4g). Not an exhaustive high-count. Lockfile not bumped.
+
+## Capability matrix (verified this cycle only)
+
+| Feature | State |
+|---------|-------|
+| forge-aegis CI on `968595a` | VERIFIED (Actions success) |
+| forge-aegis release / tag | UNVERIFIED (API lists empty) |
+| sovereign-clean-room Python tests workflow on `5fbd20b` | VERIFIED (Actions success) |
+| sovereign-clean-room production VSA completeness | UNVERIFIED |
+| BlockSwarm Foundry workflow on `6e90f6f` | VERIFIED (Actions success) |
+| BlockSwarm release `v0.5.0-sagf` | PLANNED / not tagged |
+| Digital Double CI on `24e6a29` | VERIFIED (Actions success) |
+| Digital Double form-data boundary fix | PLANNED (alert #13 still open) |
 
 ## Classification
 
-`Digital_Double_Virtual_Workforce_4.` remains SUPERSEDED. Registry already names `Digital_Double_virtual_workforce` as successor. No class change.
+No class change this cycle. ACTIVE does not mean release-ready. Digital Double review remains **FAIL** while #13 is open. The other three product reviews are **PASS WITH FINDINGS** (green CI, empty releases/tags, completeness not re-proven by reading tests this cycle).
 
-Other classes unchanged from Sweep-201. ACTIVE does not mean release-ready. Digital Double product remains review FAIL while #13 is open (inherited, not re-fetched).
+Canonical ownership (inherited, not reassigned): Governance `ADL-Governance`; agent/integrity `forge-aegis` with spec sibling `AEGIS-Project-Nehemiah-`; security/offline substrate `sovereign-clean-room`; distributed SAGF `BlockSwarm`; workforce `Digital_Double_virtual_workforce`. Duplicate Digital Double and SEEM names stay SUPERSEDED. No deletion.
 
-## Gap summary (this subject)
+## Gap summary
 
 | Gap | Severity |
 |-----|----------|
-| Archive flag false while class is SUPERSEDED | Medium (operator-only) |
-| No CI because there is no product source | Low (expected for this stub) |
-| Portfolio critical #13 | Critical (inherited; successor repo, not this stub) |
-| Census drift 82 → 83 (`scale-functional-I` present in search) | Low (index fact, not a class change) |
+| Dependabot #13 form-data | Critical |
+| Additional high npm alerts on Digital Double lockfile | High |
+| Product tags and releases empty on all four | Medium (operator) |
+| GitHub archive flag false on documented SUPERSEDED/ARCHIVED targets | Medium (operator) |
+| Capability matrix still 67-row vs census 83 | Medium |
+| Private names without a fresh tree read | Low / residual |
 
 ## Exit
 
-Subject slice re-audited. Termination not met: GitHub archive flag still false. Portfolio termination not met. Stop. Do not loop.
+Phase 3 re-fetched. Critical security finding remains open. Release pipelines empty. Archive flags unresolved. Termination criteria not met. Stop. Do not loop.

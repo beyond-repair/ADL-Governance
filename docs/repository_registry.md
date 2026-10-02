@@ -1,8 +1,10 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-10-02 (Sweep-203; search total_count 83) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-10-02 (Sweep-204; search total_count 83) · **Governing source:** this repository
 
-Visible GitHub search count: **83** (Sweep-202/203). Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+Visible GitHub search count: **83** (Sweep-202/203/204). Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+
+Phase-3 CI, tags, releases, and Dependabot re-fetched Sweep-204. No class change.
 
 ---
 
@@ -10,13 +12,13 @@ Visible GitHub search count: **83** (Sweep-202/203). Classifications (directive)
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-01 | 0 | 4 | SAGF; Foundry success run 36859452185; tag v0.5.0-sagf PENDING; releases empty |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-01 | 1 | 3 | Canonical SEEM substrate; CI success run 36815859875. VSA completeness UNVERIFIED. Releases empty. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-01 | 0 | 2 | FLS early; CI success run 36847797174; v0.1.0 tag open; RELEASE_BLOCKED_BY_OPERATOR |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-01 | 0 | 4 | SAGF; Foundry success run 36859452185 on `6e90f6f`; tags empty; releases empty |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-01 | 1 | 3 | Canonical SEEM substrate; CI success run 36815859875 on `5fbd20b`. VSA completeness UNVERIFIED. Releases empty. Tags empty. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-01 | 0 | 2 | FLS early; CI success run 36847797174 on `968595a`; tags empty; releases empty; RELEASE_BLOCKED_BY_OPERATOR |
 | [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-10-02 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-01 | 5 | 3 | Public canonical; CI success run 36861489156; Dependabot critical #13 open at Sweep-200; not re-fetched |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-01 | 5 | 3 | Public canonical; CI success run 36861489156 on `24e6a29`; Dependabot critical #13 open at Sweep-204; tags empty |
 
 Do not treat sovereign-clean-room VSA as production-complete. CI green is only an Actions conclusion.
 
