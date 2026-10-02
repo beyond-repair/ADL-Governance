@@ -2,6 +2,39 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-02 — Sweep-203 / PASS-2026-10-02-203 (select: scale-functional-I)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Parent:** PASS-2026-10-02-202
+**Subject:** `scale-functional-I`
+**Pre-head:** `23c00dd701f7c2178ccc4bc5d1a7ee58075d3656`
+**Post-head:** `9768280b4d6eb039defa7072cabf243f3e3740b2`
+**Classification:** **RESEARCH**. Claim level remains 1. Not promoted. GitHub `archived=false`.
+
+### DISCOVER
+
+Search `user:beyond-repair` total_count 83. `scale-functional-I` is the census name named in Sweep-202 and absent from the registry. Public. Default branch `main`. Tree before this pass: `CLAIM_STATUS.md`, `FUNCTIONAL.md`, `README.md`, `RESULT.md`, `scale_functional.py`. No workflow.
+
+`scripts/check_passes.py` on governance head `b161f519e27c571426ea9589874ee1c9687f53da` failed: heading missing for `PASS-2026-10-01-192`. History already named 200-202 without YAML files.
+
+### AUDIT
+
+Local `python3 scale_functional.py` on `23c00dd` exited 0. I strictly decreased on chamber/neck (8,5) and (10,6). Printed `dI/dlnw` at chamber 8, w=2 was -0.4103. `RESULT.md` table had about -0.62 to -0.86. That column did not match the script definition. Claim file already says experimental_validation false and 0.08 comparison not reached.
+
+### IMPLEMENT
+
+Aligned the chamber-8 beta column with the script finite difference. Added `tests/test_scale_functional.py`. Did not change the functional. Did not set 0.08 as an input. Did not add a workflow. Governance: restored the 192 heading, transcribed YAML for 200-202 from this history file, registered the repo as RESEARCH claim ≤ 1.
+
+### TEST
+
+`PYTHONPATH=. python3 -m unittest tests.test_scale_functional -v` on the edited tree: 1 passed. Remote Actions not present. Not claimed green.
+
+### Exit
+
+Census name registered in the following registry commit. Pass invariant restored after the 192 and 203 headings. Portfolio termination not met. Stop.
+
+---
+
 ## 2026-10-02 — Sweep-202 / PASS-2026-10-02-202 (select: Digital_Double_Virtual_Workforce_4.)
 
 **Agent:** Grok (ADL-SEEM v3.0)
@@ -39,53 +72,6 @@ Claim remains 0. No unsupported product claim. Portfolio termination not met (De
 Subject slice re-audited. Termination conditions not met (archive flag still false). Stop.
 
 ---
-
-## 2026-10-02 — Sweep-201 / PASS-2026-10-02-201 (select: My-mind-A.I.)
-
-**Agent:** Grok (ADL-SEEM v3.0)
-**Selection method:** `random.SystemRandom().choice` over 72 public-index names, excluding `ADL-Governance` and the ten most recently updated search hits.
-**Subject:** `My-mind-A.I.`
-**Default branch:** `main2`
-**Pre-head:** `b886113ac490560f8b746a24fbda0c494b3b9433`
-**Post-doc commit:** `acd579e7f3912133a50148ef9d88fb67b83e6943` (`CLAIMS.md` only)
-**Classification:** **SUPERSEDED** (confirmed). Successor `sovereign-clean-room`. Claim 0. GitHub `archived=false`. Not promoted.
-
-### DISCOVER
-
-Tree on `main2` (28 entries, not truncated): toy delegator (`main.py`, `delegate_class.py`, `delegate_init.py`, `gpt_agent.py`, `task_class.py`), unittest `test_main.py`, abandoned drafts (`agents.py`, `task_delegation.py`, `taskqueue_class.py`, URL stubs `autoGPT.py` / `chatGPT.py`), leftover uploads, MIT `LICENSE`, claim-capped README, conda workflow `.github/workflows/python-package-conda.yml`. No `environment.yml`. No secrets file in tree.
-
-### AUDIT
-
-Registry and README already class the repo SUPERSEDED under `sovereign-clean-room`. Archive queue already lists it. CI run 36851325554 on the pre-head concluded failure. README already states the workflow cannot pass and that this login cannot edit Actions files.
-
-### IMPLEMENT
-
-Added `CLAIMS.md` on `main2`. Did not edit the workflow. Did not delete drafts. Did not rewrite history. Did not set the archive flag. Did not tag a release.
-
-### TEST / CI
-
-Local `python -m unittest test_main.py`: 1 passed. `main.py` printed `9/10` coin-flip completions under seed 0. Remote CI remains failed (run 36851325554). New push may re-trigger the same failing workflow; that does not close the gap.
-
-### GOVERN
-
-Claim remains 0. No unsupported product claim. Portfolio termination not met (Dependabot critical #13 inherited, archive flags, failed conda workflow).
-
-### Exit
-
-Subject slice re-audited. Termination conditions not met. Stop.
-
----
-
-## 2026-10-02 — Sweep-200 / PASS-2026-10-02-200 (portfolio verification)
-
-**Agent:** Grok (ADL-SEEM v3.0)
-**Parent:** PASS-2026-10-01-193 / heading index through 199
-**Scope:** One governed discovery and Phase-3 live verification. No infinite loop.
-**Repositories reviewed:** search `user:beyond-repair` = 82 (`incomplete_results=false`). Private in index: 9. GitHub archived=true only `CFT-v3.0`.
-**Deep live verify:** `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
-**Actions performed:** documentation only in ADL-Governance. No history rewrite. No archive flag. No release tag. No lockfile edit. No repository deletion. No product-repo mutation.
-**Findings:** Product CI still success — forge-aegis 36847797174 (`968595a`), sovereign-clean-room 36815859875 (`5fbd20b`), BlockSwarm 36859452185 (`6e90f6f`), Digital Double CI 36861489156 (`24e6a29`). Tags API empty on all four. Dependabot critical #13 still open (`form-data`, GHSA-fjxv-7rqg-78g4).
-**Exit:** criteria not met. Stop.
 
 Earlier sweep bodies remain in git history before this condensation.
 
@@ -149,6 +135,10 @@ Index only. Not a new execution.
 
 Index only. Not a new execution.
 
+## Index / PASS-2026-10-01-192
+
+Index only. YAML exists. Narrative body remains in git history. Not a new execution.
+
 ## Index / PASS-2026-10-01-193
 
 Index only. Not a new execution.
@@ -188,3 +178,7 @@ Index only. Body is the Sweep-201 section above. Not a second execution.
 ## Index / PASS-2026-10-02-202
 
 Index only. Body is the Sweep-202 section above. Not a second execution.
+
+## Index / PASS-2026-10-02-203
+
+Index only. Body is the Sweep-203 section above. Not a second execution.
