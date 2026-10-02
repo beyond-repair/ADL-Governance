@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-02 — Sweep-206 / PASS-2026-10-02-206 (select: ADL-SEEM)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Parent:** PASS-2026-10-02-205
+**Selection method:** `random.Random(20261002206).choice` over 83 sorted names from search `user:beyond-repair` (`incomplete_results=false`).
+**Subject:** `ADL-SEEM`
+**Visibility:** public.
+**Default branch:** `main`
+**Pre-head tree:** `f00657c153ed6c324ebe5a987d49b2be0aefde40`
+**Post-doc commit:** `024752a73a77fab1a38b1232b6e2155037103918`
+**Classification:** **ACTIVE** constitution (confirmed, not newly assigned). Claim 0. Runtime pointer remains `sovereign-clean-room`. Not promoted to a product release.
+
+### DISCOVER
+
+Recursive tree: 9 entries, not truncated. Markdown constitution only (`README.md`, `docs/CONSTITUTION.md`, `docs/CLAIM_VALIDATION.md`, `docs/LIFECYCLE.md`, `docs/RESPONSE_CONTRACT.md`, `docs/CANONICAL.md`, plus loader and protocol pointers). Workflow count 0. Tags empty. No test suite.
+
+### AUDIT
+
+Registry row already classifies ADL-SEEM as docs, claim 0, class 3. README badge says ACTIVE, which matches a constitution, not a shipped twin. `docs/CANONICAL.md` still said the runtime was "CI-blocked until VSA chunks restored". That contradicts Sweep-204 CI success run 36815859875. Unsupported as current evidence.
+
+### IMPLEMENT
+
+Added `CLAIM_STATUS.md` (claim 0). Replaced the stale CI-blocked sentence in `docs/CANONICAL.md` with the Sweep-204 CI fact and an explicit VSA-unverified cap. Added `.github/workflows/docs-contract.yml` to require the constitution files and reject a return of the stale phrase. Did not rewrite history. Did not archive. Did not tag. Did not edit product runtime code.
+
+### TEST / CI
+
+No application tests in the tree. Docs-contract workflow added in the same commit; completed conclusion not available at record time. Absence of a prior workflow was a gap, not a green gate.
+
+### GOVERN
+
+Claim remains 0. No cognition or thrust claim added. Portfolio termination not met (inherited Dependabot critical #13, archive flags, empty product releases).
+
+### Exit
+
+Subject slice re-audited. Termination conditions not met. Stop.
+
+---
+
 ## 2026-10-02 — Sweep-205 / PASS-2026-10-02-205 (select: Digital_Double_Virtual_Workforce_4.2)
 
 **Agent:** Grok (ADL-SEEM v3.0)
@@ -194,3 +232,7 @@ Index only. Body is the Sweep-204 section above. Not a second execution.
 ## Index / PASS-2026-10-02-205
 
 Index only. Body is the Sweep-205 section above. Not a second execution.
+
+## Index / PASS-2026-10-02-206
+
+Index only. Body is the Sweep-206 section above. Not a second execution.

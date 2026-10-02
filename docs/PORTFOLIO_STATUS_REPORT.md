@@ -1,54 +1,54 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-02 (autonomous Sweep-205)
-**Project / Version:** ADL Portfolio Governance / Sweep-205
+**Updated:** 2026-10-02 (autonomous Sweep-206)
+**Project / Version:** ADL Portfolio Governance / Sweep-206
 **Objective:** Random repository completion cycle on one census name. Stop when the subject slice is re-audited.
 **Authenticated owner:** `beyond-repair` (id 132061760)
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
-**Assumptions:** A1 user sweep contract. A2 empirical search index, tree, workflows, tags, and local pytest this cycle.
+**Assumptions:** A1 user sweep contract. A2 empirical search index, tree, workflows, tags, and file contents this cycle.
 
 ## Selection
 
-Search `user:beyond-repair`, `incomplete_results=false`, `total_count=83`. Seeded draw `random.Random(20261002205).choice` over the 83 names returned `Digital_Double_Virtual_Workforce_4.2`.
+Search `user:beyond-repair`, `incomplete_results=false`, `total_count=83`. Seeded draw `random.Random(20261002206).choice` over the sorted 83 names returned `ADL-SEEM`.
 
 ## Subject
 
 | Field | Value |
 |-------|-------|
-| Repo | `Digital_Double_Virtual_Workforce_4.2` |
-| Visibility | private |
-| Default branch | `master` |
-| Pre-head tree | `090586f27f6dd22f2ecd0a47b24667a84af870e2` (345 entries, not truncated) |
-| Post-doc commit | `02c0a3d667d0f7feb86159cb67368bb4d777d360` |
-| Classification | **SUPERSEDED** (unchanged) |
+| Repo | `ADL-SEEM` |
+| Visibility | public |
+| Default branch | `main` |
+| Pre-head tree | `f00657c153ed6c324ebe5a987d49b2be0aefde40` (9 entries, not truncated) |
+| Post-doc commit | `024752a73a77fab1a38b1232b6e2155037103918` |
+| Classification | **ACTIVE** constitution (unchanged). Not a runtime product. |
 | Claim | 0 |
-| Successor | `Digital_Double_virtual_workforce` |
+| Canonical runtime | `sovereign-clean-room` |
 | GitHub archived | false |
 | Tags | empty list |
-| Product workflows | none (Dependabot Updates and Dependency Graph only) |
+| Workflows before this cycle | 0 |
+| Workflow added | `.github/workflows/docs-contract.yml` (file-presence and stale-phrase check) |
 
 ## Verification this cycle
 
-Sparse clone excluding `/models`. `python3 -m pytest tests_claim0 tests_governance -q` → 17 passed. That is Claim-0 clone-verify, not product validation and not Actions green.
+Tree, tags, and workflow list were read from the GitHub API. No application test suite exists. Docs-contract workflow was pushed; a completed Actions conclusion was not available at push time. That check is not VSA evidence and not a product release.
 
-Optional weight `models/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf` is about 77,844,704 bytes. Not executed. Not deleted.
-
-`src/.github/workflows/ci.yml` is not a root workflow and was not treated as CI.
+`docs/CANONICAL.md` previously said the runtime was "CI-blocked until VSA chunks restored". Sweep-204 recorded CI success run 36815859875 on `5fbd20b`. Sweep-206 replaced that sentence. VSA completeness remains UNVERIFIED. Chunk completeness was not re-measured.
 
 ## Classification
 
-No class change. Canonical workforce remains `Digital_Double_virtual_workforce`. This name stays a private predecessor. No deletion. No release tag.
+No class change. Registry already lists ADL-SEEM as docs, claim 0, class 3, dated 2026-08-29. Registry date was not rewritten this cycle (contract limits this push to status, queue, history, and the pass record).
 
 ## Gap summary
 
 | Gap | Severity |
 |-----|----------|
-| Dependabot #13 form-data on canonical Digital Double | Critical (inherited; not re-fetched this cycle) |
-| Archive flag false on this SUPERSEDED private repo | Medium (operator) |
-| Empty tags / no product CI on 4.2 | Expected for SUPERSEDED; not a green gate |
-| 77 MB GGUF still in git history | Low / operator disposition |
+| Dependabot #13 form-data on canonical Digital Double | Critical (inherited; not re-fetched) |
+| Archive flags false on SUPERSEDED/ARCHIVED names | Medium (operator) |
+| Empty tags / releases on ACTIVE products | Operator |
+| docs-contract run not yet concluded | Low; presence check only |
+| Registry row date 2026-08-29 | Low documentation drift |
 
 ## Exit
 
-Subject slice re-audited. Claim not elevated. Archive flag still false. Portfolio termination not met. Stop. Do not loop.
+Subject slice re-audited. Claim not elevated. Portfolio termination not met. Stop. Do not loop.
