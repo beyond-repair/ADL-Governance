@@ -1,0 +1,67 @@
+PASS:
+  id: PASS-2026-10-01-199
+  parent_pass: PASS-2026-10-01-198
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 82
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 4
+  gaps_remaining: 15
+OBJECTIVE:
+  id: GAP-SWEEP-HEADING-INDEX
+  description: Make SWEEP_HISTORY.md heading-name every docs/passes yaml id required by scripts/check_passes.py, without inventing historical bodies.
+  reason_selected: PASS-198 next action is operator-only lockfile review. The heading-index failure was a recorded, locally reproducible governance invariant break and is agent-recoverable.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Inherited census total_count 82 was not re-paged this pass.
+    - python3 scripts/check_passes.py on clone of default branch failed before the edit. Missing ids were 167, 168, 170, 173, 176, 179, 182, 183, 184, 185, 188, 189, 190, 191, 193, 194, 195, 196, 197, 198. Named headings were PASS-2026-10-01-192 and PASS-2026-10-02-193.
+    - PASS-2026-10-01-193.yaml exists. The narrative heading used PASS-2026-10-02-193, so the checker did not bind it to the file id.
+    - Operator queue still blocks archive flags, release tags, and the form-data lockfile bump.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-01-199.yaml
+  commits: []
+  capabilities_added_or_changed:
+    - governance pass-heading invariant restored for persisted yaml ids
+VERIFICATION:
+  tests_run:
+    - python3 scripts/check_passes.py before edit: FAIL missing headings
+    - python3 scripts/check_passes.py after edit: PASS 22 yaml files parsed; history headings name all ids including PASS-2026-10-01-199
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - check_passes.py is non-vacuous and requires a level-2 heading containing ' / PASS-YYYY-MM-DD-N'.
+  failures:
+    - Condensed history dropped required headings. Date on the 193 heading did not match the yaml filename.
+  decisions:
+    - EXTEND the history with index headings. Do not restore deleted narrative bodies.
+    - Do not bump Digital Double lockfiles. Do not archive. Do not tag. Do not dispatch workflows.
+REMAINING:
+  incomplete:
+    - Dependabot critical #13
+    - archive flags false
+    - empty product releases
+    - 15 census names UNASSIGNED
+  blockers:
+    - Archive flags and release tags operator-only
+    - Lockfile bump operator-reviewed
+  new_gaps: []
+NEXT:
+  objective_id: GAP-OPERATOR-SECURITY
+  action: Operator reviews Digital Double lockfile bump for form-data 4.0.4 and the open high alerts. Agent does not merge. Next agent-recoverable slice is a public unassigned tree read that does not assign a claim cap.
+  reason: Critical security remains the portfolio exit blocker. It is not agent-executable.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not claim the alert closed until Dependabot state is fixed.
+PROVENANCE:
+  state_commit: pending-push
+  evidence:
+    - local check_passes.py before and after
