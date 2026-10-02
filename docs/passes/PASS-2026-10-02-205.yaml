@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-02-205
+  parent_pass: PASS-2026-10-02-204
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 68
+  capabilities_verified: 1
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-RANDOM-SWEEP
+  description: Randomly select one census repository, discover, classify, apply safe idempotent docs, verify claim-0 tests, record residuals, stop.
+  reason_selected: Sweep contract requires one random repository per cycle.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83, incomplete_results false.
+    - Seed random.Random(20261002205) selected Digital_Double_Virtual_Workforce_4.2.
+    - Private. Default branch master. Tree 090586f, 345 entries, not truncated.
+    - Workflows are Dependabot only. Tags empty. archived false.
+    - Registry already maps this name to Digital_Double_virtual_workforce.
+CHANGES:
+  repositories:
+    - beyond-repair/Digital_Double_Virtual_Workforce_4.2
+    - beyond-repair/ADL-Governance
+  files:
+    - SUPERSEDED.md
+    - CANONICAL_NOTE.md
+    - CLAIM_STATUS.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/passes/PASS-2026-10-02-205.yaml
+  commits:
+    - 02c0a3d667d0f7feb86159cb67368bb4d777d360
+  capabilities_added_or_changed: []
+VERIFICATION:
+  tests_run:
+    - python3 -m pytest tests_claim0 tests_governance -q on sparse clone excluding /models (17 passed)
+    - list_workflows and list_tags on Digital_Double_Virtual_Workforce_4.2
+  code_review: NOT_RUN
+  security: NOT_A_PRODUCT_SURFACE
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS_WITH_FINDINGS
+KNOWLEDGE:
+  confirmed:
+    - Classification remains SUPERSEDED, claim 0.
+    - Claim-0 pytest 17 passed locally.
+    - No product workflow and no tags.
+  failures:
+    - Archive flag still false. Portfolio exit criteria not met.
+  decisions:
+    - Do not archive. Do not tag. Do not delete the GGUF. Do not add product CI. Do not elevate claim. Do not loop.
+REMAINING:
+  incomplete:
+    - Dependabot critical #13 on the canonical workforce repo (not re-fetched)
+    - archive flags false
+    - empty product releases
+  blockers:
+    - Archive flag is operator-only
+  new_gaps: []
+NEXT:
+  objective_id: GAP-OPERATOR-ARCHIVE
+  action: Operator sets archived=true on Digital_Double_Virtual_Workforce_4.2 after accepting the Sweep-205 stamp. Do not treat local pytest as product validation.
+  reason: Lifecycle policy requires the GitHub archive flag after SUPERSEDED is stable. Agent cannot set it.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not delete the model blob.
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - product commit 02c0a3d667d0f7feb86159cb67368bb4d777d360
+    - local pytest 17 passed
+    - tree sha 090586f27f6dd22f2ecd0a47b24667a84af870e2
