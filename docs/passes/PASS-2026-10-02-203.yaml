@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-02-203
+  parent_pass: PASS-2026-10-02-202
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-CENSUS-SCALE-FUNCTIONAL
+  description: Register scale-functional-I, align its RESULT beta column to the script finite difference, and restore the missing PASS-192 history heading.
+  reason_selected: check_passes.py failed on the missing 192 heading, and Sweep-202 named this repo as the census drift without registering it.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair. Search total_count 83. Profile public_repos 78.
+    - scale-functional-I public main head 23c00dd before this pass. No workflow. Claim file already level 1 and experimental_validation false.
+    - check_passes.py failed before the heading edit. Missing id PASS-2026-10-01-192.
+CHANGES:
+  repositories:
+    - beyond-repair/scale-functional-I
+    - beyond-repair/ADL-Governance
+  files:
+    - RESULT.md
+    - tests/test_scale_functional.py
+    - docs/SWEEP_HISTORY.md
+    - docs/repository_registry.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/passes/PASS-2026-10-02-200.yaml
+    - docs/passes/PASS-2026-10-02-201.yaml
+    - docs/passes/PASS-2026-10-02-202.yaml
+    - docs/passes/PASS-2026-10-02-203.yaml
+  commits:
+    - 9768280b4d6eb039defa7072cabf243f3e3740b2
+  capabilities_added_or_changed:
+    - scale-functional-I geometric I witness registered RESEARCH claim <= 1
+VERIFICATION:
+  tests_run:
+    - PYTHONPATH=. python3 -m unittest tests.test_scale_functional -v: 1 passed
+    - python3 scale_functional.py on 23c00dd: exit 0, no stationary point on two families
+    - python3 scripts/check_passes.py before heading edit: FAIL missing PASS-2026-10-01-192
+    - python3 scripts/check_passes.py after heading edit and before new yaml: PASS
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - I strictly decreases with neck width on chamber/neck (8,5) and (10,6). beta finite difference stays negative.
+    - Prior RESULT beta column did not match the script definition.
+  failures:
+    - No Actions workflow exists, so remote CI was not observed.
+  decisions:
+    - EXTEND registry. Do not promote. Do not set 0.08 as an input. Do not archive. Do not tag. Do not bump form-data.
+REMAINING:
+  incomplete:
+    - Dependabot critical #13
+    - archive flags false
+    - empty product releases
+    - capability matrix still 67 rows
+    - no CI on scale-functional-I
+  blockers:
+    - Archive flags and release tags operator-only
+    - Lockfile bump operator-reviewed
+  new_gaps:
+    - scale_functional.py imports eigvalsh but does not use it; spectral claim in RESULT is not re-executed here
+NEXT:
+  objective_id: GAP-OPERATOR-SECURITY
+  action: Operator reviews Digital Double lockfile bump for form-data 4.0.4. Next agent-recoverable slice is a workflow-free witness on one remaining unaudited private RESEARCH name, without claim elevation.
+  reason: Critical security remains the portfolio exit blocker and is not agent-executable.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not claim the alert closed until Dependabot state is fixed.
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - local unittest
+    - local scale_functional.py
+    - local check_passes.py
