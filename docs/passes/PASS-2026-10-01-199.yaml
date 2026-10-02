@@ -24,7 +24,8 @@ CHANGES:
   files:
     - docs/SWEEP_HISTORY.md
     - docs/passes/PASS-2026-10-01-199.yaml
-  commits: []
+  commits:
+    - 1de50d682c71c311adc244fedff92e313b0ab1cf
   capabilities_added_or_changed:
     - governance pass-heading invariant restored for persisted yaml ids
 VERIFICATION:
@@ -62,6 +63,6 @@ NEXT:
     - Do not rewrite history.
     - Do not claim the alert closed until Dependabot state is fixed.
 PROVENANCE:
-  state_commit: pending-push
+  state_commit: 1de50d682c71c311adc244fedff92e313b0ab1cf
   evidence:
     - local check_passes.py before and after
