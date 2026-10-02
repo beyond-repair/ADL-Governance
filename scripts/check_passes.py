@@ -8,6 +8,12 @@ Does not invent missing historical pass bodies. Markdown records are ignored.
 Accepts the two observed schemas:
   - nested PASS.id
   - flat sweep + date (PASS-168)
+
+Usage:
+  python scripts/check_passes.py [ROOT]
+
+ROOT defaults to the repository that contains this script. There is no
+config file. This checker does not enforce claim levels or the constitution.
 """
 
 from __future__ import annotations
@@ -68,10 +74,20 @@ def check_file(path: Path) -> None:
     raise SystemExit(f"{path.name}: neither nested PASS schema nor flat sweep schema")
 
 
-def main() -> int:
-    root = Path(__file__).resolve().parents[1]
+def main(argv: list[str] | None = None) -> int:
+    args = list(sys.argv[1:] if argv is None else argv)
+    if len(args) > 1:
+        print("usage: python scripts/check_passes.py [ROOT]", file=sys.stderr)
+        return 2
+    root = Path(args[0]).resolve() if args else Path(__file__).resolve().parents[1]
     passes = root / "docs" / "passes"
     history = root / "docs" / "SWEEP_HISTORY.md"
+    if not passes.is_dir():
+        print(f"FAIL: {passes} is not a directory", file=sys.stderr)
+        return 1
+    if not history.is_file():
+        print(f"FAIL: {history} is missing", file=sys.stderr)
+        return 1
     files = sorted(passes.glob("PASS-*.yaml"))
     if not files:
         print("FAIL: docs/passes has no PASS-*.yaml", file=sys.stderr)
