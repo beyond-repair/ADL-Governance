@@ -166,3 +166,7 @@ Index only. Body remains in git history. Not a second execution.
 ## Index / PASS-2026-10-02-206
 
 Index only. Body remains in git history. Not a second execution.
+
+## Index / PASS-2026-10-02-207
+
+Index only. YAML exists. Narrative body remains in git history. Not a second execution.
