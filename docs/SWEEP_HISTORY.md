@@ -1,5 +1,20 @@
 # Sweep History
 
+## Sweep-211 — 2026-10-03 four-pillar live verification
+
+- Timestamp: 2026-10-03 (session clock 16:11 America/New_York; GitHub evidence same calendar day).
+- Scope: Master Directive v3.0 Phases 1–3 and governance deliverables. One sweep. No loop.
+- Census: search `user:beyond-repair` returned 83 names, `incomplete_results=false`. User object `public_repos` was 78. Archived in payload: `CFT-v3.0` only. Forks in payload: 0.
+- Repositories live-reviewed: `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+- Findings: main CI success runs 37065566958, 37064696194, 36859452185, 36861489156. Releases empty. Tags empty. Code scanning 404 no analysis on all four. `seem-completion-pass` PR runs failed (latest 37149355766). BlockSwarm README tag string `v0.5.0-sagf` not in tag list.
+- Actions performed: governance docs only in ADL-Governance. No history rewrite. No archive flag. No tag. No merge. No claim elevation.
+- Residual risks: failing PR branch, unfetched Dependabot criticals, operator archive list, census count gap, absent code scanning.
+- Exit: criteria not met. Stopped.
+
+## Index / PASS-2026-10-03-211
+
+Body is the Sweep-211 section above.
+
 ## Sweep-210 — 2026-10-03 scale-functional-I function audit
 
 - Selection: persisted next action from PASS-2026-10-02-207. Sweeps 208 and 209 did not close it.
