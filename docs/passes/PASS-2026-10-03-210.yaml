@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-03-210
+  parent_pass: PASS-2026-10-03-209
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 68
+  capabilities_verified: 1
+  gaps_remaining: 13
+OBJECTIVE:
+  id: GAP-SCALE-FUNCTIONAL-I-AUDIT
+  description: Record only scale-functional-I functions that tests execute. Do not assign a cluster cap.
+  reason_selected: PASS-2026-10-02-207 named this as the next agent-recoverable slice. Sweeps 208 and 209 did not close it.
+DISCOVERY:
+  findings:
+    - scale-functional-I head 9768280b4d6eb039defa7072cabf243f3e3740b2.
+    - Module functions are dumbbell_mask, perimeter, and main.
+    - tests/test_scale_functional.py imports and calls only dumbbell_mask and perimeter.
+    - eigvalsh is imported in scale_functional.py and unused. Tests do not call it.
+CHANGES:
+  repositories:
+    - beyond-repair/adl-capability-matrix
+    - beyond-repair/ADL-Governance
+  files:
+    - matrix/function_audit_scale_functional_I.json
+    - tests/test_function_audit_scale_functional_I.py
+    - CLAIM_STATUS.md
+    - docs/passes/PASS-2026-10-03-210.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - b3b6412b391149a82bd63a263b97d639b6ccf2a7
+  capabilities_added_or_changed:
+    - scale-functional-I test-executed surface recorded as dumbbell_mask and perimeter
+VERIFICATION:
+  tests_run:
+    - python3 -m unittest tests.test_scale_functional in scale-functional-I: 1 test OK
+    - python3 -m pytest -q in adl-capability-matrix: 19 passed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - On families (chamber, neck) = (8, 5) and (10, 6), tested I strictly decreases with w and finite-difference beta_I is negative.
+    - No cluster or claim_cap was assigned. Locked inventory remains 67.
+  failures:
+    - Operator archive flags and Digital Double critical alerts were not closed.
+  decisions:
+    - Do not expand capability_matrix.json. Do not treat main or the unused eigvalsh import as tested.
+REMAINING:
+  incomplete:
+    - Cap refresh for 16 unassigned names
+    - Portfolio-wide function census
+    - Dependabot critical alerts on Digital Double repositories
+  blockers:
+    - Archive flags and release tags are operator-only
+  new_gaps:
+    - GAP-SEEM-SUNDER-PIN-FRESHNESS: bridge witnesses stop at 2026-10-02 commits
+NEXT:
+  objective_id: GAP-SEEM-SUNDER-PIN-FRESHNESS
+  action: Re-read the foreign blobs named by seem-sunder-bridge witnesses and record whether default heads still match. Do not import those repos into the bridge. Do not merge PR #2.
+  reason: Operator queue lists pin freshness as the next non-destructive recoverable check after Sweep-209.
+  prerequisites:
+    - Do not merge dependabot/pip/pip-590e9db7b9.
+    - Do not claim runtime interop.
+PROVENANCE:
+  state_commit: pending-governance-commit
+  evidence:
+    - adl-capability-matrix b3b6412b391149a82bd63a263b97d639b6ccf2a7
+    - scale-functional-I unittest 1 OK
+    - local pytest 19 passed
