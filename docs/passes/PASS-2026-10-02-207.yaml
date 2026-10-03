@@ -1,0 +1,71 @@
+PASS:
+  id: PASS-2026-10-02-207
+  parent_pass: PASS-2026-10-02-206
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 68
+  capabilities_verified: 1
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-CENSUS-NAME-2026-10-02
+  description: Record the name-only delta between the locked 67-row matrix and the 2026-10-02 search of 83 names.
+  reason_selected: Sweep-206 next action is operator-only. This slice is agent-recoverable and does not invent caps.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83, incomplete_results false.
+    - Only name added versus census_gap_2026-10-01.json is scale-functional-I.
+    - Locked inventory remains 67. Missing-from-lock count is 16.
+CHANGES:
+  repositories:
+    - beyond-repair/adl-capability-matrix
+    - beyond-repair/ADL-Governance
+  files:
+    - matrix/census_gap_2026-10-02.json
+    - tests/test_census_gap_2026_10_02.py
+    - CLAIM_STATUS.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-02-207.yaml
+  commits:
+    - f615874b240f968ff1534b052f8347d855359670
+    - dc797c92d210eab7131e91247be1a48847b15e01
+  capabilities_added_or_changed: []
+VERIFICATION:
+  tests_run:
+    - python3 -m pytest -q in adl-capability-matrix: 18 passed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - scale-functional-I is present in the 2026-10-02 search and absent from the 2026-10-01 observed list.
+    - No cluster or claim_cap was assigned.
+  failures:
+    - Operator archive and Digital Double critical alert were not closed.
+  decisions:
+    - Do not expand the 67-row lock. Do not load the new gap from matrix.engine.
+REMAINING:
+  incomplete:
+    - Cap refresh for 16 unassigned names
+    - Function audit of scale-functional-I
+    - Dependabot critical on Digital_Double_virtual_workforce
+  blockers:
+    - Archive flags and release tags are operator-only
+  new_gaps:
+    - GAP-SCALE-FUNCTIONAL-I-AUDIT: tree present, functions not inventoried in this pass
+NEXT:
+  objective_id: GAP-SCALE-FUNCTIONAL-I-AUDIT
+  action: Read scale-functional-I tests and scale_functional.py and record only functions that tests execute. Do not assign a cluster cap.
+  reason: It is the only new public name in the 2026-10-02 census and is still unaudited.
+  prerequisites:
+    - Do not expand capability_matrix.json.
+    - Do not claim continuum or thrust results.
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - adl-capability-matrix f615874b240f968ff1534b052f8347d855359670
+    - adl-capability-matrix dc797c92d210eab7131e91247be1a48847b15e01
+    - local pytest 18 passed

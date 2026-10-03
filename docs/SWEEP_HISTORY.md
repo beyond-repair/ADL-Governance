@@ -2,6 +2,44 @@
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
+## 2026-10-02 — Sweep-207 / PASS-2026-10-02-207 (select: adl-capability-matrix)
+
+**Agent:** Grok (ADL-SEEM v3.0)
+**Parent:** PASS-2026-10-02-206
+**Selection method:** Highest-value agent-recoverable slice after Sweep-206 NEXT was operator-only archive. Not a random draw.
+**Subject:** `adl-capability-matrix`
+**Visibility:** public.
+**Default branch:** `main`
+**Pre-head:** `47868ed9a07a7de6d175c38d81185ccf8486a6b5`
+**Post commits:** `f615874b240f968ff1534b052f8347d855359670`, `dc797c92d210eab7131e91247be1a48847b15e01`
+**Classification:** RESEARCH (confirmed). Claim cap not elevated. Locked inventory not expanded.
+
+### DISCOVER
+
+GitHub search `user:beyond-repair` total_count 83, incomplete_results false. Locked matrix inventory_count 67. Committed 2026-10-01 gap observed 82 names. Set difference versus that list is exactly `scale-functional-I`.
+
+### AUDIT
+
+`scale-functional-I` root contains CLAIM_STATUS.md, FUNCTIONAL.md, README.md, RESULT.md, scale_functional.py, tests/. Not function-audited here. No cluster or claim cap assigned.
+
+### IMPLEMENT
+
+Added `matrix/census_gap_2026-10-02.json` and `tests/test_census_gap_2026_10_02.py`. Appended a Sweep-207 note to CLAIM_STATUS.md. Did not change `capability_matrix.json`. Did not change `census_gap_2026-10-01.json`. Did not change `matrix/engine.py` (still reports the 2026-10-01 gap).
+
+### TEST
+
+`python3 -m pytest -q` in the pre-push tree: 18 passed.
+
+### GOVERN
+
+Claim not elevated. Archive flags and product releases untouched. Dependabot moderate alert on this repo noted by push remote, not triaged.
+
+### Exit
+
+Name-only gap recorded. Stop.
+
+---
+
 ## 2026-10-02 — Sweep-206 / PASS-2026-10-02-206 (select: ADL-SEEM)
 
 **Agent:** Grok (ADL-SEEM v3.0)
