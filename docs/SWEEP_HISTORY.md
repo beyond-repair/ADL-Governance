@@ -1,5 +1,20 @@
 # Sweep History
 
+## Sweep-208 — 2026-10-03 portfolio completion sweep
+
+- Selection: `random.SystemRandom().choice` over 83 names from search `user:beyond-repair` (`incomplete_results=false`).
+- Subject: `digital-double-mobile` (public, `main`, pre-head `2d9a885e986999f76df1b97a2fd6f49e1e20252a`).
+- Classification: SUPERSEDED confirmed. Claim 0. Successor `Digital_Double_virtual_workforce`. GitHub `archived=false`.
+- Discover: Claim-0 FastAPI in `dd_mobile/`, tests under `tests/`, superseded guard, historical backend/Flutter leftovers, zero-byte HTML/PNG stubs. No `.env` in the working tree.
+- Audit: prior superseded-guard CI run 37050163229 success did not execute pytest. Critical Dependabot #30 protobufjs and #8 form-data open. High alerts include #85, #83, #78.
+- Actions: extended `.github/workflows/superseded-guard.yml` to install `requirements.txt` and run `python -m pytest -q` before the banner guard. Updated `CLAIM_STATUS.md`. Updated the three governance docs. No lockfile bump. No archive flag. No tag. No history rewrite. No deletion.
+- Test: local `python3 -m pytest -q` → 10 passed. Local guard → PASS. Post-push CI conclusion not available at record time.
+- Exit: termination conditions not met. Sweep stopped.
+
+## Index / PASS-2026-10-03-208
+
+Index only. Body is the Sweep-208 section above. Not a second execution.
+
 ## Sweep-207 — 2026-10-03 portfolio completion sweep
 
 - Scope: one governed cycle. Census reconciliation plus mandatory live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
@@ -11,7 +26,6 @@
 ## Index / PASS-2026-10-03-207
 
 Index only. Body is the Sweep-207 section above. Not a second execution.
-
 
 Autonomous GitHub portfolio completion agent log for beyond-repair.
 
