@@ -32,6 +32,7 @@ CHANGES:
     - b3b6412b391149a82bd63a263b97d639b6ccf2a7
     - eeb86b8b3171aae2cc0515ba7832c979bd167409
     - c9c657f508aa427601ec43caae2f6a190902f116
+    - 8578f80cc0f776b38c259b92bdd91325198cfc72
   capabilities_added_or_changed:
     - scale-functional-I test-executed surface recorded as dumbbell_mask and perimeter
 VERIFICATION:
@@ -68,9 +69,10 @@ NEXT:
     - Do not merge dependabot/pip/pip-590e9db7b9.
     - Do not claim runtime interop.
 PROVENANCE:
-  state_commit: c9c657f508aa427601ec43caae2f6a190902f116
+  state_commit: 8578f80cc0f776b38c259b92bdd91325198cfc72
   evidence:
     - adl-capability-matrix b3b6412b391149a82bd63a263b97d639b6ccf2a7
-    - ADL-Governance c9c657f508aa427601ec43caae2f6a190902f116
+    - ADL-Governance 8578f80cc0f776b38c259b92bdd91325198cfc72
+    - scripts/check_passes.py PASS: 28 yaml files parsed
     - scale-functional-I unittest 1 OK
     - local pytest 19 passed
