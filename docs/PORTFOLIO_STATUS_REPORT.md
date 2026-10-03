@@ -37,17 +37,17 @@ Pins recorded in code: sunder `c7d4596`, sovereign-clean-room `4878918`, SEEM-2.
 | Local `python3.11 -m pytest -q` after patch | 13 passed |
 | Local `python3.11 -m bridge` | exit 0, report ends OK, runtime_interop NOT_CLAIMED |
 | Prior main CI | run 37071653220 success on `6f6d5b0` (pytest only) |
-| This cycle commit | `a72abac9` adds `python -m bridge` to CI. Remote conclusion not available at record time. |
+| This cycle CI | run 37128355911 success on `a72abac9` (pytest, then `python -m bridge`) |
 | Open PR | #2 dependabot pytest 8.3.5 → 9.0.3. CI on that branch succeeded. Not merged. |
 
 No version bump. No tag. No archive flag. Claim cap not raised.
 
 ## Exit criteria
 
-Not satisfied for the subject or the portfolio.
+Not satisfied for the portfolio. Subject CI gate is green; remaining subject gaps are operator-owned.
 
-Failed: foreign pin blobs not re-read this cycle; post-push CI conclusion not yet observed; dependabot PR #2 unmerged; portfolio archive/security items inherited from Sweep-208 remain open.
+Failed: foreign pin blobs not re-read this cycle; dependabot PR #2 unmerged; portfolio archive/security items inherited from Sweep-208 remain open.
 
-Satisfied this cycle: classification and claim cap confirmed; local pytest and contract gate green; CI now invokes the contract gate; governance files updated; no unsupported runtime claim added.
+Satisfied this cycle: classification and claim cap confirmed; local pytest and contract gate green; CI run 37128355911 success; governance files updated; no unsupported runtime claim added.
 
-Prior Sweep-208 status body remains in git history before this commit.
+Prior Sweep-208 status body remains in git history before the Sweep-209 commit.
