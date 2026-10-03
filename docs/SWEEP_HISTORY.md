@@ -1,5 +1,19 @@
 # Sweep History
 
+## Sweep-210 — 2026-10-03 scale-functional-I function audit
+
+- Selection: persisted next action from PASS-2026-10-02-207. Sweeps 208 and 209 did not close it.
+- Subject: `scale-functional-I` head `9768280b4d6eb039defa7072cabf243f3e3740b2`.
+- Classification unchanged: RESEARCH. No cluster and no claim cap assigned. Locked matrix remains 67 rows.
+- Discover: module functions `dumbbell_mask`, `perimeter`, `main`. Tests import and execute only the first two. `eigvalsh` is imported and unused.
+- Witness: `python3 -m unittest tests.test_scale_functional` → 1 test OK. Families (8, 5) and (10, 6): I strictly decreases; finite-difference beta_I negative.
+- Actions: `matrix/function_audit_scale_functional_I.json` and test in `adl-capability-matrix` commit `b3b6412b391149a82bd63a263b97d639b6ccf2a7`. Local pytest 19 passed. No continuum, selected W, thrust, or 0.08 comparison claimed.
+- Exit: GAP-SCALE-FUNCTIONAL-I-AUDIT closed at test-executed surface only.
+
+## Index / PASS-2026-10-03-210
+
+Body is the Sweep-210 section above.
+
 ## Sweep-209 — 2026-10-03 portfolio completion sweep
 
 - Selection: `random.Random(20261003).choice` over 82 names from search `user:beyond-repair` (`incomplete_results=false`), excluding `ADL-Governance`.
