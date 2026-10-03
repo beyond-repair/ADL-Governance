@@ -1,5 +1,21 @@
 # Sweep History
 
+## Sweep-212 — 2026-10-03 four-pillar re-verification
+
+- Timestamp: 2026-10-03 (session clock 19:13 America/New_York; GitHub evidence same calendar day).
+- Scope: Master Directive v3.0 Phases 1–11 at evidence available. One sweep. No loop.
+- Census: search `user:beyond-repair` returned 83 names, `incomplete_results=false`. User object `public_repos` was 78. Archived in payload: `CFT-v3.0` only. Forks in payload: 0.
+- Repositories live-reviewed: `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+- Delta vs Sweep-211: `seem-completion-pass` head is now `e8c247c20d280b737ccb2c73cd53e0a748c741ad`. Latest failing PR run 37161070354. Dependabot #13 re-fetched and still open. Main SHAs unchanged. Releases empty. Tags empty.
+- Findings: main CI success runs 37065566958, 37064696194, 36859452185, 36861489156. forge-aegis code scanning 404. forge-aegis and Digital Double secret-scanning open lists empty. forge-aegis, sovereign-clean-room, and BlockSwarm Dependabot open lists empty.
+- Actions performed: governance docs only in ADL-Governance. No history rewrite. No archive flag. No tag. No merge. No claim elevation. No dependency bump.
+- Residual risks: failing PR branch, open critical Dependabot #13, observed open high npm alerts, operator archive list, census count gap, absent code scanning.
+- Exit: criteria not met. Stopped.
+
+## Index / PASS-2026-10-03-212
+
+Body is the Sweep-212 section above.
+
 ## Sweep-211 — 2026-10-03 four-pillar live verification
 
 - Timestamp: 2026-10-03 (session clock 16:11 America/New_York; GitHub evidence same calendar day).
