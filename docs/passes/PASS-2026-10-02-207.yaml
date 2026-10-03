@@ -64,7 +64,7 @@ NEXT:
     - Do not expand capability_matrix.json.
     - Do not claim continuum or thrust results.
 PROVENANCE:
-  state_commit: pending-governance-push
+  state_commit: 8b20818051145faa21b0d8ff47e95f4505c3c048
   evidence:
     - adl-capability-matrix f615874b240f968ff1534b052f8347d855359670
     - adl-capability-matrix dc797c92d210eab7131e91247be1a48847b15e01
