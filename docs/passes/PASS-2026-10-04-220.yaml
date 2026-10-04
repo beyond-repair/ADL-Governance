@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-04-220
+  parent_pass: PASS-2026-10-04-219
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 12
+OBJECTIVE:
+  id: SWEEP-220-PORTFOLIO
+  description: Inventory user beyond-repair and live-verify forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce.
+  reason_selected: Operator master directive v3.0. One sweep. Stop if exit criteria fail.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. public_repos 78. Search total_count 83, incomplete_results false. Private 9. GitHub archived only CFT-v3.0.
+    - forge-aegis main 590ba108c93a2de04ed8f2390f68cf6353645b1c. CI run 37065566958 success. Releases empty. Dependabot open empty. Secret scanning open empty. Code scanning 404.
+    - sovereign-clean-room main 4878918cf9f95d3c19e1890bef6d2fd6713e0a16. CI run 37064696194 success. seem-completion-pass d6f13042 unmerged. Secret scanning disabled. Releases empty. Critical Dependabot empty.
+    - BlockSwarm main 6e90f6f85c0969fa8a262a70ceba833d618a22db. Foundry run 36859452185 success. Releases empty. Dependabot open empty. Secret scanning open empty.
+    - Digital_Double_virtual_workforce main 24e6a29fd26c03900a8d98634d6683996eabdac4. CI run 36861489156 success. Dependabot alert 13 open. Code scanning 404. Releases empty.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-04-220.yaml
+  capabilities_added_or_changed:
+    - none; observation and registry record only
+VERIFICATION:
+  tests_run:
+    - GitHub Actions conclusions cited above. Local pytest not re-run this sweep.
+  code_review: NOT_RUN
+  security: PARTIAL
+  integration: NOT_RUN
+  invariants: PASS
+  overall: BLOCKED
+KNOWLEDGE:
+  confirmed:
+    - Four mandated main workflows last completed success.
+    - Digital Double critical alert 13 remains open on the current main head.
+    - No release objects for the four subjects.
+  failures:
+    - Exit criteria failed. Agent did not patch, archive, merge, or delete.
+  decisions:
+    - Classifications inherited except the four live subjects. Do not promote VSA completeness.
+REMAINING:
+  incomplete:
+    - Digital_Double_virtual_workforce Dependabot alert 13
+    - digital-double-mobile secret scanning alert 1 and Dependabot critical 30 and 8
+    - seem-completion-pass merge hold
+    - Archive flags
+    - public_repos versus search count
+  blockers:
+    - Lockfile bump, secret rotation, archive flags, and PR merge are operator-only
+  new_gaps:
+    - none
+NEXT:
+  objective_id: GAP-DD-DEPENDABOT-13-OPERATOR
+  action: Operator patches or dismisses alert 13 and rotates the digital-double-mobile OpenRouter exposure before any archive flag. Do not merge seem-completion-pass from the agent.
+  reason: Live reconfirm did not close the operator gate.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not set archived=true from this agent.
+    - Do not copy secret values into records.
+PROVENANCE:
+  evidence:
+    - https://github.com/beyond-repair/forge-aegis/actions/runs/37065566958
+    - https://github.com/beyond-repair/sovereign-clean-room/actions/runs/37064696194
+    - https://github.com/beyond-repair/BlockSwarm/actions/runs/36859452185
+    - https://github.com/beyond-repair/Digital_Double_virtual_workforce/actions/runs/36861489156
+    - https://github.com/beyond-repair/Digital_Double_virtual_workforce/security/dependabot/13

@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-220 — 2026-10-04 portfolio discovery and live verification
+
+- Scope: one governed sweep under Master Directive v3.0. Inventory `user:beyond-repair`. Live-verify `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`. No deletion, no history rewrite, no claim elevation, no lockfile bump, no archive flag.
+- Census: authenticated user `beyond-repair` id 132061760, `public_repos` 78. Search `user:beyond-repair` total_count 83, incomplete_results false. Private 9. GitHub archived flag true only for `CFT-v3.0`. Accounting residual: 78+9 is not 83.
+- Findings: main CI success retained (runs 37065566958 on `590ba108`, 37064696194 on `4878918c`, 36859452185 on `6e90f6f`, 36861489156 on `24e6a29`). Releases API empty for all four; public tags pages showed no releases. Digital Double Dependabot #13 still open (`form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, patched identifier 4.0.4). Secret scanning disabled on `sovereign-clean-room`. `seem-completion-pass` still at `d6f13042`, not merged.
+- Actions performed: governance docs only (`PORTFOLIO_STATUS_REPORT.md`, `OPERATOR_QUEUE.md`, `SWEEP_HISTORY.md`, `docs/passes/PASS-2026-10-04-220.yaml`).
+- Exit: criteria failed. Sweep stopped. Do not loop.
+
+## Index / PASS-2026-10-04-220
+
+Body is the Sweep-220 section above.
+
 ## Sweep-219 — 2026-10-04 Digital_Double alert 13 reconfirm
 
 - Selection: PASS-2026-10-04-218 named GAP-DD-DEPENDABOT-13 as next. Agent may observe, not patch, dismiss, rotate, archive, or merge.
@@ -188,4 +200,3 @@ Body remains in docs/passes/PASS-2026-10-04-214.yaml. Not rewritten in Sweep-218
 ## Index / PASS-2026-10-04-215
 
 Body remains in docs/passes/PASS-2026-10-04-215.yaml. Not rewritten in Sweep-218.
-
