@@ -1,5 +1,19 @@
 # Sweep History
 
+## Sweep-219 — 2026-10-04 Digital_Double alert 13 reconfirm
+
+- Selection: PASS-2026-10-04-218 named GAP-DD-DEPENDABOT-13 as next. Agent may observe, not patch, dismiss, rotate, archive, or merge.
+- Digital_Double_virtual_workforce main head `24e6a29fd26c03900a8d98634d6683996eabdac4` (2026-10-01).
+- Dependabot alert #13 still open. Package form-data. Manifest digital_double/package-lock.json. Scope development. Advisory GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Matched range `>= 4.0.0, < 4.0.4`. First patched identifier 4.0.4. Lockfile not bumped.
+- digital-double-mobile secret scanning alert #1 still open. Type OpenRouter API key. Historical path `.env`. publicly_leaked true. validity unknown. Secret value not copied into this record.
+- sovereign-clean-room PR #3 still open. Head `d6f13042f4f99cd186761ae438b75c3e4e705f11` on seem-completion-pass. Not merged. PR #1 still open at `f65d7db6c4f7d98ed3f5ded3defd5d1886c21cc4`.
+- Exit: operator patch not performed. Portfolio termination not met.
+
+## Index / PASS-2026-10-04-219
+
+Body is the Sweep-219 section above.
+
+
 ## Sweep-218 — 2026-10-04 digital-double-mobile post-head CI
 
 - Selection: close the Sweep-217 sentence that post-head CI was not yet observed. No new random subject.

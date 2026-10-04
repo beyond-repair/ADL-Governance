@@ -17,6 +17,10 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Other archive-queue flags remain false. Only `CFT-v3.0` is GitHub-archived.
 - Product tags/releases, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
 
+## Residual notes from Sweep-219
+
+Subject `Digital_Double_virtual_workforce` main head `24e6a29fd26c03900a8d98634d6683996eabdac4`. Dependabot alert #13 re-fetched open. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Patched identifier 4.0.4. Not bumped. digital-double-mobile secret scanning alert #1 still open (value not copied). sovereign-clean-room PR #3 and PR #1 still open. Not merged.
+
 ## Residual notes from Sweep-218
 
 Subject `digital-double-mobile` post-head `7c65eb04`. superseded-guard run 37230662637 success (job 111519431449, Claim-0 pytest step success). Guard fails if a working-tree `.env` returns. Critical alerts and alert #1 remain open. Archive flag remains false. Sweep-217's unobserved-CI sentence is closed by observation only.
