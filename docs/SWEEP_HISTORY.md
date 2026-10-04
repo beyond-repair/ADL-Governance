@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-218 — 2026-10-04 digital-double-mobile post-head CI
+
+- Selection: close the Sweep-217 sentence that post-head CI was not yet observed. No new random subject.
+- Head unchanged: `7c65eb04a678f457929671cd4909bebd61ac2eac`.
+- superseded-guard run 37230662637 completed success. Job guard 111519431449 success, including the Claim-0 pytest step.
+- Classification unchanged: SUPERSEDED, claim 0. Archive flag not set. Lockfile not bumped. Secret alert #1 not rotated.
+- History index headings restored so `scripts/check_passes.py` can name every persisted YAML. Bodies of older passes were not rewritten.
+- Exit: CI observation closed. Portfolio termination not met.
+
+## Index / PASS-2026-10-04-218
+
+Body is the Sweep-218 section above.
+
 ## Sweep-217 — 2026-10-04 digital-double-mobile re-audit
 
 - Selection: first SystemRandom seed `8769574556656521699` index 28 of 83 name-sorted repos hit `DevelopTool-Unified-Dev-Environment` (Sweep-214). Excluded. Second seed `18170008514042234352` index 28 of 82 selected `digital-double-mobile`.
@@ -29,3 +42,136 @@
 ## Index / PASS-2026-10-04-217
 
 Body is the Sweep-217 section above.
+
+## Index / PASS-2026-10-01-167
+
+Body remains in docs/passes/PASS-2026-10-01-167.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-168
+
+Body remains in docs/passes/PASS-2026-10-01-168.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-170
+
+Body remains in docs/passes/PASS-2026-10-01-170.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-173
+
+Body remains in docs/passes/PASS-2026-10-01-173.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-176
+
+Body remains in docs/passes/PASS-2026-10-01-176.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-179
+
+Body remains in docs/passes/PASS-2026-10-01-179.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-182
+
+Body remains in docs/passes/PASS-2026-10-01-182.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-183
+
+Body remains in docs/passes/PASS-2026-10-01-183.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-184
+
+Body remains in docs/passes/PASS-2026-10-01-184.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-185
+
+Body remains in docs/passes/PASS-2026-10-01-185.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-188
+
+Body remains in docs/passes/PASS-2026-10-01-188.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-189
+
+Body remains in docs/passes/PASS-2026-10-01-189.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-190
+
+Body remains in docs/passes/PASS-2026-10-01-190.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-191
+
+Body remains in docs/passes/PASS-2026-10-01-191.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-192
+
+Body remains in docs/passes/PASS-2026-10-01-192.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-193
+
+Body remains in docs/passes/PASS-2026-10-01-193.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-194
+
+Body remains in docs/passes/PASS-2026-10-01-194.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-195
+
+Body remains in docs/passes/PASS-2026-10-01-195.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-196
+
+Body remains in docs/passes/PASS-2026-10-01-196.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-197
+
+Body remains in docs/passes/PASS-2026-10-01-197.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-198
+
+Body remains in docs/passes/PASS-2026-10-01-198.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-01-199
+
+Body remains in docs/passes/PASS-2026-10-01-199.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-02-203
+
+Body remains in docs/passes/PASS-2026-10-02-203.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-02-204
+
+Body remains in docs/passes/PASS-2026-10-02-204.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-02-205
+
+Body remains in docs/passes/PASS-2026-10-02-205.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-02-206
+
+Body remains in docs/passes/PASS-2026-10-02-206.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-02-207
+
+Body remains in docs/passes/PASS-2026-10-02-207.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-03-210
+
+Body remains in docs/passes/PASS-2026-10-03-210.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-03-211
+
+Body remains in docs/passes/PASS-2026-10-03-211.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-03-212
+
+Body remains in docs/passes/PASS-2026-10-03-212.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-03-213
+
+Body remains in docs/passes/PASS-2026-10-03-213.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-04-214
+
+Body remains in docs/passes/PASS-2026-10-04-214.yaml. Not rewritten in Sweep-218.
+
+## Index / PASS-2026-10-04-215
+
+Body remains in docs/passes/PASS-2026-10-04-215.yaml. Not rewritten in Sweep-218.
+
