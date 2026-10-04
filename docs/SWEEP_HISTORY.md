@@ -1,5 +1,19 @@
 # Sweep History
 
+## Sweep-213 — 2026-10-03 portfolio completion sweep
+
+- Selection: `random.SystemRandom().choice` over 82 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`), excluding `ADL-Governance`.
+- Subject: `optimization-limit-conjecture` (public, `main`, pre-head `e86cd46793e0a6770df84d62b315e8a387c62da5`, 26 tree entries, not truncated).
+- Classification: RESEARCH confirmed. Claim ≤ 1 finite-depth residual. Not a proof of an asymptotic floor. Not a derivation of 0.08.
+- Discover: `experiments/branching_conflict_experiment.py`, fail-closed `experiments/core.py`, sweep writer, optional `visualize.py`, `main.py`, `tests/test_residual.py`, draft `Proofs/TheoremA.tex`, CI on push/PR.
+- Audit: main CI run 37063845578 success. Tags empty. Releases empty. Dependabot open empty. Branches: `main` only. Local `pytest -q`: 14 passed.
+- Actions: `CLAIM_STATUS.md` and Sweep-213 note in subject `GOVERNANCE.md`. Governance docs in ADL-Governance. No tag. No archive. No history rewrite. No claim elevation.
+- Exit: subject slice re-audited. Portfolio termination not met. Sweep stopped.
+
+## Index / PASS-2026-10-03-213
+
+Index only. Body is the Sweep-213 section above. No new pass YAML this cycle (output contract limited to the three governance docs).
+
 ## Sweep-212 — 2026-10-03 four-pillar re-verification
 
 - Timestamp: 2026-10-03 (session clock 19:13 America/New_York; GitHub evidence same calendar day).
