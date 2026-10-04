@@ -2,35 +2,18 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-214)
+## Open items (as of Sweep-215)
 
-- **DevelopTool-Unified-Dev-Environment archive flag:** classification ARCHIVED / archive queue. `archived=true` still false. Agent did not set it. Push workflows that attempted conda base updates and a remote write were moved to `workflow_dispatch` only (commits `6716a5ff` and `5a84f447`). Do not restore those jobs.
-- **DevelopTool CodeQL:** push and schedule triggers removed in Sweep-214 because analysis was not verified. Operator may restore code scanning.
-
-## Open items retained from Sweep-213
-
-- **optimization-limit-conjecture tag:** none returned. Operator may tag a research snapshot. Agent did not. Do not tag a proof.
-- **sovereign-clean-room `seem-completion-pass`:** head was `e8c247c20d280b737ccb2c73cd53e0a748c741ad` at Sweep-212. Python tests PR runs 37161070354, 37159222345, 37157334634, 37155478223, 37155289876 concluded failure on 2026-10-03. Main push run 37064696194 succeeded on `4878918`. Not re-fetched Sweep-213. Do not merge the failing branch. Fix or close.
+- **sovereign-clean-room `seem-completion-pass`:** PR #3 still open. Head `d6f13042f4f99cd186761ae438b75c3e4e705f11`. Python tests run 37215829476 success. Prior failures 37214635678 and 37215706600 were float I drift, not discrete field drift. Not merged. VSA completeness still UNVERIFIED. Do not treat CI green as a k_max result.
 - **sovereign-clean-room branch `fix/pynacl-1.6.2-cve-2025-69277`:** still present at Sweep-212 (`f65d7db6`). Disposition undecided. Not merged by this agent.
-- **Product tags/releases:** empty at Sweep-212 for forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce. Operator may tag. Agent did not.
-- **BlockSwarm doc contradiction:** README tag lineage string `v0.5.0-sagf` was not returned by the tag API (Sweep-212). Reconcile docs or create the tag. Do not invent the tag in governance.
-- **Code scanning:** open-alert list returned 404 no analysis on forge-aegis in Sweep-212. Enable analysis or accept absence explicitly.
-- **seem-sunder-bridge Dependabot PR #2:** inherited Sweep-209. Not re-fetched. Do not merge from this sweep.
-- **digital-double-mobile security (inherited Sweep-208):** critical Dependabot #30 `protobufjs` (GHSA-xq3m-2v4x-88gg) and #8 `form-data` (GHSA-fjxv-7rqg-78g4). Not re-fetched.
-- **digital-double-mobile secrets:** history not rewritten. Rotate any credentials that ever lived in a committed `.env` before `archived=true`.
-- **Digital_Double_virtual_workforce Dependabot alert #13:** open at Sweep-212. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Not re-fetched Sweep-213. Green CI does not close it.
-- **Digital_Double_virtual_workforce open high (Sweep-212, page not exhausted):** #160 and #159 `js-yaml`; #155 `browserslist`; #153 `nanoid`. Dev-scope lockfile.
-- Apply GitHub `archived=true` to documented ARCHIVED/SUPERSEDED targets, including digital-double-mobile (after secret rotation), Digital_Double_Virtual_Workforce_4.2, Digital_Double_Virtual_Workforce_4., My-mind-A.I., VigilE.S.A.-Enhanced-Security, genieGPT, ftmA.I.bot, smart_home_BCI, potential-garbanzo, -Py2APK-main, fantom_trading_bot_2, DigitalDoubleVirtualWorkforce3.5, CFT-v3.1, Agent-Snake, SEEM-Cognitive_Microservice, SEEM-Cognitive-Microservice, btc-trading. Only `CFT-v3.0` was `archived=true` in the Sweep-212 search payload. Sweep-213 did not change archive flags.
-- **4.2 weight:** `models/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf` remains in git per prior queue. Do not delete from history.
-- **4.2 misplaced workflow:** `src/.github/workflows/ci.yml` is not a repository workflow. Do not promote it.
-- **My-mind-A.I. CI** and **VigilE.S.A.-Enhanced-Security security_pipeline.yml:** inherited failures. Not re-fetched.
-- Census gap: user `public_repos` 78 vs search 83. Reconcile private/index before treating the registry as closed.
-- History rewrite or force-push: never by agent. Repository deletion: never by agent.
+- **Digital_Double_virtual_workforce Dependabot alert #13:** open at Sweep-212. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Not re-fetched Sweep-215. Green CI does not close it.
+- **DevelopTool-Unified-Dev-Environment archive flag:** classification ARCHIVED / archive queue. `archived=true` still false. Agent did not set it.
+- Product tags/releases, code scanning, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
+
+## Residual notes from Sweep-215
+
+`seem-completion-pass` CI is green on `d6f13042` only. Main was not updated. PR #3 was not merged. Recorded I literals are not cross-runner bit-stable (GAP-SEEM-FLOAT-LOCK).
 
 ## Residual notes from Sweep-214
 
-`DevelopTool-Unified-Dev-Environment` stays ARCHIVED at claim 0. Local unittest 5 passed on `5a84f447783f51a06d89ca4bd896763dab511a63`. Surface-audit run 37204277991 success. Run 37204263447 failed on the intermediate commit and is superseded. GitHub archive flag not set. No tag. No history rewrite.
-
-## Residual notes from Sweep-213
-
-`optimization-limit-conjecture` stays RESEARCH. Local pytest 14 passed on head `9d3aed5077369e2cc89d58814a2b95c152568199` (persistence close). CI run 37172838204 success on that sha. Earlier main CI run 37063845578 success on `e86cd467`. Open Dependabot empty. Tags empty. No tag. PASS yaml added as PASS-2026-10-03-213. Not a proof. Sweep stopped.
+`DevelopTool-Unified-Dev-Environment` stays ARCHIVED at claim 0. Local unittest 5 passed on `5a84f447783f51a06d89ca4bd896763dab511a63`. Surface-audit run 37204277991 success. GitHub archive flag not set.
