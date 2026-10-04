@@ -29,13 +29,15 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - pending governance record commits for this pass
+    - ed0520206ed1e90bbb57c86abce4b8d9c024d881
+    - d03be8f769b92c0ee2f5d85831b28dcc12464542
+    - 45733f15799f5b93822e79738246791d18be1fa5
   capabilities_added_or_changed:
     - none; verification record only
 VERIFICATION:
   tests_run:
     - GitHub Actions superseded-guard run 37230662637 success on 7c65eb04; job guard 111519431449; Claim-0 pytest step success
-    - ADL-Governance scripts/check_passes.py pending against the post-commit tree
+    - python3 scripts/check_passes.py on 45733f15799f5b93822e79738246791d18be1fa5: PASS 34 yaml files
   code_review: NOT_RUN
   security: NOT_RUN
   integration: NOT_RUN
@@ -68,7 +70,7 @@ NEXT:
     - Do not set archived=true from this agent.
     - Do not merge seem-completion-pass from this agent.
 PROVENANCE:
-  state_commit: pending
+  state_commit: 45733f15799f5b93822e79738246791d18be1fa5
   evidence:
     - https://github.com/beyond-repair/digital-double-mobile/actions/runs/37230662637
     - https://github.com/beyond-repair/digital-double-mobile/commit/7c65eb04a678f457929671cd4909bebd61ac2eac
