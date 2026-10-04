@@ -27,7 +27,8 @@ CHANGES:
     - docs/passes/PASS-2026-10-03-213.yaml
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
-  commits: []
+  commits:
+    - 18703161cb3739a1902f0803c8d01d8c9d509ac5
   capabilities_added_or_changed:
     - persistence of Sweep-213 record only; no claim elevation
 VERIFICATION:
@@ -66,7 +67,7 @@ NEXT:
     - Do not rewrite history.
     - Do not set archived=true from this agent.
 PROVENANCE:
-  state_commit: pending-sweep-213-yaml
+  state_commit: 18703161cb3739a1902f0803c8d01d8c9d509ac5
   evidence:
     - local pytest 14 passed on 9d3aed5077369e2cc89d58814a2b95c152568199
     - Actions run 37172838204 success
