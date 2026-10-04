@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-216 — 2026-10-04 portfolio discovery and live verification
+
+- Scope: one governed sweep. Inventory all `user:beyond-repair` repositories. Live-verify `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`. No deletion, no history rewrite, no claim elevation.
+- Census: authenticated user `beyond-repair` id 132061760, `public_repos` 78. Search `user:beyond-repair` total_count 83, incomplete_results false. Private 9. GitHub archived flag true only for `CFT-v3.0`.
+- Repositories reviewed at metadata level: all 83 names. Trees re-read only for forge-aegis, BlockSwarm, and Digital_Double_virtual_workforce roots, plus ADL-Governance docs.
+- Findings: main CI success retained for the four subjects (runs 37065566958, 37064696194, 36859452185, 36861489156). `seem-completion-pass` run 37215829476 success, not merged. Releases lists empty. Tags not re-fetched (rate limit). Dependabot open empty on forge-aegis, sovereign-clean-room, BlockSwarm. Digital Double critical #13 still open, plus high lockfile alerts. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis.
+- Actions performed: governance docs only (`PORTFOLIO_STATUS_REPORT.md`, `OPERATOR_QUEUE.md`, `SWEEP_HISTORY.md`). No product code changes. No archive flag. No merge.
+- Residual risks: critical CVE-2025-7783 unpatched; duplicate Digital Double and SEEM trees; archive flags unset; VSA completeness UNVERIFIED; private trees unread.
+- Exit: criteria failed. Sweep stopped. Do not loop.
+
 ## Sweep-215 — 2026-10-04 seem-completion-pass smoke CI
 
 - Selection: persisted next action from PASS-2026-10-04-214 was operator-only Dependabot #13. Agent selected the open ACTIVE CI failure instead.
@@ -19,139 +29,3 @@ Body is the Sweep-215 section above.
 ## Index / PASS-2026-10-04-214
 
 Index only. Body remains in git history before this condensation. Not a new execution.
-
-## Index / PASS-2026-10-03-213
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-03-212
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-03-211
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-03-210
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-03-209
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-03-208
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-03-207
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-02-207
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-02-206
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-02-205
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-02-204
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-02-203
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-199
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-198
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-197
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-196
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-195
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-194
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-193
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-192
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-191
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-190
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-189
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-188
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-185
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-184
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-183
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-182
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-179
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-176
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-173
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-170
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-168
-
-Index only. Not a new execution.
-
-## Index / PASS-2026-10-01-167
-
-Index only. Not a new execution.
