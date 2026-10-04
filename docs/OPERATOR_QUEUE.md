@@ -24,4 +24,4 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 
 ## Residual notes from Sweep-213
 
-`optimization-limit-conjecture` stays RESEARCH. Local pytest 14 passed. Main CI run 37063845578 success on pre-head. Open Dependabot empty. No tag. Sweep stopped.
+`optimization-limit-conjecture` stays RESEARCH. Local pytest 14 passed on head `9d3aed5077369e2cc89d58814a2b95c152568199` (persistence close). CI run 37172838204 success on that sha. Earlier main CI run 37063845578 success on `e86cd467`. Open Dependabot empty. Tags empty. No tag. PASS yaml added as PASS-2026-10-03-213. Not a proof. Sweep stopped.

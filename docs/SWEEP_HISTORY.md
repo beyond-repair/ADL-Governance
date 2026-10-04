@@ -12,7 +12,7 @@
 
 ## Index / PASS-2026-10-03-213
 
-Index only. Body is the Sweep-213 section above. No new pass YAML this cycle (output contract limited to the three governance docs).
+Body is the Sweep-213 section above. PASS-2026-10-03-213.yaml added in the persistence close. Post-head 9d3aed5077369e2cc89d58814a2b95c152568199. Local pytest 14 passed. CI run 37172838204 success. Tags empty. Open Dependabot empty. Not a proof.
 
 ## Sweep-212 — 2026-10-03 four-pillar re-verification
 
