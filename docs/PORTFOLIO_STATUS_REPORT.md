@@ -34,7 +34,7 @@ Surface: Claim-0 FastAPI in `dd_mobile/`, Vite React `src/`, historical Flutter 
 ## Verification
 
 - Local `pytest`: 10 passed on pre-head, then again after the guard change.
-- Prior CI: superseded-guard run 37124864136 success on `d081c0c1` (2026-10-03). Post-head CI is pending this push.
+- CI: superseded-guard run 37230662637 success on post-head `7c65eb04` (2026-10-04). Prior run 37124864136 success on `d081c0c1`.
 - Open critical Dependabot: #30 `protobufjs` GHSA-xq3m-2v4x-88gg CVE-2026-41242 (runtime); #8 `form-data` GHSA-fjxv-7rqg-78g4 CVE-2025-7783 (runtime). Not bumped.
 - Secret scanning alert #1 open: OpenRouter type, historical `.env`, publicly leaked, validity unknown. Value not copied into this report.
 
@@ -51,4 +51,4 @@ Surface: Claim-0 FastAPI in `dd_mobile/`, Vite React `src/`, historical Flutter 
 
 ## Exit
 
-Subject slice re-audited and claim-capped. Not promoted. Not archived. Portfolio termination not met. Stop. Do not loop.
+Subject slice re-audited and claim-capped. CI green on post-head. Not promoted. Not archived. Portfolio termination not met. Stop. Do not loop.
