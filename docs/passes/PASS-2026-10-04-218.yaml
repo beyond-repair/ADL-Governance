@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-04-218
+  parent_pass: PASS-2026-10-04-215
+  parent_note: Last persisted YAML is 215. Sweep-216 and Sweep-217 are named in SWEEP_HISTORY.md without YAML bodies. This pass does not invent those bodies.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 0
+  gaps_remaining: 12
+OBJECTIVE:
+  id: GAP-DDM-POSTHEAD-CI-218
+  description: Observe the Sweep-217 post-head superseded-guard CI on digital-double-mobile without merging, archiving, or bumping lockfiles.
+  reason_selected: Sweep-217 explicitly left post-head CI unobserved. Operator Dependabot, secret rotation, and archive flags remain forbidden.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. Search user:beyond-repair total_count 83 remains the prior census. Not re-paged.
+    - digital-double-mobile main head is 7c65eb04a678f457929671cd4909bebd61ac2eac, matching the Sweep-217 post-head.
+    - superseded-guard run 37230662637 completed success on that sha. Job guard 111519431449 success. Claim-0 pytest step completed success.
+    - Prior superseded-guard run 37124864136 success remains the pre-head d081c0c1 record. It is not the current head.
+    - Classification unchanged: SUPERSEDED, claim 0, successor Digital_Double_virtual_workforce. GitHub archived flag was not set.
+    - No working-tree .env is in the root listing. Secret scanning alert #1 and Dependabot critical #30 and #8 were not closed by this observation.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-04-218.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending governance record commits for this pass
+  capabilities_added_or_changed:
+    - none; verification record only
+VERIFICATION:
+  tests_run:
+    - GitHub Actions superseded-guard run 37230662637 success on 7c65eb04; job guard 111519431449; Claim-0 pytest step success
+    - ADL-Governance scripts/check_passes.py pending against the post-commit tree
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Sweep-217 post-head CI is observed and successful. Claim remains 0.
+    - Green superseded-guard CI is not authorization to archive, rotate secrets, or bump package-lock.json.
+  failures:
+    - None in this slice. Operator alerts were not attempted.
+  decisions:
+    - Do not set archived=true. Do not rewrite history. Do not bump lockfiles. Do not merge sovereign-clean-room PR #3.
+REMAINING:
+  incomplete:
+    - digital-double-mobile secret scanning alert #1 and Dependabot critical #30 and #8
+    - Digital_Double_virtual_workforce Dependabot alert #13
+    - seem-completion-pass PR #3 merge hold
+    - DevelopTool and other archive-queue flags
+  blockers:
+    - Archive flags, secret rotation, history rewrite, and claim elevation are operator-only
+  new_gaps:
+    - none
+NEXT:
+  objective_id: GAP-DD-DEPENDABOT-13
+  action: Operator patches or dismisses Digital_Double_virtual_workforce Dependabot alert 13. Separately rotate the digital-double-mobile OpenRouter exposure before any archive flag. Do not merge seem-completion-pass from the agent.
+  reason: Highest remaining items are operator-scoped. This pass closed only the unobserved CI note.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not set archived=true from this agent.
+    - Do not merge seem-completion-pass from this agent.
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - https://github.com/beyond-repair/digital-double-mobile/actions/runs/37230662637
+    - https://github.com/beyond-repair/digital-double-mobile/commit/7c65eb04a678f457929671cd4909bebd61ac2eac
