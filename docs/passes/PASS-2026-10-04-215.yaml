@@ -27,14 +27,15 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - pending
+    - 0517e890e6ebd98f43f427f5e5275c9ae0fc1d06
+    - 9742ede3342593f11855d3fe8cce1a3f3c1a41dd
   capabilities_added_or_changed:
     - none; verification record only
 VERIFICATION:
   tests_run:
     - GitHub Actions surface-audit run 37204277991 success on 5a84f447
     - GitHub Actions python-tests run 37215829476 success on d6f13042
-    - ADL-Governance scripts/check_passes.py: pending in this commit
+    - local python3 scripts/check_passes.py on 0517e890 snapshot: PASS 33 yaml files
   code_review: NOT_RUN
   security: NOT_RUN
   integration: NOT_RUN
@@ -67,7 +68,7 @@ NEXT:
     - Do not set archived=true from this agent.
     - Do not merge seem-completion-pass from this agent.
 PROVENANCE:
-  state_commit: pending
+  state_commit: 9742ede3342593f11855d3fe8cce1a3f3c1a41dd
   evidence:
     - https://github.com/beyond-repair/DevelopTool-Unified-Dev-Environment/actions/runs/37204277991
     - https://github.com/beyond-repair/sovereign-clean-room/actions/runs/37215829476
