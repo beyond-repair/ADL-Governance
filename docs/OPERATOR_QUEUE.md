@@ -2,7 +2,12 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Open items (as of Sweep-213)
+## Open items (as of Sweep-214)
+
+- **DevelopTool-Unified-Dev-Environment archive flag:** classification ARCHIVED / archive queue. `archived=true` still false. Agent did not set it. Push workflows that attempted conda base updates and a remote write were moved to `workflow_dispatch` only (commits `6716a5ff` and `5a84f447`). Do not restore those jobs.
+- **DevelopTool CodeQL:** push and schedule triggers removed in Sweep-214 because analysis was not verified. Operator may restore code scanning.
+
+## Open items retained from Sweep-213
 
 - **optimization-limit-conjecture tag:** none returned. Operator may tag a research snapshot. Agent did not. Do not tag a proof.
 - **sovereign-clean-room `seem-completion-pass`:** head was `e8c247c20d280b737ccb2c73cd53e0a748c741ad` at Sweep-212. Python tests PR runs 37161070354, 37159222345, 37157334634, 37155478223, 37155289876 concluded failure on 2026-10-03. Main push run 37064696194 succeeded on `4878918`. Not re-fetched Sweep-213. Do not merge the failing branch. Fix or close.
@@ -21,6 +26,10 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - **My-mind-A.I. CI** and **VigilE.S.A.-Enhanced-Security security_pipeline.yml:** inherited failures. Not re-fetched.
 - Census gap: user `public_repos` 78 vs search 83. Reconcile private/index before treating the registry as closed.
 - History rewrite or force-push: never by agent. Repository deletion: never by agent.
+
+## Residual notes from Sweep-214
+
+`DevelopTool-Unified-Dev-Environment` stays ARCHIVED at claim 0. Local unittest 5 passed on `5a84f447783f51a06d89ca4bd896763dab511a63`. Surface-audit workflow added. GitHub archive flag not set. No tag. No history rewrite.
 
 ## Residual notes from Sweep-213
 

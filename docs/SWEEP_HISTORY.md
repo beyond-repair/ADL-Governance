@@ -1,5 +1,20 @@
 # Sweep History
 
+## Sweep-214 — 2026-10-04 portfolio completion sweep
+
+- Selection: `random.SystemRandom` seed `18188434645491285237` modulo 83 over search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`). Index 75. Pool included `ADL-Governance`.
+- Subject: `DevelopTool-Unified-Dev-Environment` (public, `main`, pre-head `7c6bf22c1c7dee620430680379e30407957c4518`, 22 tree entries, not truncated).
+- Classification: ARCHIVED confirmed. Claim 0. Archive queue already listed it. GitHub `archived` flag remains false.
+- Discover: stub agents, `main.py` constructor mismatch, placeholder token string, invalid or mutating workflows, `ARCHIVED.md`, claim-capped README whose preserved body still says resurrection target.
+- Audit: push runs 36844335408, 36844334126, 36844332996 failed on pre-head.
+- Actions: `CLAIM_STATUS.md`, `tests/test_surface.py`, `surface-audit.yml`, three broken workflows and CodeQL moved to `workflow_dispatch` only. README status note. Commits `6716a5ff` and `5a84f447`. Local unittest 5 passed on post-head. No tag. No archive flag. No history rewrite. No claim elevation. Agent stubs not rewritten.
+- Exit: subject slice re-audited. Portfolio termination not met. Sweep stopped.
+
+## Index / PASS-2026-10-04-214
+
+Body is the Sweep-214 section above.
+
+
 ## Sweep-213 — 2026-10-03 portfolio completion sweep
 
 - Selection: `random.SystemRandom().choice` over 82 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`), excluding `ADL-Governance`.
