@@ -1,10 +1,12 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-10-02 (Sweep-204; search total_count 83) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-10-04 (Sweep-216; search total_count 83, incomplete_results false; 9 private) · **Governing source:** this repository
 
-Visible GitHub search count: **83** (Sweep-202/203/204). Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+Sweep-216 reconfirmed the 83-name set and did not change classifications. Phase-3 CI, releases, and Dependabot were re-fetched only for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Details and residuals are in `PORTFOLIO_STATUS_REPORT.md`. Digital Double Dependabot #13 remains open. GitHub archive flag remains true only for `CFT-v3.0`.
 
-Phase-3 CI, tags, releases, and Dependabot re-fetched Sweep-204. No class change.
+Visible GitHub search count: **83** (Sweep-202/203/204/216). Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
+
+Phase-3 CI, tags, releases, and Dependabot re-fetched Sweep-204 for the wider set. Tags were not re-listed in Sweep-216.
 
 ---
 
@@ -12,13 +14,13 @@ Phase-3 CI, tags, releases, and Dependabot re-fetched Sweep-204. No class change
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-03 | 0 | 4 | SAGF; Foundry success run 36859452185 on main `6e90f6f` (Sweep-207 re-fetch); tags empty; releases empty; dependabot open empty |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-03 | 1 | 3 | Canonical SEEM substrate; main Python tests success run 37064701216 on `4878918c` (Sweep-207). PR branch seem-completion-pass run 37087542135 failure. VSA completeness UNVERIFIED. Releases empty. Tags empty. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-03 | 0 | 2 | FLS early; CI success run 37065566958 on main `590ba108` (Sweep-207); tags empty; releases empty; dependabot open empty; code scanning 404; RELEASE_BLOCKED_BY_OPERATOR |
-| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-10-02 | 0 | 3 | This repo |
-| [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-08-29 | 0 | 3 | SEEM-specific constitution |
-| [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-08-24 | 0 | 2 | Spec sibling to forge-aegis |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-03 | 5 | 3 | Public canonical; CI success run 36861489156 on main `24e6a29` (Sweep-207 re-fetch); Dependabot critical #13 open; tags empty; releases empty |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-01 | 0 | 4 | SAGF; Foundry success run 36859452185 on main `6e90f6f` (Sweep-216 re-fetch); releases empty this sweep; dependabot open empty |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-04 | 2 | 3 | Canonical SEEM substrate; main Python tests success run 37064696194 on `4878918c`. PR branch seem-completion-pass run 37215829476 success on `d6f13042`, not merged. VSA completeness UNVERIFIED. Releases empty. Secret scanning disabled. |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-02 | 0 | 2 | FLS early; CI success run 37065566958 on main `590ba108` (Sweep-216); releases empty; dependabot open empty; code scanning 404; RELEASE_BLOCKED_BY_OPERATOR |
+| [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-10-04 | 0 | 3 | This repo |
+| [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-10-02 | 0 | 3 | SEEM-specific constitution. Not re-verified Sweep-216. |
+| [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-10-01 | 0 | 2 | Spec sibling to forge-aegis. Not re-verified Sweep-216. |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-01 | 5 | 3 | Public canonical; CI success run 36861489156 on main `24e6a29` (Sweep-216); Dependabot critical #13 open; high lockfile alerts open; releases empty |
 
 Do not treat sovereign-clean-room VSA as production-complete. CI green is only an Actions conclusion.
 
@@ -28,7 +30,7 @@ Do not treat sovereign-clean-room VSA as production-complete. CI green is only a
 
 `bloch-coherence-factor2` registered Sweep-173 (claim ≤ 1; classical two-mode R=2; local pytest 11 passed on `05571476`; main Actions 36844364901 success on that head; loop branch not promoted; releases empty). `topological-pinch` registered / re-confirmed Sweep-172 (claim ≤ 1; graph proxy 0.5/0.4/0.1 not 0.92; CI 36881071636 success). `mend` registered Sweep-170 (claim ≤ 1; browser game scaffold; formula witness local PASS, not file-bound, Actions not run; playable product not verified; no SUPERSEDES vs mendthegame). `informational-flux-identity` registered Sweep-168 (claim ≤ 1; local witness signed net 0 and absolute right 349/366; Actions not observed). `finite-gasket-spectral-derivatives` registered Sweep-167 (claim ≤ 1; kernel locally tested; free mult(6) CLAIMED, graph not in-repo). `m2-renormalization-law` locked / re-confirmed Sweep-161 (parameter-free + pytest CI SUCCESS). `ADL-Nexus` re-confirmed Sweep-163 (CI SUCCESS run 14). `CFTv3.3-IQG-Unified-Framework` re-confirmed Sweep-162. `momentum-closure` Sweep-158. `sierpinski-geometry-045`, `ware-constant-phenomenology`, `-ware-constant-derivation`, `coherence-drive`, `optimization-limit-conjecture` and satellites under claim discipline. `scale-functional-I` registered Sweep-203 (claim ≤ 1; I = Perimeter/sqrt(Area); local unittest 1 passed on `9768280`; no stationary point on two dumbbell families; 0.08 comparison not reached; no workflow). `adl-capability-matrix` locked 67-row (live census 83; expansion OPEN / operator-gated). See PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md for full list and recent re-confirms.
 
-Unaudited names still default RESEARCH until a sweep reads the tree: `atomicdreamlabs` (private, JS, size 63712, pushed 2026-10-01; metadata only Sweep-207), `mendthegame` (private, JS, size 43043; metadata only Sweep-207).
+Unaudited names still default RESEARCH until a sweep reads the tree: `atomicdreamlabs` (private, JS, size 63712, pushed 2026-10-01; metadata only Sweep-216), `mendthegame` (private, JS, size 43043; metadata only Sweep-216).
 
 **Not claimed:** experimental thrust, energy extraction, AGI-in-a-box, production OS autonomy, measured pharmacology efficacy, shipped game product, runtime interop from mapping layer, 83-row matrix completeness, digital-double-mobile feature marketing, Nexus live adapters, momentum-closure mesh residual, Sierpinski geometry as force law, M2 as derived physical law, lab thrust demonstration, free mult(6) as in-repo verified computation, informational-flux-identity as a force law, mend as a shipped game, bloch factor-of-two as a constant of nature or a device stability proof, scale-functional-I as a universal stationary point or a revival of 0.08.
 
