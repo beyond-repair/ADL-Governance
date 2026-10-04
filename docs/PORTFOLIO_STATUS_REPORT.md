@@ -25,7 +25,7 @@ Search `user:beyond-repair`, `incomplete_results=false`, `total_count=83`. User 
 | Claim | 0. Historical sketch. Not a product. Not an integration with sunder. |
 | CI before | runs 36844335408, 36844334126, 36844332996 failure on pre-head |
 | Local unittest | 5 passed on post-head |
-| Post-push CI | surface-audit not yet concluded at record time |
+| Post-push CI | surface-audit run 37204277991 success on `5a84f447` |
 | GitHub archived | false |
 
 Surface: stub agents under `develop_tool/agents/`, broken `main.py` constructor call, `ARCHIVED.md`, claim-capped README, four previously push-triggered workflows.
@@ -36,7 +36,7 @@ Surface: stub agents under `develop_tool/agents/`, broken `main.py` constructor 
 |-----|----------|
 | GitHub `archived=true` not set | Medium (operator) |
 | Agent stubs are non-functional; constructor mismatch left intact | Low (documented; not rewritten) |
-| Post-push surface-audit conclusion not yet observed | Low / pending |
+| Intermediate surface-audit run 37204263447 failed on `6716a5ff` (comment contained forbidden wording); superseded | Low, closed on head |
 | Inherited Digital Double Dependabot #13 and `seem-completion-pass` failures | Critical / High (not this subject) |
 | `public_repos` 78 vs search 83 | Low / accounting |
 
