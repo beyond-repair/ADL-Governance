@@ -17,6 +17,10 @@ Pending destructive / operator-only actions. Autonomous agent does **not** execu
 - Other archive-queue flags remain false. Only `CFT-v3.0` is GitHub-archived.
 - Product tags/releases, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
 
+## Residual notes from Sweep-218
+
+Subject `digital-double-mobile` post-head `7c65eb04`. superseded-guard run 37230662637 success (job 111519431449, Claim-0 pytest step success). Guard fails if a working-tree `.env` returns. Critical alerts and alert #1 remain open. Archive flag remains false. Sweep-217's unobserved-CI sentence is closed by observation only.
+
 ## Residual notes from Sweep-217
 
-Subject `digital-double-mobile` post-head `7c65eb04`. Guard fails if a working-tree `.env` returns. Critical alerts and alert #1 remain open. Sweep stopped.
+Subject `digital-double-mobile` post-head `7c65eb04`. Guard fails if a working-tree `.env` returns. Critical alerts and alert #1 remain open. Sweep stopped. Post-head CI was later observed in Sweep-218.
