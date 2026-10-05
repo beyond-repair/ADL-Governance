@@ -2,6 +2,13 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Open items (as of Sweep-221)
+
+- **forge-aegis license:** `pyproject.toml` still says `License TBD`. Do not assign a license in an autonomous sweep.
+- **forge-aegis product tag:** version `0.1.0` is in pyproject; tags and releases API empty. Product tags remain operator-only. Not tagged in Sweep-221.
+- **forge-aegis code scanning:** enabling remains operator-only (API 404 on prior sweeps; not re-enabled).
+- **forge-aegis stale branches:** `finish/forge-aegis-v0.1-runnable`, `repair/docs-python3-venv`, `repair/v0.1-installable-slice` still present. Not deleted.
+
 ## Open items (as of Sweep-220)
 
 - **digital-double-mobile secret scanning alert #1:** open as of Sweep-219. Type OpenRouter API key. Historical path `.env` (not in current tree). Publicly leaked. Validity unknown. Rotate and revoke. Do not rewrite history. Absence of `.env` is not rotation. Not re-fetched in Sweep-220.
