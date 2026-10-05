@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-224
+
+forge-aegis observation commit `e7188d5` CI run 37258127100 success. Job test 111599441509 success. Claim cap unchanged. License, product tag, code scanning, and stale branches remain operator-only. RepoRover- `archived` remains false.
+
 ## Open items (as of Sweep-223)
 
 - **RepoRover- archive flag:** classification ARCHIVED. `archived=true` still false. Operator may run `gh repo archive beyond-repair/RepoRover- --yes`. Not executed. Do not delete. Do not rewrite history.
@@ -20,9 +24,9 @@ forge-aegis post-head CI run 37257747973 success on `8083425d`. Job test 1115983
 
 ## Open items (as of Sweep-220)
 
-- **digital-double-mobile secret scanning alert #1:** open as of Sweep-219. Type OpenRouter API key. Historical path `.env` (not in current tree). Publicly leaked. Validity unknown. Rotate and revoke. Do not rewrite history. Absence of `.env` is not rotation. Not re-fetched in Sweep-223.
-- **digital-double-mobile Dependabot critical #30:** `protobufjs` / GHSA-xq3m-2v4x-88gg / CVE-2026-41242. Manifest `package-lock.json`. Runtime scope. Not bumped. Not re-fetched in Sweep-223.
-- **digital-double-mobile Dependabot critical #8:** `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Runtime scope. Not bumped. Not re-fetched in Sweep-223.
+- **digital-double-mobile secret scanning alert #1:** open as of Sweep-219. Type OpenRouter API key. Historical path `.env` (not in current tree). Publicly leaked. Validity unknown. Rotate and revoke. Do not rewrite history. Absence of `.env` is not rotation. Not re-fetched in Sweep-224.
+- **digital-double-mobile Dependabot critical #30:** `protobufjs` / GHSA-xq3m-2v4x-88gg / CVE-2026-41242. Manifest `package-lock.json`. Runtime scope. Not bumped. Not re-fetched in Sweep-224.
+- **digital-double-mobile Dependabot critical #8:** `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Runtime scope. Not bumped. Not re-fetched in Sweep-224.
 - **digital-double-mobile archive flag:** classification SUPERSEDED. `archived=true` still false. Archive-queue gate still requires credential rotation first.
 - **Digital_Double_virtual_workforce Dependabot alert #13:** re-fetched open in Sweep-220. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Matched range `>= 4.0.0, < 4.0.4`. Patched identifier 4.0.4. Not patched.
 - **sovereign-clean-room `seem-completion-pass`:** branch still at `d6f13042f4f99cd186761ae438b75c3e4e705f11`. Python tests run 37215829476 success. Not merged. VSA completeness still UNVERIFIED.

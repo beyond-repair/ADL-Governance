@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-05-224
+  parent_pass: PASS-2026-10-05-223
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 11
+OBJECTIVE:
+  id: GAP-FORGE-AEGIS-E7188D5-CI
+  description: Observe forge-aegis CI on Sweep-222 observation commit e7188d5 and persist the result without elevating claims.
+  reason_selected: Sweep-222 left this CI unobserved. Sweep-223 next action is an operator archive flag, which this agent must not execute.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - forge-aegis main head remains e7188d529739652a2dd6264bd3d328c1f72e60e5.
+    - Workflow forge-aegis CI run 37258127100 completed success on that SHA. Job test 111599441509 success. Unit tests, CLI smoke PASS, and CLI smoke FAIL/tamper all success.
+    - RepoRover- archived flag remains false. Not changed.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-05-224.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending-this-commit
+  capabilities_added_or_changed:
+    - forge-aegis e7188d5 CI observation recorded; claim cap unchanged
+VERIFICATION:
+  tests_run:
+    - GitHub Actions run 37258127100 conclusion success on e7188d529739652a2dd6264bd3d328c1f72e60e5
+    - Job 111599441509 conclusion success
+    - Local YAML schema check PASS. Full scripts/check_passes.py against the complete corpus was not run in this sandbox.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Sweep-222 observation commit CI is success. Claim cap remains ACTIVE / software / RUNNABLE SKETCH.
+    - RepoRover- GitHub archived remains false at observation time.
+  failures:
+    - No product capability was closed. Archive flags, license, tags, secret rotation, and lockfile bumps remain operator-gated.
+  decisions:
+    - REUSE ADL-Governance pass registry. Do not archive, tag, license, or rewrite history.
+REMAINING:
+  incomplete:
+    - RepoRover- archive flag
+    - Digital_Double_virtual_workforce Dependabot alert 13
+    - digital-double-mobile secret scanning alert 1 and Dependabot critical 30 and 8
+    - seem-completion-pass merge hold
+    - forge-aegis license TBD, product tag, code scanning, stale branches
+    - public_repos versus search count
+  blockers:
+    - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
+  new_gaps:
+    - Provenance commit field is filled by the follow-up commit after the first push SHA is known.
+NEXT:
+  objective_id: GAP-REPOROVER-ARCHIVE-FLAG
+  action: Operator may set archived=true on RepoRover-. Do not delete. Do not tag. Do not elevate claim above 0.
+  reason: Non-operator CI observation gap from Sweep-222 is closed. Highest remaining named gate is operator-only.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not set archived=true from this agent.
+    - Do not copy secret values into records.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - https://github.com/beyond-repair/forge-aegis/actions/runs/37258127100
+    - https://github.com/beyond-repair/forge-aegis/actions/runs/37258127100/job/111599441509
+    - https://github.com/beyond-repair/forge-aegis/commit/e7188d529739652a2dd6264bd3d328c1f72e60e5
