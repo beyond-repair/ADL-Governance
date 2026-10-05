@@ -26,7 +26,9 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - pending-this-commit
+    - 96a010d57715d7670d898b1ebce3f11bdfa17042
+    - 027154c2384665e3a236f0dab14066fa6728c140
+    - provenance-follow-up
   capabilities_added_or_changed:
     - forge-aegis e7188d5 CI observation recorded; claim cap unchanged
 VERIFICATION:
@@ -58,7 +60,7 @@ REMAINING:
   blockers:
     - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
   new_gaps:
-    - Provenance commit field is filled by the follow-up commit after the first push SHA is known.
+    - This provenance follow-up commit SHA is not embedded in this file. Parent commits are 96a010d and 027154c.
 NEXT:
   objective_id: GAP-REPOROVER-ARCHIVE-FLAG
   action: Operator may set archived=true on RepoRover-. Do not delete. Do not tag. Do not elevate claim above 0.
@@ -68,8 +70,10 @@ NEXT:
     - Do not set archived=true from this agent.
     - Do not copy secret values into records.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: 027154c2384665e3a236f0dab14066fa6728c140
   evidence:
     - https://github.com/beyond-repair/forge-aegis/actions/runs/37258127100
     - https://github.com/beyond-repair/forge-aegis/actions/runs/37258127100/job/111599441509
     - https://github.com/beyond-repair/forge-aegis/commit/e7188d529739652a2dd6264bd3d328c1f72e60e5
+    - https://github.com/beyond-repair/ADL-Governance/commit/96a010d57715d7670d898b1ebce3f11bdfa17042
+    - https://github.com/beyond-repair/ADL-Governance/commit/027154c2384665e3a236f0dab14066fa6728c140
