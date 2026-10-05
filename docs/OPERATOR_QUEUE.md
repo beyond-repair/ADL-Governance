@@ -28,3 +28,7 @@ Phase-3 re-fetch on 2026-10-05. No archive flag flipped. No tag created. No lock
 ## Residual notes from Sweep-224
 
 forge-aegis observation commit `e7188d5` CI run 37258127100 success. Claim cap unchanged. License, product tag, code scanning, and stale branches remain operator-only. RepoRover- `archived` remains false.
+
+## Push-time observation (Sweep-225)
+
+`ADL-Governance` Dependabot alert #1 open: `pytest` GHSA-6w46-j5rx-g56g, medium, CVE-2025-71176 class (tmpdir). Not patched this sweep.
