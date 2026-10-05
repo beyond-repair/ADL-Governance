@@ -1,5 +1,57 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-04 (Sweep-221)
+**Project / Version:** ADL Portfolio Governance / Sweep-221
+**Objective:** Random repository completion cycle on `forge-aegis`.
+**Authenticated owner:** `beyond-repair` (id 132061760)
+**Governing source:** `beyond-repair/ADL-Governance`
+**Evidence rule:** Code > Documentation > Roadmap.
+**Assumptions:** A1 user sweep contract. A2 GitHub search (`total_count` 83, `incomplete_results` false) and local test execution. A3 classifications inherited except for the selected subject.
+
+## Selection
+
+- Pool: 80 names from search `user:beyond-repair` (83 total), excluding `ADL-Governance`, `digital-double-mobile`, and `DevelopTool-Unified-Dev-Environment`.
+- Selector: `secrets.SystemRandom().choice`. Display seed `7243622146382236877` is not the selection seed.
+- Subject: `forge-aegis`.
+
+## Subject
+
+| Field | Value |
+|-------|--------|
+| Repo | `forge-aegis` |
+| Visibility | public |
+| Default branch | `main` |
+| Pre-head | `590ba108c93a2de04ed8f2390f68cf6353645b1c` |
+| Post-head | `8083425d653b9636f3e95d3f204d54a3441b75e9` |
+| Classification | **ACTIVE** |
+| Claim | software / RUNNABLE SKETCH |
+| Successor | none |
+| GitHub archived | false |
+| CI (pre-head) | success, run 37065566958 |
+| Local tests | validator 2 passed; pipeline 8 passed |
+| Dependabot open | 0 |
+| Releases / tags | empty |
+| License | text `License TBD` (not assigned) |
+
+## Gap summary
+
+| Gap | Severity |
+|-----|----------|
+| License text still TBD | Medium (operator) |
+| Code scanning not enabled (prior 404) | Medium (operator) |
+| No v0.1.0 tag despite pyproject version | Medium (operator; product tags blocked) |
+| Stale branches not deleted | Low (operator) |
+| Post-push CI not yet observed | Pending |
+| Portfolio termination | Not met |
+
+## Exit
+
+Subject slice documented and claim-capped. Local tests passed. Not tagged. Not archived. Not promoted beyond software claim. Portfolio termination not met. Stop. Do not loop.
+
+## Prior report (Sweep-220)
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-04 (Sweep-220)
 **Project / Version:** ADL Portfolio Governance / Sweep-220
 **Objective:** One governed discovery and live-verification sweep. Do not delete, rewrite history, or elevate claims.
