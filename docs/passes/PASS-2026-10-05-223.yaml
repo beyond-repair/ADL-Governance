@@ -1,16 +1,31 @@
-id: PASS-2026-10-05-223
-date: 2026-10-05
-subject: RepoRover-
-classification: ARCHIVED
-claim: 0
-pre_tree: bb964f0ada07cbe88031f6513aae62d59b011d78
-commits:
-  - 1105300d3c48705e4f7b0979d09245b47b73e0f9
-  - 7337885fea0dc0547464a4e79321c9462caa9818
-ci:
-  - run: 37313854526
-    conclusion: success
-    sha: 7337885fea0dc0547464a4e79321c9462caa9818
-local_tests: pytest 6 passed
-archive_flag: false
-exit: claim-capped; portfolio termination not met
+PASS:
+  id: PASS-2026-10-05-223
+  title: RepoRover- random completion sweep
+  date: 2026-10-05
+  repository: beyond-repair/RepoRover-
+  classification: ARCHIVED
+  claim: 0
+STATE:
+  pre_tree: bb964f0ada07cbe88031f6513aae62d59b011d78
+  head: 60a63d3b986ba2c55992cc65f1d7adf62cfcd83e
+  github_archived: false
+OBJECTIVE:
+  objective_id: SWEEP-223-REPOROVER
+  action: Discover, test, add offline pytest workflow, cap claims, record governance.
+  reason: Random portfolio completion cycle.
+VERIFICATION:
+  tests_run:
+    - local pytest 6 passed
+    - Actions run 37313975996 success on 60a63d3b986ba2c55992cc65f1d7adf62cfcd83e
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PARTIAL
+NEXT:
+  objective_id: GAP-REPOROVER-ARCHIVE-FLAG
+  action: Operator may set archived=true. Do not delete. Do not tag as a product release.
+  reason: Classification is ARCHIVED but GitHub flag is still false.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not elevate claim above 0.
