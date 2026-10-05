@@ -1,5 +1,22 @@
 # Sweep History
 
+## Sweep-226 — 2026-10-05 random completion sweep
+
+- Selection: `random.SystemRandom().choice` over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`).
+- Subject: `Code_Generation_AI_Program` (public, `main`, pre-tree `63d47ab0b912aef754bc6cc32b43b87234cb699a`, 1 blob, not truncated).
+- Classification: **ARCHIVED** (recommended). Claim 0. No successor. No generator present.
+- Discover: README-only status file. No tests, no CI, no manifest.
+- Local tests: `pytest -q` 2 passed after adding `tests/test_inventory.py`.
+- Actions: commit `f362a9612971503f07e0599247f2e3708ef36809` added inventory workflow, claim file, sweep note, README evidence line. No archive flag. No tag. No history rewrite. No claim elevation.
+- CI: inventory run 37386093314 success on `f362a961`.
+- Residual: GitHub `archived` remains false (operator queue).
+- Exit: subject claim-capped and CI-green. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-226
+
+Body is the Sweep-226 section above.
+
+
 ## Sweep-225 — 2026-10-05 portfolio Phase-3 verification
 
 - Scope: discovery of `user:beyond-repair` (search total_count 83, incomplete_results false) and mandatory live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.

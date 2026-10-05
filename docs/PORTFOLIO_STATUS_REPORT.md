@@ -1,12 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-05 (Sweep-225)
-**Project / Version:** ADL Portfolio Governance / Sweep-225
-**Objective:** One governed portfolio completion sweep: discovery plus mandatory live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`.
+**Updated:** 2026-10-05 (Sweep-226)
+**Project / Version:** ADL Portfolio Governance / Sweep-226
+**Objective:** Random repository completion cycle on `Code_Generation_AI_Program`.
 **Authenticated owner:** `beyond-repair` (id 132061760)
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
 **Assumptions:** A1 user Master Directive v3.0. A2 GitHub search `user:beyond-repair` (`total_count` 83, `incomplete_results` false) plus Actions, releases, tags, branches, Dependabot, secret-scanning, and code-scanning API reads on 2026-10-05. A3 classifications outside the Phase-3 set are inherited from the registry and prior sweeps; they were not re-proven from trees this cycle.
+
+## Sweep-226 subject
+
+| Field | Value |
+|-------|--------|
+| Repo | `Code_Generation_AI_Program` |
+| Visibility | public |
+| Default branch | `main` |
+| Pre-tree | `63d47ab0b912aef754bc6cc32b43b87234cb699a` (1 blob, `README.md`, not truncated) |
+| Workflow commit | `f362a9612971503f07e0599247f2e3708ef36809` |
+| Classification | **ARCHIVED** (recommended; reconfirmed) |
+| Claim | 0 |
+| Successor | none |
+| GitHub archived | false |
+| Local tests | pytest 2 passed |
+| CI | inventory run 37386093314 success on `f362a961` |
+| Releases / tags | not created |
+
+No generator, model, dataset, API client, or dependency manifest was present before this sweep. Inventory test and CI added. Not tagged. Not archived. Not promoted.
 
 ## Census
 
@@ -118,7 +137,7 @@ Evidence label for non-Phase-3 rows: inherited classification, metadata re-read 
 | `CFT-v3.0` | ARCHIVED | Unassigned | Python | 2026-10-02 | private | github-archived |
 | `CFT-v3.1` | SUPERSEDED | Unassigned | TeX | 2026-10-01 | public | flag-false |
 | `CFTv3.3-IQG-Unified-Framework` | RESEARCH | Research | TeX | 2026-09-07 | public | flag-false |
-| `Code_Generation_AI_Program` | ARCHIVED | Unassigned | — | 2026-10-01 | public | flag-false |
+| `Code_Generation_AI_Program` | ARCHIVED | Unassigned | Python | 2026-10-05 | public | flag-false |
 | `coherence-drive` | RESEARCH | Research | Python | 2026-10-02 | public | flag-false |
 | `DevelopTool-Unified-Dev-Environment` | ARCHIVED | Unassigned | Python | 2026-10-04 | public | flag-false |
 | `digital-double-mobile` | SUPERSEDED | Unassigned | TypeScript | 2026-10-04 | public | flag-false |
@@ -177,5 +196,7 @@ Evidence label for non-Phase-3 rows: inherited classification, metadata re-read 
 | `ware-constant-phenomenology` | RESEARCH | Research | Python | 2026-10-02 | public | flag-false |
 
 ## Exit
+
+Sweep-226 subject slice documented and claim-capped. Local tests passed. CI run 37386093314 success. Not tagged. Not archived. Not promoted.
 
 Phase-3 verified. Inventory has no undefined name in the 83-set. Exit criteria **not** met: critical Dependabot #13 open; archive flags unresolved; no product releases on canonical four; duplicate historical trees retained by rule; secret-scanning residual. Stop. Do not loop.

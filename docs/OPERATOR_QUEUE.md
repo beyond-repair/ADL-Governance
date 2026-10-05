@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-226
+
+`Code_Generation_AI_Program` reconfirmed ARCHIVED / claim 0. Inventory CI run 37386093314 success on `f362a961`. GitHub `archived` remains false. Operator may run `gh repo archive beyond-repair/Code_Generation_AI_Program --yes`. Not executed. Do not delete. Do not tag. No generator was added.
+
 ## Residual notes from Sweep-225
 
 Phase-3 re-fetch on 2026-10-05. No archive flag flipped. No tag created. No lockfile bump. No history rewrite. No secret value copied into governance docs.
