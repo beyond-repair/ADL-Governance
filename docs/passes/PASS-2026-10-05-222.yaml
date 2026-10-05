@@ -29,7 +29,9 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
     - docs/passes/PASS-2026-10-05-222.yaml
-  commits: []
+  commits:
+    - forge-aegis e7188d529739652a2dd6264bd3d328c1f72e60e5
+    - ADL-Governance c2d3d01900998a34e6768ad0aefae0dc9f5491a4
   capabilities_added_or_changed:
     - forge-aegis post-head CI observation recorded; claim cap unchanged
 VERIFICATION:
@@ -62,6 +64,7 @@ REMAINING:
   blockers:
     - Lockfile bump, secret rotation, archive flags, license assignment, and PR merge are operator-only
   new_gaps:
+    - Provenance commit field corrected after push. forge-aegis observation commit e7188d5 CI not yet observed.
     - PASS yaml for Sweep-221 still absent; Sweep-222 is the observation record, not a rewrite of Sweep-221
 NEXT:
   objective_id: GAP-DD-DEPENDABOT-13-OPERATOR
@@ -72,7 +75,7 @@ NEXT:
     - Do not set archived=true from this agent.
     - Do not copy secret values into records.
 PROVENANCE:
-  state_commit: pending-push
+  state_commit: c2d3d01900998a34e6768ad0aefae0dc9f5491a4
   evidence:
     - https://github.com/beyond-repair/forge-aegis/actions/runs/37257747973
     - https://github.com/beyond-repair/forge-aegis/actions/runs/37257747973/job/111598348161
