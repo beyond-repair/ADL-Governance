@@ -1,5 +1,20 @@
 # Sweep History
 
+## Sweep-222 — 2026-10-05 forge-aegis post-head CI observation
+
+- Selection: Sweep-221 left post-push CI on `8083425d653b9636f3e95d3f204d54a3441b75e9` unobserved and did not persist a PASS yaml. Operator-only license, tag, archive, secret rotation, and lockfile actions were not selected.
+- Subject: `forge-aegis` main head unchanged `8083425d653b9636f3e95d3f204d54a3441b75e9`.
+- Remote CI: workflow `forge-aegis CI` run 37257747973 completed success. Job `test` 111598348161 success. Steps included unit tests (validator + pipeline), CLI smoke PASS, and CLI smoke FAIL/tamper. Event push. Head SHA matches the Sweep-221 commit.
+- Claim cap unchanged: ACTIVE / software / RUNNABLE SKETCH. Not a host-integrity product. No tag. No release. No branch deletion. No license assignment.
+- Actions: CLAIM_STATUS and GOVERNANCE note in subject; governance pass record. No product code change.
+- Exit: post-head CI observation closed. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-222
+
+Body is the Sweep-222 section above.
+
+# Sweep History
+
 ## Sweep-221 — 2026-10-04 random completion sweep
 
 - Selection: `secrets.SystemRandom().choice` over 80 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`), excluding `ADL-Governance`, `digital-double-mobile`, and `DevelopTool-Unified-Dev-Environment`. Display seed `7243622146382236877`.

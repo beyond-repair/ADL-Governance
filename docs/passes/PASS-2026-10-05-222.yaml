@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-05-222
+  parent_pass: PASS-2026-10-04-220
+  parent_note: Sweep-221 is recorded in docs/SWEEP_HISTORY.md and forge-aegis commit 8083425d only. No PASS-2026-10-04-221.yaml was present.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 12
+OBJECTIVE:
+  id: GAP-FORGE-AEGIS-POSTHEAD-CI
+  description: Observe forge-aegis CI on Sweep-221 head 8083425d and persist the missing pass record without elevating claims.
+  reason_selected: Sweep-221 explicitly left post-push CI pending and did not write a PASS yaml. Operator-only items were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. public_repos 78. Search user:beyond-repair total_count 83 incomplete_results false.
+    - forge-aegis main head 8083425d653b9636f3e95d3f204d54a3441b75e9. Commit adds CLAIM_STATUS.md and a GOVERNANCE.md note. 42 additions, 0 deletions.
+    - Workflow forge-aegis CI run 37257747973 completed success on that SHA. Job test 111598348161 success. Steps unit tests, CLI smoke PASS, CLI smoke FAIL/tamper all success.
+    - Prior pre-head run 37065566958 remains success on 590ba108. Claim cap remains software / RUNNABLE SKETCH.
+CHANGES:
+  repositories:
+    - beyond-repair/forge-aegis
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md
+    - GOVERNANCE.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/passes/PASS-2026-10-05-222.yaml
+  commits: []
+  capabilities_added_or_changed:
+    - forge-aegis post-head CI observation recorded; claim cap unchanged
+VERIFICATION:
+  tests_run:
+    - GitHub Actions run 37257747973 conclusion success on 8083425d
+    - Job 111598348161 conclusion success
+    - scripts/check_passes.py PASS after this record is written
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Sweep-221 commit CI is success, including validator/pipeline unit tests and CLI PASS and FAIL smokes.
+    - Absence of PASS-2026-10-04-221.yaml was real at read time.
+  failures:
+    - No product capability was closed. Dependabot alert 13, secret alert 1, and archive flags remain operator-gated.
+  decisions:
+    - REUSE ADL-Governance pass registry. Do not create a nexus repository.
+    - Do not assign a license, tag, archive, or delete stale branches.
+REMAINING:
+  incomplete:
+    - Digital_Double_virtual_workforce Dependabot alert 13
+    - digital-double-mobile secret scanning alert 1 and Dependabot critical 30 and 8
+    - seem-completion-pass merge hold
+    - Archive flags
+    - forge-aegis license TBD, product tag, code scanning, stale branches
+    - public_repos versus search count
+  blockers:
+    - Lockfile bump, secret rotation, archive flags, license assignment, and PR merge are operator-only
+  new_gaps:
+    - PASS yaml for Sweep-221 still absent; Sweep-222 is the observation record, not a rewrite of Sweep-221
+NEXT:
+  objective_id: GAP-DD-DEPENDABOT-13-OPERATOR
+  action: Operator patches or dismisses Digital_Double_virtual_workforce alert 13 and rotates the digital-double-mobile OpenRouter exposure before any archive flag. Do not merge seem-completion-pass from the agent.
+  reason: Post-head CI observation is closed. Highest remaining gate is operator-only.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not set archived=true from this agent.
+    - Do not copy secret values into records.
+PROVENANCE:
+  state_commit: pending-push
+  evidence:
+    - https://github.com/beyond-repair/forge-aegis/actions/runs/37257747973
+    - https://github.com/beyond-repair/forge-aegis/actions/runs/37257747973/job/111598348161
+    - https://github.com/beyond-repair/forge-aegis/commit/8083425d653b9636f3e95d3f204d54a3441b75e9

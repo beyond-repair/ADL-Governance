@@ -2,6 +2,14 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-222
+
+forge-aegis post-head CI run 37257747973 success on `8083425d`. Job test 111598348161 success. License, product tag, code scanning, and stale branches remain operator-only. Not closed by CI success.
+
+# Operator Queue
+
+Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
+
 ## Open items (as of Sweep-221)
 
 - **forge-aegis license:** `pyproject.toml` still says `License TBD`. Do not assign a license in an autonomous sweep.
