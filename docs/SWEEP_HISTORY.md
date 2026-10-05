@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-221 — 2026-10-04 random completion sweep
+
+- Selection: `secrets.SystemRandom().choice` over 80 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`), excluding `ADL-Governance`, `digital-double-mobile`, and `DevelopTool-Unified-Dev-Environment`. Display seed `7243622146382236877`.
+- Subject: `forge-aegis` (public, `main`, pre-head `590ba108c93a2de04ed8f2390f68cf6353645b1c`, 45 tree entries, not truncated).
+- Classification: **ACTIVE**. Claim cap: software / RUNNABLE SKETCH. Not a host-integrity product.
+- Audit: CI run 37065566958 success on pre-head. Tags empty. Releases empty. Dependabot open empty. Branches besides main: `finish/forge-aegis-v0.1-runnable`, `repair/docs-python3-venv`, `repair/v0.1-installable-slice`.
+- Local tests: `python3 python/tests/test_validator.py` 2 passed; `python3 python/tests/test_pipeline.py` 8 passed.
+- Actions: added `CLAIM_STATUS.md` and Sweep-221 note in subject `GOVERNANCE.md`. Commit `8083425d653b9636f3e95d3f204d54a3441b75e9`. Governance docs in ADL-Governance. No tag. No archive. No history rewrite. No claim elevation.
+- Residuals: license TBD, code scanning not enabled, product tag not created, stale branches retained, post-push CI pending observation.
+- Exit: subject claim-capped. Portfolio termination not met. Stop. Do not loop.
+
+# Sweep History
+
 ## Sweep-220 — 2026-10-04 portfolio discovery and live verification
 
 - Scope: one governed sweep under Master Directive v3.0. Inventory `user:beyond-repair`. Live-verify `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`. No deletion, no history rewrite, no claim elevation, no lockfile bump, no archive flag.
