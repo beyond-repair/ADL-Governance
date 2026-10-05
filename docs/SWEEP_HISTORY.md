@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-224 — 2026-10-05 forge-aegis e7188d5 CI observation
+
+- Selection: Sweep-222 left CI on observation commit `e7188d529739652a2dd6264bd3d328c1f72e60e5` unobserved. Sweep-223 next action is an operator archive flag and was not executed.
+- Subject: `forge-aegis` main head unchanged `e7188d529739652a2dd6264bd3d328c1f72e60e5`.
+- Remote CI: workflow `forge-aegis CI` run 37258127100 completed success. Job `test` 111599441509 success. Unit tests, CLI smoke PASS, and CLI smoke FAIL/tamper all success.
+- Claim cap unchanged: ACTIVE / software / RUNNABLE SKETCH.
+- RepoRover- `archived` re-read false. Not changed.
+- Exit: e7188d5 CI observation closed. Portfolio termination not met.
+
+## Index / PASS-2026-10-05-224
+
+Body is the Sweep-224 section above.
+
 ## Sweep-223 — 2026-10-05 random completion sweep
 
 - Selection: `random.SystemRandom().choice` over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`).
