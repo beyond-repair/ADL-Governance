@@ -1,5 +1,19 @@
 # Sweep History
 
+## Sweep-225 — 2026-10-05 portfolio Phase-3 verification
+
+- Scope: discovery of `user:beyond-repair` (search total_count 83, incomplete_results false) and mandatory live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+- Repositories reviewed live: the four above, plus metadata for all 83 names. Non-Phase-3 trees not re-read. Classifications inherited except Phase-3 reconfirmation.
+- Findings: forge-aegis CI 37258127100 success on `e7188d5`; sovereign-clean-room main CI 37064696194 success on `4878918c`; BlockSwarm Foundry 36859452185 success on `6e90f6f`; Digital Double CI 36861489156 success on `24e6a29`. Releases and tags empty on all four. Dependabot critical #13 still open. Code scanning 404 on forge-aegis and BlockSwarm. Secret scanning disabled on sovereign-clean-room.
+- Actions performed: governance docs only (`PORTFOLIO_STATUS_REPORT.md`, `OPERATOR_QUEUE.md`, `SWEEP_HISTORY.md`, registry note). No archive, no tag, no lockfile edit, no history rewrite, no deletion.
+- Residual risks: critical #13, mobile secret alert not re-fetched, archive flags false, unmerged completion and Dependabot branches, public_repos 78 vs search 83.
+- Exit: criteria not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-225
+
+Body is the Sweep-225 section above.
+
+
 ## Sweep-224 — 2026-10-05 forge-aegis e7188d5 CI observation
 
 - Selection: Sweep-222 left CI on observation commit `e7188d529739652a2dd6264bd3d328c1f72e60e5` unobserved. Sweep-223 next action is an operator archive flag and was not executed.

@@ -1,12 +1,9 @@
 # Repository Registry
 
-**Account:** beyond-repair · **Census date:** 2026-10-04 (Sweep-216; search total_count 83, incomplete_results false; 9 private) · **Governing source:** this repository
+**Account:** beyond-repair · **Census date:** 2026-10-05 (Sweep-225; search total_count 83, incomplete_results false; 9 private) · **Governing source:** this repository
 
-Sweep-216 reconfirmed the 83-name set and did not change classifications. Phase-3 CI, releases, and Dependabot were re-fetched only for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Details and residuals are in `PORTFOLIO_STATUS_REPORT.md`. Digital Double Dependabot #13 remains open. GitHub archive flag remains true only for `CFT-v3.0`.
+Sweep-225 reconfirmed the 83-name set from search metadata and re-fetched Phase-3 CI, releases, tags, branches, and Dependabot for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Classifications were not changed. Digital Double Dependabot #13 remains open. GitHub archive flag remains true only for `CFT-v3.0`. Details in `PORTFOLIO_STATUS_REPORT.md`.
 
-Visible GitHub search count: **83** (Sweep-202/203/204/216). Classifications (directive): ACTIVE | RESEARCH | SUPERSEDED | ARCHIVED.
-
-Phase-3 CI, tags, releases, and Dependabot re-fetched Sweep-204 for the wider set. Tags were not re-listed in Sweep-216.
 
 ---
 
@@ -14,13 +11,13 @@ Phase-3 CI, tags, releases, and Dependabot re-fetched Sweep-204 for the wider se
 
 | Name | Lang | Last update | Issues | Maturity | Notes |
 |------|------|-------------|--------|----------|-------|
-| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-01 | 0 | 4 | SAGF; Foundry success run 36859452185 on main `6e90f6f` (Sweep-216 re-fetch); releases empty this sweep; dependabot open empty |
-| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-04 | 2 | 3 | Canonical SEEM substrate; main Python tests success run 37064696194 on `4878918c`. PR branch seem-completion-pass run 37215829476 success on `d6f13042`, not merged. VSA completeness UNVERIFIED. Releases empty. Secret scanning disabled. |
-| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-02 | 0 | 2 | FLS early; CI success run 37065566958 on main `590ba108` (Sweep-216); releases empty; dependabot open empty; code scanning 404; RELEASE_BLOCKED_BY_OPERATOR |
+| [BlockSwarm](https://github.com/beyond-repair/BlockSwarm) | Solidity | 2026-10-01 | 0 | 4 | SAGF; Foundry success run 36859452185 on main `6e90f6f` (Sweep-225 re-fetch); releases and tags empty; dependabot open empty; code scanning 404 |
+| [sovereign-clean-room](https://github.com/beyond-repair/sovereign-clean-room) | Python | 2026-10-04 | 2 | 3 | Canonical SEEM substrate; main Python tests success run 37064696194 on `4878918c` (Sweep-225). Branch seem-completion-pass run 37215829476 success on `d6f13042`, not merged. VSA completeness UNVERIFIED. Releases and tags empty. Secret scanning disabled (404). |
+| [forge-aegis](https://github.com/beyond-repair/forge-aegis) | Python | 2026-10-05 | 0 | 2 | Software sketch; CI success run 37258127100 on main `e7188d5` (Sweep-225); releases and tags empty; dependabot open empty; code scanning 404; license TBD; not a host product |
 | [ADL-Governance](https://github.com/beyond-repair/ADL-Governance) | Docs | 2026-10-04 | 0 | 3 | This repo |
 | [ADL-SEEM](https://github.com/beyond-repair/ADL-SEEM) | Docs | 2026-10-02 | 0 | 3 | SEEM-specific constitution. Not re-verified Sweep-216. |
 | [AEGIS-Project-Nehemiah-](https://github.com/beyond-repair/AEGIS-Project-Nehemiah-) | — | 2026-10-01 | 0 | 2 | Spec sibling to forge-aegis. Not re-verified Sweep-216. |
-| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-01 | 5 | 3 | Public canonical; CI success run 36861489156 on main `24e6a29` (Sweep-216); Dependabot critical #13 open; high lockfile alerts open; releases empty |
+| [Digital_Double_virtual_workforce](https://github.com/beyond-repair/Digital_Double_virtual_workforce) | TS | 2026-10-01 | 5 | 3 | Public canonical; CI success run 36861489156 on main `24e6a29` (Sweep-225); Dependabot critical #13 open; high lockfile alerts open; releases and tags empty; readiness FAIL |
 
 Do not treat sovereign-clean-room VSA as production-complete. CI green is only an Actions conclusion.
 
