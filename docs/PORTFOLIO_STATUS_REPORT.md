@@ -41,12 +41,12 @@
 | Code scanning not enabled (prior 404) | Medium (operator) |
 | No v0.1.0 tag despite pyproject version | Medium (operator; product tags blocked) |
 | Stale branches not deleted | Low (operator) |
-| Post-push CI not yet observed | Pending |
+| Post-push CI | success, run 37257747973 on `8083425d` |
 | Portfolio termination | Not met |
 
 ## Exit
 
-Subject slice documented and claim-capped. Local tests passed. Not tagged. Not archived. Not promoted beyond software claim. Portfolio termination not met. Stop. Do not loop.
+Subject slice documented and claim-capped. Local tests passed. Post-push CI run 37257747973 success. Not tagged. Not archived. Not promoted beyond software claim. Portfolio termination not met. Stop. Do not loop.
 
 ## Prior report (Sweep-220)
 
