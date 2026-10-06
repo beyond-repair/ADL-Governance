@@ -1,5 +1,21 @@
 # Sweep History
 
+## Sweep-246 — 2026-10-06 AtomicNexusAI deploy exit 126
+
+- Timestamp: 2026-10-06 17:07Z. Scope: named next gap from PASS-2026-10-06-244, not a new random draw.
+- Parent pass yaml: PASS-2026-10-06-244. PASS-2026-10-06-245 remains an index-only entry and did not close this gap.
+- Run 37492591439 conclusion failure. Job deploy 112368862487. Head `663df6a76400a1c5ef36bc3bceedfd270cca2881`.
+- Log: requirements installed, attack simulator completed, pytest 11 passed, then `./deploy.sh: Permission denied`, exit 126.
+- `deploy.sh` is a two-echo stub. Not a production deploy.
+- Fix: commit `45a68454b2b661e38ac4abd728dc2bcf0b8f663b` changes the step to `bash deploy.sh`. Claim note commit `f7ec8a0d10a261b4fff2a3b5d507db6b5abef5fa`. Claim cap remains 0.
+- Post-fix Actions run not observed in this pass. Do not tag. Do not archive. Do not rewrite history.
+- Governance pass file: `docs/passes/PASS-2026-10-06-246.yaml` at commit `0f9c8f3e4a955d898a13b83ca16ab1b5b08f64d9`.
+- Portfolio exit criteria not met. Stop.
+
+## Index / PASS-2026-10-06-246
+
+Contract file is `docs/passes/PASS-2026-10-06-246.yaml`.
+
 ## Sweep-245 — 2026-10-06 randomized draw
 
 - Timestamp: 2026-10-06 17:10Z. Scope: one repository from the authenticated owner `beyond-repair`.
@@ -32,234 +48,4 @@ Body is the Sweep-245 section above. No separate pass yaml this cycle.
 
 Body is the Sweep-244 section above. Contract file is `docs/passes/PASS-2026-10-06-244.yaml`.
 
-## Index / PASS-2026-10-06-243
-
-Contract file is `docs/passes/PASS-2026-10-06-243.yaml`.
-
-## Index / PASS-2026-10-06-242
-
-Contract file is `docs/passes/PASS-2026-10-06-242.yaml`.
-
-## Index / PASS-2026-10-06-241
-
-Contract file is `docs/passes/PASS-2026-10-06-241.yaml`.
-
-## Index / PASS-2026-10-06-240
-
-Contract file is `docs/passes/PASS-2026-10-06-240.yaml`.
-
-## Index / PASS-2026-10-06-239
-
-Contract file is `docs/passes/PASS-2026-10-06-239.yaml`.
-
-## Index / PASS-2026-10-06-238
-
-Contract file is `docs/passes/PASS-2026-10-06-238.yaml`.
-
-## Index / PASS-2026-10-06-237
-
-Contract file is `docs/passes/PASS-2026-10-06-237.yaml`.
-
-## Index / PASS-2026-10-06-236
-
-Contract file is `docs/passes/PASS-2026-10-06-236.yaml`.
-
-## Index / PASS-2026-10-06-235
-
-Contract file is `docs/passes/PASS-2026-10-06-235.yaml`.
-
-## Index / PASS-2026-10-06-234
-
-Contract file is `docs/passes/PASS-2026-10-06-234.yaml`.
-
-## Index / PASS-2026-10-06-233
-
-Contract file is `docs/passes/PASS-2026-10-06-233.yaml`.
-
-## Index / PASS-2026-10-06-231
-
-Contract file is `docs/passes/PASS-2026-10-06-231.yaml`.
-
-## Index / PASS-2026-10-05-232
-
-Contract file is `docs/passes/PASS-2026-10-05-232.yaml`.
-
-## Index / PASS-2026-10-05-230
-
-Contract file is `docs/passes/PASS-2026-10-05-230.yaml`.
-
-## Index / PASS-2026-10-05-229
-
-Contract file is `docs/passes/PASS-2026-10-05-229.yaml`.
-
-## Index / PASS-2026-10-05-228
-
-Contract file is `docs/passes/PASS-2026-10-05-228.yaml`.
-
-## Index / PASS-2026-10-05-227
-
-Contract file is `docs/passes/PASS-2026-10-05-227.yaml`.
-
-## Index / PASS-2026-10-05-226
-
-Contract file is `docs/passes/PASS-2026-10-05-226.yaml`.
-
-## Index / PASS-2026-10-05-225
-
-Contract file is `docs/passes/PASS-2026-10-05-225.yaml`.
-
-## Index / PASS-2026-10-05-224
-
-Contract file is `docs/passes/PASS-2026-10-05-224.yaml`.
-
-## Index / PASS-2026-10-05-223
-
-Contract file is `docs/passes/PASS-2026-10-05-223.yaml`.
-
-## Index / PASS-2026-10-05-222
-
-Contract file is `docs/passes/PASS-2026-10-05-222.yaml`.
-
-## Index / PASS-2026-10-04-220
-
-Contract file is `docs/passes/PASS-2026-10-04-220.yaml`.
-
-## Index / PASS-2026-10-04-219
-
-Contract file is `docs/passes/PASS-2026-10-04-219.yaml`.
-
-## Index / PASS-2026-10-04-218
-
-Contract file is `docs/passes/PASS-2026-10-04-218.yaml`.
-
-## Index / PASS-2026-10-04-215
-
-Contract file is `docs/passes/PASS-2026-10-04-215.yaml`.
-
-## Index / PASS-2026-10-04-214
-
-Contract file is `docs/passes/PASS-2026-10-04-214.yaml`.
-
-## Index / PASS-2026-10-03-213
-
-Contract file is `docs/passes/PASS-2026-10-03-213.yaml`.
-
-## Index / PASS-2026-10-03-212
-
-Contract file is `docs/passes/PASS-2026-10-03-212.yaml`.
-
-## Index / PASS-2026-10-03-211
-
-Contract file is `docs/passes/PASS-2026-10-03-211.yaml`.
-
-## Index / PASS-2026-10-03-210
-
-Contract file is `docs/passes/PASS-2026-10-03-210.yaml`.
-
-## Index / PASS-2026-10-02-207
-
-Contract file is `docs/passes/PASS-2026-10-02-207.yaml`.
-
-## Index / PASS-2026-10-02-206
-
-Contract file is `docs/passes/PASS-2026-10-02-206.yaml`.
-
-## Index / PASS-2026-10-02-205
-
-Contract file is `docs/passes/PASS-2026-10-02-205.yaml`.
-
-## Index / PASS-2026-10-02-204
-
-Contract file is `docs/passes/PASS-2026-10-02-204.yaml`.
-
-## Index / PASS-2026-10-02-203
-
-Contract file is `docs/passes/PASS-2026-10-02-203.yaml`.
-
-## Index / PASS-2026-10-01-199
-
-Contract file is `docs/passes/PASS-2026-10-01-199.yaml`.
-
-## Index / PASS-2026-10-01-198
-
-Contract file is `docs/passes/PASS-2026-10-01-198.yaml`.
-
-## Index / PASS-2026-10-01-197
-
-Contract file is `docs/passes/PASS-2026-10-01-197.yaml`.
-
-## Index / PASS-2026-10-01-196
-
-Contract file is `docs/passes/PASS-2026-10-01-196.yaml`.
-
-## Index / PASS-2026-10-01-195
-
-Contract file is `docs/passes/PASS-2026-10-01-195.yaml`.
-
-## Index / PASS-2026-10-01-194
-
-Contract file is `docs/passes/PASS-2026-10-01-194.yaml`.
-
-## Index / PASS-2026-10-01-193
-
-Contract file is `docs/passes/PASS-2026-10-01-193.yaml`.
-
-## Index / PASS-2026-10-01-192
-
-Contract file is `docs/passes/PASS-2026-10-01-192.yaml`.
-
-## Index / PASS-2026-10-01-191
-
-Contract file is `docs/passes/PASS-2026-10-01-191.yaml`.
-
-## Index / PASS-2026-10-01-190
-
-Contract file is `docs/passes/PASS-2026-10-01-190.yaml`.
-
-## Index / PASS-2026-10-01-189
-
-Contract file is `docs/passes/PASS-2026-10-01-189.yaml`.
-
-## Index / PASS-2026-10-01-188
-
-Contract file is `docs/passes/PASS-2026-10-01-188.yaml`.
-
-## Index / PASS-2026-10-01-185
-
-Contract file is `docs/passes/PASS-2026-10-01-185.yaml`.
-
-## Index / PASS-2026-10-01-184
-
-Contract file is `docs/passes/PASS-2026-10-01-184.yaml`.
-
-## Index / PASS-2026-10-01-183
-
-Contract file is `docs/passes/PASS-2026-10-01-183.yaml`.
-
-## Index / PASS-2026-10-01-182
-
-Contract file is `docs/passes/PASS-2026-10-01-182.yaml`.
-
-## Index / PASS-2026-10-01-179
-
-Contract file is `docs/passes/PASS-2026-10-01-179.yaml`.
-
-## Index / PASS-2026-10-01-176
-
-Contract file is `docs/passes/PASS-2026-10-01-176.yaml`.
-
-## Index / PASS-2026-10-01-173
-
-Contract file is `docs/passes/PASS-2026-10-01-173.yaml`.
-
-## Index / PASS-2026-10-01-170
-
-Contract file is `docs/passes/PASS-2026-10-01-170.yaml`.
-
-## Index / PASS-2026-10-01-168
-
-Contract file is `docs/passes/PASS-2026-10-01-168.yaml`.
-
-## Index / PASS-2026-10-01-167
-
-Contract file is `docs/passes/PASS-2026-10-01-167.yaml`.
+Prior index entries from PASS-2026-10-06-243 back through PASS-2026-10-01-167 remain in git blob `c16e2da9366e64c99b83d94366ebd51a142e1815`. Not deleted as truth. Working copy keeps the two latest sweep bodies and the 246/245/244 index lines so this file stays readable. Full older index is recoverable from that blob.
