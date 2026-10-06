@@ -1,5 +1,21 @@
 # Sweep History
 
+## Sweep-232 — 2026-10-05 Master Directive portfolio sweep
+
+- Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Heads unchanged: `e7188d529739652a2dd6264bd3d328c1f72e60e5`, `4878918cf9f95d3c19e1890bef6d2fd6713e0a16`, `6e90f6f85c0969fa8a262a70ceba833d618a22db`, `24e6a29fd26c03900a8d98634d6683996eabdac4`.
+- CI re-fetched: 37258127100 success; 37064696194 success on main; 36859452185 success; 36861489156 success. `seem-completion-pass` run 37215829476 success, not merged.
+- Releases empty. `git/ref/tags` 404 on all four. BlockSwarm README tag lineage `v0.5.0-sagf` contradicted; product README not edited.
+- Security: Dependabot critical #13 open. forge-aegis and BlockSwarm Dependabot open lists empty. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. High Dependabot filter on sovereign-clean-room empty.
+- Actions performed: governance docs only (`PORTFOLIO_STATUS_REPORT.md`, `OPERATOR_QUEUE.md`, `SWEEP_HISTORY.md`, `docs/passes/PASS-2026-10-05-232.yaml`). No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Classifications other than the four named systems inherited from registry Sweep-225 and labeled not re-audited.
+- Residual: critical #13, archive flags false, mobile secret alert not re-fetched, registry not rewritten, dependency graph not computed, BlockSwarm tag sentence uncapped.
+- Exit: criteria not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-232
+
+Body is the Sweep-232 section above.
+
 ## Sweep-231 — 2026-10-06 basilisk persistence gap
 
 - Selection: highest-value bounded gap that is not operator-only. PASS-228 next action was missing PASS yaml. Sweep-229 was indexed here and absent from docs/passes. Sweep-230 yaml is a stub.
@@ -25,20 +41,6 @@ Body is the Sweep-231 section above.
 
 ## Index / PASS-2026-10-05-230
 
-Body is the Sweep-230 section above. The yaml at docs/passes/PASS-2026-10-05-230.yaml remains the abbreviated stub written by that sweep. It was not rewritten in Sweep-231.
+Body is the Sweep-230 section above. The yaml at docs/passes/PASS-2026-10-05-230.yaml remains the abbreviated stub written by that sweep. It was not rewritten in Sweep-231 or Sweep-232.
 
-## Sweep-229 — 2026-10-05 Master Directive Phase-3 re-verification
-
-- Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
-- Heads unchanged: `e7188d529739652a2dd6264bd3d328c1f72e60e5`, `4878918cf9f95d3c19e1890bef6d2fd6713e0a16`, `6e90f6f85c0969fa8a262a70ceba833d618a22db`, `24e6a29fd26c03900a8d98634d6683996eabdac4`.
-- CI re-fetched: 37258127100 success; 37064696194 success on main; 36859452185 success; 36861489156 success. `seem-completion-pass` run 37215829476 success, not merged.
-- Releases empty. Tags empty. forge-aegis Dependabot empty. BlockSwarm Dependabot empty. Digital Double critical #13 open. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis.
-- Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
-- Residual: critical #13, archive flags false, mobile secret alert not re-fetched, public_repos 78 vs search 83.
-- Exit: criteria not met. Stop. Do not loop.
-
-## Index / PASS-2026-10-05-229
-
-Body is the Sweep-229 section above. Contract yaml added in Sweep-231 by transcription. No new observation.
-
-Prior sweep bodies through Sweep-228 remain in git history at parent blob `26dd1186693173128cf8317fb03f697d59c4ae96` and in `docs/passes/` where indexed. This commit does not delete those pass files.
+Prior sweep bodies through Sweep-229 remain in git history at the parent of Sweep-231 and in `docs/passes/` where indexed. This commit does not delete those pass files.

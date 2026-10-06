@@ -1,0 +1,24 @@
+schema: adl-pass-v1
+sweep: 232
+timestamp: 2026-10-05T23:11:00-04:00
+scope: master-directive-portfolio-sweep
+repositories_reviewed: 83
+live_verified:
+  - forge-aegis
+  - sovereign-clean-room
+  - BlockSwarm
+  - Digital_Double_virtual_workforce
+actions:
+  - docs/PORTFOLIO_STATUS_REPORT.md
+  - docs/OPERATOR_QUEUE.md
+  - docs/SWEEP_HISTORY.md
+  - docs/passes/PASS-2026-10-05-232.yaml
+findings:
+  - dependabot_critical_13_open
+  - tags_ref_404_on_canonical_four
+  - blockswarm_readme_tag_lineage_contradicted
+  - secret_scanning_disabled_sovereign_clean_room
+  - code_scanning_404_forge_aegis
+  - archive_flag_only_CFT-v3.0
+exit: criteria_not_met
+loop: false
