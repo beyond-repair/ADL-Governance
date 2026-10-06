@@ -2,6 +2,16 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-248
+
+Random draw: `-ware-constant-derivation`. RESEARCH. Claim not elevated. No tag. No archive.
+
+**Description mismatch (operator-only):** GitHub About text still says the repository is a rigorous derivation of \(W \approx 0.08\) from the Coherence Drive thrust target and fractal LDOS asymmetry. In-tree `README.md` and `CLAIM_STATUS.md` say 0.08 is not derived, thrust is not validated, and the pinch cubic is circular. Replace the About text with a claim-capped sentence. Do not rewrite history to hide the old description.
+
+Suggested replacement: `Claim-capped checks for constant-W identities. Does not derive W ≈ 0.08. Experimental validation false.`
+
+CI workflow `.github/workflows/checks.yml` was added. Do not treat a green run as a measurement of 0.08 or as a release.
+
 ## Residual notes from Sweep-247
 
 GAP-DD-DEPENDABOT-13 re-fetched. Alert 13 remains **open**. Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Do not treat a docs commit as a patch. Lockfile bump is operator-gated. PASS body: `docs/passes/PASS-2026-10-06-247.yaml`.
@@ -35,4 +45,5 @@ Inventory 83 search / 78 public_repos / 9 private / 0 forks. Do not delete repos
 - **The-Origin-Point-Hypothesis. license:** absent. Operator-only.
 - **sovereign-clean-room branch** `seem-completion-pass`: not merged.
 - **aegis-repo-graph catalog expansion:** operator-only.
+- **`-ware-constant-derivation` About text:** overclaims 0.08. Operator-only description edit.
 - Product tags, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
