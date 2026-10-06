@@ -34,7 +34,7 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - pending-this-commit
+    - af6d0157959db71a14a78f631d46cc0dc36b8a43
   prior_subject_commits:
     - bb02151d1a84aff48e558b19a26be96637f0fc8a
     - 9d6e31221ab741ad4e33f87618869a81bf3566a6
@@ -87,7 +87,7 @@ NEXT:
   prerequisites:
     - Operator approval before any lockfile edit.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: af6d0157959db71a14a78f631d46cc0dc36b8a43
   evidence:
     - Actions run 37523436410 conclusion failure
     - Actions run 37523474651 conclusion success
