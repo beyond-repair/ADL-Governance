@@ -1,0 +1,90 @@
+PASS:
+  id: PASS-2026-10-05-228
+  parent_pass: PASS-2026-10-05-224
+  parent_note: Sweeps 225-227 are indexed in docs/SWEEP_HISTORY.md only. No PASS yaml for 225, 226, or 227 was present. Last basilisk YAML was PASS-2026-10-05-224, whose NEXT was an operator archive flag and was not executed.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 11
+OBJECTIVE:
+  id: GAP-AEGIS-REPO-GRAPH-HEAD-EVIDENCE
+  description: Record current-head CI evidence for aegis-repo-graph without rewriting the census not_built freeze or raising the claim.
+  reason_selected: Sweep-227 left aegis-repo-graph not_built. Operator archive, secret rotation, lockfile bump, and license actions were not selected. CLAIM_STATUS still cited only an older CI run as non-evidence for later commits.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - aegis-repo-graph exists, public, main head was 96ca55789c3e8656d9b4052392d9000c69bc4c17 before this pass.
+    - CI run 37069800025 completed success on that SHA. Job test 111046279932 success.
+    - Local clone of 96ca557: python -m graph.engine printed artifacts=73 relationships=21 and OK; pytest -q 10 passed.
+    - ADL-Portfolio-Census COMPATIBLE_BUILDS still locks status not_built. Test test_snapshot_row_count_is_frozen asserts that status. Not rewritten.
+CHANGES:
+  repositories:
+    - beyond-repair/aegis-repo-graph
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md
+    - docs/SWEEP-228.md
+    - docs/passes/PASS-2026-10-05-228.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - 98bac63122d060a51a21f023bcf3328a82eb6cc2
+    - governance-follow-up
+  capabilities_added_or_changed:
+    - aegis-repo-graph head CI evidence pointer updated; claim cap unchanged; census freeze unchanged
+VERIFICATION:
+  tests_run:
+    - Local pytest -q on 96ca557: 10 passed
+    - Local python -m graph.engine on 96ca557: OK
+    - GitHub Actions run 37069800025 conclusion success on 96ca55789c3e8656d9b4052392d9000c69bc4c17
+    - Job 111046279932 conclusion success
+    - GitHub Actions run 37402540834 conclusion success on 98bac63122d060a51a21f023bcf3328a82eb6cc2
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - aegis-repo-graph is a RESEARCH catalog validator, tool claim ≤1, not a live crawler.
+    - Current pre-docs head 96ca557 has successful CI and a local 10-test re-run.
+    - Census not_built is an intentional freeze, not an absence of the repository.
+  failures:
+    - Did not mark compatible-build status built. Existence plus green tests do not satisfy that census contract.
+    - Did not archive, tag, license, rotate secrets, or bump lockfiles.
+  decisions:
+    - REUSE aegis-repo-graph and ADL-Governance. Do not create a repository. Do not rewrite catalog rows or census inventory.
+REMAINING:
+  incomplete:
+    - RepoRover- and Code_Generation_AI_Program archive flags
+    - Digital_Double_virtual_workforce Dependabot alert 13
+    - digital-double-mobile secret scanning alert 1 and Dependabot critical 30 and 8
+    - seem-completion-pass merge hold
+    - forge-aegis license TBD, product tag, code scanning, stale branches
+    - ADL-Portfolio-Census Dependabot alert 1
+    - public_repos versus search count
+    - PASS yaml missing for sweeps 225, 226, and 227
+  blockers:
+    - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
+  new_gaps:
+    - Docs commit 98bac63 CI is observed here but not embedded in CLAIM_STATUS.md, which still cites 96ca557 as the catalog-head evidence.
+NEXT:
+  objective_id: GAP-PASS-YAML-225-227
+  action: Transcribe PASS-2026-10-05-225.yaml, PASS-2026-10-05-226.yaml, and PASS-2026-10-05-227.yaml from docs/SWEEP_HISTORY.md only. Do not invent results. Do not archive. Do not patch Dependabot.
+  reason: History already indexes those sweeps, but no basilisk YAML exists. Operator-only gates remain unselected.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not set archived=true from this agent.
+    - Do not copy secret values into records.
+    - Do not change census COMPATIBLE_BUILDS status.
+PROVENANCE:
+  state_commit: governance-follow-up
+  evidence:
+    - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/37069800025
+    - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/37069800025/job/111046279932
+    - https://github.com/beyond-repair/aegis-repo-graph/commit/96ca55789c3e8656d9b4052392d9000c69bc4c17
+    - https://github.com/beyond-repair/aegis-repo-graph/commit/98bac63122d060a51a21f023bcf3328a82eb6cc2
+    - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/37402540834

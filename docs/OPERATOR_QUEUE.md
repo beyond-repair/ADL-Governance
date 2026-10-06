@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-228
+
+`aegis-repo-graph` reconfirmed RESEARCH / tool claim ≤1. CI run 37069800025 success on `96ca557`. Docs commit `98bac63` CI run 37402540834 success. Catalog not rewritten. ADL-Portfolio-Census still locks compatible-build status `not_built`. No tag. No archive. No claim elevation.
+
 ## Residual notes from Sweep-227
 
 `ADL-Portfolio-Census` reconfirmed RESEARCH / claim ≤1. CI run 37402259409 success on `ce6d830`. Dependabot alert #1 remains open: pytest GHSA-6w46-j5rx-g56g / CVE-2025-71176, medium, manifest `requirements.txt`. Not patched. Do not treat a green structural census as a dependency fix. No tag. No archive.

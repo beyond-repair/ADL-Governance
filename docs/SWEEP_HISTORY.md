@@ -1,5 +1,20 @@
 # Sweep History
 
+## Sweep-228 — 2026-10-05 aegis-repo-graph head CI evidence
+
+- Selection: Sweep-227 left `aegis-repo-graph` `not_built`. Operator archive, secret rotation, license, and lockfile actions were not selected. `CLAIM_STATUS.md` cited only CI run 34072230795 on `1a5a2fde` as non-evidence for later commits.
+- Subject: `aegis-repo-graph` public main, pre-docs head `96ca55789c3e8656d9b4052392d9000c69bc4c17`.
+- Classification: **RESEARCH**. Tool claim ≤1. Catalog row `claim: 3` remains snapshot data.
+- Remote CI: run 37069800025 success. Job `test` 111046279932 success.
+- Local: clone of `96ca557` printed `artifacts=73 relationships=21` and `OK`; `pytest -q` 10 passed.
+- Actions: commit `98bac63122d060a51a21f023bcf3328a82eb6cc2` updated `CLAIM_STATUS.md` and added `docs/SWEEP-228.md`. Catalog rows unchanged. Census `COMPATIBLE_BUILDS` status left `not_built`. No tag. No archive. No claim elevation.
+- Follow-up CI: run 37402540834 success on `98bac63`.
+- Exit: evidence pointer updated. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-228
+
+Body is the Sweep-228 section above.
+
 ## Sweep-227 — 2026-10-05 random completion sweep
 
 - Selection: SHA256 seed `sweep-227|2026-10-05T22:00-04:00|beyond-repair` -> 3572448024. Pool of 81 names from search `user:beyond-repair` (`total_count=83`) excluding `ADL-Governance` and Sweep-226 subject `Code_Generation_AI_Program`. Choice: `ADL-Portfolio-Census`.
