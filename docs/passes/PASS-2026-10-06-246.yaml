@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-06-246
+  parent_pass: PASS-2026-10-06-244
+  parent_note: PASS-2026-10-06-245 is an index entry in SWEEP_HISTORY only. It did not close GAP-ATOMICNEXUS-DEPLOY-FAILURE.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived from product code. Not invented.
+OBJECTIVE:
+  id: GAP-ATOMICNEXUS-DEPLOY-FAILURE
+  description: Fetch the failed Deploy Atomic Nexus AI log for run 37492591439 and apply the smallest invocation fix that matches the observed exit code.
+  reason_selected: PASS-2026-10-06-244 named this as the next objective. Sweep-245 did not close it.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Search total_count 83.
+    - Run 37492591439 conclusion failure. head_sha 663df6a76400a1c5ef36bc3bceedfd270cca2881. event push. path .github/workflows/deploy.yml.
+    - Failed job deploy id 112368862487. Prior steps installed requirements, ran attack_simulator, and pytest 11 passed.
+    - Failure line: ./deploy.sh Permission denied. Process exit code 126.
+    - deploy.sh is a two-echo stub with shebang. It does not deploy anything.
+CHANGES:
+  repositories:
+    - beyond-repair/AtomicNexusAI
+    - beyond-repair/ADL-Governance
+  files:
+    - AtomicNexusAI/.github/workflows/deploy.yml
+    - AtomicNexusAI/CLAIM_STATUS.md
+    - ADL-Governance/docs/passes/PASS-2026-10-06-246.yaml
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+    - ADL-Governance/docs/OPERATOR_QUEUE.md
+    - ADL-Governance/docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - 45a68454b2b661e38ac4abd728dc2bcf0b8f663b
+  capabilities_added_or_changed:
+    - deploy job invocation changed from ./deploy.sh to bash deploy.sh
+    - claim cap unchanged at 0
+VERIFICATION:
+  tests_run:
+    - In-job pytest on the failed run: 11 passed, then exit 126. Not re-run locally this pass.
+    - New Actions run on 45a68454 not observed in this pass.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Failure cause verified from the job log. Fix committed. Post-fix Actions conclusion not yet observed. Do not treat as a release.
+KNOWLEDGE:
+  confirmed:
+    - Deploy failure is executable-bit / exit 126, not a test failure.
+    - deploy.sh does not perform a production deploy.
+  failures:
+    - Direct ./deploy.sh execution failed run 37492591439.
+  decisions:
+    - Use bash deploy.sh rather than a contents-API mode change, because the file API used here does not set 100755.
+    - Do not archive, tag, delete, or rewrite history.
+    - Do not raise AtomicNexusAI above RESEARCH claim 0.
+REMAINING:
+  incomplete:
+    - Post-fix Actions conclusion for 45a68454 not observed.
+    - Portfolio termination not met.
+  blockers: []
+  new_gaps:
+    - GAP-ATOMICNEXUS-DEPLOY-RERUN: observe the push-triggered run on 45a68454 before calling the invocation fix verified.
+NEXT:
+  objective_id: GAP-ATOMICNEXUS-DEPLOY-RERUN
+  action: Fetch the Deploy Atomic Nexus AI run for commit 45a68454. Record conclusion. Do not tag. Do not raise the claim cap.
+  reason: The exit-126 cause is known and a deterministic invocation change is committed. Verification of that change requires the new run.
+  prerequisites:
+    - Actions run for head 45a68454b2b661e38ac4abd728dc2bcf0b8f663b exists
+PROVENANCE:
+  state_commit: pending-governance-docs
+  evidence:
+    - Actions run 37492591439 conclusion failure
+    - job 112368862487 log exit 126
+    - commit 45a68454b2b661e38ac4abd728dc2bcf0b8f663b
