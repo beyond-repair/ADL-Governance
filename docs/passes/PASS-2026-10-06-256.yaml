@@ -1,0 +1,63 @@
+PASS:
+  id: PASS-2026-10-06-256
+  parent_pass: PASS-2026-10-06-255
+  parent_note: Sweep-256 subject commits and SWEEP_HISTORY existed before this contract file. This pass closes that record. It does not re-implement seem-identity-unifier.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Counts not re-derived. Search total_count 83 inherited.
+OBJECTIVE:
+  id: GAP-SWEEP-256-CONTRACT
+  description: Persist the missing nested contract for the seem-identity-unifier path recheck.
+  reason_selected: Sweep-256 changed the subject and governance docs but left no docs/passes file. The checker only names ids that exist as files, so the record was invisible.
+DISCOVERY:
+  findings:
+    - Governance head c553b1dd0e2f533c5bed1be1d1097cf8745ce2d6 message docs Sweep-256 seem-identity-unifier path recheck.
+    - Subject head 12cbf6bb5279e0b689f022c8ee93639a4265d812. CI run 37538222315 success. Not a function-body audit.
+    - Q-FUNC-004 and Q-FUNC-005 remain open in the Sweep-256 note.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-256.yaml
+  commits: []
+  capabilities_added_or_changed:
+    - None. Contract persistence only. seem-identity-unifier remains RESEARCH.
+VERIFICATION:
+  tests_run:
+    - Inherited Actions run 37538222315 success on 12cbf6bb5279e0b689f022c8ee93639a4265d812. Not re-fetched this close.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+KNOWLEDGE:
+  confirmed:
+    - Sweep-256 pass file was absent at c553b1dd.
+  failures:
+    - Path recheck is not an isomorphism proof.
+  decisions:
+    - Do not treat portfolio SUPERSEDED as SAME_AS.
+    - Do not promote seem-identity-unifier.
+REMAINING:
+  incomplete:
+    - Function-body audit absent.
+    - Q-FUNC-004 and Q-FUNC-005 open.
+  blockers:
+    - Operator archive and tag actions.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-NO-WORKFLOW-EXOAXIS
+  action: Closed by PASS-2026-10-06-257 in the same execution.
+  reason: Recorded after the fact so the missing contract does not invent a new next slice.
+  prerequisites: []
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - governance head before close c553b1dd0e2f533c5bed1be1d1097cf8745ce2d6
+    - subject head 12cbf6bb5279e0b689f022c8ee93639a4265d812
+    - Actions run 37538222315

@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-06-257
+  parent_pass: PASS-2026-10-06-256
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived. Search total_count 83 inherited from Sweep-255/256. Not re-paged.
+OBJECTIVE:
+  id: GAP-NO-WORKFLOW-EXOAXIS
+  description: Audit one repository with no checks workflow and add a docs-only presence check without claim elevation.
+  reason_selected: PASS-2026-10-06-254 NEXT named this slice because the form-data pin is operator-gated. ExoAxis-1 had README, RESEARCH.md, and LICENSE only.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Inventory search total_count 83 inherited.
+    - ADL-Governance head before this file was c553b1dd0e2f533c5bed1be1d1097cf8745ce2d6 (Sweep-256). PASS-2026-10-06-256.yaml was absent.
+    - ExoAxis-1 pre-sweep head 72957022135437a6782c126f62f5fc7b46508c9f. Files README.md, RESEARCH.md, LICENSE. No workflow. Sweep-085 lock retained.
+    - No src, dose.md, or synthesis.md.
+CHANGES:
+  repositories:
+    - beyond-repair/ExoAxis-1
+    - beyond-repair/ADL-Governance
+  files:
+    - ExoAxis-1/.github/workflows/ci.yml
+    - ExoAxis-1/RESEARCH.md
+    - docs/passes/PASS-2026-10-06-257.yaml
+    - docs/passes/PASS-2026-10-06-256.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - 6cef3bc031d0345e262d00a97703ce2488511537
+  capabilities_added_or_changed:
+    - ExoAxis-1 docs-ci presence check. RESEARCH retained. Claim not elevated. Not a pharmacology implementation.
+VERIFICATION:
+  tests_run:
+    - GitHub Actions docs-ci run 37539258870 conclusion success on 6cef3bc031d0345e262d00a97703ce2488511537 updated 2026-10-06T22:14:14Z
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Presence CI succeeded. It is not clinical or pharmacology validation. Portfolio exit criteria still fail.
+KNOWLEDGE:
+  confirmed:
+    - ExoAxis-1 docs-ci run 37539258870 completed with conclusion success.
+    - Pre-sweep tree had no workflow.
+  failures:
+    - Sweep-256 left no pass contract. Closed by PASS-2026-10-06-256.yaml in this execution.
+  decisions:
+    - Do not add synthesis, dose, or manufacturing content.
+    - Do not promote ExoAxis-1 to ACTIVE.
+    - Do not re-fetch Digital Double alert 13 in this pass.
+REMAINING:
+  incomplete:
+    - Executable pharmacology still absent.
+    - Q-FUNC-004 and Q-FUNC-005 remain NOT_BUILT.
+    - form-data pin not applied.
+  blockers:
+    - Operator must approve lockfile bump, archive flags, and release tags.
+  new_gaps:
+    - GAP-SWEEP-256-CONTRACT closed by the sibling file in this commit.
+NEXT:
+  objective_id: GAP-Q-FUNC-005-LINEAGE
+  action: Read Digital_Double_virtual_workforce and digital-double-mobile trees only far enough to record whether a claim-capped lineage map can be added without a lockfile edit or a merge. Do not create workforce-lineage-graph unless the existing names are distinct and no SUPERSEDES edge is asserted.
+  reason: Q-FUNC-005 remains NOT_BUILT and is the named non-operator gap after this docs-ci slice.
+  prerequisites:
+    - No lockfile edit.
+    - No claim elevation.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - https://github.com/beyond-repair/ExoAxis-1/actions/runs/37539258870
+    - ExoAxis-1 commit 6cef3bc031d0345e262d00a97703ce2488511537
