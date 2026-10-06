@@ -30,14 +30,16 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - recorded after acceptance
+    - b93e19f37246e2ee1d78cb0afc94a54e74814ef8
+    - provenance follow-up commit recorded after acceptance
   capabilities_added_or_changed:
     - governance pass persistence for Sweep-230; stub preserved; no product capability added; no claim elevation
 VERIFICATION:
   tests_run:
     - Fetch of Sweep-230 body at ce285d187b278809f4a7ed23ec02fe00454773be succeeded
-    - Stub fetch succeeded and was not overwritten
-    - Code search for PASS-2026-10-05-230.contract.yaml returned total_count 0 before this commit
+    - Stub fetch succeeded and was not overwritten; post-commit stub sha remained e7922db682844abe89f9db16f7d6a3f39bbd23e3
+    - Code search for PASS-2026-10-05-230.contract.yaml returned total_count 0 before commit b93e19f
+    - Post-commit fetch of docs/passes/PASS-2026-10-05-230.contract.yaml succeeded at b93e19f
     - No product tests executed in this pass
   code_review: NOT_RUN
   security: NOT_RUN
@@ -49,6 +51,7 @@ KNOWLEDGE:
     - Sweep-230 body is recoverable from ce285d187b278809f4a7ed23ec02fe00454773be.
     - Replacing the stub would drop the standalone CI id fields even though the body also names those runs. Separate contract file preserves both.
     - Transcription does not re-verify product CI.
+    - Accepted ledger commit is b93e19f37246e2ee1d78cb0afc94a54e74814ef8.
   failures:
     - Did not expand PASS-232 or PASS-233 stubs.
     - Did not write contract PASS yaml for Sweep-235 or Sweep-236.
@@ -63,7 +66,7 @@ REMAINING:
   blockers:
     - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
   new_gaps:
-    - This pass commit SHA is not embedded in this file until a provenance follow-up. Parent source commit is ce285d187b278809f4a7ed23ec02fe00454773be.
+    - This provenance follow-up SHA is not embedded in this file. Parent ledger commit is b93e19f37246e2ee1d78cb0afc94a54e74814ef8.
 NEXT:
   objective_id: GAP-PASS-YAML-236
   action: Transcribe the Sweep-236 body already in current docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-06-236.contract.yaml without rewriting product history, the Origin Point PDF, or claim caps. Do not invent a license.
@@ -74,10 +77,12 @@ NEXT:
     - Do not change claim caps
     - Do not invent a license for The-Origin-Point-Hypothesis.
 PROVENANCE:
-  state_commit: null
+  state_commit: b93e19f37246e2ee1d78cb0afc94a54e74814ef8
   evidence:
     - docs/SWEEP_HISTORY.md at ce285d187b278809f4a7ed23ec02fe00454773be
-    - stub sha e7922db682844abe89f9db16f7d6a3f39bbd23e3
+    - stub sha e7922db682844abe89f9db16f7d6a3f39bbd23e3 after b93e19f
+    - contract file sha 3e398d67bc016b6bf0cf99bebfd1510470d64eee at b93e19f
     - search user:beyond-repair total_count 83
-    - code search PASS-2026-10-05-230.contract.yaml total_count 0 before this commit
+    - code search PASS-2026-10-05-230.contract.yaml total_count 0 before commit b93e19f
     - PASS-2026-10-06-234.yaml NEXT objective GAP-PASS-STUB-230
+    - https://github.com/beyond-repair/ADL-Governance/commit/b93e19f37246e2ee1d78cb0afc94a54e74814ef8
