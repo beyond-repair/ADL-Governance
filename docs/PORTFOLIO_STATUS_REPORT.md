@@ -1,5 +1,33 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-06 (Sweep-256; 22:05Z)
+**Project / Version:** ADL Portfolio Governance / Sweep-256
+**Objective:** Randomized portfolio draw, discover, safe implement, document.
+**Draw:** `random.Random(1791325001).choice` over search payload of 83 names.
+**Selected:** `seem-identity-unifier`
+**Classification:** RESEARCH. Claim ≤ 1. Not elevated. Not marked complete.
+**Head:** `12cbf6bb5279e0b689f022c8ee93639a4265d812`. CI run 37538222315 success (2026-10-06T22:04:38Z).
+**Meaning of green CI:** identity-contract tests only. Not AST isomorphism. Not runtime equivalence.
+
+## Sweep-256 selected repo
+
+| Item | State |
+|------|--------|
+| Class | RESEARCH (identity map; mapped SEEM trees remain SUPERSEDED for new work) |
+| Termination | NOT MET |
+| Snapshot lock | `2026-09-05` retained |
+| Path recheck | 2026-10-06 directory listings; named modules still present |
+| Function audit | UNAUDITED |
+| SUPERSEDES edge | forbidden by this module |
+| Tags / releases | not created |
+| Archive flag | false |
+
+Portfolio exit criteria remain unmet. Digital Double alert 13 was not re-fetched.
+
+---
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-06 (Sweep-255; 21:15Z)
 **Project / Version:** ADL Portfolio Governance / Sweep-255
 **Objective:** One governed master-directive sweep. Discover the account, re-verify the four named repositories, classify without elevating claims, update governance docs, stop.

@@ -1,5 +1,20 @@
 # Sweep History
 
+## Sweep-256 — 2026-10-06 randomized draw seem-identity-unifier
+
+- Timestamp: 2026-10-06 22:05Z. Scope: one random repository from the search payload of 83 names. Draw: `random.Random(1791325001).choice` → `seem-identity-unifier`.
+- Classification: RESEARCH. Claim ≤ 1 (MODULE_SURFACE). Not elevated. Not a live crawler. Not an isomorphism proof.
+- Discover: tree at pre-sweep `8737edd4` (18 paths). Package 0.1.0. CI workflow present. Prior main CI run 36847809401 success on that head (2026-10-01). Releases/tags empty.
+- Audit: three mapped identities remain distinct. Portfolio registry still classifies them SUPERSEDED for new work by `sovereign-clean-room`. That label is not identity collapse. GOVERNANCE.md still cited Sweep-118 and an older CI run.
+- Recheck (directory listings, 2026-10-06): SEEM-2.0 root modules `seem.py`, `banel.py`, `dream_phase.py`, `resonator_vsa.py` present. Hyphen `core/{banel,dream,resonator}.py` present. Underscore `backend/seem/core/vsa.py`, `backend/seem/learning/{banel,dream}.py`, `backend/seem/api/server.py`, `src/App.tsx` present. Function bodies not audited.
+- Implement commits: `acf83067183fb5b006752228dca051f8941d55bb` (recheck lock, tests, least-privilege CI, claim/governance stamps), `12cbf6bb5279e0b689f022c8ee93639a4265d812` (README). No deletion. No history rewrite. No tag. No archive flag.
+- Local pytest before push: 6 passed. Not an Actions conclusion.
+- Actions CI on head: run 37538222315 success on `12cbf6bb5279e0b689f022c8ee93639a4265d812` (updated 2026-10-06T22:04:38Z). Intermediate run 37538173732 success on `acf83067` is not the head.
+- Termination for this repo: not met. Function-body audit absent. Live crawler absent. Q-FUNC-004 and Q-FUNC-005 not closed.
+- Portfolio exit criteria remain unmet (Digital Double alert 13 not re-fetched).
+
+# Sweep History
+
 ## Sweep-255 — 2026-10-06 master directive completion sweep
 
 - Timestamp: 2026-10-06 (session clock 21:15Z / 17:15 EDT). Scope: one governed sweep of `user:beyond-repair`. Discovery via authenticated search `user:beyond-repair`, `total_count` 83, `incomplete_results` false, item length 83. Private in payload: 9 (`Digital_Double_Virtual_Workforce_4.2`, `CFT-v3.0`, `Digital_Double_Virtual_Workforce_4.`, `blacksite`, `potential-garbanzo`, `SovereignOS`, `test`, `mendthegame`, `atomicdreamlabs`). GitHub `archived=true`: `CFT-v3.0` only. Size 0: `automate_passive_income`, `Quantumclustering`.

@@ -1,5 +1,13 @@
 # Operator Queue
 
+## Residual notes from Sweep-256
+
+`seem-identity-unifier` stays RESEARCH. Do not promote to ACTIVE. Do not archive the three mapped SEEM identities. Do not treat portfolio SUPERSEDED as SAME_AS. Do not treat CI run 37538222315 as a function-body audit. No tag. No archive flag. Q-FUNC-004 and Q-FUNC-005 remain open.
+
+Digital Double alert 13 was not re-fetched in Sweep-256. Do not mark it fixed.
+
+# Operator Queue
+
 ## Residual notes from Sweep-255 / PASS-2026-10-06-255
 
 Master-directive sweep. Search total_count 83. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
