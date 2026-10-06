@@ -8,6 +8,7 @@
 - Releases empty on all four. Tag refs not re-listed. BlockSwarm README tag lineage `v0.5.0-sagf` remains unverified. Product README not edited.
 - Security: Dependabot critical #13 open. forge-aegis and BlockSwarm Dependabot open lists empty. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. High Dependabot filter on sovereign-clean-room empty.
 - Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Post-push: ADL-Governance Dependabot #1 open, pytest medium GHSA-6w46-j5rx-g56g, patched identifier 9.0.3. Not patched.
 - Exit: criteria not met. Stop. Do not loop.
 
 ## Sweep-234 — 2026-10-06 basilisk persistence gap

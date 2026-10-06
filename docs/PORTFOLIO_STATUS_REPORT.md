@@ -76,6 +76,7 @@ Contradiction retained: BlockSwarm README says tag lineage includes `v0.5.0-sagf
 | Secret scanning disabled on sovereign-clean-room | Medium |
 | Portfolio registry not re-audited for non-subject repos | Medium |
 | `public_repos` 78 vs search 83 | Low (accounting; do not delete) |
+| ADL-Governance pytest Dependabot #1 medium (GHSA-6w46-j5rx-g56g / CVE-2025-71176, patched identifier 9.0.3) | Medium |
 
 ## Inventory (83)
 

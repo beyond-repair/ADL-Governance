@@ -26,3 +26,5 @@ Random subject `sunder`. Classification RESEARCH, claim ≤1, reconfirmed. Head 
 - Product tags, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
 - Accounting: user `public_repos` 78 vs search total 83. Do not delete repositories to force equality.
 - **sunder unused dependencies:** `pynacl` and `httpx` are declared and unused. Removal is optional and was not done.
+
+- **ADL-Governance Dependabot alert #1:** observed at Sweep-235 push. `pytest` / GHSA-6w46-j5rx-g56g / CVE-2025-71176. Manifest `requirements.txt`. Medium. Patched identifier 9.0.3. Not patched this cycle.
