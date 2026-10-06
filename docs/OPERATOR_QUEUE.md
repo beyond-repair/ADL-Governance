@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-234
+
+Transcription only. Parent blob `26dd1186693173128cf8317fb03f697d59c4ae96` decoded. Contract PASS yaml added for sweeps 225, 226, and 227. No product repository edited. No archive flag. No secret copied. No claim elevation. PASS-230, PASS-232, and PASS-233 remain abbreviated stubs.
+
 ## Residual notes from Sweep-233
 
 Random subject `sunder`. Classification RESEARCH, claim ≤1, reconfirmed. Head after README restore `e6d501635f17a59723dd89fbd611e08070422ecd`. Packaging description capped. GOVERNANCE.md and SECURITY.md added. Local pytest 20 passed. Unused `pynacl` and `httpx` left declared. Do not remove them unless a later sweep proves no importer. Do not tag. Do not archive. Do not implement T-002 as if it were a measured rename. Placeholder README overwrite was corrected in a follow-up commit; history not rewritten.

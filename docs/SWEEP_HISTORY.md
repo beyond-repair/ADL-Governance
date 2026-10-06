@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-234 — 2026-10-06 basilisk persistence gap
+
+- Selection: highest-value bounded gap that is not operator-only. PASS-231 NEXT was GAP-PASS-YAML-225-227. PASS-232 and PASS-233 are stubs and did not close it.
+- Action: decode parent blob `26dd1186693173128cf8317fb03f697d59c4ae96` and transcribe only the Sweep-225, Sweep-226, and Sweep-227 bodies into contract PASS yaml. Persist PASS-2026-10-06-234.yaml.
+- No product repository edited. No archive. No tag. No lockfile edit. No claim elevation. No secret value copied. No history rewrite.
+- Verification: blob decode succeeded. docs/passes listing before this commit lacked the three yaml files. No product tests run.
+- Exit: persistence gap for sweeps 225-227 closed by transcription. Stubs 230, 232, and 233 remain. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-06-234
+
+Body is the Sweep-234 section above.
+
 ## Sweep-233 — 2026-10-06 random completion sweep
 
 - Selection: `random.SystemRandom().choice` over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`).
@@ -14,7 +26,7 @@
 
 ## Index / PASS-2026-10-06-233
 
-Body is the Sweep-233 section above.
+Body is the Sweep-233 section above. The yaml at docs/passes/PASS-2026-10-06-233.yaml remains the abbreviated stub written by that sweep. It was not rewritten in Sweep-234. Later note in that stub records CI 37468055628 success on e6d5016; this history body is left as originally written.
 
 ## Sweep-232 — 2026-10-05 Master Directive portfolio sweep
 
@@ -26,4 +38,4 @@ Body is the Sweep-233 section above.
 - Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
 - Exit: criteria not met. Stop. Do not loop.
 
-Prior sweep bodies through Sweep-231 remain in git history at the parent of Sweep-232 and in `docs/passes/` where indexed. This commit does not delete those pass files.
+Prior sweep bodies through Sweep-231 remain in git history and in `docs/passes/` where indexed. This commit does not delete those pass files.

@@ -1,0 +1,68 @@
+PASS:
+  id: PASS-2026-10-05-227
+  parent_pass: PASS-2026-10-05-226
+  parent_note: Parent linkage is chronological from the history index, not an embedded parent_pass field.
+  transcription: true
+  source_blob: 26dd1186693173128cf8317fb03f697d59c4ae96
+  transcribed_by: PASS-2026-10-06-234
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+OBJECTIVE:
+  id: GAP-RANDOM-227
+  description: Random completion sweep of ADL-Portfolio-Census.
+  reason_selected: SHA256 seed sweep-227|2026-10-05T22:00-04:00|beyond-repair mapped to 3572448024. Pool of 81 names from search user:beyond-repair total_count 83, excluding ADL-Governance and Sweep-226 subject Code_Generation_AI_Program.
+DISCOVERY:
+  findings:
+    - Subject ADL-Portfolio-Census, public, main, pre-tree b4a292b9ae02ba5c764cba337b7fa628456eee55, 17 entries, not truncated.
+    - Classification RESEARCH. Claim <=1. Not a live crawler. Not an 83-row completeness proof.
+    - Locked 42-row snapshot dated 2026-09-04, engine, pytest, CI workflow ci.yml.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Portfolio-Census
+  files:
+    - SNAPSHOT_DATE / LOCKED_ROW_COUNT freeze, version 0.1.2, SECURITY.md, docs/SWEEP-227.md
+  commits:
+    - ce6d830ed077b3254e9a8f4381a9ec62f16ff3ac
+  capabilities_added_or_changed:
+    - freeze and security doc; locked rows not rewritten; claim not elevated
+VERIFICATION:
+  tests_run:
+    - pytest -q 14 passed
+    - python -m census.engine printed OK
+    - CI run 37402259409 success on ce6d830
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  overall_note: Transcribed from recorded sweep body. Not re-executed in PASS-234.
+KNOWLEDGE:
+  confirmed:
+    - Compatible-build status of aegis-repo-graph left not_built.
+    - No tag, archive, history rewrite, or claim elevation.
+  failures:
+    - Dependabot #1 remained open.
+  decisions:
+    - Locked rows not rewritten.
+REMAINING:
+  incomplete:
+    - Dependabot #1 open (pytest GHSA-6w46-j5rx-g56g)
+    - aegis-repo-graph compatible-build status not_built
+  blockers:
+    - Dependabot patch not performed in that sweep
+  new_gaps: []
+NEXT:
+  objective_id: null
+  action: Not recorded in the Sweep-227 body.
+  reason: Transcription only.
+  prerequisites: []
+PROVENANCE:
+  state_commit: ce6d830ed077b3254e9a8f4381a9ec62f16ff3ac
+  evidence:
+    - parent blob 26dd1186693173128cf8317fb03f697d59c4ae96 Sweep-227 section
+    - CI run 37402259409 as named in that section
