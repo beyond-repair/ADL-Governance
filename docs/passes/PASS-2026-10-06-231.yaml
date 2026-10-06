@@ -28,14 +28,16 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - this push; SHA recorded after commit acceptance, not invented here
+    - 44c18ce1a9e1e3e7ad0fc3572a2545154f3e68e1
+    - provenance follow-up commit recorded after acceptance
   capabilities_added_or_changed:
     - governance pass persistence for Sweep-229; no product capability added; no claim elevation
 VERIFICATION:
   tests_run:
     - No product tests executed in this pass
-    - Directory listing evidence: PASS-2026-10-05-229.yaml absent before this commit
+    - Directory listing evidence: PASS-2026-10-05-229.yaml absent before commit 44c18ce1
     - Search total_count 83 re-fetched
+    - Post-commit fetch of this path succeeded at ref 44c18ce1a9e1e3e7ad0fc3572a2545154f3e68e1
   code_review: NOT_RUN
   security: NOT_RUN
   integration: NOT_RUN
@@ -45,6 +47,7 @@ KNOWLEDGE:
   confirmed:
     - Sweep-229 evidence can be transcribed without inventing CI results.
     - Contract persistence and product verification are different states. This pass verifies persistence only.
+    - Accepted ledger commit is 44c18ce1a9e1e3e7ad0fc3572a2545154f3e68e1.
   failures:
     - Did not recover full Sweep-225/226/227 bodies in this pass. Parent blob was identified but not fetched.
     - Did not execute operator archive, secret rotation, license assignment, or Dependabot patch.
@@ -58,7 +61,7 @@ REMAINING:
   blockers:
     - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
   new_gaps:
-    - Provenance SHA for this commit is not embedded in this file until a follow-up observation
+    - This provenance follow-up SHA is not embedded in this file. Parent ledger commit is 44c18ce1.
 NEXT:
   objective_id: GAP-PASS-YAML-225-227
   action: Fetch parent blob 26dd1186693173128cf8317fb03f697d59c4ae96 of docs/SWEEP_HISTORY.md and transcribe only the recorded Sweep-225, Sweep-226, and Sweep-227 bodies into PASS yaml. Do not invent missing fields.
@@ -69,10 +72,11 @@ NEXT:
     - Do not copy secret values
     - Do not change claim caps
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: 44c18ce1a9e1e3e7ad0fc3572a2545154f3e68e1
   evidence:
+    - https://github.com/beyond-repair/ADL-Governance/commit/44c18ce1a9e1e3e7ad0fc3572a2545154f3e68e1
     - GitHub user beyond-repair id 132061760
     - search user:beyond-repair total_count 83
-    - docs/passes listing without PASS-2026-10-05-229.yaml before this commit
+    - docs/passes listing without PASS-2026-10-05-229.yaml before commit 44c18ce1
     - docs/SWEEP_HISTORY.md Sweep-229 and Sweep-230
     - docs/passes/PASS-2026-10-05-230.yaml stub
