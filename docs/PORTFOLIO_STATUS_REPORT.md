@@ -1,14 +1,15 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-06 (Sweep-252; 20:04Z)
+**Updated:** 2026-10-06 (Sweep-252; 20:05Z)
 **Project / Version:** ADL Portfolio Governance / Sweep-252
 **Objective:** Randomized portfolio cycle on one repository. Discover, classify, implement safe idempotent changes, test, document, push.
 **Selected repository:** `adl-function-census` (date-seeded draw `random.Random(20261006)` over 82 names excluding `ADL-Governance`).
 **Classification:** RESEARCH. Claim ≤ 1. Not elevated.
 **Head after implement:** `cf4360256753214f682576a7418ed7f8cd600d1f`.
-**Local verification:** pytest 17 passed; `python -m census.engine` exits 0 and prints `OK`. This is not an Actions conclusion.
+**Local verification:** pytest 17 passed; `python -m census.engine` exits 0 and prints `OK`.
+**Actions:** workflow `ci` run 37523527567 conclusion success on `cf4360256753214f682576a7418ed7f8cd600d1f` (updated 2026-10-06T20:03:31Z). https://github.com/beyond-repair/adl-function-census/actions/runs/37523527567
 **Lock unchanged:** snapshot 2026-09-05, enumerated 68, locked 57, module surfaces 3. Drift line records search total 83 and does not re-lock.
-**Termination:** not met. Dated subset remains. No tag. No archive flag.
+**Termination:** not met. Dated subset remains. No tag. No archive flag. Green CI is not a full-portfolio function audit.
 **Portfolio exit:** not met. Digital Double Dependabot alert 13 inherited open from Sweep-251; not re-fetched.
 
 Sweep-251 mandatory-four table below is retained and was not re-verified in Sweep-252.
