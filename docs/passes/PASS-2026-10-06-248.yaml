@@ -31,7 +31,8 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - this governance commit
+    - aff346fa11f55a9a7946f22aa816f1e416526f98
+    - provenance follow-up on the same file
   prior_subject_commits:
     - 31974415d1eb1d7183d2c9422196ddc502fe2bca
     - 6dc4bac0e903a3f222129f98cb6eb9de14125505
@@ -79,7 +80,7 @@ NEXT:
   prerequisites:
     - Operator approval before any lockfile edit.
 PROVENANCE:
-  state_commit: this governance commit
+  state_commit: aff346fa11f55a9a7946f22aa816f1e416526f98
   evidence:
     - Actions run 37508336942 conclusion success
     - Actions run 37508389427 conclusion success
