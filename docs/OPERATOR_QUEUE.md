@@ -2,6 +2,13 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-242
+
+Random subject `AtomicNexusAI`. Classification RESEARCH, claim 0. Do not flip the GitHub archive flag. Do not delete orphan root trees (`utils/`, `security/`, `ecurity/`, `github/`, `**LICENSE**`). Do not treat the CI workflow edit as a green Actions conclusion until a run is fetched. No tag. No history rewrite. No claim elevation. PASS body: `docs/passes/PASS-2026-10-06-242.yaml`.
+
+
+Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
+
 ## Residual notes from Sweep-241
 
 Master Directive cycle. Search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names. Four named heads unchanged. Releases and tag lists empty. Digital Double Dependabot critical #13 re-fetched and still open. Secret scanning open list on Digital Double empty. Code scanning 404 on forge-aegis. Dependabot open lists empty on forge-aegis and BlockSwarm. High Dependabot filter empty on sovereign-clean-room. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation. Branch list not re-enumerated. Lockfile edit for alert #13 remains operator-gated until a verified bump is separately tested.
