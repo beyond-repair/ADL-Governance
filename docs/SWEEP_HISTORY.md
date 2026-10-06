@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-237 — 2026-10-06 basilisk stub expansion
+
+- Selection: explicit NEXT of PASS-2026-10-06-234, GAP-PASS-STUB-230. Sweeps 235 and 236 did not close it.
+- Action: transcribe Sweep-230 body from docs/SWEEP_HISTORY.md at ce285d187b278809f4a7ed23ec02fe00454773be into docs/passes/PASS-2026-10-05-230.contract.yaml. Leave stub docs/passes/PASS-2026-10-05-230.yaml sha e7922db682844abe89f9db16f7d6a3f39bbd23e3 intact. Persist PASS-2026-10-06-237.yaml.
+- No product repository edited. No archive. No tag. No lockfile edit. No claim elevation. No secret value copied. No history rewrite. No license invented.
+- Verification: source body fetch succeeded. Stub fetch succeeded. Contract filename was absent before this commit. No product tests run.
+- Exit: persistence gap for Sweep-230 contract schema closed beside the stub. Stubs 232 and 233 remain. Sweeps 235 and 236 still lack contract PASS yaml. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-06-237
+
+Body is the Sweep-237 section above. Contract transcription is docs/passes/PASS-2026-10-05-230.contract.yaml. Stub was not rewritten.
+
 ## Sweep-236 — 2026-10-06 random completion sweep
 
 - Selection: sha256(`beyond-repair-sweep-2026-10-06T14:00Z`)[:8] = 2289069922, `random.Random.choice` over 87 installed repository names.

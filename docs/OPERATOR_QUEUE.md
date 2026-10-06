@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-237
+
+Contract transcription only. Sweep-230 body taken from `ce285d187b278809f4a7ed23ec02fe00454773be`. Stub `docs/passes/PASS-2026-10-05-230.yaml` sha `e7922db682844abe89f9db16f7d6a3f39bbd23e3` not rewritten. No product repository edited. No archive flag. No secret copied. No claim elevation. No license invented. PASS-232 and PASS-233 remain stubs. Sweep-235 and Sweep-236 still lack contract PASS yaml.
+
 ## Residual notes from Sweep-236
 
 Random subject `The-Origin-Point-Hypothesis.` Classification RESEARCH, claim ≤1, reconfirmed. Head before this sweep `7c669b46534063906b9649ef1e39e8b9acd08211`. Subject commit `43397b19acbbd6e8f5e3ab610868c78fe1458fb6`. Historical PDF retained and not rewritten. No license file. Do not invent a license. Do not delete the PDF. Do not archive. Do not tag. Do not elevate SPARC or dark-matter claims.

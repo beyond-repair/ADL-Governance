@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-10-05-230
+  parent_pass: null
+  parent_note: Sweep-230 body did not name a parent pass. Not invented.
+  transcription: true
+  source_commit: ce285d187b278809f4a7ed23ec02fe00454773be
+  source_path: docs/SWEEP_HISTORY.md
+  stub_preserved: docs/passes/PASS-2026-10-05-230.yaml
+  stub_sha: e7922db682844abe89f9db16f7d6a3f39bbd23e3
+  transcribed_by: PASS-2026-10-06-237
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: null
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Sweep-230 body did not record capability or gap counts, or a repository-changed count. Not invented.
+OBJECTIVE:
+  id: GAP-ORIGIN-POINT-CLAIM-CAP-230
+  description: Random completion sweep of The-Origin-Point-Hypothesis. Claim-cap only. Transcribed from the Sweep-230 body.
+  reason_selected: random.SystemRandom().choice over 83 names from search user:beyond-repair total_count 83 incomplete_results false.
+DISCOVERY:
+  findings:
+    - Subject The-Origin-Point-Hypothesis. public main. Pre-tree f46deb8ddbdb369c823bc573a2d7730fb3857979. 8 entries, not truncated.
+    - Classification RESEARCH. Claim <=1. Not a SPARC fit. Not a dark-matter replacement.
+    - Discover surfaces named in the body: README, CLAIM_STATUS, GOVERNANCE, docs-presence workflow, historical PDF, TeX sketch that still said screening was validated against SPARC.
+CHANGES:
+  repositories:
+    - beyond-repair/The-Origin-Point-Hypothesis.
+    - beyond-repair/ADL-Governance
+  files:
+    - not named individually in the Sweep-230 body
+  commits:
+    - 6c6c97c9c5c852816cb5297e62d2a88c73287515
+    - 7e621e33cb40b2a4f36d6723985014f51256a03d
+    - 7c669b46534063906b9649ef1e39e8b9acd08211
+  capabilities_added_or_changed:
+    - claim-cap tests added; no claim elevation
+VERIFICATION:
+  tests_run:
+    - pytest -q 3 passed after claim-cap tests were added
+    - CI run 37407059857 failure on intermediate commit before TeX cap
+    - CI run 37407081565 success on 7e621e3
+    - CI run 37407105315 success on head 7c669b4
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  overall_note: Transcription of an already indexed sweep. This file does not re-run those tests.
+KNOWLEDGE:
+  confirmed:
+    - Historical PDF was not rewritten.
+    - No tag. No archive. No history rewrite. No claim elevation.
+    - Subject was claim-capped and CI-green at head 7c669b46534063906b9649ef1e39e8b9acd08211 in that sweep.
+  failures:
+    - Portfolio termination not met.
+  decisions:
+    - Stop. Do not loop. Recorded as the Sweep-230 exit, not as a prohibition on later persistence passes.
+REMAINING:
+  incomplete:
+    - Portfolio termination not met. Specific residual items were not listed in the Sweep-230 body.
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: null
+  action: Not recorded in the Sweep-230 body. Do not invent a next action for the historical sweep.
+  reason: Transcription only.
+  prerequisites: []
+PROVENANCE:
+  state_commit: ce285d187b278809f4a7ed23ec02fe00454773be
+  evidence:
+    - docs/SWEEP_HISTORY.md at ce285d187b278809f4a7ed23ec02fe00454773be Sweep-230 section
+    - stub docs/passes/PASS-2026-10-05-230.yaml sha e7922db682844abe89f9db16f7d6a3f39bbd23e3 left intact
+    - stub fields ci_success 37407105315 and ci_intermediate_failure 37407059857 match the body and were not dropped

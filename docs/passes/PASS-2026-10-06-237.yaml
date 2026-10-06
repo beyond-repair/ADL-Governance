@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-10-06-237
+  parent_pass: PASS-2026-10-06-234
+  parent_note: Sweeps 235 and 236 are indexed in SWEEP_HISTORY and do not have contract PASS yaml. They did not close GAP-PASS-STUB-230.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 8
+  count_note: Capability and gap counts carried from PASS-234. Not re-counted. Contract transcription of Sweep-230 does not close operator gaps. Sweeps 232, 233, 235, and 236 still lack contract PASS yaml.
+OBJECTIVE:
+  id: GAP-PASS-STUB-230
+  description: Expand the Sweep-230 body into the basilisk schema without rewriting the stub that records CI ids.
+  reason_selected: Explicit NEXT of PASS-2026-10-06-234. Operator archive, secret, license, and lockfile actions were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. public_repos 78. Search user:beyond-repair total_count 83 incomplete_results false on 2026-10-06.
+    - docs/passes/PASS-2026-10-05-230.yaml remains the abbreviated stub sha e7922db682844abe89f9db16f7d6a3f39bbd23e3.
+    - Sweep-230 body recovered from docs/SWEEP_HISTORY.md at ce285d187b278809f4a7ed23ec02fe00454773be.
+    - Search found no PASS-2026-10-05-230.contract.yaml before this pass.
+    - Sweep-236 later moved The-Origin-Point-Hypothesis. head to 43397b19acbbd6e8f5e3ab610868c78fe1458fb6. That head is not a Sweep-230 fact and is not written into the contract transcription.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-05-230.contract.yaml
+    - docs/passes/PASS-2026-10-06-237.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - recorded after acceptance
+  capabilities_added_or_changed:
+    - governance pass persistence for Sweep-230; stub preserved; no product capability added; no claim elevation
+VERIFICATION:
+  tests_run:
+    - Fetch of Sweep-230 body at ce285d187b278809f4a7ed23ec02fe00454773be succeeded
+    - Stub fetch succeeded and was not overwritten
+    - Code search for PASS-2026-10-05-230.contract.yaml returned total_count 0 before this commit
+    - No product tests executed in this pass
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Sweep-230 body is recoverable from ce285d187b278809f4a7ed23ec02fe00454773be.
+    - Replacing the stub would drop the standalone CI id fields even though the body also names those runs. Separate contract file preserves both.
+    - Transcription does not re-verify product CI.
+  failures:
+    - Did not expand PASS-232 or PASS-233 stubs.
+    - Did not write contract PASS yaml for Sweep-235 or Sweep-236.
+    - Did not execute operator archive, secret rotation, license assignment, or Dependabot patch.
+  decisions:
+    - REUSE ADL-Governance. Do not create a repository. Do not rewrite the stub in place. Unknown fields left null.
+REMAINING:
+  incomplete:
+    - PASS-232 and PASS-233 remain stubs relative to the basilisk schema
+    - Sweep-235 and Sweep-236 have history bodies but no contract PASS yaml
+    - Operator queue items unchanged: archive flags, Dependabot #13, mobile secret alert, forge-aegis license and tag, seem-completion-pass merge
+  blockers:
+    - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
+  new_gaps:
+    - This pass commit SHA is not embedded in this file until a provenance follow-up. Parent source commit is ce285d187b278809f4a7ed23ec02fe00454773be.
+NEXT:
+  objective_id: GAP-PASS-YAML-236
+  action: Transcribe the Sweep-236 body already in current docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-06-236.contract.yaml without rewriting product history, the Origin Point PDF, or claim caps. Do not invent a license.
+  reason: Sweep-236 is the newest indexed sweep without a contract PASS file. Stub expansion for 232 and 233 remains after that, because 236 is the current history head.
+  prerequisites:
+    - Do not set archived=true
+    - Do not copy secret values
+    - Do not change claim caps
+    - Do not invent a license for The-Origin-Point-Hypothesis.
+PROVENANCE:
+  state_commit: null
+  evidence:
+    - docs/SWEEP_HISTORY.md at ce285d187b278809f4a7ed23ec02fe00454773be
+    - stub sha e7922db682844abe89f9db16f7d6a3f39bbd23e3
+    - search user:beyond-repair total_count 83
+    - code search PASS-2026-10-05-230.contract.yaml total_count 0 before this commit
+    - PASS-2026-10-06-234.yaml NEXT objective GAP-PASS-STUB-230
