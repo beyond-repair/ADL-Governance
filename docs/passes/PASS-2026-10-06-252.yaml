@@ -1,0 +1,96 @@
+PASS:
+  id: PASS-2026-10-06-252
+  parent_pass: PASS-2026-10-06-251
+  parent_note: Sweep-252 subject commits and SWEEP_HISTORY existed before this contract file. This pass closes that record. It does not re-implement adl-function-census.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived for the full portfolio. Not invented. Search total_count 83 inherited from Sweep-251/252; not re-paged.
+OBJECTIVE:
+  id: GAP-SWEEP-252-CONTRACT
+  description: Persist the missing contract for the adl-function-census research draw and re-fetch the cited Actions runs. Do not re-lock the 2026-09-05 snapshot.
+  reason_selected: Sweep-252 changed adl-function-census and governance docs but left no docs/passes contract. The loop requires a persisted pass record. Operator-gated form-data pin remains blocked.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Search inventory 83 names inherited. Profile public_repos 78 at discovery.
+    - ADL-Governance main before the contract commit was e5929da33ace0785198c3a8deb60d8df7a69a4a2.
+    - docs/passes/PASS-2026-10-06-252.yaml was absent at that head.
+    - adl-function-census head cf4360256753214f682576a7418ed7f8cd600d1f.
+    - Prior implement commits bb02151d1a84aff48e558b19a26be96637f0fc8a and 9d6e31221ab741ad4e33f87618869a81bf3566a6.
+    - Actions run 37523436410 conclusion failure on bb02151d. Job step python -m pytest -q failed. Engine steps succeeded.
+    - Actions run 37523474651 conclusion success on 9d6e3122. updated_at 2026-10-06T20:03:06Z.
+    - Actions run 37523527567 conclusion success on cf436025. updated_at 2026-10-06T20:03:31Z.
+    - Independent local pytest on cf436025: 17 passed. Not an Actions conclusion.
+    - Lock remains snapshot 2026-09-05, enumerated 68, locked 57, module surfaces 3. Q-FUNC-002 and Q-FUNC-003 stay NOT_BUILT.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-252.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending-this-commit
+  prior_subject_commits:
+    - bb02151d1a84aff48e558b19a26be96637f0fc8a
+    - 9d6e31221ab741ad4e33f87618869a81bf3566a6
+    - cf4360256753214f682576a7418ed7f8cd600d1f
+    - e5929da33ace0785198c3a8deb60d8df7a69a4a2
+  capabilities_added_or_changed:
+    - None. Contract persistence only. adl-function-census remains RESEARCH / claim <= 1.
+VERIFICATION:
+  tests_run:
+    - GitHub Actions ci 37523436410: failure on bb02151d (pytest step)
+    - GitHub Actions ci 37523474651: success on 9d6e3122
+    - GitHub Actions ci 37523527567: success on cf436025
+    - local pytest on cf436025: 17 passed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Contract gap closed and cited CI re-fetched. Intermediate head bb02151d failed CI. Head cf436025 succeeded. Portfolio exit criteria still fail. Snapshot not re-locked.
+KNOWLEDGE:
+  confirmed:
+    - Head cf436025 ci run completed with conclusion success.
+    - Intermediate commit bb02151d ci run completed with conclusion failure.
+    - Local checker still prints locked counts 57/68 and a DRIFT line. DRIFT is not a re-lock.
+  failures:
+    - Sweep-252 history line that a pass file existed was false until this file. Preserved; closure is this file.
+    - Governance commit e5929da message claimed CI success was recorded before this contract file existed.
+  decisions:
+    - Do not tag, archive, delete, rewrite history, merge, or edit the census lock.
+    - Do not flip Q-FUNC-002 or Q-FUNC-003 to built. Existence is not a module-surface audit.
+    - Do not treat green CI as a full-portfolio function audit.
+    - Do not re-count capabilities_known.
+REMAINING:
+  incomplete:
+    - form-data pin to 4.0.4 or newer not applied. Alert 13 not re-fetched this pass.
+    - Archive flags for recommended ARCHIVED repositories not flipped.
+    - BlockSwarm v0.5.0-sagf tag not created.
+    - Q-FUNC-002 sunder-cleanroom-vsa-adapter module-surface audit not done.
+    - Q-FUNC-003 seem-identity-unifier SUPERSEDES proof not done.
+    - Q-FUNC-004 still names absent os-constitution-merge.
+  blockers:
+    - Operator must approve lockfile bump and secret rotation.
+    - Operator must approve archive flags, release tags, and Q-FUNC-004 rename.
+  new_gaps:
+    - GAP-SWEEP-252-CONTRACT closed by this file.
+NEXT:
+  objective_id: GAP-DD-FORMDATA-PIN
+  action: If operator approval is absent, audit one repository that has no checks workflow, without claim elevation, and persist the pass file in the same execution.
+  reason: Alert 13 remains the named portfolio blocker and is operator-gated. The next autonomous slice must not invent a lockfile edit.
+  prerequisites:
+    - Operator approval before any lockfile edit.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - Actions run 37523436410 conclusion failure
+    - Actions run 37523474651 conclusion success
+    - Actions run 37523527567 conclusion success
+    - local pytest 17 passed on cf436025
+    - SWEEP_HISTORY Sweep-252 paragraph at e5929da

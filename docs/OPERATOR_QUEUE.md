@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-252 close / PASS-2026-10-06-252
+
+Contract file was absent until this close. Do not re-lock `SNAPSHOT_DATE`, `ENUMERATED_PUBLIC_REPOS=68`, or the 57 records from a search total of 83. Do not flip Q-FUNC-002/003 from `NOT_BUILT` to built without a module-surface audit and a SUPERSEDES proof. Do not rename Q-FUNC-004 to `os-family-constitution-map` in the lock without an operator decision. Green CI on `cf436025` is not a full-portfolio function audit. No tag. No archive flag.
+
 ## Residual notes from Sweep-252 / adl-function-census
 
 Do not re-lock `SNAPSHOT_DATE`, `ENUMERATED_PUBLIC_REPOS=68`, or the 57 records from a search total of 83. Do not flip Q-FUNC-002/003 from `NOT_BUILT` to built without a module-surface audit and a SUPERSEDES proof. Do not rename Q-FUNC-004 to `os-family-constitution-map` in the lock without an operator decision. No tag. No archive flag.

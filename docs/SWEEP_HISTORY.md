@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-252 close — PASS-2026-10-06-252
+
+- Timestamp: 2026-10-06 20:10Z. Closes the missing contract file for Sweep-252. Does not replace the Sweep-252 paragraph below.
+- The paragraph below still says Actions CI was pending at the first governance write. That sentence is preserved.
+- Later governance commit e5929da33ace0785198c3a8deb60d8df7a69a4a2 message claims CI success was recorded. This close re-fetched the runs rather than trusting that message.
+- Actions run 37523436410 conclusion failure on bb02151d1a84aff48e558b19a26be96637f0fc8a. Job step `python -m pytest -q` failed. Engine steps succeeded.
+- Actions run 37523474651 conclusion success on 9d6e31221ab741ad4e33f87618869a81bf3566a6. updated_at 2026-10-06T20:03:06Z.
+- Actions run 37523527567 conclusion success on cf4360256753214f682576a7418ed7f8cd600d1f. updated_at 2026-10-06T20:03:31Z.
+- Independent local pytest on cf4360256753214f682576a7418ed7f8cd600d1f: 17 passed. Not an Actions conclusion.
+- Lock unchanged: snapshot 2026-09-05, enumerated 68, locked 57. Q-FUNC-002/003 remain NOT_BUILT. No tag. No archive flag. No claim elevation.
+- Pass file: `docs/passes/PASS-2026-10-06-252.yaml`.
+
+
 ## Sweep-252 — 2026-10-06 randomized draw adl-function-census
 
 - Timestamp: 2026-10-06 20:02Z. Scope: one random repository from the search payload of 83 names. Draw: `random.Random(20261006).choice` over the 82 names excluding `ADL-Governance` → `adl-function-census`.
