@@ -1,0 +1,88 @@
+PASS:
+  id: PASS-2026-10-06-248
+  parent_pass: PASS-2026-10-06-247
+  parent_note: Sweep-248 was indexed in SWEEP_HISTORY before this contract file existed. This pass closes that record.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived for the full portfolio. Not invented.
+OBJECTIVE:
+  id: GAP-WARE-CHECKS-CI-CLOSE
+  description: Re-fetch the checks workflow on -ware-constant-derivation and persist the missing contract pass. Do not elevate the 0.08 claim.
+  reason_selected: Sweep-248 left CI in_progress and had no docs/passes contract file. Operator-gated form-data pin remains blocked.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83, incomplete_results false. Inherited inventory from Sweep-247/248. Not re-counted as public_repos.
+    - Repository -ware-constant-derivation head 6dc4bac0e903a3f222129f98cb6eb9de14125505.
+    - Checks run 37508336942 conclusion success on 31974415d1eb1d7183d2c9422196ddc502fe2bca.
+    - Checks run 37508389427 conclusion success on 6dc4bac0e903a3f222129f98cb6eb9de14125505. updated_at 2026-10-06T18:04:32Z.
+    - Local re-run on the same head: pytest 13 passed; runner checks=9 failed=0.
+    - Proof 15A I_star = 7.4815333862070243. I_star - 0.08 = 7.4015333862070243. experimental_validation false.
+    - GitHub About text still claims a derivation of W≈0.08. README and CLAIM_STATUS.md contradict that. Not edited.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-248.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this governance commit
+  prior_subject_commits:
+    - 31974415d1eb1d7183d2c9422196ddc502fe2bca
+    - 6dc4bac0e903a3f222129f98cb6eb9de14125505
+  capabilities_added_or_changed:
+    - -ware-constant-derivation checks workflow observed concluded success. Not a new capability in this commit.
+VERIFICATION:
+  tests_run:
+    - local pytest -q on 6dc4bac0: 13 passed
+    - local python run_derivation_checks.py on 6dc4bac0: checks=9 failed=0
+    - GitHub Actions checks run 37508336942: success
+    - GitHub Actions checks run 37508389427: success
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: CI conclusion recorded. Portfolio exit criteria still fail. 0.08 is not derived.
+KNOWLEDGE:
+  confirmed:
+    - Both user checks runs on main completed with conclusion success.
+    - Local runner and pytest agree with that conclusion on head 6dc4bac0.
+    - I_star is not 0.08.
+  failures:
+    - Sweep-248 history line that CI was in_progress is stale. Preserved; closure is this pass.
+  decisions:
+    - Do not edit the GitHub description. No description-update tool was used. Operator queue keeps the replacement sentence.
+    - Do not tag, archive, delete, or rewrite history.
+    - Do not treat a green checks run as a measurement of 0.08.
+REMAINING:
+  incomplete:
+    - GitHub About text still overclaims W≈0.08.
+    - form-data pin to 4.0.4 or newer not applied.
+    - Archive flags for recommended ARCHIVED repositories not flipped.
+    - BlockSwarm v0.5.0-sagf tag not created.
+    - seem-completion-pass not merged.
+  blockers:
+    - Operator must approve lockfile bump and secret rotation.
+    - Operator must approve About-text replacement.
+  new_gaps:
+    - GAP-WARE-ABOUT-TEXT: description mismatch remains operator-only.
+NEXT:
+  objective_id: GAP-DD-FORMDATA-PIN
+  action: Operator-gated bump of form-data in digital_double/package-lock.json to >= 4.0.4, then re-fetch alert 13. If still blocked, next autonomous slice is a fresh randomized audit of one repository that has no checks workflow, without claim elevation.
+  reason: Alert 13 remains the named portfolio blocker. This pass did not close it.
+  prerequisites:
+    - Operator approval before any lockfile edit.
+PROVENANCE:
+  state_commit: this governance commit
+  evidence:
+    - Actions run 37508336942 conclusion success
+    - Actions run 37508389427 conclusion success
+    - local pytest 13 passed
+    - local runner checks=9 failed=0
+    - I_star 7.4815333862070243

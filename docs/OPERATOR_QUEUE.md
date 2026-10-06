@@ -2,15 +2,15 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Residual notes from Sweep-248
+## Residual notes from Sweep-248 / PASS-2026-10-06-248
 
 Random draw: `-ware-constant-derivation`. RESEARCH. Claim not elevated. No tag. No archive.
+
+Checks runs concluded **success**: 37508336942 on `31974415`, 37508389427 on `6dc4bac0` (updated_at 2026-10-06T18:04:32Z). Local re-run on that head: pytest 13 passed; runner checks=9 failed=0. \(I_* = 7.4815333862070243\), not 0.08. Do not treat a green run as a measurement of 0.08 or as a release.
 
 **Description mismatch (operator-only):** GitHub About text still says the repository is a rigorous derivation of \(W \approx 0.08\) from the Coherence Drive thrust target and fractal LDOS asymmetry. In-tree `README.md` and `CLAIM_STATUS.md` say 0.08 is not derived, thrust is not validated, and the pinch cubic is circular. Replace the About text with a claim-capped sentence. Do not rewrite history to hide the old description.
 
 Suggested replacement: `Claim-capped checks for constant-W identities. Does not derive W ≈ 0.08. Experimental validation false.`
-
-CI workflow `.github/workflows/checks.yml` was added. Do not treat a green run as a measurement of 0.08 or as a release.
 
 ## Residual notes from Sweep-247
 
@@ -45,5 +45,5 @@ Inventory 83 search / 78 public_repos / 9 private / 0 forks. Do not delete repos
 - **The-Origin-Point-Hypothesis. license:** absent. Operator-only.
 - **sovereign-clean-room branch** `seem-completion-pass`: not merged.
 - **aegis-repo-graph catalog expansion:** operator-only.
-- **`-ware-constant-derivation` About text:** overclaims 0.08. Operator-only description edit.
+- **`-ware-constant-derivation` About text:** overclaims 0.08. Operator-only description edit. CI success does not close this.
 - Product tags, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.

@@ -1,5 +1,13 @@
 # Sweep History
 
+## Sweep-248 close — PASS-2026-10-06-248
+
+- Timestamp: 2026-10-06 18:10Z. Closes the missing contract file for Sweep-248. Does not replace the original Sweep-248 paragraph below.
+- Checks run 37508336942 conclusion success on `31974415`. Checks run 37508389427 conclusion success on `6dc4bac0`. updated_at 2026-10-06T18:04:32Z.
+- Independent local re-run on `6dc4bac0`: pytest 13 passed; runner `checks=9 failed=0`. \(I_* = 7.4815333862070243\). Distance to 0.08 is 7.4015333862070243.
+- Green CI is not a derivation of 0.08 and is not a release. About text still overclaims. Not edited.
+- Pass file: `docs/passes/PASS-2026-10-06-248.yaml`.
+
 ## Sweep-248 — 2026-10-06 randomized draw `-ware-constant-derivation`
 
 - Timestamp: 2026-10-06 18:04Z. Scope: one random repository from the search payload of 83 names. Draw: `-ware-constant-derivation` via `random.SystemRandom`.
@@ -11,6 +19,7 @@
 - CI: run 37508336942 was in_progress on `31974415` when recorded. Not marked green. A second push for README will schedule another run.
 - No deletion. No history rewrite. No archive flag. No tag. No claim elevation.
 - Termination conditions not met (description mismatch, CI not concluded, open 0.08 claim).
+- Closure: CI conclusion was recorded later in PASS-2026-10-06-248. The in_progress sentence is retained as the state at 18:04Z.
 
 ## Sweep-247 — 2026-10-06 Digital Double Dependabot #13
 
@@ -26,6 +35,10 @@
 - Actions performed: governance documentation only. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
 - Pass file: `docs/passes/PASS-2026-10-06-247.yaml`.
 - Portfolio exit criteria not met. Stop.
+
+## Index / PASS-2026-10-06-248
+
+Contract file is `docs/passes/PASS-2026-10-06-248.yaml`.
 
 ## Index / PASS-2026-10-06-247
 
