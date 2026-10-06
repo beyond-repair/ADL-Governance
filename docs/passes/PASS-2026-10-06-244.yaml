@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-06-244
+  parent_pass: PASS-2026-10-06-243
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived from product code. Not invented.
+OBJECTIVE:
+  id: GAP-ATOMICNEXUS-CI-UNOBSERVED
+  description: Fetch Actions conclusions for AtomicNexusAI Sweep-242 heads and re-verify the four mandated repositories without elevating claims.
+  reason_selected: PASS-2026-10-06-243 named this as the next objective. The user Master Directive also required live verification of forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. public_repos 78.
+    - Search user:beyond-repair total_count 83 incomplete_results false. Page 2 empty.
+    - AtomicNexusAI head 663df6a76400a1c5ef36bc3bceedfd270cca2881. CI/CD Pipeline run 37492591479 success. Security Audit run 37492591448 success. Deploy run 37492591439 failure.
+    - forge-aegis main e7188d529739652a2dd6264bd3d328c1f72e60e5. Run 37258127100 success. Releases empty. Code scanning 404.
+    - sovereign-clean-room main 4878918cf9f95d3c19e1890bef6d2fd6713e0a16. Latest fetched Python-test runs are on seem-completion-pass. Releases empty.
+    - BlockSwarm main 6e90f6f85c0969fa8a262a70ceba833d618a22db. Foundry run 36859452185 success. Releases empty.
+    - Digital_Double_virtual_workforce main 24e6a29fd26c03900a8d98634d6683996eabdac4. CI run 36861489156 success. Releases empty. Dependabot #13 not re-fetched.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/passes/PASS-2026-10-06-244.yaml
+  commits: []
+  capabilities_added_or_changed:
+    - governance record only
+VERIFICATION:
+  tests_run:
+    - Actions fetch only. Local pytest not run.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Documentation sweep. Exit criteria for portfolio termination not met. Stop.
+KNOWLEDGE:
+  confirmed:
+    - AtomicNexusAI test pipeline succeeded on the Sweep-242 head.
+    - AtomicNexusAI deploy workflow failed on the same head.
+    - Four mandated heads match the prior recorded SHAs.
+  failures:
+    - Deploy workflow failure is unresolved.
+    - Portfolio termination criteria failed.
+  decisions:
+    - Do not archive, tag, delete, or rewrite history.
+    - Do not mark Dependabot #13 fixed.
+    - Do not treat Actions success as product completion.
+REMAINING:
+  incomplete:
+    - Portfolio termination not met.
+    - Digital_Double Dependabot #13 not re-fetched.
+    - AtomicNexusAI deploy failure unexplained.
+  blockers: []
+  new_gaps:
+    - GAP-ATOMICNEXUS-DEPLOY-FAILURE: run 37492591439 failed on 663df6a7.
+NEXT:
+  objective_id: GAP-ATOMICNEXUS-DEPLOY-FAILURE
+  action: Fetch the failed Deploy Atomic Nexus AI job log for run 37492591439. Record the failure reason. Do not treat it as a release. Do not edit the workflow unless the log shows a deterministic docs-only break.
+  reason: The test pipeline gap is closed. The deploy failure is the newest unverified red conclusion on that head.
+  prerequisites:
+    - Actions job log available for run 37492591439
+PROVENANCE:
+  state_commit: 85e5e8131769b9cfb0c016e720dbaa24e6e299f9
+  evidence:
+    - github search total_count 83
+    - Actions runs cited in DISCOVERY
