@@ -1,0 +1,56 @@
+id: PASS-2026-10-06-253
+sweep: 253
+timestamp: 2026-10-06T20:11:00Z
+scope: user:beyond-repair master-directive completion sweep
+inventory:
+  search_total_count: 83
+  incomplete_results: false
+  profile_public_repos: 78
+  private_in_payload: 9
+  github_archived_true: [CFT-v3.0]
+mandatory_verification:
+  forge-aegis:
+    ci_run: 37258127100
+    conclusion: success
+    sha: e7188d529739652a2dd6264bd3d328c1f72e60e5
+    releases: empty
+    tags: empty
+    dependabot_open: empty
+    code_scanning: 404 no analysis
+    secret_scanning_open: empty
+  sovereign-clean-room:
+    ci_run: 37064696194
+    conclusion: success
+    sha: 4878918cf9f95d3c19e1890bef6d2fd6713e0a16
+    branch: main
+    releases: empty
+    tags: empty
+    dependabot_open: empty
+  BlockSwarm:
+    ci_run: 36859452185
+    conclusion: success
+    sha: 6e90f6f85c0969fa8a262a70ceba833d618a22db
+    releases: empty
+    tags: empty
+    v0_5_0_sagf: absent
+    dependabot_open: empty
+  Digital_Double_virtual_workforce:
+    ci_run: 36861489156
+    conclusion: success
+    sha: 24e6a29fd26c03900a8d98634d6683996eabdac4
+    releases: empty
+    tags: empty
+    dependabot_alert_13: open
+    advisory: GHSA-fjxv-7rqg-78g4
+    severity: critical
+actions:
+  - governance documentation only
+forbidden_not_done:
+  - repository deletion
+  - history rewrite
+  - archive flag
+  - tag creation
+  - lockfile edit
+  - claim elevation
+exit_criteria_met: false
+stop: true
