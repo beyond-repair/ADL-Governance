@@ -1,0 +1,93 @@
+PASS:
+  id: PASS-2026-10-06-254
+  parent_pass: PASS-2026-10-06-253
+  parent_note: Sweep-254 subject commits and SWEEP_HISTORY existed before this contract file. This pass closes that record. It does not re-implement CFTv3.3-IQG-Unified-Framework.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived for the full portfolio. Not invented. Search total_count 83 inherited from Sweep-253/254; not re-paged this close.
+OBJECTIVE:
+  id: GAP-SWEEP-254-CONTRACT
+  description: Persist the missing nested contract for the CFTv3.3-IQG-Unified-Framework research draw and re-fetch the cited Actions run. Do not promote the ledger to ACTIVE or treat docs-ci as physics validation.
+  reason_selected: Sweep-254 changed CFTv3.3-IQG-Unified-Framework and governance docs but left no docs/passes contract. The checker requires a persisted id and a heading that names it. Operator-gated form-data pin remains blocked.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Search inventory 83 names inherited. Profile public_repos 78 at earlier discovery. Not re-paged this close.
+    - ADL-Governance main before this contract was 985476de57590abd046ad826396d354424c3bf33. Message Sweep-254 record CFTv3.3-IQG-Unified-Framework reconfirm.
+    - docs/passes/PASS-2026-10-06-254.yaml was absent at that head.
+    - Existing Sweep-254 heading did not match the checker pattern requiring " / PASS-2026-10-06-254".
+    - CFTv3.3-IQG-Unified-Framework head 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace. Message Sweep-254 note symbol-lock reconfirm in README. Date 2026-10-06T21:03:33Z.
+    - Actions docs-ci run 37531114934 conclusion success on that sha. status completed. updated_at 2026-10-06T21:03:47Z. html_url https://github.com/beyond-repair/CFTv3.3-IQG-Unified-Framework/actions/runs/37531114934.
+    - Classification remains RESEARCH. Claim not elevated. Bullet Model D and SPARC O(1) not closed by this file.
+    - governance-ci run 37531275753 conclusion failure on 985476de. Cause: truncated SWEEP_HISTORY headings no longer name persisted pass ids.
+    - Index headings were added from existing canonical filenames. No historical pass body was invented.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-254.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this_commit
+  prior_subject_commits:
+    - 638e7a6e2a42fd15d54ad2f02b2fd3c65ab22686
+    - 9978b882073cb61738e11642faca05acbbb2501f
+    - 1e5938544678f0de2ab30e03e877971511efeb08
+    - 6cdc295d260cfe193a5f2855e7195179f04f4740
+    - 3ad221324287c197b99d6c5f521e2ca40385d850
+    - 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace
+    - 985476de57590abd046ad826396d354424c3bf33
+  capabilities_added_or_changed:
+    - None. Contract persistence only. CFTv3.3-IQG-Unified-Framework remains RESEARCH. Claim not elevated.
+VERIFICATION:
+  tests_run:
+    - GitHub Actions docs-ci 37531114934: success on 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace
+    - local scripts/check_passes.py on patched tree: PASS (70 yaml files parsed; headings name all ids including PASS-2026-10-06-254)
+    - local pytest tests/test_check_passes.py: 17 passed
+    - GitHub Actions governance-ci 37531275753: failure on prior head 985476de57590abd046ad826396d354424c3bf33 (missing headings; not this commit)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Contract gap closed and cited docs-ci re-fetched. Green docs-ci is not physics validation. Portfolio exit criteria still fail. No claim elevation.
+KNOWLEDGE:
+  confirmed:
+    - Head 5e7e5ba9 docs-ci run completed with conclusion success.
+    - Pass file PASS-2026-10-06-254.yaml was absent at governance head 985476de.
+  failures:
+    - Sweep-254 history implied a recorded sweep without a checker-visible pass id. Preserved; closure is this file plus the required heading.
+  decisions:
+    - Do not tag, archive, delete, rewrite history, merge, or edit the CFT ledger.
+    - Do not treat docs-ci run 37531114934 as experimental confirmation of W or thrust.
+    - Do not re-count capabilities_known.
+    - Do not re-fetch Digital_Double alert 13 in this close.
+REMAINING:
+  incomplete:
+    - form-data pin to 4.0.4 or newer not applied. Alert 13 not re-fetched this pass.
+    - Archive flags for recommended ARCHIVED repositories not flipped.
+    - BlockSwarm v0.5.0-sagf tag not created.
+    - Bullet Model D and local SPARC O(1) remain open research.
+    - Physics executables remain out of the CFT ledger tree by design.
+  blockers:
+    - Operator must approve lockfile bump and secret rotation.
+    - Operator must approve archive flags and release tags.
+  new_gaps:
+    - GAP-SWEEP-254-CONTRACT closed by this file.
+NEXT:
+  objective_id: GAP-DD-FORMDATA-PIN
+  action: If operator approval is absent, audit one repository that has no checks workflow, without claim elevation, and persist the pass file in the same execution.
+  reason: Alert 13 remains the named portfolio blocker and is operator-gated. The next autonomous slice must not invent a lockfile edit.
+  prerequisites:
+    - Operator approval before any lockfile edit.
+PROVENANCE:
+  state_commit: this_commit
+  evidence:
+    - Actions run 37531114934 conclusion success on 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace
+    - governance head before close 985476de57590abd046ad826396d354424c3bf33
+    - pass file absent before this close

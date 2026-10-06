@@ -1,5 +1,9 @@
 # Operator Queue
 
+## Residual notes from Sweep-254 close / PASS-2026-10-06-254
+
+Contract file was absent until this close. Do not treat the close as a new physics result. Do not archive CFTv3.3-IQG-Unified-Framework. Do not promote it to ACTIVE. Green docs-ci run 37531114934 remains a documentation check only.
+
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
 ## Residual notes from Sweep-254

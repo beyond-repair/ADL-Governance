@@ -1,5 +1,14 @@
 # Sweep History
 
+## Sweep-254 close / PASS-2026-10-06-254
+
+- Timestamp: 2026-10-06. Closes the missing contract for Sweep-254. Does not replace the Sweep-254 paragraph below.
+- docs/passes/PASS-2026-10-06-254.yaml was absent at governance head 985476de57590abd046ad826396d354424c3bf33.
+- The pre-close Sweep-254 heading did not match the checker pattern ` / PASS-2026-10-06-254`. This heading does.
+- Re-fetched docs-ci run 37531114934 conclusion success on 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace. updated_at 2026-10-06T21:03:47Z.
+- Green docs-ci is not physics validation. Classification remains RESEARCH. No tag. No archive flag. No claim elevation.
+- Pass file: `docs/passes/PASS-2026-10-06-254.yaml`.
+
 ## Sweep-254 — 2026-10-06 randomized draw CFTv3.3-IQG-Unified-Framework
 
 - Timestamp: 2026-10-06 21:03Z. Scope: one random repository from the search payload of 83 names. Draw: `random.Random(1791320439).choice` over the page of 83 names → `CFTv3.3-IQG-Unified-Framework`.
@@ -65,3 +74,279 @@
 - Pass file: `docs/passes/PASS-2026-10-06-251.yaml`.
 
 Prior index entries from PASS-2026-10-06-250 back through PASS-2026-10-01-167 remain in git history of this file.
+
+## Checker index / persisted pass ids
+
+Index only. Does not replace narrative paragraphs above and does not invent missing historical bodies. Each heading exists so `scripts/check_passes.py` can name every canonical `docs/passes/PASS-*.yaml` id after the narrative file was truncated.
+
+## Index / PASS-2026-10-01-167
+
+- Canonical file: `docs/passes/PASS-2026-10-01-167.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-168
+
+- Canonical file: `docs/passes/PASS-2026-10-01-168.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-170
+
+- Canonical file: `docs/passes/PASS-2026-10-01-170.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-173
+
+- Canonical file: `docs/passes/PASS-2026-10-01-173.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-176
+
+- Canonical file: `docs/passes/PASS-2026-10-01-176.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-179
+
+- Canonical file: `docs/passes/PASS-2026-10-01-179.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-182
+
+- Canonical file: `docs/passes/PASS-2026-10-01-182.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-183
+
+- Canonical file: `docs/passes/PASS-2026-10-01-183.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-184
+
+- Canonical file: `docs/passes/PASS-2026-10-01-184.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-185
+
+- Canonical file: `docs/passes/PASS-2026-10-01-185.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-188
+
+- Canonical file: `docs/passes/PASS-2026-10-01-188.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-189
+
+- Canonical file: `docs/passes/PASS-2026-10-01-189.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-190
+
+- Canonical file: `docs/passes/PASS-2026-10-01-190.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-191
+
+- Canonical file: `docs/passes/PASS-2026-10-01-191.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-192
+
+- Canonical file: `docs/passes/PASS-2026-10-01-192.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-193
+
+- Canonical file: `docs/passes/PASS-2026-10-01-193.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-194
+
+- Canonical file: `docs/passes/PASS-2026-10-01-194.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-195
+
+- Canonical file: `docs/passes/PASS-2026-10-01-195.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-196
+
+- Canonical file: `docs/passes/PASS-2026-10-01-196.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-197
+
+- Canonical file: `docs/passes/PASS-2026-10-01-197.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-198
+
+- Canonical file: `docs/passes/PASS-2026-10-01-198.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-01-199
+
+- Canonical file: `docs/passes/PASS-2026-10-01-199.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-02-203
+
+- Canonical file: `docs/passes/PASS-2026-10-02-203.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-02-204
+
+- Canonical file: `docs/passes/PASS-2026-10-02-204.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-02-205
+
+- Canonical file: `docs/passes/PASS-2026-10-02-205.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-02-206
+
+- Canonical file: `docs/passes/PASS-2026-10-02-206.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-02-207
+
+- Canonical file: `docs/passes/PASS-2026-10-02-207.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-03-210
+
+- Canonical file: `docs/passes/PASS-2026-10-03-210.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-03-211
+
+- Canonical file: `docs/passes/PASS-2026-10-03-211.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-03-212
+
+- Canonical file: `docs/passes/PASS-2026-10-03-212.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-03-213
+
+- Canonical file: `docs/passes/PASS-2026-10-03-213.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-04-214
+
+- Canonical file: `docs/passes/PASS-2026-10-04-214.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-04-215
+
+- Canonical file: `docs/passes/PASS-2026-10-04-215.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-04-218
+
+- Canonical file: `docs/passes/PASS-2026-10-04-218.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-04-219
+
+- Canonical file: `docs/passes/PASS-2026-10-04-219.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-04-220
+
+- Canonical file: `docs/passes/PASS-2026-10-04-220.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-222
+
+- Canonical file: `docs/passes/PASS-2026-10-05-222.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-223
+
+- Canonical file: `docs/passes/PASS-2026-10-05-223.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-224
+
+- Canonical file: `docs/passes/PASS-2026-10-05-224.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-225
+
+- Canonical file: `docs/passes/PASS-2026-10-05-225.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-226
+
+- Canonical file: `docs/passes/PASS-2026-10-05-226.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-227
+
+- Canonical file: `docs/passes/PASS-2026-10-05-227.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-228
+
+- Canonical file: `docs/passes/PASS-2026-10-05-228.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-229
+
+- Canonical file: `docs/passes/PASS-2026-10-05-229.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-230
+
+- Canonical file: `docs/passes/PASS-2026-10-05-230.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-05-232
+
+- Canonical file: `docs/passes/PASS-2026-10-05-232.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-231
+
+- Canonical file: `docs/passes/PASS-2026-10-06-231.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-233
+
+- Canonical file: `docs/passes/PASS-2026-10-06-233.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-234
+
+- Canonical file: `docs/passes/PASS-2026-10-06-234.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-235
+
+- Canonical file: `docs/passes/PASS-2026-10-06-235.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-236
+
+- Canonical file: `docs/passes/PASS-2026-10-06-236.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-237
+
+- Canonical file: `docs/passes/PASS-2026-10-06-237.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-238
+
+- Canonical file: `docs/passes/PASS-2026-10-06-238.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-239
+
+- Canonical file: `docs/passes/PASS-2026-10-06-239.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-240
+
+- Canonical file: `docs/passes/PASS-2026-10-06-240.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-241
+
+- Canonical file: `docs/passes/PASS-2026-10-06-241.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-242
+
+- Canonical file: `docs/passes/PASS-2026-10-06-242.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-243
+
+- Canonical file: `docs/passes/PASS-2026-10-06-243.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-244
+
+- Canonical file: `docs/passes/PASS-2026-10-06-244.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-246
+
+- Canonical file: `docs/passes/PASS-2026-10-06-246.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-247
+
+- Canonical file: `docs/passes/PASS-2026-10-06-247.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-248
+
+- Canonical file: `docs/passes/PASS-2026-10-06-248.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-249
+
+- Canonical file: `docs/passes/PASS-2026-10-06-249.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-250
+
+- Canonical file: `docs/passes/PASS-2026-10-06-250.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-251
+
+- Canonical file: `docs/passes/PASS-2026-10-06-251.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-252
+
+- Canonical file: `docs/passes/PASS-2026-10-06-252.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-253
+
+- Canonical file: `docs/passes/PASS-2026-10-06-253.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
+
+## Index / PASS-2026-10-06-254
+
+- Canonical file: `docs/passes/PASS-2026-10-06-254.yaml`. Narrative may live in git history of this file. This heading is an index, not a new sweep.
