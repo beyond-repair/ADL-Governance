@@ -1,0 +1,14 @@
+id: PASS-2026-10-05-230
+subject: The-Origin-Point-Hypothesis.
+classification: RESEARCH
+claim_cap: 1
+pre_tree: f46deb8ddbdb369c823bc573a2d7730fb3857979
+head: 7c669b46534063906b9649ef1e39e8b9acd08211
+ci_success: 37407105315
+ci_intermediate_failure: 37407059857
+local_tests: pytest 3 passed
+historical_pdf: retained_unverified
+archive: false
+tag: false
+claim_elevation: false
+note: Active TeX no longer states SPARC validation. Portfolio termination not met.
