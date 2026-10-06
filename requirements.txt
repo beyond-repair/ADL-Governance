@@ -1,4 +1,5 @@
 # Runtime pin matches .github/workflows/governance-ci.yml (do not edit that file from this repair).
 pyyaml==6.0.2
 # Local tests. CI runs scripts/check_passes.py only.
-pytest==8.3.5
+# Bumped for GHSA-6w46-j5rx-g56g / CVE-2025-71176 (first patched 9.0.3).
+pytest==9.0.3

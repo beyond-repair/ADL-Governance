@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-06-243
+  parent_pass: PASS-2026-10-06-242
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived from product code in this pass. Not invented.
+OBJECTIVE:
+  id: GAP-DEPENDABOT-GOVERNANCE-PYTEST
+  description: Bump the ADL-Governance pytest pin from 8.3.5 to the advisory patched identifier 9.0.3 and re-run local governance tests.
+  reason_selected: PASS-2026-10-06-240 named this as the next non-operator gap. Dependabot alert #1 was re-fetched and still open. Sweep-242 did not close it.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair. Search total_count 83 from the prior reconstructed sweep. Not re-listed in this pass.
+    - Latest prior pass file is PASS-2026-10-06-242 on AtomicNexusAI. It did not close the pytest alert.
+    - ADL-Governance Dependabot alert #1 open. Package pytest. Manifest requirements.txt. Vulnerable range less than 9.0.3. First patched identifier 9.0.3. GHSA-6w46-j5rx-g56g. CVE-2025-71176.
+    - requirements.txt pinned pytest==8.3.5. governance-ci.yml was not the manifest named by the alert.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - requirements.txt
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/passes/PASS-2026-10-06-243.yaml
+  commits:
+    - pending_push
+  capabilities_added_or_changed:
+    - governance test pin moved to pytest 9.0.3
+VERIFICATION:
+  tests_run:
+    - python3 -m pytest -q tests/test_check_passes.py with pytest 9.0.3: 17 passed
+    - python3 scripts/check_passes.py before this file: PASS on 59 yaml files including PASS-2026-10-06-242
+    - python3 scripts/check_passes.py after this file: PASS on 60 yaml files including PASS-2026-10-06-243
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: Local tests passed on the patched pin. Remote Dependabot state and governance-ci on the new commit were not observed.
+KNOWLEDGE:
+  confirmed:
+    - Alert #1 was open against pytest 8.3.5 before the pin change.
+    - pytest 9.0.3 ran the existing governance unit tests with 17 passed.
+  failures:
+    - None in local tests. Remote alert closure is not yet evidence.
+  decisions:
+    - Do not edit governance-ci.yml.
+    - Do not claim the Dependabot alert fixed until GitHub reports it fixed.
+    - Do not archive, tag, or rewrite history.
+REMAINING:
+  incomplete:
+    - Dependabot alert #1 closure not observed.
+    - Portfolio termination not met.
+  blockers: []
+  new_gaps:
+    - GAP-ATOMICNEXUS-CI-UNOBSERVED: Sweep-242 workflow change has no fetched Actions conclusion.
+NEXT:
+  objective_id: GAP-ATOMICNEXUS-CI-UNOBSERVED
+  action: Fetch Actions runs for AtomicNexusAI after commits 453b36085ef8d4c9ea195f1889980232c268d0ee, 35850a059a8c12c23948aad6c15ba2810c722cce, and 663df6a76400a1c5ef36bc3bceedfd270cca2881. Record the conclusion. Do not edit the workflow again unless the fetched run fails.
+  reason: Sweep-242 explicitly left remote CI unobserved. That is the newest unverified product change.
+  prerequisites:
+    - Actions list or run fetch available for AtomicNexusAI
+PROVENANCE:
+  state_commit: pending_push
+  evidence:
+    - Dependabot alert #1 open before pin change
+    - local pytest 9.0.3 tests/test_check_passes.py 17 passed
+    - local scripts/check_passes.py PASS on 60 yaml files after this record was added
