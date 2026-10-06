@@ -1,31 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-05 (Sweep-226)
-**Project / Version:** ADL Portfolio Governance / Sweep-226
-**Objective:** Random repository completion cycle on `Code_Generation_AI_Program`.
+**Updated:** 2026-10-05 (Sweep-227)
+**Project / Version:** ADL Portfolio Governance / Sweep-227
+**Objective:** Random repository completion cycle on `ADL-Portfolio-Census`.
 **Authenticated owner:** `beyond-repair` (id 132061760)
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
-**Assumptions:** A1 user Master Directive v3.0. A2 GitHub search `user:beyond-repair` (`total_count` 83, `incomplete_results` false) plus Actions, releases, tags, branches, Dependabot, secret-scanning, and code-scanning API reads on 2026-10-05. A3 classifications outside the Phase-3 set are inherited from the registry and prior sweeps; they were not re-proven from trees this cycle.
+**Assumptions:** A1 user Master Directive. A2 GitHub search `user:beyond-repair` (`total_count` 83, `incomplete_results` false) on 2026-10-05. A4 selection seed SHA256("sweep-227|2026-10-05T22:00-04:00|beyond-repair")[:8] = 3572448024; pool excluded `ADL-Governance` and Sweep-226 subject `Code_Generation_AI_Program`. A3 prior classifications inherited.
 
-## Sweep-226 subject
+## Sweep-227 subject
 
 | Field | Value |
 |-------|--------|
-| Repo | `Code_Generation_AI_Program` |
+| Repo | `ADL-Portfolio-Census` |
 | Visibility | public |
 | Default branch | `main` |
-| Pre-tree | `63d47ab0b912aef754bc6cc32b43b87234cb699a` (1 blob, `README.md`, not truncated) |
-| Workflow commit | `f362a9612971503f07e0599247f2e3708ef36809` |
-| Classification | **ARCHIVED** (recommended; reconfirmed) |
-| Claim | 0 |
+| Pre-tree | `b4a292b9ae02ba5c764cba337b7fa628456eee55` (17 entries, not truncated) |
+| Workflow commit | `ce6d830ed077b3254e9a8f4381a9ec62f16ff3ac` |
+| Classification | **RESEARCH** (reconfirmed) |
+| Claim | ≤1 (locked 2026-09-04 snapshot; not live completeness) |
 | Successor | none |
 | GitHub archived | false |
-| Local tests | pytest 2 passed |
-| CI | inventory run 37386093314 success on `f362a961` |
+| Local tests | pytest 14 passed |
+| CI | run 37402259409 success on `ce6d830` |
 | Releases / tags | not created |
 
-No generator, model, dataset, API client, or dependency manifest was present before this sweep. Inventory test and CI added. Not tagged. Not archived. Not promoted.
+Snapshot rows remain 42. Search total 83 was not merged into `INVENTORY`. `aegis-repo-graph` stays `not_built` in the locked compatible-build queue. Dependabot alert #1 open (pytest GHSA-6w46-j5rx-g56g / CVE-2025-71176, medium, `requirements.txt`). Not patched. Not tagged. Not archived. Not promoted.
 
 ## Census
 
@@ -120,7 +120,7 @@ Evidence label for non-Phase-3 rows: inherited classification, metadata re-read 
 | `adl-function-census` | RESEARCH | Governance | Python | 2026-10-02 | public | flag-false |
 | `ADL-Governance` | ACTIVE | Governance | Python | 2026-10-05 | public | flag-false |
 | `ADL-Nexus` | RESEARCH | Research | Python | 2026-10-02 | public | flag-false |
-| `ADL-Portfolio-Census` | RESEARCH | Governance | Python | 2026-10-02 | public | flag-false |
+| `ADL-Portfolio-Census` | RESEARCH | Governance | Python | 2026-10-05 | public | flag-false |
 | `ADL-SEEM` | ACTIVE | Governance | — | 2026-10-02 | public | flag-false |
 | `AEGIS-Project-Nehemiah-` | ACTIVE | Agent Infrastructure | — | 2026-10-01 | public | flag-false |
 | `aegis-repo-graph` | RESEARCH | Governance | Python | 2026-10-02 | public | flag-false |
@@ -197,6 +197,6 @@ Evidence label for non-Phase-3 rows: inherited classification, metadata re-read 
 
 ## Exit
 
-Sweep-226 subject slice documented and claim-capped. Local tests passed. CI run 37386093314 success. Not tagged. Not archived. Not promoted.
+Sweep-227 subject slice documented and claim-capped. Local tests 14 passed. CI run 37402259409 success. Not tagged. Not archived. Not promoted.
 
-Phase-3 verified. Inventory has no undefined name in the 83-set. Exit criteria **not** met: critical Dependabot #13 open; archive flags unresolved; no product releases on canonical four; duplicate historical trees retained by rule; secret-scanning residual. Stop. Do not loop.
+Sweep-226 subject slice remains documented. Phase-3 verified. Inventory has no undefined name in the 83-set. Exit criteria **not** met: critical Dependabot #13 open; archive flags unresolved; no product releases on canonical four; duplicate historical trees retained by rule; secret-scanning residual. Stop. Do not loop.

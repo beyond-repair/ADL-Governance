@@ -1,5 +1,22 @@
 # Sweep History
 
+## Sweep-227 — 2026-10-05 random completion sweep
+
+- Selection: SHA256 seed `sweep-227|2026-10-05T22:00-04:00|beyond-repair` -> 3572448024. Pool of 81 names from search `user:beyond-repair` (`total_count=83`) excluding `ADL-Governance` and Sweep-226 subject `Code_Generation_AI_Program`. Choice: `ADL-Portfolio-Census`.
+- Subject: public, `main`, pre-tree `b4a292b9ae02ba5c764cba337b7fa628456eee55` (17 entries, not truncated).
+- Classification: **RESEARCH**. Claim ≤1. Not a live crawler. Not an 83-row completeness proof.
+- Discover: locked 42-row snapshot dated 2026-09-04, engine, pytest, CI workflow `ci.yml`.
+- Local tests: `pytest -q` 14 passed; `python -m census.engine` printed OK.
+- Actions: commit `ce6d830ed077b3254e9a8f4381a9ec62f16ff3ac` froze `SNAPSHOT_DATE` / `LOCKED_ROW_COUNT`, version 0.1.2, `SECURITY.md`, `docs/SWEEP-227.md`. Locked rows not rewritten. No tag. No archive. No history rewrite. No claim elevation.
+- CI: run 37402259409 success on `ce6d830`.
+- Residual: Dependabot #1 open (pytest GHSA-6w46-j5rx-g56g). Compatible-build status of `aegis-repo-graph` left `not_built`.
+- Exit: subject claim-capped and CI-green. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-227
+
+Body is the Sweep-227 section above.
+
+
 ## Sweep-226 — 2026-10-05 random completion sweep
 
 - Selection: `random.SystemRandom().choice` over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`).

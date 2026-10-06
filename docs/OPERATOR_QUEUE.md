@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-227
+
+`ADL-Portfolio-Census` reconfirmed RESEARCH / claim ≤1. CI run 37402259409 success on `ce6d830`. Dependabot alert #1 remains open: pytest GHSA-6w46-j5rx-g56g / CVE-2025-71176, medium, manifest `requirements.txt`. Not patched. Do not treat a green structural census as a dependency fix. No tag. No archive.
+
 ## Residual notes from Sweep-226
 
 `Code_Generation_AI_Program` reconfirmed ARCHIVED / claim 0. Inventory CI run 37386093314 success on `f362a961`. GitHub `archived` remains false. Operator may run `gh repo archive beyond-repair/Code_Generation_AI_Program --yes`. Not executed. Do not delete. Do not tag. No generator was added.
