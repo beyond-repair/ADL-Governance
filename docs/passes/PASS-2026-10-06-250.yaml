@@ -1,0 +1,86 @@
+PASS:
+  id: PASS-2026-10-06-250
+  parent_pass: PASS-2026-10-06-249
+  parent_note: Sweep-250 commits and SWEEP_HISTORY existed before this contract file. This pass closes that record. It does not re-implement RealityOS.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived for the full portfolio. Not invented. Inventory total_count 83 inherited from Sweep-249; not re-paged.
+OBJECTIVE:
+  id: GAP-SWEEP-250-CONTRACT
+  description: Persist the missing contract for the RealityOS research re-audit and re-fetch the cited Actions runs. Do not promote RealityOS.
+  reason_selected: Sweep-250 changed RealityOS and governance docs but left no docs/passes contract. The loop requires a persisted pass record. Operator-gated form-data pin remains blocked.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Search inventory 83 names inherited. Profile public_repos 78 at discovery.
+    - ADL-Governance main before this commit was 2006a694deb61172392a121ec1867d3c5c5cd4c5, message docs Sweep-250 RealityOS research re-audit.
+    - RealityOS head e36664a403c428838ffdeca6d3e5b714ff5dbc9b. Prior implement commit c93d446472c6e2e69d1b85644709d73dbd1e93a4.
+    - Actions run 37515916411 research-guard conclusion success, status completed, head c93d446472c6e2e69d1b85644709d73dbd1e93a4, updated_at 2026-10-06T19:02:35Z.
+    - Actions run 37515961844 research-guard conclusion success, status completed, head e36664a403c428838ffdeca6d3e5b714ff5dbc9b, updated_at 2026-10-06T19:02:56Z.
+    - CLAIM_STATUS.md still classifies RESEARCH, claim cap <= 1, persistence ABSENT, connectors ABSENT.
+    - Local pytest 17 passed is prior-sweep text only. Not re-executed in this pass.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-250.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  prior_subject_commits:
+    - c93d446472c6e2e69d1b85644709d73dbd1e93a4
+    - e36664a403c428838ffdeca6d3e5b714ff5dbc9b
+    - 2006a694deb61172392a121ec1867d3c5c5cd4c5
+  capabilities_added_or_changed:
+    - None. Contract persistence only. RealityOS remains RESEARCH / RUNNABLE SKETCH.
+VERIFICATION:
+  tests_run:
+    - GitHub Actions research-guard 37515916411: success on c93d4464
+    - GitHub Actions research-guard 37515961844: success on e36664a4
+    - local pytest: NOT_RUN this pass (prior claim 17 passed on 0f2a06f1 not re-executed)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Contract gap closed and cited CI re-fetched. Portfolio exit criteria still fail. RealityOS not promoted.
+KNOWLEDGE:
+  confirmed:
+    - Both cited RealityOS research-guard runs completed with conclusion success.
+    - CLAIM_STATUS.md does not claim persistence, connectors, or an operating system.
+  failures:
+    - Sweep-250 history line that a pass file existed was false until this commit. Preserved; closure is this file.
+  decisions:
+    - Do not tag, archive, delete, rewrite history, merge OS-family repos, or edit lockfiles.
+    - Do not treat green research-guard as ACTIVE readiness.
+    - Do not re-count capabilities_known.
+REMAINING:
+  incomplete:
+    - form-data pin to 4.0.4 or newer not applied. Alert 13 not re-fetched this pass.
+    - Archive flags for recommended ARCHIVED repositories not flipped.
+    - BlockSwarm v0.5.0-sagf tag not created.
+    - seem-completion-pass not merged.
+    - RealityOS has no auth and no persistence.
+  blockers:
+    - Operator must approve lockfile bump and secret rotation.
+    - Operator must approve archive flags and release tags.
+  new_gaps:
+    - GAP-SWEEP-250-CONTRACT closed by this file.
+NEXT:
+  objective_id: GAP-DD-FORMDATA-PIN
+  action: If operator approval is absent, audit one repository that has no checks workflow, without claim elevation, and persist the pass file in the same execution.
+  reason: Alert 13 remains the named portfolio blocker and is operator-gated. The next autonomous slice must not invent a lockfile edit.
+  prerequisites:
+    - Operator approval before any lockfile edit.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - Actions run 37515916411 conclusion success
+    - Actions run 37515961844 conclusion success
+    - CLAIM_STATUS.md at e36664a4
+    - SWEEP_HISTORY Sweep-250 paragraph at 2006a694

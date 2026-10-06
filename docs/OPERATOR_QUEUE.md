@@ -2,15 +2,15 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
-## Residual notes from Sweep-250
+## Residual notes from Sweep-250 close / PASS-2026-10-06-250
 
-`RealityOS` stays RESEARCH. No archive flag. No tag. No merge into LegionOS or Sovereign-OS. OS-family consolidation remains operator-only. Do not treat heuristic scenario output as a forecast.
+Contract file was missing after Sweep-250 and is now persisted. `RealityOS` stays RESEARCH. No archive flag. No tag. No merge into LegionOS or Sovereign-OS. OS-family consolidation remains operator-only. Do not treat heuristic scenario output as a forecast. Cited research-guard runs 37515916411 and 37515961844 were re-fetched success. Local pytest was not re-run in the close.
 
 ## Residual notes from Sweep-249 / PASS-2026-10-06-249
 
 Master-directive sweep. Search total_count 83. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit.
 
-**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-249; not re-fetched Sweep-250). Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Lockfile bump is operator-gated.
+**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-249; not re-fetched Sweep-250 or PASS-2026-10-06-250). Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Lockfile bump is operator-gated.
 
 High open page still includes js-yaml alerts 160 and 159 (GHSA-2883-xcg3-v3hh), browserslist 155 (GHSA-73wf-gq98-2v4g), nanoid 153 (GHSA-xwg4-73v4-xw9w). Dependabot branches exist and were not merged.
 

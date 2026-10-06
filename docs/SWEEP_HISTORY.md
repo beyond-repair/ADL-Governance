@@ -1,5 +1,14 @@
 # Sweep History
 
+## Sweep-250 close — PASS-2026-10-06-250
+
+- Timestamp: 2026-10-06 19:10Z. Closes the missing contract file for Sweep-250. Does not replace the Sweep-250 paragraph below.
+- Actions run 37515916411 conclusion success on `c93d446472c6e2e69d1b85644709d73dbd1e93a4`. updated_at 2026-10-06T19:02:35Z.
+- Actions run 37515961844 conclusion success on `e36664a403c428838ffdeca6d3e5b714ff5dbc9b`. updated_at 2026-10-06T19:02:56Z.
+- Local pytest 17 passed was not re-executed in this close. Prior-sweep text only.
+- RealityOS stays RESEARCH. No promotion. No tag. No archive flag.
+- Pass file: `docs/passes/PASS-2026-10-06-250.yaml`.
+
 ## Sweep-250 — 2026-10-06 randomized draw RealityOS
 
 - Timestamp: 2026-10-06 19:03Z. Scope: one random repository from the search payload of 83 names. Draw: `secrets.randbelow(83)` index 21 → `RealityOS`.
@@ -11,6 +20,7 @@
 - CI after implement: run 37515916411 success on `c93d4464`; run 37515961844 success on `e36664a4`.
 - Termination for this repo: tests and CI green; docs updated; unsupported OS claim rejected. ACTIVE promotion still false (no auth, no persistence, heuristic confidence). OS-family merge not executed.
 - Portfolio exit criteria remain unmet (inherited from Sweep-249).
+- Contract file was absent until PASS-2026-10-06-250.
 
 ## Sweep-249 — 2026-10-06 master directive completion sweep
 
