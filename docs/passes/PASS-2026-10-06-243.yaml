@@ -28,7 +28,7 @@ CHANGES:
     - docs/OPERATOR_QUEUE.md
     - docs/passes/PASS-2026-10-06-243.yaml
   commits:
-    - pending_push
+    - 48f4a2d3ab8aa88b77158a902b136740e55ef488
   capabilities_added_or_changed:
     - governance test pin moved to pytest 9.0.3
 VERIFICATION:
@@ -41,13 +41,13 @@ VERIFICATION:
   integration: NOT_RUN
   invariants: PASS
   overall: PASS
-  overall_note: Local tests passed on the patched pin. Remote Dependabot state and governance-ci on the new commit were not observed.
+  overall_note: Local tests passed on the patched pin. Remote Dependabot state and governance-ci on the new commit were not observed. History heading was not in commit 48f4a2d3; a follow-up commit adds it.
 KNOWLEDGE:
   confirmed:
     - Alert #1 was open against pytest 8.3.5 before the pin change.
     - pytest 9.0.3 ran the existing governance unit tests with 17 passed.
   failures:
-    - None in local tests. Remote alert closure is not yet evidence.
+    - First push omitted SWEEP_HISTORY.md and OPERATOR_QUEUE.md. Corrected in the follow-up commit, not by rewrite.
   decisions:
     - Do not edit governance-ci.yml.
     - Do not claim the Dependabot alert fixed until GitHub reports it fixed.
@@ -66,7 +66,7 @@ NEXT:
   prerequisites:
     - Actions list or run fetch available for AtomicNexusAI
 PROVENANCE:
-  state_commit: pending_push
+  state_commit: 48f4a2d3ab8aa88b77158a902b136740e55ef488
   evidence:
     - Dependabot alert #1 open before pin change
     - local pytest 9.0.3 tests/test_check_passes.py 17 passed
