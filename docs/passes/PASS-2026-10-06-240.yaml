@@ -31,7 +31,8 @@ CHANGES:
     - docs/passes/PASS-2026-10-06-235.yaml
     - docs/passes/PASS-2026-10-06-236.contract.yaml
     - docs/passes/PASS-2026-10-06-240.yaml
-  commits: []
+  commits:
+    - 0455e7238d439856b5db064a6bc4d277c39b5c05
   capabilities_added_or_changed:
     - pass checker accepts nested contract sidecars without treating them as the latest canonical pass
     - retained pass heading index restored without inventing sweep bodies
@@ -68,3 +69,9 @@ NEXT:
   reason: Local checks are not a substitute for the failing workflow.
   prerequisites:
     - commit exists on main
+PROVENANCE:
+  state_commit: 0455e7238d439856b5db064a6bc4d277c39b5c05
+  evidence:
+    - local scripts/check_passes.py PASS on 57 yaml files
+    - local pytest tests/test_check_passes.py 17 passed
+    - governance-ci run 37484562815 failure on c3606ff before this pass
