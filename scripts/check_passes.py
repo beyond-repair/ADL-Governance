@@ -11,6 +11,9 @@ or heading check. Accepts the two observed schemas:
   - nested PASS.id
   - flat sweep + date (PASS-168)
 
+docs/passes/HEADINGS.md is concatenated into the heading search when present.
+It is an index supplement. It does not replace SWEEP_HISTORY.md.
+
 Usage:
   python scripts/check_passes.py [ROOT]
 
@@ -94,6 +97,14 @@ def check_file(path: Path) -> None:
     raise SystemExit(f"{path.name}: neither nested PASS schema nor flat sweep schema nor preserved stub")
 
 
+def heading_body(root: Path, history: Path) -> str:
+    body = history.read_text(encoding="utf-8")
+    extra = root / "docs" / "passes" / "HEADINGS.md"
+    if extra.is_file():
+        body = body + "\n" + extra.read_text(encoding="utf-8")
+    return body
+
+
 def main(argv: list[str] | None = None) -> int:
     args = list(sys.argv[1:] if argv is None else argv)
     if len(args) > 1:
@@ -120,7 +131,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     ids = [pass_id_from_name(path.name) for path in canonical]
     latest = latest_id([path.name for path in canonical])
-    body = history.read_text(encoding="utf-8")
+    body = heading_body(root, history)
     named = set(HEADING.findall(body))
     missing = [pass_id for pass_id in ids if pass_id not in named]
     if missing:
