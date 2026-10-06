@@ -1,5 +1,31 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-06 (Sweep-254; 21:04Z)
+**Project / Version:** ADL Portfolio Governance / Sweep-254
+**Objective:** Random repository completion cycle for `CFTv3.3-IQG-Unified-Framework`.
+**Draw:** `random.Random(1791320439).choice` over search payload of 83 names.
+**Classification:** RESEARCH. Claim ≤ 2. Not elevated.
+**Head:** `5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace`. docs-ci run 37531114934 success (2026-10-06T21:03:47Z).
+**Meaning of green CI:** file and symbol-string lock only. Not SPARC, not Bullet Cluster, not a thruster measurement.
+
+## Sweep-254 selected repo
+
+| Item | State |
+|------|--------|
+| Class | RESEARCH (canonical CFT symbol ledger; CFT-v3.0 / CFT-v3.1 remain SUPERSEDED pointers) |
+| Termination | NOT MET |
+| Frozen weight | `W(n)=0.08 e^{0.23(n-3)}` string-locked |
+| Deprecated | `0.23(n-1)` still labeled deprecated |
+| Bullet Cluster | FAIL retained |
+| Physics executables | none in this tree (by design) |
+| Tags / releases | not created |
+| Archive flag | false (do not archive while it is the ledger) |
+
+Portfolio exit criteria remain unmet. Digital Double alert 13 was not re-fetched.
+
+---
+
+
 **Updated:** 2026-10-06 (Sweep-253; 20:11Z)
 **Project / Version:** ADL Portfolio Governance / Sweep-253
 **Objective:** One governed master-directive sweep. Discover the account, re-verify the four named repositories, classify without elevating claims, update governance docs, stop.
