@@ -1,0 +1,18 @@
+schema: adl-pass
+sweep: 233
+date: 2026-10-06
+subject: sunder
+classification: RESEARCH
+claim_max: 1
+pre_tree: c7d4596c13b8aa0e672b40db94edc6655512b385
+commits:
+  - 5420df0afbf638c5a0ea4c9abf634a246fb1af15
+  - e6d501635f17a59723dd89fbd611e08070422ecd
+local_tests: pytest 20 passed
+ci_prior: 37068992419 success
+ci_new: pending at governance write
+tag: false
+archive: false
+claim_elevation: false
+incident: README placeholder overwritten then restored
+exit: subject claim-capped; portfolio termination not met
