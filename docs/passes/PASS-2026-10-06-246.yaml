@@ -34,6 +34,11 @@ CHANGES:
     - ADL-Governance/docs/PORTFOLIO_STATUS_REPORT.md
   commits:
     - 45a68454b2b661e38ac4abd728dc2bcf0b8f663b
+    - f7ec8a0d10a261b4fff2a3b5d507db6b5abef5fa
+    - 0f9c8f3e4a955d898a13b83ca16ab1b5b08f64d9
+    - 47767e57d90353b70e04248045fdce9e28035689
+    - 2825458c71f7b44ee366f177a7a9964e703365a9
+    - ba36b228320c08da8037c65c8de2548dbcf51180
   capabilities_added_or_changed:
     - deploy job invocation changed from ./deploy.sh to bash deploy.sh
     - claim cap unchanged at 0
@@ -53,6 +58,7 @@ KNOWLEDGE:
     - deploy.sh does not perform a production deploy.
   failures:
     - Direct ./deploy.sh execution failed run 37492591439.
+    - SWEEP_HISTORY working copy no longer inlines index lines older than 244. Recoverable from blob c16e2da9366e64c99b83d94366ebd51a142e1815.
   decisions:
     - Use bash deploy.sh rather than a contents-API mode change, because the file API used here does not set 100755.
     - Do not archive, tag, delete, or rewrite history.
@@ -71,7 +77,7 @@ NEXT:
   prerequisites:
     - Actions run for head 45a68454b2b661e38ac4abd728dc2bcf0b8f663b exists
 PROVENANCE:
-  state_commit: pending-governance-docs
+  state_commit: ba36b228320c08da8037c65c8de2548dbcf51180
   evidence:
     - Actions run 37492591439 conclusion failure
     - job 112368862487 log exit 126
