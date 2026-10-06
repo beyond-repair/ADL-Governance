@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-10-06-259
+  parent_pass: PASS-2026-10-06-257
+  parent_note: PASS-2026-10-06-258.yaml is a master-directive stub (stop true, governance documentation only) and does not close GAP-Q-FUNC-005-LINEAGE. Parent for this slice is the basilisk NEXT in PASS-257.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived. Search user:beyond-repair total_count 83 incomplete_results false at 2026-10-06 discovery. Not a full re-page of every tree.
+OBJECTIVE:
+  id: GAP-Q-FUNC-005-LINEAGE
+  description: Record whether a claim-capped workforce lineage map can be added without a lockfile edit or a merge, and do not create workforce-lineage-graph if a SUPERSEDES edge is already asserted.
+  reason_selected: Explicit NEXT of PASS-2026-10-06-257. Operator archive, secret, license, and form-data pin actions were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - digital-double query returned six names: Digital_Double_virtual_workforce, Digital-Double_Mobile, digital-double-mobile, DigitalDoubleVirtualWorkforce3.5, and private Digital_Double_Virtual_Workforce_4. and Digital_Double_Virtual_Workforce_4.2.
+    - Digital_Double_virtual_workforce root includes CANONICAL.md, docs/MIGRATION.md, package-lock.json, and pyproject.toml. Lockfile not opened for edit.
+    - CANONICAL.md says this repo is the public canonical entry and says to treat other Digital Double repos as SUPERSEDED or archive targets.
+    - docs/MIGRATION.md lists DigitalDoubleVirtualWorkforce3.5 as SUPERSEDED, Digital_Double_Virtual_Workforce_4. as Archive stub, digital-double-mobile / Digital-Double_Mobile as Satellite or archive, and private 4.2 as merge-when-ready.
+    - digital-double-mobile root includes SUPERSEDED.md, CLAIM_STATUS.md, and package-lock.json. SUPERSEDED.md classification SUPERSEDED, claim 0, canonical Digital_Double_virtual_workforce. CLAIM_STATUS.md successor Digital_Double_virtual_workforce. Archive flag is operator-only. Secret scanning alert noted there was not re-fetched.
+    - adl-function-census still records Q-FUNC-005 workforce-lineage-graph NOT_BUILT. No workforce-lineage-graph repository was found in the digital-double name search.
+    - Names are distinct. A SUPERSEDES-style edge is already asserted in product prose. The PASS-257 create condition (distinct names and no SUPERSEDES edge) is therefore not met.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-259.yaml
+    - docs/passes/HEADINGS.md
+  commits: []
+  capabilities_added_or_changed:
+    - None. Refusal recorded. workforce-lineage-graph not created. Q-FUNC-005 remains NOT_BUILT. No product tree edited.
+VERIFICATION:
+  tests_run:
+    - Local YAML parse of this contract before push. Nested keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present.
+    - Product tests not run. No product file changed.
+    - Lockfiles not edited. No merge performed.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: The slice is a verified refusal, not a built lineage graph. Portfolio exit criteria still fail. This stamp commit SHA is not embedded.
+KNOWLEDGE:
+  confirmed:
+    - Distinct Digital Double repository names exist.
+    - SUPERSEDES prose already exists in Digital_Double_virtual_workforce CANONICAL.md and MIGRATION.md and in digital-double-mobile SUPERSEDED.md and CLAIM_STATUS.md.
+    - Creating workforce-lineage-graph under a no-SUPERSEDES contract would contradict those files.
+  failures:
+    - Cannot close Q-FUNC-005 by creating a no-edge graph without first withdrawing or reconciling the existing supersession prose. That withdrawal was not authorized.
+  decisions:
+    - REUSE existing governance persistence. Do not CREATE workforce-lineage-graph this pass.
+    - Do not assert a new typed SUPERSEDES edge.
+    - Do not edit package-lock.json in either product repo.
+    - Do not merge private 4.2.
+    - Do not flip archive flags.
+    - Do not treat CANONICAL.md ACTIVE candidate as VERIFIED.
+REMAINING:
+  incomplete:
+    - Q-FUNC-005 remains NOT_BUILT.
+    - Digital-Double_Mobile versus digital-double-mobile identity not tree-compared.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and any withdrawal of existing SUPERSEDED prose.
+  new_gaps:
+    - GAP-DD-MOBILE-NAME-COLLISION: Digital-Double_Mobile and digital-double-mobile are distinct names and were not tree-compared.
+NEXT:
+  objective_id: GAP-DD-MOBILE-NAME-COLLISION
+  action: Read only the Digital-Double_Mobile default-branch root and any SUPERSEDED or README claim file. Record whether it is the same tree identity as digital-double-mobile. Do not create a repository. Do not edit lockfiles. Do not merge.
+  reason: Highest-value remaining lineage fact that does not require operator approval or a SUPERSEDES withdrawal.
+  prerequisites:
+    - No lockfile edit.
+    - No claim elevation.
+    - No new repository.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - Digital_Double_virtual_workforce CANONICAL.md and docs/MIGRATION.md on default branch
+    - digital-double-mobile SUPERSEDED.md and CLAIM_STATUS.md on default branch
+    - Search user:beyond-repair total_count 83
+    - adl-function-census Q-FUNC-005 status NOT_BUILT
