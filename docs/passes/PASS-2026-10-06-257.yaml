@@ -28,41 +28,53 @@ CHANGES:
     - ExoAxis-1/RESEARCH.md
     - docs/passes/PASS-2026-10-06-257.yaml
     - docs/passes/PASS-2026-10-06-256.yaml
-    - docs/SWEEP_HISTORY.md
-    - docs/OPERATOR_QUEUE.md
-    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/passes/HEADINGS.md
+    - scripts/check_passes.py
   commits:
     - 6cef3bc031d0345e262d00a97703ce2488511537
+    - 9ee6f76312d74db6716987bcd9568311c351612e
+    - b7ec8d45cfa76897759ba04e31bb5048bb18c231
+    - ac8155d65362670dc22095991048263d67dc15f2
   capabilities_added_or_changed:
     - ExoAxis-1 docs-ci presence check. RESEARCH retained. Claim not elevated. Not a pharmacology implementation.
+    - check_passes.py also reads docs/passes/HEADINGS.md. SWEEP_HISTORY.md narrative was not rewritten.
 VERIFICATION:
   tests_run:
     - GitHub Actions docs-ci run 37539258870 conclusion success on 6cef3bc031d0345e262d00a97703ce2488511537 updated 2026-10-06T22:14:14Z
+    - local scripts/check_passes.py PASS (73 yaml files; headings name PASS-2026-10-06-257)
+    - local pytest tests/test_check_passes.py 17 passed
+    - GitHub Actions governance-ci 37539454483 failure on 9ee6f763 (headings absent)
+    - GitHub Actions governance-ci 37539535913 failure on b7ec8d45 (HEADINGS.md not yet read by checker)
+    - GitHub Actions governance-ci 37539577385 conclusion success on ac8155d65362670dc22095991048263d67dc15f2 updated 2026-10-06T22:17:08Z
   code_review: NOT_RUN
   security: NOT_RUN
   integration: NOT_RUN
   invariants: PASS
   overall: PASS WITH FINDINGS
-  overall_note: Presence CI succeeded. It is not clinical or pharmacology validation. Portfolio exit criteria still fail.
+  overall_note: Presence CI succeeded. It is not clinical or pharmacology validation. Portfolio exit criteria still fail. This stamp commit is not yet the cited governance-ci head.
 KNOWLEDGE:
   confirmed:
     - ExoAxis-1 docs-ci run 37539258870 completed with conclusion success.
     - Pre-sweep tree had no workflow.
+    - governance-ci 37539577385 succeeded after the checker learned to read HEADINGS.md.
   failures:
-    - Sweep-256 left no pass contract. Closed by PASS-2026-10-06-256.yaml in this execution.
+    - Sweep-256 left no pass contract. Closed by PASS-2026-10-06-256.yaml.
+    - Two governance-ci runs failed before the checker supplement. Preserved.
   decisions:
     - Do not add synthesis, dose, or manufacturing content.
     - Do not promote ExoAxis-1 to ACTIVE.
     - Do not re-fetch Digital Double alert 13 in this pass.
+    - Do not replace SWEEP_HISTORY.md narrative in this pass.
 REMAINING:
   incomplete:
     - Executable pharmacology still absent.
     - Q-FUNC-004 and Q-FUNC-005 remain NOT_BUILT.
     - form-data pin not applied.
+    - SWEEP_HISTORY.md does not itself contain the Sweep-257 heading. The supplement file does.
   blockers:
     - Operator must approve lockfile bump, archive flags, and release tags.
   new_gaps:
-    - GAP-SWEEP-256-CONTRACT closed by the sibling file in this commit.
+    - GAP-HISTORY-PREPEND-257: narrative file was not prepended because a full-file rewrite was avoided.
 NEXT:
   objective_id: GAP-Q-FUNC-005-LINEAGE
   action: Read Digital_Double_virtual_workforce and digital-double-mobile trees only far enough to record whether a claim-capped lineage map can be added without a lockfile edit or a merge. Do not create workforce-lineage-graph unless the existing names are distinct and no SUPERSEDES edge is asserted.
@@ -71,7 +83,9 @@ NEXT:
     - No lockfile edit.
     - No claim elevation.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: ac8155d65362670dc22095991048263d67dc15f2
+  stamp_note: This file update is a later commit. Its own SHA is not embedded.
   evidence:
     - https://github.com/beyond-repair/ExoAxis-1/actions/runs/37539258870
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/37539577385
     - ExoAxis-1 commit 6cef3bc031d0345e262d00a97703ce2488511537
