@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-248 — 2026-10-06 randomized draw `-ware-constant-derivation`
+
+- Timestamp: 2026-10-06 18:04Z. Scope: one random repository from the search payload of 83 names. Draw: `-ware-constant-derivation` via `random.SystemRandom`.
+- Classification: RESEARCH. Justification: `CLAIM_STATUS.md` already sets RESEARCH, claim ≤ 2, product status runnable sketch, experimental/thrust/energy flags false. Not reclassified. Not elevated.
+- Discovery: 71 tree entries at `294a31820dc1e64a7bb485f4ebe4277d99e7d983`. Python verifiers, pytest, pyproject, no user Actions workflow. Proof 15A present and outside `CHECKS`.
+- Audit: GitHub description still says W≈0.08 is derived from a thrust target. README and claim lock say the opposite. Unsupported description queued, not rewritten here (no description-edit tool used).
+- Local verification: pytest 12 passed on the pre-change clone; 13 passed after wiring Proof 15A. Runner `checks=9 failed=0`. \(I_*\approx 7.4815333862070243\), distance to 0.08 about 7.40. Not a derivation of 0.08.
+- Implement: commit `31974415d1eb1d7183d2c9422196ddc502fe2bca` adds `.github/workflows/checks.yml`, includes `verify_proof_15A_secular` in the runner and package module list, and adds a non-0.08 assertion. README commit `6dc4bac0e903a3f222129f98cb6eb9de14125505` documents that coverage.
+- CI: run 37508336942 was in_progress on `31974415` when recorded. Not marked green. A second push for README will schedule another run.
+- No deletion. No history rewrite. No archive flag. No tag. No claim elevation.
+- Termination conditions not met (description mismatch, CI not concluded, open 0.08 claim).
+
 ## Sweep-247 — 2026-10-06 Digital Double Dependabot #13
 
 - Timestamp: 2026-10-06 17:15Z. Scope: named next gap from PASS-2026-10-06-246, plus mandatory four re-fetch. One sweep. No loop.
