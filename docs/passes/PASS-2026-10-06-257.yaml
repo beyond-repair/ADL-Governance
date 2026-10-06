@@ -1,60 +1,91 @@
-id: PASS-2026-10-06-257
-sweep: 257
-timestamp: 2026-10-06T22:20:00Z
-scope: user:beyond-repair master-directive completion sweep
-inventory:
-  search_total_count: 83
-  incomplete_results: false
-  items: 83
-  private_in_payload: 9
-  github_archived_true: [CFT-v3.0]
-  size_zero: [automate_passive_income, Quantumclustering]
-governance_head_read: ac8155d65362670dc22095991048263d67dc15f2
-mandatory_verification:
-  forge-aegis:
-    ci_run: 37258127100
-    conclusion: success
-    sha: e7188d529739652a2dd6264bd3d328c1f72e60e5
-    releases: empty
-    tags: empty
-    dependabot_open: empty
-    code_scanning: 404 no analysis
-    secret_scanning_open: empty
-  sovereign-clean-room:
-    ci_run: 37064696194
-    conclusion: success
-    sha: 4878918cf9f95d3c19e1890bef6d2fd6713e0a16
-    branch: main
-    unmerged_branch_run: 37215829476
-    releases: empty
-    tags: empty
-    dependabot_open: empty
-  BlockSwarm:
-    ci_run: 36859452185
-    conclusion: success
-    sha: 6e90f6f85c0969fa8a262a70ceba833d618a22db
-    releases: empty
-    tags: empty
-    v0_5_0_sagf: absent
-    dependabot_open: empty
-  Digital_Double_virtual_workforce:
-    ci_run: 36861489156
-    conclusion: success
-    sha: 24e6a29fd26c03900a8d98634d6683996eabdac4
-    releases: empty
-    tags: empty
-    dependabot_alert_13: open
-    advisory: GHSA-fjxv-7rqg-78g4
-    severity: critical
-    code_scanning: 404 no analysis
-actions:
-  - governance documentation only
-forbidden_not_done:
-  - repository deletion
-  - history rewrite
-  - archive flag
-  - tag creation
-  - lockfile edit
-  - claim elevation
-exit_criteria_met: false
-stop: true
+PASS:
+  id: PASS-2026-10-06-257
+  parent_pass: PASS-2026-10-06-256
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived. Search total_count 83 inherited from Sweep-255/256. Not re-paged.
+OBJECTIVE:
+  id: GAP-NO-WORKFLOW-EXOAXIS
+  description: Audit one repository with no checks workflow and add a docs-only presence check without claim elevation.
+  reason_selected: PASS-2026-10-06-254 NEXT named this slice because the form-data pin is operator-gated. ExoAxis-1 had README, RESEARCH.md, and LICENSE only.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair id 132061760. Inventory search total_count 83 inherited.
+    - ADL-Governance head before this file was c553b1dd0e2f533c5bed1be1d1097cf8745ce2d6 (Sweep-256). PASS-2026-10-06-256.yaml was absent.
+    - ExoAxis-1 pre-sweep head 72957022135437a6782c126f62f5fc7b46508c9f. Files README.md, RESEARCH.md, LICENSE. No workflow. Sweep-085 lock retained.
+    - No src, dose.md, or synthesis.md.
+CHANGES:
+  repositories:
+    - beyond-repair/ExoAxis-1
+    - beyond-repair/ADL-Governance
+  files:
+    - ExoAxis-1/.github/workflows/ci.yml
+    - ExoAxis-1/RESEARCH.md
+    - docs/passes/PASS-2026-10-06-257.yaml
+    - docs/passes/PASS-2026-10-06-256.yaml
+    - docs/passes/HEADINGS.md
+    - scripts/check_passes.py
+  commits:
+    - 6cef3bc031d0345e262d00a97703ce2488511537
+    - 9ee6f76312d74db6716987bcd9568311c351612e
+    - b7ec8d45cfa76897759ba04e31bb5048bb18c231
+    - ac8155d65362670dc22095991048263d67dc15f2
+  capabilities_added_or_changed:
+    - ExoAxis-1 docs-ci presence check. RESEARCH retained. Claim not elevated. Not a pharmacology implementation.
+    - check_passes.py also reads docs/passes/HEADINGS.md. SWEEP_HISTORY.md narrative was not rewritten.
+VERIFICATION:
+  tests_run:
+    - GitHub Actions docs-ci run 37539258870 conclusion success on 6cef3bc031d0345e262d00a97703ce2488511537 updated 2026-10-06T22:14:14Z
+    - local scripts/check_passes.py PASS (73 yaml files; headings name PASS-2026-10-06-257)
+    - local pytest tests/test_check_passes.py 17 passed
+    - GitHub Actions governance-ci 37539454483 failure on 9ee6f763 (headings absent)
+    - GitHub Actions governance-ci 37539535913 failure on b7ec8d45 (HEADINGS.md not yet read by checker)
+    - GitHub Actions governance-ci 37539577385 conclusion success on ac8155d65362670dc22095991048263d67dc15f2 updated 2026-10-06T22:17:08Z
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS WITH FINDINGS
+  overall_note: Presence CI succeeded. It is not clinical or pharmacology validation. Portfolio exit criteria still fail. This stamp commit is not yet the cited governance-ci head.
+KNOWLEDGE:
+  confirmed:
+    - ExoAxis-1 docs-ci run 37539258870 completed with conclusion success.
+    - Pre-sweep tree had no workflow.
+    - governance-ci 37539577385 succeeded after the checker learned to read HEADINGS.md.
+  failures:
+    - Sweep-256 left no pass contract. Closed by PASS-2026-10-06-256.yaml.
+    - Two governance-ci runs failed before the checker supplement. Preserved.
+  decisions:
+    - Do not add synthesis, dose, or manufacturing content.
+    - Do not promote ExoAxis-1 to ACTIVE.
+    - Do not re-fetch Digital Double alert 13 in this pass.
+    - Do not replace SWEEP_HISTORY.md narrative in this pass.
+REMAINING:
+  incomplete:
+    - Executable pharmacology still absent.
+    - Q-FUNC-004 and Q-FUNC-005 remain NOT_BUILT.
+    - form-data pin not applied.
+    - SWEEP_HISTORY.md does not itself contain the Sweep-257 heading. The supplement file does.
+  blockers:
+    - Operator must approve lockfile bump, archive flags, and release tags.
+  new_gaps:
+    - GAP-HISTORY-PREPEND-257: narrative file was not prepended because a full-file rewrite was avoided.
+NEXT:
+  objective_id: GAP-Q-FUNC-005-LINEAGE
+  action: Read Digital_Double_virtual_workforce and digital-double-mobile trees only far enough to record whether a claim-capped lineage map can be added without a lockfile edit or a merge. Do not create workforce-lineage-graph unless the existing names are distinct and no SUPERSEDES edge is asserted.
+  reason: Q-FUNC-005 remains NOT_BUILT and is the named non-operator gap after this docs-ci slice.
+  prerequisites:
+    - No lockfile edit.
+    - No claim elevation.
+PROVENANCE:
+  state_commit: ac8155d65362670dc22095991048263d67dc15f2
+  stamp_note: This file update is a later commit. Its own SHA is not embedded.
+  evidence:
+    - https://github.com/beyond-repair/ExoAxis-1/actions/runs/37539258870
+    - https://github.com/beyond-repair/ADL-Governance/actions/runs/37539577385
+    - ExoAxis-1 commit 6cef3bc031d0345e262d00a97703ce2488511537

@@ -1,46 +1,46 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-06 (Sweep-257; 22:20Z)
-**Project / Version:** ADL Portfolio Governance / Sweep-257
+**Updated:** 2026-10-06 (Sweep-258; 22:20Z)
+**Project / Version:** ADL Portfolio Governance / Sweep-258
 **Objective:** One governed master-directive sweep. Discover the account, re-verify the four named repositories, classify without elevating claims, update governance docs, stop.
 **Search:** `user:beyond-repair` `total_count` 83, `incomplete_results` false, items 83.
 **Governing source read:** `beyond-repair/ADL-Governance` at `ac8155d65362670dc22095991048263d67dc15f2`
 **Evidence rule:** Code > Documentation > Roadmap.
-**Assumptions:** A1 user directive forbids deletion, history rewrite, and unverified completion. A2 search payload is the inventory. A3 non-mandatory classes are inherited from `docs/repository_registry.md` and were not re-audited tree-by-tree in Sweep-257.
+**Assumptions:** A1 user directive forbids deletion, history rewrite, and unverified completion. A2 search payload is the inventory. A3 non-mandatory classes are inherited from `docs/repository_registry.md` and were not re-audited tree-by-tree in Sweep-258.
 
-## Sweep-257 result
+## Sweep-258 result
 
 Exit criteria: **not met**. Sweep stopped. No repository deleted. No history rewritten. No archive flag flipped. No tag created. No lockfile edited. No claim elevated.
 
-Mandatory live verification was re-fetched in Sweep-257 for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Actions conclusions are not local test executions. Branches were not re-listed.
+Mandatory live verification was re-fetched in Sweep-258 for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Actions conclusions are not local test executions. Branches were not re-listed.
 
-| Repo | Class | Readiness | CI (Sweep-257) | Releases | Tags | Security |
+| Repo | Class | Readiness | CI (Sweep-258) | Releases | Tags | Security |
 |------|-------|-----------|-----------------|----------|------|----------|
 | forge-aegis | ACTIVE (software sketch; not a host product) | PASS WITH FINDINGS | workflow `forge-aegis CI`. Latest main run 37258127100 success on `e7188d529739652a2dd6264bd3d328c1f72e60e5` (updated 2026-10-05T03:07:36Z). | empty | empty | Dependabot open empty. Code scanning 404 (no analysis). Secret scanning open empty. |
 | sovereign-clean-room | ACTIVE (VSA completeness UNVERIFIED) | PASS WITH FINDINGS | Main Python tests run 37064696194 success on `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` (updated 2026-10-02T21:05:44Z). Latest listed run 37215829476 success on `seem-completion-pass` `d6f13042`, not merged. | empty | empty | Dependabot open empty. |
 | BlockSwarm | ACTIVE (SAGF substrate; no release) | PASS WITH FINDINGS | Foundry run 36859452185 success on main `6e90f6f85c0969fa8a262a70ceba833d618a22db` (updated 2026-10-01T12:05:48Z). | empty | empty. `v0.5.0-sagf` absent. | Dependabot open empty. |
 | Digital_Double_virtual_workforce | ACTIVE canonical surface; readiness FAIL | FAIL | Digital Double CI run 36861489156 success on main `24e6a29fd26c03900a8d98634d6683996eabdac4` (updated 2026-10-01T12:24:12Z). | empty | empty | Dependabot alert 13 **open**. npm `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Code scanning 404. |
 
-## Capability matrix (mandatory four only; verified Sweep-257)
+## Capability matrix (mandatory four only; verified Sweep-258)
 
 | Feature | State |
 |---------|--------|
-| forge-aegis CI on main head `e7188d52` | VERIFIED (Actions success, Sweep-257) |
+| forge-aegis CI on main head `e7188d52` | VERIFIED (Actions success, Sweep-258) |
 | forge-aegis host-integrity product | UNVERIFIED (claim cap remains software sketch) |
-| sovereign-clean-room Python tests on main `4878918c` | VERIFIED (Actions success, Sweep-257) |
+| sovereign-clean-room Python tests on main `4878918c` | VERIFIED (Actions success, Sweep-258) |
 | sovereign-clean-room VSA completeness | UNVERIFIED |
-| BlockSwarm Foundry on main `6e90f6f8` | VERIFIED (Actions success, Sweep-257) |
+| BlockSwarm Foundry on main `6e90f6f8` | VERIFIED (Actions success, Sweep-258) |
 | BlockSwarm release `v0.5.0-sagf` | PLANNED / absent |
-| Digital Double CI on main `24e6a29f` | VERIFIED (Actions success, Sweep-257) |
-| Digital Double critical form-data fix | UNVERIFIED (alert 13 open as of Sweep-257) |
+| Digital Double CI on main `24e6a29f` | VERIFIED (Actions success, Sweep-258) |
+| Digital Double critical form-data fix | UNVERIFIED (alert 13 open as of Sweep-258) |
 
 ## Inventory
 
 83 names from search. GitHub `archived=true` only for `CFT-v3.0`. Private in payload (9): `Digital_Double_Virtual_Workforce_4.2`, `CFT-v3.0`, `Digital_Double_Virtual_Workforce_4.`, `blacksite`, `potential-garbanzo`, `SovereignOS`, `test`, `mendthegame`, `atomicdreamlabs`. Size 0: `automate_passive_income`, `Quantumclustering`.
 
-### ACTIVE (7, inherited; four re-verified in Sweep-257)
+### ACTIVE (7, inherited; four re-verified in Sweep-258)
 
-ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah- (spec sibling; not re-verified Sweep-257), BlockSwarm, Digital_Double_virtual_workforce, forge-aegis, sovereign-clean-room.
+ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah- (spec sibling; not re-verified Sweep-258), BlockSwarm, Digital_Double_virtual_workforce, forge-aegis, sovereign-clean-room.
 
 ### SUPERSEDED (14, inherited; not re-audited)
 
@@ -68,7 +68,7 @@ Internal edges below are registry or README relationships. They are not import-g
 
 External, verified this sweep only where listed:
 
-- Digital_Double_virtual_workforce → npm `form-data` (Dependabot alert 13, re-fetched Sweep-257)
+- Digital_Double_virtual_workforce → npm `form-data` (Dependabot alert 13, re-fetched Sweep-258)
 - BlockSwarm → forge-std v1.9.4 and OpenZeppelin v4.9.6 (prior Foundry CI message; submodules not re-cloned)
 
 Cycles: not proven. Orphans: size-0 `automate_passive_income` and `Quantumclustering` are archive candidates, not canonical owners. Duplicate infrastructure remains governed under SUPERSEDED; no extraction performed.
@@ -104,7 +104,7 @@ Cycles: not proven. Orphans: size-0 `automate_passive_income` and `Quantumcluste
 
 Synergy (not an integration claim): forge-aegis, BlockSwarm, sovereign-clean-room, and Digital Double are adjacent building blocks for AEGIS, SAGF, Cold Boot, Digital Double, and a governance layer. Immediate integration is not evidenced. Medium-term work is operator-gated alert remediation and tag decisions. Long-term OS / Legion / OmniWealth / AI Legion convergence remains RESEARCH.
 
-Sweep-257 stop. Do not loop.
+Sweep-258 stop. Do not loop.
 
 ---
 
