@@ -1,5 +1,20 @@
 # Operator Queue
 
+## Residual notes from Sweep-255 / PASS-2026-10-06-255
+
+Master-directive sweep. Search total_count 83. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
+
+**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-255). Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Lockfile bump is operator-gated.
+
+forge-aegis code scanning list returned 404 no analysis. Secret scanning open list empty. Dependabot open empty for forge-aegis, sovereign-clean-room, and BlockSwarm.
+
+Tags lists for forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce were empty. Releases empty. Do not create `v0.5.0-sagf` without a release decision. README lineage text is not a tag.
+
+`seem-completion-pass` not merged. Do not merge from this queue.
+
+GraphQL issues list for Digital Double returned totalCount 0 while search `open_issues_count` was 5. Do not treat either figure as closure of alert 13. High non-critical Dependabot page was not re-fetched.
+
+
 ## Residual notes from Sweep-254 close / PASS-2026-10-06-254
 
 Contract file was absent until this close. Do not treat the close as a new physics result. Do not archive CFTv3.3-IQG-Unified-Framework. Do not promote it to ACTIVE. Green docs-ci run 37531114934 remains a documentation check only.
