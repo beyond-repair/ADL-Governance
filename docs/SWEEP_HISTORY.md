@@ -1,5 +1,26 @@
 # Sweep History
 
+## Sweep-257 — 2026-10-06 master directive completion sweep
+
+- Timestamp: 2026-10-06 (session clock 22:15 EDT / 22:15Z recorded as 22:20Z governance stamp). Scope: one governed sweep of `user:beyond-repair`. Discovery via authenticated search `user:beyond-repair`, `total_count` 83, `incomplete_results` false, item length 83. Private in payload: 9. GitHub `archived=true`: `CFT-v3.0` only. Size 0: `automate_passive_income`, `Quantumclustering`.
+- Governance head at read: `ac8155d65362670dc22095991048263d67dc15f2`. Prior sweep on file: Sweep-256.
+- Mandatory live verification re-fetched. No tree tests executed. Actions conclusions are not local pytest results. Branches were not re-listed.
+- forge-aegis: workflow `forge-aegis CI` run 37258127100 success on main `e7188d529739652a2dd6264bd3d328c1f72e60e5` (updated 2026-10-05T03:07:36Z). Releases empty. Tags empty. Dependabot open empty. Code scanning 404 no analysis. Secret scanning open empty.
+- sovereign-clean-room: main push Python tests run 37064696194 success on `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` (updated 2026-10-02T21:05:44Z). Latest listed run 37215829476 success on `seem-completion-pass` `d6f13042`, not merged. Releases empty. Tags empty. Dependabot open empty.
+- BlockSwarm: Foundry run 36859452185 success on main `6e90f6f85c0969fa8a262a70ceba833d618a22db` (updated 2026-10-01T12:05:48Z). Releases empty. Tags empty. `v0.5.0-sagf` absent from the tags API. Dependabot open empty.
+- Digital_Double_virtual_workforce: Digital Double CI push run 36861489156 success on main `24e6a29fd26c03900a8d98634d6683996eabdac4` (updated 2026-10-01T12:24:12Z). Releases empty. Tags empty. Dependabot alert 13 re-fetched open: npm `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Code scanning 404 no analysis. Readiness FAIL.
+- Classifications: all 83 names remain assigned. Non-mandatory classes inherited from `docs/repository_registry.md` / Sweep-256. No claim elevation.
+- Actions performed: governance documentation only (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`, `docs/passes/PASS-2026-10-06-257.yaml`).
+- No deletion. No history rewrite. No archive flag. No tag. No lockfile edit.
+- Exit criteria not met (critical alert open, product tags absent, archive candidates unflagged, duplicate families retained as governed SUPERSEDED/RESEARCH, non-mandatory trees not re-audited). Stop. Do not loop.
+- Pass file: `docs/passes/PASS-2026-10-06-257.yaml`.
+
+## Index / PASS-2026-10-06-257
+
+- Canonical file: `docs/passes/PASS-2026-10-06-257.yaml`. Narrative is the Sweep-257 paragraph above.
+
+# Sweep History
+
 ## Sweep-256 — 2026-10-06 randomized draw seem-identity-unifier
 
 - Timestamp: 2026-10-06 22:05Z. Scope: one random repository from the search payload of 83 names. Draw: `random.Random(1791325001).choice` → `seem-identity-unifier`.
