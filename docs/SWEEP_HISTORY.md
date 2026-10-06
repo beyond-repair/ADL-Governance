@@ -1,5 +1,22 @@
 # Sweep History
 
+## Sweep-236 — 2026-10-06 random completion sweep
+
+- Selection: sha256(`beyond-repair-sweep-2026-10-06T14:00Z`)[:8] = 2289069922, `random.Random.choice` over 87 installed repository names.
+- Subject: `The-Origin-Point-Hypothesis.` (public, `main`, pre-tree `7c669b46534063906b9649ef1e39e8b9acd08211`, 13 entries, not truncated).
+- Classification: **RESEARCH**. Claim ≤1. Not a SPARC fit. Not a dark-matter replacement. Not canonical W(n).
+- Discover: README, CLAIM_STATUS, GOVERNANCE, SECURITY, TeX sketch, historical PDF (77396 bytes, not rewritten), docs-presence workflow, claim-cap tests.
+- Prior CI: docs-presence run 37407105315 success on that head (2026-10-06). Runs 37407059857 and 34150166072 failed earlier and were superseded.
+- Finding: PORTFOLIO_STATUS_REPORT still said inherited / not re-audited after Sweep-230. CI did not check the `(n-3)` token or PDF presence that the unittest already required.
+- Action: bind CI to those existing checks; add PDF presence test; record Sweep-236. Subject commit `43397b19acbbd6e8f5e3ab610868c78fe1458fb6`. No equation edit. No PDF edit. No tag. No archive. No license invented.
+- Local tests: pytest 4 passed. PDF fixture was a local presence stub; remote blob size remains 77396.
+- License: absent. Operator-only. Do not invent one.
+- Exit: subject re-audited and claim-capped. New CI not yet recorded green at this write. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-06-236
+
+Body is the Sweep-236 section above.
+
 ## Sweep-235 — 2026-10-06 Master Directive portfolio sweep
 
 - Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload. Zero forks. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.

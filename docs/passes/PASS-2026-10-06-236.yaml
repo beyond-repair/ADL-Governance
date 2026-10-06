@@ -1,0 +1,13 @@
+id: PASS-2026-10-06-236
+subject: The-Origin-Point-Hypothesis.
+classification: RESEARCH
+claim_cap: 1
+pre_tree: 7c669b46534063906b9649ef1e39e8b9acd08211
+post_tree_subject: 43397b19acbbd6e8f5e3ab610868c78fe1458fb6
+selection_seed: 2289069922
+prior_ci_success: 37407105315
+local_pytest: 4 passed
+pdf_rewritten: false
+license: absent_operator_only
+archive: false
+tag: false

@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-236
+
+Random subject `The-Origin-Point-Hypothesis.` Classification RESEARCH, claim ≤1, reconfirmed. Head before this sweep `7c669b46534063906b9649ef1e39e8b9acd08211`. Subject commit `43397b19acbbd6e8f5e3ab610868c78fe1458fb6`. Historical PDF retained and not rewritten. No license file. Do not invent a license. Do not delete the PDF. Do not archive. Do not tag. Do not elevate SPARC or dark-matter claims.
+
 ## Residual notes from Sweep-235
 
 Master Directive cycle. Search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names. Four named heads unchanged. Releases lists empty. Digital Double Dependabot critical #13 re-fetched and still open. Secret scanning open list on Digital Double empty. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. Dependabot open lists empty on forge-aegis and BlockSwarm. High Dependabot filter empty on sovereign-clean-room. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
@@ -22,6 +26,7 @@ Random subject `sunder`. Classification RESEARCH, claim ≤1, reconfirmed. Head 
 - **RepoRover- and Code_Generation_AI_Program archive flags:** inherited ARCHIVED. `archived=true` still false. Not executed.
 - **BlockSwarm README tag sentence:** `v0.5.0-sagf` remains unverified. Releases list empty this cycle. Do not create the tag to match the sentence.
 - **forge-aegis license:** `License TBD` remains operator-only.
+- **The-Origin-Point-Hypothesis. license:** absent. Operator-only. Do not invent a license in this sweep.
 - **sovereign-clean-room branches** `seem-completion-pass` and `fix/pynacl-1.6.2-cve-2025-69277`: not merged. Secret scanning still disabled.
 - Product tags, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
 - Accounting: user `public_repos` 78 vs search total 83. Do not delete repositories to force equality.
