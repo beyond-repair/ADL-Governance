@@ -1,12 +1,27 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-06 10:18 EDT (Sweep-238)
-**Project / Version:** ADL Portfolio Governance / Sweep-238
+**Updated:** 2026-10-06 11:15 EDT (Sweep-241)
+**Project / Version:** ADL Portfolio Governance / Sweep-241
 **Objective:** Master Directive portfolio sweep. Live-verify the four named systems. Record residuals. Do not loop.
 **Authenticated owner:** `beyond-repair` (id 132061760). Profile `public_repos` 78. Search `user:beyond-repair` `total_count` 83, `incomplete_results` false.
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
 **Assumptions:** A1 user sweep directive. A2 this cycle re-fetched search metadata, main heads, Actions conclusions, releases, tags, and selected security lists for the four named systems. A3 classifications outside those four remain inherited and were not re-audited.
+
+## Sweep-241 result
+
+Exit criteria were not met. Inventory below is retained. Four named systems were re-fetched. No archive flag was flipped. No repository was deleted. No claim was elevated.
+
+Accounting residual: profile `public_repos` 78 versus search total 83. Payload contains 9 private repositories and 0 forks. Equality was not forced.
+
+| Repo | main HEAD | Latest recorded CI on that head | Releases | Tags | Security |
+|------|-----------|----------------------------------|----------|------|----------|
+| forge-aegis | `e7188d529739652a2dd6264bd3d328c1f72e60e5` | 37258127100 success | empty | empty | Dependabot open empty; code scanning 404 |
+| sovereign-clean-room | `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` | 37064696194 success on main | empty | empty | high Dependabot filter empty |
+| BlockSwarm | `6e90f6f85c0969fa8a262a70ceba833d618a22db` | 36859452185 success | empty | empty | Dependabot open empty |
+| Digital_Double_virtual_workforce | `24e6a29fd26c03900a8d98634d6683996eabdac4` | 36861489156 success | empty | empty | critical Dependabot #13 open; secret scanning open empty |
+
+Readiness: forge-aegis PASS WITH FINDINGS; sovereign-clean-room PASS WITH FINDINGS; BlockSwarm PASS WITH FINDINGS; Digital Double FAIL on unresolved critical Dependabot #13. Local tests were not re-run. Actions success is not a product-complete claim. `seem-completion-pass` run 37215829476 success is not a main-head result. Branch lists were not re-enumerated.
 
 ## Sweep-238 result
 
@@ -49,7 +64,7 @@ Accounting residual: profile `public_repos` 78 versus search total 83. Payload c
 
 ## Inventory (83)
 
-Class column is Sweep-238 live only for the four named systems. `The-Origin-Point-Hypothesis.` remains Sweep-236. All other classes are inherited and labeled. All other classes are inherited and labeled. GitHub `archived=true` only for `CFT-v3.0`.
+Class column is Sweep-241 live only for the four named systems. `The-Origin-Point-Hypothesis.` remains Sweep-236. All other classes are inherited and labeled. All other classes are inherited and labeled. GitHub `archived=true` only for `CFT-v3.0`.
 
 | Name | Class (source) | Visibility | Lang | Pushed | GH archived | Open issues |
 |------|----------------|------------|------|--------|-------------|-------------|
@@ -137,4 +152,4 @@ Class column is Sweep-238 live only for the four named systems. `The-Origin-Poin
 | `VigilE.S.A.-Enhanced-Security` | RESEARCH (inherited default; not re-audited) | public | Rust | 2026-10-02 | False | 0 |
 | `ware-constant-phenomenology` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-02 | False | 0 |
 
-Sweep-238 stop. Exit criteria not met. Do not loop.
+Sweep-241 stop. Exit criteria not met. Do not loop.

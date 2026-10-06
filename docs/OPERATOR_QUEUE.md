@@ -2,6 +2,13 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-241
+
+Master Directive cycle. Search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names. Four named heads unchanged. Releases and tag lists empty. Digital Double Dependabot critical #13 re-fetched and still open. Secret scanning open list on Digital Double empty. Code scanning 404 on forge-aegis. Dependabot open lists empty on forge-aegis and BlockSwarm. High Dependabot filter empty on sovereign-clean-room. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation. Branch list not re-enumerated. Lockfile edit for alert #13 remains operator-gated until a verified bump is separately tested.
+
+
+Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
+
 ## Residual notes from Sweep-240
 
 Governance-ci failure on main `c3606ff` run 37484562815. Checker now accepts nested contract sidecars. Retained pass headings restored as index-only lines. Sweep-235 contract file added. Sweep-236 stub left intact and contract sidecar added. Do not rewrite stubs. Do not treat local checker success as remote CI success until the new run is fetched. No archive. No tag. No lockfile edit. No history rewrite. No claim elevation.
