@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Residual notes from Sweep-259
+
+Random draw `os-family-constitution-map`. Classification RESEARCH. Claim ≤ 1. Not elevated. Not a kernel. Not a merge.
+
+Do not archive Sovereign-OS, SovereignOS, LegionOS, or RealityOS from this queue. Do not treat census presence as SUPERSEDES. Do not flip SovereignOS off AMBIGUOUS_DUPLICATE. Do not merge trees. No tag. No archive flag.
+
+Digital Double alert 13 was not re-fetched in Sweep-259. Do not mark it fixed.
+
+# Operator Queue
+
 ## Residual notes from Sweep-258 / PASS-2026-10-06-258
 
 Master-directive sweep. Search total_count 83. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
