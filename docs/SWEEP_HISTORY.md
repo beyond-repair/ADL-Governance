@@ -1,5 +1,16 @@
 # Sweep History
 
+## Sweep-245 — 2026-10-06 randomized draw
+
+- Timestamp: 2026-10-06 17:10Z. Scope: one repository from the authenticated owner `beyond-repair`.
+- Selection: `random.Random(20261006_1700).choice` over the 83-name search payload (`total_count` 83, `incomplete_results` false). Draw: `bloch-coherence-factor2`.
+- Discover: tree SHA `77d7063a51784be5ac6e39ca3a616dc73fa578c2`, 31 paths. Modules `model.py`, `operator.py`, `scan.py`. Tests `tests/test_factor2.py`. Workflow `.github/workflows/falsify.yml`. Docs include THEOREM_FACTOR2, MODEL, FALSIFICATION, LINE_FREEZE, CLAIM_STATUS.
+- Audit: main CI falsify run 36897260976 success on that head. Releases empty. Branches: `main`, `14J.5F.1-loop-correction` (`09f6902b`). Loop branch not merged and not re-run. Prior failure 36100043944 stands.
+- Local verification: `PYTHONPATH=src python3 -m pytest -q` on clone of `77d7063a` — 11 passed, 0 failed.
+- Classification: RESEARCH. Claim ≤ 1 retained. Factor of two is a structural ratio of the classical two-mode reduction, not a constant of nature, not device stability, not thrust.
+- Actions: updated `CLAIM_STATUS.md` on the subject repo. Updated the three governance docs. No deletion. No history rewrite. No archive flag. No tag. No claim elevation.
+- Termination for this repository: not marked complete. Loop branch unaudited. Portfolio exit criteria not met. Stop.
+
 ## Sweep-244 — 2026-10-06 master directive verification
 
 - Timestamp: 2026-10-06 16:14Z. Scope: authenticated owner `beyond-repair` (id 132061760). One governed sweep. No loop.
@@ -12,6 +23,10 @@
 - Digital_Double_virtual_workforce main `24e6a29fd26c03900a8d98634d6683996eabdac4`. CI run 36861489156 success. Releases empty. Dependabot #13 not re-fetched. Readiness FAIL until that alert is observed fixed.
 - Actions performed: governance documentation only. No deletion. No history rewrite. No archive flag. No tag. No claim elevation.
 - Pass and operator commit: `298e2f202782870872bf6aff2a2db3cf0f82701a`. Exit criteria not met. Stop.
+
+## Index / PASS-2026-10-06-245
+
+Body is the Sweep-245 section above. No separate pass yaml this cycle.
 
 ## Index / PASS-2026-10-06-244
 
