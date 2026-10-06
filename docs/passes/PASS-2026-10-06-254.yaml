@@ -33,7 +33,7 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - this_commit
+    - 630af21c90e15f68a7c6770def4f076e6140724b
   prior_subject_commits:
     - 638e7a6e2a42fd15d54ad2f02b2fd3c65ab22686
     - 9978b882073cb61738e11642faca05acbbb2501f
@@ -49,7 +49,8 @@ VERIFICATION:
     - GitHub Actions docs-ci 37531114934: success on 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace
     - local scripts/check_passes.py on patched tree: PASS (70 yaml files parsed; headings name all ids including PASS-2026-10-06-254)
     - local pytest tests/test_check_passes.py: 17 passed
-    - GitHub Actions governance-ci 37531275753: failure on prior head 985476de57590abd046ad826396d354424c3bf33 (missing headings; not this commit)
+    - GitHub Actions governance-ci 37531275753: failure on prior head 985476de57590abd046ad826396d354424c3bf33 (missing headings)
+    - GitHub Actions governance-ci 37531660412: success on 630af21c90e15f68a7c6770def4f076e6140724b
   code_review: NOT_RUN
   security: NOT_RUN
   integration: NOT_RUN
@@ -86,7 +87,7 @@ NEXT:
   prerequisites:
     - Operator approval before any lockfile edit.
 PROVENANCE:
-  state_commit: this_commit
+  state_commit: 630af21c90e15f68a7c6770def4f076e6140724b
   evidence:
     - Actions run 37531114934 conclusion success on 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace
     - governance head before close 985476de57590abd046ad826396d354424c3bf33
