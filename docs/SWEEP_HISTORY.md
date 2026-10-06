@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-250 — 2026-10-06 randomized draw RealityOS
+
+- Timestamp: 2026-10-06 19:03Z. Scope: one random repository from the search payload of 83 names. Draw: `secrets.randbelow(83)` index 21 → `RealityOS`.
+- Classification: RESEARCH. Not elevated. Claim cap remains ≤ 1 (in-memory heuristic / RUNNABLE SKETCH). Not an operating system.
+- Discover: FastAPI in-memory org sketch, keyword scenarios, quality-agent stub, no connectors, no persistence. Tree 30 objects at pre-sweep `0f2a06f1`.
+- Local pytest on `0f2a06f1`: 17 passed.
+- Prior Actions evidence: run 37067369615 success on `0f2a06f1`.
+- Implement commits: `c93d446472c6e2e69d1b85644709d73dbd1e93a4` (least-privilege workflow, SECURITY.md, claim record) and `e36664a403c428838ffdeca6d3e5b714ff5dbc9b` (governance append). No deletion. No history rewrite. No tag. No archive flag.
+- CI after implement: run 37515916411 success on `c93d4464`; run 37515961844 success on `e36664a4`.
+- Termination for this repo: tests and CI green; docs updated; unsupported OS claim rejected. ACTIVE promotion still false (no auth, no persistence, heuristic confidence). OS-family merge not executed.
+- Portfolio exit criteria remain unmet (inherited from Sweep-249).
+
 ## Sweep-249 — 2026-10-06 master directive completion sweep
 
 - Timestamp: 2026-10-06 18:20Z. Scope: one governed sweep of `user:beyond-repair`. Discovery via search `total_count` 83, `incomplete_results` false. Profile `public_repos` 78. Private in payload: 9. GitHub-archived: `CFT-v3.0` only.
