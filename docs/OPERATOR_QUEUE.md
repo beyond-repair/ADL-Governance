@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-229
+
+Phase-3 re-fetch 2026-10-05 22:11 EDT. Heads unchanged: forge-aegis `e7188d5`, sovereign-clean-room `4878918c`, BlockSwarm `6e90f6f`, Digital Double `24e6a29`. CI successes 37258127100, 37064696194, 36859452185, 36861489156 reconfirmed. Releases and tags empty on all four. Dependabot critical #13 re-fetched open (form-data GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, patched identifier 4.0.4). Not patched. forge-aegis and BlockSwarm Dependabot open lists empty. forge-aegis code scanning 404. sovereign-clean-room secret scanning still disabled (API 404). Branches `seem-completion-pass` `d6f13042` and `fix/pynacl-1.6.2-cve-2025-69277` `f65d7db6` not merged. No archive flag flipped. No tag. No lockfile edit. No history rewrite. No secret value copied.
+
 ## Residual notes from Sweep-228
 
 `aegis-repo-graph` reconfirmed RESEARCH / tool claim ≤1. CI run 37069800025 success on `96ca557`. Docs commit `98bac63` CI run 37402540834 success. Catalog not rewritten. ADL-Portfolio-Census still locks compatible-build status `not_built`. No tag. No archive. No claim elevation.

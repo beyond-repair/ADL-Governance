@@ -1,5 +1,19 @@
 # Sweep History
 
+## Sweep-229 — 2026-10-05 Master Directive Phase-3 re-verification
+
+- Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Heads unchanged: `e7188d529739652a2dd6264bd3d328c1f72e60e5`, `4878918cf9f95d3c19e1890bef6d2fd6713e0a16`, `6e90f6f85c0969fa8a262a70ceba833d618a22db`, `24e6a29fd26c03900a8d98634d6683996eabdac4`.
+- CI re-fetched: 37258127100 success; 37064696194 success on main; 36859452185 success; 36861489156 success. `seem-completion-pass` run 37215829476 success, not merged.
+- Releases empty. Tags empty. forge-aegis Dependabot empty. BlockSwarm Dependabot empty. Digital Double critical #13 open. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis.
+- Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Residual: critical #13, archive flags false, mobile secret alert not re-fetched, public_repos 78 vs search 83.
+- Exit: criteria not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-05-229
+
+Body is the Sweep-229 section above.
+
 ## Sweep-228 — 2026-10-05 aegis-repo-graph head CI evidence
 
 - Selection: Sweep-227 left `aegis-repo-graph` `not_built`. Operator archive, secret rotation, license, and lockfile actions were not selected. `CLAIM_STATUS.md` cited only CI run 34072230795 on `1a5a2fde` as non-evidence for later commits.

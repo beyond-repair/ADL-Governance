@@ -1,12 +1,26 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-05 (Sweep-227)
-**Project / Version:** ADL Portfolio Governance / Sweep-227
-**Objective:** Random repository completion cycle on `ADL-Portfolio-Census`.
+**Updated:** 2026-10-05 22:11 EDT (Sweep-229)
+**Project / Version:** ADL Portfolio Governance / Sweep-229
+**Objective:** Master Directive Phase-3 re-verification. Prior subject slices retained.
 **Authenticated owner:** `beyond-repair` (id 132061760)
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
 **Assumptions:** A1 user Master Directive. A2 GitHub search `user:beyond-repair` (`total_count` 83, `incomplete_results` false) on 2026-10-05. A4 selection seed SHA256("sweep-227|2026-10-05T22:00-04:00|beyond-repair")[:8] = 3572448024; pool excluded `ADL-Governance` and Sweep-226 subject `Code_Generation_AI_Program`. A3 prior classifications inherited.
+
+
+## Sweep-229 (this cycle)
+
+Phase-3 live re-fetch. No tree rewrite. No tag. No archive. No lockfile edit. No history rewrite. No claim elevation.
+
+| Repo | Main head (unchanged) | CI re-fetched | Releases | Tags | Security re-fetch | Readiness |
+|------|------------------------|---------------|----------|------|-------------------|-----------|
+| forge-aegis | `e7188d529739652a2dd6264bd3d328c1f72e60e5` | run 37258127100 success (push, 2026-10-05) | empty | empty | Dependabot open empty; code scanning 404 no analysis | PASS WITH FINDINGS |
+| sovereign-clean-room | `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` | main run 37064696194 success (2026-10-02). `seem-completion-pass` at `d6f13042`; latest PR run 37215829476 success, not merged | empty | empty | secret scanning 404 disabled; branches still include `fix/pynacl-1.6.2-cve-2025-69277` `f65d7db6` | PASS WITH FINDINGS |
+| BlockSwarm | `6e90f6f85c0969fa8a262a70ceba833d618a22db` | Foundry run 36859452185 success (2026-10-01) | empty | empty | Dependabot open empty | PASS WITH FINDINGS |
+| Digital_Double_virtual_workforce | `24e6a29fd26c03900a8d98634d6683996eabdac4` | Digital Double CI run 36861489156 success (2026-10-01) | empty | empty | Dependabot critical #13 still open; secret scanning open list empty | FAIL |
+
+Search `user:beyond-repair`: total_count 83, incomplete_results false. Profile `public_repos` 78. Authenticated login `beyond-repair` id 132061760. Census count not re-merged into inventory rows. Inherited classifications not re-audited. Exit criteria not met.
 
 ## Sweep-227 subject
 
@@ -197,6 +211,6 @@ Evidence label for non-Phase-3 rows: inherited classification, metadata re-read 
 
 ## Exit
 
-Sweep-227 subject slice documented and claim-capped. Local tests 14 passed. CI run 37402259409 success. Not tagged. Not archived. Not promoted.
+Sweep-229 re-fetched Phase-3. Heads unchanged. Critical #13 still open. Exit criteria **not** met. Stop. Do not loop.
 
-Sweep-226 subject slice remains documented. Phase-3 verified. Inventory has no undefined name in the 83-set. Exit criteria **not** met: critical Dependabot #13 open; archive flags unresolved; no product releases on canonical four; duplicate historical trees retained by rule; secret-scanning residual. Stop. Do not loop.
+Sweep-227 subject slice remains documented. Sweep-228 aegis-repo-graph evidence remains in SWEEP_HISTORY. Inventory has no undefined name in the 83-set. Residuals: critical Dependabot #13; archive flags unresolved; no product releases on canonical four; duplicate historical trees retained by rule; secret-scanning residual on sovereign-clean-room (disabled) and digital-double-mobile (not re-fetched). Stop. Do not loop.
