@@ -32,7 +32,7 @@ CHANGES:
     - docs/OPERATOR_QUEUE.md
   commits:
     - 98bac63122d060a51a21f023bcf3328a82eb6cc2
-    - governance-follow-up
+    - a9cb5be42c5d2941b3750501077bc3aa44a70027
   capabilities_added_or_changed:
     - aegis-repo-graph head CI evidence pointer updated; claim cap unchanged; census freeze unchanged
 VERIFICATION:
@@ -71,6 +71,7 @@ REMAINING:
     - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
   new_gaps:
     - Docs commit 98bac63 CI is observed here but not embedded in CLAIM_STATUS.md, which still cites 96ca557 as the catalog-head evidence.
+    - This provenance follow-up commit SHA is not embedded in this file. Parent governance commit is a9cb5be.
 NEXT:
   objective_id: GAP-PASS-YAML-225-227
   action: Transcribe PASS-2026-10-05-225.yaml, PASS-2026-10-05-226.yaml, and PASS-2026-10-05-227.yaml from docs/SWEEP_HISTORY.md only. Do not invent results. Do not archive. Do not patch Dependabot.
@@ -81,10 +82,11 @@ NEXT:
     - Do not copy secret values into records.
     - Do not change census COMPATIBLE_BUILDS status.
 PROVENANCE:
-  state_commit: governance-follow-up
+  state_commit: a9cb5be42c5d2941b3750501077bc3aa44a70027
   evidence:
     - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/37069800025
     - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/37069800025/job/111046279932
     - https://github.com/beyond-repair/aegis-repo-graph/commit/96ca55789c3e8656d9b4052392d9000c69bc4c17
     - https://github.com/beyond-repair/aegis-repo-graph/commit/98bac63122d060a51a21f023bcf3328a82eb6cc2
     - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/37402540834
+    - https://github.com/beyond-repair/ADL-Governance/commit/a9cb5be42c5d2941b3750501077bc3aa44a70027
