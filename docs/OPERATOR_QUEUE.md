@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-238
+
+Master Directive cycle. Search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names. Four named heads unchanged. Releases and tag lists empty. Digital Double Dependabot critical #13 re-fetched and still open. Secret scanning open list on Digital Double empty. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. Dependabot open lists empty on forge-aegis and BlockSwarm. High Dependabot filter empty on sovereign-clean-room. ADL-Governance Dependabot #1 still open. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation. Branch list not re-enumerated.
+
 ## Residual notes from Sweep-237
 
 Contract transcription only. Sweep-230 body taken from `ce285d187b278809f4a7ed23ec02fe00454773be`. Stub `docs/passes/PASS-2026-10-05-230.yaml` sha `e7922db682844abe89f9db16f7d6a3f39bbd23e3` not rewritten. No product repository edited. No archive flag. No secret copied. No claim elevation. No license invented. PASS-232 and PASS-233 remain stubs. Sweep-235 and Sweep-236 still lack contract PASS yaml.

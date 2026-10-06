@@ -1,5 +1,21 @@
 # Sweep History
 
+## Sweep-238 — 2026-10-06 Master Directive portfolio sweep
+
+- Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload: Digital_Double_Virtual_Workforce_4.2, CFT-v3.0, Digital_Double_Virtual_Workforce_4., blacksite, potential-garbanzo, SovereignOS, test, mendthegame, atomicdreamlabs. Zero forks. GitHub archived=true only for CFT-v3.0.
+- Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Heads unchanged: `e7188d529739652a2dd6264bd3d328c1f72e60e5`, `4878918cf9f95d3c19e1890bef6d2fd6713e0a16`, `6e90f6f85c0969fa8a262a70ceba833d618a22db`, `24e6a29fd26c03900a8d98634d6683996eabdac4`.
+- CI re-fetched: 37258127100 success; 37064696194 success on main; 36859452185 success on the unfiltered first page; 36861489156 success. seem-completion-pass run 37215829476 success, not merged. Earlier PR failures on that branch are not main failures.
+- Releases empty on all four. Tag lists empty on all four. BlockSwarm README tag lineage `v0.5.0-sagf` remains unverified. Product README not edited.
+- Security: Dependabot critical #13 open on Digital Double (`form-data`, GHSA-fjxv-7rqg-78g4, CVE-2025-7783, manifest digital_double/package-lock.json, development scope, patched identifier 4.0.4). forge-aegis and BlockSwarm Dependabot open lists empty. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. High Dependabot filter on sovereign-clean-room empty. ADL-Governance Dependabot #1 still open (pytest, GHSA-6w46-j5rx-g56g, patched identifier 9.0.3).
+- Branch enumeration was not re-listed. Capability matrices outside the four named systems were not re-derived from code.
+- Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Exit: criteria not met. Critical Dependabot #13 unresolved. Many classifications inherited. Duplicate supersession is documented, not consolidated by archive flag. Stop. Do not loop.
+
+## Index / PASS-2026-10-06-238
+
+Body is the Sweep-238 section above. No product repository edited.
+
 ## Sweep-237 — 2026-10-06 basilisk stub expansion
 
 - Selection: explicit NEXT of PASS-2026-10-06-234, GAP-PASS-STUB-230. Sweeps 235 and 236 did not close it.

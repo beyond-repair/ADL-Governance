@@ -1,0 +1,8 @@
+id: PASS-2026-10-06-238
+sweep: 238
+date: 2026-10-06
+scope: master-directive-portfolio
+repositories_reviewed: 83
+product_edits: none
+exit: criteria-not-met
+do_not_loop: true

@@ -1,12 +1,27 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-06 10:08 EDT (Sweep-236)
-**Project / Version:** ADL Portfolio Governance / Sweep-236
-**Objective:** Random completion sweep of one repository, then record state. Do not loop.
+**Updated:** 2026-10-06 10:18 EDT (Sweep-238)
+**Project / Version:** ADL Portfolio Governance / Sweep-238
+**Objective:** Master Directive portfolio sweep. Live-verify the four named systems. Record residuals. Do not loop.
 **Authenticated owner:** `beyond-repair` (id 132061760). Profile `public_repos` 78. Search `user:beyond-repair` `total_count` 83, `incomplete_results` false.
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
-**Assumptions:** A1 user sweep directive. A2 this cycle inspected `The-Origin-Point-Hypothesis.` tree, Actions run 37475853468, and local pytest. A3 all other classifications remain inherited from Sweep-235 / Sweep-225 and were not re-audited.
+**Assumptions:** A1 user sweep directive. A2 this cycle re-fetched search metadata, main heads, Actions conclusions, releases, tags, and selected security lists for the four named systems. A3 classifications outside those four remain inherited and were not re-audited.
+
+## Sweep-238 result
+
+Exit criteria were not met. Inventory below is retained. Four named systems were re-fetched. No archive flag was flipped. No repository was deleted. No claim was elevated.
+
+Accounting residual: profile `public_repos` 78 versus search total 83. Payload contains 9 private repositories and 0 forks. Equality was not forced.
+
+| Repo | main HEAD | Latest recorded CI on that head | Releases | Tags | Security |
+|------|-----------|----------------------------------|----------|------|----------|
+| forge-aegis | `e7188d529739652a2dd6264bd3d328c1f72e60e5` | 37258127100 success | empty | empty | Dependabot open empty; code scanning 404 |
+| sovereign-clean-room | `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` | 37064696194 success on main | empty | empty | high Dependabot filter empty; secret scanning disabled |
+| BlockSwarm | `6e90f6f85c0969fa8a262a70ceba833d618a22db` | 36859452185 success | empty | empty | Dependabot open empty |
+| Digital_Double_virtual_workforce | `24e6a29fd26c03900a8d98634d6683996eabdac4` | 36861489156 success | empty | empty | Dependabot critical #13 open; secret scanning open empty |
+
+Readiness: forge-aegis PASS WITH FINDINGS; sovereign-clean-room PASS WITH FINDINGS; BlockSwarm PASS WITH FINDINGS; Digital Double FAIL on unresolved critical Dependabot #13. Local tests were not re-run. Actions success is not a product-complete claim.
 
 ## Sweep-236 result
 
@@ -34,7 +49,7 @@ Accounting residual: profile `public_repos` 78 versus search total 83. Payload c
 
 ## Inventory (83)
 
-Class column is Sweep-236 live only for `The-Origin-Point-Hypothesis.` Four named systems remain Sweep-235 reconfirmed. All other classes are inherited and labeled. GitHub `archived=true` only for `CFT-v3.0`.
+Class column is Sweep-238 live only for the four named systems. `The-Origin-Point-Hypothesis.` remains Sweep-236. All other classes are inherited and labeled. All other classes are inherited and labeled. GitHub `archived=true` only for `CFT-v3.0`.
 
 | Name | Class (source) | Visibility | Lang | Pushed | GH archived | Open issues |
 |------|----------------|------------|------|--------|-------------|-------------|
@@ -59,7 +74,7 @@ Class column is Sweep-236 live only for `The-Origin-Point-Hypothesis.` Four name
 | `beyond-repair` | PROFILE (inherited) | public | None | 2026-10-01 | False | 0 |
 | `blacksite` | RESEARCH (inherited default; not re-audited) | private | JavaScript | 2026-10-02 | False | 1 |
 | `bloch-coherence-factor2` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-01 | False | 0 |
-| `BlockSwarm` | ACTIVE (Sweep-235 reconfirmed) | public | Solidity | 2026-10-01 | False | 0 |
+| `BlockSwarm` | ACTIVE (Sweep-238 reconfirmed) | public | Solidity | 2026-10-01 | False | 0 |
 | `btc-trading` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-01 | False | 0 |
 | `CFT-v3.0` | SUPERSEDED → CFTv3.3-IQG-Unified-Framework (inherited) | private | Python | 2026-10-02 | True | 0 |
 | `CFT-v3.1` | SUPERSEDED → CFTv3.3-IQG-Unified-Framework (inherited) | public | TeX | 2026-10-01 | False | 0 |
@@ -69,7 +84,7 @@ Class column is Sweep-236 live only for `The-Origin-Point-Hypothesis.` Four name
 | `DevelopTool-Unified-Dev-Environment` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-04 | False | 23 |
 | `digital-double-mobile` | SUPERSEDED → Digital_Double_virtual_workforce (inherited) | public | TypeScript | 2026-10-04 | False | 1 |
 | `Digital-Double_Mobile` | SUPERSEDED → Digital_Double_virtual_workforce (inherited) | public | None | 2026-10-01 | False | 0 |
-| `Digital_Double_virtual_workforce` | ACTIVE (Sweep-235 reconfirmed) | public | TypeScript | 2026-10-01 | False | 5 |
+| `Digital_Double_virtual_workforce` | ACTIVE (Sweep-238 reconfirmed) | public | TypeScript | 2026-10-01 | False | 5 |
 | `Digital_Double_Virtual_Workforce_4.` | SUPERSEDED → Digital_Double_virtual_workforce (inherited) | private | None | 2026-10-02 | False | 0 |
 | `Digital_Double_Virtual_Workforce_4.2` | SUPERSEDED → Digital_Double_virtual_workforce (inherited) | private | TypeScript | 2026-10-02 | False | 1 |
 | `DigitalDoubleVirtualWorkforce3.5` | SUPERSEDED → Digital_Double_virtual_workforce (inherited) | public | Python | 2026-10-02 | False | 0 |
@@ -77,7 +92,7 @@ Class column is Sweep-236 live only for `The-Origin-Point-Hypothesis.` Four name
 | `fantom-smart-contracts-first-bot` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Rust | 2026-10-01 | False | 0 |
 | `fantom_trading_bot_2` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-01 | False | 0 |
 | `finite-gasket-spectral-derivatives` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-02 | False | 0 |
-| `forge-aegis` | ACTIVE (Sweep-235 reconfirmed) | public | Python | 2026-10-05 | False | 0 |
+| `forge-aegis` | ACTIVE (Sweep-238 reconfirmed) | public | Python | 2026-10-05 | False | 0 |
 | `FortiTrade_Multi-Strategy` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-02 | False | 1 |
 | `ftmA.I.bot` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-01 | False | 0 |
 | `genieGPT` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | None | 2026-10-01 | False | 0 |
@@ -108,7 +123,7 @@ Class column is Sweep-236 live only for `The-Origin-Point-Hypothesis.` Four name
 | `seem-sunder-bridge` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-03 | False | 1 |
 | `sierpinski-geometry-045` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-02 | False | 0 |
 | `smart_home_BCI` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-01 | False | 0 |
-| `sovereign-clean-room` | ACTIVE (Sweep-235 reconfirmed) | public | Python | 2026-10-04 | False | 2 |
+| `sovereign-clean-room` | ACTIVE (Sweep-238 reconfirmed) | public | Python | 2026-10-04 | False | 2 |
 | `Sovereign-Epistemic-Reality-Engine` | RESEARCH (inherited default; not re-audited) | public | None | 2026-10-01 | False | 0 |
 | `Sovereign-OS` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-09-20 | False | 0 |
 | `SovereignOS` | RESEARCH (inherited default; not re-audited) | private | Python | 2026-10-01 | False | 0 |
@@ -122,4 +137,4 @@ Class column is Sweep-236 live only for `The-Origin-Point-Hypothesis.` Four name
 | `VigilE.S.A.-Enhanced-Security` | RESEARCH (inherited default; not re-audited) | public | Rust | 2026-10-02 | False | 0 |
 | `ware-constant-phenomenology` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-02 | False | 0 |
 
-Stop. Do not loop.
+Sweep-238 stop. Exit criteria not met. Do not loop.
