@@ -1,0 +1,29 @@
+id: PASS-2026-10-06-239
+date: 2026-10-06
+subject: aegis-repo-graph
+classification: RESEARCH
+claim_cap: 1
+catalog_claim_integer: 3
+catalog_claim_note: snapshot data only
+pre_head: 98bac63122d060a51a21f023bcf3328a82eb6cc2
+pre_ci: 37402540834
+pre_ci_conclusion: success
+local_pytest_after: 11 passed
+commits:
+  - 50e85433ad85db348368444f223646c0b5a9ec55
+  - 3bb7c49ca5475cbecf409e6324276e4d8f9e2c07
+  - d9a2e29e942f5bd19a12c1898cf0a3e71308c9db
+  - 7c5fa68b90416a79689b8b5b54db41c633078c60
+  - 8c9fee7ea67ad5b1408dfe38c865cb6a43af9a1e
+ci_success:
+  - 37484188276
+  - 37484220675
+ci_failure_intermediate:
+  - 37484117199
+catalog_mutated: false
+observed_only: 18
+catalog_only: 7
+archive: false
+tag: false
+history_rewrite: false
+termination_met: false
