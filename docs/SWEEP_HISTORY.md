@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-251 — 2026-10-06 master directive completion sweep
+
+- Timestamp: 2026-10-06 (session clock start 19:11Z). Scope: one governed sweep of `user:beyond-repair`. Discovery via search `total_count` 83, `incomplete_results` false. Profile `public_repos` 78. Private in payload: 9. GitHub-archived: `CFT-v3.0` only.
+- Mandatory live verification: forge-aegis CI 37258127100 success on `e7188d529739652a2dd6264bd3d328c1f72e60e5`. Releases empty. Tags empty. Dependabot open empty. Code scanning 404. Secret scanning open empty. Branches re-listed: main plus three repair/finish branches.
+- sovereign-clean-room main Python tests 37064696194 success on `4878918cf9f95d3c19e1890bef6d2fd6713e0a16`. Releases empty. Tags empty. Dependabot open empty.
+- BlockSwarm Foundry 36859452185 success on `6e90f6f85c0969fa8a262a70ceba833d618a22db`. Releases empty. Tags empty. `v0.5.0-sagf` absent. Dependabot open empty.
+- Digital_Double CI 36861489156 success on `24e6a29fd26c03900a8d98634d6683996eabdac4`. Releases empty. Tags empty. Dependabot alert 13 open (form-data, GHSA-fjxv-7rqg-78g4, critical, patched identifier 4.0.4). Readiness FAIL.
+- Classifications: all 83 names remain assigned. Non-mandatory classes inherited from registry. No claim elevation.
+- Actions performed: governance documentation only (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`, `docs/passes/PASS-2026-10-06-251.yaml`).
+- No deletion. No history rewrite. No archive flag. No tag. No lockfile edit.
+- Exit criteria not met (critical alert open, no tags, archive candidates unflagged, duplicate families retained as governed SUPERSEDED/RESEARCH). Stop. Do not loop.
+- Pass file: `docs/passes/PASS-2026-10-06-251.yaml`.
+
 ## Sweep-250 close — PASS-2026-10-06-250
 
 - Timestamp: 2026-10-06 19:10Z. Closes the missing contract file for Sweep-250. Does not replace the Sweep-250 paragraph below.
@@ -51,6 +64,6 @@
 
 ## Sweep-247 — 2026-10-06 Digital Double Dependabot #13
 
-- Alert 13 was open. Reconfirmed open in Sweep-249. Pass file `docs/passes/PASS-2026-10-06-247.yaml`.
+- Alert 13 was open. Reconfirmed open in Sweep-251. Pass file `docs/passes/PASS-2026-10-06-247.yaml`.
 
 Prior index entries from PASS-2026-10-06-246 back through PASS-2026-10-01-167 remain in git history of this file.
