@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-05-229
+  parent_pass: PASS-2026-10-05-228
+  transcription: from docs/SWEEP_HISTORY.md Sweep-229 and docs/OPERATOR_QUEUE.md residual notes. Not a new observation. No results invented.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 11
+OBJECTIVE:
+  id: GAP-PHASE3-REVERIFY-229
+  description: Re-fetch Phase-3 heads and CI for forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce without archive, tag, lockfile, or claim changes.
+  reason_selected: Prior pass left operator-only gates unselected. Phase-3 re-verification was the recorded Sweep-229 scope.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83, incomplete_results false. Profile public_repos 78.
+    - Heads unchanged: forge-aegis e7188d529739652a2dd6264bd3d328c1f72e60e5; sovereign-clean-room 4878918cf9f95d3c19e1890bef6d2fd6713e0a16; BlockSwarm 6e90f6f85c0969fa8a262a70ceba833d618a22db; Digital_Double_virtual_workforce 24e6a29fd26c03900a8d98634d6683996eabdac4.
+    - CI successes reconfirmed: 37258127100, 37064696194, 36859452185, 36861489156. seem-completion-pass run 37215829476 success, not merged.
+    - Releases and tags empty on all four. Digital Double Dependabot critical #13 open. forge-aegis and BlockSwarm Dependabot open lists empty. forge-aegis code scanning 404. sovereign-clean-room secret scanning API 404.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - not restated in Sweep-229 body; this YAML does not invent a SHA
+  capabilities_added_or_changed:
+    - no capability claim changed; observation only
+VERIFICATION:
+  tests_run:
+    - No new local tests recorded for Sweep-229
+    - CI re-fetch only, runs listed above, conclusions success as recorded in SWEEP_HISTORY
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Phase-3 heads were unchanged at Sweep-229.
+    - Critical Dependabot #13 remained open.
+    - Archive flags were not flipped.
+  failures:
+    - Portfolio termination criteria were not met.
+    - public_repos 78 versus search 83 was not resolved and must not be forced by deletion.
+  decisions:
+    - No archive, tag, lockfile edit, history rewrite, deletion, or claim elevation.
+REMAINING:
+  incomplete:
+    - Digital_Double_virtual_workforce Dependabot alert 13
+    - RepoRover- and Code_Generation_AI_Program archive flags
+    - digital-double-mobile secret alert and critical Dependabot alerts
+    - seem-completion-pass merge hold
+    - forge-aegis license, product tag, code scanning, stale branches
+  blockers:
+    - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
+  new_gaps:
+    - Sweep-229 had an index heading but no contract PASS yaml until this transcription
+NEXT:
+  objective_id: GAP-PASS-YAML-225-227
+  action: Transcribe PASS-2026-10-05-225.yaml, PASS-2026-10-05-226.yaml, and PASS-2026-10-05-227.yaml from preserved sweep text only if the parent blob still contains those bodies. Do not invent results.
+  reason: Those sweeps were indexed as missing PASS yaml in PASS-228. Sweep-229 and Sweep-230 did not close that gap.
+  prerequisites:
+    - Do not rewrite history.
+    - Do not set archived=true from this agent.
+    - Do not copy secret values into records.
+PROVENANCE:
+  state_commit: transcribed-from-sweep-history-not-a-new-sha
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-229 section
+    - docs/OPERATOR_QUEUE.md Sweep-229 residual notes

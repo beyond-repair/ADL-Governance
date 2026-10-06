@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-231 — 2026-10-06 basilisk persistence gap
+
+- Selection: highest-value bounded gap that is not operator-only. PASS-228 next action was missing PASS yaml. Sweep-229 was indexed here and absent from docs/passes. Sweep-230 yaml is a stub.
+- Action: transcribe PASS-2026-10-05-229.yaml from this file and OPERATOR_QUEUE residual notes only. Persist PASS-2026-10-06-231.yaml for this execution.
+- No product repository edited. No archive. No tag. No lockfile edit. No claim elevation. No secret value copied. No history rewrite.
+- Verification: directory listing at ref 802758f lacked PASS-2026-10-05-229.yaml. Search total_count 83 re-fetched. No product tests run.
+- Exit: persistence gap for Sweep-229 closed. Sweeps 225-227 still lack contract PASS yaml. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-06-231
+
+Body is the Sweep-231 section above.
+
 ## Sweep-230 — 2026-10-05 random completion sweep
 
 - Selection: `random.SystemRandom().choice` over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`).
@@ -13,7 +25,7 @@
 
 ## Index / PASS-2026-10-05-230
 
-Body is the Sweep-230 section above.
+Body is the Sweep-230 section above. The yaml at docs/passes/PASS-2026-10-05-230.yaml remains the abbreviated stub written by that sweep. It was not rewritten in Sweep-231.
 
 ## Sweep-229 — 2026-10-05 Master Directive Phase-3 re-verification
 
@@ -27,6 +39,6 @@ Body is the Sweep-230 section above.
 
 ## Index / PASS-2026-10-05-229
 
-Body is the Sweep-229 section above.
+Body is the Sweep-229 section above. Contract yaml added in Sweep-231 by transcription. No new observation.
 
-Prior sweep bodies through Sweep-228 remain in git history at parent blob `26dd1186693173128cf8317fb03f697d59c4ae96` and in `docs/passes/` where indexed. This commit does not delete those pass files. Older index headings were not rewritten in place because this update prepends Sweep-230 only; full prior text is preserved at the parent blob.
+Prior sweep bodies through Sweep-228 remain in git history at parent blob `26dd1186693173128cf8317fb03f697d59c4ae96` and in `docs/passes/` where indexed. This commit does not delete those pass files.

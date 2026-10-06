@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-06-231
+  parent_pass: PASS-2026-10-05-230
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 4
+  gaps_remaining: 10
+OBJECTIVE:
+  id: GAP-PASS-YAML-229
+  description: Persist the missing contract PASS record for Sweep-229 from existing sweep text, and record this pass.
+  reason_selected: PASS-228 next action was missing PASS yaml. Sweep-229 was indexed in SWEEP_HISTORY but absent from docs/passes. Sweep-230 yaml is a stub and does not close that gap. Operator-only archive, secret, license, and lockfile actions were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair id 132061760. public_repos 78. Search user:beyond-repair total_count 83 incomplete_results false on 2026-10-06.
+    - ADL-Governance default branch main. docs/passes listing at ref 802758f96176fa9816e5e324734f51f1222b7cea contained 42 files and did not contain PASS-2026-10-05-229.yaml.
+    - PASS-2026-10-05-230.yaml is an abbreviated stub (subject, head, CI ids) and is not the basilisk contract schema.
+    - SWEEP_HISTORY.md current body contains Sweep-230 and Sweep-229 only; older bodies are preserved at parent blob 26dd1186693173128cf8317fb03f697d59c4ae96.
+    - Latest recorded subject The-Origin-Point-Hypothesis. remains RESEARCH, claim cap 1, head 7c669b46534063906b9649ef1e39e8b9acd08211, CI 37407105315 success. Not re-tested in this pass.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-05-229.yaml
+    - docs/passes/PASS-2026-10-06-231.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this push; SHA recorded after commit acceptance, not invented here
+  capabilities_added_or_changed:
+    - governance pass persistence for Sweep-229; no product capability added; no claim elevation
+VERIFICATION:
+  tests_run:
+    - No product tests executed in this pass
+    - Directory listing evidence: PASS-2026-10-05-229.yaml absent before this commit
+    - Search total_count 83 re-fetched
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Sweep-229 evidence can be transcribed without inventing CI results.
+    - Contract persistence and product verification are different states. This pass verifies persistence only.
+  failures:
+    - Did not recover full Sweep-225/226/227 bodies in this pass. Parent blob was identified but not fetched.
+    - Did not execute operator archive, secret rotation, license assignment, or Dependabot patch.
+  decisions:
+    - REUSE ADL-Governance as the pass ledger. Do not create a repository. Do not rewrite PASS-230 stub in place.
+REMAINING:
+  incomplete:
+    - PASS yaml for sweeps 225, 226, and 227
+    - PASS-230 remains a stub relative to the basilisk schema
+    - Operator queue items unchanged: archive flags, Dependabot #13, mobile secret alert, forge-aegis license and tag, seem-completion-pass merge
+  blockers:
+    - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
+  new_gaps:
+    - Provenance SHA for this commit is not embedded in this file until a follow-up observation
+NEXT:
+  objective_id: GAP-PASS-YAML-225-227
+  action: Fetch parent blob 26dd1186693173128cf8317fb03f697d59c4ae96 of docs/SWEEP_HISTORY.md and transcribe only the recorded Sweep-225, Sweep-226, and Sweep-227 bodies into PASS yaml. Do not invent missing fields.
+  reason: Those records were the explicit unfinished persistence gap after PASS-228 and were not closed by Sweep-229 or Sweep-230.
+  prerequisites:
+    - Parent blob still reachable
+    - Do not set archived=true
+    - Do not copy secret values
+    - Do not change claim caps
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - GitHub user beyond-repair id 132061760
+    - search user:beyond-repair total_count 83
+    - docs/passes listing without PASS-2026-10-05-229.yaml before this commit
+    - docs/SWEEP_HISTORY.md Sweep-229 and Sweep-230
+    - docs/passes/PASS-2026-10-05-230.yaml stub

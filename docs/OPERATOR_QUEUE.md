@@ -2,6 +2,10 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-231
+
+Persistence only. Transcribed PASS-2026-10-05-229.yaml from existing Sweep-229 text. Wrote PASS-2026-10-06-231.yaml. Did not archive, tag, patch Dependabot, assign a license, merge seem-completion-pass, rotate secrets, or elevate claims. PASS yaml for sweeps 225, 226, and 227 remains absent. PASS-230 stub was not rewritten. No operator action required for this subject.
+
 ## Residual notes from Sweep-230
 
 `The-Origin-Point-Hypothesis.` reconfirmed RESEARCH / claim ≤1. Head `7c669b46534063906b9649ef1e39e8b9acd08211`. CI run 37407105315 success. Active TeX SPARC-validation sentence removed. Historical PDF retained and unverified. No tag. No archive. No claim elevation. No operator action required for this subject.
@@ -26,29 +30,26 @@ Phase-3 re-fetch 2026-10-05 22:11 EDT. Heads unchanged: forge-aegis `e7188d5`, s
 
 Phase-3 re-fetch on 2026-10-05. No archive flag flipped. No tag created. No lockfile bump. No history rewrite. No secret value copied into governance docs.
 
-## Open items (as of Sweep-225)
+## Open items (as of Sweep-225, still open at Sweep-231)
 
-- **Digital_Double_virtual_workforce Dependabot alert #13:** re-fetched open. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Matched range `>= 4.0.0, < 4.0.4`. Patched identifier 4.0.4. Not patched. Dependabot branches exist (`dependabot/npm_and_yarn/...`, `fix/nanoid-5.1.11-ghsa-xwg4`) and were not merged.
+- **Digital_Double_virtual_workforce Dependabot alert #13:** re-fetched open at Sweep-229. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Matched range `>= 4.0.0, < 4.0.4`. Patched identifier 4.0.4. Not patched. Dependabot branches exist and were not merged.
 - **Digital Double open Dependabot page:** first page has next cursor; high alerts include js-yaml #160/#159, browserslist #155, nanoid #153/#147, brace-expansion #122, js-yaml #112/#111. Full open-alert census not closed. Do not mark security clean.
-- **digital-double-mobile secret scanning alert #1:** not re-fetched in Sweep-225. Prior record: OpenRouter API key, historical path `.env`, publicly leaked, validity unknown. Rotate and revoke. Do not rewrite history. Absence of `.env` is not rotation.
-- **digital-double-mobile Dependabot critical #30 and #8:** not re-fetched in Sweep-225. Archive-queue gate still requires credential rotation first. `archived=true` still false.
+- **digital-double-mobile secret scanning alert #1:** not re-fetched in Sweep-231. Prior record: OpenRouter API key, historical path `.env`, publicly leaked, validity unknown. Rotate and revoke. Do not rewrite history. Absence of `.env` is not rotation.
+- **digital-double-mobile Dependabot critical #30 and #8:** not re-fetched in Sweep-231. Archive-queue gate still requires credential rotation first. `archived=true` still false.
 - **RepoRover- archive flag:** classification ARCHIVED. `archived=true` still false. Operator may run `gh repo archive beyond-repair/RepoRover- --yes`. Not executed. Do not delete. Do not tag.
+- **Code_Generation_AI_Program archive flag:** classification ARCHIVED. `archived=true` still false. Operator may run `gh repo archive beyond-repair/Code_Generation_AI_Program --yes`. Not executed.
 - **forge-aegis license:** `License TBD` remains operator-only. Not assigned.
-- **forge-aegis product tag:** releases and tags API empty on Sweep-225. Not tagged.
+- **forge-aegis product tag:** releases and tags API empty on Sweep-229. Not tagged.
 - **forge-aegis code scanning:** list API 404 no analysis. Enabling remains operator-only.
 - **forge-aegis stale branches:** `finish/forge-aegis-v0.1-runnable` `aca5bf17`, `repair/docs-python3-venv` `b0b20e52`, `repair/v0.1-installable-slice` `95975c91`. Not deleted. main is `e7188d52`.
-- **sovereign-clean-room `seem-completion-pass`:** still `d6f13042`. Python tests run 37215829476 success. Not merged. VSA completeness UNVERIFIED. main is `4878918c` (run 37064696194 success).
-- **sovereign-clean-room branch `fix/pynacl-1.6.2-cve-2025-69277`:** still `f65d7db6`. Not merged.
-- **Secret scanning disabled** on `sovereign-clean-room` (API 404, Sweep-225). Enabling is operator-only.
+- **sovereign-clean-room `seem-completion-pass`:** still `d6f13042` at Sweep-229. Python tests run 37215829476 success. Not merged. VSA completeness UNVERIFIED. main is `4878918c`.
+- **sovereign-clean-room branch `fix/pynacl-1.6.2-cve-2025-69277`:** still `f65d7db6` at Sweep-229. Not merged.
+- **Secret scanning disabled** on `sovereign-clean-room` (API 404, Sweep-229). Enabling is operator-only.
 - **BlockSwarm stale branches:** `finish/foundry-runnable` `574c86cb`, `sweep/add-sweep-config` `7b8bf28c`. Not deleted. Releases empty. Code scanning 404.
 - **DevelopTool and other archive-queue flags:** remain false. Only `CFT-v3.0` is GitHub-archived.
 - Product tags/releases, code scanning enablement, secret rotation, and GitHub archive flags remain operator-only. History rewrite and repository deletion remain forbidden.
 - Accounting: user `public_repos` 78 vs search total 83. Do not delete repositories to force equality.
 
-## Residual notes from Sweep-224
+## Push-time observation (Sweep-225, not re-patched)
 
-forge-aegis observation commit `e7188d5` CI run 37258127100 success. Claim cap unchanged. License, product tag, code scanning, and stale branches remain operator-only. RepoRover- `archived` remains false.
-
-## Push-time observation (Sweep-225)
-
-`ADL-Governance` Dependabot alert #1 open: `pytest` GHSA-6w46-j5rx-g56g, medium, CVE-2025-71176 class (tmpdir). Not patched this sweep.
+`ADL-Governance` Dependabot alert #1 open: `pytest` GHSA-6w46-j5rx-g56g, medium, CVE-2025-71176 class (tmpdir). Not patched this sweep. Census repo alert #1 is a separate open item from Sweep-227.
