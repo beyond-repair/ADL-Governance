@@ -2,11 +2,15 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-252 / adl-function-census
+
+Do not re-lock `SNAPSHOT_DATE`, `ENUMERATED_PUBLIC_REPOS=68`, or the 57 records from a search total of 83. Do not flip Q-FUNC-002/003 from `NOT_BUILT` to built without a module-surface audit and a SUPERSEDES proof. Do not rename Q-FUNC-004 to `os-family-constitution-map` in the lock without an operator decision. No tag. No archive flag.
+
 ## Residual notes from Sweep-251 / PASS-2026-10-06-251
 
 Master-directive sweep. Search total_count 83. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit.
 
-**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-251). Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Lockfile bump is operator-gated.
+**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-251; not re-fetched Sweep-252). Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Lockfile bump is operator-gated.
 
 forge-aegis code scanning list returned 404 no analysis. Secret scanning open list empty. Dependabot open empty. License TBD remains operator-only.
 
