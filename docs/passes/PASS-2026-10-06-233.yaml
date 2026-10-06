@@ -10,9 +10,10 @@ commits:
   - e6d501635f17a59723dd89fbd611e08070422ecd
 local_tests: pytest 20 passed
 ci_prior: 37068992419 success
-ci_new: pending at governance write
+ci_new: 37468055628 success on e6d5016
+ci_intermediate: 37467830111 success on 5420df0
 tag: false
 archive: false
 claim_elevation: false
 incident: README placeholder overwritten then restored
-exit: subject claim-capped; portfolio termination not met
+exit: subject claim-capped and CI-green; portfolio termination not met
