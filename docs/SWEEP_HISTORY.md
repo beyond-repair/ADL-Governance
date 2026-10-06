@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-254 — 2026-10-06 randomized draw CFTv3.3-IQG-Unified-Framework
+
+- Timestamp: 2026-10-06 21:03Z. Scope: one random repository from the search payload of 83 names. Draw: `random.Random(1791320439).choice` over the page of 83 names → `CFTv3.3-IQG-Unified-Framework`.
+- Classification: RESEARCH. Claim ≤ 2. Not elevated. Not an experimental confirmation. Not a thruster.
+- Discover: tree at pre-sweep `99a07454` (12 paths). Ledger docs, TeX, LICENSE, `tests/test_docs.py`, `.github/workflows/ci.yml`. No physics executable in tree. Prior Actions: docs-ci run 34141878005 success on `99a07454` (2026-09-07). Releases/tags not created. Published security advisories empty.
+- Audit: GOVERNANCE/RESEARCH stamps still said Sweep-106. Frozen weight `0.23(n-3)` and deprecated `0.23(n-1)` were in README and CONSISTENCY but not locked by a dedicated test. Bullet Cluster remained FAIL. CI had no `permissions: contents: read`.
+- Implement commits: `638e7a6e2a42fd15d54ad2f02b2fd3c65ab22686` (symbol-lock tests), `9978b882073cb61738e11642faca05acbbb2501f` (docs-ci least privilege, `pytest tests`), `1e5938544678f0de2ab30e03e877971511efeb08` (GOVERNANCE restamp), `6cdc295d260cfe193a5f2855e7195179f04f4740` (RESEARCH), `3ad221324287c197b99d6c5f521e2ca40385d850` (CONSISTENCY; Bullet FAIL retained), `5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace` (README). No deletion. No history rewrite. No tag. No archive flag.
+- Local pytest on the patched ledger: 5 passed (`tests/test_symbol_lock.py` only; `test_docs.py` not re-executed in the local sandbox). Not an Actions conclusion.
+- Actions CI on head: docs-ci run 37531114934 success on `5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace` (updated 2026-10-06T21:03:47Z). Intermediate run 37531090258 success on `3ad22132` is not the head.
+- Termination for this repo: not met. Physics executables remain out of tree by design. Bullet Model D and SPARC O(1) remain open. Green docs-ci is not physics validation.
+- Portfolio exit criteria remain unmet (Digital Double alert 13 still open from Sweep-253; not re-fetched in Sweep-254).
+
+
 ## Sweep-253 — 2026-10-06 master directive completion sweep
 
 - Timestamp: 2026-10-06 (session clock 20:11Z). Scope: one governed sweep of `user:beyond-repair`. Discovery via authenticated search `user:beyond-repair`, `total_count` 83, `incomplete_results` false. Profile `public_repos` 78 (count mismatch retained; search payload is the inventory). Private in payload: 9. GitHub `archived=true`: `CFT-v3.0` only. Size 0: `automate_passive_income`, `Quantumclustering`.
