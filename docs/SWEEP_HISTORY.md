@@ -1,5 +1,25 @@
 # Sweep History
 
+## Sweep-255 — 2026-10-06 master directive completion sweep
+
+- Timestamp: 2026-10-06 (session clock 21:15Z / 17:15 EDT). Scope: one governed sweep of `user:beyond-repair`. Discovery via authenticated search `user:beyond-repair`, `total_count` 83, `incomplete_results` false, item length 83. Private in payload: 9 (`Digital_Double_Virtual_Workforce_4.2`, `CFT-v3.0`, `Digital_Double_Virtual_Workforce_4.`, `blacksite`, `potential-garbanzo`, `SovereignOS`, `test`, `mendthegame`, `atomicdreamlabs`). GitHub `archived=true`: `CFT-v3.0` only. Size 0: `automate_passive_income`, `Quantumclustering`.
+- Governance head at read: `cfc1d831bdfa0702b919bf8e511a997f8b10b9eb`. Prior sweep on file: Sweep-254.
+- Mandatory live verification re-fetched. No tree tests executed. Actions conclusions are not local pytest results. Branches were not re-listed.
+- forge-aegis: workflow `forge-aegis CI` run 37258127100 success on main `e7188d529739652a2dd6264bd3d328c1f72e60e5` (updated 2026-10-05T03:07:36Z). Releases empty. Tags empty. Dependabot open empty. Code scanning 404 no analysis. Secret scanning open empty.
+- sovereign-clean-room: main push Python tests run 37064696194 success on `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` (updated 2026-10-02T21:05:44Z). Latest listed run 37215829476 success on `seem-completion-pass` `d6f13042`, not merged. Releases empty. Tags empty. Dependabot open empty.
+- BlockSwarm: Foundry run 36859452185 success on main `6e90f6f85c0969fa8a262a70ceba833d618a22db` (updated 2026-10-01T12:05:48Z). Releases empty. Tags empty. `v0.5.0-sagf` absent from the tags API. Dependabot open empty.
+- Digital_Double_virtual_workforce: Digital Double CI push run 36861489156 success on main `24e6a29fd26c03900a8d98634d6683996eabdac4` (updated 2026-10-01T12:24:12Z). Releases empty. Tags empty. Dependabot alert 13 re-fetched open: npm `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Code scanning 404 no analysis. GraphQL issues list `totalCount` 0; search payload `open_issues_count` 5. Neither count is treated as a fix. Readiness FAIL.
+- Classifications: all 83 names remain assigned. Non-mandatory classes inherited from `docs/repository_registry.md` / Sweep-253. No claim elevation.
+- Actions performed: governance documentation only (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`, `docs/passes/PASS-2026-10-06-255.yaml`).
+- No deletion. No history rewrite. No archive flag. No tag. No lockfile edit.
+- Exit criteria not met (critical alert open, product tags absent, archive candidates unflagged, duplicate families retained as governed SUPERSEDED/RESEARCH, non-mandatory trees not re-audited). Stop. Do not loop.
+- Pass file: `docs/passes/PASS-2026-10-06-255.yaml`.
+
+## Index / PASS-2026-10-06-255
+
+- Canonical file: `docs/passes/PASS-2026-10-06-255.yaml`. Narrative is the Sweep-255 paragraph above.
+
+
 ## Sweep-254 close / PASS-2026-10-06-254
 
 - Timestamp: 2026-10-06. Closes the missing contract for Sweep-254. Does not replace the Sweep-254 paragraph below.
