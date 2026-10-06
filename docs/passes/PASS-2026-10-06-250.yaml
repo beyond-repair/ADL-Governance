@@ -17,7 +17,8 @@ OBJECTIVE:
 DISCOVERY:
   findings:
     - Authenticated owner beyond-repair id 132061760. Search inventory 83 names inherited. Profile public_repos 78 at discovery.
-    - ADL-Governance main before this commit was 2006a694deb61172392a121ec1867d3c5c5cd4c5, message docs Sweep-250 RealityOS research re-audit.
+    - ADL-Governance main before the contract commit was 2006a694deb61172392a121ec1867d3c5c5cd4c5.
+    - Contract commit 9e7704db937fe7419851f531579bfc9062e245b4. Provenance sha follow-up is this commit.
     - RealityOS head e36664a403c428838ffdeca6d3e5b714ff5dbc9b. Prior implement commit c93d446472c6e2e69d1b85644709d73dbd1e93a4.
     - Actions run 37515916411 research-guard conclusion success, status completed, head c93d446472c6e2e69d1b85644709d73dbd1e93a4, updated_at 2026-10-06T19:02:35Z.
     - Actions run 37515961844 research-guard conclusion success, status completed, head e36664a403c428838ffdeca6d3e5b714ff5dbc9b, updated_at 2026-10-06T19:02:56Z.
@@ -31,7 +32,8 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - this commit
+    - 9e7704db937fe7419851f531579bfc9062e245b4
+    - provenance follow-up on the same file
   prior_subject_commits:
     - c93d446472c6e2e69d1b85644709d73dbd1e93a4
     - e36664a403c428838ffdeca6d3e5b714ff5dbc9b
@@ -54,7 +56,7 @@ KNOWLEDGE:
     - Both cited RealityOS research-guard runs completed with conclusion success.
     - CLAIM_STATUS.md does not claim persistence, connectors, or an operating system.
   failures:
-    - Sweep-250 history line that a pass file existed was false until this commit. Preserved; closure is this file.
+    - Sweep-250 history line that a pass file existed was false until 9e7704db. Preserved; closure is this file.
   decisions:
     - Do not tag, archive, delete, rewrite history, merge OS-family repos, or edit lockfiles.
     - Do not treat green research-guard as ACTIVE readiness.
@@ -78,7 +80,7 @@ NEXT:
   prerequisites:
     - Operator approval before any lockfile edit.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: 9e7704db937fe7419851f531579bfc9062e245b4
   evidence:
     - Actions run 37515916411 conclusion success
     - Actions run 37515961844 conclusion success
