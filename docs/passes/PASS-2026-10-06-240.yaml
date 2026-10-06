@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-10-06-240
+  parent_pass: PASS-2026-10-06-239
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived from product code in this pass. Not invented.
+OBJECTIVE:
+  id: GAP-GOVERNANCE-CI-PASS-CHECK
+  description: Close the governance-ci failure caused by the contract sidecar filename and the truncated sweep-history heading index.
+  reason_selected: governance-ci run 37484562815 failed on main c3606ff. Local reproduction exited on PASS-2026-10-05-230.contract.yaml. After that rejection, 51 canonical pass ids had no heading. This is a verified CI gap and not operator-only.
+DISCOVERY:
+  findings:
+    - Authenticated owner beyond-repair. Search total_count 83.
+    - Latest prior contract pass is PASS-2026-10-06-239 on aegis-repo-graph. It did not record a next objective.
+    - governance-ci job pass-records failed at the validate step on runs 37484562815, 37484509664, 37484421300, 37478187243, and 37477172758.
+    - scripts/check_passes.py rejected any filename that was not PASS-YYYY-MM-DD-N.yaml, including the existing transcription sidecar.
+    - Current SWEEP_HISTORY.md named only PASS-2026-10-06-238 and PASS-2026-10-06-239. Prior bodies were retained in docs/passes and git, not deleted.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - scripts/check_passes.py
+    - tests/test_check_passes.py
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/passes/PASS-2026-10-06-235.yaml
+    - docs/passes/PASS-2026-10-06-236.contract.yaml
+    - docs/passes/PASS-2026-10-06-240.yaml
+  commits: []
+  capabilities_added_or_changed:
+    - pass checker accepts nested contract sidecars without treating them as the latest canonical pass
+    - retained pass heading index restored without inventing sweep bodies
+    - contract transcription added for sweeps 235 and 236
+VERIFICATION:
+  tests_run:
+    - python3 scripts/check_passes.py PASS: 57 yaml files parsed; history headings name all ids including PASS-2026-10-06-240
+    - python3 -m pytest -q tests/test_check_passes.py: 17 passed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: Local checker and unit tests passed. Remote governance-ci for this commit was not yet observed. Not claimed green.
+KNOWLEDGE:
+  confirmed:
+    - governance-ci run 37484562815 failed in the validate step on c3606ff.
+    - Local checker after the sidecar and stub rules parsed 57 yaml files.
+    - pytest tests/test_check_passes.py 17 passed.
+  failures:
+    - Remote CI for this pass is not yet observed.
+  decisions:
+    - Do not rewrite stub PASS-2026-10-06-236.yaml.
+    - Do not rewrite the locked aegis catalog.
+    - Do not patch Dependabot alerts in this pass.
+REMAINING:
+  incomplete:
+    - governance-ci on the new commit is not yet observed.
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: GAP-GOVERNANCE-CI-OBSERVE-240
+  action: Re-fetch governance-ci for the commit that persists this pass and record the conclusion. Do not claim green before that run completes.
+  reason: Local checks are not a substitute for the failing workflow.
+  prerequisites:
+    - commit exists on main

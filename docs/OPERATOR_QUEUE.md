@@ -2,6 +2,13 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-240
+
+Governance-ci failure on main `c3606ff` run 37484562815. Checker now accepts nested contract sidecars. Retained pass headings restored as index-only lines. Sweep-235 contract file added. Sweep-236 stub left intact and contract sidecar added. Do not rewrite stubs. Do not treat local checker success as remote CI success until the new run is fetched. No archive. No tag. No lockfile edit. No history rewrite. No claim elevation.
+
+
+Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
+
 ## Residual notes from Sweep-239
 
 Random subject `aegis-repo-graph`. Classification RESEARCH, tool claim <=1, reconfirmed. Catalog integer claim 3 left as snapshot data. Do not rewrite locked catalog rows to absorb the 18 observation-only names or drop the 7 catalog-only names. Do not treat spelling variant `CFTv3.3-IQG-Unified-Framework` as a silent rename of `CFT-v3.3-IQG-Unified-Framework`. Do not mark census compatible-build `built`. Do not tag. Do not archive. Partial commits `50e85433` and `3bb7c49c` failed CI and were completed by later commits; history was not rewritten. PASS body: `docs/passes/PASS-2026-10-06-239.yaml`.

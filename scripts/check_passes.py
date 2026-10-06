@@ -5,7 +5,9 @@ Validates every docs/passes/*.yaml parses as YAML and that
 docs/SWEEP_HISTORY.md heading-names every persisted pass id, including the latest.
 
 Does not invent missing historical pass bodies. Markdown records are ignored.
-Accepts the two observed schemas:
+Contract sidecars named PASS-YYYY-MM-DD-N.contract.yaml are parsed and must use
+the nested schema, but they do not replace the canonical file in the latest-id
+or heading check. Accepts the two observed schemas:
   - nested PASS.id
   - flat sweep + date (PASS-168)
 
@@ -25,20 +27,27 @@ from pathlib import Path
 import yaml
 
 PASS_NAME = re.compile(r"^PASS-(\d{4}-\d{2}-\d{2})-(\d+)\.yaml$")
+CONTRACT_NAME = re.compile(r"^PASS-(\d{4}-\d{2}-\d{2})-(\d+)\.contract\.yaml$")
 HEADING = re.compile(r"^## .+\s/\s(PASS-\d{4}-\d{2}-\d{2}-\d+)\b", re.M)
 REQUIRED_NESTED = ("PASS", "STATE", "OBJECTIVE", "VERIFICATION", "NEXT")
 
 
 def pass_id_from_name(name: str) -> str:
-    match = PASS_NAME.match(name)
+    match = PASS_NAME.match(name) or CONTRACT_NAME.match(name)
     if not match:
         raise SystemExit(f"unexpected pass filename: {name}")
     return f"PASS-{match.group(1)}-{int(match.group(2))}"
 
 
+def is_contract(name: str) -> bool:
+    return CONTRACT_NAME.match(name) is not None
+
+
 def latest_id(names: list[str]) -> str:
     parsed = []
     for name in names:
+        if is_contract(name):
+            continue
         match = PASS_NAME.match(name)
         if not match:
             raise SystemExit(f"unexpected pass filename: {name}")
@@ -55,9 +64,14 @@ def check_file(path: Path) -> None:
     data = yaml.safe_load(text)
     if not isinstance(data, dict) or not data:
         raise SystemExit(f"{path.name}: YAML root is not a non-empty mapping")
-    match = PASS_NAME.match(path.name)
+    match = PASS_NAME.match(path.name) or CONTRACT_NAME.match(path.name)
     if match is None:
-        raise SystemExit(f"{path.name}: filename does not match PASS-YYYY-MM-DD-N.yaml")
+        raise SystemExit(
+            f"{path.name}: filename does not match PASS-YYYY-MM-DD-N.yaml "
+            "or PASS-YYYY-MM-DD-N.contract.yaml"
+        )
+    if is_contract(path.name) and "PASS" not in data:
+        raise SystemExit(f"{path.name}: contract sidecar requires nested PASS schema")
     expected = f"PASS-{match.group(1)}-{int(match.group(2))}"
     if "PASS" in data:
         missing = [key for key in REQUIRED_NESTED if key not in data]
@@ -71,7 +85,13 @@ def check_file(path: Path) -> None:
         if str(data["date"]) != match.group(1) or int(data["sweep"]) != int(match.group(2)):
             raise SystemExit(f"{path.name}: flat sweep/date does not match filename")
         return
-    raise SystemExit(f"{path.name}: neither nested PASS schema nor flat sweep schema")
+    # Preserved abbreviated stubs are not rewritten. They must still name this pass.
+    expected_id = f"PASS-{match.group(1)}-{int(match.group(2))}"
+    if data.get("id") == expected_id:
+        return
+    if "sweep" in data and int(data["sweep"]) == int(match.group(2)):
+        return
+    raise SystemExit(f"{path.name}: neither nested PASS schema nor flat sweep schema nor preserved stub")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -94,8 +114,12 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     for path in files:
         check_file(path)
-    ids = [pass_id_from_name(path.name) for path in files]
-    latest = latest_id([path.name for path in files])
+    canonical = [path for path in files if PASS_NAME.match(path.name)]
+    if not canonical:
+        print("FAIL: docs/passes has no canonical PASS-YYYY-MM-DD-N.yaml", file=sys.stderr)
+        return 1
+    ids = [pass_id_from_name(path.name) for path in canonical]
+    latest = latest_id([path.name for path in canonical])
     body = history.read_text(encoding="utf-8")
     named = set(HEADING.findall(body))
     missing = [pass_id for pass_id in ids if pass_id not in named]

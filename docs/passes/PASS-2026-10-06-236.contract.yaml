@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-06-236
+  parent_pass: null
+  parent_note: Sweep-236 body did not name a parent pass. Not invented.
+  transcription: true
+  source_commit: db96669931231642ef05f3d94c8a59df1203c333
+  source_path: docs/SWEEP_HISTORY.md
+  stub_preserved: docs/passes/PASS-2026-10-06-236.yaml
+  stub_sha: b80da72cf74fb7a62a97548e013d48e4d6b92158
+  transcribed_by: PASS-2026-10-06-240
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: null
+  repositories_changed: null
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Sweep-236 body recorded a choice over 87 installed names, not a search total_count. Counts not invented.
+OBJECTIVE:
+  id: GAP-ORIGIN-POINT-REAUDIT-236
+  description: Random completion sweep of The-Origin-Point-Hypothesis. Re-audit and claim-cap only.
+  reason_selected: sha256(beyond-repair-sweep-2026-10-06T14:00Z)[:8] = 2289069922, random.Random.choice over 87 installed repository names.
+DISCOVERY:
+  findings:
+    - Subject The-Origin-Point-Hypothesis. public main. Pre-tree 7c669b46534063906b9649ef1e39e8b9acd08211. 13 entries, not truncated.
+    - Classification RESEARCH. Claim <=1. Not a SPARC fit. Not a dark-matter replacement. Not canonical W(n).
+    - Discover surfaces named in the body: README, CLAIM_STATUS, GOVERNANCE, SECURITY, TeX sketch, historical PDF (77396 bytes, not rewritten), docs-presence workflow, claim-cap tests.
+    - Prior CI docs-presence run 37407105315 success on that head. Runs 37407059857 and 34150166072 failed earlier and were superseded.
+    - Finding: PORTFOLIO_STATUS_REPORT still said inherited / not re-audited after Sweep-230. CI did not check the (n-3) token or PDF presence that the unittest already required.
+CHANGES:
+  repositories:
+    - beyond-repair/The-Origin-Point-Hypothesis.
+    - beyond-repair/ADL-Governance
+  files:
+    - not named individually in the Sweep-236 body
+  commits:
+    - 43397b19acbbd6e8f5e3ab610868c78fe1458fb6
+  capabilities_added_or_changed:
+    - CI bound to existing claim-cap checks; PDF presence test added; no equation edit; no claim elevation
+VERIFICATION:
+  tests_run:
+    - pytest 4 passed
+    - PDF fixture was a local presence stub; remote blob size remains 77396
+    - New CI not yet recorded green at the Sweep-236 history write
+    - Later governance commit message db96669 records CI 37475853468 success. This transcription does not re-fetch that run.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  overall_note: Transcription of an already indexed sweep. This file does not re-run those tests.
+KNOWLEDGE:
+  confirmed:
+    - No equation edit. No PDF edit. No tag. No archive. No license invented.
+    - Subject commit recorded as 43397b19acbbd6e8f5e3ab610868c78fe1458fb6.
+  failures:
+    - Portfolio termination not met.
+  decisions:
+    - License remains absent and operator-only.
+    - Stop. Do not loop. Recorded as the Sweep-236 exit, not as a prohibition on later persistence passes.
+REMAINING:
+  incomplete:
+    - Portfolio termination not met.
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: null
+  action: Not recorded in the Sweep-236 body. Do not invent a next action for the historical sweep.
+  reason: Transcription only.
+  prerequisites: []
+PROVENANCE:
+  state_commit: db96669931231642ef05f3d94c8a59df1203c333
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-236 section at db96669931231642ef05f3d94c8a59df1203c333
+    - stub docs/passes/PASS-2026-10-06-236.yaml sha b80da72cf74fb7a62a97548e013d48e4d6b92158 left intact

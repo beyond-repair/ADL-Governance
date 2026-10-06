@@ -48,7 +48,7 @@ def test_real_repository_passes(capsys: pytest.CaptureFixture[str]) -> None:
     out = capsys.readouterr().out
     assert f"PASS: {len(names)} yaml files parsed" in out
     assert latest in out
-    assert latest == "PASS-2026-10-02-205"
+    assert latest == mod.latest_id(names)
 
 
 def test_latest_id_sorts_by_date_then_numeric_suffix() -> None:

@@ -1,0 +1,72 @@
+PASS:
+  id: PASS-2026-10-06-235
+  parent_pass: PASS-2026-10-06-234
+  parent_note: Chronological from commit order. Sweep-235 body did not name a parent pass. Not invented as an embedded historical field.
+  transcription: true
+  source_commit: 90d578e37311844bf28b7f1e39f06be2fd233943
+  source_path: docs/SWEEP_HISTORY.md
+  transcribed_by: PASS-2026-10-06-240
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Sweep-235 body did not record capability or gap counts. Not invented.
+OBJECTIVE:
+  id: GAP-PORTFOLIO-VERIFY-235
+  description: Master Directive portfolio sweep. Live verification of the four named systems. Governance docs only.
+  reason_selected: Recorded as a Master Directive cycle, not a random subject selection.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload. Zero forks.
+    - Heads unchanged for forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce.
+    - CI re-fetched success for runs 37258127100, 37064696194, 36859452185, and 36861489156.
+    - Releases empty on all four. Tag refs not re-listed. BlockSwarm README tag lineage v0.5.0-sagf remains unverified.
+    - Dependabot critical #13 open. forge-aegis and BlockSwarm Dependabot open lists empty. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. High Dependabot filter on sovereign-clean-room empty.
+    - Post-push note at 90d578e: ADL-Governance Dependabot #1 open, pytest medium GHSA-6w46-j5rx-g56g, patched identifier 9.0.3. Not patched.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - 1c536c431059436ca2f8d787e0771c7d0851776a
+    - 90d578e37311844bf28b7f1e39f06be2fd233943
+  capabilities_added_or_changed:
+    - governance verification record only; no claim elevation
+VERIFICATION:
+  tests_run:
+    - No product tests recorded in the Sweep-235 body. Not invented.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  overall_note: Transcription of an already indexed sweep. This file does not re-run those checks.
+KNOWLEDGE:
+  confirmed:
+    - Actions performed were governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+    - Exit criteria were not met.
+  failures:
+    - Portfolio termination not met.
+  decisions:
+    - Stop. Do not loop. Recorded as the Sweep-235 exit, not as a prohibition on later persistence passes.
+REMAINING:
+  incomplete:
+    - Portfolio termination not met.
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: null
+  action: Not recorded in the Sweep-235 body. Do not invent a next action for the historical sweep.
+  reason: Transcription only.
+  prerequisites: []
+PROVENANCE:
+  state_commit: 90d578e37311844bf28b7f1e39f06be2fd233943
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-235 section at 90d578e37311844bf28b7f1e39f06be2fd233943
+    - no stub file existed at docs/passes/PASS-2026-10-06-235.yaml before this transcription
