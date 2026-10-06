@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-235 — 2026-10-06 Master Directive portfolio sweep
+
+- Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload. Zero forks. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Heads unchanged: `e7188d529739652a2dd6264bd3d328c1f72e60e5`, `4878918cf9f95d3c19e1890bef6d2fd6713e0a16`, `6e90f6f85c0969fa8a262a70ceba833d618a22db`, `24e6a29fd26c03900a8d98634d6683996eabdac4`.
+- CI re-fetched: 37258127100 success; 37064696194 success on main; 36859452185 success by direct get (branch-filtered list first page omitted it); 36861489156 success.
+- Releases empty on all four. Tag refs not re-listed. BlockSwarm README tag lineage `v0.5.0-sagf` remains unverified. Product README not edited.
+- Security: Dependabot critical #13 open. forge-aegis and BlockSwarm Dependabot open lists empty. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis. High Dependabot filter on sovereign-clean-room empty.
+- Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Exit: criteria not met. Stop. Do not loop.
+
 ## Sweep-234 — 2026-10-06 basilisk persistence gap
 
 - Selection: highest-value bounded gap that is not operator-only. PASS-231 NEXT was GAP-PASS-YAML-225-227. PASS-232 and PASS-233 are stubs and did not close it.
