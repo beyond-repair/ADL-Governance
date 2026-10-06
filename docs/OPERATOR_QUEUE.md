@@ -2,6 +2,13 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Residual notes from Sweep-254
+
+`CFTv3.3-IQG-Unified-Framework` stays RESEARCH. Do not archive it while it is the CFT symbol ledger. Do not promote to ACTIVE. Do not add SPARC runners or mesh generators to this tree. Do not treat docs-ci run 37531114934 as physics validation. Bullet Model D and local SPARC O(1) remain open research, not operator file edits. GitHub About text was not changed.
+
+
+Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
+
 ## Residual notes from Sweep-253 / PASS-2026-10-06-253
 
 Master-directive sweep. Search total_count 83. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
