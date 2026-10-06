@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-06-247
+  parent_pass: PASS-2026-10-06-246
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived for the full portfolio. Not invented.
+OBJECTIVE:
+  id: GAP-DD-DEPENDABOT-13
+  description: Re-fetch Dependabot alert 13 on Digital_Double_virtual_workforce. Record state, package, and manifest. Do not mark fixed unless GitHub state is fixed.
+  reason_selected: PASS-2026-10-06-246 named this as the next objective.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83, incomplete_results false. Profile public_repos 78 inherited from Sweep-244. Forks 0. GitHub archived flag true on 1 repository (CFT-v3.0, inherited).
+    - Dependabot alert 13 state open. package form-data. ecosystem npm. manifest digital_double/package-lock.json. scope development.
+    - Advisory GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. severity critical. matched range >= 4.0.0, < 4.0.4. first patched identifier 4.0.4.
+    - Open critical Dependabot filter returned only alert 13. hasNextPage false.
+    - ADL-Governance Dependabot alert 1 state fixed. fixed_at 2026-10-06T16:10:51Z. pytest GHSA-6w46-j5rx-g56g.
+    - AtomicNexusAI Deploy run 37501039089 conclusion success on f7ec8a0d. CI/CD 37501039100 success. Security Audit 37501039019 success. Claim cap unchanged at 0.
+    - forge-aegis latest CI 37258127100 success on e7188d52. Releases empty. Tags empty. Code scanning 404.
+    - sovereign-clean-room main Python tests 37064696194 success on 4878918c. Latest listed runs are seem-completion-pass, not merged. Releases empty. Tags empty.
+    - BlockSwarm Foundry 36859452185 success on 6e90f6f8. Releases empty. Tags empty. v0.5.0-sagf not present.
+    - Digital_Double CI 36861489156 success on 24e6a29f. Releases empty. Tags empty.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-247.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+  capabilities_added_or_changed: []
+VERIFICATION:
+  tests_run: []
+  code_review: NOT_RUN
+  security: PASS WITH FINDINGS
+  security_note: Alert 13 re-fetched open. Not patched in this pass.
+  integration: NOT_RUN
+  invariants: PASS
+  overall: FAIL
+  overall_note: Mandatory four re-fetched. Critical alert remains open, so portfolio exit criteria fail.
+KNOWLEDGE:
+  confirmed:
+    - Alert 13 is still open on form-data in digital_double/package-lock.json.
+    - It is the only open critical Dependabot alert returned for that repository.
+    - ADL-Governance alert 1 is fixed.
+    - AtomicNexusAI post-fix deploy workflow is green and is not a production deploy.
+  failures:
+    - Exit criteria not met.
+  decisions:
+    - Do not edit the lockfile in this pass. A bump without an observed GitHub fixed state would be an unverified claim.
+    - Do not archive, tag, delete, or rewrite history.
+REMAINING:
+  incomplete:
+    - form-data pin to 4.0.4 or newer not applied.
+    - Archive flags for recommended ARCHIVED repositories not flipped.
+    - BlockSwarm v0.5.0-sagf tag not created.
+    - seem-completion-pass not merged.
+  blockers:
+    - Operator must approve lockfile bump and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-DD-FORMDATA-PIN
+  action: Operator-gated bump of form-data in digital_double/package-lock.json to >= 4.0.4, then re-fetch alert 13. Do not mark fixed before GitHub state is fixed.
+  reason: Alert identity and patched identifier are now re-confirmed.
+PROVENANCE:
+  evidence:
+    - Dependabot alert 13 state open
+    - critical filter page hasNextPage false
+    - ADL-Governance alert 1 state fixed
+    - Actions runs cited in DISCOVERY
