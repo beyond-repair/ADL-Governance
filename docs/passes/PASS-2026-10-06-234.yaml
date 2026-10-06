@@ -30,13 +30,15 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/OPERATOR_QUEUE.md
   commits:
-    - recorded after acceptance
+    - 6a77c6ce04166f8b662ce928dbacd590fb501f54
+    - provenance follow-up commit recorded after acceptance
   capabilities_added_or_changed:
     - governance pass persistence for sweeps 225-227; no product capability added; no claim elevation
 VERIFICATION:
   tests_run:
     - Blob decode of 26dd1186693173128cf8317fb03f697d59c4ae96 succeeded
-    - Directory listing lacked PASS-2026-10-05-225.yaml, PASS-2026-10-05-226.yaml, and PASS-2026-10-05-227.yaml before this commit
+    - Directory listing lacked PASS-2026-10-05-225.yaml, PASS-2026-10-05-226.yaml, and PASS-2026-10-05-227.yaml before commit 6a77c6ce
+    - Post-commit listing at 6a77c6ce contained the three transcribed files and PASS-2026-10-06-234.yaml
     - No product tests executed in this pass
   code_review: NOT_RUN
   security: NOT_RUN
@@ -47,6 +49,7 @@ KNOWLEDGE:
   confirmed:
     - Sweep-225, 226, and 227 bodies are recoverable from the named parent blob.
     - Transcription does not re-verify product CI.
+    - Accepted ledger commit is 6a77c6ce04166f8b662ce928dbacd590fb501f54.
   failures:
     - Did not expand PASS-230, PASS-232, or PASS-233 stubs into the contract schema.
     - Did not execute operator archive, secret rotation, license assignment, or Dependabot patch.
@@ -59,7 +62,7 @@ REMAINING:
   blockers:
     - Archive flags, secret rotation, lockfile bump, license assignment, and PR merge are operator-only
   new_gaps:
-    - Provenance follow-up SHA is not embedded in this file until a later commit records it
+    - This provenance follow-up SHA is not embedded in this file. Parent ledger commit is 6a77c6ce.
 NEXT:
   objective_id: GAP-PASS-STUB-230
   action: Expand docs/passes/PASS-2026-10-05-230.yaml from the Sweep-230 body already in git history into the basilisk schema without rewriting product history or elevating claims. Leave the stub file intact if replacement would drop recorded CI ids; add a contract file only if the stub must be preserved.
@@ -70,9 +73,11 @@ NEXT:
     - Do not change claim caps
     - Do not invent fields absent from the Sweep-230 body
 PROVENANCE:
-  state_commit: null
+  state_commit: 6a77c6ce04166f8b662ce928dbacd590fb501f54
   evidence:
     - blob 26dd1186693173128cf8317fb03f697d59c4ae96
-    - docs/passes listing before this commit
+    - docs/passes listing before commit 6a77c6ce
+    - docs/passes listing after commit 6a77c6ce containing PASS-2026-10-05-225.yaml, PASS-2026-10-05-226.yaml, PASS-2026-10-05-227.yaml
     - search user:beyond-repair total_count 83
+    - https://github.com/beyond-repair/ADL-Governance/commit/6a77c6ce04166f8b662ce928dbacd590fb501f54
     - https://github.com/beyond-repair/ADL-Governance/commit/44c18ce1a9e1e3e7ad0fc3572a2545154f3e68e1
