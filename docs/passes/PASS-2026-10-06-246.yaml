@@ -39,22 +39,26 @@ CHANGES:
     - 47767e57d90353b70e04248045fdce9e28035689
     - 2825458c71f7b44ee366f177a7a9964e703365a9
     - ba36b228320c08da8037c65c8de2548dbcf51180
+    - 65db6e49999d11963b1e967356b5552f81f776ff
   capabilities_added_or_changed:
     - deploy job invocation changed from ./deploy.sh to bash deploy.sh
     - claim cap unchanged at 0
 VERIFICATION:
   tests_run:
-    - In-job pytest on the failed run: 11 passed, then exit 126. Not re-run locally this pass.
-    - New Actions run on 45a68454 not observed in this pass.
+    - Failed run 37492591439: pytest 11 passed, then exit 126.
+    - Post-fix run 37501012922 on 45a68454 conclusion success.
+    - Follow-up run 37501039089 on f7ec8a0d conclusion success.
+    - Local pytest not re-run this pass.
   code_review: NOT_RUN
   security: NOT_RUN
-  integration: NOT_RUN
+  integration: PASS
+  integration_note: Workflow invocation only. Success means bash deploy.sh exited 0. It does not mean a production deploy occurred.
   invariants: PASS
   overall: PASS WITH FINDINGS
-  overall_note: Failure cause verified from the job log. Fix committed. Post-fix Actions conclusion not yet observed. Do not treat as a release.
 KNOWLEDGE:
   confirmed:
-    - Deploy failure is executable-bit / exit 126, not a test failure.
+    - Deploy failure was executable-bit / exit 126, not a test failure.
+    - bash deploy.sh removes that failure on the observed runs.
     - deploy.sh does not perform a production deploy.
   failures:
     - Direct ./deploy.sh execution failed run 37492591439.
@@ -65,20 +69,20 @@ KNOWLEDGE:
     - Do not raise AtomicNexusAI above RESEARCH claim 0.
 REMAINING:
   incomplete:
-    - Post-fix Actions conclusion for 45a68454 not observed.
     - Portfolio termination not met.
+    - Digital_Double Dependabot #13 not re-fetched.
   blockers: []
-  new_gaps:
-    - GAP-ATOMICNEXUS-DEPLOY-RERUN: observe the push-triggered run on 45a68454 before calling the invocation fix verified.
+  new_gaps: []
 NEXT:
-  objective_id: GAP-ATOMICNEXUS-DEPLOY-RERUN
-  action: Fetch the Deploy Atomic Nexus AI run for commit 45a68454. Record conclusion. Do not tag. Do not raise the claim cap.
-  reason: The exit-126 cause is known and a deterministic invocation change is committed. Verification of that change requires the new run.
+  objective_id: GAP-DD-DEPENDABOT-13
+  action: Re-fetch Dependabot alert 13 on beyond-repair/Digital_Double_virtual_workforce. Record state, package, and manifest. Do not mark fixed unless GitHub state is fixed. Do not rewrite history.
+  reason: Deploy exit 126 is explained and the invocation fix is observed green. The next open operator residual with a concrete alert id is Dependabot 13.
   prerequisites:
-    - Actions run for head 45a68454b2b661e38ac4abd728dc2bcf0b8f663b exists
+    - Dependabot alert API available for that repository
 PROVENANCE:
-  state_commit: ba36b228320c08da8037c65c8de2548dbcf51180
+  state_commit: 65db6e49999d11963b1e967356b5552f81f776ff
   evidence:
     - Actions run 37492591439 conclusion failure
     - job 112368862487 log exit 126
-    - commit 45a68454b2b661e38ac4abd728dc2bcf0b8f663b
+    - Actions run 37501012922 conclusion success on 45a68454
+    - Actions run 37501039089 conclusion success on f7ec8a0d
