@@ -1,12 +1,20 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-06 11:15 EDT (Sweep-241)
+**Updated:** 2026-10-06 12:03 EDT (Sweep-242)
 **Project / Version:** ADL Portfolio Governance / Sweep-241
 **Objective:** Master Directive portfolio sweep. Live-verify the four named systems. Record residuals. Do not loop.
 **Authenticated owner:** `beyond-repair` (id 132061760). Profile `public_repos` 78. Search `user:beyond-repair` `total_count` 83, `incomplete_results` false.
 **Governing source:** `beyond-repair/ADL-Governance`
 **Evidence rule:** Code > Documentation > Roadmap.
 **Assumptions:** A1 user sweep directive. A2 this cycle re-fetched search metadata, main heads, Actions conclusions, releases, tags, and selected security lists for the four named systems. A3 classifications outside those four remain inherited and were not re-audited.
+
+## Sweep-242 result
+
+Random subject: `AtomicNexusAI`. Selection: `random.SystemRandom().choice` over 80 names from search total_count 83, excluding `ADL-Governance`, `aegis-repo-graph`, and `sunder`.
+
+Classification corrected from inherited ARCHIVED target to **RESEARCH**. Claim cap 0. GitHub archived flag remains false. Pre-head `e5434837c4d13676ff3e834ad012c55ae62b48c7`. Tree not truncated (153 entries). Local pytest 11 passed. Actions list total_count 0 before the workflow edit. Releases and tags empty.
+
+Commits: `453b36085ef8d4c9ea195f1889980232c268d0ee`, `35850a059a8c12c23948aad6c15ba2810c722cce`, `663df6a76400a1c5ef36bc3bceedfd270cca2881`. Remote CI on the new head not yet observed. No tag. No archive flag. No deletion. No claim elevation. Portfolio termination not met.
 
 ## Sweep-241 result
 
@@ -83,7 +91,7 @@ Class column is Sweep-241 live only for the four named systems. `The-Origin-Poin
 | `aegis-repo-graph` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-06 | False | 0 |
 | `Agent-Snake` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-01 | False | 0 |
 | `atomicdreamlabs` | RESEARCH (inherited default; not re-audited) | private | JavaScript | 2026-10-01 | False | 0 |
-| `AtomicNexusAI` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | Python | 2026-10-02 | False | 0 |
+| `AtomicNexusAI` | RESEARCH (Sweep-242 re-audit; claim 0) | public | Python | 2026-10-06 | False | 0 |
 | `Auto_Legion` | SUPERSEDED → sovereign-clean-room (inherited) | public | Python | 2026-10-01 | False | 0 |
 | `automate_passive_income` | ARCHIVED target (inherited; GitHub flag true only if noted) | public | None | 2026-10-01 | False | 0 |
 | `beyond-repair` | PROFILE (inherited) | public | None | 2026-10-01 | False | 0 |
@@ -152,4 +160,4 @@ Class column is Sweep-241 live only for the four named systems. `The-Origin-Poin
 | `VigilE.S.A.-Enhanced-Security` | RESEARCH (inherited default; not re-audited) | public | Rust | 2026-10-02 | False | 0 |
 | `ware-constant-phenomenology` | RESEARCH (inherited default; not re-audited) | public | Python | 2026-10-02 | False | 0 |
 
-Sweep-241 stop. Exit criteria not met. Do not loop.
+Sweep-242 stop. Exit criteria not met. Do not loop.
