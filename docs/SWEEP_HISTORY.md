@@ -1,5 +1,23 @@
 # Sweep History
 
+## Sweep-242 — 2026-10-06 random completion sweep
+
+- Selection: `random.SystemRandom().choice` over 80 names from search `user:beyond-repair` total_count 83, incomplete_results false, excluding `ADL-Governance`, `aegis-repo-graph`, and `sunder`.
+- Subject: `AtomicNexusAI` (public, main). Pre-head `e5434837c4d13676ff3e834ad012c55ae62b48c7`. Tree not truncated (153 entries).
+- Classification: **RESEARCH**. Claim cap 0. Inherited ARCHIVED-target row corrected. GitHub archived flag remains false.
+- Discover: README, CLAIM_STATUS, ARCHIVED.md, pyproject, CI workflow, tests. Actions list total_count 0. Releases empty. Tags empty.
+- Local pytest before workflow edit: 11 passed.
+- Finding: workflow pinned Python 3.8 and `flake8 .` while `requires-python` is >=3.10 and orphan root trees are not the Claim-0 surface.
+- Action: CI job installs `.[dev]` on Python 3.11 and runs `pytest -q`. Claim status and README aligned. Orphan trees not deleted.
+- Commits: `453b36085ef8d4c9ea195f1889980232c268d0ee`, `35850a059a8c12c23948aad6c15ba2810c722cce`, `663df6a76400a1c5ef36bc3bceedfd270cca2881`.
+- Remote CI on the new head not yet observed. No tag. No archive. No history rewrite. No claim elevation.
+- Exit: subject re-audited and claim-capped. Portfolio termination not met. Stop. Do not loop.
+
+## Index / PASS-2026-10-06-242
+
+Body is the Sweep-242 section above. Contract file is `docs/passes/PASS-2026-10-06-242.yaml`.
+
+
 ## Sweep-241 — 2026-10-06 Master Directive portfolio sweep
 
 - Scope: search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload. Zero forks. GitHub archived=true only for CFT-v3.0.
