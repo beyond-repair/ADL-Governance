@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-276 additions (2026-10-07)
+
+- **Digital_Double_virtual_workforce:** Dependabot alert 13 remains open (`form-data`, CVE-2025-7783, critical, manifest `digital_double/package-lock.json`, development scope, matched range `>= 4.0.0, < 4.0.4`, first patched `4.0.4`). Re-fetched this sweep. Do not dismiss or bump the lockfile from an agent.
+- High open alerts on the same lockfile remain operator-owned (re-observed on the first open page: 160, 159, 155, 153, 147, 122, 112, 111). Medium pytest alert 168 (CVE-2025-71176) on `digital_double/pyproject.toml` remains operator-owned.
+- Do not merge `seem-completion-pass` (`d6f13042`) or the previously recorded `fix/pynacl-1.6.2-cve-2025-69277` (`f65d7db6`) on sovereign-clean-room from an agent. The repair branch was not re-listed this sweep.
+- Do not tag releases for forge-aegis, sovereign-clean-room, BlockSwarm, or Digital_Double_virtual_workforce from an agent. Releases and tags lists were empty this sweep.
+- Do not set GitHub `archived=true` on SUPERSEDED or archive-queue repositories from an agent. Only `CFT-v3.0` is archived.
+- Code scanning is not enabled (API 404 no analysis) on forge-aegis, BlockSwarm, and Digital Double. Secret scanning is disabled on sovereign-clean-room (404). Enabling either is operator-only. Open secret-scanning lists were empty on forge-aegis, BlockSwarm, and Digital Double.
+- Search `total_count` 83 versus previously recorded profile `public_repos` 78 remains. Private names unchanged. Do not delete names to force a match.
+
+# Operator Queue
+
 ## Sweep-274 additions (2026-10-07)
 
 - **RealityOS:** do not promote RESEARCH to ACTIVE. Do not tag a release. Do not set GitHub `archived=true`. A green `research-guard` run (37648961131 on `9c79409`) is a sketch gate, not a security audit, persistence proof, or connector proof. `POLSIA_PROMPT.md` remains a design prompt.
