@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-277 — 2026-10-07 random completion sweep (Code_Generation_AI_Program)
+
+- Selection: `random.Random(20261007*1000+277).choice` over the sorted 83-name authenticated search payload. Index 16. Subject: `Code_Generation_AI_Program`.
+- Classification: ARCHIVED (recommended). Claim 0. Not changed. GitHub archived flag false.
+- Discover: 9-path tree at `f362a961`. Inventory workflow only. No generator, manifest, model, or dataset. Prior success run 37386093314 on that SHA. CLAIM_STATUS still cited the Sweep-226 one-blob tree.
+- Actions: commit `fa51c8048041f048bb64d4c3b1c93182e8bf5e0b` (claim status, README, SWEEP-277 note, inventory assertion). Local pytest 3 passed. CI observation: inventory run 37656260371 success on `fa51c80`.
+- Not done: no tag, no archive flag, no generator, no history rewrite. Portfolio exit criteria unmet.
+
+# Sweep History
+
 ## Sweep-277 — 2026-10-07 random completion sweep (Auto_Legion)
 
 - Selection: `random.SystemRandom().choice` over 83 names extracted from authenticated search dumps (`user:beyond-repair`, total_count 83, incomplete_results false). Subject: `Auto_Legion`.

@@ -2,6 +2,13 @@
 
 ## Sweep-277 additions (2026-10-07)
 
+- **Code_Generation_AI_Program:** do not set GitHub `archived=true` from an agent. Classification ARCHIVED is documentary and matches the archive queue. Do not tag a release. Do not add a generator from an autonomous sweep. A green inventory run (37656260371 on `fa51c80`) is not a code-generation proof.
+- Digital Double critical Dependabot alert 13 remains open (not re-fetched this cycle; carried from Sweep-276). Do not dismiss or bump the lockfile from an agent.
+
+# Operator Queue
+
+## Sweep-277 additions (2026-10-07)
+
 - **Auto_Legion:** do not set GitHub `archived=true` from an agent. Classification SUPERSEDED is documentary. Successor named in README remains `sovereign-clean-room`. Do not tag a release. Do not merge this tree into the successor. Do not treat a green supersede-guard as an agent runtime, SuperAGI integration, or Flask product.
 - Do not delete committed `__pycache__` blobs from an agent in this cycle. They are preserved. A later operator may stop tracking them without a history rewrite.
 - Do not repair `ai_agent1`, `local_model_integration`, or `WriteTestTool` from an agent. Those are historical defects, not a feature request.
