@@ -32,24 +32,27 @@ CHANGES:
     - 170a159f8cb61a53d80e0fab5990b3c67887baeb
     - e09afb5f10756823c1b919e50e908f51975cc8a4
     - 7ed4a3bc295ccd854da3b4ea8d63b51425d575b7
+    - c8bd43a7497210895c27f6925d635c34f72df856
   capabilities_added_or_changed:
     - Governance contract completeness for Sweep-263. No product capability. No repository created.
 VERIFICATION:
   tests_run:
-    - YAML parse of the Sweep-263 contract: pending local check after this stamp commit.
-    - python scripts/check_passes.py: pending local check. Prior pass recorded pre-existing missing historical headings.
+    - YAML parse of PASS-2026-10-06-263.yaml and PASS-2026-10-07-267.yaml with PyYAML safe_load: success.
+    - python scripts/check_passes.py on shallow clone of main after c8bd43a7497210895c27f6925d635c34f72df856: FAIL. Named headings include PASS-2026-10-06-263 and PASS-2026-10-07-267. Failure is pre-existing missing headings for 68 earlier pass ids, not these two.
   code_review: NOT_RUN
   security: NOT_RUN
   integration: NOT_RUN
-  invariants: NOT_RUN
+  invariants: FAIL
   overall: PASS
-  overall_note: Overall PASS is the transcription objective only. Stamp commit SHA for this file is not embedded. Historical Actions runs were not re-executed.
+  overall_note: Overall PASS is the transcription objective only. The pass-heading invariant was already failing on unmodified main and was not repaired here. Stamp commit SHA for this verification edit is not embedded. Historical Actions runs were not re-executed.
 KNOWLEDGE:
   confirmed:
     - Sweep-263 can be represented as a nested basilisk contract from blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576 without inventing file paths or re-running Actions.
     - Current pre-pass SWEEP_HISTORY.md had dropped the Sweep-263 section; the source body remains in git history.
+    - check_passes.py names PASS-2026-10-06-263 and PASS-2026-10-07-267 after this pass and still fails on earlier missing headings.
   failures:
     - Direct transcription from pre-pass HEAD SWEEP_HISTORY.md was impossible because Sweep-263 was not in that file.
+    - Full heading invariant was not restored.
   decisions:
     - REUSE ADL-Governance persistence. Do not CREATE a repository.
     - Do not edit product repositories.
@@ -58,24 +61,28 @@ KNOWLEDGE:
 REMAINING:
   incomplete:
     - HEAD SWEEP_HISTORY.md still omits the full Sweep-261 through Sweep-264 narrative bodies.
+    - check_passes.py still fails on 68 earlier pass ids lacking headings.
     - Q-FUNC-005 remains NOT_BUILT.
     - form-data pin not applied.
     - Archive flags, tags, and secret rotation remain operator-gated.
   blockers:
     - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
-  new_gaps: []
+  new_gaps:
+    - GAP-PASS-HEADING-BACKFILL
 NEXT:
   objective_id: GAP-HISTORY-BODY-RESTORE
   action: Restore the omitted Sweep-261 through Sweep-264 narrative bodies into HEAD docs/SWEEP_HISTORY.md from blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576 without deleting later sweep sections. Do not re-run those sweeps. Do not invent CI results.
-  reason: PASS-2026-10-07-266 recorded that HEAD omits those bodies while the source blob still has them. Sweep-263 and Sweep-264 now have contracts, so the remaining gap is history-body continuity.
+  reason: PASS-2026-10-07-266 recorded that HEAD omits those bodies while the source blob still has them. Sweep-263 and Sweep-264 now have contracts, so the remaining continuity gap is the history body.
   prerequisites:
     - No product edit.
     - No invented verification.
     - Preserve Sweep-235 through Sweep-267 sections already on HEAD.
 PROVENANCE:
-  state_commit: 7ed4a3bc295ccd854da3b4ea8d63b51425d575b7
+  state_commit: c8bd43a7497210895c27f6925d635c34f72df856
   evidence:
     - docs/SWEEP_HISTORY.md Sweep-263 body at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152
     - Transcription commit 170a159f8cb61a53d80e0fab5990b3c67887baeb
     - Heading commit e09afb5f10756823c1b919e50e908f51975cc8a4
     - History commit 7ed4a3bc295ccd854da3b4ea8d63b51425d575b7
+    - Pass persist commit c8bd43a7497210895c27f6925d635c34f72df856
+    - Local PyYAML safe_load success and scripts/check_passes.py FAIL listing 68 missing earlier headings
