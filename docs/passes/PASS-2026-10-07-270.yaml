@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-07-270
+  parent_pass: PASS-2026-10-07-269
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived. Checker on the pre-pass clone reported 84 yaml files.
+OBJECTIVE:
+  id: GAP-Q-FUNC-005-EVIDENCE
+  description: Document current NOT_BUILT evidence for Q-FUNC-005 workforce-lineage-graph without implementing the graph.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-269 after the heading checker returned PASS and reported no missing ids. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - python3 scripts/check_passes.py on a depth-1 clone before this pass returned PASS for 84 yaml files including PASS-2026-10-07-269. No heading backfill was required.
+    - adl-function-census default-branch contents listing SHA cf4360256753214f682576a7418ed7f8cd600d1f. census/inventory.py still records Q-FUNC-005 workforce-lineage-graph status NOT_BUILT.
+    - Search workforce-lineage-graph user:beyond-repair returned total_count 0 incomplete_results false.
+    - Digital_Double_virtual_workforce CANONICAL.md blob 3e8dd00e36cead537d1c02cf5e7bdd7f4fcb340d on 24e6a29fd26c03900a8d98634d6683996eabdac4 still says treat other Digital Double repos as SUPERSEDED or archive targets. That prose is not a typed code edge.
+    - PASS-2026-10-06-259 refusal to create workforce-lineage-graph was not withdrawn.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/evidence/Q-FUNC-005-NOT_BUILT-2026-10-07.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-07-270.yaml
+  commits:
+    - 91097a73e99360860125e75169a3d9bd0c0ff418
+    - 683876c9b9eba8676e0f24ad6b5e6f4d895de4b3
+  capabilities_added_or_changed:
+    - Evidence note that Q-FUNC-005 remains NOT_BUILT. No product capability. No repository created.
+VERIFICATION:
+  tests_run:
+    - python3 scripts/check_passes.py on pre-pass depth-1 clone: PASS, 84 yaml files parsed; headings name all ids including PASS-2026-10-07-269.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: Overall PASS is the documentation objective only. Q-FUNC-005 was not closed. Product claims were not elevated. The stamp commit SHA is not embedded in this file.
+KNOWLEDGE:
+  confirmed:
+    - Heading invariant was already closed before this pass, so GAP-HISTORY-PRE261-INDEX did not require new index lines for missing ids.
+    - Q-FUNC-005 remains NOT_BUILT in adl-function-census inventory.py, and no workforce-lineage-graph repository exists in the name search.
+  failures:
+    - Creating the graph was not attempted. PASS-2026-10-06-259 already recorded that a no-edge graph would contradict existing SUPERSEDES prose.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit product repositories.
+    - Do not flip archive flags. Do not merge Dependabot. Do not elevate claims.
+REMAINING:
+  incomplete:
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Sweep narrative bodies before Sweep-261 remain only in older blobs.
+    - Capability and gap counts remain null.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, secret rotation, and any withdrawal of existing SUPERSEDED prose before a typed lineage graph can be added.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-DD-MOBILE-NAME-COLLISION-REFRESH
+  action: Re-read Digital-Double_Mobile and digital-double-mobile default-branch roots only far enough to record whether PASS-2026-10-06-262 still matches current tree identity. Do not create a repository. Do not edit lockfiles. Do not merge.
+  reason: Q-FUNC-005 cannot be built without an authorized SUPERSEDES withdrawal. The named lineage fact that does not need that approval is the mobile name collision recorded in PASS-262.
+  prerequisites:
+    - No lockfile edit.
+    - No claim elevation.
+    - No new repository.
+    - Do not treat a documentation match as product verification.
+PROVENANCE:
+  state_commit: 683876c9b9eba8676e0f24ad6b5e6f4d895de4b3
+  evidence:
+    - Evidence commit 91097a73e99360860125e75169a3d9bd0c0ff418
+    - Heading commit 683876c9b9eba8676e0f24ad6b5e6f4d895de4b3
+    - Pre-pass checker PASS on 84 yaml files
+    - adl-function-census inventory.py Q-FUNC-005 status NOT_BUILT
+    - Search workforce-lineage-graph total_count 0
