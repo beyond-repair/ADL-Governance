@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-06-261
+  parent_pass: null
+  parent_note: Transcription of the Sweep-261 body already in docs/SWEEP_HISTORY.md. No PASS-2026-10-06-260.yaml or PASS-2026-10-06-261.yaml existed at transcription time. This file does not re-execute the draw.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 1
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not in the Sweep-261 body and are not invented here. Search census 83 is from later sweeps, not from this body.
+OBJECTIVE:
+  id: GAP-SWEEP-261-CONTRACT
+  description: Transcribe the existing Sweep-261 narrative into a basilisk YAML contract.
+  reason_selected: Explicit NEXT of PASS-2026-10-06-262. Operator archive, secret, and lockfile actions were not selected.
+DISCOVERY:
+  findings:
+    - Sweep-261 body selects beyond-repair/btc-trading as one random repository.
+    - Classification recorded as ARCHIVED (recommended). GitHub archived flag false. Claim 0.
+    - Implement commit recorded as cd3638654c870c238db6457355b64f82ff1adfae.
+    - Credential removed from HEAD and remains in history.
+    - Actions run 37549816378 recorded as success and explicitly not a model evaluation.
+    - Portfolio exit criteria recorded as unmet.
+CHANGES:
+  repositories:
+    - beyond-repair/btc-trading
+  files: []
+  commits:
+    - cd3638654c870c238db6457355b64f82ff1adfae
+  capabilities_added_or_changed:
+    - No product capability. Transcription only. btc-trading was not re-implemented by this contract.
+  changes_note: File paths were not named in the Sweep-261 body, so files is empty rather than inferred.
+VERIFICATION:
+  tests_run:
+    - Actions run 37549816378 success, as recorded in Sweep-261. Not re-run. Not a model evaluation.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  overall_note: PASS means the narrative was transcribed without adding facts. It does not re-verify the historical Actions run.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-261 already recorded a credential removal from HEAD of btc-trading at cd3638654c870c238db6457355b64f82ff1adfae.
+    - The credential remains in history according to that body.
+    - Classification stayed ARCHIVED (recommended) with GitHub archived flag false and claim 0.
+  failures:
+    - None recorded in the Sweep-261 body.
+  decisions:
+    - Do not re-implement btc-trading.
+    - Do not invent CI results.
+    - Do not set the GitHub archive flag.
+    - Do not rewrite history.
+REMAINING:
+  incomplete:
+    - Portfolio exit criteria remain unmet.
+    - GitHub archived flag remains false.
+    - Credential remains in git history.
+  blockers:
+    - Archive flag and credential rotation are operator-gated and were not executed.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-SWEEP-264-CONTRACT
+  action: Transcribe docs/SWEEP_HISTORY.md Sweep-264 into docs/passes/PASS-2026-10-06-264.yaml using only facts already in that body. Do not re-implement DevelopTool-Unified-Dev-Environment. Do not invent CI results. Do not archive.
+  reason: Sweep-264 is indexed in history and has no basilisk YAML. Sweep-263 also lacks a YAML; 264 is the later untranscribed narrative.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the existing Sweep-264 narrative.
+PROVENANCE:
+  state_commit: pending-transcription-commit
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-261 body as of HEAD before this transcription commit
+    - Actions run id 37549816378 cited only as already recorded

@@ -1,5 +1,14 @@
 # Sweep History
 
+## Sweep-265 — 2026-10-07 contract transcription / PASS-2026-10-07-265
+
+- Timestamp: 2026-10-07. Scope: persist the missing basilisk YAML for Sweep-261. No product edit.
+- Search user:beyond-repair total_count 83, incomplete_results false. Login beyond-repair.
+- Added docs/passes/PASS-2026-10-06-261.yaml from the existing Sweep-261 body only. Added this pass record. Heading supplement names both ids.
+- btc-trading not re-implemented. Archive flag not set. History not rewritten. Claim not elevated.
+- Portfolio exit criteria remain unmet.
+
+
 ## Sweep-264 — 2026-10-06 randomized draw DevelopTool-Unified-Dev-Environment
 
 - Timestamp: 2026-10-06. Scope: one random repository. Seed `1791335011`. Choice `DevelopTool-Unified-Dev-Environment` from 83 names.

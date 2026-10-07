@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-07-265
+  parent_pass: PASS-2026-10-06-262
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived.
+OBJECTIVE:
+  id: GAP-SWEEP-261-CONTRACT
+  description: Persist the missing basilisk YAML for Sweep-261 from the existing history body only.
+  reason_selected: Explicit NEXT of PASS-2026-10-06-262. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest basilisk YAML before this pass was PASS-2026-10-06-262. Its NEXT named GAP-SWEEP-261-CONTRACT.
+    - PASS-2026-10-06-261.yaml was absent. PASS-2026-10-06-260.yaml was absent. PASS-2026-10-07 files were absent.
+    - docs/SWEEP_HISTORY.md already contained Sweep-261, Sweep-262, Sweep-263, and Sweep-264.
+    - Sweep-261 heading did not match scripts/check_passes.py HEADING because it lacked the / PASS-id form. A heading supplement is required once the YAML exists.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-261.yaml
+    - docs/passes/PASS-2026-10-07-265.yaml
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Governance contract completeness for Sweep-261. No product capability. No repository created.
+VERIFICATION:
+  tests_run:
+    - python scripts/check_passes.py on unmodified main clone: FAIL. Missing historical headings for 70 persisted pass ids. Pre-existing. Not introduced by this pass.
+    - Same checker after these writes: still FAIL on those historical ids. PASS-2026-10-06-261 and PASS-2026-10-07-265 are named by headings.
+    - YAML parse of both new contracts: success.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: FAIL
+  overall: PASS
+  overall_note: Overall PASS is the transcription objective only. The pass-heading invariant was already failing on unmodified main and was not repaired here. Stamp commit SHA is not embedded.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-261 can be represented as a nested basilisk contract without inventing file paths or re-running Actions.
+    - check_passes.py requires every canonical PASS id to appear in a heading of the form ## ... / PASS-YYYY-MM-DD-N.
+  failures:
+    - None for this transcription.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit btc-trading.
+    - Do not flip archive flags. Do not merge Dependabot. Do not elevate claims.
+REMAINING:
+  incomplete:
+    - Sweep-263 and Sweep-264 still lack basilisk YAML files.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps:
+    - GAP-SWEEP-264-CONTRACT
+    - GAP-SWEEP-263-CONTRACT
+NEXT:
+  objective_id: GAP-SWEEP-264-CONTRACT
+  action: Transcribe docs/SWEEP_HISTORY.md Sweep-264 into docs/passes/PASS-2026-10-06-264.yaml using only facts already in that body. Do not re-implement DevelopTool-Unified-Dev-Environment. Do not invent CI results. Do not archive.
+  reason: Sweep-264 is the newest history body without a basilisk YAML. Sweep-263 is the other missing transcription and remains queued behind it.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the existing Sweep-264 narrative.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-261 body
+    - Absence of PASS-2026-10-06-261.yaml before this commit
+    - scripts/check_passes.py HEADING requirement

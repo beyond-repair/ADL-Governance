@@ -2,6 +2,15 @@
 
 Additional headings so scripts/check_passes.py can name pass ids persisted after the narrative file was last prepended. Not a replacement for docs/SWEEP_HISTORY.md.
 
+## Sweep-265 Sweep-261 contract transcription / PASS-2026-10-07-265
+
+- Transcribed the existing Sweep-261 body into PASS-2026-10-06-261.yaml. No btc-trading edit. No archive flag. No invented CI result.
+
+## Sweep-261 btc-trading contract transcription / PASS-2026-10-06-261
+
+- Narrative already in docs/SWEEP_HISTORY.md. Classification ARCHIVED (recommended). archived flag false. Claim 0. Commit cd3638654c870c238db6457355b64f82ff1adfae. Actions run 37549816378 success. Not a model evaluation.
+
+
 ## Sweep-262 mobile name collision / PASS-2026-10-06-262
 
 - Digital-Double_Mobile id 945771829 head fe996fac and digital-double-mobile id 947071634 head 7c65eb04 are distinct trees. Both SUPERSEDED toward Digital_Double_virtual_workforce. No repository created. No lockfile edit. No archive flag.
