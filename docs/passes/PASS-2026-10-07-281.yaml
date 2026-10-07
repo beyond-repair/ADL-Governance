@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-10-07-281
+  parent_pass: PASS-2026-10-07-278
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived. Sweeps 271-274, 276, 277-Auto_Legion, and 279 remain without basilisk YAML.
+OBJECTIVE:
+  id: GAP-SWEEP-280-FORTITRADE-CONTRACT
+  description: Persist a basilisk contract for the HEAD Sweep-280 FortiTrade_Multi-Strategy narrative without re-running the draw or pytest.
+  reason_selected: PASS-2026-10-07-278 named Auto_Legion as next, but reconstruct found Sweep-279 and Sweep-280 narratives already on ADL-Governance HEAD d564a92 without pass files. Sweep-280 is the newest uncontracted body and has an observed Actions conclusion. Operator archive, tags, and the form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - ADL-Governance main HEAD at discovery d564a92f45833882f1b1778426824a3a19fb1da3 message Sweep-280 FortiTrade discover, CI, and claim-capped status.
+    - docs/passes has no PASS-2026-10-07-279.yaml, PASS-2026-10-07-280.yaml, or PASS-2026-10-07-281.yaml. Highest existing id is PASS-2026-10-07-278.yaml.
+    - FortiTrade_Multi-Strategy default branch commits in order d196debcadfa1ba118a2e34611b6629b6b62def9 (workflow), 02464af76828018959b46288ac0388365e62b03d (record run), b36071e488092294f0168a5a5e067d765842ac09 (README cite). Current tip b36071e488092294f0168a5a5e067d765842ac09.
+    - Recursive tree at d196debcadfa1ba118a2e34611b6629b6b62def9 truncated false, count 40. Includes fortitrade package, src/local_app.py, pinescript/FortiTrade_Elite.pine, scripts/live_trading.py, tests, and .github/workflows/pytest.yml.
+    - docs/SWEEP-280.md records classification ARCHIVED recommended, claim 0, pre-head 49af08530a020150606173adcd8612e0ba2446cc, local pytest 19 passed before the CI commit. That local count was not re-executed in this pass.
+    - Actions pytest run 37663744493 conclusion success, event push, head_sha d196debcadfa1ba118a2e34611b6629b6b62def9, workflow .github/workflows/pytest.yml. Observed, not dispatched.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-07-281.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Basilisk contract persisted for Sweep-280 FortiTrade_Multi-Strategy. No product capability. No repository created. FortiTrade_Multi-Strategy not edited.
+VERIFICATION:
+  tests_run:
+    - Actions pytest run 37663744493 conclusion success on d196debcadfa1ba118a2e34611b6629b6b62def9. Observed, not dispatched. Not a profit or live-trading proof.
+    - Local pytest 19 passed is a recorded claim in docs/SWEEP-280.md. Not re-run this pass.
+    - Nested YAML schema keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present. PASS.id matches filename.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the contract matches re-read heads and the observed Actions conclusion. It is not a trading-product verification. Stamp commit SHA is not embedded in this file.
+KNOWLEDGE:
+  confirmed:
+    - FortiTrade_Multi-Strategy claim remains 0. GitHub archived flag was not set by this pass.
+    - Pytest CI on d196debcadfa1ba118a2e34611b6629b6b62def9 succeeded. That run is an inventory/test gate, not a broker or profit proof.
+    - scripts/live_trading.py and pinescript/FortiTrade_Elite.pine remain present at d196debc. Presence is not a live-capital claim.
+  failures:
+    - None for this transcription. Pytest was not re-executed locally.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not set archived=true. Do not tag. Do not elevate claim. Do not connect a broker.
+    - Do not delete src/local_app.py or pinescript/FortiTrade_Elite.pine.
+    - Skip the stale PASS-279 Auto_Legion assignment because newer uncontracted sweep narratives exist. Leave Auto_Legion and Sweep-279 as remaining gaps.
+    - Use pass id 281 so it does not collide with existing sweep numbers 279 and 280.
+REMAINING:
+  incomplete:
+    - Basilisk YAML for Sweeps 271, 272, 273, 274, 276, and 279 is absent.
+    - Auto_Legion Sweep-277 narrative has no separate basilisk YAML.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Capability and gap counts remain null.
+    - Portfolio exit criteria unmet.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-SWEEP-279-PORTFOLIO-CONTRACT
+  action: Transcribe the Sweep-279 portfolio governance body already in docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-07-282.yaml. Do not re-run the draw. Do not invent CI results. Do not archive. Do not merge branches. Do not bump form-data.
+  reason: Sweep-279 is the next newest uncontracted governance narrative after this FortiTrade contract.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve both Sweep-277 headings and the Sweep-279/280 bodies.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - ADL-Governance d564a92f45833882f1b1778426824a3a19fb1da3
+    - FortiTrade_Multi-Strategy b36071e488092294f0168a5a5e067d765842ac09
+    - FortiTrade_Multi-Strategy d196debcadfa1ba118a2e34611b6629b6b62def9
+    - Actions run 37663744493 success
+    - docs/SWEEP-280.md blob cited at discovery via default-branch read

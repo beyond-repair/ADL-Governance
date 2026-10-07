@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-281 — 2026-10-07 basilisk contract (Sweep-280 FortiTrade)
+
+- Selection: not a new random draw. Persistence gap after PASS-2026-10-07-278. Subject: existing Sweep-280 FortiTrade_Multi-Strategy narrative.
+- Contract: `docs/passes/PASS-2026-10-07-281.yaml`.
+- Re-read: FortiTrade tip `b36071e488092294f0168a5a5e067d765842ac09`. CI commit `d196debcadfa1ba118a2e34611b6629b6b62def9`. Actions pytest run 37663744493 conclusion success on that SHA. Observed, not dispatched.
+- Local pytest 19 passed was not re-executed. Claim remains 0. Archive flag not set. No broker path added.
+- Portfolio exit criteria unmet.
+
+# Sweep History
+
 ## Sweep-280 — 2026-10-07 random completion sweep (FortiTrade_Multi-Strategy)
 
 - Selection: `random.Random(6351295770881602679).choice` over 83 names from authenticated search `user:beyond-repair` (total_count 83, incomplete_results false). Subject: `FortiTrade_Multi-Strategy`.
