@@ -29,6 +29,7 @@ CHANGES:
     - docs/passes/PASS-2026-10-07-268.yaml
   commits:
     - 271839af16b1def7a01ce64edfebee49555cc0d1
+    - b872d2dae264671d1e41308309d66986cf6f25d9
   capabilities_added_or_changed:
     - Governance history continuity for Sweep-261 through Sweep-264. No product capability. No repository created.
 VERIFICATION:
@@ -71,8 +72,9 @@ NEXT:
     - No invented verification.
     - Do not mark the heading backfill as product verification.
 PROVENANCE:
-  state_commit: pending-pass-commit
+  state_commit: b872d2dae264671d1e41308309d66986cf6f25d9
   evidence:
     - History restore commit 271839af16b1def7a01ce64edfebee49555cc0d1
+    - Pass persist commit b872d2dae264671d1e41308309d66986cf6f25d9
     - Source blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576
     - Pre-pass HEAD blob 6baaf7848335115e30e602a18a3b79ea12181c3e
