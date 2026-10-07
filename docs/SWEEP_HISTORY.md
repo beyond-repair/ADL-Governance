@@ -1,5 +1,14 @@
 # Sweep History
 
+## Sweep-238 — 2026-10-07 random completion sweep (Sovereign-Epistemic-Reality-Engine)
+
+- Selection: `random.Random(1791342100).choice` over the sorted 83-name search payload (`user:beyond-repair`, `total_count=83`, `incomplete_results=false`). Subject: `Sovereign-Epistemic-Reality-Engine`.
+- Discover: default branch `main`, pre-sweep tree `2664314b32a7d2d0b4221df8926a7e847a86ebc4`, not truncated, 23 paths. Blobs were LICENSE plus README stubs under `docs/`, `seem/`, `cft/`, `security/`, `blockchain/`, `gdextension/`, `godot/`, `storage/`, `scripts/`. No source, no tests, no workflow, no dependency manifest.
+- Classification: **RESEARCH**. Claim ≤ 1. Not `sovereign-clean-room`. Not an OS. Preserved README body remains a specification sketch.
+- Safe changes pushed to the subject: `docs/CLAIM_STATUS.md`, `docs/DISCOVERY.md`, `tests/test_inventory.py`, `.github/workflows/skeleton.yml`. No history rewrite. No deletion. No tag. No archive flag. No claim elevation.
+- CI after that push was not yet observed in this sweep. Inventory workflow is not experimental validation.
+- Portfolio exit criteria remain unmet (Digital Double Dependabot #13 still open from Sweep-237; duplicates unlabeled as consolidated; archive flags unset). Stop. Do not loop.
+
 ## Sweep-237 — 2026-10-07 portfolio governance completion sweep
 
 - Scope: search `user:beyond-repair`, total_count 83, incomplete_results false. Profile public_repos 78. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
@@ -10,8 +19,8 @@
 - Security: Dependabot critical #13 still open on Digital Double (`form-data`, GHSA-fjxv-7rqg-78g4, CVE-2025-7783, patched identifier 4.0.4). forge-aegis high filter empty. BlockSwarm critical filter empty. sovereign-clean-room high filter empty. Secret scanning open list empty on Digital Double. Secret scanning disabled on sovereign-clean-room. Code scanning 404 on forge-aegis.
 - Digital Double branches (retry succeeded): main; finish/repair-python-core-ui; nex-int-workforce-evidence; three dependabot npm branches; `fix/nanoid-5.1.11-ghsa-xwg4` at `2e8a810e162fa81a60e7c725cb86477836e56fd9`. Not merged. Not tested this cycle.
 - Classification: 83 names classified. Only `CFT-v3.0` has GitHub `archived=true`. SUPERSEDED and governance ARCHIVED labels are documentary. No archive flag set.
-- Actions performed: governance docs only (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`). No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
-- Exit: criteria not met (critical Dependabot open; duplicate lineages not consolidated; releases absent; archive flags unset). Stop. Do not loop.
+- Actions performed: governance docs only. No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Exit: criteria not met. Stop. Do not loop.
 
 ## Sweep-236 — 2026-10-07 random completion sweep (potential-garbanzo)
 

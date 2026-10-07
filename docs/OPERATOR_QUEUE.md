@@ -2,6 +2,11 @@
 
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
+## Sweep-238 additions (2026-10-07)
+
+- **Sovereign-Epistemic-Reality-Engine:** documentation skeleton. Do not tag a release. Do not archive. Do not merge upstream SEEM, CFT, BlockSwarm, or Godot trees into this repo from an autonomous sweep. Preserved README physics language stays labeled UNVERIFIED; do not delete historical prose to silence it.
+- Inventory CI added on `main`. Do not treat a green inventory workflow as experimental validation.
+
 ## Sweep-237 additions (2026-10-07)
 
 - **Digital_Double_virtual_workforce Dependabot alert #13:** re-fetched open. `form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783. Manifest `digital_double/package-lock.json`. Scope development. Vulnerable range observed `>= 4.0.0, < 4.0.4`. Patched identifier 4.0.4. Lockfile edit remains operator-owned. Do not mark the workforce product security-clean.
