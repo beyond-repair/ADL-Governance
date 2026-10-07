@@ -20,6 +20,13 @@
 
 Portfolio exit criteria remain unmet. Digital Double alert 13 was not re-fetched.
 
+
+### Sweep-268 CI observation
+
+- Subject HEAD: `ebe488f306bc1cf54a58f6a80a496f2e6786fdbb`
+- Workflow: pytest run 37625646353 conclusion success on that head.
+- Bound: SDK-free suite only. Not an APK claim. No tag. Archive flag unchanged.
+
 ---
 
 # Portfolio Status Report

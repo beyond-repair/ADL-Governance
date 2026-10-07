@@ -8,7 +8,8 @@
 - Classification: `RESEARCH` (experimental, unvalidated). Not `ACTIVE` (no verified APK path). Not GitHub-archived. Archive flag remains operator-only.
 - Actions: added `.github/workflows/pytest.yml` (SDK-free pytest only), README CI note, CLAIM_STATUS CI bound. No tag. No archive flag. No history rewrite. No deletion. No claim elevation.
 - Target not met: Actions conclusion for the new workflow was not yet observed at planning time; APK/signing path remains unverified; registry archive-queue sentence not rewritten this cycle.
-- Exit: subject loop stops after CI observation or explicit residual record. Portfolio exit criteria remain unmet.
+- CI observation: pytest run 37625646353 conclusion success on `ebe488f306bc1cf54a58f6a80a496f2e6786fdbb`.
+- Exit: subject CI gate met for the SDK-free suite. Termination still open: unverified APK path, operator archive hold, no release tag. Portfolio exit criteria remain unmet.
 
 
 ## Sweep-265 — 2026-10-07 Master Directive portfolio sweep
