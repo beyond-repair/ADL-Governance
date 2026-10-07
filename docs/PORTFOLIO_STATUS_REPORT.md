@@ -1,27 +1,28 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-07 (Sweep-283, CI observed)
-**Project / Version:** ADL Portfolio Governance / Sweep-283
-**Objective:** Random repository completion cycle on `finite-gasket-spectral-derivatives`.
-**Selection:** `random.SystemRandom` over 82 names from authenticated search `user:beyond-repair` (total_count 83, incomplete_results false), excluding `ADL-Governance`.
+**Updated:** 2026-10-07 (Sweep-284)
+**Project / Version:** ADL Portfolio Governance / Sweep-284
+**Objective:** Random repository completion cycle on `Digital_Double_Virtual_Workforce_4.`.
+**Selection:** `random.Random(2026100722).choice` over the 83-name union of authenticated search pages (`user:beyond-repair`, total_count 83, incomplete_results false). Index 20 of 83 sorted names.
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. A2 for tree, Actions list, and local unittest. A3 for prose multiplicity claims not machine-checked in this tree.
+**Evidence rule:** Code > Documentation > Roadmap. A2 for tree, commit, local unittest, and Actions run.
 
-## Sweep-283 result
+## Sweep-284 result
 
-Subject: `finite-gasket-spectral-derivatives`.
-Classification: **RESEARCH** (unchanged). Claim cap ≤ 1. Exit criteria for this repo: **not met** (prose multiplicity and Dirichlet claims are not in-repo tests; no LICENSE). Portfolio exit criteria: **not met**.
+Subject: private `Digital_Double_Virtual_Workforce_4.`.
+Classification: **SUPERSEDED** (unchanged; successor `Digital_Double_virtual_workforce`). Claim cap 0. Exit criteria for a product line: **not applicable**. Stub exit: claim-cap docs and lifecycle CI present; GitHub archive flag still false. Portfolio exit criteria: **not met**.
 
 | Item | State |
 |------|-------|
-| Kernel commit | `7e2ca1b06239ca6a34fef357185ebdc3aab300b0` |
-| Claim record commit | `5134a10eab83763df693fe34011742bcb1fb5f5a` |
-| Implemented surface | `require_positive`, `gamma_loop`, `dgamma_dw`, `v_second`. No gasket constructor. No selected W. No force. |
-| Local tests | unittest 5 passed after adding `test_omega2_scales_the_positive_wall` |
-| CI | spectral-kernel run 37671378075 success on `7e2ca1b` (2026-10-07). Prior success 37069941476 on `19a1264e`. Green CI is an Actions conclusion, not a gasket proof. |
-| Releases / tags | not listed this cycle; do not tag |
-| Security | no dependency manifest in tree; no Dependabot list fetched |
+| Head before pass | `d8132f3fa830871c395d89c8bdb5e69b069ec1ea` (3 governance blobs) |
+| Head after pass | `c346db87e70b32dae1f153827bfa2efa83b258be` |
+| Implemented surface | README, SUPERSEDED, CLAIM_STATUS, `tests/test_lifecycle_docs.py`, `.github/workflows/lifecycle.yml`. No application source. |
+| Local tests | unittest 3 passed (claim-cap only) |
+| CI | lifecycle-docs run 37693518457 success on `c346db87` (2026-10-07). This is not product CI. |
+| Releases / tags | not listed; do not tag |
+| Security | no dependency manifest |
+| Archive | false; operator-only |
 
-No repository deleted. No history rewritten. No archive flag. No claim elevation. Multiplicity, exceptional-mass, and Dirichlet-bottom statements remain CLAIMED prose, not IMPLEMENTED in this repository.
+No repository deleted. No history rewritten. No archive flag. No claim elevation. Canonical product remains `Digital_Double_virtual_workforce`. Digital Double Dependabot alert 13 was not re-fetched this cycle.
 
-Prior report body remains at blob `7e44a4c4c9d86c450d5a9c63cfd579166159976a`.
+Prior report body remains at blob `b991a7b999e91665cec42dcbfd21a436133e76f4`.

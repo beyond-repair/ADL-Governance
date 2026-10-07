@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-284 — 2026-10-07 Digital_Double_Virtual_Workforce_4.
+
+- Selection: `random.Random(2026100722).choice` on the sorted 83-name union from search pages (total_count 83, incomplete_results false). Selected private `Digital_Double_Virtual_Workforce_4.` (index 20).
+- Discover: tree `d8132f3`, not truncated, 3 blobs: README.md, SUPERSEDED.md, CLAIM_STATUS.md. No application source. No workflow.
+- Audit: registry and CANONICAL_REPOS already point this name at `Digital_Double_virtual_workforce`. archive_queue still lists the GitHub archive as unchecked. Prior reconfirmations: Sweep-075, Sweep-146, Sweep-166, Sweep-202.
+- Classification: SUPERSEDED. Justification: naming-lineage predecessor; successor holds the public product; this default branch had no product source.
+- Implement: claim-cap unittest and lifecycle workflow in commit `c346db87e70b32dae1f153827bfa2efa83b258be`. Local unittest 3 passed. Claim cap unchanged at 0.
+- CI: lifecycle-docs run 37693518457 conclusion success on `c346db87`.
+- No deletion, no history rewrite, no tag, no archive flag, no claim elevation.
+- Exit criteria: stub claim-cap gate met; GitHub archive still operator-only; portfolio exit not met.
+
+# Sweep History
+
 ## Sweep-283 — 2026-10-07 finite-gasket-spectral-derivatives
 
 - Selection: SystemRandom over 82 public names from search total_count 83 (ADL-Governance excluded from the draw). Selected `finite-gasket-spectral-derivatives`.
@@ -11,15 +24,4 @@
 - No deletion, no history rewrite, no tag, no archive flag, no claim elevation.
 - Exit criteria: not met for this repository or the portfolio.
 
-# Sweep History
-
-## Sweep-282 — 2026-10-07 portfolio governance sweep
-
-- Timestamp: 2026-10-07.
-- Scope: authenticated identity plus search total, and Phase-3 live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
-- Repositories reviewed for verification: the four mandatory names. Search `user:beyond-repair` total_count 83, incomplete_results false. Item payload truncated by the connector gateway, so the 83-name set was not re-materialized.
-- Findings: Phase-3 main CI still success on recorded heads (forge-aegis run 37258127100 on `e7188d5`; sovereign-clean-room run 37064696194 on `4878918c`; BlockSwarm run 36859452185 on `6e90f6f`; Digital Double run 36861489156 on `24e6a29`). Releases empty for forge-aegis, BlockSwarm, and Digital Double. Tags empty for all four. Dependabot alert 13 still open. sovereign-clean-room branches `seem-completion-pass` and `fix/pynacl-1.6.2-cve-2025-69277` still present. forge-aegis open Dependabot empty; code scanning 404.
-- Actions performed: updated `docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, and this file. No repository deletion. No history rewrite. No tag. No archive flag. No claim elevation. No lockfile edit. No merge.
-- Exit criteria: failed. Residual risks recorded. Sweep stopped.
-
-Prior sweep body before Sweep-283 remains in git history at blob `a35d0a39bdc819a12bee162fbbb9b02d71266b6c`.
+Prior sweep body before Sweep-284 remains in git history at blob `067bbe480b15277f5afd9d52c87250f684f7c29b`.
