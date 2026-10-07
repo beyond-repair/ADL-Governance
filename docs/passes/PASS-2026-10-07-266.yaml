@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-07-266
+  parent_pass: PASS-2026-10-07-265
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived.
+OBJECTIVE:
+  id: GAP-SWEEP-264-CONTRACT
+  description: Persist the missing basilisk YAML for Sweep-264 from the historical history body only.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-265. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest basilisk YAML before this pass was PASS-2026-10-07-265. Its NEXT named GAP-SWEEP-264-CONTRACT.
+    - PASS-2026-10-06-264.yaml was absent. PASS-2026-10-06-263.yaml was absent.
+    - HEAD f9b73758f9dec208e2cd6b43d7c54d7c37316f9b docs/SWEEP_HISTORY.md does not contain a Sweep-264 section. The section exists at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576.
+    - That body names DevelopTool-Unified-Dev-Environment, seed 1791335011, claim 0, archived flag false, surface audit run 37204277991 success, and docs-only commits 374768cb9cd9c8ccfd0f727d7ec17050fd0b99a4 and 4daca170e57c97cda18d276b560cf05afb07e5ca.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-264.yaml
+    - docs/passes/PASS-2026-10-07-266.yaml
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Governance contract completeness for Sweep-264. No product capability. No repository created.
+VERIFICATION:
+  tests_run:
+    - YAML parse of both new contracts: success.
+    - python scripts/check_passes.py after these writes: FAIL on pre-existing missing historical headings. PASS-2026-10-06-264 and PASS-2026-10-07-266 are named by headings.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: FAIL
+  overall: PASS
+  overall_note: Overall PASS is the transcription objective only. The pass-heading invariant was already failing on unmodified main and was not repaired here. Stamp commit SHA is not embedded.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-264 can be represented as a nested basilisk contract from the historical history blob without inventing file paths or re-running Actions.
+    - Current SWEEP_HISTORY.md dropped the Sweep-264 section; the source body remains in git history.
+  failures:
+    - Direct transcription from HEAD SWEEP_HISTORY.md was impossible because Sweep-264 is not in that file.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit DevelopTool-Unified-Dev-Environment.
+    - Do not flip archive flags. Do not merge Dependabot. Do not elevate claims.
+    - Do not restore the full prior history file in this pass. Cite the blob and add an index heading.
+REMAINING:
+  incomplete:
+    - Sweep-263 still lacks a basilisk YAML file.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - HEAD SWEEP_HISTORY.md still omits the Sweep-261 through Sweep-264 narrative bodies.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps:
+    - GAP-HISTORY-BODY-RESTORE
+NEXT:
+  objective_id: GAP-SWEEP-263-CONTRACT
+  action: Transcribe the Sweep-263 body from commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576 into docs/passes/PASS-2026-10-06-263.yaml. Do not re-run the portfolio sweep. Do not invent CI results. Do not archive.
+  reason: Sweep-263 is the remaining history body named by PASS-2026-10-07-265 as lacking a basilisk YAML.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the existing Sweep-263 narrative.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-264 body at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152
+    - Absence of PASS-2026-10-06-264.yaml before this commit
+    - scripts/check_passes.py HEADING requirement
