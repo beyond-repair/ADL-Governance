@@ -1,160 +1,202 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-06 (Sweep-264; randomized draw `DevelopTool-Unified-Dev-Environment`)
-**Project / Version:** ADL Portfolio Governance / Sweep-264
-**Objective:** Random repository completion cycle. Discover, classify, safe idempotent doc update, surface-test, push, record.
-**Draw:** `random.Random(1791335011).choice` over search payload of 83 names (`incomplete_results` false). Selected `DevelopTool-Unified-Dev-Environment`.
-**Evidence:** Authenticated login `beyond-repair` (id 132061760). Profile `public_repos` 78. Discovery tree `5a84f447783f51a06d89ca4bd896763dab511a63` (26 paths, not truncated). Post-doc commits `374768cb9cd9c8ccfd0f727d7ec17050fd0b99a4` (README) and `4daca170e57c97cda18d276b560cf05afb07e5ca` (CLAIM_STATUS). Local `python -m unittest tests.test_surface` 5 passed against the claim banners. Prior Surface audit run 37204277991 success on `5a84f447`. Surface audit runs 37555077638 (success on `374768cb`) and 37555078573 (success on `4daca170`).
+Sweep: Sweep-235
+Timestamp: 2026-10-07T01:14Z (session clock 2026-10-06 21:14 EDT)
+Authority: GitHub search `user:beyond-repair`, `total_count=83`, `incomplete_results=false`
+Prior census note: profile README cited 81 on 2026-10-01; `public_repos` previously recorded as 78. This sweep does not force those counters equal.
+Evidence rule: Code > Documentation > Roadmap. Unverified claims stay labeled.
 
-This report does not mark the portfolio complete. Exit criteria fail. See residuals.
+## Classification key
 
-## Sweep-264 selected repository
+- ACTIVE: maintained canonical owner for a domain, with this-cycle CI success on default-branch head where noted. Not a production-completeness claim.
+- RESEARCH: experimental, mapping, or claim-capped. Not a production implementation.
+- SUPERSEDED: duplicate lineage; historical value retained; replacement named. Not deleted.
+- ARCHIVED: GitHub `archived=true`, plus one empty stub labeled ARCHIVED in governance only (`test`). Archive candidates stay unflagged until operator action.
 
-| Field | Value |
-|-------|-------|
-| Name | `DevelopTool-Unified-Dev-Environment` |
-| Classification | ARCHIVED (recommended). Unchanged. |
-| GitHub archived flag | false. Not set. |
-| Claim | 0. Not elevated. |
-| Modules | `develop_tool/main.py`; agents `ci_cd_agent`, `communication_agent`, `file_manager`, `ide_agent`, `project_management_agent`, `testing_agent`, `version_control_agent` |
-| Tests | `tests/test_surface.py` only. Agents not executed. |
-| CI | `surface-audit.yml` on push. Dispatch-only: `setup.yml`, `conda-env-update.yml`, `python-package-conda.yml`, `codeql.yml`. |
-| Open issues | 23 (search count). Not triaged. |
-| Target state | Not met. Archive flag and defect repairs are operator-only. |
+## Inventory (83)
 
-Documented defects left intact (behavior changes): constructor mismatch `VersionControlAgent(repo_path)` vs `(repository_path, file_manager)`; repeated `CI_CD_Agent` import; placeholder token `your_github_token` (not a live credential); `os.system` conda update if invoked. README preserved body still says resurrection target; banner says that sentence is historical.
+| Repo | Pushed (UTC) | Class | Domain | Notes |
+| --- | --- | --- | --- | --- |
+| ADL-Governance | 2026-10-07T01:09:55Z | ACTIVE | Governance | Governing source. CI not re-fetched this cycle. |
+| forge-aegis | see Phase 3 | ACTIVE | Agent infrastructure | Software claim cap. Not a host-integrity product. |
+| sovereign-clean-room | see Phase 3 | ACTIVE | Security | Offline FHRR. Main CI success. Open branch not merged. |
+| BlockSwarm | see Phase 3 | ACTIVE | Distributed systems | Foundry CI success. Tag lineage UNVERIFIED. |
+| Digital_Double_virtual_workforce | see Phase 3 | ACTIVE | Workforce automation | Canonical DD. CI success. Critical Dependabot open. |
+| AEGIS-Project-Nehemiah- | 2026-10-01 | RESEARCH | Agent infrastructure | Spec sibling. Not verified as runtime this cycle. |
+| aegis-repo-graph | 2026-10-06 | RESEARCH | Governance | Claim-capped artifact graph. |
+| adl-capability-matrix | 2026-10-03 | RESEARCH | Governance | Claim-capped matrix. |
+| adl-function-census | 2026-10-06 | RESEARCH | Governance | Module-surface census. Claim-capped. |
+| ADL-Portfolio-Census | 2026-10-06 | RESEARCH | Governance | SCAN/FORK/ANCHOR inventory. |
+| os-family-constitution-map | 2026-10-06 | RESEARCH | Governance | Identity map. No kernel claim. |
+| seem-identity-unifier | listed | RESEARCH | Governance | Identity map. |
+| seem-sunder-bridge | listed | RESEARCH | Governance | Interop contract only. |
+| sunder-cleanroom-vsa-adapter | 2026-10-02 | RESEARCH | Governance | Contract only. No runtime interop claim. |
+| ADL-SEEM | 2026-10-02 | RESEARCH | Governance | Standard text. Not a runtime. |
+| beyond-repair | 2026-10-01 | RESEARCH | Governance | Profile README only. Not a product. |
+| sunder | 2026-10-06 | RESEARCH | Agent infrastructure | Local coding agent. Claim ≤1. Not canonical runtime. |
+| coherence-drive | listed | RESEARCH | Research | Residual-force index. Claim-capped by profile. |
+| ADL-Nexus | 2026-10-02 | RESEARCH | Agent infrastructure | Local-first platform sketch. Not canonical. |
+| Project-Cold-Boot | listed | RESEARCH | Research | Cold-boot lineage. Implementation UNVERIFIED this cycle. |
+| Sovereign-OS | 2026-09-20 | RESEARCH | Research | OS-family member. No kernel claim. |
+| SovereignOS | 2026-10-01 | SUPERSEDED | Research | Replacement map: os-family-constitution-map. Not a second kernel. |
+| LegionOS | listed | SUPERSEDED | Research | Same OS-family map. |
+| RealityOS | listed | SUPERSEDED | Research | Same OS-family map. |
+| Digital_Double_Virtual_Workforce_4. | listed | SUPERSEDED | Workforce | Replacement: Digital_Double_virtual_workforce. |
+| Digital_Double_Virtual_Workforce_4.2 | listed | SUPERSEDED | Workforce | Replacement: Digital_Double_virtual_workforce. |
+| DigitalDoubleVirtualWorkforce3.5 | listed | SUPERSEDED | Workforce | Replacement: Digital_Double_virtual_workforce. |
+| digital-double-mobile | listed | SUPERSEDED | Workforce | Mobile lineage. Secret-scanning residual still operator-owned. |
+| Digital-Double_Mobile | listed | SUPERSEDED | Workforce | Duplicate mobile name. |
+| SEEM-Cognitive-Microservice | listed | RESEARCH | Agent infrastructure | Duplicate name pair; neither proven canonical this cycle. |
+| SEEM-Cognitive_Microservice | listed | SUPERSEDED | Agent infrastructure | Name-variant of SEEM-Cognitive-Microservice. |
+| SEEM-2.0-Self-Evolving-Emergent-Mind | listed | RESEARCH | Research | Not canonical SEEM runtime. |
+| seem-block-system | listed | RESEARCH | Research | Not BlockSwarm. |
+| CFT-v3.0 | listed | ARCHIVED | Research | Only repo with GitHub archived=true. |
+| CFT-v3.1 | listed | RESEARCH | Research | White-paper lineage. Not a measured device. |
+| CFTv3.3-IQG-Unified-Framework | listed | RESEARCH | Research | Later CFT text. Physics claims UNVERIFIED. |
+| -ware-constant-derivation | 2026-10-06 | RESEARCH | Research | Coherence-drive math note. |
+| ware-constant-phenomenology | 2026-10-02 | RESEARCH | Research | Phenomenology. Not an engine. |
+| thrust-target-30 | 2026-10-01 | RESEARCH | Research | Target statement, not a measurement campaign. |
+| stress-tensor-modification | 2026-10-02 | RESEARCH | Research | Equation note. |
+| topological-pinch | 2026-10-02 | RESEARCH | Research | Mechanism note. |
+| sierpinski-geometry-045 | listed | RESEARCH | Research | Geometry stress. |
+| finite-gasket-spectral-derivatives | listed | RESEARCH | Research | Geometry. |
+| bloch-coherence-factor2 | listed | RESEARCH | Research | Coherence factor note. |
+| m2-renormalization-law | listed | RESEARCH | Research | Renormalization note. |
+| momentum-closure | listed | RESEARCH | Research | Closure note. |
+| optimization-limit-conjecture | listed | RESEARCH | Research | Conjecture. |
+| scale-functional-I | listed | RESEARCH | Research | Scaling note. |
+| informational-flux-identity | listed | RESEARCH | Research | Identity note. |
+| -Entanglement-and-Emergence | 2026-10-02 | RESEARCH | Research | Emergence essay/code. |
+| -text-informational-fork-protocol- | 2026-10-02 | RESEARCH | Research | Protocol draft. |
+| The-Origin-Point-Hypothesis. | 2026-10-06 | RESEARCH | Research | TeX hypothesis. |
+| acoustic-token-modem | 2026-10-02 | RESEARCH | Research | Experimental modem. README says no novelty claim. |
+| Open-Energy-Fusion | listed | RESEARCH | Research | Not a demonstrated reactor. |
+| Auto_Legion | 2026-10-01 | RESEARCH | Agent infrastructure | Not AI Legion product. |
+| Agent-Snake | 2026-10-01 | RESEARCH | Research | Toy agent. |
+| AtomicNexusAI | 2026-10-06 | RESEARCH | Agent infrastructure | Not ADL-Nexus canonical. |
+| atomicdreamlabs | listed | RESEARCH | Governance | Lab index/sketch. UNVERIFIED. |
+| Gia---General-Intelligence-Assistant | listed | RESEARCH | Agent infrastructure | Assistant sketch. |
+| genieGPT | listed | RESEARCH | Agent infrastructure | Sketch. |
+| My-mind-A.I. | listed | RESEARCH | Research | Sketch. |
+| Code_Generation_AI_Program | listed | SUPERSEDED | Agent infrastructure | Archive candidate. Flag not set. |
+| RepoRover- | listed | SUPERSEDED | Agent infrastructure | Archive candidate. Flag not set. |
+| DevelopTool-Unified-Dev-Environment | 2026-10-07 | RESEARCH | Agent infrastructure | Description exceeds verified surface. 23 open issues. |
+| VigilE.S.A.-Enhanced-Security | 2026-10-02 | RESEARCH | Security | Not sovereign-clean-room. Production claims UNVERIFIED. |
+| blacksite | listed | RESEARCH | Security | UNVERIFIED. |
+| mend | listed | RESEARCH | Research | UNVERIFIED. |
+| mendthegame | listed | RESEARCH | Research | UNVERIFIED. |
+| smart_home_BCI | listed | RESEARCH | Research | UNVERIFIED. |
+| quantum_A.I._optimization.py | listed | RESEARCH | Research | Filename-shaped repo. |
+| Quantumclustering | listed | RESEARCH | Research | UNVERIFIED. |
+| btc-trading | 2026-10-07 | RESEARCH | Research | Trading sketch. No execution claim. |
+| fantom-smart-contracts-first-bot | listed | RESEARCH | Research | Bot sketch. |
+| fantom_trading_bot_2 | listed | SUPERSEDED | Research | Later bot name; neither canonical. |
+| ftmA.I.bot | listed | SUPERSEDED | Research | Fantom bot lineage. |
+| FortiTrade_Multi-Strategy | listed | RESEARCH | Research | Strategy sketch. |
+| automate_passive_income | 2026-10-01 | RESEARCH | Research | No income implementation claim. |
+| ExoAxis-1 | listed | RESEARCH | Research | UNVERIFIED. |
+| potential-garbanzo | listed | RESEARCH | Research | UNVERIFIED. |
+| new-program-1.01 | listed | RESEARCH | Research | UNVERIFIED. |
+| -Py2APK-main | 2026-10-01 | RESEARCH | Research | Packaging experiment. |
+| test | 2026-10-01 | ARCHIVED | Research | Empty-sized stub (1KB). GitHub archived flag still false. |
+| Sovereign-Epistemic-Reality-Engine | listed | RESEARCH | Research | Not clean-room. |
 
-No deletion. No history rewrite. No tag. No archive flag. No agent execution. No claim elevation.
+`listed` means present in the 83-row search payload; exact `pushed_at` was not re-copied for every row.
 
-## Exit criteria
+No forks in the payload. Private repositories were not returned by this search.
 
-Not met for this repository (GitHub archive flag false; constructor mismatch remains; 23 issues not triaged; Surface audit green on both Sweep-264 commits; archive flag and defects still open). Not met for the portfolio (Digital Double alert 13 inherited, not re-fetched). Sweep-264 stops. Do not loop.
+## Phase 3 — mandatory live verification
 
----
+| Check | forge-aegis | sovereign-clean-room | BlockSwarm | Digital_Double_virtual_workforce |
+| --- | --- | --- | --- | --- |
+| Head observed | e7188d529739652a2dd6264bd3d328c1f72e60e5 | 4878918cf9f95d3c19e1890bef6d2fd6713e0a16 | 6e90f6f85c0969fa8a262a70ceba833d618a22db | 24e6a29fd26c03900a8d98634d6683996eabdac4 |
+| Latest relevant CI | run 37258127100 success (push, main, 2026-10-05) | run 37064696194 success (push, main, 2026-10-02). Branch `seem-completion-pass` run 37215829476 success after earlier failures; not merged. | run 36859452185 success (Foundry, main, 2026-10-01) | run 36861489156 success (Digital Double CI, main, 2026-10-01) |
+| Releases | empty list | empty list | empty list | empty list |
+| Tags API | empty list | empty list | empty list | empty list |
+| Tests on tree | python package + CI workflow present. Local pytest not re-run. | `tests/` present. CI is the verification. | `test/` present. Foundry workflow success is the verification. | `tests/` present. Commit message cites 16 pytest cases. Not re-run here. |
+| Docs | README, CLAIM_STATUS, GOVERNANCE, SECURITY, fls/, docs/ | README, SECURITY, docs/ | README, GOVERNANCE, SECURITY, docs/ | README, CANONICAL, SECURITY, docs/ |
+| Security | code scanning 404 (no analysis). Dependabot high filter empty. | Dependabot high filter empty. Secret scanning not re-probed. | Dependabot critical filter empty. | Dependabot critical #13 open: form-data GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, manifest `digital_double/package-lock.json`, dev scope, patched version 4.0.4. Secret scanning open list empty. |
 
-# Portfolio Status Report
+BlockSwarm README still says tag lineage includes `v0.5.0-sagf`. Tags API returned no tags. That sentence is UNVERIFIED. Do not create the tag to match the sentence.
 
-**Updated:** 2026-10-06 (Sweep-263; master directive v3.0)
-**Project / Version:** ADL Portfolio Governance / Sweep-263
-**Objective:** One governed portfolio sweep. Inventory, classify from existing registry, live-verify the mandatory four, record residuals, stop.
-**Evidence:** Authenticated login `beyond-repair` (id 132061760). Profile `public_repos` 78, `updated_at` 2026-10-01T08:47:04Z. Search `user:beyond-repair` total_count 83, incomplete_results false. Private flag true on 9 names in that payload. GitHub `archived=true` only for `CFT-v3.0`.
-
-This report does not mark the portfolio complete. Exit criteria fail. See residuals.
-
-## Sweep-263 scope
-
-- Discovery: 83 repository names from search. None undefined inside that set.
-- Classification: not changed. Source remains `docs/repository_registry.md` as locked through Sweep-238 and restated in Sweep-260.
-- Phase 3 live re-fetch: `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
-- No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
-- Function bodies outside Actions conclusions below were not executed in this sweep.
-
-## Inventory delta vs Sweep-260
-
-Search still returns 83 names. `pushed_at` dates that moved after Sweep-260 inventory text: `ADL-Governance` 2026-10-07, `btc-trading` 2026-10-07 (Sweep-261 commit). Other names unchanged in the search payload used here. Private (9): `Digital_Double_Virtual_Workforce_4.2`, `CFT-v3.0`, `Digital_Double_Virtual_Workforce_4.`, `blacksite`, `potential-garbanzo`, `SovereignOS`, `test`, `mendthegame`, `atomicdreamlabs`. Profile 78 public vs search 83 is still unreconciled (83 includes 9 private, which does not equal 78+9). Not a deletion.
-
-Full name list remains the Sweep-260 inventory in the prior section below, plus the date corrections above.
-
-## Classification (unchanged)
-
-| Class | Rule this sweep | Names |
-|-------|-----------------|-------|
-| ACTIVE | Registry only. Not re-proven as production-complete. | `BlockSwarm`, `sovereign-clean-room`, `forge-aegis`, `ADL-Governance`, `ADL-SEEM`, `AEGIS-Project-Nehemiah-`, `Digital_Double_virtual_workforce` |
-| SUPERSEDED | Registry successor map. Not a tree merge. GitHub archive flag false except `CFT-v3.0`. | `SEEM-2.0-Self-Evolving-Emergent-Mind`, `SEEM-Cognitive-Microservice`, `SEEM-Cognitive_Microservice`, `seem-block-system`, `My-mind-A.I.`, `Gia---General-Intelligence-Assistant`, `Auto_Legion`, `CFT-v3.0`, `CFT-v3.1`, `DigitalDoubleVirtualWorkforce3.5`, `Digital_Double_Virtual_Workforce_4.`, `Digital_Double_Virtual_Workforce_4.2`, `Digital-Double_Mobile`, `digital-double-mobile` |
-| ARCHIVED (GitHub flag) | Only `CFT-v3.0` | `CFT-v3.0` |
-| ARCHIVED (recommended, not executed) | Registry queue. Flag still false. | `RepoRover-`, `DevelopTool-Unified-Dev-Environment`, `-Py2APK-main`, `AtomicNexusAI`, `genieGPT`, `Agent-Snake`, fantom bots, `smart_home_BCI`, `automate_passive_income`, `Quantumclustering`, `quantum_A.I._optimization.py`, `test`, `new-program-1.01`, `btc-trading`, `Code_Generation_AI_Program`, `potential-garbanzo`, `FortiTrade_Multi-Strategy` |
-| RESEARCH | Default for every other name in the 83. Claim cap not raised. | remainder, including `os-family-constitution-map`, `seem-identity-unifier`, `Sovereign-OS`, `SovereignOS`, `LegionOS`, `RealityOS`, `sunder` |
-
-OS family has no proven canonical. Do not flip `SovereignOS` off AMBIGUOUS_DUPLICATE. Sweep-262 already recorded that `Digital-Double_Mobile` and `digital-double-mobile` are distinct trees, both naming `Digital_Double_virtual_workforce` as canonical. Not re-merged.
-
-## Phase 3 — mandatory four (live, Sweep-263)
-
-| Repo | CI | Releases | Tags | Branches | Security | Readiness |
-|------|----|----------|------|----------|----------|-----------|
-| `forge-aegis` | Workflow `forge-aegis CI` active. Latest run 37258127100 success on main `e7188d529739652a2dd6264bd3d328c1f72e60e5` (2026-10-05T03:07:36Z). | empty | empty | `main`, `finish/forge-aegis-v0.1-runnable`, `repair/docs-python3-venv`, `repair/v0.1-installable-slice` | Dependabot open empty. Secret scanning open empty. Code scanning 404 no analysis. | PASS WITH FINDINGS. Software sketch only. Not a host-integrity product. |
-| `sovereign-clean-room` | Workflow `Python tests` active. Latest main push run 37064696194 success on `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` (2026-10-02T21:05:44Z). Branch `seem-completion-pass` run 37215829476 success on `d6f13042` (2026-10-04); not merged. Prior PR runs 37215706600 and 37214635678 failed. | empty | empty | `main`, `seem-completion-pass`, `fix/pynacl-1.6.2-cve-2025-69277` | Dependabot open empty. | PASS WITH FINDINGS on main. VSA completeness UNVERIFIED. Do not merge either side branch from this sweep. |
-| `BlockSwarm` | Workflow `Foundry` active. Latest run 36859452185 success on main `6e90f6f85c0969fa8a262a70ceba833d618a22db` (2026-10-01T12:05:48Z). | empty | empty | `main`, `finish/foundry-runnable`, `sweep/add-sweep-config` | Dependabot open empty. | PASS WITH FINDINGS. Foundry success is not a network deployment. |
-| `Digital_Double_virtual_workforce` | Workflow `Digital Double CI` active. Latest run 36861489156 success on main `24e6a29fd26c03900a8d98634d6683996eabdac4` (2026-10-01T12:24:12Z). | empty | empty | `main`, `dependabot/npm_and_yarn/digital_double/npm_and_yarn-790e04dbfc`, `dependabot/npm_and_yarn/digital_double/rollup-4.63.1`, `dependabot/npm_and_yarn/npm_and_yarn-95bbd494c8`, `finish/repair-python-core-ui`, `fix/nanoid-5.1.11-ghsa-xwg4`, `nex-int-workforce-evidence` | Dependabot alert 13 open, critical. Code scanning 404 no analysis. Secret scanning open list empty. | FAIL. CI green does not close alert 13. Dependabot branches are not merged. |
-
-## Capability matrix (demonstrated vs planned)
-
-Only Actions conclusions and advisory records from this sweep. Not inferred from READMEs.
+## Capability matrix (verified vs planned)
 
 | Feature | State |
-|---------|-------|
-| forge-aegis CI on main `e7188d5` | VERIFIED (Actions success) |
-| forge-aegis host-integrity product / firmware measurement | PLANNED or UNVERIFIED. Not claimed. |
-| sovereign-clean-room Python tests on main `4878918c` | VERIFIED (Actions success) |
-| sovereign-clean-room `seem-completion-pass` merged | UNVERIFIED. Not merged. |
-| sovereign-clean-room PyNaCl CVE branch merged | UNVERIFIED. Branch exists. Not merged. |
-| sovereign-clean-room VSA production completeness | UNVERIFIED |
-| BlockSwarm Foundry on main `6e90f6f` | VERIFIED (Actions success) |
-| BlockSwarm deployed swarm or token economics | UNVERIFIED |
-| Digital Double CI on main `24e6a29` | VERIFIED (Actions success) |
-| Digital Double form-data boundary fix | PLANNED. Alert 13 open. Matched range `>= 4.0.0, < 4.0.4`. First patched identifier 4.0.4. |
-| Product releases or tags on the four | absent (empty lists) |
+| --- | --- |
+| forge-aegis offline Python integrity slice exercised by CI | VERIFIED (CI success only; host measurement, remote attestation, auto-remediation NOT claimed) |
+| sovereign-clean-room Python tests on main | VERIFIED (CI run 37064696194). Full FHRR campaign completion NOT claimed. |
+| BlockSwarm Foundry build/test on pinned OpenZeppelin 4.9.6 and forge-std 1.9.4 | VERIFIED (CI run 36859452185). Autonomous value movement NOT claimed. |
+| Digital Double installable Python package and UI lockfile path | VERIFIED (CI run 36861489156 and tree). Production workforce NOT claimed. |
+| GitHub Releases for the four pillars | UNVERIFIED / absent |
+| BlockSwarm tag v0.5.0-sagf | UNVERIFIED |
+| AI Legion product | PLANNED (Auto_Legion is not that product) |
+| OmniWealth OS | PLANNED / absent as a repository |
+| SAGF runtime beyond BlockSwarm advice/authority split | PARTIAL (docs + contracts; execution invariant is advice-only) |
+| Cold Boot as a bootstrapped OS | UNVERIFIED |
+| Portfolio-wide secret scanning and code scanning | UNVERIFIED |
 
-## Dependency graph (governance, not install-resolved)
+## Dependency graph (evidence-bounded)
 
-| Edge | Evidence | Note |
-|------|----------|------|
-| SUPERSEDED SEEM trees → `sovereign-clean-room` | registry | historical ownership, not a proven import |
-| SUPERSEDED Digital Double numbered trees → `Digital_Double_virtual_workforce` | registry and Sweep-262 identity note | do not delete duplicates |
-| `sunder-cleanroom-vsa-adapter` → `sunder` and `sovereign-clean-room` | repo name and prior claim cap | adapter, not a merge |
-| `os-family-constitution-map` → `Sovereign-OS`, `SovereignOS`, `LegionOS`, `RealityOS` | Sweep-259 identity map | map only. No SUPERSEDES. |
-| `Digital_Double_virtual_workforce` → npm `form-data` | Dependabot alert 13, manifest `digital_double/package-lock.json`, scope development | critical, open |
-| BlockSwarm → forge-std / OpenZeppelin | prior Foundry pin commit message on `6e90f6f` | not re-resolved this sweep |
-| Cycles | not proven | install graphs not built for 83 repos |
-| Orphans | not proven | absence of a search hit is not an orphan proof |
+Internal, documented only:
 
-Duplicate infrastructure (govern, do not delete): SEEM family, Digital Double numbered trees, OS family (`Sovereign-OS`, `SovereignOS`, `LegionOS`, `RealityOS`), agent sketches (`Auto_Legion`, `ADL-Nexus`, `sunder`, `Agent-Snake`).
+- ADL-Governance classifies the portfolio. It does not import product runtimes.
+- sunder-cleanroom-vsa-adapter declares a contract toward sunder and sovereign-clean-room. Runtime interop is not claimed.
+- seem-sunder-bridge is an interop contract. Runtime interop is not claimed.
+- BlockSwarm submodules: OpenZeppelin contracts and upgradeable v4.9.6, forge-std v1.9.4.
+- Digital_Double_virtual_workforce: npm lockfile plus Python package. Critical transitive `form-data` remains open.
+- OS family map points at Sovereign-OS, SovereignOS, LegionOS, RealityOS. No kernel dependency is implemented.
 
-## Canonical ownership map
-
-| Domain | Canonical candidate | Status |
-|--------|---------------------|--------|
-| Governance | `ADL-Governance` | governing source for registry. This sweep updates docs only. |
-| Agent / FLS sketch | `forge-aegis` | software claim cap. Spec sibling `AEGIS-Project-Nehemiah-` is not the runtime. |
-| Security / VSA substrate | `sovereign-clean-room` | canonical SEEM substrate in registry. Completeness UNVERIFIED. |
-| Distributed / SAGF contracts | `BlockSwarm` | Foundry CI verified. Deployment UNVERIFIED. |
-| Workforce automation | `Digital_Double_virtual_workforce` | public canonical. Readiness FAIL while alert 13 is open. |
-| Research | all non-ACTIVE, non-SUPERSEDED names | claim ≤ registry caps |
+Cycles: none demonstrated in code this cycle.
+Orphans: `test`, `potential-garbanzo`, `new-program-1.01` have no demonstrated dependents.
+Duplicate infrastructure: Digital Double version repos; SEEM microservice name pair; Fantom bot name cluster; OS-family name cluster; CFT version cluster.
 
 ## Gap summary
 
 | Capability | Severity |
-|------------|----------|
-| Digital Double Dependabot #13 (`form-data` / GHSA-fjxv-7rqg-78g4 / CVE-2025-7783) | Critical |
-| Unmerged `fix/pynacl-1.6.2-cve-2025-69277` on sovereign-clean-room | High (not re-validated as a finding; branch name only) |
-| Code scanning not enabled on forge-aegis and Digital Double (404 no analysis) | Medium |
-| No releases or tags on the mandatory four | Medium |
-| `seem-completion-pass` unmerged; earlier PR runs failed | Medium |
-| Profile 78 vs search 83 unreconciled | Low |
-| Archive recommendations not executed | Low (operator) |
-| Full dependency install graph for 83 repos | Low this sweep; not computed |
+| --- | --- |
+| Digital Double Dependabot #13 unpatched | Critical |
+| digital-double-mobile historical secret (prior queue; not re-fetched) | Critical |
+| No releases/tags on four pillars | Medium |
+| BlockSwarm README tag sentence contradicted | Medium |
+| Code scanning absent on forge-aegis | Medium |
+| Portfolio CI not re-run outside four pillars | Medium |
+| Archive flags unset for named candidates | Low (operator-only) |
+| public_repos vs search count mismatch | Low |
 
-## Security summary
+## Canonical ownership
 
-Critical open finding re-fetched: Digital Double Dependabot alert 13. Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4, CVE-2025-7783, matched range `>= 4.0.0, < 4.0.4`, first patched identifier 4.0.4, severity critical, state open, alert updated_at 2025-07-22T06:57:23Z. Open critical filter returned only this alert. Do not mark fixed.
+| Domain | Canonical repo | Not canonical |
+| --- | --- | --- |
+| Governance | ADL-Governance | profile README, census satellites |
+| Agent integrity contract | forge-aegis | AEGIS-Project-Nehemiah- (spec sibling), VigilE.S.A. |
+| Offline mind / clean room | sovereign-clean-room | sunder, adapters |
+| Advice-without-execution substrate | BlockSwarm | seem-block-system, trading bots |
+| Virtual workforce | Digital_Double_virtual_workforce | versioned and mobile DD repos |
 
-forge-aegis, sovereign-clean-room, BlockSwarm: Dependabot open lists empty. forge-aegis and Digital Double secret scanning open lists empty. Code scanning 404 no analysis on forge-aegis and Digital Double. digital-double-mobile secret alert #1 was not re-fetched. BlockSwarm and sovereign-clean-room code scanning were not listed this sweep.
+## Review readiness (four pillars)
 
-## Redundancy action table (governance only)
+| Repo | Result |
+| --- | --- |
+| forge-aegis | PASS WITH FINDINGS (no code scanning analysis; no release; license TBD) |
+| sovereign-clean-room | PASS WITH FINDINGS (unmerged branch; secret scanning state not re-proven) |
+| BlockSwarm | PASS WITH FINDINGS (tag claim false or absent; no release) |
+| Digital_Double_virtual_workforce | FAIL (open critical Dependabot #13) |
 
-| Component | Canonical repo | Duplicate repo | Action |
-|-----------|----------------|----------------|--------|
-| Workforce automation | `Digital_Double_virtual_workforce` | numbered Digital Double trees, both mobile-named repos | SUPERSEDE (document only; no delete) |
-| SEEM substrate | `sovereign-clean-room` | SEEM-* historical trees | SUPERSEDE (document only) |
-| OS identity | none proven | `Sovereign-OS`, `SovereignOS`, `LegionOS`, `RealityOS` | no SUPERSEDES; map stays in `os-family-constitution-map` |
-| AEGIS spec vs sketch | `forge-aegis` for software sketch | `AEGIS-Project-Nehemiah-` for spec | do not collapse |
+## Redundancy actions (documentary only)
 
-## Exit criteria
+| Component | Canonical Repo | Duplicate Repo | Action |
+| --- | --- | --- | --- |
+| Virtual workforce | Digital_Double_virtual_workforce | 4. / 4.2 / 3.5 / mobile pair | SUPERSEDE |
+| OS family | os-family-constitution-map | SovereignOS, LegionOS, RealityOS | SUPERSEDE |
+| Fantom bots | none proven | fantom_trading_bot_2, ftmA.I.bot | SUPERSEDE (no canonical) |
+| SEEM microservice | SEEM-Cognitive-Microservice | SEEM-Cognitive_Microservice | SUPERSEDE |
 
-Not met. Unresolved critical security finding (alert 13). Duplicate canonical candidates remain governed, not consolidated. Archive candidates untracked as GitHub archives except `CFT-v3.0`. Portfolio function audit incomplete. Sweep-263 stops. Do not loop.
+## Synergy (not an integration claim)
 
----
+- Immediate: governance docs already point pillars at ADL-Governance. No new runtime wiring.
+- Medium: Digital Double advice into BlockSwarm remains a documented split (AI advises, cannot execute). Not wired this cycle.
+- Long: forge-aegis software slice is not a Nehemiah host. Do not converge them by renaming.
 
-# Prior report (Sweep-261)
+## Exit
 
-**Updated:** 2026-10-06 (Sweep-261; randomized draw `btc-trading`)
-**Evidence:** Search total_count 83. Pre-sweep tree `6dc74b42`. Post-sweep commit `cd3638654c870c238db6457355b64f82ff1adfae`. Actions run 37549816378 success. Classification ARCHIVED (recommended). GitHub archived flag still false. Credential removed from HEAD, remains in history. Full Sweep-261 narrative is in git blob `5c793f4a4025308b6a5dd4ef7571ef93624b9d72` (parent of this commit). History was not rewritten.
+Exit criteria are not met. Critical security finding remains. Duplicate canonicals are labeled, not deleted. Sweep stops.
