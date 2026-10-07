@@ -1,5 +1,29 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-07 (Sweep-268)
+**Project / Version:** ADL Portfolio Governance / Sweep-268
+**Objective:** Random repository completion cycle for `-Py2APK-main`.
+**Draw:** `random.Random(1791378255).choice` over sorted search payload of 83 names, excluding `ADL-Governance`.
+**Authenticated owner:** `beyond-repair`. Search `total_count` 83, `incomplete_results` false.
+
+### Subject
+
+| Field | Value |
+| --- | --- |
+| Repo | `-Py2APK-main` |
+| Class | RESEARCH (Claim-0 sketch; Sweep-142 archive-queue note inherited, GitHub archive flag false) |
+| Pre-sweep HEAD | `4224ea4b58832408bae3596272ad1e9436014572` |
+| Local tests | 15 passed (`pytest -q` in nested package) |
+| CI before | no pytest workflow; Dependabot graph run 36865535949 success |
+| Safe change | `.github/workflows/pytest.yml` plus claim-capped CI notes |
+| Not done | no tag, no archive flag, no APK verification, no lockfile edit |
+
+Portfolio exit criteria remain unmet. Digital Double alert 13 was not re-fetched.
+
+---
+
+# Portfolio Status Report
+
 Sweep: Sweep-265
 Timestamp: 2026-10-07T03:11Z (session clock 2026-10-06 23:11 EDT)
 Authority: authenticated GitHub search `user:beyond-repair`, `total_count=83`, `incomplete_results=false`

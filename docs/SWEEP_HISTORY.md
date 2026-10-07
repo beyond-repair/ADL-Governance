@@ -1,5 +1,16 @@
 # Sweep History
 
+## Sweep-268 — 2026-10-07 random completion sweep (-Py2APK-main)
+
+- Selection: `random.Random(1791378255).choice` over the sorted 83-name search payload excluding `ADL-Governance` (`user:beyond-repair`, `total_count=83`, `incomplete_results=false`). Subject: `-Py2APK-main`.
+- Discover: default branch `main`, pre-sweep HEAD `4224ea4b58832408bae3596272ad1e9436014572`, pushed 2026-10-01T12:59:29Z, archived flag false, language Python, license field null (nested MIT text present), open issues 0. Nested package root `-Py2APK-main/` preserved. No `.github` workflows. Only Dependabot graph-update run 36865535949 success.
+- Audit: registry archive-queue note from Sweep-142 still present. Repo `ARCHIVED.md` records that classification and the 2026-10-01 Claim-0 repair. `CLAIM_STATUS.md` caps claim at 0. Local `pytest -q` in the nested package: 15 passed.
+- Classification: `RESEARCH` (experimental, unvalidated). Not `ACTIVE` (no verified APK path). Not GitHub-archived. Archive flag remains operator-only.
+- Actions: added `.github/workflows/pytest.yml` (SDK-free pytest only), README CI note, CLAIM_STATUS CI bound. No tag. No archive flag. No history rewrite. No deletion. No claim elevation.
+- Target not met: Actions conclusion for the new workflow was not yet observed at planning time; APK/signing path remains unverified; registry archive-queue sentence not rewritten this cycle.
+- Exit: subject loop stops after CI observation or explicit residual record. Portfolio exit criteria remain unmet.
+
+
 ## Sweep-265 — 2026-10-07 Master Directive portfolio sweep
 
 - Timestamp: 2026-10-07T03:11Z (session clock 2026-10-06 23:11 EDT).

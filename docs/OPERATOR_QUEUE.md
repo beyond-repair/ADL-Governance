@@ -1,5 +1,10 @@
 # Operator Queue
 
+## Sweep-268 additions (2026-10-07)
+
+- **-Py2APK-main:** do not set GitHub `archived=true` from an agent. Sweep-142 queue note is not an archive action. Do not tag a release. Do not claim a verified APK, store build, or signing guarantee. Nested `-Py2APK-main/` package root stays preserved. Pytest workflow is SDK-free only.
+
+
 ## Residual notes from Sweep-265
 
 Master-directive sweep. Authenticated search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Private flag true on 9 names in the search payload. GitHub archived=true only on CFT-v3.0. Classifications unchanged. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
