@@ -6,7 +6,24 @@
 - Subject Digital_Double_Virtual_Workforce_4. tip c346db87e70b32dae1f153827bfa2efa83b258be. Tree count 8, truncated false. No application source.
 - Actions lifecycle-docs run 37693518457 conclusion success on c346db87e70b32dae1f153827bfa2efa83b258be. Observed, not dispatched. Not a product proof.
 - Local unittest 3 passed remains a recorded Sweep-284 claim. Not re-executed.
+- governance-ci run 37694081103 on c50ecf30ef1ba3333c5b3c07899c882767c4be07 failed because SWEEP_HISTORY.md plus HEADINGS.md did not name PASS-2026-10-07-270, PASS-2026-10-07-275, PASS-2026-10-07-278, or PASS-2026-10-07-281. Those ids exist as files. Index lines below are restored from those files. No body was invented.
 - No deletion, no history rewrite, no tag, no archive flag, no claim elevation. Digital_Double_Virtual_Workforce_4. not edited.
+
+## Index restore for passes dropped from the truncated history / PASS-2026-10-07-281
+
+- Index line from existing PASS-2026-10-07-281.yaml only. Objective: Persist a basilisk contract for the HEAD Sweep-280 FortiTrade_Multi-Strategy narrative without re-running the draw or pytest. Not a re-execution.
+
+## Index restore for passes dropped from the truncated history / PASS-2026-10-07-278
+
+- Index line from existing PASS-2026-10-07-278.yaml only. Objective: Persist a basilisk contract for the HEAD Sweep-277 Code_Generation_AI_Program narrative without re-running the draw. Not a re-execution.
+
+## Index restore for passes dropped from the truncated history / PASS-2026-10-07-275
+
+- Index line from existing PASS-2026-10-07-275.yaml only. Objective: Re-read Digital-Double_Mobile and digital-double-mobile default-branch roots and record whether PASS-2026-10-06-262 still matches current tree identity. Not a re-execution.
+
+## Index restore for passes dropped from the truncated history / PASS-2026-10-07-270
+
+- Index line from existing PASS-2026-10-07-270.yaml only. Objective: Document current NOT_BUILT evidence for Q-FUNC-005 workforce-lineage-graph without implementing the graph. Not a re-execution.
 
 ## Sweep-284 — 2026-10-07 Digital_Double_Virtual_Workforce_4.
 
