@@ -1,5 +1,28 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-07 (Sweep-274)
+**Project / Version:** ADL Portfolio Governance / Sweep-274
+**Objective:** Random single-repo completion cycle on `RealityOS`.
+**Selection:** `random.Random(20261007*1000+273).choice` on the sorted 83-name search payload (same payload as Sweep-273: total_count 83, incomplete_results false). Index 31. Subject `RealityOS`. Sweep id is 274 because Sweep-273 was already the census commit.
+**Authenticated owner:** `beyond-repair` (id 132061760). Profile `public_repos` 78. Private in that payload: 9. GitHub archived flag true only for `CFT-v3.0`.
+**Evidence rule:** Code > Documentation > Roadmap. A2 for this cycle's tree, pytest, and Actions read.
+
+## Sweep-274 result
+
+Classification: **RESEARCH**. Claim cap **≤ 1**. Not promoted. Not a canonical operating system.
+
+- Tree before this cycle: `e36664a403c428838ffdeca6d3e5b714ff5dbc9b` (31 blobs). `research-guard` run 37515961844 success on that SHA. CLAIM_STATUS had still said the permissions edit was unobserved.
+- Local pytest before the patch: 17 passed. After the boundary test: 18 passed.
+- Pushed `9c794098ad02f661e5521feea23ebe46706724b2`: health_score == 0.7 uses the 0.06 fidelity step; docstrings no longer call the sketch a living simulation; CLAIM_STATUS and README record the observed prior green run.
+- CI: research-guard run [37648961131](https://github.com/beyond-repair/RealityOS/actions/runs/37648961131) conclusion success on `9c79409`.
+- No tag. No archive flag. No history rewrite. No claim elevation. Persistence and connectors remain absent.
+
+Termination boxes for this repo: tests and this push's CI are green; documentation updated; unsupported living-engine wording removed from the engine module. Still open for the portfolio: Digital Double critical alert 13, empty Phase-3 releases, unmerged sovereign-clean-room branches, duplicate lines not archived. This cycle stops on `RealityOS` after the structural push. It does not close portfolio exit criteria.
+
+---
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-07 (Sweep-273)
 **Project / Version:** ADL Portfolio Governance / Sweep-273
 **Objective:** One governed portfolio sweep: census plus live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`.

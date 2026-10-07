@@ -1,5 +1,12 @@
 # Operator Queue
 
+## Sweep-274 additions (2026-10-07)
+
+- **RealityOS:** do not promote RESEARCH to ACTIVE. Do not tag a release. Do not set GitHub `archived=true`. A green `research-guard` run (37648961131 on `9c79409`) is a sketch gate, not a security audit, persistence proof, or connector proof. `POLSIA_PROMPT.md` remains a design prompt.
+- Digital Double critical Dependabot alert 13 remains open (not re-fetched this cycle; carried from Sweep-273). Do not dismiss or bump the lockfile from an agent.
+
+# Operator Queue
+
 ## Sweep-273 additions (2026-10-07)
 
 - **Digital_Double_virtual_workforce:** Dependabot alert 13 remains open (`form-data`, CVE-2025-7783, critical, manifest `digital_double/package-lock.json`, development scope, matched range `>= 4.0.0, < 4.0.4`, first patched `4.0.4`). Do not mark the repository security-clean. Lockfile bump is allowed only after a human reviews the npm tree. Do not dismiss the alert from an agent.
