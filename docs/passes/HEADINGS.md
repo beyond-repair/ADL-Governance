@@ -2,6 +2,14 @@
 
 Additional headings so scripts/check_passes.py can name pass ids persisted after the narrative file was last prepended. Not a replacement for docs/SWEEP_HISTORY.md.
 
+## Sweep-266 Sweep-264 contract transcription / PASS-2026-10-07-266
+
+- Transcribed the Sweep-264 body from commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 into PASS-2026-10-06-264.yaml. No DevelopTool edit. No archive flag. No invented CI result.
+
+## Sweep-264 DevelopTool contract transcription / PASS-2026-10-06-264
+
+- Narrative at blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576. Classification ARCHIVED (recommended). archived flag false. Claim 0. Surface audit run 37204277991 success. Not a product verification.
+
 ## Sweep-265 Sweep-261 contract transcription / PASS-2026-10-07-265
 
 - Transcribed the existing Sweep-261 body into PASS-2026-10-06-261.yaml. No btc-trading edit. No archive flag. No invented CI result.
