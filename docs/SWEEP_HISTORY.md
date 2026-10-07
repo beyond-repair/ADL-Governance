@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-265 — 2026-10-07 Master Directive portfolio sweep
+
+- Timestamp: 2026-10-07T03:11Z (session clock 2026-10-06 23:11 EDT).
+- Scope: authenticated search user:beyond-repair, total_count 83, incomplete_results false. Profile public_repos 78. Nine private names in payload. One GitHub archived flag (CFT-v3.0).
+- Repositories reviewed: full 83-name inventory plus live re-fetch of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Findings: four heads unchanged. CI success runs 37258127100, 37064696194, 36859452185, 36861489156. Releases empty. Tags empty. Dependabot critical #13 still open. forge-aegis code scanning 404. Digital Double secret scanning open list empty.
+- Actions performed: governance docs only (PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md). No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation.
+- Residual risks: critical form-data alert; unre-fetched mobile secret; README tag sentence contradicted; public_repos vs search count mismatch; duplicate canonicals labeled only.
+- Exit: criteria not met. Stop. Do not loop.
+
+# Sweep History
+
 ## Sweep-267 — 2026-10-07 Sweep-263 contract transcription / PASS-2026-10-07-267
 
 - Selection: explicit NEXT of PASS-2026-10-07-266, objective GAP-SWEEP-263-CONTRACT.

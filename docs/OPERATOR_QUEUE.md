@@ -1,5 +1,27 @@
 # Operator Queue
 
+## Residual notes from Sweep-265
+
+Master-directive sweep. Authenticated search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Private flag true on 9 names in the search payload. GitHub archived=true only on CFT-v3.0. Classifications unchanged. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
+
+**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-265). Package form-data, manifest digital_double/package-lock.json, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range >= 4.0.0, < 4.0.4, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Do not mark fixed. Lockfile bump is operator-gated. Do not merge dependabot branches from this queue.
+
+forge-aegis, sovereign-clean-room, and BlockSwarm Dependabot open lists empty. forge-aegis code scanning returned 404 no analysis. Digital Double secret scanning open list empty. Tags lists empty and releases empty for all four pillars. Do not create product tags without a release decision.
+
+Heads unchanged: forge-aegis e7188d529739652a2dd6264bd3d328c1f72e60e5; sovereign-clean-room 4878918cf9f95d3c19e1890bef6d2fd6713e0a16; BlockSwarm 6e90f6f85c0969fa8a262a70ceba833d618a22db; Digital_Double_virtual_workforce 24e6a29fd26c03900a8d98634d6683996eabdac4.
+
+CI re-fetched success: 37258127100, 37064696194, 36859452185, 36861489156. seem-completion-pass was not re-fetched and is not merged by this sweep.
+
+## Inherited operator-only items (not re-executed)
+
+- digital-double-mobile secret scanning alert #1: not re-fetched. Rotate and revoke. Do not rewrite history.
+- digital-double-mobile Dependabot critical #30 and #8: not re-fetched.
+- Archive candidates remain unflagged except CFT-v3.0. Do not set archived=true from an agent.
+- btc-trading credential remains in git history at and before 6dc74b42. Do not rewrite history.
+- Product tags, code scanning enablement, secret rotation, and license TBD on forge-aegis remain operator-only.
+
+# Operator Queue
+
 Pending destructive / operator-only actions. Autonomous agent does **not** execute these.
 
 ## Sweep-238 additions (2026-10-07)
