@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-07-268
+  parent_pass: PASS-2026-10-07-267
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived.
+OBJECTIVE:
+  id: GAP-HISTORY-BODY-RESTORE
+  description: Restore omitted Sweep-261 through Sweep-264 narrative bodies into HEAD docs/SWEEP_HISTORY.md from the cited blob without deleting later sections.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-267. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest basilisk YAML before this pass was PASS-2026-10-07-267. Its NEXT named GAP-HISTORY-BODY-RESTORE.
+    - HEAD history before this pass, blob 6baaf7848335115e30e602a18a3b79ea12181c3e, omitted Sweep-261 through Sweep-264 bodies.
+    - Those bodies exist at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576.
+    - Later sections Sweep-265, Sweep-267, Sweep-268, and Sweep-235 through Sweep-238 were present on HEAD and were preserved.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+    - docs/passes/PASS-2026-10-07-268.yaml
+  commits:
+    - 271839af16b1def7a01ce64edfebee49555cc0d1
+  capabilities_added_or_changed:
+    - Governance history continuity for Sweep-261 through Sweep-264. No product capability. No repository created.
+VERIFICATION:
+  tests_run:
+    - Local presence check that restored bodies contain the source sentences for Sweep-261, Sweep-262, Sweep-263, and Sweep-264: success.
+    - python scripts/check_passes.py after history restore and this pass file: recorded in overall_note.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: FAIL
+  overall: PASS
+  overall_note: Overall PASS is the history-restore objective only. The pass-heading invariant was already failing on unmodified main and was not repaired here. Cited historical Actions runs were not re-executed.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-261 through Sweep-264 narrative bodies can be restored from blob e4512fa4 without deleting later HEAD sections.
+    - PASS contracts for those sweeps already exist from prior transcription passes.
+  failures:
+    - Full heading invariant was not restored.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit product repositories.
+    - Do not flip archive flags. Do not merge Dependabot. Do not elevate claims.
+    - Do not rewrite git history. Append the omitted bodies and keep later sections.
+REMAINING:
+  incomplete:
+    - check_passes.py still fails on earlier pass ids lacking headings.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Sweep bodies before Sweep-261 remain only in older blobs.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-PASS-HEADING-BACKFILL
+  action: Add missing docs/passes/HEADINGS.md lines for the 68 earlier pass ids that scripts/check_passes.py already reports, using only existing pass filenames and recorded claims. Do not invent CI results. Do not edit product repositories.
+  reason: PASS-2026-10-07-267 recorded that check_passes.py fails on those earlier ids. History bodies for 261-264 are now on HEAD, so the next continuity gap is the heading index.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Do not mark the heading backfill as product verification.
+PROVENANCE:
+  state_commit: pending-pass-commit
+  evidence:
+    - History restore commit 271839af16b1def7a01ce64edfebee49555cc0d1
+    - Source blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576
+    - Pre-pass HEAD blob 6baaf7848335115e30e602a18a3b79ea12181c3e
