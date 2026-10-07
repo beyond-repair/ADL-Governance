@@ -1,5 +1,9 @@
 # Operator Queue
 
+## Sweep-272 additions (2026-10-07)
+
+- **Project-Cold-Boot:** do not tag a release from an agent. Do not set GitHub `archived=true`. Do not promote RESEARCH to ACTIVE. Godot smoke (`tools/smoke_test.sh`) was not executed this cycle because the sweep host has no Godot binary. A green `structure` workflow is not a playable-slice or DLRSE proof. Commercial 1.0, Steam packaging, and audio remain operator/content work.
+
 ## Sweep-271 additions (2026-10-07)
 
 - **Digital_Double_virtual_workforce:** Dependabot alert 13 remains open (`form-data`, CVE-2025-7783, critical, `digital_double/package-lock.json`, development scope). Do not mark the repository security-clean. Lockfile bump is allowed as non-destructive remediation only after a human reviews the npm tree. Do not dismiss the alert from an agent.

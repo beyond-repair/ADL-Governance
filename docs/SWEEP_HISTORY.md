@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-272 — 2026-10-07 random completion sweep (Project-Cold-Boot)
+
+- Selection: `random.Random(20261007).choice` over the 83-name authenticated search payload (`user:beyond-repair`, `total_count=83`, `incomplete_results=false`, sort updated desc). Subject: `Project-Cold-Boot`.
+- Discover: default branch `main`, pre-sweep HEAD `dff983cc399d91266bddc680cf087bd162054948`, tree not truncated, 53 paths. Godot 4.2 sketch. No `.github/workflows`. Smoke script present. No Godot binary in the sweep environment, so smoke was not executed.
+- Audit: `docs/CANONICAL_REPOS.md` already says RESEARCH game prototype, not an ACTIVE product until tests and CI exist. Claim cap in README and GOVERNANCE was already 0.
+- Classification: RESEARCH. Claim 0. Not changed.
+- Local tests before push: `python -m unittest tests/test_structure.py` 5 passed against a partial checkout of the discover tree plus the new files. Not a gameplay or DLRSE result.
+- Actions: added `tests/test_structure.py`, `.github/workflows/structure.yml`, `docs/DISCOVERY.md`; updated `docs/STATUS.md`, `GOVERNANCE.md`, `README.md`. Commits `81f970db63ef8a3d7aafafa5002cbc583768e75f`, `b21fe1bf40f5f650496195335cd586c212b2f8d6`. No history rewrite. No deletion. No tag. No archive flag. No claim elevation.
+- Residual: Godot smoke still unverified this cycle. Commercial 1.0 remains operator work. Portfolio exit criteria remain unmet.
+
 ## Sweep-271 — 2026-10-07 portfolio governance sweep
 
 - Timestamp: 2026-10-07.
