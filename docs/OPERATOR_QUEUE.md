@@ -6,7 +6,7 @@ Random draw `DevelopTool-Unified-Dev-Environment`. Classification ARCHIVED (reco
 
 **Operator-only:** set GitHub `archived=true` if the archive queue is accepted. Do not set it from this agent. Do not rewrite history. Do not execute `develop_tool/main.py` (constructor mismatch, placeholder token, conda `os.system` if the CI agent is invoked). Placeholder string `your_github_token` is not a live credential and was not rotated. 23 open issues were not triaged. Do not treat the preserved README body ("Resurrection target") as an ACTIVE promotion.
 
-Surface tests were run locally (5 passed) against claim banners. Remote Surface audit after commits `374768cb` and `4daca170` was not yet observed when this note was written.
+Surface tests passed locally (5) and remotely: run 37555077638 success on `374768cb`; run 37555078573 success on `4daca170`. Success is a banner check, not a product evaluation.
 
 ## Residual notes from Sweep-263
 
