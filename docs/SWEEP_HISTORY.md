@@ -4,7 +4,15 @@
 ## Sweep-278 Sweep-277 Code_Generation contract / PASS-2026-10-07-278
 
 - Transcribed the existing Sweep-277 Code_Generation_AI_Program narrative already at HEAD 518900cbeaa6d9b82bb5f8b7814e48376e6b9a61 into docs/passes/PASS-2026-10-07-278.yaml. Subject head fa51c8048041f048bb64d4c3b1c93182e8bf5e0b re-read. Inventory run 37656260371 conclusion success on that SHA. Prior inventory run 37386093314 conclusion success on f362a9612971503f07e0599247f2e3708ef36809. Local re-execution of the three inventory assertions passed. No archive flag. No tag. No generator. No claim elevation. Duplicate Sweep-277 Auto_Legion heading left in place.
+- Follow-up: governance-ci run 37656970769 failed on c12e3f3cfea33f20c092ecad70024532e1147413 because headings for PASS-2026-10-07-270 and PASS-2026-10-07-275 were absent from the concatenated heading search. Those index lines are restored below from the existing YAML objectives. Not a re-execution.
 
+## Sweep-275 mobile identity refresh / PASS-2026-10-07-275
+
+- Index line from existing PASS-2026-10-07-275.yaml only. Objective: re-read Digital-Double_Mobile and digital-double-mobile and record that PASS-2026-10-06-262 still matches current heads. Heading restore is not a re-execution and is not product verification.
+
+## Sweep-270 Q-FUNC-005 evidence / PASS-2026-10-07-270
+
+- Index line from existing PASS-2026-10-07-270.yaml only. Objective: document current NOT_BUILT evidence for Q-FUNC-005 workforce-lineage-graph without implementing the graph. Heading restore is not a re-execution and is not product verification.
 
 ## Sweep-277 — 2026-10-07 random completion sweep (Code_Generation_AI_Program)
 
