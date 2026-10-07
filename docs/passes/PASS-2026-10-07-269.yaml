@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-07-269
+  parent_pass: PASS-2026-10-07-268
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived. Local checker reported 83 canonical-and-contract yaml files after the heading commit.
+OBJECTIVE:
+  id: GAP-PASS-HEADING-BACKFILL
+  description: Add missing docs/passes/HEADINGS.md lines for the pass ids scripts/check_passes.py reported missing, using only existing pass filenames and recorded objective text.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-268. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest basilisk YAML before this pass was PASS-2026-10-07-268. Its NEXT named GAP-PASS-HEADING-BACKFILL.
+    - On clone of main at 37cfdc072e9f8fb896de148b0729c62245c70b76, scripts/check_passes.py failed with 70 missing headings, not the previously recorded 68.
+    - Named headings before the backfill were PASS-2026-10-06-256, 257, 259, 261, 262, 263, 264 and PASS-2026-10-07-265 through 268.
+    - After appending index lines copied from existing OBJECTIVE or subject fields, the same checker returned PASS for 83 yaml files including latest PASS-2026-10-07-268.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/HEADINGS.md
+    - docs/passes/PASS-2026-10-07-269.yaml
+  commits:
+    - faaf73eeeac2b09039fc35a209820e44a2b8e277
+  capabilities_added_or_changed:
+    - Governance heading index completeness for existing pass ids. No product capability. No repository created.
+VERIFICATION:
+  tests_run:
+    - python scripts/check_passes.py on main at 37cfdc072e9f8fb896de148b0729c62245c70b76: FAIL, 70 missing headings.
+    - python scripts/check_passes.py after heading commit faaf73eeeac2b09039fc35a209820e44a2b8e277: PASS, 83 yaml files parsed; headings name all ids including PASS-2026-10-07-268.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: Overall PASS is the heading-index objective only. Historical Actions runs were not re-executed. Product claims were not elevated. The pass-file commit SHA is not embedded in this file.
+KNOWLEDGE:
+  confirmed:
+    - HEADINGS.md is concatenated into the heading search by scripts/check_passes.py and can close the missing-heading invariant without rewriting SWEEP_HISTORY.md.
+    - The missing set on this pass was 70 ids, from PASS-2026-10-01-167 through PASS-2026-10-06-258, excluding ids already named.
+  failures:
+    - The prior record of 68 missing headings was stale relative to the checker on 37cfdc072e9f8fb896de148b0729c62245c70b76.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit product repositories.
+    - Do not flip archive flags. Do not merge Dependabot. Do not elevate claims.
+    - Do not invent CI results in index lines. Copy objective text only.
+REMAINING:
+  incomplete:
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Sweep narrative bodies before Sweep-261 remain only in older blobs.
+    - Capability and gap counts remain null.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-HISTORY-PRE261-INDEX
+  action: Add HEADINGS.md or SWEEP_HISTORY.md index lines only if a future checker run reports missing ids. Otherwise select the next non-operator gap recorded as Q-FUNC-005 and document its current NOT_BUILT evidence without implementing the workforce graph.
+  reason: Heading invariant is closed on the post-backfill checker. Operator-gated archive, secret, and lockfile actions remain unselected. Q-FUNC-005 is the standing product gap that does not require those approvals to document.
+  prerequisites:
+    - No product implementation of Q-FUNC-005 in the documentation pass.
+    - No invented verification.
+    - Do not archive repositories.
+PROVENANCE:
+  state_commit: faaf73eeeac2b09039fc35a209820e44a2b8e277
+  evidence:
+    - Heading commit faaf73eeeac2b09039fc35a209820e44a2b8e277
+    - Pre-pass checker failure listing 70 missing ids
+    - Post-heading checker PASS on 83 yaml files
