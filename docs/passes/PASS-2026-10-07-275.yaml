@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-07-275
+  parent_pass: PASS-2026-10-07-270
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived. Sweeps 271 through 274 are in docs/SWEEP_HISTORY.md and have no basilisk YAML.
+OBJECTIVE:
+  id: GAP-DD-MOBILE-NAME-COLLISION-REFRESH
+  description: Re-read Digital-Double_Mobile and digital-double-mobile default-branch roots and record whether PASS-2026-10-06-262 still matches current tree identity.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-270. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - Search digital-double-mobile user:beyond-repair returned total_count 2 incomplete_results false.
+    - Digital-Double_Mobile id 945771829 default main head fe996fac8f7c5dcbf2472b23dffdcc3ecefd0b90 archived false private false. Root files ARCHIVED.md sha b38609caee212312134dc91c7e232016cea509ea, README.md sha d71cb8f78e9c2fe3a11fb628a145f4f8b16075f7, SUPERSEDED.md sha 6af75e1710cc2dd6fec39719cb502f9f2e69d844.
+    - digital-double-mobile id 947071634 default main head 7c65eb04a678f457929671cd4909bebd61ac2eac archived false private false. Root includes package-lock.json sha b63a78700ab8a9b3ab3ae82b203ad9743372750a and SUPERSEDED.md sha c78b61356f8c72d33a0e7ded9039b7f1bc0b7a01.
+    - Those heads and SUPERSEDED blob prefixes match PASS-2026-10-06-262. The trees remain distinct. Both remain unarchived.
+    - ADL-Governance HEAD at discovery was 1b31123a3055e860949e3dfa34dc61d63ebae74f. Latest basilisk YAML was PASS-2026-10-07-270. Sweep-271 through Sweep-274 narratives exist without basilisk YAML.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-07-275.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Identity refresh recorded. No product capability. No repository created. Neither mobile tree was edited.
+VERIFICATION:
+  tests_run:
+    - Local YAML parse of this contract. Nested keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present. PASS.id matches filename.
+    - Heading regex requires a line matching '^## .+ / PASS-2026-10-07-275'. Added to SWEEP_HISTORY.md.
+    - Product tests not run. No product file changed. Lockfile not opened.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the identity refresh matches the recorded heads and blob SHAs. It is not product verification and does not embed the stamp commit SHA.
+KNOWLEDGE:
+  confirmed:
+    - PASS-2026-10-06-262 still matches current default-branch identity for both mobile repositories.
+    - The two repositories are still not the same tree.
+    - GitHub archived flag remains false on both.
+  failures:
+    - None for this read-only identity question.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit package-lock.json.
+    - Do not merge. Do not flip archive flags. Do not elevate claims.
+    - Do not transcribe Sweeps 271-274 in this pass.
+REMAINING:
+  incomplete:
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Basilisk YAML for Sweeps 271, 272, 273, and 274 is absent.
+    - Capability and gap counts remain null.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, secret rotation, and any withdrawal of existing SUPERSEDED prose.
+  new_gaps:
+    - GAP-SWEEP-271-274-CONTRACTS
+NEXT:
+  objective_id: GAP-SWEEP-274-CONTRACT
+  action: Transcribe the Sweep-274 RealityOS body already in docs/SWEEP_HISTORY.md at HEAD into docs/passes/PASS-2026-10-07-274.yaml. Do not re-run the draw. Do not invent CI results. Do not promote RESEARCH. Do not tag.
+  reason: Sweep-274 is the newest narrative without a basilisk YAML. The mobile identity question is closed for the current heads.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the existing Sweep-274 narrative.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - Digital-Double_Mobile root on fe996fac8f7c5dcbf2472b23dffdcc3ecefd0b90
+    - digital-double-mobile root on 7c65eb04a678f457929671cd4909bebd61ac2eac
+    - Search total_count 2 archived false
+    - PASS-2026-10-06-262 recorded the same heads and SUPERSEDED blob prefixes

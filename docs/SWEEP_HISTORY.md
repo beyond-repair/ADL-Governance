@@ -1,5 +1,10 @@
 # Sweep History
 
+## Sweep-275 mobile name-collision refresh / PASS-2026-10-07-275
+
+- Re-read Digital-Double_Mobile and digital-double-mobile default-branch roots only. PASS-2026-10-06-262 still matches: ids 945771829 and 947071634, heads fe996fac8f7c5dcbf2472b23dffdcc3ecefd0b90 and 7c65eb04a678f457929671cd4909bebd61ac2eac, archived false, SUPERSEDED blobs 6af75e17 and c78b6135. Not the same tree. No product edit. No lockfile edit. No archive flag.
+
+
 ## Sweep-274 — 2026-10-07 random completion sweep (RealityOS)
 
 - Selection: `random.Random(20261007*1000+273).choice` over the sorted 83-name authenticated search payload. Index 31. Subject: `RealityOS`. Seed 273 was already used as a sweep id for the census commit, so this cycle is numbered 274.
