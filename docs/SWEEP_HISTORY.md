@@ -34,3 +34,11 @@
 - Archive flag remains operator-only. Portfolio exit criteria remain unmet.
 
 Prior sweep bodies before Sweep-270 are retained in git history of this file (pre-sweep blob `0980c7b44ea3a8b734fce4ba55571c95fe54e368`). This commit does not delete those bodies from history.
+
+## Sweep-273 Q-FUNC-005 evidence / PASS-2026-10-07-270
+
+- Selection: NEXT of PASS-2026-10-07-269 after `scripts/check_passes.py` returned PASS on 84 yaml files including PASS-2026-10-07-269. No missing headings.
+- Discover: `adl-function-census` `census/inventory.py` still records Q-FUNC-005 `workforce-lineage-graph` status NOT_BUILT. Search `workforce-lineage-graph user:beyond-repair` total_count 0. CANONICAL.md supersession prose remains. PASS-2026-10-06-259 refusal not withdrawn.
+- Evidence commit: `91097a73e99360860125e75169a3d9bd0c0ff418`.
+- Actions: evidence note only. No repository created. No product tree edited. No lockfile edit. No archive flag. No claim elevation.
+- Residual: Q-FUNC-005 remains NOT_BUILT. Operator-gated archive, tags, secret rotation, and form-data pin remain unselected.
