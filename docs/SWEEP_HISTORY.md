@@ -8,6 +8,7 @@
 - Classification: RESEARCH. Claim 0. Not changed.
 - Local tests before push: `python -m unittest tests/test_structure.py` 5 passed against a partial checkout of the discover tree plus the new files. Not a gameplay or DLRSE result.
 - Actions: added `tests/test_structure.py`, `.github/workflows/structure.yml`, `docs/DISCOVERY.md`; updated `docs/STATUS.md`, `GOVERNANCE.md`, `README.md`. Commits `81f970db63ef8a3d7aafafa5002cbc583768e75f`, `b21fe1bf40f5f650496195335cd586c212b2f8d6`. No history rewrite. No deletion. No tag. No archive flag. No claim elevation.
+- CI observation: workflow `structure` run 37642065652 conclusion success on HEAD `b21fe1bf40f5f650496195335cd586c212b2f8d6`. Prior run 37641991496 success on `81f970db`. Structural unittest only. Not a Godot smoke or DLRSE result.
 - Residual: Godot smoke still unverified this cycle. Commercial 1.0 remains operator work. Portfolio exit criteria remain unmet.
 
 ## Sweep-271 — 2026-10-07 portfolio governance sweep
