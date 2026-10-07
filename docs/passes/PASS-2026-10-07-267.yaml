@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-07-267
+  parent_pass: PASS-2026-10-07-266
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived.
+OBJECTIVE:
+  id: GAP-SWEEP-263-CONTRACT
+  description: Persist the missing basilisk YAML for Sweep-263 from the historical history body only.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-266. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest basilisk YAML before this pass was PASS-2026-10-07-266. Its NEXT named GAP-SWEEP-263-CONTRACT.
+    - PASS-2026-10-06-263.yaml was absent before commit 170a159f8cb61a53d80e0fab5990b3c67887baeb.
+    - HEAD history before this pass did not contain a Sweep-263 section. The section exists at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576.
+    - That body names a documentation-only portfolio sweep, four pillar CI run ids, empty releases and tags, Dependabot alert 13, and exit criteria not met.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-263.yaml
+    - docs/passes/PASS-2026-10-07-267.yaml
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - 170a159f8cb61a53d80e0fab5990b3c67887baeb
+    - e09afb5f10756823c1b919e50e908f51975cc8a4
+    - 7ed4a3bc295ccd854da3b4ea8d63b51425d575b7
+  capabilities_added_or_changed:
+    - Governance contract completeness for Sweep-263. No product capability. No repository created.
+VERIFICATION:
+  tests_run:
+    - YAML parse of the Sweep-263 contract: pending local check after this stamp commit.
+    - python scripts/check_passes.py: pending local check. Prior pass recorded pre-existing missing historical headings.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_RUN
+  overall: PASS
+  overall_note: Overall PASS is the transcription objective only. Stamp commit SHA for this file is not embedded. Historical Actions runs were not re-executed.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-263 can be represented as a nested basilisk contract from blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576 without inventing file paths or re-running Actions.
+    - Current pre-pass SWEEP_HISTORY.md had dropped the Sweep-263 section; the source body remains in git history.
+  failures:
+    - Direct transcription from pre-pass HEAD SWEEP_HISTORY.md was impossible because Sweep-263 was not in that file.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit product repositories.
+    - Do not flip archive flags. Do not merge Dependabot. Do not elevate claims.
+    - Do not restore the full prior history file in this pass. Cite the blob and add an index heading.
+REMAINING:
+  incomplete:
+    - HEAD SWEEP_HISTORY.md still omits the full Sweep-261 through Sweep-264 narrative bodies.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-HISTORY-BODY-RESTORE
+  action: Restore the omitted Sweep-261 through Sweep-264 narrative bodies into HEAD docs/SWEEP_HISTORY.md from blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576 without deleting later sweep sections. Do not re-run those sweeps. Do not invent CI results.
+  reason: PASS-2026-10-07-266 recorded that HEAD omits those bodies while the source blob still has them. Sweep-263 and Sweep-264 now have contracts, so the remaining gap is history-body continuity.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve Sweep-235 through Sweep-267 sections already on HEAD.
+PROVENANCE:
+  state_commit: 7ed4a3bc295ccd854da3b4ea8d63b51425d575b7
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-263 body at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152
+    - Transcription commit 170a159f8cb61a53d80e0fab5990b3c67887baeb
+    - Heading commit e09afb5f10756823c1b919e50e908f51975cc8a4
+    - History commit 7ed4a3bc295ccd854da3b4ea8d63b51425d575b7
