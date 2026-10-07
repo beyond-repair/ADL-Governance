@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-269 additions (2026-10-07)
+
+Master-directive sweep. Search `user:beyond-repair` total_count 83, incomplete_results false. Profile public_repos 78. Nine private names. GitHub archived=true only on `CFT-v3.0`. Classifications unchanged. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
+
+**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-269). Package `form-data`, manifest `digital_double/package-lock.json`, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range >= 4.0.0, < 4.0.4, first patched identifier 4.0.4, severity critical. Open critical filter returned only this alert. Lockfile bump is operator-gated. Do not merge dependabot branches from this queue. Do not mark fixed.
+
+Unmerged and not tested this cycle: sovereign-clean-room `fix/pynacl-1.6.2-cve-2025-69277` at `f65d7db6c4f7d98ed3f5ded3defd5d1886c21cc4`; `seem-completion-pass` at `d6f13042f4f99cd186761ae438b75c3e4e705f11`. Digital Double `fix/nanoid-5.1.11-ghsa-xwg4` at `2e8a810e162fa81a60e7c725cb86477836e56fd9`. Do not merge from this sweep.
+
+Code scanning 404 no analysis on forge-aegis, BlockSwarm, and Digital Double. Secret scanning disabled (404) on sovereign-clean-room. Tags and releases empty on all four. Do not create `v0.5.0-sagf`.
+
+Inherited, not re-fetched: digital-double-mobile secret alert #1; digital-double-mobile Dependabot critical #30 and #8; btc-trading credential in history at and before `6dc74b42`. Do not rewrite history. Do not set archived=true from an agent.
+
+---
+
+# Operator Queue
+
 ## Sweep-268 additions (2026-10-07)
 
 - **-Py2APK-main:** do not set GitHub `archived=true` from an agent. Sweep-142 queue note is not an archive action. Do not tag a release. Do not claim a verified APK, store build, or signing guarantee. Nested `-Py2APK-main/` package root stays preserved. Pytest workflow is SDK-free only.

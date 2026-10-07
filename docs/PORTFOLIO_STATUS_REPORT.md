@@ -1,5 +1,87 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-07 (Sweep-269)
+**Project / Version:** ADL Portfolio Governance / Sweep-269
+**Objective:** Master Directive v3.0 one-cycle discovery, classification, and live verification.
+**Authenticated owner:** `beyond-repair` (id 132061760). Profile `public_repos` 78.
+**Search:** `user:beyond-repair` `total_count` 83, `incomplete_results` false. Payload: 9 `private=true`, 1 `archived=true` (`CFT-v3.0`). No forks in payload.
+**Evidence rule:** Code > Documentation > Roadmap. Classifications inherited from Sweep-265. Not re-promoted.
+
+### Sweep-269 result
+
+Exit criteria: **not met**. Sweep stopped. No repository deleted. No history rewritten. No archive flag flipped. No tag created. No lockfile edited. No claim elevated. No product repository edited.
+
+Mandatory live verification re-fetched for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Heads unchanged from Sweep-265. Branches listed this cycle. Sweep-268 `-Py2APK-main` pytest run 37625646353 was not re-fetched.
+
+| Check | forge-aegis | sovereign-clean-room | BlockSwarm | Digital_Double_virtual_workforce |
+| --- | --- | --- | --- | --- |
+| main HEAD | `e7188d529739652a2dd6264bd3d328c1f72e60e5` | `4878918cf9f95d3c19e1890bef6d2fd6713e0a16` | `6e90f6f85c0969fa8a262a70ceba833d618a22db` | `24e6a29fd26c03900a8d98634d6683996eabdac4` |
+| CI | run 37258127100 success, forge-aegis CI, push, main, 2026-10-05 | run 37064696194 success, Python tests, push, main, 2026-10-02 | run 36859452185 success, Foundry, push, main, 2026-10-01 | run 36861489156 success, Digital Double CI, push, main, 2026-10-01 |
+| Releases | empty | empty | empty | empty |
+| Tags | empty | empty | empty | empty |
+| Branches | main; finish/forge-aegis-v0.1-runnable; repair/docs-python3-venv; repair/v0.1-installable-slice | main; fix/pynacl-1.6.2-cve-2025-69277 `f65d7db6`; seem-completion-pass `d6f13042` (not merged) | main; finish/foundry-runnable; sweep/add-sweep-config | main; finish/repair-python-core-ui; nex-int-workforce-evidence; fix/nanoid-5.1.11-ghsa-xwg4; three dependabot/npm_and_yarn branches |
+| Dependabot open | empty | empty | empty | critical #13 open only on critical filter |
+| Code scanning | 404 no analysis | not probed | 404 no analysis | 404 no analysis |
+| Secret scanning | open list empty (not a 404 in this tool response; enablement not proven) | 404 disabled | not probed | open list empty |
+
+CI success is an Actions conclusion only.
+
+### Capability matrix (verified this cycle)
+
+| Feature | State |
+| --- | --- |
+| forge-aegis CI on main head `e7188d52` | VERIFIED |
+| forge-aegis host-integrity product | UNVERIFIED (software sketch) |
+| sovereign-clean-room Python tests on main `4878918c` | VERIFIED |
+| sovereign-clean-room VSA completeness | UNVERIFIED |
+| sovereign-clean-room pynacl CVE branch | PARTIAL (branch present, not merged, not tested) |
+| BlockSwarm Foundry on main `6e90f6f8` | VERIFIED |
+| BlockSwarm tag `v0.5.0-sagf` | UNVERIFIED (tags API empty) |
+| Digital Double CI on main `24e6a29` | VERIFIED |
+| Digital Double clean dependency graph | UNVERIFIED (alert 13 open) |
+| AI Legion product | PLANNED |
+| OmniWealth OS | PLANNED (no repository) |
+| SAGF beyond advice/authority split | PARTIAL |
+| Cold Boot as bootstrapped OS | UNVERIFIED (`Project-Cold-Boot` is a game repo) |
+
+### Gap summary (this cycle)
+
+| Capability | Severity |
+| --- | --- |
+| Digital Double Dependabot #13 open (`form-data`, GHSA-fjxv-7rqg-78g4, CVE-2025-7783, range >= 4.0.0 < 4.0.4, patched 4.0.4, dev scope, lockfile) | Critical |
+| digital-double-mobile historical secret (not re-fetched) | Critical |
+| No releases or tags on four pillars | Medium |
+| Code scanning absent on forge-aegis, BlockSwarm, Digital Double | Medium |
+| Unmerged CVE-named and completion branches | Medium |
+| Archive flags unset for labeled candidates | Low |
+
+### Redundancy (label only)
+
+| Component | Canonical | Duplicate | Action |
+| --- | --- | --- | --- |
+| Virtual workforce | Digital_Double_virtual_workforce | versioned and mobile DD repos | SUPERSEDE |
+| OS-family names | os-family-constitution-map (identity only) | SovereignOS, LegionOS, RealityOS | SUPERSEDE |
+| Fantom bots | neither | fantom_trading_bot_2, ftmA.I.bot | SUPERSEDE |
+
+### Review readiness
+
+| Repo | Result |
+| --- | --- |
+| forge-aegis | PASS WITH FINDINGS |
+| sovereign-clean-room | PASS WITH FINDINGS |
+| BlockSwarm | PASS WITH FINDINGS |
+| Digital_Double_virtual_workforce | FAIL |
+
+### Synergy (evidence-bounded)
+
+Immediate: governance docs already name the four pillars. Medium-term: merge operator-gated security branches only after review. Long-term: one workforce owner, one clean-room owner, one SAGF substrate. No runtime interop claimed.
+
+Inventory table and classification counts below are inherited from Sweep-265 and were not rewritten. Live search still returned the same 83 names.
+
+---
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-07 (Sweep-268)
 **Project / Version:** ADL Portfolio Governance / Sweep-268
 **Objective:** Random repository completion cycle for `-Py2APK-main`.

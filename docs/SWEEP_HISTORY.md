@@ -1,5 +1,17 @@
 # Sweep History
 
+## Sweep-269 — 2026-10-07 Master Directive portfolio sweep
+
+- Timestamp: 2026-10-07 (session clock 09:23 America/New_York; GitHub observations same UTC day).
+- Scope: authenticated search `user:beyond-repair`, total_count 83, incomplete_results false. Profile public_repos 78. Nine private names. One GitHub archived flag (`CFT-v3.0`).
+- Repositories reviewed: full 83-name inventory plus live re-fetch of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (workflow runs, releases, tags, branches, Dependabot, selected code/secret scanning).
+- Findings: four main heads unchanged. CI success runs 37258127100, 37064696194, 36859452185, 36861489156. Releases empty. Tags empty. Dependabot critical #13 still open. Code scanning 404 on forge-aegis, BlockSwarm, and Digital Double. Secret scanning disabled on sovereign-clean-room. Digital Double secret scanning open list empty.
+- Actions performed: governance docs only (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`). No archive, no tag, no lockfile edit, no history rewrite, no deletion, no claim elevation. Sweep-268 `-Py2APK-main` CI run not re-fetched.
+- Residual risks: critical form-data alert; unre-fetched mobile secret; README tag sentence contradicted; public_repos vs search count mismatch; duplicate canonicals labeled only; unmerged CVE-named branches.
+- Exit: criteria not met. Stop. Do not loop.
+
+# Sweep History
+
 ## Sweep-268 — 2026-10-07 random completion sweep (-Py2APK-main)
 
 - Selection: `random.Random(1791378255).choice` over the sorted 83-name search payload excluding `ADL-Governance` (`user:beyond-repair`, `total_count=83`, `incomplete_results=false`). Subject: `-Py2APK-main`.
