@@ -8,8 +8,8 @@
 - Classification: SUPERSEDED. Claim 0. Not changed.
 - Local tests before push: `pytest -q` 18 passed; governance unittest 3 OK.
 - Actions: extended `.github/workflows/supersede-guard.yml` to install requirements and run `pytest -q`; added `SUPERSEDED.md` and `docs/DISCOVERY.md`; updated README, GOVERNANCE, CLAIM_STATUS, CHANGELOG. Commits `c9158c06`, `23a8ba59`, `50e578b5`, `63daeb47`. No history rewrite. No deletion. No tag. No archive flag. No claim elevation.
-- Target not met at record time: Actions conclusion for the extended workflow not yet observed. Archive flag remains operator-only.
-- Portfolio exit criteria remain unmet.
+- CI observation: supersede-guard run 37633526662 conclusion success on HEAD `63daeb476cf28c1bcda3eac6c2237c9e7f409415` (banner unittest plus Claim-0 pytest). Not a product or CAP claim.
+- Working-tree note: Sweep-270 governance commit `144b566b` replaced visible bodies of the three docs with Sweep-270 headers. Prior bodies remain at blobs `d286661bab62308976594fd0d3d4c41c64cbae54`, `540adac46ad50802f0857623c3505865b6bb76e4`, `0980c7b44ea3a8b734fce4ba55571c95fe54e368`. Restore onto HEAD is pending. Not a history rewrite.
+- Archive flag remains operator-only. Portfolio exit criteria remain unmet.
 
 Prior sweep bodies are retained in git history of this file (pre-sweep blob `0980c7b44ea3a8b734fce4ba55571c95fe54e368`). This commit does not delete those bodies from history.
-
