@@ -1,5 +1,13 @@
 # Sweep History
 
+## Sweep-266 — 2026-10-07 Sweep-264 contract transcription / PASS-2026-10-07-266
+
+- Selection: NEXT of PASS-2026-10-07-265, GAP-SWEEP-264-CONTRACT.
+- Source body is not in the prior HEAD file. Source is commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576.
+- Action: persist docs/passes/PASS-2026-10-06-264.yaml from that body only. No DevelopTool edit. No archive flag. No invented CI result.
+- Commits: a85c1a3bbbdc2b4c906b01a98eec414284c201bc and e0857f5c2bc574ff3270c3d8a4dcdb46df08f130.
+- Exit: transcription only. Sweep-263 YAML still absent. Portfolio termination not met. Stop. Do not loop.
+
 ## Sweep-236 — 2026-10-07 random completion sweep (potential-garbanzo)
 
 - Selection: `os.urandom` index over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`). Index 61. Subject: `potential-garbanzo`.
