@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-07 (Sweep-283)
+**Updated:** 2026-10-07 (Sweep-283, CI observed)
 **Project / Version:** ADL Portfolio Governance / Sweep-283
 **Objective:** Random repository completion cycle on `finite-gasket-spectral-derivatives`.
 **Selection:** `random.SystemRandom` over 82 names from authenticated search `user:beyond-repair` (total_count 83, incomplete_results false), excluding `ADL-Governance`.
@@ -10,14 +10,15 @@
 ## Sweep-283 result
 
 Subject: `finite-gasket-spectral-derivatives`.
-Classification: **RESEARCH** (unchanged). Claim cap ≤ 1. Exit criteria for this repo: **not met** (prose multiplicity and Dirichlet claims are not in-repo tests; no LICENSE; post-push Actions not yet observed). Portfolio exit criteria: **not met**.
+Classification: **RESEARCH** (unchanged). Claim cap ≤ 1. Exit criteria for this repo: **not met** (prose multiplicity and Dirichlet claims are not in-repo tests; no LICENSE). Portfolio exit criteria: **not met**.
 
 | Item | State |
 |------|-------|
-| Tree at audit | `19a1264e4511a2ff2e60e55040590e250372d3f0`: CLAIM_STATUS.md, COMPLETION_LOG.md, README.md, scripts/spectral_derivatives.py, tests/test_spectral_derivatives.py, .github/workflows/kernel.yml |
+| Kernel commit | `7e2ca1b06239ca6a34fef357185ebdc3aab300b0` |
+| Claim record commit | `5134a10eab83763df693fe34011742bcb1fb5f5a` |
 | Implemented surface | `require_positive`, `gamma_loop`, `dgamma_dw`, `v_second`. No gasket constructor. No selected W. No force. |
-| Local tests | unittest 5 passed after adding `test_omega2_scales_the_positive_wall` (prior 4 plus omega2 wall) |
-| CI before this push | spectral-kernel run 37069941476 success on `19a1264e` (2026-10-02). Green CI is an Actions conclusion, not a gasket proof. |
+| Local tests | unittest 5 passed after adding `test_omega2_scales_the_positive_wall` |
+| CI | spectral-kernel run 37671378075 success on `7e2ca1b` (2026-10-07). Prior success 37069941476 on `19a1264e`. Green CI is an Actions conclusion, not a gasket proof. |
 | Releases / tags | not listed this cycle; do not tag |
 | Security | no dependency manifest in tree; no Dependabot list fetched |
 
