@@ -1,0 +1,86 @@
+PASS:
+  id: PASS-2026-10-07-285
+  parent_pass: PASS-2026-10-07-281
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived. Sweeps 271-274, 276, 279, 282, and 283 remain without basilisk YAML.
+OBJECTIVE:
+  id: GAP-SWEEP-284-DDVW4-CONTRACT
+  description: Persist a basilisk contract for the HEAD Sweep-284 Digital_Double_Virtual_Workforce_4. narrative without re-running the unittest or dispatching CI.
+  reason_selected: PASS-2026-10-07-281 named Sweep-279 as next, but reconstruct found Sweep-282, Sweep-283, and Sweep-284 narratives already on ADL-Governance HEAD e69636fc without pass files. Sweep-284 is the newest uncontracted body and has an observed Actions conclusion. Operator archive, tags, and the form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - ADL-Governance main HEAD at discovery e69636fc1c83eb49417eda62892e7ffcb000e7b8 message Sweep-284 reconfirm Digital_Double_Virtual_Workforce_4. SUPERSEDED.
+    - docs/passes has no PASS-2026-10-07-282.yaml, PASS-2026-10-07-283.yaml, PASS-2026-10-07-284.yaml, or PASS-2026-10-07-285.yaml. Highest existing id is PASS-2026-10-07-281.yaml.
+    - Digital_Double_Virtual_Workforce_4. is private. Default-branch tip c346db87e70b32dae1f153827bfa2efa83b258be. Parent d8132f3fa830871c395d89c8bdb5e69b069ec1ea.
+    - Recursive tree at c346db87 truncated false, count 8. Blobs are README.md, SUPERSEDED.md, CLAIM_STATUS.md, tests/test_lifecycle_docs.py, and .github/workflows/lifecycle.yml. No application source.
+    - CLAIM_STATUS.md blob 3d285d2c772bcca09c2f3b2f094d0fec65a213ce forbids treating this repository as the Digital Double product and records application source ABSENT.
+    - docs/SWEEP_HISTORY.md records classification SUPERSEDED, claim cap 0, pre-head d8132f3, local unittest 3 passed, and lifecycle-docs run 37693518457 success. That local count was not re-executed in this pass.
+    - Actions lifecycle-docs run 37693518457 conclusion success, event push, head_sha c346db87e70b32dae1f153827bfa2efa83b258be, path .github/workflows/lifecycle.yml. Observed, not dispatched.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-07-285.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Basilisk contract persisted for Sweep-284 Digital_Double_Virtual_Workforce_4. No product capability. No repository created. Digital_Double_Virtual_Workforce_4. not edited.
+VERIFICATION:
+  tests_run:
+    - Actions lifecycle-docs run 37693518457 conclusion success on c346db87e70b32dae1f153827bfa2efa83b258be. Observed, not dispatched. Not a workforce-product proof.
+    - Local unittest 3 passed is a recorded claim in docs/SWEEP_HISTORY.md. Not re-run this pass.
+    - Nested YAML schema keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present. PASS.id matches filename.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the contract matches re-read heads and the observed Actions conclusion. It is not a Digital Double product verification. Stamp commit SHA is not embedded in this file.
+KNOWLEDGE:
+  confirmed:
+    - Digital_Double_Virtual_Workforce_4. claim remains 0. GitHub archived flag was not set by this pass.
+    - lifecycle-docs CI on c346db87e70b32dae1f153827bfa2efa83b258be succeeded. That run is a docs/claim-cap gate, not a product proof.
+    - Successor pointer remains documented toward Digital_Double_virtual_workforce. Presence of the pointer is not a capability claim for either repository.
+  failures:
+    - None for this transcription. Unittest was not re-executed locally.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not set archived=true. Do not tag. Do not elevate claim. Do not add product features.
+    - Skip the stale PASS-281 Sweep-279 assignment because newer uncontracted sweep narratives exist. Leave Sweep-279, Sweep-282, and Sweep-283 as remaining gaps.
+    - Use pass id 285 so it does not collide with existing sweep numbers 282, 283, and 284.
+REMAINING:
+  incomplete:
+    - Basilisk YAML for Sweeps 271, 272, 273, 274, 276, 279, 282, and 283 is absent.
+    - Auto_Legion Sweep-277 narrative has no separate basilisk YAML.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Digital_Double_Virtual_Workforce_4. GitHub archive remains unchecked.
+    - Capability and gap counts remain null.
+    - Portfolio exit criteria unmet.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-SWEEP-283-GASKET-CONTRACT
+  action: Transcribe the Sweep-283 finite-gasket-spectral-derivatives body already in docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-07-286.yaml. Do not re-run the kernel tests. Do not invent CI results. Do not archive. Do not select a physical W. Do not import sierpinski-geometry-045.
+  reason: Sweep-283 is the next newest uncontracted governance narrative after this Digital_Double_Virtual_Workforce_4. contract.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the Sweep-284 body and this contract heading.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - ADL-Governance e69636fc1c83eb49417eda62892e7ffcb000e7b8
+    - Digital_Double_Virtual_Workforce_4. c346db87e70b32dae1f153827bfa2efa83b258be
+    - Digital_Double_Virtual_Workforce_4. d8132f3fa830871c395d89c8bdb5e69b069ec1ea
+    - Actions run 37693518457 success
+    - CLAIM_STATUS.md blob 3d285d2c772bcca09c2f3b2f094d0fec65a213ce

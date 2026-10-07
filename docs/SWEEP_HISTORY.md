@@ -1,5 +1,13 @@
 # Sweep History
 
+## Sweep-285 Sweep-284 contract transcription / PASS-2026-10-07-285
+
+- Transcribed the Sweep-284 body already on ADL-Governance HEAD e69636fc1c83eb49417eda62892e7ffcb000e7b8 into docs/passes/PASS-2026-10-07-285.yaml.
+- Subject Digital_Double_Virtual_Workforce_4. tip c346db87e70b32dae1f153827bfa2efa83b258be. Tree count 8, truncated false. No application source.
+- Actions lifecycle-docs run 37693518457 conclusion success on c346db87e70b32dae1f153827bfa2efa83b258be. Observed, not dispatched. Not a product proof.
+- Local unittest 3 passed remains a recorded Sweep-284 claim. Not re-executed.
+- No deletion, no history rewrite, no tag, no archive flag, no claim elevation. Digital_Double_Virtual_Workforce_4. not edited.
+
 ## Sweep-284 — 2026-10-07 Digital_Double_Virtual_Workforce_4.
 
 - Selection: `random.Random(2026100722).choice` on the sorted 83-name union from search pages (total_count 83, incomplete_results false). Selected private `Digital_Double_Virtual_Workforce_4.` (index 20).
