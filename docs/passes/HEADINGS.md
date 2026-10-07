@@ -1,5 +1,10 @@
 # Pass headings index
 
+## Sweep-268 history body restore / PASS-2026-10-07-268
+
+- Restored Sweep-261 through Sweep-264 narrative bodies into docs/SWEEP_HISTORY.md from commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576. Later sections preserved. Not re-executed. No product edit. No archive flag. No invented CI result.
+
+
 Additional headings so scripts/check_passes.py can name pass ids persisted after the narrative file was last prepended. Not a replacement for docs/SWEEP_HISTORY.md.
 
 ## Sweep-267 Sweep-263 contract transcription / PASS-2026-10-07-267
