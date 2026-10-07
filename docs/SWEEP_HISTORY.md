@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-271 — 2026-10-07 portfolio governance sweep
+
+- Timestamp: 2026-10-07.
+- Scope: authenticated search of `user:beyond-repair` plus Phase-3 live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+- Repositories reviewed: 83 names in search payload (`incomplete_results` false). Profile `public_repos` 78. Private in payload: 9. Archived flag true: `CFT-v3.0` only.
+- Findings: Phase-3 CI on main is success for all four. Releases and tags empty for all four. Code scanning 404 for all four. Dependabot open empty for forge-aegis, sovereign-clean-room, BlockSwarm. Digital Double critical alert 13 still open, plus high lockfile alerts. Readiness FAIL for Digital Double; PASS WITH FINDINGS for the other three.
+- Actions performed: updated `docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md` only. No repository deletion. No history rewrite. No tag. No archive flag. No claim elevation. No test execution this sweep.
+- Residual risks: critical CVE-2025-7783 on Digital Double lockfile; unmerged sovereign-clean-room branches; duplicate canonical lines not archived; count mismatch 83 versus 78; non-Phase-3 trees not re-audited.
+- Exit criteria: failed. Sweep stops.
+
 ## Sweep-270 — 2026-10-07 random completion sweep (DigitalDoubleVirtualWorkforce3.5)
 
 - Selection: `random.SystemRandom().choice` over the 83-name authenticated search payload (`user:beyond-repair`, `total_count=83`, `incomplete_results=false`, order updated desc). Index 46. Subject: `DigitalDoubleVirtualWorkforce3.5`.
@@ -12,4 +22,4 @@
 - Working-tree note: Sweep-270 governance commit `144b566b` replaced visible bodies of the three docs with Sweep-270 headers. Prior bodies remain at blobs `d286661bab62308976594fd0d3d4c41c64cbae54`, `540adac46ad50802f0857623c3505865b6bb76e4`, `0980c7b44ea3a8b734fce4ba55571c95fe54e368`. Restore onto HEAD is pending. Not a history rewrite.
 - Archive flag remains operator-only. Portfolio exit criteria remain unmet.
 
-Prior sweep bodies are retained in git history of this file (pre-sweep blob `0980c7b44ea3a8b734fce4ba55571c95fe54e368`). This commit does not delete those bodies from history.
+Prior sweep bodies before Sweep-270 are retained in git history of this file (pre-sweep blob `0980c7b44ea3a8b734fce4ba55571c95fe54e368`). This commit does not delete those bodies from history.
