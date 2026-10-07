@@ -1,0 +1,87 @@
+PASS:
+  id: PASS-2026-10-07-278
+  parent_pass: PASS-2026-10-07-275
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this pass. Capability and gap counts were not re-derived. Sweeps 271-274 and 276 remain without basilisk YAML. Two Sweep-277 narratives share one number.
+OBJECTIVE:
+  id: GAP-SWEEP-277-CGIP-CONTRACT
+  description: Persist a basilisk contract for the HEAD Sweep-277 Code_Generation_AI_Program narrative without re-running the draw.
+  reason_selected: Latest basilisk YAML is PASS-2026-10-07-275. Governance HEAD 518900cb records Sweep-277 Code_Generation without a pass file. That is the newest persistence gap. Operator archive, tags, and the form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - ADL-Governance main HEAD 518900cbeaa6d9b82bb5f8b7814e48376e6b9a61 message records Sweep-277 Code_Generation inventory re-audit. Files docs/OPERATOR_QUEUE.md, docs/PORTFOLIO_STATUS_REPORT.md, docs/SWEEP_HISTORY.md.
+    - docs/passes highest canonical id at discovery was PASS-2026-10-07-275. No PASS-2026-10-07-276.yaml or PASS-2026-10-07-277.yaml.
+    - docs/SWEEP_HISTORY.md contains two headings both named Sweep-277. First subject Code_Generation_AI_Program. Second subject Auto_Legion. Number collision left in place.
+    - Code_Generation_AI_Program default main head fa51c8048041f048bb64d4c3b1c93182e8bf5e0b archived false. Recursive tree not truncated. 10 paths. Blobs include CLAIM_STATUS.md, README.md, docs/SWEEP-277.md, tests/test_inventory.py, .github/workflows/inventory.yml. No generator module outside tests.
+    - CLAIM_STATUS.md sha 9c9de26e06b09cc93b89d5ef9eaa271f730c62f9 records classification ARCHIVED recommended, claim 0, archived flag false, pre-note tree f362a9612971503f07e0599247f2e3708ef36809.
+    - Actions inventory run 37386093314 conclusion success head_sha f362a9612971503f07e0599247f2e3708ef36809.
+    - Actions inventory run 37656260371 conclusion success head_sha fa51c8048041f048bb64d4c3b1c93182e8bf5e0b.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-07-278.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Basilisk contract persisted for Sweep-277 Code_Generation_AI_Program. No product capability. No repository created. Code_Generation_AI_Program not edited.
+VERIFICATION:
+  tests_run:
+    - Local re-execution of tests/test_inventory.py assertions at fa51c804 tree copy. 3 passed. No generator module. README claim 0. CLAIM_STATUS cites f362a9612971503f07e0599247f2e3708ef36809 and 37386093314.
+    - Actions inventory run 37656260371 conclusion success on fa51c8048041f048bb64d4c3b1c93182e8bf5e0b. Observed, not dispatched.
+    - Actions inventory run 37386093314 conclusion success on f362a9612971503f07e0599247f2e3708ef36809. Observed, not dispatched.
+    - Nested YAML schema keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present. PASS.id matches filename.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the contract matches re-read heads and observed Actions conclusions. It is not a code-generation product verification. Stamp commit SHA is not embedded in this file.
+KNOWLEDGE:
+  confirmed:
+    - Code_Generation_AI_Program remains claim 0. GitHub archived flag remains false.
+    - Inventory CI on fa51c8048041f048bb64d4c3b1c93182e8bf5e0b succeeded. That run is an inventory gate, not a generator proof.
+    - No generator, model, dataset, or dependency manifest is present at that head.
+  failures:
+    - None for this transcription. Local pytest module was absent; assertions were executed directly.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not set archived=true. Do not tag. Do not elevate claim.
+    - Do not rewrite the duplicate Sweep-277 Auto_Legion heading in this pass.
+    - Do not transcribe Sweeps 271-274 or 276 in this pass.
+REMAINING:
+  incomplete:
+    - Basilisk YAML for Sweeps 271, 272, 273, 274, and 276 is absent.
+    - Auto_Legion Sweep-277 narrative has no separate basilisk YAML.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - Capability and gap counts remain null.
+    - Portfolio exit criteria unmet.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and secret rotation.
+  new_gaps:
+    - GAP-SWEEP-277-NUMBER-COLLISION
+NEXT:
+  objective_id: GAP-SWEEP-277-AUTOLEGION-CONTRACT
+  action: Transcribe the Sweep-277 Auto_Legion body already in docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-07-279.yaml. Do not re-run the draw. Do not invent CI results. Do not archive. Do not delete bytecode. Do not repair ai_agent1.
+  reason: The other Sweep-277 narrative is the newest uncontracted body after this Code_Generation contract. Number 277 is already used by the narrative, so the next free pass id is 279.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve both Sweep-277 headings.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - ADL-Governance 518900cbeaa6d9b82bb5f8b7814e48376e6b9a61
+    - Code_Generation_AI_Program fa51c8048041f048bb64d4c3b1c93182e8bf5e0b
+    - Actions run 37656260371 success
+    - Actions run 37386093314 success
+    - Local inventory assertions 3 passed

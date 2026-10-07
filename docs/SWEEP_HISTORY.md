@@ -1,5 +1,11 @@
 # Sweep History
 
+
+## Sweep-278 Sweep-277 Code_Generation contract / PASS-2026-10-07-278
+
+- Transcribed the existing Sweep-277 Code_Generation_AI_Program narrative already at HEAD 518900cbeaa6d9b82bb5f8b7814e48376e6b9a61 into docs/passes/PASS-2026-10-07-278.yaml. Subject head fa51c8048041f048bb64d4c3b1c93182e8bf5e0b re-read. Inventory run 37656260371 conclusion success on that SHA. Prior inventory run 37386093314 conclusion success on f362a9612971503f07e0599247f2e3708ef36809. Local re-execution of the three inventory assertions passed. No archive flag. No tag. No generator. No claim elevation. Duplicate Sweep-277 Auto_Legion heading left in place.
+
+
 ## Sweep-277 — 2026-10-07 random completion sweep (Code_Generation_AI_Program)
 
 - Selection: `random.Random(20261007*1000+277).choice` over the sorted 83-name authenticated search payload. Index 16. Subject: `Code_Generation_AI_Program`.
