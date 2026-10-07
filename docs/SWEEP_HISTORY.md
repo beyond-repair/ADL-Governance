@@ -1,5 +1,14 @@
 # Sweep History
 
+## Sweep-262 — 2026-10-06 mobile name collision / PASS-2026-10-06-262
+
+- Timestamp: 2026-10-06. Scope: read-only identity of the two mobile-named Digital Double repositories. No product edit.
+- Digital-Double_Mobile id 945771829 main fe996fac8f7c5dcbf2472b23dffdcc3ecefd0b90. Root: ARCHIVED.md, README.md, SUPERSEDED.md. Empty historical stub. Claim 0 prose. archived flag false.
+- digital-double-mobile id 947071634 main 7c65eb04a678f457929671cd4909bebd61ac2eac. Application tree present, including package-lock.json. SUPERSEDED.md claim 0. archived flag false.
+- Conclusion: not the same tree identity. Both name Digital_Double_virtual_workforce as canonical. No repository created. No lockfile edit. No merge. No archive flag.
+- Local YAML parse of PASS-2026-10-06-262 before push: nested schema present. Product tests not run.
+- Portfolio exit criteria remain unmet.
+
 ## Sweep-261 — 2026-10-06 randomized draw btc-trading
 
 - Timestamp: 2026-10-06. Scope: one random repository. Draw pool: names in the 83-result search whose `updated_at` did not start with 2026-10-06 (69 names). Selected `beyond-repair/btc-trading`.

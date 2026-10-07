@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-06-262
+  parent_pass: PASS-2026-10-06-259
+  parent_note: Sweeps 260 and 261 are indexed in docs/SWEEP_HISTORY.md only. No PASS-2026-10-06-260.yaml or PASS-2026-10-06-261.yaml was present. Last basilisk YAML was PASS-2026-10-06-259, whose NEXT was this slice.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not re-derived. Search user:beyond-repair total_count 83 incomplete_results false was recorded in PASS-259 and Sweep-260. This pass re-queried the two mobile names only.
+OBJECTIVE:
+  id: GAP-DD-MOBILE-NAME-COLLISION
+  description: Record whether Digital-Double_Mobile and digital-double-mobile are the same tree identity.
+  reason_selected: Explicit NEXT of PASS-2026-10-06-259. Operator archive, secret, license, and form-data pin actions were not selected.
+DISCOVERY:
+  findings:
+    - Search digital-double-mobile user:beyond-repair returned total_count 2 incomplete_results false.
+    - Digital-Double_Mobile id 945771829 created 2025-03-10 default main head fe996fac8f7c5dcbf2472b23dffdcc3ecefd0b90 archived false private false. Root files ARCHIVED.md, README.md, SUPERSEDED.md only.
+    - digital-double-mobile id 947071634 created 2025-03-12 default main head 7c65eb04a678f457929671cd4909bebd61ac2eac archived false private false. Root includes application paths, package-lock.json, CLAIM_STATUS.md, and SUPERSEDED.md.
+    - SUPERSEDED.md blob sha differs (6af75e17 vs c78b6135). Both name canonical Digital_Double_virtual_workforce.
+    - Digital-Double_Mobile README states empty historical stub and explicitly says not to treat digital-double-mobile as this stub.
+    - GitHub archived flag is false on both. No archive flag flipped. No lockfile opened for edit.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-06-262.yaml
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Identity fact recorded. No product capability added. No repository created.
+VERIFICATION:
+  tests_run:
+    - Local YAML parse of this contract before push. Nested keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present. PASS.id matches filename.
+    - Product tests not run. No product file changed.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: Distinct repository ids and distinct default-branch heads. Not the same tree. This stamp commit SHA is not embedded.
+KNOWLEDGE:
+  confirmed:
+    - Digital-Double_Mobile and digital-double-mobile are distinct GitHub repositories.
+    - They are not the same tree identity.
+    - Both currently point at Digital_Double_virtual_workforce as canonical and both remain unarchived.
+  failures:
+    - None for this read-only identity question.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit package-lock.json.
+    - Do not merge. Do not flip archive flags. Do not elevate claims.
+REMAINING:
+  incomplete:
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - PASS yaml for sweeps 260 and 261 not yet transcribed.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, and any withdrawal of existing SUPERSEDED prose.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-SWEEP-261-CONTRACT
+  action: Transcribe docs/SWEEP_HISTORY.md Sweep-261 into docs/passes/PASS-2026-10-06-261.yaml using only facts already in that body. Do not re-implement btc-trading. Do not invent CI results. Do not archive.
+  reason: Sweep-261 is already indexed in history but has no basilisk YAML. Operator-only gates remain unselected.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the existing Sweep-261 narrative.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - Digital-Double_Mobile root and SUPERSEDED.md on fe996fac8f7c5dcbf2472b23dffdcc3ecefd0b90
+    - digital-double-mobile root and SUPERSEDED.md on 7c65eb04a678f457929671cd4909bebd61ac2eac
+    - Search total_count 2 for the two names
