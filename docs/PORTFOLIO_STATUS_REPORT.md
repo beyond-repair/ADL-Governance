@@ -1,17 +1,31 @@
 # Portfolio Status Report
 
-Sweep: Sweep-235
-Timestamp: 2026-10-07T01:14Z (session clock 2026-10-06 21:14 EDT)
-Authority: GitHub search `user:beyond-repair`, `total_count=83`, `incomplete_results=false`
-Prior census note: profile README cited 81 on 2026-10-01; `public_repos` previously recorded as 78. This sweep does not force those counters equal.
+Sweep: Sweep-236
+Timestamp: 2026-10-07T02:00Z (session clock 2026-10-06 22:00 EDT)
+Authority: GitHub search `user:beyond-repair`, `total_count=83`, `incomplete_results=false`, plus authenticated tree read of the randomly selected private repository.
+Selection: `os.urandom` index 61 of 83 → `potential-garbanzo`.
 Evidence rule: Code > Documentation > Roadmap. Unverified claims stay labeled.
+
+## Sweep-236 subject
+
+| Field | Value |
+| --- | --- |
+| Repo | potential-garbanzo (private) |
+| Tree | `72399fa4e8d304cfa09c0f10f9fe6f12737b9887` on `main` |
+| Blobs | `.gitignore`, `ARCHIVED.md`, `CLAIM_STATUS.md`, `README.md` |
+| Class | ARCHIVED (governance). GitHub archive flag not set. |
+| Claim | 0. Historical description "ai agent" is unsupported. |
+| Tests / CI | None present. Not claimed green. |
+| Product commit | None this cycle. |
+
+Sweep-235 classified this name as RESEARCH / UNVERIFIED. That row contradicted the in-repo ARCHIVE documents. Corrected here. No feature work.
 
 ## Classification key
 
 - ACTIVE: maintained canonical owner for a domain, with this-cycle CI success on default-branch head where noted. Not a production-completeness claim.
 - RESEARCH: experimental, mapping, or claim-capped. Not a production implementation.
 - SUPERSEDED: duplicate lineage; historical value retained; replacement named. Not deleted.
-- ARCHIVED: GitHub `archived=true`, plus one empty stub labeled ARCHIVED in governance only (`test`). Archive candidates stay unflagged until operator action.
+- ARCHIVED: GitHub `archived=true`, plus empty stubs labeled ARCHIVED in governance only (`test`, `potential-garbanzo`). Archive candidates stay unflagged until operator action.
 
 ## Inventory (83)
 
@@ -95,7 +109,7 @@ Evidence rule: Code > Documentation > Roadmap. Unverified claims stay labeled.
 | FortiTrade_Multi-Strategy | listed | RESEARCH | Research | Strategy sketch. |
 | automate_passive_income | 2026-10-01 | RESEARCH | Research | No income implementation claim. |
 | ExoAxis-1 | listed | RESEARCH | Research | UNVERIFIED. |
-| potential-garbanzo | listed | RESEARCH | Research | UNVERIFIED. |
+| potential-garbanzo | tree 72399fa4 (Sweep-236) | ARCHIVED | Research | Empty placeholder. Docs + .gitignore only. Claim 0. GitHub archive flag not set. |
 | new-program-1.01 | listed | RESEARCH | Research | UNVERIFIED. |
 | -Py2APK-main | 2026-10-01 | RESEARCH | Research | Packaging experiment. |
 | test | 2026-10-01 | ARCHIVED | Research | Empty-sized stub (1KB). GitHub archived flag still false. |
@@ -103,9 +117,9 @@ Evidence rule: Code > Documentation > Roadmap. Unverified claims stay labeled.
 
 `listed` means present in the 83-row search payload; exact `pushed_at` was not re-copied for every row.
 
-No forks in the payload. Private repositories were not returned by this search.
+No forks in the payload. Private repositories were not returned by the public search used in Sweep-235. Sweep-236 confirmed `potential-garbanzo` is readable when authenticated.
 
-## Phase 3 — mandatory live verification
+## Phase 3 — mandatory live verification (inherited Sweep-235; not re-fetched)
 
 | Check | forge-aegis | sovereign-clean-room | BlockSwarm | Digital_Double_virtual_workforce |
 | --- | --- | --- | --- | --- |
@@ -127,6 +141,7 @@ BlockSwarm README still says tag lineage includes `v0.5.0-sagf`. Tags API return
 | sovereign-clean-room Python tests on main | VERIFIED (CI run 37064696194). Full FHRR campaign completion NOT claimed. |
 | BlockSwarm Foundry build/test on pinned OpenZeppelin 4.9.6 and forge-std 1.9.4 | VERIFIED (CI run 36859452185). Autonomous value movement NOT claimed. |
 | Digital Double installable Python package and UI lockfile path | VERIFIED (CI run 36861489156 and tree). Production workforce NOT claimed. |
+| potential-garbanzo as an AI agent | REJECTED (tree has no source) |
 | GitHub Releases for the four pillars | UNVERIFIED / absent |
 | BlockSwarm tag v0.5.0-sagf | UNVERIFIED |
 | AI Legion product | PLANNED (Auto_Legion is not that product) |
@@ -145,6 +160,7 @@ Internal, documented only:
 - BlockSwarm submodules: OpenZeppelin contracts and upgradeable v4.9.6, forge-std v1.9.4.
 - Digital_Double_virtual_workforce: npm lockfile plus Python package. Critical transitive `form-data` remains open.
 - OS family map points at Sovereign-OS, SovereignOS, LegionOS, RealityOS. No kernel dependency is implemented.
+- potential-garbanzo imports nothing and is imported by nothing observed.
 
 Cycles: none demonstrated in code this cycle.
 Orphans: `test`, `potential-garbanzo`, `new-program-1.01` have no demonstrated dependents.
@@ -160,7 +176,7 @@ Duplicate infrastructure: Digital Double version repos; SEEM microservice name p
 | BlockSwarm README tag sentence contradicted | Medium |
 | Code scanning absent on forge-aegis | Medium |
 | Portfolio CI not re-run outside four pillars | Medium |
-| Archive flags unset for named candidates | Low (operator-only) |
+| Archive flags unset for named candidates, including potential-garbanzo | Low (operator-only) |
 | public_repos vs search count mismatch | Low |
 
 ## Canonical ownership
@@ -181,6 +197,7 @@ Duplicate infrastructure: Digital Double version repos; SEEM microservice name p
 | sovereign-clean-room | PASS WITH FINDINGS (unmerged branch; secret scanning state not re-proven) |
 | BlockSwarm | PASS WITH FINDINGS (tag claim false or absent; no release) |
 | Digital_Double_virtual_workforce | FAIL (open critical Dependabot #13) |
+| potential-garbanzo | ARCHIVED documentary. No CI. Archive flag unset. |
 
 ## Redundancy actions (documentary only)
 
@@ -190,6 +207,7 @@ Duplicate infrastructure: Digital Double version repos; SEEM microservice name p
 | OS family | os-family-constitution-map | SovereignOS, LegionOS, RealityOS | SUPERSEDE |
 | Fantom bots | none proven | fantom_trading_bot_2, ftmA.I.bot | SUPERSEDE (no canonical) |
 | SEEM microservice | SEEM-Cognitive-Microservice | SEEM-Cognitive_Microservice | SUPERSEDE |
+| potential-garbanzo | none | itself | ARCHIVE (flag operator-only) |
 
 ## Synergy (not an integration claim)
 
@@ -199,4 +217,4 @@ Duplicate infrastructure: Digital Double version repos; SEEM microservice name p
 
 ## Exit
 
-Exit criteria are not met. Critical security finding remains. Duplicate canonicals are labeled, not deleted. Sweep stops.
+Subject `potential-garbanzo` has no undefined code components because it has no code. Registry row corrected. GitHub archive flag remains unset. Portfolio exit criteria are not met. Critical security finding remains. Duplicate canonicals are labeled, not deleted. Sweep stops.

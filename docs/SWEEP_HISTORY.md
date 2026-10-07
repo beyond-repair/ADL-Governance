@@ -1,5 +1,16 @@
 # Sweep History
 
+## Sweep-236 — 2026-10-07 random completion sweep (potential-garbanzo)
+
+- Selection: `os.urandom` index over 83 names from search `user:beyond-repair` (`total_count=83`, `incomplete_results=false`). Index 61. Subject: `potential-garbanzo`.
+- Authenticated login: `beyond-repair`. Subject is private (absent from the public search item list used by Sweep-235; present when the authenticated tree API is called).
+- Discover: default branch `main`, tree SHA `72399fa4e8d304cfa09c0f10f9fe6f12737b9887`, not truncated, 4 blobs: `.gitignore` (3078 bytes, SHA `68bc17f9ff2104a9d7b6777058bb4c343ca72609`), `ARCHIVED.md`, `CLAIM_STATUS.md`, `README.md`. No source, no tests, no workflow, no dependency manifest.
+- Audit: in-repo docs already say ARCHIVE / claim 0 / historical placeholder created 2023-05-03, description historically "ai agent". Sweep-235 status row still said `RESEARCH` / `UNVERIFIED`. That row was stale relative to the tree.
+- Classification: **ARCHIVED** (governance label). Justification: no code surface, claim level 0, no successor required, history retained. GitHub `archived` flag was not set by this sweep (operator-only). Not a product. Not a research result.
+- Actions: governance docs only (`docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, `docs/SWEEP_HISTORY.md`). No product commit. No tag. No archive flag. No deletion. No history rewrite. No claim elevation.
+- Tests / CI: none exist on the subject. Nothing to run. Absence of CI is expected for an empty placeholder, not a green pipeline.
+- Exit: subject terminal state for the ARCHIVED class is documentary only until the operator sets the GitHub archive flag. Portfolio termination criteria are not met (Digital Double Dependabot #13 remains open; duplicate lineages remain). Stop. Do not loop.
+
 ## Sweep-235 — 2026-10-07 portfolio governance completion sweep
 
 - Scope: search `user:beyond-repair`, total_count 83, incomplete_results false. Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
