@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-283 — 2026-10-07 finite-gasket-spectral-derivatives
+
+- Selection: SystemRandom over 82 public names from search total_count 83 (ADL-Governance excluded from the draw). Selected `finite-gasket-spectral-derivatives`.
+- Discover: 10 tree entries. Kernel script plus 4 tests, workflow `kernel.yml`, README, COMPLETION_LOG, CLAIM_STATUS. No LICENSE. No gasket builder in-tree.
+- Audit: classification RESEARCH, claim ≤ 1, last formal pass Sweep-167. CLAIM_STATUS still said Actions were unobserved. Actions list shows run 37069941476 success on main `19a1264e4511a2ff2e60e55040590e250372d3f0`.
+- Classification: RESEARCH. Justification: implemented surface is a finite eigenvalue kernel; multiplicity and Dirichlet statements are prose and depend on `sierpinski-geometry-045`.
+- Implement: added `test_omega2_scales_the_positive_wall`. Local unittest 5 passed. Refreshed CLAIM_STATUS without raising the claim cap.
+- CI: pre-push run 37069941476 success. Post-push run not waited on.
+- No deletion, no history rewrite, no tag, no archive flag, no claim elevation.
+- Exit criteria: not met for this repository or the portfolio.
+
+# Sweep History
+
 ## Sweep-282 — 2026-10-07 portfolio governance sweep
 
 - Timestamp: 2026-10-07.
@@ -9,14 +22,4 @@
 - Actions performed: updated `docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, and this file. No repository deletion. No history rewrite. No tag. No archive flag. No claim elevation. No lockfile edit. No merge.
 - Exit criteria: failed. Residual risks recorded. Sweep stopped.
 
-# Sweep History
-
-## Sweep-281 — 2026-10-07 basilisk contract (Sweep-280 FortiTrade)
-
-- Selection: not a new random draw. Persistence gap after PASS-2026-10-07-278. Subject: existing Sweep-280 FortiTrade_Multi-Strategy narrative.
-- Contract: `docs/passes/PASS-2026-10-07-281.yaml`.
-- Re-read: FortiTrade tip `b36071e488092294f0168a5a5e067d765842ac09`. CI commit `d196debcadfa1ba118a2e34611b6629b6b62def9`. Actions pytest run 37663744493 conclusion success on that SHA. Observed, not dispatched.
-- Local pytest 19 passed was not re-executed. Claim remains 0. Archive flag not set. No broker path added.
-- Portfolio exit criteria unmet.
-
-Prior sweep body before Sweep-282 remains in git history at blob `5134d1e19fbce3f757cdc744210743dd8592663a`.
+Prior sweep body before Sweep-283 remains in git history at blob `a35d0a39bdc819a12bee162fbbb9b02d71266b6c`.
