@@ -1,5 +1,12 @@
 # Sweep History
 
+## Sweep-267 — 2026-10-07 Sweep-263 contract transcription / PASS-2026-10-07-267
+
+- Selection: explicit NEXT of PASS-2026-10-07-266, objective GAP-SWEEP-263-CONTRACT.
+- Source: docs/SWEEP_HISTORY.md at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152, blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576. Sweep-263 section is absent from the pre-sweep HEAD history file.
+- Action: wrote docs/passes/PASS-2026-10-06-263.yaml. Transcription commit 170a159f8cb61a53d80e0fab5990b3c67887baeb. No product repository edit. No archive flag. No tag. No lockfile edit. No claim elevation. Cited Actions runs were not re-run.
+- Portfolio exit criteria remain unmet. Stop. Do not loop.
+
 ## Sweep-238 — 2026-10-07 random completion sweep (Sovereign-Epistemic-Reality-Engine)
 
 - Selection: `random.Random(1791342100).choice` over the sorted 83-name search payload (`user:beyond-repair`, `total_count=83`, `incomplete_results=false`). Subject: `Sovereign-Epistemic-Reality-Engine`.
