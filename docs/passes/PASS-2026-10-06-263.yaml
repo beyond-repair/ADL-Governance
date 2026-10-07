@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-06-263
+  parent_pass: null
+  parent_note: Transcription of the Sweep-263 body in docs/SWEEP_HISTORY.md at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 (blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576). That section is absent from current HEAD. This file does not re-execute the portfolio sweep and does not edit product repositories.
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Capability and gap counts were not in the Sweep-263 body and are not invented here. Search total_count 83 and profile public_repos 78 are recorded as stated.
+OBJECTIVE:
+  id: GAP-SWEEP-263-CONTRACT
+  description: Transcribe the existing Sweep-263 narrative into a basilisk YAML contract.
+  reason_selected: Explicit NEXT of PASS-2026-10-07-266. Operator archive, secret rotation, and form-data pin were not selected.
+DISCOVERY:
+  findings:
+    - Sweep-263 body records timestamp 2026-10-06 20:14Z EDT, master directive v3.0, search user:beyond-repair total_count 83 incomplete_results false, login beyond-repair id 132061760, profile public_repos 78, private flag true on 9 names, difference not reconciled.
+    - Repositories reviewed at metadata level: all 83 names in the search payload.
+    - Live verification named forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce.
+    - Recorded findings: forge-aegis CI run 37258127100 success on main e7188d5; sovereign-clean-room main Python tests run 37064696194 success on 4878918c; seem-completion-pass not merged; branch fix/pynacl-1.6.2-cve-2025-69277 present and not reviewed; BlockSwarm Foundry run 36859452185 success on main 6e90f6f; Digital Double CI run 36861489156 success on main 24e6a29.
+    - Releases empty. Tags empty. Dependabot alert 13 still open (form-data, GHSA-fjxv-7rqg-78g4, patched identifier 4.0.4). Code scanning 404 no analysis on forge-aegis and Digital Double. Secret scanning open empty on those two. GitHub archived=true only for CFT-v3.0.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - No product capability. Transcription only. The historical sweep recorded documentation updates only.
+  changes_note: Commit SHAs for the Sweep-263 documentation update were not named in the body, so commits is empty rather than inferred.
+VERIFICATION:
+  tests_run:
+    - forge-aegis CI run 37258127100 success, as recorded in Sweep-263. Not re-run.
+    - sovereign-clean-room run 37064696194 success, as recorded in Sweep-263. Not re-run.
+    - BlockSwarm Foundry run 36859452185 success, as recorded in Sweep-263. Not re-run.
+    - Digital Double CI run 36861489156 success, as recorded in Sweep-263. Not re-run.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+  overall_note: PASS means the narrative was transcribed without adding facts. It does not re-verify the cited Actions runs.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-263 already recorded documentation-only actions, empty releases and tags, and Dependabot alert 13 still open.
+    - The body recorded GitHub archived=true only for CFT-v3.0 and exit criteria not met.
+  failures:
+    - Profile/search count difference was recorded as not reconciled.
+  decisions:
+    - Do not re-run the portfolio sweep.
+    - Do not invent CI results.
+    - Do not set archive flags, tags, or lockfile edits.
+    - Do not rewrite history.
+REMAINING:
+  incomplete:
+    - Exit criteria not met.
+    - Critical alert 13 open.
+    - Unmerged completion and CVE-named branches.
+    - No product tags.
+    - Duplicate families not consolidated.
+    - Archive queue not executed.
+    - Function-body audit of the 83 not done.
+  blockers:
+    - Archive flags, tags, lockfile edits, and secret rotation are operator-gated and were not executed.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-HISTORY-BODY-RESTORE
+  action: Restore the omitted Sweep-261 through Sweep-264 narrative bodies into HEAD docs/SWEEP_HISTORY.md from blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576 without deleting later sweep sections. Do not re-run those sweeps.
+  reason: PASS-2026-10-07-266 recorded that HEAD SWEEP_HISTORY.md omits those bodies while the blob still has them.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve later sweep sections already on HEAD.
+PROVENANCE:
+  state_commit: pending-transcription-commit
+  evidence:
+    - docs/SWEEP_HISTORY.md Sweep-263 body at commit 22134e1cb33058da60c8a22bb4bbf504a5d3e152 blob e4512fa4db0cc6cd52f32802e98b6b0d6eaed576
+    - Absence of PASS-2026-10-06-263.yaml before this transcription
