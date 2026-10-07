@@ -5,7 +5,7 @@
 - Selection: `random.SystemRandom().choice` over 83 names extracted from authenticated search dumps (`user:beyond-repair`, total_count 83, incomplete_results false). Subject: `Auto_Legion`.
 - Classification: SUPERSEDED. Claim 0. Not changed. Successor named in README: `sovereign-clean-room`.
 - Discover: head `1ef37b9e1289e21aed77062755c5273fc1f894ed`. Prior Python application run 36844325563 failed on that SHA. Missing modules and unbound names left in place.
-- Actions: commit `4dfd177e42c35fc117fec86b557ce81df5cc483c` (supersede guard, pytest collection limit, CLAIM_STATUS, workflow narrowed to the guard). Local pytest 4 passed. CI observation at governance write: run 37655714635 still queued on `4dfd177e`.
+- Actions: commit `4dfd177e42c35fc117fec86b557ce81df5cc483c` (supersede guard, pytest collection limit, CLAIM_STATUS, workflow narrowed to the guard). Local pytest 4 passed. CI observation: Python application run 37655714635 conclusion success on `4dfd177e`.
 - Not done: no tag, no archive flag, no bytecode deletion, no product repair, no claim elevation. Portfolio exit criteria unmet.
 
 # Sweep History
@@ -19,4 +19,4 @@
 - Actions performed: updated the three governance docs. No repository deletion. No history rewrite. No tag. No archive flag. No claim elevation.
 - Exit criteria: failed.
 
-Prior sweep body before this commit remains at blob `5b63e3480c72fea76d61368f924de5ec4b9fb117`. This commit does not delete those bodies from history.
+Prior sweep body before Sweep-277 remains at blob `5b63e3480c72fea76d61368f924de5ec4b9fb117`. The queued-CI wording is at blob `551943c6d12a13353df70803d1a635f93d2f7152`. This commit does not delete those bodies from history.
