@@ -28,6 +28,7 @@ CHANGES:
     - docs/passes/PASS-2026-10-07-269.yaml
   commits:
     - faaf73eeeac2b09039fc35a209820e44a2b8e277
+    - b0d2778de2a16c109d00472ce2647c5b2cda8e74
   capabilities_added_or_changed:
     - Governance heading index completeness for existing pass ids. No product capability. No repository created.
 VERIFICATION:
@@ -39,7 +40,7 @@ VERIFICATION:
   integration: NOT_RUN
   invariants: PASS
   overall: PASS
-  overall_note: Overall PASS is the heading-index objective only. Historical Actions runs were not re-executed. Product claims were not elevated. The pass-file commit SHA is not embedded in this file.
+  overall_note: Overall PASS is the heading-index objective only. Historical Actions runs were not re-executed. Product claims were not elevated. Pass-file commit b0d2778de2a16c109d00472ce2647c5b2cda8e74 is recorded by this stamp.
 KNOWLEDGE:
   confirmed:
     - HEADINGS.md is concatenated into the heading search by scripts/check_passes.py and can close the missing-heading invariant without rewriting SWEEP_HISTORY.md.
@@ -70,8 +71,10 @@ NEXT:
     - No invented verification.
     - Do not archive repositories.
 PROVENANCE:
-  state_commit: faaf73eeeac2b09039fc35a209820e44a2b8e277
+  state_commit: b0d2778de2a16c109d00472ce2647c5b2cda8e74
   evidence:
     - Heading commit faaf73eeeac2b09039fc35a209820e44a2b8e277
     - Pre-pass checker failure listing 70 missing ids
     - Post-heading checker PASS on 83 yaml files
+    - Pass persist commit b0d2778de2a16c109d00472ce2647c5b2cda8e74
+    - Post-persist checker PASS on 84 yaml files including PASS-2026-10-07-269
