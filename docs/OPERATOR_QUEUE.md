@@ -1,46 +1,22 @@
 # Operator Queue
 
+## Sweep-277 additions (2026-10-07)
+
+- **Auto_Legion:** do not set GitHub `archived=true` from an agent. Classification SUPERSEDED is documentary. Successor named in README remains `sovereign-clean-room`. Do not tag a release. Do not merge this tree into the successor. Do not treat a green supersede-guard as an agent runtime, SuperAGI integration, or Flask product.
+- Do not delete committed `__pycache__` blobs from an agent in this cycle. They are preserved. A later operator may stop tracking them without a history rewrite.
+- Do not repair `ai_agent1`, `local_model_integration`, or `WriteTestTool` from an agent. Those are historical defects, not a feature request.
+- Digital Double critical Dependabot alert 13 remains open (not re-fetched this cycle; carried from Sweep-276). Do not dismiss or bump the lockfile from an agent.
+
+# Operator Queue
+
 ## Sweep-276 additions (2026-10-07)
 
-- **Digital_Double_virtual_workforce:** Dependabot alert 13 remains open (`form-data`, CVE-2025-7783, critical, manifest `digital_double/package-lock.json`, development scope, matched range `>= 4.0.0, < 4.0.4`, first patched `4.0.4`). Re-fetched this sweep. Do not dismiss or bump the lockfile from an agent.
+- **Digital_Double_virtual_workforce:** Dependabot alert 13 remains open (`form-data`, CVE-2025-7783, critical, manifest `digital_double/package-lock.json`, development scope, matched range `>= 4.0.0, < 4.0.4`, first patched `4.0.4`). Re-fetched Sweep-276. Do not dismiss or bump the lockfile from an agent.
 - High open alerts on the same lockfile remain operator-owned (re-observed on the first open page: 160, 159, 155, 153, 147, 122, 112, 111). Medium pytest alert 168 (CVE-2025-71176) on `digital_double/pyproject.toml` remains operator-owned.
-- Do not merge `seem-completion-pass` (`d6f13042`) or the previously recorded `fix/pynacl-1.6.2-cve-2025-69277` (`f65d7db6`) on sovereign-clean-room from an agent. The repair branch was not re-listed this sweep.
-- Do not tag releases for forge-aegis, sovereign-clean-room, BlockSwarm, or Digital_Double_virtual_workforce from an agent. Releases and tags lists were empty this sweep.
+- Do not merge `seem-completion-pass` (`d6f13042`) or the previously recorded `fix/pynacl-1.6.2-cve-2025-69277` (`f65d7db6`) on sovereign-clean-room from an agent. The repair branch was not re-listed in Sweep-276.
+- Do not tag releases for forge-aegis, sovereign-clean-room, BlockSwarm, or Digital_Double_virtual_workforce from an agent. Releases and tags lists were empty in Sweep-276.
 - Do not set GitHub `archived=true` on SUPERSEDED or archive-queue repositories from an agent. Only `CFT-v3.0` is archived.
-- Code scanning is not enabled (API 404 no analysis) on forge-aegis, BlockSwarm, and Digital Double. Secret scanning is disabled on sovereign-clean-room (404). Enabling either is operator-only. Open secret-scanning lists were empty on forge-aegis, BlockSwarm, and Digital Double.
+- Code scanning is not enabled (API 404 no analysis) on forge-aegis, BlockSwarm, and Digital Double. Secret scanning is disabled on sovereign-clean-room (404). Enabling either is operator-only.
 - Search `total_count` 83 versus previously recorded profile `public_repos` 78 remains. Private names unchanged. Do not delete names to force a match.
 
-# Operator Queue
-
-## Sweep-274 additions (2026-10-07)
-
-- **RealityOS:** do not promote RESEARCH to ACTIVE. Do not tag a release. Do not set GitHub `archived=true`. A green `research-guard` run (37648961131 on `9c79409`) is a sketch gate, not a security audit, persistence proof, or connector proof. `POLSIA_PROMPT.md` remains a design prompt.
-- Digital Double critical Dependabot alert 13 remains open (not re-fetched this cycle; carried from Sweep-273). Do not dismiss or bump the lockfile from an agent.
-
-# Operator Queue
-
-## Sweep-273 additions (2026-10-07)
-
-- **Digital_Double_virtual_workforce:** Dependabot alert 13 remains open (`form-data`, CVE-2025-7783, critical, manifest `digital_double/package-lock.json`, development scope, matched range `>= 4.0.0, < 4.0.4`, first patched `4.0.4`). Do not mark the repository security-clean. Lockfile bump is allowed only after a human reviews the npm tree. Do not dismiss the alert from an agent.
-- High open alerts on the same lockfile remain operator-owned (observed this sweep: 160, 159, 155, 153, 147, 122, 112, 111). Nested `digital_double/` manifests may be the stale path. Do not delete the nested tree from an agent.
-- Medium pytest alert 168 (CVE-2025-71176, `< 9.0.3`) on `digital_double/pyproject.toml` is operator-owned. Do not bump it from this sweep.
-- Do not merge `seem-completion-pass` (`d6f13042`) or `fix/pynacl-1.6.2-cve-2025-69277` (`f65d7db6`) on sovereign-clean-room from an agent.
-- Do not tag releases for forge-aegis, sovereign-clean-room, BlockSwarm, or Digital_Double_virtual_workforce from an agent.
-- Do not set GitHub `archived=true` on SUPERSEDED or archive-queue repositories from an agent.
-- Code scanning is not enabled (API 404 no analysis) on forge-aegis, BlockSwarm, and Digital Double. Secret scanning is disabled on sovereign-clean-room (404). Enabling either is operator-only.
-- Search `total_count` 83 versus profile `public_repos` 78 remains. Private names in the search payload: 9. Do not delete names to force a match.
-
-## Sweep-272 additions (2026-10-07)
-
-- **Project-Cold-Boot:** do not tag a release from an agent. Do not set GitHub `archived=true`. Do not promote RESEARCH to ACTIVE. Godot smoke (`tools/smoke_test.sh`) was not executed in Sweep-272 because the sweep host had no Godot binary. A green `structure` workflow is not a playable-slice or DLRSE proof. Commercial 1.0, Steam packaging, and audio remain operator/content work.
-
-## Sweep-271 additions (2026-10-07)
-
-- Same Digital Double critical alert and unmerged clean-room branches as Sweep-273. Retained so the queue does not drop the prior instruction.
-
-## Sweep-270 additions (retained)
-
-- **DigitalDoubleVirtualWorkforce3.5:** do not set GitHub `archived=true` from an agent. Classification SUPERSEDED is documentary. Canonical successor remains `Digital_Double_virtual_workforce`. Do not tag a release. Do not merge this tree into the successor from an autonomous sweep. Do not treat a green `supersede-guard` run as CAP proof, torch quantization, or product parity.
-- Archive-queue row for this name stays operator-owned.
-
-Prior queue bodies before Sweep-270 are not in this blob. Sweep-270 recorded that loss. Restore from git history if an operator needs them. This file does not rewrite history.
+Prior queue body before this commit remains at blob `605edd55145d27c2c7ac80c1869bd93b5e826150`. This file does not rewrite history.
