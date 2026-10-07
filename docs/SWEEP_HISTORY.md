@@ -1,5 +1,16 @@
 # Sweep History
 
+## Sweep-279 — 2026-10-07 portfolio governance sweep
+
+- Timestamp: 2026-10-07.
+- Scope: authenticated search `user:beyond-repair` plus Phase-3 live verification of `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, `Digital_Double_virtual_workforce`.
+- Repositories reviewed: 83 names (`incomplete_results` false). Private in payload: 9. Archived flag true: `CFT-v3.0` only.
+- Findings: Phase-3 main CI still success on recorded heads (`e7188d5` / run 37258127100, `4878918c` / run 37064696194, `6e90f6f` / run 36859452185, `24e6a29` / run 36861489156). Releases and tags empty on all four. Dependabot alert 13 still open. sovereign-clean-room branches `seem-completion-pass` and `fix/pynacl-1.6.2-cve-2025-69277` still present and unmerged.
+- Actions performed: updated `docs/PORTFOLIO_STATUS_REPORT.md`, `docs/OPERATOR_QUEUE.md`, and this file. No repository deletion. No history rewrite. No tag. No archive flag. No claim elevation. No lockfile edit.
+- Exit criteria: failed. Residual risks recorded. Sweep stopped.
+
+# Sweep History
+
 
 ## Sweep-278 Sweep-277 Code_Generation contract / PASS-2026-10-07-278
 
