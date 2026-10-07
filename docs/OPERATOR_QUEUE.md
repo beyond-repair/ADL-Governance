@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Residual notes from Sweep-264
+
+Random draw `DevelopTool-Unified-Dev-Environment`. Classification ARCHIVED (recommended), unchanged. Claim 0. Not a product, IDE, or deployment system.
+
+**Operator-only:** set GitHub `archived=true` if the archive queue is accepted. Do not set it from this agent. Do not rewrite history. Do not execute `develop_tool/main.py` (constructor mismatch, placeholder token, conda `os.system` if the CI agent is invoked). Placeholder string `your_github_token` is not a live credential and was not rotated. 23 open issues were not triaged. Do not treat the preserved README body ("Resurrection target") as an ACTIVE promotion.
+
+Surface tests were run locally (5 passed) against claim banners. Remote Surface audit after commits `374768cb` and `4daca170` was not yet observed when this note was written.
+
+## Residual notes from Sweep-263
+
+
 ## Residual notes from Sweep-263
 
 Master-directive sweep. Search total_count 83, incomplete_results false. Profile public_repos 78. Private flag true on 9 names in the search payload. Reconciliation not performed. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
