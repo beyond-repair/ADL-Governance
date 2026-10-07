@@ -1,5 +1,18 @@
 # Sweep History
 
+## Sweep-261 — 2026-10-06 randomized draw btc-trading
+
+- Timestamp: 2026-10-06. Scope: one random repository. Draw pool: names in the 83-result search whose `updated_at` did not start with 2026-10-06 (69 names). Selected `beyond-repair/btc-trading`.
+- Classification: ARCHIVED (recommended). GitHub archived flag false. Claim 0. Not elevated.
+- Discover: tree at `6dc74b42` (6 paths, not truncated): `ARCHIVED.md`, `BTC-USD.csv`, `README.md`, `SECURITY.md`, `kucoin btc.py`, `requirements.txt`. No tests. No CI. No tags observed.
+- Audit: historical script expected `btc_prices.csv` (absent), used `np` without an import, and assigned a third-party API credential in source. Requirements listed unpinned tensorflow/keras and omitted gym, stable_baselines3, and requests. README already denied product claims.
+- Implement: commit `cd3638654c870c238db6457355b64f82ff1adfae`. Added `btc_inventory.py`, `tests/test_inventory.py`, `.github/workflows/ci.yml`, `.gitignore`. Credential removed from HEAD. Script body gated under `__main__`. No deletion. No history rewrite. No tag. No archive flag.
+- Local unittest: 1 passed. Actions run 37549816378 success (job 112562362524). Node 20 deprecation annotation only.
+- Termination: not met. Archive flag false. Credential remains in history. Historical script still non-runnable as a trader.
+- Portfolio exit criteria remain unmet (Digital Double alert 13 not re-fetched in Sweep-261).
+
+
+
 ## Sweep-260 — 2026-10-06 master-directive portfolio sweep
 
 - Timestamp: 2026-10-06 23:18Z EDT. Scope: one governed sweep under the master directive. Search `user:beyond-repair` total_count 83, incomplete_results false. Authenticated login `beyond-repair`. Profile public_repos 78. Difference not reconciled.

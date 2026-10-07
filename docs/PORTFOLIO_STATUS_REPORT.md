@@ -1,5 +1,28 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-06 (Sweep-261; randomized draw `btc-trading`)
+**Project / Version:** ADL Portfolio Governance / Sweep-261
+**Objective:** One random repository through discover, classify, safe implement, test, CI, document.
+**Evidence:** Search `user:beyond-repair` total_count 83. Draw pool: 69 names whose `updated_at` did not start with `2026-10-06`. Selected `btc-trading`. Pre-sweep tree `6dc74b42`. Post-sweep commit `cd3638654c870c238db6457355b64f82ff1adfae`. Actions run 37549816378 success.
+
+This report does not mark the portfolio complete.
+
+## Sweep-261 — btc-trading
+
+| Field | Value |
+|-------|-------|
+| Classification | ARCHIVED (recommended). Unchanged. GitHub `archived` flag still false. |
+| Claim | 0. File inventory only. Not a forecast, product, or live bot. |
+| CI | Workflow `inventory` run 37549816378 success on `cd3638654c870c238db6457355b64f82ff1adfae`. Stdlib unittest. |
+| Local test | 1 passed before push. |
+| Security | Hardcoded third-party credential removed from HEAD. Remains in history. Operator must rotate and revoke. History not rewritten. |
+| Termination | Not met. Archive flag false. Credential still in history. Historical script still expects absent `btc_prices.csv` and references unbound `np`. |
+
+
+---
+
+# Prior report (Sweep-260)
+
 **Updated:** 2026-10-06 (Sweep-260; 23:18Z EDT / 03:18Z next day UTC window)
 **Project / Version:** ADL Portfolio Governance / Sweep-260
 **Objective:** One governed master-directive sweep. Inventory, classify from existing registry, live-verify the mandatory four, record residuals, stop.

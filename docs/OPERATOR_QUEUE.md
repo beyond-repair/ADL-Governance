@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Residual notes from Sweep-261
+
+Random draw `btc-trading`. Classification ARCHIVED (recommended), unchanged. Claim 0. Not a trading product.
+
+**Operator-only:** rotate and revoke the third-party API credential that Sweep-261 removed from `kucoin btc.py` HEAD. The value remains in git history at and before `6dc74b42`. Do not rewrite history. Do not restore the credential. Do not set the GitHub archive flag from this agent. `docs/archive_queue.md` still lists `btc-trading` unchecked.
+
+CI run 37549816378 succeeded. That success is a CSV inventory check (366 rows, 2022-06-12 through 2023-06-12). It is not a model evaluation.
+
+
+
 ## Residual notes from Sweep-260
 
 Master-directive sweep. Search total_count 83, incomplete_results false. Profile public_repos 78. Reconciliation not performed. Mandatory four re-fetched. No deletion. No history rewrite. No archive flag. No tag. No lockfile edit. No claim elevation.
