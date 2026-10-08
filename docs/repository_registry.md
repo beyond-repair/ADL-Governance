@@ -2,6 +2,8 @@
 
 **Account:** beyond-repair · **Census date:** 2026-10-07 (Sweep-287; search total_count 83, incomplete_results false; 9 private) · **Governing source:** this repository
 
+Sweep-290 (2026-10-08) reconfirmed search total_count 83, incomplete_results false, and re-fetched Phase-3 CI, releases, tags, sovereign-clean-room branches, and selected security lists. Heads unchanged. Releases and tags empty on the four pillars. Digital Double Dependabot #13 remains open. Classifications were not changed. GitHub archive flag remains true only for `CFT-v3.0`.
+
 Sweep-287 reconfirmed the 83-name set from search metadata and re-fetched Phase-3 CI, selected releases, selected tags, branches (sovereign-clean-room only), and selected security lists for `forge-aegis`, `sovereign-clean-room`, `BlockSwarm`, and `Digital_Double_virtual_workforce`. Classifications were not changed. Digital Double Dependabot #13 remains open. GitHub archive flag remains true only for `CFT-v3.0`. Details in `PORTFOLIO_STATUS_REPORT.md`.
 
 ---

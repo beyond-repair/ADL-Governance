@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-290 — do not execute from this agent
+
+Master-directive sweep. Search total_count 83, incomplete_results false. Authenticated login beyond-repair. Profile public_repos 78. Private-count reconciliation not performed. Mandatory four re-fetched. Classifications not changed. No deletion. No history rewrite. No tag. No lockfile edit. No claim elevation. No archive flag.
+
+**Digital_Double_virtual_workforce Dependabot alert 13 remains open** (re-fetched Sweep-290). Package form-data, manifest digital_double/package-lock.json, scope development, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, matched range >= 4.0.0, < 4.0.4, first patched identifier 4.0.4, severity critical. Open critical filter hasNextPage false. Do not mark fixed. Lockfile bump is operator-gated. Do not merge dependabot branches from this queue.
+
+forge-aegis code scanning list returned 404 no analysis. forge-aegis and BlockSwarm Dependabot open lists empty. sovereign-clean-room secret scanning returned 404 disabled. Releases and tags empty for forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce. Do not create product tags. BlockSwarm README sentence v0.5.0-sagf remains contradicted by the tags API.
+
+seem-completion-pass remains at d6f13042. Latest observed PR run 37215829476 succeeded; earlier runs 37215706600 and 37214635678 failed. Branch fix/pynacl-1.6.2-cve-2025-69277 remains at f65d7db6. Not reviewed as a patch and not merged.
+
+# Operator Queue
+
 ## Sweep-288 — do not execute from this agent
 
 Random draw `SEEM-Cognitive_Microservice`. Classification SUPERSEDED, unchanged. Claim 0. Successor remains sovereign-clean-room. Not the hyphen CLI.
