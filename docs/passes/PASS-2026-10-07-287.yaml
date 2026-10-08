@@ -1,0 +1,30 @@
+PASS:
+  id: PASS-2026-10-07-287
+  sweep: 287
+  date: 2026-10-07
+  kind: portfolio-governance-reconfirm
+STATE:
+  project: ADL-Governance
+  objective: One governed master-directive sweep of user:beyond-repair
+  accepted:
+    - search total_count 83
+    - incomplete_results false
+    - private true on 9 names
+    - archived true only on CFT-v3.0
+    - fork false on all 83
+  rejected:
+    - exit criteria met
+    - Digital Double Dependabot 13 fixed
+    - classifications changed
+OBJECTIVE: Record live Phase-3 evidence and residuals without deletion, history rewrite, tag creation, archive-flag change, or claim elevation.
+VERIFICATION:
+  method: GitHub search plus Actions, releases, tags, branches, Dependabot, secret scanning, code scanning
+  forge_aegis_ci: 37258127100 success on e7188d529739652a2dd6264bd3d328c1f72e60e5
+  sovereign_clean_room_ci: 37064696194 success on 4878918cf9f95d3c19e1890bef6d2fd6713e0a16
+  blockswarm_ci: 36859452185 success on 6e90f6f85c0969fa8a262a70ceba833d618a22db
+  digital_double_ci: 36861489156 success on 24e6a29fd26c03900a8d98634d6683996eabdac4
+  digital_double_critical: Dependabot 13 open form-data GHSA-fjxv-7rqg-78g4
+  confidence: Empirical
+NEXT:
+  - Do not loop
+  - Operator owns lockfile bump, secret rotation, archive flags, and unmerged branches
