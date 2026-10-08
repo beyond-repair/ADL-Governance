@@ -1,3 +1,10 @@
+## Sweep-288 CI observation
+
+- kernel run 37781311011 on `0de8e4db` failed: actions/checkout@v4 and actions/setup-python@v5 rejected because actions must be pinned to a full commit SHA.
+- Follow-up `4f2f929f53cd328ca23f54f3756bb1aaf3d11582` pins checkout `11d5960a326750d5838078e36cf38b85af677262` and setup-python `a26af69be951a213d495a4c3e4e4022e16d87065`.
+- kernel run 37781412380 conclusion success on `4f2f929f` (23s). Actions conclusion only. Claim remains 0.
+- Push remote warning changed from 21 vulnerabilities (12 high, 8 moderate, 1 low) to 23 (13 high, 9 moderate, 1 low). Not triaged. Operator-only.
+
 ## Sweep-288 — 2026-10-08 SEEM-Cognitive_Microservice
 
 - Selection: `random.Random(1791465003).choice` on the sorted 83-name search payload (`user:beyond-repair`, total_count 83, incomplete_results false). Selected `SEEM-Cognitive_Microservice` (index 35). Distinct from hyphen sibling `SEEM-Cognitive-Microservice`.

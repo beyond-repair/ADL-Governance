@@ -5,9 +5,10 @@ Timestamp: 2026-10-08 (session clock, America/New_York morning)
 Selected repository: SEEM-Cognitive_Microservice
 Draw: random.Random(1791465003).choice over sorted search names, total_count 83, incomplete_results false
 Head before change: bf12df6b81d757a0e8438374efde555e966f80e9
-Head after change: 0de8e4db03e570bc7c5f171dfedbd04991be7cdc
+Head after change: 4f2f929f53cd328ca23f54f3756bb1aaf3d11582
 Classification: SUPERSEDED (unchanged). Claim 0. Successor: sovereign-clean-room.
-Local tests: 17 passed (Python 3.10, backend pytest). Actions conclusion pending observation.
+Local tests: 17 passed (Python 3.10, backend pytest).
+CI: kernel run 37781311011 failed (unpinned actions). kernel run 37781412380 success on 4f2f929f. Not a claim elevation.
 Evidence rule: Code > Documentation > Roadmap.
 
 Prior Sweep-287 body follows.
