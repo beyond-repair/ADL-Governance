@@ -1,5 +1,11 @@
 # Operator Queue
 
+## Sweep-288 — do not execute from this agent
+
+Random draw `SEEM-Cognitive_Microservice`. Classification SUPERSEDED, unchanged. Claim 0. Successor remains sovereign-clean-room. Not the hyphen CLI.
+
+**Operator-only:** Dependabot reported 21 vulnerabilities on the default branch at push of `0de8e4db03e570bc7c5f171dfedbd04991be7cdc` (12 high, 8 moderate, 1 low). Not triaged this sweep. Do not bump `package-lock.json` from this queue. LICENSE file absent; do not invent a license. Do not set GitHub archived=true. Do not tag a release. Do not delete the hyphen sibling.
+
 ## Sweep-287 — do not execute from this agent
 
 Master-directive sweep. Search total_count 83, incomplete_results false. Private true on 9 names. GitHub archive flag true only on CFT-v3.0. Mandatory four re-fetched. Classifications not changed. No deletion. No history rewrite. No tag. No lockfile edit. No claim elevation.

@@ -1,3 +1,15 @@
+## Sweep-288 — 2026-10-08 SEEM-Cognitive_Microservice
+
+- Selection: `random.Random(1791465003).choice` on the sorted 83-name search payload (`user:beyond-repair`, total_count 83, incomplete_results false). Selected `SEEM-Cognitive_Microservice` (index 35). Distinct from hyphen sibling `SEEM-Cognitive-Microservice`.
+- Discover: default-branch tree `bf12df6b81d757a0e8438374efde555e966f80e9`, truncated false, count 63. Vite/React UI plus FastAPI package `backend/seem` (vsa, banel, dream, l0 graph, numeric SHACL gates, plugin executor). Tests `backend/tests/test_kernel.py` and `test_api.py`. No `.github/workflows`. No LICENSE. No CLAIM_STATUS.md before this sweep.
+- Audit: README already states SUPERSEDED, claim 0, successor sovereign-clean-room, and that BLUEPRINT.md / MANIFEST.md over-claim. Registry already lists this name as SUPERSEDED. No CI workflow on the parent tree.
+- Classification: SUPERSEDED. Justification: registry successor is sovereign-clean-room; this tree is the underscore Vite+FastAPI sketch, not the hyphen CLI and not the canonical substrate. Claim remains 0.
+- Implement: commit `0de8e4db03e570bc7c5f171dfedbd04991be7cdc` adds `.github/workflows/kernel.yml`, `CLAIM_STATUS.md`, and a README CI note. No deletion. No history rewrite. No tag. No archive flag.
+- Test: local `python3 -m pytest -q` in `backend/` on Python 3.10 reported 17 passed, 1 StarletteDeprecationWarning. Not a product or scientific proof.
+- Push remote warned Dependabot: 21 vulnerabilities on the default branch (12 high, 8 moderate, 1 low). Not triaged. Operator-only.
+- CI: workflow dispatched by the push; conclusion recorded after observation.
+- Exit: sketch claim-cap and CI file present. Portfolio exit not met. GitHub archive not set. License absent.
+
 # Sweep History
 
 ## Sweep-287 master directive / PASS-2026-10-07-287
