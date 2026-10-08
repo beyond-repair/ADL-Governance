@@ -1,5 +1,15 @@
 # Sweep History
 
+## Sweep-287 master directive / PASS-2026-10-07-287
+
+- Timestamp: 2026-10-07T21:13-04:00 session clock (2026-10-08T01:13Z).
+- Scope: user:beyond-repair portfolio completion directive. One sweep. No loop.
+- Discovery: GitHub search `user:beyond-repair` returned total_count 83, incomplete_results false, 83 items. Private true on 9 names: Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2, CFT-v3.0, blacksite, potential-garbanzo, SovereignOS, test, mendthegame, atomicdreamlabs. Archived true only on CFT-v3.0. Fork false on all 83.
+- Repositories reviewed: all 83 by search metadata. Live Phase-3 re-fetch only for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Findings: latest main CI conclusions remain success on the previously recorded heads. Releases empty for forge-aegis and Digital_Double_virtual_workforce. Tags empty for forge-aegis, sovereign-clean-room, and BlockSwarm. sovereign-clean-room branches unchanged: main 4878918c, seem-completion-pass d6f13042, fix/pynacl-1.6.2-cve-2025-69277 f65d7db6. Dependabot open empty for forge-aegis and BlockSwarm. Digital Double critical filter returned only alert 13 (form-data, digital_double/package-lock.json, development scope, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, range >= 4.0.0, < 4.0.4). Secret scanning disabled (404) on sovereign-clean-room. Code scanning 404 no analysis on forge-aegis.
+- Actions performed: documentation only in ADL-Governance (status report, operator queue, this history, registry census line, pass YAML). No deletion. No history rewrite. No tag. No archive flag. No lockfile edit. No classification change. No claim elevation.
+- Residual risks: critical Dependabot 13 open; unmerged clean-room branches; BlockSwarm and sovereign-clean-room release lists not re-listed this cycle; portfolio CI outside the four pillars not re-run; duplicate lineages labeled, not consolidated; exit criteria not met. Sweep stops.
+
 ## Sweep-286 Sweep-283 contract transcription / PASS-2026-10-07-286
 
 - Transcribed the Sweep-283 body already in docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-07-286.yaml.
