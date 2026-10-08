@@ -1,3 +1,19 @@
+## Sweep-289 Sweep-288 contract transcription / PASS-2026-10-08-289
+
+- Transcribed the Sweep-288 body already in docs/SWEEP_HISTORY.md at ADL-Governance a178a8c021f429f16e2fdddad6b487fe09074fad blob 2563f574979c90b7a97007519c6fc32c8cfb91ca into docs/passes/PASS-2026-10-08-288.yaml.
+- Subject SEEM-Cognitive_Microservice tip 4f2f929f53cd328ca23f54f3756bb1aaf3d11582 re-read this pass. Parent 0de8e4db03e570bc7c5f171dfedbd04991be7cdc. Classification SUPERSEDED. Claim 0. CLAIM_STATUS.md blob cf882e2aaa84911a7b7f5ce64c736326449ce5a0.
+- kernel runs 37781311011 and 37781412380 are history citations only. Not re-fetched. Not dispatched. Not a product proof.
+- Local pytest 17 passed remains a recorded Sweep-288 claim. Not re-executed.
+- No deletion, no history rewrite, no tag, no archive flag, no claim elevation. SEEM-Cognitive_Microservice not edited.
+- Search user:beyond-repair total_count 83 incomplete_results false. Later unrecorded tips: informational-flux-identity 014b8d083388fdd5f2e602f45371639899a60412 and finite-gasket-spectral-derivatives 80e28408da5ef676833297167e998744ce0c6b55. Not audited this pass.
+
+## Sweep-288 SEEM kernel CI contract / PASS-2026-10-08-288
+
+- Contract transcribed from the Sweep-288 narrative at blob 2563f574979c90b7a97007519c6fc32c8cfb91ca. Not a re-execution.
+- Subject SEEM-Cognitive_Microservice. Classification SUPERSEDED. Claim 0. Successor sovereign-clean-room.
+- History cites kernel run 37781311011 failed on 0de8e4db for unpinned actions, and kernel run 37781412380 success on 4f2f929f53cd328ca23f54f3756bb1aaf3d11582. Those run ids were not re-fetched by Sweep-289.
+- Local pytest 17 passed is a recorded Sweep-288 claim. Not re-executed.
+
 ## Sweep-288 CI observation
 
 - kernel run 37781311011 on `0de8e4db` failed: actions/checkout@v4 and actions/setup-python@v5 rejected because actions must be pinned to a full commit SHA.

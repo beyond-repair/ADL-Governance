@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-10-08-288
+  parent_pass: PASS-2026-10-07-287
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Counts are not re-derived. This file transcribes the Sweep-288 narrative already on ADL-Governance a178a8c021f429f16e2fdddad6b487fe09074fad. It does not re-execute that sweep.
+OBJECTIVE:
+  id: GAP-SEEM-UNDERSCORE-KERNEL-CI
+  description: Claim-cap SEEM-Cognitive_Microservice and add a SHA-pinned kernel workflow without elevating the SUPERSEDED claim.
+  reason_selected: Transcribed from the existing Sweep-288 selection sentence. random.Random(1791465003).choice on the sorted 83-name search selected SEEM-Cognitive_Microservice.
+DISCOVERY:
+  findings:
+    - Narrative source is docs/SWEEP_HISTORY.md blob 2563f574979c90b7a97007519c6fc32c8cfb91ca.
+    - Selection used random.Random(1791465003).choice on the sorted 83-name search payload. Selected SEEM-Cognitive_Microservice, distinct from hyphen sibling SEEM-Cognitive-Microservice.
+    - Parent tree bf12df6b81d757a0e8438374efde555e966f80e9. History says truncated false, count 63. No LICENSE. No workflow before the sweep.
+    - Classification SUPERSEDED. Successor sovereign-clean-room. Claim remains 0.
+    - Commit 0de8e4db03e570bc7c5f171dfedbd04991be7cdc added .github/workflows/kernel.yml, CLAIM_STATUS.md, and a README CI note.
+    - Commit 4f2f929f53cd328ca23f54f3756bb1aaf3d11582 pins actions/checkout to 11d5960a326750d5838078e36cf38b85af677262 and actions/setup-python to a26af69be951a213d495a4c3e4e4022e16d87065.
+    - History cites kernel run 37781311011 failed on 0de8e4db and kernel run 37781412380 conclusion success on 4f2f929f. Sweep-289 did not re-fetch those Actions runs.
+    - History records local pytest 17 passed and 1 StarletteDeprecationWarning on Python 3.10. Not re-executed by the transcription.
+CHANGES:
+  repositories:
+    - beyond-repair/SEEM-Cognitive_Microservice
+    - beyond-repair/ADL-Governance
+  files:
+    - SEEM-Cognitive_Microservice/.github/workflows/kernel.yml
+    - SEEM-Cognitive_Microservice/CLAIM_STATUS.md
+    - SEEM-Cognitive_Microservice/README.md
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+  commits:
+    - 0de8e4db03e570bc7c5f171dfedbd04991be7cdc
+    - 4f2f929f53cd328ca23f54f3756bb1aaf3d11582
+    - a178a8c021f429f16e2fdddad6b487fe09074fad
+  capabilities_added_or_changed:
+    - SHA-pinned kernel workflow on the SUPERSEDED underscore sketch. Claim remains 0. Not a mind, digital twin, or SHACL engine.
+VERIFICATION:
+  tests_run:
+    - Recorded Sweep-288 local pytest 17 passed in backend/ on Python 3.10. Not re-executed by this transcription.
+    - History cites kernel run 37781311011 failed on 0de8e4db because actions were not pinned to a full SHA.
+    - History cites kernel run 37781412380 conclusion success on 4f2f929f53cd328ca23f54f3756bb1aaf3d11582. Not re-fetched by Sweep-289. Actions conclusion only.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the contract matches the existing Sweep-288 narrative and the re-read tip 4f2f929f. It is not a product or scientific proof. Actions run conclusions were not re-fetched.
+KNOWLEDGE:
+  confirmed:
+    - SEEM-Cognitive_Microservice tip is 4f2f929f53cd328ca23f54f3756bb1aaf3d11582. CLAIM_STATUS.md blob cf882e2aaa84911a7b7f5ce64c736326449ce5a0 says SUPERSEDED, claim 0, successor sovereign-clean-room.
+    - Unpinned action tags were rejected. The follow-up commit pins checkout and setup-python to full SHAs.
+  failures:
+    - History records kernel run 37781311011 failed on 0de8e4db for unpinned actions. Corrected by 4f2f929f. Not re-dispatched.
+  decisions:
+    - Do not elevate the claim. Do not archive. Do not tag. Do not add a LICENSE from an agent.
+    - Persist this contract under pass id 288 because the narrative is Sweep-288 and no PASS-2026-10-08-288.yaml existed.
+REMAINING:
+  incomplete:
+    - Portfolio exit criteria unmet.
+    - GitHub archive flag not set.
+    - LICENSE absent.
+    - Dependabot warning in the narrative changed from 21 to 23 vulnerabilities. Not triaged. Operator-only.
+    - Actions run conclusions not re-fetched by the transcription pass.
+  blockers:
+    - Operator owns archive flags, license selection, and Dependabot triage.
+  new_gaps:
+    - informational-flux-identity and finite-gasket-spectral-derivatives moved after a178a8c and are not in this contract.
+NEXT:
+  objective_id: GAP-SWEEP-288-CONTRACT
+  action: Persist this contract and a heading that names PASS-2026-10-08-288. Do not re-run pytest. Do not dispatch CI.
+  reason: The narrative existed without a canonical pass file.
+  prerequisites:
+    - No claim elevation.
+    - No invented Actions conclusion.
+PROVENANCE:
+  state_commit: a178a8c021f429f16e2fdddad6b487fe09074fad
+  evidence:
+    - docs/SWEEP_HISTORY.md blob 2563f574979c90b7a97007519c6fc32c8cfb91ca
+    - SEEM-Cognitive_Microservice 4f2f929f53cd328ca23f54f3756bb1aaf3d11582
+    - SEEM-Cognitive_Microservice 0de8e4db03e570bc7c5f171dfedbd04991be7cdc
+    - CLAIM_STATUS.md blob cf882e2aaa84911a7b7f5ce64c736326449ce5a0

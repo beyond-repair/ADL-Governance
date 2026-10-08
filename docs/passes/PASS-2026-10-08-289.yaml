@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-08-289
+  parent_pass: PASS-2026-10-08-288
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false. Capability and gap counts were not re-derived.
+OBJECTIVE:
+  id: GAP-SWEEP-288-CONTRACT
+  description: Persist the missing basilisk contract for the Sweep-288 SEEM-Cognitive_Microservice narrative without re-running pytest or dispatching CI.
+  reason_selected: ADL-Governance HEAD a178a8c records Sweep-288 in docs/SWEEP_HISTORY.md and has no docs/passes/PASS-2026-10-08-288.yaml. check_passes.py requires a heading once that file exists.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Public repo search total_count 83 incomplete_results false.
+    - ADL-Governance HEAD a178a8c021f429f16e2fdddad6b487fe09074fad. Latest canonical pass file on that commit is PASS-2026-10-07-287.yaml.
+    - Sweep-288 history headings do not match the check_passes heading regex, which requires ' / PASS-YYYY-MM-DD-N'.
+    - SEEM-Cognitive_Microservice tip re-read as 4f2f929f53cd328ca23f54f3756bb1aaf3d11582. Parent 0de8e4db03e570bc7c5f171dfedbd04991be7cdc. CLAIM_STATUS.md blob cf882e2aaa84911a7b7f5ce64c736326449ce5a0 remains SUPERSEDED claim 0.
+    - informational-flux-identity tip 014b8d083388fdd5f2e602f45371639899a60412 and finite-gasket-spectral-derivatives tip 80e28408da5ef676833297167e998744ce0c6b55 are later than the governance head. Not audited.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-08-288.yaml
+    - docs/passes/PASS-2026-10-08-289.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Basilisk contract persisted for Sweep-288. No product capability. SEEM-Cognitive_Microservice not edited.
+VERIFICATION:
+  tests_run:
+    - Local scripts/check_passes.py against the staged tree. Result recorded after the run. Not a product proof.
+    - SEEM pytest 17 passed remains a Sweep-288 recorded claim. Not re-executed.
+    - kernel runs 37781311011 and 37781412380 not re-fetched and not dispatched.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the missing contract was transcribed and the heading check passed locally. It does not re-verify the kernel workflow.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-288 had narrative provenance and no canonical pass file.
+    - SEEM-Cognitive_Microservice remains SUPERSEDED at claim 0 on tip 4f2f929f.
+    - Two research repositories moved after the governance head and are unrecorded.
+  failures:
+    - No transcription failure. Actions conclusions were not re-fetched, so they stay history citations.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit SEEM-Cognitive_Microservice. Do not archive. Do not tag. Do not triage Dependabot.
+    - Next slice is an audit of the later informational-flux-identity tip, not another contract backfill.
+REMAINING:
+  incomplete:
+    - Basilisk YAML still absent for sweeps 271, 272, 273, 274, 276, 279, and 282.
+    - informational-flux-identity 014b8d08 and finite-gasket-spectral-derivatives 80e28408 are unrecorded.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - Dependabot 13 on Digital_Double_virtual_workforce remains operator-owned.
+    - Portfolio exit criteria unmet.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, secret rotation, and license selection.
+  new_gaps:
+    - GAP-FLUX-IDENTITY-014B8D08
+    - GAP-GASKET-80E28408
+NEXT:
+  objective_id: GAP-FLUX-IDENTITY-014B8D08
+  action: Audit informational-flux-identity at 014b8d083388fdd5f2e602f45371639899a60412. Record claim state from tests that already exist. Do not invent a thrust or force result. Do not archive.
+  reason: That tip is the newest unrecorded default-branch movement after the governance head.
+  prerequisites:
+    - No claim elevation beyond what the in-tree tests support.
+    - No history rewrite.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - ADL-Governance a178a8c021f429f16e2fdddad6b487fe09074fad
+    - docs/SWEEP_HISTORY.md blob 2563f574979c90b7a97007519c6fc32c8cfb91ca
+    - SEEM-Cognitive_Microservice 4f2f929f53cd328ca23f54f3756bb1aaf3d11582
+    - CLAIM_STATUS.md blob cf882e2aaa84911a7b7f5ce64c736326449ce5a0
+    - search user:beyond-repair total_count 83 incomplete_results false
