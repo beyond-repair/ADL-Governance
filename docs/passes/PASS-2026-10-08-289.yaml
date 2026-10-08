@@ -27,7 +27,8 @@ CHANGES:
     - docs/passes/PASS-2026-10-08-288.yaml
     - docs/passes/PASS-2026-10-08-289.yaml
     - docs/SWEEP_HISTORY.md
-  commits: []
+  commits:
+    - fbce5ae186a0537a39ed12322dff1f497f04bca3
   capabilities_added_or_changed:
     - Basilisk contract persisted for Sweep-288. No product capability. SEEM-Cognitive_Microservice not edited.
 VERIFICATION:
@@ -72,7 +73,7 @@ NEXT:
     - No claim elevation beyond what the in-tree tests support.
     - No history rewrite.
 PROVENANCE:
-  state_commit: pending-this-commit
+  state_commit: fbce5ae186a0537a39ed12322dff1f497f04bca3
   evidence:
     - ADL-Governance a178a8c021f429f16e2fdddad6b487fe09074fad
     - docs/SWEEP_HISTORY.md blob 2563f574979c90b7a97007519c6fc32c8cfb91ca
