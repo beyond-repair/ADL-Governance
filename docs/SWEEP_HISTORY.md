@@ -1,5 +1,14 @@
 # Sweep History
 
+## Sweep-286 Sweep-283 contract transcription / PASS-2026-10-07-286
+
+- Transcribed the Sweep-283 body already in docs/SWEEP_HISTORY.md into docs/passes/PASS-2026-10-07-286.yaml.
+- Subject finite-gasket-spectral-derivatives tip 5134a10eab83763df693fe34011742bcb1fb5f5a. Kernel parent 7e2ca1b06239ca6a34fef357185ebdc3aab300b0.
+- Recursive tree at 5134a10e truncated false, count 10. No LICENSE blob. No gasket builder in-tree.
+- Actions spectral-kernel run 37671378075 conclusion success on 7e2ca1b. Observed, not dispatched. Follow-up run 37671496853 conclusion success on 5134a10e. Observed, not dispatched. Neither run is a gasket, multiplicity, or thrust proof.
+- Local unittest 5 passed remains a recorded Sweep-283 claim. Not re-executed.
+- No deletion, no history rewrite, no tag, no archive flag, no claim elevation. finite-gasket-spectral-derivatives not edited.
+
 ## Sweep-285 Sweep-284 contract transcription / PASS-2026-10-07-285
 
 - Transcribed the Sweep-284 body already on ADL-Governance HEAD e69636fc1c83eb49417eda62892e7ffcb000e7b8 into docs/passes/PASS-2026-10-07-285.yaml.

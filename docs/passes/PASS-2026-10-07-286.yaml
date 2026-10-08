@@ -1,0 +1,89 @@
+PASS:
+  id: PASS-2026-10-07-286
+  parent_pass: PASS-2026-10-07-285
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed in PASS-2026-10-07-285 and not re-paged. Capability and gap counts were not re-derived. Sweeps 271-274, 276, 279, and 282 remain without basilisk YAML.
+OBJECTIVE:
+  id: GAP-SWEEP-283-GASKET-CONTRACT
+  description: Persist a basilisk contract for the Sweep-283 finite-gasket-spectral-derivatives narrative without re-running kernel tests or dispatching CI.
+  reason_selected: PASS-2026-10-07-285 named this transcription as the next bounded action. Sweep-283 is the newest uncontracted governance narrative after the Sweep-284 contract.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. ADL-Governance main at discovery 9057cb59b953f2cccfbf6e3823dde26d31b69cb9 already contained PASS-2026-10-07-285.yaml and the Sweep-283 narrative.
+    - docs/passes had no PASS-2026-10-07-286.yaml. Highest existing id was PASS-2026-10-07-285.yaml.
+    - finite-gasket-spectral-derivatives default-branch tip 5134a10eab83763df693fe34011742bcb1fb5f5a message Sweep-283 record spectral-kernel success on 7e2ca1b. Parent 7e2ca1b06239ca6a34fef357185ebdc3aab300b0 adds test_omega2_scales_the_positive_wall and does not raise the claim cap.
+    - Recursive tree at 5134a10e truncated false, count 10. Blobs include README.md, COMPLETION_LOG.md, CLAIM_STATUS.md, scripts/spectral_derivatives.py, tests/test_spectral_derivatives.py, and .github/workflows/kernel.yml. No LICENSE blob. No gasket builder in-tree.
+    - CLAIM_STATUS.md blob 4e4e3518aa7c345ca7f55bfc2cbd6ff8912419fe classifies RESEARCH, claim cap at most 1, and records free mult, exceptional-mass, and Dirichlet lambda_min as CLAIMED prose dependent on sierpinski-geometry-045. Continuum, selected W, force, and thrust are NOT CLAIMED.
+    - docs/SWEEP_HISTORY.md records classification RESEARCH, claim cap unchanged, local unittest 5 passed, and spectral-kernel run 37671378075 success. That local count was not re-executed in this pass.
+    - Actions spectral-kernel run 37671378075 conclusion success, event push, head_sha 7e2ca1b06239ca6a34fef357185ebdc3aab300b0. Observed, not dispatched.
+    - Actions spectral-kernel run 37671496853 conclusion success, event push, head_sha 5134a10eab83763df693fe34011742bcb1fb5f5a. Observed, not dispatched. This follow-up run is not in the Sweep-283 history sentence, which names only 37671378075.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-07-286.yaml
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Basilisk contract persisted for Sweep-283 finite-gasket-spectral-derivatives. No product capability. No repository created. finite-gasket-spectral-derivatives not edited.
+VERIFICATION:
+  tests_run:
+    - Actions spectral-kernel run 37671378075 conclusion success on 7e2ca1b06239ca6a34fef357185ebdc3aab300b0. Observed, not dispatched. Not a gasket, multiplicity, or thrust proof.
+    - Actions spectral-kernel run 37671496853 conclusion success on 5134a10eab83763df693fe34011742bcb1fb5f5a. Observed, not dispatched. Not a gasket, multiplicity, or thrust proof.
+    - Local unittest 5 passed is a recorded claim in docs/SWEEP_HISTORY.md and CLAIM_STATUS.md. Not re-run this pass.
+    - Nested YAML schema keys PASS, STATE, OBJECTIVE, VERIFICATION, NEXT present. PASS.id matches filename.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the contract matches the re-read Sweep-283 body, current gasket tip, and observed Actions conclusions. It is not a multiplicity or thrust verification. Stamp commit SHA is not embedded in this file.
+KNOWLEDGE:
+  confirmed:
+    - finite-gasket-spectral-derivatives remains RESEARCH. Claim cap was not elevated. GitHub archived flag was not set.
+    - spectral-kernel CI succeeded on both 7e2ca1b and the claim-record commit 5134a10e. Those runs are kernel-workflow gates, not gasket proofs.
+    - Free mult(3), mult(5), mult(6), exceptional-mass, and Dirichlet lambda_min remain CLAIMED prose. The gasket constructor is not in this tree.
+  failures:
+    - None for this transcription. Unittest was not re-executed locally.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not set archived=true. Do not tag. Do not select a physical W. Do not import sierpinski-geometry-045. Do not add a LICENSE from an agent.
+    - Record the observed follow-up run 37671496853 without treating it as a new product result.
+    - Use pass id 286 so it does not collide with sweep number 283.
+REMAINING:
+  incomplete:
+    - Basilisk YAML for Sweeps 271, 272, 273, 274, 276, 279, and 282 is absent.
+    - Auto_Legion Sweep-277 narrative has no separate basilisk YAML.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - form-data pin not applied.
+    - Archive flags, tags, and secret rotation remain operator-gated.
+    - finite-gasket-spectral-derivatives has no LICENSE file. License choice is operator-only.
+    - Capability and gap counts remain null.
+    - Portfolio exit criteria unmet.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, secret rotation, and license selection.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-SWEEP-282-CONTRACT
+  action: Locate the Sweep-282 narrative in ADL-Governance history (prior body blob 067bbe480b15277f5afd9d52c87250f684f7c29b or later history) and transcribe it into docs/passes/PASS-2026-10-07-287.yaml. Do not invent a body if the narrative is absent. Do not re-run subject tests. Do not archive. Do not bump lockfiles.
+  reason: Sweep-282 is the next newest uncontracted governance narrative after this gasket contract.
+  prerequisites:
+    - No product edit.
+    - No invented verification.
+    - Preserve the Sweep-283 body and this contract heading.
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - ADL-Governance 9057cb59b953f2cccfbf6e3823dde26d31b69cb9
+    - finite-gasket-spectral-derivatives 5134a10eab83763df693fe34011742bcb1fb5f5a
+    - finite-gasket-spectral-derivatives 7e2ca1b06239ca6a34fef357185ebdc3aab300b0
+    - Actions run 37671378075 success
+    - Actions run 37671496853 success
+    - CLAIM_STATUS.md blob 4e4e3518aa7c345ca7f55bfc2cbd6ff8912419fe
+    - docs/SWEEP_HISTORY.md blob 9b77b24475aa59425e1771cf0a59b99494c9b9fc
