@@ -10,7 +10,7 @@ Head after change: b8a5c7f431ad8624503c92a47efad57af056a581
 Classification: RESEARCH (unchanged). Tool claim ≤1. Catalog row claim integer 3 remains snapshot data.
 Tree before change: recursive count 23, truncated false.
 Local tests: 12 passed (python -m pytest -q). python -m graph.engine and python -m graph printed artifacts=73 relationships=21 and OK.
-CI: push of b8a5c7f dispatched ci.yml. Conclusion pending at this write. Not a claim elevation.
+CI: run 37934144237 conclusion success on b8a5c7f. Actions conclusion only. Not a claim elevation.
 Push warning: Dependabot 1 moderate on default branch (alert 1). Not triaged. Operator-only.
 Evidence rule: Code > Documentation > Roadmap.
 Catalog mutated: false. Tag: false. Archive flag: false. History rewrite: false.

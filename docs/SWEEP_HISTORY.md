@@ -8,7 +8,7 @@
 - Implement: commit b8a5c7f431ad8624503c92a47efad57af056a581 adds graph/observed_2026_10_09.py and observation_reconfirm, pins Actions to checkout 11d5960a326750d5838078e36cf38b85af677262 and setup-python a26af69be951a213d495a4c3e4e4022e16d87065, bumps package version 0.1.2 to 0.1.3. Catalog rows not edited.
 - Test: local pytest 12 passed. Engine exit 0, artifacts=73 relationships=21. Name sets of 2026-10-06 and 2026-10-09 searches equal (83/83). Not a product or FLS proof.
 - Push remote warned Dependabot: 1 moderate on the default branch (alert 1). Not triaged. Operator-only.
-- CI: dispatched by the push. Conclusion not recorded in this commit.
+- CI: run 37934144237 conclusion success on b8a5c7f431ad8624503c92a47efad57af056a581. Actions conclusion only. Follow-up docs commit records the run id. Not a claim elevation.
 - Exit: sketch claim-cap remains. Portfolio exit not met. No tag. No archive flag. No deletion. No history rewrite. No claim elevation.
 
 ## Sweep-291 master directive / PASS-2026-10-08-291

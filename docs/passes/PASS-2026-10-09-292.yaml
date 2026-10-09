@@ -15,4 +15,6 @@ archive: false
 tag: false
 history_rewrite: false
 termination_met: false
-ci_at_write: pending
+ci_success:
+  - 37934144237
+ci_at_write: success
