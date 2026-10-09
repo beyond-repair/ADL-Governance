@@ -30,7 +30,7 @@ CHANGES:
     - docs/passes/HEADINGS.md
     - heading backfill for existing PASS-2026-10-08-292.yaml
   commits:
-    - recorded after push
+    - d258972437b4d445ab449955a6eacdeb5db02ac3
   capabilities_added_or_changed:
     - Basilisk contract persisted for Sweep-292. No product capability. aegis-repo-graph not edited. Catalog not mutated.
 VERIFICATION:
@@ -77,7 +77,8 @@ NEXT:
     - No history rewrite.
     - No claim elevation.
 PROVENANCE:
-  state_commit: cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a
+  state_commit: d258972437b4d445ab449955a6eacdeb5db02ac3
+  parent_commit: cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a
   evidence:
     - ADL-Governance cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a
     - docs/passes/PASS-2026-10-09-292.yaml blob 2e1407fd2740743b32a575ad946be874f299a367
