@@ -1,3 +1,14 @@
+## Sweep-293 Sweep-292 contract transcription / PASS-2026-10-09-293
+
+- Transcribed the Sweep-292 body already in docs/SWEEP_HISTORY.md at ADL-Governance cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a blob 74d8eb1f757594a32b70c1217cf0110d0ccebaff into docs/passes/PASS-2026-10-09-293.yaml.
+- Flat stub docs/passes/PASS-2026-10-09-292.yaml blob 2e1407fd2740743b32a575ad946be874f299a367 was not rewritten.
+- Subject aegis-repo-graph implementation b8a5c7f431ad8624503c92a47efad57af056a581. Docs tip 8893cfe17cc8f7dfeb663d2a521b3282d6560f2d.
+- Actions run 37934144237 conclusion success on b8a5c7f. Observed, not dispatched.
+- Actions run 37934210948 conclusion success on 8893cfe. Observed, not dispatched. Neither run is a catalog, FLS, or claim-elevation proof.
+- Local pytest 12 passed remains a recorded Sweep-292 claim. Not re-executed.
+- PASS-2026-10-08-292 and PASS-2026-10-09-292 share sweep number 292. Not merged. Not renumbered.
+- No deletion, no history rewrite, no tag, no archive flag, no claim elevation. aegis-repo-graph not edited.
+
 ## Sweep-292 aegis-repo-graph / PASS-2026-10-09-292
 
 - Timestamp: 2026-10-09T09:01-04:00 session clock.

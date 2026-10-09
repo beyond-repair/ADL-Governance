@@ -1,4 +1,12 @@
+## Sweep-293 Sweep-292 contract transcription / PASS-2026-10-09-293
+
+- Index line for PASS-2026-10-09-293.yaml. Objective: Persist a basilisk contract for the Sweep-292 aegis-repo-graph narrative without re-running pytest or mutating the locked catalog. Not a re-execution.
+
 # Pass headings index
+
+## Sweep-292 master directive / PASS-2026-10-08-292
+
+- Index line from existing PASS-2026-10-08-292.yaml only. Objective: Record live Phase-3 evidence and residuals without deletion, history rewrite, tag creation, archive-flag change, or claim elevation. Heading backfill is not a re-execution and is not product verification.
 
 ## Sweep-291 master directive / PASS-2026-10-08-291
 

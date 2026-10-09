@@ -1,0 +1,89 @@
+PASS:
+  id: PASS-2026-10-09-293
+  parent_pass: PASS-2026-10-09-292
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false was observed this session. Capability and gap counts were not re-derived. Sweep number 292 is shared by PASS-2026-10-08-292 and PASS-2026-10-09-292.
+OBJECTIVE:
+  id: GAP-SWEEP-292-AEGIS-GRAPH-CONTRACT
+  description: Persist a basilisk contract for the Sweep-292 aegis-repo-graph narrative without re-running pytest or mutating the locked catalog.
+  reason_selected: ADL-Governance HEAD cb5def5 records Sweep-292 and a flat stub docs/passes/PASS-2026-10-09-292.yaml. That stub is not the nested basilisk schema. It is the newest uncontracted body.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Search user:beyond-repair total_count 83 incomplete_results false.
+    - ADL-Governance HEAD cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a. Latest canonical pass file is PASS-2026-10-09-292.yaml, flat stub with id matching the filename.
+    - PASS-2026-10-08-292.yaml is a different nested record that also uses sweep number 292. Number collision, distinct dates.
+    - aegis-repo-graph implementation commit b8a5c7f431ad8624503c92a47efad57af056a581. Docs follow-up tip 8893cfe17cc8f7dfeb663d2a521b3282d6560f2d. Flat stub post_head stops at b8a5c7f.
+    - Actions run 37934144237 conclusion success on b8a5c7f. Actions run 37934210948 conclusion success on 8893cfe. Observed this pass. Not dispatched. Not a catalog or FLS proof.
+    - Local pytest 12 passed remains a Sweep-292 recorded claim. Not re-executed.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-09-293.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+    - heading backfill for existing PASS-2026-10-08-292.yaml
+  commits:
+    - recorded after push
+  capabilities_added_or_changed:
+    - Basilisk contract persisted for Sweep-292. No product capability. aegis-repo-graph not edited. Catalog not mutated.
+VERIFICATION:
+  tests_run:
+    - Local scripts/check_passes.py PASS: 98 yaml files parsed; history headings name all ids including PASS-2026-10-09-293. Not a product proof.
+    - Actions get run 37934144237 conclusion success head_sha b8a5c7f431ad8624503c92a47efad57af056a581. Observed, not dispatched.
+    - Actions list run 37934210948 conclusion success head_sha 8893cfe17cc8f7dfeb663d2a521b3282d6560f2d. Observed, not dispatched.
+    - tests/test_check_passes.py: 17 passed. Not a product proof.
+    - aegis-repo-graph pytest 12 passed remains a Sweep-292 recorded claim. Not re-executed.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+  overall_note: PASS means the missing nested contract was transcribed and the heading check passed locally. It does not re-verify the graph engine or raise the claim.
+KNOWLEDGE:
+  confirmed:
+    - Sweep-292 had a flat stub and a history heading, not a nested basilisk contract.
+    - aegis-repo-graph tip is 8893cfe, one docs commit after the implementation commit named in the stub.
+    - CI success on both b8a5c7f and 8893cfe was re-fetched. Classification remains RESEARCH. Claim cap remains 1. Catalog claim integer 3 remains snapshot data.
+  failures:
+    - No transcription failure. Pytest was not re-run, so the 12 passed count stays a prior claim.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit aegis-repo-graph. Do not mutate the locked catalog. Do not archive. Do not tag. Do not triage Dependabot.
+    - Do not rewrite the flat stub. Preserve it as the CI-id record.
+REMAINING:
+  incomplete:
+    - Basilisk YAML still absent for sweeps 271, 272, 273, 274, 276, 279, and 282.
+    - Number 292 denotes two different passes.
+    - Q-FUNC-005 remains NOT_BUILT.
+    - Dependabot 13 on Digital_Double_virtual_workforce remains operator-owned.
+    - aegis-repo-graph Dependabot alert 1 moderate was recorded by Sweep-292 and not triaged.
+    - Portfolio exit criteria unmet.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, secret rotation, and license selection.
+  new_gaps:
+    - GAP-SWEEP-292-NUMBER-COLLISION
+NEXT:
+  objective_id: GAP-SWEEP-292-NUMBER-COLLISION
+  action: Record that PASS-2026-10-08-292 and PASS-2026-10-09-292 share sweep number 292 and do not merge them. Do not renumber history.
+  reason: The collision is now explicit and is the newest identity defect. Renumbering would break check_passes filename identity.
+  prerequisites:
+    - No history rewrite.
+    - No claim elevation.
+PROVENANCE:
+  state_commit: cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a
+  evidence:
+    - ADL-Governance cb5def5fe94a8c9add2616c3d9a5bb5bba1d002a
+    - docs/passes/PASS-2026-10-09-292.yaml blob 2e1407fd2740743b32a575ad946be874f299a367
+    - docs/SWEEP_HISTORY.md blob 74d8eb1f757594a32b70c1217cf0110d0ccebaff
+    - aegis-repo-graph b8a5c7f431ad8624503c92a47efad57af056a581
+    - aegis-repo-graph 8893cfe17cc8f7dfeb663d2a521b3282d6560f2d
+    - Actions run 37934144237 conclusion success
+    - Actions run 37934210948 conclusion success
+    - search user:beyond-repair total_count 83 incomplete_results false
