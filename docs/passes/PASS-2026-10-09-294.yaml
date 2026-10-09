@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-09-294
+  parent_pass: PASS-2026-10-09-293
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+  null_note: Search user:beyond-repair total_count 83 incomplete_results false. Four pillar heads unchanged. Capability and gap counts were not re-derived beyond the recorded critical Dependabot finding.
+OBJECTIVE:
+  id: GAP-SWEEP-294-MASTER-DIRECTIVE
+  description: Record one governed portfolio sweep for the master directive without deletion, history rewrite, tag, archive flag, lockfile edit, or claim elevation.
+  reason_selected: Directive requires inventory, classification, live verification of four pillars, and governance document updates. Exit criteria cannot be met while Dependabot 13 is open.
+DISCOVERY:
+  findings:
+    - Authenticated login beyond-repair id 132061760. Profile public_repos 78. Search total_count 83 incomplete_results false, 83 items.
+    - Private true on 9 names. Archived true only on CFT-v3.0. Fork false on all 83.
+    - Parent ADL-Governance HEAD 2842e2d020caf48cbe782a541ad73ed07b4cc637.
+    - forge-aegis main e7188d529739652a2dd6264bd3d328c1f72e60e5. CI run 37258127100 success. Tags empty. Releases empty. Dependabot open empty. Code scanning 404 no analysis.
+    - sovereign-clean-room main 4878918cf9f95d3c19e1890bef6d2fd6713e0a16. Python tests run 37064696194 success. Tags empty. Releases empty. Dependabot open empty. Secret scanning 404 disabled.
+    - BlockSwarm main 6e90f6f85c0969fa8a262a70ceba833d618a22db. Foundry run 36859452185 success. Tags empty. Releases empty. Dependabot open empty.
+    - Digital_Double_virtual_workforce main 24e6a29fd26c03900a8d98634d6683996eabdac4. Digital Double CI run 36861489156 success. Dependabot alert 13 open critical form-data. Tags empty. Releases empty.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-09-294.yaml
+  commits: []
+  capabilities_added_or_changed:
+    - Governance record only. No product capability. No classification change.
+VERIFICATION:
+  tests_run:
+    - Live GitHub search, Actions list, branch list, tag list, release list, Dependabot list, code scanning list, secret scanning list. Not a product proof.
+    - Local pytest not re-run on the four pillars.
+  code_review: NOT_RUN
+  security: FAIL
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS_WITH_FINDINGS
+  overall_note: PASS_WITH_FINDINGS means the sweep record matches live API results. It does not clear Dependabot 13 or raise any claim.
+KNOWLEDGE:
+  confirmed:
+    - Four pillar heads are unchanged from Sweep-291.
+    - Releases and tags remain empty on the four pillars.
+    - Dependabot alert 13 remains the open critical finding.
+  failures:
+    - Portfolio exit criteria not met.
+  decisions:
+    - REUSE ADL-Governance persistence. Do not CREATE a repository.
+    - Do not edit product repositories. Do not merge branches. Do not archive. Do not tag. Do not triage Dependabot.
+REMAINING:
+  incomplete:
+    - Critical Dependabot 13 open.
+    - Archive candidates unflagged except CFT-v3.0.
+    - Duplicate lineages labeled, not consolidated.
+    - Portfolio CI outside the four pillars not re-run.
+  blockers:
+    - Operator must approve lockfile bumps, archive flags, release tags, secret rotation, and license selection.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-DD-DEPENDABOT-13
+  action: Operator reviews the form-data lockfile bump. Do not mark the alert fixed from an agent sweep.
+  reason: Exit criteria forbid unresolved critical security findings.
+  prerequisites:
+    - No history rewrite.
+    - No claim elevation.
+PROVENANCE:
+  state_commit: 2842e2d020caf48cbe782a541ad73ed07b4cc637
