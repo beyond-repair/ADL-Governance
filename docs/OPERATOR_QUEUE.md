@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-292 — do not execute from this agent
+
+Random draw `aegis-repo-graph`. Classification RESEARCH, unchanged. Tool claim ≤1. Catalog integer 3 is snapshot data, not a live FLS claim.
+
+**Operator-only:** GitHub push warned 1 moderate Dependabot vulnerability on the default branch (alert 1, https://github.com/beyond-repair/aegis-repo-graph/security/dependabot/1). Not triaged. Do not bump pytest or other pins from this queue. Do not expand the 2026-09-04 catalog lock (18 observation-only names, 7 catalog-only names, including planned `sunder-aegis-bridge` and `clean-room-skill-export`). Do not mark ADL-Portfolio-Census compatible-build `built`. Do not tag. Do not set archived=true. Do not rewrite history.
+
+Sweep-291 residual items remain operator-only and were not re-executed.
+
+# Operator Queue
+
 ## Sweep-291 — do not execute from this agent
 
 Master-directive sweep. Search total_count 83, incomplete_results false. Private true on 9 names. GitHub archive flag true only on CFT-v3.0. Mandatory four re-fetched. Classifications not changed. No deletion. No history rewrite. No tag. No lockfile edit. No claim elevation. No archive flag.

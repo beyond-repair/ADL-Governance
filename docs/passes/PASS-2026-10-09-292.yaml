@@ -1,0 +1,18 @@
+id: PASS-2026-10-09-292
+date: 2026-10-09
+subject: aegis-repo-graph
+classification: RESEARCH
+claim_cap: 1
+catalog_claim_integer: 3
+catalog_claim_note: snapshot data only
+pre_head: 8c9fee7ea67ad5b1408dfe38c865cb6a43af9a1e
+post_head: b8a5c7f431ad8624503c92a47efad57af056a581
+local_pytest_after: 12 passed
+catalog_mutated: false
+observation_name_set_equal: true
+observed_count: 83
+archive: false
+tag: false
+history_rewrite: false
+termination_met: false
+ci_at_write: pending

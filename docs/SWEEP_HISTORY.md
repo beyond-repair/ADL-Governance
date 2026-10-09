@@ -1,3 +1,16 @@
+## Sweep-292 aegis-repo-graph / PASS-2026-10-09-292
+
+- Timestamp: 2026-10-09T09:01-04:00 session clock.
+- Selection: random.SystemRandom().choice on the 82 names excluding ADL-Governance from search user:beyond-repair (total_count 83, incomplete_results false, 83 items). Selected aegis-repo-graph.
+- Discover: default-branch tree 8c9fee7ea67ad5b1408dfe38c865cb6a43af9a1e, truncated false, count 23. Package graph/ with locked catalog, engine, drift witness, tests, MIT LICENSE, CLAIM_STATUS, workflow ci.yml using floating actions/checkout@v4 and actions/setup-python@v5.
+- Audit: README and CLAIM_STATUS already classify RESEARCH, claim ≤1, catalog claim integer 3 as snapshot data, census not_built. Catalog is 72 repository artifacts + 1 queue artifact and 21 relationships. Not a live crawler.
+- Classification: RESEARCH. Justification: deterministic validator of a dated snapshot. Not an FLS compiler, Nehemiah host, or live completeness proof. No reclassification.
+- Implement: commit b8a5c7f431ad8624503c92a47efad57af056a581 adds graph/observed_2026_10_09.py and observation_reconfirm, pins Actions to checkout 11d5960a326750d5838078e36cf38b85af677262 and setup-python a26af69be951a213d495a4c3e4e4022e16d87065, bumps package version 0.1.2 to 0.1.3. Catalog rows not edited.
+- Test: local pytest 12 passed. Engine exit 0, artifacts=73 relationships=21. Name sets of 2026-10-06 and 2026-10-09 searches equal (83/83). Not a product or FLS proof.
+- Push remote warned Dependabot: 1 moderate on the default branch (alert 1). Not triaged. Operator-only.
+- CI: dispatched by the push. Conclusion not recorded in this commit.
+- Exit: sketch claim-cap remains. Portfolio exit not met. No tag. No archive flag. No deletion. No history rewrite. No claim elevation.
+
 ## Sweep-291 master directive / PASS-2026-10-08-291
 
 - Timestamp: 2026-10-08T18:13-04:00 session clock.
