@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-297 — do not execute from this agent
+
+Random draw `seem-block-system`. Classification SUPERSEDED, unchanged. Claim level 0. Successor: sovereign-clean-room. Historical Claim-0 NumPy monitors only.
+
+No operator actions required for this repository. No open issues. No destructive changes queued. No CI additions recommended (archive state). Prefer successor for ongoing work.
+
+Sweep-294 residual items remain operator-only and were not re-executed. Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile bump).
+
+# Operator Queue
+
 ## Sweep-295 — do not execute from this agent
 
 Random draw `acoustic-token-modem`. Classification RESEARCH, unchanged. Claim level 1. Simulation only. No hardware M10.
