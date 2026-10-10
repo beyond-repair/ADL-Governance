@@ -1,3 +1,12 @@
+## Sweep-298 inventory reconfirm / PASS-2026-10-10-298
+
+- Timestamp: 2026-10-10T09:13-04:00 session clock.
+- Scope: portfolio inventory and Dependabot reconfirm. No product changes.
+- Discovery: GitHub search user:beyond-repair total_count 83 incomplete_results false. Names match aegis-repo-graph observed_2026_10_09.
+- Dependabot: alert 13 on Digital_Double_virtual_workforce remains open, critical, form-data range >=4.0.0 <4.0.4, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope.
+- Actions: governance documents only (new pass YAML + history). No deletion. No history rewrite. No tag. No archive. No lockfile edit. No claim elevation.
+- Residual: critical alert open; portfolio exit not met.
+
 ## Sweep-297 seem-block-system / PASS-2026-10-10-297
 
 - Timestamp: 2026-10-10T09:01-04:00 session clock.
