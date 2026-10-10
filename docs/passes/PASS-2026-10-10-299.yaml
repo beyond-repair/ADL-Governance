@@ -1,0 +1,65 @@
+PASS:
+  id: PASS-2026-10-10-299
+  parent_pass: PASS-2026-10-10-298
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+OBJECTIVE:
+  id: GAP-INVENTORY-RECONFIRM-299
+  description: Reconfirm portfolio search total_count and open critical Dependabot alert without product changes. Confirm sovereign-clean-room open PRs.
+  reason_selected: Highest-value next is verifying persistent blocker and inventory stability. Operator-gated security finding remains the portfolio exit blocker. Open PRs in priority ACTIVE repo noted.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83 incomplete_results false.
+    - Dependabot alert 13 on Digital_Double_virtual_workforce remains open critical for form-data >=4.0.0 <4.0.4, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope.
+    - Authenticated as beyond-repair.
+    - sovereign-clean-room has open PRs #1 (pynacl pin) and #3 (governance docs).
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-10-299.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - Governance persistence only.
+VERIFICATION:
+  tests_run:
+    - Live GitHub search and Dependabot list. Observed open critical.
+    - Observed open PRs in sovereign-clean-room.
+  code_review: NOT_RUN
+  security: FAIL
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS_WITH_FINDINGS
+KNOWLEDGE:
+  confirmed:
+    - Portfolio count stable at 83.
+    - Critical Dependabot 13 still open.
+    - sovereign-clean-room has two open PRs for hygiene and docs.
+  failures:
+    - Exit criteria not met due to open critical alert.
+  decisions:
+    - REUSE governance persistence. Do not edit product lockfiles without operator approval. Do not merge PRs without verification.
+REMAINING:
+  incomplete:
+    - Dependabot 13 open.
+    - Portfolio incomplete per exit criteria.
+    - Open PRs in sovereign-clean-room not merged.
+  blockers:
+    - Operator review required for lockfile bump on Digital_Double_virtual_workforce.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-DD-DEPENDABOT-13
+  action: Operator reviews and approves form-data update in digital_double/package-lock.json.
+  reason: Critical security finding blocks portfolio exit.
+  prerequisites:
+    - No claim elevation.
+    - No history rewrite.
+PROVENANCE:
+  state_commit: pending
