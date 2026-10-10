@@ -1,5 +1,22 @@
 # Portfolio Status Report
 
+Sweep: Sweep-300
+Timestamp: 2026-10-10T19:00-04:00 (session clock)
+Selected repository: ADL-SEEM
+Draw: random.choice over the 83 names from search user:beyond-repair, total_count 83, incomplete_results false.
+Authenticated login: beyond-repair.
+Classification: ACTIVE (constitution, not runtime). Claim level 0.
+Canonical runtime pointer: sovereign-clean-room.
+Tree: 2d042604e1f5fba276b0e83b22bb37041155877a, count 13, truncated false.
+CI: docs-contract run 37075801340 conclusion success.
+Evidence rule: Code > Documentation > Roadmap.
+Catalog mutated: false. Tag: false. Archive flag: false. History rewrite: false.
+Portfolio exit: not met.
+
+Prior Sweep-297 body follows.
+
+# Portfolio Status Report
+
 Sweep: Sweep-297
 Timestamp: 2026-10-10T09:01-04:00 (session clock)
 Selected repository: seem-block-system
