@@ -1,3 +1,13 @@
+## Sweep-299 inventory reconfirm / PASS-2026-10-10-299
+
+- Timestamp: 2026-10-10T16:09-04:00 session clock.
+- Scope: portfolio inventory and Dependabot reconfirm. Observed open PRs in sovereign-clean-room. No product changes.
+- Discovery: GitHub search user:beyond-repair total_count 83 incomplete_results false.
+- Dependabot: alert 13 on Digital_Double_virtual_workforce remains open, critical, form-data range >=4.0.0 <4.0.4, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope.
+- Additional: sovereign-clean-room open PRs #1 (security pin pynacl) and #3 (governance docs).
+- Actions: governance documents only (new pass YAML + history). No deletion. No history rewrite. No tag. No archive. No lockfile edit. No claim elevation. No PR merge.
+- Residual: critical alert open; portfolio exit not met.
+
 ## Sweep-298 inventory reconfirm / PASS-2026-10-10-298
 
 - Timestamp: 2026-10-10T09:13-04:00 session clock.
