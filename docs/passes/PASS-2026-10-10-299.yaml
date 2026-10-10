@@ -25,7 +25,8 @@ CHANGES:
     - docs/passes/PASS-2026-10-10-299.yaml
     - docs/SWEEP_HISTORY.md
   commits:
-    - pending
+    - 387257c4982d1912b5c886e5aa89a7b1799dcfae
+    - 2ef74f97c97dd18abd2ff46b7abe2c24d7e2e0c1
   capabilities_added_or_changed:
     - Governance persistence only.
 VERIFICATION:
@@ -62,4 +63,4 @@ NEXT:
     - No claim elevation.
     - No history rewrite.
 PROVENANCE:
-  state_commit: pending
+  state_commit: 2ef74f97c97dd18abd2ff46b7abe2c24d7e2e0c1
