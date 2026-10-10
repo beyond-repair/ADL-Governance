@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-300 — do not execute from this agent
+
+Random draw `ADL-SEEM`. Classification ACTIVE (constitution), unchanged. Claim level 0. Canonical runtime: sovereign-clean-room.
+
+No operator actions required for this repository. docs-contract CI green. Required constitution files present. No open issues. No destructive changes queued. No CI additions recommended.
+
+Sweep-294 residual items remain operator-only and were not re-executed. Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile bump).
+
+# Operator Queue
+
 ## Sweep-297 — do not execute from this agent
 
 Random draw `seem-block-system`. Classification SUPERSEDED, unchanged. Claim level 0. Successor: sovereign-clean-room. Historical Claim-0 NumPy monitors only.
