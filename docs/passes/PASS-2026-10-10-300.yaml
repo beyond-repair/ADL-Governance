@@ -1,0 +1,67 @@
+PASS:
+  id: PASS-2026-10-10-300
+  parent_pass: PASS-2026-10-10-299
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+OBJECTIVE:
+  id: GAP-ADL-SEEM-300
+  description: Random selection and full audit of ADL-SEEM constitution repository. Confirm ACTIVE classification, claim cap 0, CI green, required docs present.
+  reason_selected: Randomized portfolio sweep cycle. Verify no drift in SEEM-specific governance twin.
+DISCOVERY:
+  findings:
+    - Search user:beyond-repair total_count 83 incomplete_results false. Selected ADL-SEEM via random.choice.
+    - Tree SHA 2d042604e1f5fba276b0e83b22bb37041155877a, count 13, truncated false.
+    - Required files: README.md, CLAIM_STATUS.md, docs/CONSTITUTION.md, CLAIM_VALIDATION.md, LIFECYCLE.md, RESPONSE_CONTRACT.md, CANONICAL.md all present.
+    - docs-contract workflow latest run 37075801340 conclusion success.
+    - Classification ACTIVE as constitution (not runtime). Claim level 0. Points to sovereign-clean-room as canonical runtime.
+    - Authenticated as beyond-repair.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-10-300.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - Governance persistence only. No product changes.
+VERIFICATION:
+  tests_run:
+    - Live GitHub tree and file contents for ADL-SEEM. docs-contract Actions run success observed.
+    - Claim status and constitution reviewed; no unsupported claims.
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - ADL-SEEM remains ACTIVE constitution with claim cap 0.
+    - CI green on docs-contract.
+    - Canonical runtime pointer intact (sovereign-clean-room).
+    - Portfolio count stable at 83.
+  failures: []
+  decisions:
+    - No reclassification. No code changes in ADL-SEEM. Document only.
+REMAINING:
+  incomplete:
+    - Portfolio exit not met (other repos, Dependabot residual).
+  blockers:
+    - Operator-gated critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open.
+  new_gaps: []
+NEXT:
+  objective_id: GAP-RANDOM-NEXT
+  action: Continue randomized selection on next cycle.
+  reason: Termination conditions met for this repository; portfolio incomplete.
+  prerequisites:
+    - No claim elevation.
+    - No history rewrite.
+PROVENANCE:
+  state_commit: pending
