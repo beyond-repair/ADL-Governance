@@ -1,3 +1,15 @@
+## Sweep-300 ADL-SEEM / PASS-2026-10-10-300
+
+- Timestamp: 2026-10-10T19:00-04:00 session clock.
+- Selection: random.choice on the 83 names from search user:beyond-repair (total_count 83, incomplete_results false). Selected ADL-SEEM.
+- Discover: default-branch tree 2d042604e1f5fba276b0e83b22bb37041155877a, truncated false, count 13. Docs-only: README.md, CLAIM_STATUS.md, docs/{CONSTITUTION,CLAIM_VALIDATION,LIFECYCLE,RESPONSE_CONTRACT,CANONICAL}.md, .github/workflows/docs-contract.yml.
+- Audit: Classification ACTIVE as SEEM-specific constitution (not runtime product). Claim level 0. Canonical runtime pointer to sovereign-clean-room intact. Required docs present. No unsupported claims. docs-contract CI latest run 37075801340 conclusion success.
+- Classification: ACTIVE. Justification: governance twin for SEEM lineage; policy text only; points at canonical runtime. No reclassification.
+- Implement: no code or content changes in ADL-SEEM. Documentation update in ADL-Governance only.
+- Test: docs-contract workflow green. No executable tests required.
+- CI: run 37075801340 conclusion success. Observed, not dispatched. Not a claim elevation.
+- Exit: termination conditions met for this constitution (docs complete, CI green, claims capped, no critical issues, no undefined components). Portfolio exit not met. No tag. No archive flag. No deletion. No history rewrite. No claim elevation.
+
 ## Sweep-299 inventory reconfirm / PASS-2026-10-10-299
 
 - Timestamp: 2026-10-10T16:09-04:00 session clock.
