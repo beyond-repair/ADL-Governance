@@ -1,3 +1,16 @@
+## Sweep-306 acoustic-token-modem / PASS-2026-10-11-306
+
+- Timestamp: 2026-10-11T16:00-04:00 session clock.
+- Selection: random.choice on the 83 names from search user:beyond-repair (total_count 83, incomplete_results false). Selected acoustic-token-modem.
+- Discover: default-branch tree recursive, count 70. Python package src/acoustic_token_modem/ with modulation (FSK implemented, PSK/QAM/OFDM placeholders), protocol, tokenizer, channel, coding, demodulation, metrics. tests/ covering roundtrip, packet, CRC, etc. docs/ extensive. CLAIM_STATUS.md, GOVERNANCE.md, README.md (RUNNABLE SKETCH claim cap). pyproject.toml, .github/workflows/pytest.yml.
+- Audit: Classification RESEARCH (claim level ≤ 1). Explicit claim caps: simulation only, no M10 hardware, theoretical bitrate not achieved, no novelty claim from AI tokens. Central invariant tokens_in == tokens_out tested under clean FSK. Prior sweeps (066, 092, 110) noted. No open issues. No Dependabot alerts. CI green (latest run 37066282622 success).
+- Classification: RESEARCH. Justification: experimental research framework for acoustic token transmission; hypothesis-grade, no product or hardware performance claims. No reclassification.
+- Implement: None. Audit-only; all termination conditions already satisfied. Idempotent; no changes required.
+- Test: CI green on main. Local structure supports pytest with venv as documented.
+- CI: green (pytest.yml success).
+- Document: updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+- Exit: termination conditions met for this repo (docs complete and claim-capped, tests present and CI green, no critical issues, no unsupported claims, no undefined/undocumented components, no stale registry). Portfolio exit not met. No tag. No archive flag. No deletion. No history rewrite. No claim elevation.
+
 ## Sweep-305 aegis-repo-graph / PASS-2026-10-11-305
 
 - Timestamp: 2026-10-11T12:10-04:00 session clock.
