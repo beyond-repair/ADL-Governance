@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-304 — do not execute from this agent
+
+Random draw `momentum-closure`. Classification RESEARCH (claim level ≤ 1 conceptual), unchanged. Claims capped: no mesh-converged residual, no physical thrust, no Ware momentum flux.
+
+No operator actions required for this repository. CI workflow updated to install package+[dev] so full pytest (including numpy geometry/feed tests) runs. Core claim docs present and consistent. No open issues. No destructive changes queued. No further CI additions recommended at this time.
+
+Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile bump). Prior residual items (Sweep-294+) remain operator-only and were not re-executed.
+
+No history rewrite. No deletion. No claim elevation.
+
+# Operator Queue
+
 ## Sweep-303 — do not execute from this agent
 
 Random draw `AEGIS-Project-Nehemiah-`. Classification ACTIVE (CONTRACT CONSUMER / ontology spec), unchanged. Claims capped. Consumes forge-aegis validation contract.
@@ -21,13 +33,3 @@ No operator actions required for verified green items. Lockfile bump for Digital
 Prior residual items (Sweep-294+) remain operator-only and were not re-executed.
 
 No history rewrite. No deletion. No claim elevation.
-
-# Operator Queue
-
-## Sweep-300 — do not execute from this agent
-
-Random draw `ADL-SEEM`. Classification ACTIVE (constitution), unchanged. Claim level 0. Canonical runtime: sovereign-clean-room.
-
-No operator actions required for this repository. docs-contract CI green. Required constitution files present. No open issues. No destructive changes queued. No CI additions recommended.
-
-Sweep-294 residual items remain operator-only and were not re-executed. Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile bump).
