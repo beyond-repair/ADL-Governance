@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-11-307
+  parent_pass: PASS-2026-10-11-305
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: GAP-AEGIS-REPO-GRAPH-CI-CONFIRM
+  description: Confirm GitHub Actions CI success on aegis-repo-graph commit e0fe2750 after pytest 9.0.3 bump.
+  reason_selected: Direct follow-up to close the verification loop of the previous security slice; deterministic observation of live CI.
+
+DISCOVERY:
+  findings:
+    - Workflow run 38154316700 (ci.yml, push event) conclusion success, head_sha e0fe2750a7dcf979d0a2d1b4f279ac194bf69f4f.
+    - Dependabot runs also success: 38154413891 and 38154322233.
+    - Commit message confirms local verification previously reported.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-11-307.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - CI confirmation for Artifact Graph pytest security bump recorded as verified.
+
+VERIFICATION:
+  tests_run:
+    - Observed Actions run 38154316700 conclusion success.
+  code_review: NOT_RUN
+  security: PASS (Dependabot medium addressed and CI green)
+  integration: PASS (live CI on main)
+  invariants: PASS (no catalog mutation, claim cap held)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - aegis-repo-graph CI green after pytest==9.0.3.
+    - Local and remote verification consistent.
+  failures:
+    - None.
+  decisions:
+    - Record observation-only confirmation without further code change.
+
+REMAINING:
+  incomplete:
+    - Catalog expansion of aegis-repo-graph to current 83 names (operator gate).
+    - Critical Dependabot on Digital_Double_virtual_workforce.
+    - PASS YAML for Sweep-306 acoustic-token-modem not yet persisted.
+  blockers:
+    - Operator gates for catalog, archive, critical lockfiles.
+  new_gaps:
+    - Persist missing PASS-2026-10-11-306.yaml for completeness of history index.
+
+NEXT:
+  objective_id: GAP-PASS-306-PERSIST
+  action: Create docs/passes/PASS-2026-10-11-306.yaml from existing Sweep-306 history entry (backfill, not re-execution).
+  reason: Close heading coverage gap noted in prior passes; checker requires YAML for every history heading.
+  prerequisites:
+    - None beyond read of SWEEP_HISTORY.md entry.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - https://github.com/beyond-repair/aegis-repo-graph/actions/runs/38154316700 conclusion success
+    - Commit e0fe2750a7dcf979d0a2d1b4f279ac194bf69f4f
