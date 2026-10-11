@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-306 — do not execute from this agent
+
+Random draw `acoustic-token-modem`. Classification RESEARCH (claim level ≤ 1 simulation only), unchanged. Claims capped: no hardware M10, no theoretical bitrate as achieved, no novelty from AI tokens alone, green CI does not elevate claim.
+
+No operator actions required for this repository. CI green (pytest success on main). Core claim docs present and consistent. No open issues. No Dependabot. No destructive changes queued. No further CI additions recommended at this time.
+
+Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile bump). Prior residual items (Sweep-294+) remain operator-only and were not re-executed.
+
+No history rewrite. No deletion. No claim elevation.
+
+# Operator Queue
+
 ## Sweep-304 — do not execute from this agent
 
 Random draw `momentum-closure`. Classification RESEARCH (claim level ≤ 1 conceptual), unchanged. Claims capped: no mesh-converged residual, no physical thrust, no Ware momentum flux.
