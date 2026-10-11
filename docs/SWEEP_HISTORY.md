@@ -1,3 +1,16 @@
+## Sweep-307 aegis-repo-graph CI confirm / PASS-2026-10-11-307
+
+- Timestamp: 2026-10-11T19:09-04:00 session clock.
+- Selection: Direct NEXT from PASS-2026-10-11-305 (GAP-AEGIS-REPO-GRAPH-CI-CONFIRM).
+- Discover: Actions list on aegis-repo-graph main. Run 38154316700 (ci, push) success head_sha e0fe2750a7dcf979d0a2d1b4f279ac194bf69f4f. Dependabot runs also success.
+- Audit: Confirmation of prior security bump. Classification RESEARCH unchanged. Claim cap held. Catalog unmutated.
+- Classification: RESEARCH. No reclassification.
+- Implement: None. Observation-only persistence of verification evidence.
+- Test: Observed live CI conclusion success.
+- CI: green (run 38154316700).
+- Document: created docs/passes/PASS-2026-10-11-307.yaml; this history entry.
+- Exit: verification loop closed for the pytest bump. Portfolio exit not met. No tag. No archive. No deletion. No history rewrite. No claim elevation.
+
 ## Sweep-306 acoustic-token-modem / PASS-2026-10-11-306
 
 - Timestamp: 2026-10-11T16:00-04:00 session clock.
