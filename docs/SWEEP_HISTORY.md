@@ -1,3 +1,16 @@
+## Sweep-305 aegis-repo-graph / PASS-2026-10-11-305
+
+- Timestamp: 2026-10-11T12:10-04:00 session clock.
+- Selection: Central Artifact Graph repository for portfolio capability mapping. Highest-value security slice on open medium Dependabot.
+- Discover: Tree recursive count 25. Locked catalog 73 artifacts / 21 relationships. Drift modules present. CI on push/PR runs graph.engine + pytest. Open alert on pytest==8.3.5.
+- Audit: Classification RESEARCH (claim ≤1). Catalog expansion operator-only. No unsupported claims. Tests present and green locally.
+- Classification: RESEARCH. Justification unchanged. No reclassification.
+- Implement: Bumped requirements.txt pytest==8.3.5 to pytest==9.0.3. Commit e0fe2750a7dcf979d0a2d1b4f279ac194bf69f4f.
+- Test: Local .venv: graph.engine OK, pytest 12 passed with 9.0.3.
+- CI: workflow unchanged; expected green on new commit (pending observation).
+- Document: created docs/passes/PASS-2026-10-11-305.yaml; this history entry.
+- Exit: termination for this small gap met (alert addressed, tests verified, claim cap held, catalog unmutated). Portfolio exit not met. No tag. No archive. No deletion. No history rewrite. No claim elevation.
+
 ## Sweep-304 momentum-closure / PASS-2026-10-11-304
 
 - Timestamp: 2026-10-11T12:00-04:00 session clock.
