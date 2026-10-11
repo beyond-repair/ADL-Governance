@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-11-305
+  parent_pass: PASS-2026-10-11-304
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 8
+  gaps_remaining: 15
+
+OBJECTIVE:
+  id: GAP-AEGIS-REPO-GRAPH-DEPS
+  description: Close Dependabot medium alert on pytest in aegis-repo-graph by bumping to patched version and verifying local tests.
+  reason_selected: Highest-value small security slice on central Artifact Graph repository; deterministic verification available; improves integrity of capability graph tool without catalog mutation.
+
+DISCOVERY:
+  findings:
+    - Portfolio total_count 83 confirmed via search user:beyond-repair.
+    - aegis-repo-graph is RESEARCH, claim ≤1, locked 2026-09-04 snapshot of 72 repos +1 queue (73 artifacts, 21 relationships).
+    - Drift observed: 18 observation-only names vs 7 catalog-only.
+    - Open Dependabot alert 1: pytest <9.0.3 (GHSA-6w46-j5rx-g56g, medium).
+    - CI workflow pins actions to SHAs, runs graph.engine + pytest.
+
+CHANGES:
+  repositories:
+    - beyond-repair/aegis-repo-graph
+  files:
+    - requirements.txt
+  commits:
+    - e0fe2750a7dcf979d0a2d1b4f279ac194bf69f4f
+  capabilities_added_or_changed:
+    - Artifact Graph validator dependency security improved (pytest 9.0.3)
+
+VERIFICATION:
+  tests_run:
+    - python -m graph.engine: OK (artifacts=73 relationships=21)
+    - python -m pytest -q: 12 passed (with pytest==9.0.3)
+  code_review: NOT_RUN
+  security: PASS (alert addressed by version bump)
+  integration: PASS (local graph validation)
+  invariants: PASS (catalog unchanged, claim cap held)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - aegis-repo-graph validates locked snapshot deterministically.
+    - pytest 9.0.3 is compatible with existing tests.
+  failures:
+    - None this pass.
+  decisions:
+    - Prefer bump over dismissal for medium Dependabot on test dependency.
+    - No catalog expansion (operator-only).
+
+REMAINING:
+  incomplete:
+    - Full live CI confirmation post-push.
+    - Catalog expansion to current 83 names.
+    - Critical Dependabot on Digital_Double_virtual_workforce.
+  blockers:
+    - Operator gates for archive flags, tags, critical lockfile bumps.
+  new_gaps:
+    - Confirm CI green on aegis-repo-graph after this commit.
+
+NEXT:
+  objective_id: GAP-AEGIS-REPO-GRAPH-CI-CONFIRM
+  action: Check latest CI run on aegis-repo-graph main after commit e0fe2750.
+  reason: Close verification loop for the dependency bump.
+  prerequisites:
+    - GitHub Actions run completed on the new commit.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Local venv test run: graph.engine OK, 12 passed.
+    - Commit e0fe2750a7dcf979d0a2d1b4f279ac194bf69f4f on beyond-repair/aegis-repo-graph
