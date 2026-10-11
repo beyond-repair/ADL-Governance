@@ -1,3 +1,16 @@
+## Sweep-303 AEGIS-Project-Nehemiah- / PASS-2026-10-11-303
+
+- Timestamp: 2026-10-11T09:00-04:00 session clock.
+- Selection: random via shuf on 83 names from search user:beyond-repair (total_count 83, incomplete_results false). Selected AEGIS-Project-Nehemiah-.
+- Discover: default-branch tree recursive, count 24. Docs-only: README.md, adr/ADR-001-Primary-Representation.md, fls/FLS-002-Core-Ontology.md, fls/FLS-003-Graph-Semantics.md, forge-language/ subtree. No .github prior.
+- Audit: Classification ACTIVE as CONTRACT CONSUMER / ontology spec sibling to forge-aegis. Claims capped. No executable code, no tests required. No open issues/PRs. No Dependabot. No unsupported claims. Must not redefine forge-aegis validation semantics.
+- Classification: ACTIVE. Justification: host integrity ontology (Truth, Graph, Watchman, etc pillars); consumes forge-aegis contract. No reclassification.
+- Implement: added .github/workflows/docs-check.yml (presence checks for core docs + placeholder). Idempotent safe change.
+- Test: workflow triggered; runs 38141506465 (push) and 38141504569 (dispatch) conclusion success.
+- CI: green. Observed and confirmed.
+- Document: updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+- Exit: termination conditions met for this repo (docs complete, CI green, claims capped, no critical issues, no undefined/undocumented components, no stale entries). Portfolio exit not met. No tag. No archive flag. No deletion. No history rewrite. No claim elevation.
+
 ## Sweep-302 Master Directive v3.0 / PASS-2026-10-10-302
 
 - Timestamp: 2026-10-10T22:12-04:00 session clock.
