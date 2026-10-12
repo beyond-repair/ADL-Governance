@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-309 — do not execute from this agent
+
+Random draw `BlockSwarm`. Classification ACTIVE (unchanged). Claims capped: AI advises, cannot execute; no mainnet/audit/autonomous value movement. CI green (Foundry run 36859452185). Docs stamped. 0 open issues. Tags/releases empty (v0.5.0-sagf remains operator-only candidate).
+
+No operator actions required for this repository. No destructive changes queued.
+
+Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile bump). Prior residual items remain operator-only and were not re-executed.
+
+No history rewrite. No deletion. No claim elevation.
+
 ## Sweep-308 — do not execute from this agent
 
 Master Directive v3.0 portfolio discovery and Phase 3 verification. Search total_count 83, incomplete_results false. Mandatory four: forge-aegis CI green (run 37258127100); sovereign-clean-room CI green (run 37064696194); BlockSwarm CI green (run 36859452185); Digital_Double_virtual_workforce critical Dependabot alert 13 remains open (form-data, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, first patched 4.0.4).
