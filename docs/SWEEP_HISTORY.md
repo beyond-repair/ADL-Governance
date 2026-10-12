@@ -1,3 +1,21 @@
+## Sweep-309 BlockSwarm random cycle / ACTIVE PASS
+
+- Timestamp: 2026-10-12T13:02Z session clock.
+- Selection: `random.Random(2026101213).choice` over 83 sorted names from search `user:beyond-repair` (total_count 83, incomplete_results false). Index 12: BlockSwarm.
+- Discover: Tree includes contracts/, test/ (Foundry), .github/workflows/foundry.yml, docs/, GOVERNANCE.md, README.md. Submodules for forge-std and OpenZeppelin v4.9.6.
+- Audit: CI green on 36859452185 (2026-10-01, head 6e90f6f). 0 open issues. Tags/releases empty (operator-only). Claim-capped. No critical security observed.
+- Classification: ACTIVE (unchanged). Justified: active development substrate with green Foundry CI, tested invariants (AI advises, cannot execute), maturity 4 per registry.
+- Plan: Target state CI-green + docs consistent. Action: stamp last verified CI in GOVERNANCE.md.
+- Implement: Updated GOVERNANCE.md (idempotent docs). Commit 98480104.
+- Test/CI: Prior run success; new docs push expected green (Foundry workflow).
+- Document: Updated PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md. README unchanged (already accurate).
+- Govern: No unsupported claims. No critical security. Dependencies pinned/submoduled.
+- Release/Archive: No tag (operator-only). No archive.
+- Re-audit: No drift introduced. Termination conditions met for this repository.
+- Exit: Stop on BlockSwarm. Portfolio exit not met. No history rewrite. No deletion. No claim elevation.
+
+Prior Sweep-308 body follows for continuity.
+
 ## Sweep-308 Master Directive v3.0 / Portfolio Discovery + Phase 3
 
 - Timestamp: 2026-10-12T02:13Z session clock.
