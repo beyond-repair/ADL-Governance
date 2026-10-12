@@ -1,5 +1,37 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-12 (Sweep-309)
+**Project / Version:** ADL Portfolio Governance / Sweep-309
+**Objective:** Random repository completion cycle for `BlockSwarm`.
+
+**Draw:** `random.Random(2026101213).choice` over search payload of 83 names. Index 12 of 83 sorted names.
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. A2 for tree, commit, local-equivalent CI observation, and Actions run.
+
+## Sweep-309 result
+
+Subject: `BlockSwarm`.
+Classification: **ACTIVE** (unchanged; SAGF execution substrate).
+Claim cap: software sketch / tested invariants only. No mainnet, no audit, no autonomous execution claims.
+Exit criteria for this repository: **met** (CI green, tests present, docs updated, no open issues, no critical security, claims capped).
+Portfolio exit criteria: **not met** (Digital_Double Dependabot residual remains; full 83 not re-verified this cycle).
+
+| Item | State |
+|------|-------|
+| Head before pass | `6e90f6f85c0969fa8a262a70ceba833d618a22db` |
+| Head after pass | `98480104c353ffd22e1522943a5c5f6545044d18` (GOVERNANCE.md CI stamp) |
+| Implemented surface | GOVERNANCE.md last-verified CI updated to run 36859452185. No application source change. |
+| Local tests | Not re-run locally; CI authority is the Foundry workflow. |
+| CI | Foundry success run 36859452185 on prior head; new push will re-run (docs-only expected green). |
+| Releases / tags | empty (operator-only; v0.5.0-sagf candidate documented). |
+| Security | no open Dependabot observed; OpenZeppelin pinned. |
+| Archive | false. |
+| Open issues | 0. |
+
+Termination conditions satisfied for BlockSwarm. No further action this cycle. Continue random sweeps for portfolio completion.
+
+---
+
 Sweep: Sweep-308
 Timestamp: 2026-10-12T02:13Z (session clock / UTC)
 Scope: Master Directive v3.0 — Portfolio Discovery & Mandatory Live Verification
