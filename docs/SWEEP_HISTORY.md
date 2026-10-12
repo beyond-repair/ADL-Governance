@@ -1,3 +1,18 @@
+## Sweep-310 Basilisk discovery + PASS-306 backfill / PASS-2026-10-12-310
+
+- Timestamp: 2026-10-12T16:12Z session clock.
+- Selection: Direct NEXT from PASS-2026-10-11-307 (GAP-PASS-306-PERSIST).
+- Discover: Full portfolio search total_count 83. Governance constitution and aegis-repo-graph catalog audited. Sweep-306 recovered from OPERATOR_QUEUE.md.
+- Audit: Backfill only for acoustic-token-modem. No product mutation. Claim caps held.
+- Classification: RESEARCH for subject; governance ACTIVE.
+- Implement: PASS-2026-10-11-306.yaml created; this PASS-2026-10-12-310.yaml; history headings.
+- Test/CI: Docs-only; checker coverage expected green on next Actions run.
+- Document: passes and this history.
+- Govern: No unsupported claims. No deletion. No archive. No claim elevation. No history rewrite of prior bodies.
+- Exit: Bounded gap closed. Portfolio exit not met. Continue recursively.
+
+Prior Sweep-310 PASS-306 body follows for continuity.
+
 ## Sweep-310 PASS-306 backfill / PASS-2026-10-11-306
 
 - Timestamp: 2026-10-12T16:11Z session clock.
