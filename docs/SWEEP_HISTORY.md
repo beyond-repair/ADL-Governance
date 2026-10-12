@@ -1,3 +1,18 @@
+## Sweep-310 PASS-306 backfill / PASS-2026-10-11-306
+
+- Timestamp: 2026-10-12T16:11Z session clock.
+- Selection: Direct NEXT from PASS-2026-10-11-307 (GAP-PASS-306-PERSIST).
+- Discover: Sweep-306 entry exists in docs/OPERATOR_QUEUE.md for acoustic-token-modem; no YAML previously persisted.
+- Audit: Backfill only. Classification RESEARCH, claim ≤1, CI green (pytest), 0 issues, no Dependabot. No re-execution.
+- Classification: RESEARCH (unchanged).
+- Implement: Created docs/passes/PASS-2026-10-11-306.yaml from existing queue text. No product changes.
+- Test/CI: Observation of prior green. Checker expected to accept after heading.
+- Document: this history entry.
+- Govern: No unsupported claims. No history rewrite of prior bodies. No deletion. No claim elevation.
+- Exit: Coverage gap closed for this id. Portfolio exit not met.
+
+Prior Sweep-309 body follows for continuity.
+
 ## Sweep-309 BlockSwarm random cycle / ACTIVE PASS
 
 - Timestamp: 2026-10-12T13:02Z session clock.
