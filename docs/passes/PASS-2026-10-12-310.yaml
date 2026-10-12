@@ -1,0 +1,84 @@
+PASS:
+  id: PASS-2026-10-12-310
+  parent_pass: PASS-2026-10-11-307
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 13
+
+OBJECTIVE:
+  id: GAP-PASS-306-PERSIST
+  description: Backfill missing PASS-2026-10-11-306.yaml from existing Sweep-306 Operator Queue entry for acoustic-token-modem; add corresponding history heading.
+  reason_selected: Direct NEXT from prior PASS-307; closes heading coverage gap for checker without re-execution or product mutation.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair with 83 public repositories.
+    - ADL-Governance is the governing constitution with pass checker, claim levels 0-5, lifecycle, sweeps.
+    - aegis-repo-graph holds locked 2026-09-04 Artifact Graph catalog (72 repos +1 queue); claim ≤1; drift witnesses exist for 83-name searches.
+    - Latest prior: Sweep-309 on BlockSwarm (ACTIVE, CI green Foundry 36859452185); critical Dependabot #13 open on Digital_Double_virtual_workforce.
+    - Sweep-306 details recovered from OPERATOR_QUEUE.md: acoustic-token-modem RESEARCH, claim ≤1, pytest green, 0 issues.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-11-306.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-12-310.yaml
+  commits:
+    - aa43259f63a3e2f5334b7dea75bc2787eea18546
+    - 7f8fbee671f47061506f77b107b9e9ca72507f19
+    - this commit
+  capabilities_added_or_changed:
+    - History coverage for Sweep-306 completed.
+    - Current pass persisted.
+
+VERIFICATION:
+  tests_run:
+    - Not re-executed; observation of prior green CI for subject repo.
+  code_review: NOT_RUN
+  security: PASS (no new exposure)
+  integration: NOT_RUN (docs only; CI expected to parse YAML and match heading)
+  invariants: PASS (claim caps held, no catalog mutation, no archive, no history rewrite of prior bodies)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio of 83 repositories under beyond-repair; governance system mature with recursive pass persistence.
+    - aegis-repo-graph catalog is snapshot-locked; expansion operator-only.
+    - Critical residual remains on Digital_Double_virtual_workforce Dependabot alert 13.
+  failures:
+    - None in this slice.
+  decisions:
+    - Selected and closed the explicit NEXT gap from PASS-307 via backfill only.
+    - Prefer observation and docs persistence over product changes in this pass.
+
+REMAINING:
+  incomplete:
+    - Full live verification of all 83 repositories.
+    - aegis-repo-graph catalog expansion to current names.
+    - Resolution of Digital_Double_virtual_workforce critical Dependabot.
+  blockers:
+    - Operator gates for lockfile, catalog expansion, archive decisions.
+  new_gaps:
+    - Confirm check_passes.py succeeds after this history update.
+
+NEXT:
+  objective_id: GAP-CHECK-PASSES-CONFIRM
+  action: Observe or trigger CI on ADL-Governance to confirm scripts/check_passes.py passes with the new YAML and heading.
+  reason: Close the verification loop for the coverage change; highest-value bounded follow-up.
+  prerequisites:
+    - CI workflow runs on the docs push.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Commit aa43259 (PASS-306.yaml)
+    - Commit 7f8fbee (SWEEP_HISTORY heading)
+    - OPERATOR_QUEUE.md Sweep-306 text
+    - GitHub search total_count 83
