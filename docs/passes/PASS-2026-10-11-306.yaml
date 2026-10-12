@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-11-306
+  parent_pass: null
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: GAP-RANDOM-ACOUSTIC-TOKEN-MODEM
+  description: Random selection of acoustic-token-modem; confirm RESEARCH classification, claim cap ≤1 simulation only, green CI, no open issues.
+  reason_selected: Random draw over sorted names; highest-value next bounded observation for claim-capped research repo.
+
+DISCOVERY:
+  findings:
+    - Random.Random selection index yielded acoustic-token-modem.
+    - Classification RESEARCH unchanged.
+    - Claim level ≤1 (simulation only). No hardware M10, no theoretical bitrate as achieved, no novelty from AI tokens alone.
+    - CI green (pytest success on main).
+    - Core claim docs present and consistent.
+    - 0 open issues. No Dependabot.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-11-306.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - History coverage for Sweep-306 persisted as YAML.
+
+VERIFICATION:
+  tests_run:
+    - Observed pytest success on main (prior).
+  code_review: NOT_RUN
+  security: PASS (no Dependabot)
+  integration: PASS (CI green)
+  invariants: PASS (claim cap held, no re-execution)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - acoustic-token-modem remains RESEARCH, claim-capped, CI green, no residuals requiring action.
+  failures:
+    - None.
+  decisions:
+    - Backfill YAML from existing Operator Queue entry only; no product mutation.
+
+REMAINING:
+  incomplete:
+    - Catalog expansion of aegis-repo-graph.
+    - Critical Dependabot on Digital_Double_virtual_workforce.
+  blockers:
+    - Operator gates.
+  new_gaps:
+    - None from this backfill.
+
+NEXT:
+  objective_id: GAP-CONTINUE-PORTFOLIO
+  action: Continue random or prioritized bounded verification of remaining unverified repositories.
+  reason: Portfolio exit not met; 83 names known, full verification incomplete.
+  prerequisites:
+    - None.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - docs/OPERATOR_QUEUE.md Sweep-306 entry
+    - Prior CI observation recorded as pytest success on main
