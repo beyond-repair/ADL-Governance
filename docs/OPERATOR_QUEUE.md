@@ -1,5 +1,13 @@
 # Operator Queue
 
+## Sweep-311 — do not execute from this agent
+
+Residual confirmation under Master Directive v3.0. Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (form-data, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, first patched 4.0.4). Operator-gated lockfile update required. Do not merge Dependabot branches from this queue.
+
+Phase 3 pillars re-verified green (forge-aegis, sovereign-clean-room prior, BlockSwarm latest docs run). No operator actions for green items. No destructive proposals this cycle.
+
+No history rewrite. No deletion. No claim elevation.
+
 ## Sweep-309 — do not execute from this agent
 
 Random draw `BlockSwarm`. Classification ACTIVE (unchanged). Claims capped: AI advises, cannot execute; no mainnet/audit/autonomous value movement. CI green (Foundry run 36859452185). Docs stamped. 0 open issues. Tags/releases empty (v0.5.0-sagf remains operator-only candidate).
