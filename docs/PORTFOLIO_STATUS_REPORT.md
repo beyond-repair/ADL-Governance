@@ -1,5 +1,36 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-314)
+**Project / Version:** ADL Portfolio Governance / Sweep-314
+**Objective:** Residual confirmation under Master Directive v3.0.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. A2 for live search total_count.
+
+## Sweep-314 result
+
+Scope: Residual-gated continuation. No random draw. Confirm critical residual and Phase 3 continuity.
+Classification continuity preserved.
+Portfolio exit criteria: **not met** (critical Dependabot residual open; full 83 live verification incomplete).
+
+### Phase 3 Mandatory Live Verification (continuity from prior)
+- **forge-aegis**: Prior CI success preserved.
+- **sovereign-clean-room**: Prior main green preserved.
+- **BlockSwarm**: Prior Foundry success preserved.
+- **Digital_Double_virtual_workforce**: Critical Dependabot alert #13 remains open (form-data, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, package-lock.json, first patched 4.0.4). Classification ACTIVE / Workforce Automation (FAIL readiness due to critical security residual). Open issues: 5.
+
+No reclassifications. No product source changes. No tags. No archive flags changed. No history rewrites. No deletions.
+
+## Residuals & Exit
+Critical: Digital_Double_virtual_workforce Dependabot alert 13 open (operator-gated lockfile update to >=4.0.4). Do not merge Dependabot branches autonomously.
+Incomplete: Full live verification of all 83 repositories not completed in this cycle.
+No unsupported claims elevated.
+Portfolio exit criteria not met. Stop after this governed sweep. Do not enter autonomous infinite review cycle.
+
+---
+
+Prior Sweep-313 body follows for continuity.
+
 **Updated:** 2026-10-12 (Sweep-313)
 **Project / Version:** ADL Portfolio Governance / Sweep-313
 **Objective:** Random repository completion cycle for `bloch-coherence-factor2`.
@@ -32,34 +63,3 @@ Termination conditions satisfied for bloch-coherence-factor2. No product source 
 ---
 
 Prior Sweep-312 body follows for continuity.
-
-**Updated:** 2026-10-12 (Sweep-312)
-**Project / Version:** ADL Portfolio Governance / Sweep-312
-**Objective:** Residual confirmation and mandatory pillar re-verification under Master Directive v3.0.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. A2 for live Actions runs and Dependabot lists.
-
-## Sweep-312 result
-
-Scope: Confirm critical residual and re-verify Phase 3 pillars. No random draw; residual-gated.
-Classification continuity preserved.
-Portfolio exit criteria: **not met** (critical Dependabot residual open; full 83 live verification incomplete).
-
-### Phase 3 Mandatory Live Verification (reconfirmed 2026-10-12T22:14Z)
-- **forge-aegis**: Latest CI run 37258127100 success (2026-10-05) on main head e7188d529739652a2dd6264bd3d328c1f72e60e5. ACTIVE / software sketch. Claim-capped.
-- **sovereign-clean-room**: Prior main Python tests success (37064696194, 2026-10-02). Recent PR runs on seem-completion-pass mixed (success/failure on float precision). ACTIVE with open issues. VSA completeness UNVERIFIED.
-- **BlockSwarm**: Latest Foundry run 38252865430 success (2026-10-12) on docs head 98480104. Prior application head 6e90f6f also green. ACTIVE / SAGF. Claim-capped (AI advises, cannot execute).
-- **Digital_Double_virtual_workforce**: Critical Dependabot alert #13 remains open (form-data, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, package-lock.json, first patched 4.0.4). Classification ACTIVE / Workforce Automation (FAIL readiness due to critical security residual). Open issues: 5.
-
-No reclassifications. No product source changes. No tags. No archive flags changed. No history rewrites. No deletions.
-
-## Residuals & Exit
-Critical: Digital_Double_virtual_workforce Dependabot alert 13 open (operator-gated lockfile update to >=4.0.4). Do not merge Dependabot branches autonomously.
-Incomplete: Full live verification of all 83 repositories not completed in this cycle.
-No unsupported claims elevated.
-Portfolio exit criteria not met. Stop after this governed sweep. Do not enter autonomous infinite review cycle.
-
----
-
-Prior Sweep-311 body follows for continuity.
