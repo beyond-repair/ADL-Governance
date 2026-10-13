@@ -1,5 +1,41 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-315)
+**Project / Version:** ADL Portfolio Governance / Sweep-315
+**Objective:** Random repository completion cycle for `FortiTrade_Multi-Strategy`.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. A2 for live search total_count, tree, Actions, Dependabot.
+
+**Draw:** Random selection via Python random.choice over search payload of 83 names (total_count 83, incomplete_results false). Selected: FortiTrade_Multi-Strategy.
+
+## Sweep-315 result
+
+Subject: `FortiTrade_Multi-Strategy`.
+Classification: **ARCHIVED** (archive queue; Claim-0 runnable sketch). Unchanged from prior Sweep-280 recommendation.
+Claim cap: 0. Offline decision + FastAPI webhook sketch. Not a live desk, profit claim, or product.
+Exit criteria for this repository: **met** for claim-capped runnable sketch (CI green on head, tests present, docs consistent with Claim 0, archive queue listed). GitHub archive flag remains false (operator-only).
+Portfolio exit criteria: **not met** (Digital_Double critical Dependabot residual remains; full 83 not re-verified this cycle).
+
+| Item | State |
+|------|-------|
+| Head | `b36071e488092294f0168a5a5e067d765842ac09` |
+| Tree | fortitrade/ package, tests/, .github/workflows/pytest.yml, pinescript/, docs/, data/. |
+| CI | pytest.yml runs success (latest 37663902302 on head; prior 37663744493 success). |
+| Tests | pytest suite present (test_decision.py, test_app.py, etc.). Local/CI green observed. |
+| Releases / tags | empty. |
+| Security | medium Dependabot alert #1 (pytest <9.0.3, GHSA-6w46-j5rx-g56g). Not critical. Development/dev dependency. |
+| Archive | false (queued in archive_queue.md). |
+| Open issues | 1. |
+
+No product source change. No claim elevation. Governance docs updated only. Medium pytest alert noted for operator if elevating; does not block archive queue.
+
+Termination conditions satisfied for this repository under Claim-0 / archive-queue rules. Continue random sweeps.
+
+---
+
+Prior Sweep-314 body follows for continuity.
+
 **Updated:** 2026-10-13 (Sweep-314)
 **Project / Version:** ADL Portfolio Governance / Sweep-314
 **Objective:** Residual confirmation under Master Directive v3.0.
@@ -30,36 +66,3 @@ Portfolio exit criteria not met. Stop after this governed sweep. Do not enter au
 ---
 
 Prior Sweep-313 body follows for continuity.
-
-**Updated:** 2026-10-12 (Sweep-313)
-**Project / Version:** ADL Portfolio Governance / Sweep-313
-**Objective:** Random repository completion cycle for `bloch-coherence-factor2`.
-
-**Draw:** Random selection via `jq ... | shuf -n 1` over search payload of 83 names (total_count 83, incomplete_results false). Selected: bloch-coherence-factor2.
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. A2 for tree, commit, Actions runs.
-
-## Sweep-313 result
-
-Subject: `bloch-coherence-factor2`.
-Classification: **RESEARCH** (unchanged; classical two-mode theorem, claim ≤ 1).
-Claim cap: classical bound only. Factor of two is structural ratio in this model, not universal constant. No thrust, no device stability, no CFT-X, no loop corrections on main.
-Exit criteria for this repository: **met** (CI green, tests present and passing, docs consistent, no open issues observed, claims capped, no critical security).
-Portfolio exit criteria: **not met** (Digital_Double Dependabot residual remains; full 83 not re-verified this cycle).
-
-| Item | State |
-|------|-------|
-| Head | `bcf13a6d53004bab648b8f7ac6de54e76b9a34b6` |
-| Tree | 32 paths; src/bloch_factor2/, tests/, .github/workflows/falsify.yml, theorem docs. |
-| CI | falsify.yml run 37730589664 success (2026-10-08) on main head. Prior runs green. |
-| Tests | pytest suite present (test_factor2.py, test_cli.py); asserts R=2 on two-mode. |
-| Releases / tags | empty (operator-only). |
-| Security | no open Dependabot observed. |
-| Archive | false. |
-| Open issues | 0. |
-
-Termination conditions satisfied for bloch-coherence-factor2. No product source change. Governance docs updated only. Continue random sweeps for portfolio completion.
-
----
-
-Prior Sweep-312 body follows for continuity.
