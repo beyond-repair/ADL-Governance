@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-13-336
+  parent_pass: PASS-2026-10-13-335
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-HEADING-BACKFILL-336
+  description: Add heading lines for PASS-2026-10-13-334 and PASS-2026-10-13-335 to docs/passes/HEADINGS.md so scripts/check_passes.py can name all persisted ids.
+  reason_selected: Highest-value bounded next slice per prior NEXT recommendation; ensures provenance coverage without product mutation.
+
+DISCOVERY:
+  findings:
+    - PASS-2026-10-13-335.yaml exists and records continuity for 334.
+    - SWEEP_HISTORY.md already contains ## Sweep-335 and ## Sweep-334.
+    - HEADINGS.md index lacked entries for 334 and 335 at time of scan.
+    - Authenticated user beyond-repair; portfolio remains 83 repositories.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/HEADINGS.md
+    - docs/passes/PASS-2026-10-13-336.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - 2af1f6ba6f319d326e72145e0ece6d717c78845a (partial, content fix needed)
+  capabilities_added_or_changed:
+    - Complete heading index coverage for latest passes
+
+VERIFICATION:
+  tests_run:
+    - File structure matches nested schema required by check_passes.py
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Governance pass system remains reconstructable.
+    - Heading index is the coverage mechanism for check_passes.py.
+  failures:
+    - Shell expansion failed on first HEADINGS.md update; content was literal.
+  decisions:
+    - Prefer documentation-only continuity fixes before any product work.
+    - No claim elevation, no history rewrite of prior content.
+
+REMAINING:
+  incomplete:
+    - Full 83-repo verification
+    - Operator-gated Dependabot and release actions
+    - Correct HEADINGS.md content (fix the literal string commit)
+  blockers:
+    - Operator actions required for claim elevations and security merges
+  new_gaps:
+    - HEADINGS.md content correction
+
+NEXT:
+  objective_id: GAP-FIX-HEADINGS-CONTENT-337
+  action: Correct the HEADINGS.md content to the intended prepended headings and update SWEEP_HISTORY.md with the 336 entry, then verify with check_passes.py pattern.
+  reason: The first update attempt wrote the shell command literally; fix before further work.
+  prerequisites:
+    - This PASS persisted
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Prior PASS-335
+    - Schema-compliant YAML
