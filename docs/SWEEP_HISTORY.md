@@ -1,3 +1,19 @@
+## Sweep-343 Aegis Repo Graph local verification — PASS-2026-10-13-343
+
+- Timestamp: 2026-10-13T23:15Z session clock (UTC).
+- Selection: beyond-repair/aegis-repo-graph (central Artifact Graph).
+- Discover: Head 318df9c05fdff771999eade60259741b50030245. Claim ≤1 RESEARCH. Locked 2026-09-04 snapshot (72 repos + queue). No live crawl.
+- Audit: Contract documented. Engine and tests present.
+- Classify: RESEARCH, claim-capped.
+- Plan: Local verification only. No catalog expansion.
+- Implement: No code changes. Governance pass recorded.
+- Test/CI: Local pytest 12 passed; graph.engine artifacts=73 relationships=21 OK.
+- Document: This history and PASS YAML.
+- Govern: No claim elevation. Residuals preserved.
+- Exit: Selected verification complete. Portfolio exit criteria NOT MET.
+
+Prior Sweep-342 body follows for continuity.
+
 ## Sweep-342 Randomized Portfolio Completion Sweep — PASS-2026-10-13-342
 
 - Timestamp: 2026-10-13T23:05Z session clock (UTC).
