@@ -1,3 +1,18 @@
+## Sweep-325 Basilisk reconstruction and gap selection / PASS-2026-10-13-325
+
+- Timestamp: 2026-10-13T15:10Z session clock.
+- Selection: Reconstruction under ADL-BASILISK directive invocation.
+- Discover: Live search total_count 83. Latest narrative Sweep-324 (adl-capability-matrix RESEARCH termination met). Latest YAML PASS-2026-10-13-322. Critical residual Dependabot #13 on Digital_Double_virtual_workforce remains operator-gated. Portfolio exit not met.
+- Audit: Pass schema and persistence contract confirmed. No product mutation this pass.
+- Classification: Governance maintenance (unchanged).
+- Implement: Added PASS-2026-10-13-325.yaml. Updated this history heading.
+- Test/CI: Docs-only; schema compliant. No re-run of product CI.
+- Document: This history and new PASS YAML.
+- Govern: No unsupported claims. No deletion. No history rewrite. No claim elevation.
+- Exit: Persistence for this pass completed. Continue recursive loop; next focuses on heading integrity or safe re-audit.
+
+Prior Sweep-324 body follows for continuity.
+
 ## Sweep-324 adl-capability-matrix random selection and re-audit
 
 - Timestamp: 2026-10-13T15:05Z session clock.
