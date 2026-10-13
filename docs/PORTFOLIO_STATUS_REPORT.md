@@ -1,5 +1,40 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-324)
+**Project / Version:** ADL Portfolio Governance / Sweep-324
+**Objective:** Randomized Portfolio Completion Sweep — random selection of adl-capability-matrix, DISCOVER to RE-AUDIT.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. A2 for live tree, README.md, CLAIM_STATUS.md, GOVERNANCE.md, .github/workflows/ci.yml, Actions list_workflow_runs (latest conclusion success).
+
+**Draw:** Random selection of adl-capability-matrix from portfolio (total_count 83, incomplete_results false).
+
+## Sweep-324 result
+
+Subject: `adl-capability-matrix`.
+Classification: **RESEARCH** (governance census tool / claim-capped cluster matrix; claim level ≤1). Dated snapshot only. Not live portfolio registry. Caps not refreshed.
+Exit criteria for this repository: **met** under RESEARCH rules (CI green latest run 37139442180 on head b3b6412b391149a82bd63a263b97d639b6ccf2a7, tests present and passing via CI, docs consistent with claim-cap, no open issues, no critical security residuals, no unsupported claims, locked 67-row inventory unchanged, gap files name-only with null caps).
+Portfolio exit criteria: **not met** (Digital_Double_virtual_workforce critical Dependabot #13 residual remains; full 83 not fully verified this cycle).
+
+| Item | State |
+|------|-------|
+| Head | `b3b6412b391149a82bd63a263b97d639b6ccf2a7` |
+| Tree | matrix/ (capability_matrix.json 67 rows, census_gap_*.json, engine.py, load.py), tests/, .github/workflows/ci.yml, README.md, CLAIM_STATUS.md, GOVERNANCE.md, pyproject.toml, LICENSE. |
+| CI | ci.yml present; latest main success (run 37139442180). |
+| Tests | pytest suite validates locked matrix, gap set-difference, illegal cap rejection, CLI reports rows=67 queue=5 gap_unassigned=15 OK. |
+| Releases / tags | None. |
+| Security | No open Dependabot alerts observed. |
+| Open issues | 0. |
+| Archive | false. |
+
+No product source change this cycle. No claim elevation. No matrix row expansion. Governance docs updated only. Termination conditions satisfied for adl-capability-matrix under RESEARCH rules. Continue random sweeps.
+
+---
+
+Prior Sweep-323 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-13 (Sweep-323)
 **Project / Version:** ADL Portfolio Governance / Sweep-323
 **Objective:** Mandatory Phase-3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Record residuals and stop.
@@ -50,38 +85,3 @@ Residuals recorded. Stop. Do not enter infinite review cycle.
 ---
 
 Prior Sweep-321 body follows for continuity.
-
-# Portfolio Status Report
-
-**Updated:** 2026-10-13 (Sweep-321)
-**Project / Version:** ADL Portfolio Governance / Sweep-321
-**Objective:** Randomized Portfolio Completion Sweep — random selection of thrust-target-30, DISCOVER to RE-AUDIT.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. A2 for live tree, README, GOVERNANCE.md, CLAIM_STATUS.md, constants/target.json, tests/test_unit_identity.py, .github/workflows/unit-identity.yml, Actions list_workflow_runs (latest conclusion success).
-
-**Draw:** Random selection of thrust-target-30 from portfolio (total_count 83, incomplete_results false).
-
-## Sweep-321 result
-
-Subject: `thrust-target-30`.
-Classification: **RESEARCH** (design goal / intent constant, claim level 0). Experimental validation: false. Not a device or measured result. F/P = 3e-8 N/W = 30 μN/kW as shared yardstick only.
-Exit criteria for this repository: **met** (unit-identity test present and passes via CI, CI green latest run 36817676794 head 30d030aa36556e18403a961391e98b2d06e91c5a, docs consistent with claim-cap, no open issues, no critical security, no unsupported claims, no stale components, no duplicate canonical implementations).
-Portfolio exit criteria: **not met** (Digital_Double_virtual_workforce critical Dependabot residual remains; full 83 not fully verified this cycle).
-
-| Item | State |
-|------|-------|
-| Head | `30d030aa36556e18403a961391e98b2d06e91c5a` |
-| Tree | constants/target.json, tests/test_unit_identity.py, .github/workflows/unit-identity.yml, README.md, GOVERNANCE.md, CLAIM_STATUS.md, SPECTRAL_ENDPOINT_POINTER.md, LICENSE. |
-| CI | unit-identity.yml present; latest main success (run 36817676794). |
-| Tests | Unit identity SI conversion check + claim_level=0 / experimental_validation=false guards. |
-| Releases / tags | None. |
-| Security | No open Dependabot alerts (inferred from clean history; no critical issues). |
-| Open issues | 0. |
-| Archive | false. |
-
-No product source change this cycle. No claim elevation. Governance docs updated only. Termination conditions satisfied for thrust-target-30 under RESEARCH rules. Continue random sweeps.
-
----
-
-Prior Sweep-320 body follows for continuity.
