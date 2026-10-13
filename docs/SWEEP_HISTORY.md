@@ -1,3 +1,18 @@
+## Sweep-316 ecosystem reconstruction / session continuity
+
+- Timestamp: 2026-10-13T02:08Z session clock.
+- Selection: Reconstruction mandated by fresh agent invocation of ADL-BASILISK directive.
+- Discover: Live search user:beyond-repair total_count 83; ADL-Governance active with pass checker; latest Sweep-315 FortiTrade ARCHIVED queue Claim-0 CI green; critical Dependabot #13 open on Digital_Double_virtual_workforce.
+- Audit: Governance docs consistent with prior passes; no product source mutation this cycle.
+- Classification: continuity preserved.
+- Implement: Persisted PASS-2026-10-13-316.yaml.
+- Test/CI: Observation only; checker expected to pass on heading + YAML match.
+- Document: This history heading + new pass YAML.
+- Govern: No claim elevation. No deletion. No archive. No history rewrite of prior bodies.
+- Exit: Reconstruction complete. Next is live confirmation of check_passes.py.
+
+Prior Sweep-315 body follows for continuity.
+
 ## Sweep-315 FortiTrade_Multi-Strategy random cycle / ARCHIVED queue confirmation
 
 - Timestamp: 2026-10-13T02:00Z session clock.
