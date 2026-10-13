@@ -1,3 +1,21 @@
+## Sweep-331 Randomized Portfolio Completion Sweep — aegis-repo-graph
+
+- Timestamp: 2026-10-13T18:00Z session clock.
+- Selection: Random (shuf) from 83-repository portfolio: aegis-repo-graph.
+- Discover: Tree scanned (graph/, tests/, CI workflow, docs, CLAIM_STATUS). Locked catalog 72 repos + 1 queue. Drift modules present. CI green on main.
+- Audit: Compared to ADL-Governance. Classification RESEARCH justified (claim ≤1, not live, snapshot validator). Inconsistency: pyproject.toml pytest pin lagged requirements.txt (8.3.5 vs 9.0.3). Open Dependabot PR #3. No critical security, no unsupported claims, catalog not expanded.
+- Classify: RESEARCH. Justified in this log and PORTFOLIO_STATUS_REPORT.
+- Plan: Align pins, document, confirm termination under RESEARCH rules.
+- Implement: Safe idempotent changes — updated pyproject.toml pytest==9.0.3, updated CLAIM_STATUS.md with Sweep-331 note. Governance docs updated.
+- Test/CI: Prior CI success on pin bump commit; new commits expected to keep green (pytest tests unchanged).
+- Document: CLAIM_STATUS, PORTFOLIO_STATUS_REPORT, this history, OPERATOR_QUEUE.
+- Govern: No claim elevation. No deletion. No history rewrite. Catalog lock preserved. Census not_built freeze unchanged.
+- Release/Archive: Not applicable (RESEARCH target met, no tag required).
+- Re-audit: Drift modules confirm non-mutation. Termination conditions met for this repo.
+- Exit: Repo complete for this cycle. Portfolio exit criteria NOT MET (Digital_Double Dependabot residual, incomplete 83). Stop.
+
+Prior Sweep-330 body follows for continuity.
+
 ## Sweep-330 Master Directive v3.0 continuity re-audit
 
 - Timestamp: 2026-10-13T17:15Z session clock.
@@ -9,19 +27,5 @@
 - Document: Reports updated with Sweep-330.
 - Govern: No claim elevation. No deletion. No history rewrite. Residuals preserved.
 - Exit: Portfolio exit criteria NOT MET (incomplete full verification, unresolved high Dependabot). Stop. Do not enter infinite review cycle.
-
-Prior Sweep-329 body follows for continuity.
-
-## Sweep-329 / PASS-2026-10-13-329 Basilisk continuity
-
-- Timestamp: 2026-10-13T17:10Z session clock.
-- Selection: ADL-BASILISK recursive directive new session. Reconstruct live portfolio (83) and governance state (Sweep-329 narrative, PASS-328).
-- Discover: beyond-repair authenticated. Project-Cold-Boot RESEARCH Claim-0 confirmed in prior narrative. Dependabot residual open on Digital_Double_virtual_workforce.
-- Audit: Classifications unchanged. No product changes. Exit criteria not met.
-- Implement: Persist PASS-2026-10-13-329.yaml and this heading.
-- Test/CI: Schema compliant. Heading coverage extended.
-- Document: This history + PASS YAML.
-- Govern: No claim elevation. No deletion. No history rewrite.
-- Exit: Continuity recorded. Stop for this pass.
 
 Prior Sweep-329 body follows for continuity.
