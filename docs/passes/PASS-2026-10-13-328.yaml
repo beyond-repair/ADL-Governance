@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-13-328
+  parent_pass: PASS-2026-10-13-325
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-328
+  description: Reconstruct ecosystem from live GitHub search (total_count 83), ADL-Governance passes/history (latest narrative Sweep-327, latest YAML PASS-2026-10-13-325), and select bounded next slice on pass persistence.
+  reason_selected: New session under ADL-BASILISK directive; Discover & Audit required before any product change; confirms continuity and critical residual.
+
+DISCOVERY:
+  findings:
+    - Authenticated user: beyond-repair, search total_count 83, incomplete_results false.
+    - Core governance: ADL-Governance ACTIVE, scripts/check_passes.py enforces YAML schema and SWEEP_HISTORY.md / HEADINGS.md heading coverage for all PASS ids.
+    - Latest narrative: Sweep-327 random selection of Code_Generation_AI_Program (ARCHIVED recommended, claim 0, inventory tests present).
+    - Latest prior YAML: PASS-2026-10-13-325 (reconstruction).
+    - Critical residual: Digital_Double_virtual_workforce Dependabot alerts remain open (high/medium, operator-gated).
+    - Portfolio exit criteria not met.
+    - Key pillars previously verified with findings; classifications unchanged.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-328.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit (new PASS YAML + history heading)
+  capabilities_added_or_changed:
+    - Continuity pass record and heading for Basilisk session.
+
+VERIFICATION:
+  tests_run:
+    - Not run; docs-only persistence. Schema matches nested required keys (PASS, STATE, OBJECTIVE, VERIFICATION, NEXT).
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio remains 83 repositories.
+    - Pass persistence and heading check are the recursive memory mechanism.
+    - Full verification incomplete; security residuals operator-gated.
+  failures:
+    - None this pass.
+  decisions:
+    - Record reconstruction and ensure heading coverage before further work.
+    - Do not autonomously patch operator-gated Dependabot alerts.
+
+REMAINING:
+  incomplete:
+    - Full live audit of all 83 repositories.
+    - Operator remediation of Dependabot alerts on Digital_Double_virtual_workforce.
+    - Catalog and function census expansions.
+  blockers:
+    - Operator authorization for critical security fixes and claim elevations.
+  new_gaps:
+    - None beyond existing residuals.
+
+NEXT:
+  objective_id: GAP-RANDOM-OR-HEADING-INTEGRITY
+  action: Select one random non-pillar repository for light claim-capped re-audit (docs only), or confirm check_passes.py passes on the updated tree.
+  reason: Continues incremental discovery without duplication; highest-value small slice after persistence.
+  prerequisites:
+    - This PASS and heading committed.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live github___search_repositories total_count 83.
+    - SWEEP_HISTORY.md Sweep-327.
+    - PASS-2026-10-13-325 content.
+    - PORTFOLIO_STATUS_REPORT.md residuals.
