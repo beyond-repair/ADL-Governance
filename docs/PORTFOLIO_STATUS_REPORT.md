@@ -1,5 +1,40 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-334)
+**Project / Version:** ADL Portfolio Governance / Sweep-334
+**Objective:** Randomized Portfolio Completion Sweep — random selection, DISCOVER through RE-AUDIT on ware-constant-phenomenology. Record status and stop.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Live tree, CLAIM_STATUS, tests structure, docs-presence workflow.
+
+## Sweep-334 result — ware-constant-phenomenology
+
+- Selection: Random from 83-repository portfolio (Python random.choice).
+- Classification: **RESEARCH** (Claim-0 phenomenological scoring sketches; claim 1–2; experimental_validation false; SPARC χ² UNSUPPORTED).
+- Head (main): `8db3fc8cbd80f5f4ae725dc67c4748fe799fcc35`
+- Structure: README.md, CLAIM_STATUS.md, GOVERNANCE.md, requirements.txt, tests/test_claim0.py, .github/workflows/docs-presence.yml, AUDIT_*.md series, Python entrypoints (sparc_run.py, killgate_verification.py, verify_constant_W_action.py, spectral_Wstar.py, white_light_qed_bounds.py, main.py), data/sparc_flat.csv (Lelli+2016), STATUS_LOCK_2026-10-01.md present.
+- CI: docs-presence workflow (file presence + RESEARCH/UNSUPPORTED grep). Prior success referenced (run 34150611709). No full test CI observed in tree.
+- Claim level: 1–2. No elevation. Honest: median χ²_red ≈ 9.098 not a pass; no thrust/energy validation; 0.08 not derived.
+- Safe changes: None in product repo. Governance docs only.
+- Status: PASS (termination conditions met under RESEARCH rules: components documented, claims capped with evidence, tests present encoding honesty, no critical security issues, no unsupported claims, no duplicate canonical implementations observed).
+- Dependabot: No open advisories observed in this sweep (tree inspection only).
+- Open issues/PRs: Not fully enumerated; no blockers for RESEARCH status.
+
+## Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot alerts on Digital_Double_virtual_workforce (prior residual)
+- Full 83-repository verification incomplete
+- No claim elevation performed
+- No deletions, no history rewrites
+
+Residuals recorded. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-333 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-13 (Sweep-333)
 **Project / Version:** ADL Portfolio Governance / Sweep-333
 **Objective:** Master Directive v3.0 — Live confirmation of 83-repo portfolio + Phase-3 mandatory pillar verification with Dependabot status. Record residuals and stop.
@@ -55,39 +90,3 @@ Residuals recorded. Stop. Do not enter infinite review cycle.
 ---
 
 Prior Sweep-331 body follows for continuity.
-
-# Portfolio Status Report
-
-**Updated:** 2026-10-13 (Sweep-331)
-**Project / Version:** ADL Portfolio Governance / Sweep-331
-**Objective:** Randomized Portfolio Completion Sweep — random selection, DISCOVER through RE-AUDIT on aegis-repo-graph. Record status and stop.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live tree, CI green, CLAIM_STATUS, tests.
-
-## Sweep-331 result — aegis-repo-graph
-
-- Selection: Random from 83-repository portfolio (shuf selection).
-- Classification: **RESEARCH** (locked-snapshot Artifact Graph validator; claim ≤1; not live crawler).
-- Head (main) after changes: 318df9c05fdff771999eade60259741b50030245
-- Structure: graph/ (catalog, engine, model, drift, observed_*), tests/test_graph.py, .github/workflows/ci.yml, CLAIM_STATUS.md, README.md, pyproject.toml, requirements.txt present.
-- CI: Latest push runs success (e.g. 38154316700 on prior head addressing Dependabot alert; new commits for pin alignment). Tests encode contract (locked 73 artifacts / 21 relationships, unique identities, claim caps, drift non-mutation).
-- Claim level: ≤1. Catalog row stores integer 3 as snapshot data only. No elevation.
-- Safe changes: Aligned pyproject.toml pytest optional pin to 9.0.3 matching requirements.txt and CI. Documented in CLAIM_STATUS.
-- Open PR: Dependabot #3 (pytest bump) may be partially superseded by main; operator may close if redundant.
-- Status: PASS (termination conditions met under RESEARCH rules: documented, tests/CI green, claims capped, no critical security issues, no unsupported claims, no duplicate canonicals).
-- Dependabot: alert GHSA-6w46-j5rx-g56g addressed on main. No open advisories observed.
-- Open issues/PRs: 1 (Dependabot).
-
-## Portfolio Exit Criteria
-**NOT MET**
-- Unresolved high/medium Dependabot alerts on Digital_Double_virtual_workforce (prior residual)
-- Full 83-repository verification incomplete
-- No claim elevation performed
-- No deletions, no history rewrites
-
-Residuals recorded. Stop. Do not enter infinite review cycle.
-
----
-
-Prior Sweep-330 body follows for continuity.
