@@ -1,11 +1,50 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-13 (Sweep-341)
-**Project / Version:** ADL Portfolio Governance / Sweep-341
-**Objective:** Master Directive v3.0 Portfolio Governance & Completion Sweep — confirmation of discovery, pillar verification, residual tracking.
+**Updated:** 2026-10-13 (Sweep-342)
+**Project / Version:** ADL Portfolio Governance / Sweep-342
+**Objective:** Randomized Portfolio Completion Sweep — randomly selected btc-trading for DISCOVER/AUDIT/CLASSIFY.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-342 result — randomized selection: beyond-repair/btc-trading
+
+### Selection
+Random choice from 83-repository inventory: **btc-trading** (full_name beyond-repair/btc-trading). Created 2023-06-12, updated 2026-10-07, language Python, default_branch main, private false, archived false.
+
+### Discover
+Tree (recursive): ARCHIVED.md, BTC-USD.csv, README.md, SECURITY.md, btc_inventory.py, "kucoin btc.py", requirements.txt, tests/test_inventory.py, .github/workflows/ci.yml, .gitignore.
+Head SHA: cd3638654c870c238db6457355b64f82ff1adfae.
+
+### Audit
+- Classification already documented as ARCHIVED (recommended); GitHub archived flag false (operator).
+- Claim level 0. No product, no profit, no forecast, no live execution claimed.
+- Inventory test present (stdlib, 366 rows 2022-06-12..2023-06-12).
+- CI workflow "inventory" last run 37549816378: completed success (2026-10-07).
+- Credential previously removed from HEAD (Sweep-261); remains in history (do not rewrite).
+- Historical script "kucoin btc.py" is non-imported by CI, contains unused imports / missing numpy, expects absent btc_prices.csv, runs only under __main__.
+- No open issues. No Dependabot alerts observed in this cycle.
+
+### Classify
+**ARCHIVED** (historical sketch; recommended; operator must set GitHub archive flag).
+
+### Plan / Implement
+Governance documentation only. No product code changes. No destructive actions. Idempotent status confirmation.
+
+### Test/CI
+Prior CI green. No new tests required for termination of this historical repo.
+
+### Document / Govern
+This update. Residuals preserved. No claim elevation. No deletion. No history rewrite.
+
+### Portfolio Exit Criteria
+**NOT MET** (incomplete full 83 deep verification; prior Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
+
+Residuals recorded. This cycle complete for selected repository. Termination conditions for ARCHIVED historical repo met except operator archive flag.
+
+---
+
+Prior Sweep-341 body follows for continuity. (Full historical content preserved in prior commits and SWEEP_HISTORY.md.)
 
 ## Sweep-341 result — Master Directive v3.0 confirmation sweep
 
@@ -48,7 +87,3 @@ Full inventory extracted (83 repositories). No deletions. Historical preservatio
 - No deletions, no history rewrites
 
 Residuals recorded. This cycle complete. Stop. Do not enter infinite review cycle.
-
----
-
-Prior Sweep-339 body follows for continuity. (Full historical content preserved in prior commits and SWEEP_HISTORY.md.)
