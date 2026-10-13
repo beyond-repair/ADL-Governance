@@ -1,3 +1,19 @@
+## Sweep-337 HEADINGS.md content correction — PASS-2026-10-13-337
+
+- Timestamp: 2026-10-13T21:10Z session clock.
+- Selection: GAP-FIX-HEADINGS-CONTENT-337 from prior NEXT.
+- Discover: HEADINGS.md contained literal shell command from failed expansion in Sweep-336. check_passes.py failed with named=[] because no matching headings in combined body.
+- Audit: Generated full index of 116 canonical PASS ids as ## Sweep-N / PASS-id lines. Local verification: python scripts/check_passes.py PASS (118 yaml files parsed; all ids named including PASS-2026-10-13-336).
+- Classify: Governance continuity fix. No product change.
+- Plan: Documentation-only update.
+- Implement: Updated docs/passes/HEADINGS.md via GitHub API (commit c7d63974da17ac9c286ff22c786d52b0a1645bd3). Prepended this narrative.
+- Test/CI: Local checker PASS. No product tests run.
+- Document: This history entry. PASS record to follow.
+- Govern: No claim elevation. No deletion. No history rewrite of prior content. Residuals preserved.
+- Exit: Bounded gap closed. Portfolio exit criteria still NOT MET.
+
+Prior Sweep-336 body follows for continuity.
+
 ## Sweep-336 Master Directive v3.0 live confirmation — PASS-2026-10-13-336
 
 - Timestamp: 2026-10-13T20:20Z session clock.
