@@ -1,11 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-13 (Sweep-338)
-**Project / Version:** ADL Portfolio Governance / Sweep-338
-**Objective:** Master Directive v3.0 — Autonomous portfolio completion and governance sweep. Live discovery confirmation of 83 repositories + mandatory Phase-3 re-verification of pillars. Record residuals and stop.
+**Updated:** 2026-10-13 (Sweep-339)
+**Project / Version:** ADL Portfolio Governance / Sweep-339
+**Objective:** Randomized Portfolio Completion Sweep. Random selection of one repository, full DISCOVER through RE-AUDIT cycle, update governance docs.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false. Live CI runs confirmed, Dependabot alerts sampled.
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-339 result — Randomized selection: forge-aegis
+
+### Selected Repository
+**beyond-repair/forge-aegis** (random from full portfolio).
+
+- Classification: **ACTIVE** (software / RUNNABLE SKETCH; claim-capped; FLS draft; host/VSA completeness UNVERIFIED / not claimed)
+- Head (main): `e7188d529739652a2dd6264bd3d328c1f72e60e5`
+- Discover: Offline Python pipeline (hash vs baseline policy, deterministic audit). No third-party deps. Tests present (10 total pass locally). CI workflow present and green. Docs/claims/schemas/examples complete for v0.1 slice.
+- CI: forge-aegis CI latest on main: success (prior run 37258127100). Local tests: 2+8 passed.
+- Dependabot open: none observed
+- Status: PASS (termination conditions met for this sketch; no product changes required)
+
+### Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot alerts on Digital_Double_virtual_workforce remain
+- Full 83-repository deep live verification incomplete
+- No claim elevation performed
+- No deletions, no history rewrites
+
+Residuals recorded. This cycle complete for selected repo. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-338 body follows for continuity. (Full historical content preserved in prior commits and SWEEP_HISTORY.md.)
 
 ## Sweep-338 result — Discovery confirmation + Phase 3 live re-verification
 
