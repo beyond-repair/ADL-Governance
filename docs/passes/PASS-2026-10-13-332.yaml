@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-13-332
+  parent_pass: PASS-2026-10-13-329
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-CONTINUITY-332
+  description: Reconstruct current ecosystem from live GitHub search (total_count 83), confirm Sweep-331 changes on aegis-repo-graph (pytest pin aligned), and persist this continuity pass under the recursive directive.
+  reason_selected: New agent session under ADL-BASILISK; required Discover & Audit before any product change; ensures persistent memory for fresh agents.
+
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair (id 132061760); live search user:beyond-repair total_count 83, incomplete_results false.
+    - Key governing repos: ADL-Governance (ACTIVE), aegis-repo-graph (RESEARCH, claim ≤1, snapshot validator).
+    - Sweep-331 completed: pyproject.toml optional-dependencies pytest==9.0.3 aligned with requirements.txt; CLAIM_STATUS updated.
+    - Latest YAML pass was PASS-2026-10-13-329.
+    - Portfolio exit criteria not met (incomplete full 83 verification, operator-gated Dependabot residual on Digital_Double_virtual_workforce).
+    - Catalog in aegis-repo-graph remains locked 2026-09-04 snapshot (72 repos +1).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-332.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Continuity PASS record for Basilisk session after Sweep-331.
+
+VERIFICATION:
+  tests_run:
+    - Schema self-consistent with nested required keys (PASS, STATE, OBJECTIVE, VERIFICATION, NEXT). Heading to be added in companion commit.
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio size 83 unchanged since prior observations.
+    - aegis-repo-graph pytest pin now consistent at 9.0.3; claim remains ≤1; no catalog expansion.
+    - Recursive memory is YAML passes + history headings + OPERATOR_QUEUE.
+    - No product mutations this cycle.
+  failures:
+    - None.
+  decisions:
+    - Persist reconstruction only. Do not auto-fix Dependabot or expand catalog (operator-only).
+
+REMAINING:
+  incomplete:
+    - Full 83 verification.
+    - Operator Dependabot remediation on Digital_Double_virtual_workforce.
+  blockers:
+    - Operator authorization required for security updates, archive flags, claim elevation, catalog expansion.
+  new_gaps:
+    - None.
+
+NEXT:
+  objective_id: GAP-LIGHT-REAUDIT-NONPILLAR
+  action: Select one random non-pillar repository (e.g., from research cluster) for claim-capped docs-only re-audit and heading update.
+  reason: Incremental discovery without duplication or unsupported claims; continues the recursive loop.
+  prerequisites:
+    - This PASS committed and SWEEP_HISTORY heading present.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count 83.
+    - aegis-repo-graph pyproject.toml SHA 8f4c8674982a2e3dfaf8a2074aa9bec35edaa18a showing pytest==9.0.3.
+    - SWEEP_HISTORY.md Sweep-331 body.
+    - PASS-2026-10-13-329.
