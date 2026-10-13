@@ -1,3 +1,15 @@
+## Sweep-322 fresh Basilisk reconstruction / PASS-2026-10-13-322
+
+- Timestamp: 2026-10-13T14:10Z.
+- Objective: Fresh reconstruction of ecosystem from live search (total_count 83) and prior PASS-319; persist continuity record.
+- Discover: Core pillars confirmed (ADL-Governance, ADL-Nexus RESEARCH claim≤1, forge-aegis, AEGIS-Project-Nehemiah-, aegis-repo-graph). Latest prior Sweep-321 RESEARCH. Critical residual Digital_Double Dependabot open.
+- Implement: None in product. New PASS YAML only.
+- Document: PASS-2026-10-13-322.yaml created. This heading added.
+- Govern: No claim elevation. No deletion. No history rewrite.
+- Exit: Persistence contract for this pass advanced. Full portfolio exit not met.
+
+Prior Sweep-321 body follows for continuity.
+
 ## Sweep-321 thrust-target-30 random selection and re-audit
 
 - Timestamp: 2026-10-13T14:00Z session clock.
