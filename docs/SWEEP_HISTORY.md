@@ -1,3 +1,18 @@
+## Sweep-320 BlockSwarm random selection and re-audit
+
+- Timestamp: 2026-10-13T13:00Z session clock.
+- Selection: Random selection of BlockSwarm from portfolio (total_count 83, incomplete_results false).
+- Discover: Recursive tree non-truncated. Head 98480104c353ffd22e1522943a5c5f6545044d18. README confirms ACTIVE, AI advises cannot execute invariant, Foundry tests, v0.5.0-sagf. Contracts, tests, docs, CI workflow present. Open issues: 0.
+- Audit: Compared to ADL-Governance. No undefined components, tests cover invariants, CI green (prior run 38252865430), no critical security, docs consistent. No stale registry.
+- Classification: ACTIVE (unchanged).
+- Implement: None in product repository. Governance docs updated only (idempotent).
+- Test/CI: Prior verification confirmed green. No re-run this cycle.
+- Document: PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md updated.
+- Govern: No unsupported claims. No deletion. No history rewrite. Preservation of all prior work.
+- Exit: Repo termination conditions met under ACTIVE rules. Portfolio exit not met (critical residual on Digital_Double_virtual_workforce + incomplete full verification).
+
+Prior Sweep-319 body follows for continuity.
+
 ## Sweep-319 Master Directive v3.0 Phase 3 verification and residual record
 
 - Timestamp: 2026-10-13T03:13Z session clock.
@@ -12,18 +27,3 @@
 - Exit: Portfolio exit criteria not met (critical residual + incomplete full 83 verification, dependency graph, gap analysis, etc.). Stop after this governed sweep. Do not loop.
 
 Prior Sweep-318 body follows for continuity.
-
-## Sweep-318 Auto_Legion SUPERSEDED re-audit
-
-- Timestamp: 2026-10-13T03:01Z session clock.
-- Selection: Random via Python random.choice over 83-name payload (total_count 83, incomplete_results false). Selected: Auto_Legion.
-- Discover: Tree recursive non-truncated. Head 4dfd177e42c35fc117fec86b557ce81df5cc483c. README, CLAIM_STATUS.md, ARCHIVED.md, tests/test_supersede_guard.py, .github/workflows/python-app.yml (supersede guard only).
-- Audit: SUPERSEDED, Claim 0, successor sovereign-clean-room. Known historical defects (missing local_model_integration, undefined functions, __pycache__) preserved. No unsupported claims. Archive queue listed.
-- Classification: SUPERSEDED (unchanged).
-- Implement: None in product. Governance docs updated only.
-- Test/CI: Supersede guard workflow present; tests assert status. No live re-run this cycle; prior consistent.
-- Document: PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md.
-- Govern: No claim elevation. No deletion. No archive flag. No history rewrite of prior bodies.
-- Exit: Repo termination conditions met under SUPERSEDED rules. Portfolio exit not met (critical residual + incomplete 83).
-
-Prior Sweep-317 body follows for continuity.
