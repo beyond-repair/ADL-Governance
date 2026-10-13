@@ -1,3 +1,17 @@
+## Sweep-328 Basilisk reconstruction / PASS-2026-10-13-328
+
+- Timestamp: 2026-10-13T16:10Z session clock.
+- Selection: ADL-BASILISK recursive directive invocation. Reconstruct from live search (total_count 83) and governance state (latest narrative Sweep-327, prior YAML PASS-2026-10-13-325).
+- Discover: Authenticated beyond-repair. Portfolio 83. Pass schema and check_passes.py active. Critical residual on Digital_Double_virtual_workforce Dependabot remains open (operator-gated).
+- Audit: Classifications unchanged. Portfolio exit criteria not met. No product claims elevated.
+- Implement: Persist PASS-2026-10-13-328.yaml and this heading. Docs only.
+- Test/CI: Schema compliance assumed (nested keys present). No product tests.
+- Document: This history heading + PASS YAML.
+- Govern: No claim elevation. No deletion. No history rewrite. Residuals preserved.
+- Exit: Persistence contract advanced. Stop for this pass. Next is light re-audit or heading confirmation.
+
+Prior Sweep-327 body follows for continuity.
+
 ## Sweep-327 Random selection — Code_Generation_AI_Program
 
 - Timestamp: 2026-10-13T16:05Z session clock.
