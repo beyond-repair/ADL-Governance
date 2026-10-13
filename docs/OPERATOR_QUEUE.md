@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-333 — do not execute from this agent
+
+Master Directive v3.0 live confirmation + Phase-3 pillar re-verification.
+
+- Portfolio: 83 repositories confirmed live. No deletions.
+- forge-aegis / BlockSwarm / sovereign-clean-room: Trees confirmed, Dependabot clean. PASS / PASS WITH FINDINGS.
+- Digital_Double_virtual_workforce: Tree confirmed. Multiple open high Dependabot alerts (js-yaml GHSA-2883-xcg3-v3hh/CVE-2026-84375, browserslist GHSA-73wf-gq98-2v4g/CVE-2026-73088, nanoid GHSA-xwg4-73v4-xw9w/CVE-2026-73086, others) remain. Operator-gated lockfile/package updates required. Do not merge Dependabot branches autonomously. FAIL.
+
+Portfolio exit criteria not met. Full 83 verification incomplete. No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
+
+Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated).
+
 ## Sweep-331 — do not execute from this agent
 
 Random selection `aegis-repo-graph`. Classification RESEARCH (claim ≤1 locked-snapshot validator).
@@ -24,9 +36,3 @@ Master Directive v3.0 Discovery + Phase-3 re-verification of pillars.
 Portfolio exit criteria not met. Full 83 verification incomplete. No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
 
 Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated).
-
-## Sweep-329 — do not execute from this agent
-
-Random selection `Project-Cold-Boot`. Classification RESEARCH (Claim-0 runnable sketch). Re-audit confirms full docs, structure CI + tests, smoke_test present, claim-capped language, no critical residuals, matches prior Sweep-272. Termination conditions met under RESEARCH rules. Commercial 1.0 / art / audio remains operator/content work outside this cycle. No product mutations. No destructive actions executed. No claim elevation.
-
-Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated). Full 83 verification incomplete. No history rewrite. No deletion.
