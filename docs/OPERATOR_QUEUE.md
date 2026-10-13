@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-339 — do not execute from this agent
+
+Randomized Portfolio Completion Sweep. Selected: beyond-repair/forge-aegis.
+
+- DISCOVER/AUDIT complete. Classification ACTIVE (runnable sketch, claim-capped).
+- Local tests passed (10 total). CI green on main. Dependabot clean.
+- No product mutations performed (verification only; termination conditions met for sketch).
+- No destructive actions. No claim elevation. No history rewrite. No deletion.
+
+Portfolio exit criteria not met (unresolved Dependabot on Digital_Double_virtual_workforce; incomplete full deep verification). Critical residuals remain open (operator-gated).
+
 ## Sweep-338 — do not execute from this agent
 
 Master Directive v3.0 live confirmation + Phase-3 pillar re-verification.
