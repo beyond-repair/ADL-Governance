@@ -1,5 +1,41 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-331)
+**Project / Version:** ADL Portfolio Governance / Sweep-331
+**Objective:** Randomized Portfolio Completion Sweep — random selection, DISCOVER through RE-AUDIT on aegis-repo-graph. Record status and stop.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Live tree, CI green, CLAIM_STATUS, tests.
+
+## Sweep-331 result — aegis-repo-graph
+
+- Selection: Random from 83-repository portfolio (shuf selection).
+- Classification: **RESEARCH** (locked-snapshot Artifact Graph validator; claim ≤1; not live crawler).
+- Head (main) after changes: 318df9c05fdff771999eade60259741b50030245
+- Structure: graph/ (catalog, engine, model, drift, observed_*), tests/test_graph.py, .github/workflows/ci.yml, CLAIM_STATUS.md, README.md, pyproject.toml, requirements.txt present.
+- CI: Latest push runs success (e.g. 38154316700 on prior head addressing Dependabot alert; new commits for pin alignment). Tests encode contract (locked 73 artifacts / 21 relationships, unique identities, claim caps, drift non-mutation).
+- Claim level: ≤1. Catalog row stores integer 3 as snapshot data only. No elevation.
+- Safe changes: Aligned pyproject.toml pytest optional pin to 9.0.3 matching requirements.txt and CI. Documented in CLAIM_STATUS.
+- Open PR: Dependabot #3 (pytest bump) may be partially superseded by main; operator may close if redundant.
+- Status: PASS (termination conditions met under RESEARCH rules: documented, tests/CI green, claims capped, no critical security issues, no unsupported claims, no duplicate canonicals).
+- Dependabot: alert GHSA-6w46-j5rx-g56g addressed on main. No open advisories observed.
+- Open issues/PRs: 1 (Dependabot).
+
+## Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot alerts on Digital_Double_virtual_workforce (prior residual)
+- Full 83-repository verification incomplete
+- No claim elevation performed
+- No deletions, no history rewrites
+
+Residuals recorded. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-330 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-13 (Sweep-330)
 **Project / Version:** ADL Portfolio Governance / Sweep-330
 **Objective:** Master Directive v3.0 — Portfolio Discovery confirmation + Mandatory Phase-3 Live Verification of pillars. Record residuals and stop.
@@ -56,37 +92,3 @@ Residuals recorded. Stop. Do not enter infinite review cycle.
 ---
 
 Prior Sweep-329 body follows for continuity.
-
-# Portfolio Status Report
-
-**Updated:** 2026-10-13 (Sweep-329)
-**Project / Version:** ADL Portfolio Governance / Sweep-329
-**Objective:** Random selection + full cycle on one repository. Record status and stop.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live tree, CLAIM_STATUS, structure workflow, docs.
-
-## Sweep-329 result — Project-Cold-Boot
-
-- Selection: Random from 83-repository portfolio.
-- Classification: **RESEARCH** (Claim-0 runnable sketch).
-- Head (main): `b21fe1bf40f5f650496195335cd586c212b2f8d6`
-- Contents: Full docs (ARCHITECTURE, BIBLE, MECHANICS, ROADMAP, STATUS, etc.), Godot 4.2+ vertical slice (SCAN/SNAP/SUNDER), domain-warp shaders, GameState.gd, smoke_test.gd + tools/smoke_test.sh, tests/test_structure.py, .github/workflows/structure.yml.
-- CI: structure workflow present; recent runs (on feature branches) success. Structural unittest locks required paths, autoload, GameState surface, claim-cap language.
-- Claim level: 0. Not a commercial Steam game. Not a formal DLRSE proof.
-- Status: PASS (termination conditions met under RESEARCH rules: docs complete, claims capped, structure CI green, no critical issues, no unsupported claims). Commercial 1.0 remains operator/content work.
-- Dependabot: none observed.
-- Open issues: 1.
-
-## Portfolio Exit Criteria
-**NOT MET**
-- Unresolved high/medium Dependabot alerts on Digital_Double_virtual_workforce (prior residual)
-- Full 83-repository verification incomplete
-- No claim elevation performed
-- No deletions, no history rewrites
-
-Residuals recorded. Stop. Do not enter infinite review cycle.
-
----
-
-Prior Sweep-327 body follows for continuity.
