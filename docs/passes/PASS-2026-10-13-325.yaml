@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-13-325
+  parent_pass: PASS-2026-10-13-322
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-325
+  description: Reconstruct ecosystem from live GitHub (user beyond-repair, total_count 83), ADL-Governance passes/history (latest narrative Sweep-324, latest YAML PASS-2026-10-13-322), and select bounded next slice.
+  reason_selected: New invocation of ADL-BASILISK directive requires Discover & Audit before mutation; confirms continuity and critical residual.
+
+DISCOVERY:
+  findings:
+    - Authenticated user: beyond-repair, public_repos 78, search total_count 83.
+    - Core: ADL-Governance ACTIVE with pass persistence schema enforced by scripts/check_passes.py.
+    - Latest narrative: Sweep-324 random re-audit of adl-capability-matrix (RESEARCH, claim ≤1, CI green, termination met).
+    - Latest YAML: PASS-2026-10-13-322 (reconstruction).
+    - Critical residual: Digital_Double_virtual_workforce Dependabot alert #13 OPEN (form-data CVE-2025-7783, operator-gated).
+    - Portfolio exit criteria not met (critical residual + incomplete full verification).
+    - Key pillars (forge-aegis, BlockSwarm, sovereign-clean-room, Digital_Double_virtual_workforce) previously verified with findings.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-325.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Continuity reconstruction pass for Basilisk directive invocation.
+
+VERIFICATION:
+  tests_run:
+    - Not run; docs-only. Schema matches nested required keys.
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Recursive engineering loop is active via sweeps/passes in ADL-Governance.
+    - Claim discipline and operator-gating for critical fixes are enforced.
+    - Full 83 verification remains incomplete; critical Dependabot residual persists.
+  failures:
+    - None this pass.
+  decisions:
+    - Persist reconstruction before any product change.
+    - Do not autonomously resolve operator-gated security residuals.
+    - Next action focuses on governance persistence integrity or safe re-audit.
+
+REMAINING:
+  incomplete:
+    - Full live audit of all 83 repositories.
+    - Operator remediation of Dependabot #13.
+    - Catalog/function census expansions.
+  blockers:
+    - Operator authorization required for critical security fixes and claim elevations.
+  new_gaps:
+    - GAP-HISTORY-HEADING-325: Ensure SWEEP_HISTORY.md or HEADINGS.md heading-names PASS-2026-10-13-325.
+
+NEXT:
+  objective_id: GAP-HISTORY-HEADING-325
+  action: Prepend or append a heading '## Sweep-325 Basilisk reconstruction / PASS-2026-10-13-325' to docs/SWEEP_HISTORY.md (or HEADINGS.md) and confirm check_passes.py would accept the tree.
+  reason: Completes the persistence contract for this pass; maintains the recursive loop integrity.
+  prerequisites:
+    - This PASS file committed.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count 83.
+    - SWEEP_HISTORY.md Sweep-324 and prior.
+    - PASS-2026-10-13-322 content.
+    - PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md residuals.
