@@ -1,3 +1,20 @@
+## Sweep-323 Phase-3 mandatory live verification of four pillars
+
+- Timestamp: 2026-10-13T14:19Z.
+- Objective: Explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (CI, releases/tags, tests, docs, security).
+- Discover: Live Actions and Dependabot lists.
+  - forge-aegis: CI success 37258127100 on e7188d5; Dependabot open empty.
+  - BlockSwarm: Foundry success 38252865430; Dependabot empty.
+  - sovereign-clean-room: Python tests success 37064696194 on main 4878918c; Dependabot empty.
+  - Digital_Double_virtual_workforce: Critical Dependabot #13 open (form-data CVE-2025-7783).
+- Audit: Classifications unchanged. No unsupported claims.
+- Implement: None in product repositories. Governance docs only.
+- Document: PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history updated.
+- Govern: No claim elevation. No deletion. No history rewrite.
+- Exit: Portfolio exit criteria not met (critical residual + incomplete full verification). Residuals recorded. Stop. Do not loop.
+
+Prior Sweep-322 body follows for continuity.
+
 ## Sweep-322 fresh Basilisk reconstruction / PASS-2026-10-13-322
 
 - Timestamp: 2026-10-13T14:10Z.
