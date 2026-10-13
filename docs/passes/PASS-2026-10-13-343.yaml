@@ -1,0 +1,65 @@
+PASS:
+  id: PASS-2026-10-13-343
+  parent_pass: PASS-2026-10-13-342
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 69
+  capabilities_verified: 2
+  gaps_remaining: 13
+OBJECTIVE:
+  id: GAP-AEGIS-GRAPH-VERIFY
+  description: Locally verify the locked Artifact Graph engine and tests in aegis-repo-graph.
+  reason_selected: Highest-value bounded verification of the central repository graph capability without expanding the lock.
+DISCOVERY:
+  findings:
+    - Tree head 318df9c05fdff771999eade60259741b50030245 confirmed.
+    - Claim ≤1 RESEARCH, locked snapshot of 72 repos +1 queue, 21 relationships.
+    - No live crawler or FLS compiler claimed.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-343.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - aegis-repo-graph engine verified locally
+VERIFICATION:
+  tests_run:
+    - python -m pytest -q : 12 passed in 0.08s
+    - python -m graph.engine : artifacts=73 relationships=21 OK exit 0
+  code_review: NOT_RUN
+  security: NOT_A_PRODUCT_SURFACE
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Locked graph contract holds under local execution.
+    - Claim remains ≤1; no promotion.
+  failures: []
+  decisions:
+    - Do not expand catalog. Do not raise claim. Do not add crawler.
+REMAINING:
+  incomplete:
+    - Full 83 deep verification
+    - Dependabot residual on workforce
+    - Archive flags on historical
+  blockers:
+    - Operator actions for archive and residual fixes
+  new_gaps: []
+NEXT:
+  objective_id: GAP-NEXT-PRIORITY
+  action: Select next highest-value bounded gap (e.g., another core repo verification or residual on Digital_Double).
+  reason: Continue incremental closure of portfolio gaps.
+  prerequisites:
+    - Fresh reconstruct of current heads.
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - local pytest 12 passed
+    - engine OK
+    - tree sha 318df9c05fdff771999eade60259741b50030245
