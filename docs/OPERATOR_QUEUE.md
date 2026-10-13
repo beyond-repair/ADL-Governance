@@ -1,5 +1,19 @@
 # Operator Queue
 
+## Sweep-344 — do not execute from this agent
+
+Master Directive v3.0 Phase-3 live Dependabot re-verification.
+
+- Portfolio: 83 repositories confirmed live. No deletions.
+- forge-aegis: Open Dependabot alerts = 0. PASS.
+- BlockSwarm: Open Dependabot alerts = 0. PASS.
+- sovereign-clean-room: Open Dependabot alerts = 0. PASS WITH FINDINGS.
+- Digital_Double_virtual_workforce: Multiple open Dependabot alerts remain, including high-severity js-yaml (GHSA-2883-xcg3-v3hh / CVE-2026-84375) and mediums (brace-expansion GHSA-q2hr-2g5m-vwhr, pytest GHSA-6w46-j5rx-g56g). Operator-gated lockfile/package updates required. Do not merge Dependabot branches autonomously. FAIL.
+
+Portfolio exit criteria not met. Full 83 deep verification incomplete. No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
+
+Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated).
+
 ## Sweep-342 — do not execute from this agent
 
 Randomized Portfolio Completion Sweep. Selected: beyond-repair/btc-trading.
