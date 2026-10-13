@@ -1,5 +1,11 @@
 # Operator Queue
 
+## Sweep-327 — do not execute from this agent
+
+Random selection `Code_Generation_AI_Program`. Classification ARCHIVED (recommended). Re-audit confirms empty stub, claim 0, inventory tests + CI present, no generator, listed in archive_queue.md. GitHub archived flag remains false. Archive action is operator-gated (`gh repo archive beyond-repair/Code_Generation_AI_Program --yes`). No product mutations. No destructive actions executed. No claim elevation.
+
+Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated). Full 83 verification incomplete. No history rewrite. No deletion.
+
 ## Sweep-326 — do not execute from this agent
 
 Master Directive v3.0 Discovery + Phase-3 verification of pillars.
