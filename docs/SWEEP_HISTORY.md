@@ -1,3 +1,18 @@
+## Sweep-319 Master Directive v3.0 Phase 3 verification and residual record
+
+- Timestamp: 2026-10-13T03:13Z session clock.
+- Selection: Master Directive v3.0 governed sweep. No random draw. One cycle only.
+- Discover: Live search user:beyond-repair total_count 83, incomplete_results false. Authenticated identity beyond-repair confirmed.
+- Audit: Phase 3 mandatory live verification of forge-aegis (CI success 37258127100), sovereign-clean-room (main CI success 37064696194), BlockSwarm (Foundry success 38252865430), Digital_Double_virtual_workforce (CI success 36861489156; critical Dependabot alert #13 open). No open Dependabot on the other three. Continuity of classifications preserved.
+- Classification: continuity preserved. No reclassifications.
+- Implement: None in product repositories. Governance docs updated only.
+- Test/CI: Live list_workflow_runs executed; residual unfixed.
+- Document: PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md.
+- Govern: No unsupported claims. No deletion. No archive. No claim elevation. No history rewrite of prior bodies.
+- Exit: Portfolio exit criteria not met (critical residual + incomplete full 83 verification, dependency graph, gap analysis, etc.). Stop after this governed sweep. Do not loop.
+
+Prior Sweep-318 body follows for continuity.
+
 ## Sweep-318 Auto_Legion SUPERSEDED re-audit
 
 - Timestamp: 2026-10-13T03:01Z session clock.
@@ -12,18 +27,3 @@
 - Exit: Repo termination conditions met under SUPERSEDED rules. Portfolio exit not met (critical residual + incomplete 83).
 
 Prior Sweep-317 body follows for continuity.
-
-## Sweep-317 residual confirmation / Phase 3 re-verification
-
-- Timestamp: 2026-10-13T02:15Z session clock.
-- Selection: Residual-gated continuation of Master Directive v3.0. No random draw.
-- Discover: Search total_count 83 confirmed (incomplete_results false).
-- Audit: Critical Dependabot alert #13 on Digital_Double_virtual_workforce remains open (form-data, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, first patched 4.0.4). Operator-gated. Phase 3 pillars continuity preserved from prior verification (forge-aegis, sovereign-clean-room, BlockSwarm green; Digital_Double residual).
-- Classification: continuity preserved. No reclassifications.
-- Implement: None in product repositories. Governance docs updated only.
-- Test/CI: No new live runs executed this cycle; residual unfixed.
-- Document: PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md.
-- Govern: No unsupported claims. No deletion. No archive. No claim elevation. No history rewrite of prior bodies.
-- Exit: Portfolio exit criteria not met (critical residual + incomplete full 83 verification). Stop after this governed sweep. Do not loop.
-
-Prior Sweep-316 body follows for continuity.
