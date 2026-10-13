@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-13-337
+  parent_pass: PASS-2026-10-13-336
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-FIX-HEADINGS-CONTENT-337
+  description: Correct the HEADINGS.md content to the intended full sweep heading index (## Sweep-N / PASS-id for all 116 canonical passes) and update SWEEP_HISTORY.md with the 337 entry, then verify with check_passes.py pattern.
+  reason_selected: Prior NEXT recommendation; the literal shell expansion in HEADINGS.md caused check_passes.py to report named=[] (no headings matched). Highest-value continuity fix before further product work.
+
+DISCOVERY:
+  findings:
+    - HEADINGS.md was the 27-byte literal "$(cat /tmp/new_headings.md)".
+    - check_passes.py regex requires "## .+ / PASS-id"; SWEEP_HISTORY.md uses em-dash form so relies on HEADINGS.md supplement.
+    - Local clone + generated index + python scripts/check_passes.py returned PASS: 118 yaml files parsed; history headings name all ids including PASS-2026-10-13-336.
+    - Portfolio remains 83 repositories; no product mutations.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-13-337.yaml
+  commits:
+    - c7d63974da17ac9c286ff22c786d52b0a1645bd3 (HEADINGS.md)
+    - f3b500383282086afa9ef5f6240382a82d2a8f94 (SWEEP_HISTORY.md)
+  capabilities_added_or_changed:
+    - Full heading index coverage restored; check_passes.py now names every persisted id
+
+VERIFICATION:
+  tests_run:
+    - Local python scripts/check_passes.py: PASS (118 yaml parsed, all ids named)
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - HEADINGS.md is the required index supplement for the heading regex.
+    - Governance pass system is reconstructable after this fix.
+    - No fabricated verification; local checker executed successfully.
+  failures:
+    - Shell expansion failure in Sweep-336 left literal content; corrected here.
+  decisions:
+    - Prefer documentation-only continuity fixes before any product work.
+    - Generate headings deterministically from filesystem pass filenames.
+
+REMAINING:
+  incomplete:
+    - Full 83-repo verification
+    - Operator-gated Dependabot and release actions
+  blockers:
+    - Operator actions required for claim elevations and security merges
+  new_gaps:
+    - None from this slice
+
+NEXT:
+  objective_id: GAP-OPERATOR-RESIDUALS-OR-PILLAR-AUDIT
+  action: Re-confirm live status of key pillars (forge-aegis, BlockSwarm, Digital_Double_virtual_workforce, sovereign-clean-room) and document any change in residuals; or select next highest-value bounded RESEARCH/ACTIVE gap from OPERATOR_QUEUE / PORTFOLIO_STATE if residuals unchanged.
+  reason: Continuity gap closed; return to portfolio maintenance under claim discipline. Full verification remains incomplete.
+  prerequisites:
+    - This PASS persisted
+
+PROVENANCE:
+  state_commit: f3b500383282086afa9ef5f6240382a82d2a8f94
+  evidence:
+    - Local check_passes.py PASS output
+    - Commits c7d63974 and f3b50038
+    - Prior PASS-336
