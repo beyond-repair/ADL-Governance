@@ -1,11 +1,50 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-13 (Sweep-342)
-**Project / Version:** ADL Portfolio Governance / Sweep-342
-**Objective:** Randomized Portfolio Completion Sweep — randomly selected btc-trading for DISCOVER/AUDIT/CLASSIFY.
+**Updated:** 2026-10-13 (Sweep-344)
+**Project / Version:** ADL Portfolio Governance / Sweep-344
+**Objective:** Master Directive v3.0 confirmation — live Phase-3 Dependabot verification.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-344 result — Master Directive v3.0 Phase-3 live verification
+
+### Portfolio Discovery
+Live search `user:beyond-repair`: **total_count 83**, incomplete_results false. Inventory stable. No deletions.
+
+### Mandatory Phase-3 Verification — Dependabot (live, 2026-10-13)
+
+#### forge-aegis
+- Open Dependabot alerts: **0**
+- Classification: **ACTIVE** (RUNNABLE SKETCH; claim-capped)
+- Status: PASS
+
+#### BlockSwarm
+- Open Dependabot alerts: **0**
+- Classification: **ACTIVE**
+- Status: PASS
+
+#### sovereign-clean-room
+- Open Dependabot alerts: **0**
+- Classification: **ACTIVE**
+- Status: PASS WITH FINDINGS
+
+#### Digital_Double_virtual_workforce
+- Open Dependabot alerts: **multiple confirmed** (including high-severity js-yaml GHSA-2883-xcg3-v3hh / CVE-2026-84375, medium brace-expansion GHSA-q2hr-2g5m-vwhr, medium pytest GHSA-6w46-j5rx-g56g)
+- Classification: **ACTIVE**
+- Status: FAIL (unresolved high-severity security findings; operator-gated)
+
+### Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot alerts on Digital_Double_virtual_workforce remain (operator-gated; do not merge autonomously)
+- Full 83-repository deep live verification incomplete
+- No claim elevation, no deletions, no history rewrites
+
+Residuals recorded. This cycle complete. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-342 body follows for continuity.
 
 ## Sweep-342 result — randomized selection: beyond-repair/btc-trading
 
