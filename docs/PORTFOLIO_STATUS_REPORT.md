@@ -1,5 +1,58 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-323)
+**Project / Version:** ADL Portfolio Governance / Sweep-323
+**Objective:** Mandatory Phase-3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Record residuals and stop.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Live Actions runs, Dependabot alerts, tree heads.
+
+## Sweep-323 result — Phase 3 Mandatory Verification
+
+### forge-aegis
+- Classification: **ACTIVE** (software sketch / claim-capped; not host product)
+- Head (main): `e7188d529739652a2dd6264bd3d328c1f72e60e5`
+- CI: forge-aegis CI latest main success (run 37258127100)
+- Dependabot open: none
+- Releases/tags: none observed
+- Status: PASS WITH FINDINGS (claim cap enforced; VSA completeness UNVERIFIED)
+
+### BlockSwarm
+- Classification: **ACTIVE** (SAGF / Foundry)
+- Latest main Foundry success (run 38252865430 on head 98480104c353ffd22e1522943a5c5f6545044d18; prior pinned success 36859452185 on 6e90f6f)
+- Dependabot open: none
+- Open issues: 0
+- Status: PASS
+
+### sovereign-clean-room
+- Classification: **ACTIVE** (canonical SEEM substrate; VSA completeness UNVERIFIED)
+- Main Python tests success (run 37064696194 on head 4878918cf9f95d3c19e1890bef6d2fd6713e0a16)
+- Branches: seem-completion-pass not merged; other open branches noted previously
+- Dependabot open: none
+- Status: PASS WITH FINDINGS (CI green on main; completeness UNVERIFIED)
+
+### Digital_Double_virtual_workforce
+- Classification: **ACTIVE** (public canonical)
+- Head: `24e6a29fd26c03900a8d98634d6683996eabdac4`
+- CI: prior success noted; Dependabot runs present
+- **Critical residual:** Dependabot alert #13 OPEN (form-data CVE-2025-7783, vulnerable >=4.0.0 <4.0.4 in digital_double/package-lock.json). Operator-gated lockfile update required. Do not merge autonomously.
+- Status: FAIL (critical security finding unresolved)
+
+## Portfolio Exit Criteria
+**NOT MET**
+- Unresolved critical Dependabot #13 on Digital_Double_virtual_workforce
+- Full 83-repository verification incomplete this cycle
+- No claim elevation performed
+- No deletions, no history rewrites
+
+Residuals recorded. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-321 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-13 (Sweep-321)
 **Project / Version:** ADL Portfolio Governance / Sweep-321
 **Objective:** Randomized Portfolio Completion Sweep — random selection of thrust-target-30, DISCOVER to RE-AUDIT.
