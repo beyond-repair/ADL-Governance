@@ -1,5 +1,40 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-13 (Sweep-320)
+**Project / Version:** ADL Portfolio Governance / Sweep-320
+**Objective:** Randomized Portfolio Completion Sweep — random selection of BlockSwarm, DISCOVER to RE-AUDIT.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. A2 for live tree, README, issues list (0 open), prior CI verification.
+
+**Draw:** Random selection of BlockSwarm from portfolio (total_count 83).
+
+## Sweep-320 result
+
+Subject: `BlockSwarm`.
+Classification: **ACTIVE** (Solidity / Foundry execution substrate). Invariant: AI advises. It cannot execute. Tag lineage includes v0.5.0-sagf.
+Exit criteria for this repository: **met** (tests present, CI green from prior verification run 38252865430, docs updated, no open issues, no critical security, no unsupported claims, no stale components).
+Portfolio exit criteria: **not met** (Digital_Double_virtual_workforce critical Dependabot residual remains; full 83 not fully verified this cycle).
+
+| Item | State |
+|------|-------|
+| Head | `98480104c353ffd22e1522943a5c5f6545044d18` |
+| Tree | contracts/ (AIExecutor, DAOGovernor, etc.), test/ (multiple .t.sol), docs/, .github/workflows/foundry.yml, README.md, GOVERNANCE.md, SECURITY.md. Submodules for OZ and forge-std. |
+| CI | foundry.yml present; prior main success. |
+| Tests | Multiple Foundry tests covering invariants (advisory-only, one-vote, roles, inverse binding, Merkle, deploy). |
+| Releases / tags | v0.5.0-sagf lineage noted. |
+| Security | No open Dependabot (prior). No critical issues. |
+| Open issues | 0. |
+| Archive | false. |
+
+No product source change this cycle. No claim elevation. Governance docs updated only. Termination conditions satisfied for BlockSwarm under ACTIVE rules. Continue random sweeps.
+
+---
+
+Prior Sweep-319 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-13 (Sweep-319)
 **Project / Version:** ADL Portfolio Governance / Sweep-319
 **Objective:** Master Directive v3.0 governed sweep — Phase 1 discovery continuity + Phase 3 mandatory live verification.
@@ -33,40 +68,3 @@ Portfolio exit criteria not met. Stop after this governed sweep. Do not enter au
 ---
 
 Prior Sweep-318 body follows for continuity.
-
-# Portfolio Status Report
-
-**Updated:** 2026-10-13 (Sweep-318)
-**Project / Version:** ADL Portfolio Governance / Sweep-318
-**Objective:** Random repository completion cycle for `Auto_Legion`.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. A2 for live search total_count, tree, Actions.
-
-**Draw:** Random selection via Python random.choice over search payload of 83 names (total_count 83, incomplete_results false). Selected: Auto_Legion.
-
-## Sweep-318 result
-
-Subject: `Auto_Legion`.
-Classification: **SUPERSEDED** (historical legion prototype). Claim cap: 0. Successor: sovereign-clean-room.
-Exit criteria for this repository: **met** under SUPERSEDED / Claim-0 rules (docs consistent, supersede guards in tests/ and CI workflow, no unsupported claims, archive queue listed, no product mutations).
-Portfolio exit criteria: **not met** (Digital_Double critical Dependabot residual remains; full 83 not re-verified this cycle).
-
-| Item | State |
-|------|-------|
-| Head | `4dfd177e42c35fc117fec86b557ce81df5cc483c` |
-| Tree | Auto_Legion/ package with agents, develop_tool, tests/test_supersede_guard.py, .github/workflows/python-app.yml (supersede guard), CLAIM_STATUS.md, ARCHIVED.md, README.md. __pycache__ present. |
-| CI | python-app.yml supersede guard (pytest on tests/, compileall). No product runtime. |
-| Tests | test_supersede_guard.py asserts SUPERSEDED, CLAIM 0, successor, known defects preserved. |
-| Releases / tags | empty. |
-| Security | none observed critical. |
-| Archive | false (queued in archive_queue.md). |
-| Open issues | 0. |
-
-No product source change. No claim elevation. Governance docs updated only. Known defects (missing modules, undefined functions) left in place as historical. __pycache__ removal queued for operator if desired.
-
-Termination conditions satisfied for this repository under SUPERSEDED rules. Continue random sweeps.
-
----
-
-Prior Sweep-317 body follows for continuity.
