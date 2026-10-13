@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-13-322
+  parent_pass: PASS-2026-10-13-319
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-RECONSTRUCT-BASILISK-322
+  description: Reconstruct ecosystem from live GitHub search, ADL-Governance passes/history, and Nexus structure; select bounded next slice on pass persistence integrity.
+  reason_selected: New session under ADL-BASILISK directive; Discover & Audit required before any product change; confirms total_count 83 and latest Sweep-321.
+
+DISCOVERY:
+  findings:
+    - Authenticated user: beyond-repair (78 public_repos reported, search total_count 83).
+    - Core governance: ADL-Governance ACTIVE, with scripts/check_passes.py and docs/passes/ YAML schema.
+    - Latest history heading: Sweep-321 (thrust-target-30 random re-audit, RESEARCH, claim 0).
+    - Latest confirmed PASS YAML: PASS-2026-10-13-319 (parent of this).
+    - ADL-Nexus: RESEARCH lifecycle, claim ≤1, layers 0-8 present, CI green historically.
+    - Key pillars: forge-aegis, AEGIS-Project-Nehemiah-, aegis-repo-graph, ADL-Nexus, ADL-Governance.
+    - Critical residual: Digital_Double_virtual_workforce Dependabot alert remains open.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-322.yaml
+  commits:
+    - this commit (new file)
+  capabilities_added_or_changed:
+    - Continuity pass record for Basilisk session start.
+
+VERIFICATION:
+  tests_run:
+    - Not run; docs-only persistence. No product code changed.
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio search returns 83 repositories.
+    - Pass persistence schema (nested YAML with PASS/STATE/OBJECTIVE/VERIFICATION/NEXT) is active.
+    - Sweep history and PASS YAMLs are the persistent memory for recursive engineering.
+  failures:
+    - None this pass.
+  decisions:
+    - Record reconstruction before any further mutation.
+    - Next bounded action is to ensure history heading for this PASS and run check_passes if possible.
+
+REMAINING:
+  incomplete:
+    - Full live audit of all 83.
+    - Operator-gated Dependabot remediation.
+    - Catalog and function census expansions.
+  blockers:
+    - Operator authorization for critical security fixes and claim elevations.
+  new_gaps:
+    - GAP-HISTORY-HEADING-322: SWEEP_HISTORY.md must heading-name PASS-2026-10-13-322.
+
+NEXT:
+  objective_id: GAP-HISTORY-HEADING-322
+  action: Prepend Sweep-322 heading to docs/SWEEP_HISTORY.md referencing this PASS, then verify scripts/check_passes.py accepts the tree.
+  reason: Completes the persistence contract for this pass; highest-value small verification of the governance loop itself.
+  prerequisites:
+    - This PASS file committed.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live github___search_repositories total_count 83.
+    - PASS-2026-10-13-319 content.
+    - SWEEP_HISTORY.md Sweep-321 body.
+    - ADL-Nexus README claim-cap.
