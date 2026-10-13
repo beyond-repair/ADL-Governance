@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-13-316
+  parent_pass: PASS-2026-10-12-310
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 13
+
+OBJECTIVE:
+  id: GAP-ECOSYSTEM-RECONSTRUCT
+  description: Reconstruct current GitHub ecosystem state from live search, governance docs, and prior passes; identify highest-value next bounded gap.
+  reason_selected: Fresh agent session requires full reconstruction per directive before local work; ensures state preservation and avoids stale plans.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760); public_repos ~78, search total_count 83.
+    - ADL-Governance is ACTIVE governing constitution with claim validation, lifecycle, pass checker (scripts/check_passes.py), sweeps.
+    - Latest history: Sweep-315 on FortiTrade_Multi-Strategy (ARCHIVED queue, Claim-0, CI green).
+    - aegis-repo-graph: locked 2026-09-04 catalog, claim ≤1, Dependabot medium previously addressed in PASS-305.
+    - Critical residual: Digital_Double_virtual_workforce Dependabot alert #13 (form-data <4.0.4, GHSA-fjxv-7rqg-78g4) remains open, operator-gated.
+    - Priorities from PORTFOLIO_STATE: Digital_Double, sovereign-clean-room, BlockSwarm, forge-aegis (RELEASE_BLOCKED_BY_OPERATOR).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-316.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent reconstruction record for session continuity.
+
+VERIFICATION:
+  tests_run:
+    - Observation of prior CI greens; no new product tests this pass.
+  code_review: NOT_RUN
+  security: PASS (docs only)
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation, no destructive change, history append only)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem is mature recursive governance system with 83 repositories under claim and lifecycle discipline.
+    - Critical security residual on Digital_Double remains the primary operator-gated blocker.
+    - Pass persistence via YAML + SWEEP_HISTORY heading is the continuity mechanism.
+  failures:
+    - None.
+  decisions:
+    - Reconstruction pass before product slice to honor "Understand the whole" rule.
+    - Next slice targets confirmation of check_passes or a small green verification.
+
+REMAINING:
+  incomplete:
+    - Full live verification of all 83.
+    - Catalog expansion in aegis-repo-graph.
+    - Critical Dependabot resolution.
+  blockers:
+    - Operator gates on lockfile updates, archive flags, tags, FLS expansion.
+  new_gaps:
+    - Live confirmation of check_passes.py on updated tree.
+
+NEXT:
+  objective_id: GAP-CHECK-PASSES-LIVE
+  action: Observe latest CI workflow run on ADL-Governance main or run check_passes.py locally against a checkout to confirm YAML + heading coverage for PASS-2026-10-13-316.
+  reason: Highest-value bounded verification of the persistence mechanism itself.
+  prerequisites:
+    - Push completed; CI or local checkout available.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live GitHub search total_count 83.
+    - Dependabot alert 13 open confirmed.
+    - PORTFOLIO_STATUS_REPORT.md Sweep-315.
+    - Prior PASS-2026-10-12-310.
