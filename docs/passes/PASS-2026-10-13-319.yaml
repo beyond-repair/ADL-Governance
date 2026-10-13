@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-13-319
+  parent_pass: PASS-2026-10-13-316
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-RECONSTRUCT-FRESH
+  description: Fresh reconstruction of ecosystem from live GitHub search and governance docs; select next bounded verification slice on persistence mechanism.
+  reason_selected: Directive requires Discover before any change; prior pass 316 was similar but session is new; confirms current total_count and latest sweeps.
+
+DISCOVERY:
+  findings:
+    - User beyond-repair, public search total_count 83.
+    - Core: ADL-Governance (ACTIVE, pass checker, constitution), aegis-repo-graph (locked catalog claim ≤1), AEGIS-Project-Nehemiah-, forge-aegis.
+    - Latest sweep in history: Sweep-318 Auto_Legion SUPERSEDED re-audit.
+    - Critical residual still open: Digital_Double Dependabot #13 form-data.
+    - forge-aegis skill active for FLS/Artifact Graph tasks.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-319.yaml
+    - docs/SWEEP_HISTORY.md (heading to be added)
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Continuity record for this session.
+
+VERIFICATION:
+  tests_run:
+    - Not run this pass; docs only.
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Recursive governance is active with sweeps up to 318.
+    - 83 repositories known from search.
+  failures:
+    - None this pass.
+  decisions:
+    - Persist reconstruction before product work.
+    - Next: live check of check_passes.py coverage.
+
+REMAINING:
+  incomplete:
+    - Full 83 live audit.
+    - Critical Dependabot fix (operator).
+    - Catalog expansion.
+  blockers:
+    - Operator gates.
+  new_gaps:
+    - Confirm check_passes accepts new YAML and heading.
+
+NEXT:
+  objective_id: GAP-CHECK-PASSES-LIVE
+  action: Verify scripts/check_passes.py on the tree including this PASS and ensure SWEEP_HISTORY heading exists.
+  reason: Verifies the persistence contract itself is intact.
+  prerequisites:
+    - This commit landed; heading added.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search 83.
+    - History Sweep-318.
+    - Prior PASS-316.
