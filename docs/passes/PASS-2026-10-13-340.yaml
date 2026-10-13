@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-13-340
+  parent_pass: PASS-2026-10-13-337
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-PORTFOLIO-RECONSTRUCT-340
+  description: Reconstruct current ecosystem state from live GitHub search and recent sweep history; confirm 83-repo inventory, pillar residuals (Dependabot on Digital_Double_virtual_workforce), and governance continuity; persist this pass record.
+  reason_selected: Highest-value next slice after continuity fix (337); prior NEXT recommended re-confirm pillars or select residual; no executable product gap without operator for Dependabot; documentation-only reconstruction advances persistent memory.
+
+DISCOVERY:
+  findings:
+    - Authenticated user: beyond-repair (id 132061760), public_repos ~78, search total_count 83.
+    - Key governance repos: ADL-Governance (ACTIVE, governing), aegis-repo-graph (RESEARCH, locked snapshot 72/83 names).
+    - Recent history (Sweep-338/339): pillars forge-aegis, BlockSwarm, sovereign-clean-room CI green, Dependabot clean; Digital_Double_virtual_workforce CI green but open high/medium Dependabot (js-yaml etc.) — operator-gated.
+    - Last persisted YAML pass: 337 (HEADINGS fix); 338/339 narratives in history but no matching YAML yet.
+    - No new product gaps identified this pass; claim discipline preserved (no elevation).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-340.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Persistent pass record for current reconstruction; history continuity extended
+
+VERIFICATION:
+  tests_run:
+    - Live search user:beyond-repair confirmed total_count=83
+    - Prior check_passes.py PASS from Sweep-337 context
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio size stable at 83; governance reconstructable via passes + history + graphs.
+    - Operator residuals unchanged: Dependabot on Digital_Double_virtual_workforce requires human merge/approval.
+    - aegis-repo-graph remains locked snapshot; expansion operator-only.
+  failures:
+    - None this slice; prior shell expansion fixed in 337.
+  decisions:
+    - Prefer governance reconstruction and residual documentation over speculative product work when operator gates are active.
+    - Next executable slices remain operator-dependent for security updates.
+
+REMAINING:
+  incomplete:
+    - Full deep verification of all 83 repositories
+    - Resolution of Dependabot alerts on Digital_Double_virtual_workforce
+    - Creation of YAML for historical Sweep-338/339 if desired
+  blockers:
+    - Operator approval required for Dependabot merges and any claim elevation
+  new_gaps:
+    - None
+
+NEXT:
+  objective_id: GAP-OPERATOR-RESIDUALS-OR-RANDOM-PILLAR
+  action: Operator to resolve high Dependabot on Digital_Double_virtual_workforce (or authorize agent for specific update under claim caps); alternatively, select next random ACTIVE/RESEARCH repo for idempotent verification sweep if residuals static.
+  reason: Residuals are the highest remaining gaps; full portfolio verification incomplete.
+  prerequisites:
+    - This PASS persisted and history updated
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Live GitHub search total_count=83
+    - OPERATOR_QUEUE.md and SWEEP_HISTORY.md Sweep-338/339
+    - PASS-337 continuity
