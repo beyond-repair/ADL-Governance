@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-13-335
+  parent_pass: PASS-2026-10-13-334
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-CONTINUITY-BASILISK-335
+  description: Reconstruct ecosystem under ADL-BASILISK Recursive Engineering Directive; close missing machine-readable PASS for Sweep-334; persist current session state.
+  reason_selected: Highest-value bounded gap is continuity and provenance for fresh agent; missing PASS yaml blocks full reconstructability.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760).
+    - Live user:beyond-repair search total_count 83, incomplete_results false.
+    - Latest narrative Sweep-334 on ware-constant-phenomenology (RESEARCH) documented in SWEEP_HISTORY.md and PORTFOLIO_STATUS_REPORT.md at commit a12476d9, but no PASS yaml existed.
+    - Portfolio exit criteria NOT MET: incomplete full verification, operator-gated high Dependabot on Digital_Double_virtual_workforce.
+    - Key pillars: forge-aegis ACTIVE/RELEASE_BLOCKED, BlockSwarm ACTIVE, sovereign-clean-room ACTIVE, Digital_Double ACTIVE with security residual.
+    - Nexus, AEGIS, SEEM, Governance layers present with claim caps enforced.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-334.yaml
+    - docs/passes/PASS-2026-10-13-335.yaml
+  commits:
+    - 866ee196969e59b25ea49ef9c03642827dc4364c
+  capabilities_added_or_changed:
+    - Machine-readable provenance for Sweep-334 and Sweep-335 continuity
+
+VERIFICATION:
+  tests_run:
+    - File creation via GitHub API succeeded; content matches narrative
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem reconstructable from GitHub + governance docs + pass records.
+    - Claim discipline and RESEARCH vs ACTIVE distinctions maintained.
+    - No fabricated verification results.
+  failures:
+    - None
+  decisions:
+    - Prefer REUSE of existing governance over new repositories.
+    - Small slice: persist missing PASS before further product work.
+    - Operator residuals preserved; no autonomous Dependabot merge.
+
+REMAINING:
+  incomplete:
+    - Full 83-repo verification and claim validation
+    - Digital_Double security updates (operator-gated)
+    - forge-aegis remote v0.1.0 release (operator)
+  blockers:
+    - Operator actions for tags, archives, Dependabot merges, claim elevations
+  new_gaps:
+    - HEADINGS.md and SWEEP_HISTORY.md may need heading for 334/335 (non-blocking for reconstruct)
+
+NEXT:
+  objective_id: GAP-HEADING-BACKFILL-336
+  action: Add heading lines for PASS-2026-10-13-334 and PASS-2026-10-13-335 to docs/passes/HEADINGS.md and prepend narrative to SWEEP_HISTORY.md if required by check_passes.py
+  reason: Ensure scripts/check_passes.py coverage for new passes without product mutation
+  prerequisites:
+    - Confirm check_passes.py requirements from existing pattern
+
+PROVENANCE:
+  state_commit: 866ee196969e59b25ea49ef9c03642827dc4364c
+  evidence:
+    - GitHub search total_count 83
+    - Commit a12476d9 for Sweep-334 docs
+    - Successful creation of PASS-334.yaml and this record
