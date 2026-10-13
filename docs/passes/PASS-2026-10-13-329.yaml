@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-13-329
+  parent_pass: PASS-2026-10-13-328
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 9
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-CONTINUITY-329
+  description: Reconstruct from live search (total_count 83), confirm Sweep-329 narrative on Project-Cold-Boot, and persist this continuity pass under the recursive directive.
+  reason_selected: New agent session under ADL-BASILISK; required Discover & Audit before product change; ensures heading coverage for prior narrative.
+
+DISCOVERY:
+  findings:
+    - Authenticated beyond-repair; live search total_count 83.
+    - Latest narrative Sweep-329: random Project-Cold-Boot RESEARCH Claim-0, structure CI present, claim-capped, termination met.
+    - Latest YAML was PASS-2026-10-13-328.
+    - check_passes.py enforces nested schema and SWEEP_HISTORY headings.
+    - Critical residual: Digital_Double_virtual_workforce Dependabot high/medium alerts operator-gated.
+    - Portfolio exit criteria not met.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-13-329.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Continuity PASS record for Basilisk session after Sweep-329.
+
+VERIFICATION:
+  tests_run:
+    - Schema self-consistent with nested required keys. Heading will be added in same commit.
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio size 83 unchanged.
+    - Recursive memory is YAML passes + history headings.
+    - No product mutations this cycle.
+  failures:
+    - None.
+  decisions:
+    - Persist reconstruction; next slice is light re-audit or operator residual note. Do not auto-fix Dependabot.
+
+REMAINING:
+  incomplete:
+    - Full 83 verification.
+    - Operator Dependabot remediation on Digital_Double_virtual_workforce.
+  blockers:
+    - Operator authorization required for security and archive flags.
+  new_gaps:
+    - None.
+
+NEXT:
+  objective_id: GAP-LIGHT-REAUDIT-OR-HEADING
+  action: Select one random non-pillar repository for claim-capped docs-only re-audit, or run check_passes.py locally to confirm heading coverage including this pass.
+  reason: Incremental discovery without duplication or unsupported claims.
+  prerequisites:
+    - This PASS committed and heading present.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count 83.
+    - SWEEP_HISTORY.md Sweep-329 body.
+    - PASS-2026-10-13-328.
