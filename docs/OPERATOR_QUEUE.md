@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-320 — do not execute from this agent
+
+Random selection `BlockSwarm`. Classification ACTIVE. Re-audit confirms tests, CI green (prior), docs consistent, 0 open issues, no critical security residuals. Termination conditions met for this repo. No product mutations. No destructive actions queued.
+
+Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (operator-gated lockfile update to >=4.0.4). Do not merge Dependabot branches autonomously.
+
+Full 83 verification incomplete. No archive flags changed. No claim elevation.
+
+No history rewrite. No deletion.
+
 ## Sweep-319 — do not execute from this agent
 
 Master Directive v3.0 governed sweep. Phase 3 live verification completed for the four named pillars. Critical Dependabot alert 13 on Digital_Double_virtual_workforce remains open (form-data, GHSA-fjxv-7rqg-78g4 / CVE-2025-7783, development scope, first patched 4.0.4). Operator-gated lockfile update required. Do not merge Dependabot branches from this queue.
