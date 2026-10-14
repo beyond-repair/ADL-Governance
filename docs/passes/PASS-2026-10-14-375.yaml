@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-10-14-375
+  parent_pass: PASS-2026-10-14-374
+
+STATE:
+  global_status: RECONSTRUCTING
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: ~40 (census incomplete)
+  capabilities_verified: ~15
+  gaps_remaining: multiple (integration, claim elevation, operator actions)
+
+OBJECTIVE:
+  id: NEX-INT-006-AUDIT
+  description: Audit open draft PR #7 in Digital_Double_virtual_workforce for Workforce execution evidence journal (NEX-INT-006) and its pairing with ADL-Nexus adapter.
+  reason_selected: Highest-value bounded integration gap between ACTIVE workforce repo and RESEARCH Nexus platform; previous passes focused on research claim caps; this advances cross-repo capability.
+
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair; 83 public repositories as of 2026-10-14.
+    - ADL-Governance is governing source with extensive pass history (latest 374 on topological-pinch).
+    - aegis-repo-graph holds locked FLS Artifact Graph snapshot (72 repos, claim ≤1).
+    - Digital_Double_virtual_workforce is ACTIVE (claim software); has open draft PR #7 implementing DurableExecutionEvidenceJournal (JSONL-backed, Workforce-owned).
+    - ADL-Nexus is RESEARCH (claim ≤1); defines workforce roles but live adapters UNSUPPORTED; pairs with this PR.
+    - Evidence class is frozen dataclass with request_id, handler_started, terminal, status, ids, output/error.
+    - Journal supports get/put with thread lock and rewrite-on-put for durability.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-375.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (documentation/audit only)
+
+VERIFICATION:
+  tests_run:
+    - none (audit pass)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - NEX-INT-006 evidence interface exists as draft implementation in Workforce PR.
+    - Ownership boundary is explicit (Workforce owns journal; Nexus consumes via adapter).
+    - Portfolio census total_count 83.
+  failures:
+    - none in this pass
+  decisions:
+    - Selected integration audit over random research reconfirm to advance higher-value gap.
+    - No claim elevation; no code mutation in product repos this pass.
+
+REMAINING:
+  incomplete:
+    - Full verification of evidence journal (tests, integration with Nexus adapter).
+    - Merge of PR #7 after review.
+    - Live adapter activation in Nexus (operator-gated).
+  blockers:
+    - PR is draft; full integration requires Nexus-side adapter confirmation.
+  new_gaps:
+    - Missing unit tests for DurableExecutionEvidenceJournal in the PR branch.
+    - Nexus adapter evidence() surface not yet inspected for compatibility.
+
+NEXT:
+  objective_id: NEX-INT-006-VERIFY
+  action: Clone PR branch, add minimal unit tests for ExecutionEvidence and Journal persistence/restart, run pytest, then document results.
+  reason: Smallest correct change to raise verification of the existing implementation without expanding scope.
+  prerequisites:
+    - Access to PR branch (confirmed).
+    - Local Python env for pytest.
+
+PROVENANCE:
+  state_commit: pending this commit
+  evidence:
+    - GitHub search user:beyond-repair total_count=83
+    - PR #7 body and evidence_journal.py inspected via clone
+    - ADL-Nexus README claim cap confirmed
