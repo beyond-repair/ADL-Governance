@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-348 — do not execute from this agent
+
+Randomized Portfolio Completion Sweep. Selected: beyond-repair/thrust-target-30.
+
+- DISCOVER/AUDIT/CLASSIFY complete. Classification RESEARCH (design goal constant 30 μN/kW; claim level 0; unit identity CI only).
+- Head confirmed 30d030aa36556e18403a961391e98b2d06e91c5a. Workflow unit-identity.yml present. No product mutations.
+- No destructive actions executed. No claim elevation. No history rewrite. No deletion.
+- Termination conditions met for this RESEARCH repository.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
+
 ## Sweep-347 — do not execute from this agent
 
 Master Directive v3.0 Phase 1-3 live confirmation.
