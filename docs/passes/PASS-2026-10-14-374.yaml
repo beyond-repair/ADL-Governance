@@ -1,0 +1,17 @@
+pass_id: PASS-2026-10-14-374
+sweep: 374
+date: 2026-10-14
+selected_repo: topological-pinch
+classification: RESEARCH
+claim_level: 0
+head_sha: f8297b98f939c8da3d79aadd4dcfb8d34e422717
+ci_status: green (docs-ci success on main)
+actions: documentation-only update to governance artifacts
+mutations: none
+residuals: portfolio-wide unchanged
+exit_criteria_met_for_repo: true (scoped to claim cap)
+exit_criteria_met_portfolio: false
+notes: |
+  Gasket-graph residual proxy. Levels 0-5: eta 0.5/0.4/0.1. historical_92_reproduced false.
+  Residual supported only on corners. Scale 3/5 observed, not fitted.
+  Not mesh, not thrust, not 0.08.
