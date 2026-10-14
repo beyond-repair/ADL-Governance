@@ -1,13 +1,30 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-382)
-**Project / Version:** ADL Portfolio Governance / Sweep-382
-**Objective:** Live re-verification of Phase-3 pillars and residual status confirmation.
+**Updated:** 2026-10-14 (Sweep-383)
+**Project / Version:** ADL Portfolio Governance / Sweep-383
+**Objective:** Random SELECT of scale-functional-I; DISCOVER → AUDIT → CLASSIFY → add CI workflow; governance update.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-383: Random Selection of scale-functional-I
+
+Focus: Random SELECT from full portfolio of 83.
+
+Live discovery: RESEARCH Claim-1. Declared functional I = Perimeter / sqrt(Area) on lattice dumbbells. beta_I has no zero on tested families. 0.08 not an input. Parent lock 2026-10-01 from -ware-constant-derivation. pyproject.toml, 13 pytest (all pass), CLAIM_STATUS.md explicit experimental_validation=false.
+
+AUDIT: Compliant. Missing CI prior to this sweep. No critical issues, no unsupported claims, no stale components.
+
+CLASSIFY: RESEARCH (held).
+
+IMPLEMENT: Added .github/workflows/ci.yml (pytest + default scale_functional.py run). Commit be0758aaa53f84cdcedfe4cfd902ff9dc9d6cf09 on scale-functional-I. No functional code changes. Claims unchanged.
+
+Portfolio-wide residuals continue (incomplete deep verification of 83, open Dependabot on Digital_Double_virtual_workforce and others, no releases on pillars, VSA unverified, archive flags partial).
+Portfolio exit criteria **NOT MET**.
+
+---
 
 ## Sweep-382: Phase-3 Pillar Live Re-Verification
 
