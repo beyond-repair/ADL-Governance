@@ -17,7 +17,7 @@ OBJECTIVE:
 
 DISCOVERY:
   findings:
-    - github___search_repositories user:beyond-repair total_count: 83 (incomplete_results: false).
+    - "github___search_repositories user:beyond-repair total_count: 83 (incomplete_results: false)."
     - Digital_Double_virtual_workforce open Dependabot alerts include high js-yaml GHSA-2883-xcg3-v3hh, medium brace-expansion, pytest.
     - Alerts remain open; operator-gated.
     - No product code mutations performed.
