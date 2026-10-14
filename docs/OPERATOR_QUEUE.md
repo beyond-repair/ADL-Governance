@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-354 — do not execute from this agent
+
+Randomized Portfolio Completion Sweep. Selected: beyond-repair/finite-gasket-spectral-derivatives.
+
+- DISCOVER/AUDIT/CLASSIFY complete. Classification RESEARCH (claim ≤1 finite discrete kernel; no continuum/selected W/force).
+- Head confirmed 92ad7bd937d1292f3a34763afde65ca2dd5e90d7. Mathematical documentation extensive and claim-capped. Tests and CI (kernel.yml) present and green (run 37901866164).
+- No product mutations. No feature additions. No claim elevation.
+- Termination conditions met for this RESEARCH repository.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
+
 ## Sweep-353 — do not execute from this agent
 
 Master Directive v3.0 Phase 3 live reconfirmation completed.
