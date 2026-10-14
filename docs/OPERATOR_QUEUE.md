@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-383 — do not execute from this agent
+
+Random SELECT of scale-functional-I (RESEARCH Claim-1).
+
+- DISCOVER/AUDIT complete: Compliant RESEARCH. 13 tests pass. Missing CI remediated by adding .github/workflows/ci.yml.
+- Classification held RESEARCH. No claim elevation. No functional code change.
+- No operator actions required for this repository (CI now present; will green on next run).
+- Portfolio residuals unchanged: incomplete deep verification of 83, open Dependabot on Digital_Double_virtual_workforce (escalate), VSA unverified, archive candidates, no releases on pillars.
+- Portfolio exit criteria not met. Cycle complete. Next: random select of non-pillar or operator review of Dependabot.
+
 ## Sweep-382 — do not execute from this agent
 
 Phase-3 pillar live re-verification.
