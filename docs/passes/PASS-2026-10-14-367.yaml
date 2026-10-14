@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-14-367
+  parent_pass: PASS-2026-10-14-366
+  sweep: 367
+  date: 2026-10-14
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67+
+  capabilities_verified: partial
+  gaps_remaining: full 83 deep verification incomplete; Dependabot residual operator-gated; catalog expansion operator-only
+
+OBJECTIVE:
+  id: RECONSTRUCT-AND-SELECT
+  description: Reconstruct current ecosystem from GitHub and Nexus/governance state; select highest-value bounded residual for next slice.
+  reason_selected: Fresh agent invocation requires reconstruction before any local work; follows NEXT from prior pass.
+
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair, public_repos 78, total search count previously 83.
+    - Pass records live in ADL-Governance/docs/passes/; latest YAML is PASS-2026-10-14-364; SWEEP_HISTORY documents up to Sweep-366 (SovereignOS RESEARCH reconfirm).
+    - ADL-Nexus lifecycle RESEARCH, claim ≤1, local ceiling 2, many pathways LOCAL/VERIFIED but live adapters UNSUPPORTED.
+    - aegis-repo-graph claim ≤1, locked 72-repo snapshot, not live crawler.
+    - forge-aegis ACTIVE runnable sketch, claim software.
+    - Operator queue: no action for Sweep-366; Dependabot residual remains.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-367.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent reconstruction pass record
+
+VERIFICATION:
+  tests_run:
+    - Live github___get_me, search_repositories (prior 83), get_file_contents on key READMEs and CLAIM_STATUS
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim caps respected; no product mutations; history preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio census stable at ~83; classifications hold; no claim elevations this cycle
+    - Reconstruction possible from GitHub + ADL-Governance docs
+  failures:
+    - None
+  decisions:
+    - Persist pass before further work; next slice is residual deep audit of next unconfirmed or random RESEARCH/ACTIVE repo
+
+REMAINING:
+  incomplete:
+    - Full deep verification of all 83 repositories
+    - Dependabot residual resolution (operator)
+    - Catalog expansion / archive flags (operator)
+  blockers:
+    - Operator-gated actions
+  new_gaps:
+    - None new
+
+NEXT:
+  objective_id: RESIDUAL-AUDIT-NEXT
+  action: Select and deep-audit one residual repository (prefer one without recent full audit, e.g. a RESEARCH physics or OS-family or Digital Double residual)
+  reason: Portfolio exit criteria not met; continue small verified slices
+  prerequisites:
+    - Access confirmed; this pass persisted
+
+PROVENANCE:
+  state_commit: pending this commit
+  evidence:
+    - github___get_me login beyond-repair
+    - Prior search total_count 83
+    - docs/SWEEP_HISTORY.md Sweep-366
+    - ADL-Nexus docs/CLAIM_STATUS.md
