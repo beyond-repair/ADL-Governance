@@ -1,5 +1,44 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-14 (Sweep-362)
+**Project / Version:** ADL Portfolio Governance / Sweep-362
+**Objective:** Deep audit of aegis-repo-graph per prior residual; reconfirm pillars and live census.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-362 result — aegis-repo-graph deep audit
+
+- **Selected:** beyond-repair/aegis-repo-graph (next bounded action from Sweep-361)
+- **Classification:** RESEARCH
+- **Claim:** ≤1 (deterministic validator of locked 2026-09-04 catalog; tool claim ≤1; catalog row integer 3 is snapshot data only)
+- **Head (main):** 318df9c05fdff771999eade60259741b50030245
+- **Contents:** Locked catalog in graph/catalog.py (72 repository artifacts + 1 queue = 73 artifacts, 21 relationships). Drift witnesses in graph/drift.py for frozen 2026-10-06 (83 names) and 2026-10-09 (83 names) observations. Tests in tests/test_graph.py lock validity, unique identities, claim/lifecycle/function constraints, non-mutation of lock by drift, and reconfirm equality. CI workflow pins actions/checkout and actions/setup-python to full SHAs. README and CLAIM_STATUS.md explicit on limits (not live crawler, not FLS compiler, not Nehemiah host).
+- **CI:** Workflow defined; historical success (e.g. run 37934144237 on b8a5c7f4, run 38154316700 on e0fe2750). Actions conclusion only; not evidence of catalog expansion or FLS conformance.
+- **Releases:** none
+- **Dependabot:** Open PR #3 noted as potentially stale relative to main (GHSA addressed in prior commit).
+- **Branches:** main, feat/v0.1-artifact-graph, repair/installable-snapshot-graph
+- **Termination conditions:** MET for this RESEARCH repository (contract locked, claims capped, no unsupported implementation claims, CI historical green, no critical security findings observed)
+- **Actions:** Verification and documentation only. No product mutations. No claim elevation. No catalog expansion. No release/tag. No archive.
+
+### Pillars reconfirm (from prior + this cycle)
+forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce: ACTIVE. No releases. Historical CI success. Dependabot residual (high js-yaml + mediums) on Digital_Double_virtual_workforce remains operator-gated.
+
+### Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot on Digital_Double_virtual_workforce (operator-gated)
+- Full 83 deep verification incomplete
+- Catalog freeze vs live 83 (expansion operator-only)
+- No claim elevation, no deletions, no history rewrites
+
+This cycle complete. Next bounded action: continue residual deep audits or operator resolution of Dependabot. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-361 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-14 (Sweep-361)
 **Project / Version:** ADL Portfolio Governance / Sweep-361
 **Objective:** Reconstruct current ecosystem from live GitHub search and governance docs; persist ADL-BASILISK agent continuation pass.
@@ -25,38 +64,6 @@
 - No claim elevation, no deletions, no history rewrites
 
 This cycle complete. Next bounded action: deep audit of aegis-repo-graph. Stop. Do not enter infinite review cycle.
-
----
-
-Prior Sweep-360 body follows for continuity.
-
-# Portfolio Status Report
-
-**Updated:** 2026-10-14 (Sweep-360)
-**Project / Version:** ADL Portfolio Governance / Sweep-360
-**Objective:** Randomized Portfolio Completion Sweep. Random selection: Code_Generation_AI_Program.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
-
-## Sweep-360 result — Code_Generation_AI_Program
-
-- **Selected:** beyond-repair/Code_Generation_AI_Program (random.choice over sample of portfolio)
-- **Classification:** ARCHIVED (recommended). Claim level 0. Empty of generator. Inventory-only.
-- **Head (main):** fa51c8048041f048bb64d4c3b1c93182e8bf5e0b (or latest)
-- **Contents:** README.md (explicit no generator, claim 0, ARCHIVE QUEUE), CLAIM_STATUS.md (Sweep-277 evidence, archived recommended, flag false), docs/SWEEP-226.md, docs/SWEEP-277.md, tests/test_inventory.py (asserts no .py modules outside tests/.github, README and claim status contain required strings), .github/workflows/inventory.yml (pytest on push/PR)
-- **CI:** Inventory workflow previously green (run 37386093314 success on prior SHA). No generator present.
-- **Dependabot open:** none observed (no dependencies)
-- **Termination conditions:** MET (no undefined/undocumented components, no stale registry entries, no critical CI failures, no duplicate canonical implementations, no unresolved critical security issues, no unsupported claims, target state inventory-green + docs locked for ARCHIVE)
-- **Actions:** Verification only. Governance docs updated. No product mutations. No claim elevation. No feature work. No release/tag. No archive flag set (operator-gated).
-
-### Portfolio Exit Criteria
-**NOT MET**
-- Unresolved high/medium Dependabot on Digital_Double_virtual_workforce (operator-gated)
-- Full 83 deep verification incomplete
-- No claim elevation, no deletions, no history rewrites
-
-This cycle complete for the selected repository. Stop. Do not enter infinite review cycle.
 
 ---
 
