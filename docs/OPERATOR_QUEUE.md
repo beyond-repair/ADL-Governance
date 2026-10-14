@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-382 — do not execute from this agent
+
+Phase-3 pillar live re-verification.
+
+- Confirmed: forge-aegis CI green (2026-10-05), sovereign-clean-room main success (2026-10-02, VSA UNVERIFIED), BlockSwarm Foundry green (2026-10-12), Digital_Double_virtual_workforce CI green (2026-10-01) with open Dependabot (pytest medium GHSA-6w46-j5rx-g56g, brace-expansion medium GHSA-q2hr-2g5m-vwhr, js-yaml high GHSA-2883-xcg3-v3hh).
+- No releases/tags on pillars. Classifications held. No mutations.
+- Residuals persist: incomplete deep verification of 83 repos, open Dependabot (escalate for review/merge or dismiss), VSA unverified, archive candidates not fully flagged, integration drafts.
+- Portfolio exit criteria not met. Cycle complete. Next: operator review of Dependabot PRs or bounded random residual audit.
+
 ## Sweep-381 — do not execute from this agent
 
 Residual Dependabot audit of Digital_Double_virtual_workforce.
