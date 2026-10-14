@@ -1,5 +1,11 @@
 # Operator Queue
 
+## Sweep-349 — do not execute from this agent
+
+Portfolio reconfirm. total_count remains 83. Digital_Double_virtual_workforce open Dependabot alerts persist including high-severity js-yaml (GHSA-2883-xcg3-v3hh). Operator-gated. No autonomous merges.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual remains operator-gated).
+
 ## Sweep-348 — do not execute from this agent
 
 Randomized Portfolio Completion Sweep. Selected: beyond-repair/thrust-target-30.
