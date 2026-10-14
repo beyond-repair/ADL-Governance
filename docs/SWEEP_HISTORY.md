@@ -1,3 +1,13 @@
+## Sweep-352 Fresh Reconstruction — PASS-2026-10-14-352
+
+- Timestamp: 2026-10-14T02:05Z UTC.
+- Objective: Reconstruct ecosystem from live GitHub + persistent governance state for fresh agent continuation under ADL-BASILISK recursive directive.
+- Discovery: total_count 83 confirmed. Latest yaml pass PASS-2026-10-14-349; main head Sweep-351 commit. aegis-repo-graph locked RESEARCH. Operator residuals persist.
+- Classification: ACTIVE_MAINTENANCE.
+- Changes: Added PASS-352.yaml + history/queue updates. No product mutations.
+- Verification: Live API confirmations. overall PASS.
+- Exit: Portfolio exit criteria NOT MET. Continue incremental.
+
 ## Sweep-351 Randomized Portfolio Completion — PASS-2026-10-14-351
 
 - Timestamp: 2026-10-14T02:00Z UTC (approx).

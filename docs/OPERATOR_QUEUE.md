@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-352 — do not execute from this agent
+
+Fresh reconstruction of ecosystem state for recursive continuation.
+
+- DISCOVER complete from live GitHub search (total_count 83) and ADL-Governance artifacts.
+- Latest persisted pass PASS-2026-10-14-349; main at Sweep-351 commit.
+- No product mutations. No claim elevations. No releases or archives.
+- Portfolio exit criteria not met (full deep verification incomplete; Dependabot residual operator-gated).
+
 ## Sweep-351 — do not execute from this agent
 
 Randomized Portfolio Completion Sweep. Selected: beyond-repair/Digital_Double_Virtual_Workforce_4.
@@ -27,16 +36,5 @@ Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabo
 Portfolio reconfirm. total_count remains 83. Digital_Double_virtual_workforce open Dependabot alerts persist including high-severity js-yaml (GHSA-2883-xcg3-v3hh). Operator-gated. No autonomous merges.
 
 Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual remains operator-gated).
-
-## Sweep-348 — do not execute from this agent
-
-Randomized Portfolio Completion Sweep. Selected: beyond-repair/thrust-target-30.
-
-- DISCOVER/AUDIT/CLASSIFY complete. Classification RESEARCH (design goal constant 30 μN/kW; claim level 0; unit identity CI only).
-- Head confirmed 30d030aa36556e18403a961391e98b2d06e91c5a. Workflow unit-identity.yml present. No product mutations.
-- No destructive actions executed. No claim elevation. No history rewrite. No deletion.
-- Termination conditions met for this RESEARCH repository.
-
-Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
 
 (Prior entries preserved below; full history in SWEEP_HISTORY.md.)
