@@ -1,11 +1,17 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-369)
-**Project / Version:** ADL Portfolio Governance / Sweep-369
-**Objective:** Randomized selection re-audit of btc-trading; continuity of prior discovery. Exit criteria NOT MET.
+**Updated:** 2026-10-14 (Sweep-370)
+**Project / Version:** ADL Portfolio Governance / Sweep-370
+**Objective:** Basilisk recursive discovery and audit; persist pass. Exit criteria NOT MET.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-370: Basilisk Recursive Discovery
+
+Fresh agent reconstruction of the ecosystem. 83 repositories confirmed. Governance artifacts (constitution, claims, lifecycle, passes) intact. aegis-repo-graph remains RESEARCH claim ≤1 with locked 2026-09-04 catalog; drift observers for later censuses. No product code changed. Pass record persisted.
+
+Residuals from prior sweeps continue. Portfolio exit criteria **NOT MET**.
 
 ## Sweep-369: Random Re-Audit of btc-trading
 
