@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-363 — do not execute from this agent
+
+Reconfirm of randomly selected beyond-repair/btc-trading.
+
+- DISCOVER/AUDIT/CLASSIFY complete. Classification ARCHIVED (recommended). Claim 0. GitHub archived flag false (operator). CI green on Sweep-261. Stdlib inventory and tests present. Credential removed from HEAD (historical in git history — operator rotate/revoke). No product mutations. No claim elevations. No releases or archives set.
+- Termination conditions met for this repository. No operator action required for this cycle beyond optional archive flag and residual Dependabot.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated; catalog freeze operator-only; archive flags pending).
+
 ## Sweep-362 — do not execute from this agent
 
 Deep audit of aegis-repo-graph.
