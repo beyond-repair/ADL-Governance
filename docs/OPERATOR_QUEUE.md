@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-373 — do not execute from this agent
+
+Phase-3 live reconfirmation of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+
+- Classifications unchanged. Claim caps held. No product mutations. No history rewrites. No deletions.
+- Digital_Double_virtual_workforce open Dependabot alerts remain (medium/high severity including prior CVE notes). Escalate for remediation or justified dismissal.
+- Full 83-repo deep verification incomplete. Archive flags pending for recommended candidates (GitHub archive flag operator-only). Catalog freeze / expansion operator-only.
+- No new destructive proposals this cycle.
+
+Portfolio exit criteria not met. Next residual: continue random or targeted audits under claim caps, or operator security remediation on Digital Double.
+
 ## Sweep-371 — do not execute from this agent
 
 Random selection and DISCOVER/AUDIT of beyond-repair/momentum-closure.
