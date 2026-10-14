@@ -1,13 +1,30 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-381)
-**Project / Version:** ADL Portfolio Governance / Sweep-381
-**Objective:** Residual Dependabot audit on Digital_Double_virtual_workforce.
+**Updated:** 2026-10-14 (Sweep-382)
+**Project / Version:** ADL Portfolio Governance / Sweep-382
+**Objective:** Live re-verification of Phase-3 pillars and residual status confirmation.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-382: Phase-3 Pillar Live Re-Verification
+
+Focus: Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Evidence-only.
+
+Live verification:
+- forge-aegis: CI success run 37258127100 on e7188d529739652a2dd6264bd3d328c1f72e60e5 (2026-10-05). No releases. No tags. Claim-capped ACTIVE software sketch.
+- sovereign-clean-room: main last CI success on 4878918cf9f95d3c19e1890bef6d2fd6713e0a16 (2026-10-02). VSA remains UNVERIFIED. No releases.
+- BlockSwarm: Foundry CI success run 38252865430 on 98480104c353ffd22e1522943a5c5f6545044d18 (2026-10-12). No releases.
+- Digital_Double_virtual_workforce: main CI green as of 2026-10-01 (head 24e6a29fd26c03900a8d98634d6683996eabdac4). Open Dependabot alerts confirmed: pytest (medium GHSA-6w46-j5rx-g56g), brace-expansion (medium GHSA-q2hr-2g5m-vwhr), js-yaml (high GHSA-2883-xcg3-v3hh) and others. No releases. Readiness FAIL.
+
+Classifications unchanged. No claim elevations. No mutations to target repositories.
+
+Portfolio-wide residuals continue (incomplete deep verification of 83, open security on pillars and superseded, no releases on pillars, VSA unverified, archive flags partial, integration drafts).
+Portfolio exit criteria **NOT MET**.
+
+---
 
 ## Sweep-381: Residual Dependabot Audit on Digital_Double_virtual_workforce
 
