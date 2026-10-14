@@ -1,13 +1,34 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-376)
-**Project / Version:** ADL Portfolio Governance / Sweep-376
-**Objective:** Full portfolio discovery and Phase-3 mandatory live verification. Exit criteria NOT MET portfolio-wide.
+**Updated:** 2026-10-14 (Sweep-377)
+**Project / Version:** ADL Portfolio Governance / Sweep-377
+**Objective:** Randomized portfolio completion sweep — DISCOVER/AUDIT of ware-constant-phenomenology.
+
+Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
 
+## Sweep-377: Random Selection of ware-constant-phenomenology
+
+Randomly selected from 83-repo pool.
+Classification reconfirmed: RESEARCH (claim ≤2 phenomenology; experimental validation false).
+Head main `8db3fc8cbd80f5f4ae725dc67c4748fe799fcc35`.
+CI green: docs-presence success on that SHA (run 37055421203, 2026-10-02).
+Runnable sketch: offline SPARC scoring (median χ²_red = 9.098 on Lelli+2016), killgates, constant-W action verify, white-light bounds.
+Explicit locks: W★ = 1/(4π) ≈ 0.079577; W(n) = 0.08 * exp(0.23*(n-3)); SPARC χ² as pass UNSUPPORTED; no thrust/energy extraction; no derivation of numerical 0.08 from action or pinch.
+Tests (pytest claim-0 smokes) and docs present. No Dependabot open. Releases/tags empty.
+No code mutations this cycle.
+No new residuals.
+
+Portfolio-wide residuals from prior sweeps continue.
+Portfolio exit criteria **NOT MET**.
+
+---
+
 ## Sweep-376: Portfolio Discovery and Phase-3 Verification
+
+[Prior content preserved for continuity.]
 
 Census reconfirmed via live GitHub search: 83 repositories under user:beyond-repair.
 
