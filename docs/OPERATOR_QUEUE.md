@@ -1,20 +1,16 @@
 # Operator Queue
 
+## Sweep-368 — do not execute from this agent
+
+Portfolio discovery and Phase-3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+
+- Classifications unchanged. Claim caps held. No product mutations. No history rewrites. No deletions.
+- Digital_Double_virtual_workforce has multiple open Dependabot alerts (medium/high severity: pytest CVE-2025-71176, brace-expansion quadratic DoS, js-yaml, etc.). Escalate for remediation or dismissal with justification. Prior critical residual noted.
+- Full 83-repo deep verification incomplete. Archive flags pending for recommended candidates. Catalog freeze operator-only.
+- No new destructive proposals this cycle.
+
+Portfolio exit criteria not met. Next residual: continue random or targeted audits, or operator security remediation.
+
 ## Sweep-367 — do not execute from this agent
-
-Reconstruction pass. Census and classifications reconfirmed. No operator action required this cycle. Next residual audit selected for subsequent agent.
-
-Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated; catalog freeze operator-only; archive flags pending).
-
-## Sweep-366 — do not execute from this agent
-
-Randomized selection of beyond-repair/SovereignOS.
-
-- DISCOVER/AUDIT/CLASSIFY complete. Classification RESEARCH. Claim ≤1 (Idea / architectural notes). Head 0a33d16. Docs-ci green. Explicitly unvalidated concept sketch; no implementation. No product mutations. No claim elevations. No releases or archives.
-- Termination conditions met for this RESEARCH tree. No operator action required for this cycle. OS-family consolidation remains operator-gated (see prior).
-
-Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated; catalog freeze operator-only; archive flags pending).
-
-## Sweep-365 — do not execute from this agent
 
 [Prior content preserved; full history in git.]
