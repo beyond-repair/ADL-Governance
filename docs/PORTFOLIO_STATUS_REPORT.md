@@ -1,5 +1,39 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-14 (Sweep-351)
+**Project / Version:** ADL Portfolio Governance / Sweep-351
+**Objective:** Randomized Portfolio Completion Sweep. Random selection: Digital_Double_Virtual_Workforce_4.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-351 result — Digital_Double_Virtual_Workforce_4.
+
+- **Selected:** beyond-repair/Digital_Double_Virtual_Workforce_4. (random.choice over 83 names)
+- **Classification:** SUPERSEDED (claim level 0; successor Digital_Double_virtual_workforce)
+- **Head (main):** c346db87e70b32dae1f153827bfa2efa83b258be
+- **Contents:** README.md, SUPERSEDED.md, CLAIM_STATUS.md, tests/test_lifecycle_docs.py, .github/workflows/lifecycle.yml
+- **Application source:** ABSENT
+- **Releases/Tags:** empty
+- **Dependabot open:** 0
+- **CI:** lifecycle-docs workflow present (claim-cap unittest only)
+- **Termination conditions:** MET (no undefined components, no stale entries, no critical CI failures, no duplicate canonical, no unresolved security, no unsupported claims, target state achieved)
+- **Actions:** Verification only. No product mutations. No feature additions. GitHub archive remains operator-only.
+
+### Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot on Digital_Double_virtual_workforce (operator-gated)
+- Full 83 deep verification incomplete
+- No claim elevation, no deletions, no history rewrites
+
+This cycle complete for the selected repository. Stop. Do not enter infinite review cycle.
+
+---
+
+Prior Sweep-350 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-14 (Sweep-350)
 **Project / Version:** ADL Portfolio Governance / Sweep-350
 **Objective:** Master Directive v3.0 Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
@@ -45,8 +79,3 @@ Residuals recorded. This cycle complete. Stop. Do not enter infinite review cycl
 ---
 
 Prior Sweep-348 body follows for continuity. (Full historical content preserved in prior commits and SWEEP_HISTORY.md.)
-
-# Portfolio Status Report (prior)
-
-**Updated:** 2026-10-14 (Sweep-348)
-... (truncated for brevity; full prior content preserved in history)

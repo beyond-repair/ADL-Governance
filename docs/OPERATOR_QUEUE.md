@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-351 — do not execute from this agent
+
+Randomized Portfolio Completion Sweep. Selected: beyond-repair/Digital_Double_Virtual_Workforce_4.
+
+- DISCOVER/AUDIT/CLASSIFY complete. Classification SUPERSEDED (claim level 0; successor Digital_Double_virtual_workforce; claim-cap docs + unittest only).
+- Head confirmed c346db87e70b32dae1f153827bfa2efa83b258be. No application source. Releases empty. Dependabot open 0.
+- No product mutations. No feature additions. GitHub archive remains operator-only (`gh repo archive beyond-repair/Digital_Double_Virtual_Workforce_4. --yes`).
+- Termination conditions met for this SUPERSEDED repository.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
+
 ## Sweep-350 — do not execute from this agent
 
 Master Directive v3.0 Phase 3 live verification completed.
