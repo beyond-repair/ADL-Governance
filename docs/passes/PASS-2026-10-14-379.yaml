@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-14-379
+  parent_pass: PASS-2026-10-14-378
+
+STATE:
+  global_status: RECONSTRUCTING
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 42
+  capabilities_verified: 18
+  gaps_remaining: 27
+
+OBJECTIVE:
+  id: BASILISK-GAP-002
+  description: Audit and document current Dependabot alerts and draft PR status on Digital_Double_virtual_workforce; produce evidence without mutation.
+  reason_selected: Explicit NEXT from PASS-2026-10-14-378; highest residual security risk.
+
+DISCOVERY:
+  findings:
+    - Open Dependabot alerts include: pytest (medium, GHSA-6w46-j5rx-g56g, <9.0.3), brace-expansion (medium, GHSA-q2hr-2g5m-vwhr, multiple ranges), js-yaml (high, GHSA-2883-xcg3-v3hh, >=4.0.0 <4.3.2).
+    - Open PRs: #7 (draft, NEX-INT-006 Workforce execution evidence journal), #6 (Dependabot rollup bump 4.24.0 to 4.63.1).
+    - Main CI green as of prior sweeps; no critical severity in enumerated alerts.
+    - All alerts created around 2026-10-01 or earlier; no mutations performed.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-379.yaml
+  commits:
+    - pending (this)
+  capabilities_added_or_changed:
+    - Dependabot residual documented with specific GHSAs and PRs
+
+VERIFICATION:
+  tests_run:
+    - Live list_dependabot_alerts and list_pull_requests on Digital_Double_virtual_workforce (2026-10-14)
+  code_review: NOT_RUN
+  security: PASS (read-only audit, no secrets handled)
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Residual Dependabot open: medium/high severity, primarily development scope.
+    - Draft PR #7 remains for evidence journal integration.
+  failures:
+    - None.
+  decisions:
+    - Documentation-only; operator escalation required for merges or dismissals.
+
+REMAINING:
+  incomplete:
+    - Operator review/merge or dismiss of Dependabot alerts.
+    - Local verification of draft PR #7.
+  blockers:
+    - Operator-only actions for security PRs.
+  new_gaps:
+    - None.
+
+NEXT:
+  objective_id: BASILISK-GAP-003
+  action: Select next highest-value bounded gap (e.g., random RESEARCH repo audit under claim cap or observation update).
+  reason: Security residual documented; continue incremental progress.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - github___list_dependabot_alerts open alerts (pytest, brace-expansion, js-yaml)
+    - github___list_pull_requests open #7 and #6
