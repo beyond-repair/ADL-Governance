@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-10-14-364
+  parent_pass: PASS-2026-10-14-363
+  sweep: 364
+  date: 2026-10-14
+STATE:
+  project: ADL Portfolio Governance
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67+
+  capabilities_verified: partial
+  gaps_remaining: full 83 deep verification incomplete; Dependabot residual operator-gated
+OBJECTIVE:
+  id: AUDIT-forge-aegis
+  description: Residual deep reconfirm of forge-aegis pillar (tree, claims, CI historical, alignment with skill/FLS).
+  reason_selected: Next highest-value bounded residual after Sweep-363; pillar status reconfirm without mutation.
+DISCOVERY:
+  findings:
+    - Live user:beyond-repair search total_count 83 confirmed.
+    - forge-aegis head e7188d529739652a2dd6264bd3d328c1f72e60e5 (2026-10-05).
+    - README: LIFECYCLE ACTIVE, CLAIM software / RUNNABLE SKETCH. Not full Nehemiah host, not kernel, not compiler.
+    - Offline reference pipeline: hashes files against baseline policy, deterministic result_hash, stdlib only.
+    - Tests: test_validator.py 2 passed, test_pipeline.py 8 passed (historical).
+    - Historical CI success referenced in prior sweeps.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-364.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending this push
+  capabilities_added_or_changed:
+    - Persistent pass record for forge-aegis residual audit
+VERIFICATION:
+  tests_run:
+    - Live GitHub get_file_contents for README, get_commit for head
+    - Search total_count 83 reconfirmed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim levels respected; no mutations to product repos)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - forge-aegis remains ACTIVE runnable sketch with claim-capped docs
+    - Census 83 stable
+    - Operator-gated residuals remain
+  failures:
+    - None in this reconfirm
+  decisions:
+    - Continue residual audits; no claim elevation; no product changes
+REMAINING:
+  incomplete:
+    - Full deep verification of all 83 repositories
+    - Dependabot residual resolution (operator)
+    - Archive flag settings (operator)
+  blockers:
+    - Operator-gated actions
+  new_gaps:
+    - None new; residual list continues
+NEXT:
+  objective_id: RESIDUAL-AUDIT-NEXT
+  action: Select next residual repository for deep audit (e.g. sovereign-clean-room or random) or await operator Dependabot resolution
+  reason: Portfolio exit criteria not met; continue small verified slices
+  prerequisites:
+    - Access confirmed
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - github___get_commit forge-aegis main e7188d5
+    - README.md contents
+    - Live search total_count 83
