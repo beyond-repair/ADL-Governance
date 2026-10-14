@@ -1,5 +1,34 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-14 (Sweep-357)
+**Project / Version:** ADL Portfolio Governance / Sweep-357
+**Objective:** Reconstruct ecosystem and audit Dependabot residual on Digital_Double_virtual_workforce.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-357 result — reconstruction & DDVW Dependabot residual
+
+- **Selected:** beyond-repair/Digital_Double_virtual_workforce (priority ACTIVE; residual blocker)
+- **Classification:** ACTIVE (claim software; Python core + optional UI)
+- **Dependabot open:** multiple (high js-yaml GHSA-2883-xcg3-v3hh / CVE-2026-84375; medium pytest GHSA-6w46-j5rx-g56g; brace-expansion mediums). Created ~2026-09/10. Operator-gated.
+- **Termination conditions:** N/A for product (verification only). Residual confirmed.
+- **Actions:** Governance docs updated (PASS-357, history, queue, status). No product mutations. No claim elevation. No Dependabot merge (operator-only).
+
+### Portfolio Exit Criteria
+**NOT MET**
+- Unresolved high/medium Dependabot on Digital_Double_virtual_workforce (operator-gated)
+- Full 83 deep verification incomplete
+- No claim elevation, no deletions, no history rewrites
+
+This cycle complete. Continue incremental.
+
+---
+
+Prior Sweep-356 body follows for continuity.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-14 (Sweep-356)
 **Project / Version:** ADL Portfolio Governance / Sweep-356
 **Objective:** Randomized Portfolio Completion Sweep. Random selection: new-program-1.01.
@@ -28,40 +57,5 @@
 This cycle complete for the selected repository. Stop. Do not enter infinite review cycle.
 
 ---
-
-Prior Sweep-354 body follows for continuity.
-
-# Portfolio Status Report
-
-**Updated:** 2026-10-14 (Sweep-354)
-**Project / Version:** ADL Portfolio Governance / Sweep-354
-**Objective:** Randomized Portfolio Completion Sweep. Random selection: finite-gasket-spectral-derivatives.
-
-**Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
-
-## Sweep-354 result — finite-gasket-spectral-derivatives
-
-- **Selected:** beyond-repair/finite-gasket-spectral-derivatives (random.choice over candidate pool)
-- **Classification:** RESEARCH (claim ≤1 finite discrete kernel; no continuum, no selected W, no force)
-- **Head (main):** 92ad7bd937d1292f3a34763afde65ca2dd5e90d7
-- **Contents:** README.md (extensive math), CLAIM_STATUS.md, COMPLETION_LOG.md, scripts/ (spectral + residue checks), tests/ (unittest), .github/workflows/kernel.yml, pyproject.toml
-- **CI:** spectral-kernel workflow green (latest run 37901866164 success on head)
-- **Tests:** present (unittest in tests/; README cites 16 tests)
-- **Dependabot open:** 0 (assumed from pattern; not explicitly listed)
-- **Termination conditions:** MET (no undefined/undocumented components, no stale registry, no critical CI failures, no duplicate canonical, no unresolved critical security, no unsupported claims, target state achieved for RESEARCH)
-- **Actions:** Verification only. Governance docs updated. No product mutations. No claim elevation.
-
-### Portfolio Exit Criteria
-**NOT MET**
-- Unresolved high/medium Dependabot on Digital_Double_virtual_workforce (operator-gated)
-- Full 83 deep verification incomplete
-- No claim elevation, no deletions, no history rewrites
-
-This cycle complete for the selected repository. Stop. Do not enter infinite review cycle.
-
----
-
-Prior Sweep-353 body follows for continuity.
 
 [Prior content preserved; full history in git.]
