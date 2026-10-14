@@ -1,13 +1,26 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-379)
-**Project / Version:** ADL Portfolio Governance / Sweep-379
-**Objective:** Residual audit — Dependabot/security findings on Digital_Double_virtual_workforce + Phase-3 pillar reconfirmation.
+**Updated:** 2026-10-14 (Sweep-380)
+**Project / Version:** ADL Portfolio Governance / Sweep-380
+**Objective:** Random selection and audit of digital-double-mobile (SUPERSEDED Claim-0).
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-380: Random Selection of digital-double-mobile
+
+Focus: Random SELECT from full portfolio.
+Live discovery: Repository classified SUPERSEDED, Claim 0. Canonical successor Digital_Double_virtual_workforce. Offline FastAPI + Vite React Claim-0 sketch only. SUPERSEDED.md, CLAIM_STATUS.md, README banners present and compliant.
+Residuals: Open secret scanning alert #1 (historical .env — rotate and revoke credentials). Open Dependabot alerts (protobufjs, form-data). GitHub archive flag not applied (operator-only after secret rotation). No critical CI failures. Empty historical stubs.
+No mutations to the repository. Classification held. No claim elevations.
+Escalation in OPERATOR_QUEUE.
+
+Portfolio-wide residuals continue (incomplete deep verification of 83, open security on pillars and superseded, no releases on pillars, VSA unverified, archive flags partial).
+Portfolio exit criteria **NOT MET**.
+
+---
 
 ## Sweep-379: Residual Audit of Dependabot on Digital_Double_virtual_workforce
 

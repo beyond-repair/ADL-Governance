@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-380 — do not execute from this agent
+
+Random audit of digital-double-mobile (SUPERSEDED Claim-0).
+
+- Confirmed: SUPERSEDED with successor Digital_Double_virtual_workforce. Claim-0 offline sketch compliant.
+- Operator actions required: Rotate/revoke credentials from historical .env (secret scanning alert #1 open). Then apply GitHub archive flag. Review/ignore open Dependabot (protobufjs, form-data).
+- No mutations performed on the repository. Docs updated only.
+- Portfolio exit criteria not met. Cycle complete. Next: random select or operator review of residuals.
+
 ## Sweep-379 — do not execute from this agent
 
 Residual audit of Dependabot on Digital_Double_virtual_workforce.

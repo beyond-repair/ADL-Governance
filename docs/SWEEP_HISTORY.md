@@ -1,3 +1,21 @@
+## Sweep-380 random selection of digital-double-mobile — PASS-2026-10-14-380
+
+- Timestamp: 2026-10-14T22:05Z UTC.
+- Objective: Random SELECT → DISCOVER → AUDIT → CLASSIFY of digital-double-mobile; confirm SUPERSEDED status and residuals.
+- SELECT: Random selection from portfolio (shuf of 83 repositories): digital-double-mobile.
+- DISCOVER: Full tree retrieved. SUPERSEDED.md and CLAIM_STATUS.md present. README banners confirm SUPERSEDED, Claim 0, successor https://github.com/beyond-repair/Digital_Double_virtual_workforce. Offline FastAPI (dd_mobile) + Vite React sketch. Historical Flutter/backend remnants. pytest and npm build documented. superseded-guard workflow.
+- AUDIT: Aligns with LIFECYCLE SUPERSEDED rules. No feature work. Residuals: open secret scanning alert #1 (historical .env, rotate/revoke), open Dependabot (protobufjs GHSA-xq3m-2v4x-88gg, form-data). Not archived (GitHub flag operator-only after secret rotation). No critical CI failures. Empty stubs historical only.
+- CLASSIFY: SUPERSEDED (confirmed). Claim 0. No elevation.
+- PLAN: Docs-only update in ADL-Governance. Escalate archive and secret rotation to operator.
+- IMPLEMENT: Updated PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md. No mutations to digital-double-mobile.
+- TEST/CI: No new runs. Prior Claim-0 tests noted as passed locally in CLAIM_STATUS.
+- DOCUMENT: This entry + report + queue.
+- GOVERN: Claims held at 0. No unsupported claims. History preserved. No deletions or rewrites.
+- RELEASE/ARCHIVE: Archive pending operator (after secret rotation).
+- RE-AUDIT: Per-repo termination conditions not fully met (operator actions outstanding). Portfolio exit still NOT MET.
+
+Portfolio-wide exit still NOT MET. This governed cycle complete. Stop.
+
 ## Sweep-379 residual audit of Dependabot on Digital_Double_virtual_workforce — PASS-2026-10-14-379
 
 - Timestamp: 2026-10-14T21:17Z UTC.
