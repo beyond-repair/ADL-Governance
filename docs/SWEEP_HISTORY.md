@@ -1,3 +1,21 @@
+## Sweep-383 random selection of scale-functional-I — PASS-2026-10-14-383
+
+- Timestamp: 2026-10-14T23:02Z UTC.
+- Objective: Random SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT of scale-functional-I; add missing CI; preserve claims.
+- SELECT: Random selection from portfolio (83 repositories): scale-functional-I.
+- DISCOVER: Full tree. RESEARCH Claim-1 declared functional I = Perimeter/sqrt(Area) on lattice dumbbells. pyproject.toml, scale_functional.py, tests/ (13 pytest, all pass locally), CLAIM_STATUS.md, FUNCTIONAL.md, RESULT.md, README. No .github/workflows prior. No releases/tags. Parent lock from -ware-constant-derivation 2026-10-01.
+- AUDIT: Compliant RESEARCH. No undefined components. Tests green. Missing CI workflow. No stale registry. No critical security. No unsupported claims (experimental_validation=false explicit). No duplicates.
+- CLASSIFY: RESEARCH (held). Claim level 1. Justification: experimental lattice results only; 0.08 not input; no stationary point found.
+- PLAN: Target state CI-green + docs update. Action: Add .github/workflows/ci.yml (pytest + default run). Update governance registry.
+- IMPLEMENT: Created .github/workflows/ci.yml on scale-functional-I (commit be0758aaa53f84cdcedfe4cfd902ff9dc9d6cf09). No code mutations to functional. Docs-only in ADL-Governance.
+- TEST/CI: Local pytest 13 passed. New CI workflow will run on next push/PR. Existing tests unchanged.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- GOVERN: Claims held at RESEARCH/1. No unsupported claims. History preserved. No deletions. No destructive actions. No history rewrites.
+- RELEASE/ARCHIVE: Not applicable (RESEARCH, target CI added).
+- RE-AUDIT: Per-repo termination closer (CI now present). Portfolio exit still NOT MET (incomplete 83 deep, open Dependabot elsewhere, VSA unverified, no releases on pillars).
+
+Portfolio-wide exit still NOT MET. This governed cycle complete. Stop.
+
 ## Sweep-382 Phase-3 pillar live re-verification — PASS-2026-10-14-382
 
 - Timestamp: 2026-10-14T22:16Z UTC.
@@ -57,7 +75,7 @@ Portfolio-wide exit still NOT MET. This governed cycle complete. Stop.
 - Timestamp: 2026-10-14T21:17Z UTC.
 - Objective: Evidence-only residual audit of security findings (Dependabot) on Digital_Double_virtual_workforce; Phase-3 pillar reconfirmation.
 - SELECT: Security residual prioritized from Sweep-378 next slice.
-- DISCOVER: Live PR search: open draft PR #7 (NEX-INT-006 Workforce execution evidence journal, 2026-09-07), Dependabot PR #6 (rollup bump 4.24.0 to 4.63.1). Main CI last green run 36861489156 (2026-10-01).
+- DISCOVER: Live PR search: open draft PR #7 (NEX-INT-006 Workforce execution evidence journal, 2026-09-07), Dependabot PR #6 (rollup bump 4.24.0 to 4.63.1). Main CI last green 36861489156 (2026-10-01).
 - AUDIT: Open alerts confirmed. No critical CI failures. Classification held (Workforce Automation, readiness FAIL). No claim elevations.
 - CLASSIFY: Unchanged.
 - PLAN: Documentation-only update. Escalate residual to operator.
