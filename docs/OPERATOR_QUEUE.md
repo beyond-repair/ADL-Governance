@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-381 — do not execute from this agent
+
+Residual Dependabot audit of Digital_Double_virtual_workforce.
+
+- Confirmed open alerts: pytest (medium, GHSA-6w46-j5rx-g56g), brace-expansion (medium), js-yaml (high, GHSA-2883-xcg3-v3hh) and others. Draft PR #7 and version-update PRs remain open.
+- Main CI green as of 2026-10-01. No critical severity in enumerated set.
+- Residuals persist: open Dependabot (escalate for review/merge or dismiss), incomplete deep verification of 83 repos, no releases/tags on pillars, VSA in sovereign-clean-room UNVERIFIED, archive candidates not fully flagged, integration drafts.
+- No mutations beyond documentation. No claim elevations. No deletions or history rewrites.
+- Portfolio exit criteria not met. Cycle complete. Next: random select of non-pillar or operator review of Dependabot PRs.
+
 ## Sweep-380 — do not execute from this agent
 
 Random audit of digital-double-mobile (SUPERSEDED Claim-0).
