@@ -8,10 +8,10 @@ STATE:
 OBJECTIVE:
   Confirm CI, Dependabot, releases/tags for key pillars. No mutations.
 VERIFICATION:
-  forge-aegis: CI green (37258127100), Dependabot 0, no releases/tags. ACTIVE software claim cap.
-  sovereign-clean-room: CI recent success after float fixes, Dependabot 0, no releases/tags. ACTIVE.
-  BlockSwarm: CI green (38252865430), Dependabot 0, no releases/tags. ACTIVE.
-  Digital_Double_virtual_workforce: CI green on main, Dependabot open high/medium residual (js-yaml, pytest, brace-expansion). ACTIVE. Operator-gated.
-  Live search total_count 83 confirmed.
+  - "forge-aegis: CI green (37258127100), Dependabot 0, no releases/tags. ACTIVE software claim cap."
+  - "sovereign-clean-room: CI recent success after float fixes, Dependabot 0, no releases/tags. ACTIVE."
+  - "BlockSwarm: CI green (38252865430), Dependabot 0, no releases/tags. ACTIVE."
+  - "Digital_Double_virtual_workforce: CI green on main, Dependabot open high/medium residual (js-yaml, pytest, brace-expansion). ACTIVE. Operator-gated."
+  - "Live search total_count 83 confirmed."
 NEXT:
   Portfolio exit criteria NOT MET. Residual Dependabot operator-gated. Full 83 incomplete. Stop. No infinite cycle.
