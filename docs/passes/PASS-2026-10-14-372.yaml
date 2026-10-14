@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-14-372
+  parent_pass: PASS-2026-10-14-370
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 3
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-VERIFY-GOVERNANCE-CHECKER
+  description: Run scripts/check_passes.py on ADL-Governance, diagnose and fix YAML parse errors and missing headings so the checker exits 0.
+  reason_selected: Explicit NEXT from PASS-2026-10-14-370; verifies the persistence mechanism itself before further product work.
+
+DISCOVERY:
+  findings:
+    - Cloned ADL-Governance; initial check_passes.py failed on unquoted colon in PASS-2026-10-14-349.yaml list item.
+    - Subsequent failure on malformed VERIFICATION mapping in PASS-2026-10-14-359.yaml.
+    - After quoting fixes, parser succeeded on all 131 yaml files; checker then failed on missing HEADING patterns for 11 recent PASS ids.
+    - HEADINGS.md is concatenated by the checker; adding the required "## Sweep-N / PASS-..." lines restored green.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-349.yaml
+    - docs/passes/PASS-2026-10-14-359.yaml
+    - docs/passes/HEADINGS.md
+    - docs/passes/PASS-2026-10-14-372.yaml
+  commits:
+    - 7c3510aab0b232786592a95c48d913c242de5fed
+    - 17c70d513bed4610c00c061fb868020a69cdf69a
+    - e77acb40fa27e3579b1ef044daa162a5bb9a9337
+  capabilities_added_or_changed:
+    - governance pass checker now green on current tree
+
+VERIFICATION:
+  tests_run:
+    - python3 scripts/check_passes.py → "PASS: 131 yaml files parsed; history headings name all ids including PASS-2026-10-14-370" (exit 0)
+  code_review: PASS (minimal quote and heading fixes only; no semantic change to claims)
+  security: PASS (no secrets, no elevation)
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Persistence mechanism (YAML + heading agreement) is now machine-verified green.
+    - Portfolio size remains 83; claim discipline intact.
+  failures:
+    - Initial discovery pass 370 did not re-run the checker; latent YAML issues existed.
+  decisions:
+    - Prefer quoting over rewriting historical narrative.
+    - Use HEADINGS.md supplement rather than rewriting full SWEEP_HISTORY.md.
+
+REMAINING:
+  incomplete:
+    - Full deep verification of all 83 repositories.
+    - Catalog expansion in aegis-repo-graph (operator-only).
+    - Dependabot remediation on Digital_Double_virtual_workforce.
+  blockers:
+    - Operator-only actions.
+  new_gaps:
+    - None introduced.
+
+NEXT:
+  objective_id: GAP-SELECT-NEXT-SLICE
+  action: Select next highest-value bounded gap (e.g., random or priority RESEARCH repo audit under claim cap, or observation update in aegis-repo-graph) and perform small verified slice.
+  reason: Governance checker now verified; continue incremental closure.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: (this)
+  evidence:
+    - Local clone check_passes.py exit 0 after fixes
+    - Commits 7c3510a, 17c70d5, e77acb4
