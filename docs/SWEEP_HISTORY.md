@@ -1,3 +1,21 @@
+## Sweep-369 random selection re-audit of btc-trading — PASS-2026-10-14-369
+
+- Timestamp: 2026-10-14T18:00Z UTC (approx).
+- Objective: Randomized portfolio completion sweep. Randomly selected beyond-repair/btc-trading.
+- SELECT: Random from 83-repo census → btc-trading.
+- DISCOVER: Tree: README.md, ARCHIVED.md, btc_inventory.py, tests/test_inventory.py, kucoin btc.py (historical, no live call), BTC-USD.csv, requirements.txt (unpinned), .github/workflows/ci.yml (stdlib inventory tests), SECURITY.md. No neural_network.py / rl / api modules on disk.
+- AUDIT: Vs ADL-Governance. Classification ARCHIVED (recommended) already in registry and archive_queue.md. Claim 0. Inventory tests assert 366 rows 2022-06-12..2023-06-12. Credential previously removed from HEAD (history preserved). No unsupported product/forecast claims.
+- CLASSIFY: ARCHIVED (recommended). GitHub archived flag false (operator). Justification: historical CSV sketch only; prior Sweep-261 already implemented inventory + CI; no active development surface.
+- PLAN: Target state already met for claim-capped archive candidate. No code changes. No destructive actions. Queue remains in OPERATOR_QUEUE / archive_queue.
+- IMPLEMENT: Documentation only (this entry + status report).
+- TEST/CI: Live tree and prior CI workflow present (inventory). No new failures introduced.
+- DOCUMENT: Updated this history and PORTFOLIO_STATUS_REPORT.md.
+- GOVERN: Claims held at 0. No history rewrite. No deletion.
+- RELEASE/ARCHIVE: Not executed (operator-only for GitHub archive flag). Terminal conditions for this historical artifact satisfied relative to its capped scope.
+- RE-AUDIT: No drift detected beyond known residuals (archive flag, unpinned reqs unused by CI).
+
+Termination for btc-trading (scoped): met for ARCHIVED candidate. Portfolio-wide exit still NOT MET.
+
 ## Sweep-368 portfolio discovery and Phase-3 verification — PASS-2026-10-14-368
 
 - Timestamp: 2026-10-14T17:13Z UTC.
