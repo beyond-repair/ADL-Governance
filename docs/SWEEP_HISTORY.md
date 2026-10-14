@@ -1,3 +1,19 @@
+## Sweep-346 Discovery Baseline Reconstruction — PASS-2026-10-14-346
+
+- Timestamp: 2026-10-14T00:09Z session clock (UTC).
+- Selection: Recursive Engineering Directive invocation; discovery pass on full ecosystem.
+- Discover: Live search user:beyond-repair total_count 83, incomplete_results false. Authenticated beyond-repair. Core: ADL-Governance ACTIVE (passes to 345), aegis-repo-graph RESEARCH ≤1 with 2026-09-04 lock of 72+1.
+- Audit: No mutations. Claim discipline observed across inspected docs. Inventory confirmed. Dependabot residual noted on Digital_Double_virtual_workforce from prior.
+- Classify: Portfolio RESEARCH_INCOMPLETE. No classification changes.
+- Plan: Persist pass record only. No product or catalog changes.
+- Implement: Created docs/passes/PASS-2026-10-14-346.yaml. History update pending this commit.
+- Test/CI: None run (discovery only).
+- Document: This entry and the YAML pass.
+- Govern: No claim elevation. No deletion. No history rewrite. Residuals preserved.
+- Exit: Discovery complete. Next bounded action is targeted audit of BlockSwarm.
+
+Prior Sweep-345 body follows for continuity.
+
 ## Sweep-345 Randomized Portfolio Completion Sweep — PASS-2026-10-13-345
 
 - Timestamp: 2026-10-13T23:30Z session clock (UTC).
