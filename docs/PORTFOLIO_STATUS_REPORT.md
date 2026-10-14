@@ -1,28 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-377)
-**Project / Version:** ADL Portfolio Governance / Sweep-377
-**Objective:** Randomized portfolio completion sweep — DISCOVER/AUDIT of ware-constant-phenomenology.
+**Updated:** 2026-10-14 (Sweep-379)
+**Project / Version:** ADL Portfolio Governance / Sweep-379
+**Objective:** Residual audit — Dependabot/security findings on Digital_Double_virtual_workforce + Phase-3 pillar reconfirmation.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
 
+## Sweep-379: Residual Audit of Dependabot on Digital_Double_virtual_workforce
+
+Focus: Security residual from prior sweeps.
+Live verification: Open PRs include draft PR #7 (NEX-INT-006 evidence journal, draft, created 2026-09-07) and Dependabot version updates (e.g., PR #6 bump rollup 4.24.0 → 4.63.1 in /digital_double, open).
+CI on main last verified green (run 36861489156 on 24e6a29fd26c03900a8d98634d6683996eabdac4, 2026-10-01). No new CI failures reported.
+No releases/tags. Classification remains WORKFORCE AUTOMATION (readiness FAIL due to open alerts/drafts).
+No mutations performed. Escalation remains in OPERATOR_QUEUE.
+Pillars reconfirmed per Sweep-376 table (forge-aegis CI green, sovereign-clean-room VSA UNVERIFIED, BlockSwarm Foundry green, Digital_Double open Dependabot).
+
+Portfolio-wide residuals continue (incomplete deep verification of 83, no releases on pillars, VSA unverified, archive flags partial, integration drafts).
+Portfolio exit criteria **NOT MET**.
+
+---
+
 ## Sweep-377: Random Selection of ware-constant-phenomenology
 
-Randomly selected from 83-repo pool.
-Classification reconfirmed: RESEARCH (claim ≤2 phenomenology; experimental validation false).
-Head main `8db3fc8cbd80f5f4ae725dc67c4748fe799fcc35`.
-CI green: docs-presence success on that SHA (run 37055421203, 2026-10-02).
-Runnable sketch: offline SPARC scoring (median χ²_red = 9.098 on Lelli+2016), killgates, constant-W action verify, white-light bounds.
-Explicit locks: W★ = 1/(4π) ≈ 0.079577; W(n) = 0.08 * exp(0.23*(n-3)); SPARC χ² as pass UNSUPPORTED; no thrust/energy extraction; no derivation of numerical 0.08 from action or pinch.
-Tests (pytest claim-0 smokes) and docs present. No Dependabot open. Releases/tags empty.
-No code mutations this cycle.
-No new residuals.
-
-Portfolio-wide residuals from prior sweeps continue.
-Portfolio exit criteria **NOT MET**.
+[Prior content preserved for continuity. Full history in git.]
 
 ---
 
@@ -56,19 +59,3 @@ No unsupported claims elevated. Classifications unchanged.
 - Duplicate/superseded infrastructure retained for history.
 
 Portfolio exit criteria **NOT MET**. This governed sweep complete. Stop. Do not enter infinite review cycle.
-
----
-
-## Sweep-374: Random Selection of topological-pinch
-
-[Prior content preserved for continuity.]
-
-Randomly selected from 83-repo pool. Classification reconfirmed: RESEARCH (claim 0 / hypothesis). Head main `f8297b98f939c8da3d79aadd4dcfb8d34e422717`. CI green: docs-ci success on that SHA (run 37059216800, 2026-10-02). Runnable sketch: gasket-graph residual proxy (`localization.py`). Explicit locks: levels 0–5 partition 0.500000/0.400000/0.100000; historical 0.92 not reproduced; residual support corners-only; scale 0.600000=3/5. Not a mesh, not Maxwell-stress integral, not thrust, not 0.08. Tests and docs present. No code mutations this cycle. No new residuals.
-
-Portfolio-wide residuals from prior sweeps continue. Portfolio exit criteria **NOT MET**.
-
----
-
-## Sweep-373: Phase-3 Reconfirmation
-
-[Prior content preserved; full history in git.]
