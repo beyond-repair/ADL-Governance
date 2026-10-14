@@ -1,3 +1,13 @@
+## Sweep-355 Fresh Reconstruction — PASS-2026-10-13-355
+
+- Timestamp: 2026-10-13T23:05Z EDT.
+- Objective: Reconstruct ecosystem from live GitHub + persistent governance state for fresh agent under ADL-BASILISK.
+- Discovery: total_count 83 confirmed. Latest prior Sweep-354. Digital_Double_virtual_workforce Dependabot residual persists (high js-yaml). LegionOS RESEARCH docs-only.
+- Classification: ACTIVE_MAINTENANCE.
+- Changes: Added PASS-355.yaml + history/queue updates. No product mutations.
+- Verification: Live API confirmations. overall PASS.
+- Exit: Portfolio exit criteria NOT MET. Continue incremental.
+
 ## Sweep-354 Randomized Portfolio Completion — PASS-2026-10-14-354
 
 - Timestamp: 2026-10-14T03:00Z UTC (approx).
