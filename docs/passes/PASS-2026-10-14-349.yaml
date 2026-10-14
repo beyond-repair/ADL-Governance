@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-14-349
+  parent_pass: PASS-2026-10-13-337
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-PORTFOLIO-RECONFIRM-349
+  description: Re-confirm live portfolio total_count remains 83 and open Dependabot alerts on Digital_Double_virtual_workforce persist (including high-severity js-yaml).
+  reason_selected: NEXT from prior PASS-337 recommended re-confirm of key residuals; highest-value bounded status check under claim discipline.
+
+DISCOVERY:
+  findings:
+    - github___search_repositories user:beyond-repair total_count: 83 (incomplete_results: false).
+    - Digital_Double_virtual_workforce open Dependabot alerts include high js-yaml GHSA-2883-xcg3-v3hh, medium brace-expansion, pytest.
+    - Alerts remain open; operator-gated.
+    - No product code mutations performed.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-349.yaml
+    - docs/OPERATOR_QUEUE.md
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Status reconfirmation recorded
+
+VERIFICATION:
+  tests_run:
+    - Live search total_count confirmation
+    - Dependabot list confirmation
+  code_review: NOT_RUN
+  security: PASS (no secrets, no elevation)
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio size stable at 83.
+    - Dependabot residuals on Digital_Double_virtual_workforce unchanged and operator-gated.
+  failures:
+    - None
+  decisions:
+    - Document only; do not attempt autonomous Dependabot merges.
+
+REMAINING:
+  incomplete:
+    - Full 83-repo deep verification
+    - Operator-gated Dependabot and release actions
+  blockers:
+    - Operator actions required for security merges and claim elevations
+  new_gaps:
+    - None
+
+NEXT:
+  objective_id: GAP-SELECT-NEXT-SLICE
+  action: Select next highest-value bounded gap (e.g., audit an unaudited or RESEARCH repo, or update aegis-repo-graph observation) and perform small verified slice.
+  reason: Residuals reconfirmed; continue incremental closure under governance rules.
+  prerequisites:
+    - This PASS persisted
+
+PROVENANCE:
+  state_commit: (this)
+  evidence:
+    - search total_count 83
+    - dependabot alerts list
+    - Prior PASS-337
