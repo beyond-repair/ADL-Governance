@@ -1,11 +1,17 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-370)
-**Project / Version:** ADL Portfolio Governance / Sweep-370
-**Objective:** Basilisk recursive discovery and audit; persist pass. Exit criteria NOT MET.
+**Updated:** 2026-10-14 (Sweep-371)
+**Project / Version:** ADL Portfolio Governance / Sweep-371
+**Objective:** Randomized selection and DISCOVER/AUDIT of momentum-closure. Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-371: Random Selection of momentum-closure
+
+Randomly selected from portfolio. Classification reconfirmed: RESEARCH (claim level 1). CI green on latest main (be546ea, 2026-10-11: ci and docs-presence success). Claims explicitly capped: no mesh-converged residual, physical thrust, energy extraction, or Ware momentum flux supported. Geometry/RF helpers, ConvergenceTensor (bookkeeping), far-field classical fixture present with documented midpoint mesh failure against 1e-3. Tests and docs-presence CI verified. No code changes. No new residuals.
+
+Portfolio-wide residuals from prior sweeps continue. Portfolio exit criteria **NOT MET**.
 
 ## Sweep-370: Basilisk Recursive Discovery
 
