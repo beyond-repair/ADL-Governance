@@ -1,5 +1,11 @@
 # Operator Queue
 
+## Sweep-367 — do not execute from this agent
+
+Reconstruction pass. Census and classifications reconfirmed. No operator action required this cycle. Next residual audit selected for subsequent agent.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated; catalog freeze operator-only; archive flags pending).
+
 ## Sweep-366 — do not execute from this agent
 
 Randomized selection of beyond-repair/SovereignOS.
