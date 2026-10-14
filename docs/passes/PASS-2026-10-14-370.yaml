@@ -27,7 +27,9 @@ CHANGES:
     - docs/SWEEP_HISTORY.md
     - docs/PORTFOLIO_STATUS_REPORT.md
   commits:
-    - pending
+    - 579e8e4dbc6f4e562da63fcdd4ada163229ff32e
+    - 4af9b806c4a26cc43a3fc63e269d4cb4c967697d
+    - a5bc15ac05a6d487ed931f2bc79cca1cdb6ede1c
   capabilities_added_or_changed:
     - governance pass persistence for Basilisk loop
 VERIFICATION:
@@ -67,7 +69,8 @@ NEXT:
     - Python 3 + pyyaml available.
     - No claim elevation.
 PROVENANCE:
-  state_commit: pending-governance-push
+  state_commit: a5bc15ac05a6d487ed931f2bc79cca1cdb6ede1c
   evidence:
     - Live search total_count 83
     - File contents of README.md, CLAIM_STATUS.md, SWEEP_HISTORY.md, PORTFOLIO_STATUS_REPORT.md, sample PASS yaml
+    - Commits 579e8e4, 4af9b80, a5bc15a
