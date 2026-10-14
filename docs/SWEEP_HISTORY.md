@@ -1,3 +1,21 @@
+## Sweep-371 random selection DISCOVER of momentum-closure — PASS-2026-10-14-371
+
+- Timestamp: 2026-10-14T19:00Z UTC (approx).
+- Objective: Randomized portfolio completion sweep. Randomly selected beyond-repair/momentum-closure.
+- SELECT: Random from known portfolio pool → momentum-closure.
+- DISCOVER: Tree includes README.md, CLAIM_STATUS.md, CLAIMS.md, GOVERNANCE.md, pyproject.toml (v1.7.0.dev0), momentum_closure/ package (cli, convergence/tensor.py, geometry/, rf_feed/), tests/ (test_convergence_tensor.py, test_fixtures.py, test_geometry_feed.py), .github/workflows/ci.yml and docs-presence.yml. CI workflows present and active.
+- AUDIT: Vs ADL-Governance. Classification RESEARCH (claim level 1 conceptual). Claims explicitly UNSUPPORTED for mesh-converged residual, physical thrust, energy extraction, Ware momentum flux. Geometry/RF helpers and ConvergenceTensor present (bookkeeping only). Far-field fixture classical identity checked; midpoint mesh fails declared 1e-3 as documented. Unit tests present. Docs-presence CI present.
+- CLASSIFY: RESEARCH. Justification: experimental notes + numerical bookkeeping for surface integral of stress tensor; no validated physical residual or propulsion claim. Aligns with prior Sweep-158 and CLAIM_STATUS.md.
+- PLAN: Target state CI-green + claim-capped already achieved for L1 research scope. No code mutations required. Documentation update only.
+- IMPLEMENT: This history entry and status report update. No operator-only actions queued.
+- TEST/CI: Latest runs (2026-10-11) on be546ea: ci success, docs-presence success. No new failures.
+- DOCUMENT: Updated this history and PORTFOLIO_STATUS_REPORT.md.
+- GOVERN: Claims held at level 1. No unsupported elevation. History preserved. No deletions.
+- RELEASE/ARCHIVE: Not applicable (RESEARCH, no release tags).
+- RE-AUDIT: No drift. Terminal conditions for this research artifact satisfied relative to claim cap (docs, tests, CI green, no critical issues, claims capped).
+
+Termination for momentum-closure (scoped): met for RESEARCH claim-capped state. Portfolio-wide exit still NOT MET.
+
 ## Sweep-370 Basilisk recursive discovery — PASS-2026-10-14-370
 
 - Timestamp: 2026-10-14T18:08Z UTC.
