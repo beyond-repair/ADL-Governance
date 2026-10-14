@@ -1,13 +1,26 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-380)
-**Project / Version:** ADL Portfolio Governance / Sweep-380
-**Objective:** Random selection and audit of digital-double-mobile (SUPERSEDED Claim-0).
+**Updated:** 2026-10-14 (Sweep-381)
+**Project / Version:** ADL Portfolio Governance / Sweep-381
+**Objective:** Residual Dependabot audit on Digital_Double_virtual_workforce.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-381: Residual Dependabot Audit on Digital_Double_virtual_workforce
+
+Focus: Evidence-only security residual confirmation.
+Live verification: list_dependabot_alerts (open) confirms multiple alerts including pytest (medium, GHSA-6w46-j5rx-g56g <9.0.3), brace-expansion (medium, GHSA-q2hr-2g5m-vwhr), js-yaml (high, GHSA-2883-xcg3-v3hh). Draft PR #7 and version-update PRs remain open.
+CI on main last verified green (2026-10-01). No critical severity in sampled alerts. Classification remains WORKFORCE AUTOMATION (readiness FAIL due to open alerts/drafts).
+No mutations performed. Escalation in OPERATOR_QUEUE.
+Pillars reconfirmed (forge-aegis CI green, sovereign-clean-room VSA UNVERIFIED, BlockSwarm Foundry green, Digital_Double open Dependabot).
+
+Portfolio-wide residuals continue (incomplete deep verification of 83, open security on pillars and superseded, no releases on pillars, VSA unverified, archive flags partial).
+Portfolio exit criteria **NOT MET**.
+
+---
 
 ## Sweep-380: Random Selection of digital-double-mobile
 
