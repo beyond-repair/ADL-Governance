@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-14-361
+  parent_pass: PASS-2026-10-14-360
+  sweep: 361
+  date: 2026-10-14
+STATE:
+  project: ADL Portfolio Governance
+  global_status: ACTIVE / MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67+
+  capabilities_verified: partial
+  gaps_remaining: full 83 deep verification incomplete; Dependabot residual operator-gated
+OBJECTIVE:
+  id: RECONSTRUCT-2026-10-14
+  description: Reconstruct current ecosystem from live GitHub search and governance docs; persist ADL-BASILISK agent continuation pass.
+  reason_selected: Highest-value bounded next slice after Sweep-360 is to lock verified live census and handoff for fresh agent.
+DISCOVERY:
+  findings:
+    - Live user:beyond-repair search total_count 83, incomplete_results false.
+    - Most recent pushed: ADL-Governance (2026-10-14T15:02:17Z), aegis-repo-graph, BlockSwarm, momentum-closure.
+    - Governance maintains passes up to Sweep-360; PORTFOLIO_STATE.md locked at 2026-10-01 but live census updated in later reports.
+    - Key pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) verified ACTIVE with CI green or recent success; Dependabot residual on Digital_Double_virtual_workforce.
+    - Many RESEARCH repos with claim discipline; some ARCHIVED recommended but flags not set (operator-gated).
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-361.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending this push
+  capabilities_added_or_changed:
+    - Persistent pass record for agent reconstruction
+VERIFICATION:
+  tests_run:
+    - Live GitHub search API confirmed total_count 83
+    - File contents of recent passes and status reports retrieved
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim levels respected; no mutations to product repos)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Census 83 confirmed live
+    - Sweep system active through 360
+    - Operator-gated residuals remain (Dependabot, archive flags, releases)
+  failures:
+    - None in this reconstruction
+  decisions:
+    - Continue recursive small-slice verification; no claim elevation
+REMAINING:
+  incomplete:
+    - Full deep verification of all 83 repositories
+    - Dependabot residual resolution (operator)
+    - Archive flag settings (operator)
+  blockers:
+    - Operator-gated actions for Dependabot merges, archive flags, release tags
+  new_gaps:
+    - aegis-repo-graph recent activity not deeply audited in this pass
+NEXT:
+  objective_id: AUDIT-aegis-repo-graph
+  action: Deep audit of beyond-repair/aegis-repo-graph (tree, claims, tests, CI, integration with FLS/AEGIS)
+  reason: Recent push (2026-10-13), FLS-aligned graph relevant to ecosystem model; bounded slice
+  prerequisites:
+    - Access to repo contents (confirmed)
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - github___search_repositories user:beyond-repair total_count 83
+    - Retrieved SWEEP_HISTORY.md, PORTFOLIO_STATUS_REPORT.md, PASS-359.yaml
