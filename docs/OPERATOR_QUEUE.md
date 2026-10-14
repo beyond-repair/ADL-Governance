@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-377 — do not execute from this agent
+
+Random selection of ware-constant-phenomenology.
+
+- Classification reconfirmed RESEARCH (claim ≤2). Head 8db3fc8cbd80f5f4ae725dc67c4748fe799fcc35. docs-presence CI green (run 37055421203).
+- No open Dependabot. Releases/tags empty.
+- Residuals: SPARC χ²_red median 9.098 remains UNSUPPORTED as pass (honest); numerical W=0.08 not derived; no thrust claims. No mutations performed.
+- No new destructive actions. No history rewrites. No deletions.
+- Portfolio exit criteria not met. Cycle complete for this repo.
+
 ## Sweep-376 — do not execute from this agent
 
 Full portfolio discovery and Phase-3 reconfirmation of pillars.
