@@ -1,19 +1,8 @@
 # Operator Queue
 
-## Sweep-345 — do not execute from this agent
+## Sweep-347 — do not execute from this agent
 
-Randomized Portfolio Completion Sweep. Selected: beyond-repair/BlockSwarm.
-
-- DISCOVER/AUDIT/CLASSIFY complete. Classification ACTIVE (SAGF; AI advises · cannot execute; claim-capped software).
-- Head confirmed 98480104c353ffd22e1522943a5c5f6545044d18. Prior CI success (run 38252865430). Dependabot 0. Foundry tests present. Submodules pinned.
-- No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
-- Termination conditions met for this ACTIVE repository.
-
-Portfolio exit criteria not met (incomplete full 83 deep verification; prior Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
-
-## Sweep-344 — do not execute from this agent
-
-Master Directive v3.0 Phase-3 live Dependabot re-verification.
+Master Directive v3.0 Phase 1-3 live confirmation.
 
 - Portfolio: 83 repositories confirmed live. No deletions.
 - forge-aegis: Open Dependabot alerts = 0. PASS.
@@ -25,14 +14,13 @@ Portfolio exit criteria not met. Full 83 deep verification incomplete. No produc
 
 Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated).
 
-## Sweep-342 — do not execute from this agent
+## Sweep-345 — do not execute from this agent
 
-Randomized Portfolio Completion Sweep. Selected: beyond-repair/btc-trading.
+Randomized Portfolio Completion Sweep. Selected: beyond-repair/BlockSwarm.
 
-- DISCOVER/AUDIT/CLASSIFY complete. Classification ARCHIVED (historical sketch; claim-capped level 0).
-- Head confirmed cd3638654c870c238db6457355b64f82ff1adfae. Prior CI success (run 37549816378). Inventory tests present.
-- GitHub `archived` flag remains false. Operator action required to set the flag if desired. Do not delete. Do not rewrite history.
-- Credential residual in git history (removed from HEAD in Sweep-261). Rotate/revoke if still valid. Do not restore.
+- DISCOVER/AUDIT/CLASSIFY complete. Classification ACTIVE (SAGF; AI advises · cannot execute; claim-capped software).
+- Head confirmed 98480104c353ffd22e1522943a5c5f6545044d18. Prior CI success (run 38252865430). Dependabot 0. Foundry tests present. Submodules pinned.
 - No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
+- Termination conditions met for this ACTIVE repository.
 
 Portfolio exit criteria not met (incomplete full 83 deep verification; prior Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
