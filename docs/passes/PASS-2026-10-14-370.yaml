@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-14-370
+  parent_pass: PASS-2026-10-14-369
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 2
+  gaps_remaining: 13
+OBJECTIVE:
+  id: GAP-BASILISK-DISCOVERY
+  description: Execute initial ADL-BASILISK recursive discovery and audit of the beyond-repair GitHub ecosystem; persist a bounded pass record without mutating product code.
+  reason_selected: Highest-value next slice is to re-establish global model from live GitHub state for a fresh agent continuation of the recursive loop.
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760), 78 public_repos reported, live search total_count 83 incomplete_results false.
+    - Most recently pushed: ADL-Governance (2026-10-14), aegis-repo-graph (2026-10-13), BlockSwarm (2026-10-12).
+    - aegis-repo-graph catalog locked to 2026-09-04 snapshot (72 repos +1 queue, claim ≤1 tool); drift observers exist for later 83-name sets; expansion operator-only.
+    - ADL-Governance holds constitution, claim validation 0-5, lifecycle, passes checker (scripts/check_passes.py), sweep history up to 369.
+    - Pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) have prior CI success but no releases/tags; Digital Double has open Dependabot.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-370.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - governance pass persistence for Basilisk loop
+VERIFICATION:
+  tests_run:
+    - Live GitHub API reads only (search_repositories, get_file_contents on key files). No local clone or pytest executed in this agent session.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS_WITH_FINDINGS
+KNOWLEDGE:
+  confirmed:
+    - Portfolio size stable at 83.
+    - Governance tools and claim caps remain intact.
+    - No fabrication of test results; this pass is documentation-only discovery.
+  failures: []
+  decisions:
+    - Do not expand aegis-repo-graph catalog.
+    - Do not elevate any claims.
+    - Do not archive or delete.
+    - Next slice should target a single high-value gap such as verifying check_passes.py or a pillar residual.
+REMAINING:
+  incomplete:
+    - Full deep verification of all 83 repositories.
+    - Catalog expansion in aegis-repo-graph.
+    - Dependabot remediation on Digital_Double_virtual_workforce.
+    - Archive flags on candidates.
+  blockers:
+    - Operator-only actions (archive flags, catalog expansion).
+  new_gaps:
+    - Basilisk agent continuity: need persistent Nexus or graph updates beyond docs.
+NEXT:
+  objective_id: GAP-VERIFY-GOVERNANCE-CHECKER
+  action: Clone or use remote tools to run scripts/check_passes.py on ADL-Governance and record result; if green, select next random or priority repo for claim-capped audit.
+  reason: Verifies the persistence mechanism itself before further product work.
+  prerequisites:
+    - Python 3 + pyyaml available.
+    - No claim elevation.
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - Live search total_count 83
+    - File contents of README.md, CLAIM_STATUS.md, SWEEP_HISTORY.md, PORTFOLIO_STATUS_REPORT.md, sample PASS yaml
