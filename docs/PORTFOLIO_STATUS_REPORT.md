@@ -1,11 +1,17 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-368)
-**Project / Version:** ADL Portfolio Governance / Sweep-368
-**Objective:** Full portfolio discovery (83 repos), Phase-3 mandatory live verification of pillars, classification continuity, residual recording. Exit criteria NOT MET.
+**Updated:** 2026-10-14 (Sweep-369)
+**Project / Version:** ADL Portfolio Governance / Sweep-369
+**Objective:** Randomized selection re-audit of btc-trading; continuity of prior discovery. Exit criteria NOT MET.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-369: Random Re-Audit of btc-trading
+
+Randomly selected from 83-repo pool. Classification reconfirmed: ARCHIVED (recommended). GitHub archived flag false (operator action required). Claim level 0. Inventory CI present and scoped to stdlib CSV shape check (366 rows). No product, forecast, or live-execution claims. Prior Sweep-261 residuals unchanged. No code modifications. Archive queue entry preserved.
+
+Portfolio-wide residuals from Sweep-368 continue to apply.
 
 ## Sweep-368 Discovery & Phase-3 Verification
 
