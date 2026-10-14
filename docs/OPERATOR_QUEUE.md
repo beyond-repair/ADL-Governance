@@ -1,5 +1,14 @@
 # Operator Queue
 
+## PASS-2026-10-14-379 — documentation of residual (this agent)
+
+Audit of open Dependabot alerts and draft PRs on Digital_Double_virtual_workforce (read-only).
+
+- Confirmed open: pytest medium GHSA-6w46-j5rx-g56g, brace-expansion medium GHSA-q2hr-2g5m-vwhr, js-yaml high GHSA-2883-xcg3-v3hh.
+- Open PRs: #7 (draft evidence journal), #6 (rollup bump).
+- No mutations. Escalate for operator review/merge or dismiss.
+- Residuals persist. Next: random select or further residual audit.
+
 ## Sweep-383 — do not execute from this agent
 
 Random SELECT of scale-functional-I (RESEARCH Claim-1).
