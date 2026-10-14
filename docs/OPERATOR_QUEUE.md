@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-345 — do not execute from this agent
+
+Randomized Portfolio Completion Sweep. Selected: beyond-repair/BlockSwarm.
+
+- DISCOVER/AUDIT/CLASSIFY complete. Classification ACTIVE (SAGF; AI advises · cannot execute; claim-capped software).
+- Head confirmed 98480104c353ffd22e1522943a5c5f6545044d18. Prior CI success (run 38252865430). Dependabot 0. Foundry tests present. Submodules pinned.
+- No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
+- Termination conditions met for this ACTIVE repository.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; prior Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
+
 ## Sweep-344 — do not execute from this agent
 
 Master Directive v3.0 Phase-3 live Dependabot re-verification.
@@ -25,17 +36,3 @@ Randomized Portfolio Completion Sweep. Selected: beyond-repair/btc-trading.
 - No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
 
 Portfolio exit criteria not met (incomplete full 83 deep verification; prior Dependabot residual on Digital_Double_virtual_workforce remains operator-gated).
-
-## Sweep-341 — do not execute from this agent
-
-Master Directive v3.0 confirmation sweep.
-
-- Portfolio: 83 repositories confirmed live. No deletions.
-- forge-aegis: Head confirmed e7188d5.... Prior CI success. Dependabot clean. PASS.
-- BlockSwarm: Prior CI success. Dependabot clean. PASS.
-- sovereign-clean-room: Prior CI success. Dependabot clean. PASS WITH FINDINGS.
-- Digital_Double_virtual_workforce: Head confirmed 24e6a29.... Prior CI success. Multiple open Dependabot alerts remain, including high-severity js-yaml (GHSA-2883-xcg3-v3hh) and mediums (brace-expansion, pytest). Operator-gated lockfile/package updates required. Do not merge Dependabot branches autonomously. FAIL.
-
-Portfolio exit criteria not met. Full 83 deep verification incomplete. No product mutations. No destructive actions executed. No claim elevation. No history rewrite. No deletion.
-
-Critical Dependabot residuals on Digital_Double_virtual_workforce remain open (operator-gated).
