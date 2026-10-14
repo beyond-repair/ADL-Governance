@@ -1,3 +1,13 @@
+## Sweep-361 ADL-BASILISK Reconstruction — PASS-2026-10-14-361
+
+- Timestamp: 2026-10-14T15:09Z UTC.
+- Objective: Reconstruct current ecosystem from live GitHub search and governance docs; persist ADL-BASILISK agent continuation pass.
+- Discovery: Live user:beyond-repair search total_count 83 confirmed. Recent activity in ADL-Governance, aegis-repo-graph, BlockSwarm, momentum-closure. Key pillars ACTIVE with CI green/recent success; Dependabot residual on Digital_Double_virtual_workforce operator-gated. Many RESEARCH with claim discipline; some ARCHIVED recommended but flags pending operator. PORTFOLIO_STATE.md dated 2026-10-01 but live reports updated.
+- Classification: Governance ACTIVE / MAINTENANCE. No product changes.
+- Changes: Governance docs updated only (new PASS yaml, this history, PORTFOLIO_STATUS_REPORT). No product mutations. No claim elevations. No history rewrites. No deletions.
+- Verification: Live search API total_count 83; file contents of passes, history, status reports retrieved. Invariants respected. Overall PASS.
+- Exit: Portfolio exit criteria NOT MET (Dependabot residual operator-gated; full 83 incomplete). Next: deep audit of aegis-repo-graph. Stop. Do not enter infinite review cycle.
+
 ## Sweep-360 Randomized Portfolio Completion — Code_Generation_AI_Program
 
 - Timestamp: 2026-10-14T15:00Z UTC.
@@ -6,26 +16,6 @@
 - Classification: ARCHIVED (recommended). Claim 0. No successor. Inventory gate only, not generator proof.
 - Changes: Governance docs updated only (PORTFOLIO_STATUS_REPORT, this history). No product mutations. No claim elevations. No history rewrites. No deletions. No release/archive flag set.
 - Verification: Live tree, file contents (README, CLAIM_STATUS, test_inventory.py, inventory.yml, SWEEP notes) confirmed. Inventory CI previously green. Termination conditions MET for this repository (no undefined components, no critical CI failures, no unsupported claims, target state inventory-green + docs locked for ARCHIVE).
-- Exit: Portfolio exit criteria NOT MET (Dependabot residual on Digital_Double_virtual_workforce operator-gated; full 83 incomplete). Stop. Do not enter infinite review cycle.
-
-## Sweep-359 Phase 3 Mandatory Pillar Verification — PASS-2026-10-14-359
-
-- Timestamp: 2026-10-14T14:20Z UTC.
-- Objective: Phase 3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
-- Discovery: All four ACTIVE. CI green or recent success for pillars. Dependabot 0 on three; residual high/medium on Digital_Double_virtual_workforce (js-yaml high, pytest/brace-expansion medium). No releases or tags. Claim caps respected. No unsupported implementation claims.
-- Classification: ACTIVE for all four (with residuals noted).
-- Changes: Governance docs updated only (PORTFOLIO_STATUS_REPORT, this history, OPERATOR_QUEUE, new PASS yaml). No product mutations. No claim elevations. No history rewrites. No deletions. No release.
-- Verification: Live API (actions_list, dependabot_list, releases, tags, search total_count 83). Termination conditions MET for this verification cycle.
-- Exit: Portfolio exit criteria NOT MET (Dependabot residual on Digital_Double_virtual_workforce operator-gated; full 83 incomplete). Stop. Do not enter infinite review cycle.
-
-## Sweep-358 Randomized Portfolio Completion — PASS-2026-10-14-358
-
-- Timestamp: 2026-10-14T14:01Z UTC.
-- Objective: Random selection from portfolio. Selected topological-pinch.
-- Discovery: RESEARCH classification confirmed (README badges, CLAIM_STATUS, GOVERNANCE). Head f8297b98f939c8da3d79aadd4dcfb8d34e422717. Gasket-graph residual proxy in localization.py (Voronoi of corners, r=Lu). Default u_corners=[1.0,-0.5,0.0] yields eta 0.5/0.4/0.1 levels 0-5; historical 0.92 not reproduced; residual support corners only; scale (3/5)^n observed. CI docs-ci green on head. Tests lock the misses. No mesh/BEM/thrust. Related: sierpinski-geometry-045, stress-tensor-modification, coherence-drive.
-- Classification: RESEARCH (claim level 0–1 hypothesis only).
-- Changes: Governance docs updated only (PORTFOLIO_STATUS_REPORT, this history, OPERATOR_QUEUE). No product mutations. No claim elevations. No history rewrites. No deletions. No release.
-- Verification: Live tree, file contents (README, localization.py, tests, CI workflow, status docs) confirmed. Workflow runs success. Termination conditions MET for this repository.
 - Exit: Portfolio exit criteria NOT MET (Dependabot residual on Digital_Double_virtual_workforce operator-gated; full 83 incomplete). Stop. Do not enter infinite review cycle.
 
 [Prior content preserved; full history in git.]
