@@ -32,7 +32,10 @@ CHANGES:
     - docs/OPERATOR_QUEUE.md
     - docs/PORTFOLIO_STATUS_REPORT.md
   commits:
-    - pending (this update)
+    - 9c328f9889ce07867d73bdb979c64b1f3f631713 (create pass YAML)
+    - 51766f7e7b762f0586bbbd6541eb211a260a39d1 (SWEEP_HISTORY)
+    - be526d0e64dadc40fc85e2014c0864129c4e3202 (OPERATOR_QUEUE)
+    - a337c3fa6d31f8533f8d113826e970c320eec30f (PORTFOLIO_STATUS_REPORT)
   capabilities_added_or_changed:
     - Residual Dependabot evidence recorded for Digital_Double_virtual_workforce
 
@@ -71,7 +74,8 @@ NEXT:
     - Access to repository tree and CI status.
 
 PROVENANCE:
-  state_commit: pending
+  state_commit: a337c3fa6d31f8533f8d113826e970c320eec30f
   evidence:
     - github___list_dependabot_alerts results (open alerts on Digital_Double_virtual_workforce)
     - Prior Sweep-379/380 residuals
+    - Commits listed above
