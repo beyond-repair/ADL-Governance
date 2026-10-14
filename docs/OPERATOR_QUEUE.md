@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-364 — do not execute from this agent
+
+Residual deep reconfirm of beyond-repair/forge-aegis.
+
+- DISCOVER/AUDIT/CLASSIFY complete. Classification ACTIVE. Claim software / RUNNABLE SKETCH (capped). Head e7188d5 (2026-10-05). Offline deterministic pipeline confirmed by structure. Historical tests/CI green. No product mutations. No claim elevations. No releases or archives.
+- Termination conditions met for this pillar. No operator action required for this cycle beyond residual Dependabot and archive flags elsewhere.
+
+Portfolio exit criteria not met (incomplete full 83 deep verification; Dependabot residual on Digital_Double_virtual_workforce remains operator-gated; catalog freeze operator-only; archive flags pending).
+
 ## Sweep-363 — do not execute from this agent
 
 Reconfirm of randomly selected beyond-repair/btc-trading.
