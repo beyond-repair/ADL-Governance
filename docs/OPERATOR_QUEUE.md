@@ -1,5 +1,13 @@
 # Operator Queue
 
+## Sweep-371 — do not execute from this agent
+
+Random selection and DISCOVER/AUDIT of beyond-repair/momentum-closure.
+
+- Classification RESEARCH (claim level 1) reconfirmed. CI green. Claims held at conceptual/bookkeeping. No product mutations. No history rewrites. No deletions.
+- No new destructive or operator-only actions identified. Midpoint mesh failure against 1e-3 is documented and expected (not a defect).
+- Portfolio exit criteria not met. Residuals from prior sweeps unchanged.
+
 ## Sweep-368 — do not execute from this agent
 
 Portfolio discovery and Phase-3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
