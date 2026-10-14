@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-14-381
+  parent_pass: PASS-2026-10-14-380
+
+STATE:
+  global_status: AUDITING
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 42
+  capabilities_verified: 18
+  gaps_remaining: 26
+
+OBJECTIVE:
+  id: BASILISK-GAP-002
+  description: Evidence-only audit of open Dependabot alerts on Digital_Double_virtual_workforce; confirm residual security findings without mutation.
+  reason_selected: Highest residual security risk from prior sweeps (Sweep-379/380); bounded evidence production advances verification boundary.
+
+DISCOVERY:
+  findings:
+    - Live list_dependabot_alerts (open) on Digital_Double_virtual_workforce returns multiple alerts including medium (pytest GHSA-6w46-j5rx-g56g <9.0.3, brace-expansion GHSA-q2hr-2g5m-vwhr) and high (js-yaml GHSA-2883-xcg3-v3hh).
+    - Alerts created 2026-09/10; no critical severity in sampled set.
+    - Confirms residual from Sweep-379; draft PR #7 and version-update PRs remain open.
+    - Main CI last green remains 2026-10-01; no new failures.
+    - Classification held: Workforce Automation, readiness FAIL due to open alerts.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-381.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending (this update)
+  capabilities_added_or_changed:
+    - Residual Dependabot evidence recorded for Digital_Double_virtual_workforce
+
+VERIFICATION:
+  tests_run:
+    - list_dependabot_alerts API call succeeded; alerts enumerated
+  code_review: NOT_RUN
+  security: PASS (evidence recorded; no mutation)
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Open Dependabot alerts persist on Digital_Double_virtual_workforce (medium/high severity).
+    - No claim elevation warranted; residuals require operator review/merge or dismiss.
+  failures:
+    - None.
+  decisions:
+    - Documentation-only; escalate to operator. Do not auto-merge or mutate target repo.
+
+REMAINING:
+  incomplete:
+    - Deep code/test/security review of remaining non-pillar repos.
+    - Operator resolution of Dependabot PRs and draft PR #7.
+  blockers:
+    - Operator action required for Dependabot merges and secret rotations on superseded repos.
+  new_gaps:
+    - None new.
+
+NEXT:
+  objective_id: BASILISK-GAP-003
+  action: Random selection of one non-pillar repository for bounded discovery/audit/classify.
+  reason: Portfolio exit requires progressive deep verification of the 83; residual security escalated.
+  prerequisites:
+    - Access to repository tree and CI status.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - github___list_dependabot_alerts results (open alerts on Digital_Double_virtual_workforce)
+    - Prior Sweep-379/380 residuals
