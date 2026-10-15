@@ -1,48 +1,40 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-15 (Sweep-389)
-**Project / Version:** ADL Portfolio Governance / Sweep-389
-**Objective:** Mandatory Live Verification of pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce). Record residuals. One governed sweep.
+**Updated:** 2026-10-15 (Sweep-390)
+**Project / Version:** ADL Portfolio Governance / Sweep-390
+**Objective:** Random select AEGIS-Project-Nehemiah-. DISCOVER, AUDIT, CLASSIFY, PLAN, IMPLEMENT safe docs, update registry. One governed cycle.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
 
-## Sweep-389: Mandatory Live Verification of Pillars
+## Sweep-390: Random Select AEGIS-Project-Nehemiah-
 
-Focus: Explicit verification of the four mandated repositories. No assumptions. Live API checks for CI, releases, tags, Dependabot.
+Selected: AEGIS-Project-Nehemiah- (docs-only FLS ontology / architecture sibling to forge-aegis).
 
-**Inventory:** 83 public repositories under beyond-repair (confirmed).
+**DISCOVER:** Tree: README, fls/FLS-002/003, adr/ADR-001, forge-language/ subdocs, .github/workflows/docs-check.yml (presence check only). No executable code, no tests beyond docs existence.
 
-### Pillar Verification (live 2026-10-15)
-- **forge-aegis**:
-  - Releases: none. Tags: none.
-  - CI: forge-aegis CI (ci.yml) latest runs success (e.g. 37258127100 on main, 2026-10-05). Branches include main, finish/*, repair/*.
-  - Dependabot open alerts: 0.
-  - Classification held: ACTIVE (software / RUNNABLE SKETCH claim-capped).
-- **sovereign-clean-room**:
-  - Releases: none.
-  - CI: Python tests workflow. Recent runs mixed (success 37215829476, failures on earlier PR attempts). Prior successes documented.
-  - Dependabot open alerts: 0.
-  - Classification held: ACTIVE (software).
-- **BlockSwarm**:
-  - Releases: none.
-  - CI: Foundry workflow latest success (38252865430 on main, 2026-10-12).
-  - Dependabot open alerts: 0.
-  - Classification held: ACTIVE (software).
-- **Digital_Double_virtual_workforce**:
-  - Releases: none.
-  - CI: Dependabot update runs success (e.g. 36861631844).
-  - Dependabot open alerts: multiple (medium/high, including pytest, brace-expansion, js-yaml). Escalated.
-  - Classification held: ACTIVE (software).
+**AUDIT:** Listed ACTIVE in repository_registry.md (maturity 2, spec sibling). Aligns with forge-aegis for validation contract. No undefined critical components; ontology draft baseline present. CI is non-destructive docs check.
 
-**Portfolio residuals continue:** Incomplete deep verification of remaining ~79 repositories, open Dependabot on Digital_Double_virtual_workforce (and potentially others), no releases on pillars, multiple duplicate variants (SEEM-*, Digital_Double_*, SovereignOS/Sovereign-OS), VSA/interop contracts claim-capped only, archive candidates with flags unset. No critical CI failures on verified pillars. No unsupported claims elevated.
+**CLASSIFY:** Held ACTIVE (architecture/spec). Justification: Engineering-maintained docs with CI; consumes forge-aegis; no product claims elevated beyond software/spec. Not RESEARCH (has CI and ACTIVE badge); not SUPERSEDED.
 
-Portfolio exit criteria **NOT MET**. Cycle complete. Do not loop.
+**PLAN/IMPLEMENT:** Added root LICENSE (MIT), SECURITY.md (required for ACTIVE promotion path), updated README with Sweep-390 note. Idempotent, safe, non-destructive. No code changes.
+
+**TEST/CI:** Docs-check workflow verifies key files exist; post-update should remain green (presence of README, FLS-002, ADR-001). No executable tests.
+
+**DOCUMENT/GOVERN:** Updated this report, SWEEP_HISTORY, OPERATOR_QUEUE. Claims remain capped. No unsupported claims.
+
+**RELEASE/ARCHIVE:** No release tagged (docs-only; no SemVer product). Not archived.
+
+**RE-AUDIT:** No drift introduced. Termination conditions for this repo: docs complete, CI expected green, classification stable, no critical issues. Portfolio-wide still incomplete.
+
+**Portfolio residuals continue:** Incomplete deep verification of remaining repositories, open Dependabot on Digital_Double_virtual_workforce, no releases on pillars, duplicate variants, archive candidates unset. Exit criteria **NOT MET**.
+
+Cycle complete for selected repo. Next random select or operator review.
 
 ---
 
-## Sweep-388: Random Select My-mind-A.I. SUPERSEDED Re-Audit
+## Sweep-389: Mandatory Live Verification of Pillars
 
 [Prior content preserved for continuity. Full history in git.]
