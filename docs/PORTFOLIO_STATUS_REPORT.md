@@ -1,13 +1,31 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-386)
-**Project / Version:** ADL Portfolio Governance / Sweep-386
-**Objective:** Randomized completion sweep cycle on one selected repository.
+**Updated:** 2026-10-14 (Sweep-387)
+**Project / Version:** ADL Portfolio Governance / Sweep-387
+**Objective:** Confirm inventory and pillar verification continuity under Master Directive v3.0. One governed sweep.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-387: Inventory Confirmation and Pillar Continuity
+
+Focus: Re-confirm portfolio inventory of 83 public repositories and continuity of pillar verification (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce).
+
+**Inventory:** 83 public repositories under beyond-repair (search total_count=83, incomplete_results=false). No change from Sweep-385/386.
+
+### Pillar Continuity (re-verified this cycle)
+- **forge-aegis**: CI workflow active. Latest documented success run 37258127100 (2026-10-05). No releases/tags. Classification held ACTIVE (software / RUNNABLE SKETCH claim-capped).
+- **sovereign-clean-room**: Prior CI successes noted. No releases. Held ACTIVE (software).
+- **BlockSwarm**: Prior Foundry CI success (e.g. 38252865430). No releases. Held ACTIVE (software).
+- **Digital_Double_virtual_workforce**: Prior CI success. No releases. Open Dependabot previously noted (escalate). Held ACTIVE (software).
+
+**Portfolio residuals continue:** Incomplete deep verification of remaining ~79 repositories, open Dependabot on Digital_Double_virtual_workforce and potentially others, no releases on pillars, multiple duplicate variants (SEEM-*, Digital_Double_*, SovereignOS/Sovereign-OS), VSA/interop contracts claim-capped only, archive candidates with flags unset. No critical CI failures on verified items. No unsupported claims elevated.
+
+Portfolio exit criteria **NOT MET**.
+
+---
 
 ## Sweep-386: Random Select RepoRover- Re-Audit
 
