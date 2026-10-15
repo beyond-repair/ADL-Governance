@@ -1,40 +1,37 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-15 (Sweep-390)
-**Project / Version:** ADL Portfolio Governance / Sweep-390
-**Objective:** Random select AEGIS-Project-Nehemiah-. DISCOVER, AUDIT, CLASSIFY, PLAN, IMPLEMENT safe docs, update registry. One governed cycle.
+**Updated:** 2026-10-15 (Sweep-393)
+**Project / Version:** ADL Portfolio Governance / Sweep-393
+**Objective:** Mandatory live re-verification of pillars forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Confirm CI, no new releases/tags, residuals. One governed cycle. No assumptions.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false (reconfirmed).
 
-## Sweep-390: Random Select AEGIS-Project-Nehemiah-
+## Sweep-393: Mandatory Pillar Re-Verification
 
-Selected: AEGIS-Project-Nehemiah- (docs-only FLS ontology / architecture sibling to forge-aegis).
+**DISCOVER/AUDIT:** Fresh Actions list for pillars (status=completed, branch=main).
+- forge-aegis: latest CI success run 37258127100 on head e7188d5 (2026-10-05). No newer failing runs.
+- sovereign-clean-room: Python tests success run 37064696194 on 4878918c (2026-10-02). Graph update success. No newer.
+- BlockSwarm: Foundry success run 38252865430 on 9848010 (docs update 2026-10-12); prior solid 36859452185 on 6e90f6f.
+- Digital_Double_virtual_workforce: Digital Double CI success run 36861489156 on 24e6a29 (2026-10-01). Dependabot graph updates success but alerts remain open.
 
-**DISCOVER:** Tree: README, fls/FLS-002/003, adr/ADR-001, forge-language/ subdocs, .github/workflows/docs-check.yml (presence check only). No executable code, no tests beyond docs existence.
+**Releases/Tags:** Empty on all four (prior verified state held; no new evidence of tags/releases).
+**Tests/Docs/Security:** CI green = Actions conclusion only. VSA completeness UNVERIFIED. Dependabot residual (~56 open on Digital_Double, including critical form-data) persists. No code scanning elevation.
+**Classifications:** Held. No changes. ACTIVE pillars remain claim-capped.
 
-**AUDIT:** Listed ACTIVE in repository_registry.md (maturity 2, spec sibling). Aligns with forge-aegis for validation contract. No undefined critical components; ontology draft baseline present. CI is non-destructive docs check.
+**PLAN/IMPLEMENT:** No code changes. Documentation update only (this file, history, queue).
+**TEST/CI:** Re-verification confirms green; no new failures.
+**DOCUMENT/GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. Claims capped. No unsupported implementation claims.
+**RELEASE/ARCHIVE:** No action.
 
-**CLASSIFY:** Held ACTIVE (architecture/spec). Justification: Engineering-maintained docs with CI; consumes forge-aegis; no product claims elevated beyond software/spec. Not RESEARCH (has CI and ACTIVE badge); not SUPERSEDED.
+**RE-AUDIT:** No drift. Portfolio residuals: incomplete deep verification of remaining ~79 repos, open Dependabot, no releases on pillars, duplicate variants, archive candidates operator-gated. Exit criteria **NOT MET**.
 
-**PLAN/IMPLEMENT:** Added root LICENSE (MIT), SECURITY.md (required for ACTIVE promotion path), updated README with Sweep-390 note. Idempotent, safe, non-destructive. No code changes.
-
-**TEST/CI:** Docs-check workflow verifies key files exist; post-update should remain green (presence of README, FLS-002, ADR-001). No executable tests.
-
-**DOCUMENT/GOVERN:** Updated this report, SWEEP_HISTORY, OPERATOR_QUEUE. Claims remain capped. No unsupported claims.
-
-**RELEASE/ARCHIVE:** No release tagged (docs-only; no SemVer product). Not archived.
-
-**RE-AUDIT:** No drift introduced. Termination conditions for this repo: docs complete, CI expected green, classification stable, no critical issues. Portfolio-wide still incomplete.
-
-**Portfolio residuals continue:** Incomplete deep verification of remaining repositories, open Dependabot on Digital_Double_virtual_workforce, no releases on pillars, duplicate variants, archive candidates unset. Exit criteria **NOT MET**.
-
-Cycle complete for selected repo. Next random select or operator review.
+Cycle complete. Next: operator review of queue or random select. Do not loop.
 
 ---
 
-## Sweep-389: Mandatory Live Verification of Pillars
+## Sweep-390: Random Select AEGIS-Project-Nehemiah-
 
 [Prior content preserved for continuity. Full history in git.]
