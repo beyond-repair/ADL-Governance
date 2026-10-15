@@ -1,3 +1,18 @@
+## Sweep-391 Basilisk principal reconstruct — PASS-2026-10-15-391
+
+- Timestamp: 2026-10-15T13:13Z UTC.
+- Objective: Fresh principal-agent DISCOVER/AUDIT under ADL-BASILISK. Reconstruct from live search and governance state; persist pass record.
+- Scope: Portfolio-wide (search total_count 83); no code changes outside governance persistence.
+- Repositories reviewed: ADL-Governance (passes, registry, history), aegis-repo-graph (locked graph + drift), AEGIS-Project-Nehemiah- (prior sweep).
+- Findings:
+  - Live search confirms 83 repositories.
+  - Governance system operational with claim caps; aegis-repo-graph lock at 72 artifacts (expansion operator-only).
+  - Pillars green CI, no releases; Dependabot residual on Digital_Double_virtual_workforce.
+  - Forge AEGIS skill present for FLS work.
+- Actions performed: Created docs/passes/PASS-2026-10-15-391.yaml; updated this history. No other changes.
+- Residual risks: Portfolio exit criteria NOT MET; operator-gated actions remain.
+- Exit: Reconstruction complete. Next bounded action identified. Cycle recorded.
+
 ## Sweep-390 random select AEGIS-Project-Nehemiah- — PASS-2026-10-15-390
 
 - Timestamp: 2026-10-15T13:03Z UTC.
