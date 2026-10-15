@@ -1,0 +1,27 @@
+PASS:
+  id: PASS-2026-10-15-395
+STATE:
+  project: ADL Portfolio Governance
+  version: Sweep-395
+  objective: Master Directive partial execution - census + pillar re-verification
+  accepted_facts:
+    - total_count: 83
+    - pillars_ci: green
+    - releases: empty
+  rejected_hypotheses: []
+  open_questions:
+    - full classification of 83
+    - Dependabot disposition
+  locked_invariants:
+    - no deletion
+    - no history rewrite
+    - claims capped
+  pending_validation:
+    - remaining repos
+OBJECTIVE: Record residuals and stop
+VERIFICATION:
+  evidence: live GitHub search + Actions list + Dependabot sample
+  confidence: Empirical
+NEXT:
+  - operator review
+  - do not loop
