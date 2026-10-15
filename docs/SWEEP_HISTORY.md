@@ -1,3 +1,21 @@
+## Sweep-386 random select RepoRover- re-audit — PASS-2026-10-14-386
+
+- Timestamp: 2026-10-14T21:00Z UTC (approx).
+- Objective: Randomized portfolio completion sweep. SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST → CI → DOCUMENT → GOVERN → RELEASE/ARCHIVE → RE-AUDIT on one random repo.
+- SELECT: Randomly selected `beyond-repair/RepoRover-` from full portfolio (83 repos).
+- DISCOVER: Tree scanned (24 entries). Python scraper sketch: RepoRover/RepoRover.py (CLI + pipeline), fixtures, tests/test_reporover.py, .github/workflows/tests.yml, ARCHIVED.md, CLAIM_STATUS.md, README.md. Dependencies: requests, beautifulsoup4, nltk, pytest. Offline demo + pytest path present. No v2 dashboard.
+- AUDIT: Compared to ADL-Governance registry. Already listed in ARCHIVED queue (Sweep-088/223). Claim 0 held. Tests documented as 6 passed locally (Sweep-223). CI workflow present. No critical security issues. No unsupported claims. GitHub archived flag remains false (operator-only).
+- CLASSIFY: Confirmed ARCHIVED. Justification: historical scraper sketch, superseded by ADL-Portfolio-Census / ADL-Governance / aegis-repo-graph for portfolio roles. Not ACTIVE or RESEARCH. No promotion.
+- PLAN: Target state = terminal ARCHIVED with docs consistent. No code changes required (idempotent). Flag archive action in OPERATOR_QUEUE.
+- IMPLEMENT: Docs-only update in this repo. No mutations to RepoRover-.
+- TEST/CI: Existing workflow confirmed present. Prior local pytest success noted. No new run required for re-audit confirmation.
+- DOCUMENT: This entry. Updated PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md.
+- GOVERN: Claims held at 0. History preserved. No deletions. No history rewrite. No unsupported claims introduced.
+- RELEASE/ARCHIVE: None performed (operator-only for GitHub archive flag). Queued in OPERATOR_QUEUE.md.
+- RE-AUDIT: Repo remains compliant with ARCHIVED classification. Termination conditions met for this repo (no undefined components, no critical CI, no duplicates of canonical, no security issues, no unsupported claims, target state achieved). Portfolio-wide exit still NOT MET.
+
+Portfolio-wide exit still NOT MET. This governed cycle complete for RepoRover-. Next random select pending.
+
 ## Sweep-385 pillar live verification — PASS-2026-10-14-385
 
 - Timestamp: 2026-10-14T20:30Z UTC (approx).

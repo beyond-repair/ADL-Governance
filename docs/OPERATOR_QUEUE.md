@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-386 — do not execute from this agent
+
+Random select and re-audit of `beyond-repair/RepoRover-` complete.
+
+- Classification confirmed ARCHIVED (historical README scraper sketch). Claim 0 held.
+- Tests and CI workflow present. Prior local pytest 6 passed noted.
+- **Operator action required:** Set GitHub archive flag: `gh repo archive beyond-repair/RepoRover- --yes` (currently false).
+- No other destructive actions. Do not delete or rewrite history.
+- Portfolio residuals continue (incomplete deep verification of 83, Dependabot on other repos, duplicates, no releases on pillars).
+
 ## Sweep-385 — do not execute from this agent
 
 Pillar verification complete for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.

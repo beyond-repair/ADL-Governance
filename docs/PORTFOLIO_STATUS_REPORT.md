@@ -1,13 +1,35 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-14 (Sweep-385)
-**Project / Version:** ADL Portfolio Governance / Sweep-385
-**Objective:** Live verification of mandated pillars: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Inventory confirmation (83 repos).
+**Updated:** 2026-10-14 (Sweep-386)
+**Project / Version:** ADL Portfolio Governance / Sweep-386
+**Objective:** Randomized completion sweep cycle on one selected repository.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-386: Random Select RepoRover- Re-Audit
+
+Focus: Randomly selected `beyond-repair/RepoRover-`.
+
+**Inventory:** 83 public repositories under beyond-repair.
+
+### RepoRover-
+- Classification: ARCHIVED (confirmed). Claim: 0.
+- Type: Historical Python README scraper sketch (find repos → fetch README → NLP preprocess → CSV). Not a product. v2 dashboard never implemented.
+- CI: Workflow `.github/workflows/tests.yml` present (offline pytest).
+- Tests: Documented 6 passed locally (Sweep-223). Fixtures and demo path present.
+- Releases/Tags: Absent.
+- Security: No critical issues noted. GitHub archived flag: false (operator-only).
+- Superseded by: ADL-Governance, ADL-Portfolio-Census, adl-capability-matrix, aegis-repo-graph for portfolio roles.
+- Status: Terminal for this repo. Termination conditions met. No code changes required.
+
+**Portfolio residuals continue:** Incomplete deep verification of remaining repos, open Dependabot on Digital_Double_virtual_workforce and potentially others, no releases on pillars, multiple duplicate variants, archive candidates (including this one) with flags unset, VSA/interop contracts claim-capped only. No critical CI failures on verified items. No unsupported claims elevated.
+
+Portfolio exit criteria **NOT MET**.
+
+---
 
 ## Sweep-385: Pillar Live Verification
 
