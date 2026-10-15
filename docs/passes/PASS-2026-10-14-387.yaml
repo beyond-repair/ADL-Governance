@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-14-387
+  parent_pass: PASS-2026-10-14-386
+
+STATE:
+  global_status: RECONSTRUCTING
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 12
+  gaps_remaining: 40+
+
+OBJECTIVE:
+  id: GAP-RECONSTRUCT-001
+  description: Reconstruct current ecosystem model from live GitHub search and governance docs; identify highest-value next bounded gap.
+  reason_selected: Fresh agent execution; required by directive before any change. Live search confirms 83 repos; pillars CI green per prior; Dependabot open on Digital_Double_virtual_workforce.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; public_repos 78, search total_count 83.
+    - ADL-Governance is central; latest Sweep-386 on RepoRover- (ARCHIVED confirmed, archive flag pending operator).
+    - Pillars: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce have green CI, no releases.
+    - Open Dependabot alerts on Digital_Double_virtual_workforce (pytest medium, brace-expansion medium, js-yaml high; dev deps).
+    - aegis-repo-graph locked at 72 artifacts; drift witnesses exist but lock expansion operator-only.
+    - Portfolio exit criteria NOT MET.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-14-387.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Ecosystem reconstruction snapshot
+
+VERIFICATION:
+  tests_run:
+    - none (documentation only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Live portfolio size is 83 public repositories.
+    - Governance and sweep system is operational; claims strictly capped.
+    - Operator-gated actions remain: archive flags, Dependabot merges, releases, lock expansions.
+  failures:
+    - None in this pass.
+  decisions:
+    - Prefer incremental documentation of state over speculative implementation.
+    - Next gap is operator review of Dependabot on Digital_Double_virtual_workforce or deep audit of an unaudited repo.
+
+REMAINING:
+  incomplete:
+    - Deep verification of remaining ~70 repos.
+    - Release tags on pillars.
+    - Archive flags on candidates.
+  blockers:
+    - Operator approval required for Dependabot merges and archive flags.
+  new_gaps:
+    - GAP-DEP-001: Resolve open Dependabot alerts on Digital_Double_virtual_workforce.
+
+NEXT:
+  objective_id: GAP-DEP-001
+  action: Review and (if appropriate) merge or dismiss Dependabot alerts on Digital_Double_virtual_workforce; document outcome.
+  reason: Highest-value security residual on an ACTIVE pillar; non-destructive if dismissed as dev-only.
+  prerequisites:
+    - Operator review of severity and scope (dev deps).
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live github___search_repositories total_count=83
+    - docs/PORTFOLIO_STATUS_REPORT.md Sweep-386
+    - github___list_dependabot_alerts on Digital_Double_virtual_workforce
