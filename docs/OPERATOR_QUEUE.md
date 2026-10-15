@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-388 — do not execute from this agent
+
+Random select and re-audit of `beyond-repair/My-mind-A.I.` complete.
+
+- Classification confirmed SUPERSEDED (early 2023 agent sketch). Claim 0 held. Successor: sovereign-clean-room.
+- Local pytest documented passed. CI workflow present but broken (missing environment.yml; requires workflow scope token to fix).
+- **Operator action required:** Set GitHub archive flag: `gh repo archive beyond-repair/My-mind-A.I. --yes` (currently false). Optional: replace broken conda workflow with stdlib pytest workflow (requires token with workflow scope).
+- No other destructive actions. Do not delete or rewrite history.
+- Portfolio residuals continue (incomplete deep verification of 83, Dependabot on other repos, duplicates, no releases on pillars, unset archive flags).
+- Portfolio exit criteria not met. Cycle complete. Next: random select or operator review of Dependabot/duplicates/archives.
+
 ## Sweep-387 — do not execute from this agent
 
 Inventory confirmation and pillar continuity complete.
@@ -13,25 +24,5 @@ Inventory confirmation and pillar continuity complete.
 - Portfolio exit criteria not met. Cycle complete. Next: random select or operator review of Dependabot/duplicates/archives.
 
 ## Sweep-386 — do not execute from this agent
-
-Random select and re-audit of `beyond-repair/RepoRover-` complete.
-
-- Classification confirmed ARCHIVED (historical README scraper sketch). Claim 0 held.
-- Tests and CI workflow present. Prior local pytest 6 passed noted.
-- **Operator action required:** Set GitHub archive flag: `gh repo archive beyond-repair/RepoRover- --yes` (currently false).
-- No other destructive actions. Do not delete or rewrite history.
-- Portfolio residuals continue (incomplete deep verification of 83, Dependabot on other repos, duplicates, no releases on pillars).
-
-## Sweep-385 — do not execute from this agent
-
-Pillar verification complete for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
-
-- CI confirmed green on all four (specific runs in PORTFOLIO_STATUS_REPORT).
-- No releases. Claims held software/ACTIVE or RUNNABLE SKETCH. No elevation.
-- Open Dependabot on Digital_Double_virtual_workforce (pytest medium, brace-expansion medium, js-yaml high). Escalate for review/merge or dismiss as appropriate (dev deps).
-- Portfolio residuals: incomplete deep verification of 83, duplicate variants (multiple Digital_Double_*, SEEM-*, SovereignOS vs Sovereign-OS, LegionOS), no releases on pillars, archive candidates, VSA contracts claim-capped only.
-- No destructive actions. Portfolio exit criteria not met. Cycle complete. Next: random select or operator review of Dependabot/duplicates.
-
-## Sweep-384 — do not execute from this agent
 
 [Prior content preserved; full history in git.]
