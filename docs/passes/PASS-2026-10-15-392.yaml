@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-15-392
+  parent_pass: PASS-2026-10-15-391
+
+STATE:
+  global_status: AUDITING_SECURITY
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 55+
+  capabilities_verified: 14
+  gaps_remaining: 34+
+
+OBJECTIVE:
+  id: GAP-DEP-001
+  description: List and classify open Dependabot alerts on Digital_Double_virtual_workforce; document safe disposition without elevating claims or performing operator-only merges.
+  reason_selected: Highest-value residual security item on ACTIVE pillar from prior pass; bounded, non-destructive, directly addresses documented gap.
+
+DISCOVERY:
+  findings:
+    - Open Dependabot alerts on Digital_Double_virtual_workforce: 1 critical, 25 high, 25 medium, 5 low (total ~56).
+    - Critical: form-data (unsafe random for boundary, development scope).
+    - High examples: js-yaml (CPU DoS), nanoid (overflow/loop), brace-expansion (DoS), vite, postcss, lodash, minimatch, rollup, ws, etc.
+    - Medium examples: pytest (tmpdir), brace-expansion, vite path traversal, postcss, esbuild, lodash prototype pollution.
+    - Nearly all alerts are development-scope (package-lock.json, pyproject.toml dev deps); few runtime (nanoid).
+    - Repo remains ACTIVE with green CI historically; no releases; claim discipline holds (no production workforce claim).
+    - Operator review required for any dismiss/merge; no autonomous action taken.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-15-392.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Classified Dependabot residual on Digital_Double_virtual_workforce
+
+VERIFICATION:
+  tests_run:
+    - none (classification/documentation only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Dependabot surface is large but predominantly development dependencies; critical is form-data #13 (dev).
+    - Safe next steps are operator review of high/critical and bulk dismiss of pure dev DoS where appropriate.
+    - Runtime impact appears limited; no elevation of readiness claims.
+  failures:
+    - None.
+  decisions:
+    - Document classification only; do not auto-dismiss or open PRs.
+    - Next: either operator action on alerts or select next bounded gap (e.g., one unaudited RESEARCH repo deep-audit).
+
+REMAINING:
+  incomplete:
+    - Operator disposition of Dependabot alerts.
+    - Full deep verification of remaining repos.
+    - Releases/tags on pillars.
+  blockers:
+    - Operator approval for security dispositions, archives, tags.
+  new_gaps:
+    - None newly opened; GAP-DEP-001 partially closed by classification.
+
+NEXT:
+  objective_id: GAP-RESEARCH-001
+  action: Deep-audit one unaudited or lightly audited RESEARCH repository (e.g., finite-gasket-spectral-derivatives or informational-flux-identity) for claim vs implementation gap.
+  reason: Progressive closure of capability verification; high-value after security residual classified.
+  prerequisites:
+    - Select specific repo from registry.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___list_dependabot_alerts open state
+    - Severity grouping: 1 critical / 25 high / 25 medium / 5 low
+    - Prior PASS-391 next action
