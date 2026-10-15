@@ -1,13 +1,43 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-15 (Sweep-393)
-**Project / Version:** ADL Portfolio Governance / Sweep-393
-**Objective:** Mandatory live re-verification of pillars forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Confirm CI, no new releases/tags, residuals. One governed cycle. No assumptions.
+**Updated:** 2026-10-15 (Sweep-394)
+**Project / Version:** ADL Portfolio Governance / Sweep-394
+**Objective:** Random select one repository, complete DISCOVER through RE-AUDIT cycle. Confirm termination conditions for selected repo.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false (reconfirmed).
+
+## Sweep-394: Random Select scale-functional-I
+
+**SELECT:** Randomly selected `beyond-repair/scale-functional-I` from portfolio (updated 2026-10-14).
+
+**DISCOVER:** Tree: scale_functional.py (main), tests/ (2 files), pyproject.toml, .github/workflows/ci.yml, CLAIM_STATUS.md, FUNCTIONAL.md, RESULT.md, README.md. Dependencies: NumPy (declared). Features: declared I = Perimeter/sqrt(Area), beta_I finite differences on dumbbells, CLI table/proxy, rejected Seeley proxy. Tests: pytest covering CLI and functional. CI: active, last run success on head be0758a.
+
+**AUDIT:** Against ADL-Governance: claim-capped (experimental_validation=false, etc.), no unsupported claims, docs present and matching code, no stale entries, CI green (run 38651508445 success), no critical security, no duplicate canonical (research functional declaration). Undefined components: none.
+
+**CLASSIFY:** RESEARCH. Justification: experimental numerical exploration of declared functional; explicit false validation flags; no thrust/energy claims. Logged in SWEEP_HISTORY.md.
+
+**PLAN:** Target state: current CI-green, documented, claim-capped RESEARCH. Actions: none required (already meets).
+
+**IMPLEMENT:** No code changes. Safe/idempotent only if needed; none here.
+
+**TEST → CI:** pytest and default run covered in CI; last conclusion success. No failures.
+
+**DOCUMENT:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. README/CLAIM_STATUS already current.
+
+**GOVERN:** No unsupported claims. No untracked deps. No critical issues.
+
+**RELEASE/ARCHIVE:** No. Remains RESEARCH; no tag. Not SUPERSEDED/ARCHIVED.
+
+**RE-AUDIT:** No drift detected. Termination conditions for this repo: met (no undefined/undocumented, no stale, CI green, no duplicates, no critical security, no unsupported claims, target achieved).
+
+Cycle complete for selected repo. Portfolio residuals: incomplete deep verification of remaining ~79 repos, open Dependabot on other pillars, no releases on pillars, operator-gated archives. Exit criteria **NOT MET**.
+
+Next: operator review or random select. Do not loop autonomously.
+
+---
 
 ## Sweep-393: Mandatory Pillar Re-Verification
 
