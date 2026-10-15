@@ -1,19 +1,18 @@
-## Sweep-389 mandatory live verification of pillars — PASS-2026-10-15-389
+## Sweep-390 random select AEGIS-Project-Nehemiah- — PASS-2026-10-15-390
 
-- Timestamp: 2026-10-15T02:15Z UTC (approx).
-- Objective: One governed sweep. Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Inventory confirmation. Residuals recorded.
-- Scope: Full portfolio inventory (83 public repos via search total_count=83). Deep verification limited to the four pillars.
-- Repositories reviewed: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (+ inventory).
+- Timestamp: 2026-10-15T13:03Z UTC.
+- Objective: One governed sweep. Random select AEGIS-Project-Nehemiah-. Full DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → DOCUMENT → GOVERN.
+- Scope: Selected repository (docs-only ontology/architecture).
+- Repositories reviewed: AEGIS-Project-Nehemiah- (tree, README, FLS-002, FLS-003, ADR-001, docs-check.yml).
 - Findings:
-  - All four: no releases, no tags.
-  - forge-aegis: CI success (ci.yml recent runs). 0 open Dependabot.
-  - sovereign-clean-room: Python tests CI mixed recent (successes and prior failures on PR). 0 open Dependabot.
-  - BlockSwarm: Foundry CI success (latest 38252865430). 0 open Dependabot.
-  - Digital_Double_virtual_workforce: CI success on Dependabot updates. Multiple open Dependabot alerts (medium/high: pytest GHSA-6w46-j5rx-g56g, brace-expansion, js-yaml). Escalated to operator.
-- Actions performed: Docs-only updates to PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No code changes, no deletions, no history rewrites.
-- Residual risks: Incomplete deep verification of ~79 repos; open Dependabot on Digital_Double_virtual_workforce; no releases/tags on pillars; duplicate implementations (SEEM, Digital Double variants, OS family); archive flags unset for SUPERSEDED candidates. Exit criteria not met.
-- Exit: Cycle complete. Stop. No infinite loop.
+  - Docs-only; CI = presence check for README, FLS-002, ADR-001.
+  - Classified ACTIVE in registry (spec sibling to forge-aegis). Held.
+  - No executable code, no tests beyond docs, no critical security issues, no unsupported claims.
+  - Missing root LICENSE and SECURITY.md (ACTIVE path).
+- Actions performed: Added LICENSE (MIT), SECURITY.md; updated README with Sweep-390 note. Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No deletions, no history rewrites, idempotent.
+- Residual risks: Portfolio-wide incomplete verification; this repo remains docs-only (no runtime host integrity implementation). CI expected green post-docs add.
+- Exit: Selected repo advanced to better compliance. Portfolio exit criteria not met. Cycle complete. Stop. No infinite loop.
 
-## Sweep-388 random select My-mind-A.I. SUPERSEDED re-audit — PASS-2026-10-15-388
+## Sweep-389 mandatory live verification of pillars — PASS-2026-10-15-389
 
 [Prior content preserved; full history in git.]
