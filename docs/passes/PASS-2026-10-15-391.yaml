@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-15-391
+  parent_pass: PASS-2026-10-15-390
+
+STATE:
+  global_status: RECONSTRUCTING
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 55+
+  capabilities_verified: 14
+  gaps_remaining: 35+
+
+OBJECTIVE:
+  id: GAP-RECONSTRUCT-002
+  description: Reconstruct ecosystem from live GitHub search (total_count 83) and governance artifacts; select next bounded gap under ADL-BASILISK.
+  reason_selected: Fresh principal-agent execution; directive requires discover/audit before change. Confirms portfolio size and central role of ADL-Governance + aegis-repo-graph.
+
+DISCOVERY:
+  findings:
+    - Authenticated identity beyond-repair (id 132061760); public_repos 78; search total_count 83 incomplete_results false.
+    - ADL-Governance central constitution; SWEEP_HISTORY at Sweep-390 on AEGIS-Project-Nehemiah- (docs-only, ACTIVE, LICENSE/SECURITY added).
+    - aegis-repo-graph RESEARCH claim <=1; locked 72 artifacts +1 queue; drift witnesses for 83-name observation; expansion operator-only.
+    - Pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) have green CI, no releases, open Dependabot on Digital_Double.
+    - Forge AEGIS skill available for FLS Artifact Graph work; AEGIS-Project-Nehemiah- is docs sibling.
+    - Portfolio exit criteria NOT MET; many RESEARCH repos claim-capped; archive candidates pending operator.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-15-391.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Live reconstruction snapshot under Basilisk directive
+
+VERIFICATION:
+  tests_run:
+    - none (documentation/persistence only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem is governance-driven with strict claim caps; graphs and census are locked snapshots.
+    - Operator-gated residuals: Dependabot resolution, archive flags, release tags, lock expansions.
+    - Existing bots (Portfolio Sweep, Finish) cover similar loops; this pass uses principal tools.
+  failures:
+    - None.
+  decisions:
+    - Persist state in ADL-Governance passes for reconstructability.
+    - Next slice: inspect open Dependabot on Digital_Double_virtual_workforce or deep-audit one unaudited RESEARCH repo.
+
+REMAINING:
+  incomplete:
+    - Full deep verification of ~70 remaining repos.
+    - Releases and tags on ACTIVE pillars.
+    - GitHub archive flags on recommended candidates.
+  blockers:
+    - Operator approval for merges, archives, and claim elevations.
+  new_gaps:
+    - GAP-DEP-001 still open.
+
+NEXT:
+  objective_id: GAP-DEP-001
+  action: List and classify open Dependabot alerts on Digital_Double_virtual_workforce; document safe disposition (dismiss/merge) without elevating claims.
+  reason: Highest-value residual security item on ACTIVE pillar; bounded and non-destructive.
+  prerequisites:
+    - Confirm alert severity and whether they affect runtime vs dev dependencies.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___search_repositories total_count=83
+    - docs/SWEEP_HISTORY.md Sweep-390
+    - aegis-repo-graph README claim caps
+    - forge-aegis SKILL.md activation rules
