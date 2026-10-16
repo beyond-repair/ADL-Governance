@@ -1,13 +1,40 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-16 (Sweep-397)
-**Project / Version:** ADL Portfolio Governance / Sweep-397
+**Updated:** 2026-10-16 (Sweep-398)
+**Project / Version:** ADL Portfolio Governance / Sweep-398
 **Objective:** Randomized portfolio completion sweep. Random SELECT one repo, complete cycle to termination conditions or document residuals.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+
+## Sweep-398: Random selection — seem-block-system
+
+**SELECT:** Randomly selected `seem-block-system` from 83 repositories.
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Repository: beyond-repair/seem-block-system — SEEM Block-System Isolation Theorem (legacy + Claim-0 NumPy monitors). Python + NumPy. SUPERSEDED banner present.
+- Classification: SUPERSEDED (lifecycle SUPERSEDED; successor sovereign-clean-room; Claim-0 historical archive + sketch). Per CLAIM_STATUS.md and README.
+- Features: Restored Block-System-v1.3 theorem in docs/BLOCK_SYSTEM.md; minimal NumPy reference enforcing C=0, monitors I1–I4 with explicit ε-tolerances; contrast demo for C≠0.
+- Dependencies: numpy>=1.25,<3; pytest for dev. No external services.
+- Tests: tests/ present (geometry, isolation, package). Not re-run in this sandbox; referenced as runnable via pytest.
+- CI: None detected (no .github/workflows in tree).
+- Docs: README.md (SUPERSEDED banner + quickstart), CLAIM_STATUS.md (explicit non-claims), docs/BLOCK_SYSTEM.md, LICENSE, pyproject.toml.
+- Security: No open Dependabot alerts.
+- Branches: main (HEAD 2d2b3e7).
+- Releases/tags: None observed.
+- Listed in archive_queue.md under After SEEM freeze.
+
+**PLAN / IMPLEMENT:** Target: verified SUPERSEDED terminal state, archive queued. Safe documentation only. No code changes, no history rewrite, no deletion.
+
+**TEST / CI / DOCUMENT / GOVERN:** Tests not re-executed here (sandbox limit). CI absent. Docs already claim-capped and explicit. No unsupported claims. No critical security issues.
+
+**RELEASE / RE-AUDIT:** Termination conditions largely met for SUPERSEDED (no undefined components, no stale critical registry, no open security, no unsupported claims, successor canonical). Actual GitHub archive is operator-gated (see archive_queue.md). Remains SUPERSEDED pending operator archive. Cycle residuals recorded. Stop.
+
+Prior Sweep-397 content preserved below for continuity.
+
+---
 
 ## Sweep-397: Random selection — mend
 
@@ -35,28 +62,4 @@ Prior Sweep-396 content preserved below for continuity.
 
 ---
 
-## Sweep-396: Master Directive Portfolio Census + Pillar Re-Verification
-
-**DISCOVER:** GitHub search `user:beyond-repair` total_count=83, incomplete_results=false. Full name list extracted (prior). Key pillars present: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, LegionOS, SEEM variants, CFT variants, etc. Languages: Python dominant, TypeScript, Solidity, Rust. Last pushes vary; most public, non-archived. No private in search (authenticated sees public + owned).
-
-**MANDATORY LIVE VERIFICATION (Phase 3):**
-- forge-aegis: latest completed main CI success run 37258127100 on e7188d5 (2026-10-05). No newer runs. Releases/tags: empty.
-- sovereign-clean-room: Python tests success run 37064696194 on 4878918c (2026-10-02). Dependabot graph success. Releases/tags: empty.
-- BlockSwarm: Foundry success run 38252865430 on 9848010 (2026-10-12). Prior success 36859452185. Releases/tags: empty.
-- Digital_Double_virtual_workforce: Dependabot updates success on 24e6a29 (2026-10-01); core CI green held (run 36861489156). Open Dependabot alerts confirmed (residual ~56 open including critical form-data prior). Releases/tags: empty.
-
-**CLASSIFICATION (Phase 2, high-level from prior + names):** Pillars ACTIVE (claim-capped). Many RESEARCH (physics/functional explorations, SEEM/CFT variants). Duplicates/variants present (multiple Digital_Double*, SEEM*, CFT*). SUPERSEDED/ARCHIVED candidates operator-gated. Full per-repo classification residual (not completed in this cycle).
-
-**CAPABILITY / GAP / DEPENDENCY / REDUNDANCY (Phases 4-7):** Demonstrated features limited to verified CI-green, documented claim-capped surfaces. Planned features labeled as such. Dependency cycles/orphans/duplicates identified at name level (e.g., multiple agent/VSA/SEEM implementations). No extraction performed. Gaps: incomplete deep tests/docs/CI/security for majority of repos. Severity: Critical residuals on open Dependabot and incomplete verification.
-
-**SYNERGY / CANONICAL / REVIEW (Phases 8-10):** Building blocks exist for AI Legion, AEGIS, Digital Double, Governance. Immediate integrations low-risk via docs/registry. Canonical domains: Governance=ADL-Governance, Agent=forge-aegis, Security=sovereign-clean-room, Distributed=BlockSwarm, Workforce=Digital_Double_virtual_workforce. Review-readiness: PASS WITH FINDINGS for pillars (CI green, claim-capped, residual security). FAIL for full portfolio readiness (exit criteria).
-
-**SAFE REMEDIATION (Phase 11):** Documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). No code, no history rewrite, no deletion. Destructive proposals escalated to queue.
-
-**RE-AUDIT / EXIT:** No drift on pillars. Exit criteria NOT MET: no full classification of all 83, incomplete dependency/capability maps, unresolved critical Dependabot residual, no pillar releases, duplicate implementations unconsolidated (operator-gated), archive candidates untracked fully. Residuals recorded. Cycle complete. Stop. Do not loop autonomously.
-
-Next: operator review of queue or targeted random/pillar select. 
-
----
-
-[Prior Sweep-395 and earlier content preserved in git history for continuity.]
+[Prior Sweep-396 and earlier content preserved in git history for continuity.]

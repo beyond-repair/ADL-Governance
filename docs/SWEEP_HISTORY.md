@@ -1,3 +1,20 @@
+## Sweep-398 Random selection: seem-block-system — PASS-2026-10-16-398
+
+- Timestamp: 2026-10-16T13:05Z UTC.
+- Objective: Random SELECT one repository from portfolio (83 total), then DISCOVER/AUDIT/CLASSIFY/PLAN/IMPLEMENT/TEST/CI/DOCUMENT/GOVERN/RELEASE/RE-AUDIT per rules.
+- Selected: seem-block-system (https://github.com/beyond-repair/seem-block-system)
+- DISCOVER: Python package (seem_block_system) with NumPy monitors for Block-System Isolation Theorem (C=0, I1-I4). Tree: __init__.py, cli.py, dynamics.py, geometry.py, monitors.py; tests/; docs/BLOCK_SYSTEM.md; CLAIM_STATUS.md; pyproject.toml. README has SUPERSEDED banner pointing to sovereign-clean-room. CLAIM_STATUS: RESEARCH/HISTORICAL ARCHIVE, Claim-0, Lifecycle SUPERSEDED.
+- AUDIT: Matches ADL-Governance lifecycle (SUPERSEDED → ARCHIVED pending). No open Dependabot. No CI. Tests present. Explicit non-claims. Listed in archive_queue.md. No unsupported claims. Successor sovereign-clean-room is canonical.
+- CLASSIFY: SUPERSEDED (historical archive + Claim-0 sketch; replaced by sovereign-clean-room).
+- PLAN: Target terminal SUPERSEDED state verified; archive remains operator-gated. Documentation updates only.
+- IMPLEMENT: Documentation updates only in ADL-Governance. No destructive actions. Idempotent.
+- TEST/CI: No CI. Tests not re-run in agent sandbox (referenced as pytest-runnable). No failures observed in structure.
+- DOCUMENT: Updated this history, PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md.
+- GOVERN: No unsupported claims. No critical security. No untracked deps.
+- RELEASE/ARCHIVE: Not tagged. Archive queued for operator (gh repo archive after gates). Remains SUPERSEDED.
+- RE-AUDIT: No drift. Residual: actual GitHub archive pending operator; tests not re-executed here.
+- Exit: Cycle complete for seem-block-system. Residuals recorded (operator archive). Next random or operator.
+
 ## Sweep-397 Random selection: mend — PASS-2026-10-16-397
 
 - Timestamp: 2026-10-16T02:00Z UTC.

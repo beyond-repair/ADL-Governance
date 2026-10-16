@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-398 — do not execute from this agent
+
+Random selection cycle on `seem-block-system` (SUPERSEDED, historical Block-System Claim-0 archive).
+
+- No destructive actions performed. No history rewrites, no deletions, no code changes.
+- Classification: SUPERSEDED held (successor sovereign-clean-room; Claim-0). Matches LIFECYCLE.md and CLAIM_STATUS.md.
+- No open Dependabot alerts. No CI. Tests present but not re-run here.
+- Archive is operator-gated: listed in docs/archive_queue.md under "After SEEM freeze". Do not archive until Stage-1 extraction gates in sovereign-clean-room are verified. Command: `gh repo archive beyond-repair/seem-block-system --yes` (preserve history).
+- Portfolio residuals unchanged: incomplete full verification of remaining repositories, other open Dependabot (e.g. Digital_Double_virtual_workforce), no pillar releases, duplicates unconsolidated, exit criteria NOT MET.
+- Next: operator actions on archive queue or next random select. Do not loop autonomously.
+
 ## Sweep-397 — do not execute from this agent
 
 Random selection cycle on `mend` (RESEARCH, browser RPG export).
@@ -13,17 +24,5 @@ Random selection cycle on `mend` (RESEARCH, browser RPG export).
 - Next: operator actions on Dependabot or next random select. Do not loop autonomously.
 
 ## Sweep-396 — do not execute from this agent
-
-Master Directive v3.0 partial execution: portfolio census (total_count 83 reconfirmed), mandatory pillar re-verification (CI green, no releases/tags), high-level classification/capability/gap/redundancy notes. Documentation updates only.
-
-- No destructive actions identified or performed. No history rewrites, no deletions.
-- No code changes.
-- Classifications held for pillars (ACTIVE, claim-capped). Full per-repo classification residual.
-- Open Dependabot residual on Digital_Double_virtual_workforce remains (~56 open alerts, including critical form-data and high js-yaml confirmed in sample). Operator review/disposition required. No autonomous merge or dismissal.
-- Archive/SUPERSEDED candidates remain operator-gated. Duplicate variants (Digital_Double*, SEEM*, CFT*) noted but not consolidated.
-- Portfolio residuals: incomplete deep verification/classification of remaining repositories, unresolved critical security findings, no pillar releases, untracked full archive candidates, incomplete dependency graphs. Exit criteria NOT MET.
-- Next: operator actions on queue (Dependabot, archives) or targeted select. Do not loop autonomously.
-
-## Sweep-395 — do not execute from this agent
 
 [Prior content preserved; full history in git.]
