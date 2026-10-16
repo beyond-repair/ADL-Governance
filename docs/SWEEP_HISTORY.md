@@ -1,3 +1,21 @@
+## Sweep-400 Phase-3 Mandatory Live Verification — pillars — PASS-2026-10-16-400
+
+- Timestamp: 2026-10-16T19:13Z UTC.
+- Objective: Perform explicit live verification of CI, releases, tags, security on forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce per Master Directive v3.0.
+- Selected: Priority ACTIVE pillars.
+- DISCOVER/AUDIT: Live Actions runs, releases (empty), tags (empty), Dependabot lists.
+  - forge-aegis: CI success 37258127100; no releases/tags; Dependabot empty.
+  - sovereign-clean-room: CI success on completion branch; main prior green; no releases/tags; Dependabot empty; VSA UNVERIFIED.
+  - BlockSwarm: CI success 38252865430 / 36859452185; no releases/tags; Dependabot empty.
+  - Digital_Double_virtual_workforce: CI success 36861489156; no releases/tags; Dependabot critical #13 (form-data) open + medium/high residuals.
+- CLASSIFY: ACTIVE held for all four; claim discipline preserved.
+- PLAN/IMPLEMENT: Documentation only in ADL-Governance. No destructive actions.
+- TEST/CI: Live conclusions recorded. No re-execution of tests.
+- DOCUMENT/GOVERN: Updated status report, this history, operator queue. No unsupported claims.
+- RELEASE/ARCHIVE: None. Residuals: open critical security, incomplete portfolio sweep, no tags, VSA unverified.
+- RE-AUDIT: Exit criteria NOT MET. Stop after this governed sweep.
+- Exit: Phase-3 verification complete. Residuals recorded. Next: operator on GAP-SEC-DDVW-001 or further slices.
+
 ## Sweep-399 BASILISK discovery — PASS-2026-10-16-399
 
 - Timestamp: 2026-10-16T16:07Z UTC.
