@@ -1,13 +1,35 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-16 (Sweep-398)
-**Project / Version:** ADL Portfolio Governance / Sweep-398
-**Objective:** Randomized portfolio completion sweep. Random SELECT one repo, complete cycle to termination conditions or document residuals.
+**Updated:** 2026-10-16 (Sweep-399)
+**Project / Version:** ADL Portfolio Governance / Sweep-399 (ADL-BASILISK)
+**Objective:** Reconstruct whole ecosystem; select and persist next bounded gap. Progressive closure across repeated executions.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+
+## Sweep-399: BASILISK discovery — ecosystem reconstruction
+
+**SELECT:** Whole portfolio (not random single repo). Persistent Nexus/Governance state + live GitHub.
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- 83 repositories. ADL-Governance is governing constitution (lifecycle, claim validation 0-5, pass checker scripts/check_passes.py).
+- Prior Sweep-398: seem-block-system SUPERSEDED, archive operator-queued.
+- Priority ACTIVE residuals: Digital_Double_virtual_workforce (Dependabot HIGH), sovereign-clean-room (VSA unverified), BlockSwarm (release tag pending).
+- RESEARCH majority claim-capped (ADL-Nexus, mend, coherence-drive family, etc.).
+- Graphs: aegis-repo-graph, adl-function-census.
+- Existing agents (Portfolio Sweep, Finish) cover related loops; this pass adds formal BASILISK reconstruction record.
+
+**PLAN / IMPLEMENT:** Persist PASS-2026-10-16-399.yaml + history + this report. No other code changes. No claim elevation. Idempotent.
+
+**TEST / CI / DOCUMENT / GOVERN:** Pass record schema matches checker. No unsupported claims. Security residuals documented, not closed.
+
+**RELEASE / RE-AUDIT:** Reconstruction complete. Next bounded: audit Digital_Double_virtual_workforce Dependabot residual (GAP-SEC-DDVW-001). Residuals preserved. Stop.
+
+Prior Sweep-398 content preserved below for continuity.
+
+---
 
 ## Sweep-398: Random selection — seem-block-system
 
