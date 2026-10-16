@@ -1,44 +1,45 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-10-01 (post Sweep-173)
+**As of:** 2026-10-16 (post Sweep-401, PASS-2026-10-16-402)
 
 ## Priority queue
 
-1. **Digital_Double_virtual_workforce** — ACTIVE (docs/CI/SECURITY terminal; release tags + Dependabot/evidence PRs operator)
+1. **Digital_Double_virtual_workforce** — ACTIVE (CI green; open critical Dependabot #13 form-data CVE-2025-7783 + medium/high residuals; release tags + security remediation operator)
 2. sovereign-clean-room — ACTIVE (stabilize; VSA completeness UNVERIFIED)
 3. BlockSwarm — ACTIVE (operator release tag v0.5.0-sagf)
 4. forge-aegis — ACTIVE / RELEASE_BLOCKED_BY_OPERATOR (implementation FROZEN; wait for remote v0.1.0; no FLS expansion)
 5. Governance / research / archive — maintenance (registry + claim discipline)
-6. Unaudited census remainder — atomicdreamlabs (private), mendthegame (private)
+6. Unaudited / private remainder — blacksite (RESEARCH, Sweep-401), atomicdreamlabs (private), mendthegame (private)
 
 ## System status
 
 | System | Status | Notes |
 |--------|--------|-------|
-| forge-aegis | RELEASE_BLOCKED_BY_OPERATOR | Slice+CI+gate done; wait for remote `v0.1.0`; **no FLS expansion** |
+| forge-aegis | RELEASE_BLOCKED_BY_OPERATOR | Slice+CI+gate done; wait for remote `v0.1.0`; **no FLS expansion**. Live CI success (Sweep-400) |
 | AEGIS-Project-Nehemiah- | CONTRACT CONSUMER / ACTIVE | Must not redefine validation semantics |
-| Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green; Dependabot HIGH + evidence PR #7 open (operator) |
-| sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green; VSA completeness UNVERIFIED |
-| BlockSwarm | ACTIVE | SAGF; Foundry success; tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); census 82; PASS-2026-10-01-173 |
+| Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green (Sweep-400); Dependabot critical #13 (form-data) open + medium/high; evidence PR residuals (operator) |
+| sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green (Sweep-400); VSA completeness UNVERIFIED |
+| BlockSwarm | ACTIVE | SAGF; CI success (Sweep-400); tag PENDING operator |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-16-402 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
+| blacksite | RESEARCH | Sweep-401: private isometric stealth roguelite prototype (HTML5/JS); tests present, no CI; claim-capped |
 | coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
-| bloch-coherence-factor2 | RESEARCH | Sweep-173; local pytest 11 passed; main Actions 36844364901 success on pre-claim head; loop branch not promoted |
-| topological-pinch | RESEARCH | Sweep-172; proxy 0.5/0.4/0.1 not 0.92; CI 36881071636 success |
+| bloch-coherence-factor2 | RESEARCH | Sweep-173; local pytest 11 passed; main Actions success; loop branch not promoted |
+| topological-pinch | RESEARCH | Sweep-172; proxy not 0.92; CI success |
 | mend | RESEARCH | Sweep-170; formula witness local PASS; playable product NOT verified |
-| informational-flux-identity | RESEARCH | Sweep-168; local witness signed net 0; Actions not observed |
+| informational-flux-identity | RESEARCH | Sweep-168; local witness signed net 0 |
 | finite-gasket-spectral-derivatives | RESEARCH | Sweep-167; kernel locally tested; mult(6) CLAIMED not machine-verified here |
 | momentum-closure | RESEARCH | Claim-cap refreshed Sweep-158; pytest CI success |
-| ADL-Nexus | RESEARCH | Re-confirmed Sweep-163; CI green |
-| CFTv3.3-IQG-Unified-Framework | RESEARCH | Re-confirmed Sweep-162; docs-ci success |
-| m2-renormalization-law | RESEARCH | Re-confirmed Sweep-161; parameter-free + pytest CI success |
-| SEEM-Cognitive-Microservice | SUPERSEDED | Sweep-169 re-confirm; archive flag PENDING |
+| ADL-Nexus | RESEARCH | Re-confirmed; CI green; not product-canonical |
+| CFTv3.3-IQG-Unified-Framework | RESEARCH | Re-confirmed; docs-ci success |
+| m2-renormalization-law | RESEARCH | Re-confirmed; parameter-free + pytest CI success |
+| SEEM-Cognitive-Microservice | SUPERSEDED | Archive flag PENDING |
 | SEEM / legacy bots / CFT-v3.1 / Digital Double predecessors | SUPERSEDED / ARCHIVED targets | archive_queue.md; GitHub flags mostly PENDING operator |
 
 ## Live census
 
-- GitHub `user:beyond-repair` search total_count: **82** (2026-10-01, Sweep-171; not re-paged Sweep-173)
-- adl-capability-matrix locked inventory: 67 rows (expansion OPEN / operator-gated)
+- GitHub `user:beyond-repair` search total_count: **83** (2026-10-16)
+- Prior locked inventory: 67 rows (expansion OPEN / operator-gated)
 
 ## Rules
 
@@ -46,3 +47,4 @@
 - CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
 - Claim levels strictly enforced; documentation ≠ implementation; never fabricate verification.
 - Operator-only: GitHub archive flags, release tags, Dependabot merges, secret rotation, claim elevation.
+- Random selection cycles (e.g. Sweep-401 blacksite) document RESEARCH state without promotion.
