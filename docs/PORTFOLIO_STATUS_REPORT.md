@@ -1,13 +1,33 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-16 (Sweep-399)
-**Project / Version:** ADL Portfolio Governance / Sweep-399 (ADL-BASILISK)
-**Objective:** Reconstruct whole ecosystem; select and persist next bounded gap. Progressive closure across repeated executions.
+**Updated:** 2026-10-16 (Sweep-400)
+**Project / Version:** ADL Portfolio Governance / Sweep-400 (Master Directive v3.0)
+**Objective:** Live verification of priority ACTIVE pillars under governance rules. Record residuals. No claim elevation.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+
+## Sweep-400: Phase-3 Mandatory Live Verification — pillars
+
+**SELECT:** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (priority ACTIVE).
+
+**DISCOVER / AUDIT / CLASSIFY (live 2026-10-16):**
+- **forge-aegis**: CI success (run 37258127100 on main e7188d5). Releases: none. Tags: none. Dependabot open: empty. Classification ACTIVE (software sketch, claim-capped).
+- **sovereign-clean-room**: Recent CI on seem-completion-pass (success run 37215829476; prior failures on same branch). Main prior success recorded. Releases/tags: none. Dependabot open: empty. VSA completeness UNVERIFIED. Classification ACTIVE (canonical SEEM substrate).
+- **BlockSwarm**: CI success (run 38252865430 docs; prior code success 36859452185 on 6e90f6f). Releases/tags: none. Dependabot open: empty. Classification ACTIVE (SAGF).
+- **Digital_Double_virtual_workforce**: CI success (run 36861489156 on main 24e6a29). Releases/tags: none. Dependabot open: critical #13 (form-data CVE-2025-7783) remains; multiple medium/high (pytest, brace-expansion, js-yaml, etc.). Classification ACTIVE (public canonical; readiness FAIL pending security).
+
+**PLAN / IMPLEMENT:** Documentation update only. Residuals recorded. No code changes, no merges, no history rewrite. Operator queue for security.
+
+**TEST / CI / DOCUMENT / GOVERN:** Live CI conclusions recorded. No unsupported claims. Security residuals not closed.
+
+**RELEASE / RE-AUDIT:** Phase-3 verification complete for pillars. Exit criteria NOT MET (open critical Dependabot, incomplete portfolio verification, no tags, VSA unverified). Residuals preserved. Stop.
+
+Prior Sweep-399 content preserved below for continuity.
+
+---
 
 ## Sweep-399: BASILISK discovery — ecosystem reconstruction
 
