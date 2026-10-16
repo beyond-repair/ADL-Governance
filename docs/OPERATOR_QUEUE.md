@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-400 — Phase-3 live verification (do not execute from this agent)
+
+Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. PASS-2026-10-16-400 persisted.
+
+- No destructive actions. No history rewrites, no deletions, no claim elevation, no autonomous merges.
+- Confirmed residual: GAP-SEC-DDVW-001 — Dependabot critical #13 (form-data CVE-2025-7783) open on Digital_Double_virtual_workforce, plus medium/high alerts (pytest, brace-expansion, js-yaml). Operator review of alerts/PRs required.
+- Other residuals unchanged: VSA completeness UNVERIFIED on sovereign-clean-room; no releases/tags on pillars; incomplete full verification of 83 repositories; operator-gated archives; exit criteria NOT MET.
+- Next: operator security remediation or next bounded slice. Do not enter autonomous infinite review cycle.
+
 ## Sweep-399 — BASILISK reconstruction (do not execute from this agent)
 
 Whole-ecosystem reconstruction under ADL-BASILISK directive. PASS-2026-10-16-399 persisted.
