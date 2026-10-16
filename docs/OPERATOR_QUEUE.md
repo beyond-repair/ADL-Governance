@@ -1,5 +1,14 @@
 # Operator Queue
 
+## Sweep-399 — BASILISK reconstruction (do not execute from this agent)
+
+Whole-ecosystem reconstruction under ADL-BASILISK directive. PASS-2026-10-16-399 persisted.
+
+- No destructive actions. No history rewrites, no deletions, no claim elevation.
+- Next bounded gap: GAP-SEC-DDVW-001 — audit Dependabot HIGH residual on Digital_Double_virtual_workforce (priority ACTIVE). Operator review of alert/PR required; no autonomous merge.
+- Portfolio residuals unchanged: incomplete full verification, operator-gated archives/tags, exit criteria NOT MET.
+- Next: continue recursive loop on security residual or next highest-value slice. Do not loop autonomously beyond bounded pass.
+
 ## Sweep-398 — do not execute from this agent
 
 Random selection cycle on `seem-block-system` (SUPERSEDED, historical Block-System Claim-0 archive).
