@@ -1,3 +1,20 @@
+## Sweep-399 BASILISK discovery — PASS-2026-10-16-399
+
+- Timestamp: 2026-10-16T16:07Z UTC.
+- Objective: Reconstruct ecosystem from GitHub + persistent Nexus/Governance state; select next bounded gap under ADL-BASILISK recursive directive.
+- Selected: Whole portfolio reconstruction (not single random repo).
+- DISCOVER: 83 repos; ADL-Governance canonical with pass checker and lifecycle; latest prior Sweep-398 seem-block-system SUPERSEDED archive-queued; priority ACTIVE Digital_Double_virtual_workforce (Dependabot residual), sovereign-clean-room, BlockSwarm; RESEARCH claim-capped majority; graphs aegis-repo-graph present.
+- AUDIT: Exit criteria NOT MET; operator-gated actions remain; claim discipline held.
+- CLASSIFY: RESEARCH_DOMINANT_MAINTENANCE.
+- PLAN: Persist formal pass record; next bounded action security residual on priority ACTIVE.
+- IMPLEMENT: Added docs/passes/PASS-2026-10-16-399.yaml; updated this history and status report. No code changes elsewhere. Idempotent.
+- TEST/CI: check_passes.py expected to pass once history heading present.
+- DOCUMENT: This update + status report.
+- GOVERN: No unsupported claims. No claim elevation.
+- RELEASE/ARCHIVE: N/A.
+- RE-AUDIT: State preserved for fresh agent continuation.
+- Exit: Reconstruction pass complete. Next: GAP-SEC-DDVW-001.
+
 ## Sweep-398 Random selection: seem-block-system — PASS-2026-10-16-398
 
 - Timestamp: 2026-10-16T13:05Z UTC.
