@@ -1,19 +1,20 @@
+## Sweep-397 Random selection: mend — PASS-2026-10-16-397
+
+- Timestamp: 2026-10-16T02:00Z UTC.
+- Objective: Random SELECT one repository from portfolio (83 total), then DISCOVER/AUDIT/CLASSIFY/PLAN/IMPLEMENT/TEST/CI/DOCUMENT/GOVERN/RELEASE/RE-AUDIT per rules.
+- Selected: mend (https://github.com/beyond-repair/mend)
+- DISCOVER: Browser RPG (React/TanStack Start/Vite/Nitro) from Grok app-builder. Single-player, character creation, dialogue, quests, turn-based combat, autosave. Node 22.12+, npm test/typecheck/build. Sibling to private mendthegame. Branches: main, dependabot/npm_and_yarn/..., fix/mend-playtest-rc, repair/runnable-game. No .github/workflows. CLAIM_STATUS.md present.
+- AUDIT: RESEARCH classification held. Claim ceiling 1. Local run verified in CLAIM_STATUS (npm ci/test/typecheck/build pass, playable). Open Dependabot alert #1: high severity source-map-js (CVE-2026-93749, GHSA-68fv-2mgg-jv7q) via package-lock.json. No releases/tags. Lint has pre-existing errors. No unsupported claims.
+- CLASSIFY: RESEARCH (experimental game export, unvalidated as shipped product; claim-capped).
+- PLAN: Target CI-green + documented. Actions: document status; queue Dependabot merge/operator review. No code changes this cycle (safe only).
+- IMPLEMENT: Documentation updates only in ADL-Governance. No destructive. Idempotent.
+- TEST/CI: No CI configured. Local tests referenced as passing in CLAIM_STATUS. Not re-run here (out of scope for agent sandbox).
+- DOCUMENT: Updated this history, PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md.
+- GOVERN: No unsupported claims. Security residual noted. No untracked critical deps beyond alert.
+- RELEASE/ARCHIVE: Not met. No tag. Remains RESEARCH.
+- RE-AUDIT: No new drift. Residual: open Dependabot (high), no CI, lint errors, not full termination (tests/CI/docs verified but security residual).
+- Exit: Cycle complete for mend. Residuals recorded. Next random or operator.
+
 ## Sweep-396 Master Directive portfolio census + pillar re-verification — PASS-2026-10-16-396
-
-- Timestamp: 2026-10-16T01:20Z UTC.
-- Objective: One governed sweep. Execute Master Directive v3.0 phases at portfolio level: Discovery, Classification (high-level), Mandatory Live Verification of four pillars, Capability/Gap/Dependency/Redundancy/Synergy/Canonical/Review notes. Update deliverables. Respect sweep discipline.
-- Scope: Full portfolio census (search total_count 83) + four pillars (Actions, releases, tags, Dependabot sample).
-- Repositories reviewed: ADL-Governance (docs), forge-aegis (Actions), sovereign-clean-room (Actions), BlockSwarm (Actions), Digital_Double_virtual_workforce (Actions + Dependabot sample). Full name inventory extracted.
-- Findings:
-  - total_count 83, incomplete_results false. Pillars present and CI green on latest completed main runs (details in PORTFOLIO_STATUS_REPORT.md). No releases or tags on pillars.
-  - Open Dependabot residual confirmed on Digital_Double_virtual_workforce (high/medium samples; ~56 open including critical held).
-  - High-level: pillars ACTIVE claim-capped; many RESEARCH; duplicates/variants present. Full classification, capability matrix, dependency graph residual.
-  - No unsupported claims added. No code changes. No destructive actions.
-  - Portfolio exit criteria NOT MET (incomplete full verification/classification of 83, unresolved critical security, no releases, unconsolidated duplicates, operator-gated archives).
-- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md. Documentation only.
-- Residual risks: Incomplete deep audits/classification of majority of repositories; open Dependabot requiring operator disposition; archive/SUPERSEDED operator-only; duplicate infrastructure unextracted. This cycle residual: full phase completion not achieved in single sweep.
-- Exit: Residuals recorded. Cycle complete. Stop. No infinite loop.
-
-## Sweep-395 Master Directive portfolio census + pillar re-verification — PASS-2026-10-15-395
 
 [Prior content preserved; full history in git.]
