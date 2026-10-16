@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-10-16-399
+  parent_pass: PASS-2026-10-16-398
+
+STATE:
+  global_status: RESEARCH_DOMINANT_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 0
+  capabilities_known: 67
+  capabilities_verified: 12
+  gaps_remaining: 71
+
+OBJECTIVE:
+  id: GAP-BASILISK-001
+  description: Reconstruct current ecosystem model from GitHub + Nexus/Governance state and select next bounded gap
+  reason_selected: Highest-value next slice is persistent knowledge of whole before local change; prior sweep left residuals
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 83 public/private repos via search
+    - ADL-Governance is canonical constitution with pass checker, lifecycle, claim validation
+    - Latest prior: Sweep-398 on seem-block-system (SUPERSEDED, archive queued)
+    - Priority ACTIVE: Digital_Double_virtual_workforce (Dependabot residual), sovereign-clean-room, BlockSwarm (tag pending)
+    - Many RESEARCH claim-capped (coherence-drive family, mend, ADL-Nexus)
+    - Graphs: aegis-repo-graph, adl-function-census present
+    - Existing bots: Portfolio Sweep, Finish, etc. cover similar loops
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-16-399.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Pass persistence for BASILISK reconstruction
+
+VERIFICATION:
+  tests_run:
+    - scripts/check_passes.py (expected PASS after this + history update)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio exit criteria NOT MET
+    - Claim levels enforced; docs ≠ implementation
+    - Operator-gated: archives, tags, Dependabot merges
+  failures:
+    - None this pass
+  decisions:
+    - Persist reconstruction as formal pass before selecting implementation slice
+    - Next: audit Digital_Double_virtual_workforce Dependabot residual as bounded security gap
+
+REMAINING:
+  incomplete:
+    - Full verification of remaining ~70 repos
+    - Operator actions on queue
+  blockers:
+    - Operator for destructive/release actions
+  new_gaps:
+    - Confirm check_passes green after 399
+    - Digital_Double_virtual_workforce security residual
+
+NEXT:
+  objective_id: GAP-SEC-DDVW-001
+  action: Audit and document Dependabot HIGH residual on Digital_Double_virtual_workforce; queue or propose non-destructive fix
+  reason: Highest priority ACTIVE per PORTFOLIO_STATE; security gap blocks full terminal
+  prerequisites:
+    - Confirm repo accessible
+    - No claim elevation
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live GitHub search total_count 83
+    - docs/PORTFOLIO_STATUS_REPORT.md Sweep-398
+    - docs/PORTFOLIO_STATE.md priority queue
