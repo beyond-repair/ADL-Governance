@@ -1,13 +1,39 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-16 (Sweep-396)
-**Project / Version:** ADL Portfolio Governance / Sweep-396
-**Objective:** Execute Master Directive v3.0: Portfolio Discovery, Classification, Mandatory Live Verification of pillars, Capability Inventory (high-level), Dependency/Gap/Redundancy/Synergy/Canonical/Review-readiness analysis. Update deliverables. Respect one-sweep discipline.
+**Updated:** 2026-10-16 (Sweep-397)
+**Project / Version:** ADL Portfolio Governance / Sweep-397
+**Objective:** Randomized portfolio completion sweep. Random SELECT one repo, complete cycle to termination conditions or document residuals.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false (reconfirmed).
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+
+## Sweep-397: Random selection — mend
+
+**SELECT:** Randomly selected `mend` from 83 repositories.
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Repository: beyond-repair/mend — Browser RPG (Silas Vance in Oakhaven). React 19, TanStack Start, Vite 8, Nitro. Local playable (npm run dev on :8080). Autosave, ironman optional.
+- Classification: RESEARCH (per CLAIM_STATUS.md; experimental export, claim ceiling 1; not shipped/published game).
+- Features: Character creation, dialogue, quests, companions, dependency-based turn-based combat, regions (Kiln, Switchyard, Pane).
+- Dependencies: Node >=22.12, npm packages (see package.json). No external services required.
+- Tests: npm test covers scripts, auth/app-data, game logic (pass3.test.ts). Typecheck and build pass per CLAIM_STATUS.
+- CI: None (no .github/workflows).
+- Docs: README.md, CLAIM_STATUS.md, AGENTS.md present. Claim-capped.
+- Security: Open Dependabot alert #1 (high: source-map-js event-loop DoS, CVE-2026-93749). Branch dependabot/npm_and_yarn/npm_and_yarn-501f592bae exists.
+- Branches: main (HEAD 8cfbd1e), dependabot/..., fix/mend-playtest-rc, repair/runnable-game.
+- Releases/tags: None.
+
+**PLAN / IMPLEMENT:** Target: CI-green, docs updated, security residuals queued. Safe documentation only. No code changes, no history rewrite.
+
+**TEST / CI / DOCUMENT / GOVERN:** Tests referenced local-pass. CI absent. Docs updated in governance. No unsupported claims. Security residual queued.
+
+**RELEASE / RE-AUDIT:** Termination not fully met (open high Dependabot, no CI, residual lint). Remains RESEARCH. Cycle residuals recorded. Stop.
+
+Prior Sweep-396 content preserved below for continuity.
+
+---
 
 ## Sweep-396: Master Directive Portfolio Census + Pillar Re-Verification
 
