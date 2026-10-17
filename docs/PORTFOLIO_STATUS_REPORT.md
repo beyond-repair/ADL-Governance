@@ -1,13 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-17 (Sweep-407)
-**Project / Version:** ADL Portfolio Governance / Sweep-407
-**Objective:** Portfolio Discovery (Phase 1) and residual recording per Master Directive. One governed sweep. No infinite loop.
+**Updated:** 2026-10-17 (Sweep-408)
+**Project / Version:** ADL Portfolio Governance / Sweep-408
+**Objective:** Random repository completion cycle for `Agent-Snake`.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+**Evidence rule:** Code > Documentation > Roadmap.
+
+## Sweep-408: Random selection — Agent-Snake
+
+**SELECT:** Randomly selected `Agent-Snake` from public repository list (78 names; live search total_count 83).
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Repository: beyond-repair/Agent-Snake — Early AutoGPT-module note (LSTM TensorFlow code-generation sketch). Python. ARCHIVED.md present. README declares ARCHIVE QUEUE, Claim 0. No CI workflow. Scripts incomplete (exec() usage historical, tests non-runnable). No releases/tags.
+- Classification: **ARCHIVED** (historical, no further action). Confirmed from existing ARCHIVED.md and lifecycle banner. Claim 0 preserved. No unsupported claims.
+- Status: Terminal for this repository. Preservation maintained. No destructive actions.
+
+**PLAN / IMPLEMENT:** Documentation of audit and classification confirmation only. No code changes in Agent-Snake (history preserved).
+
+**TEST / CI / DOCUMENT / GOVERN:** No tests or CI present. Governance docs updated. Claim discipline held.
+
+**RELEASE / RE-AUDIT:** No tags. Residuals: portfolio-wide exit criteria NOT MET. Cycle complete for this repo.
+
+Prior Sweep-407 content preserved below for continuity.
+
+---
 
 ## Sweep-407: Portfolio Discovery Inventory
 
