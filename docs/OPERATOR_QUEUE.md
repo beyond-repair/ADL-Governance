@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-404 — Random selection seem-identity-unifier (do not execute from this agent)
+
+Random selection cycle on `seem-identity-unifier` (RESEARCH Claim-capped identity map).
+
+- No destructive actions performed. No history rewrites, no deletions, no code changes to the repo.
+- Classification: RESEARCH held (MODULE_SURFACE; distinct SEEM identities; no SUPERSEDES licensed).
+- Tests re-verified locally: pytest -q 9 passed; python -m unifier prints OK. CI workflow present.
+- No unsupported claims. Portfolio residuals unchanged: incomplete full verification of remaining repositories, open Dependabot on Digital_Double_virtual_workforce (GAP-SEC-DDVW-001), no pillar releases/tags, VSA unverified, exit criteria NOT MET.
+- Next: operator on security residual or next random select. Do not loop autonomously.
+
 ## Sweep-403 — Residual confirmation (do not execute from this agent)
 
 Dedicated Portfolio Sweep bot usage_exhausted. Live residual confirmation on pillars performed via GitHub tools.
@@ -12,15 +22,4 @@ Dedicated Portfolio Sweep bot usage_exhausted. Live residual confirmation on pil
 - Prior Sweep-402 on DigitalDoubleVirtualWorkforce3.5 remains SUPERSEDED terminal.
 - Next: operator on security residual or next bounded slice. Do not enter autonomous infinite review cycle.
 
-## Sweep-402 — Random selection DigitalDoubleVirtualWorkforce3.5 (do not execute from this agent)
-
-Random selection cycle on `DigitalDoubleVirtualWorkforce3.5` (SUPERSEDED Claim-0).
-
-- No destructive actions performed. No history rewrites, no deletions, no code changes to the repo.
-- Classification: SUPERSEDED held (Claim-0 offline sketch; canonical successor Digital_Double_virtual_workforce).
-- Tests re-verified locally: pytest -q 18 passed; main.py demo runs. CI supersede-guard present.
-- GitHub archived flag remains false — operator-only action if desired.
-- No unsupported claims. Portfolio residuals unchanged: incomplete full verification of remaining repositories, open Dependabot on Digital_Double_virtual_workforce (GAP-SEC-DDVW-001), no pillar releases/tags, VSA unverified, exit criteria NOT MET.
-- Next: operator on security residual or next random select. Do not loop autonomously.
-
-[Prior content from Sweep-401 and earlier preserved in git history for continuity.]
+[Prior content from Sweep-402 and earlier preserved in git history for continuity.]

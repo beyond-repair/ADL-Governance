@@ -1,3 +1,20 @@
+## Sweep-404 Random selection: seem-identity-unifier — PASS-2026-10-17-404
+
+- Timestamp: 2026-10-17T13:05Z UTC (approx).
+- Objective: Random SELECT one repository from portfolio (83 total), then DISCOVER/AUDIT/CLASSIFY/PLAN/IMPLEMENT/TEST/CI/DOCUMENT/GOVERN/RELEASE/RE-AUDIT per rules.
+- Selected: seem-identity-unifier (https://github.com/beyond-repair/seem-identity-unifier).
+- DISCOVER: RESEARCH claim-capped identity map v0.1.1 for three SEEM GitHub identities. Explicitly does not collapse them or license SUPERSEDES. Closes Q-FUNC-003. Layout differences documented. CLI and tests present. Snapshot lock 2026-09-05, rechecks 2026-10-02/06.
+- AUDIT: Fully compliant with ADL-Governance RESEARCH rules. No undefined/undocumented components. Tests present and passing. CI workflow configured. No stale entries. No unsupported claims. No critical security. History intact. Claim cap MODULE_SURFACE preserved.
+- CLASSIFY: RESEARCH (experimental, unvalidated beyond surface identity map; not ACTIVE product).
+- PLAN: Target documented RESEARCH terminal. No further implementation. Documentation updates only.
+- IMPLEMENT: No code changes to the selected repo (idempotent, already terminal). Updates only to ADL-Governance docs.
+- TEST/CI: Local clone + pip install -e ".[dev]" + python -m unifier (OK) + pytest -q: 9 passed in 0.03s. CI workflow present and appropriate (prior success referenced).
+- DOCUMENT: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this SWEEP_HISTORY.md.
+- GOVERN: No unsupported claims. No critical security issues. No untracked dependencies. Claim discipline preserved. No promotion to ACTIVE.
+- RELEASE/ARCHIVE: Not applicable (RESEARCH). No tag. No archive.
+- RE-AUDIT: No drift. Terminal conditions met for this repo. Portfolio residuals unchanged (exit criteria NOT MET).
+- Exit: Cycle complete for seem-identity-unifier. Residuals recorded. Next random or operator.
+
 ## Sweep-403 Residual confirmation — pillars + bot status — PASS-2026-10-17-403
 
 - Timestamp: 2026-10-17T02:12Z UTC.
@@ -14,21 +31,4 @@
 - RE-AUDIT: Exit criteria NOT MET. Cycle complete. Stop. Do not enter autonomous infinite review cycle.
 - Exit: Residuals recorded. Next: operator on GAP-SEC-DDVW-001 or further bounded slices.
 
-## Sweep-402 Random selection: DigitalDoubleVirtualWorkforce3.5 — PASS-2026-10-17-402
-
-- Timestamp: 2026-10-17T02:00Z UTC (approx).
-- Objective: Random SELECT one repository from portfolio (83 total), then DISCOVER/AUDIT/CLASSIFY/PLAN/IMPLEMENT/TEST/CI/DOCUMENT/GOVERN/RELEASE/RE-AUDIT per rules.
-- Selected: DigitalDoubleVirtualWorkforce3.5 (https://github.com/beyond-repair/DigitalDoubleVirtualWorkforce3.5).
-- DISCOVER: SUPERSEDED Claim-0 offline sketch of Digital Double Virtual Workforce 3.5. Core: DigitalDoubleAgent, CapCluster/ConsistencyManager/PartitionManager toys, StorageManager (SQLite), ModelQuantizer advice (no torch). Layout: main.py demo, src/core/, src/models/, tests/, tests_governance/, docs/archive_fragments/. Explicit banners, CLAIM_STATUS, GOVERNANCE, SUPERSEDED.md. Successor: Digital_Double_virtual_workforce.
-- AUDIT: Fully compliant with ADL-Governance SUPERSEDED rules. No undefined/undocumented components. Tests present and passing. CI supersede-guard configured. No stale entries. No unsupported claims. No critical security. Dump fragments preserved in archive. History intact.
-- CLASSIFY: SUPERSEDED (historical snapshot, Claim-0 runnable sketch; not canonical product).
-- PLAN: Target documented SUPERSEDED terminal. No further implementation. Documentation updates only.
-- IMPLEMENT: No code changes to the selected repo (idempotent, already terminal). Updates only to ADL-Governance docs.
-- TEST/CI: Local clone + pip install + pytest -q: 18 passed in 0.08s. python main.py runs demo with Claim-0 note. CI workflow present and appropriate.
-- DOCUMENT: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this SWEEP_HISTORY.md.
-- GOVERN: No unsupported claims. No critical security issues. No untracked dependencies. Claim discipline preserved. Archive operator-gated.
-- RELEASE/ARCHIVE: Not applicable (SUPERSEDED). No tag. GitHub archived flag remains false (operator-only).
-- RE-AUDIT: No drift. Terminal conditions met for this repo. Portfolio residuals unchanged (exit criteria NOT MET).
-- Exit: Cycle complete for DigitalDoubleVirtualWorkforce3.5. Residuals recorded. Next random or operator.
-
-[Prior content from Sweep-401 and earlier preserved in git history for continuity.]
+[Prior content from Sweep-402 and earlier preserved in git history for continuity.]
