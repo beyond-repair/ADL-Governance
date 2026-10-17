@@ -1,13 +1,41 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-17 (Sweep-404)
-**Project / Version:** ADL Portfolio Governance / Sweep-404
-**Objective:** Governed portfolio sweep under Master Directive v3.0. Random selection of one repository.
+**Updated:** 2026-10-17 (Sweep-405)
+**Project / Version:** ADL Portfolio Governance / Sweep-405
+**Objective:** Close critical security residual GAP-SEC-DDVW-001 on canonical ACTIVE product.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+
+## Sweep-405: Close GAP-SEC-DDVW-001
+
+**SELECT:** beyond-repair/Digital_Double_virtual_workforce (canonical ACTIVE).
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Critical Dependabot alert #13: form-data CVE-2025-7783 in digital_double/package-lock.json (version 4.0.1, vulnerable <4.0.4).
+- Classification: ACTIVE held.
+- No direct dependency; transitive. No prior overrides.
+
+**PLAN / IMPLEMENT:**
+- Added "overrides": { "form-data": "^4.0.4" } to digital_double/package.json.
+- Regenerated package-lock.json (form-data resolved to 4.0.6).
+- Commits: eeeb895, ad0c3bd.
+
+**TEST / CI / DOCUMENT / GOVERN:**
+- npm install --package-lock-only succeeded.
+- Dependabot alert #13 state: fixed (fixed_at 2026-10-17T13:15:05Z).
+- Pass record PASS-2026-10-17-405 persisted.
+- No unsupported claims.
+
+**RELEASE / RE-AUDIT:**
+- Alert confirmed closed. Critical residual eliminated. Other medium/high alerts remain non-blocking for this pass.
+- Portfolio exit criteria still NOT MET (incomplete full verification, VSA UNVERIFIED, no pillar releases).
+
+Prior Sweep-404 content preserved below for continuity.
+
+---
 
 ## Sweep-404: Random Select seem-identity-unifier
 
@@ -30,29 +58,4 @@ Exit criteria NOT MET portfolio-wide.
 
 **RELEASE / RE-AUDIT:** No release (RESEARCH, no tag). Residuals: portfolio-wide exit criteria NOT MET. Cycle complete. Stop.
 
-Prior Sweep-403 content preserved below for continuity.
-
----
-
-## Sweep-403: Residual Confirmation — pillars + bot status
-
-**SELECT:** Mandatory Phase-3 pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce). Portfolio Sweep bot usage_exhausted.
-
-**DISCOVER / AUDIT / CLASSIFY (live 2026-10-17):**
-- Releases: empty for all four pillars (list_releases returned []).
-- Tags: empty for forge-aegis and BlockSwarm (list_tags returned []); prior reports consistent for others.
-- Portfolio size: search user:beyond-repair total_count 83 (incomplete_results false).
-- Prior Sweep-402 on DigitalDoubleVirtualWorkforce3.5 remains valid: SUPERSEDED, terminal for that repo.
-- Residuals unchanged: open critical Dependabot on Digital_Double_virtual_workforce (GAP-SEC-DDVW-001 form-data CVE-2025-7783 + medium/high), VSA completeness UNVERIFIED on sovereign-clean-room, incomplete full verification of remaining repositories, no pillar releases/tags, exit criteria NOT MET.
-
-**PLAN / IMPLEMENT:** Documentation update only in ADL-Governance. No code changes, no history rewrite, no deletion. Idempotent residual recording.
-
-**TEST / CI / DOCUMENT / GOVERN:** No new test execution. Prior CI conclusions held. No unsupported claims introduced. Security residuals not closed.
-
-**RELEASE / RE-AUDIT:** No releases. Exit criteria NOT MET. Cycle complete. Stop. Do not loop.
-
-Prior Sweep-402 content preserved below for continuity.
-
----
-
-[Prior content from Sweep-402 and earlier preserved in git history for continuity.]
+[Prior content from Sweep-403 and earlier preserved in git history for continuity.]
