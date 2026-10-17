@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-409 — Random selection adl-capability-matrix (completed)
+
+Live tree audit of beyond-repair/adl-capability-matrix confirmed **RESEARCH** (locked 67-row census checker, Claim ≤1).
+
+- No destructive actions required or queued.
+- History preserved. Documentation update only (CLAIM_STATUS.md Sweep-409 note).
+- Live search total_count reconfirmed 83 (2026-10-17); set difference empty vs 2026-10-02. No cap refresh. Inventory lock held.
+- CI green. No critical security issues. No unsupported claims.
+- Termination conditions met for this safe cycle.
+- Portfolio residuals remain: incomplete full verification of remaining repositories (83 total), VSA scale UNVERIFIED, no unified pillar releases/tags, exit criteria NOT MET.
+- Next: operator-directed or next random select. Do not loop autonomously.
+
 ## Sweep-408 — Random selection Agent-Snake (completed)
 
 Live tree audit of beyond-repair/Agent-Snake confirmed **ARCHIVED** (historical AutoGPT-module sketch, Claim 0).
