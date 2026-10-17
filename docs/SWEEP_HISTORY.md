@@ -1,3 +1,20 @@
+## Sweep-409 Random selection — adl-capability-matrix — PASS-2026-10-17-409
+
+- Timestamp: 2026-10-17T19:00Z EDT (approx).
+- Objective: Random repository completion cycle. SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → TEST → CI → DOCUMENT → GOVERN → RELEASE/ARCHIVE → RE-AUDIT.
+- Selected: `adl-capability-matrix` (random.choice from 83-name live search set; total_count 83, incomplete_results false).
+- DISCOVER: Tree contains locked capability_matrix.json (67 rows, 2026-09-04 snapshot), census_gap files (2026-10-01/02), load.py validator, tests, CI workflow (pytest on push), CLAIM_STATUS.md, GOVERNANCE.md, README. No releases/tags. Engine reports rows=67 queue=5 gap_unassigned=15.
+- AUDIT: RESEARCH classification holds. Inventory locked at 67; live total_count 83 reconfirmed 2026-10-17 with empty set difference vs 2026-10-02. No invented caps. CI green (latest 37139442180 success on b3b6412). No critical security issues. No unsupported claims.
+- CLASSIFY: **RESEARCH** (governance census tool; Claim ≤1). Justified by existing docs, locked snapshot, and claim discipline. No promotion.
+- PLAN: Record current name-only observation. Preserve lock. No row expansion.
+- IMPLEMENT: Updated CLAIM_STATUS.md with Sweep-409 note (total_count remains 83, set difference empty). No code changes.
+- TEST/CI: Existing CI success. No new execution required for documentation update.
+- DOCUMENT: PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this file, and CLAIM_STATUS.md updated.
+- GOVERN: Claim ≤1 preserved. No elevation. Evidence: live search > locked snapshot. Inventory_count invariant held.
+- RELEASE/ARCHIVE: None. No tags. Not ARCHIVED/SUPERSEDED.
+- RE-AUDIT: Termination conditions met for safe cycle (no undefined critical components requiring invention, no CI failures, no unsupported claims, RESEARCH target held). Portfolio residuals remain.
+- Exit: Cycle complete for adl-capability-matrix. Residuals recorded. Stop. Do not enter autonomous infinite review cycle.
+
 ## Sweep-408 Random selection — Agent-Snake — PASS-2026-10-17-408
 
 - Timestamp: 2026-10-17T16:01Z EDT (approx).
