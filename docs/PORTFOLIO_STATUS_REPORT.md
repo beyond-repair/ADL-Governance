@@ -1,13 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-17 (Sweep-408)
-**Project / Version:** ADL Portfolio Governance / Sweep-408
-**Objective:** Random repository completion cycle for `Agent-Snake`.
+**Updated:** 2026-10-17 (Sweep-409)
+**Project / Version:** ADL Portfolio Governance / Sweep-409
+**Objective:** Random repository completion cycle for `adl-capability-matrix`.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap.
+
+## Sweep-409: Random selection — adl-capability-matrix
+
+**SELECT:** Randomly selected `adl-capability-matrix` from the 83-name live search set (`user:beyond-repair`, incomplete_results false).
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Repository: beyond-repair/adl-capability-matrix — Claim-capped cluster matrix and compatible-build queue. Locked 67-row snapshot checker (2026-09-04), not a live census. Python. CI present (pytest). Latest CI success on `b3b6412` (run 37139442180). No releases/tags.
+- Classification: **RESEARCH** (governance census tool; Claim ≤1). Confirmed. No promotion. Inventory locked at 67; live total_count 83 reconfirmed. Name-only gaps recorded. No unsupported claims. No invented caps.
+- Status: Terminal for safe documentation updates this cycle. Preservation maintained. Engine continues to validate locked matrix + 2026-10-01 gap only.
+
+**PLAN / IMPLEMENT:** Added Sweep-409 name observation note to CLAIM_STATUS.md (total_count remains 83, set difference empty vs 2026-10-02). No code changes, no row expansion, no cap assignment. Idempotent documentation only.
+
+**TEST / CI / DOCUMENT / GOVERN:** Existing CI green. Governance docs updated. Claim discipline held. No claim elevation.
+
+**RELEASE / RE-AUDIT:** No tags. Residuals: portfolio-wide exit criteria NOT MET. Cycle complete for this repo.
+
+Prior Sweep-408 content preserved below for continuity.
+
+---
 
 ## Sweep-408: Random selection — Agent-Snake
 
