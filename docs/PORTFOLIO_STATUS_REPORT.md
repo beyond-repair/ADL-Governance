@@ -1,13 +1,38 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-17 (Sweep-406)
-**Project / Version:** ADL Portfolio Governance / Sweep-406
-**Objective:** Mandatory live verification of core pillar repositories.
+**Updated:** 2026-10-17 (Sweep-407)
+**Project / Version:** ADL Portfolio Governance / Sweep-407
+**Objective:** Portfolio Discovery (Phase 1) and residual recording per Master Directive. One governed sweep. No infinite loop.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+**Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83, incomplete_results false.
+
+## Sweep-407: Portfolio Discovery Inventory
+
+**SELECT:** Full portfolio under user:beyond-repair.
+
+**DISCOVER:**
+Live GitHub search `user:beyond-repair` returned total_count 83 (incomplete_results false). Minimal metadata inventory completed. Includes 9 private repositories. GitHub archive flag true only for CFT-v3.0.
+
+Canonical pillars previously verified in Sweep-406 remain ACTIVE under claim caps:
+- forge-aegis (ACTIVE, RUNNABLE SKETCH)
+- sovereign-clean-room (ACTIVE, VSA Core; scale UNVERIFIED)
+- BlockSwarm (ACTIVE, SAGF)
+- Digital_Double_virtual_workforce (ACTIVE, critical form-data CVE closed in Sweep-405)
+
+**CLASSIFY:** No new classifications elevated. Prior registry preserved. Unaudited repositories default RESEARCH until tree-level verification.
+
+**PLAN / IMPLEMENT:** No code changes. Documentation of live discovery only. Residuals recorded.
+
+**TEST / CI / DOCUMENT / GOVERN:** No new test executions. Prior CI observations hold. Claim discipline preserved. No unsupported implementation claims.
+
+**RELEASE / RE-AUDIT:** No tags. Residuals: full portfolio tree verification incomplete (83 repos), VSA scale UNVERIFIED, no unified pillar releases, exit criteria NOT MET. Cycle complete. Stop.
+
+Prior Sweep-406 content preserved below for continuity.
+
+---
 
 ## Sweep-406: Mandatory Live Verification of Pillars
 
@@ -54,57 +79,4 @@ Exit criteria NOT MET portfolio-wide.
 
 **RELEASE / RE-AUDIT:** No new tags. Residuals: full portfolio verification incomplete (83 repos), VSA scale UNVERIFIED, no unified pillar releases, exit criteria NOT MET.
 
-Prior Sweep-405 content preserved below for continuity.
-
----
-
-## Sweep-405: Close GAP-SEC-DDVW-001
-
-**SELECT:** beyond-repair/Digital_Double_virtual_workforce (canonical ACTIVE).
-
-**DISCOVER / AUDIT / CLASSIFY:**
-- Critical Dependabot alert #13: form-data CVE-2025-7783 in digital_double/package-lock.json (version 4.0.1, vulnerable <4.0.4).
-- Classification: ACTIVE held.
-- No direct dependency; transitive. No prior overrides.
-
-**PLAN / IMPLEMENT:**
-- Added "overrides": { "form-data": "^4.0.4" } to digital_double/package.json.
-- Regenerated package-lock.json (form-data resolved to 4.0.6).
-- Commits: eeeb895, ad0c3bd.
-
-**TEST / CI / DOCUMENT / GOVERN:**
-- npm install --package-lock-only succeeded.
-- Dependabot alert #13 state: fixed (fixed_at 2026-10-17T13:15:05Z).
-- Pass record PASS-2026-10-17-405 persisted.
-- No unsupported claims.
-
-**RELEASE / RE-AUDIT:**
-- Alert confirmed closed. Critical residual eliminated. Other medium/high alerts remain non-blocking for this pass.
-- Portfolio exit criteria still NOT MET (incomplete full verification, VSA UNVERIFIED, no pillar releases).
-
-Prior Sweep-404 content preserved below for continuity.
-
----
-
-## Sweep-404: Random Select seem-identity-unifier
-
-**SELECT:** Randomly selected `beyond-repair/seem-identity-unifier`.
-
-**DISCOVER / AUDIT / CLASSIFY:**
-- Repository: beyond-repair/seem-identity-unifier — Claim-capped identity map (v0.1.1) for three SEEM repositories (SEEM-2.0-Self-Evolving-Emergent-Mind, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice). Closes Q-FUNC-003 from adl-function-census. No SUPERSEDES/SAME_AS/EQUIVALENT_TO.
-- Classification: RESEARCH (explicit in GOVERNANCE.md and README badges; MODULE_SURFACE claim cap).
-- Features: Deterministic validation of distinct GitHub identities, path locks (2026-09-05), surface names, VSA constructor literals, substrate/parameter differences. CLI `python -m unifier` and pytest suite.
-- Dependencies: Python >=3.10, pytest (dev). No external runtime imports of the three SEEM trees.
-- Tests: 9 passed (local verification 2026-10-17). Covers identity map, claim contracts, no supersede edges.
-- CI: .github/workflows/ci.yml — checkout, setup-python 3.12, pip install -r requirements.txt, run unifier.engine + pytest. Prior success noted in GOVERNANCE.md.
-- Docs: README with claim contract and install/run, GOVERNANCE.md with classification and demonstrated state, docs/CLAIM.md, pyproject.toml.
-- Security: No critical issues. No production claims, no unsupported validation of research.
-- Status: Terminal met for RESEARCH Claim-capped. Tests green, CI configured, docs complete, no undefined components, no unsupported claims. Snapshot lock preserved. No further feature work; no promotion to ACTIVE.
-
-**PLAN / IMPLEMENT:** Target: documented RESEARCH terminal state. No code changes (already compliant). Idempotent documentation update in ADL-Governance only.
-
-**TEST / CI / DOCUMENT / GOVERN:** Local clone + pip install -e ".[dev]" + python -m unifier + pytest -q: 9 passed, OK. CI workflow present and appropriate. Updated status, history, operator queue. No unsupported claims. No critical security issues.
-
-**RELEASE / RE-AUDIT:** No release (RESEARCH, no tag). Residuals: portfolio-wide exit criteria NOT MET. Cycle complete. Stop.
-
-[Prior content from Sweep-403 and earlier preserved in git history for continuity.]
+[Prior content from Sweep-405 and earlier preserved in git history for continuity.]
