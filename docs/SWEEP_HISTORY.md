@@ -1,3 +1,20 @@
+## Sweep-405 Close GAP-SEC-DDVW-001 — PASS-2026-10-17-405
+
+- Timestamp: 2026-10-17T13:15Z UTC.
+- Objective: Close critical Dependabot alert #13 (form-data CVE-2025-7783) on canonical ACTIVE Digital_Double_virtual_workforce.
+- Selected: beyond-repair/Digital_Double_virtual_workforce.
+- DISCOVER: form-data 4.0.1 in digital_double/package-lock.json (dev); vulnerable <4.0.4. No overrides present.
+- AUDIT: Highest residual from prior sweeps. Canonical product surface.
+- CLASSIFY: ACTIVE held.
+- PLAN: Add overrides.form-data ^4.0.4 in digital_double/package.json, regenerate lockfile.
+- IMPLEMENT: package.json updated; lockfile regenerated (form-data 4.0.6); commits eeeb895 + ad0c3bd.
+- TEST/CI: npm install --package-lock-only succeeded. Dependabot alert #13 transitioned to fixed (fixed_at 2026-10-17T13:15:05Z).
+- DOCUMENT: Pass YAML created. History, status, operator queue updated.
+- GOVERN: Claim discipline preserved. No unsupported claims. Security residual closed.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Alert confirmed fixed. Portfolio residuals reduced by one critical.
+- Exit: Gap closed. Next: remaining alerts or random select.
+
 ## Sweep-404 Random selection: seem-identity-unifier — PASS-2026-10-17-404
 
 - Timestamp: 2026-10-17T13:05Z UTC (approx).
@@ -15,20 +32,4 @@
 - RE-AUDIT: No drift. Terminal conditions met for this repo. Portfolio residuals unchanged (exit criteria NOT MET).
 - Exit: Cycle complete for seem-identity-unifier. Residuals recorded. Next random or operator.
 
-## Sweep-403 Residual confirmation — pillars + bot status — PASS-2026-10-17-403
-
-- Timestamp: 2026-10-17T02:12Z UTC.
-- Objective: Execute one governed sweep under Master Directive v3.0. Dedicated Portfolio Sweep bot returned usage_exhausted. Confirm live residuals on mandatory pillars and record stop.
-- Selected: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (Phase-3 pillars). Portfolio search total_count 83.
-- DISCOVER: Releases list empty for all four. Tags empty for forge-aegis and BlockSwarm. Prior Sweep-402 (DigitalDoubleVirtualWorkforce3.5 SUPERSEDED terminal) remains valid.
-- AUDIT: No new implementation claims. Residuals unchanged from Sweep-400/402: open critical Dependabot GAP-SEC-DDVW-001 (form-data CVE-2025-7783) on Digital_Double_virtual_workforce; VSA completeness UNVERIFIED on sovereign-clean-room; incomplete full verification of 83 repositories; no pillar releases/tags; exit criteria NOT MET.
-- CLASSIFY: ACTIVE held for pillars (claim-capped); SUPERSEDED held for DigitalDoubleVirtualWorkforce3.5.
-- PLAN: Documentation update only. No code changes. Stop after residual recording.
-- IMPLEMENT: Updated PORTFOLIO_STATUS_REPORT.md, this SWEEP_HISTORY.md, OPERATOR_QUEUE.md in ADL-Governance. Idempotent. No destructive actions.
-- TEST/CI: No new test runs. Prior CI conclusions preserved. No unsupported claims.
-- DOCUMENT/GOVERN: Residuals explicitly recorded. Claim discipline preserved.
-- RELEASE/ARCHIVE: None. Archive flags operator-gated.
-- RE-AUDIT: Exit criteria NOT MET. Cycle complete. Stop. Do not enter autonomous infinite review cycle.
-- Exit: Residuals recorded. Next: operator on GAP-SEC-DDVW-001 or further bounded slices.
-
-[Prior content from Sweep-402 and earlier preserved in git history for continuity.]
+[Prior content from Sweep-403 and earlier preserved in git history for continuity.]
