@@ -1,5 +1,17 @@
 # Operator Queue
 
+## Sweep-406 — Mandatory Live Verification of Pillars (completed)
+
+Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce recorded.
+
+- forge-aegis: CI green, claim-capped RUNNABLE SKETCH, no tags.
+- sovereign-clean-room: CI mixed recent PR results; ACTIVE with VSA UNVERIFIED at scale.
+- BlockSwarm: Foundry CI green, pinned deps, claim-capped ACTIVE.
+- Digital_Double_virtual_workforce: CI green post-critical security fix; other alerts remain.
+- No destructive actions. History preserved. No unsupported claims.
+- Remaining: incomplete full portfolio verification (83 repos), VSA scale UNVERIFIED, no pillar releases/tags, exit criteria NOT MET.
+- Next: operator-directed or random select. Do not loop autonomously.
+
 ## Sweep-405 — Close GAP-SEC-DDVW-001 (completed)
 
 Critical Dependabot alert #13 (form-data CVE-2025-7783) on Digital_Double_virtual_workforce closed.

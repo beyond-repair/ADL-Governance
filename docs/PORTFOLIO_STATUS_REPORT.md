@@ -1,13 +1,62 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-17 (Sweep-405)
-**Project / Version:** ADL Portfolio Governance / Sweep-405
-**Objective:** Close critical security residual GAP-SEC-DDVW-001 on canonical ACTIVE product.
+**Updated:** 2026-10-17 (Sweep-406)
+**Project / Version:** ADL Portfolio Governance / Sweep-406
+**Objective:** Mandatory live verification of core pillar repositories.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Live search total_count 83.
+
+## Sweep-406: Mandatory Live Verification of Pillars
+
+**SELECT:** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+
+**DISCOVER / AUDIT / CLASSIFY:**
+
+### forge-aegis
+- Classification: ACTIVE (software / RUNNABLE SKETCH claim cap). Offline FLS/AEGIS v0.1 vertical slice.
+- CI: forge-aegis CI runs success (latest 37258127100 on e7188d52, prior 37257747973 success).
+- Tests: Local unit tests reported passing in CLAIM_STATUS.md (test_validator 2, test_pipeline 8).
+- Releases/Tags: empty. No tag this sweep.
+- Security: Dependabot open alerts 0 at last check. Code scanning not enabled.
+- Docs: CLAIM_STATUS.md, README, docs/REPOSITORY.md present and claim-capped.
+- Status: VERIFIED for offline pipeline. Not a full host integrity product.
+
+### sovereign-clean-room
+- Classification: ACTIVE (VSA Core v1.3). Offline cognitive substrate, FHRR, BaNEL, skill gates.
+- CI: Python tests workflow present; recent PR runs mixed (success on latest observed 37215829476, prior failures on float precision).
+- Tests: pytest suite exists; governance optional (Z3/pyshacl).
+- Security: No critical advisories observed. Decorative metrics not measurements.
+- Docs: README with claim discipline, quick start, governance notes.
+- Status: PARTIAL for full benchmark cells (execution_record.json governs). VSA UNVERIFIED at production scale.
+
+### BlockSwarm
+- Classification: ACTIVE (SAGF execution substrate). Solidity/Foundry. AI advises, cannot execute.
+- CI: Foundry workflow success (latest 38252865430 on 98480104, prior 36859452185 success).
+- Tests: forge test path documented and pinned deps.
+- Releases: tag lineage includes v0.5.0-sagf (documented).
+- Security: No open advisories in response.
+- Docs: README with invariants, runbook, claim caps.
+- Status: VERIFIED for Foundry build/test path on pinned deps.
+
+### Digital_Double_virtual_workforce
+- Classification: ACTIVE (canonical workforce).
+- CI: Digital Double CI success post-security fix (39035783949 on ad0c3bd).
+- Security: Critical form-data CVE closed in Sweep-405. Other alerts remain non-critical.
+- Docs/Tests: Present; open issues 5.
+- Status: VERIFIED for recent CI. Transitive deps managed via overrides.
+
+**PLAN / IMPLEMENT:** No code changes. Documentation of live verification only.
+
+**TEST / CI / DOCUMENT / GOVERN:** CI states observed green for pillars. Claim caps preserved. No elevation of claims.
+
+**RELEASE / RE-AUDIT:** No new tags. Residuals: full portfolio verification incomplete (83 repos), VSA scale UNVERIFIED, no unified pillar releases, exit criteria NOT MET.
+
+Prior Sweep-405 content preserved below for continuity.
+
+---
 
 ## Sweep-405: Close GAP-SEC-DDVW-001
 
