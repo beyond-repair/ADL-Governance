@@ -1,5 +1,37 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-18 (Sweep-412)
+**Project / Version:** ADL Portfolio Governance / Sweep-412
+**Objective:** Audit open issues and Dependabot in Digital_Double_virtual_workforce.
+
+Exit criteria NOT MET portfolio-wide.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap.
+
+## Sweep-412: Digital_Double open issues and Dependabot audit
+
+**SELECT:** Priority residual from Sweep-410 NEXT: Digital_Double_virtual_workforce.
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Repository: beyond-repair/Digital_Double_virtual_workforce — ACTIVE. Live head ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea.
+- Open: 5 PRs/issues including draft PR #7 (NEX-INT-006 Workforce execution evidence journal).
+- Dependabot open: medium/high development-scope alerts for postcss-selector-parser (CVE-2026-104844), source-map-js (CVE-2026-93749 high), sprintf-js, brace-expansion, pytest (CVE-2025-71176).
+- form-data: overridden to ^4.0.4 in digital_double/package.json; no open form-data alert.
+- Classification: **ACTIVE** confirmed. No elevation. Claim caps preserved.
+
+**PLAN / IMPLEMENT:** Documentation of audit only. Created PASS-2026-10-18-412.yaml. Updated SWEEP_HISTORY.md and this report. No product code changes.
+
+**TEST / CI / DOCUMENT / GOVERN:** No new tests. Existing observations hold. Claim discipline preserved.
+
+**RELEASE / RE-AUDIT:** No tags. Residuals: open development-scope Dependabot. Next: dd-dependabot-triage. Portfolio exit criteria NOT MET.
+
+Prior Sweep-411 content preserved below for continuity.
+
+---
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-18 (Sweep-411)
 **Project / Version:** ADL Portfolio Governance / Sweep-411
 **Objective:** Random repository completion cycle for acoustic-token-modem.
