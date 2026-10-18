@@ -1,13 +1,34 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-17 (Sweep-409)
-**Project / Version:** ADL Portfolio Governance / Sweep-409
-**Objective:** Random repository completion cycle for `adl-capability-matrix`.
+**Updated:** 2026-10-17 (Sweep-410)
+**Project / Version:** ADL Portfolio Governance / Sweep-410
+**Objective:** Activate ADL-BASILISK recursive engineering directive; reconfirm live census.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap.
+
+## Sweep-410: Recursive Directive Activation
+
+**SELECT:** Operator-issued ADL-BASILISK recursive directive. Full portfolio under user:beyond-repair.
+
+**DISCOVER / AUDIT / CLASSIFY:**
+- Live GitHub search `user:beyond-repair` returned total_count 83 (incomplete_results false) as of 2026-10-17.
+- Prior Sweep-409 on adl-capability-matrix remains RESEARCH (claim ≤1, locked 67-row).
+- Priority queue unchanged: Digital_Double_virtual_workforce (ACTIVE), sovereign-clean-room (VSA UNVERIFIED), BlockSwarm, forge-aegis (RELEASE_BLOCKED_BY_OPERATOR).
+- Classifications preserved. No elevation. No unsupported claims.
+- Status: Recursive loop activated. State reconstructed. Persistence complete for this pass.
+
+**PLAN / IMPLEMENT:** Created PASS-2026-10-17-410.yaml. Updated this report and SWEEP_HISTORY.md. No product code changes. Idempotent documentation only.
+
+**TEST / CI / DOCUMENT / GOVERN:** No new test executions. Existing observations hold. Claim discipline preserved. Governance docs updated.
+
+**RELEASE / RE-AUDIT:** No tags. Residuals: full portfolio tree verification incomplete (83 repos), VSA scale UNVERIFIED, no unified pillar releases, exit criteria NOT MET. Cycle complete for activation. Next: dd-open-issues-audit.
+
+Prior Sweep-409 content preserved below for continuity.
+
+---
 
 ## Sweep-409: Random selection — adl-capability-matrix
 
