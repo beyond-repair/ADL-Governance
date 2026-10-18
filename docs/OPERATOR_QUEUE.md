@@ -1,5 +1,16 @@
 # Operator Queue
 
+## Sweep-413 — Master Directive v3.0 Governed Sweep (completed, residuals remain)
+
+Live search confirmed 83 repositories under beyond-repair. Mandatory verification of forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce performed.
+
+- No destructive actions required or queued. No history rewrites. No repository deletions.
+- CI observations: forge-aegis green, BlockSwarm green, Digital_Double_virtual_workforce green. sovereign-clean-room has residual CI failures on recent PR branches (smoke test precision).
+- VSA scale remains UNVERIFIED. Open development-scope Dependabot alerts residual in Digital_Double_virtual_workforce.
+- Full portfolio phases (dependency graph, gap analysis, redundancy, code review readiness for all 83) incomplete due to scale.
+- Exit criteria NOT MET. Residuals recorded. Stop after current sweep. Do not loop infinitely.
+- Next: operator-directed prioritization or subsequent bounded sweeps. High-risk items (VSA verification, full census completion, Dependabot triage) remain open for manual intervention.
+
 ## Sweep-411 — Random selection acoustic-token-modem (completed)
 
 Live tree audit of beyond-repair/acoustic-token-modem confirmed **RESEARCH** (experimental FSK simulation for token IDs, Claim level 1).
@@ -12,16 +23,4 @@ Live tree audit of beyond-repair/acoustic-token-modem confirmed **RESEARCH** (ex
 - Portfolio residuals remain: incomplete full verification of remaining repositories (83 total), VSA scale UNVERIFIED, no unified pillar releases/tags, exit criteria NOT MET.
 - Next: operator-directed or next random select. Do not loop autonomously.
 
-## Sweep-409 — Random selection adl-capability-matrix (completed)
-
-Live tree audit of beyond-repair/adl-capability-matrix confirmed **RESEARCH** (locked 67-row census checker, Claim ≤1).
-
-- No destructive actions required or queued.
-- History preserved. Documentation update only (CLAIM_STATUS.md Sweep-409 note).
-- Live search total_count reconfirmed 83 (2026-10-17); set difference empty vs 2026-10-02. No cap refresh. Inventory lock held.
-- CI green. No critical security issues. No unsupported claims.
-- Termination conditions met for this safe cycle.
-- Portfolio residuals remain: incomplete full verification of remaining repositories (83 total), VSA scale UNVERIFIED, no unified pillar releases/tags, exit criteria NOT MET.
-- Next: operator-directed or next random select. Do not loop autonomously.
-
-[Prior content from Sweep-408 and earlier preserved in git history for continuity.]
+[Prior content from Sweep-409 and earlier preserved in git history for continuity.]
