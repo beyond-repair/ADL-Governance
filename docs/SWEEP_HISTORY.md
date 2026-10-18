@@ -1,3 +1,20 @@
+## Sweep-410 Recursive Directive Activation — PASS-2026-10-17-410
+
+- Timestamp: 2026-10-17T22:10Z EDT.
+- Objective: Activate ADL-BASILISK recursive engineering directive for the beyond-repair GitHub ecosystem. Reconstruct state, persist activation record, select next bounded slice.
+- Selected: Full portfolio (live search total_count 83).
+- DISCOVER: Authenticated as beyond-repair. Search confirmed total_count 83. Prior Sweep-409 on adl-capability-matrix (RESEARCH, claim ≤1). Priority queue: Digital_Double_virtual_workforce first. Exit criteria NOT MET. Portfolio Sweep bot present but usage exhausted; direct execution used.
+- AUDIT: No new tree audits. Prior classifications and claim caps hold. No unsupported claims.
+- CLASSIFY: No changes. Recursive loop status set to ACTIVE in governance state.
+- PLAN: Persist activation pass and update status/history only.
+- IMPLEMENT: Created docs/passes/PASS-2026-10-17-410.yaml. Updated PORTFOLIO_STATUS_REPORT.md and this file. No product repository changes.
+- TEST/CI: None required. Existing observations preserved.
+- DOCUMENT: This file, status report, and PASS yaml updated.
+- GOVERN: Claim discipline preserved. Evidence: live search > prior docs. No elevation.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Activation complete. Residuals unchanged. Next objective: dd-open-issues-audit.
+- Exit: Cycle complete for activation. Proceed to next bounded slice on subsequent execution. Do not fabricate verification.
+
 ## Sweep-409 Random selection — adl-capability-matrix — PASS-2026-10-17-409
 
 - Timestamp: 2026-10-17T19:00Z EDT (approx).
