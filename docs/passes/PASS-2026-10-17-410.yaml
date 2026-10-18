@@ -1,0 +1,80 @@
+pass_id: PASS-2026-10-17-410
+parent_pass: PASS-2026-10-17-409
+timestamp: "2026-10-17T22:10:00Z"
+objective_id: sweep-410-directive-activation
+
+STATE:
+  global_status: RECURSIVE_LOOP_ACTIVE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 4
+  capabilities_verified: 0
+  gaps_remaining: 79
+
+OBJECTIVE:
+  id: directive-activation-census
+  description: Activate ADL-BASILISK recursive engineering directive; reconfirm live census and residual state without unsupported changes.
+  reason_selected: Operator-issued recursive directive supersedes prior "do not loop" notes; highest-value first action is state reconstruction and persistence of the activation.
+
+DISCOVERY:
+  findings:
+    - Live GitHub search user:beyond-repair returns total_count 83 (incomplete_results false) as of 2026-10-17.
+    - Authenticated identity beyond-repair (id 132061760).
+    - Sweep-409 completed on adl-capability-matrix (RESEARCH, claim ≤1, inventory locked at 67).
+    - Priority queue remains Digital_Double_virtual_workforce (ACTIVE, CI green post-Sweep-405), sovereign-clean-room (VSA scale UNVERIFIED), BlockSwarm, forge-aegis (RELEASE_BLOCKED_BY_OPERATOR).
+    - Exit criteria NOT MET portfolio-wide.
+    - Existing Portfolio Sweep bot present but usage exhausted this session; direct execution performed.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-17-410.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Governance persistence of recursive directive activation
+
+VERIFICATION:
+  tests_run: []
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Live census remains 83 repositories.
+    - Recursive directive is now the governing loop for subsequent passes.
+    - Prior claim caps and classifications preserved.
+  failures: []
+  decisions:
+    - First pass under directive is state reconstruction only; no product code changes.
+    - Next bounded slice should target a high-priority residual (Digital_Double open issues or unaudited repository tree audit).
+
+REMAINING:
+  incomplete:
+    - Full tree-level verification of ~79 repositories.
+    - VSA scale verification for sovereign-clean-room.
+    - Unified pillar releases/tags.
+  blockers:
+    - Operator-only actions (tags, archive flags, Dependabot merges).
+  new_gaps:
+    - Persistent recursive agent execution (bot usage limits observed).
+
+NEXT:
+  objective_id: dd-open-issues-audit
+  action: Audit open issues and PRs in Digital_Double_virtual_workforce; confirm form-data CVE closure status from live tree and Dependabot.
+  reason: Highest priority in PORTFOLIO_STATE.md queue; recent updates; security residual historically noted.
+  prerequisites:
+    - Live tree access to Digital_Double_virtual_workforce.
+
+PROVENANCE:
+  state_commit: (this)
+  evidence:
+    - github___search_repositories user:beyond-repair total_count 83
+    - docs/PORTFOLIO_STATUS_REPORT.md Sweep-409
+    - docs/PORTFOLIO_STATE.md priority queue
