@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-18-415
+  parent_pass: PASS-2026-10-18-414
+
+STATE:
+  global_status: EXIT_CRITERIA_NOT_MET
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50
+  capabilities_verified: 20
+  gaps_remaining: 30
+
+OBJECTIVE:
+  id: dd-dependabot-residual-confirm
+  description: Confirm open development-scope Dependabot alerts in Digital_Double_virtual_workforce and document current state.
+  reason_selected: Highest-priority residual from prior sweeps (Sweep-412, 413, 414); small bounded audit slice.
+
+DISCOVERY:
+  findings:
+    - Live search user:beyond-repair total_count 83 confirmed.
+    - Digital_Double_virtual_workforce ACTIVE, CI green on main.
+    - Open Dependabot alerts (development scope): postcss-selector-parser (CVE-2026-104844 medium, alerts 174/171), source-map-js (CVE-2026-93749 high, alert 169), sprintf-js (CVE-2026-97058 medium), brace-expansion (CVE-2026-102277 medium), pytest (CVE-2025-71176 medium).
+    - form-data previously overridden; no open form-data alert.
+    - Open PRs include draft #7 (NEX-INT-006 evidence journal) and Dependabot dependency bumps.
+    - No production-scope critical alerts observed in this pass.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-18-415.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - none (audit only)
+  code_review: NOT_RUN
+  security: PASS (development-scope residuals documented; no elevation)
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Development-scope Dependabot residuals remain open as of 2026-10-18.
+    - Classification ACTIVE holds; claim caps preserved.
+  failures:
+    - none
+  decisions:
+    - Document only; merges operator-gated. Prefer triage documentation over autonomous merge.
+
+REMAINING:
+  incomplete:
+    - Full portfolio verification of 83 repositories.
+    - VSA scale UNVERIFIED.
+    - Dependabot triage/merge for development-scope alerts.
+  blockers:
+    - Operator approval required for dependency merges and archive flags.
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: dd-dependabot-triage-detail
+  action: Detailed review of open Dependabot PRs in Digital_Double_virtual_workforce for safe merge candidates.
+  reason: Closes residual security gap without product feature changes.
+  prerequisites:
+    - Operator confirmation for merge if CI green on PR.
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - Live github___list_dependabot_alerts
+    - Live github___list_pull_requests
+    - Prior PASS-2026-10-18-412, 413, 414
