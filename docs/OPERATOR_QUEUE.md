@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-420 — Random re-audit acoustic-token-modem (completed)
+
+Live tree, CI, and claim audit of beyond-repair/acoustic-token-modem confirmed **RESEARCH** (Claim level ≤1, simulation-only FSK token roundtrip; Sweep-306 prior).
+
+- No destructive actions required or queued. History preserved. No code changes in the repository.
+- CI: pytest green on main (run 37066282622). Docs claim-capped (hardware M10, theoretical bitrate as achieved, novelty from AI tokens alone, PSK/QAM/OFDM performance all UNSUPPORTED). Archive flag remains operator-gated (false).
+- No critical security issues observed. No open issues. No Dependabot alerts. No unsupported claims. Termination conditions met for this safe RESEARCH cycle.
+- Portfolio residuals remain: incomplete full verification of remaining repositories (83 total), VSA scale UNVERIFIED, open development-scope Dependabot in Digital_Double_virtual_workforce, sovereign-clean-room CI residuals on branches, exit criteria NOT MET.
+- Next: subsequent random select. Do not loop autonomously.
+
 ## Sweep-419 — Master Directive v3.0 Governed Sweep (completed, residuals remain)
 
 Live search confirmed 83 repositories under beyond-repair. Mandatory verification of forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce performed.
