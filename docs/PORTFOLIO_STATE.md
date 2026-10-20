@@ -1,10 +1,10 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-10-16 (post Sweep-401, PASS-2026-10-16-402)
+**As of:** 2026-10-20 (post Sweep-432, PASS-2026-10-20-433)
 
 ## Priority queue
 
-1. **Digital_Double_virtual_workforce** — ACTIVE (CI green; open critical Dependabot #13 form-data CVE-2025-7783 + medium/high residuals; release tags + security remediation operator)
+1. **Digital_Double_virtual_workforce** — ACTIVE (CI green; prior critical Dependabot #13 form-data CVE-2025-7783 residual — currently no open issues; security remediation operator residual if any)
 2. sovereign-clean-room — ACTIVE (stabilize; VSA completeness UNVERIFIED)
 3. BlockSwarm — ACTIVE (operator release tag v0.5.0-sagf)
 4. forge-aegis — ACTIVE / RELEASE_BLOCKED_BY_OPERATOR (implementation FROZEN; wait for remote v0.1.0; no FLS expansion)
@@ -17,10 +17,10 @@
 |--------|--------|-------|
 | forge-aegis | RELEASE_BLOCKED_BY_OPERATOR | Slice+CI+gate done; wait for remote `v0.1.0`; **no FLS expansion**. Live CI success (Sweep-400) |
 | AEGIS-Project-Nehemiah- | CONTRACT CONSUMER / ACTIVE | Must not redefine validation semantics |
-| Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green (Sweep-400); Dependabot critical #13 (form-data) open + medium/high; evidence PR residuals (operator) |
+| Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green (Sweep-400); prior Dependabot critical residual now no open issues observed; evidence PR residuals (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green (Sweep-400); VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; CI success (Sweep-400); tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-16-402 |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-433 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | blacksite | RESEARCH | Sweep-401: private isometric stealth roguelite prototype (HTML5/JS); tests present, no CI; claim-capped |
 | coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
@@ -38,7 +38,7 @@
 
 ## Live census
 
-- GitHub `user:beyond-repair` search total_count: **83** (2026-10-16)
+- GitHub `user:beyond-repair` search total_count: **83** (2026-10-16, confirmed stable)
 - Prior locked inventory: 67 rows (expansion OPEN / operator-gated)
 
 ## Rules
@@ -47,4 +47,4 @@
 - CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
 - Claim levels strictly enforced; documentation ≠ implementation; never fabricate verification.
 - Operator-only: GitHub archive flags, release tags, Dependabot merges, secret rotation, claim elevation.
-- Random selection cycles (e.g. Sweep-401 blacksite) document RESEARCH state without promotion.
+- Random selection cycles (e.g. Sweep-401 blacksite, Sweep-432 -ware-constant-derivation) document RESEARCH state without promotion.
