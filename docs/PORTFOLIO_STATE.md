@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-10-20 (post Sweep-435, PASS-2026-10-20-435)
+**As of:** 2026-10-20 (post Sweep-438, PASS-2026-10-20-438)
 
 ## Priority queue
 
@@ -20,7 +20,7 @@
 | Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green (Sweep-400); prior Dependabot critical residual now no open issues observed; evidence PR residuals (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green (Sweep-400); VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; CI success (Sweep-400); tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-435 |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-438 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | blacksite | RESEARCH | Sweep-435: CI green verified (run 39453722349 success); experimental isometric stealth prototype; claim-capped |
 | coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
@@ -29,7 +29,8 @@
 | mend | RESEARCH | Sweep-170; formula witness local PASS; playable product NOT verified |
 | informational-flux-identity | RESEARCH | Sweep-168; local witness signed net 0 |
 | finite-gasket-spectral-derivatives | RESEARCH | Sweep-167; kernel locally tested; mult(6) CLAIMED not machine-verified here |
-| momentum-closure | RESEARCH | Claim-cap refreshed Sweep-158; pytest CI success |
+| momentum-closure | RESEARCH | Claim-cap refreshed Sweep-437; pytest CI success |
+| scale-functional-I | RESEARCH | Sweep-438: RESEARCH / Claim 1 reconfirmed; CI present; 0.08 not target; no physical claims |
 | ADL-Nexus | RESEARCH | Re-confirmed; CI green; not product-canonical |
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Re-confirmed; docs-ci success |
 | m2-renormalization-law | RESEARCH | Re-confirmed; parameter-free + pytest CI success |

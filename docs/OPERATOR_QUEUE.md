@@ -1,11 +1,11 @@
 # Operator Queue
 
-## Sweep-437 — momentum-closure Randomized Sweep (completed slice)
+## Sweep-438 — scale-functional-I Randomized Sweep (completed slice)
 
-Selected and audited beyond-repair/momentum-closure. Classification reconfirmed RESEARCH / Claim 1. CI and docs present. No destructive actions required. Governance docs updated.
+Selected and audited beyond-repair/scale-functional-I. Classification reconfirmed RESEARCH / Claim 1. CI and docs present. No destructive actions required. Governance docs updated.
 
 ### Residuals (require future cycles or operator review)
-- Full per-repo metadata inventory and classification for remaining repositories (~74).
+- Full per-repo metadata inventory and classification for remaining repositories (~73).
 - Construction of complete internal/external dependency graph and cycle detection.
 - Gap analysis (tests, CI, security, docs, releases) severity table.
 - Redundancy detection and SUPERSEDE proposals for variant families.
@@ -21,4 +21,4 @@ Selected and audited beyond-repair/momentum-closure. Classification reconfirmed 
 
 Next: Residual continuation or subsequent random selection. Portfolio remains claim-capped and historically preserved.
 
-[Prior Sweep-436 content preserved in git history for continuity.]
+[Prior Sweep-437 content preserved in git history for continuity.]

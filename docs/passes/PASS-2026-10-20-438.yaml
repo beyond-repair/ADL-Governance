@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-20-438
+  parent_pass: PASS-2026-10-20-435
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 22+
+  gaps_remaining: 13+
+
+OBJECTIVE:
+  id: GAP-RANDOM-SELECT-001
+  description: Randomized audit of scale-functional-I; reconfirm RESEARCH / Claim 1 status and governance alignment.
+  reason_selected: Highest-value next residual — random selection from unaudited/residual RESEARCH cluster after prior momentum-closure slice.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760), census 83 public repos.
+    - scale-functional-I: CLAIM_STATUS.md declares RESEARCH / Claim level 1 (declared functional, computed on lattice dumbbells). experimental_validation false, thrust/energy false.
+    - Explicit: I = Perimeter / sqrt(Area); beta_I has no zero on tested dumbbells. 0.08 not used as target.
+    - CI present: .github/workflows/ci.yml runs pytest on Python 3.11 + scale_functional.py.
+    - Tests present: tests/test_cli.py, tests/test_scale_functional.py.
+    - Packaging: pyproject.toml present. No open Dependabot alerts. No releases/tags.
+    - Parent reference to -ware-constant-derivation.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-20-438.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATE.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - scale-functional-I RESEARCH L1 reconfirmation (governance)
+
+VERIFICATION:
+  tests_run:
+    - CI workflow present and structured for pytest; no live run triggered this pass (docs-only governance update).
+  code_review: NOT_RUN
+  security: PASS (no open Dependabot alerts)
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation, history preserved, claim-capped)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - scale-functional-I remains RESEARCH / Claim 1 with explicit non-use of 0.08 as target and no physical claims.
+    - Tooling note 2026-10-08 added packaging and CLI without raising claim.
+  failures:
+    - None.
+  decisions:
+    - Treat as idempotent reconfirm; no code changes to the research repo.
+
+REMAINING:
+  incomplete:
+    - Full inventory for remaining repos.
+    - Live CI status confirmation for this repo (workflow present, last run not queried).
+  blockers:
+    - Operator-only for any future claim elevation or tags.
+  new_gaps:
+    - Query last Actions run status for scale-functional-I.
+
+NEXT:
+  objective_id: GAP-RANDOM-SELECT-002
+  action: Randomly select another residual RESEARCH repository and begin DISCOVER/AUDIT cycle.
+  reason: Portfolio-wide completion continues; this slice closed.
+  prerequisites:
+    - None.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - CLAIM_STATUS.md, ci.yml, tests present
+    - No Dependabot open alerts
+    - Governance files updated

@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-437)
-**Project / Version:** ADL Portfolio Governance / Sweep-437
-**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for momentum-closure.
+**Updated:** 2026-10-20 (Sweep-438)
+**Project / Version:** ADL Portfolio Governance / Sweep-438
+**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for scale-functional-I.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
@@ -10,23 +10,23 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 public repositories.
 
-## Sweep-437: Randomized Selection — momentum-closure
+## Sweep-438: Randomized Selection — scale-functional-I
 
-**SELECT:** Random selection from full portfolio: `beyond-repair/momentum-closure`.
+**SELECT:** Random selection from full portfolio: `beyond-repair/scale-functional-I`.
 
 **DISCOVER:**
-- Python package for momentum-closure framework (geometry helpers, RF feed, ConvergenceTensor bookkeeping).
-- CI present (pytest on 3.12).
-- Docs: README, CLAIM_STATUS, GOVERNANCE, CLAIMS, RESEARCH, framework review.
-- Classification in CLAIM_STATUS: RESEARCH / Claim level 1 (conceptual).
-- Explicit UNSUPPORTED tokens for physical residual, thrust, energy extraction.
-- No releases/tags.
+- Python package for scale functional I = Perimeter / sqrt(Area) on lattice dumbbells.
+- CI present (pytest on 3.11 + scale_functional.py).
+- Docs: README, CLAIM_STATUS, FUNCTIONAL, RESULT.
+- Classification in CLAIM_STATUS: RESEARCH / Claim level 1 (declared functional).
+- Explicit: 0.08 not an input or target; beta_I has no zero on tested families; experimental_validation false.
+- No releases/tags. No open Dependabot alerts.
 
 **AUDIT / CLASSIFY:**
-- Classification: **RESEARCH** (experimental unvalidated mathematical/numerical bookkeeping; claim-capped at 1). Justified by CLAIM_STATUS.md and absence of mesh-converged residual or physical claims.
-- Gaps: None critical for L1. Mesh midpoint fails declared 1e-3 (expected and documented). No product residual CI required.
-- Dependencies: numpy for some tests; no untracked critical deps.
-- Security: No open Dependabot alerts observed in prior portfolio scans; no critical issues flagged.
+- Classification: **RESEARCH** (experimental unvalidated mathematical functional; claim-capped at 1). Justified by CLAIM_STATUS.md and absence of physical or target-driven claims.
+- Gaps: None critical for L1. Comparison with 0.08 explicitly not reached.
+- Dependencies: numpy declared in pyproject; no untracked critical deps.
+- Security: No open Dependabot alerts.
 
 **PLAN / IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:**
 - Target state: Maintain RESEARCH / L1 with green unit tests and docs-presence.
@@ -37,10 +37,10 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
 **RE-AUDIT:** No drift detected. Terminal conditions for this repo at current claim level met. Portfolio-wide not met.
 
-Prior Sweep-436 content preserved in git history.
+Prior Sweep-437 content preserved in git history.
 
 ## Residuals (Open)
-- Complete per-repository inventory and full classification matrix for remaining ~74 repos.
+- Complete per-repository inventory and full classification matrix for remaining ~73 repos.
 - Full internal/external dependency graph and cycle detection.
 - Security findings audit (Dependabot, secret scanning, code scanning) across portfolio.
 - Code review readiness (PASS/PASS WITH FINDINGS/FAIL) for all.
@@ -54,14 +54,14 @@ Prior Sweep-436 content preserved in git history.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: physics/math cluster (incl. momentum-closure) + blacksite (experimental game prototype, CI green)
+- Research: physics/math cluster (incl. momentum-closure, scale-functional-I) + blacksite (experimental game prototype, CI green)
 
 ## Capability Inventory (Selected — Verified Only)
 
 | Feature | State |
 |---------|-------|
-| momentum-closure geometry/RF/ConvergenceTensor helpers | VERIFIED present |
+| scale-functional-I declared I = Perimeter/sqrt(Area) on dumbbells | VERIFIED present |
 | Unit tests + CI (pytest) | VERIFIED present |
-| Claim-capped RESEARCH L1 (no physical residual) | VERIFIED |
-| Mesh-converged physical thrust | UNSUPPORTED |
+| Claim-capped RESEARCH L1 (0.08 not target; no physical claims) | VERIFIED |
+| Mesh-converged or physical residual | UNSUPPORTED |
 | Releases / tags | NONE |

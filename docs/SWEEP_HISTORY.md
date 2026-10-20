@@ -1,3 +1,19 @@
+## Sweep-438 Randomized Selection — scale-functional-I
+
+- Timestamp: 2026-10-20 (17:10 UTC approx).
+- Scope: Random selection from full portfolio (83 repos).
+- Selected: beyond-repair/scale-functional-I.
+- Findings:
+  - Classification: RESEARCH / Claim level 1 (declared functional on lattice dumbbells).
+  - CI present: pytest workflow on Python 3.11.
+  - Tests present for CLI and scale functional.
+  - Docs: README, CLAIM_STATUS, FUNCTIONAL, RESULT.
+  - Explicit: 0.08 not used as target; beta_I no zero on tested families; no physical claims.
+  - No releases/tags. No open Dependabot alerts. No critical gaps for L1.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, PORTFOLIO_STATE.md, HEADINGS.md. No code changes to scale-functional-I. No deletions, no history rewrites.
+- Residual risks: Portfolio-wide inventory incomplete. Operator residuals remain.
+- Exit: Slice complete (RESEARCH reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
+
 ## Sweep-437 Randomized Selection — momentum-closure
 
 - Timestamp: 2026-10-20 (17:00 UTC approx).
