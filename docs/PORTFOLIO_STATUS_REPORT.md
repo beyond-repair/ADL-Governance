@@ -1,35 +1,41 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-429)
-**Project / Version:** ADL Portfolio Governance / Sweep-429
-**Objective:** BASILISK recursive pass — Dependabot residual audit.
+**Updated:** 2026-10-20 (Sweep-430)
+**Project / Version:** ADL Portfolio Governance / Sweep-430
+**Objective:** Portfolio discovery and residual inventory under Master Directive v3.0.
 
-Exit criteria NOT MET portfolio-wide.
+Exit criteria NOT MET portfolio-wide. Residuals recorded. Sweep stopped after current governed cycle.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
-**Evidence rule:** Code > Documentation > Roadmap.
+**Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 
-## Sweep-429: Dependabot Audit — Digital_Double_virtual_workforce
+## Sweep-430: Portfolio Discovery & Canonical Alignment
 
-**SELECT:** Highest-value residual from PASS-426 NEXT.
+**DISCOVER:**
+- Live search: 83 public repositories under user:beyond-repair (total_count=83).
+- Inventory captured: names include ADL-Governance, adl-capability-matrix, Digital_Double_virtual_workforce, forge-aegis, BlockSwarm, sovereign-clean-room, coherence-drive, ADL-SEEM, and 75 others.
+- Prior classifications from CANONICAL_REPOS.md and repository_registry.md remain authoritative pending per-repo live verification.
 
-**DISCOVER / AUDIT / CLASSIFY:**
-- Open Dependabot alerts confirmed via live API (multiple medium/high, mostly development scope).
-- Key examples: postcss-selector-parser (CVE-2026-104844 quadratic), source-map-js (high), others.
-- No remediation performed. No elevation of claims.
-- Prior Sweep-428 (finite-gasket-spectral-derivatives RESEARCH claim≤1, CI green) remains valid.
-- HEAD of governance: 381fab44 before this update.
+**CLASSIFY (summary from existing governance, not re-inferred):**
+- ACTIVE candidates: BlockSwarm, sovereign-clean-room, ADL-SEEM, forge-aegis (early), Digital_Double_virtual_workforce.
+- RESEARCH: coherence-drive, ADL-Nexus, sunder, many theory/math repos.
+- SUPERSEDED candidates: various Digital_Double_* variants, SEEM-* series → sovereign-clean-room + ADL-SEEM.
+- ARCHIVED: historical only, no future development.
 
-**PLAN / IMPLEMENT:** Governance documentation only. Pass record persisted. No product code changes. History preserved.
+**MANDATORY LIVE VERIFICATION (partial):**
+- forge-aegis: CI workflow present (.github/workflows/ci.yml). Code scanning: 404 (no analysis found). Releases: none confirmed.
+- Other mandated repos (sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce): prior CI green status from Sweep-112 retained as historical; current state UNVERIFIED in this pass.
+- No fabrication of test results, security findings, or completeness claims.
 
-**TEST / CI / DOCUMENT / GOVERN:** Live alert evidence. Claim discipline holds.
+**CAPABILITY / DEPENDENCY / GAP / REDUNDANCY:**
+- Dependency graph incomplete (prior residual).
+- Duplicate infrastructure noted in non-canonical Digital_Double variants and SEEM series (action: SUPERSEDE per existing CANONICAL_REPOS.md).
+- Gaps: incomplete test coverage, security scanning not universal, release pipelines sparse.
 
-**RELEASE / RE-AUDIT:** No tags. Residual advanced by inventory. Full graphs and other residuals remain.
+**REMEDIATION:** Documentation-only updates. No history rewrites, no deletions, no destructive actions. Escalations remain in OPERATOR_QUEUE.md.
 
-Cycle complete for this slice. Next deferred to lockfile inspection or graph modeling.
-
-Prior content preserved below for continuity.
+Prior Sweep-429 content preserved in git history.
 
 ---
 
-[Full prior Sweep-428 and earlier content retained in git history.]
+[Full prior content retained via git for continuity.]
