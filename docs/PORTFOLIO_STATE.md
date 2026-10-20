@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-10-20 (post Sweep-443, PASS-2026-10-20-443)
+**As of:** 2026-10-20 (post Sweep-447, PASS-2026-10-20-447)
 
 ## Priority queue
 
@@ -20,7 +20,7 @@
 | Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green (Sweep-400); prior Dependabot critical residual now no open issues observed; evidence PR residuals (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green (Sweep-400); VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; CI success (Sweep-400); tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-443 |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-447 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | blacksite | RESEARCH | Sweep-435: CI green verified (run 39453722349 success); experimental isometric stealth prototype; claim-capped |
 | coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
@@ -32,6 +32,7 @@
 | momentum-closure | RESEARCH | Claim-cap refreshed Sweep-437; pytest CI success |
 | scale-functional-I | RESEARCH | Sweep-438: RESEARCH / Claim 1 reconfirmed; CI present; 0.08 not target; no physical claims |
 | sunder | RESEARCH | Sweep-443: RESEARCH / Claim ≤1 reconfirmed; local heuristic agent sketch; no production claims |
+| -Entanglement-and-Emergence | RESEARCH | Sweep-447: RESEARCH / Claim ≤1 reconfirmed; essay + Claim-0 ED toy; CI green; medium pytest Dependabot open |
 | ADL-Nexus | RESEARCH | Re-confirmed; CI green; not product-canonical |
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Re-confirmed; docs-ci success |
 | m2-renormalization-law | RESEARCH | Re-confirmed; parameter-free + pytest CI success |
@@ -49,4 +50,4 @@
 - CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
 - Claim levels strictly enforced; documentation ≠ implementation; never fabricate verification.
 - Operator-only: GitHub archive flags, release tags, Dependabot merges, secret rotation, claim elevation.
-- Random selection cycles document RESEARCH state without promotion. blacksite CI now green.
+- Random selection cycles document RESEARCH state without promotion. blacksite CI now green. -Entanglement-and-Emergence CI green with residual Dependabot.
