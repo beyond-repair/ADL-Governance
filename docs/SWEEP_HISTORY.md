@@ -1,3 +1,18 @@
+## Sweep-436 Phase 3 Pillar Live Verification
+
+- Timestamp: 2026-10-20 (16:14 UTC).
+- Scope: Mandatory Phase 3 live verification of priority ACTIVE pillars.
+- Selected: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Findings:
+  - forge-aegis: CI success run 37258127100 on main e7188d5 (2026-10-05).
+  - BlockSwarm: CI success run 38252865430 on main 9848010 (2026-10-12).
+  - Digital_Double_virtual_workforce: CI success run 39035783949 on main ad0c3bd (2026-10-17, security pin).
+  - sovereign-clean-room: Recent PR runs mixed; main historically green (Sweep-287). VSA UNVERIFIED.
+  - All: releases/tags empty. No claim elevation. Classifications reconfirmed ACTIVE / claim-capped.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md with verified CI data and capability matrix. No code changes, no deletions, no history rewrites.
+- Residual risks: Portfolio-wide inventory, dependency graph, security audit, code review readiness incomplete. Operator residuals remain.
+- Exit: Slice complete (pillars re-verified). Portfolio-wide exit criteria NOT MET.
+
 ## Sweep-435 blacksite CI Verification
 
 - Timestamp: 2026-10-20 (16:07 UTC).
@@ -11,19 +26,4 @@
 - Residual risks: Portfolio-wide inventory incomplete. Operator actions pending.
 - Exit: Slice complete (CI verified green). Portfolio-wide exit criteria NOT MET.
 
-## Sweep-434 Randomized Portfolio Completion Sweep — blacksite
-
-- Timestamp: 2026-10-20 (16:01 UTC).
-- Scope: Random selection of one repository from full portfolio (83 public).
-- Selected: beyond-repair/blacksite.
-- Findings:
-  - Experimental browser stealth prototype (isometric Canvas JS, deterministic sim).
-  - Comprehensive node:test suite present (ninja_loop.test.mjs) covering determinism, vision, abilities, full route.
-  - Docs and gate reports present. Claim 0 / PRIVATE workspace per README.
-  - No CI, no package.json prior to this sweep.
-- Classification: RESEARCH (experimental, unvalidated, claim-capped).
-- Actions performed: Added package.json (npm test script) and .github/workflows/test.yml (Node 20, node --test). Updated PORTFOLIO_STATUS_REPORT.md. No deletions, no history rewrites, no claim elevation.
-- Residual risks: CI not yet observed green on GitHub Actions (workflow just added). Full portfolio residuals remain. Operator review of game prototype status optional.
-- Exit: Cycle for blacksite complete (CI added, classified, documented). Portfolio-wide exit criteria NOT MET.
-
-[Prior Sweep-433 content preserved in git history.]
+[Prior Sweep-434 content preserved in git history.]
