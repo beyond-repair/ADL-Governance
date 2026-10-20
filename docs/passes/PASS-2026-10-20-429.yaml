@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-10-20-429
+  parent_pass: PASS-2026-10-20-426
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE_WITH_RESIDUALS
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50
+  capabilities_verified: 12
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: AUDIT-DEPENDABOT-DDVW-429
+  description: Live audit of open Dependabot alerts in Digital_Double_virtual_workforce; document residual without remediation.
+  reason_selected: Explicit NEXT from PASS-426; highest-value residual; bounded, evidence-based, no destructive change.
+
+DISCOVERY:
+  findings:
+    - beyond-repair authenticated (id 132061760); portfolio total_count=83.
+    - ADL-Governance HEAD 381fab44 (Sweep-428 docs update, no YAML for 428).
+    - Digital_Double_virtual_workforce has multiple open Dependabot alerts (medium/high in dev deps: postcss-selector-parser CVE-2026-104844, source-map-js, sprintf-js, brace-expansion, pytest, etc.).
+    - Alerts dated ~2026-10-17; no auto-merge or package update performed this pass.
+    - Prior Sweep-428 confirmed finite-gasket-spectral-derivatives RESEARCH claim≤1 CI green.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-20-429.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent Dependabot residual documentation (audit only)
+
+VERIFICATION:
+  tests_run:
+    - Live github___list_dependabot_alerts (open alerts confirmed)
+    - Schema match against prior PASS yaml (manual)
+  code_review: NOT_RUN
+  security: PASS (audit documented; no elevation of claims)
+  integration: NOT_RUN
+  invariants: PASS (claim caps preserved; history not rewritten)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Open Dependabot alerts exist in Digital_Double_virtual_workforce (dev scope dominant).
+    - Governance persistence works via YAML + SWEEP_HISTORY.
+    - Portfolio exit criteria still NOT MET.
+  failures:
+    - None this pass.
+  decisions:
+    - Audit-only; remediation deferred to operator or subsequent bounded slice.
+    - Prefer existing governance repo over new creation.
+
+REMAINING:
+  incomplete:
+    - Dependabot remediation / Dependabot PRs
+    - Full capability/dependency/authority graphs
+    - VSA verification
+    - 83-repo exhaustive phases
+  blockers:
+    - Operator for package merges, release tags, archive decisions
+  new_gaps:
+    - Specific patched versions vs current lockfiles in Digital_Double
+
+NEXT:
+  objective_id: SELECT-NEXT-RESIDUAL-OR-GRAPH-SLICE
+  action: Either inspect lockfile vs patched versions for one high alert, or begin capability graph node for one research repo.
+  reason: Closes or advances the documented residual; maintains incremental verified progress.
+  prerequisites:
+    - Access to package-lock.json / pyproject.toml contents
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___list_dependabot_alerts results
+    - Live search total_count=83
+    - HEAD 381fab44 and prior PASS-426
