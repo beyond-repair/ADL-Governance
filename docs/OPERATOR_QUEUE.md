@@ -1,5 +1,15 @@
 # Operator Queue
 
+## Sweep-422 — Random re-audit forge-aegis (completed)
+
+Live tree, claim, and prior CI audit of beyond-repair/forge-aegis confirmed **ACTIVE** (software / RUNNABLE SKETCH, offline FLS v0.1 pipeline; prior Sweeps 221/419/421).
+
+- No destructive actions required or queued. History preserved. No code changes in the repository.
+- CI structure green on main (prior run 37258127100). Docs claim-capped (no full Nehemiah host, no kernel agents, no remote attestation, no auto-remediation, no Forge language execution). No open Dependabot alerts. No releases/tags. Non-default branches remain (operator may clean later). License TBD in pyproject.toml is operator residual.
+- No critical security issues observed. No unsupported claims. Termination conditions met for this safe ACTIVE cycle.
+- Portfolio residuals remain: incomplete full verification of remaining repositories (83 total), VSA scale UNVERIFIED, open development-scope Dependabot in Digital_Double_virtual_workforce, sovereign-clean-room CI residuals on branches, exit criteria NOT MET.
+- Next: subsequent random select. Do not loop autonomously.
+
 ## Sweep-421 — Master Directive v3.0 Governed Sweep (completed, residuals remain)
 
 Live search confirmed 83 repositories under beyond-repair. Mandatory verification of forge-aegis, sovereign-clean-room, BlockSwarm, and Digital_Double_virtual_workforce performed.
