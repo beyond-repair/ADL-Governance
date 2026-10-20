@@ -1,14 +1,14 @@
 # Operator Queue
 
-## Sweep-445 — Randomized Selection: seem-sunder-bridge (completed slice)
+## Sweep-446 — Randomized Selection: Project-Cold-Boot (completed slice)
 
 Random selection from full portfolio (83 repositories).
 
-- Reconfirmed RESEARCH / Claim ≤1 (MODULE_SURFACE contract checker).
-- CI workflow present. Tests and bridge checker present.
-- Open Dependabot alert #1 (medium, pytest CVE-2025-71176; current pin 8.3.5, fixed in ≥9.0.3). Branch dependabot/pip/pip-590e9db7b9 exists (not merged this cycle).
-- No releases/tags. No critical issues beyond medium alert. No unsupported claims.
-- No safe code changes executed (dependency update operator-gated or future safe cycle). Governance docs updated.
+- Reconfirmed RESEARCH / Claim-0 (RUNNABLE SKETCH foundation prototype).
+- Structural CI workflow present (structure.yml → unittest tests/test_structure.py). Extensive docs and claim caps present. Godot vertical slice and smoke scripts present.
+- No releases/tags. No open Dependabot alerts. Open issues: 1. No critical security issues. No unsupported claims.
+- No safe code changes executed (foundation terminal for Claim-0; commercial production is operator/content). Governance docs updated.
+- Godot headless smoke not executed this cycle (no Godot binary in environment).
 
 ### Residuals (require future cycles or operator review)
 - Execute GitHub archive lock for archive_queue items when gates met.
@@ -21,6 +21,7 @@ Random selection from full portfolio (83 repositories).
 - Release tags and archive flags (operator-only for pillars and queue).
 - forge-aegis host-integrity product claims (remain capped).
 - Update pytest pin in seem-sunder-bridge to ≥9.0.3 (or merge Dependabot branch) after review.
+- Verify Godot headless smoke for Project-Cold-Boot (`./tools/smoke_test.sh` with Godot 4.2+) and play vertical slice.
 
 ### No queued destructive proposals beyond existing archive queue
 - No repository deletions.
@@ -29,4 +30,4 @@ Random selection from full portfolio (83 repositories).
 
 Next: Residual continuation or subsequent random selection / Phase continuation. Portfolio remains claim-capped and historically preserved.
 
-[Prior Sweep-444 content preserved in git history for continuity.]
+[Prior Sweep-445 content preserved in git history for continuity.]

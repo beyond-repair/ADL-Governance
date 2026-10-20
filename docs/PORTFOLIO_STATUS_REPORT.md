@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-445)
-**Project / Version:** ADL Portfolio Governance / Sweep-445
-**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for seem-sunder-bridge.
+**Updated:** 2026-10-20 (Sweep-446)
+**Project / Version:** ADL Portfolio Governance / Sweep-446
+**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for Project-Cold-Boot.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
@@ -10,56 +10,57 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories (search total_count 83, incomplete_results false).
 
-## Sweep-445: Randomized Selection — seem-sunder-bridge
+## Sweep-446: Randomized Selection — Project-Cold-Boot
 
-**SELECT:** Random selection from full portfolio: `beyond-repair/seem-sunder-bridge`.
+**SELECT:** Random selection from full portfolio (83 repos): `beyond-repair/Project-Cold-Boot`.
 
 **DISCOVER:**
-- Python package (pyproject.toml v0.1.1) implementing claim-capped interop contract (MODULE_SURFACE) among sunder, sovereign-clean-room, SEEM-2.0-Self-Evolving-Emergent-Mind, and sunder-cleanroom-vsa-adapter.
-- Tree: bridge/ (contract.py, check.py, engine.py, witness.py, symbol_witness_*.json), tests/, docs/, CLAIM_STATUS.md, .github/workflows/ci.yml, requirements.txt (pytest==8.3.5).
-- CI workflow present: checkout, setup-python 3.11, pip install -r requirements.txt, pytest -q, python -m bridge.
-- Branches: main, dependabot/pip/pip-590e9db7b9.
-- No releases or tags observed.
-- Open Dependabot alert #1 (medium, pytest CVE-2025-71176, vulnerable <9.0.3; current pin 8.3.5).
-- Explicit claim caps: RESEARCH / ≤1; not a runtime import, not a mind, not identity unification (Q-FUNC-003), not vector-space isomorphism. Closes Q-003 as contract checker only.
+- GDScript / Godot 4.2+ first-person reality-editing action-puzzle vertical slice (spiritual successor framing to 1994 Noctropolis). Dual-timeline (1994 Necropolis / 2026 Vesper City). Deterministic Log-Reduction Simulation Engine (DLRSE) principles simulated in GDScript.
+- Tree: godot/ (scenes, scripts/systems/GameState.gd, vertical_slice, shaders domain_warp_*, tools/smoke_test.gd), tools/smoke_test.sh, tests/test_structure.py, .github/workflows/structure.yml, docs/ (ARCHITECTURE, BIBLE, COMPLETE, STATUS, ROADMAP_TO_1.0, STEAM_PREP, etc.), GOVERNANCE.md, README.md, LICENSE (MIT).
+- Structural CI: structure.yml runs `python -m unittest tests/test_structure.py` on push/PR to main (host-side, no Godot).
+- Headless smoke: tools/smoke_test.sh (requires Godot 4.2+ binary; not run in CI).
+- No releases, no tags. Dependabot alerts: none open. Open issues: 1.
+- Explicit claim cap: RESEARCH / RUNNABLE SKETCH / Claim-0 foundation prototype. Not commercial Steam game, not formal DLRSE/AC-4.1/GPR proof. Sweep lock noted in GOVERNANCE (prior Sweep-272).
 
-**AUDIT:** Compliant with ADL-Governance claim validation. Prior sweeps (e.g., Sweep-209) locked witnesses. No unsupported claims advanced. Open medium Dependabot residual.
+**AUDIT:** Compliant with ADL-Governance. Claim-capped, structural tests present, docs comprehensive for foundation. No unsupported commercial or proof claims. No critical security issues. Godot smoke not executed in this environment (no binary).
 
-**CLASSIFY:** RESEARCH (Claim ≤1 / MODULE_SURFACE). Justification: Experimental contract checker with frozen witnesses; no production or runtime claims. Preserves prior classification.
+**CLASSIFY:** RESEARCH (Claim-0 / RUNNABLE SKETCH). Justification: Playable vertical slice with locked art/mechanics docs, deterministic mutation log simulation, claim-capped; commercial 1.0 is operator/content work. Preserves prior classification.
 
-**PLAN:** Target state: CI-green with updated pytest pin if safe; documentation of residual. No code changes this cycle (operator-gated for dependency update).
+**PLAN:** Target state: foundation terminal (docs complete, claims capped, structure CI green). No safe code changes required this cycle. Operator residual for full Godot smoke verification and commercial production.
 
-**IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:** Governance docs updated. No target code changes. No deletions, no history rewrites.
+**IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:** Governance docs updated. No target code changes. Structural tests present and claim-locked. No deletions, no history rewrites.
 
 **RELEASE/ARCHIVE:** No release. Not archived.
 
-**RE-AUDIT:** No drift detected on core claims. Portfolio-wide not met.
+**RE-AUDIT:** No drift on claims or structure. Portfolio-wide not met.
 
-Prior Sweep-444 content preserved in git history.
+Prior Sweep-445 content preserved in git history.
 
 ## Residuals (Open)
 - Complete per-repository inventory and full classification matrix for remaining repos.
 - Full internal/external dependency graph and cycle detection.
-- Security findings audit across portfolio (Dependabot, secrets) — seem-sunder-bridge pytest medium alert open.
+- Security findings audit across portfolio (Dependabot, secrets) — seem-sunder-bridge pytest medium alert open (prior).
 - Code review readiness for all.
 - Gap analysis severity tables.
 - Redundancy detection and SUPERSEDE proposals (Digital Double variants observed).
-- Operator residuals (GitHub archive lock for queue items, release tags for pillars, pytest pin update for seem-sunder-bridge).
+- Operator residuals (GitHub archive lock for queue items, release tags for pillars, Godot smoke verification for Project-Cold-Boot, pytest pin update for seem-sunder-bridge).
 
 ## Canonical Ownership (partial)
 - Governance: ADL-Governance
 - Agent Infrastructure: forge-aegis / AEGIS-Project-Nehemiah-
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
-- Workforce Automation: Digital_Double_virtual_workforce (variants exist: DigitalDoubleVirtualWorkforce3.5, Digital_Double_Virtual_Workforce_4., Digital_Double_Virtual_Workforce_4.2 — redundancy candidate)
-- Research: physics/math cluster + blacksite + sunder + seem-sunder-bridge + others
+- Workforce Automation: Digital_Double_virtual_workforce (variants exist — redundancy candidate)
+- Research: physics/math cluster + blacksite + sunder + seem-sunder-bridge + Project-Cold-Boot + others
 
 ## Capability Inventory (Selected — Verified Only)
 
 | Feature | State |
 |---------|-------|
+| Project-Cold-Boot structural CI + claim-0 tests | VERIFIED (present) |
+| Project-Cold-Boot Godot vertical slice / smoke script | VERIFIED (present; smoke not run this cycle) |
+| Project-Cold-Boot claim cap | VERIFIED (RESEARCH / Claim-0) |
 | seem-sunder-bridge contract checker | VERIFIED (MODULE_SURFACE, Claim ≤1) |
-| seem-sunder-bridge CI workflow | VERIFIED (present) |
 | seem-sunder-bridge Dependabot pytest alert | OPEN (medium, CVE-2025-71176) |
 | forge-aegis CI workflow | VERIFIED (present; prior green) |
 | sovereign-clean-room CI workflow | VERIFIED (present; prior green) |
