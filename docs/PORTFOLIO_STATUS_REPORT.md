@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-441)
-**Project / Version:** ADL Portfolio Governance / Sweep-441
-**Objective:** Phase 3 Mandatory Live Verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Update governance docs.
+**Updated:** 2026-10-20 (Sweep-442)
+**Project / Version:** ADL Portfolio Governance / Sweep-442
+**Objective:** Randomized portfolio completion sweep on randomly selected repository. Update governance docs with classification and status.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
@@ -10,36 +10,38 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories (search total_count 83, incomplete_results false).
 
-## Sweep-441: Phase 3 Live Verification — Four Pillars
+## Sweep-442: Randomized Selection — fantom-smart-contracts-first-bot
 
-**SELECT:** Explicit verification targets per Master Directive Phase 3.
+**SELECT:** Random selection from full portfolio (83 repos): `beyond-repair/fantom-smart-contracts-first-bot`.
 
 **DISCOVER / AUDIT:**
-- **forge-aegis**: CI success last run 37258127100 (2026-10-05, main e7188d5). Releases: empty. Tags: empty. Classification ACTIVE (software sketch / claim-capped, not host product). Dependabot open empty. Code scanning 404.
-- **sovereign-clean-room**: Recent CI runs on seem-completion-pass branch (mixed success/failure for smoke); main prior success confirmed in registry. Releases: empty. Tags: empty. Classification ACTIVE (canonical SEEM substrate; VSA completeness UNVERIFIED). Secret scanning disabled.
-- **BlockSwarm**: CI success last run 38252865430 (2026-10-12, main 9848010). Prior 36859452185 on 6e90f6f. Releases: empty. Tags: empty. Classification ACTIVE (SAGF). Dependabot open empty.
-- **Digital_Double_virtual_workforce**: CI success last run 39035783949 (2026-10-17, main ad0c3bd). Releases: empty. Tags: empty. Classification ACTIVE (public canonical). Open Dependabot PRs remain (e.g. #6 rollup bump); prior critical closed. Readiness residual: open dep PRs.
+- Tree: Multiple experimental `.rs` files (fantom *.rs, fanton rust *.rs with spaces in names), README.md, .gitignore, .gitattributes, .vs/ (Visual Studio index, not source).
+- No tests, no CI workflows, no Cargo.toml / package structure, no releases/tags.
+- README: Explicit ARCHIVE QUEUE banner, Claim 0, "Not a deployed system", "Do not use for live trading, deployment, or as a product".
+- Already listed in docs/archive_queue.md.
+- No security alerts observed in discovery (Dependabot not scanned this cycle).
+- Classification candidate: ARCHIVED (historical stubs, archive queue).
 
-**CLASSIFY:** No changes. All remain ACTIVE per existing registry and CANONICAL_REPOS.md. No unsupported claims elevated.
+**CLASSIFY:** ARCHIVED. Justification: Stub experimental Rust snippets, no tests/CI/docs beyond banner, explicit archive queue status, no active development or claims.
 
 **PLAN / IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:**
-- Target state: Maintain ACTIVE with green CI, no fabricated releases.
-- No code changes to pillars. Governance docs updated with live verification timestamps.
+- Target state: Confirmed ARCHIVED, governance updated. No safe idempotent code changes (no structure to test). Destructive (archive lock) queued for operator.
+- No code modifications to target repo. Governance docs updated.
 
-**RELEASE/ARCHIVE:** No tags applied (operator residual).
+**RELEASE/ARCHIVE:** No release. Archive already queued (operator action).
 
-**RE-AUDIT:** No drift in classifications. Pillar CI green where checked. Portfolio-wide not met.
+**RE-AUDIT:** No drift. Remains historical stub. Portfolio-wide not met.
 
-Prior Sweep-440 content preserved in git history.
+Prior Sweep-441 content preserved in git history.
 
 ## Residuals (Open)
-- Complete per-repository inventory and full classification matrix for remaining repos (~79 beyond pillars and recent sweeps).
+- Complete per-repository inventory and full classification matrix for remaining repos (~78 beyond recent sweeps and pillars).
 - Full internal/external dependency graph and cycle detection.
 - Security findings audit (Dependabot, secret scanning, code scanning) across portfolio.
 - Code review readiness (PASS/PASS WITH FINDINGS/FAIL) for all.
 - Gap analysis severity tables.
 - Redundancy detection and SUPERSEDE proposals.
-- Operator residuals (release tags for pillars, archive flags, forge-aegis host claims capped).
+- Operator residuals (GitHub archive lock for queue items including this repo, release tags for pillars).
 
 ## Canonical Ownership (partial)
 - Governance: ADL-Governance
@@ -53,6 +55,7 @@ Prior Sweep-440 content preserved in git history.
 
 | Feature | State |
 |---------|-------|
+| fantom-smart-contracts-first-bot | ARCHIVED (stub, archive queue) |
 | forge-aegis CI green | VERIFIED |
 | sovereign-clean-room CI (main prior) green | VERIFIED |
 | BlockSwarm Foundry CI green | VERIFIED |
