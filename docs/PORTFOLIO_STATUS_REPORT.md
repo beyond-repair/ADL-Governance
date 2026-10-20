@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-436)
-**Project / Version:** ADL Portfolio Governance / Sweep-436
-**Objective:** Phase 3 mandatory live verification of priority pillars: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+**Updated:** 2026-10-20 (Sweep-437)
+**Project / Version:** ADL Portfolio Governance / Sweep-437
+**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for momentum-closure.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
@@ -10,24 +10,37 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 public repositories.
 
-## Sweep-436: Phase 3 Pillar Verification
+## Sweep-437: Randomized Selection — momentum-closure
 
-**SELECT:** Priority ACTIVE repositories per directive Phase 3.
+**SELECT:** Random selection from full portfolio: `beyond-repair/momentum-closure`.
 
-**DISCOVER / AUDIT (live Actions):**
-- **forge-aegis**: Latest main CI success — run 37258127100 (2026-10-05), head e7188d529739652a2dd6264bd3d328c1f72e60e5. Classification ACTIVE / claim-capped software sketch. Releases/tags empty. Docs present (README, CLAIM_STATUS, GOVERNANCE).
-- **sovereign-clean-room**: Recent PR-branch runs mixed (success/failure on seem-completion-pass). Main head previously verified green (registry Sweep-287: run 37064696194 on 4878918c). VSA completeness UNVERIFIED. Tags/releases empty. Branches unmerged. Classification ACTIVE / claim-capped.
-- **BlockSwarm**: Latest main Foundry success — run 38252865430 (2026-10-12), head 98480104c353ffd22e1522943a5c5f6545044d18. Prior verified 36859452185 on 6e90f6f. Classification ACTIVE. Tags/releases empty.
-- **Digital_Double_virtual_workforce**: Latest main CI success — run 39035783949 (2026-10-17), head ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea (security pin for form-data CVE). Dependabot activity present. Classification ACTIVE / claim-capped. Releases empty. Open issues 5.
+**DISCOVER:**
+- Python package for momentum-closure framework (geometry helpers, RF feed, ConvergenceTensor bookkeeping).
+- CI present (pytest on 3.12).
+- Docs: README, CLAIM_STATUS, GOVERNANCE, CLAIMS, RESEARCH, framework review.
+- Classification in CLAIM_STATUS: RESEARCH / Claim level 1 (conceptual).
+- Explicit UNSUPPORTED tokens for physical residual, thrust, energy extraction.
+- No releases/tags.
 
-**CLASSIFY / GOVERN:** No promotions or claim elevations. States reconfirmed. No unsupported implementation claims.
+**AUDIT / CLASSIFY:**
+- Classification: **RESEARCH** (experimental unvalidated mathematical/numerical bookkeeping; claim-capped at 1). Justified by CLAIM_STATUS.md and absence of mesh-converged residual or physical claims.
+- Gaps: None critical for L1. Mesh midpoint fails declared 1e-3 (expected and documented). No product residual CI required.
+- Dependencies: numpy for some tests; no untracked critical deps.
+- Security: No open Dependabot alerts observed in prior portfolio scans; no critical issues flagged.
 
-**RE-AUDIT:** Pillar CI green on latest observed main runs (sovereign main not re-run this cycle; residuals noted). Slice complete.
+**PLAN / IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:**
+- Target state: Maintain RESEARCH / L1 with green unit tests and docs-presence.
+- No code changes required (idempotent). Existing CI workflow and tests sufficient.
+- Updated governance registry.
 
-Prior Sweep-435 content preserved in git history.
+**RELEASE/ARCHIVE:** No tag. Remains RESEARCH.
+
+**RE-AUDIT:** No drift detected. Terminal conditions for this repo at current claim level met. Portfolio-wide not met.
+
+Prior Sweep-436 content preserved in git history.
 
 ## Residuals (Open)
-- Complete per-repository inventory and full classification matrix for remaining ~75 repos.
+- Complete per-repository inventory and full classification matrix for remaining ~74 repos.
 - Full internal/external dependency graph and cycle detection.
 - Security findings audit (Dependabot, secret scanning, code scanning) across portfolio.
 - Code review readiness (PASS/PASS WITH FINDINGS/FAIL) for all.
@@ -41,15 +54,14 @@ Prior Sweep-435 content preserved in git history.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: physics/math cluster + blacksite (experimental game prototype, CI green)
+- Research: physics/math cluster (incl. momentum-closure) + blacksite (experimental game prototype, CI green)
 
-## Capability Inventory (Pillars — Verified Only)
+## Capability Inventory (Selected — Verified Only)
 
 | Feature | State |
 |---------|-------|
-| forge-aegis v0.1 integrity slice (installable, CI green) | VERIFIED |
-| sovereign-clean-room Python tests (main CI historically green; VSA completeness) | PARTIAL / UNVERIFIED |
-| BlockSwarm Foundry build/test (pinned deps, clean-clone) | VERIFIED |
-| Digital_Double_virtual_workforce CI + security pin | VERIFIED |
-| Releases / tags on pillars | UNVERIFIED / empty |
-| Production host / full VSA / on-chain autonomy | PLANNED / UNVERIFIED |
+| momentum-closure geometry/RF/ConvergenceTensor helpers | VERIFIED present |
+| Unit tests + CI (pytest) | VERIFIED present |
+| Claim-capped RESEARCH L1 (no physical residual) | VERIFIED |
+| Mesh-converged physical thrust | UNSUPPORTED |
+| Releases / tags | NONE |
