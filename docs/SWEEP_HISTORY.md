@@ -1,3 +1,18 @@
+## Sweep-444 Mandatory Live Verification — Four Pillars
+
+- Timestamp: 2026-10-20 (current).
+- Scope: Phase 3 explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- Findings:
+  - forge-aegis: CI workflow `.github/workflows/ci.yml` present (tests + CLI smoke). Docs, CLAIM_STATUS, GOVERNANCE, SECURITY present. No releases/tags. Host-integrity claims capped.
+  - sovereign-clean-room: CI workflow `.github/workflows/python-tests.yml` present (pytest). Core, tests, docs present. VSA completeness UNVERIFIED. No releases/tags.
+  - BlockSwarm: Foundry workflow `.github/workflows/foundry.yml` present. Contracts, tests, GOVERNANCE, SECURITY present. No releases/tags.
+  - Digital_Double_virtual_workforce: CI workflow `.github/workflows/ci.yml` present. Mixed TS/Python, tests, CANONICAL.md. Open issues 5. Variants observed (redundancy candidate). No releases/tags.
+  - Prior CI green status preserved from earlier sweeps; this pass verifies workflow presence.
+  - No critical security issues observed in this pass. No unsupported claims advanced.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No code changes to targets. No deletions, no history rewrites.
+- Residual risks: Portfolio-wide inventory incomplete. Operator residual for tags/archives. Redundancy in Digital Double family.
+- Exit: Slice complete (pillars verified, governance updated). Portfolio-wide exit criteria NOT MET.
+
 ## Sweep-443 Randomized Selection — sunder
 
 - Timestamp: 2026-10-20 (current).
@@ -13,19 +28,4 @@
 - Residual risks: Portfolio-wide inventory incomplete. Operator residual for tags/archives.
 - Exit: Slice complete (RESEARCH reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
 
-## Sweep-442 Randomized Selection — fantom-smart-contracts-first-bot
-
-- Timestamp: 2026-10-20 (19:01 UTC).
-- Scope: Random selection from full portfolio (83 repos).
-- Selected: beyond-repair/fantom-smart-contracts-first-bot.
-- Findings:
-  - Classification: ARCHIVED (historical experimental stubs; already in archive_queue.md).
-  - Contents: Multiple .rs files (fantom N.rs, fanton rust N.rs with spaces), README with ARCHIVE QUEUE / Claim 0 banner, .vs/ index, no Cargo.toml, no tests, no CI, no releases/tags.
-  - Explicit: "Not a deployed system. Do not use for live trading, deployment, or as a product."
-  - No critical security issues observed in this pass. No unsupported claims.
-  - No safe code changes possible (no structure). Destructive archive lock remains operator-only.
-- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No code changes to target. No deletions, no history rewrites.
-- Residual risks: Portfolio-wide inventory incomplete. Operator residual: execute `gh repo archive` for queue items.
-- Exit: Slice complete (ARCHIVED reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
-
-[Prior Sweep-441 and earlier content preserved in git history.]
+[Prior Sweep-442 and earlier content preserved in git history.]
