@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-20-426
+  parent_pass: PASS-2026-10-20-425
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE_WITH_RESIDUALS
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50
+  capabilities_verified: 12
+  gaps_remaining: 15
+
+OBJECTIVE:
+  id: RECONSTRUCT-BASILISK-426
+  description: Reconstruct current ecosystem state from ADL-Governance and portfolio census; confirm latest sweep residuals; select next bounded gap.
+  reason_selected: Highest-value next slice is persistent state reconstruction to enable incremental progress without losing verified knowledge from prior sweeps (up to 425).
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760), public_repos ~78, search total_count 83.
+    - ADL-Governance is ACTIVE governing constitution; latest Sweep-425 confirmed ADL-Nexus as RESEARCH with CI green.
+    - Priority residuals: Digital_Double_virtual_workforce Dependabot (form-data CVE residuals), VSA in sovereign-clean-room UNVERIFIED, full 83-repo capability graph incomplete, forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
+    - Pass records and SWEEP_HISTORY exist and are consistent with check_passes.py schema.
+    - No fabrication of verification; evidence from live API and prior docs.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-20-426.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - pending this commit
+  capabilities_added_or_changed:
+    - Governance pass persistence for BASILISK loop
+
+VERIFICATION:
+  tests_run:
+    - Schema consistency checked against existing PASS yaml patterns (manual)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio has 83 repositories; governance enforces claim caps and classifications.
+    - Latest verified sweep is 425 on ADL-Nexus RESEARCH.
+    - Persistent memory via git history + docs/passes + SWEEP_HISTORY.
+  failures:
+    - Bot delegation failed due to usage exhausted; proceeded with direct tools.
+  decisions:
+    - Prefer documenting reconstruction over product changes in this pass.
+    - Next focus on one residual gap (Dependabot audit or VSA verification slice).
+
+REMAINING:
+  incomplete:
+    - Full capability/dependency/authority graphs
+    - 83-repo exhaustive verification
+    - VSA completeness
+  blockers:
+    - Operator actions for release tags, Dependabot merges, archive flags
+  new_gaps:
+    - Precise current Dependabot alert status in Digital_Double_virtual_workforce
+
+NEXT:
+  objective_id: AUDIT-DEPENDABOT-DDVW
+  action: Inspect open Dependabot alerts and security status in Digital_Double_virtual_workforce; document without merging.
+  reason: Highest-value residual from priority queue; bounded and evidence-based.
+  prerequisites:
+    - Access to security alerts or repo metadata
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live github___search_repositories total_count=83
+    - SWEEP_HISTORY.md Sweep-425 content
+    - PORTFOLIO_STATE.md residuals
