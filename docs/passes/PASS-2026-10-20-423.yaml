@@ -27,7 +27,10 @@ CHANGES:
     - docs/passes/PASS-2026-10-20-423.yaml
     - docs/PORTFOLIO_STATUS_REPORT.md
     - docs/SWEEP_HISTORY.md
-  commits: []
+  commits:
+    - 9a1dd406687899c3454cae76bfed907054a718a7
+    - d0f29396e179e74d9d38ec58f0d0c55a0c7f9e13
+    - 0c72c28c6bda59c66c2bcabb41bf7e4031e46e95
   capabilities_added_or_changed:
     - Persistent Basilisk pass record for continuity
 VERIFICATION:
@@ -66,8 +69,9 @@ NEXT:
     - Confirm no production impact
     - Run tests after any lockfile change
 PROVENANCE:
-  state_commit: pending
+  state_commit: 0c72c28c6bda59c66c2bcabb41bf7e4031e46e95
   evidence:
     - GitHub search total_count 83
     - Dependabot alerts 174,172,171,169,168 observed open
     - Prior Sweep-422 in PORTFOLIO_STATUS_REPORT.md
+    - Commits 9a1dd40, d0f2939, 0c72c28
