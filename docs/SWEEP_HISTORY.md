@@ -1,3 +1,20 @@
+## Sweep-440 Randomized Selection — Open-Energy-Fusion
+
+- Timestamp: 2026-10-20 (18:01 UTC).
+- Scope: Random selection from full portfolio (83 repos).
+- Selected: beyond-repair/Open-Energy-Fusion.
+- Findings:
+  - Classification: RESEARCH / Claim ≤1 (simulation + measurement contract for multi-domain energy dispatcher; no hardware results).
+  - CI present: .github/workflows/ci.yml (pytest + campaign smoke on Python 3.12), last success run 37728346972 on main 620b994 (2026-10-08).
+  - Tests present (test_cli.py guards committed campaign results against drift; test_controller.py).
+  - Docs: README (status strip), GOVERNANCE.md, CLAIM_CAP.md, AUDIT.md (YELLOW — INVESTIGATE), ARCHITECTURE.md, PRIOR_ART.md, SAFETY.md.
+  - Explicit NOT CLAIMED: thrust, energy extraction, AGI, production autonomy, perpetual motion, hardware measurements. Firmware placeholder rejected.
+  - Simulation shows conditional (not universal) benefit vs conventional EMS.
+  - No releases/tags. No critical gaps for L1. No unsupported claims.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No code changes to Open-Energy-Fusion. No deletions, no history rewrites.
+- Residual risks: Portfolio-wide inventory incomplete. Operator residuals remain (optional release tag).
+- Exit: Slice complete (RESEARCH reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
+
 ## Sweep-439 Randomized Selection — informational-flux-identity
 
 - Timestamp: 2026-10-20 (17:13 UTC).
@@ -14,20 +31,4 @@
 - Residual risks: Portfolio-wide inventory incomplete. Operator residuals remain.
 - Exit: Slice complete (RESEARCH reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
 
-## Sweep-438 Randomized Selection — scale-functional-I
-
-- Timestamp: 2026-10-20 (17:10 UTC approx).
-- Scope: Random selection from full portfolio (83 repos).
-- Selected: beyond-repair/scale-functional-I.
-- Findings:
-  - Classification: RESEARCH / Claim level 1 (declared functional on lattice dumbbells).
-  - CI present: pytest workflow on Python 3.11.
-  - Tests present for CLI and scale functional.
-  - Docs: README, CLAIM_STATUS, FUNCTIONAL, RESULT.
-  - Explicit: 0.08 not used as target; beta_I no zero on tested families; no physical claims.
-  - No releases/tags. No open Dependabot alerts. No critical gaps for L1.
-- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, PORTFOLIO_STATE.md, HEADINGS.md. No code changes to scale-functional-I. No deletions, no history rewrites.
-- Residual risks: Portfolio-wide inventory incomplete. Operator residuals remain.
-- Exit: Slice complete (RESEARCH reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
-
-[Prior Sweep-437 and earlier content preserved in git history.]
+[Prior Sweep-438 and earlier content preserved in git history.]
