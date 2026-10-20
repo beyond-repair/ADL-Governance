@@ -1,3 +1,16 @@
+## Sweep-435 blacksite CI Verification
+
+- Timestamp: 2026-10-20 (16:07 UTC).
+- Scope: Residual verification of Sweep-434 CI addition on blacksite.
+- Selected: beyond-repair/blacksite.
+- Findings:
+  - Actions run 39453722349 completed with conclusion: success.
+  - Tests pass under Node 20 on ubuntu-latest.
+  - Classification remains RESEARCH / Claim 0.
+- Actions performed: Persisted PASS-2026-10-20-435.yaml; updated STATUS_REPORT, STATE, OPERATOR_QUEUE, HEADINGS. No code changes to blacksite.
+- Residual risks: Portfolio-wide inventory incomplete. Operator actions pending.
+- Exit: Slice complete (CI verified green). Portfolio-wide exit criteria NOT MET.
+
 ## Sweep-434 Randomized Portfolio Completion Sweep — blacksite
 
 - Timestamp: 2026-10-20 (16:01 UTC).
