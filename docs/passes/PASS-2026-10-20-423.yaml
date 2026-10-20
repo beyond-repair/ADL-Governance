@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-20-423
+  parent_pass: PASS-2026-10-20-422
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 5
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-BASILISK-DISCOVERY
+  description: Discover and audit current GitHub ecosystem state under ADL-BASILISK directive; persist machine-readable pass record.
+  reason_selected: Highest-value bounded slice is establishing fresh agent continuity via documented discovery of 83-repo portfolio and residual gaps without product changes.
+DISCOVERY:
+  findings:
+    - Authenticated identity beyond-repair (id 132061760). Search total_count=83, incomplete_results=false.
+    - ADL-Governance is canonical source of truth with docs/passes, PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+    - Latest prior sweep Sweep-422 confirmed forge-aegis ACTIVE claim-capped, CI green.
+    - Open Dependabot alerts exist in Digital_Double_virtual_workforce (development-scope medium/high, e.g. postcss-selector-parser, source-map-js, pytest).
+    - Multiple bots exist (Portfolio Sweep, Finish, etc.) but no single Nexus state beyond governance docs.
+    - Graphs (repository, capability, dependency, authority) remain incomplete portfolio-wide.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-20-423.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+  commits: []
+  capabilities_added_or_changed:
+    - Persistent Basilisk pass record for continuity
+VERIFICATION:
+  tests_run:
+    - Live GitHub search user:beyond-repair confirmed 83 repos
+    - Dependabot list Digital_Double_virtual_workforce open alerts observed
+    - File contents of governance docs retrieved
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem has 83 public/private repositories under beyond-repair.
+    - Governance docs are the persistent Nexus state for sweeps and passes.
+    - Product CI green on inspected ACTIVE repos; residuals are security and completeness.
+  failures: []
+  decisions:
+    - Docs-only pass for discovery. No product code changes. Preserve history.
+REMAINING:
+  incomplete:
+    - Full dependency/capability graphs for 83 repos
+    - Dependabot remediation in Digital_Double_virtual_workforce
+    - VSA UNVERIFIED portfolio-wide
+  blockers:
+    - Scale of full verification
+    - Operator review required for lockfile bumps
+  new_gaps:
+    - Explicit Basilisk pass sequence integration with existing Sweep history
+NEXT:
+  objective_id: GAP-DEPENDABOT-DDVW
+  action: Review and plan non-breaking update for open development-scope Dependabot alerts in Digital_Double_virtual_workforce (postcss-selector-parser >=7.1.6, source-map-js >=1.2.2).
+  reason: Security residual is the highest-value remaining bounded gap after discovery.
+  prerequisites:
+    - Confirm no production impact
+    - Run tests after any lockfile change
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - GitHub search total_count 83
+    - Dependabot alerts 174,172,171,169,168 observed open
+    - Prior Sweep-422 in PORTFOLIO_STATUS_REPORT.md
