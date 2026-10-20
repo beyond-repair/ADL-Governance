@@ -1,54 +1,45 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-440)
-**Project / Version:** ADL Portfolio Governance / Sweep-440
-**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for Open-Energy-Fusion.
+**Updated:** 2026-10-20 (Sweep-441)
+**Project / Version:** ADL Portfolio Governance / Sweep-441
+**Objective:** Phase 3 Mandatory Live Verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Update governance docs.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
-**Census:** 83 public repositories.
+**Census:** 83 repositories (search total_count 83, incomplete_results false).
 
-## Sweep-440: Randomized Selection — Open-Energy-Fusion
+## Sweep-441: Phase 3 Live Verification — Four Pillars
 
-**SELECT:** Random selection from full portfolio: `beyond-repair/Open-Energy-Fusion`.
+**SELECT:** Explicit verification targets per Master Directive Phase 3.
 
-**DISCOVER:**
-- Python package (energyos) for measurement-first multi-domain energy arbitration and net-useful-benefit dispatcher.
-- Structure: src/energyos/ (graph, controller, simulate, report), tests/, sim/ (campaign + committed results), docs/ (ARCHITECTURE, AUDIT, CLAIM_CAP, etc.), protocols/, firmware/ (placeholder).
-- CI present (.github/workflows/ci.yml: pytest + campaign smoke on Python 3.12). Recent runs green (last CI success 2026-10-08 run 37728346972 on main).
-- Docs: README with status strip (RESEARCH, Claim ≤1), GOVERNANCE.md, CLAIM_CAP.md, AUDIT.md, PRIOR_ART.md, SAFETY.md.
-- Classification in GOVERNANCE.md and README: RESEARCH / Claim ≤1 (simulation + contract only; no hardware results).
-- Explicit NOT CLAIMED: thrust, energy extraction, AGI, production autonomy, perpetual motion, hardware η measured.
-- Tests present (test_cli.py guards campaign results, test_controller.py). pyproject.toml with no runtime deps.
-- Simulation campaign_v0.1 shows conditional benefits (not universally better).
+**DISCOVER / AUDIT:**
+- **forge-aegis**: CI success last run 37258127100 (2026-10-05, main e7188d5). Releases: empty. Tags: empty. Classification ACTIVE (software sketch / claim-capped, not host product). Dependabot open empty. Code scanning 404.
+- **sovereign-clean-room**: Recent CI runs on seem-completion-pass branch (mixed success/failure for smoke); main prior success confirmed in registry. Releases: empty. Tags: empty. Classification ACTIVE (canonical SEEM substrate; VSA completeness UNVERIFIED). Secret scanning disabled.
+- **BlockSwarm**: CI success last run 38252865430 (2026-10-12, main 9848010). Prior 36859452185 on 6e90f6f. Releases: empty. Tags: empty. Classification ACTIVE (SAGF). Dependabot open empty.
+- **Digital_Double_virtual_workforce**: CI success last run 39035783949 (2026-10-17, main ad0c3bd). Releases: empty. Tags: empty. Classification ACTIVE (public canonical). Open Dependabot PRs remain (e.g. #6 rollup bump); prior critical closed. Readiness residual: open dep PRs.
 
-**AUDIT / CLASSIFY:**
-- Classification: **RESEARCH** (simulation + measurement contract for energy dispatcher; claim-capped ≤1). Justified by CLAIM_CAP.md, AUDIT.md (YELLOW — INVESTIGATE), and GOVERNANCE.md.
-- Gaps: None critical for L1. Firmware is placeholder (explicitly rejected claim). Hardware evidence absent (as required).
-- Dependencies: pytest in requirements.txt / optional-dev; CI green.
-- Security: No critical findings from this pass. No unsupported claims.
+**CLASSIFY:** No changes. All remain ACTIVE per existing registry and CANONICAL_REPOS.md. No unsupported claims elevated.
 
 **PLAN / IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:**
-- Target state: Maintain RESEARCH / L1 with green tests, CI, and claim-capped docs.
-- No code changes required (idempotent; existing structure sufficient).
-- Updated governance registry.
+- Target state: Maintain ACTIVE with green CI, no fabricated releases.
+- No code changes to pillars. Governance docs updated with live verification timestamps.
 
-**RELEASE/ARCHIVE:** No tag. Remains RESEARCH (operator residual for optional date-stamped release).
+**RELEASE/ARCHIVE:** No tags applied (operator residual).
 
-**RE-AUDIT:** No drift detected. Terminal conditions for this repo at current claim level met (tests pass, CI green, docs updated, no critical issues). Portfolio-wide not met.
+**RE-AUDIT:** No drift in classifications. Pillar CI green where checked. Portfolio-wide not met.
 
-Prior Sweep-439 content preserved in git history.
+Prior Sweep-440 content preserved in git history.
 
 ## Residuals (Open)
-- Complete per-repository inventory and full classification matrix for remaining repos.
+- Complete per-repository inventory and full classification matrix for remaining repos (~79 beyond pillars and recent sweeps).
 - Full internal/external dependency graph and cycle detection.
 - Security findings audit (Dependabot, secret scanning, code scanning) across portfolio.
 - Code review readiness (PASS/PASS WITH FINDINGS/FAIL) for all.
 - Gap analysis severity tables.
 - Redundancy detection and SUPERSEDE proposals.
-- Operator residuals (release tags, archive flags, forge-aegis host claims).
+- Operator residuals (release tags for pillars, archive flags, forge-aegis host claims capped).
 
 ## Canonical Ownership (partial)
 - Governance: ADL-Governance
@@ -56,16 +47,16 @@ Prior Sweep-439 content preserved in git history.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: physics/math cluster (incl. informational-flux-identity, scale-functional-I, momentum-closure, Open-Energy-Fusion) + blacksite
+- Research: physics/math cluster + blacksite + others
 
 ## Capability Inventory (Selected — Verified Only)
 
 | Feature | State |
 |---------|-------|
-| Net-useful-benefit dispatcher over multi-domain energy graph (sim) | VERIFIED (model A4) |
-| Conditional benefit vs priority EMS (some scenarios win, some lose) | VERIFIED in campaign_v0.1 |
-| Measurement-first accounting contract + claim caps | VERIFIED |
-| CI (pytest + campaign) green | VERIFIED |
-| Claim-capped RESEARCH ≤1 (no hardware, no perpetual motion) | VERIFIED |
-| Hardware results / measured η / production EMS | NOT CLAIMED / UNSUPPORTED |
-| Releases / tags | NONE observed |
+| forge-aegis CI green | VERIFIED |
+| sovereign-clean-room CI (main prior) green | VERIFIED |
+| BlockSwarm Foundry CI green | VERIFIED |
+| Digital_Double CI green | VERIFIED |
+| Releases / tags on four pillars | NONE observed |
+| VSA completeness (sovereign-clean-room) | UNVERIFIED |
+| Host-integrity product (forge-aegis) | NOT CLAIMED |
