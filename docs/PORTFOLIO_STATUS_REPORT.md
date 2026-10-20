@@ -1,7 +1,7 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-442)
-**Project / Version:** ADL Portfolio Governance / Sweep-442
+**Updated:** 2026-10-20 (Sweep-443)
+**Project / Version:** ADL Portfolio Governance / Sweep-443
 **Objective:** Randomized portfolio completion sweep on randomly selected repository. Update governance docs with classification and status.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
@@ -10,38 +10,36 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories (search total_count 83, incomplete_results false).
 
-## Sweep-442: Randomized Selection — fantom-smart-contracts-first-bot
+## Sweep-443: Randomized Selection — sunder
 
-**SELECT:** Random selection from full portfolio (83 repos): `beyond-repair/fantom-smart-contracts-first-bot`.
+**SELECT:** Random selection from residual RESEARCH cluster: `beyond-repair/sunder`.
 
 **DISCOVER / AUDIT:**
-- Tree: Multiple experimental `.rs` files (fantom *.rs, fanton rust *.rs with spaces in names), README.md, .gitignore, .gitattributes, .vs/ (Visual Studio index, not source).
-- No tests, no CI workflows, no Cargo.toml / package structure, no releases/tags.
-- README: Explicit ARCHIVE QUEUE banner, Claim 0, "Not a deployed system", "Do not use for live trading, deployment, or as a product".
-- Already listed in docs/archive_queue.md.
-- No security alerts observed in discovery (Dependabot not scanned this cycle).
-- Classification candidate: ARCHIVED (historical stubs, archive queue).
+- Tree: Python package structure (sunder/, tests/, docs/, pyproject.toml, CLAIM_STATUS.md, GOVERNANCE.md, .github).
+- CLAIM_STATUS.md: RESEARCH / Claim ≤1. Local heuristic SCAN/SNAP/SUNDER loop, VSA, gate, version-fork. No supervisor LLM. Not production agent.
+- Tests present. No open Dependabot alerts. No releases/tags.
+- Explicit non-claims preserved.
 
-**CLASSIFY:** ARCHIVED. Justification: Stub experimental Rust snippets, no tests/CI/docs beyond banner, explicit archive queue status, no active development or claims.
+**CLASSIFY:** RESEARCH. Justification: Experimental local coding-agent sketch with claim cap ≤1, tests, governance alignment. No promotion.
 
 **PLAN / IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:**
-- Target state: Confirmed ARCHIVED, governance updated. No safe idempotent code changes (no structure to test). Destructive (archive lock) queued for operator.
-- No code modifications to target repo. Governance docs updated.
+- Target state: Confirmed RESEARCH, governance updated. No code changes to target (idempotent reconfirm).
+- Governance docs updated with new PASS record.
 
-**RELEASE/ARCHIVE:** No release. Archive already queued (operator action).
+**RELEASE/ARCHIVE:** No release. No archive.
 
-**RE-AUDIT:** No drift. Remains historical stub. Portfolio-wide not met.
+**RE-AUDIT:** No drift. Remains RESEARCH experimental. Portfolio-wide not met.
 
-Prior Sweep-441 content preserved in git history.
+Prior Sweep-442 content preserved in git history.
 
 ## Residuals (Open)
-- Complete per-repository inventory and full classification matrix for remaining repos (~78 beyond recent sweeps and pillars).
+- Complete per-repository inventory and full classification matrix for remaining repos.
 - Full internal/external dependency graph and cycle detection.
-- Security findings audit (Dependabot, secret scanning, code scanning) across portfolio.
-- Code review readiness (PASS/PASS WITH FINDINGS/FAIL) for all.
+- Security findings audit across portfolio.
+- Code review readiness for all.
 - Gap analysis severity tables.
 - Redundancy detection and SUPERSEDE proposals.
-- Operator residuals (GitHub archive lock for queue items including this repo, release tags for pillars).
+- Operator residuals (GitHub archive lock for queue items, release tags for pillars).
 
 ## Canonical Ownership (partial)
 - Governance: ADL-Governance
@@ -49,12 +47,13 @@ Prior Sweep-441 content preserved in git history.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: physics/math cluster + blacksite + others
+- Research: physics/math cluster + blacksite + sunder + others
 
 ## Capability Inventory (Selected — Verified Only)
 
 | Feature | State |
 |---------|-------|
+| sunder | RESEARCH (heuristic local agent sketch, Claim ≤1) |
 | fantom-smart-contracts-first-bot | ARCHIVED (stub, archive queue) |
 | forge-aegis CI green | VERIFIED |
 | sovereign-clean-room CI (main prior) green | VERIFIED |
