@@ -1,34 +1,38 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-427)
-**Project / Version:** ADL Portfolio Governance / Sweep-427
-**Objective:** Master Directive v3.0 Portfolio Completion & Governance Sweep.
+**Updated:** 2026-10-20 (Sweep-428)
+**Project / Version:** ADL Portfolio Governance / Sweep-428
+**Objective:** Randomized Portfolio Completion Sweep — DISCOVER/AUDIT on randomly selected repository.
 
 Exit criteria NOT MET portfolio-wide.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap.
 
-## Sweep-427: Master Directive v3.0 Governed Sweep
+## Sweep-428: Randomized Selection — finite-gasket-spectral-derivatives
 
-**SELECT:** Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce; portfolio discovery confirmation (total_count=83).
+**SELECT:** Random selection from 83 repositories: `finite-gasket-spectral-derivatives`.
 
 **DISCOVER / AUDIT / CLASSIFY:**
-- Live search confirmed total_count=83 repositories under beyond-repair.
-- forge-aegis: Python. ACTIVE / RELEASE_BLOCKED_BY_OPERATOR. Claim software / RUNNABLE SKETCH (offline FLS v0.1). Latest CI on main: success (run 37258127100 on e7188d52). No open Dependabot observed in prior. Head e7188d529739652a2dd6264bd3d328c1f72e60e5. Claim-capped holds. No FLS expansion.
-- BlockSwarm: Solidity. ACTIVE. Latest CI on main: success (run 38252865430 on 98480104). Foundry green.
-- Digital_Double_virtual_workforce: TypeScript/Python. ACTIVE. Latest CI on main: success (run 39035783949 on ad0c3bd7 post form-data pin for CVE-2025-7783). Open issues: 5. Development-scope Dependabot residuals noted.
-- sovereign-clean-room: Python. ACTIVE. Latest CI on main: success (Python tests run 37064696194 on 4878918c). Residual PR branch CI noted in prior sweeps.
-- Classifications unchanged. No unsupported claims elevated. No critical unresolved CI failures on main for key repos.
+- Language: Python. Head: 236e2d1faeacd3cbfe3891472c14f6aba0f3471f.
+- Classification: RESEARCH. Claim cap ≤ 1 (finite discrete kernel identities). No continuum, no selected W, no thrust. Explicitly claim-capped.
+- Features: Kernel evaluation (Gamma_loop, dGamma/dW, V''), decimation numerics, residue condition checks, extensive mathematical documentation in README (power series, truncation remainder, hypergeometric form, lambda=6 eigenspace split, free mult(6) theorem).
+- Tests: unittest in tests/test_spectral_derivatives.py and test_cli.py. CI workflow kernel.yml runs on push/PR.
+- Latest CI: success (run 38806232309 on 236e2d1, spectral-kernel, 2026-10-15). Multiple prior successes.
+- Dependencies: NumPy, optional python-flint for residue checks. pyproject.toml present.
+- No critical security issues observed. No unsupported claims elevated. Documentation extensive and consistent with claim cap.
+- Open issues: 0. No stale registry entries for this repo noted.
 
-**PLAN / IMPLEMENT:** Documentation updates only. Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No product code changes. No destructive actions. History preserved.
+**PLAN / IMPLEMENT:** Documentation updates only in ADL-Governance. No product code changes. No destructive actions. History preserved. Idempotent re-audit.
 
-**TEST / CI / DOCUMENT / GOVERN:** Live workflow runs observed (success conclusions). Claim discipline preserved. Evidence: live API + Actions > prior docs.
+**TEST / CI / DOCUMENT / GOVERN:** Live CI green. Claim discipline preserved. Evidence: live Actions runs + repository tree + README.
 
-**RELEASE / RE-AUDIT:** No tags created. Residuals: portfolio-wide exit criteria NOT MET (full 83-repo phases incomplete: capability inventory, dependency graph, gap analysis, redundancy detection, code review readiness for all; VSA UNVERIFIED; open development-scope Dependabot in Digital_Double_virtual_workforce; sovereign-clean-room branch residuals; forge-aegis RELEASE_BLOCKED_BY_OPERATOR). Cycle complete for this governed sweep. Stop. Do not enter autonomous infinite review cycle.
+**RELEASE / RE-AUDIT:** No tags. Classification RESEARCH unchanged. Residuals portfolio-wide remain (full 83-repo phases incomplete; prior key-repo residuals unchanged).
+
+Cycle complete for this random selection. Termination conditions met for this repo (docs/tests/CI green, claim-capped, no critical issues). Next random selection deferred.
 
 Prior content preserved below for continuity.
 
 ---
 
-[Full prior Sweep-426 and earlier content retained in git history. Pattern matches previous updates.]
+[Full prior Sweep-427 and earlier content retained in git history.]
