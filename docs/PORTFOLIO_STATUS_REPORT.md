@@ -1,14 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-448)
-**Project / Version:** ADL Portfolio Governance / Sweep-448
-**Objective:** Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce; governance update.
+**Updated:** 2026-10-20 (Sweep-449)
+**Project / Version:** ADL Portfolio Governance / Sweep-449
+**Objective:** Randomized portfolio completion sweep — SELECT beyond-repair (profile); DISCOVER → AUDIT → CLASSIFY → govern.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories (search total_count 83, incomplete_results false).
+
+## Sweep-449: Randomized Selection — beyond-repair (profile)
+
+**SELECT:** beyond-repair/beyond-repair (random from 83).
+
+**DISCOVER:**
+- Files: README.md (profile index, pillars, census pointer), CLAIM_STATUS.md, GOVERNANCE.md.
+- No source code, no tests, no .github/workflows, no dependencies.
+- Classification in GOVERNANCE.md: RESEARCH (profile / index surface). Not ACTIVE product.
+- Claim level 0 (index/narrative). Points to ADL-Governance for all classification and claim validation.
+
+**AUDIT:** Fully documented as profile-only. No undefined components. No stale code (none present). No tests/CI required. Census note in CLAIM_STATUS.md references 75 (Sweep-103); live search is 83.
+
+**CLASSIFY:** RESEARCH (profile / index surface). Justification: Explicitly non-product; governance pointer only. No runtime, no claims beyond index.
+
+**PLAN:** Target state: claim-capped profile index with consistent census. Actions: governance docs update only. No safe code changes applicable.
+
+**IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:** Governance docs updated. No target changes. No deletions, no history rewrites. No unsupported claims.
+
+**RELEASE/ARCHIVE:** None (not a product; no tags required).
+
+**RE-AUDIT:** No drift. Profile remains claim-capped. Portfolio-wide exit criteria NOT MET.
 
 ## Sweep-448: Mandatory Live Verification — Four Pillars
 
@@ -41,7 +63,7 @@ Prior Sweep-447 / Sweep-446 content preserved in git history.
 - Code review readiness for all.
 - Gap analysis severity tables.
 - Redundancy detection and SUPERSEDE proposals (Digital Double variants observed).
-- Operator residuals (GitHub archive lock for queue items, release tags for pillars, Godot smoke verification for Project-Cold-Boot, pytest pin updates).
+- Operator residuals (GitHub archive lock for queue items, release tags for pillars, Godot smoke verification for Project-Cold-Boot, pytest pin updates, census note in beyond-repair CLAIM_STATUS.md).
 
 ## Canonical Ownership (partial)
 - Governance: ADL-Governance
@@ -50,11 +72,13 @@ Prior Sweep-447 / Sweep-446 content preserved in git history.
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce (variants exist — redundancy candidate)
 - Research: physics/math cluster + blacksite + sunder + seem-sunder-bridge + Project-Cold-Boot + others
+- Profile index: beyond-repair (RESEARCH)
 
 ## Capability Inventory (Selected — Verified Only)
 
 | Feature | State |
 |---------|-------|
+| beyond-repair profile index (README + claim-capped) | VERIFIED (present) |
 | forge-aegis CI workflow + claim-capped README | VERIFIED (present) |
 | sovereign-clean-room CI workflow | VERIFIED (present) |
 | BlockSwarm Foundry CI workflow | VERIFIED (present) |
