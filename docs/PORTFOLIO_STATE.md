@@ -1,6 +1,6 @@
 # Portfolio State (Locked)
 
-**As of:** 2026-10-20 (post Sweep-447, PASS-2026-10-20-447)
+**As of:** 2026-10-20 (post Sweep-452, PASS-2026-10-20-448)
 
 ## Priority queue
 
@@ -20,10 +20,10 @@
 | Digital_Double_virtual_workforce | ACTIVE | Public canonical; CI green (Sweep-400); prior Dependabot critical residual now no open issues observed; evidence PR residuals (operator) |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; CI green (Sweep-400); VSA completeness UNVERIFIED |
 | BlockSwarm | ACTIVE | SAGF; CI success (Sweep-400); tag PENDING operator |
-| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-447 |
+| ADL-Governance | ACTIVE / MAINTAIN | Registry + constitution (this repo); live census 83; PASS-2026-10-20-448 |
 | ADL-SEEM | ACTIVE | SEEM-specific constitution |
 | blacksite | RESEARCH | Sweep-435: CI green verified (run 39453722349 success); experimental isometric stealth prototype; claim-capped |
-| coherence-drive + satellites | RESEARCH | Claim discipline; no lab thrust claim |
+| coherence-drive + satellites | RESEARCH | Sweep-452: RESEARCH / Claim-0 / ≤2 reconfirmed; Stage-1 freeze; no CI workflow; no Dependabot alerts; no lab thrust claim |
 | bloch-coherence-factor2 | RESEARCH | Sweep-173; local pytest 11 passed; main Actions success; loop branch not promoted |
 | topological-pinch | RESEARCH | Sweep-172; proxy not 0.92; CI success |
 | mend | RESEARCH | Sweep-170; formula witness local PASS; playable product NOT verified |
@@ -50,4 +50,4 @@
 - CHANGE → IMPLEMENT → TEST → CI → DOCUMENT → REGISTRY → RELEASE/ARCHIVE
 - Claim levels strictly enforced; documentation ≠ implementation; never fabricate verification.
 - Operator-only: GitHub archive flags, release tags, Dependabot merges, secret rotation, claim elevation.
-- Random selection cycles document RESEARCH state without promotion. blacksite CI now green. -Entanglement-and-Emergence CI green with residual Dependabot.
+- Random selection cycles document RESEARCH state without promotion. blacksite CI now green. -Entanglement-and-Emergence CI green with residual Dependabot. coherence-drive reconfirmed no CI.
