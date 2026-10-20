@@ -1,46 +1,42 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (PASS-2026-10-20-432 verification of Sweep-431)
-**Project / Version:** ADL Portfolio Governance / Sweep-431 verified
-**Objective:** Randomized portfolio completion sweep — DISCOVER through GOVERN for selected repo + post-verification.
+**Updated:** 2026-10-20 (Sweep-432)
+**Project / Version:** ADL Portfolio Governance / Sweep-432
+**Objective:** Randomized portfolio completion sweep — DISCOVER through RE-AUDIT for selected repo.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 
-## Sweep-431 Verified: -Entanglement-and-Emergence CI Green
+## Sweep-432: Randomized Selection — -ware-constant-derivation
 
-**VERIFICATION (PASS-432):** Live GitHub Actions run 39435557142 on main completed with **conclusion: success**. CI green confirmed for the added pytest workflow.
-
-## Sweep-431: Randomized Selection — -Entanglement-and-Emergence
-
-**SELECT:** Randomly selected `-Entanglement-and-Emergence` from 83 repositories.
+**SELECT:** Randomly selected `-ware-constant-derivation` from 83 repositories.
 
 **DISCOVER:**
-- Structure: Python package `entanglement_emergence` with spin_chain.py (1D XX+ZZ ED toy), demo.py, main.py, tests/ (hamiltonian, entropy, metric, CLI), data/, figures/, CLAIMS.md, RESEARCH.md, README.md, pyproject.toml, requirements.txt.
-- Dependencies: numpy==2.2.4, matplotlib==3.10.3, pytest==8.3.5.
-- Existing: tests present, no prior CI (.github absent), documented as RESEARCH Claim-≤1.
+- Structure: Extensive research documentation (multiple PROOF_*.md, CONSTANT_W_ACTION_PRINCIPLE.md, CLAIM_STATUS.md, STATUS_LOCK, FALSIFICATION, ADDENDUM files), verification scripts (verify_*.py), run_derivation_checks.py, main.py, tests/, .github/workflows/checks.yml (pytest + runner on Python 3.12), requirements.txt, pyproject implied.
+- Dependencies: Tracked in requirements.txt.
+- Existing: Tests present, CI workflow present, thoroughly documented as RESEARCH Claim-≤2 / Claim-0 runnable sketch. Explicitly states experimental_validation=false, thrust_validated=false, W≈0.08 NOT DERIVED, several specific claims REJECTED or FAILED or OPEN.
 
-**AUDIT:** Compliant with RESEARCH classification in README and RESEARCH.md. No undocumented core components for Claim-0 toy. Stale: none critical. Missing: CI workflow.
+**AUDIT:** Compliant with RESEARCH classification and claim caps per CLAIM_STATUS.md, README, LIFECYCLE.md, CLAIM_VALIDATION. No undocumented core components for the Claim-0 scope. No critical stale entries. CI and tests present.
 
-**CLASSIFY:** RESEARCH (justified: essay + Claim-0 numerical sketch; not validated as derivation of Einstein gravity; per existing CLAIMS.md and LIFECYCLE.md).
+**CLASSIFY:** RESEARCH (justified: mathematical/symbolic derivation checks and identity verifications; not experimental validation; W≈0.08 explicitly not derived; per existing CLAIM_STATUS.md and STATUS_LOCK).
 
-**PLAN:** Target state: CI-green for tests, docs updated in governance. Actions: add idempotent .github/workflows/ci.yml running pytest.
+**PLAN:** Target state: Governance documentation updated; CI presence confirmed. No additional safe code changes required (already has CI, tests, strict claim language). Actions: update governance reports.
 
-**IMPLEMENT:** Pushed CI workflow (safe, non-destructive).
+**IMPLEMENT:** No code changes to the selected repo (idempotent; already governed). Governance docs updated.
 
-**TEST → CI:** Workflow added; pytest expected to pass. Live CI run status now **VERIFIED success** (run 39435557142).
+**TEST → CI:** Workflow present (checks.yml runs pytest -q and run_derivation_checks.py). Live CI green status not re-verified in this cycle (assumed from prior presence; residual if needed).
 
-**DOCUMENT:** This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated; PASS yaml persisted.
+**DOCUMENT:** This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
 
-**GOVERN:** No unsupported claims (explicitly not claiming Level 2+ validation). No critical security issues identified. Dependencies tracked in requirements.txt / pyproject.toml.
+**GOVERN:** No unsupported claims (explicitly labels false/not derived/rejected). No critical security issues identified. Dependencies tracked.
 
-**RELEASE/ARCHIVE:** None (RESEARCH; no terminal complete for full essay claims).
+**RELEASE/ARCHIVE:** None (RESEARCH; no terminal complete for full claims).
 
-**RE-AUDIT:** CI presence and green status confirmed. Termination conditions advanced for this RESEARCH repo. Portfolio-wide NOT MET.
+**RE-AUDIT:** Structure, claims language, CI presence confirmed. Termination conditions advanced for this RESEARCH repo (docs consistent, CI present, no unsupported claims). Portfolio-wide NOT MET.
 
-Prior Sweep-430 content preserved in git history.
+Prior Sweep-431 content preserved in git history.
 
 ---
 
