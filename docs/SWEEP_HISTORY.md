@@ -1,3 +1,20 @@
+## Sweep-426 ADL-BASILISK reconstruction — PASS-2026-10-20-426
+
+- Timestamp: 2026-10-20T03:06Z UTC.
+- Objective: Reconstruct ecosystem from ADL-Governance and portfolio census; confirm Sweep-425 residuals; persist BASILISK pass.
+- Selected: Governance state reconstruction (highest-value for continuity).
+- DISCOVER: user:beyond-repair total_count=83. Latest Sweep-425 on ADL-Nexus RESEARCH CI green. Residuals: full graphs incomplete, VSA UNVERIFIED, Digital_Double Dependabot residuals, forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
+- AUDIT: Claim discipline and classifications hold. Pass schema consistent. No new product claims.
+- CLASSIFY: No changes. Maintenance confirmed.
+- PLAN: Persist new PASS yaml and update history. No code changes.
+- IMPLEMENT: Created docs/passes/PASS-2026-10-20-426.yaml; updated this file.
+- TEST/CI: Schema match verified manually against existing patterns. No new CI runs.
+- DOCUMENT: Pass record and history updated.
+- GOVERN: Evidence hierarchy preserved. Failures (bot usage) documented as knowledge.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Reconstruction complete. Residuals unchanged. Next bounded: Dependabot audit in Digital_Double_virtual_workforce.
+- Exit: Pass persisted. Ready for next slice.
+
 ## Sweep-425 Random re-audit ADL-Nexus — PASS-2026-10-20-425
 
 - Timestamp: 2026-10-20T03:01Z UTC.
