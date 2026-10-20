@@ -1,3 +1,19 @@
+## Sweep-437 Randomized Selection — momentum-closure
+
+- Timestamp: 2026-10-20 (17:00 UTC approx).
+- Scope: Random selection from full portfolio (83 repos).
+- Selected: beyond-repair/momentum-closure.
+- Findings:
+  - Classification: RESEARCH / Claim level 1 (conceptual mathematical framework).
+  - CI present: pytest workflow on Python 3.12.
+  - Tests present for tensor, fixtures, geometry/feed.
+  - Docs complete: README, CLAIM_STATUS, GOVERNANCE, CLAIMS, RESEARCH, framework review.
+  - Explicit UNSUPPORTED for mesh-converged residual, physical thrust, energy extraction, Ware momentum flux.
+  - No releases/tags. No critical gaps for L1.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md and SWEEP_HISTORY.md. No code changes to momentum-closure. No deletions, no history rewrites.
+- Residual risks: Portfolio-wide inventory incomplete. Operator residuals remain.
+- Exit: Slice complete (RESEARCH reconfirmed, governance updated). Portfolio-wide exit criteria NOT MET.
+
 ## Sweep-436 Phase 3 Pillar Live Verification
 
 - Timestamp: 2026-10-20 (16:14 UTC).
@@ -13,17 +29,4 @@
 - Residual risks: Portfolio-wide inventory, dependency graph, security audit, code review readiness incomplete. Operator residuals remain.
 - Exit: Slice complete (pillars re-verified). Portfolio-wide exit criteria NOT MET.
 
-## Sweep-435 blacksite CI Verification
-
-- Timestamp: 2026-10-20 (16:07 UTC).
-- Scope: Residual verification of Sweep-434 CI addition on blacksite.
-- Selected: beyond-repair/blacksite.
-- Findings:
-  - Actions run 39453722349 completed with conclusion: success.
-  - Tests pass under Node 20 on ubuntu-latest.
-  - Classification remains RESEARCH / Claim 0.
-- Actions performed: Persisted PASS-2026-10-20-435.yaml; updated STATUS_REPORT, STATE, OPERATOR_QUEUE, HEADINGS. No code changes to blacksite.
-- Residual risks: Portfolio-wide inventory incomplete. Operator actions pending.
-- Exit: Slice complete (CI verified green). Portfolio-wide exit criteria NOT MET.
-
-[Prior Sweep-434 content preserved in git history.]
+[Prior Sweep-435 and earlier content preserved in git history.]
