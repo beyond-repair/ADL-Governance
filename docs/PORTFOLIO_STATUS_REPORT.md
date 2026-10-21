@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-469 / Discovery Confirmation & blacksite)
-**Project / Version:** ADL Portfolio Governance / Sweep-469
-**Objective:** Portfolio discovery confirmation and targeted verification.
+**Updated:** 2026-10-21 (Sweep-470 / Digital_Double_virtual_workforce)
+**Project / Version:** ADL Portfolio Governance / Sweep-470
+**Objective:** Randomized selection and discovery on Digital_Double_virtual_workforce.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -10,19 +10,19 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-469: Discovery Confirmation & blacksite Verification
+## Sweep-470: Randomized Selection Digital_Double_virtual_workforce
 
-**SELECT:** Full inventory + blacksite.
+**SELECT:** Digital_Double_virtual_workforce (random).
 
-**DISCOVER:** 83-name set reconfirmed. blacksite tree and CI verified: deterministic JS prototype, tests, success CI run, claim-capped README.
+**DISCOVER:** Python core + optional React dashboard. Smoke test + minimal CI. Nested legacy package present. Classified ACTIVE.
 
-**AUDIT:** RESEARCH classification holds. No unsupported claims.
+**AUDIT:** ACTIVE holds. Minimal CI coverage. Redundancy in nested dirs.
 
-**CLASSIFY:** RESEARCH for blacksite. Pillars remain ACTIVE (prior verification).
+**CLASSIFY:** ACTIVE.
 
-**PLAN/IMPLEMENT:** Governance docs updated only.
+**PLAN/IMPLEMENT:** Docs updated. Code changes deferred to safe follow-ups.
 
-**TEST/CI:** blacksite CI success observed.
+**TEST/CI:** Smoke present; full verification pending.
 
 **DOCUMENT/GOVERN:** Residuals recorded. No destructive.
 
@@ -38,7 +38,7 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 - sovereign-clean-room
 
 ### RESEARCH (claim-capped; most unaudited in depth)
-Preserved. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, SovereignOS, blacksite (this sweep), and unaudited names defaulting to RESEARCH.
+Preserved. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, SovereignOS, blacksite, and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
 Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived; etc.
@@ -52,12 +52,13 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Full name inventory (83) locked from search | VERIFIED |
 | Prior pillar CI/structure checks | VERIFIED (Sweep-467) |
 | blacksite deterministic prototype + CI success | VERIFIED (Sweep-469) |
+| Digital_Double_virtual_workforce core + smoke CI | PARTIAL (Sweep-470) |
 | Releases / tags on four pillars | NONE observed (prior) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
 
 ## Residuals (Open — Exit Criteria Fail)
-- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~67+).
+- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~66+).
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals.
@@ -65,6 +66,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Code review readiness for all.
 - Operator actions: archive locks, release tags.
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
+- Expand CI and resolve nested package in Digital_Double_virtual_workforce.
 - No infinite loop entered. Residuals recorded.
 
 ## Canonical Ownership (partial, preserved)
@@ -75,4 +77,4 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Workforce Automation: Digital_Double_virtual_workforce
 - Research: ADL-Nexus and experimental cluster (including blacksite, SovereignOS)
 
-Prior content and git history preserved. Sweep-469 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-470 complete. Exit criteria not fully satisfied.
