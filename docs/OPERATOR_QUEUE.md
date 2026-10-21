@@ -1,5 +1,38 @@
 # Operator Queue
 
+## Sweep-464 / Master Directive v3.0 — Portfolio Discovery (completed slice)
+
+Live discovery of 83 repositories. Documentation updated. No destructive actions.
+
+### Findings this cycle
+- Census reconfirmed: 83 repositories (search total_count 83, incomplete_results false).
+- Classifications preserved from registry. No new evidence for reclassification.
+- Phase 3 prior verification noted for pillars. Residuals for deep verification of remaining ~70+ repositories.
+- Full dependency graph, gap analysis, redundancy formalization, and code review readiness remain open.
+- Docs-only governance updates performed.
+
+### Residuals (require future cycles or operator review)
+- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~70+).
+- Full internal/external dependency graph and cycle detection.
+- Gap analysis severity tables.
+- Redundancy formalization and SUPERSEDE proposals (Digital Double variants, SEEM family).
+- Security / Dependabot review and merge for open PRs (Digital_Double, ADL-Nexus, etc.).
+- Code review readiness assessment for all repositories.
+- Execute GitHub archive lock for archive_queue items when gates met.
+- Release tags for pillars (operator-only; none present previously).
+- Godot headless smoke verification for Project-Cold-Boot.
+- Remaining pytest pins or Dependabot merges.
+- forge-aegis host-integrity product claims remain capped; RELEASE_BLOCKED_BY_OPERATOR.
+- VSA completeness in sovereign-clean-room remains UNVERIFIED.
+- ADL-Nexus: review/merge open PRs when ready; live interop remains operator-gated and UNSUPPORTED.
+
+### No queued destructive proposals beyond existing archive queue
+- No repository deletions.
+- No history rewrites.
+- No high-risk migrations proposed this cycle.
+
+Next: Future residual sweeps or operator-directed deep verification. Portfolio remains claim-capped and historically preserved. Exit criteria NOT MET. Stop after this governed sweep.
+
 ## Sweep-463 / PASS-2026-10-21-427 — Dependency Hygiene: adl-capability-matrix (completed slice)
 
 Live DISCOVER/AUDIT + pin on adl-capability-matrix.
@@ -14,52 +47,19 @@ Live DISCOVER/AUDIT + pin on adl-capability-matrix.
 - Full internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals (Digital Double variants, SEEM family).
-- Security / Dependabot review and merge for open PRs (Digital_Double rollup etc.; ADL-Nexus open PRs). Explicitly queued for DDVW: review postcss-selector-parser >=7.1.6, source-map-js >=1.2.2, pytest >=9.0.3 for non-breaking update. adl-capability-matrix and sunder-cleanroom pins completed.
+- Security / Dependabot review and merge for open PRs.
 - Code review readiness assessment for all repositories.
 - Execute GitHub archive lock for archive_queue items when gates met.
-- Release tags for pillars (operator-only; none present — confirmed Sweep-461).
+- Release tags for pillars.
 - Godot headless smoke verification for Project-Cold-Boot.
-- Update pytest pin in -Entanglement-and-Emergence and seem-sunder-bridge to ≥9.0.3 (or merge Dependabot).
-- forge-aegis host-integrity product claims remain capped; RELEASE_BLOCKED_BY_OPERATOR.
-- VSA completeness in sovereign-clean-room remains UNVERIFIED.
-- ADL-Nexus: review/merge open PRs when ready; live sunder/clean-room interop remains operator-gated and UNSUPPORTED.
+- Remaining dependency hygiene.
+- forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
+- VSA completeness UNVERIFIED.
+- ADL-Nexus open PRs and interop UNSUPPORTED.
 
 ### No queued destructive proposals beyond existing archive queue
 - No repository deletions.
 - No history rewrites.
 - No high-risk migrations proposed this cycle.
 
-Next: Continue residual Dependabot hygiene or randomized residual sweeps. Portfolio remains claim-capped and historically preserved. Exit criteria NOT MET.
-
-## Sweep-462 / PASS-2026-10-21-426 — Randomized sunder-cleanroom-vsa-adapter (completed slice)
-
-Live DISCOVER/AUDIT on randomly selected `sunder-cleanroom-vsa-adapter`.
-
-### Findings this cycle
-- RESEARCH claim-capped name-only adapter. Dims mismatch documented. CI and tests present.
-- Dependabot alert #1 (pytest 8.3.5 < 9.0.3, medium) addressed by direct pin update to 9.0.3 in requirements.txt and pyproject.toml. Commits pushed. Alert should clear on next Dependabot scan or operator dismiss/confirm.
-- No destructive actions. Docs-only governance updates.
-
-### Residuals (require future cycles or operator review)
-- Deep per-repository verification (tree, CI, tests, security) for remaining unaudited names (~70+).
-- Full internal/external dependency graph and cycle detection.
-- Gap analysis severity tables.
-- Redundancy formalization and SUPERSEDE proposals (Digital Double variants, SEEM family).
-- Security / Dependabot review and merge for open PRs (Digital_Double rollup etc.; ADL-Nexus open PRs). Explicitly queued for DDVW: review postcss-selector-parser >=7.1.6, source-map-js >=1.2.2, pytest >=9.0.3 for non-breaking update. sunder-cleanroom pin completed this sweep.
-- Code review readiness assessment for all repositories.
-- Execute GitHub archive lock for archive_queue items when gates met.
-- Release tags for pillars (operator-only; none present — confirmed Sweep-461).
-- Godot headless smoke verification for Project-Cold-Boot.
-- Update pytest pin in -Entanglement-and-Emergence and seem-sunder-bridge to ≥9.0.3 (or merge Dependabot).
-- forge-aegis host-integrity product claims remain capped; RELEASE_BLOCKED_BY_OPERATOR.
-- VSA completeness in sovereign-clean-room remains UNVERIFIED.
-- ADL-Nexus: review/merge open PRs when ready; live sunder/clean-room interop remains operator-gated and UNSUPPORTED.
-
-### No queued destructive proposals beyond existing archive queue
-- No repository deletions.
-- No history rewrites.
-- No high-risk migrations proposed this cycle.
-
-Next: Continue randomized residual sweeps. Portfolio remains claim-capped and historically preserved. Exit criteria NOT MET.
-
-[Prior Sweep-461 content preserved in git history.]
+[Prior content preserved in git history.]
