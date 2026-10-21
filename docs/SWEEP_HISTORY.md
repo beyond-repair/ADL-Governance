@@ -1,3 +1,17 @@
+## Sweep-456 Randomized Selection — ADL-Nexus
+
+- Timestamp: 2026-10-20 (current).
+- Scope: Randomly selected ADL-Nexus from 83-repo portfolio.
+- Findings:
+  - Census 83 confirmed live.
+  - Tree: layered (core, layers 0-8, adapters/cleanroom + sunder, clients Godot/web, docs/CLAIM_STATUS.md etc.).
+  - README + CLAIM_STATUS.md: Lifecycle RESEARCH, claim ≤1, version 0.3.2, CI green on prior head, 49 tests, live adapters/full autonomy UNSUPPORTED.
+  - CI workflow present. Open PRs #1 (draft), #2, #4 exist.
+  - Classification remains RESEARCH (locked). No unsupported claims advanced. Code > docs enforced.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md. No code changes to implementation repos. No deletions, no history rewrites.
+- Residual risks: Open PRs require future review. Live interop UNVERIFIED/UNSUPPORTED. Deep verification of remaining repos incomplete. Portfolio-wide exit criteria NOT MET.
+- Exit: Slice complete (ADL-Nexus reconfirmed RESEARCH with live tree/CI/claim checks). Portfolio-wide exit criteria NOT MET. Stopped.
+
 ## Sweep-455 Mandatory Live Verification — Four Pillars
 
 - Timestamp: 2026-10-20 (current).
