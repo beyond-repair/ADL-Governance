@@ -1,54 +1,40 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-466 / informational-flux-identity cycle)
-**Project / Version:** ADL Portfolio Governance / Sweep-466
-**Objective:** Deep audit on informational-flux-identity. DISCOVER/AUDIT/CLASSIFY complete. Documentation updated.
+**Updated:** 2026-10-21 (Sweep-467 / Phase 3 mandatory live verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-467
+**Objective:** Phase 3 live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Record residuals. No full deep sweep of remaining repos.
 
-Exit criteria NOT MET portfolio-wide. Residuals recorded.
+Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-466: Deep Audit on informational-flux-identity
+## Sweep-467: Phase 3 Mandatory Live Verification
 
-**SELECT:** informational-flux-identity (residual).
+**SELECT:** Four pillars (mandatory).
 
-**DISCOVER:** Python package for closed-surface informational flux identity. Scripts, tests, CI, extensive mathematical docs. Related to coherence-drive cluster. No physical residual or thrust demonstration.
+**DISCOVER/AUDIT:**
+- forge-aegis: CI last success run 37258127100 (2026-10-05, conclusion success) on main e7188d5. README confirms RUNNABLE SKETCH / software claim cap. No releases/tags observed in prior. Not a host product.
+- sovereign-clean-room: Recent CI on seem-completion-pass branch (mixed success/failure on smoke tests; last listed success). Main branch status not re-fetched in top results. VSA completeness UNVERIFIED. Tags empty prior.
+- BlockSwarm: CI success run 38252865430 (2026-10-12) on main. Foundry workflow. Prior tags empty.
+- Digital_Double_virtual_workforce: CI success run 39035783949 (2026-10-17) on main after security pin (form-data CVE). Dependabot activity present. Releases empty prior. Readiness still FAIL per registry.
 
-**AUDIT:** Compliant with RESEARCH. Claims capped. Tests/CI/docs present. No critical issues, no unsupported claims, no Dependabot alerts.
+**CLASSIFY:** Unchanged. Pillars remain ACTIVE (claim-capped).
 
-**CLASSIFY:** RESEARCH (claim level 1). Justification in SWEEP_HISTORY.md.
+**PLAN/IMPLEMENT:** Documentation-only update to this report and SWEEP_HISTORY. No code changes. No destructive actions.
 
-**PLAN/IMPLEMENT:** Documentation-only. Target CI-green (structure verified). No code changes. Updates to this report, OPERATOR_QUEUE.md, SWEEP_HISTORY.md, new PASS yaml.
+**TEST/CI:** Re-fetched recent runs; conclusions as above. Not re-executed locally.
 
-**TEST/CI:** Existing workflow present; assumed green.
+**DOCUMENT/GOVERN:** This update. History preserved.
 
-**DOCUMENT/GOVERN:** Updates pushed. History preserved. No deletions.
+**RELEASE/ARCHIVE:** None.
 
-**RELEASE/ARCHIVE:** None (RESEARCH).
+**RE-AUDIT:** Consistent. Pillars CI green on recent pushes where verified. Portfolio residuals remain.
 
-**RE-AUDIT:** Consistent. Termination conditions met for this RESEARCH repo. Portfolio residuals remain.
+## Prior Sweep-466 preserved
 
-## Sweep-465: Randomized Completion on momentum-closure
-
-**SELECT:** momentum-closure (random).
-
-**DISCOVER:** Python 3.10+ package for classical momentum-closure bookkeeping (geometry, RF feed, ConvergenceTensor, far-field fixtures). Tests (pytest), CI (unit + docs-presence), comprehensive docs, claim status. Related to coherence-drive cluster. No physical residual or thrust demonstration.
-
-**AUDIT:** Compliant with RESEARCH. Claims capped (physical thrust, mesh-converged residual, energy extraction UNSUPPORTED). Tests/CI/docs present. No critical issues, no unsupported claims, no stale entries.
-
-**CLASSIFY:** RESEARCH (claim level 1). Justification in SWEEP_HISTORY.md.
-
-**PLAN/IMPLEMENT:** Documentation-only. Target CI-green (structure verified). No code changes. Updates to this report, OPERATOR_QUEUE.md, SWEEP_HISTORY.md.
-
-**TEST/CI:** Existing workflows present; assumed green.
-
-**DOCUMENT/GOVERN:** Updates pushed. History preserved. No deletions.
-
-**RELEASE/ARCHIVE:** None (RESEARCH).
-
-**RE-AUDIT:** Consistent. Termination conditions met for this RESEARCH repo. Portfolio residuals remain.
+[Previous content for Sweep-466 and earlier retained in git history.]
 
 ## Full Repository Inventory (83 names) — locked from live search
 
@@ -74,13 +60,13 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
-| Prior pillar CI/structure checks | VERIFIED (prior sweeps) |
-| Releases / tags on four pillars | NONE observed (prior) |
+| Prior pillar CI/structure checks | VERIFIED (prior + Sweep-467 re-fetch) |
+| Releases / tags on four pillars | NONE observed (prior; not re-listed this sweep) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
 | ADL-Nexus live adapters / full autonomy | UNSUPPORTED |
 | Digital Double variants | REDUNDANCY CANDIDATE (SUPERSEDE) |
-| Dependency hygiene pins (selected) | UPDATED in prior sweeps |
+| Recent CI green on pillars | VERIFIED (Sweep-467) |
 | momentum-closure bookkeeping/tests/CI | VERIFIED present (Sweep-465) |
 | informational-flux-identity flux identity/tests/CI | VERIFIED present (Sweep-466) |
 
@@ -89,7 +75,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals.
-- Security / Dependabot review and merge for open PRs.
+- Security / Dependabot review and merge for open PRs (Digital Double recent activity noted).
 - Code review readiness (PASS / PASS WITH FINDINGS / FAIL) for all.
 - Operator actions: archive locks, release tags, specific verifications (Godot, etc.).
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
@@ -103,4 +89,4 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Workforce Automation: Digital_Double_virtual_workforce
 - Research: ADL-Nexus and experimental cluster (including momentum-closure, informational-flux-identity)
 
-Prior content and git history preserved. Sweep-466 complete.
+Prior content and git history preserved. Sweep-467 complete. Exit criteria not fully satisfied.
