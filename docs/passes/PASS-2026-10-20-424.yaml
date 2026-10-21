@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-20-424
+  parent_pass: PASS-2026-10-20-423
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 5
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-DEPENDABOT-DDVW-DOC
+  description: Reconstruct current ecosystem from GitHub + governance state; document open Dependabot alerts in Digital_Double_virtual_workforce as highest-value residual without applying changes.
+  reason_selected: Highest-value bounded next slice after prior discovery is security residual formalization. Development-scope alerts do not affect production runtime claims; operator review required before lockfile bumps.
+DISCOVERY:
+  findings:
+    - Authenticated identity beyond-repair (id 132061760). Live search confirms 83 repositories.
+    - Latest prior: Sweep-459 reconfirmed new-program-1.01 SUPERSEDED; PASS-423 discovery pass.
+    - Digital_Double_virtual_workforce has open Dependabot alerts (e.g. 174 postcss-selector-parser medium dev, 169 source-map-js high dev, 168 pytest medium dev, others).
+    - All observed alerts are development-scope or build-time; ordinary trusted-source build use not affected per advisories.
+    - Graphs remain incomplete. ADL-Nexus RESEARCH claim-capped. No unsupported product claims advanced.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-20-424.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Persistent Basilisk pass for Dependabot residual documentation
+VERIFICATION:
+  tests_run:
+    - Live GitHub search user:beyond-repair total_count=83 incomplete_results=false
+    - Dependabot list Digital_Double_virtual_workforce open alerts retrieved (174,172,171,169,168,167+)
+    - Governance file contents (STATUS, HISTORY, QUEUE, PASS-423) retrieved and consistent
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - 83-repo census stable. Governance is persistent state.
+    - Dependabot residuals are primarily development-scope; no production claim impact observed.
+    - Classification of new-program-1.01 remains SUPERSEDED.
+  failures: []
+  decisions:
+    - Docs-only pass. Do not apply lockfile changes without tests and operator confirmation. Preserve history.
+REMAINING:
+  incomplete:
+    - Full dependency/capability/authority graphs
+    - Deep verification of ~70+ repos
+    - Dependabot remediation (operator-gated)
+  blockers:
+    - Scale of portfolio verification
+    - Operator approval for dependency updates
+  new_gaps:
+    - Explicit operator queue entry for DDVW Dependabot review
+NEXT:
+  objective_id: GAP-DEPENDABOT-DDVW-PLAN
+  action: Operator or next pass: review specific alerts (postcss-selector-parser >=7.1.6, source-map-js >=1.2.2, pytest >=9.0.3) for non-breaking update feasibility; run tests post-change if approved.
+  reason: Security residual remains highest-value after documentation.
+  prerequisites:
+    - Confirm development-only impact
+    - Available test suite execution
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - GitHub search total_count 83
+    - Dependabot alerts observed open in Digital_Double_virtual_workforce
+    - Prior Sweep-459 and PASS-423 consistent
