@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-10-21-431
+  parent_pass: PASS-2026-10-21-430
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 71
+  capabilities_verified: 2
+  gaps_remaining: 66+
+
+OBJECTIVE:
+  id: GAP-AUDIT-MOMENTUM-CLOSURE
+  description: Deep DISCOVER/AUDIT of momentum-closure RESEARCH repo
+  reason_selected: Highest-value residual deep verification slice on next coherence-cluster RESEARCH package as indicated by prior pass NEXT
+
+DISCOVERY:
+  findings:
+    - Python package for surface-integral momentum closure discipline; geometry, RF feed, ConvergenceTensor bookkeeping
+    - CI workflow present (pytest on Python 3.12); tests present (convergence, fixtures, geometry/feed)
+    - CLAIM_STATUS.md: RESEARCH, claim level 1; mesh-converged residual, physical thrust, Ware momentum flux, energy extraction all UNSUPPORTED
+    - README and CLAIMS.md explicit non-claims; classical far-field fixture checked, midpoint mesh fails declared tolerance
+    - No code-scanning alerts; docs-presence CI present
+    - Claim cap ≤ 1 preserved; no unsupported physical claims
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-431.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - momentum-closure structure/CI/tests/docs verified as RESEARCH claim-capped
+
+VERIFICATION:
+  tests_run:
+    - Local not re-run; CI structure verified (ci.yml with setup-python 3.12, pip install -e .[dev], pytest)
+  code_review: NOT_RUN
+  security: PASS (no code-scanning alerts)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap preserved, no thrust or Ware flux claim)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - momentum-closure matches RESEARCH classification with complete bookkeeping structure for surface flux and classical identity
+    - Pattern consistent with scale-functional-I and other coherence cluster repos
+  failures: []
+  decisions:
+    - Continue sequential deep audits on residual RESEARCH repos in coherence/physics cluster
+
+REMAINING:
+  incomplete:
+    - Deep verification of remaining ~66 repos
+    - Full dependency graph
+    - Gap severity tables
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-AUDIT-NEXT-COHERENCE
+  action: Select next residual coherence-cluster RESEARCH repo (e.g. finite-gasket-spectral-derivatives or informational-flux-identity) for deep audit
+  reason: Consistent progress on residual deep verification while exit criteria unmet
+  prerequisites:
+    - Census remains 83
+
+PROVENANCE:
+  state_commit: (post-push)
+  evidence:
+    - Tree of momentum-closure (42 entries)
+    - CI workflow, CLAIM_STATUS, README inspected
+    - No code-scanning alerts
