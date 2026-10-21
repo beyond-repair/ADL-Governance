@@ -1,8 +1,12 @@
 # Operator Queue
 
-## Sweep-458 — Master Directive Discovery Confirmation (completed slice)
+## Sweep-459 — Randomized Selection new-program-1.01 (completed slice)
 
-Live census confirmed 83 repositories under beyond-repair. Existing governance artifacts current. No classification changes. No code modifications, no deletions, no history rewrites.
+Live census confirmed 83 repositories. Randomly selected and audited `new-program-1.01`.
+
+### Findings this cycle
+- SUPERSEDED reconfirmed (early agent skeleton → sovereign-clean-room). No action required on the repository itself.
+- No new destructive proposals.
 
 ### Residuals (require future cycles or operator review)
 - Deep per-repository verification (tree, CI, tests, security) for remaining unaudited names (~70+).
@@ -26,4 +30,4 @@ Live census confirmed 83 repositories under beyond-repair. Existing governance a
 
 Next: Residual continuation on a subsequent governed sweep. Portfolio remains claim-capped and historically preserved. Exit criteria NOT MET. Stopped.
 
-[Prior Sweep-457 / 456 content preserved in git history.]
+[Prior Sweep-458 content preserved in git history.]
