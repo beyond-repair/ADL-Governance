@@ -1,15 +1,16 @@
 # Operator Queue
 
-## Sweep-481 / Randomized Selection: ADL-Portfolio-Census (completed cycle)
+## Sweep-482 / Mandatory Phase 3: Pillar Live Verification (completed cycle)
 
-Randomized selection of ADL-Portfolio-Census (RESEARCH). Structure, CI presence, claim caps, snapshot freeze re-audited. Governance documentation updated. No destructive actions performed.
+Explicit verification of the four pillars. CI structures and recent success conclusions confirmed. No releases observed. Governance documentation updated. No destructive actions performed.
 
 ### Findings this cycle
-- Classification confirmed RESEARCH (deterministic checker over locked 2026-09-04 42-row snapshot, claim ≤1).
-- Tests present (test_census.py for uniqueness, claims, freeze, anchors); CI workflow ci.yml present (engine + pytest).
-- Explicit non-claims: not a live GitHub crawler, not an 83-row completeness proof. Snapshot constants locked.
-- COMPATIBLE_BUILDS status preserved (aegis-repo-graph not_built).
-- No new critical CI failures or unsupported claims.
+- forge-aegis: CI present and recent success; README claim-capped to RUNNABLE SKETCH / software (not host-integrity product). RELEASE_BLOCKED_BY_OPERATOR preserved.
+- sovereign-clean-room: CI present; VSA completeness UNVERIFIED.
+- BlockSwarm: Foundry CI present and recent success.
+- Digital_Double_virtual_workforce: CI present and recent success (security pin applied); nested package residual open.
+- No new critical CI failures or unsupported claims introduced.
+- Releases/tags: NONE on the four pillars.
 
 ### Residuals (require future cycles or operator review)
 - Deep per-repository tree/CI/test/security verification for remaining unaudited names (~62+).
@@ -32,6 +33,6 @@ Randomized selection of ADL-Portfolio-Census (RESEARCH). Structure, CI presence,
 
 Next: Future residual or random sweeps. Portfolio remains claim-capped. Exit criteria NOT MET.
 
-## Sweep-480 / Randomized Selection: Sovereign-OS (completed cycle)
+## Sweep-481 / Randomized Selection: ADL-Portfolio-Census (completed cycle)
 
 [Prior content preserved in git history.]
