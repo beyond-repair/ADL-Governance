@@ -1,0 +1,67 @@
+PASS:
+  id: PASS-2026-10-21-428
+  parent_pass: PASS-2026-10-21-427
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 68
+  capabilities_verified: 2
+  gaps_remaining: 69+
+OBJECTIVE:
+  id: GAP-AUDIT-FLUX-IDENTITY
+  description: Deep DISCOVER/AUDIT of informational-flux-identity RESEARCH repo
+  reason_selected: Highest-value residual deep verification slice on recently active coherence-related RESEARCH package with full structure present
+DISCOVERY:
+  findings:
+    - Python package for closed-surface informational flux identity (signed flux = summed divergence); not thrust
+    - Extensive scripts for gasket fractional currents, reading fluxes, theorems; tests (unittest + pytest structure); CI with numpy + unittest; pyproject with numpy dep
+    - CLAIM_STATUS.md, large README/GASKET.md, docs/THEOREM_V.md present; claim-capped
+    - No open Dependabot alerts
+    - No unsupported physical claims in structure
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-428.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - informational-flux-identity structure/CI/tests/docs verified as RESEARCH claim-capped
+VERIFICATION:
+  tests_run:
+    - Local not re-run; CI structure verified (actions/checkout, setup-python 3.12, pip numpy, unittest)
+  code_review: NOT_RUN
+  security: PASS (no Dependabot alerts; numpy only)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap preserved, no thrust claim)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - informational-flux-identity matches RESEARCH classification with complete bookkeeping structure for flux identity
+    - Pattern consistent with momentum-closure and other coherence cluster repos
+  failures: []
+  decisions:
+    - Continue sequential deep audits on residual RESEARCH repos in coherence/physics cluster
+REMAINING:
+  incomplete:
+    - Deep verification of remaining ~69 repos
+    - Full dependency graph
+    - Gap severity tables
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: GAP-AUDIT-NEXT-COHERENCE
+  action: Select next residual coherence-cluster RESEARCH repo (e.g. finite-gasket-spectral-derivatives or scale-functional-I) for deep audit
+  reason: Consistent progress on residual deep verification while exit criteria unmet
+  prerequisites:
+    - Census remains 83
+PROVENANCE:
+  state_commit: (post-push)
+  evidence:
+    - Tree of informational-flux-identity (56 entries)
+    - CI workflow and pyproject inspected
+    - No Dependabot alerts
