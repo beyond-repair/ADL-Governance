@@ -1,5 +1,39 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-20 (Sweep-453)
+**Project / Version:** ADL Portfolio Governance / Sweep-453
+**Objective:** Randomized portfolio completion sweep — discovery, classification, and governance update for informational-flux-identity.
+
+Exit criteria NOT MET portfolio-wide. Residuals recorded.
+
+**Authenticated identity:** `beyond-repair` (id 132061760).
+**Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
+**Census:** 83 repositories (search total_count 83, incomplete_results false).
+
+## Sweep-453: Randomized Selection — informational-flux-identity
+
+**SELECT:** Random selection from full portfolio (83 repos, seed 20261020): `beyond-repair/informational-flux-identity`.
+
+**DISCOVER:**
+- Python package (pyproject.toml v0.1.0, requires numpy>=1.24). Core: closed-surface algebraic identity (signed outward flux = summed cell divergence on finite rectangle). Explicit integer witness (16×16 divergence-free array, signed net 0, absolute right-face 349/366).
+- Extensive gasket fractional analysis: scripts/gasket_fractional_*.py implementing Theorems AA–AO and related kept failures on fractional capacity floors, share factorizations, Harnack bounds, resistance ceilings (path, cycle, fence, depth-2). Open conjectures (e.g., J.1) documented as OPEN.
+- Files: README.md (theorems A–M + status badges RESEARCH/Claim ≤1), CLAIM_STATUS.md (detailed statement table), GASKET.md, witness.json, scripts/ (flux_identity.py, many gasket_*), tests/test_flux_identity.py (unittest for identity + witness), .github/workflows/ci.yml (Python 3.12 + numpy + unittest).
+- No releases or tags. Open issues: 0. Dependabot alerts: none. Last push: 2026-10-15.
+
+**AUDIT:** Compliant with ADL-Governance. Claim ceiling ≤1 preserved. Core identity VERIFIED by proof + test + witness. Gasket results are derived algebraic/analytic bounds with explicit kept failures; no experimental thrust, selected W=0.08, continuum force, or laboratory validation claimed. CI present for core tests.
+
+**CLASSIFY:** RESEARCH (Claim ≤1). Justification: Mathematical identity and explicit finite witnesses with open continuum/gasket limits; not a validated physical force law or product.
+
+**PLAN:** Target state: claim-capped RESEARCH with verified core CI. No code changes required; existing structure meets termination for this slice.
+
+**IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:** No modifications to target repository (idempotent preservation). Governance files updated. Core tests expected to pass under existing CI.
+
+**RELEASE/ARCHIVE:** None. Remains RESEARCH. No archive action.
+
+**RE-AUDIT:** No drift. Classification locked. Portfolio-wide exit criteria NOT MET.
+
+## Prior content from Sweep-451 preserved below
+
 **Updated:** 2026-10-20 (Sweep-451)
 **Project / Version:** ADL Portfolio Governance / Sweep-451
 **Objective:** Randomized portfolio completion sweep. SELECT one repository; DISCOVER → AUDIT → CLASSIFY → govern.
@@ -58,7 +92,7 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. No infinite loop.
 - CFTv3.3-IQG-Unified-Framework
 - coherence-drive
 - finite-gasket-spectral-derivatives
-- informational-flux-identity
+- informational-flux-identity (this sweep: core identity + gasket bounds reconfirmed)
 - m2-renormalization-law
 - mend
 - mendthegame
@@ -73,7 +107,7 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. No infinite loop.
 - topological-pinch
 - ware-constant-phenomenology
 - -ware-constant-derivation
-- Sovereign-Epistemic-Reality-Engine (this sweep: skeleton reconfirmed)
+- Sovereign-Epistemic-Reality-Engine
 - beyond-repair (profile index)
 - and remaining unaudited names default RESEARCH until tree read
 
@@ -105,7 +139,8 @@ CFT-v3.0 (already archived). Queue candidates include: RepoRover-, DevelopTool-U
 | sovereign-clean-room CI workflow | VERIFIED (prior) |
 | BlockSwarm Foundry CI workflow | VERIFIED (prior) |
 | Digital_Double_virtual_workforce CI workflow | VERIFIED (prior) |
-| Sovereign-Epistemic-Reality-Engine inventory CI + claim-capped skeleton | VERIFIED (this sweep) |
+| informational-flux-identity core identity CI + witness | VERIFIED (this sweep) |
+| Sovereign-Epistemic-Reality-Engine inventory CI + claim-capped skeleton | VERIFIED (prior) |
 | Releases / tags on four pillars | NONE observed |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
@@ -128,7 +163,7 @@ CFT-v3.0 (already archived). Queue candidates include: RepoRover-, DevelopTool-U
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce (variants SUPERSEDE candidates)
-- Research: physics/math cluster + blacksite + sunder + Project-Cold-Boot + Sovereign-Epistemic-Reality-Engine + others
+- Research: physics/math cluster + blacksite + sunder + Project-Cold-Boot + Sovereign-Epistemic-Reality-Engine + informational-flux-identity + others
 - Profile index: beyond-repair (RESEARCH)
 
-Prior Sweep-450 content preserved in git history.
+Prior content preserved in git history.
