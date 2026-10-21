@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-479 / Deep Audit topological-pinch)
-**Project / Version:** ADL Portfolio Governance / Sweep-479
-**Objective:** Deep verification of residual coherence-cluster RESEARCH repository.
+**Updated:** 2026-10-21 (Sweep-480 / Randomized Selection Sovereign-OS)
+**Project / Version:** ADL Portfolio Governance / Sweep-480
+**Objective:** Randomized repository completion cycle for Sovereign-OS.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -10,29 +10,29 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-479: Deep Audit topological-pinch
+## Sweep-480: Randomized Selection Sovereign-OS
 
-**SELECT:** topological-pinch (residual RESEARCH from registry, prior Sweep-172).
+**SELECT:** Sovereign-OS (random.choice from 83-repo list).
 
-**DISCOVER:** Tree contains README.md (RESEARCH, claim ≤1, hypothesis on localization, graph proxy not 0.92), CLAIM_STATUS.md, localization.py (gasket residual), report.py, tests/ (test_docs.py, test_localization.py, test_report.py), .github/workflows/ci.yml (pytest on Python 3.12), pyproject.toml, requirements.txt.
+**DISCOVER:** Recursive tree (35 paths). Docs-only RESEARCH tree: README.md (RESEARCH, claim level 0, constitutional vision), RESEARCH.md (justification, forbidden claims), CONSTITUTION.md (INV-001–INV-012), GOVERNANCE.md, SECURITY.md, docs/ (architecture.md, layers/, evidence-package.md, mvs-roadmap.md, etc.), schemas/evidence_package.json, empty stubs (control_plane/, kernel/, knowledge/, runtime/), tests/test_docs.py (docs existence + claim-cap gates), .github/workflows/ci.yml (pytest on Python 3.12). No executable control-plane, agent runtime, or capital kernel.
 
-**AUDIT:** Matches registry RESEARCH. Graph-proxy eta partitions 0.5/0.4/0.1 (not historical 0.92). CI workflow present. Explicit non-claims: no experimental validation, no thrust, no mesh study, no 0.08 selection. Falsification note on Neumann neck present.
+**AUDIT:** Matches registry RESEARCH / claim level 0. Constitutional invariants present. Explicit non-claims on production control plane, live engines, etc. CI and tests present for docs/claim discipline. Related to OS-family (sovereign-clean-room ACTIVE successor path noted).
 
-**CLASSIFY:** RESEARCH (confirmed). Justification: Runnable graph proxy with tests/CI; claim capped; hypothesis only; not continuum stress or force.
+**CLASSIFY:** RESEARCH (confirmed). Justification: Architectural constitution and evidence schema only; no delivered runtime; claim capped at 0 (Idea).
 
-**PLAN:** Preserve RESEARCH. Governance docs update only.
+**PLAN:** Preserve RESEARCH. Governance documentation updates only. No body changes.
 
-**IMPLEMENT:** Idempotent documentation updates in ADL-Governance. No body changes.
+**IMPLEMENT:** Idempotent documentation updates in ADL-Governance. No changes to Sovereign-OS body.
 
-**TEST/CI:** Structure verified. Pytest CI present. Not re-run here.
+**TEST/CI:** Structure verified. Pytest CI and test_docs.py present. Not re-executed in this environment.
 
-**DOCUMENT/GOVERN:** Updated status, history, headings. Claims capped. No unsupported claims.
+**DOCUMENT/GOVERN:** Updated status, history, operator queue, headings. Claims capped. No unsupported claims.
 
 **RELEASE/ARCHIVE:** None performed.
 
-**RE-AUDIT:** Consistent with prior Sweep-172 notes. Termination conditions met for this RESEARCH repo. Portfolio residuals remain.
+**RE-AUDIT:** Consistent with RESEARCH.md (Sweep-157 lock). Termination conditions met for this RESEARCH repo (docs, tests, CI structure, claim discipline). Portfolio residuals remain.
 
-## Sweep-478: Deep Audit finite-gasket-spectral-derivatives
+## Sweep-479: Deep Audit topological-pinch
 
 [Prior content preserved in git history.]
 
@@ -48,7 +48,7 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 - sovereign-clean-room
 
 ### RESEARCH (claim-capped; most unaudited in depth)
-Preserved. Includes topological-pinch (this sweep), finite-gasket-spectral-derivatives (Sweep-478), bloch-coherence-factor2, adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, SovereignOS, blacksite, and unaudited names defaulting to RESEARCH.
+Preserved. Includes Sovereign-OS (this sweep), topological-pinch (Sweep-479), finite-gasket-spectral-derivatives (Sweep-478), bloch-coherence-factor2, adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, blacksite, and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
 Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; Auto_Legion → sovereign-clean-room; CFT-v3.0 archived; etc.
@@ -60,6 +60,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
+| Sovereign-OS constitutional docs + evidence schema + docs CI | VERIFIED (Sweep-480) |
 | topological-pinch graph proxy + tests + CI structure | VERIFIED (Sweep-479) |
 | finite-gasket-spectral-derivatives kernel + residue bookkeeping + CI structure | VERIFIED (Sweep-478) |
 | bloch-coherence-factor2 classical R=2 + tests + CI structure | VERIFIED (Sweep-477) |
@@ -74,7 +75,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
 
 ## Residuals (Open — Exit Criteria Fail)
-- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~63+).
+- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~62+).
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals (OS-family consolidation operator-gated).
@@ -93,6 +94,6 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: ADL-Nexus and experimental cluster (including topological-pinch, finite-gasket-spectral-derivatives, bloch-coherence-factor2, blacksite, SovereignOS)
+- Research: ADL-Nexus and experimental cluster (including Sovereign-OS, topological-pinch, finite-gasket-spectral-derivatives, bloch-coherence-factor2, blacksite)
 
-Prior content and git history preserved. Sweep-479 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-480 complete. Exit criteria not fully satisfied.

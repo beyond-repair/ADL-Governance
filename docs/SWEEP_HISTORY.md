@@ -1,20 +1,20 @@
-## Sweep-479 / Deep Audit: topological-pinch
+## Sweep-480 / Randomized Selection: Sovereign-OS
 
 - Timestamp: 2026-10-21.
-- SELECT: Residual RESEARCH repo from registry (prior Sweep-172).
-- DISCOVER: Tree scanned (recursive, 20 paths). Key files: README.md (RESEARCH, claim ≤1, hypothesis, graph proxy), CLAIM_STATUS.md, localization.py (residual proxy, eta not 0.92), report.py, tests/test_localization.py + test_docs.py + test_report.py, .github/workflows/ci.yml (pytest on Python 3.12), pyproject.toml, FALSIFICATION_2026-10-01_PINCH.md.
-- AUDIT: Matches registry RESEARCH / claim ≤1. Graph-proxy partitions 0.5/0.4/0.1 across levels; historical 92% not reproduced. CI workflow present. Explicit non-claims: no experimental validation, no thrust, no mesh, no 0.08 from neck. Neumann spectral collapse noted but does not select constant.
-- CLASSIFY: RESEARCH (confirmed). Justification: Runnable sketch with tests and CI; claim capped at ≤1; hypothesis only; not continuum or force prediction.
+- SELECT: Sovereign-OS (random.choice from full 83-repo list).
+- DISCOVER: Recursive tree scanned (35 paths). Key files: README.md (RESEARCH, claim level 0, constitutional OS vision), RESEARCH.md (Sweep-157 lock, forbidden claims), CONSTITUTION.md (INV-001–INV-012, refusal default), GOVERNANCE.md, SECURITY.md, docs/architecture.md + layers/ + evidence-package.md + mvs-roadmap.md, schemas/evidence_package.json, empty package stubs (control_plane, kernel, knowledge, runtime), tests/test_docs.py (required docs + claim-cap + invariant checks), .github/workflows/ci.yml (pytest Python 3.12).
+- AUDIT: Matches registry RESEARCH / claim level 0. No executable control-plane, runtime, or capital kernel. Explicit non-claims present. CI and docs tests present. Related OS-family notes preserved (sovereign-clean-room as ACTIVE path).
+- CLASSIFY: RESEARCH (confirmed). Justification: Architectural constitution and schema only; claim capped at 0 (Idea); no delivered product surface.
 - PLAN: Preserve RESEARCH with claim caps. No body changes required. Update governance docs only.
-- IMPLEMENT: Governance documentation updates (idempotent). No changes to topological-pinch body.
-- TEST/CI: Structure verified. Pytest CI present. Not re-executed in this environment.
+- IMPLEMENT: Governance documentation updates (idempotent). No changes to Sovereign-OS body.
+- TEST/CI: Structure verified. Pytest CI and test_docs.py present. Not re-executed in this environment.
 - DOCUMENT: This history, status report, operator queue, headings updated.
 - GOVERN: Claims capped. No unsupported claims. Critical security none observed in structure.
 - RELEASE/ARCHIVE: None.
-- RE-AUDIT: Consistent with prior Sweep-172 notes. Termination conditions met for this research repo (docs, tests, CI structure, claim discipline). Portfolio residuals open.
+- RE-AUDIT: Consistent with RESEARCH.md. Termination conditions met for this research repo (docs, tests, CI structure, claim discipline). Portfolio residuals open.
 
 Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded.
 
-## Sweep-478 / Deep Audit: finite-gasket-spectral-derivatives
+## Sweep-479 / Deep Audit: topological-pinch
 
 [Prior content preserved in git history.]
