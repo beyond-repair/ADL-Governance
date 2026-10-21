@@ -1,34 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-462 / PASS-426)
-**Project / Version:** ADL Portfolio Governance / Sweep-462
-**Objective:** Randomized selection and dependency hygiene for sunder-cleanroom-vsa-adapter.
+**Updated:** 2026-10-21 (Sweep-464 / Master Directive v3.0)
+**Project / Version:** ADL Portfolio Governance / Sweep-464
+**Objective:** Portfolio discovery, classification confirmation, and residual recording per Master Directive. One governed sweep.
 
-Exit criteria NOT MET portfolio-wide. Residuals recorded.
+Exit criteria NOT MET portfolio-wide. Residuals recorded. Stop after current sweep.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
-**Census:** 83 repositories. Confirmed live prior passes.
+**Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-462 / PASS-2026-10-21-426: Randomized sunder-cleanroom-vsa-adapter
+## Sweep-464: Master Portfolio Discovery & Governance Update
 
-**SELECT:** Random from full pool: `sunder-cleanroom-vsa-adapter`.
+**DISCOVER:** Full inventory of 83 repositories under user:beyond-repair obtained via live GitHub search. Names extracted and sorted. Prior registry classifications preserved as baseline. No new deep tree/CI/test verification performed this cycle for the residual set (~70+ unaudited).
 
-**DISCOVER / AUDIT (live):**
-- Claim-capped RESEARCH adapter (MODULE_SURFACE). Name-only map between sunder VSAMemory (dim 4096) and sovereign-clean-room CleanRoomVSAEngine (dim 8192). No imports, no isomorphism claim.
-- Structure: adapter package, tests, CI (pytest + engine), README with badges/lifecycle.
-- Dependabot: open medium for pytest==8.3.5. Addressed by pin to 9.0.3.
-- No other critical issues. Classifications consistent with prior registry.
+**CLASSIFY:** Classifications remain as locked in repository_registry.md and prior sweeps. ACTIVE pillars: ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah-, BlockSwarm, Digital_Double_virtual_workforce, forge-aegis, sovereign-clean-room. RESEARCH for claim-capped experimental. SUPERSEDED for absorbed functionality (SEEM family, Digital Double variants, etc.). ARCHIVED / candidates per archive_queue.md. No reclassifications without new evidence.
 
-**CLASSIFY:** RESEARCH (unchanged).
+**PHASE 3 NOTE:** Mandatory live verification for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce performed in prior sweeps (e.g., Sweep-287, 461). CI success observed previously; releases/tags empty; security findings residual (e.g., DDVW Dependabot). No new assumptions. Status: prior evidence stands; residuals open.
 
-**PLAN / IMPLEMENT:** Safe pin update. Commits pushed.
+**CAPABILITY / GAPS / DEPENDENCY / REDUNDANCY:** High-level from registry. Demonstrated features only where prior verification exists. Full matrix, dependency graph, gap severity, and redundancy formalization remain residuals. No unsupported claims added.
 
-**DOCUMENT / GOVERN:** This report + history + queue. History preserved.
+**CANONICAL:** Ownership map partial and preserved. Governance: ADL-Governance. Agent: forge-aegis / AEGIS. Security/VSA: sovereign-clean-room. Distributed: BlockSwarm. Workforce: Digital_Double_virtual_workforce.
 
-**RE-AUDIT:** Consistent. Slice advances residual Dependabot hygiene.
+**ACTIONS:** Documentation update only. No code changes, no history rewrite, no deletions. History preserved.
 
-## Full Repository Inventory (83 names) — preserved from prior sweeps
+**RE-AUDIT:** Inventory consistent. Exit criteria not fully satisfied due to residuals. Sweep complete for this cycle.
+
+## Full Repository Inventory (83 names) — locked from live search
 
 ### ACTIVE (verified or registry-locked pillars / governance)
 - ADL-Governance
@@ -40,48 +38,43 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded.
 - sovereign-clean-room
 
 ### RESEARCH (claim-capped; most unaudited in depth)
-Preserved list from prior sweeps. sunder-cleanroom-vsa-adapter confirmed RESEARCH. ADL-Nexus, informational-flux-identity, Sovereign-Epistemic-Reality-Engine, coherence-drive and others remain RESEARCH.
+Preserved from registry and prior sweeps. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster (coherence-drive, informational-flux-identity, etc.), and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
-Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived.
-new-program-1.01 reconfirmed SUPERSEDED.
+Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived; new-program-1.01 and others.
 
 ### ARCHIVED / ARCHIVE CANDIDATES
-CFT-v3.0 (GitHub-archived). Queue in archive_queue.md.
+CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 
 ## Capability Inventory (Selected — Verified Only)
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
-| Prior pillar CI/structure checks | VERIFIED (Sweeps 455–457, 461) |
-| Releases / tags on four pillars | NONE observed (Sweep-461) |
+| Prior pillar CI/structure checks | VERIFIED (prior sweeps) |
+| Releases / tags on four pillars | NONE observed (prior) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
 | ADL-Nexus live adapters / full autonomy | UNSUPPORTED |
 | Digital Double variants | REDUNDANCY CANDIDATE (SUPERSEDE) |
-| new-program-1.01 | SUPERSEDED (historical agent skeleton) |
-| Dependabot residuals (DDVW) | DOCUMENTED (dev-scope) |
-| sunder-cleanroom-vsa-adapter pytest pin | UPDATED to 9.0.3 (Sweep-462) |
+| Dependency hygiene pins (selected) | UPDATED in prior sweeps |
 
-## Residuals (Open)
+## Residuals (Open — Exit Criteria Fail)
 - Deep per-repository tree/CI/test/security verification for remaining unaudited names (~70+).
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals.
-- Security / Dependabot review and merge for open PRs (Digital_Double, ADL-Nexus open PRs). sunder-cleanroom pin updated; alert may close on next scan.
+- Security / Dependabot review and merge for open PRs.
 - Code review readiness (PASS / PASS WITH FINDINGS / FAIL) for all.
-- Operator: GitHub archive lock for queue, release tags for pillars, Godot smoke for Project-Cold-Boot, pytest pins.
+- Operator actions: archive locks, release tags, specific verifications (Godot, etc.).
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
-- ADL-Nexus open PRs for future operator review; live interop remains UNSUPPORTED.
+- No infinite loop entered. Residuals recorded for future cycles.
 
-## Canonical Ownership (partial)
+## Canonical Ownership (partial, preserved)
 - Governance: ADL-Governance
 - Agent Infrastructure: forge-aegis / AEGIS-Project-Nehemiah-
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research / Nexus platform: ADL-Nexus (RESEARCH)
-- Research: physics/math cluster + others
-- VSA surface adapter: sunder-cleanroom-vsa-adapter (RESEARCH)
+- Research: ADL-Nexus and experimental cluster
 
-Prior content preserved in git history.
+Prior content and git history preserved. Sweep-464 complete.
