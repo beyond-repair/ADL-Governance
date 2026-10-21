@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-471 / Pillar Structure Confirmation)
-**Project / Version:** ADL Portfolio Governance / Sweep-471
-**Objective:** Confirm inventory and verify structure/CI presence for key pillars.
+**Updated:** 2026-10-21 (Sweep-472 / Randomized: Auto_Legion SUPERSEDED Re-audit)
+**Project / Version:** ADL Portfolio Governance / Sweep-472
+**Objective:** Random selection and re-audit of Auto_Legion for termination conditions.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -10,19 +10,27 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-471: Pillar Structure Confirmation
+## Sweep-472: Randomized Portfolio Completion — Auto_Legion
 
-**DISCOVER:** Confirmed structures for forge-aegis (Python FLS/AEGIS with CI.yml including unit tests and CLI smoke PASS/FAIL), sovereign-clean-room (core/ VSA, tests/, bridge/, CI presence inferred from .github), BlockSwarm (Solidity contracts, foundry/hardhat, tests), Digital_Double_virtual_workforce (prior sweep).
+**SELECT:** Randomly selected `Auto_Legion` from portfolio (via shuf on live search results).
 
-**AUDIT:** Pillars retain ACTIVE classification. CI present on forge-aegis with verifiable smoke paths. No new critical failures observed in structure.
+**DISCOVER:** Tree scanned (recursive). Key paths: README.md (SUPERSEDED badge, successor sovereign-clean-room, CLAIM 0), ARCHIVED.md, CLAIM_STATUS.md (known defects listed), .github/workflows/python-app.yml (supersede guard: compileall + pytest), tests/test_supersede_guard.py (structural assertions), Auto_Legion/ package with historical agents, __pycache__ blobs present, empty requirements.txt, missing modules referenced.
 
-**CLASSIFY:** Unchanged. All pillars ACTIVE.
+**AUDIT:** Compares to ADL-Governance registry (superseded by sovereign-clean-room). No undefined critical components beyond preserved historical defects. CI is guard-only (no runtime claims). No new unsupported claims. __pycache__ residual noted previously.
 
-**PLAN/IMPLEMENT:** Documentation only. No code changes.
+**CLASSIFY:** SUPERSEDED (confirmed). Justification: Explicit in README/CLAIM_STATUS, successor named, feature work stopped, guard tests enforce status.
 
-**TEST/CI:** forge-aegis CI workflow verified to include tests. Full run status not re-executed here.
+**PLAN:** Target state: preserved historical SUPERSEDED with green guard CI and docs. No feature implementation. Queue any cleanup if operator-gated.
 
-**DOCUMENT/GOVERN:** Residuals updated. No destructive actions.
+**IMPLEMENT:** Documentation updates only in ADL-Governance (idempotent). No changes to Auto_Legion body (preserve history).
+
+**TEST/CI:** Workflow inspects compileall excluding __pycache__ and runs pytest on tests/. Structural tests assert superseded status and known defects. Assumed green based on prior sweeps; not re-executed in this environment.
+
+**DOCUMENT/GOVERN:** Updated status, history, queue. No unsupported claims. Critical security none observed.
+
+**RELEASE/ARCHIVE:** Not performed (operator-only for GitHub archive flag). Remains in archive_queue.
+
+**RE-AUDIT:** Consistent with prior Sweep-277/318 notes. Termination conditions met for this SUPERSEDED repo (no active development, docs/CI present, claims capped). Portfolio residuals remain.
 
 ## Full Repository Inventory (83 names) — locked from live search
 
@@ -39,10 +47,10 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 Preserved. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, SovereignOS, blacksite, and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
-Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived; etc.
+Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; Auto_Legion → sovereign-clean-room; CFT-v3.0 archived; etc.
 
 ### ARCHIVED / ARCHIVE CANDIDATES
-CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
+CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md (includes Auto_Legion).
 
 ## Capability Inventory (Selected — Verified Only)
 | Feature | State |
@@ -52,6 +60,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | blacksite deterministic prototype + CI success | VERIFIED (Sweep-469) |
 | Digital_Double_virtual_workforce core + smoke CI | PARTIAL (Sweep-470) |
 | forge-aegis unit tests + CLI smoke in CI | VERIFIED (structure) |
+| Auto_Legion SUPERSEDED guard CI + tests | VERIFIED (structure, Sweep-472) |
 | Releases / tags on four pillars | NONE observed (prior) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
@@ -67,6 +76,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
 - Expand CI and resolve nested package in Digital_Double_virtual_workforce.
 - Full test execution and security scans pending.
+- __pycache__ cleanup in historical repos (queued, not destructive here).
 - No infinite loop entered. Residuals recorded.
 
 ## Canonical Ownership (partial, preserved)
@@ -77,4 +87,4 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Workforce Automation: Digital_Double_virtual_workforce
 - Research: ADL-Nexus and experimental cluster (including blacksite, SovereignOS)
 
-Prior content and git history preserved. Sweep-471 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-472 complete. Exit criteria not fully satisfied.
