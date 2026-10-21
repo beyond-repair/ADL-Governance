@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-474 / Randomized: SovereignOS RESEARCH Re-audit)
-**Project / Version:** ADL Portfolio Governance / Sweep-474
-**Objective:** Random selection and re-audit of SovereignOS for termination conditions.
+**Updated:** 2026-10-21 (Sweep-476 / Phase 3: forge-aegis re-verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-476
+**Objective:** Mandatory live verification of forge-aegis pillar.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -10,27 +10,27 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-474: Randomized Portfolio Completion — SovereignOS
+## Sweep-476: Phase 3 Mandatory Live Verification — forge-aegis
 
-**SELECT:** Randomly selected `SovereignOS` from portfolio (seeded random.choice on live 83-name list).
+**SELECT:** Mandatory Phase 3 target `forge-aegis`.
 
-**DISCOVER:** Tree scanned (recursive, 27 paths). Key paths: README.md (RESEARCH badge, Claim ≤1 / level 0, explicit non-claims), RESEARCH.md, SECURITY.md, GOVERNANCE.md, LICENSE, docs/ (architecture, comparison, control-plane, human-kernel, interfaces, security, open-questions), placeholder READMEs under brains/, control_plane/, kernel/, knowledge_graph/, tests/test_docs.py (docs existence + claim language guards), .github/workflows/ci.yml (docs-ci: pytest on required files).
+**DISCOVER:** Tree scanned (recursive, 46 paths). Key paths: README.md (RUNNABLE SKETCH, software claim, explicit non-claims), python/aegis_pipeline.py, python/tests/, .github/workflows/ci.yml, docs/V0_1_VERTICAL_SLICE.md, THREAT_MODEL.md, schemas/, fls/.
 
-**AUDIT:** Compares to ADL-Governance registry (RESEARCH, claim-capped, OS-family sibling). No executable product surface. CI is docs-presence only (does not prove behavior). No undefined critical components beyond intentional architectural sketch. No unsupported claims (explicitly forbidden: thrust, energy extraction, AGI, production autonomy, uptime). Sibling mapping via os-family-constitution-map noted.
+**AUDIT:** Matches registry ACTIVE / software sketch. Runnable vertical slice with unit tests. CI workflow present (prior success). No releases/tags. No full host product claims. LICENSE minimal.
 
-**CLASSIFY:** RESEARCH (confirmed). Justification: Documentation and empty stubs only; claim level 0; promotion blocked pending LIFECYCLE conditions and evidence; family consolidation operator-gated.
+**CLASSIFY:** ACTIVE (confirmed). Justification: Verified runnable sketch with tests; claim-capped; release blocked by operator.
 
-**PLAN:** Target state: preserved RESEARCH with green docs CI, claim caps, and governance registration. No feature implementation or claim elevation.
+**PLAN:** Preserve ACTIVE with claim caps. No feature implementation or claim elevation.
 
-**IMPLEMENT:** Documentation updates only in ADL-Governance (idempotent). No changes to SovereignOS body (preserve history and claim discipline).
+**IMPLEMENT:** Documentation updates only in ADL-Governance (idempotent). No changes to forge-aegis body.
 
-**TEST/CI:** Workflow runs pytest for required docs existence and README claim language. Structure verified; assumed green based on prior pattern; not re-executed in this environment.
+**TEST/CI:** Structure verified. Prior CI success noted. Not re-executed in this environment.
 
-**DOCUMENT/GOVERN:** Updated status, history, queue. No unsupported claims. Critical security none observed. Consolidation remains operator decision.
+**DOCUMENT/GOVERN:** Updated status, history, queue. No unsupported claims. Critical security none observed.
 
-**RELEASE/ARCHIVE:** Not performed. Remains RESEARCH; no archive flag.
+**RELEASE/ARCHIVE:** Not performed. RELEASE_BLOCKED_BY_OPERATOR remains.
 
-**RE-AUDIT:** Consistent with Sweep-070 notes and registry. Termination conditions met for this RESEARCH repo (docs present, CI guard, claims capped, no active development). Portfolio residuals remain.
+**RE-AUDIT:** Consistent with prior Sweep-287. Termination conditions met for this re-verify. Portfolio residuals remain.
 
 ## Full Repository Inventory (83 names) — locked from live search
 
@@ -59,7 +59,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Prior pillar CI/structure checks | VERIFIED (Sweep-467, 471) |
 | blacksite deterministic prototype + CI success | VERIFIED (Sweep-469) |
 | Digital_Double_virtual_workforce core + smoke CI | PARTIAL (Sweep-470) |
-| forge-aegis unit tests + CLI smoke in CI | VERIFIED (structure) |
+| forge-aegis unit tests + CLI smoke in CI | VERIFIED (structure, Sweep-476 reconfirm) |
 | Auto_Legion SUPERSEDED guard CI + tests | VERIFIED (structure, Sweep-472) |
 | SovereignOS RESEARCH docs CI + claim guards | VERIFIED (structure, Sweep-474) |
 | Releases / tags on four pillars | NONE observed (prior) |
@@ -87,4 +87,4 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Workforce Automation: Digital_Double_virtual_workforce
 - Research: ADL-Nexus and experimental cluster (including blacksite, SovereignOS)
 
-Prior content and git history preserved. Sweep-474 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-476 complete. Exit criteria not fully satisfied.
