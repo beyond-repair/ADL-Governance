@@ -1,0 +1,64 @@
+PASS:
+  id: PASS-2026-10-21-427
+  parent_pass: PASS-2026-10-21-426
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 67
+  capabilities_verified: 1
+  gaps_remaining: 70+
+OBJECTIVE:
+  id: GAP-DEPS-PYTEST-MATRIX
+  description: Address open Dependabot medium alert on pytest in adl-capability-matrix by pin bump to 9.0.3
+  reason_selected: Highest-value residual hygiene slice matching prior pattern; claim-capped RESEARCH repo with known medium advisory
+DISCOVERY:
+  findings:
+    - adl-capability-matrix is RESEARCH claim-capped locked 2026-09-04 matrix checker
+    - Open Dependabot #1: pytest <9.0.3 medium GHSA-6w46-j5rx-g56g
+    - CI and tests present; no unsupported claims
+CHANGES:
+  repositories:
+    - adl-capability-matrix
+    - ADL-Governance
+  files:
+    - adl-capability-matrix/requirements.txt
+    - adl-capability-matrix/pyproject.toml
+    - ADL-Governance/docs/passes/PASS-2026-10-21-427.yaml
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+    - ADL-Governance/docs/OPERATOR_QUEUE.md
+  commits:
+    - 547e12c5e54f109a036433c79a61cf54e9c551f7 (requirements)
+    - 8a9700cb48ec0470357d19e8970e4b664f50b15b (pyproject)
+  capabilities_added_or_changed:
+    - Dependency pin updated; alert residual expected to clear
+VERIFICATION:
+  tests_run:
+    - Local not re-run; CI will execute on push (prior tests exist)
+  code_review: NOT_RUN
+  security: PASS (pin addresses advisory)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap preserved)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Pin bump pattern is safe for these stdlib+pytest checkers
+  failures: []
+  decisions:
+    - Continue residual Dependabot hygiene on similar RESEARCH repos
+REMAINING:
+  incomplete:
+    - Deep verification of remaining ~70 repos
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: GAP-DEPS-PYTEST-OTHER
+  action: Select next residual with open pytest Dependabot (e.g. -Entanglement-and-Emergence) for pin or confirm
+  reason: Consistent hygiene progress while portfolio exit criteria unmet
+  prerequisites:
+    - Census still 83
+PROVENANCE:
+  state_commit: 50d8d884c3ea7c4a53ea583f1a2c891151522a75
+  evidence:
+    - Commits 547e12c and 8a9700c
+    - Dependabot alert observed pre-change
