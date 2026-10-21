@@ -1,15 +1,15 @@
 # Operator Queue
 
-## Sweep-455 — Mandatory Live Verification of Pillars (completed slice)
+## Sweep-456 — Randomized Selection ADL-Nexus (completed slice)
 
-Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Structures and CI workflows confirmed. Releases and tags: none on all four. Classifications ACTIVE locked. Open Dependabot PRs on Digital_Double noted. No code changes, no deletions, no history rewrites.
+Live verification of ADL-Nexus. Layered structure, CI workflow, claim-capped docs confirmed. Lifecycle RESEARCH locked. Live adapters and full autonomy UNSUPPORTED. Open PRs #1 (draft), #2, #4 noted. No code changes, no deletions, no history rewrites.
 
 ### Residuals (require future cycles or operator review)
 - Deep per-repository verification (tree, CI, tests, security) for remaining unaudited names (~70+).
 - Full internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals (Digital Double variants, SEEM family).
-- Security / Dependabot review and merge for open PRs (Digital_Double rollup etc.; prior alerts operator-gated).
+- Security / Dependabot review and merge for open PRs (Digital_Double rollup etc.; ADL-Nexus open PRs).
 - Code review readiness assessment for all repositories.
 - Execute GitHub archive lock for archive_queue items when gates met.
 - Release tags for pillars (operator-only; none present).
@@ -17,6 +17,7 @@ Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Doub
 - Update pytest pin in -Entanglement-and-Emergence and seem-sunder-bridge to ≥9.0.3 (or merge Dependabot).
 - forge-aegis host-integrity product claims remain capped; RELEASE_BLOCKED_BY_OPERATOR.
 - VSA completeness in sovereign-clean-room remains UNVERIFIED.
+- ADL-Nexus: review/merge open PRs when ready; live sunder/clean-room interop remains operator-gated and UNSUPPORTED.
 
 ### No queued destructive proposals beyond existing archive queue
 - No repository deletions.
@@ -25,4 +26,4 @@ Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Doub
 
 Next: Residual continuation on a subsequent governed sweep. Portfolio remains claim-capped and historically preserved. Exit criteria NOT MET. Stopped.
 
-[Prior Sweep-453 content preserved in git history.]
+[Prior Sweep-455 content preserved in git history.]
