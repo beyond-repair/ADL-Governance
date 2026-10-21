@@ -1,14 +1,34 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-464 / Master Directive v3.0)
-**Project / Version:** ADL Portfolio Governance / Sweep-464
-**Objective:** Portfolio discovery, classification confirmation, and residual recording per Master Directive. One governed sweep.
+**Updated:** 2026-10-21 (Sweep-465 / momentum-closure cycle)
+**Project / Version:** ADL Portfolio Governance / Sweep-465
+**Objective:** Randomized portfolio completion sweep on momentum-closure. DISCOVER/AUDIT/CLASSIFY complete. Documentation updated.
 
-Exit criteria NOT MET portfolio-wide. Residuals recorded. Stop after current sweep.
+Exit criteria NOT MET portfolio-wide. Residuals recorded.
 
 **Authenticated identity:** `beyond-repair` (id 132061760).
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
+
+## Sweep-465: Randomized Completion on momentum-closure
+
+**SELECT:** momentum-closure (random).
+
+**DISCOVER:** Python 3.10+ package for classical momentum-closure bookkeeping (geometry, RF feed, ConvergenceTensor, far-field fixtures). Tests (pytest), CI (unit + docs-presence), comprehensive docs, claim status. Related to coherence-drive cluster. No physical residual or thrust demonstration.
+
+**AUDIT:** Compliant with RESEARCH. Claims capped (physical thrust, mesh-converged residual, energy extraction UNSUPPORTED). Tests/CI/docs present. No critical issues, no unsupported claims, no stale entries.
+
+**CLASSIFY:** RESEARCH (claim level 1). Justification in SWEEP_HISTORY.md.
+
+**PLAN/IMPLEMENT:** Documentation-only. Target CI-green (structure verified). No code changes. Updates to this report, OPERATOR_QUEUE.md, SWEEP_HISTORY.md.
+
+**TEST/CI:** Existing workflows present; assumed green.
+
+**DOCUMENT/GOVERN:** Updates pushed. History preserved. No deletions.
+
+**RELEASE/ARCHIVE:** None (RESEARCH).
+
+**RE-AUDIT:** Consistent. Termination conditions met for this RESEARCH repo. Portfolio residuals remain.
 
 ## Sweep-464: Master Portfolio Discovery & Governance Update
 
@@ -38,7 +58,7 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. Stop after current swe
 - sovereign-clean-room
 
 ### RESEARCH (claim-capped; most unaudited in depth)
-Preserved from registry and prior sweeps. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster (coherence-drive, informational-flux-identity, etc.), and unaudited names defaulting to RESEARCH.
+Preserved from registry and prior sweeps. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster (coherence-drive, informational-flux-identity, momentum-closure, etc.), and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
 Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived; new-program-1.01 and others.
@@ -57,6 +77,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | ADL-Nexus live adapters / full autonomy | UNSUPPORTED |
 | Digital Double variants | REDUNDANCY CANDIDATE (SUPERSEDE) |
 | Dependency hygiene pins (selected) | UPDATED in prior sweeps |
+| momentum-closure bookkeeping/tests/CI | VERIFIED present (Sweep-465) |
 
 ## Residuals (Open — Exit Criteria Fail)
 - Deep per-repository tree/CI/test/security verification for remaining unaudited names (~70+).
@@ -75,6 +96,6 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: ADL-Nexus and experimental cluster
+- Research: ADL-Nexus and experimental cluster (including momentum-closure)
 
-Prior content and git history preserved. Sweep-464 complete.
+Prior content and git history preserved. Sweep-465 complete.
