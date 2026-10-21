@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-458)
-**Project / Version:** ADL Portfolio Governance / Sweep-458
-**Objective:** Master Directive v3.0 governed sweep — portfolio discovery confirmation.
+**Updated:** 2026-10-20 (Sweep-459)
+**Project / Version:** ADL Portfolio Governance / Sweep-459
+**Objective:** Randomized portfolio completion sweep — DISCOVER on randomly selected repository.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. No infinite loop.
 
@@ -10,23 +10,36 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. No infinite loop.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories (search total_count 83, incomplete_results false). Confirmed live this sweep.
 
-## Sweep-458: Master Directive Discovery Confirmation
+## Sweep-459: Randomized Selection — new-program-1.01
 
-**SELECT / SCOPE:** Full portfolio discovery under user:beyond-repair per Master Directive v3.0.
+**SELECT:** Randomly selected `new-program-1.01` from the 83-repository portfolio.
 
 **DISCOVER:**
-- Live search returned 83 repositories.
-- Prior governance artifacts (PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md) present and current through Sweep-457.
-- Classifications previously locked for pillars and selected research repos remain in force.
-- No new unsupported implementation claims introduced.
+- Tree: flat Python scripts (main.py, delegate_class.py, delegate_init.py, gpt_agent.py, my_mind.py, task_class.py, task_delegation.py, taskqueue_class.py), agents.txt, tasks.txt, test_main.py, test_runner.py, .gitignore, .gitattributes, README.md.
+- No .github/workflows (no CI).
+- README: Lifecycle SUPERSEDED, successor sovereign-clean-room, Claim 0 historical. Banner present. Early My Mind agent files.
+- main.py: simple task delegation loop over hardcoded tasks to Delegate agents.
+- No production claims, no external dependencies declared.
 
-**AUDIT / CLASSIFY:** No classification changes this cycle. Portfolio remains claim-capped. Deep verification incomplete for majority of repositories.
+**AUDIT:**
+- Already classified SUPERSEDED in README and consistent with registry patterns (SEEM/My Mind family → sovereign-clean-room).
+- No undefined critical components requiring action. Historical skeleton.
+- No CI, tests are stubs. No security issues observed in structure.
+- No stale registry conflicts for this name.
 
-**PLAN / IMPLEMENT / TEST / CI / DOCUMENT / GOVERN:** Governance documentation updated. No code changes to implementation repositories. No deletions. No history rewrites.
+**CLASSIFY:** SUPERSEDED (locked). Justification: Early agent prototype files superseded by sovereign-clean-room. Feature work stopped. History preserved.
 
-**RELEASE/ARCHIVE:** None.
+**PLAN:** Target state: historical preservation as SUPERSEDED. No further implementation. Document cycle.
 
-**RE-AUDIT:** Exit criteria still unmet (dependency graph, full gap analysis, redundancy formalization, code-review readiness for all, residual security items).
+**IMPLEMENT / TEST / CI:** No code changes to implementation repository. Idempotent documentation update only. Tests/CI not applicable (no workflow).
+
+**DOCUMENT:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+
+**GOVERN:** No unsupported claims. Classification confirmed. No critical security issues.
+
+**RELEASE/ARCHIVE:** None. Remains SUPERSEDED (not GitHub-archived).
+
+**RE-AUDIT:** No drift. Classification locked. Portfolio-wide exit criteria NOT MET.
 
 ## Full Repository Inventory (83 names) — preserved from prior sweeps
 
@@ -44,6 +57,7 @@ Preserved list from prior sweeps. ADL-Nexus, informational-flux-identity, Sovere
 
 ### SUPERSEDED
 Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived.
+new-program-1.01 reconfirmed SUPERSEDED this sweep.
 
 ### ARCHIVED / ARCHIVE CANDIDATES
 CFT-v3.0 (GitHub-archived). Queue in archive_queue.md.
@@ -58,6 +72,7 @@ CFT-v3.0 (GitHub-archived). Queue in archive_queue.md.
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
 | ADL-Nexus live adapters / full autonomy | UNSUPPORTED |
 | Digital Double variants | REDUNDANCY CANDIDATE (SUPERSEDE) |
+| new-program-1.01 | SUPERSEDED (historical agent skeleton) |
 
 ## Residuals (Open)
 - Deep per-repository tree/CI/test/security verification for remaining unaudited names (~70+).
