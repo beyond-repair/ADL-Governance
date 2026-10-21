@@ -1,10 +1,10 @@
 # Operator Queue
 
-## Sweep-484 / Ecosystem Reconstruction (completed cycle)
+## Sweep-485 / Master Directive Completion Sweep (completed cycle)
 
-Current state reconstructed. Census 83 stable. Next: random residual RESEARCH/unaudited audit.
+Census 83 stable. Pillar CI verified active with recent main successes. Digital Double CVE pin applied. Residuals open. No destructive actions proposed.
 
-### Residuals (unchanged)
+### Residuals (unchanged + noted)
 - Deep per-repository tree/CI/test/security verification for remaining unaudited names (~61+).
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
@@ -15,6 +15,7 @@ Current state reconstructed. Census 83 stable. Next: random residual RESEARCH/un
 - Release tags for pillars (operator-only).
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
 - VSA completeness in sovereign-clean-room UNVERIFIED.
+- Sovereign-clean-room open PR test failures on feature branch (investigate/merge or close).
 
 ### No queued destructive proposals this cycle
 - No repository deletions.
@@ -23,6 +24,6 @@ Current state reconstructed. Census 83 stable. Next: random residual RESEARCH/un
 
 Next: Future residual or random sweeps. Portfolio remains claim-capped. Exit criteria NOT MET.
 
-## Sweep-483 / Randomized Selection: fantom_trading_bot_2 (completed cycle)
+## Sweep-484 / Ecosystem Reconstruction (completed cycle)
 
 [Prior content preserved in git history.]
