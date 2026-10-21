@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-21-488
+  parent_pass: PASS-2026-10-21-487
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 22+
+  gaps_remaining: 12+
+
+OBJECTIVE:
+  id: GAP-AUDIT-ADL-NEXUS-488
+  description: Bounded DISCOVER + AUDIT on beyond-repair/ADL-Nexus: inspect tree summary, README, CI workflow, open PRs. Confirm RESEARCH classification and claim cap.
+  reason_selected: Highest recent activity among RESEARCH class; central to Nexus claims; synergy with Governance; next recommended by prior pass.
+
+DISCOVERY:
+  findings:
+    - ADL-Nexus remains RESEARCH lifecycle with published claim ≤1; local ceiling 2 (not Level 2 evidence).
+    - CI workflow present: docs-presence + pytest on Python 3.11; prior run success noted in README (36847729267).
+    - Layers defined: Governance, Memory, Agent Runtime, Workforce, Development, Security, Simulation, Research, Economic — all claim-capped; live adapters UNSUPPORTED.
+    - Open PRs: #4 (godot_nexus_party polish, IN PROGRESS), #2 (supervised execute loop), #1 (NEX-INT spine, draft).
+    - stdlib-only design; packaging via pyproject.toml; run.py for no-install path.
+    - Census remains 83; locked inventory 67; gap unassigned.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-488.yaml
+  commits:
+    - created via create_or_update_file
+  capabilities_added_or_changed:
+    - ADL-Nexus audit findings persisted; classification reconfirmed RESEARCH / Claim ≤1.
+
+VERIFICATION:
+  tests_run:
+    - get_file_contents README.md, ci.yml : PASS (content retrieved)
+    - search_pull_requests open : 3 found, listed
+    - search_repositories total_count=83 : reconfirmed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim caps respected; no promotion)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus is actively maintained as RESEARCH with strict claim discipline.
+    - Open work on client (Godot party) and integration spine (NEX-INT).
+    - Direct tool path continues to function for persistence.
+  failures:
+    - None in this slice.
+  decisions:
+    - No status change; remain RESEARCH.
+    - Prefer small audits of high-priority ACTIVE or recent RESEARCH next.
+
+REMAINING:
+  incomplete:
+    - Full function-level audit of ADL-Nexus pathways.
+    - Merge status of open PRs.
+    - Dependency graph construction.
+  blockers:
+    - None for this pass.
+  new_gaps:
+    - GAP-NEXUS-PR-STATUS: review and classify open PRs in ADL-Nexus.
+
+NEXT:
+  objective_id: GAP-AUDIT-SOVEREIGN-CLEAN-ROOM-489
+  action: Bounded audit of beyond-repair/sovereign-clean-room: tree, README, CLAIM_STATUS if present, CI, open issues. Note VSA completeness status.
+  reason: Listed as ACTIVE priority 2 in PORTFOLIO_STATE; VSA completeness UNVERIFIED; high synergy with Nexus adapters.
+  prerequisites:
+    - Direct tool access (available).
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - README.md content confirming RESEARCH / ≤1
+    - ci.yml structure
+    - Open PR list
+    - Prior PORTFOLIO_STATE.md and CLAIM_STATUS.md
