@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-21-486
+  parent_pass: PASS-2026-10-21-485
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 22+
+  gaps_remaining: 12+
+
+OBJECTIVE:
+  id: GAP-RECONSTRUCT-POST-485
+  description: Reconstruct current ecosystem from live GitHub and Governance state after Sweep-485 documentation; confirm census stability and select next bounded residual audit.
+  reason_selected: Fresh agent session required to re-establish state from persistent artifacts; Sweep-485 history and status exist but dedicated YAML was absent; highest-value is state preservation and next-slice readiness.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760); search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest documented: Sweep-485 / PASS-2026-10-21-485 in SWEEP_HISTORY.md and PORTFOLIO_STATUS_REPORT.md (Master Directive portfolio completion sweep; pillar CI samples verified; residuals recorded).
+    - No PASS-2026-10-21-485.yaml present in docs/passes/; last full YAML is PASS-2026-10-21-484.
+    - ADL-Governance ACTIVE; contains docs/passes/, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, PORTFOLIO_STATUS_REPORT.md, PORTFOLIO_STATE.md (as of 2026-10-20).
+    - Pillars claim-capped: forge-aegis RELEASE_BLOCKED_BY_OPERATOR, sovereign-clean-room VSA UNVERIFIED, Digital_Double_virtual_workforce ACTIVE with security pin, BlockSwarm ACTIVE.
+    - ADL-Nexus RESEARCH, claim-capped, live adapters UNSUPPORTED.
+    - No new critical issues observed in this reconstruction.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-486.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Governance pass persistence and state reconstruction for Basilisk loop
+
+VERIFICATION:
+  tests_run:
+    - No code changes; docs-only. Prior CI patterns and pillar samples from Sweep-485 hold.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no destructive changes, census reconfirmed)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 83 public repositories.
+    - Persistence via docs/passes YAML + narrative updates in SWEEP_HISTORY / OPERATOR_QUEUE / PORTFOLIO_STATUS_REPORT.
+    - Residuals include deep per-repo audits (~61+), dependency graphs, operator-gated archives/tags, VSA completeness, forge-aegis release block.
+  failures:
+    - None this pass.
+  decisions:
+    - Continue incremental residual audits; prefer REUSE of Governance persistence.
+    - Document missing YAML for 485 as known state rather than fabricating.
+
+REMAINING:
+  incomplete:
+    - Full per-repository tree/CI/test/security verification for remaining unaudited names.
+    - Complete dependency graph and cycle detection.
+    - Operator actions for archive flags and release tags.
+  blockers:
+    - Operator-only for GitHub archive flags, release tags, claim elevation, secret rotations.
+  new_gaps:
+    - Missing dedicated PASS YAML for Sweep-485 (documented in history/status only).
+
+NEXT:
+  objective_id: GAP-RANDOM-SELECT-006
+  action: Randomly select a residual RESEARCH or unaudited repository (excluding recently audited pillars and recent sweeps) and perform full DISCOVER/AUDIT of tree, CI workflows, claims, tests, and classification.
+  reason: Continues progressive closure of verification gaps under claim discipline without large expansions.
+  prerequisites:
+    - This pass record and updated history available for fresh agent.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count 83
+    - github___get_file_contents on SWEEP_HISTORY.md, PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, PASS-2026-10-21-484.yaml, PORTFOLIO_STATE.md
+    - No fabrication of test or verification results
