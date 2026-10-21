@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-20 (Sweep-460 / PASS-424)
-**Project / Version:** ADL Portfolio Governance / Sweep-460
-**Objective:** ADL-BASILISK reconstruction and Dependabot residual formalization.
+**Updated:** 2026-10-20 (Sweep-461 / PASS-425)
+**Project / Version:** ADL Portfolio Governance / Sweep-461
+**Objective:** Mandatory live verification of four pillar repositories.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. No infinite loop.
 
@@ -10,26 +10,25 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. No infinite loop.
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories (search total_count 83, incomplete_results false). Confirmed live this pass.
 
-## Sweep-460 / PASS-2026-10-20-424: Basilisk Reconstruction + Dependabot Doc
+## Sweep-461 / PASS-2026-10-20-425: Mandatory Pillar Verification
 
-**SELECT:** Highest-value residual after PASS-423: formalize open Dependabot in Digital_Double_virtual_workforce.
+**SELECT:** Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
 
-**DISCOVER:**
-- Census 83 confirmed.
-- Open alerts in Digital_Double_virtual_workforce: postcss-selector-parser (medium, dev), source-map-js (high, dev), pytest (medium, dev), brace-expansion (medium, dev), sprintf-js (medium, dev), and others. All development/build-scope per advisories.
-- No production runtime impact claimed or observed for trusted build use.
+**DISCOVER / VERIFY (live API):**
+- forge-aegis: CI success (run 37258127100), no releases/tags, no open Dependabot, tree contains tests/schemas/FLS/docs/Python. Claim-capped software sketch.
+- sovereign-clean-room: CI success (Python tests), no releases/tags, no open Dependabot. Claim-capped VSA core.
+- BlockSwarm: CI success (Foundry run 38252865430), no releases/tags, no open Dependabot. Solidity contracts.
+- Digital_Double_virtual_workforce: CI success (run 39035783949), no releases/tags, open Dependabot residual (dev-scope medium/high: postcss-selector-parser, source-map-js, pytest, etc.). Workforce agents.
 
-**AUDIT:**
-- Prior classifications locked. new-program-1.01 SUPERSEDED confirmed in Sweep-459.
-- No new unsupported claims.
+**AUDIT:** Prior classifications locked. No new unsupported claims. No releases observed on any pillar.
 
-**CLASSIFY:** No change. Digital_Double_virtual_workforce remains ACTIVE (pillar). Alerts residual, not classification-affecting.
+**CLASSIFY:** No change. Pillars remain ACTIVE (claim-capped).
 
-**PLAN:** Docs-only. Persist pass record. Queue for operator or future verified update.
+**PLAN:** Docs-only. Persist pass record.
 
-**IMPLEMENT / TEST / CI:** No implementation changes. No lockfile bumps applied this pass.
+**IMPLEMENT / TEST / CI:** No implementation changes. Live reads only.
 
-**DOCUMENT:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, new PASS-424.yaml.
+**DOCUMENT:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, new PASS-425.yaml.
 
 **GOVERN:** Invariants preserved. History preserved. Claim-capped.
 
@@ -60,8 +59,8 @@ CFT-v3.0 (GitHub-archived). Queue in archive_queue.md.
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
-| Prior pillar CI/structure checks | VERIFIED (Sweeps 455–457) |
-| Releases / tags on four pillars | NONE observed |
+| Prior pillar CI/structure checks | VERIFIED (Sweeps 455–457, 461) |
+| Releases / tags on four pillars | NONE observed (Sweep-461) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
 | ADL-Nexus live adapters / full autonomy | UNSUPPORTED |
