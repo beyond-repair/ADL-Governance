@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-21-484
+  parent_pass: PASS-2026-10-21-483
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 22+
+  gaps_remaining: 12+
+
+OBJECTIVE:
+  id: GAP-DISCOVER-CURRENT
+  description: Reconstruct current ecosystem from GitHub and Nexus/Governance state after Sweep-483; confirm census and select next bounded residual slice.
+  reason_selected: Highest-value next after prior random archived sketch audit; ensure fresh agent can continue without prior conversation.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair (id 132061760); search user:beyond-repair total_count 83 incomplete_results false.
+    - Latest prior: Sweep-483 / PASS-2026-10-21-483 on fantom_trading_bot_2 (ARCHIVED confirmation, docs-only).
+    - ADL-Governance contains docs/passes/, PORTFOLIO_STATE.md (as of 2026-10-20 post Sweep-452), OPERATOR_QUEUE.md, repository_registry.md.
+    - ADL-Nexus RESEARCH, CI green historically, claim-capped, live adapters UNSUPPORTED.
+    - adl-capability-matrix RESEARCH, locked 67-row snapshot vs live 83, gap file present, tests/CI exist.
+    - No basilisk-specific state; persistence via Governance passes and graphs implied in docs.
+    - Code scanning alerts 404 on ADL-Nexus (no analysis).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-484.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Current state reconstruction and next-slice selection (governance)
+
+VERIFICATION:
+  tests_run:
+    - No code changes; docs-only persistence. Prior CI patterns hold.
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no destructive changes)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 83 public repos.
+    - Persistence mechanism is docs/passes YAML + updates to SWEEP_HISTORY / OPERATOR_QUEUE / PORTFOLIO_STATE.
+    - Residuals include deep tree verification, dependency graphs, archive flags (operator), release tags (operator).
+  failures:
+    - None this pass.
+  decisions:
+    - Continue incremental residual audits rather than large expansions.
+    - Prefer REUSE of existing Governance persistence over new repos.
+
+REMAINING:
+  incomplete:
+    - Full per-repo tree/CI/test audits for remaining names.
+    - Dependency graph completion.
+    - Operator actions for archives and tags.
+  blockers:
+    - Operator-only for GitHub archive flags, release tags, secret rotations.
+  new_gaps:
+    - None critical; residual list unchanged.
+
+NEXT:
+  objective_id: GAP-RANDOM-SELECT-005
+  action: Randomly select another residual RESEARCH or unaudited repository (e.g. from list excluding recent) and perform full DISCOVER/AUDIT of tree, CI, claims, tests.
+  reason: Continues progressive closure of verification gaps while preserving claim discipline.
+  prerequisites:
+    - Fresh agent can read this pass and Governance docs.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count 83
+    - github___get_file_contents on Governance passes, PORTFOLIO_STATE, OPERATOR_QUEUE, Nexus README, capability-matrix README
+    - No fabrication of test results
