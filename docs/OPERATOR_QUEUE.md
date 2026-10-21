@@ -1,18 +1,18 @@
 # Operator Queue
 
-## Sweep-477 / Randomized Selection: bloch-coherence-factor2 (completed cycle)
+## Sweep-479 / Deep Audit: topological-pinch (completed cycle)
 
-Randomized selection of bloch-coherence-factor2 (RESEARCH). Structure, CI presence, claim caps re-audited. Governance documentation updated. No destructive actions performed.
+Deep audit of topological-pinch (RESEARCH). Structure, CI presence, claim caps re-audited. Governance documentation updated. No destructive actions performed.
 
 ### Findings this cycle
-- Classification confirmed RESEARCH (classical two-mode factor-of-two bound, claim ≤1).
-- Tests present (test_factor2.py, test_cli.py); CI workflow falsify.yml present (prior success).
-- Explicit non-claims: not a fundamental constant, no device spectral stability, no thrust, no CFT-X import, loop corrections deferred.
+- Classification confirmed RESEARCH (graph-proxy localization hypothesis, claim ≤1; eta 0.5/0.4/0.1 not 0.92).
+- Tests present (test_localization.py, test_docs.py, test_report.py); CI workflow ci.yml present.
+- Explicit non-claims: no experimental validation, no thrust, no mesh study, no 0.08 selection from neck.
 - No releases/tags. No new critical CI failures or unsupported claims.
-- pyproject.toml version 0.1.1; dependencies numpy + pytest.
+- pyproject.toml and requirements.txt (numpy, pytest) present.
 
 ### Residuals (require future cycles or operator review)
-- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~65+).
+- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~63+).
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals (including OS-family).
@@ -24,7 +24,6 @@ Randomized selection of bloch-coherence-factor2 (RESEARCH). Structure, CI presen
 - VSA completeness in sovereign-clean-room UNVERIFIED.
 - Expand CI and resolve nested package in Digital_Double_virtual_workforce.
 - Full test execution and security scans pending.
-- Loop branch 14J.5F.1-loop-correction not promoted (prior failure noted).
 
 ### No queued destructive proposals this cycle
 - No repository deletions.
@@ -33,6 +32,6 @@ Randomized selection of bloch-coherence-factor2 (RESEARCH). Structure, CI presen
 
 Next: Future residual or random sweeps. Portfolio remains claim-capped. Exit criteria NOT MET.
 
-## Sweep-476 / Phase 3: forge-aegis re-verification (completed cycle)
+## Sweep-477 / Randomized Selection: bloch-coherence-factor2 (completed cycle)
 
 [Prior content preserved in git history.]
