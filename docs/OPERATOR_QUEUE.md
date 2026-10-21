@@ -1,8 +1,8 @@
 # Operator Queue
 
-## Sweep-456 — Randomized Selection ADL-Nexus (completed slice)
+## Sweep-458 — Master Directive Discovery Confirmation (completed slice)
 
-Live verification of ADL-Nexus. Layered structure, CI workflow, claim-capped docs confirmed. Lifecycle RESEARCH locked. Live adapters and full autonomy UNSUPPORTED. Open PRs #1 (draft), #2, #4 noted. No code changes, no deletions, no history rewrites.
+Live census confirmed 83 repositories under beyond-repair. Existing governance artifacts current. No classification changes. No code modifications, no deletions, no history rewrites.
 
 ### Residuals (require future cycles or operator review)
 - Deep per-repository verification (tree, CI, tests, security) for remaining unaudited names (~70+).
@@ -26,4 +26,4 @@ Live verification of ADL-Nexus. Layered structure, CI workflow, claim-capped doc
 
 Next: Residual continuation on a subsequent governed sweep. Portfolio remains claim-capped and historically preserved. Exit criteria NOT MET. Stopped.
 
-[Prior Sweep-455 content preserved in git history.]
+[Prior Sweep-457 / 456 content preserved in git history.]
