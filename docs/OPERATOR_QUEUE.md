@@ -1,14 +1,14 @@
 # Operator Queue
 
-## Sweep-480 / Randomized Selection: Sovereign-OS (completed cycle)
+## Sweep-481 / Randomized Selection: ADL-Portfolio-Census (completed cycle)
 
-Randomized selection of Sovereign-OS (RESEARCH). Structure, CI presence, claim caps re-audited. Governance documentation updated. No destructive actions performed.
+Randomized selection of ADL-Portfolio-Census (RESEARCH). Structure, CI presence, claim caps, snapshot freeze re-audited. Governance documentation updated. No destructive actions performed.
 
 ### Findings this cycle
-- Classification confirmed RESEARCH (constitutional architecture + evidence schema, claim level 0).
-- Tests present (test_docs.py for existence/claim-cap/invariants); CI workflow ci.yml present (pytest).
-- Explicit non-claims: no production control plane, no live refusal engine, no capital kernel, no autonomous self-expansion.
-- Empty stubs only for control_plane, kernel, knowledge, runtime. No releases/tags.
+- Classification confirmed RESEARCH (deterministic checker over locked 2026-09-04 42-row snapshot, claim ≤1).
+- Tests present (test_census.py for uniqueness, claims, freeze, anchors); CI workflow ci.yml present (engine + pytest).
+- Explicit non-claims: not a live GitHub crawler, not an 83-row completeness proof. Snapshot constants locked.
+- COMPATIBLE_BUILDS status preserved (aegis-repo-graph not_built).
 - No new critical CI failures or unsupported claims.
 
 ### Residuals (require future cycles or operator review)
@@ -32,6 +32,6 @@ Randomized selection of Sovereign-OS (RESEARCH). Structure, CI presence, claim c
 
 Next: Future residual or random sweeps. Portfolio remains claim-capped. Exit criteria NOT MET.
 
-## Sweep-479 / Deep Audit: topological-pinch (completed cycle)
+## Sweep-480 / Randomized Selection: Sovereign-OS (completed cycle)
 
 [Prior content preserved in git history.]

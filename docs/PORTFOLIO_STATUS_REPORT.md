@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-480 / Randomized Selection Sovereign-OS)
-**Project / Version:** ADL Portfolio Governance / Sweep-480
-**Objective:** Randomized repository completion cycle for Sovereign-OS.
+**Updated:** 2026-10-21 (Sweep-481 / Randomized Selection ADL-Portfolio-Census)
+**Project / Version:** ADL Portfolio Governance / Sweep-481
+**Objective:** Randomized repository completion cycle for ADL-Portfolio-Census.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -10,29 +10,29 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-480: Randomized Selection Sovereign-OS
+## Sweep-481: Randomized Selection ADL-Portfolio-Census
 
-**SELECT:** Sovereign-OS (random.choice from 83-repo list).
+**SELECT:** ADL-Portfolio-Census (random.choice from 83-repo list).
 
-**DISCOVER:** Recursive tree (35 paths). Docs-only RESEARCH tree: README.md (RESEARCH, claim level 0, constitutional vision), RESEARCH.md (justification, forbidden claims), CONSTITUTION.md (INV-001–INV-012), GOVERNANCE.md, SECURITY.md, docs/ (architecture.md, layers/, evidence-package.md, mvs-roadmap.md, etc.), schemas/evidence_package.json, empty stubs (control_plane/, kernel/, knowledge/, runtime/), tests/test_docs.py (docs existence + claim-cap gates), .github/workflows/ci.yml (pytest on Python 3.12). No executable control-plane, agent runtime, or capital kernel.
+**DISCOVER:** Recursive tree (19 paths). RESEARCH tree: README.md (RESEARCH, claim ≤1, locked snapshot), census/ (inventory.py frozen 42-row 2026-09-04 + engine.py validator), tests/test_census.py (structural + freeze tests), .github/workflows/ci.yml (engine + pytest 3.12), pyproject.toml 0.1.2, SECURITY.md, docs/SWEEP-227.md. No network client. Snapshot not live.
 
-**AUDIT:** Matches registry RESEARCH / claim level 0. Constitutional invariants present. Explicit non-claims on production control plane, live engines, etc. CI and tests present for docs/claim discipline. Related to OS-family (sovereign-clean-room ACTIVE successor path noted).
+**AUDIT:** Matches Sweep-227 lock and registry. Claim-capped ≤1. Not a live crawler or 83-row proof. CI and tests present. Compatible-builds status preserved. No undefined components.
 
-**CLASSIFY:** RESEARCH (confirmed). Justification: Architectural constitution and evidence schema only; no delivered runtime; claim capped at 0 (Idea).
+**CLASSIFY:** RESEARCH (confirmed). Justification: Deterministic structural checker over locked historical snapshot; claim ≤1.
 
-**PLAN:** Preserve RESEARCH. Governance documentation updates only. No body changes.
+**PLAN:** Preserve RESEARCH and freeze. Governance documentation updates only. No body changes.
 
-**IMPLEMENT:** Idempotent documentation updates in ADL-Governance. No changes to Sovereign-OS body.
+**IMPLEMENT:** Idempotent documentation updates in ADL-Governance. No changes to ADL-Portfolio-Census body.
 
-**TEST/CI:** Structure verified. Pytest CI and test_docs.py present. Not re-executed in this environment.
+**TEST/CI:** Structure verified. Engine + pytest CI present. Not re-executed in this environment.
 
-**DOCUMENT/GOVERN:** Updated status, history, operator queue, headings. Claims capped. No unsupported claims.
+**DOCUMENT/GOVERN:** Updated status, history, operator queue. Claims capped. No unsupported claims.
 
 **RELEASE/ARCHIVE:** None performed.
 
-**RE-AUDIT:** Consistent with RESEARCH.md (Sweep-157 lock). Termination conditions met for this RESEARCH repo (docs, tests, CI structure, claim discipline). Portfolio residuals remain.
+**RE-AUDIT:** Consistent with SWEEP-227.md. Termination conditions met for this RESEARCH repo (docs, tests, CI structure, claim discipline, snapshot lock). Portfolio residuals remain.
 
-## Sweep-479: Deep Audit topological-pinch
+## Sweep-480: Randomized Selection Sovereign-OS
 
 [Prior content preserved in git history.]
 
@@ -48,7 +48,7 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 - sovereign-clean-room
 
 ### RESEARCH (claim-capped; most unaudited in depth)
-Preserved. Includes Sovereign-OS (this sweep), topological-pinch (Sweep-479), finite-gasket-spectral-derivatives (Sweep-478), bloch-coherence-factor2, adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, blacksite, and unaudited names defaulting to RESEARCH.
+Preserved. Includes ADL-Portfolio-Census (this sweep), Sovereign-OS (Sweep-480), topological-pinch (Sweep-479), finite-gasket-spectral-derivatives (Sweep-478), bloch-coherence-factor2, adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, blacksite, and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
 Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; Auto_Legion → sovereign-clean-room; CFT-v3.0 archived; etc.
@@ -60,6 +60,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
+| ADL-Portfolio-Census locked snapshot + structural validator + CI | VERIFIED (Sweep-481) |
 | Sovereign-OS constitutional docs + evidence schema + docs CI | VERIFIED (Sweep-480) |
 | topological-pinch graph proxy + tests + CI structure | VERIFIED (Sweep-479) |
 | finite-gasket-spectral-derivatives kernel + residue bookkeeping + CI structure | VERIFIED (Sweep-478) |
@@ -94,6 +95,6 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: ADL-Nexus and experimental cluster (including Sovereign-OS, topological-pinch, finite-gasket-spectral-derivatives, bloch-coherence-factor2, blacksite)
+- Research: ADL-Nexus and experimental cluster (including ADL-Portfolio-Census, Sovereign-OS, topological-pinch, finite-gasket-spectral-derivatives, bloch-coherence-factor2, blacksite)
 
-Prior content and git history preserved. Sweep-480 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-481 complete. Exit criteria not fully satisfied.
