@@ -1,0 +1,65 @@
+PASS:
+  id: PASS-2026-10-21-430
+  parent_pass: PASS-2026-10-21-429
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 2
+  gaps_remaining: 67+
+OBJECTIVE:
+  id: GAP-AUDIT-SCALE-FUNCTIONAL-I
+  description: Deep DISCOVER/AUDIT of scale-functional-I RESEARCH repo
+  reason_selected: Highest-value residual deep verification slice on next coherence-cluster RESEARCH package as indicated by prior pass NEXT (scale-functional-I or momentum-closure)
+DISCOVERY:
+  findings:
+    - Python package declaring I = Perimeter/sqrt(Area) for planar pinch domains; beta_I = dI / d ln ell; no stationary point on tested dumbbell families
+    - CI workflow present (pytest + scale_functional.py); tests present (test_cli.py, test_scale_functional.py); pyproject.toml with numpy and test extras
+    - CLAIM_STATUS.md: RESEARCH, claim level 1, experimental_validation=false, thrust_validated=false, energy_extraction_validated=false; 0.08 not reached
+    - README, FUNCTIONAL.md, RESULT.md present with explicit non-claims; parent lock to -ware-constant-derivation
+    - No open Dependabot alerts
+    - Claim cap ≤ 1 preserved; no unsupported physical or continuum claims
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-430.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - scale-functional-I structure/CI/tests/docs verified as RESEARCH claim-capped
+VERIFICATION:
+  tests_run:
+    - Local not re-run; CI structure verified (ci.yml with Python 3.11, pytest, scale_functional.py)
+  code_review: NOT_RUN
+  security: PASS (no Dependabot alerts; numpy only)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap preserved, no 0.08 or thrust claim)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - scale-functional-I matches RESEARCH classification with complete bookkeeping structure for declared functional and lattice computations
+    - Pattern consistent with finite-gasket-spectral-derivatives and other coherence cluster repos
+  failures: []
+  decisions:
+    - Continue sequential deep audits on residual RESEARCH repos in coherence/physics cluster
+REMAINING:
+  incomplete:
+    - Deep verification of remaining ~67 repos
+    - Full dependency graph
+    - Gap severity tables
+  blockers: []
+  new_gaps: []
+NEXT:
+  objective_id: GAP-AUDIT-NEXT-COHERENCE
+  action: Select next residual coherence-cluster RESEARCH repo (e.g. momentum-closure) for deep audit
+  reason: Consistent progress on residual deep verification while exit criteria unmet
+  prerequisites:
+    - Census remains 83
+PROVENANCE:
+  state_commit: (post-push)
+  evidence:
+    - Tree of scale-functional-I (13 entries)
+    - CI workflow, CLAIM_STATUS, README inspected
+    - No Dependabot alerts
