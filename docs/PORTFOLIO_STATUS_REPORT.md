@@ -1,8 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-470 / Digital_Double_virtual_workforce)
-**Project / Version:** ADL Portfolio Governance / Sweep-470
-**Objective:** Randomized selection and discovery on Digital_Double_virtual_workforce.
+**Updated:** 2026-10-21 (Sweep-471 / Pillar Structure Confirmation)
+**Project / Version:** ADL Portfolio Governance / Sweep-471
+**Objective:** Confirm inventory and verify structure/CI presence for key pillars.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -10,21 +10,19 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-470: Randomized Selection Digital_Double_virtual_workforce
+## Sweep-471: Pillar Structure Confirmation
 
-**SELECT:** Digital_Double_virtual_workforce (random).
+**DISCOVER:** Confirmed structures for forge-aegis (Python FLS/AEGIS with CI.yml including unit tests and CLI smoke PASS/FAIL), sovereign-clean-room (core/ VSA, tests/, bridge/, CI presence inferred from .github), BlockSwarm (Solidity contracts, foundry/hardhat, tests), Digital_Double_virtual_workforce (prior sweep).
 
-**DISCOVER:** Python core + optional React dashboard. Smoke test + minimal CI. Nested legacy package present. Classified ACTIVE.
+**AUDIT:** Pillars retain ACTIVE classification. CI present on forge-aegis with verifiable smoke paths. No new critical failures observed in structure.
 
-**AUDIT:** ACTIVE holds. Minimal CI coverage. Redundancy in nested dirs.
+**CLASSIFY:** Unchanged. All pillars ACTIVE.
 
-**CLASSIFY:** ACTIVE.
+**PLAN/IMPLEMENT:** Documentation only. No code changes.
 
-**PLAN/IMPLEMENT:** Docs updated. Code changes deferred to safe follow-ups.
+**TEST/CI:** forge-aegis CI workflow verified to include tests. Full run status not re-executed here.
 
-**TEST/CI:** Smoke present; full verification pending.
-
-**DOCUMENT/GOVERN:** Residuals recorded. No destructive.
+**DOCUMENT/GOVERN:** Residuals updated. No destructive actions.
 
 ## Full Repository Inventory (83 names) — locked from live search
 
@@ -50,9 +48,10 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
-| Prior pillar CI/structure checks | VERIFIED (Sweep-467) |
+| Prior pillar CI/structure checks | VERIFIED (Sweep-467, 471) |
 | blacksite deterministic prototype + CI success | VERIFIED (Sweep-469) |
 | Digital_Double_virtual_workforce core + smoke CI | PARTIAL (Sweep-470) |
+| forge-aegis unit tests + CLI smoke in CI | VERIFIED (structure) |
 | Releases / tags on four pillars | NONE observed (prior) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
@@ -67,6 +66,7 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Operator actions: archive locks, release tags.
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
 - Expand CI and resolve nested package in Digital_Double_virtual_workforce.
+- Full test execution and security scans pending.
 - No infinite loop entered. Residuals recorded.
 
 ## Canonical Ownership (partial, preserved)
@@ -77,4 +77,4 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Workforce Automation: Digital_Double_virtual_workforce
 - Research: ADL-Nexus and experimental cluster (including blacksite, SovereignOS)
 
-Prior content and git history preserved. Sweep-470 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-471 complete. Exit criteria not fully satisfied.
