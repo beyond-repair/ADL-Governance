@@ -1,14 +1,14 @@
 # Operator Queue
 
-## Sweep-474 / Randomized Portfolio Completion: SovereignOS (completed cycle)
+## Sweep-475 / Deep Audit: informational-flux-identity (completed cycle)
 
-Random selection of SovereignOS (RESEARCH). Structure, docs CI, and claim caps re-audited. Governance documentation updated. No destructive actions performed.
+Deep audit of informational-flux-identity (RESEARCH). Structure, CI, claim caps re-audited. Governance documentation updated. No destructive actions performed.
 
 ### Findings this cycle
-- Classification confirmed RESEARCH (claim level 0 / ≤1).
-- Docs-presence workflow and structural tests present and consistent (required files + forbidden product phrases).
-- Explicit non-claims: no thrust, energy extraction, AGI, production autonomy, measured uptime, or enforced refusal runtime.
-- OS-family siblings exist; consolidation remains operator decision (no merge performed).
+- Classification confirmed RESEARCH (claim level 1 / ≤1).
+- CI present (unittest for flux identity); extensive scripts for theorems and fractional bounds.
+- Explicit non-claims: no thrust, continuum limit, selected W, laboratory force.
+- Fractional audit floors improved across theorems AA-AO; Conjecture J.1 open.
 - No new critical CI failures, security issues, or unsupported claims.
 - Remains RESEARCH; no archive flag.
 
@@ -33,6 +33,6 @@ Random selection of SovereignOS (RESEARCH). Structure, docs CI, and claim caps r
 
 Next: Future residual or random sweeps. Portfolio remains claim-capped. Exit criteria NOT MET.
 
-## Sweep-473 / Deep Audit: momentum-closure (completed cycle)
+## Sweep-474 / Randomized Portfolio Completion: SovereignOS (completed cycle)
 
 [Prior content preserved in git history.]
