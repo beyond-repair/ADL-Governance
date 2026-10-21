@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-21-487
+  parent_pass: PASS-2026-10-21-486
+
+STATE:
+  global_status: RESIDUALS_OPEN_BOT_BLOCKED
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 22+
+  gaps_remaining: 12+
+
+OBJECTIVE:
+  id: GAP-BOT-CAPACITY-CHECK-487
+  description: Attempt bot-delegated continuation of Basilisk loop; record usage exhaustion and persist fresh-agent reconstruction.
+  reason_selected: Existing Portfolio Sweep bot is the designed principal agent; this pass verifies delegation path and falls back to direct tool reconstruction.
+
+DISCOVERY:
+  findings:
+    - Portfolio Sweep agentId 137aa325-6608-4508-9edb-68d7a46dddde status idle but bot_send_prompt returned usage_exhausted (100%).
+    - PASS-2026-10-21-486.yaml already exists with reconstruction of Sweep-485.
+    - Census remains 83 (search_repositories).
+    - Direct GitHub tools available and functional.
+    - No new critical changes observed since 486.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-487.yaml
+  commits:
+    - created via create_or_update_file
+  capabilities_added_or_changed:
+    - Bot capacity status recorded as BLOCKED.
+
+VERIFICATION:
+  tests_run:
+    - bot_send_prompt : usage_exhausted (BLOCKED)
+    - search_repositories total_count=83 : PASS
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Autonomous bot path currently exhausted; direct tool path viable for small slices.
+    - Persistence pattern (YAML in docs/passes/) confirmed working.
+  failures:
+    - Delegation to Portfolio Sweep bot failed due to usage limit.
+  decisions:
+    - Subsequent passes should use direct GitHub tools until bot capacity recovers.
+    - Continue with bounded residual audits.
+
+REMAINING:
+  incomplete:
+    - Deep per-repository audits for RESEARCH class.
+    - Dependency and capability graphs.
+  blockers:
+    - Bot usage at 100%.
+  new_gaps:
+    - None.
+
+NEXT:
+  objective_id: GAP-AUDIT-ADL-NEXUS-488
+  action: Bounded DISCOVER + AUDIT on beyond-repair/ADL-Nexus: get_repository_tree, get_file_contents on README.md and any CI workflows, list open issues. Update classification if needed. Persist findings.
+  reason: Highest recent activity among RESEARCH, central Nexus claims, synergy with Governance.
+  prerequisites:
+    - Direct tool access (available).
+
+PROVENANCE:
+  state_commit: pending this file
+  evidence:
+    - bot_send_prompt result usage_exhausted
+    - Existing PASS-2026-10-21-486.yaml content
+    - search_repositories total_count 83
