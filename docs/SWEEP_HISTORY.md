@@ -1,37 +1,23 @@
+## Sweep-482 / Mandatory Phase 3: Pillar Live Verification
+
+- Timestamp: 2026-10-21.
+- SCOPE: Explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (CI, releases, tags, tests, documentation, security structure).
+- DISCOVER: Live search confirmed 83 repos. For pillars: .github/workflows present (ci.yml / python-tests.yml / foundry.yml / ci.yml). No releases/tags on any of the four (list_releases empty).
+- AUDIT:
+  - forge-aegis: CI success on recent runs (e.g. 37258127100 success). README: RUNNABLE SKETCH / software claim only; explicit NOT CLAIMED host-integrity product. Unit tests + CLI smoke in CI. Structure matches prior.
+  - sovereign-clean-room: CI structure present (pytest). Recent runs mixed (some PR failures noted historically; main structure verified). No releases. VSA completeness remains UNVERIFIED.
+  - BlockSwarm: Foundry CI success (e.g. 38252865430 success). No releases. Distributed systems claim preserved as ACTIVE pillar.
+  - Digital_Double_virtual_workforce: CI success (e.g. 39035783949 success including security pin). Smoke test present. Nested package residual noted previously. No releases.
+- CLASSIFY: All four remain ACTIVE (registry-locked pillars). No reclassification.
+- PLAN: Governance documentation updates only. No body changes to pillars. Claims capped.
+- IMPLEMENT: Idempotent updates to PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history.
+- TEST/CI: Structure and recent conclusion verified via actions_list. Not re-executed in this environment. No critical main-branch failures observed in sampled runs.
+- DOCUMENT/GOVERN: This entry, status report, operator queue. No unsupported claims. No fabrication.
+- RELEASE/ARCHIVE: None. forge-aegis remains RELEASE_BLOCKED_BY_OPERATOR.
+- RE-AUDIT: Consistent with prior pillar locks. Termination conditions met for this verification cycle (CI structure, no releases, claim discipline). Portfolio residuals open.
+
+Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded. No infinite loop.
+
 ## Sweep-481 / Randomized Selection: ADL-Portfolio-Census
-
-- Timestamp: 2026-10-21.
-- SELECT: ADL-Portfolio-Census (random.choice from full 83-repo list).
-- DISCOVER: Recursive tree scanned (19 paths). Key files: README.md (RESEARCH, claim ≤1, locked 2026-09-04 snapshot of 42 rows), census/inventory.py (frozen INVENTORY + COMPATIBLE_BUILDS), census/engine.py (structural validator), tests/test_census.py (falsification of uniqueness, claims, anchors, snapshot lock), .github/workflows/ci.yml (python -m census.engine + pytest on 3.12), pyproject.toml (0.1.2), SECURITY.md, docs/SWEEP-227.md.
-- AUDIT: Matches prior Sweep-227 lock and registry. Claim-capped ≤1. Not a live crawler. Snapshot not expanded to 83. CI and tests present. No undefined components. Compatible builds status preserved (aegis-repo-graph not_built).
-- CLASSIFY: RESEARCH (confirmed). Justification: Deterministic checker over locked historical snapshot; no live completeness; claim ≤1.
-- PLAN: Preserve RESEARCH with claim caps and freeze. No body changes required. Update governance docs only.
-- IMPLEMENT: Governance documentation updates (idempotent). No changes to ADL-Portfolio-Census body.
-- TEST/CI: Structure verified. Engine + pytest CI present. Not re-executed in this environment.
-- DOCUMENT: This history, status report, operator queue updated.
-- GOVERN: Claims capped. No unsupported claims. Critical security none observed in structure.
-- RELEASE/ARCHIVE: None.
-- RE-AUDIT: Consistent with SWEEP-227.md and inventory freeze. Termination conditions met for this research repo (docs, tests, CI structure, claim discipline, snapshot lock). Portfolio residuals open.
-
-Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded.
-
-## Sweep-480 / Randomized Selection: Sovereign-OS
-
-- Timestamp: 2026-10-21.
-- SELECT: Sovereign-OS (random.choice from full 83-repo list).
-- DISCOVER: Recursive tree scanned (35 paths). Key files: README.md (RESEARCH, claim level 0, constitutional OS vision), RESEARCH.md (Sweep-157 lock, forbidden claims), CONSTITUTION.md (INV-001–INV-012, refusal default), GOVERNANCE.md, SECURITY.md, docs/architecture.md + layers/ + evidence-package.md + mvs-roadmap.md, schemas/evidence_package.json, empty package stubs (control_plane, kernel, knowledge, runtime), tests/test_docs.py (required docs + claim-cap + invariant checks), .github/workflows/ci.yml (pytest Python 3.12).
-- AUDIT: Matches registry RESEARCH / claim level 0. No executable control-plane, runtime, or capital kernel. Explicit non-claims present. CI and docs tests present. Related OS-family notes preserved (sovereign-clean-room as ACTIVE path).
-- CLASSIFY: RESEARCH (confirmed). Justification: Architectural constitution and schema only; claim capped at 0 (Idea); no delivered product surface.
-- PLAN: Preserve RESEARCH with claim caps. No body changes required. Update governance docs only.
-- IMPLEMENT: Governance documentation updates (idempotent). No changes to Sovereign-OS body.
-- TEST/CI: Structure verified. Pytest CI and test_docs.py present. Not re-executed in this environment.
-- DOCUMENT: This history, status report, operator queue, headings updated.
-- GOVERN: Claims capped. No unsupported claims. Critical security none observed in structure.
-- RELEASE/ARCHIVE: None.
-- RE-AUDIT: Consistent with RESEARCH.md. Termination conditions met for this research repo (docs, tests, CI structure, claim discipline). Portfolio residuals open.
-
-Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded.
-
-## Sweep-479 / Deep Audit: topological-pinch
 
 [Prior content preserved in git history.]
