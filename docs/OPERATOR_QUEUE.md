@@ -1,16 +1,15 @@
 # Operator Queue
 
-## Sweep-475 / Deep Audit: informational-flux-identity (completed cycle)
+## Sweep-476 / Phase 3: forge-aegis re-verification (completed cycle)
 
-Deep audit of informational-flux-identity (RESEARCH). Structure, CI, claim caps re-audited. Governance documentation updated. No destructive actions performed.
+Phase 3 mandatory live verification of forge-aegis (ACTIVE). Structure, CI presence, claim caps re-audited. Governance documentation updated. No destructive actions performed.
 
 ### Findings this cycle
-- Classification confirmed RESEARCH (claim level 1 / ≤1).
-- CI present (unittest for flux identity); extensive scripts for theorems and fractional bounds.
-- Explicit non-claims: no thrust, continuum limit, selected W, laboratory force.
-- Fractional audit floors improved across theorems AA-AO; Conjecture J.1 open.
-- No new critical CI failures, security issues, or unsupported claims.
-- Remains RESEARCH; no archive flag.
+- Classification confirmed ACTIVE (software / RUNNABLE SKETCH, claim level software).
+- Vertical slice pipeline + unit tests present; CI workflow present (prior success).
+- Explicit non-claims: full Nehemiah host, kernel agents, auto-remediation, Forge compiler.
+- No releases/tags. RELEASE_BLOCKED_BY_OPERATOR.
+- No new critical CI failures or unsupported claims.
 
 ### Residuals (require future cycles or operator review)
 - Deep per-repository tree/CI/test/security verification for remaining unaudited names (~65+).
@@ -33,6 +32,6 @@ Deep audit of informational-flux-identity (RESEARCH). Structure, CI, claim caps 
 
 Next: Future residual or random sweeps. Portfolio remains claim-capped. Exit criteria NOT MET.
 
-## Sweep-474 / Randomized Portfolio Completion: SovereignOS (completed cycle)
+## Sweep-475 / Deep Audit: informational-flux-identity (completed cycle)
 
 [Prior content preserved in git history.]
