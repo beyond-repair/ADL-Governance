@@ -1,3 +1,20 @@
+## Sweep-478 / Deep Audit: finite-gasket-spectral-derivatives
+
+- Timestamp: 2026-10-21.
+- SELECT: Next residual coherence-cluster RESEARCH repo as indicated by PASS-2026-10-21-432 NEXT.
+- DISCOVER: Recursive tree (30 paths). Key files: README.md (RESEARCH, claim ≤1, extensive theorems on Gamma_loop, remainder, mult(6), residue conditions), CLAIM_STATUS.md (many CLAIMED algebraic/residue results with scripts; continuum/force/selected W NOT CLAIMED), scripts/ (CLI, residue checks including C code, spectral_derivatives.py), tests/test_spectral_derivatives.py + test_cli.py, .github/workflows/kernel.yml (unittest on Python 3.11), pyproject.toml (v0.1.0, numpy, optional pytest).
+- AUDIT: Matches registry RESEARCH / claim ≤1. Kernel identities implemented and tested. CI workflow present with recent success (run 38806232309 on 236e2d1). Residue condition exact checks to k=48 claimed (zeros=0); excess m≤12 partial. Explicit non-claims preserved. Geometry dependency on sierpinski-geometry-045 noted.
+- CLASSIFY: RESEARCH (confirmed). Justification: Finite discrete kernel bookkeeping with tests, CI, and extensive numerical residue verification; claim capped at ≤1; not continuum or force prediction.
+- PLAN: Preserve RESEARCH with claim caps. No body changes required. Update governance docs only.
+- IMPLEMENT: Governance documentation updates (idempotent). No changes to finite-gasket-spectral-derivatives body.
+- TEST/CI: Structure verified. Recent CI success noted. Not re-executed in this environment.
+- DOCUMENT: This history, status report, headings updated.
+- GOVERN: Claims capped. No unsupported claims. Critical security none observed in structure.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Consistent with prior Sweep-167 notes. Termination conditions met for this research repo (docs, tests, CI structure, claim discipline). Portfolio residuals open.
+
+Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded.
+
 ## Sweep-477 / Randomized Selection: bloch-coherence-factor2
 
 - Timestamp: 2026-10-21.
@@ -16,22 +33,5 @@
 Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded.
 
 ## Sweep-476 / Phase 3 Mandatory Live Verification: forge-aegis
-
-- Timestamp: 2026-10-21.
-- SELECT: Mandatory live verification target `forge-aegis` (ACTIVE pillar).
-- DISCOVER: Recursive tree (46 paths). README.md (RUNNABLE SKETCH, claim software, explicit non-claims for full host/kernel/remediation), python/aegis_pipeline.py + tests (test_pipeline.py, test_validator.py), .github/workflows/ci.yml present, docs/ (V0_1_VERTICAL_SLICE.md, THREAT_MODEL.md, RELEASE_GATE), schemas, fls/ specs.
-- AUDIT: Matches prior registry ACTIVE / software sketch. CI structure verified (prior success run referenced). Tests present (8+2 passed claimed in README). No releases/tags observed. No full product claims. LICENSE minimal.
-- CLASSIFY: ACTIVE (confirmed, claim-capped). Justification: Runnable vertical slice with unit tests and CI; not a complete host integrity product. Promotion blocked pending operator release gate.
-- PLAN: Preserve ACTIVE with claim caps. No body changes.
-- IMPLEMENT: Governance documentation updates only (idempotent).
-- TEST/CI: Structure and prior CI success noted. Not re-executed in this environment.
-- DOCUMENT: This history, status report, operator queue updated.
-- GOVERN: Claims capped. No unsupported claims. Critical security none observed in structure.
-- RELEASE/ARCHIVE: None. RELEASE_BLOCKED_BY_OPERATOR remains.
-- RE-AUDIT: Consistent with Sweep-287 notes. Termination conditions met for this pillar re-verify. Portfolio residuals open.
-
-Exit: Cycle logged. Portfolio exit criteria NOT MET. Residuals recorded.
-
-## Sweep-475 / Deep Audit: informational-flux-identity
 
 [Prior content preserved in git history.]
