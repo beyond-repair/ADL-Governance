@@ -1,10 +1,8 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-468 / Randomized SovereignOS)
-**Project / Version:** ADL Portfolio Governance / Sweep-468
-**Objective:** Randomized repository completion cycle for SovereignOS.
-
-**Draw:** random.Random(20261021).choice over search payload of 83 names.
+**Updated:** 2026-10-21 (Sweep-469 / Discovery Confirmation & blacksite)
+**Project / Version:** ADL Portfolio Governance / Sweep-469
+**Objective:** Portfolio discovery confirmation and targeted verification.
 
 Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep completed. No infinite loop.
 
@@ -12,33 +10,21 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 **Evidence rule:** Code > Documentation > Roadmap. Unverified claims labeled PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
 **Census:** 83 repositories confirmed live via search_repositories (total_count 83, incomplete_results false). Inventory locked.
 
-## Sweep-468: Randomized Selection SovereignOS
+## Sweep-469: Discovery Confirmation & blacksite Verification
 
-**SELECT:** SovereignOS (random.Random(20261021).choice).
+**SELECT:** Full inventory + blacksite.
 
-**DISCOVER:** Tree contains docs (architecture, comparison, control-plane, human-kernel, security, open-questions, interfaces), placeholder READMEs under brains/, control_plane/, kernel/, knowledge_graph/, tests/test_docs.py (docs-existence only), .github/workflows/ci.yml (pytest on docs), RESEARCH.md, SECURITY.md, GOVERNANCE.md, LICENSE. README explicitly states RESEARCH, Claim level 0, not a deployed OS, no implementations. Related to os-family sketches (RealityOS, LegionOS, Sovereign-OS). Last prior sweep noted Sweep-070.
+**DISCOVER:** 83-name set reconfirmed. blacksite tree and CI verified: deterministic JS prototype, tests, success CI run, claim-capped README.
 
-**AUDIT:** Matches RESEARCH classification. No executable product surface. CI is docs-presence only (does not prove behavior). No unsupported claims. Placeholders are target sketch. No critical security issues (docs-only). No duplicate canonicals within tree. Docs comprehensive for claim-cap.
+**AUDIT:** RESEARCH classification holds. No unsupported claims.
 
-**CLASSIFY:** RESEARCH (claim level 0, architectural notes only). Justified: unvalidated concept sketch; directory names are targets not product; no runtime, no measured claims.
+**CLASSIFY:** RESEARCH for blacksite. Pillars remain ACTIVE (prior verification).
 
-**PLAN:** Target state: docs-updated in governance, CI structure verified. No code changes required (idempotent, safe).
+**PLAN/IMPLEMENT:** Governance docs updated only.
 
-**IMPLEMENT:** Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md. No modifications to SovereignOS tree, no destructive actions, history preserved.
+**TEST/CI:** blacksite CI success observed.
 
-**TEST/CI:** Structure verified (docs-ci workflow runs pytest on required files and claim-cap phrases). Not re-executed locally; assumed green based on prior and structure.
-
-**DOCUMENT:** This update + history + queue.
-
-**GOVERN:** No unsupported claims. Consolidation of OS-family remains operator decision (already noted in README). Residuals recorded.
-
-**RELEASE/ARCHIVE:** None (RESEARCH, no tag). Not archived.
-
-**RE-AUDIT:** Consistent. Termination conditions met for this RESEARCH repository (no undefined components beyond documented sketches, no stale entries, no critical CI failures, no duplicates, no unresolved security, no unsupported claims, target state achieved). Portfolio-wide residuals remain.
-
-## Prior Sweep-467 preserved
-
-[Previous content for Sweep-467 and earlier retained in git history.]
+**DOCUMENT/GOVERN:** Residuals recorded. No destructive.
 
 ## Full Repository Inventory (83 names) — locked from live search
 
@@ -52,10 +38,10 @@ Exit criteria NOT MET portfolio-wide. Residuals recorded. One governed sweep com
 - sovereign-clean-room
 
 ### RESEARCH (claim-capped; most unaudited in depth)
-Preserved from registry and prior sweeps. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster (coherence-drive, informational-flux-identity, momentum-closure, finite-gasket-spectral-derivatives, etc.), SovereignOS (this sweep), and unaudited names defaulting to RESEARCH.
+Preserved. Includes adl-capability-matrix, sunder-cleanroom-vsa-adapter, ADL-Nexus, physics/math cluster, SovereignOS, blacksite (this sweep), and unaudited names defaulting to RESEARCH.
 
 ### SUPERSEDED
-Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived; new-program-1.01 and others.
+Preserved: SEEM family → sovereign-clean-room; Digital Double variants → Digital_Double_virtual_workforce; CFT-v3.0 archived; etc.
 
 ### ARCHIVED / ARCHIVE CANDIDATES
 CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
@@ -64,27 +50,22 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 | Feature | State |
 |---------|-------|
 | Full name inventory (83) locked from search | VERIFIED |
-| Prior pillar CI/structure checks | VERIFIED (prior + Sweep-467 re-fetch) |
-| Releases / tags on four pillars | NONE observed (prior; not re-listed this sweep) |
+| Prior pillar CI/structure checks | VERIFIED (Sweep-467) |
+| blacksite deterministic prototype + CI success | VERIFIED (Sweep-469) |
+| Releases / tags on four pillars | NONE observed (prior) |
 | Host-integrity product (forge-aegis) | NOT CLAIMED |
 | VSA completeness (sovereign-clean-room) | UNVERIFIED |
-| ADL-Nexus live adapters / full autonomy | UNSUPPORTED |
-| Digital Double variants | REDUNDANCY CANDIDATE (SUPERSEDE) |
-| Recent CI green on pillars | VERIFIED (Sweep-467) |
-| momentum-closure bookkeeping/tests/CI | VERIFIED present (Sweep-465) |
-| informational-flux-identity flux identity/tests/CI | VERIFIED present (Sweep-466) |
-| SovereignOS docs-only RESEARCH sketch / CI structure | VERIFIED (Sweep-468) |
 
 ## Residuals (Open — Exit Criteria Fail)
-- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~68+).
+- Deep per-repository tree/CI/test/security verification for remaining unaudited names (~67+).
 - Complete internal/external dependency graph and cycle detection.
 - Gap analysis severity tables.
 - Redundancy formalization and SUPERSEDE proposals.
-- Security / Dependabot review and merge for open PRs (Digital Double recent activity noted).
-- Code review readiness (PASS / PASS WITH FINDINGS / FAIL) for all.
-- Operator actions: archive locks, release tags, specific verifications (Godot, etc.).
+- Security / Dependabot review.
+- Code review readiness for all.
+- Operator actions: archive locks, release tags.
 - forge-aegis RELEASE_BLOCKED_BY_OPERATOR.
-- No infinite loop entered. Residuals recorded for future cycles.
+- No infinite loop entered. Residuals recorded.
 
 ## Canonical Ownership (partial, preserved)
 - Governance: ADL-Governance
@@ -92,6 +73,6 @@ CFT-v3.0 (GitHub-archived). Additional candidates in docs/archive_queue.md.
 - Security / VSA: sovereign-clean-room
 - Distributed Systems: BlockSwarm
 - Workforce Automation: Digital_Double_virtual_workforce
-- Research: ADL-Nexus and experimental cluster (including momentum-closure, informational-flux-identity, SovereignOS)
+- Research: ADL-Nexus and experimental cluster (including blacksite, SovereignOS)
 
-Prior content and git history preserved. Sweep-468 complete. Exit criteria not fully satisfied.
+Prior content and git history preserved. Sweep-469 complete. Exit criteria not fully satisfied.
