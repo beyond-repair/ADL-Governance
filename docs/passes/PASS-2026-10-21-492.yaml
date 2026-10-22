@@ -1,0 +1,72 @@
+PASS:
+  id: PASS-2026-10-21-492
+  parent_pass: PASS-2026-10-21-491
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 12
+  gaps_remaining: 15
+OBJECTIVE:
+  id: GAP-RECONSTRUCT-STATE
+  description: Reconstruct current ecosystem from live GitHub and persistent governance docs. Confirm census, identify highest-value next gap (capability/dependency graph), persist this pass record.
+  reason_selected: Fresh agent execution of ADL-BASILISK directive; state must be reconstructed before selecting next slice. Graph incompleteness is the persistent high-value gap from prior sweeps.
+DISCOVERY:
+  findings:
+    - Authenticated user: beyond-repair (id 132061760), 83 public repos (search total_count 83, incomplete_results false).
+    - Key governing repos present: ADL-Governance (ACTIVE, constitution + pass records), ADL-Nexus (RESEARCH, v0.3.2, CI green historical), aegis-repo-graph, adl-capability-matrix, forge-aegis (RELEASE_BLOCKED_BY_OPERATOR).
+    - PORTFOLIO_STATE.md locked as of 2026-10-20 post Sweep-452; priority queue: Digital_Double_virtual_workforce, sovereign-clean-room, BlockSwarm, forge-aegis.
+    - Recent passes (Sweep-490/491) confirm pillars CI success, residuals (Dependabot in Digital_Double, open PRs in sovereign-clean-room), full 83 classification and graphs incomplete.
+    - Pass records schema nested YAML under docs/passes/; SWEEP_HISTORY and OPERATOR_QUEUE track residuals.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-492.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - portfolio-state-reconstruction
+VERIFICATION:
+  tests_run:
+    - github search repositories user:beyond-repair (83 confirmed)
+    - get_file_contents on key docs and recent passes
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 83 public repositories.
+    - Governance constitution and claim discipline active.
+    - Capability graph, dependency graph, and full classification remain incomplete.
+  failures: []
+  decisions:
+    - Do not elevate any claims. Do not create new repositories. Do not modify implementation code this pass. Persist reconstruction only.
+REMAINING:
+  incomplete:
+    - Full repository/capability/dependency/authority graphs for 83 repos.
+    - Dependabot residual on Digital_Double_virtual_workforce.
+    - VSA completeness on sovereign-clean-room UNVERIFIED.
+  blockers:
+    - Operator-only actions (archive flags, release tags, Dependabot merges).
+  new_gaps:
+    - GAP-CAPABILITY-GRAPH: Minimal machine-readable repository graph seed missing or stale in aegis-repo-graph.
+NEXT:
+  objective_id: GAP-CAPABILITY-GRAPH
+  action: Inspect aegis-repo-graph and adl-capability-matrix; add or update one verified relationship or capability entry for a priority ACTIVE repo (e.g. ADL-Governance itself or Digital_Double_virtual_workforce) with evidence links; run any local tests; persist.
+  reason: Highest-value bounded slice that improves the global model without duplication or claim elevation.
+  prerequisites:
+    - Live read of aegis-repo-graph tree and existing graph files.
+    - No FLS expansion while forge-aegis is RELEASE_BLOCKED_BY_OPERATOR.
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live GitHub search total_count 83
+    - PORTFOLIO_STATE.md SHA b0addd394d792daa9cfabfd26f2e3894da12e82d
+    - SWEEP_HISTORY.md prior to this update

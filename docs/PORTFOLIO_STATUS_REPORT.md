@@ -1,38 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-491 / Randomized Portfolio Completion Sweep — Project-Cold-Boot)
-**Project / Version:** ADL Portfolio Governance / Sweep-491
-**Objective:** One governed random-selection cycle: DISCOVER → AUDIT → CLASSIFY of Project-Cold-Boot. Confirm RESEARCH Claim-0 terminal state.
+**Updated:** 2026-10-21 (Sweep-492 / Reconstruct portfolio state)
+**Project / Version:** ADL Portfolio Governance / Sweep-492
+**Objective:** Reconstruct current ecosystem from live GitHub and persistent Nexus/governance state. Confirm census and identify next high-value gap.
 
 ## Live Census
 - Total repositories under user:beyond-repair: **83** (verified via search total_count, incomplete_results false).
 - GitHub archive flag: only `CFT-v3.0` true.
 
-## Phase 3 — Selected Repository Verification (Sweep-491)
+## Reconstruction (Sweep-492)
+- Key repos confirmed present and classified per PORTFOLIO_STATE.md: ADL-Governance (ACTIVE), ADL-Nexus (RESEARCH), forge-aegis (RELEASE_BLOCKED_BY_OPERATOR), Digital_Double_virtual_workforce (ACTIVE), sovereign-clean-room (ACTIVE), BlockSwarm (ACTIVE), aegis-repo-graph, adl-capability-matrix.
+- Pass records and sweep history active; claim discipline enforced.
+- Full capability / dependency / authority graphs and complete 83-row classification remain incomplete (persistent residual).
 
-### Project-Cold-Boot
-- Classification: RESEARCH / RUNNABLE SKETCH (Claim-0 foundation prototype). Locked since Sweep-272; reconfirmed.
-- Main head: `b21fe1bf40f5f650496195335cd586c212b2f8d6`.
-- CI: structure.yml (unittest tests/test_structure.py) present on main. Godot smoke_test.sh documented for local headless. Dependabot open: 0.
-- Releases/tags: not listed in this pass; empty expected for RESEARCH.
-- Claims: Explicitly capped. Not a commercial product, not formal DLRSE proof.
-- Termination conditions for RESEARCH foundation: met (docs complete, structural CI, no critical issues, claims capped).
-
-## Prior Pillars (from Sweep-490, unchanged)
-- forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce: see previous entry. Residuals (Dependabot in Digital_Double, open PRs in sovereign-clean-room) remain.
+## Prior (Sweep-491)
+- Project-Cold-Boot reconfirmed RESEARCH / Claim-0. Structural CI present. Residuals none for that repo.
 
 ## Classification Summary
-- ACTIVE: four pillars + ADL-Governance + ADL-SEEM + AEGIS-Project-Nehemiah-.
-- RESEARCH: includes Project-Cold-Boot (reconfirmed) and majority experimental.
+- ACTIVE: pillars + ADL-Governance + ADL-SEEM + AEGIS-Project-Nehemiah-.
+- RESEARCH: majority, including ADL-Nexus, Project-Cold-Boot, and experimental.
 - SUPERSEDED / ARCHIVED: unchanged.
-- Residuals: full 83-row matrix, dependency graph, gap analysis incomplete.
+- Residuals: graphs incomplete, Dependabot on Digital_Double, VSA on sovereign-clean-room.
 
 ## Exit Criteria (this cycle)
-- Random selection + DISCOVER/AUDIT: PASS.
-- Classification reconfirmed without elevation: PASS.
+- Reconstruction + census confirm: PASS.
 - No code changes or unsupported claims.
-- Docs updated (SWEEP_HISTORY, this report, OPERATOR_QUEUE).
-- Cycle complete for this repo. Next random selection available for future cycle.
+- Docs updated (SWEEP_HISTORY, this report, OPERATOR_QUEUE, new PASS YAML).
+- Next action identified: GAP-CAPABILITY-GRAPH.
 
 ## Optimization Progress
-Incremental random re-audits continue. No deletions or history rewrites.
+State reconstructed for continued recursive sweeps. No deletions or history rewrites.
