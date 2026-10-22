@@ -1,32 +1,38 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-21 (Sweep-492 / Reconstruct portfolio state)
-**Project / Version:** ADL Portfolio Governance / Sweep-492
-**Objective:** Reconstruct current ecosystem from live GitHub and persistent Nexus/governance state. Confirm census and identify next high-value gap.
+**Updated:** 2026-10-21 (Sweep-493 / GAP-CAPABILITY-GRAPH)
+**Project / Version:** ADL Portfolio Governance / Sweep-493
+**Objective:** Bounded capability graph slice: inspect aegis-repo-graph locked catalog vs live census; verify mandatory pillars CI/docs; record one verified relationship observation. Preserve residuals.
 
 ## Live Census
-- Total repositories under user:beyond-repair: **83** (verified via search total_count, incomplete_results false).
+- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false). Names extracted and sorted.
 - GitHub archive flag: only `CFT-v3.0` true.
 
-## Reconstruction (Sweep-492)
-- Key repos confirmed present and classified per PORTFOLIO_STATE.md: ADL-Governance (ACTIVE), ADL-Nexus (RESEARCH), forge-aegis (RELEASE_BLOCKED_BY_OPERATOR), Digital_Double_virtual_workforce (ACTIVE), sovereign-clean-room (ACTIVE), BlockSwarm (ACTIVE), aegis-repo-graph, adl-capability-matrix.
-- Pass records and sweep history active; claim discipline enforced.
-- Full capability / dependency / authority graphs and complete 83-row classification remain incomplete (persistent residual).
+## Sweep-493 Findings
+- Mandatory live verification (no assumptions):
+  - forge-aegis: CI workflow active, latest runs success; README documents runnable sketch + tests (python tests exist); no releases/tags. Classification ACTIVE / software claim cap (RUNNABLE SKETCH). RELEASE_BLOCKED_BY_OPERATOR residual retained.
+  - sovereign-clean-room: Python tests workflow active, recent success; README with quick start + tests; no releases/tags. ACTIVE. Open PRs / full VSA UNVERIFIED residual.
+  - BlockSwarm: Foundry workflow active, latest success; README with Foundry runbook + tests; no releases/tags. ACTIVE. Invariant AI advises.cannot execute preserved.
+  - Digital_Double_virtual_workforce: CI workflow active, latest success (includes security pin); README with core package + tests; no releases/tags. ACTIVE. Dependabot residual retained.
+- aegis-repo-graph: Locked 2026-09-04 catalog (72 repo artifacts + 1 queue, 21 relationships). Live census 83. Drift documented in-repo (Sweep-239/292). Expanding lock is operator-only. One verified observation: GOVERNED_BY relationships to ADL-Governance are consistent with live governance source; catalog remains snapshot, not live crawl.
+- Capability inventory: Demonstrated = CI-passing tests + runnable sketches as documented in READMEs. Planned = locked functions in catalog not yet expanded. No elevation of claims.
 
-## Prior (Sweep-491)
-- Project-Cold-Boot reconfirmed RESEARCH / Claim-0. Structural CI present. Residuals none for that repo.
+## Classification Summary (unchanged lock)
+- ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah- (per prior).
+- RESEARCH: majority including ADL-Nexus, Project-Cold-Boot, aegis-repo-graph (claim ≤1), physics cluster, etc.
+- SUPERSEDED / ARCHIVED: per catalog and prior sweeps (e.g., SEEM family → sovereign-clean-room, older Digital Double variants).
 
-## Classification Summary
-- ACTIVE: pillars + ADL-Governance + ADL-SEEM + AEGIS-Project-Nehemiah-.
-- RESEARCH: majority, including ADL-Nexus, Project-Cold-Boot, and experimental.
-- SUPERSEDED / ARCHIVED: unchanged.
-- Residuals: graphs incomplete, Dependabot on Digital_Double, VSA on sovereign-clean-room.
+## Residuals (exit criteria not fully met portfolio-wide)
+- Full 83-row capability matrix, dependency graph, gap analysis, redundancy detection incomplete.
+- Digital_Double Dependabot alerts open.
+- sovereign-clean-room open PRs / VSA completeness UNVERIFIED.
+- Locked catalog vs live census drift (18 observation-only names).
 
 ## Exit Criteria (this cycle)
-- Reconstruction + census confirm: PASS.
-- No code changes or unsupported claims.
-- Docs updated (SWEEP_HISTORY, this report, OPERATOR_QUEUE, new PASS YAML).
-- Next action identified: GAP-CAPABILITY-GRAPH.
+- Census + mandatory verifications: PASS.
+- One capability-graph observation recorded: PASS.
+- No unsupported claims, no history rewrite, no deletions.
+- Docs updated. Residuals recorded. Stop. Do not loop.
 
 ## Optimization Progress
-State reconstructed for continued recursive sweeps. No deletions or history rewrites.
+Incremental convergence toward canonical ownership and verified claims. Full graph remains residual.
