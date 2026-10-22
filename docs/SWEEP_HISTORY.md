@@ -1,3 +1,13 @@
+## Sweep-489 / PASS-2026-10-21-489: Bounded audit of sovereign-clean-room
+
+- Timestamp: 2026-10-22.
+- Scope: Bounded DISCOVER + AUDIT on beyond-repair/sovereign-clean-room.
+- Classification reconfirmed: ACTIVE. VSA completeness remains UNVERIFIED.
+- Findings: README confirms offline VSA substrate (FHRR, BaNEL, invertibility gate, skill boundary). Open PRs #1 (PyNaCl pin) and #3 (governance tagging). Structure complete at top level. Claim caps respected.
+- Actions performed: Persisted PASS-2026-10-21-489.yaml. No code changes. No claim promotions.
+- Residual risks: Open PRs unmerged; full core audit pending; adapter integration with Nexus/sunder unverified.
+- Exit: Audit slice complete. Next recommended: self-audit of ADL-Governance or PR review.
+
 ## Sweep-random-2026-10-21 / PASS-2026-10-21-random: Randomized Portfolio Completion Sweep
 
 - Timestamp: 2026-10-21.
