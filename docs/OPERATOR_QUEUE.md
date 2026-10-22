@@ -1,8 +1,8 @@
 # Operator Queue
 
-## Sweep-495 / GAP-DEPENDABOT-TRIAGE-DDVW (completed documentation cycle)
+## Sweep-496 / MANDATORY-LIVE-VERIFICATION (completed)
 
-Documented open Dependabot alerts in Digital_Double_virtual_workforce. All observed scopes development (medium/high). No dismissals, no pins, no claim elevation. Operator must review reachability before any action.
+Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce completed. CI/workflows confirmed active with recent success where checked. No claim elevation. Residuals unchanged.
 
 ### Queued items / escalations (unchanged)
 - Digital_Double_virtual_workforce: open Dependabot alerts (medium/high, primarily development scope). Review and pin or dismiss with justification.
