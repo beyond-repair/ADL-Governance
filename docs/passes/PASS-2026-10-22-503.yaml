@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-22-503
+  parent_pass: PASS-2026-10-22-502
+
+STATE:
+  global_status: RESEARCH_HYGIENE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 51
+  capabilities_verified: 13
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: NEXUS-LOCAL-VERIFY-503
+  description: Verify ADL-Nexus local CLI status and pytest suite (49 tests) in clean environment.
+  reason_selected: Highest-value bounded next after graph drift reconfirm; confirms RESEARCH platform local invariants without claim elevation.
+
+DISCOVERY:
+  findings:
+    - Cloned https://github.com/beyond-repair/ADL-Nexus (HEAD observed via clone).
+    - python run.py status: version 0.3.2, lifecycle RESEARCH, packages_ok True, all listed pathway imports OK, sunder/cleanroom unavailable (expected, no siblings), claim_cap 2, adl_governance docs-imported.
+    - pytest: 49 passed in 0.46s after pip install -e ".[dev]".
+    - No live adapters, no production claims, CI not re-run (local only).
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-22-503.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Local status + pytest VERIFIED for ADL-Nexus (RESEARCH, claim ≤1 preserved)
+
+VERIFICATION:
+  tests_run:
+    - python run.py status: PASS (packages_ok True, expected unavailable adapters)
+    - pytest -q: 49 passed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN (local only; no live adapters)
+  invariants: PASS (no claim elevation; RESEARCH preserved; history intact)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus local core is runnable and unit-tested as of this environment (2026-10-22).
+    - Adapters remain UNSUPPORTED without sibling repos.
+  failures:
+    - none
+  decisions:
+    - Do not promote lifecycle; verification is local only.
+
+REMAINING:
+  incomplete:
+    - Full portfolio graphs
+    - Live adapter integration
+  blockers:
+    - Operator for catalog expansion, Dependabot triage, archive flags
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: RANDOM-NEXT-OR-AEGIS-SAMPLE
+  action: Select next bounded gap (random hygiene sweep or AEGIS cluster sample)
+  reason: Continue progressive capability sampling after Nexus local confirmation
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: (pending this commit)
+  evidence:
+    - Local clone + run.py status output
+    - pytest 49 passed
+    - Prior PASS-502
