@@ -31,7 +31,10 @@ CHANGES:
     - docs/OPERATOR_QUEUE.md
     - docs/PORTFOLIO_STATUS_REPORT.md
   commits:
-    - (this commit)
+    - 1dd7e729148efba6ae36dfa83ef0989bb1828577 (pass yaml)
+    - 19cdc9a16fc191f276a930b0f5e51cb9b2fbbe8e (history)
+    - a7b853c0e955b1a51ac8392fb4d9446f7af34a4e (queue)
+    - 548a3a66ccc804c59dcc4cebd9bd2eb08f9543b7 (report)
   capabilities_added_or_changed:
     - Local status + pytest VERIFIED for ADL-Nexus (RESEARCH, claim ≤1 preserved)
 
@@ -71,8 +74,9 @@ NEXT:
     - This pass committed
 
 PROVENANCE:
-  state_commit: (pending this commit)
+  state_commit: 548a3a66ccc804c59dcc4cebd9bd2eb08f9543b7
   evidence:
     - Local clone + run.py status output
     - pytest 49 passed
     - Prior PASS-502
+    - Commits listed above
