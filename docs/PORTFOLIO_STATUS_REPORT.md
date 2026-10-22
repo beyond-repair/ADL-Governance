@@ -1,5 +1,28 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-22 (Sweep-503 / NEXUS-LOCAL-VERIFY)
+**Project / Version:** ADL Portfolio Governance / Sweep-503
+**Objective:** Bounded local verification of ADL-Nexus CLI and tests.
+
+## Live Census
+- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
+- GitHub archive flag: only `CFT-v3.0` true.
+
+## Sweep-503: NEXUS-LOCAL-VERIFY
+**SELECT:** Highest-value after graph drift: local confirmation of ADL-Nexus RESEARCH platform.
+
+**DISCOVER / AUDIT:**
+- Cloned main; ran `python run.py status`: version 0.3.2, lifecycle RESEARCH, packages_ok True, pathway imports OK, adapters unavailable (no sibling repos), claim_cap 2.
+- pytest: 49 passed.
+- Matches CLAIM_STATUS.md and README: local only, no live adapters, no production claims.
+
+**CLASSIFY:** RESEARCH (confirmed). Claim ≤1 preserved. Local ceiling 2 is not Level 2 evidence.
+
+**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No changes in ADL-Nexus. Local tests re-executed and passed. Docs updated in governance.
+
+**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms invariants. Termination for this slice met.
+
+## Prior Sweep-501 (preserved)
 **Updated:** 2026-10-22 (Sweep-501 / RANDOM-AUTOMATE-PASSIVE-INCOME)
 **Project / Version:** ADL Portfolio Governance / Sweep-501
 **Objective:** Randomized portfolio completion sweep — DISCOVER → AUDIT → CLASSIFY for automate_passive_income.
@@ -27,38 +50,9 @@
 
 **GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms empty state and Claim-0. Termination conditions met (no undefined, no CI, no claims, target documented). Residuals none for this repo.
 
-## Prior Sweep-500 (preserved)
-**Updated:** 2026-10-22 (Sweep-500 / RANDOM-DIGITAL-DOUBLE-MOBILE)
-**Project / Version:** ADL Portfolio Governance / Sweep-500
-**Objective:** Randomized portfolio completion sweep — DISCOVER → AUDIT → CLASSIFY for digital-double-mobile.
-
-## Live Census
-- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
-- GitHub archive flag: only `CFT-v3.0` true.
-
-## Sweep-500: Randomized Selection — digital-double-mobile
-**SELECT:** Random selection from full portfolio (83 repos): `beyond-repair/digital-double-mobile`.
-
-**DISCOVER:**
-- Structure: Claim-0 offline FastAPI (`dd_mobile/`), historical backend/api, Vite React `src/`, Flutter leftovers in `frontend/`, docs, superseded-guard workflow, SUPERSEDED.md, CLAIM_STATUS.md.
-- Dependencies: Python (requirements.txt: fastapi, uvicorn, pytest, etc.), npm (package.json + lockfile).
-- Tests: pytest present (Claim-0: health, tasks, metrics, guard, smoke). CI runs them.
-- CI: superseded-guard workflow active; last success run 37230662637 on HEAD 7c65eb04 (2026-10-04). Dependabot update runs succeeding.
-- Releases/Tags: Empty.
-- Dependabot: Open alerts noted in CLAIM_STATUS (critical protobufjs, form-data); not bumped this cycle.
-- Security: No repository security advisories. Historical secret scanning alert #1 (prior .env) remains open; working tree clean.
-
-**AUDIT:** Compliant with ADL-Governance for SUPERSEDED Claim-0. No product claims. Successor clearly named (Digital_Double_virtual_workforce). Hygiene in place (guard fails on .env, pytest in CI). No undefined Claim-0 components. Stale historical files preserved as non-gates.
-
-**CLASSIFY:** SUPERSEDED (Claim-0 runnable sketch). Justification: Explicit SUPERSEDED.md / README / CLAIM_STATUS, successor designated, no further feature work permitted, Claim level 0 preserved. Matches prior sweeps.
-
-**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No code changes required in target (target state Claim-0 CI-green already met). Idempotent re-audit only. No destructive actions queued (archive flag remains operator-only after secret rotation).
-
-**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms no drift from Claim-0. Termination conditions met for SUPERSEDED hygiene (no undefined Claim-0, no critical CI failures, no unsupported claims, target achieved). Residuals (Dependabot, secret alert) noted for operator.
-
 ## Classification Summary (no changes this cycle)
 - ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
-- RESEARCH: majority (physics, experimental, etc.).
+- RESEARCH: majority (physics, experimental, etc.), including ADL-Nexus (local verified).
 - SUPERSEDED / ARCHIVED: digital-double-mobile (confirmed), automate_passive_income (confirmed empty), and per repository_registry.md.
 
 ## Residuals (exit criteria not fully met portfolio-wide)
@@ -69,9 +63,9 @@
 - Locked catalog vs live census drift.
 
 ## Exit Criteria (this cycle)
-- automate_passive_income re-audited live via GitHub API (structure, empty confirmation).
+- ADL-Nexus local status and pytest re-verified.
 - No unsupported claims, no history rewrite, no deletions, no code changes in target.
 - Docs updated. Residuals recorded. Stop.
 
 ## Optimization Progress
-Incremental verification. Empty ARCHIVED confirmed. Full graphs remain open.
+Incremental verification. Nexus local core confirmed. Full graphs remain open.
