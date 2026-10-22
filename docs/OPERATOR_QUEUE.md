@@ -1,20 +1,23 @@
 # Operator Queue
 
-## Sweep-random-2026-10-21 / Randomized Portfolio Completion Sweep (completed cycle for selected)
+## Sweep-490 / Master Directive Portfolio Governance & Completion Sweep (completed cycle)
 
-Randomly selected: `aegis-repo-graph` (RESEARCH, claim ≤1).
-DISCOVER/AUDIT complete. Docs-only update pushed. Catalog remains locked.
+Live verification of four pillars completed. Census reconfirmed at 83.
 
-### Queued items
-- Catalog expansion for aegis-repo-graph remains operator-only (as previously documented). Do not auto-expand lock.
-- Full portfolio classification matrix residual.
-- Release/archive gates for other ACTIVE/SUPERSEDED repos unchanged.
+### Queued items / escalations
+- Digital_Double_virtual_workforce: open Dependabot alerts (medium/high, primarily development scope: postcss-selector-parser CVE-2026-104844, source-map-js high CVE-2026-93749, brace-expansion, sprintf-js, pytest CVE-2025-71176). Review and pin or dismiss with justification. Not critical runtime for current claim level.
+- sovereign-clean-room: open PRs (#1 PyNaCl, #3 governance) remain unmerged. Full VSA completeness audit still UNVERIFIED.
+- Full portfolio: capability matrix, dependency graph, gap analysis, redundancy detection, and classification for all 83 incomplete. Continue incremental or random sweeps. Do not auto-expand locked catalogs (e.g. aegis-repo-graph).
+- Archive candidates and SUPERSEDED remain as previously queued; no GitHub archive actions performed.
 
 ### No destructive actions
-- No deletions, no history rewrites, no force-pushes.
+- No repository deletions.
+- No Git history rewrites.
+- No force-pushes.
+- All proposals requiring destruction or high-risk migration escalated here.
 
-Next random selection may proceed.
+Next cycle: operator may select next residual or random repo.
 
-## Sweep-488 / Master Directive Portfolio Governance & Completion Sweep (completed cycle)
+## Sweep-random-2026-10-21 / Randomized Portfolio Completion Sweep (completed cycle for selected)
 
-[Prior content preserved in git history.]
+[Prior content preserved.]
