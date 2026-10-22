@@ -1,0 +1,72 @@
+PASS:
+  id: PASS-2026-10-22-502
+  parent_pass: PASS-2026-10-22-501
+
+STATE:
+  global_status: RESEARCH_HYGIENE
+  repositories_scanned: 83
+  repositories_changed: 0
+  capabilities_known: 50
+  capabilities_verified: 12
+  gaps_remaining: 15
+
+OBJECTIVE:
+  id: GRAPH-DRIFT-502
+  description: Reconfirm locked Artifact Graph vs current portfolio name set; document drift without expansion.
+  reason_selected: Highest-value bounded next after random hygiene passes; central to Repository Graph maintenance.
+
+DISCOVERY:
+  findings:
+    - User beyond-repair has 83 public/private repos.
+    - aegis-repo-graph locks 72-repo snapshot from 2026-09-04; drift tracked in graph/drift.py and observed_*.py files up to 2026-10-21.
+    - Expanding lock is operator-only; claim ≤1, RESEARCH lifecycle.
+    - ADL-Governance maintains pass records and sweep history up to 501.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-22-502.yaml
+  commits:
+    - (pending push)
+  capabilities_added_or_changed:
+    - none
+
+VERIFICATION:
+  tests_run:
+    - graph.engine on aegis-repo-graph: not executed this pass (claim-capped)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio size 83; graph lock 72; drift documented.
+  failures:
+    - none
+  decisions:
+    - Do not expand catalog this pass; preserve operator-only boundary.
+
+REMAINING:
+  incomplete:
+    - Full live graph update
+  blockers:
+    - Operator decision required for lock expansion
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: RANDOM-NEXT-OR-NEXUS-AUDIT
+  action: Select next bounded gap (random hygiene or ADL-Nexus layer verification)
+  reason: Continue progressive closure
+  prerequisites:
+    - Fresh agent reconstruction from Git + this pass
+
+PROVENANCE:
+  state_commit: 144aba98617a9b84c01a7baffddedf141b5c99ad
+  evidence:
+    - github___search_repositories total_count 83
+    - aegis-repo-graph README and tree
+    - SWEEP_HISTORY.md latest 501
