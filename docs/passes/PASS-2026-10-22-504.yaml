@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-22-504
+  parent_pass: PASS-2026-10-22-503
+
+STATE:
+  global_status: RESEARCH_HYGIENE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 51
+  capabilities_verified: 13
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: RECONSTRUCT-CENSUS-DEPENDABOT-504
+  description: Fresh-agent reconstruction of ecosystem state; reconfirm live census (83) and sample open Dependabot residuals on priority ACTIVE repo Digital_Double_virtual_workforce.
+  reason_selected: Highest-value bounded slice after Nexus local verify is persistent state continuity + residual security hygiene confirmation before next random or AEGIS sample.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; search_repositories total_count=83, incomplete_results=false (stable).
+    - Latest prior: Sweep-503 / PASS-2026-10-22-503 confirmed ADL-Nexus local status + pytest 49 passed (RESEARCH, claim ≤1).
+    - PORTFOLIO_STATE.md locked 2026-10-20 post Sweep-452; priority queue unchanged.
+    - Digital_Double_virtual_workforce: open Dependabot alerts confirmed (e.g. #174 postcss-selector-parser medium development, #169 source-map-js high development, #168 pytest medium, #172 sprintf-js medium withdrawn advisory). Ordinary trusted-source build use not affected per advisories.
+    - Graphs remain incomplete; expansion operator-gated. No new product claims.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-22-504.yaml
+  commits:
+    - pending (this file)
+  capabilities_added_or_changed:
+    - Pass persistence for fresh-agent reconstruction and Dependabot residual reconfirm
+
+VERIFICATION:
+  tests_run:
+    - github___search_repositories user:beyond-repair: total_count 83 PASS
+    - github___list_dependabot_alerts Digital_Double_virtual_workforce open: alerts present, development-scope confirmed
+  code_review: NOT_RUN
+  security: NOT_RUN (sampled alerts only; no triage)
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation; history preserved; operator residuals escalated)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Live census stable at 83.
+    - Dependabot residuals on Digital_Double_virtual_workforce remain open and primarily development-scope.
+    - ADL-Nexus local verification holds from prior pass.
+  failures:
+    - none
+  decisions:
+    - Continue incremental sweeps; do not elevate claims or perform operator-only actions (archive, Dependabot dismiss/merge).
+
+REMAINING:
+  incomplete:
+    - Full portfolio capability/dependency/authority graphs
+    - Live adapters, VSA completeness, catalog expansion
+  blockers:
+    - Operator for Dependabot triage/rotation, archive flags, release tags, catalog expansion
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: RANDOM-NEXT-OR-AEGIS-SAMPLE-505
+  action: Select next bounded gap via random hygiene sweep or AEGIS cluster sample; persist pass record.
+  reason: Progressive sampling continues after state reconstruction and residual confirmation.
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - search_repositories total_count=83
+    - list_dependabot_alerts sample on Digital_Double_virtual_workforce
+    - Prior PASS-503, PORTFOLIO_STATE.md, SWEEP_HISTORY.md, OPERATOR_QUEUE.md
