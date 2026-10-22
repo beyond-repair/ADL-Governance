@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-10-21-493
+  parent_pass: PASS-2026-10-21-492
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 70
+  capabilities_verified: 12
+  gaps_remaining: 14
+OBJECTIVE:
+  id: GAP-CAPABILITY-GRAPH
+  description: Inspect aegis-repo-graph and adl-capability-matrix; add one verified observation confirming stable 83-repo census as frozen name witness.
+  reason_selected: Highest-value bounded slice from prior pass next action; improves global model with evidence without expanding locked catalog or elevating claims.
+DISCOVERY:
+  findings:
+    - Census remains stable at 83 public repositories (identical name set to 2026-10-09 observation).
+    - aegis-repo-graph locked catalog is 72 artifacts from 2026-09-04; expanding lock is operator-only.
+    - Observed files exist for prior dates; new observation added without modifying catalog or relationships.
+    - adl-capability-matrix holds locked 67-row snapshot with claim caps; no changes this pass.
+CHANGES:
+  repositories:
+    - beyond-repair/aegis-repo-graph
+    - beyond-repair/ADL-Governance
+  files:
+    - graph/observed_2026_10_21.py
+    - docs/passes/PASS-2026-10-21-493.yaml
+  commits:
+    - 8efd36bd0d8ae0a91f14fab936d34179c56a7e92 (aegis-repo-graph)
+    - this commit (ADL-Governance)
+  capabilities_added_or_changed:
+    - frozen-name-observation-2026-10-21
+VERIFICATION:
+  tests_run:
+    - Live search user:beyond-repair total_count=83 incomplete_results=false
+    - Name set comparison to prior observed_2026_10_09.py: identical
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - 83-repo name census stable from 2026-10-09 to 2026-10-21.
+    - Locked catalog expansion remains operator-only; observation witnesses do not raise claims.
+  failures: []
+  decisions:
+    - Prefer additive observation file over catalog mutation. No claim elevation. No new repositories.
+REMAINING:
+  incomplete:
+    - Full repository/capability/dependency/authority graphs for 83 repos.
+    - Dependabot residual on Digital_Double_virtual_workforce.
+    - VSA completeness on sovereign-clean-room UNVERIFIED.
+  blockers:
+    - Operator-only actions (catalog expansion, archive flags, release tags).
+  new_gaps:
+    - GAP-DEPENDENCY-GRAPH: Minimal machine-readable dependency edges missing for priority ACTIVE repos.
+NEXT:
+  objective_id: GAP-DEPENDENCY-GRAPH
+  action: Select one priority ACTIVE repository (e.g. Digital_Double_virtual_workforce); extract and record one verified dependency relationship with evidence (pyproject.toml, requirements, or imports) into a non-locked witness or matrix update; persist.
+  reason: Continues progressive closure of graph incompleteness with smallest verified slice.
+  prerequisites:
+    - Live read of selected repo dependency files.
+    - No FLS expansion while forge-aegis is RELEASE_BLOCKED_BY_OPERATOR.
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live GitHub search total_count 83
+    - Commit 8efd36bd0d8ae0a91f14fab936d34179c56a7e92 adding observed_2026_10_21.py
+    - Parent pass PASS-2026-10-21-492
