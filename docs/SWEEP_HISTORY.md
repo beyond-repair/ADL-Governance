@@ -1,3 +1,16 @@
+## Sweep-496 / PASS-2026-10-22-496: MANDATORY-LIVE-VERIFICATION
+
+- Timestamp: 2026-10-22 ~02:12 UTC.
+- Scope: Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. No assumptions; CI/workflows, structure, releases checked via GitHub API.
+- Findings:
+  - forge-aegis: CI success on recent runs (last 2026-10-05); no releases; structured with python/, docs, CLAIM_STATUS.md.
+  - sovereign-clean-room: Python tests workflow active; tests/ and docs present; VSA residual UNVERIFIED.
+  - BlockSwarm: Foundry workflow active.
+  - Digital_Double_virtual_workforce: Digital Double CI active; Dependabot residual unchanged.
+  - All classified ACTIVE per prior lock. No claim elevation.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history. No code changes in target repos, no history rewrite, no deletions.
+- Residual / next: Portfolio-level residuals unchanged (full graphs, Dependabot triage, sovereign-clean-room PRs/VSA). Next cycle operator-selected.
+
 ## Sweep-495 / PASS-2026-10-21-495: GAP-DEPENDABOT-TRIAGE-DDVW documentation
 
 - Timestamp: 2026-10-21 ~22:05 EDT.
@@ -8,18 +21,5 @@
   - No code changes, no auto-actions.
 - Actions performed: Persisted PASS-2026-10-21-495.yaml, updated this history, OPERATOR_QUEUE.md, PORTFOLIO_STATUS_REPORT.md.
 - Residual / next: Dependabot remains open for operator triage. Other residuals unchanged (graphs, sovereign-clean-room). Next cycle operator or random.
-
-## Sweep-494 / PASS-2026-10-21-494: RANDOM selection of profile repository `beyond-repair`
-
-- Timestamp: 2026-10-21 ~22:00 EDT.
-- Scope: Random selection from full 83-repository census. Full DISCOVER → AUDIT → CLASSIFY → DOCUMENT cycle on selected repo.
-- Selection: `beyond-repair` (GitHub profile README).
-- Findings:
-  - Tree: three Markdown files only (README.md, CLAIM_STATUS.md, GOVERNANCE.md).
-  - Classification: RESEARCH (profile / index surface). Claim level 0. Not an ACTIVE product.
-  - Audit: Compliant with ADL-Governance. Pillars and mapping artifacts correctly claim-capped. No code, tests, or CI.
-  - Termination conditions: ALL MET.
-- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history. No code changes in selected repo, no history rewrite, no claim elevation, no deletions.
-- Residual / next: Portfolio-level residuals unchanged (full graphs, Digital_Double Dependabot, sovereign-clean-room PRs/VSA). Next cycle may be random or operator-selected residual.
 
 ## Prior content preserved.
