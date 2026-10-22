@@ -1,5 +1,34 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-22 (Sweep-499 / RANDOM-BLOCKSWARM)
+**Project / Version:** ADL Portfolio Governance / Sweep-499
+**Objective:** Randomized portfolio completion sweep — DISCOVER → AUDIT → CLASSIFY for BlockSwarm.
+
+## Live Census
+- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
+- GitHub archive flag: only `CFT-v3.0` true.
+
+## Sweep-499: Randomized Selection — BlockSwarm
+**SELECT:** Random selection from full portfolio (83 repos, seed 2026102213): `beyond-repair/BlockSwarm`.
+
+**DISCOVER:**
+- Structure: Solidity/Foundry contracts (AIExecutor, DAOGovernor, GovernanceNFT, KnowledgeLedger, MerkleVerifier, OrchestrationEngine, RevertTokenLayer + libs), tests/ (advisory-only, one-vote, roles, inverse binding, deploy wiring, Merkle), docs/, script/, .github/workflows/foundry.yml, submodules for OZ v4.9.6 + forge-std v1.9.4.
+- Dependencies: OpenZeppelin (pinned), forge-std (pinned). No untracked critical deps.
+- Tests: Present under test/, covering core invariants (AI advises cannot execute, one-vote SBT, role separation, inverse binding, deploy wiring).
+- CI: Foundry workflow active; latest success run 38252865430 on HEAD 98480104 (2026-10-12 docs update); prior 36859452185 on 6e90f6f.
+- Releases/Tags: Empty.
+- Dependabot: No open alerts.
+- Security: No advisories. Secret scanning not re-checked this cycle (prior empty).
+
+**AUDIT:** Compliant with ADL-Governance. Claim ceiling preserved (no mainnet/audit/economic security claims). Invariant documented and tested. No stale registry entries internal. No undefined components. Docs present (README, GOVERNANCE, SECURITY, formal invariants, etc.).
+
+**CLASSIFY:** ACTIVE (SAGF execution substrate, P2). Justification: CI green, tests pass boundary, claim-capped, under active governance, no successor named.
+
+**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No code changes required (target state CI-green already met). Idempotent re-audit only. No destructive actions queued.
+
+**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release (tags empty, operator-only for v0.5.0-sagf). Re-audit confirms no drift. Termination conditions met for this repo (no undefined, no stale, CI green, no duplicates, no critical security, no unsupported claims, target achieved).
+
+## Prior Sweep-498 (preserved)
 **Updated:** 2026-10-22 (Sweep-498 / MANDATORY-LIVE-VERIFICATION)
 **Project / Version:** ADL Portfolio Governance / Sweep-498
 **Objective:** Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. No assumptions.
