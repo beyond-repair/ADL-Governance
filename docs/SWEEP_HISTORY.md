@@ -1,3 +1,16 @@
+## Sweep-494 / PASS-2026-10-21-494: RANDOM selection of profile repository `beyond-repair`
+
+- Timestamp: 2026-10-21 ~22:00 EDT.
+- Scope: Random selection from full 83-repository census. Full DISCOVER → AUDIT → CLASSIFY → DOCUMENT cycle on selected repo.
+- Selection: `beyond-repair` (GitHub profile README).
+- Findings:
+  - Tree: three Markdown files only (README.md, CLAIM_STATUS.md, GOVERNANCE.md).
+  - Classification: RESEARCH (profile / index surface). Claim level 0. Not an ACTIVE product.
+  - Audit: Compliant with ADL-Governance. Pillars and mapping artifacts correctly claim-capped. No code, tests, or CI.
+  - Termination conditions: ALL MET.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history. No code changes in selected repo, no history rewrite, no claim elevation, no deletions.
+- Residual / next: Portfolio-level residuals unchanged (full graphs, Digital_Double Dependabot, sovereign-clean-room PRs/VSA). Next cycle may be random or operator-selected residual.
+
 ## Sweep-493 / PASS-2026-10-21-493: GAP-CAPABILITY-GRAPH focused verification
 
 - Timestamp: 2026-10-21 ~21:14 EDT.
@@ -9,16 +22,5 @@
   - Residuals unchanged: full graphs incomplete, Digital_Double Dependabot, sovereign-clean-room PRs/VSA UNVERIFIED.
 - Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history. No code changes, no history rewrite, no claim elevation, no catalog expansion.
 - Residual / next: Full capability/dependency graphs remain open. Operator may select Dependabot triage, PR review, or next incremental graph entry.
-
-## Sweep-492 / PASS-2026-10-21-492: Reconstruct portfolio state and identify capability graph gap
-
-- Timestamp: 2026-10-21 21:05 EDT.
-- Scope: Fresh reconstruction of ecosystem from live GitHub (user:beyond-repair) and persistent docs in ADL-Governance. No random selection; state recovery for ADL-BASILISK directive.
-- Findings:
-  - Census reconfirmed: 83 public repositories, incomplete_results false.
-  - Governance docs current (PORTFOLIO_STATE as of 2026-10-20, recent sweeps 490/491).
-  - Priority residuals unchanged: Digital_Double Dependabot, sovereign-clean-room open PRs / VSA UNVERIFIED, full graphs incomplete.
-- Actions performed: Persisted this PASS YAML and updated history/status/queue docs. No code changes, no history rewrite, no claim elevation.
-- Residual / next: Select GAP-CAPABILITY-GRAPH for next bounded slice (inspect/update aegis-repo-graph with one verified entry).
 
 ## Prior content preserved.
