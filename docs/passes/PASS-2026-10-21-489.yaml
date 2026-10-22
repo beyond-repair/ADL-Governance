@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-21-489
+  parent_pass: PASS-2026-10-21-488
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 50+
+  capabilities_verified: 22+
+  gaps_remaining: 12+
+
+OBJECTIVE:
+  id: GAP-AUDIT-SOVEREIGN-CLEAN-ROOM-489
+  description: Bounded DISCOVER + AUDIT on beyond-repair/sovereign-clean-room: inspect README, top-level tree, open PRs. Confirm ACTIVE classification and VSA completeness status.
+  reason_selected: Recommended by prior pass (488); listed as ACTIVE priority; VSA completeness UNVERIFIED; high synergy with Nexus adapters and claim discipline.
+
+DISCOVERY:
+  findings:
+    - README badge shows ACTIVE; description: Sovereign Clean-Room VSA Core (v1.3 Hyperspherical Geometric Edition) — FHRR engine, BaNEL, invertibility gate, atomic persistence, and sandboxed skill boundary for SEEM-style twins.
+    - Top-level structure: core/, docs/, tests/, manifests/, schemas/, shapes/, skills/, bridge/, results/, .github/. Offline (network_access=FALSE), cryptographic gates (Ed25519 + SHACL).
+    - Open PRs: #3 (Tag ACTIVE claims under ADL-Governance — adds GOVERNANCE.md, keeps VSA UNVERIFIED), #1 (pin PyNaCl >=1.6.2 for CVE-2025-69277).
+    - CI: python-tests.yml present (badge linked). Decorative stability bars noted as non-measurements.
+    - Claim discipline: cognitive/physics claims not above Level 1; VSA completeness remains UNVERIFIED per PR notes.
+    - Dependencies: numpy pinned (1.26.4 on 3.11/3.12), PyNaCl; optional governance (Z3, pyshacl).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-489.yaml
+  commits:
+    - created via create_or_update_file
+  capabilities_added_or_changed:
+    - sovereign-clean-room audit findings persisted; ACTIVE classification reconfirmed; VSA completeness remains UNVERIFIED.
+
+VERIFICATION:
+  tests_run:
+    - get_file_contents README.md : PASS
+    - get_repository_tree (non-recursive) : PASS (18 top-level entries)
+    - list_pull_requests open : 2 found, listed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim caps respected; no promotion of VSA completeness)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - sovereign-clean-room is ACTIVE with strict claim discipline on VSA/cognitive claims.
+    - Open governance and security PRs pending.
+    - Structure supports offline VSA substrate with skill gates.
+  failures:
+    - None in this slice.
+  decisions:
+    - No status change; remain ACTIVE / VSA UNVERIFIED.
+    - Next: either merge/review open PRs or audit another high-priority repo.
+
+REMAINING:
+  incomplete:
+    - Full function-level audit of core/ VSA engine.
+    - CI run status confirmation.
+    - Dependency graph / adapter integration with Nexus and sunder.
+  blockers:
+    - None for this pass.
+  new_gaps:
+    - GAP-SCR-PR-STATUS: review and potentially merge or classify open PRs #1 and #3 in sovereign-clean-room.
+
+NEXT:
+  objective_id: GAP-AUDIT-ADL-GOVERNANCE-490
+  action: Bounded self-audit of beyond-repair/ADL-Governance: confirm latest pass, SWEEP_HISTORY consistency, check_passes.py runnable status if possible via remote, list recent commits.
+  reason: Governing source; recent activity; ensures persistence loop remains intact before deeper integrations.
+  prerequisites:
+    - Direct tool access (available).
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - README.md content confirming ACTIVE and offline/crypto design
+    - Tree listing
+    - Open PR list and bodies
+    - Prior pass 488 recommendation
