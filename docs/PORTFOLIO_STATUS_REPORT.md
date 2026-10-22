@@ -1,5 +1,34 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-22 (Sweep-500 / RANDOM-DIGITAL-DOUBLE-MOBILE)
+**Project / Version:** ADL Portfolio Governance / Sweep-500
+**Objective:** Randomized portfolio completion sweep — DISCOVER → AUDIT → CLASSIFY for digital-double-mobile.
+
+## Live Census
+- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
+- GitHub archive flag: only `CFT-v3.0` true.
+
+## Sweep-500: Randomized Selection — digital-double-mobile
+**SELECT:** Random selection from full portfolio (83 repos): `beyond-repair/digital-double-mobile`.
+
+**DISCOVER:**
+- Structure: Claim-0 offline FastAPI (`dd_mobile/`), historical backend/api, Vite React `src/`, Flutter leftovers in `frontend/`, docs, superseded-guard workflow, SUPERSEDED.md, CLAIM_STATUS.md.
+- Dependencies: Python (requirements.txt: fastapi, uvicorn, pytest, etc.), npm (package.json + lockfile).
+- Tests: pytest present (Claim-0: health, tasks, metrics, guard, smoke). CI runs them.
+- CI: superseded-guard workflow active; last success run 37230662637 on HEAD 7c65eb04 (2026-10-04). Dependabot update runs succeeding.
+- Releases/Tags: Empty.
+- Dependabot: Open alerts noted in CLAIM_STATUS (critical protobufjs, form-data); not bumped this cycle.
+- Security: No repository security advisories. Historical secret scanning alert #1 (prior .env) remains open; working tree clean.
+
+**AUDIT:** Compliant with ADL-Governance for SUPERSEDED Claim-0. No product claims. Successor clearly named (Digital_Double_virtual_workforce). Hygiene in place (guard fails on .env, pytest in CI). No undefined Claim-0 components. Stale historical files preserved as non-gates.
+
+**CLASSIFY:** SUPERSEDED (Claim-0 runnable sketch). Justification: Explicit SUPERSEDED.md / README / CLAIM_STATUS, successor designated, no further feature work permitted, Claim level 0 preserved. Matches prior sweeps.
+
+**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No code changes required in target (target state Claim-0 CI-green already met). Idempotent re-audit only. No destructive actions queued (archive flag remains operator-only after secret rotation).
+
+**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms no drift from Claim-0. Termination conditions met for SUPERSEDED hygiene (no undefined Claim-0, no critical CI failures, no unsupported claims, target achieved). Residuals (Dependabot, secret alert) noted for operator.
+
+## Prior Sweep-499 (preserved)
 **Updated:** 2026-10-22 (Sweep-499 / RANDOM-BLOCKSWARM)
 **Project / Version:** ADL Portfolio Governance / Sweep-499
 **Objective:** Randomized portfolio completion sweep — DISCOVER → AUDIT → CLASSIFY for BlockSwarm.
@@ -28,61 +57,22 @@
 
 **GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release (tags empty, operator-only for v0.5.0-sagf). Re-audit confirms no drift. Termination conditions met for this repo (no undefined, no stale, CI green, no duplicates, no critical security, no unsupported claims, target achieved).
 
-## Prior Sweep-498 (preserved)
-**Updated:** 2026-10-22 (Sweep-498 / MANDATORY-LIVE-VERIFICATION)
-**Project / Version:** ADL Portfolio Governance / Sweep-498
-**Objective:** Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. No assumptions.
-
-## Live Census
-- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
-- GitHub archive flag: only `CFT-v3.0` true.
-
-## Sweep-498 Findings (Mandatory Live Verification)
-### forge-aegis
-- CI: forge-aegis CI workflow active. Latest runs success (e.g., run 37258127100 on main e7188d5, 2026-10-05).
-- Releases/Tags: Empty (not re-listed this sweep; prior empty).
-- Dependabot: No open alerts.
-- Security advisories: None.
-- Classification: ACTIVE (software sketch, claim-capped). No elevation.
-- State: CI green, docs present. Not host product.
-
-### sovereign-clean-room
-- CI: Python tests workflow active. Recent runs mixed (success on some PRs, failures on seem-completion-pass branch due to float precision in smoke tests). Main prior success noted in registry.
-- Dependabot: No open alerts.
-- Security advisories: None.
-- Open branches/PRs: seem-completion-pass and others unmerged.
-- Classification: ACTIVE. VSA completeness remains UNVERIFIED.
-- State: Tests present, CI not fully green on all branches.
-
-### BlockSwarm
-- CI: Foundry workflow active. Latest success (run 38252865430 on main 9848010, 2026-10-12; prior on 6e90f6f).
-- Dependabot: No open alerts.
-- Security advisories: None.
-- Classification: ACTIVE (SAGF).
-- State: CI green, Foundry deps pinned.
-
-### Digital_Double_virtual_workforce
-- CI: Digital Double CI workflow active. Latest success (run 39035783949 on main ad0c3bd, 2026-10-17, security pin for form-data).
-- Dependabot: Multiple open alerts (e.g., #174 postcss-selector-parser medium CVE-2026-104844, #169 source-map-js high CVE-2026-93749, #168 pytest medium, others medium development scope). Prior #13 status superseded by current list.
-- Security advisories: None listed.
-- Classification: ACTIVE. Readiness FAIL due to open Dependabot.
-- State: CI green after recent security fix; open alerts remain.
-
 ## Classification Summary (no changes this cycle)
 - ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
 - RESEARCH: majority (physics, experimental, etc.).
-- SUPERSEDED / ARCHIVED: per repository_registry.md.
+- SUPERSEDED / ARCHIVED: digital-double-mobile (confirmed), and per repository_registry.md.
 
 ## Residuals (exit criteria not fully met portfolio-wide)
 - Full 83-row capability matrix, dependency graph, gap analysis, redundancy detection incomplete.
 - Digital_Double_virtual_workforce: open Dependabot alerts (medium/high, primarily development scope). Review and pin or dismiss with justification.
+- digital-double-mobile: open Dependabot (protobufjs critical, form-data) and historical secret scanning alert #1. Operator rotation/revoke + triage.
 - sovereign-clean-room: open PRs / full VSA UNVERIFIED.
 - Locked catalog vs live census drift.
 
 ## Exit Criteria (this cycle)
-- Four pillars verified live via GitHub API (CI, Dependabot, security).
-- No unsupported claims, no history rewrite, no deletions, no code changes in targets.
+- digital-double-mobile re-audited live via GitHub API (structure, CI, security).
+- No unsupported claims, no history rewrite, no deletions, no code changes in target.
 - Docs updated. Residuals recorded. Stop.
 
 ## Optimization Progress
-Incremental verification. Pillars remain ACTIVE with noted residuals. Full graphs remain open.
+Incremental verification. SUPERSEDED hygiene confirmed. Full graphs remain open.
