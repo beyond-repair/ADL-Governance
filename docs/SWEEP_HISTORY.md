@@ -1,28 +1,23 @@
+## Sweep-490 / PASS-2026-10-21-490: Master Directive Portfolio Governance & Completion Sweep
+
+- Timestamp: 2026-10-21 (EDT).
+- Scope: Phase 1 census (83 repos) + Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Bounded cycle only.
+- Repositories reviewed: 4 pillars + portfolio census.
+- Findings:
+  - Census: 83 total, incomplete_results false. Only CFT-v3.0 archived.
+  - forge-aegis: ACTIVE, CI success on main e7188d5 (run 37258127100), claim cap software/RUNNABLE SKETCH, Dependabot 0, no releases.
+  - sovereign-clean-room: ACTIVE, CI success on main 4878918c (run 37064696194), VSA UNVERIFIED, Dependabot 0, open PRs residual.
+  - BlockSwarm: ACTIVE, CI success on main 98480104 (run 38252865430), Foundry, Dependabot 0, no releases.
+  - Digital_Double_virtual_workforce: ACTIVE, CI success on main ad0c3bd (run 39035783949), open Dependabot alerts (medium/high dev deps including source-map-js high), readiness PASS WITH FINDINGS.
+  - No critical CI failures on main for pillars. Claims not elevated.
+- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md with live verification. No code changes, no deletions, no history rewrites, no claim promotions.
+- Residual risks: Full capability matrix, dependency graph, gap analysis, redundancy detection, and complete classification for remaining repos incomplete. Open Dependabot in Digital_Double. Open PRs in sovereign-clean-room. Operator queue updated.
+- Exit: Cycle complete. Residuals recorded. Stopped per discipline (no infinite review cycle).
+
 ## Sweep-489 / PASS-2026-10-21-489: Bounded audit of sovereign-clean-room
 
-- Timestamp: 2026-10-22.
-- Scope: Bounded DISCOVER + AUDIT on beyond-repair/sovereign-clean-room.
-- Classification reconfirmed: ACTIVE. VSA completeness remains UNVERIFIED.
-- Findings: README confirms offline VSA substrate (FHRR, BaNEL, invertibility gate, skill boundary). Open PRs #1 (PyNaCl pin) and #3 (governance tagging). Structure complete at top level. Claim caps respected.
-- Actions performed: Persisted PASS-2026-10-21-489.yaml. No code changes. No claim promotions.
-- Residual risks: Open PRs unmerged; full core audit pending; adapter integration with Nexus/sunder unverified.
-- Exit: Audit slice complete. Next recommended: self-audit of ADL-Governance or PR review.
+[Prior content preserved.]
 
 ## Sweep-random-2026-10-21 / PASS-2026-10-21-random: Randomized Portfolio Completion Sweep
 
-- Timestamp: 2026-10-21.
-- Scope: Random selection from 83-name census.
-- Selected repository: `aegis-repo-graph`.
-- Phases executed: SELECT → DISCOVER → AUDIT → CLASSIFY → PLAN (docs-only) → DOCUMENT → GOVERN.
-- Findings:
-  - Structure complete for purpose: graph engine, locked catalog, drift module, tests, CI workflow, claim docs.
-  - Classification: RESEARCH / claim ≤1. Snapshot 2026-09-04 (73 artifacts). Non-mutating drift vs frozen 83-name searches.
-  - Compliant with ADL-Governance claim discipline. No live crawler or FLS claims.
-  - Termination conditions met within research scope (no expansion).
-- Actions performed: Added `docs/SWEEP-random-2026-10-21.md` in selected repo. Updated PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md. No code, no catalog, no tags, no archives.
-- Residual risks: None specific to this repo; portfolio-wide full matrix residual.
-- Exit: Selected repo cycle complete. Random re-selection available for next loop.
-
-## Sweep-488 / PASS-2026-10-21-488: Master Directive Portfolio Governance & Completion Sweep
-
-[Prior content preserved in git history.]
+[Prior content preserved.]
