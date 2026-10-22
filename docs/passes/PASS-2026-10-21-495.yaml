@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-21-495
+  parent_pass: PASS-2026-10-21-494
+
+STATE:
+  global_status: DISCOVERING
+  repositories_scanned: 1
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 4
+  gaps_remaining: 5
+
+OBJECTIVE:
+  id: GAP-DEPENDABOT-TRIAGE-DDVW
+  description: Document open Dependabot alerts in Digital_Double_virtual_workforce (development-scope medium/high) without elevation or dismissal.
+  reason_selected: Highest residual from OPERATOR_QUEUE after random profile audit; bounded non-destructive slice.
+
+DISCOVERY:
+  findings:
+    - Open alerts include postcss-selector-parser (medium, CVE-2026-104844), sprintf-js (medium), source-map-js (high, CVE-2026-93749), pytest (medium), brace-expansion (medium).
+    - All observed scopes are development. No runtime production path exposure confirmed in this pass.
+    - No claim elevation performed.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-21-495.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - not applicable (docs only)
+  code_review: NOT_RUN
+  security: PASS (observation only; no dismissal)
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Dependabot residuals remain open and development-scoped.
+  failures:
+    - none
+  decisions:
+    - No auto-dismiss; operator must review reachability before pin or dismiss.
+
+REMAINING:
+  incomplete:
+    - Full capability matrix, dependency graph.
+    - sovereign-clean-room PRs/VSA.
+  blockers:
+    - none for this slice
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-PR-REVIEW-SOVEREIGN or random incremental
+  action: Operator selects next residual or random repo for full cycle.
+  reason: Maintain incremental non-destructive progress.
+  prerequisites:
+    - none
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Dependabot list API response (truncated, development scopes confirmed)
