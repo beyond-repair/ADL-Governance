@@ -1,3 +1,16 @@
+## Sweep-500 / PASS-2026-10-22-500: RANDOM-DIGITAL-DOUBLE-MOBILE
+
+- Timestamp: 2026-10-22 ~14:02 UTC (current session).
+- Scope: Randomized SELECT from full portfolio (83 repos). Selected digital-double-mobile. Full DISCOVER → AUDIT → CLASSIFY → RE-AUDIT.
+- Findings:
+  - Structure: Claim-0 FastAPI in dd_mobile/, historical backend/frontend/Flutter, Vite React src/, superseded-guard.yml, SUPERSEDED.md, CLAIM_STATUS.md. Successor: Digital_Double_virtual_workforce.
+  - Classification: SUPERSEDED (Claim-0). Confirmed. No product elevation. Guard enforces .env absence and runs pytest.
+  - CI: superseded-guard last success run 37230662637 on HEAD 7c65eb04a678f457929671cd4909bebd61ac2eac (2026-10-04). Dependabot runs green.
+  - Dependabot: Open alerts remain (protobufjs critical, form-data). Secret scanning alert #1 open (historical .env). No repo security advisories.
+  - No undefined Claim-0 components, no critical CI failures, no unsupported claims. Target state (Claim-0 CI-green hygiene) achieved.
+- Actions performed: No code changes in digital-double-mobile (termination conditions met for SUPERSEDED). Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history in ADL-Governance. Idempotent documentation only.
+- Residual / next: Portfolio-level residuals unchanged (full graphs, Digital_Double Dependabot, sovereign-clean-room VSA/PRs). digital-double-mobile residuals (Dependabot + secret alert) operator-only. Next cycle: random select next repo.
+
 ## Sweep-499 / PASS-2026-10-22-499: RANDOM-BLOCKSWARM
 
 - Timestamp: 2026-10-22 ~13:00 UTC (current session).
@@ -9,44 +22,5 @@
   - No undefined components, no stale internal entries, no critical security issues, no unsupported claims. Target state (CI-green) achieved.
 - Actions performed: No code changes in BlockSwarm (termination conditions met). Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history in ADL-Governance. Idempotent documentation only.
 - Residual / next: Portfolio-level residuals unchanged (full graphs, Digital_Double Dependabot, sovereign-clean-room VSA/PRs). Next cycle: random select next repo.
-
-## Sweep-498 / PASS-2026-10-22-498: MANDATORY-LIVE-VERIFICATION
-
-- Timestamp: 2026-10-22 ~03:12 UTC (current session).
-- Scope: Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. No assumptions; CI/workflows, Dependabot, security checked via GitHub API.
-- Findings:
-  - forge-aegis: CI success on recent runs (last 2026-10-05 run 37258127100); Dependabot open empty; no security advisories.
-  - sovereign-clean-room: Python tests workflow active; recent mixed results on branches; Dependabot open empty; VSA residual UNVERIFIED; open PRs.
-  - BlockSwarm: Foundry workflow active, success runs (latest 2026-10-12); Dependabot open empty.
-  - Digital_Double_virtual_workforce: Digital Double CI success (latest 2026-10-17 run 39035783949); multiple open Dependabot alerts (medium/high, e.g. postcss-selector-parser, source-map-js, pytest).
-  - All classified ACTIVE per prior lock. No claim elevation.
-- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history in ADL-Governance. No code changes in target repos, no history rewrite, no deletions.
-- Residual / next: Portfolio-level residuals unchanged (full graphs, Dependabot triage on Digital_Double, sovereign-clean-room PRs/VSA). Next cycle operator-selected or random.
-
-## Sweep-497 / PASS-2026-10-22-497: RANDOM-THRUST-TARGET-30
-
-- Timestamp: 2026-10-22 ~03:00 UTC (current session).
-- Scope: Randomized SELECT from full portfolio (83 repos). Selected thrust-target-30. Full DISCOVER → AUDIT → CLASSIFY.
-- Findings:
-  - Structure: minimal constants repo with target.json (F/P = 3e-8 N/W = 30 μN/kW), unit identity test, CI workflow, explicit claim-cap docs.
-  - Classification: RESEARCH, claim level 0 (design goal, not measured). Confirmed against CLAIM_STATUS.md, GOVERNANCE.md, and ADL-Governance rules.
-  - CI: unit-identity workflow last success on 2026-10-01 (run 36817676794, head 30d030aa). Test asserts SI identity and claim_level=0 / experimental_validation=false.
-  - Dependabot: none. Releases: none. No critical security or unsupported claims.
-  - No undefined components, no stale entries internal to repo.
-- Actions performed: No code or content changes in thrust-target-30 (already termination-ready). Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history in ADL-Governance. Idempotent documentation only.
-- Residual / next: Portfolio-level residuals unchanged. Next cycle: random select next repo or operator residual.
-
-## Sweep-496 / PASS-2026-10-22-496: MANDATORY-LIVE-VERIFICATION
-
-- Timestamp: 2026-10-22 ~02:12 UTC.
-- Scope: Phase 3 mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. No assumptions; CI/workflows, structure, releases checked via GitHub API.
-- Findings:
-  - forge-aegis: CI success on recent runs (last 2026-10-05); no releases; structured with python/, docs, CLAIM_STATUS.md.
-  - sovereign-clean-room: Python tests workflow active; tests/ and docs present; VSA residual UNVERIFIED.
-  - BlockSwarm: Foundry workflow active.
-  - Digital_Double_virtual_workforce: Digital Double CI active; Dependabot residual unchanged.
-  - All classified ACTIVE per prior lock. No claim elevation.
-- Actions performed: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this history. No code changes in target repos, no history rewrite, no deletions.
-- Residual / next: Portfolio-level residuals unchanged (full graphs, Dependabot triage, sovereign-clean-room PRs/VSA). Next cycle operator-selected.
 
 ## Prior content preserved.
