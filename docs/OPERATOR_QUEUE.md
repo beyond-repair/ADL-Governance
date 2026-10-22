@@ -1,11 +1,11 @@
 # Operator Queue
 
-## Sweep-497 / RANDOM-THRUST-TARGET-30 (completed)
+## Sweep-498 / MANDATORY-LIVE-VERIFICATION (completed)
 
-Random selection and full audit of thrust-target-30 completed. Confirmed RESEARCH / claim 0 design goal. CI green. No internal residuals. No destructive or operator-only actions required for this repository.
+Mandatory live verification of the four pillars completed. Classifications unchanged (ACTIVE). CI verified green or active on recent runs. Dependabot empty on forge-aegis, sovereign-clean-room, BlockSwarm. Digital_Double_virtual_workforce has multiple open Dependabot alerts (medium/high, primarily development scope).
 
-### Queued items / escalations (unchanged from prior)
-- Digital_Double_virtual_workforce: open Dependabot alerts (medium/high, primarily development scope). Review and pin or dismiss with justification.
+### Queued items / escalations (updated)
+- Digital_Double_virtual_workforce: open Dependabot alerts (e.g., #174 postcss-selector-parser medium, #169 source-map-js high, #168 pytest medium, others). Review, pin versions, or dismiss with justification. Critical/high require triage.
 - sovereign-clean-room: open PRs remain unmerged. Full VSA completeness audit still UNVERIFIED.
 - Full portfolio: capability matrix, dependency graph, gap analysis, redundancy detection, and classification for all 83 incomplete. Continue incremental sweeps. Locked catalog drift documented; expansion operator-only.
 - Archive candidates and SUPERSEDED remain as previously queued; no GitHub archive actions performed.
@@ -16,6 +16,6 @@ Random selection and full audit of thrust-target-30 completed. Confirmed RESEARC
 - No force-pushes.
 - All proposals requiring destruction or high-risk migration escalated here.
 
-Next cycle: random select next repository or operator residual triage.
+Next cycle: random select next repository or operator residual triage (Dependabot on Digital_Double).
 
 ## Prior sweeps preserved.
