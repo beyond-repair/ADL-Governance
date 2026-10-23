@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-10-23-508
+  parent_pass: PASS-2026-10-23-507
+
+STATE:
+  global_status: RESEARCH_HYGIENE
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 51
+  capabilities_verified: 13
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE-508
+  description: Random hygiene sweep; selected seem-sunder-bridge via `shuf -n1` over pool of 86 (gh repo list beyond-repair --limit 300, excluding ADL-Governance).
+  reason_selected: NEXT of PASS-507 (random hygiene sweep).
+
+DISCOVERY:
+  findings:
+    - gh repo list returns 87 repos (incl. ADL-Governance); census drift vs 83 still unreconciled.
+    - seem-sunder-bridge - public, MIT, Python, not archived; CLAIM_STATUS.md RESEARCH claim <=1 (MODULE_SURFACE) v0.1.1; Q-003 contract checker only.
+    - Modules bridge/check.py, contract.py, engine.py, witness.py plus frozen symbol witnesses 2026-10-01/02; dependency pytest==8.3.5 only.
+    - CI workflow ci runs pytest then python -m bridge; latest run on main success (2026-10-03).
+    - Open PR 2 (Dependabot pytest 8.3.5 -> 9.0.3, major bump), checks SUCCESS, mergeable UNKNOWN.
+    - Open Dependabot alert 1 medium pytest (scope runtime per GitHub; pytest is test-only in practice).
+    - Open issues 0.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-23-508.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending (this file)
+  capabilities_added_or_changed:
+    - none (no code changes in seem-sunder-bridge)
+
+VERIFICATION:
+  tests_run:
+    - seem-sunder-bridge pytest (pytest 8.3.5) - 13 passed PASS
+    - seem-sunder-bridge pytest with pytest 9.0.3 (local only, not committed) - 13 passed PASS
+    - python -m bridge - exit 0, OK, isomorphism/mind NOT_CLAIMED PASS
+    - gh run list - latest ci success on main PASS
+  code_review: NOT_RUN
+  security: PARTIAL (1 open medium Dependabot alert on pytest; fix is operator-gated major bump PR 2)
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation; history preserved; operator residuals escalated)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - seem-sunder-bridge remains RESEARCH claim <=1; tests and contract gate reproduce locally and in CI.
+    - pytest 9.0.3 is compatible with the test suite locally.
+  failures:
+    - none
+  decisions:
+    - Do not merge Dependabot major bump; queue to operator with compatibility evidence.
+
+REMAINING:
+  incomplete:
+    - Full portfolio capability/dependency/authority graphs
+    - Census reconciliation 83 vs 87
+  blockers:
+    - Operator for PR 2 merge; governance CI red due to pre-existing PASS-2026-10-17-410.yaml validator failure
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: RANDOM-NEXT-OR-CENSUS-RECONCILE-509
+  action: Continue random hygiene sweep or reconcile census; persist pass record.
+  reason: Progressive sampling.
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - gh repo list count 87; shuf -n1 pool 86 -> seem-sunder-bridge
+    - pytest 13 passed (8.3.5 and 9.0.3); python -m bridge OK; gh run list success
+    - Prior PASS-507, SWEEP_HISTORY.md, OPERATOR_QUEUE.md

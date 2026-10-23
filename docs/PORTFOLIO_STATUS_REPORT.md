@@ -1,8 +1,12 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-23 (Sweep-507 / RANDOM-HYGIENE-SUNDER)
+**Updated:** 2026-10-23 (Sweep-508 / RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE)
 **Project / Version:** ADL Portfolio Governance / Sweep-506
 **Objective:** Random selection of BlockSwarm; full DISCOVER/AUDIT/CLASSIFY. Confirm ACTIVE status holds with no immediate gaps.
+
+## Sweep-508: RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE
+- Selected `seem-sunder-bridge` via `shuf -n1` (pool 86). Classification: RESEARCH (claim <=1) - Q-003 contract checker only, tests + CI green, explicit NOT_CLAIMED outputs, no release.
+- Evidence: pytest 13 passed; `python -m bridge` OK; ci success on main; Dependabot PR #2 + alert #1 (pytest) operator-gated.
 
 ## Sweep-507: RANDOM-HYGIENE-SUNDER
 - Selected `sunder` via `shuf -n1` (pool 86). Classification: RESEARCH (claim <=1) - documented purpose, tests + CI green, but CLAIM_STATUS caps claims; no release.

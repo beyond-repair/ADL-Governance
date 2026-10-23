@@ -1,5 +1,11 @@
 # Operator Queue
 
+## Sweep-508 / RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE (completed)
+
+### Queued items
+- seem-sunder-bridge: Dependabot PR #2 (pytest 8.3.5 -> 9.0.3, major) - CI checks SUCCESS and local suite passes 13/13 on 9.0.3; merge resolves open medium pytest alert #1. Operator-only merge.
+- Still open: PASS-2026-10-17-410.yaml validator failure keeps governance-ci red; census 87 vs 83.
+
 ## Sweep-507 / RANDOM-HYGIENE-SUNDER (completed)
 
 ### Queued items
