@@ -1,8 +1,13 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-23 (Sweep-509 / FIX-GOVERNANCE-PASS-VALIDATOR)
-**Project / Version:** ADL Portfolio Governance / Sweep-509
-**Objective:** Close pre-existing governance-ci red state caused by PASS-2026-10-17-410.yaml stub format.
+**Updated:** 2026-10-23 (Sweep-510 / RANDOM-HYGIENE-STRESS-TENSOR-MODIFICATION)
+**Project / Version:** ADL Portfolio Governance / Sweep-510
+**Objective:** Randomized selection and full workflow on stress-tensor-modification.
+
+## Sweep-510: RANDOM-HYGIENE-STRESS-TENSOR-MODIFICATION
+- Selected `stress-tensor-modification` via random (pool 83). Classification: RESEARCH (claim ≤1) - Maxwell stress + BEM surface diagnostics on open 0.45 gasket. Not thrust. Tests 14 passed locally; CI workflow present; docs and CLAIM_STATUS.md explicit and honest about gaps (no closed epsilon_F, no laboratory validation). No code changes. No release.
+- Evidence: pytest 14 passed; physics_evaluator.py and cli.py outputs match documented residuals; tree complete with tests/, docs/, .github/workflows/python-tests.yml.
+- Census remains 83.
 
 ## Sweep-509: FIX-GOVERNANCE-PASS-VALIDATOR
 - Selected residual: scripts/check_passes.py rejected PASS-2026-10-17-410.yaml (non-standard keys, no id/sweep/PASS).
