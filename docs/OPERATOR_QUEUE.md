@@ -1,5 +1,13 @@
 # Operator Queue
 
+## Sweep-507 / RANDOM-HYGIENE-SUNDER (completed)
+
+### Queued items
+- sunder: decide on open PR #1 "Portfolio sweep catalog + AEGIS session graph" (open since 2026-09-04, mergeable UNKNOWN) - review/merge or close.
+- sunder: GitHub repo description "Local-first autonomous coding agent..." conflicts with CLAIM_STATUS.md forbidden claim; operator to edit to claim-capped wording.
+- Census: gh repo list reports 87 repos vs prior 83; reconcile locked catalog (operator-only expansion).
+- ADL-Governance: scripts/check_passes.py fails on PASS-2026-10-17-410.yaml (pre-existing); Sweep-505/506 lack pass files. Fix or mark as preserved stub.
+
 ## Sweep-506 / RANDOM-BLOCKSWARM-DISCOVER (completed)
 
 Randomly selected BlockSwarm. Full DISCOVER confirmed complete structure (contracts, tests for invariants including AI advises-cannot-execute, CI workflow, docs, README claim-capped). AUDIT against governance: no undefined components, no critical issues, claims capped. CLASSIFY remains ACTIVE. No code changes or destructive actions in target. Local Foundry re-test residual (not executed this session). Documentation updates in governance only.

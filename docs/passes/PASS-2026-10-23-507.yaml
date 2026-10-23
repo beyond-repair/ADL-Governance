@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-23-507
+  parent_pass: PASS-2026-10-22-504
+
+STATE:
+  global_status: RESEARCH_HYGIENE
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 51
+  capabilities_verified: 13
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: RANDOM-HYGIENE-SUNDER-507
+  description: Random hygiene sweep; selected repo sunder via `shuf -n1` over pool of 86 (gh repo list beyond-repair --limit 300, excluding ADL-Governance).
+  reason_selected: NEXT of PASS-504 (RANDOM-NEXT-OR-AEGIS-SAMPLE-505); Sweeps 505 and 506 (BlockSwarm, concurrent agent) recorded in history without pass files, so this pass id is 507 with parent = latest existing pass file 504.
+
+DISCOVERY:
+  findings:
+    - gh repo list beyond-repair --limit 300 returns 87 repos (incl. ADL-Governance); prior search_repositories count 83 -> census drift to reconcile.
+    - sunder - public, MIT, not archived, CLAIM_STATUS.md RESEARCH claim <=1 v0.1.1, CI workflow SUNDER CI present.
+    - Latest CI runs on main - SUNDER CI success (2026-10-06), Dependency Graph success.
+    - Open PR 1 (2026-09-04, author beyond-repair, mergeable UNKNOWN) touching sunder/aegis_bridge.py, agent.py, portfolio.py, tests/test_portfolio.py.
+    - Open issues 0; open Dependabot alerts 0.
+    - GitHub repo description says "Local-first autonomous coding agent", conflicting with CLAIM_STATUS forbidden statement.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-23-507.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending (this file)
+  capabilities_added_or_changed:
+    - none (no code changes in sunder; repo already governed)
+
+VERIFICATION:
+  tests_run:
+    - sunder pytest (Python venv, pip install -e .[dev]) - 20 passed in 1.38s PASS
+    - python -m sunder --demo T-001 / T-003 / T-004 - exit 0 each PASS
+    - gh run list sunder - latest SUNDER CI success on main PASS
+  code_review: NOT_RUN
+  security: PASS (0 open Dependabot alerts)
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation; history preserved; operator residuals escalated)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - sunder remains RESEARCH, claim <=1; local tests and scripted demos reproduce.
+  failures:
+    - none
+  decisions:
+    - Do not merge stale PR 1 or edit repo metadata; queue to operator.
+
+REMAINING:
+  incomplete:
+    - Full portfolio capability/dependency/authority graphs
+    - Census reconciliation 83 vs 87
+  blockers:
+    - Operator for PR 1 decision on sunder and repo description edit
+  new_gaps:
+    - Census drift 83 -> 87
+
+NEXT:
+  objective_id: RANDOM-NEXT-OR-CENSUS-RECONCILE-508
+  action: Reconcile census (87 via gh repo list) or continue random hygiene sweep; persist pass record.
+  reason: Census drift detected this pass.
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - gh repo list count 87; shuf -n1 pool 86 -> sunder
+    - sunder pytest 20 passed; demos exit 0; gh run list success
+    - Prior PASS-504, SWEEP_HISTORY.md, OPERATOR_QUEUE.md

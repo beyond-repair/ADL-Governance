@@ -1,8 +1,13 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-23 (Sweep-506 / RANDOM-BLOCKSWARM-DISCOVER)
+**Updated:** 2026-10-23 (Sweep-507 / RANDOM-HYGIENE-SUNDER)
 **Project / Version:** ADL Portfolio Governance / Sweep-506
 **Objective:** Random selection of BlockSwarm; full DISCOVER/AUDIT/CLASSIFY. Confirm ACTIVE status holds with no immediate gaps.
+
+## Sweep-507: RANDOM-HYGIENE-SUNDER
+- Selected `sunder` via `shuf -n1` (pool 86). Classification: RESEARCH (claim <=1) - documented purpose, tests + CI green, but CLAIM_STATUS caps claims; no release.
+- Evidence: pytest 20 passed; demos T-001/T-003/T-004 exit 0; SUNDER CI success on main; 0 Dependabot alerts; PR #1 open (operator).
+- Census note: gh repo list = 87 (drift vs 83; pending reconcile).
 
 ## Live Census
 - Total repositories under user:beyond-repair: **83** (verified via search_repositories total_count=83, incomplete_results=false on 2026-10-23).

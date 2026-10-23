@@ -1,3 +1,12 @@
+## Sweep-507 / PASS-2026-10-23-507: RANDOM-HYGIENE-SUNDER
+
+- Timestamp: 2026-10-23 03:10 UTC.
+- Selection: `shuf -n1` over 86 repos (gh repo list, excluding ADL-Governance) -> sunder.
+- Findings: RESEARCH (claim <=1) confirmed. pytest 20 passed; demos T-001/T-003/T-004 exit 0; latest SUNDER CI success on main; 0 open issues; 0 open Dependabot alerts; open PR #1 (stale since 2026-09-04). Repo description overclaims ("autonomous coding agent"). Census drift: gh repo list = 87 vs prior 83.
+- Note: Sweep-506 (BlockSwarm, concurrent) has no pass file; this pass parents PASS-2026-10-22-504 (latest existing file). Pre-existing validator failure: scripts/check_passes.py rejects PASS-2026-10-17-410.yaml.
+- Actions: Governance docs + pass file only. No code changes in sunder.
+- Termination (sunder): COMPLETE for this cycle; residuals operator-gated.
+
 ## Sweep-506 / PASS-2026-10-23-506: RANDOM-BLOCKSWARM-DISCOVER
 
 - Timestamp: 2026-10-23 ~03:00 UTC (current session).
