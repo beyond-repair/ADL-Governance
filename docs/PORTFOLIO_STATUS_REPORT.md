@@ -1,8 +1,15 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-23 (Sweep-508 / RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE)
-**Project / Version:** ADL Portfolio Governance / Sweep-506
-**Objective:** Random selection of BlockSwarm; full DISCOVER/AUDIT/CLASSIFY. Confirm ACTIVE status holds with no immediate gaps.
+**Updated:** 2026-10-23 (Sweep-509 / FIX-GOVERNANCE-PASS-VALIDATOR)
+**Project / Version:** ADL Portfolio Governance / Sweep-509
+**Objective:** Close pre-existing governance-ci red state caused by PASS-2026-10-17-410.yaml stub format.
+
+## Sweep-509: FIX-GOVERNANCE-PASS-VALIDATOR
+- Selected residual: scripts/check_passes.py rejected PASS-2026-10-17-410.yaml (non-standard keys, no id/sweep/PASS).
+- Action: Non-destructive addition of `id: PASS-2026-10-17-410` and `sweep: 410` to satisfy preserved-stub path. All original content preserved.
+- Evidence: Commits 56e23aae (file fix), f0d0a337 (pass record). Live census 83 unchanged.
+- Classification: Governance capability VERIFIED for pass validation on this historical stub.
+- No product repositories changed. Residuals portfolio-wide unchanged except this CI residual closed.
 
 ## Sweep-508: RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE
 - Selected `seem-sunder-bridge` via `shuf -n1` (pool 86). Classification: RESEARCH (claim <=1) - Q-003 contract checker only, tests + CI green, explicit NOT_CLAIMED outputs, no release.
@@ -73,9 +80,10 @@
 - sovereign-clean-room: open PRs / full VSA UNVERIFIED.
 - Locked catalog vs live census drift.
 - Mandatory full CI/test re-execution and security scanning for all four priority repos incomplete this cycle.
+- Governance pass validator residual: CLOSED (Sweep-509).
 
 ## Exit Criteria (this cycle)
-- BlockSwarm random selection complete. Structure and prior evidence confirm ACTIVE, termination met on available data. Docs updated. Residuals recorded. Stop for this repo; continue portfolio sweep.
+- Governance CI residual from PASS-410 closed. Docs and pass record updated. Residuals recorded. Continue incremental sweeps.
 
 ## Optimization Progress
-Incremental governance. Census stable. Canonical pillars identified. Full graphs and complete verification remain open.
+Incremental governance. Census stable. Canonical pillars identified. Full graphs and complete verification remain open. Pass validation integrity restored.
