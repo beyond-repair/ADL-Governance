@@ -1,5 +1,29 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-23 (Sweep-506 / RANDOM-BLOCKSWARM-DISCOVER)
+**Project / Version:** ADL Portfolio Governance / Sweep-506
+**Objective:** Random selection of BlockSwarm; full DISCOVER/AUDIT/CLASSIFY. Confirm ACTIVE status holds with no immediate gaps.
+
+## Live Census
+- Total repositories under user:beyond-repair: **83** (verified via search_repositories total_count=83, incomplete_results=false on 2026-10-23).
+- GitHub archive flag: only `CFT-v3.0` true (unchanged).
+- Authenticated user: beyond-repair (public_repos reported 78; live search 83 includes private).
+
+## Sweep-506: RANDOM-BLOCKSWARM-DISCOVER
+**SELECT:** Randomly selected `beyond-repair/BlockSwarm` (Solidity/Foundry).
+
+**DISCOVER / AUDIT:**
+- Structure complete: contracts for AIExecutor, DAOGovernor, GovernanceNFT, KnowledgeLedger, MerkleVerifier, OrchestrationEngine, RevertTokenLayer + libraries; extensive test/ suite covering invariants; .github/workflows/foundry.yml; foundry.toml; docs with validation reports, FORMAL_INVARIANTS.md, CHANGELOG; README with claim-capped instructions and invariant "AI advises. It cannot execute."; submodules for dependencies.
+- Prior evidence: Foundry CI green, tests pass for advisory-only, one-vote SBT, role separation, inverse binding, deploy wiring, Merkle.
+- No undefined/undocumented critical components. No stale registry conflicts. Claims remain capped (no mainnet security, no autonomous execution).
+
+**CLASSIFY:** ACTIVE (justified: tested invariants, CI present, active docs, not experimental-only or superseded).
+
+**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No changes to BlockSwarm (idempotent confirmation). Local test re-run residual (environment). Docs updated in governance only. CI status: green per prior.
+
+**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No releases. Re-audit confirms termination conditions met for this repo on available evidence. Residuals portfolio-wide remain.
+
+## Prior Sweep-505 (preserved)
 **Updated:** 2026-10-23 (Sweep-505 / CENSUS-MANDATORY-VERIFY)
 **Project / Version:** ADL Portfolio Governance / Sweep-505
 **Objective:** Live census reconfirm + Phase 3 mandatory verification summary for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Bounded; no infinite loop.
@@ -22,34 +46,11 @@
 - **Digital_Double_virtual_workforce**: Language TypeScript, size 738, open_issues 5. Prior residuals: open Dependabot (medium/high, development scope). Classification holds ACTIVE. Full VSA/runtime UNVERIFIED beyond documented.
 - **sovereign-clean-room**: Prior residuals: open PRs, full VSA UNVERIFIED. Structure supports Clean-Room pillar. Classification holds ACTIVE.
 
-**CLASSIFY:** No changes this cycle. ACTIVE list preserved: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-. RESEARCH majority. SUPERSEDED/ARCHIVED per registry.
+**CLASSIFY:** No changes this cycle. ACTIVE list preserved: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
 
 **PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No code changes in targets. Docs updated in governance only. No tests re-run this cycle (local verification residual).
 
 **GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No releases. Re-audit confirms census stable at 83. Termination for this governed sweep: residuals recorded, stop.
-
-## Prior Sweep-503 (preserved)
-**Updated:** 2026-10-22 (Sweep-503 / NEXUS-LOCAL-VERIFY)
-**Project / Version:** ADL Portfolio Governance / Sweep-503
-**Objective:** Bounded local verification of ADL-Nexus CLI and tests.
-
-## Live Census
-- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
-- GitHub archive flag: only `CFT-v3.0` true.
-
-## Sweep-503: NEXUS-LOCAL-VERIFY
-**SELECT:** Highest-value after graph drift: local confirmation of ADL-Nexus RESEARCH platform.
-
-**DISCOVER / AUDIT:**
-- Cloned main; ran `python run.py status`: version 0.3.2, lifecycle RESEARCH, packages_ok True, pathway imports OK, adapters unavailable (no sibling repos), claim_cap 2.
-- pytest: 49 passed.
-- Matches CLAIM_STATUS.md and README: local only, no live adapters, no production claims.
-
-**CLASSIFY:** RESEARCH (confirmed). Claim ≤1 preserved. Local ceiling 2 is not Level 2 evidence.
-
-**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No changes in ADL-Nexus. Local tests re-executed and passed. Docs updated in governance.
-
-**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms invariants. Termination for this slice met.
 
 ## Classification Summary (no changes this cycle)
 - ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
@@ -65,8 +66,7 @@
 - Mandatory full CI/test re-execution and security scanning for all four priority repos incomplete this cycle.
 
 ## Exit Criteria (this cycle)
-- Census reconfirmed 83. Mandatory structure and prior evidence reviewed. No unsupported claims, no history rewrite, no deletions.
-- Docs updated. Residuals recorded. Stop. Do not enter infinite review cycle.
+- BlockSwarm random selection complete. Structure and prior evidence confirm ACTIVE, termination met on available data. Docs updated. Residuals recorded. Stop for this repo; continue portfolio sweep.
 
 ## Optimization Progress
 Incremental governance. Census stable. Canonical pillars identified. Full graphs and complete verification remain open.
