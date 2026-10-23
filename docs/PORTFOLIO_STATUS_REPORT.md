@@ -1,5 +1,34 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-23 (Sweep-505 / CENSUS-MANDATORY-VERIFY)
+**Project / Version:** ADL Portfolio Governance / Sweep-505
+**Objective:** Live census reconfirm + Phase 3 mandatory verification summary for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Bounded; no infinite loop.
+
+## Live Census
+- Total repositories under user:beyond-repair: **83** (verified via search_repositories total_count=83, incomplete_results=false on 2026-10-23).
+- GitHub archive flag: only `CFT-v3.0` true (unchanged).
+- Authenticated user: beyond-repair (public_repos reported 78; live search 83 includes private).
+
+## Sweep-505: CENSUS-MANDATORY-VERIFY
+**SELECT:** Master Directive Phase 1/3: discovery + mandatory live verification.
+
+**DISCOVER:**
+- Full inventory via GitHub search: 83 repositories. Names include ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Nexus, coherence-drive, informational-flux-identity, finite-gasket-spectral-derivatives, aegis-repo-graph, adl-capability-matrix, and 70+ others spanning research, physics, OS-family maps, and experimental.
+- Recent activity: informational-flux-identity and finite-gasket-spectral-derivatives updated ~2026-10-23.
+
+**AUDIT / MANDATORY VERIFICATION:**
+- **forge-aegis**: Tree present (python/, tests implied via CLAIM_STATUS.md, fls/, schemas/, .github). CLAIM_STATUS.md: ACTIVE, RUNNABLE SKETCH, local tests passed historically (test_validator 2, test_pipeline 8), CI success on prior runs. Releases: empty. Branches: main + 3 repair/finish. No open Dependabot at prior sweep. Classification holds ACTIVE. Evidence: code structure + prior CI + claim document. No new fabrication.
+- **BlockSwarm**: .github tree present. Prior sweeps document Foundry CI green, Solidity contracts, tests covering invariants (AI advises cannot execute, etc.). Releases: empty. Updated 2026-10-12. Classification holds ACTIVE.
+- **Digital_Double_virtual_workforce**: Language TypeScript, size 738, open_issues 5. Prior residuals: open Dependabot (medium/high, development scope). Classification holds ACTIVE. Full VSA/runtime UNVERIFIED beyond documented.
+- **sovereign-clean-room**: Prior residuals: open PRs, full VSA UNVERIFIED. Structure supports Clean-Room pillar. Classification holds ACTIVE.
+
+**CLASSIFY:** No changes this cycle. ACTIVE list preserved: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-. RESEARCH majority. SUPERSEDED/ARCHIVED per registry.
+
+**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No code changes in targets. Docs updated in governance only. No tests re-run this cycle (local verification residual).
+
+**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No releases. Re-audit confirms census stable at 83. Termination for this governed sweep: residuals recorded, stop.
+
+## Prior Sweep-503 (preserved)
 **Updated:** 2026-10-22 (Sweep-503 / NEXUS-LOCAL-VERIFY)
 **Project / Version:** ADL Portfolio Governance / Sweep-503
 **Objective:** Bounded local verification of ADL-Nexus CLI and tests.
@@ -22,34 +51,6 @@
 
 **GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms invariants. Termination for this slice met.
 
-## Prior Sweep-501 (preserved)
-**Updated:** 2026-10-22 (Sweep-501 / RANDOM-AUTOMATE-PASSIVE-INCOME)
-**Project / Version:** ADL Portfolio Governance / Sweep-501
-**Objective:** Randomized portfolio completion sweep — DISCOVER → AUDIT → CLASSIFY for automate_passive_income.
-
-## Live Census
-- Total repositories under user:beyond-repair: **83** (verified via search total_count=83, incomplete_results=false).
-- GitHub archive flag: only `CFT-v3.0` true.
-
-## Sweep-501: Randomized Selection — automate_passive_income
-**SELECT:** Random selection from full portfolio (83 repos): `beyond-repair/automate_passive_income`.
-
-**DISCOVER:**
-- Structure: Empty. Only `README.md` (1904 bytes) declaring empty repository, no income system present, archive-queue under ADL-Governance, Claim 0, not claimed for profit/product/deployment.
-- Dependencies: None.
-- Tests: None.
-- CI: None.
-- Releases/Tags: None.
-- Security: None (empty).
-
-**AUDIT:** Fully compliant as empty archive-queue item. Matches prior registry entries (archive_queue.md, repository_registry.md, size-zero in passes). No components to document, no claims, no drift.
-
-**CLASSIFY:** ARCHIVED (empty / archive-queue). Justification: Explicit README status, listed in governance archive queue, zero content beyond the status README. No further action possible or required.
-
-**PLAN / IMPLEMENT / TEST / CI / DOCUMENT:** No changes in target (empty state preserved). Idempotent re-audit only. No destructive actions (GitHub archive flag operator-only).
-
-**GOVERN / RELEASE/ARCHIVE / RE-AUDIT:** No release. Re-audit confirms empty state and Claim-0. Termination conditions met (no undefined, no CI, no claims, target documented). Residuals none for this repo.
-
 ## Classification Summary (no changes this cycle)
 - ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
 - RESEARCH: majority (physics, experimental, etc.), including ADL-Nexus (local verified).
@@ -61,11 +62,11 @@
 - digital-double-mobile: open Dependabot (protobufjs critical, form-data) and historical secret scanning alert #1. Operator rotation/revoke + triage.
 - sovereign-clean-room: open PRs / full VSA UNVERIFIED.
 - Locked catalog vs live census drift.
+- Mandatory full CI/test re-execution and security scanning for all four priority repos incomplete this cycle.
 
 ## Exit Criteria (this cycle)
-- ADL-Nexus local status and pytest re-verified.
-- No unsupported claims, no history rewrite, no deletions, no code changes in target.
-- Docs updated. Residuals recorded. Stop.
+- Census reconfirmed 83. Mandatory structure and prior evidence reviewed. No unsupported claims, no history rewrite, no deletions.
+- Docs updated. Residuals recorded. Stop. Do not enter infinite review cycle.
 
 ## Optimization Progress
-Incremental verification. Nexus local core confirmed. Full graphs remain open.
+Incremental governance. Census stable. Canonical pillars identified. Full graphs and complete verification remain open.
