@@ -1,3 +1,12 @@
+## Sweep-509 / PASS-2026-10-23-509: FIX-GOVERNANCE-PASS-VALIDATOR
+
+- Timestamp: 2026-10-23 13:25 UTC.
+- Selection: Highest-value residual (governance-ci red due to PASS-410 stub format).
+- Findings: PASS-2026-10-17-410.yaml lacked id/sweep/PASS nesting; checker accepts preserved stubs naming the pass. Minimal non-destructive addition of id + sweep keys restores acceptance. All original content preserved.
+- Actions: Updated docs/passes/PASS-2026-10-17-410.yaml (commit 56e23aae); created PASS-2026-10-23-509.yaml (commit f0d0a337); this history update.
+- Governance CI residual closed on this slice. Census remains 83. No product code changes.
+- Termination: COMPLETE for validator residual; continue residuals.
+
 ## Sweep-508 / PASS-2026-10-23-508: RANDOM-HYGIENE-SEEM-SUNDER-BRIDGE
 
 - Timestamp: 2026-10-23 13:05 UTC.
