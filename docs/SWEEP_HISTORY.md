@@ -1,3 +1,12 @@
+## Sweep-512 / PASS-2026-10-23-512: AUDIT-SOVEREIGN-CLEAN-ROOM-VSA
+
+- Timestamp: 2026-10-23 20:15 UTC.
+- Selection: Targeted from PASS-511 next action (audit sovereign-clean-room VSA).
+- Findings: core/clean_room_vsa.py implements full FHRR engine, BaNEL, codebook, jump_start, resonator, gate. Tests cover core paths. Local clean-clone pytest: 140 passed, 5 skipped. AUDIT_SEEM_COMPLETION.md confirms partial benchmarks only; no full protocol claims. Classification remains ACTIVE / claim-capped.
+- Actions: Created docs/passes/PASS-2026-10-23-512.yaml; updated this history. No product code changes. No destructive actions.
+- Termination: COMPLETE for VSA audit slice. Next: random hygiene or operator residual.
+- Census: 83 unchanged.
+
 ## Sweep-511 / PASS-2026-10-23-511: RECONSTRUCT-PORTFOLIO-STATE
 
 - Timestamp: 2026-10-23 17:07 UTC.
