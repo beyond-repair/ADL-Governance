@@ -1,3 +1,12 @@
+## Sweep-517 / PASS-2026-10-24-517: GRAPH-OBSERVATION-UPDATE
+
+- Timestamp: 2026-10-24T20:07:00Z UTC (approx).
+- Selection: Fresh principal agent entry; reconstruct then address persistent graph gap with minimal observation update.
+- Findings: Census stable at 83 (search_repositories total_count=83, incomplete_results=false). Prior Sweep-516 reconstruct confirmed. aegis-repo-graph locked catalog remains 2026-09-04; observation modules support drift tracking. Residuals unchanged.
+- Actions: Created graph/observed_2026_10_24.py in aegis-repo-graph (commit 4163ba469bd6d65bcdcf81a7922968cae8a9e683). Created docs/passes/PASS-2026-10-24-517.yaml. Updated this history. No product code changes. No destructive actions. Claim caps respected.
+- Termination: COMPLETE for observation slice. Next: random hygiene or residual.
+- Census: 83 unchanged.
+
 ## Sweep-516 / PASS-2026-10-24-516: RECONSTRUCT-PRINCIPAL-AGENT-ENTRY
 
 - Timestamp: 2026-10-24T17:05:00Z UTC (approx).
