@@ -1,3 +1,12 @@
+## Sweep-515 / PASS-2026-10-24-515: HYGIENE-COHERENCE-DRIVE
+
+- Timestamp: 2026-10-24T14:00:00Z UTC (approx).
+- Selection: Random hygiene via random.choice over search payload of 83 names. Selected coherence-drive.
+- Findings: RESEARCH / Claim-0 (≤2). Official research index + discovery ledger. Not propulsion. Explicit false validation flags. Docs, DISC ledger, CLI, tests/ present. No CI. No deps. Stale description noted.
+- Actions: Updated PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md. Created docs/passes/PASS-2026-10-24-515.yaml. No product code changes. No destructive actions.
+- Termination: COMPLETE for hygiene slice. Next: random hygiene or operator residual on CI/Dependabot.
+- Census: 83 unchanged.
+
 ## Sweep-514 / PASS-2026-10-24-514: HYGIENE-MENDTHEGAME
 
 - Timestamp: 2026-10-24T13:00:00Z UTC (approx).

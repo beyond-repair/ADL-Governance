@@ -1,5 +1,17 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-24 (Sweep-515 / RANDOM-HYGIENE-COHERENCE-DRIVE)
+**Project / Version:** ADL Portfolio Governance / Sweep-515
+**Objective:** Randomized selection and full workflow on coherence-drive. Live census confirmed. No fabrication.
+
+## Sweep-515: RANDOM-HYGIENE-COHERENCE-DRIVE
+- Selected `coherence-drive` via random.choice over 83 names (no fixed seed this cycle).
+- Classification: RESEARCH (Claim ≤2 / Claim-0 runnable sketch). Official Coherence Drive research index and discovery ledger. Not a propulsion engine. All validation flags false (experimental_validation=false, thrust_validated=false, energy_extraction_validated=false). Stage 1 frozen. Docs, discoveries ledger (DISC-0001..0017), CLI, and presence tests present. No .github/workflows. No external runtime deps. Version 0.1.0. Stale GitHub description noted in README as provenance; file-level claims govern.
+- Evidence: README.md, CLAIM_STATUS.md, pyproject.toml, tree (coherence_drive/, discoveries/, docs/, tests/), no CI directory. Local test execution UNVERIFIED this cycle (structure verified).
+- No code changes. No release. Census remains 83.
+- Residuals: Missing CI workflow (non-blocking for Claim-0 index). Full local pytest UNVERIFIED. GitHub repo description stale (operator may update).
+
+## Prior Sweep-514 (preserved)
 **Updated:** 2026-10-24 (Sweep-514 / RANDOM-HYGIENE-MENDTHEGAME)
 **Project / Version:** ADL Portfolio Governance / Sweep-514
 **Objective:** Randomized selection and full workflow on mendthegame. Live census confirmed. No fabrication.
@@ -49,11 +61,12 @@
 
 ## Classification Summary (no changes this cycle)
 - ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
-- RESEARCH: majority (physics, experimental, etc.), including mendthegame (private workspace, Claim 0), ADL-Nexus (local verified).
+- RESEARCH: majority (physics, experimental, etc.), including coherence-drive (Claim-0 index), mendthegame (private workspace, Claim 0), ADL-Nexus (local verified).
 - SUPERSEDED / ARCHIVED: digital-double-mobile (confirmed), automate_passive_income (confirmed empty), and per repository_registry.md.
 
 ## Residuals (exit criteria not fully met portfolio-wide)
 - Full 83-row capability matrix, dependency graph, gap analysis, redundancy detection incomplete.
+- coherence-drive: missing CI workflow (optional for Claim-0). Local pytest UNVERIFIED. Stale repo description.
 - mendthegame: open Dependabot alerts (vite high/medium, @tanstack/react-start critical). Operator triage required.
 - Digital_Double_virtual_workforce: open Dependabot alerts (medium/high, primarily development scope) — partially addressed by form-data pin.
 - digital-double-mobile: open Dependabot (protobufjs critical, form-data) and historical secret scanning alert #1. Operator rotation/revoke + triage.
@@ -63,7 +76,7 @@
 - Governance pass validator residual: CLOSED (Sweep-509).
 
 ## Exit Criteria (this cycle)
-- Random hygiene on mendthegame performed. Classification RESEARCH / Claim 0 confirmed. Docs updated. Residuals recorded (Dependabot). Stop.
+- Random hygiene on coherence-drive performed. Classification RESEARCH / Claim-0 confirmed. Docs updated. Residuals recorded (no CI). Stop.
 
 ## Optimization Progress
 Incremental governance. Census stable at 83. Canonical pillars identified and re-verified. Full graphs and complete verification remain open. Pass validation integrity restored.

@@ -1,6 +1,27 @@
 # Operator Queue
 
-## Sweep-514 / RANDOM-HYGIENE-MENDTHEGAME (completed)
+## Sweep-515 / RANDOM-HYGIENE-COHERENCE-DRIVE (completed)
+
+Randomly selected coherence-drive. Full DISCOVER/AUDIT: RESEARCH (Claim-0 / ≤2), official research index and discovery ledger for Coherence Drive. Not a propulsion engine. Explicit false flags for thrust/energy. Docs, ledger, CLI, presence tests present. No CI workflow. No code changes or destructive actions in target. Termination conditions met on current evidence for hygiene.
+
+### Queued items / escalations (updated)
+- coherence-drive: missing .github/workflows (non-critical for Claim-0 index). Operator may add simple pytest CI. Stale GitHub repository description (operator update recommended). Local pytest UNVERIFIED this cycle.
+- mendthegame: open Dependabot alerts for vite (high/medium launch-editor command injection) and @tanstack/react-start (critical XSS CVE-2026-102989). Operator review: upgrade packages or dismiss with justification. Private workspace, no public exposure assumed.
+- sovereign-clean-room: open PRs remain. Full VSA completeness UNVERIFIED beyond documented partial benchmarks (see Sweep-512 audit).
+- digital-double-mobile: open Dependabot (protobufjs critical, form-data) and historical secret scanning alert #1. Operator rotation/revoke + triage. Archive flag remains operator-only after rotation.
+- Full portfolio: capability matrix, dependency graph, gap analysis, redundancy detection for all 83 incomplete. Continue incremental sweeps. Locked catalog vs live census drift (operator-only).
+- Archive candidates and SUPERSEDED remain as previously queued; no GitHub archive actions performed.
+- Mandatory full local CI re-execution residual for priority repos; API evidence used this cycle.
+
+### No destructive actions
+- No repository deletions.
+- No Git history rewrites.
+- No force-pushes.
+- All proposals requiring destruction or high-risk migration escalated here.
+
+Next cycle: random hygiene or operator residual on mendthegame Dependabot / coherence-drive CI.
+
+## Prior Sweep-514 / RANDOM-HYGIENE-MENDTHEGAME (completed)
 
 Randomly selected mendthegame. Full DISCOVER/AUDIT: RESEARCH (Claim 0), private Vite/TS workspace for browser RPG. Local tests present. No CI. Open Dependabot alerts (vite high/medium, @tanstack/react-start critical XSS). No code changes or destructive actions in target. Termination conditions met on current evidence for hygiene.
 
