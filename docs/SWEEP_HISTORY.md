@@ -1,3 +1,12 @@
+## Sweep-516 / PASS-2026-10-24-516: RECONSTRUCT-PRINCIPAL-AGENT-ENTRY
+
+- Timestamp: 2026-10-24T17:05:00Z UTC (approx).
+- Selection: Fresh principal agent entry per ADL-BASILISK directive; mandatory reconstruct from live GitHub + governance state before next slice.
+- Findings: Census stable at 83 (search_repositories total_count=83, incomplete_results=false). Prior Sweep-515 hygiene on coherence-drive RESEARCH Claim-0 confirmed. Portfolio Sweep bot idle but usage_exhausted this session; direct tools used. Residuals unchanged: mendthegame Dependabot, sovereign-clean-room PRs/VSA UNVERIFIED, digital-double-mobile security, incomplete full graphs. Priority ACTIVE CI evidence holds from prior sweeps.
+- Actions: Created docs/passes/PASS-2026-10-24-516.yaml. Updated this history. No product code changes. No destructive actions.
+- Termination: COMPLETE for reconstruction slice. Next: random hygiene on next repository from live census.
+- Census: 83 unchanged.
+
 ## Sweep-515 / PASS-2026-10-24-515: HYGIENE-COHERENCE-DRIVE
 
 - Timestamp: 2026-10-24T14:00:00Z UTC (approx).
