@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-10-23-513
+  parent_pass: PASS-2026-10-23-512
+
+STATE:
+  global_status: RECURSIVE_LOOP_ACTIVE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 5
+  gaps_remaining: 68
+
+OBJECTIVE:
+  id: hygiene-informational-flux-identity
+  description: Random hygiene audit of informational-flux-identity: confirm RESEARCH classification, claim cap ≤1, presence of CI, and no thrust claims in key docs.
+  reason_selected: Follows next action from PASS-512; bounded non-destructive verification of a recently active RESEARCH repo.
+
+DISCOVERY:
+  findings:
+    - Repository classified RESEARCH / Claim ≤1 in README badges and portfolio state.
+    - CI workflow present at .github/workflows/ci.yml.
+    - Extensive scripts for flux identity, gasket fractional computations; no evidence of selected W or thrust claims.
+    - Parent chain frozen from coherence-drive; signed flux = summed divergence enforced.
+    - No Dependabot or security alerts observed in prior portfolio scans.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-23-513.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - informational-flux-identity hygiene confirmed; classification unchanged.
+
+VERIFICATION:
+  tests_run:
+    - Not run locally this pass (CI presence confirmed via tree).
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Research repo maintains honest claim caps; no promotion attempted.
+    - Census remains 83.
+  failures: []
+  decisions:
+    - No code changes in target repo. Continue incremental hygiene.
+
+REMAINING:
+  incomplete:
+    - Full portfolio capability/dependency graphs.
+    - Operator-gated items (archives, Dependabot, tags).
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: random-hygiene-next-or-operator-residual
+  action: Select next unaudited RESEARCH repository for hygiene or document residual operator actions.
+  reason: Incremental progress on verification state without duplication or elevation.
+  prerequisites:
+    - None.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Tree listing of informational-flux-identity
+    - README status badges and preserved body confirming no thrust
+    - Previous PASS-512 next action
