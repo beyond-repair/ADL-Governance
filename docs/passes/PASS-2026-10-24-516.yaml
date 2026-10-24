@@ -1,0 +1,69 @@
+id: PASS-2026-10-24-516
+sweep: 516
+PASS: RECONSTRUCT-PRINCIPAL-AGENT-ENTRY
+parent_pass: PASS-2026-10-24-515
+timestamp: "2026-10-24T17:05:00Z"
+objective_id: reconstruct-before-next-slice
+STATE:
+  global_status: ACTIVE-INCREMENTAL
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: "partial (priority clusters)"
+  capabilities_verified: "priority ACTIVE CI green where checked"
+  gaps_remaining: "full graphs, some Dependabot, VSA completeness"
+OBJECTIVE:
+  id: reconstruct-state
+  description: Reconstruct ecosystem from GitHub and Nexus/Governance state before selecting next bounded slice
+  reason_selected: Fresh principal agent entry; mandatory reconstruct before local work
+DISCOVERY:
+  findings:
+    - Live census total_count=83 incomplete_results=false
+    - Latest prior: Sweep-515 hygiene on coherence-drive RESEARCH Claim-0
+    - Portfolio Sweep bot idle but usage_exhausted this session
+    - Residuals: mendthegame Dependabot, sovereign-clean-room PRs/VSA, digital-double-mobile security, incomplete full capability/dependency graphs
+    - Priority ACTIVE repos hold CI evidence from prior sweeps
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-24-516.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - governance pass record persistence
+VERIFICATION:
+  tests_run:
+    - census search: PASS (total_count=83)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (census stable, no fabrication)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem census stable at 83
+    - Governance docs reflect latest sweeps
+  failures:
+    - Bot delegation usage_exhausted
+  decisions:
+    - Proceed with direct tool-based reconstruction; next slice random hygiene or residual
+REMAINING:
+  incomplete:
+    - Full 83 capability matrix and graphs
+    - Operator-only Dependabot triage and archive flags
+  blockers:
+    - None for hygiene slices
+  new_gaps:
+    - None this pass
+NEXT:
+  objective_id: random-hygiene-next
+  action: Select next repository via random from live census and perform full DISCOVER-AUDIT-CLASSIFY cycle; update governance docs and persist PASS-517
+  reason: Highest-value incremental progress per standing loop; residuals documented for operator
+  prerequisites:
+    - GitHub tools available
+    - No destructive actions
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - github___search_repositories total_count=83
+    - prior PASS-2026-10-24-515 content verified
