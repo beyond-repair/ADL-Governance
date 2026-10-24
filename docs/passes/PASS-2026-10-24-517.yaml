@@ -1,0 +1,69 @@
+PASS:
+  id: PASS-2026-10-24-517
+  parent_pass: PASS-2026-10-24-516
+STATE:
+  global_status: ACTIVE-INCREMENTAL
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: partial (priority clusters + graph drift)
+  capabilities_verified: priority ACTIVE CI evidence historical; census live
+  gaps_remaining: full graphs, Dependabot residuals, VSA completeness
+OBJECTIVE:
+  id: GAP-GRAPH-OBSERVATION-UPDATE
+  description: Reconstruct from live GitHub + governance; add dated frozen observation to aegis-repo-graph confirming census stability at 83; persist pass record.
+  reason_selected: Persistent graph incompleteness is the highest-value bounded gap; observation update improves model without catalog expansion or claim elevation.
+DISCOVERY:
+  findings:
+    - Live census total_count=83, incomplete_results=false.
+    - Latest prior Sweep-516 reconstruct complete; residuals unchanged.
+    - aegis-repo-graph locked catalog remains 2026-09-04 snapshot; observation modules track later name sets for drift only.
+    - adl-capability-matrix locked 67-row + gap file; no live assignment.
+CHANGES:
+  repositories:
+    - beyond-repair/aegis-repo-graph
+    - beyond-repair/ADL-Governance
+  files:
+    - graph/observed_2026_10_24.py
+    - docs/passes/PASS-2026-10-24-517.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - 4163ba469bd6d65bcdcf81a7922968cae8a9e683 (aegis-repo-graph)
+    - this commit
+  capabilities_added_or_changed:
+    - repository-graph-drift-observation
+VERIFICATION:
+  tests_run:
+    - github search_repositories user:beyond-repair: total_count=83 PASS
+    - file create confirmed via response SHA
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (census stable, no fabrication, claim caps respected)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 83 as of 2026-10-24.
+    - Graph observation modules can be extended for drift without expanding locked catalog.
+  failures: []
+  decisions:
+    - Prefer observation snapshot over catalog rewrite. Operator remains gate for full expansion and claim changes.
+REMAINING:
+  incomplete:
+    - Full machine-readable repository/capability/dependency/authority graphs for all 83.
+    - Dependabot residuals (mendthegame, digital-double-mobile).
+    - sovereign-clean-room VSA completeness beyond partial benchmarks.
+  blockers:
+    - Operator-only for archive flags, release tags, full graph lock expansion.
+  new_gaps: []
+NEXT:
+  objective_id: random-hygiene-or-residual
+  action: Select next repository via random from live census for DISCOVER-AUDIT-CLASSIFY or address one residual (e.g. Dependabot note); persist PASS-518.
+  reason: Standing incremental loop; graph observation advanced.
+  prerequisites:
+    - GitHub tools available
+    - No destructive actions
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count 83
+    - aegis-repo-graph commit 4163ba469bd6d65bcdcf81a7922968cae8a9e683
