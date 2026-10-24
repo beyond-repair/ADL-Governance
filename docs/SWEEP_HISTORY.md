@@ -1,3 +1,12 @@
+## Sweep-514 / PASS-2026-10-24-514: HYGIENE-MENDTHEGAME
+
+- Timestamp: 2026-10-24T13:00:00Z UTC (approx).
+- Selection: Random hygiene via random.seed(20261024).choice over search payload of 83 names. Selected mendthegame.
+- Findings: RESEARCH / Claim 0. Private Vite/TS browser RPG workspace (MEND / Silas Vance / Oakhaven). Local runnable via npm. Tests present. No CI workflow. No releases. Open Dependabot (vite high/medium launch-editor, @tanstack critical XSS). README honest: not shipped game.
+- Actions: Updated PORTFOLIO_STATUS_REPORT.md, this history, OPERATOR_QUEUE.md. No product code changes. No destructive actions.
+- Termination: COMPLETE for hygiene slice. Next: random hygiene or operator residual on Dependabot.
+- Census: 83 unchanged.
+
 ## Sweep-513 / PASS-2026-10-23-513: HYGIENE-INFORMATIONAL-FLUX-IDENTITY
 
 - Timestamp: 2026-10-23T23:20:00Z UTC (approx).
