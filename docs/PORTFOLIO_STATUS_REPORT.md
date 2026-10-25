@@ -1,18 +1,18 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-25 (Sweep-520 / Randomized Portfolio Completion Sweep)
-**Project / Version:** ADL Portfolio Governance / Sweep-520
+**Updated:** 2026-10-25 (Sweep-521 / Randomized Portfolio Completion Sweep)
+**Project / Version:** ADL Portfolio Governance / Sweep-521
 **Objective:** Autonomous portfolio completion agent — random selection of one repository, full DISCOVER→RE-AUDIT cycle, governance update.
 
-## Sweep-520: FortiTrade_Multi-Strategy
+## Sweep-521: -ware-constant-derivation
 - Random selection from live census of 83 repositories (user:beyond-repair, incomplete_results=false).
-- Selected: beyond-repair/FortiTrade_Multi-Strategy.
-- Classification: ARCHIVED (recommended / archive queue). Claim 0. Runnable sketch (FastAPI webhook + CSV decision engine + Pine Script). Not a live trading product or profitable strategy.
-- Status: Termination conditions met. CI green (prior Actions run success). Fully documented. No unsupported claims. No critical issues. Preserved per rules.
-- No code changes. No releases. No archive flag set (operator-only). Docs updated in governance only.
+- Selected: beyond-repair/-ware-constant-derivation.
+- Classification: RESEARCH. Claim-0 / RUNNABLE SKETCH. Extensive proof ledgers and identity-check scripts (verify_*.py, pytest). Constant-W action derived; numerical W≈0.08 explicitly NOT DERIVED. Honest claim lock in CLAIM_STATUS.md.
+- Status: Termination conditions met for research posture. CI workflow present (.github/workflows/checks.yml runs pytest + runner). Docs comprehensive (README, PROOF_*.md, STATUS_LOCK, FALSIFICATION). No unsupported claims (experimental_validation=false, thrust=false). No critical issues identified. Preserved.
+- No code changes. No releases. Docs updated in governance only.
 - Residuals: Portfolio-wide capability matrix / dependency graph / gap analysis / redundancy detection for all 83 remain incomplete. Prior Dependabot and open PR residuals unchanged.
 
-## Prior Sweep-519 (preserved)
+## Prior Sweep-520 (preserved)
 [previous content continues as before]
 
 ## Live Census
@@ -22,7 +22,7 @@
 
 ## Classification Summary (no changes this cycle)
 - ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah-.
-- RESEARCH: majority (physics, experimental, etc.), including coherence-drive (Claim-0 index), mendthegame (private workspace, Claim 0), ADL-Nexus (local verified).
+- RESEARCH: majority (physics, experimental, etc.), including coherence-drive (Claim-0 index), mendthegame (private workspace, Claim 0), ADL-Nexus (local verified), -ware-constant-derivation (Claim-0 math identities).
 - SUPERSEDED / ARCHIVED: digital-double-mobile (confirmed), automate_passive_income (confirmed empty), FortiTrade_Multi-Strategy (archive queue, Claim 0), and per repository_registry.md.
 
 ## Residuals (exit criteria not fully met portfolio-wide)
@@ -36,7 +36,7 @@
 - Mandatory full CI/test re-execution and security scanning for all four priority repos incomplete this cycle (API evidence used).
 
 ## Exit Criteria (this cycle)
-- Random repo selected, audited, classified, termination verified for FortiTrade_Multi-Strategy. Classifications hold. Docs updated. Residuals recorded. Stop after one governed sweep. No infinite loop.
+- Random repo selected, audited, classified, termination verified for -ware-constant-derivation. Classifications hold. Docs updated. Residuals recorded. Stop after one governed sweep. No infinite loop.
 
 ## Optimization Progress
 Incremental governance. Census stable at 83. Canonical pillars identified and re-verified. Full graphs and complete verification remain open. Convergence continues via governed increments only.
