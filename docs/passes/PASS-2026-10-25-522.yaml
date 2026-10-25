@@ -26,8 +26,12 @@ CHANGES:
     - docs/passes/PASS-2026-10-25-522.yaml
     - docs/SWEEP_HISTORY.md
     - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/passes/HEADINGS.md
   commits:
-    - pending
+    - c9c139d5dd827673b69e8590ab208cb48f775417
+    - 063aa37248561153f7f6d99b28e9bdcbf2847ec6
+    - 4885981f16158945d4d09df182c3e893ade19429
+    - adf6eb065e7c886f9852089caa180bb7c06d67d8
   capabilities_added_or_changed:
     - governance-pass-record
 VERIFICATION:
@@ -65,7 +69,8 @@ NEXT:
     - Read matrix files and CLAIM_STATUS.md
     - Confirm no conflict with existing entries
 PROVENANCE:
-  state_commit: pending-governance-push
+  state_commit: adf6eb065e7c886f9852089caa180bb7c06d67d8
   evidence:
     - search_repositories total_count 83
     - PORTFOLIO_STATE.md and SWEEP_HISTORY.md contents
+    - commits listed above
