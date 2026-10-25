@@ -1,0 +1,71 @@
+PASS:
+  id: PASS-2026-10-25-522
+  parent_pass: PASS-2026-10-25-521
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 2
+  gaps_remaining: 13
+OBJECTIVE:
+  id: GAP-ECOSYSTEM-RECONSTRUCT
+  description: Reconstruct current GitHub ecosystem state, confirm live census, audit priority queue and graphs, select highest-value bounded next slice.
+  reason_selected: Core loop requires discovery and audit before any change; fresh agent must reconstruct from persistent state.
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair, public_repos 78, live search total_count 83 (includes private).
+    - Latest prior sweep Sweep-521 on -ware-constant-derivation: RESEARCH Claim-0, CI present, no changes needed.
+    - Priority queue from PORTFOLIO_STATE.md: Digital_Double_virtual_workforce first ACTIVE, then sovereign-clean-room, BlockSwarm, forge-aegis RELEASE_BLOCKED.
+    - Capability matrix and repo graph exist as separate repos; full 83-row matrix incomplete per residuals.
+    - No TODOs found in Digital_Double_virtual_workforce via code search.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-25-522.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - governance-pass-record
+VERIFICATION:
+  tests_run:
+    - Live census search confirmed total_count=83 incomplete_results=false
+    - Prior pass schema matched for new YAML
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 83.
+    - Governance checker exists and expects matching YAML + history headings.
+    - Highest value next is completing capability/dependency graphs or closing residuals on priority ACTIVE repos.
+  failures: []
+  decisions:
+    - Prefer REUSE of existing governance and matrix repos over new creation.
+    - No product code changes this pass; reconstruction only.
+REMAINING:
+  incomplete:
+    - Full capability matrix across 83 repos
+    - Dependency graph
+    - Operator-gated archive flags and releases
+  blockers:
+    - Some actions operator-only (archive flags, tags)
+  new_gaps:
+    - Graph completeness for all repositories
+NEXT:
+  objective_id: GAP-CAPABILITY-MATRIX-SLICE
+  action: Audit adl-capability-matrix matrix/ contents, identify one missing or outdated entry for a high-priority repo, and add a claim-capped update with verification.
+  reason: Closes a documented residual gap with a small, bounded, verifiable change that advances the global model.
+  prerequisites:
+    - Read matrix files and CLAIM_STATUS.md
+    - Confirm no conflict with existing entries
+PROVENANCE:
+  state_commit: pending-governance-push
+  evidence:
+    - search_repositories total_count 83
+    - PORTFOLIO_STATE.md and SWEEP_HISTORY.md contents
