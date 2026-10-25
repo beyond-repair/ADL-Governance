@@ -1,3 +1,18 @@
+## Sweep-522 / PASS-2026-10-25-522: Ecosystem Reconstruction and Gap Selection
+
+- Timestamp: 2026-10-25T13:10:00Z UTC (approx).
+- Selection: Directed reconstruction pass under ADL-BASILISK directive (not random). Confirmed live census 83.
+- DISCOVER: User beyond-repair, public 78 / total 83. Latest prior Sweep-521 on -ware-constant-derivation (RESEARCH Claim-0, CI present). Priority queue from PORTFOLIO_STATE.md leads with Digital_Double_virtual_workforce (ACTIVE). Capability matrix and aegis-repo-graph exist; full matrix incomplete per residuals.
+- AUDIT: No product changes. Governance pass record created. Schema matches nested PASS form.
+- CLASSIFY: No classification changes.
+- PLAN / IMPLEMENT: Persist PASS YAML, update history and status report.
+- TEST / CI: Live search confirmation; no local tests run this pass.
+- DOCUMENT / GOVERN: This update and status report.
+- RE-AUDIT: Census stable.
+- Actions: Governance docs only. No history rewrite.
+- Termination: Pass complete with overall PASS. Next action: capability matrix slice.
+- Census: 83 unchanged.
+
 ## Sweep-521 / PASS-2026-10-25-521: Randomized Portfolio Completion Sweep — -ware-constant-derivation
 
 - Timestamp: 2026-10-25T09:00:00Z UTC (approx).
