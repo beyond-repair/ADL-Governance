@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-10-25-525
+  parent_pass: PASS-2026-10-25-522
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 5
+  capabilities_verified: 1
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: DDVW-DEPENDABOT-AUDIT
+  description: Audit open Dependabot alerts on Digital_Double_virtual_workforce and record residual for operator triage
+  reason_selected: Highest-value residual security item on priority ACTIVE repository; no product code change required for documentation of current state
+
+DISCOVERY:
+  findings:
+    - Digital_Double_virtual_workforce tree inspected: mixed Python/TS frontend with package.json, pyproject.toml, digital_double/ package
+    - Open Dependabot alerts include medium postcss-selector-parser (dev scope, quadratic complexity), high source-map-js (dev), medium pytest (pip, tmpdir), medium brace-expansion, and others; several development-scope or withdrawn
+    - Alerts remain open; no automatic merge performed (operator-only per governance)
+    - Prior OPERATOR_QUEUE already notes open Dependabot for this repo
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-25-525.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - portfolio residual security documentation for Digital_Double_virtual_workforce
+
+VERIFICATION:
+  tests_run:
+    - none (docs-only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Digital_Double_virtual_workforce remains ACTIVE with open development-scope Dependabot alerts requiring operator triage
+    - Census remains 83
+  failures:
+    - none
+  decisions:
+    - No product changes; escalate residual to operator queue without elevation of claim or destructive action
+
+REMAINING:
+  incomplete:
+    - Full capability matrix for 83 repos
+    - Operator triage of Dependabot alerts across priority repos
+  blockers:
+    - Operator-only actions (Dependabot merge, archive flags, release tags)
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: CAPABILITY-MATRIX-SLICE
+  action: Select next bounded slice of adl-capability-matrix or next random RESEARCH repo audit
+  reason: Incremental closure of residual full-matrix gap
+  prerequisites:
+    - Current governance state persisted
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live list_dependabot_alerts on Digital_Double_virtual_workforce
+    - Tree inspection via get_file_contents

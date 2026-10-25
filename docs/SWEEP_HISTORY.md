@@ -1,3 +1,18 @@
+## Sweep-525: Digital_Double_virtual_workforce Dependabot Discovery
+
+- Timestamp: 2026-10-25T23:10:00Z UTC (approx).
+- Selection: Priority residual from OPERATOR_QUEUE (open Dependabot on ACTIVE Digital_Double_virtual_workforce).
+- DISCOVER: Tree root inspected (package.json, pyproject.toml, digital_double/, src/, tests/). Mixed TS/Python. Open Dependabot alerts enumerated (postcss-selector-parser medium dev, source-map-js high dev, pytest medium, brace-expansion medium, others; some withdrawn).
+- AUDIT: Compared to governance rules. Alerts are residual security; development scope predominates. No claim elevation. No unsupported claims introduced.
+- CLASSIFY: Remains ACTIVE. Residuals documented.
+- PLAN / TARGET: Document current alert state for operator triage. No product code changes.
+- IMPLEMENT: Governance docs only (this PASS, history, queue).
+- TEST → CI: Not applicable (docs-only).
+- DOCUMENT / GOVERN: Updated SWEEP_HISTORY.md, OPERATOR_QUEUE.md, added PASS-2026-10-25-525.yaml.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: No drift in classification. Termination for this discovery slice.
+- Census: 83 unchanged.
+
 ## Sweep-524: Randomized Portfolio Completion — momentum-closure
 
 - Timestamp: 2026-10-25T20:05:00Z UTC (approx).
