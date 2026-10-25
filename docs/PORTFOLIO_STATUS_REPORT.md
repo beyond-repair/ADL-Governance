@@ -1,8 +1,17 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-25 (Sweep-521 / Randomized Portfolio Completion Sweep)
-**Project / Version:** ADL Portfolio Governance / Sweep-521
-**Objective:** Autonomous portfolio completion agent — random selection of one repository, full DISCOVER→RE-AUDIT cycle, governance update.
+**Updated:** 2026-10-25 (Sweep-522 / Ecosystem Reconstruction and Gap Selection)
+**Project / Version:** ADL Portfolio Governance / Sweep-522
+**Objective:** Reconstruct current GitHub ecosystem, confirm census, select next bounded gap.
+
+## Sweep-522: Ecosystem Reconstruction
+- Directed pass (ADL-BASILISK). Live census confirmed 83 (search_repositories total_count=83, incomplete_results=false).
+- Authenticated as beyond-repair.
+- Prior Sweep-521 on -ware-constant-derivation remains valid (RESEARCH Claim-0).
+- Priority queue unchanged (Digital_Double_virtual_workforce lead ACTIVE).
+- Capability matrix and aegis-repo-graph identified as existing tools for graphs; full completeness residual open.
+- New PASS-2026-10-25-522.yaml persisted matching schema. No product repos changed.
+- Residuals: Full matrix/graph still incomplete. Operator actions pending.
 
 ## Sweep-521: -ware-constant-derivation
 - Random selection from live census of 83 repositories (user:beyond-repair, incomplete_results=false).
@@ -36,7 +45,7 @@
 - Mandatory full CI/test re-execution and security scanning for all four priority repos incomplete this cycle (API evidence used).
 
 ## Exit Criteria (this cycle)
-- Random repo selected, audited, classified, termination verified for -ware-constant-derivation. Classifications hold. Docs updated. Residuals recorded. Stop after one governed sweep. No infinite loop.
+- Reconstruction complete. PASS record persisted. Next objective set to capability matrix slice. Classifications hold. Residuals recorded.
 
 ## Optimization Progress
 Incremental governance. Census stable at 83. Canonical pillars identified and re-verified. Full graphs and complete verification remain open. Convergence continues via governed increments only.
