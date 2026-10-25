@@ -1,22 +1,24 @@
 # Operator Queue
 
-## Sweep-521 / Randomized Portfolio Completion Sweep — -ware-constant-derivation (completed)
+## Sweep-523 / Master Directive v3.0 Portfolio Governance Sweep
 
-Random selection from 83-repo census: beyond-repair/-ware-constant-derivation. AUDIT confirmed RESEARCH, Claim-0 / RUNNABLE SKETCH (0.08 not derived), CI workflow present, fully documented with honest claim locks, no unsupported claims. Termination conditions met. No code changes. No destructive actions. No operator intervention required for this repo.
+Directed full sweep completed. Census 83 confirmed. Priority repos (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) live-verified for presence and partial CI. No destructive actions performed. No history rewrites. No deletions.
 
-### Queued items / escalations (unchanged from prior)
-- mendthegame: open Dependabot alerts for vite (high/medium launch-editor command injection) and @tanstack/react-start (critical XSS CVE-2026-102989). Operator review: upgrade packages or dismiss with justification.
-- sovereign-clean-room: open PRs remain. Full VSA completeness UNVERIFIED beyond documented partial benchmarks.
-- digital-double-mobile: open Dependabot (protobufjs critical, form-data) and historical secret scanning alert #1. Operator rotation/revoke + triage.
-- Full portfolio: capability matrix, dependency graph, gap analysis, redundancy detection for all 83 incomplete. Continue incremental sweeps.
-- Archive candidates and SUPERSEDED remain as previously queued; no GitHub archive actions performed.
+### Queued items / escalations (updated)
+- Full portfolio capability matrix, dependency graph, gap analysis, and redundancy detection for all 83 repositories remain incomplete. Continue incremental governed sweeps.
+- mendthegame: open Dependabot alerts (vite high/medium, @tanstack/react-start critical). Operator triage required.
+- digital-double-mobile: open Dependabot (protobufjs critical, form-data) and historical secret scanning alert. Operator rotation/revoke + triage.
+- Digital_Double_virtual_workforce: open Dependabot alerts (development scope). Partial pin applied previously.
+- sovereign-clean-room: open PRs; full VSA completeness UNVERIFIED.
+- coherence-drive: missing CI workflow (optional for Claim-0); local pytest UNVERIFIED.
+- Archive candidates and SUPERSEDED remain queued; no GitHub archive actions performed (operator-only).
 
 ### No destructive actions
 - No repository deletions.
 - No Git history rewrites.
 - No force-pushes.
-- All proposals requiring destruction or high-risk migration escalated here.
+- All high-risk or destructive proposals escalated here.
 
-Next cycle: residual Dependabot triage or targeted hygiene on priority security findings, or next random selection.
+Next cycle: residual security triage or next bounded gap (capability matrix slice).
 
-## Prior content preserved from Sweep-520 and earlier.
+## Prior content preserved from Sweep-521 and earlier.
