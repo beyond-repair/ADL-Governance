@@ -1,3 +1,18 @@
+## Sweep-527: Randomized Portfolio Completion — ware-constant-phenomenology
+
+- Timestamp: 2026-10-26T03:05:00Z UTC (approx).
+- Selection: Random from live census of 83 repositories under beyond-repair. Selected: **ware-constant-phenomenology**.
+- DISCOVER: Recursive tree inspected. Structure: numerous .md audits/proofs (AUDIT_2026-09-23_PROOF*.md), Python scripts (sparc_run.py, killgate_verification.py, verify_constant_W_action.py, spectral_Wstar.py, etc.), data/sparc_flat.csv, tests/test_claim0.py, .github/workflows/docs-presence.yml, requirements.txt (numpy/pandas/scipy/pytest). CLAIM_STATUS.md, GOVERNANCE.md, README.md present.
+- AUDIT: Compared to ADL-Governance. Classification RESEARCH, default claim 1–2, experimental_validation false, SPARC χ² UNSUPPORTED (median ~9.1 on real table), constant-W spectral source DERIVED but numerical 0.08 NOT DERIVED. No critical security issues. Docs-presence CI present. Prior Sweep-334/148 noted.
+- CLASSIFY: **RESEARCH** (justified: runnable phenomenology sketch for Ware/CFT galactic scoring; not validated experimental; honest claim caps enforced). Not ACTIVE/SUPERSEDED/ARCHIVED.
+- PLAN / TARGET: Maintain claim-cap, ensure tests pass, docs consistent. Idempotent re-audit. No elevation.
+- IMPLEMENT: No product code changes (safe, idempotent). Local clone + pip + pytest: **8 passed** in ~18s.
+- TEST → CI: Local tests green. docs-presence workflow structure verified (checks README/CLAIM_STATUS/GOVERNANCE + RESEARCH/UNSUPPORTED greps). No full Actions run inspected this cycle; presence sufficient for RESEARCH.
+- DOCUMENT / GOVERN: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md. No unsupported claims. Registry alignment held (see repository_registry.md).
+- RELEASE/ARCHIVE: None (RESEARCH; no tag).
+- RE-AUDIT: No drift. Termination conditions met for this RESEARCH scope (no undefined critical components, no critical CI failures, no unsupported claims, target of governed runnable sketch achieved).
+- Census: 83 unchanged.
+
 ## Sweep-526: Priority Live Verification of Core ACTIVE Repositories
 
 - Timestamp: 2026-10-25T23:30:00Z UTC (approx).
