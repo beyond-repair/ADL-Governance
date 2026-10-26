@@ -1,52 +1,36 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-26 (Sweep-530 / Master Directive v3.0 Priority Verification)
-**Project / Version:** ADL Portfolio Governance / Sweep-530
-**Objective:** Autonomous portfolio completion and governance agent — full discovery, classification, live verification of priority ACTIVE repositories, capability inventory, residuals recording. Evidence-based only. Code > Documentation > Roadmap.
+**Updated:** 2026-10-26 (Sweep-531 / Randomized btc-trading)
+**Project / Version:** ADL Portfolio Governance / Sweep-531
+**Objective:** Autonomous portfolio completion agent — random selection, discover/audit/classify/govern.
 
-## Sweep-530: Master Directive v3.0 — Priority Live Verification
+Evidence-based only.
 
-- Live census reconfirmed: **83** repositories (search user:beyond-repair, total_count 83).
-- Authenticated as beyond-repair.
-- Phase 3 priority live verification executed (no assumptions):
-  - **forge-aegis**: forge-aegis CI workflow active. Latest main run 37258127100 (2026-10-05) **success**.
-  - **sovereign-clean-room**: Python tests workflow active. Latest main run 37064696194 (2026-10-02) **success**.
-  - **BlockSwarm**: Foundry workflow active. Latest main run 38252865430 (2026-10-12) **success**.
-  - **Digital_Double_virtual_workforce**: Digital Double CI workflow active. Latest main run 39035783949 (2026-10-17) **success**.
-- Classifications held from prior governed sweeps (ACTIVE for the four + ADL-Governance, AEGIS-Project-Nehemiah-; RESEARCH majority; SUPERSEDED/ARCHIVED per registry).
-- No critical CI failures on priority ACTIVE repositories.
-- No product code mutations. No unsupported implementation claims.
-- Governance documentation updated. Residuals recorded. Sweep halted (one governed cycle; exit criteria not fully met for full 83-row matrix/graphs).
+## Sweep-531: Randomized Audit — btc-trading
+
+* Live census reconfirmed: 83 repositories.
+* Authenticated as beyond-repair.
+* Selected randomly: btc-trading (head cd3638654c870c238db6457355b64f82ff1adfae).
+* DISCOVER: Historical KuCoin/CSV sketch. BTC-USD.csv (366 rows, 2022-06-12–2023-06-12). btc_inventory.py (stdlib inventory only). tests/test_inventory.py. .github/workflows/ci.yml (unittest). ARCHIVED.md and README mark ARCHIVE recommended, Claim 0. No live trading claims. Credential previously removed from HEAD (Sweep-261).
+* AUDIT/CLASSIFY: Confirmed **ARCHIVED** (recommended; GitHub archived flag false — operator action). Claim ≤0. Inventory is file shape only. Local structure matches tests. No product mutation. No unsupported claims.
+* No fabricated claims. Governance docs updated. Sweep halted for this repo (termination met for ARCHIVED scope).
 
 ## Classification Summary
-- **ACTIVE**: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, AEGIS-Project-Nehemiah-.
-- **RESEARCH**: majority (physics/coherence-drive family, experimental SEEM, etc.).
-- **SUPERSEDED / ARCHIVED**: per repository_registry.md (CFT-v3.0 GitHub-archived).
+
+* **ACTIVE**: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, AEGIS-Project-Nehemiah-.
+* **RESEARCH**: majority (physics/coherence-drive family, experimental SEEM, etc.).
+* **SUPERSEDED / ARCHIVED**: per repository_registry.md (CFT-v3.0 GitHub-archived; btc-trading recommended archive).
 
 ## Live Census
-- Total: **83** (verified 2026-10-26 via live search).
-- Public reported: 78; live search includes private.
-- GitHub archive flag: CFT-v3.0 only.
 
-## Capability Inventory (incremental, verified only)
-Demonstrated (code/tests/CI verified where present):
-- Governance tooling in ADL-Governance.
-- Artifact Graph / integrity contract in forge-aegis (CI green).
-- VSA core partial in sovereign-clean-room (CI green on main).
-- Distributed contract verification in BlockSwarm (Foundry CI green).
-- Virtual workforce scaffolding in Digital_Double_virtual_workforce (CI green; function surface partially audited in prior slice).
+* Total: **83** (verified 2026-10-26).
+* Public reported: 78; live search includes private.
+* GitHub archive flag: CFT-v3.0 only.
 
-Planned / UNVERIFIED / PARTIAL: full matrix, production autonomy, measured thrust, complete VSA, runtime interop, etc. Labeled accordingly. No inference from planning docs.
+## Capability Inventory (incremental)
 
-## Residuals (exit criteria not fully met)
-- Full 83-row capability matrix, dependency graph, gap analysis, redundancy detection incomplete.
-- Complete security re-scan for all priority repos (Dependabot open on several; operator triage pending).
-- Locked catalog vs live census minor drift possible.
-- No unresolved critical CI failures on priority ACTIVE.
-- No duplicate canonical implementations identified in this cycle (prior classifications held).
+Prior Sweep-530 content preserved. btc-trading demonstrates stdlib CSV inventory only (no forecast, no execution).
 
-## Exit Criteria (this cycle)
-- Priority ACTIVE repositories live-verified for CI (all green on recent main). Census stable. No unsupported claims. Governance docs updated. Residuals recorded. Sweep stopped after current governed cycle (do not loop).
+## Residuals
 
-## Optimization Progress
-Incremental convergence toward one capability → one canonical implementation → one governed owner → one verified source of truth. Full graphs remain open for subsequent governed cycles.
+Unchanged from Sweep-530. Operator may set GitHub archive flag on btc-trading when executing archive_queue.md.

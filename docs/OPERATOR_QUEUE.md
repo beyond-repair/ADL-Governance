@@ -1,9 +1,9 @@
 # Operator Queue
 
-## Sweep-530: Master Directive v3.0 — Priority Live Verification
+## Sweep-531: Randomized Audit — btc-trading
 
-Priority ACTIVE repositories (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) live-verified. All have active CI workflows with recent successful main-branch runs (Oct 2026). No product code changes. No new destructive actions, history rewrites, or deletions proposed. Classifications held. Residuals unchanged: full 83-row capability matrix, dependency graph, gap analysis, redundancy detection, and complete security re-scan (Dependabot triage) remain open for subsequent governed cycles. No critical CI failures or unsupported claims introduced.
+btc-trading classified ARCHIVED (recommended). GitHub `archived` flag remains false. Operator may execute archive when processing docs/archive_queue.md. No history rewrite, no deletion, no credential restoration. No new destructive actions proposed. Prior residual items (full matrix, Dependabot triage, etc.) unchanged.
 
 No new escalations from this cycle.
 
-## Prior content preserved from Sweep-529 and earlier.
+## Prior content preserved from Sweep-530 and earlier.
