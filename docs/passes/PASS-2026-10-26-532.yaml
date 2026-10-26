@@ -1,0 +1,89 @@
+PASS:
+  id: PASS-2026-10-26-532
+  parent_pass: PASS-2026-10-26-529
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 7
+  capabilities_verified: 2
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: CAPABILITY-MATRIX-SLICE
+  description: Add function-audit record for informational-flux-identity core flux methods executed by existing tests; do not assign cluster or claim_cap or expand locked inventory
+  reason_selected: Highest-value bounded residual from prior NEXT; unassigned name from census_gap; documents verified integer identity surface without fabrication
+
+DISCOVERY:
+  findings:
+    - Live census reconfirmed total_count=83
+    - adl-capability-matrix locked inventory remains 67 with 16 unassigned names
+    - informational-flux-identity head cec4aff731cef6bb581c318f736de79d68d90b1f
+    - tests/test_flux_identity.py exercises potential, fluxes, divergence, ledger on integer rectangle
+    - Asserts signed boundary flux equals summed divergence; exact integers only
+    - No continuum, selected W, or thrust claimed in tests or module
+
+CHANGES:
+  repositories:
+    - adl-capability-matrix
+    - ADL-Governance
+  files:
+    - matrix/function_audit_informational_flux_identity.json
+    - tests/test_function_audit_informational_flux_identity.py
+    - CLAIM_STATUS.md (adl-capability-matrix)
+    - docs/passes/PASS-2026-10-26-532.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - 20e06221ea370c5010d97c74c752eb426405025e (matrix)
+    - this commit (governance)
+  capabilities_added_or_changed:
+    - function-audit evidence for informational-flux-identity core flux identity surface
+
+VERIFICATION:
+  tests_run:
+    - matrix test_function_audit_informational_flux_identity.py added (not executed in this agent environment)
+    - informational-flux-identity tests structure confirmed by source inspection
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Test suite verifies exact integer closed-rectangle flux identity (net flux = div sum)
+    - Claim cap remains unassigned (null); no elevation or invention
+    - Census stable at 83; locked inventory 67
+  failures:
+    - none
+  decisions:
+    - REUSE existing matrix and governance structure; no new repository
+    - No product code changes; documentation of existing verified surface only
+    - Selected unassigned name informational-flux-identity as next bounded slice
+
+REMAINING:
+  incomplete:
+    - Full 83-row capability matrix with assigned caps
+    - Operator Dependabot triage on priority repos
+    - VSA completeness on sovereign-clean-room
+    - Function audits for remaining unassigned names
+  blockers:
+    - Operator-only actions (archive flags, release tags, Dependabot merges)
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: CAPABILITY-MATRIX-SLICE-OR-RANDOM
+  action: Select next unassigned name from census_gap or next random RESEARCH repo for tree/function audit without inventing caps
+  reason: Continues incremental closure of the documented matrix residual
+  prerequisites:
+    - Current pass record persisted
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live get_repository_tree and get_file_contents on informational-flux-identity
+    - Matrix push commit 20e06221ea370c5010d97c74c752eb426405025e
+    - Test source inspection confirming executed methods
