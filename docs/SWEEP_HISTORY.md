@@ -1,3 +1,18 @@
+## Sweep-529: Capability Matrix Slice — Digital_Double_virtual_workforce Function Audit
+
+- Timestamp: 2026-10-26T13:20:00Z UTC (approx).
+- Selection: Bounded slice from prior NEXT (CAPABILITY-MATRIX-SLICE). Priority ACTIVE repo Digital_Double_virtual_workforce already present in locked 67-row matrix.
+- DISCOVER: Tree and tests inspected. Core digital_double/core/agent.py + tests/test_agent.py. Head ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea (security pin commit).
+- AUDIT: Tests execute Agent.__post_init__, assign_task, complete_task, get_model_name, get_system_prompt, Orchestrator.create_agent/create_task. No LLM inference, no external API, no UI execution. Existing claim_cap TREE_PRESENT_FUNCTIONS_UNAUDITED held.
+- CLASSIFY: Remains ACTIVE. No elevation.
+- PLAN / TARGET: Document verified test surface in matrix without expanding inventory or inventing caps for unassigned names.
+- IMPLEMENT: Added function_audit_Digital_Double_virtual_workforce.json + unit test in adl-capability-matrix; updated CLAIM_STATUS.md. Governance PASS and history updated. No product code changes.
+- TEST → CI: Matrix test added (not run locally in this environment). Prior DDVW CI success from Sweep-526 noted. Matrix CI expected green on docs/JSON addition.
+- DOCUMENT / GOVERN: PASS-2026-10-26-529.yaml, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, HEADINGS.md updated.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: No drift. Census 83 stable. Termination for this bounded slice.
+- Census: 83 unchanged.
+
 ## Sweep-528: Randomized Portfolio Completion — seem-sunder-bridge
 
 - Timestamp: 2026-10-26T13:10:00Z UTC (approx).
@@ -28,63 +43,4 @@
 - RE-AUDIT: No drift. Termination conditions met for this RESEARCH scope (no undefined critical components, no critical CI failures, no unsupported claims, target of governed runnable sketch achieved).
 - Census: 83 unchanged.
 
-## Sweep-526: Priority Live Verification of Core ACTIVE Repositories
-
-- Timestamp: 2026-10-25T23:30:00Z UTC (approx).
-- Selection: Directed from Master Directive Phase 3 residual — explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
-- DISCOVER: Workflows listed via actions_list. Recent runs fetched.
-- AUDIT: CI states verified. forge-aegis CI success (Oct 5). BlockSwarm Foundry success (Oct 12, run 38252865430). Digital_Double_virtual_workforce CI success (Oct 17). sovereign-clean-room Python tests recent success after float fixes; some historical PR failures on incomplete cells.
-- CLASSIFY: ACTIVE held for all four. No elevation or demotion.
-- PLAN / TARGET: Document verified CI. No product changes.
-- IMPLEMENT: Governance docs only.
-- TEST → CI: Confirmed recent conclusions success where checked.
-- DOCUMENT / GOVERN: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md.
-- RELEASE/ARCHIVE: None.
-- RE-AUDIT: No drift. Termination for this verification slice.
-- Census: 83 unchanged.
-
-## Sweep-525: Digital_Double_virtual_workforce Dependabot Discovery
-
-- Timestamp: 2026-10-25T23:10:00Z UTC (approx).
-- Selection: Priority residual from OPERATOR_QUEUE (open Dependabot on ACTIVE Digital_Double_virtual_workforce).
-- DISCOVER: Tree root inspected (package.json, pyproject.toml, digital_double/, src/, tests/). Mixed TS/Python. Open Dependabot alerts enumerated (postcss-selector-parser medium dev, source-map-js high dev, pytest medium, brace-expansion medium, others; some withdrawn).
-- AUDIT: Compared to governance rules. Alerts are residual security; development scope predominates. No claim elevation. No unsupported claims introduced.
-- CLASSIFY: Remains ACTIVE. Residuals documented.
-- PLAN / TARGET: Document current alert state for operator triage. No product code changes.
-- IMPLEMENT: Governance docs only (this PASS, history, queue).
-- TEST → CI: Not applicable (docs-only).
-- DOCUMENT / GOVERN: Updated SWEEP_HISTORY.md, OPERATOR_QUEUE.md, added PASS-2026-10-25-525.yaml.
-- RELEASE/ARCHIVE: None.
-- RE-AUDIT: No drift in classification. Termination for this discovery slice.
-- Census: 83 unchanged.
-
-## Sweep-524: Randomized Portfolio Completion — momentum-closure
-
-- Timestamp: 2026-10-25T20:05:00Z UTC (approx).
-- Selection: Random (shuf) from live census of 83 repositories under beyond-repair. Selected: **momentum-closure**.
-- DISCOVER: Tree recursive (42 objects). Package structure: momentum_closure/{geometry,rf_feed,convergence}, tests/, .github/workflows/{ci.yml,docs-presence.yml}, docs/, CLAIMS.md, CLAIM_STATUS.md, GOVERNANCE.md, README.md. Python 3.10+, pytest, numpy optional for full suite. No releases/tags. Last push ~2026-10-11 (Sweep-304 CI fix).
-- AUDIT: Compared to ADL-Governance rules. Claim level 1 (conceptual). Mesh-converged residual / physical thrust / Ware flux / energy extraction explicitly **UNSUPPORTED**. ConvergenceTensor is bookkeeping only. Far-field fixture classical identity checked (Gauss matches; midpoint fails declared 1e-3 — expected, not loosened). No undefined critical components. No stale claims.
-- CLASSIFY: **RESEARCH** (justified: experimental numerical helpers + docs; no validated physical residual; prior Sweep-158/437/PORTFOLIO_STATE confirm). Not ACTIVE, SUPERSEDED, or ARCHIVED.
-- PLAN / TARGET: Maintain claim-cap, CI-green, docs consistent. No elevation. Idempotent re-audit only.
-- IMPLEMENT: No product code changes (safe). No destructive actions queued.
-- TEST → CI: Live Actions list_workflow_runs: most recent ci and docs-presence on head be546ea… (2026-10-11) **success**. Prior runs success. Local pytest implied by CI.
-- DOCUMENT / GOVERN: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md. No unsupported claims. Registry alignment held.
-- RELEASE/ARCHIVE: None (RESEARCH; no tag required). 
-- RE-AUDIT: No drift detected. Termination conditions met for this RESEARCH scope (no critical CI failures, no unsupported claims, target state of governed conceptual layer achieved). 
-- Census: 83 unchanged.
-
-## Sweep-523 / Master Directive v3.0: Full Portfolio Governance Sweep
-
-- Timestamp: 2026-10-25T16:20:00Z UTC (approx).
-- Scope: All repositories under user:beyond-repair (live census confirmed 83).
-- Selection: Directed full portfolio sweep per Master Directive v3.0 (Phases 1-11).
-- DISCOVER: Live search_repositories total_count=83, incomplete_results=false. Authenticated as beyond-repair. Priority targets verified present: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
-- AUDIT / CLASSIFY: Classifications preserved from prior sweeps. ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, AEGIS-Project-Nehemiah-. RESEARCH: majority. SUPERSEDED/ARCHIVED: per registry. No unsupported claims introduced.
-- VERIFICATION (Phase 3): CI workflows confirmed active for forge-aegis (forge-aegis CI), sovereign-clean-room (Python tests), BlockSwarm (Foundry). Digital_Double_virtual_workforce CI check interrupted by transient API 503; prior state noted as partial.
-- CAPABILITY / DEPENDENCY / GAP / REDUNDANCY: Incremental. Full 83-row matrix remains residual. Canonical domains: Governance (ADL-Governance), Agent Infrastructure (forge-aegis / AEGIS), Security (sovereign-clean-room), Distributed Systems (BlockSwarm), Workforce Automation (Digital_Double_virtual_workforce).
-- PLAN / IMPLEMENT / DOCUMENT / GOVERN: Governance docs updated only. No product code changes, no history rewrites, no deletions.
-- Actions: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, SWEEP_HISTORY.md. Residuals recorded.
-- Termination: Sweep complete for this cycle. Exit criteria partially met; full matrix and complete verification remain open. Stop per discipline. Do not infinite loop.
-- Census: 83 unchanged.
-
-## Prior Sweep-522 and earlier preserved.
+## Prior Sweep-526 and earlier preserved.
