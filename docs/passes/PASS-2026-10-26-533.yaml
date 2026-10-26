@@ -1,0 +1,88 @@
+PASS:
+  id: PASS-2026-10-26-533
+  parent_pass: PASS-2026-10-26-532
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 2
+  capabilities_known: 8
+  capabilities_verified: 3
+  gaps_remaining: 9
+
+OBJECTIVE:
+  id: CAPABILITY-MATRIX-SLICE
+  description: Add function-audit record for finite-gasket-spectral-derivatives kernel methods executed by existing tests; do not assign cluster or claim_cap or expand locked inventory
+  reason_selected: Highest-value bounded residual from prior NEXT; next unassigned name from census_gap after informational-flux-identity; documents verified spectral derivative surface without fabrication
+
+DISCOVERY:
+  findings:
+    - Live census reconfirmed total_count=83
+    - adl-capability-matrix locked inventory remains 67 with unassigned names including finite-gasket-spectral-derivatives
+    - finite-gasket-spectral-derivatives head fdaaacb346b2ce7d23436437dac42ad3827fa864
+    - tests/test_spectral_derivatives.py exercises require_positive, gamma_loop, dgamma_dw, v_second on sample eigenvalues
+    - Confirms positive-definiteness wall, finite-difference agreement, lambda=6 split; no gasket build, selected W, or force
+
+CHANGES:
+  repositories:
+    - adl-capability-matrix
+    - ADL-Governance
+  files:
+    - matrix/function_audit_finite_gasket_spectral_derivatives.json
+    - tests/test_function_audit_finite_gasket_spectral_derivatives.py
+    - CLAIM_STATUS.md (adl-capability-matrix)
+    - docs/passes/PASS-2026-10-26-533.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - 213474cf5dcb7ac9fcd3d7011c550e439b7dbc04 (matrix)
+    - this commit (governance)
+  capabilities_added_or_changed:
+    - function-audit evidence for finite-gasket-spectral-derivatives kernel surface
+
+VERIFICATION:
+  tests_run:
+    - matrix test_function_audit_finite_gasket_spectral_derivatives.py added (not executed in this agent environment)
+    - finite-gasket-spectral-derivatives tests structure confirmed by source inspection
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Test suite verifies spectral derivative formulas, wall guard, and split identity on integer sample eigenvalues
+    - Claim cap remains unassigned (null); no elevation or invention
+    - Census stable at 83; locked inventory 67
+  failures:
+    - none
+  decisions:
+    - REUSE existing matrix and governance structure; no new repository
+    - No product code changes; documentation of existing verified surface only
+    - Selected unassigned name finite-gasket-spectral-derivatives as next bounded slice
+
+REMAINING:
+  incomplete:
+    - Full 83-row capability matrix with assigned caps
+    - Operator Dependabot triage on priority repos
+    - VSA completeness on sovereign-clean-room
+    - Function audits for remaining unassigned names
+  blockers:
+    - Operator-only actions (archive flags, release tags, Dependabot merges)
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: CAPABILITY-MATRIX-SLICE-OR-RANDOM
+  action: Select next unassigned name from census_gap or next random RESEARCH repo for tree/function audit without inventing caps
+  reason: Continues incremental closure of the documented matrix residual
+  prerequisites:
+    - Current pass record persisted
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live get_repository_tree and get_file_contents on finite-gasket-spectral-derivatives
+    - Matrix push commit 213474cf5dcb7ac9fcd3d7011c550e439b7dbc04
+    - Test source inspection confirming executed methods

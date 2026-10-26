@@ -1,3 +1,18 @@
+## Sweep-533: Function Audit — finite-gasket-spectral-derivatives
+
+- Timestamp: 2026-10-26T23:10:00Z UTC (approx).
+- Selection: Next unassigned name from census_gap_2026-10-02.json after informational-flux-identity. Selected finite-gasket-spectral-derivatives.
+- DISCOVER: Tree scanned. Core module scripts/spectral_derivatives.py; tests/test_spectral_derivatives.py present. Head fdaaacb346b2ce7d23436437dac42ad3827fa864. Classification RESEARCH, claim ≤1 finite discrete kernel.
+- AUDIT: Tests exercise require_positive, gamma_loop, dgamma_dw, v_second. Assert wall guard, finite-difference match, lambda=6 split. No continuum, selected W, or force in exercised path.
+- CLASSIFY: RESEARCH (unchanged). No claim elevation. Name remains UNASSIGNED in matrix gap.
+- PLAN / TARGET: Document existing verified surface only. No product changes. No inventory expansion. No cap invention.
+- IMPLEMENT: Added matrix/function_audit_finite_gasket_spectral_derivatives.json and corresponding test. Updated CLAIM_STATUS.md.
+- TEST → CI: Test structure verified by source. Matrix checker invariants preserved (inventory 67, gap unassigned).
+- DOCUMENT / GOVERN: Pass record PASS-2026-10-26-533 persisted. SWEEP_HISTORY and HEADINGS updated.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Bounded residual closed for this surface. No drift in locked matrix.
+- Census: 83 unchanged.
+
 ## Sweep-532: Function Audit — informational-flux-identity
 
 - Timestamp: 2026-10-26T20:05:00Z UTC (approx).
