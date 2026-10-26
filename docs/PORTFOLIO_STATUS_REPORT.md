@@ -1,28 +1,25 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-25 (Sweep-526 / Priority Live Verification)
-**Project / Version:** ADL Portfolio Governance / Sweep-526
-**Objective:** Autonomous portfolio completion agent — priority live verification of core ACTIVE repositories, update governance. Evidence-based only.
+**Updated:** 2026-10-26 (Sweep-527 / Randomized ware-constant-phenomenology)
+**Project / Version:** ADL Portfolio Governance / Sweep-527
+**Objective:** Autonomous portfolio completion agent — random selection, discover/audit/classify/govern. Evidence-based only.
 
-## Sweep-526: Priority Live Verification — forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce
+## Sweep-527: Randomized Audit — ware-constant-phenomenology
 
-- Live census reconfirmed: 83 repositories (search_repositories total_count=83, incomplete_results=false).
+- Live census reconfirmed: 83 repositories.
 - Authenticated as beyond-repair.
-- Explicit verification performed:
-  - forge-aegis: CI workflow "forge-aegis CI" active. Most recent runs (Oct 5, 2026) conclusion **success**.
-  - sovereign-clean-room: "Python tests" workflow active. Recent PR runs mixed (success after float fixes; some failures on incomplete Phase I). Main path stable.
-  - BlockSwarm: "Foundry" workflow active. Most recent run (Oct 12, 2026, run 38252865430) **success**.
-  - Digital_Double_virtual_workforce: "Digital Double CI" active. Most recent runs (Oct 17, 2026) **success** (form-data pin).
-- Classifications unchanged. No fabricated claims. No product modifications. No destructive actions.
-- Residuals recorded; sweep stopped per discipline.
+- Selected randomly: ware-constant-phenomenology (head ~8db3fc8).
+- DISCOVER: Runnable phenomenology scripts for SPARC-style scoring, kill-gates, constant-W action verification, white-light bounds. data/sparc_flat.csv (Lelli+2016). tests/ present. docs-presence CI.
+- AUDIT/CLASSIFY: Confirmed **RESEARCH**, claim ≤2, experimental_validation **false**, SPARC χ² as pass **UNSUPPORTED**. Local pytest 8 passed. No product mutation.
+- No fabricated claims. Governance docs updated. Sweep halted for this repo (termination met for RESEARCH scope).
 
 ## Classification Summary
 - **ACTIVE**: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, AEGIS-Project-Nehemiah-.
-- **RESEARCH**: majority (physics/coherence-drive family, experimental SEEM, etc.).
+- **RESEARCH**: majority (physics/coherence-drive family including ware-constant-phenomenology, experimental SEEM, etc.).
 - **SUPERSEDED / ARCHIVED**: per repository_registry.md (CFT-v3.0 GitHub-archived).
 
 ## Live Census
-- Total: **83** (verified 2026-10-25).
+- Total: **83** (verified 2026-10-26).
 - Public reported: 78; live search includes private.
 - GitHub archive flag: CFT-v3.0 only.
 
@@ -33,6 +30,7 @@ Demonstrated (verified code/tests/CI where present):
 - VSA core partial in sovereign-clean-room (CI green on stable paths).
 - Distributed contract verification in BlockSwarm (Foundry CI green).
 - Virtual workforce scaffolding in Digital_Double_virtual_workforce (CI green).
+- Ware/CFT phenomenology scoring sketch in ware-constant-phenomenology (local tests green, claim-capped).
 
 Planned / UNVERIFIED: full matrix, production autonomy, measured thrust, complete VSA, etc. Labeled accordingly.
 
@@ -43,7 +41,7 @@ Planned / UNVERIFIED: full matrix, production autonomy, measured thrust, complet
 - Locked catalog vs live census minor drift.
 
 ## Exit Criteria (this cycle)
-- Priority ACTIVE repos live-verified for CI presence and recent success. No unsupported claims. Governance docs updated. Sweep halted.
+- Random RESEARCH repo re-audited, local tests verified green, claim caps held, governance docs updated. No unsupported claims. Sweep halted for selected repo.
 
 ## Optimization Progress
 Incremental convergence toward one capability → one canonical implementation → one governed owner → one verified source of truth. Full graphs remain open for subsequent governed cycles.
