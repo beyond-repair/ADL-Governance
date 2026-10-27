@@ -1,10 +1,46 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-26 (Sweep-534 / Randomized SEEM-Cognitive_Microservice)
-**Project / Version:** ADL Portfolio Governance / Sweep-534
-**Objective:** Autonomous portfolio completion agent — random selection, discover/audit/classify/govern.
+**Updated:** 2026-10-26 (Sweep-536 / Master Directive v3.0 Portfolio Governance)
+**Project / Version:** ADL Portfolio Governance / Sweep-536
+**Objective:** Autonomous portfolio completion and governance agent — full discovery, classification preservation, mandatory live verification of pillars, residual recording.
 
-Evidence-based only.
+Evidence-based only. Code > Documentation > Roadmap. No fabricated claims. No history rewrites. No deletions.
+
+## Sweep-536: Master Directive Portfolio Governance & Completion Sweep
+
+* Live census reconfirmed via search: **83** repositories (total_count 83, incomplete_results false). Authenticated as beyond-repair.
+* Phase 1 Discovery: Inventory collected (names, descriptions, last push, languages, archive flags). GitHub archive flag true only for CFT-v3.0.
+* Phase 2 Classification: Preserved exactly from repository_registry.md. ACTIVE pillars: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, AEGIS-Project-Nehemiah-. RESEARCH majority. SUPERSEDED and ARCHIVED (recommended) per registry. No reclassifications without tree-level verification in this cycle.
+* Phase 3 Mandatory Live Verification:
+  - **forge-aegis**: CI workflow "forge-aegis CI" active. Latest main runs success (e.g. run 37258127100 on e7188d5). README claims RUNNABLE SKETCH / software only (verified). Releases/tags empty. No security advisories. Tests present (validator/pipeline). PASS WITH FINDINGS (claim cap documented).
+  - **sovereign-clean-room**: Python tests workflow active. Main head previously success noted in registry (4878918c). PR branch seem-completion-pass has recent test failures (float ulp). Tags empty. Secret scanning disabled. VSA completeness UNVERIFIED. PASS WITH FINDINGS.
+  - **BlockSwarm**: Foundry workflow success on main (run 38252865430 on 9848010, prior 36859452185 on 6e90f6f). Submodules pinned. Releases empty. PASS.
+  - **Digital_Double_virtual_workforce**: Digital Double CI success on main (run 39035783949 on ad0c3bd, security pin for CVE-2025-7783). Dependabot active. Releases empty. Open issues 5. PASS WITH FINDINGS.
+* Phase 4-10: Incremental only. Capability inventory not expanded (prior preserved). Dependency graph, full gap analysis, redundancy detection, synergy, canonical domain review, code readiness for all 83 not completed in this bounded cycle (residuals recorded). No duplicate canonical claims elevated.
+* Phase 11 Safe Remediation: Governance docs only updated. No product code changes. No destructive actions.
+* Exit criteria: Partial. Census current, classifications preserved, pillar CI verified, no unsupported claims introduced. Residuals: full dependency mapping, complete gap/security/test coverage matrix for all repos, unassigned names in capability matrix, operator archive flags, open Dependabot hygiene. Sweep halted per discipline (no infinite loop).
+
+## Classification Summary (preserved)
+
+* **ACTIVE**: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, AEGIS-Project-Nehemiah-.
+* **RESEARCH**: majority (physics/coherence-drive family, experimental SEEM, etc.).
+* **SUPERSEDED / ARCHIVED**: per repository_registry.md (CFT-v3.0 GitHub-archived; btc-trading recommended archive; SEEM-Cognitive_Microservice SUPERSEDED).
+
+## Live Census
+
+* Total: **83** (verified 2026-10-26).
+* Public reported: 78; live search includes private.
+* GitHub archive flag: CFT-v3.0 only.
+
+## Capability Inventory (incremental)
+
+Prior content preserved. Pillars remain at documented claim levels (software sketch for forge-aegis; SEEM substrate for sovereign-clean-room; etc.). No new verified features claimed.
+
+## Residuals
+
+Full portfolio phases 4-10 incomplete for all 83. Operator may process archive_queue.md, triage Dependabot across superseded/research repos, expand adl-capability-matrix beyond 67 rows if gated. No critical unresolved CI failures on ACTIVE main branches from this verification. No history rewrite, no deletion.
+
+## Prior Sweep-534 content preserved below.
 
 ## Sweep-534: Randomized Audit — SEEM-Cognitive_Microservice
 
