@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-562: SovereignOS Residuals
+
+No new destructive proposals. No history rewrites, no deletions, no code mutations.
+
+Residuals (reconfirmed):
+- SovereignOS (RESEARCH, private): OS-family consolidation (with RealityOS, LegionOS, Sovereign-OS) remains operator decision. Prefer merge into existing before any ACTIVE promotion. No implementation exists.
+- Digital_Double_virtual_workforce (ACTIVE): Open Dependabot alerts (dev deps). Operator triage residual.
+- sovereign-clean-room (ACTIVE): VSA completeness UNVERIFIED. Releases empty.
+- Full portfolio: Detailed status for non-core incomplete; Phases 4-10 OPEN; archive flags elective.
+
+Stop after governed sweep. Do not loop.
+
+## Prior Sweep-561 content preserved below.
+
+# Operator Queue
+
 ## Sweep-561: Master Directive v3.0 Residuals
 
 No new destructive proposals. No history rewrites, no deletions, no restructuring, no code mutations.
