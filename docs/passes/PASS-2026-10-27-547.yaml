@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-27-547
+  parent_pass: PASS-2026-10-27-545
+
+STATE:
+  global_status: PARTIAL_GOVERNED
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 13
+  gaps_remaining: 13
+
+OBJECTIVE:
+  id: GAP-SOVEREIGN-EPISTEMIC-AUDIT
+  description: Perform bounded function/surface audit of Sovereign-Epistemic-Reality-Engine (unassigned gap name); confirm RESEARCH / Claim ≤1 status; document skeleton/specification nature without inventing caps or elevating claims.
+  reason_selected: Highest-value next unassigned gap per prior NEXT (from PASS-545); advances verification boundary on census residual without matrix expansion or claim invention.
+
+DISCOVERY:
+  findings:
+    - Lifecycle RESEARCH locked; published claim ≤1. Architectural Baseline v0.1.0 (Skeleton + Specification).
+    - Structure present: docs/, seem/, cft/, security/, blockchain/, gdextension/, godot/, storage/, scripts/, tests/ (mostly stubs/placeholders).
+    - CLAIM_STATUS.md confirms: no source, no tests, no workflow (skeleton.yml only), no dependency manifest. Upstream pointers not vendored.
+    - README describes target unified closed-loop (SEEM/VSA, CFT, JKillnHide, BlockSwarm, Godot) as planned/specification; not implemented here.
+    - Consistent with census gap (unassigned).
+    - No elevation of claims; physics/pharmacology stay at evidenced cap.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-27-547.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Sovereign-Epistemic-Reality-Engine RESEARCH confirmation (Claim ≤1 locked; skeleton/spec audited via existing docs and structure)
+
+VERIFICATION:
+  tests_run:
+    - Not re-executed remotely; structure of dirs and CLAIM_STATUS.md, README.md, skeleton.yml inspected
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Sovereign-Epistemic-Reality-Engine remains RESEARCH skeleton; specification of integration targets present, no runtime implementation, tests, or live interop in this repo. Upstream named but not imported.
+  failures:
+    - none this pass
+  decisions:
+    - Do not assign cluster/cap in matrix (remains locked at 67); name stays in unassigned gap.
+    - No promotion to ACTIVE.
+
+REMAINING:
+  incomplete:
+    - Full 83-row matrix expansion
+    - Operator archive flags
+    - Remaining unassigned names
+  blockers:
+    - Operator-gated residuals
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-NEXT-UNASSIGNED-AUDIT
+  action: Select next unassigned gap name for bounded surface/function audit without inventing caps (continue progressive closure)
+  reason: Continues progressive gap closure on census vs locked inventory
+  prerequisites:
+    - No claim elevation without evidence
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - Tree of Sovereign-Epistemic-Reality-Engine
+    - docs/CLAIM_STATUS.md content
+    - README.md lifecycle and claim badges
+    - .github/workflows/skeleton.yml

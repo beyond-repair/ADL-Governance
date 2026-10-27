@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-547: Bounded Sovereign-Epistemic-Reality-Engine Audit Residual
+
+No new destructive proposals. No history rewrites, no deletions, no restructuring.
+
+Residuals for operator (exit criteria incomplete):
+- Full dependency graph, gap analysis (phases 5-6), redundancy detection (7), technology synergy (8), canonical architecture review (9), and code review readiness (10) for all 83 remain OPEN / operator-gated.
+- adl-capability-matrix locked at 67 rows; expansion not performed. Sovereign-Epistemic-Reality-Engine confirmed unassigned.
+- Process docs/archive_queue.md (GitHub archive flag true only for CFT-v3.0; many recommended ARCHIVED remain false).
+- Triage open Dependabot PRs on SUPERSEDED/RESEARCH repos (no auto-merge).
+- Secret scanning disabled on sovereign-clean-room (prior 404); operator may enable if desired.
+- Tags/releases empty on pillars and selected RESEARCH (operator residual).
+
+Prior residual items unchanged. No new escalations from this cycle.
+
+## Prior Sweep-546 content preserved below.
+
 ## Sweep-546: btc-trading Residual
 
 No new destructive proposals. No history rewrites, no deletions, no restructuring.

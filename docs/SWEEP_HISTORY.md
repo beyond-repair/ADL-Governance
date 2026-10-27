@@ -1,3 +1,14 @@
+## Sweep-547: Bounded Sovereign-Epistemic-Reality-Engine Surface Audit
+
+- Timestamp: 2026-10-27T15:20Z UTC (approx).
+- Scope: Bounded function/surface audit of Sovereign-Epistemic-Reality-Engine per prior NEXT from PASS-545.
+- Findings: Confirmed RESEARCH / Claim ≤1; skeleton + specification; no source/tests/dependency manifest; upstream pointers only; consistent with census gap (unassigned).
+- Actions performed: Persisted PASS-2026-10-27-547.yaml; updated this file and OPERATOR_QUEUE.md. Docs-only. No product mutations.
+- Residual: Matrix expansion and other unassigned names remain OPEN.
+- No history rewrite. No deletion.
+
+## Prior Sweep-546 content preserved below.
+
 ## Sweep-546: btc-trading Randomized Completion Cycle
 
 - Timestamp: 2026-10-27T15:05Z UTC (approx).
