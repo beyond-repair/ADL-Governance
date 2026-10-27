@@ -1,3 +1,18 @@
+## Sweep-540: Randomized Portfolio Completion Sweep — scale-functional-I
+
+- Timestamp: 2026-10-27T13:13:00Z UTC.
+- Selection: Selected from gap names with prior function audit.
+- DISCOVER: Tree scanned. scale_functional.py, tests/ (test_scale_functional.py, test_cli.py), CLAIM_STATUS.md (Claim 1, experimental_validation false), pyproject.toml, FUNCTIONAL.md, RESULT.md. Head prior be0758aaa53f84cdcedfe4cfd902ff9dc9d6cf09.
+- AUDIT: Consistent with ADL-Governance. RESEARCH classification. Claim ≤1. Lattice computation only. No physical claims. No CI in root. Tags/releases empty. No critical security in structure.
+- CLASSIFY: **RESEARCH** (confirmed, unchanged). Justification: Declared functional on lattice dumbbells; 0.08 comparison not reached; claim-capped; not production.
+- PLAN / TARGET: Confirm termination. Update governance docs only. No product mutation. No claim elevation. No matrix cap assignment.
+- IMPLEMENT: Governance docs updated. No changes to target repo.
+- TEST → CI: Tests present. Prior matrix audit referenced. No new execution this pass.
+- DOCUMENT / GOVERN: This history, OPERATOR_QUEUE, PASS yaml, HEADINGS updated. No unsupported claims.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Termination conditions met for current RESEARCH scope. No drift. Census 83 unchanged. Matrix remains 67.
+- No history rewrite. No deletion.
+
 ## Sweep-539: Randomized Portfolio Completion Sweep — optimization-limit-conjecture
 
 - Timestamp: 2026-10-27T13:02:00Z UTC (approx).
