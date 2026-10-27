@@ -1,5 +1,32 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-27 (Sweep-562 / Randomized Portfolio Completion Sweep — SovereignOS)
+**Project / Version:** ADL Portfolio Governance / Sweep-562
+**Objective:** Randomly selected repository audit and verification against termination conditions.
+
+## Sweep-562 selected repo: SovereignOS
+
+| Item | State |
+|------|--------|
+| Class | RESEARCH (architectural notes only; claim level 0; private) |
+| Termination | MET for this cycle (docs presence, CI green, claim-capped, no critical issues) |
+| HEAD | 0a33d1672119422562611731f7fcbb7eb0de5796 |
+| CI | docs-ci success run 36847775390 (2026-10-01T10:13Z on HEAD) |
+| Tags/Releases | empty |
+| Dependabot | open empty |
+| Branches | main only |
+| Implementation | None (placeholders + docs/architecture.md sketch). No Human Kernel, Control Plane, holarchy, KG, or sandbox runtime. |
+| Claims | Explicitly ≤1; forbidden product language removed/capped. NOT claimed: root access, uptime, profitability, enforced refusal. |
+| Family | Related to RealityOS, LegionOS, Sovereign-OS; consolidation is operator residual (see os-family-constitution-map). |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions.
+
+**Target state:** RESEARCH maintained; CI-green; claim-capped. Termination conditions met.
+
+## Prior Sweep-561 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-27 (Sweep-561 / Master Directive v3.0 Portfolio Governance & Completion Sweep)
 **Project / Version:** ADL Portfolio Governance / Sweep-561
 **Objective:** Execute one governed sweep under Master Directive v3.0. Discover full portfolio (user:beyond-repair, total_count=83). Perform mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Evidence-based only. No fabricated claims. Preserve history. No deletions. No history rewrites. Label unverified as PLANNED | PARTIAL | UNVERIFIED | SUPERSEDED | ARCHIVED.
