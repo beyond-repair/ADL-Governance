@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-10-27-545
+  parent_pass: PASS-2026-10-27-543
+
+STATE:
+  global_status: PARTIAL_GOVERNED
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 13
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: GAP-ADL-NEXUS-AUDIT
+  description: Perform bounded function/surface audit of ADL-Nexus (unassigned gap name); confirm RESEARCH / Claim ≤1 status; document layered local capabilities without inventing caps or elevating claims.
+  reason_selected: Highest-value next unassigned gap per prior NEXT (from PASS-543); advances verification boundary on census residual without matrix expansion or claim invention.
+
+DISCOVERY:
+  findings:
+    - Lifecycle RESEARCH locked; published claim ≤1; local ceiling 2 (rejects higher). Version 0.3.2.
+    - Layered architecture present: Layer 0 governance kernel, memory, agent runtime, workforce scaffold, development, security, simulation, research, economic.
+    - Core invariant: nothing executes outside Governance Kernel. Pathways route through validation.
+    - CI present (.github/workflows/ci.yml); prior main success noted in README (run 36847729267 on 2026-10-01). Not re-run this pass.
+    - Claim status documents local verified items (integrity anchors, supervised workforce assign/complete, think/authorize/commit local) vs many UNSUPPORTED (live adapters, full autonomy, RealityOS twin, etc.).
+    - Adapters for cleanroom and sunder present in stub mode; live interop UNSUPPORTED.
+    - In adl-capability-matrix census_gap: name present, cluster null. Consistent with locked matrix.
+    - No CLAIM_CAP.md equivalent at root; docs/CLAIM_STATUS.md present and consistent with RESEARCH.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-27-545.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - ADL-Nexus RESEARCH confirmation (Claim ≤1 locked; layered local surface audited via existing docs and structure)
+
+VERIFICATION:
+  tests_run:
+    - Not re-executed remotely; structure of core/, layer*/ , tests implied by CI and CLAIM_STATUS inspected
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus remains RESEARCH; local-first platform with governance-first kernel, pathway routing, stub adapters. No production autonomy, live interop, or physics product claims. CI green historically does not promote lifecycle.
+  failures:
+    - none this pass
+  decisions:
+    - Do not assign cluster/cap in matrix (remains locked at 67); name stays in unassigned gap.
+    - No promotion to ACTIVE.
+
+REMAINING:
+  incomplete:
+    - Full 83-row matrix expansion
+    - Operator archive flags
+    - Remaining unassigned names (e.g. Sovereign-Epistemic-Reality-Engine)
+  blockers:
+    - Operator-gated residuals
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-SOVEREIGN-EPISTEMIC-AUDIT
+  action: Select next unassigned gap name (Sovereign-Epistemic-Reality-Engine) for bounded surface/function audit without inventing caps
+  reason: Continues progressive gap closure on census vs locked inventory
+  prerequisites:
+    - No claim elevation without evidence
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - Recursive tree of ADL-Nexus
+    - docs/CLAIM_STATUS.md and ARCHITECTURE.md content
+    - README.md lifecycle and claim badges
+    - Census gap reference in adl-capability-matrix
