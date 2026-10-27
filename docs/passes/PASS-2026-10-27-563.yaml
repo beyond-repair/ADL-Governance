@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-27-563
+  parent_pass: PASS-2026-10-27-560
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 73
+  capabilities_verified: 13
+  gaps_remaining: 13
+
+OBJECTIVE:
+  id: AUDIT-OPEN-ENERGY-FUSION
+  description: Perform bounded tree/function-surface audit of unassigned RESEARCH repo Open-Energy-Fusion; document presence of src/energyos modules without inventing cluster or claim_cap; persist this pass.
+  reason_selected: Highest-value next slice per prior NEXT: one unassigned name for tree audit; Open-Energy-Fusion has substantial layout and claim-capped README.
+
+DISCOVERY:
+  findings:
+    - Open-Energy-Fusion is UNASSIGNED in 2026-10-02 census gap (null cluster/claim_cap).
+    - Tree: .github, docs, firmware (placeholder), protocols, sim, src/energyos (controller.py, graph.py, report.py, simulate.py, __init__.py, __main__.py), tests, pyproject.toml, README, GOVERNANCE, LICENSE.
+    - README: LIFECYCLE RESEARCH, CLAIM ≤1, YELLOW INVESTIGATE, simulation + contract only, no hardware claims. Substantial tree with tests and campaign results.
+    - No claim elevation; remains UNASSIGNED until operator or audited assignment.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-27-563.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - tree presence audit for Open-Energy-Fusion (src/energyos modules observed)
+
+VERIFICATION:
+  tests_run:
+    - github___get_file_contents confirmed tree and README content
+    - no local pytest (remote audit only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Open-Energy-Fusion has non-empty implementation surface (simulate.py, controller.py, graph.py) consistent with RESEARCH simulation contract.
+    - Claim discipline holds: ≤1, no thrust/energy extraction claims.
+    - Gap file remains authoritative; no matrix expansion.
+  failures: []
+  decisions:
+    - EXTEND knowledge via audit record only; no cap assignment; no new repo; reuse governance pass system.
+
+REMAINING:
+  incomplete:
+    - Full function inventory and verification of Open-Energy-Fusion tests.
+    - Assignment of remaining 14 unassigned names.
+    - Portfolio graphs.
+  blockers:
+    - Operator for claim_cap assignment or matrix lock expansion.
+  new_gaps:
+    - none this pass
+
+NEXT:
+  objective_id: AUDIT-NEXT-UNASSIGNED
+  action: Select next unassigned name (e.g. mend or finite-gasket-spectral-derivatives) for similar bounded tree audit; persist pass without inventing caps.
+  reason: Continues incremental closure of unassigned gap under claim discipline.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Tree listing of Open-Energy-Fusion
+    - README.md content confirming RESEARCH ≤1
+    - Parent PASS-2026-10-27-560

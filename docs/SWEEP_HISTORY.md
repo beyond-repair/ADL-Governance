@@ -1,3 +1,20 @@
+## Sweep-563: Basilisk Audit of Open-Energy-Fusion 2026-10-27
+
+- Timestamp: 2026-10-27T22:10Z UTC.
+- Scope: ADL-BASILISK recursive loop continuation. SELECT one unassigned repo for bounded audit.
+- SELECT: Open-Energy-Fusion (UNASSIGNED in census_gap_2026-10-02).
+- DISCOVER: Live tree via get_file_contents: src/energyos/{controller,graph,report,simulate}.py + tests + sim + docs. README RESEARCH CLAIM ≤1 YELLOW.
+- AUDIT: Substantial tree present; simulation contract claimed; no hardware; functions surface observed but not fully verified this pass.
+- CLASSIFY: Remains RESEARCH UNASSIGNED (no cap invented).
+- PLAN/IMPLEMENT: Persist pass record only. No product changes.
+- TEST/CI: Remote contents verification. No local re-run.
+- DOCUMENT: Added docs/passes/PASS-2026-10-27-563.yaml; this history.
+- GOVERN: No unsupported claims. No matrix mutation. History preserved.
+- Residual: Full function verification and remaining unassigned open.
+- Next: Audit next unassigned (e.g. mend).
+
+## Prior Sweep-562 content preserved below.
+
 ## Sweep-562: Randomized Portfolio Completion Sweep — SovereignOS 2026-10-27
 
 - Timestamp: 2026-10-27T22:00Z UTC.
