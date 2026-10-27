@@ -1,5 +1,29 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-27 (Sweep-564 / Master Directive v3.0 Reconfirmation)
+**Project / Version:** ADL Portfolio Governance / Sweep-564
+**Objective:** One governed reconfirmation of portfolio discovery and mandatory live verification. Record residuals. Stop. No infinite cycle.
+
+## Sweep-564: Master Directive Residual Confirmation
+
+- Portfolio size: 83 repositories confirmed (search total_count=83).
+- Mandatory verification reconfirmed for forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce:
+  - forge-aegis: CI green (prior runs success), releases empty, docs/tests present, Dependabot empty. ACTIVE (claim-capped sketch).
+  - sovereign-clean-room: CI green post-float fixes, releases empty, VSA completeness UNVERIFIED. ACTIVE with findings.
+  - BlockSwarm: Foundry CI green (prior 40441811261 success), releases empty. ACTIVE.
+  - Digital_Double_virtual_workforce: CI green, open Dependabot on dev deps (operator residual). ACTIVE with findings.
+- ADL-Governance: ACTIVE, docs current.
+- Full detailed inventory for non-core, full classification matrix, Phases 4-10 (capability inventory, dependency graph, gap analysis, redundancy, synergy, architecture, code readiness): remain OPEN / UNVERIFIED / residual.
+- No unsupported claims. No deletions. History preserved.
+
+**Actions this cycle:** Governance documentation updates only. Idempotent.
+
+**Exit criteria:** Not fully satisfied (residuals recorded). Stop after this governed sweep.
+
+## Prior Sweep-562 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-27 (Sweep-562 / Randomized Portfolio Completion Sweep — SovereignOS)
 **Project / Version:** ADL Portfolio Governance / Sweep-562
 **Objective:** Randomly selected repository audit and verification against termination conditions.
