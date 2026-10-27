@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-26-535
+  parent_pass: PASS-2026-10-26-533
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 8
+  capabilities_verified: 3
+  gaps_remaining: 8
+
+OBJECTIVE:
+  id: CAPABILITY-MATRIX-SLICE
+  description: Bounded surface audit of Open-Energy-Fusion (unassigned name); document existing RESEARCH / Claim ≤1 simulation-only status without assigning cluster or claim_cap or expanding locked inventory
+  reason_selected: Next unassigned name after prior audited residual; highest-value bounded slice continuing matrix residual closure
+
+DISCOVERY:
+  findings:
+    - Live census stable at 83
+    - Open-Energy-Fusion is UNASSIGNED in census_gap_2026-10-02.json
+    - Head 620b994ca6a201aa27d9cb14c6e470dfaea7d708
+    - RESEARCH / Claim ≤1; YELLOW gate; specification + simulation only; no hardware
+    - CLAIM_CAP.md rejects firmware existence, falsifies universal superiority of cascading, rejects low-grade Stirling under model
+    - Tree has src/energyos, tests, sim campaign results, docs; CI structure present via .github
+    - No open code scanning alerts (none found)
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-26-535.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - documented surface audit for Open-Energy-Fusion without cap invention
+
+VERIFICATION:
+  tests_run:
+    - Source inspection of README, CLAIM_CAP.md, tree; no execution in this environment
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Open-Energy-Fusion remains RESEARCH Claim ≤1, simulation/spec only, unassigned in matrix
+    - Explicit falsifications in CLAIM_CAP.md (universal win, low-grade Stirling)
+    - Census 83, locked 67 unchanged
+  failures:
+    - none
+  decisions:
+    - REUSE existing governance and matrix; no new repo, no inventory expansion, no cap assignment
+    - Document only; no product changes
+
+REMAINING:
+  incomplete:
+    - Full 83-row capability matrix with assigned caps
+    - Function audits for remaining unassigned (ADL-Nexus, Sovereign-Epistemic-Reality-Engine, etc.)
+    - Operator Dependabot and archive flags
+  blockers:
+    - Operator-only actions
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: CAPABILITY-MATRIX-SLICE
+  action: Select next unassigned name (e.g. ADL-Nexus or Sovereign-Epistemic-Reality-Engine) for bounded surface/function audit without inventing caps
+  reason: Continues incremental documented residual closure
+  prerequisites:
+    - This pass persisted
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live get_file_contents and tree on Open-Energy-Fusion
+    - CLAIM_CAP.md inspection confirming rejected claims
