@@ -1,40 +1,41 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-27 (Sweep-558 / Random Selection Cycle: sovereign-clean-room)
-**Project / Version:** ADL Portfolio Governance / Sweep-558
-**Objective:** Random selection of one repository; full DISCOVER → AUDIT → CLASSIFY cycle on sovereign-clean-room. Evidence-based only. No fabricated claims. Preserve history. No deletions. No history rewrites.
+**Updated:** 2026-10-27 (Sweep-559 / Random Selection Cycle: RepoRover-)
+**Project / Version:** ADL Portfolio Governance / Sweep-559
+**Objective:** Random selection of one repository; full DISCOVER → AUDIT → CLASSIFY cycle on RepoRover-. Evidence-based only. No fabricated claims. Preserve history. No deletions. No history rewrites.
 
-## Sweep-558: Random Portfolio Completion Cycle
+## Sweep-559: Random Portfolio Completion Cycle
 
-- **SELECT:** Randomly selected `sovereign-clean-room` from authenticated portfolio census (search total_count ~83, incomplete_results noted in prior; live list partial but includes pillars).
+- **SELECT:** Randomly selected `RepoRover-` from authenticated portfolio (search total_count 83).
 - **DISCOVER:**
-  - Repository tree recursive scan completed (main head 4878918cf9f95d3c19e1890bef6d2fd6713e0a16).
-  - Features: core/ (banel_protocol, clean_room_*, episodic_memory, fhrr_protocol, memskill*, etc.), bridge/, docs/, skills/, tests/, schemas/, shapes/.
-  - Dependencies: numpy (pinned 1.26.4 for <3.13), pynacl==1.6.2, pytest. Optional governance: pyshacl, z3.
-  - Tests: 30+ test_*.py files covering CLI, ledger, memory, protocols, physics, memskill, etc.
-  - CI: .github/workflows/python-tests.yml (Python 3.11, pytest tests/ -q). Historical success run 37064696194.
-  - Docs: Extensive README, SECURITY.md, benchmarks, AUDIT_SEEM_COMPLETION.md, CONSTITUTION_v1.3.md.
+  - Repository tree recursive scan completed (main head 60a63d3b986ba2c55992cc65f1d7adf62cfcd83e).
+  - Features: Historical README scraper (RepoRover/RepoRover.py CLI with --demo, --repos, --owner, --explore); NLP preprocess; CSV output; fixtures for offline; tests/test_reporover.py.
+  - Dependencies: requests, beautifulsoup4, nltk, pytest (requirements.txt). No untracked critical deps.
+  - Tests: pytest suite covering preprocess, CSV, demo pipeline. Local historical 6 passed.
+  - CI: .github/workflows/tests.yml (Python 3.11, pytest -q). Latest runs successful (e.g., run 37313975996 on head).
+  - Docs: README.md (claim 0, ARCHIVED), ARCHIVED.md, CLAIM_STATUS.md, docs/SWEEP-223.md. Explicitly not a product/portfolio map.
 - **AUDIT:**
-  - Against ADL-Governance: Classification ACTIVE. VSA completeness UNVERIFIED (as previously locked).
-  - No undefined critical components for claim level. Stale notes on unmerged branches historically present.
-  - Missing: Formal release tags. VSA full completeness evidence not in-repo verified beyond unit tests.
-- **CLASSIFY:** ACTIVE (unchanged). Justification: Canonical offline SEEM substrate; CI green; claim-capped.
-- **PLAN / IMPLEMENT:** Docs-only governance update. No safe code changes required this cycle (termination not fully met due to VSA UNVERIFIED residual). Queued none new in OPERATOR_QUEUE.
-- **TEST/CI:** Confirmed historical green; no local re-run (remote). Dependabot open: empty. Releases: empty.
+  - Against ADL-Governance: Classification ARCHIVED (Sweep-088/223 lock). On archive_queue.md (unchecked). Claim 0. Not ACTIVE product.
+  - No undefined critical components. Stale Explore HTML noted as fragile. v2 never implemented (superseded by ADL-*).
+  - Missing: GitHub archived flag (false; operator-only). Releases/tags empty.
+  - Dependabot: All alerts fixed (no open). No critical security issues open.
+- **CLASSIFY:** ARCHIVED (unchanged). Justification: Historical scraper sketch; CI green for tests; claim-capped at 0; superseded for portfolio roles.
+- **PLAN / IMPLEMENT:** Docs-only governance update. No safe code changes required (termination largely met for historical; archive flag residual). Queued archive action in OPERATOR_QUEUE.
+- **TEST/CI:** Confirmed green on latest workflow runs. No local re-run (remote). Releases: empty.
 - **DOCUMENT:** This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
-- **GOVERN:** No unsupported claims elevated. No critical security issues newly found. No untracked deps.
-- **RELEASE/ARCHIVE:** Not applicable (ACTIVE, residual remains).
-- **RE-AUDIT:** No drift detected beyond known residuals.
+- **GOVERN:** No unsupported claims elevated. No critical security issues newly found. No untracked dependencies.
+- **RELEASE/ARCHIVE:** Not performed (operator-only for GitHub archive flag). Target historical state verified.
+- **RE-AUDIT:** No drift detected beyond known residuals (archive flag false).
 
 ## Residuals (exit criteria not fully satisfied)
 
-- VSA completeness remains UNVERIFIED.
-- Releases/tags empty (operator residual).
+- GitHub `archived` flag remains false (operator elective via `gh repo archive`).
+- Releases/tags empty (historical; not required for ARCHIVED claim 0).
 - Full portfolio phases 4-10 OPEN.
-- Other pillars residuals unchanged (e.g., Digital_Double Dependabot).
+- Other pillars residuals unchanged.
 
 Stop after governed sweep. Do not loop. No infinite review cycle.
 
-## Prior Sweep-557 content preserved below.
+## Prior Sweep-558 content preserved below.
 
-[Prior content from Sweep-557 and earlier preserved in history; see SWEEP_HISTORY.md.]
+[Prior content from Sweep-558 and earlier preserved in history; see SWEEP_HISTORY.md.]
