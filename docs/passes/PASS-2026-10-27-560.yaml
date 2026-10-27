@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-27-560
+  parent_pass: PASS-2026-10-27-556
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 13
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: GAP-BASILISK-DISCOVERY
+  description: Reconstruct current ecosystem from live GitHub search and key governance/nexus/graph repos under ADL-BASILISK directive; confirm census stability; select next bounded slice without elevating claims.
+  reason_selected: Fresh recursive execution of core loop; highest-value next is confirming post-556 state and choosing one small verified piece for subsequent passes.
+
+DISCOVERY:
+  findings:
+    - Live user:beyond-repair search total_count=83, incomplete_results=false (stable with prior 2026-10-27 observation).
+    - ADL-Governance: ACTIVE, latest Sweep-559 random on RepoRover- (ARCHIVED), passes up to 556.
+    - ADL-Nexus: RESEARCH v0.3.2, layers defined, local CLI present, live adapters UNSUPPORTED, claim ≤1.
+    - aegis-repo-graph: RESEARCH, locked 72-repo snapshot + observations, not live crawler.
+    - adl-capability-matrix: RESEARCH, locked 67-row matrix + 15 unassigned gap from 2026-10-01, no caps invented.
+    - Claim discipline and lifecycle classifications preserved across core repos.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-27-560.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - portfolio reconstruction continuity under Basilisk loop
+
+VERIFICATION:
+  tests_run:
+    - github___search_repositories confirmed total_count 83
+    - get_file_contents on core READMEs and latest pass
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census remains 83 public repositories.
+    - Core governance, nexus, graph, and matrix repos are present and claim-capped at ≤1 for RESEARCH items.
+    - Pass history and sweep system are the persistent Nexus state mechanism.
+  failures: []
+  decisions:
+    - REUSE existing governance pass system; no new repository; no claim elevation; no matrix expansion.
+
+REMAINING:
+  incomplete:
+    - Full capability/dependency/authority graphs.
+    - Assignment of clusters/caps to 15 unassigned names (operator or audited).
+    - Live adapter verification for Nexus.
+  blockers:
+    - Operator-only for archives, releases, claim raises.
+  new_gaps:
+    - none this pass
+
+NEXT:
+  objective_id: AUDIT-ONE-UNASSIGNED-OR-PRIORITY
+  action: Select one name from the 15 unassigned gap or a high-priority RESEARCH repo; perform bounded tree/function audit; record findings in matrix or graph without inventing claim_cap; persist next pass.
+  reason: Closes one incremental gap while preserving invariants and claim discipline.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count 83
+    - Parent PASS-2026-10-27-556
+    - README contents of ADL-Nexus, ADL-Governance, aegis-repo-graph, adl-capability-matrix
