@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-10-27-543
+  parent_pass: PASS-2026-10-27-540
+
+STATE:
+  global_status: PARTIAL_GOVERNED
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 13
+  gaps_remaining: 15
+
+OBJECTIVE:
+  id: GAP-OPEN-ENERGY-FUSION-AUDIT
+  description: Perform bounded function/surface audit of Open-Energy-Fusion (unassigned gap name); confirm RESEARCH / Claim ≤1 status; document tested controllers without inventing caps or elevating claims.
+  reason_selected: Highest-value next unassigned gap per prior NEXT (GAP-MATRIX-EXPANSION-PREP); advances verification boundary on census residual without matrix expansion or claim invention.
+
+DISCOVERY:
+  findings:
+    - Repo is INVESTIGATION / simulation-only (CLAIM_CAP.md): thermodynamics invariant locked; no hardware, no energy creation; several claims falsified or rejected in sim.
+    - Tree: src/energyos/{controller.py, simulate.py, graph.py, report.py}, tests/test_controller.py (executes stirling_electrical_efficiency, campaign, run on scenarios), sim/results, docs/, CI workflow present.
+    - Controllers: BaselineController and NetBenefitController with decide methods; efficiency bounded 0-0.45; tests assert no energy creation, unmet heat not increased, low-grade Stirling not dominating.
+    - No CLAIM_STATUS.md at root; docs/CLAIM_CAP.md and GOVERNANCE.md present. Consistent with RESEARCH classification.
+    - Parent chain from Sweep-540 scale-functional-I confirmation.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-27-543.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Open-Energy-Fusion RESEARCH confirmation (Claim ≤1 locked; function surface audited via existing tests)
+
+VERIFICATION:
+  tests_run:
+    - Existing tests/test_controller.py structure and assertions inspected (efficiency bounds, energy conservation, scenario campaign); not re-executed remotely this pass
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Open-Energy-Fusion remains INVESTIGATION/RESEARCH; measured-benefit controller can reduce unmet heat in some sims vs baseline but does not dominate or create energy; low-grade Stirling rejected under model efficiencies; no hardware or revolutionary claims.
+  failures:
+    - none this pass
+  decisions:
+    - Do not assign cluster/cap in matrix (remains locked at 67); name stays in unassigned gap.
+    - No promotion to ACTIVE.
+
+REMAINING:
+  incomplete:
+    - Full 83-row matrix expansion
+    - Operator archive flags
+    - Remaining unassigned names (e.g. ADL-Nexus, Sovereign-Epistemic-Reality-Engine)
+  blockers:
+    - Operator-gated residuals
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-MATRIX-EXPANSION-PREP
+  action: Select next unassigned gap name (e.g. ADL-Nexus or Sovereign-Epistemic-Reality-Engine) for bounded surface/function audit without inventing caps
+  reason: Continues progressive gap closure on census vs locked inventory
+  prerequisites:
+    - No claim elevation without evidence
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - Recursive tree of Open-Energy-Fusion (37 entries)
+    - docs/CLAIM_CAP.md content
+    - src/energyos/controller.py and tests/test_controller.py inspection
