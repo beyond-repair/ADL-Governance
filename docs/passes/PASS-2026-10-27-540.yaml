@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-27-540
+  parent_pass: PASS-2026-10-27-539
+
+STATE:
+  global_status: PARTIAL_GOVERNED
+  repositories_scanned: 83
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 12
+  gaps_remaining: 16
+
+OBJECTIVE:
+  id: GAP-SCALE-FUNCTIONAL-I-CONFIRM
+  description: Confirm RESEARCH / Claim ≤1 status for scale-functional-I; no cap assignment or elevation; document lattice computation and rejected 0.08 comparison.
+  reason_selected: Highest-value bounded slice among unassigned gap names with existing function audit; advances verification boundary without inventing matrix caps.
+
+DISCOVERY:
+  findings:
+    - Tree contains scale_functional.py, tests/test_scale_functional.py, tests/test_cli.py, CLAIM_STATUS.md declaring Claim 1, experimental_validation false.
+    - Parent linked to -ware-constant-derivation.
+    - No CI workflow observed in root listing; packaging present via pyproject.toml.
+    - Consistent with prior Sweep-210 function audit in capability matrix.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-27-540.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - scale-functional-I RESEARCH confirmation (Claim ≤1 locked)
+
+VERIFICATION:
+  tests_run:
+    - structure inspection only; prior local unittest referenced in matrix; not re-executed this pass
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - scale-functional-I remains RESEARCH; I = Perimeter/sqrt(Area) computed on dumbbells; beta_I has no zero; 0.08 not reached; no thrust or energy extraction claimed.
+  failures:
+    - none this pass
+  decisions:
+    - Do not assign cluster/cap; matrix remains locked at 67.
+    - No promotion to ACTIVE.
+
+REMAINING:
+  incomplete:
+    - Full 83-row matrix expansion
+    - Operator archive flags
+  blockers:
+    - Operator-gated residuals
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-MATRIX-EXPANSION-PREP
+  action: Select next unassigned gap name for function audit or confirmation without inventing caps
+  reason: Continues progressive gap closure on census vs locked inventory
+  prerequisites:
+    - No claim elevation without evidence
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Tree listing of scale-functional-I
+    - CLAIM_STATUS.md content
+    - Existing function_audit in adl-capability-matrix
