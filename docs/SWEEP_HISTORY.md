@@ -1,3 +1,21 @@
+## Sweep-572: Bounded tree audit — mend 2026-10-27
+
+- Timestamp: 2026-10-27T22:06Z EDT / 2026-10-28T02:06Z UTC.
+- Scope: Follow-on from PASS-2026-10-27-563 NEXT. Selected unassigned: mend.
+- SELECT: mend (from census_gap missing_from_locked_matrix).
+- DISCOVER: Large tree including .grok/ skills/references for game export; README.md details single-player browser RPG (React/Vite/TanStack), local npm run, claim ≤1, not shipped. Sibling to private mendthegame.
+- AUDIT: UNASSIGNED status preserved. Implementation surface present (exported game scaffold with tests mentioned). No claim elevation. Claim discipline holds.
+- CLASSIFY: RESEARCH / Claim ≤1 confirmed via README. No matrix assignment.
+- PLAN: Audit record only. No code mutations. History preserved.
+- IMPLEMENT: Governance pass YAML only.
+- TEST → CI: Remote tree + README read. No local execution.
+- DOCUMENT: This file + new PASS-2026-10-27-564.yaml.
+- GOVERN: No unsupported claims. No deletions. No cap invention.
+- Residual: Full function verification pending; remaining unassigned names; portfolio graphs incomplete.
+- Next: Continue unassigned audits (e.g. finite-gasket-spectral-derivatives).
+
+## Prior Sweep-571 content preserved below.
+
 ## Sweep-571: Randomized Portfolio Completion Sweep — sovereign-clean-room 2026-10-27
 
 - Timestamp: 2026-10-27T22:00Z EDT / 2026-10-28T02:00Z UTC approx.
