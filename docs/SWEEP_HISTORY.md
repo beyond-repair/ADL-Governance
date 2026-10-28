@@ -1,3 +1,22 @@
+## Sweep-585: Master Directive v3.0 — Census Confirmation & Core CI Re-Verification 2026-10-28
+
+- Timestamp: 2026-10-28T18:11Z UTC / 2026-10-28T14:11Z EDT.
+- Scope: Full Phase 1 confirmation (84-repo census via GitHub search). Phase 3 re-verification of core ACTIVE set CI. Partial Phase 2/9 classification sampling. Residual recording for incomplete phases.
+- SELECT: Portfolio census + core ACTIVE set (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce).
+- DISCOVER: total_count=84, incomplete_results=false. Matches Sweep-583. No new repos or deletions observed.
+- AUDIT: Core CI recent runs green: forge-aegis 37258127100 success, sovereign-clean-room 37215829476 success, BlockSwarm 40441811261 success, Digital_Double_virtual_workforce 39035783949 success. Claim caps intact from live data. No unsupported claims elevated.
+- CLASSIFY: Core four ACTIVE confirmed. Partial sampling: ACTIVE/Governance (ADL-Governance, ADL-Nexus), RESEARCH (LegionOS, RealityOS, SEEM variants, physics repos), SUPERSEDED (Auto_Legion, DDVW_4.2, etc.), ARCHIVED candidates flagged. Full per-repo residual.
+- PLAN: Document confirmation. No code mutations. Record residuals. Stop after governed sweep.
+- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md). Idempotent. No product code changes. History preserved.
+- TEST → CI: Recent green confirmed for core; not re-executed locally this cycle.
+- DOCUMENT: Updated governance registry files.
+- GOVERN: No unsupported claims. No critical unresolved security on core. No deletions/rewrites.
+- RELEASE/ARCHIVE: No new tags. Archive flags elective residual. Releases empty residual for core.
+- RE-AUDIT: Live GitHub data matches prior claim-capped status for verified items.
+- Residual: Full Phases 4-10 incomplete for non-core; detailed capability matrix for all 84 open; archive flags elective. Exit criteria not fully met. Stop after governed sweep. Do not loop.
+
+## Prior Sweep-584 content preserved below.
+
 ## Sweep-584: Randomized Portfolio Completion Sweep — Digital_Double_Virtual_Workforce_4.2 2026-10-28
 
 - Timestamp: 2026-10-28T18:01Z UTC / 2026-10-28T14:01Z EDT.
@@ -17,23 +36,4 @@
 
 ## Prior Sweep-583 content preserved below.
 
-## Sweep-583: Master Directive v3.0 — Portfolio Census & Core Live Verification 2026-10-28
-
-- Timestamp: 2026-10-28T17:13Z UTC / 2026-10-28T13:13Z EDT.
-- Scope: Full Phase 1 discovery (84-repo census via GitHub search). Phase 3 live verification of core ACTIVE set (CI runs, claim caps from live READMEs).
-- SELECT: Portfolio census + core ACTIVE set (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce).
-- DISCOVER: total_count=84, incomplete_results=false. Core READMEs confirm claim-capped ACTIVE status. Recent CI: forge-aegis success (37258127100), sovereign-clean-room success (37215829476), BlockSwarm success (40441811261), Digital_Double success (39035783949).
-- AUDIT: No unsupported product claims in core. CI green on recent completed runs. No new critical failures observed. Claim caps intact.
-- CLASSIFY: Core four ACTIVE. Sampling: many RESEARCH (Claim ≤0/≤1), some SUPERSEDED, ARCHIVED candidates flagged. Full per-repo classification residual.
-- PLAN: Document census and verification. No code mutations. Record residuals.
-- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md). Idempotent. No product code changes. History preserved.
-- TEST → CI: Recent green confirmed for core; not re-executed locally this cycle.
-- DOCUMENT: Updated governance registry files.
-- GOVERN: No unsupported claims. No critical unresolved security on core. No deletions/rewrites.
-- RELEASE/ARCHIVE: No new tags. Archive flags elective residual.
-- RE-AUDIT: Live GitHub data matches claim-capped status for verified items.
-- Residual: Full Phases 4-10 incomplete for non-core; detailed capability matrix for all 84 open; archive flags elective. Exit criteria not fully met. Stop after governed sweep. Do not loop.
-
-## Prior Sweep-582 content preserved below.
-
-[Full prior content from Sweep-582 and earlier preserved in repository history.]
+[Full prior content from Sweep-583 and earlier preserved in repository history.]
