@@ -1,3 +1,22 @@
+## Sweep-580: Master Directive v3.0 — Portfolio Census & Core Verification 2026-10-28
+
+- Timestamp: 2026-10-28T16:15Z UTC / 2026-10-28T12:15Z EDT.
+- Scope: Full Phase 1 discovery (84-repo census via GitHub search). Phase 3 reconfirmation of core ACTIVE claim caps from live READMEs. High-level classification sampling from README badges.
+- SELECT: Portfolio census + core ACTIVE set.
+- DISCOVER: total_count=84, incomplete_results=false. Core READMEs confirm claim-capped ACTIVE status (forge-aegis RUNNABLE SKETCH; sovereign-clean-room offline substrate with decorative bars not measurements; BlockSwarm software; Digital_Double software).
+- AUDIT: No unsupported product claims in core. Prior CI green residual. No new critical failures observed.
+- CLASSIFY: Core four ACTIVE. Sampling: many RESEARCH (Claim ≤0/≤1), some SUPERSEDED, ARCHIVED candidates flagged. Full per-repo classification residual.
+- PLAN: Document census and verification. No code mutations. Record residuals.
+- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md). Idempotent. No product code changes. History preserved.
+- TEST → CI: Prior green confirmed in history for core; not re-executed this cycle.
+- DOCUMENT: Updated governance registry files.
+- GOVERN: No unsupported claims. No critical unresolved security on core. No deletions/rewrites.
+- RELEASE/ARCHIVE: No new tags. Archive flags elective residual.
+- RE-AUDIT: Live GitHub data matches claim-capped status for verified items.
+- Residual: Full Phases 4-10 incomplete for non-core; detailed capability matrix for all 84 open; archive flags elective. Exit criteria not fully met. Stop after governed sweep. Do not loop.
+
+## Prior Sweep-579 content preserved below.
+
 ## Sweep-579: Randomized Portfolio Completion Sweep — SovereignOS 2026-10-28
 
 - Timestamp: 2026-10-28T16:05Z UTC / 2026-10-28T12:05Z EDT.
