@@ -1,3 +1,22 @@
+## Sweep-583: Master Directive v3.0 — Portfolio Census & Core Live Verification 2026-10-28
+
+- Timestamp: 2026-10-28T17:13Z UTC / 2026-10-28T13:13Z EDT.
+- Scope: Full Phase 1 discovery (84-repo census via GitHub search). Phase 3 live verification of core ACTIVE set (CI runs, claim caps from live READMEs).
+- SELECT: Portfolio census + core ACTIVE set (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce).
+- DISCOVER: total_count=84, incomplete_results=false. Core READMEs confirm claim-capped ACTIVE status. Recent CI: forge-aegis success (37258127100), sovereign-clean-room success (37215829476), BlockSwarm success (40441811261), Digital_Double success (39035783949).
+- AUDIT: No unsupported product claims in core. CI green on recent completed runs. No new critical failures observed. Claim caps intact.
+- CLASSIFY: Core four ACTIVE. Sampling: many RESEARCH (Claim ≤0/≤1), some SUPERSEDED, ARCHIVED candidates flagged. Full per-repo classification residual.
+- PLAN: Document census and verification. No code mutations. Record residuals.
+- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md). Idempotent. No product code changes. History preserved.
+- TEST → CI: Recent green confirmed for core; not re-executed locally this cycle.
+- DOCUMENT: Updated governance registry files.
+- GOVERN: No unsupported claims. No critical unresolved security on core. No deletions/rewrites.
+- RELEASE/ARCHIVE: No new tags. Archive flags elective residual.
+- RE-AUDIT: Live GitHub data matches claim-capped status for verified items.
+- Residual: Full Phases 4-10 incomplete for non-core; detailed capability matrix for all 84 open; archive flags elective. Exit criteria not fully met. Stop after governed sweep. Do not loop.
+
+## Prior Sweep-582 content preserved below.
+
 ## Sweep-582: Bounded Audit — coherence-dynamics Research Foundation 2026-10-28
 
 - Timestamp: 2026-10-28T17:05Z UTC / 2026-10-28T13:05Z EDT.
