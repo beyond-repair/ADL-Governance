@@ -1,3 +1,22 @@
+## Sweep-590 / PASS-2026-10-28-590: Audit LegionOS tree and claim discipline 2026-10-28
+
+- Timestamp: 2026-10-28T20:06Z UTC / 2026-10-28T16:06Z EDT.
+- Scope: Bounded tree/function-surface audit of RESEARCH repo LegionOS.
+- SELECT: LegionOS (recently updated 2026-10-28T00:01:51Z; per prior NEXT).
+- DISCOVER: Recursive tree 15 entries, HEAD 9f3fcec53fe8d1bc1f4d199657d65fac14c4b724. Docs-only: architecture.md, interfaces.md, open-questions.md, security.md; tests/test_docs.py; CI docs presence.
+- AUDIT: README confirms RESEARCH, Claim ≤1/0 (Idea), unvalidated concept sketch. No holarchy layers implemented (Founder/Builder/Growth/Operations/Agent Factory absent). No Knowledge Graph, sandbox, billing. Explicit not a deployed OS/company/revenue system. Related OS-family sketches noted. CI success on docs presence only.
+- CLASSIFY: RESEARCH. Claim discipline holds; no promotion.
+- PLAN: Document audit. No code mutations in LegionOS. Persist pass.
+- IMPLEMENT: Governance docs only (this pass YAML, HEADINGS, this file). Idempotent. No product code changes. History preserved.
+- TEST → CI: Remote tree + README confirmed. No local execution.
+- DOCUMENT: Updated governance registry files.
+- GOVERN: No unsupported claims. No critical unresolved security. No deletions/rewrites.
+- RELEASE/ARCHIVE: No new tags. No archive action.
+- RE-AUDIT: Live tree and README match documented Claim-≤1 RESEARCH status. No drift.
+- Residual: Full Phases 4-10 incomplete for non-core. Graph lock expansion operator-only. Exit criteria not fully met portfolio-wide.
+
+## Prior Sweep-589 content preserved below.
+
 ## Sweep-589 / PASS-2026-10-28-589: Randomized Selection — Agent-Snake 2026-10-28
 
 - Timestamp: 2026-10-28T20:00Z UTC / 2026-10-28T16:00Z EDT.
