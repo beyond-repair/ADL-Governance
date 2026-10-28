@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-28-587
+  parent_pass: PASS-2026-10-28-582
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 84
+  repositories_changed: 1
+  capabilities_known: 76
+  capabilities_verified: 13
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: AUDIT-WARE-CONSTANT-DERIVATION
+  description: Perform bounded tree/function-surface audit of RESEARCH repo -ware-constant-derivation; document mathematical derivation sketch structure, claim discipline (0.08 not derived), verifiers, and proofs without inventing physical claims or promotion; persist this pass.
+  reason_selected: Highest-value next slice per prior NEXT: recently updated (2026-10-28T09:46:05Z), substantial structured research scaffold (multiple PROOF_*.md, verify_*.py, tests, CI, CLAIM_STATUS.md) with explicit claim discipline and falsification records; continues incremental closure of portfolio knowledge under claim caps.
+
+DISCOVERY:
+  findings:
+    - -ware-constant-derivation HEAD tree_sha 5946329976a8160f27689f93aa0de1955b1921e2; 74 tree entries, recursive not truncated.
+    - Structure: numerous PROOF_*.md (5R to 15A series covering spectral geometry, action principles, entropy, vacuum, etc.), verify_*.py scripts for identity checks, run_derivation_checks.py, main.py, tests/test_verifiers.py, CLAIM_STATUS.md, STATUS_LOCK_2026-10-01.md, FALSIFICATION_2026-10-01_PINCH.md, QUARANTINE_HISTORICAL_CLAIMS.md, pyproject.toml, requirements.txt, .github/workflows/checks.yml.
+    - README: Status RUNNABLE SKETCH — NOT A COMPLETE PRODUCT (Claim-0). Explicit: this tree does not derive W ≈ 0.08. GitHub description tying W to Coherence Drive thrust is not a proof. Verifiers check identities, print numbers including misses. experimental_validation = false, thrust_validated = false, energy_extraction_validated = false. Locked vs open table: constant-W action DERIVED, 0.08 OPEN/NOT DERIVED, pinch families REJECTED, etc.
+    - Quick start: venv + pip install -r requirements.txt + pip install -e . + ware-constant-checks or python main.py + pytest. CI runs checks. Exit 0 is not a measurement of 0.08.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-28-587.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - tree presence and claim-discipline audit for -ware-constant-derivation (research derivation sketch observed)
+
+VERIFICATION:
+  tests_run:
+    - github___get_repository_tree (recursive, 74 entries, not truncated)
+    - github___get_file_contents on README.md confirming Claim-0, 0.08 not derived, evidence of falsification, and no a priori physical constants as targets
+    - no local pytest (remote audit only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - -ware-constant-derivation has non-empty, structured research implementation surface consistent with claim-capped mathematical derivation sketch.
+    - Claim discipline holds: 0.08 not derived, prior falsifications recorded, open items listed, no unsupported product/thrust/energy claims.
+    - Portfolio census total_count=84 confirmed from prior.
+  failures: []
+  decisions:
+    - EXTEND knowledge via audit record only; no claim elevation; no new repo; reuse governance pass system. Classification RESEARCH.
+
+REMAINING:
+  incomplete:
+    - Full local verification of -ware-constant-derivation tests (pytest and run_derivation_checks).
+    - Assignment of remaining unassigned names and expansion of locked graphs (aegis-repo-graph snapshot).
+    - Portfolio Phases 4-10 for non-core.
+  blockers:
+    - Operator for graph lock expansion or claim_cap assignment.
+  new_gaps:
+    - none this pass
+
+NEXT:
+  objective_id: AUDIT-NEXT-NEW-OR-UNASSIGNED
+  action: Select next recently updated or unassigned name (e.g. LegionOS or -Entanglement-and-Emergence) for similar bounded tree audit; persist pass without inventing caps or physical claims.
+  reason: Continues incremental closure of portfolio knowledge gaps under claim discipline.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Full recursive tree of -ware-constant-derivation (74 entries)
+    - README.md content confirming research sketch status, Claim-0, and 0.08 not derived
+    - Parent PASS-2026-10-28-582
+    - Live GitHub data
