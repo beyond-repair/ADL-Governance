@@ -1,5 +1,30 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-28 (Sweep-576 / Randomized Portfolio Completion Sweep — genieGPT)
+**Project / Version:** ADL Portfolio Governance / Sweep-576
+**Objective:** Randomly selected repository (genieGPT) audit against termination conditions under randomized completion sweep.
+
+## Sweep-576 selected repo: genieGPT
+
+| Item | State |
+|------|--------|
+| Class | ARCHIVED (Claim-0 historical empty stub) |
+| Termination | MET for this cycle (README/ARCHIVED.md/CLAIM_STATUS.md/GOVERNANCE.md document ARCHIVED, Claim-0, no code/CI, unsupported claims explicit, history preserved) |
+| HEAD | a420f140799ddccf00dc5749480b23af0f0b14fb |
+| Contents | README.md; ARCHIVED.md; GOVERNANCE.md; CLAIM_STATUS.md; SECURITY.md; LICENSE |
+| CI | None (docs-only historical stub) |
+| Tags/Releases | empty |
+| Successor | None required (no unique capability; canonical agent work in sovereign-clean-room / ADL-SEEM) |
+| Claims | Explicit Claim-0; all product readings UNSUPPORTED |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved.
+
+**Target state:** Maintain ARCHIVED. Operator action pending for GitHub archive flag (`gh repo archive beyond-repair/genieGPT --yes`). Termination conditions met for cycle as historical archived stub.
+
+## Prior Sweep-575 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-28 (Sweep-575 / Randomized Portfolio Completion Sweep — CFT-v3.1)
 **Project / Version:** ADL Portfolio Governance / Sweep-575
 **Objective:** Randomly selected repository (CFT-v3.1) audit against termination conditions under randomized completion sweep.
@@ -23,33 +48,4 @@
 
 ## Prior Sweep-574 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-10-28 (Sweep-574 / Master Directive v3.0 Portfolio Completion Sweep)
-**Project / Version:** ADL Portfolio Governance / Sweep-574
-**Objective:** One governed sweep under Master Directive v3.0. Confirm portfolio discovery (83 repos), mandatory live verification of core pillars, record residuals, update governance docs, stop. No infinite cycle.
-
-## Sweep-574: Master Directive Live Verification
-
-Portfolio size: 83 repositories confirmed (search total_count=83, incomplete_results=false).
-
-### Mandatory Live Verification (this cycle)
-
-| Repository | Classification | CI State (latest) | Releases/Tags | Notes |
-|------------|----------------|-------------------|---------------|-------|
-| forge-aegis | ACTIVE (claim-capped software sketch) | Success (run 37258127100 on HEAD e7188d52, 2026-10-05) | Empty | Workflows present. Docs/tests present. Not full host-integrity product. Stable since prior. |
-| sovereign-clean-room | ACTIVE with findings | Recent PR successes post float-precision fixes (2026-10-04); mixed prior | Empty | Python tests workflow. VSA completeness UNVERIFIED. No new failures on main. |
-| BlockSwarm | ACTIVE | Success (run 40441811261 on HEAD 026c3631, 2026-10-27) | Empty | Foundry workflow green. Deps pinned. Stable. |
-| Digital_Double_virtual_workforce | ACTIVE with findings | Success (run 39035783949 on HEAD ad0c3bd7, 2026-10-17) | Empty | CI green. Dependabot residual on dev deps. Security advisories empty. |
-
-- ADL-Governance: ACTIVE, governing source. Docs updated this cycle.
-- Full detailed inventory for non-core, full classification matrix, Phases 4-10 (capability inventory, dependency graph, gap analysis, redundancy detection, technology synergy, canonical architecture review, code review readiness): remain OPEN / UNVERIFIED / residual.
-- No unsupported claims. No deletions. History preserved. No destructive actions.
-
-**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations.
-
-**Exit criteria:** Not fully satisfied (residuals recorded: full phases 4-10, non-core inventory, VSA UNVERIFIED, DDVW Dependabot, empty releases on pillars). Stop after this governed sweep. Do not enter autonomous infinite review cycle.
-
-## Prior Sweep-573 content preserved below.
-
-[Full prior content from Sweep-573 and earlier preserved in repository history.]
+[Full prior content from Sweep-574 and earlier preserved in repository history.]
