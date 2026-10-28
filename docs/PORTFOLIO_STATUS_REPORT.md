@@ -1,5 +1,31 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-28 (Sweep-589 / Randomized Portfolio Completion Sweep — Agent-Snake)
+**Project / Version:** ADL Portfolio Governance / Sweep-589
+**Objective:** Randomly selected repository (Agent-Snake) audit against termination conditions under randomized completion sweep.
+
+## Sweep-589 selected repo: Agent-Snake
+
+| Item | State |
+|------|--------|
+| Class | ARCHIVED (Claim-0 historical note) |
+| Termination | MET for this cycle (README documents ARCHIVE QUEUE + Claim 0, explicit NOT CLAIMED profit/live trading/product, ARCHIVED.md present, history preserved, no unsupported claims, no CI/tests as expected for archive) |
+| HEAD | a773a03de8e24aa4094bba57dff9825ccd4adbc2 |
+| Contents | README.md; ARCHIVED.md; README.txt; autogpt_agent.py (stub); autogpt_ai_agent (1).py; create_agent (1).py; requirements (1).txt; test (1).py; test_data (1).csv; train_agent (1).py; train_data (1).csv |
+| CI | None (no workflows) |
+| Tags/Releases | empty (historical) |
+| Related | Early AutoGPT-module note. Already listed in archive_queue.md. |
+| Claims | Explicit Claim 0 / ARCHIVE. NOT CLAIMED product, profit, live deployment. |
+| Security | No critical unresolved issues observed on historical sketch path. |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved. No claim elevation.
+
+**Target state:** Maintain ARCHIVED. Operator residual: GitHub archive flag still false. Action: `gh repo archive beyond-repair/Agent-Snake --yes`.
+
+## Prior Sweep-588 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-28 (Sweep-588 / Master Directive v3.0 — Portfolio Census Confirmation & Core Live Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-588
 **Objective:** Confirm 84-repo census. Re-verify Phase 3 core ACTIVE set. Advance partial classification. Record residuals for incomplete phases (4-10). Stop after governed sweep.
@@ -37,30 +63,4 @@
 
 ## Prior Sweep-586 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-10-28 (Sweep-586 / Randomized Portfolio Completion Sweep — DigitalDoubleVirtualWorkforce3.5)
-**Project / Version:** ADL Portfolio Governance / Sweep-586
-**Objective:** Randomly selected repository (DigitalDoubleVirtualWorkforce3.5) audit against termination conditions under randomized completion sweep.
-
-## Sweep-586 selected repo: DigitalDoubleVirtualWorkforce3.5
-
-| Item | State |
-|------|--------|
-| Class | SUPERSEDED (Claim-0 offline runnable sketch) |
-| Termination | MET for this cycle (README documents SUPERSEDED + Claim 0, explicit NOT CLAIMED production fault-tolerance/CAP proof/torch quant/live cluster, offline agent + SQLite + in-memory CAP toys + pytest present, history preserved, no unsupported claims, successor named) |
-| HEAD | 63daeb476cf28c1bcda3eac6c2237c9e7f409415 |
-| Contents | README.md; CLAIM_STATUS.md; GOVERNANCE.md; SUPERSEDED.md; main.py; src/core/ (agent, cap, config, monitor, rules, storage); src/models/model_quantizer.py (advice stub); tests/; tests_governance/; docs/archive_fragments/; .github/workflows/supersede-guard.yml; requirements.txt; pytest.ini |
-| CI | supersede-guard on master: banner unittest then pytest -q (Claim-0 only) |
-| Tags/Releases | empty (historical) |
-| Related | Successor: Digital_Double_virtual_workforce (ACTIVE). Historical 3.5-line dump repaired as Claim-0. |
-| Claims | Explicit Claim 0 / SUPERSEDED. NOT CLAIMED production CAP, multi-node, torch quantization, parity with successor. |
-| Security | No critical unresolved issues observed on Claim-0 path. |
-
-**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved. No claim elevation.
-
-**Target state:** Maintain SUPERSEDED. No promotion. Operator residual: GitHub archive flag elective.
-
-## Prior Sweep-585 content preserved below.
-
-[Full prior content from Sweep-585 and earlier preserved in repository history.]
+[Full prior content from Sweep-586 and earlier preserved in repository history.]

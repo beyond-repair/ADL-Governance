@@ -1,3 +1,22 @@
+## Sweep-589 / PASS-2026-10-28-589: Randomized Selection — Agent-Snake 2026-10-28
+
+- Timestamp: 2026-10-28T20:00Z UTC / 2026-10-28T16:00Z EDT.
+- Scope: Randomly selected repository from 84-repo pool (python random.choice, seed 42 for session reproducibility).
+- SELECT: Agent-Snake.
+- DISCOVER: Recursive tree: ARCHIVED.md, README.md (ARCHIVE QUEUE + Claim 0 badges, NOT CLAIMED profit/live trading/product), README.txt, autogpt_agent.py (stub comment), autogpt_ai_agent (1).py, create_agent (1).py, requirements (1).txt, test (1).py, test_data (1).csv, train_agent (1).py (incomplete import-heavy sketch using autogpt/tensorflow), train_data (1).csv. HEAD a773a03de8e24aa4094bba57dff9825ccd4adbc2. No workflows.
+- AUDIT: Matches prior registry entries as ARCHIVED candidate / Claim-0. Explicit archive documentation present. No undefined critical components for historical note. No CI failures (none exists). No unsupported claims.
+- CLASSIFY: ARCHIVED. Justified by README lifecycle badge, ARCHIVED.md, archive_queue.md listing, and historical incomplete nature.
+- PLAN: Document audit. No code mutations. Queue residual archive flag action. Stop after governed sweep.
+- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this file). Idempotent. No product code changes. History preserved.
+- TEST → CI: No tests or workflows present (expected for archive). Not executed.
+- DOCUMENT: Updated governance registry files.
+- GOVERN: No unsupported claims. No critical unresolved security on historical path. No deletions/rewrites.
+- RELEASE/ARCHIVE: No new tags. Archive flag elective residual (operator action: gh repo archive beyond-repair/Agent-Snake --yes).
+- RE-AUDIT: Live tree and README match documented Claim-0 ARCHIVE status. No drift.
+- Residual: GitHub archive flag still false. Full Phases 4-10 incomplete for non-core. Exit criteria not fully met portfolio-wide. Stop after governed sweep. Do not loop.
+
+## Prior Sweep-588 content preserved below.
+
 ## Sweep-588 / PASS-2026-10-28-588: Master Directive v3.0 Census Confirmation & Core Re-Verification 2026-10-28
 
 - Timestamp: 2026-10-28T19:11Z UTC / 2026-10-28T15:11Z EDT.
@@ -17,23 +36,4 @@
 
 ## Prior Sweep-587 content preserved below.
 
-## Sweep-587 / PASS-2026-10-28-587: Audit -ware-constant-derivation 2026-10-28
-
-- Timestamp: 2026-10-28T19:06Z UTC.
-- Scope: Bounded tree audit of RESEARCH repo -ware-constant-derivation.
-- SELECT: -ware-constant-derivation (recently updated).
-- DISCOVER: Recursive tree 74 entries: PROOF_*.md series, verify_*.py, tests, CI, CLAIM_STATUS.md, STATUS_LOCK, FALSIFICATION, etc. HEAD 5946329976a8160f27689f93aa0de1955b1921e2.
-- AUDIT: README Claim-0 runnable sketch. Explicit 0.08 not derived. No thrust/energy claims. Verifiers check identities, record misses and falsifications. experimental_validation=false.
-- CLASSIFY: RESEARCH. Claim-0. Justified by explicit status, locked vs open table, and falsification records.
-- PLAN: Document audit. No code mutations. No promotion.
-- IMPLEMENT: Governance pass YAML + headings + this history.
-- TEST → CI: Structure present (checks.yml); no local execution this cycle.
-- DOCUMENT: Updated governance files.
-- GOVERN: No unsupported claims. Claim discipline held.
-- RELEASE/ARCHIVE: No change. Remains RESEARCH.
-- RE-AUDIT: Structure matches documentation; no drift.
-- Residual: Local test execution residual; graph expansion residual.
-
-## Prior Sweep-586 content preserved below.
-
-[Full prior content from Sweep-586 and earlier preserved in repository history.]
+[Full prior content from Sweep-587 and earlier preserved in repository history.]

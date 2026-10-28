@@ -1,5 +1,23 @@
 # Operator Queue
 
+## Sweep-589: Agent-Snake Residuals
+
+No new destructive proposals. No history rewrites, no deletions, no code mutations.
+
+Residuals (this cycle):
+- Agent-Snake (ARCHIVED / Claim-0): Historical AutoGPT-module note confirmed. README + ARCHIVED.md present. No CI/tests. Archive flag still false. Operator action: `gh repo archive beyond-repair/Agent-Snake --yes`. Already in archive_queue.md.
+- Full portfolio (84 repos): Phases 4-10 incomplete for non-core (capability inventory, dependency graph, gap analysis, redundancy detection, synergy analysis, architecture review, code review readiness). Detailed status matrix open. Archive flags elective.
+- Core ACTIVE (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce): Claim caps confirmed prior. CI green residual. Releases empty residual. sovereign-clean-room VSA completeness UNVERIFIED. Digital_Double Dependabot on dev deps residual.
+- genieGPT (ARCHIVED / Claim-0): Archive flag residual.
+- OS-family (SovereignOS, LegionOS, RealityOS, Sovereign-OS): RESEARCH / Claim-0 sketches. Operator residual: consider consolidation per os-family-constitution-map.
+- Digital_Double_Virtual_Workforce_4.2 / DigitalDoubleVirtualWorkforce3.5 (SUPERSEDED): Archive flag elective residual.
+
+Stop after governed sweep. Do not loop. No infinite review cycle. Next random selection or targeted phase on subsequent cycles.
+
+## Prior Sweep-588 content preserved below.
+
+# Operator Queue
+
 ## Sweep-588: Master Directive v3.0 Census Confirmation Residuals
 
 No new destructive proposals. No history rewrites, no deletions, no code mutations.
@@ -15,20 +33,4 @@ Stop after governed sweep. Do not loop. No infinite review cycle. Next targeted 
 
 ## Prior Sweep-586 content preserved below.
 
-# Operator Queue
-
-## Sweep-586: DigitalDoubleVirtualWorkforce3.5 Residuals
-
-No new destructive proposals. No history rewrites, no deletions, no code mutations.
-
-Residuals (this cycle):
-- DigitalDoubleVirtualWorkforce3.5 (SUPERSEDED / Claim-0): Offline runnable sketch confirmed. Successor Digital_Double_virtual_workforce. Archive flag false (elective). Operator residual: consider `gh repo archive beyond-repair/DigitalDoubleVirtualWorkforce3.5 --yes` after confirming no unique assets remain.
-- Core ACTIVE (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce): Claim caps confirmed prior. CI green residual. Releases empty residual. sovereign-clean-room VSA completeness UNVERIFIED. Digital_Double Dependabot on dev deps residual.
-- Agent-Snake / genieGPT (ARCHIVED / Claim-0): GitHub archive flags still false. Operator actions: `gh repo archive beyond-repair/Agent-Snake --yes` and `gh repo archive beyond-repair/genieGPT --yes`. Already in archive_queue.md.
-- Full portfolio (84 repos): Phases 4-10 incomplete for non-core. Archive flags elective. Detailed status matrix open.
-
-Stop after governed sweep. Do not loop. No infinite review cycle. Next random selection or targeted phase on subsequent cycles.
-
-## Prior Sweep-585 content preserved below.
-
-[Full prior content from Sweep-585 and earlier preserved in repository history.]
+[Full prior content from Sweep-586 and earlier preserved in repository history.]
