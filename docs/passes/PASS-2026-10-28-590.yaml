@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-28-590
+  parent_pass: PASS-2026-10-28-587
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 84
+  repositories_changed: 1
+  capabilities_known: 77
+  capabilities_verified: 13
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: AUDIT-LEGIONOS
+  description: Perform bounded tree/function-surface audit of RESEARCH repo LegionOS; document architectural sketch structure, claim discipline (≤1, unvalidated concept), absence of implementation for holarchy layers, and docs-only CI without inventing product claims or promotion; persist this pass.
+  reason_selected: Highest-value next slice per prior NEXT: recently updated (2026-10-28T00:01:51Z), explicit RESEARCH claim-capped sketch with related OS-family notes; continues incremental closure of portfolio knowledge under claim caps.
+
+DISCOVERY:
+  findings:
+    - LegionOS HEAD tree_sha 9f3fcec53fe8d1bc1f4d199657d65fac14c4b724; 15 tree entries, recursive not truncated.
+    - Structure: README.md, RESEARCH.md, GOVERNANCE.md, SECURITY.md, LICENSE, docs/ (architecture.md, interfaces.md, open-questions.md, security.md), tests/test_docs.py, .github/workflows/ci.yml (docs presence).
+    - README: Classification RESEARCH, Claim level 0 (Idea) / ≤1, Maturity 1 (architectural notes only). Explicit: unvalidated concept sketch, not a deployed OS, company, or revenue system. No Founder/Builder/Growth/Operations/Agent Factory implementation, no Knowledge Graph, no sandbox, no billing. Directory layout in earlier drafts is target sketch, not present tree. Related to RealityOS, Sovereign-OS, SovereignOS, os-family-constitution-map. Auto_Legion SUPERSEDED toward sovereign-clean-room.
+    - Status table: Version 0.1.3, CI docs presence only (run 36847754196 success), no releases/tags, promotion to ACTIVE blocked until real modules + tests + evidenced claim.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-28-590.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - tree presence and claim-discipline audit for LegionOS (RESEARCH architectural sketch observed; no holarchy implementation)
+
+VERIFICATION:
+  tests_run:
+    - github___get_repository_tree (recursive, 15 entries, not truncated)
+    - github___get_file_contents on README.md confirming RESEARCH, Claim ≤1/0, no implementation of layers, docs-only status
+    - no local pytest (remote audit only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - LegionOS has minimal tree consistent with claim-capped unvalidated concept sketch; holarchy layers not implemented.
+    - Claim discipline holds: no autonomy, profitability, or product claims; explicit not-deployed.
+    - Portfolio census total_count=84 confirmed from prior.
+  failures: []
+  decisions:
+    - EXTEND knowledge via audit record only; no claim elevation; no new repo; reuse governance pass system. Classification RESEARCH.
+
+REMAINING:
+  incomplete:
+    - Full local verification of LegionOS docs tests (pytest).
+    - Assignment of remaining unassigned names and expansion of locked graphs (aegis-repo-graph snapshot).
+    - Portfolio Phases 4-10 for non-core.
+  blockers:
+    - Operator for graph lock expansion or claim_cap assignment.
+  new_gaps:
+    - none this pass
+
+NEXT:
+  objective_id: AUDIT-NEXT-NEW-OR-UNASSIGNED
+  action: Select next recently updated or unassigned name (e.g. -Entanglement-and-Emergence or optimization-limit-conjecture) for similar bounded tree audit; persist pass without inventing caps or physical claims.
+  reason: Continues incremental closure of portfolio knowledge gaps under claim discipline.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Full recursive tree of LegionOS (15 entries)
+    - README.md content confirming research sketch status and absence of implementation
+    - Parent PASS-2026-10-28-587
+    - Live GitHub data
