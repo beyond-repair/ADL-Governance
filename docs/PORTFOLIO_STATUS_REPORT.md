@@ -1,5 +1,30 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-28 (Sweep-579 / Randomized Portfolio Completion Sweep — SovereignOS)
+**Project / Version:** ADL Portfolio Governance / Sweep-579
+**Objective:** Randomly selected repository (SovereignOS) audit against termination conditions under randomized completion sweep.
+
+## Sweep-579 selected repo: SovereignOS
+
+| Item | State |
+|------|--------|
+| Class | RESEARCH (Claim-0 architectural notes / unvalidated concept sketch) |
+| Termination | MET for this cycle (README/RESEARCH.md document RESEARCH + Claim ≤0, claim-capped, no unsupported product claims, docs-existence tests + CI present, history preserved, no executable product surface) |
+| HEAD | 0a33d1672119422562611731f7fcbb7eb0de5796 |
+| Contents | README.md; RESEARCH.md; GOVERNANCE.md; SECURITY.md; LICENSE; docs/ (architecture, comparison, control-plane, human-kernel, interfaces, open-questions, security); placeholder READMEs under brains/, control_plane/, kernel/, knowledge_graph/; tests/test_docs.py; .github/workflows/ci.yml (docs-existence pytest) |
+| CI | Docs-existence only (pytest on required docs + claim-cap phrases) |
+| Tags/Releases | empty |
+| Successor | None (OS-family sketches: RealityOS, LegionOS, Sovereign-OS; consolidation operator decision; see os-family-constitution-map) |
+| Claims | Explicit Claim-0 / ≤1; NOT CLAIMED thrust, energy, AGI, production autonomy, uptime, refusal enforcement |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved.
+
+**Target state:** Maintain RESEARCH. Prefer family consolidation (operator) before any promotion consideration. Promotion to ACTIVE blocked until LIFECYCLE promote-to-ACTIVE conditions + evidenced claims.
+
+## Prior Sweep-578 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-28 (Sweep-578 / Master Directive v3.0 — Core ACTIVE Live Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-578
 **Objective:** Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce under Master Directive. Full 84-repo census confirmed. Exit criteria residual; stop after governed sweep.
@@ -21,29 +46,4 @@
 
 ## Prior Sweep-577 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-10-28 (Sweep-577 / Randomized Portfolio Completion Sweep — Agent-Snake)
-**Project / Version:** ADL Portfolio Governance / Sweep-577
-**Objective:** Randomly selected repository (Agent-Snake) audit against termination conditions under randomized completion sweep.
-
-## Sweep-577 selected repo: Agent-Snake
-
-| Item | State |
-|------|--------|
-| Class | ARCHIVED (Claim-0 historical experimental AutoGPT module) |
-| Termination | MET for this cycle (README/ARCHIVED.md document ARCHIVED, Claim-0, no unsupported claims, history preserved, no CI/tests required for historical stub) |
-| HEAD | a773a03de8e24aa4094bba57dff9825ccd4adbc2 |
-| Contents | README.md; ARCHIVED.md; README.txt; autogpt_agent.py (stub); autogpt_ai_agent (1).py (LSTM code gen); create_agent (1).py; requirements (1).txt; test (1).py; train_agent (1).py; *.csv |
-| CI | None (historical experimental scripts) |
-| Tags/Releases | empty |
-| Successor | None required (canonical agent work in sovereign-clean-room / ADL-SEEM / ADL-Nexus) |
-| Claims | Explicit Claim-0; NOT CLAIMED profit, live trading, product |
-
-**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved.
-
-**Target state:** Maintain ARCHIVED. Operator action pending for GitHub archive flag (`gh repo archive beyond-repair/Agent-Snake --yes`). Termination conditions met for cycle as historical archived experimental stub.
-
-## Prior Sweep-576 content preserved below.
-
-[Full prior content from Sweep-576 and earlier preserved in repository history.]
+[Full prior content from Sweep-577 and earlier preserved in repository history.]
