@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-581: sunder-cleanroom-vsa-adapter Residuals
+
+No new destructive proposals. No history rewrites, no deletions, no code mutations.
+
+Residuals (this cycle):
+- sunder-cleanroom-vsa-adapter (RESEARCH / Claim ≤1 / MODULE_SURFACE): Name-only VSA surface contract. CI/tests/checker present. Releases empty. Closes Q-FUNC-002. Broader SEEM-sunder bridge remains in adl-capability-matrix queue. No operator action required beyond residual documentation.
+- Core ACTIVE (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce): Claim caps confirmed prior. CI green residual. Releases empty residual. sovereign-clean-room VSA completeness UNVERIFIED. Digital_Double Dependabot on dev deps residual.
+- Agent-Snake / genieGPT (ARCHIVED / Claim-0): GitHub archive flags still false. Operator actions: `gh repo archive beyond-repair/Agent-Snake --yes` and `gh repo archive beyond-repair/genieGPT --yes`. Already in archive_queue.md.
+- Full portfolio (84 repos): Phases 4-10 incomplete for non-core. Archive flags elective. Detailed status matrix open.
+
+Stop after governed sweep. Do not loop. No infinite review cycle. Next random selection or targeted phase on subsequent cycles.
+
+## Prior Sweep-580 content preserved below.
+
+# Operator Queue
+
 ## Sweep-580: Master Directive Census & Core Verification Residuals
 
 No new destructive proposals. No history rewrites, no deletions, no code mutations.
@@ -12,37 +28,4 @@ Residuals (this cycle):
 
 Stop after governed sweep. Do not loop. No infinite review cycle. Next targeted phase or random selection on subsequent cycles.
 
-## Prior Sweep-579 content preserved below.
-
-# Operator Queue
-
-## Sweep-579: SovereignOS Residuals
-
-No new destructive proposals. No history rewrites, no deletions, no code mutations.
-
-Residuals (this cycle):
-- SovereignOS (RESEARCH / Claim-0): Docs-only architectural sketch. CI/docs-existence present. Releases empty. Related to OS family (RealityOS, LegionOS, Sovereign-OS). Operator residual: consider consolidation per os-family-constitution-map before any further promotion. No GitHub archive flag recommended at this time (still RESEARCH).
-- Core ACTIVE (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce): CI green verified prior. Claim caps intact. Releases empty residual. sovereign-clean-room VSA completeness UNVERIFIED. Digital_Double Dependabot on dev deps residual.
-- Agent-Snake / genieGPT (ARCHIVED / Claim-0): GitHub archive flags still false. Operator actions: `gh repo archive beyond-repair/Agent-Snake --yes` and `gh repo archive beyond-repair/genieGPT --yes`. Already in archive_queue.md.
-- Full portfolio (84 repos): Phases 4-10 (capability inventory, dependency graph, gap analysis, etc.) incomplete for non-core. Archive flags elective. Detailed status open.
-
-Stop after governed sweep. Do not loop. No infinite review cycle. Next random selection or targeted phase on subsequent cycles.
-
-## Prior Sweep-578 content preserved below.
-
-# Operator Queue
-
-## Sweep-578: Master Directive Core Verification Residuals
-
-No new destructive proposals. No history rewrites, no deletions, no code mutations.
-
-Residuals (this cycle):
-- Core ACTIVE (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce): CI green verified. Claim caps intact. Releases empty residual. sovereign-clean-room VSA completeness UNVERIFIED. Digital_Double Dependabot on dev deps residual.
-- Agent-Snake / genieGPT (ARCHIVED / Claim-0): GitHub archive flags still false. Operator actions: `gh repo archive beyond-repair/Agent-Snake --yes` and `gh repo archive beyond-repair/genieGPT --yes`. Already in archive_queue.md.
-- Full portfolio (84 repos): Phases 4-10 (capability inventory, dependency graph, gap analysis, etc.) incomplete for non-core. Archive flags elective. Detailed status open.
-
-Stop after governed sweep. Do not loop. No infinite review cycle. Next random selection or targeted phase on subsequent cycles.
-
-## Prior Sweep-577 content preserved below.
-
-[Full prior content from Sweep-577 and earlier preserved in repository history.]
+[Full prior content from Sweep-579 and earlier preserved in repository history.]
