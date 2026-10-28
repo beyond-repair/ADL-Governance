@@ -1,3 +1,22 @@
+## Sweep-586: Randomized Portfolio Completion Sweep — DigitalDoubleVirtualWorkforce3.5 2026-10-28
+
+- Timestamp: 2026-10-28T19:01Z UTC / 2026-10-28T15:01Z EDT.
+- Scope: Random selection from 84-repo census (shuf). Selected: DigitalDoubleVirtualWorkforce3.5.
+- SELECT: DigitalDoubleVirtualWorkforce3.5.
+- DISCOVER: Recursive tree includes README.md, CLAIM_STATUS.md, GOVERNANCE.md, SUPERSEDED.md, main.py, src/core/ (agent.py, cap.py, config.py, monitor.py, rules.py, storage.py), src/models/model_quantizer.py, tests/ (test_agent.py, test_cap.py, etc.), tests_governance/, docs/archive_fragments/, .github/workflows/supersede-guard.yml, requirements.txt, pytest.ini. HEAD 63daeb476cf28c1bcda3eac6c2237c9e7f409415. Language Python.
+- AUDIT: README explicitly SUPERSEDED, Claim 0. NOT CLAIMED production fault-tolerance, CAP proof, torch quantization, live cluster, parity with successor. Offline DigitalDoubleAgent + SQLite queue + in-memory CAP toys. pytest + governance banner tests. Successor Digital_Double_virtual_workforce named. supersede-guard CI present. No unsupported product claims.
+- CLASSIFY: SUPERSEDED. Justified: README badges, CLAIM_STATUS.md, SUPERSEDED.md, and claim contract match; historical 3.5-line dump repaired as Claim-0 sketch of public Digital_Double_virtual_workforce.
+- PLAN: Target maintain SUPERSEDED. No code mutations. Document audit. No promotion path. Archive flag elective residual.
+- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md). Idempotent. No product code changes. History preserved.
+- TEST → CI: supersede-guard structure present (banner unittest + pytest -q); no local execution this cycle. No critical failures observed in structure.
+- DOCUMENT: Updated governance registry files.
+- GOVERN: No unsupported claims. No critical unresolved security on Claim-0 path. No untracked dependencies. No deletions/rewrites.
+- RELEASE/ARCHIVE: Remains SUPERSEDED. No new tag. Releases/tags empty. GitHub archive flag false (operator-only residual). Termination conditions met for cycle as claim-capped superseded sketch.
+- RE-AUDIT: Structure matches documentation; no drift observed in this scan.
+- Residual: Archive flag elective; full portfolio phases residual.
+
+## Prior Sweep-585 content preserved below.
+
 ## Sweep-585: Master Directive v3.0 — Census Confirmation & Core CI Re-Verification 2026-10-28
 
 - Timestamp: 2026-10-28T18:11Z UTC / 2026-10-28T14:11Z EDT.
@@ -17,23 +36,4 @@
 
 ## Prior Sweep-584 content preserved below.
 
-## Sweep-584: Randomized Portfolio Completion Sweep — Digital_Double_Virtual_Workforce_4.2 2026-10-28
-
-- Timestamp: 2026-10-28T18:01Z UTC / 2026-10-28T14:01Z EDT.
-- Scope: Random selection from 84-repo census (Python random.choice). Selected: Digital_Double_Virtual_Workforce_4.2.
-- SELECT: Digital_Double_Virtual_Workforce_4.2.
-- DISCOVER: Recursive tree includes README.md, CLAIM_STATUS.md, SUPERSEDED.md, CANONICAL_NOTE.md, GOVERNANCE.md, SECURITY.md, main.py, agents/ (core offline_orchestrator + roles), src/python/core/, requirements.txt, pytest.ini, historical src/ TypeScript tree, ui-react/, selfheal/, models/ (optional GGUF ~77MB). HEAD 02c0a3d667d0f7feb86159cb67368bb4d777d360. Language mixed (Python Claim-0 path + historical TS).
-- AUDIT: README explicitly SUPERSEDED, Claim 0. NOT CLAIMED production multi-agent, Redis bus, llama.cpp self-heal, Express API parity. Offline orchestrator + DigitalDoubleAgent + torch-free quantizer advice. pytest path for tests_claim0/tests_governance. Successor named. Product CI absent. Open Dependabot on historical ui-react (launch-editor high/medium, braces withdrawn). No unsupported product claims.
-- CLASSIFY: SUPERSEDED. Justified: README badges, CLAIM_STATUS.md, SUPERSEDED.md, and claim contract match; private merge-source predecessor of public Digital_Double_virtual_workforce.
-- PLAN: Target maintain SUPERSEDED. No code mutations. Document audit. No promotion path. Archive flag elective residual.
-- IMPLEMENT: Governance docs only (PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md). Idempotent. No product code changes. History preserved.
-- TEST → CI: Claim-0 pytest structure present; no local execution this cycle. No critical failures observed in structure. Product CI absent residual.
-- DOCUMENT: Updated governance registry files.
-- GOVERN: No unsupported claims. No critical unresolved security on Claim-0 path (Dependabot residual on historical UI). No untracked dependencies. No deletions/rewrites.
-- RELEASE/ARCHIVE: Remains SUPERSEDED. No new tag. Releases/tags empty. GitHub archive flag false (operator-only residual). Termination conditions met for cycle as claim-capped superseded sketch.
-- RE-AUDIT: Structure matches documentation; no drift observed in this scan.
-- Residual: Open Dependabot on ui-react historical deps; archive flag elective; full portfolio phases residual.
-
-## Prior Sweep-583 content preserved below.
-
-[Full prior content from Sweep-583 and earlier preserved in repository history.]
+[Full prior content from Sweep-584 and earlier preserved in repository history.]
