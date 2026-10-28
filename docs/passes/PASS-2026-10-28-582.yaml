@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-10-28-582
+  parent_pass: PASS-2026-10-27-564
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 84
+  repositories_changed: 1
+  capabilities_known: 75
+  capabilities_verified: 13
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: AUDIT-COHERENCE-DYNAMICS
+  description: Perform bounded tree/function-surface audit of newly created RESEARCH repo coherence-dynamics; document mathematical physics research foundation structure and claim discipline without inventing physical claims or promotion; persist this pass.
+  reason_selected: Highest-value next slice: newly created today (2026-10-28), substantial structured research scaffold (models, spectral, tests, docs, research_log) with explicit claim discipline and provenance inventory; continues incremental closure of portfolio knowledge under claim caps.
+
+DISCOVERY:
+  findings:
+    - coherence-dynamics created 2026-10-28T10:53:53Z; HEAD tree_sha b5e68732307299f81438c5a8b5e3d8b47010c532; 73 tree entries.
+    - Structure: models/ (gaussian_two_field, continuum_spectral, asymptotics, etc.), spectral/ (gasket_construction, graph_laplacian, heat_trace), numerics/, tests/ (analytic identities, conservation, spectral, phase models), docs/ (charter, foundations, assumptions, limitations, roadmap), theory/, research_log/ (provenance, falsification ledger, failed candidates), results/reports/.
+    - README: Mathematical physics research foundation. Stage A — Audit and formalization (in progress). Ware Constant appears only as historical context, not a parameter or target. Explicit 'Do not assume the hypothesis is correct.' Evidence labels: ESTABLISHED, DERIVED, REPRODUCED, SUPPORTED, HYPOTHESIS, FAILED, UNRESOLVED. Provenance inventories prior coherence-drive family repos.
+    - Quick start: venv + pip install -e ".[test]" + pytest. No unsupported product, thrust, or energy claims.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-28-582.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - tree presence and claim-discipline audit for coherence-dynamics (research foundation scaffold observed)
+
+VERIFICATION:
+  tests_run:
+    - github___get_repository_tree (recursive, 73 entries, not truncated)
+    - github___get_file_contents on README.md confirming Stage A, evidence labels, and no a priori physical constants as targets
+    - no local pytest (remote audit only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - coherence-dynamics has non-empty, structured research implementation surface consistent with claim-capped mathematical physics foundation.
+    - Claim discipline holds: no universal constant assumed, prior work inventoried with explicit status, Stage A only.
+    - Portfolio census total_count=84 confirmed.
+  failures: []
+  decisions:
+    - EXTEND knowledge via audit record only; no claim elevation; no new repo; reuse governance pass system. Classification RESEARCH.
+
+REMAINING:
+  incomplete:
+    - Full local verification of coherence-dynamics tests (pytest).
+    - Assignment of remaining unassigned names and expansion of locked graphs (aegis-repo-graph snapshot).
+    - Portfolio Phases 4-10 for non-core.
+  blockers:
+    - Operator for graph lock expansion or claim_cap assignment.
+  new_gaps:
+    - none this pass
+
+NEXT:
+  objective_id: AUDIT-NEXT-NEW-OR-UNASSIGNED
+  action: Select next recently updated or unassigned name (e.g. -ware-constant-derivation or LegionOS) for similar bounded tree audit; persist pass without inventing caps or physical claims.
+  reason: Continues incremental closure of portfolio knowledge gaps under claim discipline.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Full recursive tree of coherence-dynamics (73 entries)
+    - README.md content confirming research foundation status and evidence labels
+    - Parent PASS-2026-10-27-564
+    - Live GitHub search total_count=84

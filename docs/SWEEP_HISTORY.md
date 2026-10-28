@@ -1,3 +1,22 @@
+## Sweep-582: Bounded Audit — coherence-dynamics Research Foundation 2026-10-28
+
+- Timestamp: 2026-10-28T17:05Z UTC / 2026-10-28T13:05Z EDT.
+- Scope: Newly created repo (today) selected as highest-value bounded slice.
+- SELECT: coherence-dynamics.
+- DISCOVER: Recursive tree 73 entries. models/, spectral/, numerics/, tests/, docs/, theory/, research_log/, results/. HEAD b5e68732307299f81438c5a8b5e3d8b47010c532. Language Python. Created 2026-10-28.
+- AUDIT: README Stage A research foundation. Explicit do-not-assume-hypothesis. Ware Constant historical context only, not target. Evidence labels defined. Provenance inventory of prior family. pytest path present. No unsupported physical or product claims.
+- CLASSIFY: RESEARCH. Justified: structure and claim contract match mathematical physics research scaffold; no promotion path.
+- PLAN: Target maintain RESEARCH. No code mutations. Document audit. No promotion.
+- IMPLEMENT: Governance docs only (this file, passes/, HEADINGS.md). Idempotent. No product code changes. History preserved.
+- TEST → CI: Tests structure present; no local execution this cycle. No critical failures observed in structure.
+- DOCUMENT: Updated governance registry files and new PASS-2026-10-28-582.yaml.
+- GOVERN: No unsupported claims. No critical security issues. No untracked dependencies. No deletions/rewrites.
+- RELEASE/ARCHIVE: Remains public RESEARCH. No new tag. Releases residual empty.
+- RE-AUDIT: Structure matches documentation; no drift observed in this scan.
+- Residual: Full local pytest verification residual; graph lock expansion operator-only; full portfolio phases residual.
+
+## Prior Sweep-581 content preserved below.
+
 ## Sweep-581: Randomized Portfolio Completion Sweep — sunder-cleanroom-vsa-adapter 2026-10-28
 
 - Timestamp: 2026-10-28T17:00Z UTC / 2026-10-28T13:00Z EDT.
