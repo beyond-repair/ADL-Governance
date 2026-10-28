@@ -1,5 +1,32 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-27 (Sweep-573 / Randomized Portfolio Completion Sweep — -Py2APK-main)
+**Project / Version:** ADL Portfolio Governance / Sweep-573
+**Objective:** Randomly selected repository (-Py2APK-main) audit against termination conditions under randomized completion sweep.
+
+## Sweep-573 selected repo: -Py2APK-main
+
+| Item | State |
+|------|--------|
+| Class | RESEARCH (Claim-0 runnable sketch; experimental Python→Android packaging via Chaquopy-oriented template) |
+| Termination | MET for this cycle (claim-capped, docs honest, CI workflow present for SDK-free tests, no unsupported claims, nested structure preserved, ARCHIVED.md historical note) |
+| HEAD | ebe488f306bc1cf54a58f6a80a496f2e6786fdbb |
+| CI | pytest.yml present (ubuntu-latest, Python 3.11, install -e .[dev] in nested dir, pytest -q); green not re-verified live this cycle |
+| Tags/Releases | empty |
+| Dependabot | none noted |
+| Branches | main |
+| Implementation | Nested package: analyzer, builder, cli, config, signing, gui, utils; android_project Java/Python sketch; tests/ (SDK-free); pyproject.toml |
+| Claims | Explicit Claim-0; runnable CLI analyze/doctor/dry-run/scaffold; NOT production APK converter, NOT verified APK, NOT security guarantees. See CLAIM_STATUS.md |
+| Family | Historical experiment; preserved. |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved.
+
+**Target state:** Maintain RESEARCH / Claim-0. Optional operator: verify CI green, consider archive flag if desired. Termination conditions met for cycle as claim-capped sketch.
+
+## Prior Sweep-572 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-27 (Sweep-571 / Randomized Portfolio Completion Sweep — sovereign-clean-room)
 **Project / Version:** ADL Portfolio Governance / Sweep-571
 **Objective:** Randomly selected repository (sovereign-clean-room) audit against termination conditions under randomized completion sweep.
