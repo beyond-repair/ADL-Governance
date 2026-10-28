@@ -1,5 +1,31 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-28 (Sweep-586 / Randomized Portfolio Completion Sweep — DigitalDoubleVirtualWorkforce3.5)
+**Project / Version:** ADL Portfolio Governance / Sweep-586
+**Objective:** Randomly selected repository (DigitalDoubleVirtualWorkforce3.5) audit against termination conditions under randomized completion sweep.
+
+## Sweep-586 selected repo: DigitalDoubleVirtualWorkforce3.5
+
+| Item | State |
+|------|--------|
+| Class | SUPERSEDED (Claim-0 offline runnable sketch) |
+| Termination | MET for this cycle (README documents SUPERSEDED + Claim 0, explicit NOT CLAIMED production fault-tolerance/CAP proof/torch quant/live cluster, offline agent + SQLite + in-memory CAP toys + pytest present, history preserved, no unsupported claims, successor named) |
+| HEAD | 63daeb476cf28c1bcda3eac6c2237c9e7f409415 |
+| Contents | README.md; CLAIM_STATUS.md; GOVERNANCE.md; SUPERSEDED.md; main.py; src/core/ (agent, cap, config, monitor, rules, storage); src/models/model_quantizer.py (advice stub); tests/; tests_governance/; docs/archive_fragments/; .github/workflows/supersede-guard.yml; requirements.txt; pytest.ini |
+| CI | supersede-guard on master: banner unittest then pytest -q (Claim-0 only) |
+| Tags/Releases | empty (historical) |
+| Related | Successor: Digital_Double_virtual_workforce (ACTIVE). Historical 3.5-line dump repaired as Claim-0. |
+| Claims | Explicit Claim 0 / SUPERSEDED. NOT CLAIMED production CAP, multi-node, torch quantization, parity with successor. |
+| Security | No critical unresolved issues observed on Claim-0 path. |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved. No claim elevation.
+
+**Target state:** Maintain SUPERSEDED. No promotion. Operator residual: GitHub archive flag elective.
+
+## Prior Sweep-585 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-28 (Sweep-585 / Master Directive v3.0 — Census Confirmation & Core CI Re-Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-585
 **Objective:** Confirm 84-repo census under Master Directive. Re-verify CI for mandatory core set. Advance partial classification. Record residuals for incomplete phases. Stop after governed sweep.
@@ -37,30 +63,4 @@
 
 ## Prior Sweep-584 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-10-28 (Sweep-584 / Randomized Portfolio Completion Sweep — Digital_Double_Virtual_Workforce_4.2)
-**Project / Version:** ADL Portfolio Governance / Sweep-584
-**Objective:** Randomly selected repository (Digital_Double_Virtual_Workforce_4.2) audit against termination conditions under randomized completion sweep.
-
-## Sweep-584 selected repo: Digital_Double_Virtual_Workforce_4.2
-
-| Item | State |
-|------|--------|
-| Class | SUPERSEDED (Claim-0 offline runnable sketch) |
-| Termination | MET for this cycle (README documents SUPERSEDED + Claim 0, explicit NOT CLAIMED production multi-agent/Redis/llama.cpp/Express parity, offline orchestrator + pytest present, history preserved, no unsupported claims, successor named) |
-| HEAD | 02c0a3d667d0f7feb86159cb67368bb4d777d360 |
-| Contents | README.md; CLAIM_STATUS.md; SUPERSEDED.md; CANONICAL_NOTE.md; GOVERNANCE.md; SECURITY.md; main.py; agents/ (offline roles + orchestrator); src/python/core/; requirements.txt (pytest, pydantic, python-dotenv); pytest.ini; historical src/ TypeScript, ui-react/, selfheal/, models/ (optional GGUF); tests_claim0/ + tests_governance/ |
-| CI | Product CI absent (historical workflows only). Claim-0 pytest path documented. |
-| Tags/Releases | empty |
-| Related | Successor: Digital_Double_virtual_workforce (ACTIVE). Private merge-source predecessor. |
-| Claims | Explicit Claim 0 / SUPERSEDED. NOT CLAIMED production workforce, Redis bus, live self-heal, API parity. |
-| Security | Open Dependabot alerts on historical ui-react/package-lock.json (launch-editor, braces, etc.). Residual for SUPERSEDED tree; no elevation. |
-
-**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved. No claim elevation.
-
-**Target state:** Maintain SUPERSEDED. No promotion. Operator residual: GitHub archive flag elective; Dependabot on historical UI residual (no action required for Claim-0).
-
-## Prior Sweep-583 content preserved below.
-
-[Full prior content from Sweep-583 and earlier preserved in repository history.]
+[Full prior content from Sweep-584 and earlier preserved in repository history.]
