@@ -1,5 +1,32 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-27 (Sweep-571 / Randomized Portfolio Completion Sweep — sovereign-clean-room)
+**Project / Version:** ADL Portfolio Governance / Sweep-571
+**Objective:** Randomly selected repository (sovereign-clean-room) audit against termination conditions under randomized completion sweep.
+
+## Sweep-571 selected repo: sovereign-clean-room
+
+| Item | State |
+|------|--------|
+| Class | ACTIVE (with findings) |
+| Termination | NOT MET (VSA completeness UNVERIFIED; releases empty; residual findings) |
+| HEAD | ~4878918cf9f95d3c19e1890bef6d2fd6713e0a16 |
+| CI | Python tests workflow present; prior notes of recent successes post float-precision fixes |
+| Tags/Releases | empty |
+| Dependabot | none noted |
+| Branches | main |
+| Implementation | Substantial core modules (clean_room_vsa.py, physics, ledger, memory, skills, etc.), tests, docs, schemas, CLI. Offline cognitive substrate. |
+| Claims | Documented as runtime substrate; not a mind; decorative bars not measurements. Claim-capped appropriately. |
+| Family | Canonical SEEM substrate. |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved.
+
+**Target state:** Maintain ACTIVE. Residuals (VSA verification, optional release tagging) flagged for operator. Termination conditions not fully achieved this cycle.
+
+## Prior Sweep-570 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-27 (Sweep-570 / Master Directive v3.0 Portfolio Completion Sweep)
 **Project / Version:** ADL Portfolio Governance / Sweep-570
 **Objective:** One governed sweep under Master Directive v3.0. Confirm portfolio discovery, mandatory live verification of core pillars, record residuals, update governance docs, stop. No infinite cycle.
