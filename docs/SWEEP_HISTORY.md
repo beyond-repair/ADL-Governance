@@ -1,3 +1,22 @@
+## Sweep-587 / PASS-2026-10-28-587: Audit -ware-constant-derivation 2026-10-28
+
+- Timestamp: 2026-10-28T19:06Z UTC.
+- Scope: Bounded tree audit of RESEARCH repo -ware-constant-derivation.
+- SELECT: -ware-constant-derivation (recently updated).
+- DISCOVER: Recursive tree 74 entries: PROOF_*.md series, verify_*.py, tests, CI, CLAIM_STATUS.md, STATUS_LOCK, FALSIFICATION, etc. HEAD 5946329976a8160f27689f93aa0de1955b1921e2.
+- AUDIT: README Claim-0 runnable sketch. Explicit 0.08 not derived. No thrust/energy claims. Verifiers check identities, record misses and falsifications. experimental_validation=false.
+- CLASSIFY: RESEARCH. Claim-0. Justified by explicit status, locked vs open table, and falsification records.
+- PLAN: Document audit. No code mutations. No promotion.
+- IMPLEMENT: Governance pass YAML + headings + this history.
+- TEST → CI: Structure present (checks.yml); no local execution this cycle.
+- DOCUMENT: Updated governance files.
+- GOVERN: No unsupported claims. Claim discipline held.
+- RELEASE/ARCHIVE: No change. Remains RESEARCH.
+- RE-AUDIT: Structure matches documentation; no drift.
+- Residual: Local test execution residual; graph expansion residual.
+
+## Prior Sweep-586 content preserved below.
+
 ## Sweep-586: Randomized Portfolio Completion Sweep — DigitalDoubleVirtualWorkforce3.5 2026-10-28
 
 - Timestamp: 2026-10-28T19:01Z UTC / 2026-10-28T15:01Z EDT.
