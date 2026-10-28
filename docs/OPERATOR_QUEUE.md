@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-567: LegionOS Residuals
+
+No new destructive proposals. No history rewrites, no deletions, no code mutations.
+
+Residuals (reconfirmed):
+- LegionOS (RESEARCH): None. Docs-only claim-capped sketch maintained. CI green. Promotion to ACTIVE gated.
+- Digital_Double_virtual_workforce (ACTIVE): Open Dependabot alerts (dev deps). Operator triage residual.
+- sovereign-clean-room (ACTIVE): VSA completeness UNVERIFIED. Releases empty.
+- Full portfolio: Detailed status for non-core incomplete; Phases 4-10 OPEN; archive flags elective.
+
+Stop after governed sweep. Do not loop. No infinite review cycle.
+
+## Prior Sweep-566 content preserved below.
+
+# Operator Queue
+
 ## Sweep-566: Master Directive Residuals
 
 No new destructive proposals. No history rewrites, no deletions, no code mutations.

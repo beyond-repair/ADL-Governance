@@ -1,5 +1,32 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-27 (Sweep-567 / Randomized Portfolio Completion Sweep — LegionOS)
+**Project / Version:** ADL Portfolio Governance / Sweep-567
+**Objective:** Randomly selected repository audit against termination conditions.
+
+## Sweep-567 selected repo: LegionOS
+
+| Item | State |
+|------|--------|
+| Class | RESEARCH (Claim level 0, architectural intent only) |
+| Termination | MET for this cycle (docs present and claim-capped, docs-existence CI green, no unsupported claims, no critical issues, no runtime implementation) |
+| HEAD | 9f795f6503a099b7c4a474e78a4ca03d4ec40a25 |
+| CI | docs-ci green (latest run 36847754196 success on HEAD) |
+| Tags/Releases | empty |
+| Dependabot | none expected (docs-only) |
+| Branches | main only |
+| Implementation | Documentation + docs-presence tests only. 5-layer holarchy is INTENT ONLY (not implemented). No brains/, knowledge_graph/, sandbox/, etc. |
+| Claims | Explicitly Claim ≤0; not a deployed OS, not autonomous, not revenue system. Forbidden product phrases absent. |
+| Family | OS-family sketch; related to RealityOS / Sovereign-OS (also RESEARCH). Auto_Legion is SUPERSEDED separately. |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved.
+
+**Target state:** RESEARCH maintained as claim-capped concept sketch. Promotion to ACTIVE blocked until real modules, product tests+CI, and evidenced claims. Termination conditions met for cycle.
+
+## Prior Sweep-566 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-27 (Sweep-566 / Master Directive v3.0 Reconfirmation)
 **Project / Version:** ADL Portfolio Governance / Sweep-566
 **Objective:** One governed reconfirmation of portfolio discovery and mandatory live verification of core pillars. Record residuals. Stop. No infinite cycle.
