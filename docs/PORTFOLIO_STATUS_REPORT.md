@@ -1,5 +1,31 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-29 (Sweep-593 / Randomized Portfolio Completion Sweep — genieGPT)
+**Project / Version:** ADL Portfolio Governance / Sweep-593
+**Objective:** Randomly selected repository (genieGPT) audit against termination conditions under randomized completion sweep.
+
+## Sweep-593 selected repo: genieGPT
+
+| Item | State |
+|------|--------|
+| Class | ARCHIVED (Claim-0 empty historical stub) |
+| Termination | MET for this cycle (README documents ARCHIVE QUEUE + Claim 0, explicit NOT CLAIMED product/profit/deployment, ARCHIVED.md + GOVERNANCE.md + CLAIM_STATUS.md present, no application/model/API code, no tests/CI as expected, no unsupported claims, history preserved) |
+| HEAD | a420f140799ddccf00dc5749480b23af0f0b14fb |
+| Contents | README.md; ARCHIVED.md; GOVERNANCE.md; CLAIM_STATUS.md; SECURITY.md; LICENSE. No source code, tests, or workflows. |
+| CI | None (no workflows; absent as documented) |
+| Tags/Releases | empty (historical stub) |
+| Related | Historical name-only stub. Canonical agent work in sovereign-clean-room / ADL-SEEM. Listed in prior archive_queue. |
+| Claims | Explicit Claim 0 / ARCHIVE. NOT CLAIMED chatbot, GPT product, runtime, training, or canonical surface. |
+| Security | No critical unresolved issues. No runtime surface. |
+
+**Actions this cycle:** Governance documentation updates only (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). Idempotent. No product code mutations. No destructive actions. History preserved. No claim elevation.
+
+**Target state:** Maintain ARCHIVED. Operator residual: GitHub archive flag still false. Action: `gh repo archive beyond-repair/genieGPT --yes`.
+
+## Prior Sweep-591 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-28 (Sweep-591 / Randomized Portfolio Completion Sweep — VigilE.S.A.-Enhanced-Security)
 **Project / Version:** ADL Portfolio Governance / Sweep-591
 **Objective:** Randomly selected repository (VigilE.S.A.-Enhanced-Security) audit against termination conditions under randomized completion sweep.
