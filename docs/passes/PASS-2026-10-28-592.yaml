@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-10-28-592
+  parent_pass: PASS-2026-10-28-591
+
+STATE:
+  global_status: RESEARCH-MAINTAIN
+  repositories_scanned: 84
+  repositories_changed: 0
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: gap-coherence-dynamics-audit-001
+  description: Audit newly created coherence-dynamics repository for claim discipline, structure, and RESEARCH classification
+  reason_selected: Highest-value bounded gap — newly pushed repo (2026-10-28) not yet in prior sweeps; closes discovery uncertainty on physics research satellite
+
+DISCOVERY:
+  findings:
+    - Live GitHub search total_count=84, incomplete_results=false (stable census)
+    - coherence-dynamics created 2026-10-28, HEAD b5e68732307299f81438c5a8b5e3d8b47010c532
+    - Recursive tree ~73 entries: models/, spectral/, numerics/, tests/ (pytest), theory/, docs/ (charter, limitations, roadmap), research_log/ (falsification, provenance)
+    - README: Mathematical physics research, Stage A, explicit no assumption of hypothesis correctness, Ware Constant historical only, evidence labels defined
+    - No CI workflow observed in tree; local pytest structure present
+    - Related to prior coherence-drive family (RESEARCH / Claim-0)
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-28-592.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - None (documentary only)
+
+VERIFICATION:
+  tests_run:
+    - remote tree and README inspected; no local execution
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - coherence-dynamics is RESEARCH / Claim ≤0 mathematical physics foundation; no product claims; preserves established physics; falsification ledger present
+    - Census stable at 84
+  failures:
+    - None
+  decisions:
+    - Classify RESEARCH; do not promote; no graph lock expansion (operator-only); residual CI absence noted
+
+REMAINING:
+  incomplete:
+    - Full Phases 4-10 capability/dependency/gap analysis for non-core
+    - Graph lock expansion to include new names
+  blockers:
+    - Operator-gated archive flags and release tags
+  new_gaps:
+    - coherence-dynamics CI presence and local pytest verification
+
+NEXT:
+  objective_id: gap-random-or-core-reconfirm-001
+  action: Select next random repo or reconfirm core ACTIVE CI/claim on subsequent cycle
+  reason: Incremental discovery; avoid one-pass completion
+  prerequisites:
+    - Fresh agent reconstructs from GitHub + this pass
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live tree SHA b5e68732307299f81438c5a8b5e3d8b47010c532
+    - README content
+    - Search total_count=84
