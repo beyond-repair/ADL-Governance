@@ -1,25 +1,16 @@
 # Operator Queue
 
-## Sweep-596: Census Confirmation & Classification Residuals
+## Sweep-597: coherence-dynamics Residuals
 
-No new destructive proposals. No history rewrites, no deletions, no code mutations.
+No destructive actions proposed.
 
-Residuals (this cycle):
-- Full portfolio (85 repos): Phases 4-10 incomplete for non-core (capability inventory with VERIFIED/PLANNED, dependency graph, gap analysis, redundancy detection, synergy analysis, architecture review, code review readiness). Detailed status matrix open. Archive flags elective.
-- Core ACTIVE live-verified this cycle (reconfirmed green):
-  - forge-aegis: CI green (latest success 37258127100, 2026-10-05). Releases empty residual. Claim cap software / RUNNABLE SKETCH preserved.
-  - sovereign-clean-room: CI green (latest success 37215829476, 2026-10-04). VSA completeness UNVERIFIED residual. Releases empty.
-  - BlockSwarm: CI green (latest success 40441811261, 2026-10-27). Releases empty.
-  - Digital_Double_virtual_workforce: CI green (latest success 39035783949, 2026-10-17). Dependabot residual on dev deps.
-- Classifications advanced provisionally for all 85 based on metadata; full code-level verification residual for non-core.
-- atomicdreamlabs1.1 (RESEARCH / Claim ≤0 experimental scaffold): No change. Monitor for evolution.
-- coherence-dynamics (RESEARCH / Claim ≤0): No CI workflow residual. Graph lock expansion operator-only.
-- VigilE.S.A.-Enhanced-Security / Agent-Snake / genieGPT (ARCHIVED / Claim-0): Archive flag residual. Operator action: `gh repo archive beyond-repair/<repo> --yes`.
-- OS-family (SovereignOS, LegionOS, RealityOS, Sovereign-OS): RESEARCH / Claim-0 sketches. Operator residual: consider consolidation per os-family-constitution-map.
-- Digital_Double_Virtual_Workforce_4.2 / DigitalDoubleVirtualWorkforce3.5 (SUPERSEDED): Archive flag elective residual.
+Residuals:
+- coherence-dynamics: CI workflow added. Operator: confirm Actions run succeeds (pytest green). If fails, fix tests or deps. Research Stage A continues; no auto-advance to claims.
+- Full portfolio: Phases 4-10 still incomplete for most non-core. Archive flags elective for ARCHIVED candidates.
+- Core ACTIVE: prior green residuals unchanged.
 
-Stop after governed sweep. Do not loop. No infinite review cycle. Next targeted phase or random selection on subsequent cycles.
+Stop after this cycle. Next random selection on subsequent invocation.
 
-## Prior Sweep-595 content preserved below.
+## Prior Sweep-596 content preserved below.
 
-[Full prior content from Sweep-595 and earlier preserved in repository history.]
+[Full prior content from Sweep-596 and earlier preserved in repository history.]
