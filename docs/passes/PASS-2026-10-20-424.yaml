@@ -61,7 +61,7 @@ REMAINING:
     - Explicit operator queue entry for DDVW Dependabot review
 NEXT:
   objective_id: GAP-DEPENDABOT-DDVW-PLAN
-  action: Operator or next pass: review specific alerts (postcss-selector-parser >=7.1.6, source-map-js >=1.2.2, pytest >=9.0.3) for non-breaking update feasibility; run tests post-change if approved.
+  action: "Operator or next pass: review specific alerts (postcss-selector-parser >=7.1.6, source-map-js >=1.2.2, pytest >=9.0.3) for non-breaking update feasibility; run tests post-change if approved."
   reason: Security residual remains highest-value after documentation.
   prerequisites:
     - Confirm development-only impact
