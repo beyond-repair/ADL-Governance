@@ -1,3 +1,22 @@
+## Sweep-600 / PASS-2026-10-30-600: Fix YAML schema and parse errors in historical pass records 2026-10-30
+
+- Timestamp: 2026-10-30T12:12Z EDT approx.
+- Scope: Close checker failure by normalizing PASS-2026-10-18-412.yaml to nested schema and fixing YAML scanner error in PASS-2026-10-20-424.yaml.
+- SELECT: Highest-value gap from residual of PASS-599: run check_passes.py and address first failures.
+- DISCOVER: Checker fails on 412 (missing PASS key, unquoted #) then on 424 (unquoted colon in action string).
+- AUDIT: vs check_passes.py contract. Fixed files now parse and match nested schema.
+- CLASSIFY: Governance maintenance.
+- PLAN: Use create_or_update_file for targeted string quoting and schema normalization. Preserve original content intent.
+- IMPLEMENT: Pushed fixes to two YAML files. Commits b4001dc and 384f4c0.
+- TEST → CI: Local checker still fails on subsequent files (next error in later pass). Residual remains.
+- DOCUMENT: This update. New PASS-2026-10-30-600.yaml to be added.
+- GOVERN: No claim elevation. History preserved. No deletions.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Two files corrected. Checker progress made but not complete.
+- Residual: Continue fixing remaining YAML parse errors in docs/passes/*.yaml so check_passes.py exits 0.
+
+## Prior Sweep-599 content preserved below.
+
 ## Sweep-599 / PASS-2026-10-30-599: Persist missing YAML for Sweep-598 2026-10-30
 
 - Timestamp: 2026-10-30T09:14Z EDT approx.
