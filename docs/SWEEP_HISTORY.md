@@ -1,3 +1,22 @@
+## Sweep-599 / PASS-2026-10-30-599: Persist missing YAML for Sweep-598 2026-10-30
+
+- Timestamp: 2026-10-30T09:14Z EDT approx.
+- Scope: Close persistence gap for PASS-2026-10-30-598.
+- SELECT: Gap identified from mismatch between SWEEP_HISTORY heading and missing YAML.
+- DISCOVER: Heading present, YAML absent. Checker contract requires both.
+- AUDIT: vs pass record schema. Compliant after addition.
+- CLASSIFY: Governance maintenance.
+- PLAN: Create YAML via create_or_update_file, then this heading.
+- IMPLEMENT: Pushed PASS-2026-10-30-598.yaml and PASS-2026-10-30-599.yaml.
+- TEST → CI: File presence confirmed. Full checker not run here.
+- DOCUMENT: This update.
+- GOVERN: No claim elevation. History preserved.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: YAMLs present.
+- Residual: Run check_passes.py to confirm zero failures.
+
+## Prior Sweep-598 content preserved below.
+
 ## Sweep-598 / PASS-2026-10-30-598: Randomized Selection — Quantumclustering 2026-10-30
 
 - Timestamp: 2026-10-30T09:00Z EDT approx.
