@@ -1,0 +1,61 @@
+PASS:
+  id: PASS-2026-10-30-599
+  parent_pass: PASS-2026-10-30-598
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+OBJECTIVE:
+  id: GAP-PERSIST-PASS-598
+  description: Persist the missing machine-readable pass record for Sweep-598 to align with SWEEP_HISTORY heading and satisfy the check_passes.py contract.
+  reason_selected: Highest-value bounded gap: history claimed PASS-2026-10-30-598 but no corresponding YAML existed, risking CI validation failure on next check.
+DISCOVERY:
+  findings:
+    - SWEEP_HISTORY.md contains ## Sweep-598 / PASS-2026-10-30-598 heading.
+    - No docs/passes/PASS-2026-10-30-598.yaml present prior to this pass.
+    - Checker requires YAML filename to match PASS.id and heading presence.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-30-598.yaml
+    - docs/passes/PASS-2026-10-30-599.yaml
+  commits:
+    - 328cb674c398374e85134b9a02e7469cf019f24d
+    - this commit
+  capabilities_added_or_changed:
+    - Pass persistence contract restored for Sweep-598
+VERIFICATION:
+  tests_run:
+    - File existence confirmed via get_file_contents after push
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Missing YAML was the gap; now persisted.
+  failures: []
+  decisions:
+    - Use create_or_update_file for single file persistence.
+REMAINING:
+  incomplete:
+    - Full checker run not executed in this environment.
+  blockers: []
+  new_gaps:
+    - Confirm governance-ci passes on the new YAML.
+NEXT:
+  objective_id: NEXT-RANDOM-OR-CI-VERIFY
+  action: Run scripts/check_passes.py locally or trigger CI, then select next random repository for audit.
+  reason: Persistence gap closed. Next is verification of the checker then continue progressive sweeps.
+  prerequisites:
+    - Checker available
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Commit 328cb674 for 598.yaml
+    - This commit for 599.yaml
