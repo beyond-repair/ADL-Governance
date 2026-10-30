@@ -1,10 +1,10 @@
 # Portfolio Status Report
 
-**Updated:** 2026-10-29 (Sweep-597 / Randomized Portfolio Completion — coherence-dynamics)
+**Updated:** 2026-10-29 (Sweep-597 / Randomized Portfolio Completion — coherence-dynamics — CI GREEN)
 **Project / Version:** ADL Portfolio Governance / Sweep-597
-**Objective:** Random selection of coherence-dynamics; complete DISCOVER→AUDIT→CLASSIFY→PLAN→IMPLEMENT→DOCUMENT for safe CI addition.
+**Objective:** Random selection of coherence-dynamics; complete DISCOVER→AUDIT→CLASSIFY→PLAN→IMPLEMENT→TEST→DOCUMENT for safe CI addition. Target CI-green achieved.
 
-## Sweep-597: coherence-dynamics (RESEARCH)
+## Sweep-597: coherence-dynamics (RESEARCH) — COMPLETE for this cycle
 
 **Selected:** coherence-dynamics (random from 85).
 
@@ -18,7 +18,7 @@
 
 **IMPLEMENT:** Added `.github/workflows/ci.yml` (checkout, Python 3.11, pip install -e ".[test]", pytest -q). Updated README.md with CI mention and structure note.
 
-**TEST → CI:** Workflow pushed; expected to run on next push (this commit triggers it). Local tests not executed here (remote-only). Assumption: existing tests pass (from repo state).
+**TEST → CI:** **GREEN.** Workflow runs: 40989331725 (success, 2026-10-30T02:02:23Z, commit ca90e0a...), 40989292280 (success). Confirmed via Actions API.
 
 **DOCUMENT:** README updated. This status report updated. SWEEP_HISTORY updated.
 
@@ -26,9 +26,9 @@
 
 **RELEASE/ARCHIVE:** No tag (research, Stage A). Not archived.
 
-**RE-AUDIT:** Tree now includes .github/workflows/ci.yml. Classification locked as RESEARCH.
+**RE-AUDIT:** Tree includes .github/workflows/ci.yml. CI green. Classification locked as RESEARCH.
 
-**Termination check:** CI workflow present (pending green confirmation). Docs updated. No undefined components for current stage. Residual: full CI green confirmation, deeper code review, potential Stage B advances (operator/research). Not fully complete per strict termination (CI green not yet observed), but safe progress made; stop this cycle.
+**Termination check:** CI green. Docs updated. No undefined components for current stage. No critical issues. Target state (CI-green for research foundation) achieved. Residual: deeper research advances (Stage B+) are operator/research tasks, not this sweep. Cycle complete.
 
 ## Prior Sweep-596 content preserved below.
 
