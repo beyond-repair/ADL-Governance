@@ -1,8 +1,6 @@
-pass_id: PASS-2026-10-18-412
-parent_pass: PASS-2026-10-17-410
-timestamp: "2026-10-18T16:10:00Z"
-objective_id: dd-open-issues-audit
-
+PASS:
+  id: PASS-2026-10-18-412
+  parent_pass: PASS-2026-10-17-410
 STATE:
   global_status: RECURSIVE_LOOP_ACTIVE
   repositories_scanned: 83
@@ -10,20 +8,17 @@ STATE:
   capabilities_known: 4
   capabilities_verified: 0
   gaps_remaining: 78
-
 OBJECTIVE:
   id: dd-open-issues-audit
   description: Audit open issues, PRs, and Dependabot alerts in Digital_Double_virtual_workforce; confirm form-data CVE status from live tree.
   reason_selected: Highest-priority residual from Sweep-410 NEXT; ACTIVE classification; recent updates.
-
 DISCOVERY:
   findings:
     - Live tree head ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea.
-    - 5 open PRs/issues (including draft PR #7 NEX-INT-006 workforce evidence journal, and Dependabot PRs for rollup etc.).
+    - "5 open PRs/issues (including draft PR #7 NEX-INT-006 workforce evidence journal, and Dependabot PRs for rollup etc.)."
     - Open Dependabot alerts include medium/high for postcss-selector-parser (CVE-2026-104844), sprintf-js (CVE-2026-97058), source-map-js (CVE-2026-93749 high), pytest (CVE-2025-71176), brace-expansion (CVE-2026-102277), all primarily development-scope npm/pip.
     - form-data overridden to ^4.0.4 in digital_double/package.json; no open alert observed for form-data.
     - Classification remains ACTIVE; claim caps preserved.
-
 CHANGES:
   repositories:
     - ADL-Governance
@@ -33,7 +28,6 @@ CHANGES:
     - (this commit)
   capabilities_added_or_changed:
     - Documented open issues and Dependabot residual for Digital_Double_virtual_workforce
-
 VERIFICATION:
   tests_run: []
   code_review: NOT_RUN
@@ -41,17 +35,15 @@ VERIFICATION:
   integration: NOT_RUN
   invariants: PASS
   overall: PASS
-
 KNOWLEDGE:
   confirmed:
     - form-data CVE addressed via package override; no open Dependabot for it.
     - Multiple development-scope Dependabot alerts remain open (npm packages, pytest).
-    - Draft PR #7 exists for workforce evidence journal.
+    - "Draft PR #7 exists for workforce evidence journal."
   failures: []
   decisions:
     - Audit only; no code changes or merges. Dependabot closures are operator or automated actions.
     - Next slice can target Dependabot resolution or another priority residual.
-
 REMAINING:
   incomplete:
     - Resolution of open Dependabot alerts in Digital_Double_virtual_workforce.
@@ -60,14 +52,12 @@ REMAINING:
     - Operator-only for merges, tags, Dependabot dismissals.
   new_gaps:
     - Development-scope CVE residuals in Digital_Double npm lockfiles.
-
 NEXT:
   objective_id: dd-dependabot-triage
   action: Triage and document recommended closures or updates for open Dependabot alerts in Digital_Double_virtual_workforce (development scope).
   reason: Direct continuation of this audit; security residual highest value for ACTIVE repo.
   prerequisites:
     - Live tree and Dependabot list access.
-
 PROVENANCE:
   state_commit: (this)
   evidence:
