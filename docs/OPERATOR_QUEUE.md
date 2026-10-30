@@ -1,5 +1,20 @@
 # Operator Queue
 
+## Sweep-598: Quantumclustering Residuals
+
+No destructive actions proposed.
+
+Residuals:
+- Quantumclustering: Classified ARCHIVED. Empty historical state preserved. No further action required. Operator: none.
+- Full portfolio: Phases 4-10 still incomplete for most non-core. Archive flags elective for remaining ARCHIVED candidates.
+- Core ACTIVE: prior green residuals unchanged.
+
+Stop after this cycle. Next random selection on subsequent invocation.
+
+## Prior Sweep-597 content preserved below.
+
+# Operator Queue
+
 ## Sweep-597: coherence-dynamics Residuals
 
 No destructive actions proposed.
