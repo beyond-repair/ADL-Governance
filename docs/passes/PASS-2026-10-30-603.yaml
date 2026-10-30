@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-10-30-603
+  parent_pass: PASS-2026-10-30-602
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 12
+  capabilities_verified: 3
+  gaps_remaining: 70
+
+OBJECTIVE:
+  id: discover-audit-persist-603
+  description: Reconstruct ecosystem from GitHub and persist initial pass record documenting census, governing sources, and next residual.
+  reason_selected: First execution of ADL-BASILISK directive; highest-value is accurate reconstruction + persistent memory before any further slice.
+
+DISCOVERY:
+  findings:
+    - user:beyond-repair census total_count=85
+    - ADL-Governance is governing source (ACTIVE/MAINTAIN); latest Sweep-602 on SEEM-Cognitive_Microservice SUPERSEDED Claim 0
+    - aegis-repo-graph holds locked 2026-09-04 Artifact Graph (73 artifacts, claim ≤1 tool)
+    - ADL-Nexus RESEARCH claim ≤1, layers present, live adapters UNSUPPORTED
+    - Open high Dependabot residuals on Digital_Double_virtual_workforce; Phases 4–10 incomplete
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-30-603.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - Sweep-603 discovery/audit persist
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - none
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census 85; governing docs current to Sweep-602; claim policy intact
+  failures:
+    - none
+  decisions:
+    - Next action targets Digital_Double_virtual_workforce Dependabot residual documentation
+
+REMAINING:
+  incomplete:
+    - Phases 4–10 portfolio-wide
+  blockers:
+    - Operator for high security, tags, archives
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: residual-security-digital-double
+  action: Document current Dependabot alerts on Digital_Double_virtual_workforce
+  reason: Highest-value ACTIVE residual
+  prerequisites:
+    - Dependabot list tool access
+
+PROVENANCE:
+  state_commit: pending-this-commit
+  evidence:
+    - GitHub API observations on census and core docs
