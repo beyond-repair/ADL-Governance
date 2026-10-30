@@ -1,0 +1,68 @@
+PASS:
+  id: PASS-2026-10-30-600
+  parent_pass: PASS-2026-10-30-599
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: null
+  capabilities_verified: null
+  gaps_remaining: null
+OBJECTIVE:
+  id: GAP-CHECKER-YAML-PARSE
+  description: Fix first two YAML schema/parse failures in docs/passes so check_passes.py can progress.
+  reason_selected: Residual from PASS-599 was to run the checker; it failed immediately on historical files, highest-value bounded gap for governance integrity.
+DISCOVERY:
+  findings:
+    - check_passes.py fails on PASS-2026-10-18-412.yaml due to missing PASS key and unquoted # comments.
+    - Next failure on PASS-2026-10-20-424.yaml due to unquoted colon in action string causing scanner error.
+    - Multiple additional files likely have similar issues.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-18-412.yaml
+    - docs/passes/PASS-2026-10-20-424.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/PASS-2026-10-30-600.yaml
+  commits:
+    - b4001dc92e45ae23b485012152c29d5d9eee18a4
+    - 384f4c01b46fbcd4a465d74ff2639052fa452be2
+    - 3ed3434cd183669434c668d166e151411060b9b5
+    - this commit
+  capabilities_added_or_changed:
+    - Historical pass records 412 and 424 now parse and conform to nested schema
+VERIFICATION:
+  tests_run:
+    - Local python scripts/check_passes.py after each fix; still fails on subsequent files
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Unquoted # and : in YAML strings break the checker.
+    - Normalizing to nested PASS schema + quoting special characters resolves individual files.
+  failures:
+    - Checker does not yet exit 0; more files need similar fixes.
+  decisions:
+    - Prefer targeted quoting and schema normalization over rewriting checker or bulk rewrite of history.
+REMAINING:
+  incomplete:
+    - Remaining YAML parse errors in later PASS-*.yaml files.
+    - Full checker green.
+  blockers: []
+  new_gaps:
+    - Systematic scan and fix of all unquoted special characters in pass YAMLs.
+NEXT:
+  objective_id: NEXT-YAML-PARSE-CONTINUE
+  action: Identify and fix the next YAML parse error in docs/passes (currently around later 2026-10-20 files), then re-run check_passes.py.
+  reason: Incremental closure of the checker contract gap; governance persistence integrity.
+  prerequisites:
+    - Fresh clone or pull of ADL-Governance
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Local checker runs showing sequential failures
+    - Commits b4001dc, 384f4c0, 3ed3434
