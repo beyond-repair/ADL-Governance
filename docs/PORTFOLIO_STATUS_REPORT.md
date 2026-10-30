@@ -1,5 +1,53 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-30 (Sweep-601 / Master Directive v3.0 Phase 3 Live Verification — Core Pillars)
+**Project / Version:** ADL Portfolio Governance / Sweep-601
+**Objective:** Explicit live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce per Master Directive. No assumptions. Record residuals. Stop after one governed sweep.
+
+## Sweep-601: Core Pillars Phase 3 Verification — COMPLETE for this cycle
+
+**Scope:** Phase 1 discovery (85 public+private repos confirmed via search total_count=85). Phase 3 mandatory live verification of the four named repositories. Full Phases 4–10 remain incomplete for the portfolio; exit criteria not fully satisfied.
+
+### forge-aegis
+- **CI:** Latest workflow run 37258127100 success on main head e7188d529739652a2dd6264bd3d328c1f72e60e5 (2026-10-05). Prior runs success.
+- **Releases:** Empty.
+- **Tags:** Empty.
+- **Dependabot:** No open alerts.
+- **Classification:** ACTIVE (software sketch; claim-capped). CI green confirmed.
+- **State:** VERIFIED CI green; no releases/tags; no open security alerts.
+
+### sovereign-clean-room
+- **CI:** Recent runs on branch seem-completion-pass (PR #3): mixed (latest 37215829476 success, prior failures on float/precision). Main branch status not re-listed in top runs; prior registry noted success run 37064696194.
+- **Releases:** Empty.
+- **Tags:** Empty.
+- **Dependabot:** No open alerts.
+- **Classification:** ACTIVE (canonical SEEM substrate). VSA completeness remains UNVERIFIED. Branches seem-completion-pass and fix/pynacl not merged.
+- **State:** CI activity present; no releases/tags; no open Dependabot. Main head CI not reconfirmed in this top-5 fetch.
+
+### BlockSwarm
+- **CI:** Latest workflow run 40441811261 success on main head 026c3631d9585adeed53b960f5ee7037bf76250c (2026-10-27). Prior success runs documented.
+- **Releases:** Empty.
+- **Tags:** Empty.
+- **Dependabot:** No open alerts.
+- **Classification:** ACTIVE (SAGF / Foundry).
+- **State:** VERIFIED CI green; no releases/tags; no open security alerts.
+
+### Digital_Double_virtual_workforce
+- **CI:** Latest workflow run 39035783949 success on main head ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea (2026-10-17, security pin).
+- **Releases:** Empty.
+- **Tags:** Empty.
+- **Dependabot:** Multiple open alerts (high/medium). Includes source-map-js high (CVE-2026-93749), pytest medium (CVE-2025-71176), brace-expansion medium (multiple), js-yaml high (CVE-2026-84375), and others. Prior critical #13 status not re-confirmed in this fetch (may be fixed or superseded).
+- **Classification:** ACTIVE (public canonical). Readiness remains FAIL due to open security findings.
+- **State:** CI green; open high-severity Dependabot alerts unresolved.
+
+**Portfolio note:** Census total_count=85 confirmed. Registry classifications from prior sweeps preserved. Full capability inventory, dependency graph, gap analysis, redundancy detection, synergy, architecture review, and code review readiness for all repositories not performed in this cycle (scale + one-sweep discipline). No unsupported claims elevated. No deletions or history rewrites.
+
+**Termination check:** Phase 3 cores verified where data available. Exit criteria fail on unresolved critical/high security findings in Digital_Double_virtual_workforce and incomplete Phases 4–10. Residuals recorded. Stop. No infinite loop.
+
+## Prior Sweep-598 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-30 (Sweep-598 / Randomized Portfolio Completion — Quantumclustering — ARCHIVED)
 **Project / Version:** ADL Portfolio Governance / Sweep-598
 **Objective:** Random selection of Quantumclustering; complete DISCOVER→AUDIT→CLASSIFY→PLAN→DOCUMENT for empty archive-queue repository. Target terminal state achieved.
@@ -32,38 +80,4 @@
 
 ## Prior Sweep-597 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-10-29 (Sweep-597 / Randomized Portfolio Completion — coherence-dynamics — CI GREEN)
-**Project / Version:** ADL Portfolio Governance / Sweep-597
-**Objective:** Random selection of coherence-dynamics; complete DISCOVER→AUDIT→CLASSIFY→PLAN→IMPLEMENT→TEST→DOCUMENT for safe CI addition. Target CI-green achieved.
-
-## Sweep-597: coherence-dynamics (RESEARCH) — COMPLETE for this cycle
-
-**Selected:** coherence-dynamics (random from 85).
-
-**DISCOVER:** Research mathematical physics repo. Stage A formalization. Python package with spectral/numerics/models, tests present (pytest), pyproject.toml, no prior CI workflow (only Dependabot). Structure: docs/, theory/, spectral/, numerics/, experiments/, tests/, research_log/. Provenance ledger exists. Claim-capped: no thrust/energy/modified gravity.
-
-**AUDIT:** Compliant with research charter and limitations. No unsupported claims. Tests exist for analytic identities, asymptotics, spectral, etc. Missing CI. Docs solid. No critical security. Dependencies: numpy/scipy (pinned ranges).
-
-**CLASSIFY:** RESEARCH (experimental, unvalidated physical hypothesis; mathematical laboratory for coarse-graining/effective response). Justification: Stage A, hypothesis UNRESOLVED, Ware Constant historical only, evidence labels enforced, no production claims.
-
-**PLAN:** Target: CI-green via GitHub Actions pytest. Idempotent safe addition of workflow + README note.
-
-**IMPLEMENT:** Added `.github/workflows/ci.yml` (checkout, Python 3.11, pip install -e ".[test]", pytest -q). Updated README.md with CI mention and structure note.
-
-**TEST → CI:** **GREEN.** Workflow runs: 40989331725 (success, 2026-10-30T02:02:23Z, commit ca90e0a...), 40989292280 (success). Confirmed via Actions API.
-
-**DOCUMENT:** README updated. This status report updated. SWEEP_HISTORY updated.
-
-**GOVERN:** No unsupported claims elevated. No destructive actions. History preserved. Claim ≤0 maintained.
-
-**RELEASE/ARCHIVE:** No tag (research, Stage A). Not archived.
-
-**RE-AUDIT:** Tree includes .github/workflows/ci.yml. CI green. Classification locked as RESEARCH.
-
-**Termination check:** CI green. Docs updated. No undefined components for current stage. No critical issues. Target state (CI-green for research foundation) achieved. Residual: deeper research advances (Stage B+) are operator/research tasks, not this sweep. Cycle complete.
-
-## Prior Sweep-596 content preserved below.
-
-[Full prior content from Sweep-596 and earlier preserved in repository history.]
+[Full prior content from Sweep-597 and earlier preserved in repository history.]
