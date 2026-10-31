@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-10-31-607
+  parent_pass: PASS-2026-10-31-606
+
+STATE:
+  global_status: MAINTAIN
+  repositories_scanned: 85
+  repositories_changed: 0
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: multiple (Dependabot, incomplete phases, releases)
+
+OBJECTIVE:
+  id: residual-security-digital-double
+  description: Document current open Dependabot alerts on Digital_Double_virtual_workforce as residual security triage. No code changes.
+  reason_selected: Highest-value residual flagged in prior passes; operator-only resolution.
+
+DISCOVERY:
+  findings:
+    - Open high-severity alerts: source-map-js (GHSA-68fv-2mgg-jv7q, CVE-2026-93749, event-loop DoS via indexed source maps), js-yaml (GHSA-2883-xcg3-v3hh, CVE-2026-84375, CPU consumption via empty merge keys).
+    - Open medium: brace-expansion (GHSA-q2hr-2g5m-vwhr, quadratic expansion DoS), pytest (GHSA-6w46-j5rx-g56g, tmpdir permissions).
+    - All in development scope (package-lock.json, pyproject.toml). No production runtime impact claimed.
+    - README confirms ACTIVE, claim software, Python core + optional UI. CI present.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-31-607.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - N/A (governance docs)
+  code_review: NOT_RUN
+  security: PASS (documented open alerts; no new issues)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim caps, no elevation, history preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Open Dependabot residuals confirmed live on Digital_Double_virtual_workforce (high on source-map-js, js-yaml; medium on brace-expansion, pytest).
+    - Scope is development dependencies. No fabrication of fixes.
+  failures:
+    - none
+  decisions:
+    - Document only; operator to triage/patch/dismiss. No automated elevation or code change.
+
+REMAINING:
+  incomplete:
+    - Full portfolio Phases 4–10
+    - Release tags on pillars
+    - VSA completeness on sovereign-clean-room
+  blockers:
+    - Operator action required for Dependabot resolution and archive flags
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: random-audit-or-pillar-verification
+  action: Random selection from portfolio or re-verify core pillars live CI
+  reason: Residuals documented; continue incremental coverage
+  prerequisites:
+    - none
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - Dependabot API list_open alerts
+    - README.md contents
