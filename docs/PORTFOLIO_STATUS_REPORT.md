@@ -1,5 +1,41 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-30 (Sweep-605 / Randomized Portfolio Completion: scale-functional-I)
+**Project / Version:** ADL Portfolio Governance / Sweep-605
+**Objective:** Random selection of scale-functional-I; DISCOVER → AUDIT → CLASSIFY → reconfirm RESEARCH status. Local tests verified. Governance docs updated. No capability code changes.
+
+## Sweep-605: scale-functional-I Random Audit — COMPLETE for this cycle
+
+**Scope:** Randomly selected repository scale-functional-I. Full DISCOVER/AUDIT. Local execution of tests and script. No destructive actions.
+
+**SELECT:** Random from full portfolio (85 public repos). Selected: scale-functional-I.
+
+**DISCOVER:** Tree: README.md, RESULT.md, FUNCTIONAL.md, CLAIM_STATUS.md, pyproject.toml, scale_functional.py, tests/ (test_cli.py, test_scale_functional.py), .github/workflows/ci.yml, .gitignore. Python, NumPy, pytest. Declared I = Perimeter/sqrt(Area), beta_I finite difference. Lattice dumbbells. 0.08 not input.
+
+**AUDIT:** vs ADL-Governance. Classification RESEARCH / Claim level 1 consistent. experimental_validation=false, thrust/energy=false. Parent lock respected. CI workflow present. Local pytest: 13 passed. Script output matches RESULT.md tables. No zero of beta_I on tested families. No unsupported claims. No critical security issues. No releases.
+
+**CLASSIFY:** RESEARCH (reconfirmed). Justification: experimental/unvalidated numerical functional on lattice; no physical claims elevated; stationary point not found.
+
+**PLAN:** Persist status. No code changes required. Target state met for RESEARCH claim cap.
+
+**IMPLEMENT:** Governance docs only. History preserved.
+
+**TEST → CI:** Local tests pass (13/13). Script reproduces RESULT.md. Workflow present (prior green assumed; local verification sufficient).
+
+**DOCUMENT:** This report. SWEEP_HISTORY updated. OPERATOR_QUEUE no new residuals for this repo.
+
+**GOVERN:** Claim caps intact. No fabrication. No elevation.
+
+**RELEASE/ARCHIVE:** None. No tag needed.
+
+**RE-AUDIT:** Live structure + local execution verified. Terminal for this cycle.
+
+**Termination check:** For scale-functional-I: no undefined components, no critical CI failures (local), no unsupported claims, target RESEARCH state achieved. Full portfolio residuals remain. Stop. Do not loop.
+
+## Prior Sweep-604 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-30 (Sweep-604 / Mandatory Live Verification of Core Pillars)
 **Project / Version:** ADL Portfolio Governance / Sweep-604
 **Objective:** Live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Update classifications and residuals. No capability code changes.
