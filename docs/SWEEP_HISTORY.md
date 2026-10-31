@@ -1,3 +1,22 @@
+## Sweep-605 / PASS-2026-10-30-605: Randomized Audit of scale-functional-I 2026-10-30
+
+- Timestamp: 2026-10-30T23:00Z EDT approx.
+- Scope: Random selection from full portfolio (85 public repos). Selected scale-functional-I. Governance docs only. Local verification of tests/script.
+- SELECT: Random choice via Python random.choice on search results.
+- DISCOVER: Full tree scanned. Files: README, RESULT, FUNCTIONAL, CLAIM_STATUS, pyproject.toml, scale_functional.py, tests (2 files), CI workflow. Declared functional I = Perimeter/sqrt(Area). Lattice dumbbell computation. 0.08 not input.
+- AUDIT: vs claim policy and prior registry. RESEARCH / Claim 1 consistent. experimental_validation false. No zero of beta_I on tested families. Parent lock respected. Local pytest 13 passed. Script output matches RESULT.md. No unsupported claims. No critical issues. No releases.
+- CLASSIFY: RESEARCH (reconfirmed). Justification: experimental numerical functional; no validation or physical claims.
+- PLAN: Document reconfirmation. No code changes. Target RESEARCH state achieved.
+- IMPLEMENT: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this file. No destructive actions. History preserved.
+- TEST → CI: Local tests pass (13/13). Script reproduces tables. Workflow present.
+- DOCUMENT: This update. Status report prepended with Sweep-605.
+- GOVERN: Claim caps unchanged. No fabrication. No elevation.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: Structure + local execution verified. Terminal conditions met for this repo cycle.
+- Residual: None specific to this repo. Full portfolio residuals remain. Next: random selection or residual triage.
+
+## Prior Sweep-604 content preserved below.
+
 ## Sweep-604 / PASS-2026-10-30-604: Mandatory Live Verification of Core Pillars 2026-10-30
 
 - Timestamp: 2026-10-30T22:14Z EDT approx.
