@@ -1,5 +1,19 @@
 # Operator Queue
 
+## Sweep-605: scale-functional-I Random Audit Residuals
+
+No destructive actions proposed.
+
+Residuals:
+- scale-functional-I: None specific. RESEARCH / Claim 1 reconfirmed. Local tests pass. CI workflow present. No releases. No unsupported claims.
+- Prior residuals unchanged: Digital_Double_virtual_workforce high-severity Dependabot alerts remain. BlockSwarm tag v0.5.0-sagf 404. forge-aegis / sovereign-clean-room / BlockSwarm no releases. sovereign-clean-room VSA UNVERIFIED. Full portfolio Phases 4–10 incomplete for most of 85 repositories.
+
+Stop after this cycle. Next invocation: random selection or residual security triage on Digital_Double_virtual_workforce.
+
+## Prior Sweep-604 content preserved below.
+
+# Operator Queue
+
 ## Sweep-604: Core Pillar Live Verification Residuals
 
 No destructive actions proposed.
