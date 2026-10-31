@@ -1,5 +1,22 @@
 # Operator Queue
 
+## Sweep-604: Core Pillar Live Verification Residuals
+
+No destructive actions proposed.
+
+Residuals:
+- Digital_Double_virtual_workforce: Open high-severity Dependabot alerts remain. Readiness FAIL until resolved. Operator: triage/patch or dismiss with justification.
+- BlockSwarm: Tag v0.5.0-sagf not found (404). Confirm if intentional or restore/document.
+- forge-aegis / sovereign-clean-room / BlockSwarm: No releases or tags. Elective if desired for versioning.
+- Full portfolio: Phases 4–10 still incomplete for most of 85 repositories. Exit criteria not fully satisfied.
+- sovereign-clean-room: VSA completeness UNVERIFIED.
+
+Stop after this cycle. Next invocation: residual security documentation/triage on Digital_Double_virtual_workforce or random selection.
+
+## Prior Sweep-603 content preserved below.
+
+# Operator Queue
+
 ## Sweep-603: Initial ADL-BASILISK Discovery Residuals
 
 No destructive actions proposed.
@@ -13,19 +30,4 @@ Stop after this cycle. Next invocation: residual-security-digital-double documen
 
 ## Prior Sweep-602 content preserved below.
 
-# Operator Queue
-
-## Sweep-602: SEEM-Cognitive_Microservice Residuals
-
-No destructive actions proposed.
-
-Residuals:
-- SEEM-Cognitive_Microservice: Classified SUPERSEDED. Claim 0 locked. Latest kernel CI green on tip. Open Dependabot alerts for vite (medium/low severity, development scope, related to dev-server path handling and middleware). Operator: elective triage/patch or dismiss with justification. Not blocking for SUPERSEDED claim-0 posture. Successor remains sovereign-clean-room.
-- Full portfolio: Phases 4–10 still incomplete for most repositories. Exit criteria not fully satisfied. No infinite autonomous cycle.
-- Prior core residuals (Digital_Double high Dependabot, sovereign-clean-room main CI reconfirm) unchanged.
-
-Stop after this cycle. Next random selection on subsequent invocation.
-
-## Prior Sweep-601 content preserved below.
-
-[Full prior content from Sweep-601 and earlier preserved in repository history.]
+[Full prior content from Sweep-602 and earlier preserved in repository history.]
