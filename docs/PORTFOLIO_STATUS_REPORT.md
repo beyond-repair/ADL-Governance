@@ -1,5 +1,41 @@
 # Portfolio Status Report
 
+**Updated:** 2026-10-31 (Sweep-609 / Random Research Reconfirmation: informational-flux-identity)
+**Project / Version:** ADL Portfolio Governance / Sweep-609
+**Objective:** Random selection reconfirmation of informational-flux-identity. Governance docs only. No code changes.
+
+## Sweep-609: Random Research Reconfirmation — COMPLETE for this cycle
+
+**Scope:** Live CI verification of informational-flux-identity. Observation only. No destructive actions. History preserved.
+
+**SELECT:** Random from portfolio as next action.
+
+**DISCOVER:** Latest CI success (run 41229437530, 2026-10-31, main b33223d). Recent commits on mathematical theorems (DI, DH, etc.). Classification RESEARCH consistent with prior (Sweep-168 etc.). No production or thrust claims. Tests and scripts present.
+
+**AUDIT:** vs ADL-Governance. Classification RESEARCH / low claim consistent. No elevation of claims. Residuals unchanged. No new unsupported claims.
+
+**CLASSIFY:** No change. RESEARCH reconfirmed.
+
+**PLAN:** Persist status. No code changes required.
+
+**IMPLEMENT:** Governance docs only. History preserved.
+
+**TEST → CI:** N/A (documentation).
+
+**DOCUMENT:** This report. SWEEP_HISTORY updated. OPERATOR_QUEUE updated.
+
+**GOVERN:** Claim caps intact. No fabrication. No elevation.
+
+**RELEASE/ARCHIVE:** None.
+
+**RE-AUDIT:** Live CI verified via API. Terminal for this random cycle.
+
+**Termination check:** For this selection: CI documented, no new issues, target documentation achieved. Full portfolio residuals remain. Stop. Do not loop.
+
+## Prior Sweep-608 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-10-31 (Sweep-608 / Pillar Phase-3 Live Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-608
 **Objective:** Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Governance docs only. No code changes.
@@ -38,40 +74,4 @@
 
 ## Prior Sweep-607 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-10-31 (Sweep-607 / Residual Security Triage: Digital_Double_virtual_workforce)
-**Project / Version:** ADL Portfolio Governance / Sweep-607
-**Objective:** Document open Dependabot alerts on Digital_Double_virtual_workforce. Governance docs only. No code changes.
-
-## Sweep-607: Residual Security Triage — COMPLETE for this cycle
-
-**Scope:** Live verification of open Dependabot alerts on Digital_Double_virtual_workforce. Observation only. No destructive actions. History preserved.
-
-**SELECT:** Prior residual as highest-value next slice.
-
-**DISCOVER:** Open alerts: high source-map-js (CVE-2026-93749, event-loop DoS via indexed source maps in package-lock.json), high js-yaml (CVE-2026-84375, CPU via empty merge keys), medium brace-expansion (quadratic expansion DoS), medium pytest (tmpdir insecure permissions). Development scope. README: ACTIVE, claim software, Python core + optional UI. CI present.
-
-**AUDIT:** vs ADL-Governance. Classification ACTIVE / claim software consistent. No elevation of claims. Residuals confirmed open. No new unsupported claims.
-
-**CLASSIFY:** No change. ACTIVE reconfirmed.
-
-**PLAN:** Persist status. No code changes required. Operator residual remains.
-
-**IMPLEMENT:** Governance docs only. History preserved.
-
-**TEST → CI:** N/A (documentation).
-
-**DOCUMENT:** This report. SWEEP_HISTORY updated. OPERATOR_QUEUE updated with confirmed alerts.
-
-**GOVERN:** Claim caps intact. No fabrication. No elevation.
-
-**RELEASE/ARCHIVE:** None.
-
-**RE-AUDIT:** Live alerts verified via API. Terminal for this residual cycle.
-
-**Termination check:** For this residual: alerts documented, no new issues introduced, target documentation achieved. Full portfolio residuals remain. Stop. Do not loop.
-
-## Prior Sweep-606 content preserved below.
-
-[Full prior content from Sweep-606 and earlier preserved in repository history.]
+[Full prior content from Sweep-607 and earlier preserved in repository history.]
