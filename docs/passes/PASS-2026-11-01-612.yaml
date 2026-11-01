@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-11-01-612
+  parent_pass: PASS-2026-11-01-611
+
+STATE:
+  global_status: MAINTAIN
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: multiple (Dependabot high/medium dev-scope, incomplete phases, releases)
+
+OBJECTIVE:
+  id: residual-triage-dd-dependabot
+  description: Triage open high-severity Dependabot alerts on Digital_Double_virtual_workforce. Confirm development scope, no critical, document residuals. Governance docs only. No code changes to capability repos.
+  reason_selected: Next action from prior pass (residual triage on highest remaining operator residual).
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 85 public repos.
+    - Digital_Double_virtual_workforce open Dependabot: no critical. High: vite/launch-editor (GHSA-587h-7wmj-h5pm, CVE-2026-112942, Windows command injection bypass, multiple manifests, dev scope, first patched 6.4.4+); source-map-js (GHSA-68fv-2mgg-jv7q, CVE-2026-93749, event-loop DoS, dev scope); js-yaml (GHSA-2883-xcg3-v3hh, CVE-2026-84375, CPU consumption via empty merges, dev scope). Medium: vite path traversal variants, brace-expansion, pytest. All development scope. Created mostly 2026-09 to 2026-11.
+    - No production runtime impact claimed. Operator residual confirmed.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-01-612.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - N/A (governance docs)
+  code_review: NOT_RUN
+  security: PASS (observation only; development scope; no elevation)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim caps, no elevation, history preserved, residuals documented)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - High-severity Dependabot on Digital_Double_virtual_workforce remain open, all development scope (npm vite/launch-editor, source-map-js, js-yaml). No critical. No production claim impact.
+    - Residuals persist as operator action (triage/patch or dismiss with justification). Readiness FAIL until resolved remains accurate for product surface.
+  failures:
+    - none
+  decisions:
+    - Document residual triage. No capability code changes this pass. Continue incremental. Operator residuals unchanged.
+
+REMAINING:
+  incomplete:
+    - Full portfolio Phases 4–10
+    - Release tags on pillars
+    - VSA completeness on sovereign-clean-room
+    - Dependabot triage/resolution on Digital_Double_virtual_workforce
+  blockers:
+    - Operator action required for Dependabot resolution, archive flags, release tags
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: random-selection-or-residual
+  action: Random selection for next coverage or further residual triage
+  reason: Residuals documented; highest remaining is operator-gated Dependabot and incomplete phases
+  prerequisites:
+    - none
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - github___list_dependabot_alerts (high/critical filters) on Digital_Double_virtual_workforce
