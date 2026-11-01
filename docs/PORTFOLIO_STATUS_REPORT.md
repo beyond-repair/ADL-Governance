@@ -1,5 +1,45 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-01 (Sweep-613 / Phase 3 Mandatory Live Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-613
+**Objective:** Explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce per Master Directive Phase 3. Governance docs only. No code changes. History preserved.
+
+## Sweep-613: Phase 3 Mandatory Live Verification — COMPLETE for this cycle
+
+**Scope:** Live structural verification of the four mandated repositories. Observation only. No destructive actions.
+
+**SELECT:** Phase 3 as directed.
+
+**DISCOVER:**
+- **forge-aegis**: CI workflow present (.github/workflows/ci.yml). Tests present (python/tests/test_pipeline.py, test_validator.py). Docs (README, GOVERNANCE, SECURITY, CLAIM_STATUS). Python package structure. No releases/tags observed. Classification ACTIVE (early) consistent.
+- **sovereign-clean-room**: CI workflow present (.github/workflows/python-tests.yml). Tests directory present. Core, bridge, skills structure. SECURITY.md present. No releases. VSA completeness remains UNVERIFIED beyond presence of tests.
+- **BlockSwarm**: CI workflow present (.github/workflows/foundry.yml). Contracts, test, script directories. Foundry/Hardhat configs. GOVERNANCE.md, SECURITY.md. No releases. Tag v0.5.0-sagf residual (prior 404).
+- **Digital_Double_virtual_workforce**: CI workflow present (.github/workflows/ci.yml). tests/, src/, digital_double/ structure. TypeScript + Python. SECURITY.md. Open high-severity Dependabot residuals (vite, source-map-js, js-yaml) confirmed from prior. Readiness FAIL until resolved.
+
+**AUDIT:** vs ADL-Governance claim policy. No elevation of claims. All demonstrated features limited to observed structure (CI presence, test files, docs). No fabrication of passing status without live run confirmation in this cycle. Residuals unchanged.
+
+**CLASSIFY:** No change. ACTIVE for the four. RESEARCH for overlapping variants.
+
+**PLAN:** Persist status. No code changes.
+
+**IMPLEMENT:** Governance docs only. History preserved.
+
+**TEST → CI:** Workflows exist; live run status not re-executed in this sweep (prior green noted in CANONICAL_REPOS).
+
+**DOCUMENT:** This report. SWEEP_HISTORY updated. OPERATOR_QUEUE updated.
+
+**GOVERN:** Claim caps intact. Code > Documentation > Roadmap. Unverified labeled.
+
+**RELEASE/ARCHIVE:** None.
+
+**RE-AUDIT:** Structural verification complete. Terminal for this Phase 3 cycle.
+
+**Termination check:** For mandated targets: structure, CI presence, tests presence, docs presence documented. No new critical CI failures introduced. Residuals recorded. Full portfolio Phases 4–10 incomplete. Stop. Do not loop.
+
+## Prior Sweep-612 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-01 (Sweep-612 / Residual Triage: Digital_Double_virtual_workforce Dependabot)
 **Project / Version:** ADL Portfolio Governance / Sweep-612
 **Objective:** Residual triage of open high-severity Dependabot alerts on Digital_Double_virtual_workforce. Governance docs only. No code changes.
@@ -34,40 +74,4 @@
 
 ## Prior Sweep-611 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-01 (Sweep-611 / Random Research Reconfirmation: CFTv3.3-IQG-Unified-Framework)
-**Project / Version:** ADL Portfolio Governance / Sweep-611
-**Objective:** Random selection reconfirmation of CFTv3.3-IQG-Unified-Framework. Governance docs only. No code changes.
-
-## Sweep-611: Random Research Reconfirmation — COMPLETE for this cycle
-
-**Scope:** Live CI verification of CFTv3.3-IQG-Unified-Framework. Observation only. No destructive actions. History preserved.
-
-**SELECT:** Random from portfolio (seed 20261101) as next action.
-
-**DISCOVER:** Latest CI success (run 37531114934, 2026-10-06, main 5e7e5ba). Docs-only synthesis ledger. Classification RESEARCH consistent with prior (Sweep-106/254). No production, thruster, or experimental confirmation claims. Tests for docs presence and symbol lock present. Releases/tags empty. Open Dependabot none.
-
-**AUDIT:** vs ADL-Governance. Classification RESEARCH / claim ≤ 2 consistent. No elevation of claims. Residuals unchanged. No new unsupported claims.
-
-**CLASSIFY:** No change. RESEARCH reconfirmed.
-
-**PLAN:** Persist status. No code changes required.
-
-**IMPLEMENT:** Governance docs only. History preserved.
-
-**TEST → CI:** N/A (documentation).
-
-**DOCUMENT:** This report. SWEEP_HISTORY updated. OPERATOR_QUEUE updated. PASS-2026-11-01-611.yaml added.
-
-**GOVERN:** Claim caps intact. No fabrication. No elevation.
-
-**RELEASE/ARCHIVE:** None.
-
-**RE-AUDIT:** Live CI verified via Actions page. Terminal for this random cycle.
-
-**Termination check:** For this selection: CI documented, no new issues, target documentation achieved. Full portfolio residuals remain. Stop. Do not loop.
-
-## Prior Sweep-610 content preserved below.
-
-[Full prior content from Sweep-610 and earlier preserved in repository history.]
+[Full prior content from Sweep-611 and earlier preserved in repository history.]
