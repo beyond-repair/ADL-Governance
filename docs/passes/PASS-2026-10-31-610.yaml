@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-10-31-610
+  parent_pass: PASS-2026-10-31-609
+
+STATE:
+  global_status: MAINTAIN
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: multiple (Dependabot, incomplete phases, releases)
+
+OBJECTIVE:
+  id: core-pillars-ci-reconfirm
+  description: Reconstruct ecosystem from GitHub and reconfirm live CI for core pillars ADL-Nexus and forge-aegis. Document residuals. No code changes to capability repos.
+  reason_selected: Next action from prior pass (random or pillar verification); fresh agent reconstruction required.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 85 public repos.
+    - Core: ADL-Governance (governing), ADL-Nexus (platform, RESEARCH ≤1), forge-aegis (FLS/AEGIS), aegis-repo-graph (locked snapshot), AEGIS-Project-Nehemiah-.
+    - ADL-Nexus latest CI: run 40918420615 success on 2073da97 (2026-10-29).
+    - forge-aegis latest CI: run 37258127100 success on e7188d52 (2026-10-05).
+    - Digital_Double_virtual_workforce has open high-severity Dependabot alerts (dev scope: vite/launch-editor, source-map-js, js-yaml, etc.). Operator residual.
+    - Pass records up to 609; history preserved.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-10-31-610.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - N/A (governance docs)
+  code_review: NOT_RUN
+  security: PASS (observation only; no elevation)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim caps, no elevation, history preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus CI green as of 2026-10-29. RESEARCH status reconfirmed.
+    - forge-aegis CI green as of 2026-10-05. No elevation.
+    - Ecosystem has persistent pass records and operator residuals for Dependabot and phases.
+  failures:
+    - none
+  decisions:
+    - Document reconstruction and CI reconfirm. Continue incremental. No capability code changes this pass.
+
+REMAINING:
+  incomplete:
+    - Full portfolio Phases 4–10
+    - Release tags on pillars
+    - VSA completeness on sovereign-clean-room
+    - Dependabot triage on Digital_Double_virtual_workforce
+  blockers:
+    - Operator action required for Dependabot resolution and archive flags
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: residual-triage-or-random
+  action: Triage Dependabot residual on Digital_Double_virtual_workforce or random selection for next coverage
+  reason: Residuals documented; highest remaining operator residual is high-severity Dependabot in development scope
+  prerequisites:
+    - none
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - github___get_me, search_repositories, actions_list for CI
+    - list_dependabot_alerts
+    - get_file_contents for prior passes and queue
