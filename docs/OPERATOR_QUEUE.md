@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-610: Core Pillars CI Reconfirm and Ecosystem Reconstruction
+
+No destructive actions proposed.
+
+Residuals:
+- ADL-Nexus: CI green (run 40918420615 success 2026-10-29). RESEARCH reconfirmed. No elevation.
+- forge-aegis: CI green (run 37258127100 success 2026-10-05). No elevation.
+- Digital_Double_virtual_workforce: Open high-severity Dependabot alerts confirmed (source-map-js GHSA-68fv-2mgg-jv7q event-loop DoS, js-yaml GHSA-2883-xcg3-v3hh CPU consumption, vite/launch-editor command injection, etc.). Medium: brace-expansion quadratic DoS, pytest tmpdir. Development scope. Operator: triage/patch or dismiss with justification. Readiness remains FAIL until resolved.
+- Prior residuals unchanged: BlockSwarm tag v0.5.0-sagf 404. forge-aegis / sovereign-clean-room / BlockSwarm no releases. sovereign-clean-room VSA UNVERIFIED. Full portfolio Phases 4–10 incomplete for most of 85 repositories. potential-garbanzo ARCHIVED terminal.
+
+Stop after this cycle. Next invocation: residual triage or random selection.
+
+## Prior Sweep-609 content preserved below.
+
+# Operator Queue
+
 ## Sweep-609: Random Research Reconfirmation of informational-flux-identity
 
 No destructive actions proposed.
