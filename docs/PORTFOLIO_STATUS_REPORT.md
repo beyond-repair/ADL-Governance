@@ -1,37 +1,45 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-02 (Sweep-620 / Reconstruct ecosystem under ADL-BASILISK)
-**Project / Version:** ADL Portfolio Governance / Sweep-620
-**Objective:** Reconstruct current ecosystem from live GitHub and governing docs for fresh agent continuity under recursive directive.
+**Updated:** 2026-11-02 (Sweep-621 / Priority Live Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-621
+**Objective:** Perform one governed sweep: Phase 1 discovery confirmation + Phase 3 live verification of priority repositories.
 
-## Sweep-620: Reconstruction Pass — COMPLETE for this cycle
+## Sweep-621: Priority Verification Pass — COMPLETE for this cycle
 
-**Scope:** Live API confirmation of 85-repo census. Governing sources identified. Continuity pass persisted. No product mutations.
+**Scope:** Live confirmation of 85-repo census. Explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. No product mutations. No claim elevation.
 
-**DISCOVER:**
-- Authenticated as beyond-repair.
-- Search `user:beyond-repair` total_count=85.
-- ADL-Governance: constitution, pass persistence, last activity 2026-11-02.
-- ADL-Nexus: local-first platform, RESEARCH lifecycle, claim ≤1, layers 0-8 coded, CLI present.
-- aegis-repo-graph: locked Artifact Graph snapshot.
-- Prior: Sweep-619 single-repo observation of BlockSwarm (ACTIVE SAGF substrate).
+**DISCOVER (Phase 1):**
+- Authenticated as beyond-repair. Search `user:beyond-repair` total_count=85 (confirmed).
+- ADL-Governance: governing source, ACTIVE, last push 2026-11-02T14:16:28Z.
+- Full inventory available via API; detailed capability graphs remain residual.
 
-**AUDIT:** Census confirmed. Claims not elevated. History preserved.
+**Phase 3 Live Verification (No Assumptions):**
 
-**CLASSIFY:** Governance reconstruction only.
+| Repo | CI | Tests | Docs | Security | Releases/Tags | Classification | Notes |
+|------|----|-------|------|----------|---------------|----------------|-------|
+| forge-aegis | ci.yml present | schemas/examples present | README, GOVERNANCE, CLAIM_STATUS, SECURITY, fls/ | SECURITY.md | UNVERIFIED (not enumerated this cycle) | RESEARCH | FLS/AEGIS Artifact Graph package. Claim-capped. |
+| sovereign-clean-room | .github present | tests/ present | README, SECURITY, docs/ | SECURITY.md | UNVERIFIED | RESEARCH | VSA Core (FHRR, BaNEL). Claim-capped interop. |
+| BlockSwarm | foundry.yml present | test/ present | README, GOVERNANCE, SECURITY, docs/ | SECURITY.md | Residual: v0.5.0-sagf operator-only | ACTIVE | SAGF substrate. Prior Sweep-619 confirmed. AI advises only. |
+| Digital_Double_virtual_workforce | .github present | tests/ present | README, SECURITY, CANONICAL.md, docs/ | SECURITY.md; high-severity Dependabot residual | UNVERIFIED | RESEARCH | Virtual workforce. Open issues=5. Dependabot residuals persist. |
 
-**PLAN:** Persist PASS-2026-11-02-620.yaml and update this report + SWEEP_HISTORY.
+**AUDIT:** Census confirmed. Priority repos verified for presence of CI/docs/tests. Claims not elevated. History preserved.
 
-**IMPLEMENT:** Files created/updated via API. Idempotent documentation.
+**CLASSIFY:** Priority set as above. Full 85-repo classification residual.
 
-**TEST → CI:** Live total_count=85 verified. No fabricated results.
+**PLAN:** Update this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. Stop.
 
-**DOCUMENT:** This report, SWEEP_HISTORY.md, new pass YAML.
+**IMPLEMENT:** Governance docs updated via API. Idempotent.
 
-**GOVERN:** Claim caps intact. No elevation.
+**TEST → CI:** Live API confirmation. No local test execution (observation only). No fabricated results.
 
-**RELEASE/ARCHIVE:** None.
+**DOCUMENT:** This report + history + queue.
 
-**RE-AUDIT:** Pass file and history updates confirmed via commit.
+**GOVERN:** Claim caps intact. Code > Documentation > Roadmap enforced. No fabrication.
 
-**Residual:** Full capability graphs and Phases 4–11 incomplete. Next: single high-value repo deeper audit or random observation. Stop for this cycle.
+**RELEASE/ARCHIVE:** None. Tag residuals remain operator-only.
+
+**RE-AUDIT:** Contents trees re-fetched for priority repos. No drift detected in structure.
+
+**Residual:** Full Phases 4–11 (capability inventory, dependency graph, gap analysis, redundancy, synergy, architecture review, code review readiness, safe remediation) incomplete for portfolio. Full classification of remaining ~80 repos pending. Next: operator-directed single-repo deeper audit or random observation. Stop for this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-620 content preserved in repository history.
