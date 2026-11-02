@@ -1,0 +1,84 @@
+PASS:
+  id: PASS-2026-11-02-620
+  parent_pass: PASS-2026-11-02-619
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 15
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-620
+  description: Reconstruct current ecosystem from live GitHub search (total_count 85), ADL-Governance docs (Sweep-619 BlockSwarm), ADL-Nexus structure, and persist this continuity pass under ADL-BASILISK.
+  reason_selected: Fresh agent session under recursive directive; Discover & Audit required before any product change; confirms census and governing sources for handoff.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; public_repos ~80, search total_count 85 (includes private or archived?).
+    - Governing source ADL-Governance (ACTIVE, last push 2026-11-02T14:06Z, HEAD ~74fd01f2).
+    - Core platform ADL-Nexus (RESEARCH, claim ≤1, v0.3.2, layers 0-8 present, local CLI, CI present).
+    - Artifact graph aegis-repo-graph (RESEARCH, locked snapshot).
+    - Latest prior: Sweep-619 observation of BlockSwarm (ACTIVE, SAGF Solidity substrate, claim-capped AI non-execution).
+    - Pass checker scripts/check_passes.py exists; schemas nested and flat supported.
+    - No fabrication of test results.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-02-620.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+    - docs/PORTFOLIO_STATUS_REPORT.md (replace content)
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - Persistent pass record for agent reconstruction
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=85 confirmed
+    - File existence via API confirmed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, claims not elevated)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 85 repositories.
+    - ADL-Governance is the constitution and pass persistence location.
+    - ADL-Nexus is the local-first platform under RESEARCH lifecycle.
+    - Recent sweeps are single-repo observation cycles with no product mutations.
+  failures:
+    - Recent PASS-*.yaml for Sweeps 616-619 not present in tree (history MD only).
+  decisions:
+    - Persist this reconstruction as PASS-620 without elevating any claims.
+    - Next bounded action remains single-repo observation or graph update.
+
+REMAINING:
+  incomplete:
+    - Full capability/dependency/authority graphs not fully materialized.
+    - Phases 4–11 of portfolio incomplete.
+  blockers:
+    - None for this reconstruction.
+  new_gaps:
+    - Missing YAML pass files for recent sweeps in docs/passes/.
+
+NEXT:
+  objective_id: GAP-SINGLE-REPO-OBSERVATION-621
+  action: Select one high-value repository (e.g. ADL-Nexus or BlockSwarm) for deeper audit of claimed vs implemented capabilities, or continue random observation.
+  reason: Highest-value residual is verified capability inventory rather than further census confirmation.
+  prerequisites:
+    - This pass persisted.
+    - Live API access retained.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count=85
+    - ADL-Governance README, SWEEP_HISTORY, PORTFOLIO_STATUS_REPORT
+    - ADL-Nexus README and tree summary
