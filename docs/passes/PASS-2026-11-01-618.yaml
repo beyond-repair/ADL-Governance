@@ -1,1 +1,79 @@
-$(cat /tmp/PASS-2026-11-01-618.yaml)
+PASS:
+  id: PASS-2026-11-01-618
+  parent_pass: PASS-2026-11-01-617
+
+STATE:
+  global_status: MAINTAIN
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: multiple (Dependabot high/medium dev-scope, incomplete phases, releases, archive flags)
+
+OBJECTIVE:
+  id: random-research-reconfirm-aegis-repo-graph
+  description: Random selection of aegis-repo-graph. Reconfirm RESEARCH classification, claim ≤1, locked snapshot graph, no open Dependabot, CI present. Governance docs only. No code changes to capability repos.
+  reason_selected: Next action from prior pass (random selection for coverage).
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 85 public repos. Selected aegis-repo-graph (seeded for coverage).
+    - Tree: graph package (catalog, drift, engine, model, observed snapshots), tests, CI workflow, docs/SWEEP notes, CLAIM_STATUS.md. Locked 2026-09-04 snapshot of 72 repos + queue.
+    - Open Dependabot: none.
+    - Classification RESEARCH / Claim ≤1 locked. Not live crawler, not FLS compiler, not Nehemiah host. Catalog integer claim:3 is snapshot data only.
+    - No elevation. History preserved.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-01-618.yaml
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (documentation only)
+
+VERIFICATION:
+  tests_run:
+    - N/A (governance docs)
+  code_review: NOT_RUN
+  security: PASS (observation only; no elevation)
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim caps, no elevation, history preserved, residuals documented)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - aegis-repo-graph remains RESEARCH locked snapshot Artifact Graph. No open Dependabot. CI present. Claim ≤1. No live crawl or compiler claims.
+    - Termination conditions met for this repo: no undefined components, no critical CI, no duplicates, no security issues, target state (docs + locked graph + CI) achieved.
+  failures:
+    - none
+  decisions:
+    - Document reconfirmation. Continue incremental. No capability code changes this pass. Operator residuals unchanged.
+
+REMAINING:
+  incomplete:
+    - Full portfolio Phases 4–11
+    - Release tags on pillars
+    - VSA completeness on sovereign-clean-room
+    - Dependabot triage/resolution on Digital_Double_virtual_workforce
+    - GitHub archive flags for queue
+  blockers:
+    - Operator action required for Dependabot resolution, archive flags, release tags
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: random-selection-or-residual
+  action: Random selection for next coverage or further residual triage
+  reason: Residuals documented; highest remaining is operator-gated Dependabot and incomplete phases
+  prerequisites:
+    - none
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - github___get_repository_tree, get_file_contents, list_dependabot_alerts on aegis-repo-graph
