@@ -1,8 +1,41 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-03 (Sweep-635 / Ecosystem Reconstruction)
-**Project / Version:** ADL Portfolio Governance / Sweep-635
-**Objective:** Reconstruct current ecosystem state from GitHub API and governance docs; persist this pass.
+**Updated:** 2026-11-03 (Sweep-636 / Ecosystem Reconstruction + LegionOS Reconfirm)
+**Project / Version:** ADL Portfolio Governance / Sweep-636
+**Objective:** Reconstruct current ecosystem state from GitHub API and governance docs; reconfirm LegionOS; persist this pass.
+
+## Sweep-636: Ecosystem Reconstruction + LegionOS Reconfirm — COMPLETE for this cycle
+
+**Scope:** Live API discovery and governance state persistence. No claim elevation. No product mutations.
+
+**SELECT / DISCOVER (Phase 1):**
+- Census confirmed at 85 repositories.
+- Governing sources reconfirmed: ADL-Governance (ACTIVE), ADL-Nexus (RESEARCH), aegis-repo-graph (RESEARCH).
+- LegionOS reconfirmed: RESEARCH, Claim ≤1, docs-only architecture sketch, no holarchy implementation.
+
+**AUDIT (Phase 3):**
+- Docs consistent with live API. Claim levels held. No drift detected.
+
+**CLASSIFY:**
+- No lifecycle changes. LegionOS locked as RESEARCH.
+
+**PLAN:** Persist PASS YAML and update governing docs.
+
+**IMPLEMENT:** Governance docs updated (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, new YAML).
+
+**TEST → CI:** N/A. API evidence only.
+
+**DOCUMENT:** Updated. Claim discipline enforced.
+
+**GOVERN:** No unsupported claims. History preserved. No elevation.
+
+**RELEASE/ARCHIVE:** None.
+
+**RE-AUDIT:** Reconfirmed. No drift.
+
+**Residual:** Operator archive flags. Full portfolio Phases 4–11 incomplete. Full 85 classification. YAML lag. Next random or directed. Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-635 content preserved below.
 
 ## Sweep-635: Ecosystem Reconstruction — COMPLETE for this cycle
 
