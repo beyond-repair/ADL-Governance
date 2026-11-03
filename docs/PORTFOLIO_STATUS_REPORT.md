@@ -1,5 +1,49 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-03 (Sweep-633 / Random Portfolio Sweep: m2-renormalization-law)
+**Project / Version:** ADL Portfolio Governance / Sweep-633
+**Objective:** Randomly select one repository from the 85-repo census, perform DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe CI fix) → DOCUMENT → GOVERN. Preserve claim integrity.
+
+## Sweep-633: m2-renormalization-law — COMPLETE for this cycle
+
+**Scope:** Random selection from full portfolio. Live discovery and verification of `m2-renormalization-law`. Safe idempotent CI repair. Governance state update only. No claim elevation.
+
+**SELECT / DISCOVER (Phase 1):**
+- Random selection: `m2-renormalization-law` (from authenticated search total_count=85).
+- Tree: Python package `m2/` (W law, ratios, spectral, effective_action, report), tests/, scripts/parameter_free_sweep.py, .github/workflows/ci.yml, CLAIM_STATUS.md, GOVERNANCE.md, README.md, pyproject.toml, requirements.txt.
+- Dependencies: numpy (runtime), pytest (dev). No network at runtime. Pins in `m2/__init__.py` (W0=0.08, XI=0.23, N_PIN=3).
+- Features: Stage-1 W(n)=0.08*exp(0.23*(n-3)) ansatz, Sweep-137 parameter-free ratio locks (Model A ~0.795:1:1.259, Model B ~0.589:1:1.699), combinatorial gasket spectrum locks, effective-action derivative check. Explicit non-claims and rejected hybrid documented.
+
+**AUDIT (Phase 3):**
+- Compliant with RESEARCH / claim-level 1. Explicit non-claims present. No unsupported elevation. Linked to coherence-drive canonical program.
+- Gap identified: CI workflow installed only numpy/pytest without `pip install -e .`, causing ModuleNotFoundError on `from m2 import ...` during pytest. Sweep script (stdlib) passed; full tests required package install.
+- Local verification: after `pip install -e .` + pytest, 10 passed. Report command exits cleanly with documented misses (not claims).
+- No critical security issues, no stale registry entries for this repo, no duplicate canonical (this is the Stage-1 lock).
+
+**CLASSIFY:**
+- `m2-renormalization-law`: **RESEARCH** (provisional scaling ansatz, claim level 1, RUNNABLE SKETCH / Claim-0). Justified by CLAIM_STATUS.md, GOVERNANCE.md, and code (locks only; Stage 2 G_n → LDOS_n → F_n remains open).
+- No lifecycle change. Priority pillars from Sweep-632 remain ACTIVE. Census stable at 85.
+
+**PLAN:** Target state CI-green for the lock workflow + docs updated. Action: repair CI install step.
+
+**IMPLEMENT:** Updated `.github/workflows/ci.yml` in m2-renormalization-law to `pip install -e .` (plus pytest). Commit on main. Idempotent.
+
+**TEST → CI:** Local tests pass post-install. CI workflow updated; next push/PR will exercise the green path. Governance N/A.
+
+**DOCUMENT:** This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated. Claim discipline enforced (code > docs).
+
+**GOVERN:** No unsupported claims. History preserved. No elevation. No deletion or history rewrite. Explicit non-claims retained.
+
+**RELEASE/ARCHIVE:** None. Research residual (Stage 2) preserved.
+
+**RE-AUDIT:** Tree and claim docs reconfirmed. CI gap closed. No drift.
+
+**Residual:** Operator archive flags. Portfolio-wide Phases 4–11 incomplete. Full classification of remaining repos. YAML lag for 629/630. Stage 2 of M2 remains open (not claimed). Next random selection or directed residual. Do not enter infinite review cycle.
+
+## Prior Sweep-632 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-03 (Sweep-632 / Priority Pillars Live Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-632
 **Objective:** Perform one governed sweep: Phase 1 discovery confirmation, Phase 2/3 classification and live verification of priority pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce). Observation only. No claim elevation. No product mutations.
@@ -45,42 +89,4 @@
 
 ## Prior Sweep-631 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-03 (Sweep-631 / Continuity Reconstruction post-Sweep-630)
-**Project / Version:** ADL Portfolio Governance / Sweep-631
-**Objective:** Reconstruct post Sweep-630; persist YAML; confirm state. Observation only. No claim elevation.
-
-## Sweep-631: Continuity — COMPLETE for this cycle
-
-**Scope:** Live confirmation of prior Sweep-630. Persist YAML pass record. Governance state update only. No product mutations.
-
-**DISCOVER:**
-- Live census stable at 85 (prior confirmed).
-- Sweep-630: Quantumclustering ARCHIVED Claim-0, empty (single README).
-- Priority pillars CI green (from Sweep-629).
-- YAML lag for recent sweeps noted and partially closed.
-
-**AUDIT:** Compliant with continuity and claim policy. No unsupported claims. History preserved.
-
-**CLASSIFY:** No lifecycle changes. Continuity observation.
-
-**PLAN:** Target state continuity achieved. YAML persisted.
-
-**IMPLEMENT:** Governance docs updated (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, new PASS YAML).
-
-**TEST → CI:** N/A (governance only). Live prior confirmations reconfirmed via API.
-
-**DOCUMENT:** Updated. Claim discipline enforced.
-
-**GOVERN:** No unsupported claims. History preserved. No elevation.
-
-**RELEASE/ARCHIVE:** None. Operator residuals preserved.
-
-**RE-AUDIT:** Prior state reconfirmed. No drift.
-
-**Residual:** Operator archive flags. Portfolio-wide Phases 4–11 incomplete. YAML for 629/630. Next directed graph slice or Digital_Double residual audit.
-
-## Prior Sweep-630 content preserved below.
-
-[Full prior content from Sweep-630 and earlier preserved in repository history.]
+[Full prior content from Sweep-631 and earlier preserved in repository history.]
