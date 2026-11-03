@@ -1,5 +1,26 @@
 # Operator Queue
 
+## Sweep-629: Master Directive Phase 1 Discovery + Phase 3 Live Verification
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Census confirmed stable at 85 via live search (total_count=85).
+- Phase 3 live verification complete for pillars:
+  - forge-aegis: CI green (37258127100), releases/tags empty, ACTIVE (RELEASE_BLOCKED).
+  - sovereign-clean-room: CI green on main (37064696194), releases/tags empty, ACTIVE (VSA UNVERIFIED).
+  - BlockSwarm: CI green (40441811261), releases/tags empty, ACTIVE.
+  - Digital_Double_virtual_workforce: CI green (39035783949), releases/tags empty, ACTIVE (security residual residual).
+- Priority classifications preserved from registry. No elevation.
+- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
+- Next: Directed capability graph slice or high-value single-repo audit. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-628 content preserved below.
+
+# Operator Queue
+
 ## Sweep-628: Continuity Reconstruction post-Sweep-627
 
 No destructive code actions proposed this cycle.
@@ -18,25 +39,4 @@ Stop after this cycle.
 
 ## Prior Sweep-627 content preserved below.
 
-# Operator Queue
-
-## Sweep-627: Random Single-Repo Audit — -text-informational-fork-protocol-
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- -text-informational-fork-protocol- confirmed RESEARCH (Claim-0 IFP arithmetic sketch, local pytest 13 passed, no CI by policy, claim-capped). GOVERNANCE.md note added. No code changes.
-- Priority classifications preserved: forge-aegis RESEARCH (RELEASE_BLOCKED_BY_OPERATOR), sovereign-clean-room RESEARCH, BlockSwarm ACTIVE (tag residual for v0.5.0-sagf), Digital_Double_virtual_workforce RESEARCH. Dependabot residuals unchanged.
-- Quantumclustering ARCHIVED (GitHub flag residual).
-- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
-- Next: Operator may trigger high-value single-repo audit (e.g. forge-aegis), capability graph slice, or directed work. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-626 content preserved below.
-
-# Operator Queue
-
-## Sweep-626: Continuity Reconstruction post-Sweep-625
-
-[Full prior content from Sweep-626 and earlier preserved in repository history.]
+[Full prior content from Sweep-627 and earlier preserved in repository history.]
