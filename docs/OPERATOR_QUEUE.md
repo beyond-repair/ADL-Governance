@@ -1,5 +1,22 @@
 # Operator Queue
 
+## Sweep-640: DigitalDoubleVirtualWorkforce3.5 Random Selection
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- DigitalDoubleVirtualWorkforce3.5 confirmed SUPERSEDED (Claim-0 offline sketch, successor Digital_Double_virtual_workforce). CI green (run 37633526662). No open Dependabot. Archive flag remains false (operator-gated).
+- No mutations required or performed on the product repo.
+- Census remains 85.
+- Priority pillars from prior remain ACTIVE.
+- YAML persistence lag for some prior sweeps still open.
+- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
+- Next: Random selection of next repository. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-639 content preserved below.
+
 ## Sweep-639: Phase 3 Mandatory Pillar Verification
 
 No destructive code actions proposed this cycle.
@@ -18,21 +35,4 @@ Stop after this cycle.
 
 ## Prior Sweep-637 content preserved below.
 
-## Sweep-637: Quantumclustering Random Selection
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- Quantumclustering confirmed ARCHIVED (empty archive-queue, Claim 0, README-only).
-- No code present; no tests/CI; no mutations required or performed.
-- Census remains 85.
-- Priority pillars from prior remain ACTIVE.
-- YAML persistence lag for some prior sweeps still open.
-- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
-- Next: Random selection of next repository. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-636 content preserved below.
-
-[Full prior content from Sweep-636 and earlier preserved in repository history.]
+[Full prior content from Sweep-637 and earlier preserved in repository history.]
