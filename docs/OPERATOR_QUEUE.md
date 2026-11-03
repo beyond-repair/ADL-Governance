@@ -1,5 +1,28 @@
 # Operator Queue
 
+## Sweep-632: Priority Pillars Live Verification
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Census confirmed stable at 85.
+- Priority pillars live-verified and classifications locked ACTIVE:
+  - forge-aegis: ACTIVE (RUNNABLE SKETCH, tests present; RELEASE_BLOCKED_BY_OPERATOR residual)
+  - sovereign-clean-room: ACTIVE (CI present; VSA UNVERIFIED residual)
+  - BlockSwarm: ACTIVE (Foundry tests, non-execution invariant; tag residual)
+  - Digital_Double_virtual_workforce: ACTIVE (Python core tests)
+- Quantumclustering remains ARCHIVED Claim-0 (Sweep-630).
+- Graph repos present but portfolio-wide incomplete.
+- YAML persistence lag for Sweep-629 and Sweep-630.
+- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
+- Next: Materialize small verified capability graph slice or directed residual audit. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-631 content preserved below.
+
+# Operator Queue
+
 ## Sweep-631: Continuity Reconstruction post-Sweep-630
 
 No destructive code actions proposed this cycle.
@@ -17,21 +40,4 @@ Stop after this cycle.
 
 ## Prior Sweep-630 content preserved below.
 
-# Operator Queue
-
-## Sweep-630: Random Single-Repo Audit — Quantumclustering
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- Quantumclustering confirmed empty (single README.md governance banner only). Classification locked ARCHIVED (Claim 0). No code, no tests, no CI.
-- Operator residual: Apply GitHub archive flag via `gh repo archive beyond-repair/Quantumclustering --yes` if desired (history preserved; do not delete).
-- Census confirmed stable at 85.
-- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Other archive flags operator residual.
-- Next: Random selection of next repository or directed high-value work. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-629 content preserved below.
-
-[Full prior content from Sweep-629 and earlier preserved in repository history.]
+[Full prior content from Sweep-630 and earlier preserved in repository history.]
