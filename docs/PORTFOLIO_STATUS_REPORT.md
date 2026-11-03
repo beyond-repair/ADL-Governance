@@ -1,5 +1,37 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-03 (Sweep-625 / Random Single-Repo Audit — BlockSwarm)
+**Project / Version:** ADL Portfolio Governance / Sweep-625
+**Objective:** Random selection of one repository; perform DISCOVER/AUDIT/CLASSIFY; update governance state. Observation only. No claim elevation.
+
+## Sweep-625: BlockSwarm — ACTIVE Confirmation — COMPLETE for this cycle
+
+**Scope:** Random selection from full 85-repo census. Deep audit of selected Solidity/Foundry SAGF substrate.
+
+**SELECT:** BlockSwarm (random choice from portfolio list).
+
+**DISCOVER:**
+- Solidity contracts in contracts/ (AIExecutor, DAOGovernor, GovernanceNFT, KnowledgeLedger, MerkleVerifier, OrchestrationEngine, RevertTokenLayer + libraries/MerkleProof).
+- Tests in test/ (AIExecutorAdvisoryOnly, DAOGovernorRoles, MerkleProof, OneVotePerSBT, RevertTokenInverseBinding, SAGFDeployWiring).
+- CI: .github/workflows/foundry.yml.
+- Docs: extensive under docs/ (invariants, validations, MERKLE, RELEASE notes, etc.), GOVERNANCE.md, SECURITY.md, README with claim caps.
+- Submodules: forge-std, openzeppelin-contracts (v4.9.6), openzeppelin-contracts-upgradeable.
+- Scripts: DeploySAGF.s.sol, deploy_sagf.js.
+- Invariant documented: AI advises. It cannot execute.
+- Tags/releases: empty (confirmed).
+
+**AUDIT:** Compliant with ACTIVE classification. Tests present covering key invariants (advisory-only, one-vote, roles, inverse binding, Merkle, deploy wiring). CI workflow present. Documentation claim-capped (no mainnet security, no token claims). No undefined critical components relative to stated scope. No critical security issues flagged in this observation. Stale elements: tag residual remains.
+
+**CLASSIFY:** ACTIVE. Justification: Active development substrate with Foundry tests, CI, governance docs, and explicit claim caps. Prior registry entry preserved.
+
+**PLAN / IMPLEMENT:** Docs updated. Tag + GitHub Release for `v0.5.0-sagf` remains operator residual. No code mutations (safe changes only; none required for termination this cycle).
+
+**Residual:** Operator to create tag/release for v0.5.0-sagf if desired. Portfolio-wide full classification of remaining repos, capability matrix, etc. remain open. Next: another random selection.
+
+## Prior Sweep-624 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-03 (Sweep-624 / Random Single-Repo Audit — Quantumclustering)
 **Project / Version:** ADL Portfolio Governance / Sweep-624
 **Objective:** Random selection of one repository; perform DISCOVER/AUDIT/CLASSIFY; update governance state. Observation only. No claim elevation.
