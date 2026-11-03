@@ -1,3 +1,25 @@
+## Sweep-629 / PASS-2026-11-03-629: Master Directive Portfolio Governance Sweep — Phase 1 Discovery + Phase 3 Live Verification 2026-11-03
+
+- Timestamp: 2026-11-03T03:15Z UTC (approx; current session).
+- Scope: One governed sweep under Master Directive v3.0. Portfolio discovery (census confirmation) and mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Governance docs only. Observation only. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER: Authenticated user:beyond-repair. Live search total_count=85, incomplete_results=false. ADL-Governance is governing source. Prior Sweep-628 continuity confirmed. Full name list extracted (85 public+private).
+- AUDIT / Phase 3 Live Verification (no assumptions):
+  - forge-aegis: CI success latest run 37258127100 (2026-10-05, main e7188d5). Releases: empty. Tags: empty. Classification: ACTIVE (software sketch / Claim-capped; RELEASE_BLOCKED_BY_OPERATOR preserved). Docs and FLS present per prior.
+  - sovereign-clean-room: Main CI success run 37064696194 (2026-10-02, 4878918c). PR branch seem-completion-pass has recent float-precision failures (not on main). Releases: empty. Tags: empty. Classification: ACTIVE (canonical SEEM substrate; VSA completeness UNVERIFIED).
+  - BlockSwarm: CI success latest run 40441811261 (2026-10-27, main 026c363). Releases: empty. Tags: empty. Classification: ACTIVE (SAGF; Foundry green).
+  - Digital_Double_virtual_workforce: Main CI success run 39035783949 (2026-10-17, ad0c3bd; security pin for form-data CVE). Dependabot workflows green. Releases: empty. Tags: empty. Classification: ACTIVE (public canonical; readiness residual; Dependabot active).
+- CLASSIFY: No changes. Prior registry classifications preserved. Census stable at 85.
+- PLAN: Update governance state. Residuals recorded. Stop (exit criteria not fully met: Phases 4-11 incomplete).
+- IMPLEMENT: This history entry, PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated via API. No code changes in product repos.
+- TEST → CI: Live Actions API confirmed green conclusions on main for all four. No fabricated status.
+- DOCUMENT: This entry. Status report and operator queue updated.
+- GOVERN: Claim discipline enforced. Code > Docs > Roadmap. History preserved. No elevation.
+- RELEASE/ARCHIVE: None. No tags created. Archive flags residual for operator.
+- RE-AUDIT: Live search and Actions API reconfirmed. No structural drift on pillars.
+- Residual: Full Phases 4–11 (capability inventory, dependency graph, gap/redundancy, synergy, canonical architecture, code review readiness, safe remediation). Complete classification of all 85. Archive operator residual. Next: directed capability graph or single high-value audit. Do not enter infinite cycle.
+
+## Prior Sweep-628 content preserved below.
+
 ## Sweep-628 / PASS-2026-11-03-628: Continuity Reconstruction post-Sweep-627 2026-11-03
 
 - Timestamp: 2026-11-03T03:07Z UTC.
@@ -16,25 +38,4 @@
 
 ## Prior Sweep-627 content preserved below.
 
-## Sweep-627 / PASS-2026-11-03-627: Random Single-Repo Audit — -text-informational-fork-protocol- 2026-11-03
-
-- Timestamp: 2026-11-03T03:01Z UTC.
-- Scope: One governed sweep. Random selection of one repository from the 85-repo portfolio. Deeper DISCOVER/AUDIT/CLASSIFY on selected repo. Governance docs only. Observation only. No claim elevation.
-- SELECT: Random choice via shuf from extracted name list of user:beyond-repair search (total_count=85). Selected: -text-informational-fork-protocol-.
-- DISCOVER: Recursive tree: final_verification.py (Claim-0 CLI), tests/test_final_verification.py, README.md (claim-capped + run instructions), GOVERNANCE.md, FIELD_EQUATIONS.md, METHODOLOGY_NOTES.md, REDUCTION_STDS.md, IFP_DOC_ZDP.3.1.md / TFM / DCH, pyproject.toml, requirements.txt. No .github/workflows. Canonical pointer to ware-constant-phenomenology.
-- AUDIT: vs claim policy and prior registry. Explicit RESEARCH / Claim-0 preserved. Local pytest 13 passed. Demo arithmetic confirmed (fork_detected under supplied T_Red > T_CIS×1000). Documentation claim-capped (no experimental non-local retrieval, no measured W, no consciousness claim). No critical undefined components relative to scope. No unsupported claims elevated. No critical security issues observed. No CI by explicit policy.
-- CLASSIFY: RESEARCH. Justification: Hypothesis-grade informational fork protocol with Claim-0 arithmetic instrumentation only. Tests present and green locally. Explicit falsifiability and forbidden claims. Prior classification confirmed.
-- PLAN: Target state: Confirmed RESEARCH with local tests green. Actions: Update GOVERNANCE.md note; update governance docs. No code changes (idempotent, none needed).
-- IMPLEMENT: GOVERNANCE.md updated via API. Governance docs updated. No product mutations.
-- TEST → CI: Local pytest executed: 13 passed in 0.14s. Demo CLI successful. No GitHub Actions present (policy). No fabricated green status.
-- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated. GOVERNANCE.md in target repo updated.
-- GOVERN: Claim level remains Claim-0. No elevation. History preserved. Code > Documentation > Roadmap enforced.
-- RELEASE/ARCHIVE: No tag created. No archive action.
-- RE-AUDIT: Tree and local tests re-confirmed. No structural drift. Terminal for this cycle on this repo (meets termination conditions for RESEARCH observation; residual is optional CI if policy changes).
-- Residual: Portfolio-wide full classification of remaining repos, capability matrix, etc. Optional CI residual. Next: another random selection or directed work.
-
-## Prior Sweep-626 content preserved below.
-
-## Sweep-626 / PASS-2026-11-03-626: Continuity Reconstruction post-Sweep-625 2026-11-03
-
-[Full prior content from Sweep-626 and earlier preserved in repository history.]
+[Full prior content from Sweep-627 and earlier preserved in repository history.]
