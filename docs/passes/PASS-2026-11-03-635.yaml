@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-11-03-635
+  parent_pass: PASS-2026-11-03-634
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-GOV-RECON-001
+  description: Reconstruct current ecosystem state from GitHub API and governance docs; persist this pass.
+  reason_selected: Highest-value next slice after Sweep-634; enables fresh agent continuation; no product mutation.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; public_repos=80, total search 85.
+    - Governing source: ADL-Governance (ACTIVE, constitution, claim validation, pass checker).
+    - Platform: ADL-Nexus (RESEARCH, claim ≤1, local-first layers).
+    - Graph: aegis-repo-graph (RESEARCH, locked snapshot 72 repos, claim ≤1).
+    - Latest prior: Sweep-634 / PASS-2026-11-03-634 on archived 'test' scratch.
+    - Priority pillars ACTIVE: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+    - Residuals: full Phases 4-11 incomplete, YAML lag, operator archive flags.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-635.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Governance pass persistence for reconstruction
+
+VERIFICATION:
+  tests_run:
+    - API discovery: PASS (85 repos confirmed)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem self-governed via claim levels 0-5, lifecycle, sweep history.
+    - No fabrication; all from live API and docs.
+  failures:
+    - None this pass.
+  decisions:
+    - Persist state in ADL-Governance docs only. No product changes.
+
+REMAINING:
+  incomplete:
+    - Full capability/dependency/authority graphs.
+    - Classification of remaining repos.
+    - Phases 4-11.
+  blockers:
+    - None for this pass.
+  new_gaps:
+    - YAML lag for 629/630/634 still open.
+
+NEXT:
+  objective_id: GAP-RANDOM-636
+  action: Random select one remaining unclassified or residual repo; DISCOVER-AUDIT-CLASSIFY.
+  reason: Continue incremental closure per core loop.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this
+  evidence:
+    - GitHub search total_count=85
+    - get_file_contents on READMEs and status docs
+    - Current session timestamp 2026-11-03
