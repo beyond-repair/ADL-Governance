@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-11-03-641
+  parent_pass: PASS-2026-11-03-640
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 67
+  capabilities_verified: 12
+  gaps_remaining: 18
+
+OBJECTIVE:
+  id: GAP-NEXUS-RECONFIRM
+  description: Random selection reconfirm of ADL-Nexus status and claims without elevation
+  reason_selected: Next bounded random selection after Sweep-640; highest-value among un-reconfirmed recent cores to maintain registry accuracy
+
+DISCOVERY:
+  findings:
+    - ADL-Nexus remains RESEARCH lifecycle, Claim ≤1 published with local ceiling refusing above 2
+    - Main CI success run 36847729267 on head bfe24fa7dcec041144a69e959171d0ceeabbcf90 (2026-10-01)
+    - Releases and tags empty
+    - Local-first platform with layers 0-8 code-present; live adapters UNSUPPORTED
+    - Production/AGI/full-workforce claims UNSUPPORTED
+    - Census stable at 85 public repositories
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-641.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (reconfirm only)
+
+VERIFICATION:
+  tests_run:
+    - none new (governance docs only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus claim discipline held; no promotion from green CI
+    - Live adapter interop remains UNSUPPORTED
+  failures:
+    - none this pass
+  decisions:
+    - No lifecycle change; remain RESEARCH
+
+REMAINING:
+  incomplete:
+    - Full Phases 4–11
+    - Capability matrix expansion beyond 67-row lock
+    - Dependency graph
+    - Operator archive flags
+  blockers:
+    - none for this slice
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-RANDOM-NEXT
+  action: Random selection of next repository for reconfirm or residual close
+  reason: Maintain progressive coverage without infinite review cycle
+  prerequisites:
+    - none
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - GitHub API tree/README/releases for ADL-Nexus
+    - Prior CI run 36847729267 success
