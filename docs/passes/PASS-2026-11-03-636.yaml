@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-11-03-636
+  parent_pass: PASS-2026-11-03-635
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECON-636
+  description: Reconstruct ecosystem from live GitHub under ADL-BASILISK; reconfirm LegionOS as RESEARCH Claim ≤1 (docs-only, no product); persist this pass.
+  reason_selected: Fresh agent execution of recursive directive; Discover & Audit required; LegionOS selected as bounded slice for classification confirmation without claim elevation.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; search total_count=85, incomplete_results=false.
+    - Latest prior PASS-635 / Sweep-635 reconstruction.
+    - ADL-Governance governing ACTIVE; ADL-Nexus RESEARCH v0.3.2 claim-capped.
+    - LegionOS: RESEARCH, Claim ≤1 (docs/architecture sketch only), docs-existence CI historical success, no implementation of holarchy layers, no releases.
+    - Census 85 vs locked PORTFOLIO_STATE 83; expansion residual.
+    - Priority pillars ACTIVE as prior.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-636.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+    - docs/OPERATOR_QUEUE.md (prepend)
+    - docs/PORTFOLIO_STATUS_REPORT.md (update)
+  commits:
+    - Sweep-636 continuity persist
+  capabilities_added_or_changed:
+    - Persistent YAML pass record for post-635 reconstruction + LegionOS reconfirm
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=85
+    - LegionOS tree and README confirmed via API (RESEARCH Claim ≤1, docs only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no product mutations)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 85.
+    - LegionOS remains RESEARCH / Claim ≤1 / docs-only; no promotion.
+    - Governing docs consistent with live API.
+  failures:
+    - None in this pass.
+  decisions:
+    - Persist this as PASS-636 to maintain continuity.
+    - Next: random or directed residual on remaining unclassified or graph slice.
+
+REMAINING:
+  incomplete:
+    - Full capability, dependency, authority graphs.
+    - Complete classification of all 85 repos.
+    - Phases 4–11.
+    - YAML lag for some prior sweeps.
+  blockers:
+    - None.
+  new_gaps:
+    - None beyond known residuals.
+
+NEXT:
+  objective_id: GAP-RANDOM-OR-GRAPH-637
+  action: Random select one remaining repo for DISCOVER-AUDIT-CLASSIFY or materialize small capability graph entry without elevating claims.
+  reason: Continue incremental closure of classification and graph gaps.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count=85
+    - LegionOS README.md and tree
+    - SWEEP_HISTORY.md Sweep-635
+    - PORTFOLIO_STATE.md (older lock)
