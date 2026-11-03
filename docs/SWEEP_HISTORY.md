@@ -1,3 +1,20 @@
+## Sweep-638 / PASS-2026-11-03-638: Ecosystem Reconstruction 2026-11-03
+
+- Timestamp: 2026-11-03T18:07Z UTC (approx; current session).
+- Scope: One governed reconstruction pass under ADL-BASILISK. DISCOVER via GitHub API. AUDIT governing docs. MODEL from docs. FIND GAP (persistence). SELECT small slice: persist continuity after Sweep-637. No product mutations. No claim elevation. No history rewrite.
+- DISCOVER: Authenticated beyond-repair. Census 85 confirmed. Key repos: ADL-Governance (governing ACTIVE), ADL-Nexus (RESEARCH ≤1), aegis-repo-graph. Latest Sweep-637 on Quantumclustering.
+- AUDIT: Docs consistent with API. Claim discipline held.
+- CLASSIFY: No changes.
+- PLAN: Persist PASS-2026-11-03-638.yaml + update history.
+- IMPLEMENT: Governance docs only.
+- TEST → CI: N/A. API evidence only.
+- DOCUMENT: This entry. PASS YAML added.
+- GOVERN: Claim discipline enforced. History preserved. No elevation.
+- Residual: Phases 4–11 incomplete. Full 85 classification. YAML lag (incl. 637). Operator archive flags. Next random selection.
+- Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-637 content preserved below.
+
 ## Sweep-637 / PASS-2026-11-03-637: Quantumclustering Random Selection 2026-11-03
 
 - Timestamp: 2026-11-03T17:02Z UTC (approx; current session).
@@ -14,21 +31,4 @@
 
 ## Prior Sweep-636 content preserved below.
 
-## Sweep-636 / PASS-2026-11-03-636: Ecosystem Reconstruction + LegionOS Reconfirm 2026-11-03
-
-- Timestamp: 2026-11-03T16:09Z UTC (approx; current session).
-- Scope: One governed reconstruction pass under ADL-BASILISK. DISCOVER via GitHub API. AUDIT governing docs and LegionOS. MODEL from docs. FIND GAP (persistence + classification confirm). SELECT small slice: reconfirm LegionOS RESEARCH Claim ≤1 (docs-only). No product mutations. No claim elevation. No history rewrite.
-- DISCOVER: Authenticated beyond-repair. Census 85 confirmed. Key repos: ADL-Governance (governing ACTIVE), ADL-Nexus (RESEARCH ≤1), aegis-repo-graph. Latest Sweep-635 reconstruction.
-- AUDIT: Docs consistent with API. LegionOS tree: docs only, README confirms RESEARCH Claim ≤1, holarchy unimplemented. Claim discipline held.
-- CLASSIFY: No changes. LegionOS reconfirmed RESEARCH / Claim ≤1. Priority pillars ACTIVE. Census 85.
-- PLAN: Persist PASS-2026-11-03-636.yaml + update history/report/queue.
-- IMPLEMENT: Governance docs only.
-- TEST → CI: N/A. API evidence only.
-- DOCUMENT: This entry. PASS YAML added.
-- GOVERN: Claim discipline enforced. History preserved. No elevation.
-- Residual: Phases 4–11 incomplete. Full 85 classification. YAML lag. Operator archive flags. Next random or directed graph slice.
-- Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-635 content preserved below.
-
-[Full prior content from Sweep-635 and earlier preserved in repository history.]
+[Full prior content from Sweep-636 and earlier preserved in repository history.]
