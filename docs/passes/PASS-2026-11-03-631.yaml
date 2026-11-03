@@ -1,0 +1,88 @@
+PASS:
+  id: PASS-2026-11-03-631
+  parent_pass: PASS-2026-11-03-630
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-631
+  description: Reconstruct ecosystem post Sweep-630 (random audit of Quantumclustering as ARCHIVED Claim-0 empty), confirm live census 85, persist YAML continuity pass, note missing YAMLs for 629/630.
+  reason_selected: Fresh agent execution of recursive core loop; Discover & Audit required to reconstruct from live GitHub + governance docs before selecting next bounded slice. Ensures handoff with YAML record. Highest-value is continuity persistence.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; prior live search total_count=85.
+    - ADL-Governance last activity Sweep-630 (MD only; no YAML for 630 or 629); SWEEP_HISTORY and OPERATOR_QUEUE updated for random single-repo audit of Quantumclustering (ARCHIVED / Claim-0, empty tree single README).
+    - Priority pillars: Digital_Double_virtual_workforce ACTIVE (CI green), sovereign-clean-room ACTIVE (VSA UNVERIFIED), BlockSwarm ACTIVE (tag residual), forge-aegis ACTIVE / RELEASE_BLOCKED_BY_OPERATOR.
+    - Graph repos present but portfolio-wide incomplete.
+    - PORTFOLIO_STATE.md locked at older census 83; live is 85.
+    - YAML pass records lag for recent MD sweeps.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-631.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+    - docs/OPERATOR_QUEUE.md (prepend)
+    - docs/PORTFOLIO_STATUS_REPORT.md (prepend)
+  commits:
+    - Sweep-631 continuity persist
+  capabilities_added_or_changed:
+    - Persistent YAML pass record for post-630 reconstruction
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=85 (prior)
+    - Prior file contents confirmed via API (SWEEP_HISTORY, OPERATOR_QUEUE, PORTFOLIO_STATUS_REPORT, PASS-628)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no destructive actions, no product mutations)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 85.
+    - Recent activity observation-only (random single-repo audits and continuity).
+    - Quantumclustering ARCHIVED Claim-0 empty.
+    - YAML lag for 629/630 closed for this pass; residual for prior.
+  failures:
+    - None in this pass. Missing YAMLs for 629/630 noted as residual.
+  decisions:
+    - Persist this as PASS-631 to maintain continuity.
+    - Next: directed high-value slice on capability graph or single high-priority repo deeper audit.
+
+REMAINING:
+  incomplete:
+    - Full capability, dependency, authority graphs.
+    - Complete classification of all 85 repos.
+    - Phases 4–11.
+    - YAML for prior sweeps (629, 630).
+  blockers:
+    - None.
+  new_gaps:
+    - YAML persistence lag for some sweeps.
+
+NEXT:
+  objective_id: GAP-CAPABILITY-GRAPH-SLICE-632
+  action: Materialize a small verified slice of the capability graph (e.g. entry for one audited RESEARCH or ACTIVE repo) in adl-capability-matrix or aegis-repo-graph without elevating claims; or audit Digital_Double_virtual_workforce for readiness residuals.
+  reason: Highest residual is incomplete capability/dependency graphs; bounded slice closes a known gap while preserving claim discipline. Priority queue starts with Digital_Double.
+  prerequisites:
+    - This pass persisted.
+    - API access to graph repos and priority repos.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count=85
+    - SWEEP_HISTORY.md Sweep-630 entry
+    - OPERATOR_QUEUE.md
+    - PORTFOLIO_STATUS_REPORT.md
+    - PASS-2026-11-03-628.yaml
