@@ -1,10 +1,51 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-03 (Sweep-637 / Random Portfolio Sweep: Quantumclustering)
-**Project / Version:** ADL Portfolio Governance / Sweep-637
-**Objective:** Randomly select one repository from the 85-repo census, perform DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (none required) → DOCUMENT → GOVERN.
+**Updated:** 2026-11-03 (Sweep-639 / Phase 3 Mandatory Live Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-639
+**Objective:** Explicit live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce per Master Directive v3.0 Phase 3.
 
 Preserve claim integrity.
+
+## Sweep-639: Phase 3 Pillar Verification — COMPLETE for this cycle
+
+**Scope:** Live API discovery and verification of the four mandatory pillars. Governance state update only. No claim elevation. No product mutations.
+
+**SELECT / DISCOVER / VERIFY (Phase 3):**
+- forge-aegis: CI success 37258127100 on e7188d5 (2026-10-05). RUNNABLE SKETCH claim held. Releases/tags empty. Tests/docs present.
+- sovereign-clean-room: Python tests success 37064696194 on 4878918c (2026-10-02). Releases/tags empty. VSA UNVERIFIED.
+- BlockSwarm: Foundry success 40441811261 on 026c363 (2026-10-27). ACTIVE, AI advises cannot execute. Releases/tags empty.
+- Digital_Double_virtual_workforce: CI success 39035783949 on ad0c3bd (2026-10-17, CVE pin). Prior success 36861489156. Open Dependabot residual. Releases/tags empty.
+
+**AUDIT:**
+- Consistent with prior (Sweep-287 registry). Claim levels held. No drift on verified heads.
+
+**CLASSIFY:**
+- No lifecycle changes. Pillars remain ACTIVE.
+
+**PLAN:**
+- Persist verification in governing docs.
+
+**IMPLEMENT:**
+- Governance docs updated (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md).
+
+**TEST → CI:**
+- Verified success conclusions on main. No new runs.
+
+**DOCUMENT:**
+- Updated. Claim discipline enforced.
+
+**GOVERN:**
+- No unsupported claims. History preserved. No elevation.
+
+**RELEASE/ARCHIVE:**
+- None.
+
+**RE-AUDIT:**
+- Reconfirmed pillar states. No critical unresolved CI failures on verified heads.
+
+**Residual:** Operator archive flags. Full portfolio Phases 4–11 incomplete. Census 85. Full classification/capability/dependency residual. Open Dependabot on Digital_Double. Next random or directed. Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-637 content preserved below.
 
 ## Sweep-637: Quantumclustering — COMPLETE for this cycle
 
@@ -61,37 +102,4 @@ No claim elevation. No product mutations.
 
 ## Prior Sweep-636 content preserved below.
 
-## Sweep-636: Ecosystem Reconstruction + LegionOS Reconfirm — COMPLETE for this cycle
-
-**Scope:** Live API discovery and governance state persistence. No claim elevation. No product mutations.
-
-**SELECT / DISCOVER (Phase 1):**
-- Census confirmed at 85 repositories.
-- Governing sources reconfirmed: ADL-Governance (ACTIVE), ADL-Nexus (RESEARCH), aegis-repo-graph (RESEARCH).
-- LegionOS reconfirmed: RESEARCH, Claim ≤1, docs-only architecture sketch, no holarchy implementation.
-
-**AUDIT (Phase 3):**
-- Docs consistent with live API. Claim levels held. No drift detected.
-
-**CLASSIFY:**
-- No lifecycle changes. LegionOS locked as RESEARCH.
-
-**PLAN:** Persist PASS YAML and update governing docs.
-
-**IMPLEMENT:** Governance docs updated (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, new YAML).
-
-**TEST → CI:** N/A. API evidence only.
-
-**DOCUMENT:** Updated. Claim discipline enforced.
-
-**GOVERN:** No unsupported claims. History preserved. No elevation.
-
-**RELEASE/ARCHIVE:** None.
-
-**RE-AUDIT:** Reconfirmed. No drift.
-
-**Residual:** Operator archive flags. Full portfolio Phases 4–11 incomplete. Full 85 classification. YAML lag. Next random or directed. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-635 content preserved below.
-
-[Full prior content from Sweep-635 and earlier preserved in repository history.]
+[Full prior content from Sweep-636 and earlier preserved in repository history.]
