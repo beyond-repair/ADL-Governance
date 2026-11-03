@@ -1,3 +1,21 @@
+## Sweep-628 / PASS-2026-11-03-628: Continuity Reconstruction post-Sweep-627 2026-11-03
+
+- Timestamp: 2026-11-03T03:07Z UTC.
+- Scope: Fresh agent reconstruction under ADL-BASILISK. Confirm live census, review latest Sweep-627, persist YAML pass record. Governance docs only. Observation only. No claim elevation. No product mutations.
+- DISCOVER: Authenticated beyond-repair; search total_count=85. ADL-Governance governing; Sweep-627 audited -text-informational-fork-protocol- as RESEARCH Claim-0 (local pytest 13 passed, no CI). ADL-Nexus RESEARCH v0.3.2 layered (0-8), stdlib, historical CI green, adapters UNSUPPORTED. forge-aegis RELEASE_BLOCKED. Graph repos (aegis-repo-graph, adl-capability-matrix) present but incomplete. PORTFOLIO_STATE.md locked at census 83.
+- AUDIT: vs prior state and claim policy. Census stable. Recent activity observation-only. Classifications preserved. No unsupported claims.
+- CLASSIFY: Continuity observation. No new lifecycle changes.
+- PLAN: Persist YAML for handoff; set next to capability graph slice.
+- IMPLEMENT: Created docs/passes/PASS-2026-11-03-628.yaml. Updated this history and OPERATOR_QUEUE.md.
+- TEST → CI: Live search confirmed. Prior files API-verified. No local tests run (governance only).
+- DOCUMENT: This entry. PASS YAML.
+- GOVERN: History preserved. No elevation. Claim discipline enforced.
+- RELEASE/ARCHIVE: None.
+- RE-AUDIT: New files confirmed via commit.
+- Residual: Full graphs, complete classification, phases 4-11. Next directed graph work.
+
+## Prior Sweep-627 content preserved below.
+
 ## Sweep-627 / PASS-2026-11-03-627: Random Single-Repo Audit — -text-informational-fork-protocol- 2026-11-03
 
 - Timestamp: 2026-11-03T03:01Z UTC.
