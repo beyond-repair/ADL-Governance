@@ -1,0 +1,89 @@
+PASS:
+  id: PASS-2026-11-03-628
+  parent_pass: PASS-2026-11-03-627
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 13
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-628
+  description: Reconstruct ecosystem post Sweep-627 (random audit of -text-informational-fork-protocol- as RESEARCH Claim-0), confirm live census 85, persist YAML continuity pass under ADL-BASILISK directive.
+  reason_selected: Fresh agent execution of recursive core loop; Discover & Audit required to reconstruct from live GitHub + governance docs before selecting next bounded slice. Ensures handoff with YAML record.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; live search total_count=85, incomplete_results=false.
+    - ADL-Governance last activity Sweep-627 (MD only; no YAML yet for 627); SWEEP_HISTORY and OPERATOR_QUEUE updated for random single-repo audit of -text-informational-fork-protocol- (RESEARCH / Claim-0, local pytest 13 passed, no CI by policy).
+    - ADL-Nexus: RESEARCH, v0.3.2, layered architecture (0-8), stdlib-only, historical CI green, no releases. Live adapters UNSUPPORTED.
+    - forge-aegis: present, RELEASE_BLOCKED_BY_OPERATOR status preserved.
+    - Graph repos present: aegis-repo-graph, adl-capability-matrix (locked inventories, incomplete portfolio-wide).
+    - PORTFOLIO_STATE.md remains locked at 2026-10-20 census 83; live is 85.
+    - Priority queue from prior: Digital_Double, sovereign-clean-room, BlockSwarm, forge-aegis.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-628.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+    - docs/OPERATOR_QUEUE.md (prepend)
+  commits:
+    - Sweep-628 continuity persist
+  capabilities_added_or_changed:
+    - Persistent YAML pass record for post-627 reconstruction
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=85
+    - Prior file contents confirmed via API (SWEEP_HISTORY, OPERATOR_QUEUE, ADL-Nexus README/tree)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no destructive actions, no product mutations)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 85.
+    - Recent activity observation-only (random single-repo audits and continuity).
+    - -text-informational-fork-protocol- RESEARCH Claim-0 with local tests.
+    - ADL-Nexus remains RESEARCH v0.3.2 with claim-capped layers.
+    - YAML pass records lag MD history (627 has no YAML; this closes for 628).
+  failures:
+    - None in this pass.
+  decisions:
+    - Persist this as PASS-628 to maintain continuity.
+    - Next: directed high-value slice on capability graph or ADL-Nexus deeper audit / observation entry.
+
+REMAINING:
+  incomplete:
+    - Full capability, dependency, authority graphs.
+    - Complete classification of all 85 repos.
+    - Phases 4–11.
+    - YAML for prior sweeps (e.g. 627).
+  blockers:
+    - None.
+  new_gaps:
+    - None identified beyond known residuals.
+
+NEXT:
+  objective_id: GAP-CAPABILITY-GRAPH-SLICE-629
+  action: Materialize a small verified slice of the capability graph (e.g. entry for ADL-Nexus layers or one audited RESEARCH repo) in adl-capability-matrix or aegis-repo-graph without elevating claims; or deeper audit of ADL-Nexus CI/tests if local verification possible.
+  reason: Highest residual is incomplete capability/dependency graphs; bounded slice closes a known gap while preserving claim discipline.
+  prerequisites:
+    - This pass persisted.
+    - API access to graph repos.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count=85
+    - SWEEP_HISTORY.md Sweep-627 entry
+    - OPERATOR_QUEUE.md
+    - ADL-Nexus README.md and tree
+    - PORTFOLIO_STATE.md (older lock)
