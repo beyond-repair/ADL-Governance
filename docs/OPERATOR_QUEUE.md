@@ -1,5 +1,25 @@
 # Operator Queue
 
+## Sweep-633: Random Portfolio Sweep — m2-renormalization-law
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Census confirmed stable at 85.
+- Random selection: m2-renormalization-law classified RESEARCH (claim level 1, provisional Stage-1 ansatz, RUNNABLE SKETCH). CI install gap closed (now `pip install -e .`). Local tests 10 passed. Stage 2 (G_n → LDOS_n → F_n) remains open and unclaimed.
+- Priority pillars from Sweep-632 remain ACTIVE (forge-aegis RELEASE_BLOCKED_BY_OPERATOR residual; sovereign-clean-room VSA UNVERIFIED; BlockSwarm tag residual; Digital_Double_virtual_workforce ACTIVE).
+- Quantumclustering remains ARCHIVED Claim-0 (Sweep-630).
+- Graph repos present but portfolio-wide incomplete.
+- YAML persistence lag for Sweep-629 and Sweep-630.
+- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
+- Next: Random selection of next repository or directed residual. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-632 content preserved below.
+
+# Operator Queue
+
 ## Sweep-632: Priority Pillars Live Verification
 
 No destructive code actions proposed this cycle.
@@ -21,23 +41,4 @@ Stop after this cycle.
 
 ## Prior Sweep-631 content preserved below.
 
-# Operator Queue
-
-## Sweep-631: Continuity Reconstruction post-Sweep-630
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- Census confirmed stable at 85.
-- Sweep-630 confirmed ARCHIVED Claim-0 for Quantumclustering (empty tree, single README).
-- Priority classifications preserved: Digital_Double_virtual_workforce ACTIVE, sovereign-clean-room ACTIVE (VSA UNVERIFIED), BlockSwarm ACTIVE (tag residual), forge-aegis ACTIVE / RELEASE_BLOCKED_BY_OPERATOR.
-- Graph repos present but portfolio-wide incomplete.
-- YAML persistence lag for Sweep-629 and Sweep-630.
-- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
-- Next: Materialize small verified capability graph slice or directed audit of Digital_Double_virtual_workforce readiness. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-630 content preserved below.
-
-[Full prior content from Sweep-630 and earlier preserved in repository history.]
+[Full prior content from Sweep-631 and earlier preserved in repository history.]
