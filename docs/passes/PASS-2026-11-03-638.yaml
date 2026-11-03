@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-11-03-638
+  parent_pass: PASS-2026-11-03-637
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECON-638
+  description: Reconstruct ecosystem from live GitHub under ADL-BASILISK; persist this pass after Sweep-637.
+  reason_selected: Fresh agent execution of recursive directive; Discover & Audit required; continuity after prior random sweep.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; search total_count=85, incomplete_results=false.
+    - Latest prior Sweep-637 / PASS-637 on Quantumclustering (ARCHIVED empty).
+    - ADL-Governance governing ACTIVE; ADL-Nexus RESEARCH v0.3.2 claim-capped ≤1.
+    - aegis-repo-graph RESEARCH ≤1 with locked catalog.
+    - Census 85 confirmed.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-638.yaml (new)
+  commits:
+    - Sweep-638 continuity persist
+  capabilities_added_or_changed:
+    - Persistent YAML pass record for post-637 reconstruction
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=85
+    - Key repos READMEs confirmed via API
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no product mutations)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 85.
+    - Governing docs consistent with live API.
+    - Sweep-637 completed for Quantumclustering.
+  failures:
+    - None in this pass.
+  decisions:
+    - Persist this as PASS-638 to maintain continuity.
+    - Next: random selection of next repository for classification.
+
+REMAINING:
+  incomplete:
+    - Full capability, dependency, authority graphs.
+    - Complete classification of all 85 repos.
+    - Phases 4–11.
+    - YAML lag for some prior sweeps including 637.
+  blockers:
+    - None.
+  new_gaps:
+    - None beyond known residuals.
+
+NEXT:
+  objective_id: GAP-RANDOM-639
+  action: Random select one remaining repo for DISCOVER-AUDIT-CLASSIFY without elevating claims.
+  reason: Continue incremental closure of classification gaps.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count=85
+    - ADL-Nexus README.md
+    - ADL-Governance docs
+    - SWEEP_HISTORY.md Sweep-637
