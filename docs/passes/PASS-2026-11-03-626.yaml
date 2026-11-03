@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-11-03-626
+  parent_pass: PASS-2026-11-03-625
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 85
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-626
+  description: Reconstruct ecosystem post Sweep-625 (BlockSwarm ACTIVE observation), confirm census 85, persist continuity PASS under ADL-BASILISK directive.
+  reason_selected: Fresh agent invocation of recursive engineering directive; Discover & Audit required; latest history is MD-only for 625; ensures handoff state.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; search total_count=85 confirmed.
+    - ADL-Governance governing source; last push ~2026-11-03T02:02Z; SWEEP_HISTORY has Sweep-625 BlockSwarm audit (ACTIVE, claim-capped, tag residual).
+    - OPERATOR_QUEUE updated to Sweep-625; Quantumclustering ARCHIVED (flag residual).
+    - Priority: forge-aegis RESEARCH (RELEASE_BLOCKED), sovereign-clean-room RESEARCH, BlockSwarm ACTIVE, Digital_Double_virtual_workforce RESEARCH.
+    - No product code mutations in recent sweeps; governance docs only.
+    - Pass checker available; no fabrication.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-03-626.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+    - docs/OPERATOR_QUEUE.md (prepend)
+  commits:
+    - Sweep-626 continuity persist
+  capabilities_added_or_changed:
+    - Persistent YAML pass record for post-625 reconstruction
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=85
+    - Prior file contents confirmed via API
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, no claim elevation, no destructive actions)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 85.
+    - Recent activity is observation-only single-repo audits and inventory.
+    - BlockSwarm remains ACTIVE with operator tag residual for v0.5.0-sagf.
+    - YAML pass files lag behind MD history for recent sweeps.
+  failures:
+    - None in this pass.
+  decisions:
+    - Persist this as PASS-626 to close the MD-only gap for continuity.
+    - Next remains non-looping single-repo or graph work.
+
+REMAINING:
+  incomplete:
+    - Full capability, dependency, authority graphs.
+    - Complete classification of all 85 repos.
+    - Phases 4–11.
+  blockers:
+    - None.
+  new_gaps:
+    - YAML vs MD pass record consistency for sweeps 621–625.
+
+NEXT:
+  objective_id: GAP-SINGLE-REPO-OR-GRAPH-627
+  action: Select one remaining high-value repo for audit (e.g. forge-aegis or ADL-Nexus) or materialize a capability graph slice; avoid pure review cycle.
+  reason: Highest residual is verified capability inventory and integration gaps.
+  prerequisites:
+    - This pass persisted.
+    - API access.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - github___search_repositories total_count=85
+    - SWEEP_HISTORY.md Sweep-625 entry
+    - OPERATOR_QUEUE.md
+    - PORTFOLIO_STATE.md (older lock)
