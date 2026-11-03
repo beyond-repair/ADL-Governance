@@ -1,5 +1,52 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-03 (Sweep-632 / Priority Pillars Live Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-632
+**Objective:** Perform one governed sweep: Phase 1 discovery confirmation, Phase 2/3 classification and live verification of priority pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce). Observation only. No claim elevation. No product mutations.
+
+## Sweep-632: Priority Pillars Verification — COMPLETE for this cycle
+
+**Scope:** Live verification of four priority repositories. Confirm census, classifications, and residual risks. Governance state update only.
+
+**DISCOVER (Phase 1):**
+- Live census confirmed at 85 repositories under user:beyond-repair (authenticated search total_count=85).
+- Full inventory available via API; key pillars present and recently updated.
+- ADL-Governance remains the governing source.
+
+**AUDIT / VERIFY (Phase 3):**
+- **forge-aegis**: README confirms ACTIVE lifecycle, software claim / RUNNABLE SKETCH. Offline Python pipeline for FLS/AEGIS v0.1 vertical slice. Tests present (test_validator.py, test_pipeline.py). No third-party packages required for core. Tree includes .github, python/, tests, schemas, fls/. No network, no host execution. Classification ACTIVE confirmed. Residual: RELEASE_BLOCKED_BY_OPERATOR (per prior).
+- **sovereign-clean-room**: README confirms ACTIVE. Offline cognitive substrate with cryptographic skill gates. CI workflow present (.github/workflows/python-tests.yml). Tests under tests/. Python 3.11-3.13. VSA surface noted UNVERIFIED in prior operator notes. Classification ACTIVE confirmed.
+- **BlockSwarm**: README confirms ACTIVE. Solidity · Foundry. Invariant: AI advises, cannot execute. Tests under test/. Submodules for OpenZeppelin and forge-std. Tag lineage includes v0.5.0-sagf. Classification ACTIVE confirmed. Residual: tag residual.
+- **Digital_Double_virtual_workforce**: README confirms ACTIVE. Python package digital_double (Agent/Task/Orchestrator). Tests present (pytest and smoke). Optional React/Vite UI not wired to core. Classification ACTIVE confirmed.
+
+**CLASSIFY (Phase 2):**
+- forge-aegis: ACTIVE
+- sovereign-clean-room: ACTIVE (VSA UNVERIFIED residual)
+- BlockSwarm: ACTIVE (tag residual)
+- Digital_Double_virtual_workforce: ACTIVE
+- Quantumclustering: ARCHIVED (from Sweep-630, confirmed)
+- No new lifecycle changes this cycle. All priority pillars retain ACTIVE based on code presence, tests, and documented claims (code > docs).
+
+**PLAN:** Target state for this sweep achieved (verification and classification lock for priorities). Full portfolio phases 4–11 remain residual.
+
+**IMPLEMENT:** Governance docs updated (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). No product code changes.
+
+**TEST → CI:** N/A for governance. Live READMEs, trees, and prior CI notes confirmed via API. No local execution of product tests this cycle.
+
+**DOCUMENT:** Updated. Claim discipline enforced. Unverified claims labeled.
+
+**GOVERN:** No unsupported claims. History preserved. No elevation. No deletion or history rewrite.
+
+**RELEASE/ARCHIVE:** None this cycle. Prior residuals preserved.
+
+**RE-AUDIT:** Priority READMEs and trees reconfirmed. No drift from prior classifications.
+
+**Residual:** Operator archive flags. Portfolio-wide Phases 4–11 incomplete (capability inventory, dependency graph, gap analysis, redundancy, synergy, architecture review, code review readiness, safe remediation). Full classification of all 85. YAML lag for 629/630. Next: directed capability graph slice or residual audit. Do not enter infinite review cycle.
+
+## Prior Sweep-631 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-03 (Sweep-631 / Continuity Reconstruction post-Sweep-630)
 **Project / Version:** ADL Portfolio Governance / Sweep-631
 **Objective:** Reconstruct post Sweep-630; persist YAML; confirm state. Observation only. No claim elevation.
@@ -36,44 +83,4 @@
 
 ## Prior Sweep-630 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-03 (Sweep-630 / Random Single-Repo Audit — Quantumclustering)
-**Project / Version:** ADL Portfolio Governance / Sweep-630
-**Objective:** Random selection of one repository; perform DISCOVER/AUDIT/CLASSIFY; update governance state. Observation only. No claim elevation.
-
-## Sweep-630: Quantumclustering — COMPLETE for this cycle
-
-**Scope:** Live confirmation of empty historical repository. Classification locked as ARCHIVED. Governance state update only. No product mutations.
-
-**SELECT:** Random from full 85-repo census: Quantumclustering.
-
-**DISCOVER:**
-- Tree: single file README.md (size ~1891 bytes). No source code, no tests, no CI workflows, no dependencies.
-- Default branch: main (SHA 1933563cd80586f18ee0555c9bb3b450f7f1362d).
-- README explicitly states: "Empty repository. No algorithm is present." Lifecycle ARCHIVE QUEUE, Claim 0. Not claimed: profit, product, deployment, quantum advantage.
-- Size zero confirmed historically; current content is governance banner only.
-
-**AUDIT:** Compliant with archive-queue policy. No undefined components (none exist). No stale code. No security issues. No unsupported claims. Matches prior registry entry.
-
-**CLASSIFY:** ARCHIVED (empty historical repository). Justification: No code, no active development, explicitly marked ARCHIVE QUEUE in self-README, listed in repository_registry.md ARCHIVED section and archive_queue.md. Claim level 0 preserved. No SUPERSEDES relation.
-
-**PLAN:** Target state ARCHIVED locked. No further implementation required. Operator residual: GitHub archive flag (gh repo archive) remains pending.
-
-**IMPLEMENT:** Governance docs updated (this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md). No changes to Quantumclustering (idempotent preservation of empty state).
-
-**TEST → CI:** N/A (no code, no workflow). Live tree confirmed empty of executable content.
-
-**DOCUMENT:** Updated. Claim discipline enforced.
-
-**GOVERN:** No unsupported claims. History preserved. No elevation.
-
-**RELEASE/ARCHIVE:** Classification locked. GitHub archive operator residual only.
-
-**RE-AUDIT:** Tree reconfirmed single README. No drift.
-
-**Residual:** Operator to apply GitHub archive flag if desired. Portfolio-wide Phases 4–11 incomplete. Next random selection or directed work.
-
-## Prior Sweep-629 content preserved below.
-
-[Full prior content from Sweep-629 and earlier preserved in repository history.]
+[Full prior content from Sweep-630 and earlier preserved in repository history.]
