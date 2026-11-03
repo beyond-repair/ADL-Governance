@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-641: ADL-Nexus Random Selection Reconfirm
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- ADL-Nexus confirmed RESEARCH (Claim ≤1, CI green on 2026-10-01 run 36847729267). No releases/tags. Live adapters UNSUPPORTED. No mutations required.
+- Census remains 85.
+- Priority pillars from prior remain ACTIVE.
+- YAML persistence lag for some prior sweeps still open.
+- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
+- Next: Random selection of next repository. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-640 content preserved below.
+
 ## Sweep-640: DigitalDoubleVirtualWorkforce3.5 Random Selection
 
 No destructive code actions proposed this cycle.
