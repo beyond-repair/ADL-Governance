@@ -1,5 +1,61 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-03 (Sweep-643 / quantum_A.I._optimization.py Random Selection)
+**Project / Version:** ADL Portfolio Governance / Sweep-643
+**Objective:** Random selection, live discovery, audit, and reconfirmation of quantum_A.I._optimization.py as ARCHIVED Claim-0.
+
+Preserve claim integrity. No product mutations.
+
+## Sweep-643: quantum_A.I._optimization.py — COMPLETE for this cycle
+
+**Scope:** Random selection from full portfolio (seeded from authenticated search of 85 repos). Live API discovery of quantum_A.I._optimization.py. Governance state update only. No claim elevation. No product mutations.
+
+**SELECT / DISCOVER (Phase 1):**
+- Random selection: quantum_A.I._optimization.py (from 85-repo list).
+- Tree: .github/workflows/python-package.yml (Python 3.10/3.11 matrix), README.md, docs/CLAIM_STATUS.md, docs/CLASSIFICATION.md, quantum_ai_optimization.py (main logic), quantum_A.I._optimization.py (shim), tests/test_quantum_ai_optimization.py, requirements.txt (Qiskit 2.5.2 etc.), LICENSE.
+- README declares: LIFECYCLE ARCHIVED (governance class; GitHub flag still false), CLAIM 0, not a demonstrated quantum advantage. Archive-queue under ADL-Governance. Historical demo sketch.
+- CI note: Prior run fixed for Python 3.9 incompatibility; matrix now 3.10/3.11.
+- Listed in ADL-Governance archive_queue.md and repository_registry.md as ARCHIVED queue.
+
+**AUDIT (Phase 3):**
+- Compliant with ADL-Governance ARCHIVED rules. Claim 0 held. No unsupported claims (explicitly not quantum advantage, profit, product).
+- Components documented (CLAIM_STATUS.md, CLASSIFICATION.md, README). Tests cover QP, VQE, QNN paths. CI workflow present.
+- No critical security issues. Archive flag remains false (operator-gated, per design).
+
+**CLASSIFY:**
+- ARCHIVED (Claim-0 historical Qiskit sketch). Justification: Self-declared in README/CLASSIFICATION/CLAIM_STATUS; listed in archive queue; no successor claimed; further feature work out of scope; history preserved.
+
+**PLAN:**
+- Target state: ARCHIVED confirmed, termination conditions met for this repo. No further development.
+- Actions: None required in product repo. Update governing docs.
+
+**IMPLEMENT:**
+- No changes to quantum_A.I._optimization.py (idempotent preservation of ARCHIVED state).
+- No destructive actions queued.
+
+**TEST → CI:**
+- Workflow exists with pytest. Prior success on 3.10/3.11 inferred from notes. No new runs triggered this cycle.
+
+**DOCUMENT:**
+- This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
+- Repo docs already sufficient; no update needed.
+
+**GOVERN:**
+- No unsupported claims. Claim discipline enforced. History preserved. No elevation.
+
+**RELEASE/ARCHIVE:**
+- Already ARCHIVED class. Classification locked. Archive flag operator residual.
+- Termination conditions met for this repository.
+
+**RE-AUDIT:**
+- Reconfirmed ARCHIVED state. No drift. Docs consistent. No critical unresolved issues.
+
+**Residual:** Operator archive flags. Full portfolio Phases 4–11 incomplete. Census 85. Full classification/capability/dependency residual. Next random selection. Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-642 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-03 (Sweep-642 / Phase 3 Mandatory Pillar Reconfirmation)
 **Project / Version:** ADL Portfolio Governance / Sweep-642
 **Objective:** Live re-verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce under Master Directive v3.0.
@@ -47,60 +103,4 @@ Preserve claim integrity. No product mutations.
 
 ## Prior Sweep-640 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-03 (Sweep-640 / DigitalDoubleVirtualWorkforce3.5 Random Selection)
-**Project / Version:** ADL Portfolio Governance / Sweep-640
-**Objective:** Random selection, live discovery, audit, and reconfirmation of DigitalDoubleVirtualWorkforce3.5 as SUPERSEDED Claim-0.
-
-Preserve claim integrity. No product mutations.
-
-## Sweep-640: DigitalDoubleVirtualWorkforce3.5 — COMPLETE for this cycle
-
-**Scope:** Random selection from full portfolio (seeded from authenticated search of 85 repos). Live API discovery of DigitalDoubleVirtualWorkforce3.5. Governance state update only. No claim elevation. No product mutations.
-
-**SELECT / DISCOVER (Phase 1):**
-- Random selection: DigitalDoubleVirtualWorkforce3.5 (from 85-repo list).
-- Tree: src/core (agent, cap, config, monitor, rules, storage), src/models (quantizer stub), tests/, tests_governance/, docs/archive_fragments/, main.py, CI workflow, governance banners.
-- README declares: LIFECYCLE SUPERSEDED (Claim-0 runnable sketch), CLAIM 0, SUCCESSOR Digital_Double_virtual_workforce. Offline agent + SQLite + in-memory CAP toy only.
-- CI: supersede-guard.yml on master; last run success 37633526662 (2026-10-07) on head 63daeb47.
-- Releases/tags: empty. Dependabot open alerts: none.
-
-**AUDIT (Phase 3):**
-- Compliant with ADL-Governance SUPERSEDED rules. Claim 0 held. No unsupported claims.
-- Components documented (CLAIM_STATUS.md, SUPERSEDED.md, GOVERNANCE.md, README). Fragments archived. Tests present and CI green.
-- No critical security issues. Archive flag remains false (operator-gated, per design).
-
-**CLASSIFY:**
-- SUPERSEDED (Claim-0 offline sketch). Justification: Self-declared in README/CLAIM_STATUS/SUPERSEDED; successor canonical; no new feature work permitted; history preserved.
-
-**PLAN:**
-- Target state: SUPERSEDED confirmed, termination conditions met for this repo. No further development.
-- Actions: None required in product repo. Update governing docs.
-
-**IMPLEMENT:**
-- No changes to DigitalDoubleVirtualWorkforce3.5 (idempotent preservation of SUPERSEDED state).
-- No destructive actions queued.
-
-**TEST → CI:**
-- Verified success on last workflow run (2026-10-07). No new runs triggered.
-
-**DOCUMENT:**
-- This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
-- Repo docs already sufficient; no update needed.
-
-**GOVERN:**
-- No unsupported claims. Claim discipline enforced. History preserved. No elevation.
-
-**RELEASE/ARCHIVE:**
-- Already SUPERSEDED. Classification locked. Archive flag operator residual.
-- Termination conditions met for this repository.
-
-**RE-AUDIT:**
-- Reconfirmed SUPERSEDED state. No drift. CI green. Docs consistent.
-
-**Residual:** Operator archive flags. Full portfolio Phases 4–11 incomplete. Census 85. Full classification/capability/dependency residual. Next random selection. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-639 content preserved below.
-
-[Full prior content from Sweep-639 and earlier preserved in repository history.]
+[Full prior content from Sweep-640 and earlier preserved in repository history.]

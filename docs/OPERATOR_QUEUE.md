@@ -1,5 +1,21 @@
 # Operator Queue
 
+## Sweep-643: quantum_A.I._optimization.py Random Selection Reconfirm
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- quantum_A.I._optimization.py confirmed ARCHIVED (Claim 0, historical Qiskit sketch). No product mutations. Archive flag operator residual.
+- Census remains 85.
+- Priority pillars from prior remain ACTIVE.
+- YAML persistence lag for some prior sweeps still open.
+- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
+- Next: Random selection of next repository. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-642 content preserved below.
+
 ## Sweep-642: Phase 3 Mandatory Pillar Reconfirmation
 
 No destructive code actions proposed this cycle.
@@ -18,20 +34,4 @@ Stop after this cycle.
 
 ## Prior Sweep-641 content preserved below.
 
-## Sweep-641: ADL-Nexus Random Selection Reconfirm
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- ADL-Nexus confirmed RESEARCH (Claim ≤1, CI green on 2026-10-01 run 36847729267). No releases/tags. Live adapters UNSUPPORTED. No mutations required.
-- Census remains 85.
-- Priority pillars from prior remain ACTIVE.
-- YAML persistence lag for some prior sweeps still open.
-- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
-- Next: Random selection of next repository. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-640 content preserved below.
-
-[Full prior content from Sweep-640 and earlier preserved in repository history.]
+[Full prior content from Sweep-641 and earlier preserved in repository history.]
