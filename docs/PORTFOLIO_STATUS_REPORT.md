@@ -1,5 +1,49 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-04 (Sweep-657 / ADL-BASILISK continuation)
+**Project / Version:** ADL Portfolio Governance / Sweep-657
+**Objective:** Continue ADL-BASILISK recursive loop. Fresh discovery of ecosystem and targeted audit of forge-aegis. Record without claim elevation. No product mutations. No history rewrite.
+
+Preserve claim integrity.
+
+## Sweep-657: ADL-BASILISK continuation discovery and forge-aegis audit — COMPLETE for this cycle
+
+**Scope:** One governed Basilisk pass. Fresh discovery under ADL-BASILISK. Targeted audit of forge-aegis priority. Governance state update only.
+
+**SELECT / DISCOVER (Phase 1):**
+- Directed by Basilisk recursive directive for continuity.
+- Census confirmed: total_count=86, incomplete_results=false.
+- forge-aegis inspected: ACTIVE / RUNNABLE SKETCH. Offline Python reference pipeline for FLS/AEGIS v0.1 vertical slice. Claim software / not full product. Tree sha e7188d529739652a2dd6264bd3d328c1f72e60e5. No open issues.
+- Prior locked portfolio state (2026-10-20): RELEASE_BLOCKED_BY_OPERATOR (implementation FROZEN; wait for remote v0.1.0; no FLS expansion).
+- Latest prior Sweep-656 / PASS-2026-11-04-656: automate_passive_income classified ARCHIVED (empty, claim 0).
+
+**AUDIT (Phase 3):**
+- Compliant with ADL-Governance claim discipline. forge-aegis claim-capped as sketch. No unsupported claims elevated.
+- Structure verified. Runnable tests present in repo (validator and pipeline).
+
+**CLASSIFY:**
+- forge-aegis remains ACTIVE / RELEASE_BLOCKED_BY_OPERATOR.
+
+**Phases 4–11:** Residual. Full portfolio capability/dependency/gap/etc. not completed this cycle.
+
+**PLAN / IMPLEMENT:**
+- Update governing docs only.
+- No code changes. No destructive actions. No history rewrite. No deletions.
+
+**DOCUMENT / GOVERN:**
+- Claim levels respected. History preserved. No elevation.
+- This report, SWEEP_HISTORY.md, PASS-2026-11-04-657.yaml created/updated.
+
+**Residual (Exit Criteria Failures):**
+- Full portfolio classification residual.
+- Phases 4–11 residual.
+- Operator action residual on forge-aegis release.
+- Census 86 holds. Next: Confirm operator intent for RELEASE_BLOCKED or advance next priority (e.g. Digital_Double_virtual_workforce).
+
+## Prior Sweep-656 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-04 (Sweep-656 / Random Selection automate_passive_income)
 **Project / Version:** ADL Portfolio Governance / Sweep-656
 **Objective:** Random selection of automate_passive_income. DISCOVER structure, claims, classification. Record without claim elevation. No product mutations. No history rewrite.
@@ -40,50 +84,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-655 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-04 (Sweep-655 / Random Selection ADL-Nexus)
-**Project / Version:** ADL Portfolio Governance / Sweep-655
-**Objective:** Random selection of ADL-Nexus. DISCOVER structure, claims, classification. Record without claim elevation. No product mutations. No history rewrite.
-
-Preserve claim integrity.
-
-## Sweep-655: Random Selection ADL-Nexus DISCOVER/AUDIT/CLASSIFY — COMPLETE for this cycle
-
-**Scope:** One governed sweep. Random selection from census 86. DISCOVER/AUDIT/CLASSIFY of ADL-Nexus. Governance state update only.
-
-**SELECT / DISCOVER (Phase 1):**
-- Randomly selected: ADL-Nexus (public Python, last pushed 2026-11-03).
-- Local-first autonomous engineering platform. Version 0.3.2. Lifecycle RESEARCH (explicit in README, Sweep-086 lock, Sweep-196 reconfirm).
-- Structure: core/ (kernel, nexus, pathways), adapters/ (cleanroom, sunder), client/ (Godot, web), analysis/, dashboard/, docs/ (ARCHITECTURE, CLAIM_STATUS, passes/), tests implied by CI, .github/workflows/ci.yml.
-- Tree sha e1634fb710b22f41c13c19e23d044bd1a41d1c46. Stdlib-only runtime. 49 tests noted in README.
-- README claims ≤1 published, ceiling refuses above 2. NOT CLAIMED: thrust, energy extraction, AGI, production autonomy. Live adapters UNSUPPORTED.
-- Prior CI success: run 36847729267 on bfe24fa (2026-10-01). Green CI not a promotion.
-- Open issues: 3.
-
-**AUDIT (Phase 3):**
-- Compliant with ADL-Governance claim discipline. Claim ≤1 respected. RESEARCH lifecycle locked. No unsupported claims elevated.
-- Code present for layers 0-8 (claim-capped). Packaging via pyproject.toml. Zero external runtime deps.
-
-**CLASSIFY:**
-- RESEARCH (experimental, unvalidated for production/live). Justification: Explicit lifecycle RESEARCH, claim-capped, live adapters UNSUPPORTED, no promotion despite CI green.
-
-**Phases 4–11:** Residual. Full portfolio capability/dependency/gap/etc. not completed this cycle.
-
-**PLAN / IMPLEMENT:**
-- Update governing docs only.
-- No code changes. No destructive actions. No history rewrite. No deletions.
-
-**DOCUMENT / GOVERN:**
-- Claim levels respected. History preserved. No elevation.
-- This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
-
-**Residual (Exit Criteria Failures):**
-- Full portfolio classification residual (this repo RESEARCH confirmed).
-- Phases 4–11 residual.
-- Test execution residual (local pytest possible; no new CI this cycle).
-- Census 86 holds. Next: Continued random selection or operator-directed. Stop after this cycle. Do not enter autonomous infinite review cycle.
-
-## Prior Sweep-654 content preserved below.
-
-[Full prior content from Sweep-654 and earlier preserved in repository history.]
+[Full prior content from Sweep-655 and earlier preserved in repository history.]
