@@ -1,3 +1,26 @@
+## Sweep-653 / PASS-2026-11-04-653: Random Selection atomicdreamlabs DISCOVER
+
+- Timestamp: 2026-11-04T19:00Z UTC.
+- Scope: One governed sweep. Random selection of atomicdreamlabs (private). DISCOVER phase. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Random from census 86: atomicdreamlabs.
+- DISCOVER:
+  - Private TypeScript/Vite app-builder workspace for ADL NEXUS pixel-art office demo.
+  - README: PRIVATE WORKSPACE, CLAIM 0, not a launched product.
+  - Structure: Extensive .grok/ skills (auth, building-games, design-ui, etc.), scripts/, src/, package.json with npm test, typecheck, build.
+  - Branches: main (76b413b), dependabot/*, repair/runnable-workspace.
+  - Tree sha 76b413b9202be13bd3d3253a5c65ed4bb5621bef.
+  - Previously unaudited in registry (metadata only).
+- AUDIT: Compliant with claim discipline (Claim 0). Private. No unsupported public claims.
+- CLASSIFY: RESEARCH (private workspace). Justification: Explicit Claim 0, not ACTIVE product, local demo only.
+- PLAN: Target state met for RESEARCH class this cycle (discovery + classification). Document and govern.
+- IMPLEMENT: Governance docs only.
+- TEST → CI: Structure verified; local npm test/typecheck possible; no remote CI runs observed this cycle.
+- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated.
+- GOVERN: Claim discipline enforced (Claim 0). History preserved. No elevation. No destructive actions.
+- Residual: Full Phases 4–11 residual. Test execution residual. Census 86 holds. Next: Continued random selection or operator-directed. Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-652 content preserved below.
+
 ## Sweep-652 / PASS-2026-11-04-652: Portfolio Discovery & Phase-3 Core Verification
 
 - Timestamp: 2026-11-04T18:14Z UTC.
@@ -23,26 +46,4 @@
 
 ## Prior Sweep-651 content preserved below.
 
-## Sweep-651 / PASS-2026-11-04-651: ADL-Nexus Discovery and Audit
-
-- Timestamp: 2026-11-04T17:09Z UTC.
-- Scope: One governed sweep. DISCOVER and AUDIT of ADL-Nexus (priority research platform). No claim elevation. No product mutations. No history rewrite.
-- SELECT: Highest-value bounded gap after prior random ARCHIVED sweep — core Nexus platform discovery.
-- DISCOVER:
-  - Version 0.3.2, lifecycle RESEARCH, claim ≤1.
-  - Structure: core/, adapters/ (sunder, cleanroom stub), analysis/, client/ (godot, web), dashboard/, docs/, CI workflow.
-  - Stdlib-only, local-first design. Claim-capped adapters.
-  - Docs consistent: CLAIM_STATUS, ARCHITECTURE, GOVERNANCE, PRODUCT, ROADMAP, SUBSYSTEM_MAP.
-  - Tree sha e1634fb710b22f41c13c19e23d044bd1a41d1c46.
-- AUDIT: Compliant with ADL-Governance. Classified RESEARCH. Claim ≤1. No unsupported product claims. CI present (prior success noted).
-- CLASSIFY: RESEARCH (not ACTIVE). Justification: Explicit in README and CLAIM_STATUS. Local tests do not imply promotion.
-- PLAN: Target state met for RESEARCH class this cycle. Document and govern.
-- IMPLEMENT: Governance docs only.
-- TEST → CI: Structure verified; no new runs this cycle.
-- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated. New PASS yaml persisted.
-- GOVERN: Claim discipline enforced (Claim ≤1). History preserved. No elevation. No destructive actions.
-- Residual: Full portfolio classification residual. Test execution residual for Nexus. Next: Next random selection or operator-directed test verification. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-650 content preserved below.
-
-[Full prior content from Sweep-650 and earlier preserved in repository history.]
+[Full prior content from Sweep-651 and earlier preserved in repository history.]
