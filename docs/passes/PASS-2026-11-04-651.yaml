@@ -1,0 +1,69 @@
+PASS:
+  id: PASS-2026-11-04-651
+  parent_pass: PASS-2026-11-04-650
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 2
+  gaps_remaining: 13
+OBJECTIVE:
+  id: GAP-NEXUS-DISCOVER
+  description: Discover and audit ADL-Nexus structure, claims, CI, and classification status. Record without claim elevation.
+  reason_selected: Highest-value active research platform after random archived sweep; closes discovery gap on core Nexus.
+DISCOVERY:
+  findings:
+    - ADL-Nexus version 0.3.2, lifecycle RESEARCH, claim ≤1.
+    - Tree includes core/, adapters/, analysis/, client/, dashboard/, docs/, CI workflow present.
+    - Stdlib-only design, local-first. Adapters for sunder and cleanroom in stub mode.
+    - Docs: ARCHITECTURE, CLAIM_STATUS, GOVERNANCE, PRODUCT, ROADMAP, SUBSYSTEM_MAP present and consistent.
+    - Previous local passes in docs/passes/.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-04-651.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Nexus discovery recorded
+VERIFICATION:
+  tests_run:
+    - Structure tree inspection: present (sha e1634fb)
+    - README and CLAIM_STATUS review: consistent with RESEARCH
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus remains RESEARCH, claim-capped ≤1.
+    - CI and layered structure present.
+  failures: []
+  decisions:
+    - No promotion to ACTIVE. No claim elevation. Persist discovery only.
+REMAINING:
+  incomplete:
+    - Full capability verification (run tests)
+    - Live adapter integration
+  blockers: []
+  new_gaps:
+    - Test execution residual for Nexus
+NEXT:
+  objective_id: GAP-RANDOM-OR-OPERATOR
+  action: Next random selection or operator-directed deep verification of Nexus tests.
+  reason: Continue progressive coverage.
+  prerequisites:
+    - No history rewrite
+    - Claim integrity preserved
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Tree sha e1634fb710b22f41c13c19e23d044bd1a41d1c46
+    - README SHA 9212fc4e922a1291ec4b5eab602fb133460b8321
+    - CLAIM_STATUS SHA 81f7c416eca1e87f45104ce9b70fdbfdebfeecb5
