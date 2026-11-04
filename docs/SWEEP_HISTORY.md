@@ -1,3 +1,24 @@
+## Sweep-657 / PASS-2026-11-04-657: ADL-BASILISK continuation discovery and forge-aegis audit
+
+- Timestamp: 2026-11-04T21:08Z UTC.
+- Scope: One governed Basilisk pass. Fresh discovery of ecosystem under ADL-BASILISK directive. Targeted audit of forge-aegis. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Directed by Basilisk recursive directive for continuity and high-value priority inspection.
+- DISCOVER:
+  - Census confirmed total_count=86.
+  - forge-aegis: ACTIVE / RUNNABLE SKETCH. Python FLS/AEGIS v0.1 vertical slice. Claim software. Tree sha e7188d529739652a2dd6264bd3d328c1f72e60e5. No open issues.
+  - Prior portfolio state (2026-10-20): RELEASE_BLOCKED_BY_OPERATOR, implementation FROZEN, wait for remote v0.1.0.
+  - Prior Sweep-656 classified automate_passive_income ARCHIVED.
+- AUDIT: Compliant with claim discipline. forge-aegis claim-capped as sketch. No unsupported claims.
+- CLASSIFY: forge-aegis remains ACTIVE / RELEASE_BLOCKED_BY_OPERATOR.
+- PLAN: Target state met for this continuity slice (discovery + classification + documentation).
+- IMPLEMENT: Governance docs only.
+- TEST → CI: Structure verified. No new product tests required.
+- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md updated. Pass YAML created.
+- GOVERN: Claim discipline enforced. History preserved. No elevation. No destructive actions.
+- Residual: Full Phases 4–11 residual. Operator action on release. Census 86 holds. Next: Confirm operator intent or next priority.
+
+## Prior Sweep-656 content preserved below.
+
 ## Sweep-656 / PASS-2026-11-04-656: Random Selection automate_passive_income DISCOVER/AUDIT/CLASSIFY
 
 - Timestamp: 2026-11-04T21:00Z UTC.
@@ -18,25 +39,4 @@
 
 ## Prior Sweep-655 content preserved below.
 
-## Sweep-655 / PASS-2026-11-04-655: Random Selection ADL-Nexus DISCOVER/AUDIT/CLASSIFY
-
-- Timestamp: 2026-11-04T20:00Z UTC.
-- Scope: One governed sweep. Random selection of ADL-Nexus. DISCOVER/AUDIT/CLASSIFY. No claim elevation. No product mutations. No history rewrite.
-- SELECT: Random from census 86: ADL-Nexus.
-- DISCOVER:
-  - Public Python package, version 0.3.2, stdlib-only.
-  - Layers: core/kernel.py, pathways, adapters/cleanroom+sunder (stub mode), client/Godot+web, analysis, dashboard, docs/passes.
-  - README: LIFECYCLE RESEARCH, Claim ≤1, live adapters UNSUPPORTED. Prior CI 36847729267 success (2026-10-01) not a promotion.
-  - Tree sha e1634fb710b22f41c13c19e23d044bd1a41d1c46. Open issues: 3.
-- AUDIT: Compliant with claim discipline. RESEARCH locked. No unsupported claims. Code present but claim-capped.
-- CLASSIFY: RESEARCH (experimental, unvalidated). Justification: Explicit lifecycle, claim ceiling, no live promotion.
-- PLAN: Target state met for RESEARCH class this cycle (discovery + classification). Document and govern.
-- IMPLEMENT: Governance docs only.
-- TEST → CI: Structure verified; prior CI green; no new runs this cycle. Local pytest possible (49 tests noted).
-- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated.
-- GOVERN: Claim discipline enforced. History preserved. No elevation. No destructive actions.
-- Residual: Full Phases 4–11 residual. Test execution residual. Census 86 holds. Next: Continued random selection or operator-directed. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-654 content preserved below.
-
-[Full prior content from Sweep-654 and earlier preserved in repository history.]
+[Full prior content from Sweep-655 and earlier preserved in repository history.]
