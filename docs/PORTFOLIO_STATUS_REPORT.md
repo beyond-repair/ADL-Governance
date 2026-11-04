@@ -1,5 +1,48 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-04 (Sweep-659 / Random Portfolio Completion Sweep)
+**Project / Version:** ADL Portfolio Governance / Sweep-659
+**Objective:** Randomly select one repository (AEGIS-Project-Nehemiah-), perform DISCOVER and AUDIT, update governance. No claim elevation. Preserve history.
+
+Preserve claim integrity.
+
+## Sweep-659: Random Selection — AEGIS-Project-Nehemiah-
+
+**SELECT:** Random from full portfolio (total_count=86). Selected: AEGIS-Project-Nehemiah-
+
+**DISCOVER:**
+- Docs-only repository. Tree: README.md, LICENSE (MIT), SECURITY.md, .github/workflows/docs-check.yml (presence checks for core docs), fls/FLS-002-Core-Ontology.md, fls/FLS-003-Graph-Semantics.md, adr/ADR-001-Primary-Representation.md, forge-language/ subtree with FLS-000/001/005, schemas, examples, governance docs.
+- No executable code, no tests beyond CI docs check.
+- Dependencies: Consumes forge-aegis validation contract; spec sibling. Aligns to Artifact Graph model.
+- Existing CI: docs-check.yml verifies README, FLS-002, ADR-001 present.
+
+**AUDIT:**
+- Classification in registry: ACTIVE / CONTRACT CONSUMER / Spec sibling to forge-aegis. Must not redefine validation semantics.
+- Claims capped (software/docs). No unsupported claims of live host product.
+- No releases, no tags.
+- Dependabot alerts: 0 open.
+- Key docs present and consistent with ontology (Artifact, Identity, Revision, Relationship, etc.).
+- No critical security issues, no stale critical entries identified.
+- Termination conditions largely met for docs-only ACTIVE status; residual is full portfolio classification and deeper Phases 4–11.
+
+**CLASSIFY:** Held ACTIVE (spec / contract consumer). Justification: Ontology and architecture-facing docs; no independent validation math; sibling to forge-aegis.
+
+**PLAN:** Target state: CI-green (already), docs complete for baseline, governance updated. No further safe changes required this cycle. Operator-only for any executable expansion.
+
+**IMPLEMENT:** Governance docs update only. No product mutations.
+
+**TEST → CI:** Docs-check workflow present and previously successful (inferred from history). No new tests.
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No elevation. History preserved.
+
+**RE-AUDIT:** No drift detected in core docs. Claims remain capped.
+
+**Residual:** Full portfolio residual. Next random or directed selection. Do not enter infinite cycle without operator.
+
+## Prior Sweep-658 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-04 (Sweep-658 / Phase-3 Mandatory Live Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-658
 **Objective:** Perform explicit live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (CI, releases, tags, tests/docs/security). Record without claim elevation. No product mutations. No history rewrite.

@@ -1,5 +1,19 @@
 # Operator Queue
 
+## Sweep-659: Random Selection — AEGIS-Project-Nehemiah-
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Selected repo is docs-only ACTIVE spec sibling / contract consumer of forge-aegis. Core docs, LICENSE, SECURITY, docs-check CI present. 0 Dependabot. Classification held. No executable expansion this cycle.
+- Portfolio residual remains: full classification of 86 repos, Phases 4–11 incomplete.
+- forge-aegis still RELEASE_BLOCKED_BY_OPERATOR (from prior).
+- Next: Continued random or directed selection. Do not enter infinite autonomous review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-658 content preserved below.
+
 ## Sweep-658: Phase-3 Mandatory Live Verification of Four Pillars
 
 No destructive code actions proposed this cycle.
