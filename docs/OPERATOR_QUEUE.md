@@ -1,5 +1,25 @@
 # Operator Queue
 
+## Sweep-649: Key Pillar Deep Verification
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Census 86 confirmed (prior).
+- Priority pillars deep-verified for structure/CI presence:
+  - forge-aegis: CI + tests + fls/schemas/docs/CLAIM_STATUS/GOVERNANCE/SECURITY verified.
+  - sovereign-clean-room: CI + extensive core/tests/docs verified.
+  - BlockSwarm: Branches verified; Solidity.
+  - Digital_Double_virtual_workforce: Structure, tests dir, hybrid TS/Python, SECURITY/CANONICAL verified. Dependabot residual from prior.
+- beyond-repair remains RESEARCH Claim-0.
+- Full Phases 4–11 incomplete: capability matrix (structure only for pillars), dependency graph, gap/redundancy/synergy/readiness residual.
+- Classification incomplete. Archive flags for candidates remain operator residual.
+- Next: Operator-directed capability inventory from verified code, or automated expansion. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-648 content preserved below.
+
 ## Sweep-648: Full Portfolio Discovery
 
 No destructive code actions proposed this cycle.
@@ -17,20 +37,4 @@ Stop after this cycle.
 
 ## Prior Sweep-647 content preserved below.
 
-## Sweep-647: beyond-repair Random Selection Reconfirm
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- beyond-repair confirmed RESEARCH (Claim 0, GitHub profile index surface only. Not an ACTIVE product). No product mutations. Docs claim-capped and consistent.
-- Census remains 86.
-- Priority pillars from prior remain ACTIVE.
-- YAML persistence lag for some prior sweeps still open.
-- Portfolio-wide: Full Phases 4–11 incomplete. Full classification, capability matrix, dependency graph, gap/redundancy residual. Archive flags operator residual.
-- Next: Random selection of next repository. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-646 content preserved below.
-
-[Full prior content from Sweep-646 and earlier preserved in repository history.]
+[Full prior content from Sweep-647 and earlier preserved in repository history.]

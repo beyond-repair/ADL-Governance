@@ -1,5 +1,54 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-04 (Sweep-649 / Key Pillar Deep Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-649
+**Objective:** Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Expand Phase 3 evidence. Record residuals. No claim elevation. No product mutations. No history rewrite.
+
+Preserve claim integrity.
+
+## Sweep-649: Key Pillar Deep Verification — COMPLETE for this cycle
+
+**Scope:** One governed sweep. Deep tree and structure verification of the four priority pillars. Builds on Sweep-648 census (86 repos). Governance state update only.
+
+**SELECT / DISCOVER (Phase 1 residual):**
+- Census remains 86 (confirmed prior). No new undefined repositories.
+- Profile index beyond-repair remains RESEARCH Claim-0.
+
+**AUDIT (Phase 3 - Mandatory Live Verification expanded):**
+- **forge-aegis**: Tree confirmed (main e7188d5). CI: .github/workflows/ci.yml present. python/ with tests/. fls/, schemas/, docs/, CLAIM_STATUS.md, GOVERNANCE.md, SECURITY.md, README.md, adr/, examples/, rfc/. Substantial structure. No live CI status assumed; prior success noted in registry. Claim discipline held.
+- **sovereign-clean-room**: Tree confirmed. CI: .github/workflows/python-tests.yml present. core/ with VSA/FHRR/memory modules, tests/, docs/, skills/, schemas/, requirements.txt. Substantial demonstrated code. Branches noted in prior registry.
+- **BlockSwarm**: Branches confirmed: main (026c3631d9585adeed53b960f5ee7037bf76250c), finish/foundry-runnable, sweep/add-sweep-config. Solidity. Prior Foundry success noted. Releases/tags empty (prior).
+- **Digital_Double_virtual_workforce**: Root confirmed (main ad0c3bd). .github/, digital_double/, docs/, examples/, src/, tests/, package.json, pyproject.toml, vite/tsconfig, SECURITY.md, CANONICAL.md, README.md. TypeScript/Python hybrid. Tests dir present. Prior CI success noted; Dependabot residual open.
+- No new critical security findings fabricated. Hierarchy: code > docs > roadmap. Unverified remain labeled.
+
+**CLASSIFY (Phase 2 partial residual):**
+- Priority pillars remain ACTIVE candidates pending full runtime CI confirmation and capability inventory.
+- Full classification of 86 residual. Preliminary categories from prior hold.
+
+**Phases 4–11:** Residuals. Capability inventory started for pillars (structure verified, not functional claims elevated). Dependency, gaps, redundancy, synergy, readiness incomplete.
+
+**PLAN / IMPLEMENT:**
+- Update governing docs only.
+- No code changes. No destructive actions. No history rewrite. No deletions.
+
+**DOCUMENT / GOVERN:**
+- Claim levels respected. History preserved. No elevation.
+- This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
+
+**Residual (Exit Criteria Failures):**
+- Full capability matrix not complete (pillar structures verified; demonstrated features not fully inventoried from code).
+- Full dependency graph not constructed.
+- Not all 86 repos classified with evidence.
+- CI/test execution status not live-run this cycle (presence confirmed).
+- Duplicate detection incomplete.
+- Archive candidates not fully operator-flagged.
+- Stop after this cycle. Do not enter autonomous infinite review cycle.
+- Next: Operator-directed capability extraction or automated deep scans on individual pillars.
+
+## Prior Sweep-648 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-04 (Sweep-648 / Full Census Discovery)
 **Project / Version:** ADL Portfolio Governance / Sweep-648
 **Objective:** Full portfolio discovery of all repositories under user:beyond-repair. Live API inventory (86 repositories). Mandatory verification of key pillars. Record residuals. No claim elevation. No product mutations. No history rewrite.
@@ -58,60 +107,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-647 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-04 (Sweep-647 / beyond-repair Random Selection)
-**Project / Version:** ADL Portfolio Governance / Sweep-647
-**Objective:** Random selection, live discovery, audit, and reconfirmation of beyond-repair (profile index) as RESEARCH Claim-0.
-
-Preserve claim integrity. No product mutations.
-
-## Sweep-647: beyond-repair — COMPLETE for this cycle
-
-**Scope:** Random selection from full portfolio (seeded from authenticated search of 86 repos). Live API discovery of beyond-repair. Governance state update only. No claim elevation. No product mutations.
-
-**SELECT / DISCOVER (Phase 1):**
-- Random selection: beyond-repair (from 86-repo list; seed 20261104).
-- Tree: README.md (profile index with ASCII art, pillars, mapping layer), CLAIM_STATUS.md (allowed/forbidden claims, census note), GOVERNANCE.md (classification RESEARCH profile/index, Claim 0, pointer to ADL-Governance). No .github/workflows, no tests, no code.
-- README declares: THIS REPO profile README only (not an ACTIVE product). Census note. Claims capped. Points to pillars and mapping artifacts.
-- GOVERNANCE.md: Classification RESEARCH (profile / index surface). Product runtime None. Claim level 0 (index / narrative).
-- CLAIM_STATUS.md: Allowed pointers to governed repos; forbidden experimental thrust, AGI-in-a-box, production OS, treating as shipped product.
-
-**AUDIT (Phase 3):**
-- Compliant with ADL-Governance RESEARCH/index rules. Claim 0 held. No unsupported claims (explicitly not a product; points to governing source).
-- Components: Three Markdown files only. No CI. No critical security issues identified in tree.
-- Docs consistent and claim-capped.
-
-**CLASSIFY:**
-- RESEARCH (profile / index surface, Claim-0). Justification: Self-declared in GOVERNANCE.md and README; no runtime; purpose is GitHub profile index; history preserved; no product claims.
-
-**PLAN:**
-- Target state: RESEARCH confirmed, termination conditions met for this index surface. No further development required.
-- Actions: None required in product/profile repo. Update governing docs.
-
-**IMPLEMENT:**
-- No changes to beyond-repair (idempotent preservation of RESEARCH index state).
-- No destructive actions queued.
-
-**TEST → CI:**
-- No workflow or formal test suite present. Markdown-only index. No new runs triggered this cycle.
-
-**DOCUMENT:**
-- This report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md updated.
-- Repo docs already sufficient (README + CLAIM_STATUS + GOVERNANCE); no update needed.
-
-**GOVERN:**
-- No unsupported claims. Claim discipline enforced. History preserved. No elevation.
-
-**RELEASE/ARCHIVE:**
-- RESEARCH class locked. No release or archive action required.
-- Termination conditions met for this repository.
-
-**RE-AUDIT:**
-- Reconfirmed RESEARCH index state. No drift. Docs consistent. No critical unresolved issues.
-
-**Residual:** Operator archive flags for other repos. Full portfolio Phases 4–11 incomplete. Census 86. Full classification/capability/dependency residual. Next random selection. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-646 content preserved below.
-
-[Full prior content from Sweep-646 and earlier preserved in repository history.]
+[Full prior content from Sweep-647 and earlier preserved in repository history.]

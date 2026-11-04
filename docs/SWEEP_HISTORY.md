@@ -1,3 +1,24 @@
+## Sweep-649 / PASS-2026-11-04-649: Key Pillar Deep Verification 2026-11-04
+
+- Timestamp: 2026-11-04T16:20Z UTC (approx; current session).
+- Scope: One governed sweep. Deep tree/structure verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Builds on Sweep-648 census. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER / VERIFY:
+  - forge-aegis (main e7188d5): CI workflow present, python/tests/, fls/, schemas/, docs/, CLAIM_STATUS, GOVERNANCE, SECURITY, adr/, examples/, rfc/. Structure verified.
+  - sovereign-clean-room: CI python-tests.yml present, extensive core (VSA/FHRR/memory), tests/, docs/, skills/, schemas/.
+  - BlockSwarm: Branches main, finish/foundry-runnable, sweep/add-sweep-config confirmed. Solidity.
+  - Digital_Double_virtual_workforce (main ad0c3bd): .github/, digital_double/, src/, tests/, docs/, package.json, pyproject.toml, SECURITY.md, CANONICAL.md. Hybrid TS/Python. Tests dir present.
+  - Census 86 holds. beyond-repair RESEARCH Claim-0.
+- AUDIT: Presence of CI/tests/docs/code structures verified for all four pillars. No live run status assumed this cycle. Claim hierarchy respected.
+- CLASSIFY: Priority pillars remain ACTIVE candidates. Full classification residual.
+- PLAN: Update governing docs. Record residuals. Stop.
+- IMPLEMENT: Governance docs only.
+- TEST → CI: Workflows present; no new runs triggered this cycle.
+- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated.
+- GOVERN: Claim discipline enforced. History preserved. No elevation. No destructive actions.
+- Residual: Full Phases 4–11 incomplete. Capability inventory partial (structure only). Dependency graph residual. Archive flags operator residual. Next: capability extraction or operator direction. Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-648 content preserved below.
+
 ## Sweep-648 / PASS-2026-11-04-648: Full Portfolio Discovery 2026-11-04
 
 - Timestamp: 2026-11-04T15:18Z UTC (approx; current session).
@@ -19,21 +40,4 @@
 
 ## Prior Sweep-647 content preserved below.
 
-## Sweep-647 / PASS-2026-11-04-647: beyond-repair Random Selection Reconfirm 2026-11-04
-
-- Timestamp: 2026-11-04T15:00Z UTC (approx; current session).
-- Scope: One governed sweep under randomized portfolio completion. Random selection of beyond-repair from 86-repo census (seed 20261104). DISCOVER via GitHub API (tree, README, CLAIM_STATUS.md, GOVERNANCE.md). No claim elevation. No product mutations. No history rewrite.
-- DISCOVER / VERIFY:
-  - beyond-repair: RESEARCH / Claim 0. GitHub profile index surface only (not an ACTIVE product). Tree: README.md (pillars, mapping layer, claim caps), CLAIM_STATUS.md (allowed/forbidden), GOVERNANCE.md (classification RESEARCH profile/index, Claim 0, pointer to ADL-Governance). No CI workflow. No code/tests.
-- AUDIT: Compliant with RESEARCH/index rules. Claim 0 held. Docs consistent and claim-capped. No unsupported claims.
-- CLASSIFY: Locked as RESEARCH (profile / index surface). No lifecycle change.
-- PLAN: Confirm status. Persist in governing docs. No product actions.
-- IMPLEMENT: Governance docs only.
-- TEST → CI: No workflow present. Markdown-only. No new runs triggered.
-- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated.
-- GOVERN: Claim discipline enforced. History preserved. No elevation. No destructive actions.
-- Residual: Operator archive flags for other repos. Full Phases 4–11 incomplete. Census 86. Full classification/capability/dependency residual. Next: random selection. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-646 content preserved below.
-
-[Full prior content from Sweep-646 and earlier preserved in repository history.]
+[Full prior content from Sweep-647 and earlier preserved in repository history.]
