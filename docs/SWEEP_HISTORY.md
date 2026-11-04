@@ -1,3 +1,25 @@
+## Sweep-651 / PASS-2026-11-04-651: ADL-Nexus Discovery and Audit
+
+- Timestamp: 2026-11-04T17:09Z UTC.
+- Scope: One governed sweep. DISCOVER and AUDIT of ADL-Nexus (priority research platform). No claim elevation. No product mutations. No history rewrite.
+- SELECT: Highest-value bounded gap after prior random ARCHIVED sweep — core Nexus platform discovery.
+- DISCOVER:
+  - Version 0.3.2, lifecycle RESEARCH, claim ≤1.
+  - Structure: core/, adapters/ (sunder, cleanroom stub), analysis/, client/ (godot, web), dashboard/, docs/, CI workflow.
+  - Stdlib-only, local-first design. Claim-capped adapters.
+  - Docs consistent: CLAIM_STATUS, ARCHITECTURE, GOVERNANCE, PRODUCT, ROADMAP, SUBSYSTEM_MAP.
+  - Tree sha e1634fb710b22f41c13c19e23d044bd1a41d1c46.
+- AUDIT: Compliant with ADL-Governance. Classified RESEARCH. Claim ≤1. No unsupported product claims. CI present (prior success noted).
+- CLASSIFY: RESEARCH (not ACTIVE). Justification: Explicit in README and CLAIM_STATUS. Local tests do not imply promotion.
+- PLAN: Target state met for RESEARCH class this cycle. Document and govern.
+- IMPLEMENT: Governance docs only.
+- TEST → CI: Structure verified; no new runs this cycle.
+- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated. New PASS yaml persisted.
+- GOVERN: Claim discipline enforced (Claim ≤1). History preserved. No elevation. No destructive actions.
+- Residual: Full portfolio classification residual. Test execution residual for Nexus. Next: Next random selection or operator-directed test verification. Stop after this cycle. Do not enter infinite review cycle.
+
+## Prior Sweep-650 content preserved below.
+
 ## Sweep-650 / PASS-2026-11-04-650: Random Selection - quantum_A.I._optimization.py DISCOVER
 
 - Timestamp: 2026-11-04T17:00Z UTC (approx; current session).
@@ -21,25 +43,4 @@
 
 ## Prior Sweep-649 content preserved below.
 
-## Sweep-649 / PASS-2026-11-04-649: Key Pillar Deep Verification 2026-11-04
-
-- Timestamp: 2026-11-04T16:20Z UTC (approx; current session).
-- Scope: One governed sweep. Deep tree/structure verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Builds on Sweep-648 census. No claim elevation. No product mutations. No history rewrite.
-- DISCOVER / VERIFY:
-  - forge-aegis (main e7188d5): CI workflow present, python/tests/, fls/, schemas/, docs/, CLAIM_STATUS, GOVERNANCE, SECURITY, adr/, examples/, rfc/. Structure verified.
-  - sovereign-clean-room: CI python-tests.yml present, extensive core (VSA/FHRR/memory), tests/, docs/, skills/, schemas/.
-  - BlockSwarm: Branches main, finish/foundry-runnable, sweep/add-sweep-config confirmed. Solidity.
-  - Digital_Double_virtual_workforce (main ad0c3bd): .github/, digital_double/, src/, tests/, docs/, package.json, pyproject.toml, SECURITY.md, CANONICAL.md. Hybrid TS/Python. Tests dir present.
-  - Census 86 holds. beyond-repair RESEARCH Claim-0.
-- AUDIT: Presence of CI/tests/docs/code structures verified for all four pillars. No live run status assumed this cycle. Claim hierarchy respected.
-- CLASSIFY: Priority pillars remain ACTIVE candidates. Full classification residual.
-- PLAN: Update governing docs. Record residuals. Stop.
-- IMPLEMENT: Governance docs only.
-- TEST → CI: Workflows present; no new runs triggered this cycle.
-- DOCUMENT: This entry. PORTFOLIO_STATUS_REPORT.md and OPERATOR_QUEUE.md updated.
-- GOVERN: Claim discipline enforced. History preserved. No elevation. No destructive actions.
-- Residual: Full Phases 4–11 incomplete. Capability inventory partial (structure only). Dependency graph residual. Archive flags operator residual. Next: capability extraction or operator direction. Stop after this cycle. Do not enter infinite review cycle.
-
-## Prior Sweep-648 content preserved below.
-
-[Full prior content from Sweep-648 and earlier preserved in repository history.]
+[Full prior content from Sweep-649 and earlier preserved in repository history.]
