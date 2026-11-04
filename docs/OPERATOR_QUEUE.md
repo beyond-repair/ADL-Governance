@@ -1,33 +1,19 @@
 # Operator Queue
 
-## Sweep-656: Random Selection automate_passive_income DISCOVER/AUDIT/CLASSIFY
+## Sweep-658: Phase-3 Mandatory Live Verification of Four Pillars
 
 No destructive code actions proposed this cycle.
 
 Residuals:
-- DISCOVER-completed: automate_passive_income classified ARCHIVED (empty repo, only README, claim 0, archive-queue explicit, no code/tests/CI).
-- Structure and README verified. Target state for class met.
-- No test execution required (empty archival).
+- Phase-3 verified: forge-aegis (CI success on main, no releases/tags, 0 Dependabot), sovereign-clean-room (CI on branch, no releases/tags, 0 Dependabot), BlockSwarm (CI success on main, no releases/tags, 0 Dependabot), Digital_Double_virtual_workforce (Dependabot runs success, no releases/tags, open medium/low Dependabot on dev deps).
+- No critical CI or security residuals on pillars.
+- forge-aegis remains RELEASE_BLOCKED_BY_OPERATOR.
 - Census 86 holds. Full Phases 4–11 incomplete for portfolio.
-- Next: Continued random selection or operator-directed deep verification. Do not enter infinite review cycle.
+- Next: Continued selection or operator-directed deep verification of remaining repos. Do not enter infinite review cycle.
 
 Stop after this cycle.
 
-## Prior Sweep-655 content preserved below.
+## Prior Sweep-657 content preserved below.
 
-## Sweep-655: Random Selection ADL-Nexus DISCOVER/AUDIT/CLASSIFY
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- DISCOVER-completed: ADL-Nexus classified RESEARCH (version 0.3.2, claim ≤1, live adapters UNSUPPORTED, prior CI green not promotion).
-- Structure, README, version.py, tree verified. Target state for class met.
-- Test execution residual remains (local pytest possible; 49 tests noted).
-- Census 86 holds. Full Phases 4–11 incomplete for portfolio.
-- Next: Continued random selection or operator-directed deep verification. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-654 content preserved below.
-
-[Full prior content from Sweep-654 and earlier preserved in repository history.]
+## Sweep-657: ADL-BASILISK continuation discovery and forge-aegis audit
+[Full prior content from Sweep-657 and earlier preserved in repository history.]
