@@ -1,5 +1,20 @@
 # Operator Queue
 
+## Sweep-655: Random Selection ADL-Nexus DISCOVER/AUDIT/CLASSIFY
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- DISCOVER-completed: ADL-Nexus classified RESEARCH (version 0.3.2, claim ≤1, live adapters UNSUPPORTED, prior CI green not promotion).
+- Structure, README, version.py, tree verified. Target state for class met.
+- Test execution residual remains (local pytest possible; 49 tests noted).
+- Census 86 holds. Full Phases 4–11 incomplete for portfolio.
+- Next: Continued random selection or operator-directed deep verification. Do not enter infinite review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-654 content preserved below.
+
 ## Sweep-654: Portfolio Confirmation & Residual Recording
 
 No destructive code actions proposed this cycle.
@@ -16,19 +31,4 @@ Stop after this cycle.
 
 ## Prior Sweep-653 content preserved below.
 
-## Sweep-653: Random Selection atomicdreamlabs DISCOVER
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- DISCOVER-completed: atomicdreamlabs classified RESEARCH (private workspace, Claim 0, local ADL NEXUS demo).
-- Structure, README, package.json, branches verified. Target state for class met.
-- Test execution residual remains (local npm test/typecheck possible).
-- Census 86 holds. Full Phases 4–11 incomplete for portfolio.
-- Next: Continued random selection or operator-directed deep verification. Do not enter infinite review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-652 content preserved below.
-
-[Full prior content from Sweep-652 and earlier preserved in repository history.]
+[Full prior content from Sweep-653 and earlier preserved in repository history.]
