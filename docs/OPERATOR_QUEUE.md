@@ -1,5 +1,19 @@
 # Operator Queue
 
+## Sweep-662: Random Selection — scale-functional-I
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Selected repo is RESEARCH (claim 1). Declared I = Perimeter/sqrt(Area) on lattice dumbbells; beta_I has no zero on tested families (chamber 8/10); Seeley proxy rejected (a0 < 0). CI + tests present. Parent lock (-ware-constant-derivation 2026-10-01) respected. No validation elevation.
+- Portfolio residual remains: full classification of 86 repos, Phases 4–11 incomplete.
+- forge-aegis still RELEASE_BLOCKED_BY_OPERATOR (from prior).
+- Next: Continued random or directed selection. Do not enter infinite autonomous review cycle.
+
+Stop after this cycle.
+
+## Prior Sweep-659 content preserved below.
+
 ## Sweep-659: Random Selection — AEGIS-Project-Nehemiah-
 
 No destructive code actions proposed this cycle.
