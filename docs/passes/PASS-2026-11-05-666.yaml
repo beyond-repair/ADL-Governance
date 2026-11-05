@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-11-05-666
+  parent_pass: PASS-2026-11-05-661
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 11
+OBJECTIVE:
+  id: GAP-BLOCKSWARM-RESIDUAL-AUDIT
+  description: Residual audit of priority ACTIVE repo BlockSwarm: confirm classification, open PRs, recent CI, tags/releases residual, AI-advises-only invariant. Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice from prior NEXT after sovereign-clean-room residual: advance priority queue #3 without product mutation or claim elevation.
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - BlockSwarm: ACTIVE, Solidity/Foundry, pushed ~2026-10-27, open_issues=0 (from prior), description SAGF four-chain reversible.
+    - Open PRs: none.
+    - Recent CI: Foundry workflow run 40441811261 success on main 026c363 (2026-10-27).
+    - Tags and releases remain empty (operator residual for v0.5.0-sagf per CHANGELOG and prior sweeps).
+    - README confirms ACTIVE, AI advises · cannot execute invariant, Foundry tests, no mainnet/audit claims.
+    - CHANGELOG notes tags/releases empty residual.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-05-666.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit for pass)
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for BlockSwarm
+VERIFICATION:
+  tests_run:
+    - GitHub get_file_contents for README and CHANGELOG, list_pull_requests (empty), actions_list workflow runs (success)
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: PASS (no open Dependabot from prior, no open PRs)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, AI-advises-only held, history preserved, tags residual noted)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - BlockSwarm remains ACTIVE with recent CI success (40441811261), 0 open PRs, tags/releases empty as operator residual for v0.5.0-sagf.
+    - Census stable at 86. Governance continues as Nexus state.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No tagging or release (operator-gated). No product changes. Classification held.
+REMAINING:
+  incomplete:
+    - Operator creation of v0.5.0-sagf tag/release
+    - Full graphs and other priority items (forge-aegis release blocker)
+  blockers:
+    - Operator action for tags/releases
+  new_gaps:
+    - none specific this pass
+NEXT:
+  objective_id: GAP-FORGE-AEGIS-OR-NEXT-PRIORITY
+  action: Select next: audit forge-aegis release blocker status, or continue priority/random selection of remaining repos.
+  reason: Highest-value is advancing next ACTIVE priority in queue while residuals persist.
+  prerequisites:
+    - This pass committed
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Workflow runs list (40441811261 success)
+    - PR list (empty)
+    - README and CHANGELOG inspection
+    - Prior Sweep-665 residual note
