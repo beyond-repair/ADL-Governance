@@ -1,3 +1,25 @@
+## Sweep-660 / PASS-2026-11-05-660: ADL-BASILISK residual audit of Digital_Double_virtual_workforce
+
+- Timestamp: 2026-11-05T14:15Z UTC.
+- Scope: Basilisk continuation. Residual audit of top-priority ACTIVE repo. Governance update only. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Directed by prior NEXT (priority queue residual).
+- DISCOVER:
+  - Census reconfirmed total_count=86.
+  - Digital_Double_virtual_workforce ACTIVE, Python core + optional Vite UI, open_issues=5.
+- AUDIT:
+  - Open Dependabot: medium vite (path traversal variants, GHSA-rq7h-c2jc-7f22 etc.) and low deepmerge (prototype poisoning) in development scope across package.json / lockfiles / nested.
+  - Open PRs: 5 including draft #7 NEX-INT-006 Workforce execution evidence journal (integration with ADL-Nexus).
+  - Claim software held. ACTIVE classification held. Prior Sweep-658 residual persists.
+- CLASSIFY: ACTIVE held. No promotion.
+- PLAN: Target residual documented. No safe automated product change (Dependabot/draft operator-gated).
+- IMPLEMENT: None on product. Governance docs pushed (pass YAML + this).
+- TEST → CI: Observation only.
+- DOCUMENT: This entry + pass record.
+- GOVERN: Claims capped. History preserved.
+- Residual: Dependabot open, draft PR open. Full portfolio residual. Next: Dependabot path or next priority (sovereign-clean-room) or random.
+
+## Prior Sweep-659 content preserved below.
+
 ## Sweep-659 / Random Selection: AEGIS-Project-Nehemiah-
 
 - Timestamp: 2026-11-04T22:00Z UTC.
