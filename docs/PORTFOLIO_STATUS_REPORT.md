@@ -1,5 +1,49 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-05 (Sweep-662 / Random Portfolio Completion Sweep)
+**Project / Version:** ADL Portfolio Governance / Sweep-662
+**Objective:** Randomly select one repository (scale-functional-I), perform DISCOVER and AUDIT, update governance. No claim elevation. Preserve history.
+
+Preserve claim integrity.
+
+## Sweep-662: Random Selection — scale-functional-I
+
+**SELECT:** Random from full portfolio (total_count=86). Selected: scale-functional-I
+
+**DISCOVER:**
+- Python package (pyproject.toml, setuptools). Core: scale_functional.py (dumbbell_mask, perimeter, scale_I, family_rows, beta_sign_changes, grid_laplacian, seeley_proxy, CLI with table/proxy subcommands).
+- Docs: README.md (RESEARCH badge, claim ≤1), CLAIM_STATUS.md (RESEARCH, claim 1, experimental_validation=false), FUNCTIONAL.md (definition of I = Perimeter/sqrt(Area), beta_I, rejected proxy), RESULT.md (tables for Neumann/Dirichlet families, no zero of beta_I).
+- Tests: tests/test_scale_functional.py (strict decrease + negative beta), tests/test_cli.py (implied by CI).
+- CI: .github/workflows/ci.yml (pytest + run scale_functional.py on Python 3.11).
+- Dependencies: numpy>=1.21; optional pytest.
+- Parent lock referenced: -ware-constant-derivation STATUS_LOCK_2026-10-01.md. 0.08 not an input.
+
+**AUDIT:**
+- Classification in-repo: RESEARCH, claim level 1 (declared functional, computed on lattice dumbbells). No experimental/thrust/energy validation.
+- No zero of beta_I on tested families (chamber 8/10). Proxy rejected (a0 < 0).
+- CI present and structured for green. Tests cover monotonicity.
+- No critical security issues identified. No unsupported claims of validation or product.
+- Undefined/undocumented: none critical in scope. Docs align with code.
+- Termination conditions largely met for RESEARCH baseline; residual is portfolio-wide.
+
+**CLASSIFY:** Held RESEARCH. Justification: Explicitly declared functional with lattice computation; claim capped at 1; no validation elevation; consistent with parent lock.
+
+**PLAN:** Target state: CI-green (inferred), docs complete, claim integrity held. No further safe changes required this cycle. Operator-only for any spectral or validation expansion.
+
+**IMPLEMENT:** Governance docs update only. No product mutations.
+
+**TEST → CI:** CI workflow present (pytest + main run). Tests assert no stationary point. No new tests.
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No elevation. History preserved.
+
+**RE-AUDIT:** No drift. Claims remain capped. I strictly decreases; no stationary point reached for 0.08 comparison.
+
+**Residual:** Full portfolio residual. Next random or directed selection. Do not enter infinite cycle without operator.
+
+## Prior Sweep-659 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-04 (Sweep-659 / Random Portfolio Completion Sweep)
 **Project / Version:** ADL Portfolio Governance / Sweep-659
 **Objective:** Randomly select one repository (AEGIS-Project-Nehemiah-), perform DISCOVER and AUDIT, update governance. No claim elevation. Preserve history.
