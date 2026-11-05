@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-11-05-661
+  parent_pass: PASS-2026-11-05-660
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 11
+OBJECTIVE:
+  id: GAP-SCR-RESIDUAL-AUDIT
+  description: Residual audit of priority ACTIVE repo sovereign-clean-room: confirm classification, open PRs, Dependabot status, VSA completeness note. Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice from prior NEXT after Digital_Double residual: advance priority queue #2 without product mutation or claim elevation.
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - sovereign-clean-room: ACTIVE, language Python, pushed 2026-10-04, open_issues=2, description VSA Core v1.3 Hyperspherical Geometric Edition.
+    - Open Dependabot alerts: 0.
+    - Open PRs: #3 (Tag ACTIVE claims under ADL-Governance, seem-completion-pass), #1 (security pin PyNaCl >=1.6.2).
+    - README confirms ACTIVE, CI badge, offline, Ed25519+SHACL gate, stability decorative not measurement. Quick start with pytest. VSA completeness UNVERIFIED per prior registry.
+    - Prior Sweep-658 noted CI activity on branch, 0 Dependabot, no releases/tags.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-05-661.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit for pass)
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for sovereign-clean-room
+VERIFICATION:
+  tests_run:
+    - GitHub search, get_file_contents for README, list_dependabot_alerts (0 open), list_pull_requests
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: PASS (0 open Dependabot)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, history preserved, VSA UNVERIFIED held)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - sovereign-clean-room remains ACTIVE with 0 open Dependabot, two open PRs (governance tag and PyNaCl pin), VSA completeness still UNVERIFIED.
+    - Census stable at 86. Governance continues as Nexus state.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No merge of open PRs (operator-gated). No product changes. Classification held.
+REMAINING:
+  incomplete:
+    - Closure of open PRs in sovereign-clean-room
+    - Verification of VSA completeness
+    - Full graphs and other priority items (BlockSwarm, forge-aegis release)
+  blockers:
+    - Operator review for PR merges and any claim-related decisions
+  new_gaps:
+    - none specific this pass
+NEXT:
+  objective_id: GAP-BLOCKSWARM-OR-NEXT-PRIORITY
+  action: Select next: audit BlockSwarm residual or forge-aegis release blocker status, or continue priority/random selection.
+  reason: Highest-value is advancing next ACTIVE priority in queue while residuals persist.
+  prerequisites:
+    - This pass committed
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Dependabot alerts list (0 open)
+    - PR list (#3, #1 open)
+    - README inspection
+    - Prior Sweep-658 residual note

@@ -1,3 +1,25 @@
+## Sweep-661 / PASS-2026-11-05-661: ADL-BASILISK residual audit of sovereign-clean-room
+
+- Timestamp: 2026-11-05T15:15Z UTC.
+- Scope: Basilisk continuation. Residual audit of priority #2 ACTIVE repo. Governance update only. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Directed by prior NEXT (priority queue residual after Digital_Double).
+- DISCOVER:
+  - Census reconfirmed total_count=86.
+  - sovereign-clean-room ACTIVE, Python VSA Core, open_issues=2.
+- AUDIT:
+  - Open Dependabot: 0.
+  - Open PRs: #3 Tag ACTIVE claims (seem-completion-pass), #1 PyNaCl pin security.
+  - Claim software held. ACTIVE classification held. VSA completeness UNVERIFIED. Prior Sweep-658 residual persists.
+- CLASSIFY: ACTIVE held. No promotion.
+- PLAN: Target residual documented. No safe automated product change (PRs operator-gated).
+- IMPLEMENT: None on product. Governance docs pushed (pass YAML + this).
+- TEST → CI: Observation only.
+- DOCUMENT: This entry + pass record.
+- GOVERN: Claims capped. History preserved.
+- Residual: Open PRs, VSA UNVERIFIED. Full portfolio residual. Next: BlockSwarm or forge-aegis or random.
+
+## Prior Sweep-660 content preserved below.
+
 ## Sweep-660 / PASS-2026-11-05-660: ADL-BASILISK residual audit of Digital_Double_virtual_workforce
 
 - Timestamp: 2026-11-05T14:15Z UTC.
