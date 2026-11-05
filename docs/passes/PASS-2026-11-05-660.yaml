@@ -1,0 +1,69 @@
+PASS:
+  id: PASS-2026-11-05-660
+  parent_pass: PASS-2026-11-04-657
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 12
+OBJECTIVE:
+  id: GAP-DD-RESIDUAL-AUDIT
+  description: Residual audit of top-priority ACTIVE repo Digital_Double_virtual_workforce: confirm open Dependabot (vite medium, deepmerge low, dev scope), open PRs including draft NEX-INT-006, status ACTIVE/software claim held. Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice after prior Basilisk continuation: advance priority queue residual without product mutation or claim elevation.
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - Digital_Double_virtual_workforce: ACTIVE, language TypeScript/Python, pushed 2026-10-17, open_issues=5, stargazers=2.
+    - Open Dependabot alerts: multiple on vite (medium, GHSA-rq7h-c2jc-7f22 etc.) and deepmerge (low, prototype poisoning) in development scope (package.json, package-lock.json, nested digital_double/).
+    - Open PRs: 5 total, including draft #7 NEX-INT-006 Workforce execution evidence journal (pairs with ADL-Nexus), and dependabot bumps (e.g. rollup).
+    - README confirms ACTIVE, claim software, Python core Orchestrator/Agent/Task, optional React/Vite UI not wired to core.
+    - Prior Sweep-658 noted open Dependabot medium/low on vite/deepmerge; residual persists.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-05-660.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit for pass)
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for Digital_Double
+VERIFICATION:
+  tests_run:
+    - GitHub search and get_file_contents for README, dependabot alerts list, PR search
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: NOT_RUN (alerts observed, not closed)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, history preserved)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Digital_Double remains ACTIVE with residual medium/low Dependabot in UI deps and open draft integration PR.
+    - Census stable at 86. Governance continues as Nexus state.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No merge of Dependabot or draft PR (operator-gated). No product changes.
+REMAINING:
+  incomplete:
+    - Closure of Dependabot alerts (dev deps) and open PRs in Digital_Double
+    - Full graphs and other priority items (sovereign-clean-room, BlockSwarm, forge-aegis release)
+  blockers:
+    - Operator review for Dependabot merges and draft PR advancement
+  new_gaps:
+    - Integration verification of NEX-INT-006 evidence journal with ADL-Nexus
+NEXT:
+  objective_id: GAP-DD-DEPENDABOT-OR-NEXT-PRIORITY
+  action: Select next: either propose non-breaking Dependabot update path for Digital_Double (if safe) or audit sovereign-clean-room residual, or continue random selection.
+  reason: Highest-value is either closing residual security alerts or advancing next ACTIVE priority.
+  prerequisites:
+    - Confirmation that Dependabot updates are non-breaking for UI (optional path)
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Dependabot alerts list (open vite/deepmerge)
+    - PR search (draft #7 and others)
+    - README inspection
+    - Prior Sweep-658 residual note
