@@ -53,3 +53,11 @@ Stop after this cycle. Do not enter infinite autonomous review.
 ## Prior Sweep-678 content preserved below.
 
 [Full prior content from Sweep-678 and earlier preserved in repository history.]
+## Sweep-682 Residuals (2026-11-06)
+
+- **CI Fix Required**: ADL-Governance governance-ci failing on YAML parse error in pass records (ScannerError: mapping values not allowed here in check_passes.py). Non-destructive docs/YAML fix needed.
+- **Verification Residual**: Full test/CI/security scan of Digital_Double_virtual_workforce beyond dependabot. Manual review of open issues (5).
+- **Duplicate Consolidation**: SEEM-* and Digital_Double_* lineages. Propose SUPERSEDE markers in registry (no deletion). Escalate to operator for ownership confirmation.
+- **Archive Flags**: Confirm operator execution of pending archives (e.g. Quantumclustering from Sweep-680).
+- **Releases**: Pillars lack tags/releases. Non-destructive tagging recommended for verified green CI states.
+- **No Destructive Actions Performed**: All proposals documented here. No history rewrite, no deletion.
