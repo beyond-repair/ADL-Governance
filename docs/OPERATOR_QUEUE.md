@@ -1,21 +1,19 @@
 # Operator Queue
 
-## Sweep-673: Master Directive Cycle
+## Sweep-674: Live Reconfirmation Cycle
 
 No destructive code actions proposed this cycle.
 
 Residuals:
-- Inventory held: 86 repositories under user:beyond-repair.
-- Pillars re-verified: forge-aegis (ACTIVE / RUNNABLE SKETCH, releases empty), sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (open Dependabot #6 and draft #7).
+- Inventory held: 81 public repositories under user:beyond-repair (prior search noted 86).
+- Pillars re-verified: forge-aegis (ACTIVE / RUNNABLE SKETCH, releases empty, tags empty), sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (open issues remain).
 - Classifications held per registry. No claim elevation.
-- Full portfolio residual: individual classification and sweeps of remaining ~80 repositories incomplete.
+- Full portfolio residual: individual classification and sweeps of remaining repositories incomplete.
 - Optional operator actions: GitHub archive flag for archive-queue items; forge-aegis v0.1.0 tag/release; merge reviewed Dependabot PRs.
 - No new critical CI or security findings.
 
 Stop after this cycle. Do not enter infinite autonomous review.
 
-## Prior Sweep-671 content preserved below.
+## Prior Sweep-673 content preserved below.
 
-## Sweep-671: automate_passive_income (ARCHIVED)
-
-[Full prior content from Sweep-671 and earlier preserved in repository history.]
+[Full prior content from Sweep-673 and earlier preserved in repository history.]
