@@ -1,0 +1,65 @@
+PASS:
+  id: PASS-2026-11-06-682
+  parent_pass: null
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE_SWEEPS
+  repositories_scanned: 86
+  repositories_changed: 0
+  capabilities_known: 70
+  capabilities_verified: 2
+  gaps_remaining: 12
+OBJECTIVE:
+  id: GAP-INITIAL-RECONSTRUCT
+  description: Reconstruct current ecosystem state from GitHub live search and key governing repositories. Identify residual gaps without mutation.
+  reason_selected: Directive requires discover/audit before any change; first execution of ADL-BASILISK loop.
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 81 public_repos reported by get_me, live search total_count=86.
+    - Central governing repos: ADL-Governance (ACTIVE constitution), ADL-Nexus (RESEARCH, v0.3.2, layers 0-8), aegis-repo-graph (RESEARCH, locked snapshot 72 repos).
+    - Latest Sweep-681 closed profile census drift (81	o86). Sweep-680 completed randomized on Quantumclustering (ARCHIVED.md added).
+    - Many empty/archive-queue repos present with claim 0 and ARCHIVED.md markers.
+    - Pass records and SWEEP_HISTORY.md present; claim validation enforced.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-06-682.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed: []
+VERIFICATION:
+  tests_run:
+    - Live GitHub search user:beyond-repair returned total_count=86 incomplete_results=false
+    - get_file_contents on key READMEs and ARCHIVED.md confirmed claim-capped status
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation, history preserved)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Portfolio has 86 public repositories.
+    - Governance is claim-capped; research vs product distinction enforced.
+    - Empty repos are explicitly marked and queued for archive.
+  failures: []
+  decisions:
+    - Do not elevate any claims. Do not create new product code this pass. Next action is bounded audit of one residual repo.
+REMAINING:
+  incomplete:
+    - Full individual classification and sweep of all ~80 non-pillar repositories
+    - Operator archive flags and PR merges
+  blockers:
+    - Operator-only actions for GitHub archive and tags
+  new_gaps:
+    - Drift between get_me public_repos (81) and search total (86)
+NEXT:
+  objective_id: GAP-BOUNDED-REPO-AUDIT
+  action: Select one non-empty non-pillar repository (e.g. coherence-dynamics or m2-renormalization-law), audit implementation vs claims, verify tests if present, update status docs if safe.
+  reason: Highest-value next is closing one residual classification gap while preserving invariants.
+  prerequisites:
+    - Preserve history. No destructive changes. Claim ceiling held.
+PROVENANCE:
+  state_commit: this-commit
+  evidence:
+    - GitHub search total_count=86
+    - README contents from ADL-Governance, ADL-Nexus, aegis-repo-graph, automate_passive_income
