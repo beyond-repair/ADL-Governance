@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-11-06-671
+  parent_pass: PASS-2026-11-06-670
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-DDVW-RESIDUAL-AUDIT
+  description: Residual audit of priority ACTIVE repo Digital_Double_virtual_workforce: confirm ACTIVE status, claim (software), open PRs (Dependabot + evidence journal), recent CI success, releases empty. Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice from prior NEXT after forge-aegis residual: advance priority queue #1 without product mutation or claim elevation. Operator residuals for Dependabot merges and evidence PR persist.
+
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - Digital_Double_virtual_workforce: ACTIVE, TypeScript/Python, pushed ~2026-10-17, open_issues=5, description scalable Python module for virtual workforce agents.
+    - Open PRs: #7 (NEX-INT-006 evidence journal, draft), #6 (Dependabot rollup bump), and others (Dependabot).
+    - Recent CI: multiple Dependabot workflow runs success on main (e.g. 41336110756 success 2026-11-01), head_sha ad0c3bd... with security pin commit.
+    - Releases and tags remain empty.
+    - README confirms LIFECYCLE ACTIVE, CLAIM software, Python core + optional UI; CANONICAL.md declares public canonical.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-06-671.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for Digital_Double_virtual_workforce
+
+VERIFICATION:
+  tests_run:
+    - GitHub get_file_contents for README and CANONICAL, list_releases (empty), list_pull_requests (open Dependabot and #7), actions_list workflow runs (success on main)
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: PASS (CI green, prior critical Dependabot closed; residual open Dependabot PRs noted)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, AI-advises-only held, history preserved, residuals noted)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Digital_Double_virtual_workforce remains ACTIVE with claim software, recent CI success on main, 0 releases, open residual PRs for Dependabot updates and evidence journal.
+    - Census stable at 86. Governance continues as Nexus state. Claim cap held at software.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No merges or product changes (operator-gated). Classification held.
+
+REMAINING:
+  incomplete:
+    - Operator merge of residual Dependabot PRs and review/merge of evidence PR #7
+    - Full graphs and other priority items (sovereign-clean-room residuals)
+  blockers:
+    - Operator action for PR merges
+  new_gaps:
+    - none specific this pass
+
+NEXT:
+  objective_id: GAP-NEXT-PRIORITY-OR-RANDOM
+  action: Select next: continue priority queue residual audits (e.g. sovereign-clean-room) or random selection of remaining repos.
+  reason: Highest-value is advancing remaining ACTIVE priorities while operator residuals persist.
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Workflow runs list (success on 2026-11-01)
+    - Releases list (empty)
+    - README and CANONICAL inspection
+    - Open PRs list (#6, #7 and Dependabot)
+    - Prior Sweep-670 residual note

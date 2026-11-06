@@ -1,3 +1,27 @@
+## Sweep-672 / PASS-2026-11-06-671
+
+- Timestamp: 2026-11-06T17:15Z UTC.
+- Scope: One governed residual audit. Priority selection (Digital_Double_virtual_workforce). Full DISCOVER → AUDIT cycle. Inventory held (86). Governance update only. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Priority from queue #1 (Digital_Double_virtual_workforce ACTIVE).
+- DISCOVER:
+  - ACTIVE classification, Python/TypeScript virtual workforce.
+  - Recent CI success on Dependabot runs (2026-11-01).
+  - Open PRs: Dependabot (#6 rollup etc.) and draft evidence journal #7.
+  - Releases empty.
+  - Claim held at software.
+- AUDIT:
+  - Matches prior registry. Operator residuals for PR merges confirmed.
+  - Compliant with ACTIVE. No claim elevation.
+- CLASSIFY: ACTIVE (held).
+- PLAN: Target residual confirmation. Met without product changes.
+- IMPLEMENT: None (docs-only in governance).
+- TEST → CI: N/A (no product change); prior/recent CI success confirmed.
+- DOCUMENT: This entry + PASS-2026-11-06-671.yaml.
+- GOVERN: Claims capped. History preserved. No elevation. AI-advises-only held.
+- Residual: Operator PR merges. Individual classification of remaining repositories incomplete. Next: continued priority or random selection.
+
+## Prior Sweep-671 content preserved below.
+
 ## Sweep-671 / Random Selection: automate_passive_income
 
 - Timestamp: 2026-11-06T16:10Z UTC.
