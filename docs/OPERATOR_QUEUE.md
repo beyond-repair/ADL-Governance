@@ -1,33 +1,21 @@
 # Operator Queue
 
+## Sweep-673: Master Directive Cycle
+
+No destructive code actions proposed this cycle.
+
+Residuals:
+- Inventory held: 86 repositories under user:beyond-repair.
+- Pillars re-verified: forge-aegis (ACTIVE / RUNNABLE SKETCH, releases empty), sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (open Dependabot #6 and draft #7).
+- Classifications held per registry. No claim elevation.
+- Full portfolio residual: individual classification and sweeps of remaining ~80 repositories incomplete.
+- Optional operator actions: GitHub archive flag for archive-queue items; forge-aegis v0.1.0 tag/release; merge reviewed Dependabot PRs.
+- No new critical CI or security findings.
+
+Stop after this cycle. Do not enter infinite autonomous review.
+
+## Prior Sweep-671 content preserved below.
+
 ## Sweep-671: automate_passive_income (ARCHIVED)
 
-No destructive code actions proposed this cycle.
-
-Residuals:
-- Inventory held: 86 repositories under user:beyond-repair.
-- Randomly selected `automate_passive_income`: confirmed empty historical note, Claim 0, ARCHIVE QUEUE. Added ARCHIVED.md. Termination conditions met for ARCHIVED state. No operator action required beyond optional GitHub archive flag (already queued in archive_queue.md).
-- Full portfolio residual: individual classification and sweeps of remaining ~85 repos incomplete.
-- No new critical CI or security findings.
-- Next: Continued random selection. Do not enter infinite autonomous review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-669 content preserved below.
-
-## Sweep-669: Agent-Snake (ARCHIVED)
-
-No destructive code actions proposed this cycle.
-
-Residuals:
-- Inventory held: 86 repositories under user:beyond-repair.
-- Randomly selected `Agent-Snake`: confirmed historical AutoGPT stubs, Claim 0, ARCHIVE QUEUE, ARCHIVED.md present. Termination conditions met for ARCHIVED state. No operator action required beyond optional GitHub archive flag (already queued in archive_queue.md).
-- Full portfolio residual: individual classification and sweeps of remaining ~85 repos incomplete.
-- No new critical CI or security findings.
-- Next: Continued random selection. Do not enter infinite autonomous review cycle.
-
-Stop after this cycle.
-
-## Prior Sweep-668 content preserved below.
-
-[Full prior content from Sweep-668 and earlier preserved in repository history.]
+[Full prior content from Sweep-671 and earlier preserved in repository history.]
