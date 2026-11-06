@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-11-06-672
+  parent_pass: PASS-2026-11-06-671
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-SCR-RESIDUAL-AUDIT
+  description: Residual audit of priority ACTIVE repo sovereign-clean-room: confirm ACTIVE status, claim (software / VSA completeness UNVERIFIED), open PRs (governance tag + security pin), recent CI success on main, releases empty. Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice from prior NEXT after Digital_Double residual: advance priority queue #2 without product mutation or claim elevation. Operator residuals for PR merges persist.
+
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - sovereign-clean-room: ACTIVE, Python, pushed 2026-10-04, open_issues=2, description Sovereign Clean-Room VSA Core v1.3.
+    - Open PRs: #3 (Tag ACTIVE claims under ADL-Governance, seem-completion-pass), #1 (security pin PyNaCl >=1.6.2).
+    - Recent CI: Python tests run 37064696194 success on main 4878918 (2026-10-02, merge of #4).
+    - Releases and tags remain empty.
+    - README confirms LIFECYCLE ACTIVE, offline cognitive substrate, VSA completeness implied UNVERIFIED per prior registry; decorative metrics not measurements.
+    - AUDIT_SEEM_COMPLETION.md details locked constitution, partial benchmarks only, no hypothesis established.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-06-672.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for sovereign-clean-room
+
+VERIFICATION:
+  tests_run:
+    - GitHub get_file_contents for README and AUDIT_SEEM_COMPLETION, list_releases (empty), list_pull_requests (open #1 and #3), actions_list workflow runs (success on main 2026-10-02)
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: PASS (CI green, residual open Dependabot-related PR noted; no new critical)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, AI-advises-only held, history preserved, residuals noted, VSA UNVERIFIED held)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - sovereign-clean-room remains ACTIVE with claim software, VSA completeness UNVERIFIED, recent CI success on main, 0 releases, open residual PRs for governance tagging and security pin.
+    - Census stable at 86. Governance continues as Nexus state. Claim cap held.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No merges or product changes (operator-gated). Classification held.
+
+REMAINING:
+  incomplete:
+    - Operator merge of residual PRs #1 and #3
+    - Full graphs and other priority items (BlockSwarm residual if not covered)
+  blockers:
+    - Operator action for PR merges
+  new_gaps:
+    - none specific this pass
+
+NEXT:
+  objective_id: GAP-NEXT-PRIORITY-OR-RANDOM
+  action: Select next: continue priority queue residual audits (e.g. BlockSwarm) or random selection of remaining repos.
+  reason: Highest-value is advancing remaining ACTIVE priorities while operator residuals persist.
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Workflow runs list (37064696194 success)
+    - Releases list (empty)
+    - README and AUDIT_SEEM_COMPLETION inspection
+    - Open PRs list (#1, #3)
+    - Prior Sweep-671 residual note
