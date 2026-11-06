@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-11-06-670
+  parent_pass: PASS-2026-11-05-666
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 11
+OBJECTIVE:
+  id: GAP-FORGE-AEGIS-RESIDUAL-AUDIT
+  description: Residual audit of priority ACTIVE repo forge-aegis: confirm RELEASE_BLOCKED_BY_OPERATOR status, open issues/PRs, recent CI, tags/releases residual, claim cap (software / RUNNABLE SKETCH). Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice from prior NEXT after BlockSwarm residual: advance priority queue #4 without product mutation or claim elevation. Operator residual for v0.1.0 persists.
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - forge-aegis: ACTIVE, Python, pushed 2026-10-05, open_issues=0, description FLS / AEGIS domain package for Project Nehemiah.
+    - Open PRs: none observed.
+    - Recent CI: forge-aegis CI run 37258127100 success on main e7188d5 (2026-10-05).
+    - Tags and releases remain empty (operator residual for v0.1.0 per prior sweeps and CLAIM_STATUS).
+    - README confirms LIFECYCLE ACTIVE, CLAIM software / RUNNABLE SKETCH, not full Nehemiah host, kernel agents, etc.
+    - CLAIM_STATUS.md records Sweep-221, claim software / RUNNABLE SKETCH, local tests passed, remote CI success, no elevation.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-06-670.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - (this commit for pass)
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for forge-aegis
+VERIFICATION:
+  tests_run:
+    - GitHub get_file_contents for README and CLAIM_STATUS, list_releases (empty), list_tags (empty), actions_list workflow runs (success on 2026-10-05)
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: PASS (no open issues, no open PRs, prior Dependabot 0)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, AI-advises-only held, history preserved, tags residual noted)
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - forge-aegis remains ACTIVE / RELEASE_BLOCKED_BY_OPERATOR with last CI success (37258127100), 0 open issues/PRs, tags/releases empty as operator residual for v0.1.0.
+    - Census stable at 86. Governance continues as Nexus state. Claim cap held at software / RUNNABLE SKETCH.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No tagging or release (operator-gated). No product changes. Classification held. No FLS expansion.
+REMAINING:
+  incomplete:
+    - Operator creation of v0.1.0 tag/release for forge-aegis
+    - Full graphs and other priority items (Digital_Double, sovereign-clean-room residuals)
+  blockers:
+    - Operator action for tags/releases
+  new_gaps:
+    - none specific this pass
+NEXT:
+  objective_id: GAP-NEXT-PRIORITY-OR-RANDOM
+  action: Select next: continue priority queue residual audits (e.g. Digital_Double_virtual_workforce or sovereign-clean-room) or random selection of remaining repos.
+  reason: Highest-value is advancing remaining ACTIVE priorities while operator residuals persist.
+  prerequisites:
+    - This pass committed
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Workflow runs list (37258127100 success)
+    - Releases and tags lists (empty)
+    - README and CLAIM_STATUS inspection
+    - Prior Sweep-666 residual note
