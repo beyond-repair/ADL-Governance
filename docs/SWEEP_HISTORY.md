@@ -1,24 +1,21 @@
-## Sweep-677 / Master Directive v3.0 Completion Sweep
+## Sweep-678 / BlockSwarm Residual Audit
 
-- Timestamp: 2026-11-06T19:16Z UTC.
-- Scope: Full portfolio discovery + mandatory live verification of pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce). Docs-only. No claim elevation. No product mutations. No history rewrite.
-- SELECT: Full inventory + priority pillars.
+- Timestamp: 2026-11-06T20:30Z UTC (approx).
+- Scope: Individual residual audit of priority ACTIVE BlockSwarm. Docs-only. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Priority queue #3 residual after sovereign-clean-room.
 - DISCOVER:
   - Search total_count=86.
-  - forge-aegis: CI success on main (37258127100), releases/tags empty.
-  - sovereign-clean-room: CI success on PR runs, releases/tags empty, VSA UNVERIFIED held.
-  - BlockSwarm: Foundry CI success (40441811261), releases/tags empty.
-  - Digital_Double_virtual_workforce: Dependabot success, security pin applied, open_issues=5, releases/tags empty.
+  - BlockSwarm: ACTIVE, Foundry CI success on main (latest run #32 success), releases/tags empty, open PRs/issues=0, claim software with AI-advises-only invariant.
 - AUDIT:
-  - Matches prior registry. Compliant with claim caps. No new critical findings on pillars.
-- CLASSIFY: Held per repository_registry.md.
+  - Matches prior registry and Sweep-677. Compliant with claim caps. No new critical findings.
+- CLASSIFY: Held ACTIVE.
 - PLAN: Residual confirmation and governance docs update. Met.
 - IMPLEMENT: None (docs-only).
 - TEST → CI: N/A (product).
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- GOVERN: Claims capped. History preserved. No elevation.
-- Residual: Operator PR merges, forge-aegis tagging, archive flags pending. Full individual sweeps of remaining repositories incomplete.
+- DOCUMENT: This entry + PASS-2026-11-06-673.yaml + OPERATOR_QUEUE.md.
+- GOVERN: Claims capped. History preserved. No elevation. Tag residual noted.
+- Residual: Operator v0.5.0-sagf tag; other operator residuals persist. Full individual sweeps of remaining repositories incomplete.
 
-## Prior Sweep-676 content preserved below.
+## Prior Sweep-677 content preserved below.
 
-[Full prior content from Sweep-676 and earlier preserved in repository history.]
+[Full prior content from Sweep-677 and earlier preserved in repository history.]

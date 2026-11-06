@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-11-06-673
+  parent_pass: PASS-2026-11-06-672
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_INCOMPLETE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 72
+  capabilities_verified: 6
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-BLOCKSWARM-RESIDUAL-AUDIT
+  description: Residual audit of priority ACTIVE repo BlockSwarm: confirm ACTIVE status, claim (software / SAGF execution substrate, AI advises cannot execute), CI green on main, releases/tags empty (v0.5.0-sagf operator residual), open PRs/issues none. Persist Basilisk pass.
+  reason_selected: Next highest-value bounded slice from prior NEXT after sovereign-clean-room residual: advance priority queue #3 without product mutation or claim elevation. Operator residual for tag persists.
+
+DISCOVERY:
+  findings:
+    - Live census remains total_count=86 under beyond-repair.
+    - BlockSwarm: ACTIVE, Solidity/Foundry, pushed 2026-10-27, open_issues=0, description implied SAGF substrate.
+    - Open PRs: none.
+    - Recent CI: Foundry workflow runs on main completed successfully (latest #32 on commit 026c363).
+    - Releases and tags remain empty (docs mention v0.5.0-sagf lineage as operator residual).
+    - README confirms LIFECYCLE ACTIVE, claim software, invariant AI advises · cannot execute, no mainnet deployment or formal audit claim.
+    - CHANGELOG notes last verified CI success and tags empty.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-06-673.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent residual audit pass for BlockSwarm
+
+VERIFICATION:
+  tests_run:
+    - GitHub get_file_contents for README and related docs, list_releases (empty), list_tags (empty), list_pull_requests (none), browser actions page (Foundry runs success on main)
+    - No product tests run (docs-only)
+  code_review: NOT_RUN
+  security: PASS (CI green, no open issues/PRs, no new critical; submodules pinned per docs)
+  integration: NOT_RUN
+  invariants: PASS (claim discipline, no elevation, AI-advises-only held, history preserved, residuals noted, no execution claim)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - BlockSwarm remains ACTIVE with claim software, SAGF substrate, AI advises cannot execute invariant held, recent CI success on main, 0 releases/tags, 0 open PRs/issues.
+    - Census stable at 86. Governance continues as Nexus state. Claim cap held. v0.5.0-sagf tag is operator residual.
+  failures: []
+  decisions:
+    - Docs-only residual audit. No tagging or product changes (operator-gated). Classification held.
+
+REMAINING:
+  incomplete:
+    - Operator creation of v0.5.0-sagf tag/release
+    - Full graphs and other priority items or remaining repos
+  blockers:
+    - Operator action for tagging
+  new_gaps:
+    - none specific this pass
+
+NEXT:
+  objective_id: GAP-NEXT-PRIORITY-OR-RANDOM
+  action: Select next: continue priority queue residual audits (e.g. forge-aegis or Digital_Double details) or random selection of remaining repos.
+  reason: Highest-value is advancing remaining ACTIVE priorities while operator residuals persist.
+  prerequisites:
+    - This pass committed
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Actions page (Foundry runs success, latest #32 on 026c363)
+    - Releases/tags list (empty)
+    - README and CHANGELOG inspection
+    - Open PRs/issues (none)
+    - Prior Sweep-672 residual note and Sweep-677 pillar verification
