@@ -1,0 +1,86 @@
+PASS:
+  id: PASS-2026-11-07-690
+  parent_pass: PASS-2026-11-07-687
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 86 (live search total_count=86, incomplete_results=false)
+  repositories_changed: 1 (ADL-Governance: this pass record + history updates)
+  capabilities_known: prior + informational-flux-identity flux identity + gasket fractional theorems
+  capabilities_verified: prior (remote inspection; CI present for identity tests)
+  gaps_remaining: many (full residual classification, local execution of large suite, operator actions, catalog expansion)
+
+OBJECTIVE:
+  id: GAP-RESIDUAL-CLASSIFY-001
+  description: Bounded remote source-tree, claim-status, and CI inspection of beyond-repair/informational-flux-identity; reconfirm RESEARCH / Claim ≤1 without mutation or claim elevation.
+  reason_selected: Next residual RESEARCH slice suggested by prior PASS-687 NEXT (informational-flux-identity or similar satellite); advances capability graph for Coherence Drive family without operator gate.
+
+DISCOVERY:
+  findings:
+    - Repo language Python, default main, updated ~2026-10-31, has .github/workflows/ci.yml running unittest tests/test_flux_identity.py (numpy required).
+    - Structure: scripts/ (flux_identity.py, cli.py, dozens of gasket_fractional_*.py), tests/test_flux_identity.py, large docs (CLAIM_STATUS.md ~139kB, README.md ~276kB, GASKET.md ~920kB, docs/THEOREM_V.md), pyproject.toml.
+    - CLAIM_STATUS.md: RESEARCH, claim ceiling 1 (finite-rectangle algebraic identity + explicit integer witness). Many VERIFIED theorems on fractional gasket audit norms, energy floors, degree shares, etc. Explicitly "Not thrust." Laboratory thrust, continuum limit, gasket force NOT CLAIMED. Zero vs positive for some norms settled or open as noted.
+    - tests/test_flux_identity.py: unittest cases confirming divergence-free witness (div_sum=0, net=0, absolute right-face 349/366), Theorem A on random, boundary source +17.
+    - CI workflow present and targeted at the identity tests. No product surface or propulsion claims.
+    - Consistent with prior PORTFOLIO_STATE RESEARCH classification for informational-flux-identity (Sweep-168 notes).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-07-690.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepended Sweep-690)
+    - docs/OPERATOR_QUEUE.md (prepended Sweep-690)
+    - docs/PORTFOLIO_STATUS_REPORT.md (prepended Sweep-690)
+  commits:
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - informational-flux-identity: Rectangle flux identity CLAIMED|IMPLEMENTED|TESTED (tests present, CI configured). Gasket fractional theorems CLAIMED|IMPLEMENTED (scripts + ledger). Not VERIFIED (not re-executed remotely), not INTEGRATED (standalone research). RESEARCH / Claim ≤1 held. No thrust claims.
+
+VERIFICATION:
+  tests_run:
+    - none (remote inspection only; no local clone or test execution)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no catalog mutation, RESEARCH classifications preserved, history preserved, no claim elevation, no destructive change)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - informational-flux-identity is a dense RESEARCH repository focused on algebraic flux identity on finite rectangles and extensive fractional gasket spectral/audit analysis. Claim ceiling 1 held. CI present for core identity tests. Explicit rejection of thrust/force claims. Large theorem ledger documents verified bounds and kept failures.
+    - Consistent with prior portfolio state and Sweep residuals.
+  failures:
+    - none
+  decisions:
+    - Hold RESEARCH / Claim ≤1. Do not promote. Do not expand claims. Next residual audit or priority reconfirm.
+
+REMAINING:
+  incomplete:
+    - Local execution of full pytest/unittest suite on informational-flux-identity (large script surface)
+    - Full classification of remaining residual repositories
+    - Operator actions (archive flags, tags, Dependabot merges)
+    - Catalog expansion beyond locked inventory
+  blockers:
+    - Operator boundaries for release tags, archive flags, claim elevation
+    - Remote-only agent cannot execute local tests without clone
+  new_gaps:
+    - GAP-FLUX-IDENTITY-VERIFY-001: Execute local unittest/pytest on informational-flux-identity to confirm identity tests and any additional
+    - GAP-RESIDUAL-CLASSIFY-002: Bounded audit of next residual (e.g. topological-pinch or another satellite)
+
+NEXT:
+  objective_id: GAP-RESIDUAL-CLASSIFY-002
+  action: Perform bounded remote inspection of next residual RESEARCH repo (topological-pinch or similar) and persist pass record.
+  reason: Continues incremental residual classification; advances capability graph; non-mutating discovery.
+  prerequisites:
+    - This pass record committed
+    - GitHub access
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search_repositories total_count=86
+    - get_repository_tree (recursive) on informational-flux-identity
+    - get_file_contents CLAIM_STATUS.md (truncated), README.md (truncated), ci.yml, tests/test_flux_identity.py
+    - Prior PASS-2026-11-07-687, PORTFOLIO_STATE.md, SWEEP_HISTORY.md
+    - This file

@@ -1,5 +1,46 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-07 (Sweep-690 / Residual Audit)
+**Project / Version:** ADL Portfolio Governance / Sweep-690
+**Objective:** Bounded residual classification of one RESEARCH repository. Preserve history. No claim elevation.
+
+Preserve claim integrity.
+
+## Sweep-690: Residual Audit — informational-flux-identity
+
+**SELECT:** Next residual suggested by prior pass (informational-flux-identity or similar Coherence Drive satellite).
+
+**DISCOVER:**
+- Dense mathematical research repository: rectangle flux identity + extensive gasket fractional spectral/audit analysis.
+- CLAIM_STATUS.md (large): RESEARCH, claim ceiling 1. Explicit "Not thrust." Many VERIFIED theorems on energy floors, degree shares, audit norms, kept failures. Laboratory thrust / gasket force NOT CLAIMED.
+- CI: .github/workflows/ci.yml runs `python -m unittest tests/test_flux_identity.py` (numpy). Tests confirm divergence-free witness (div_sum=0, net=0, absolute right 349/366) and Theorem A.
+- Structure: scripts/ (flux_identity.py + dozens of gasket_fractional_*.py), tests/, large docs including GASKET.md.
+- No product surface, no releases noted. Consistent with prior RESEARCH classification (Sweep-168).
+
+**AUDIT:**
+- Compliant with RESEARCH / Claim ≤1. No unsupported claims. No critical issues. CI present for core identity. Theorem ledger documents verified bounds without promotion.
+- Classification held: RESEARCH.
+
+**CLASSIFY:** RESEARCH (held). Justification: Mathematical research and theorem ledger only; no executable product; claim ceiling held; explicit non-thrust.
+
+**PLAN:** Target state: RESEARCH with governance current; no feature work. Termination met for this residual.
+
+**IMPLEMENT:** None (already meets termination conditions). Docs-only governance update.
+
+**TEST → CI:** N/A (no product change). Existing CI reconfirmed by presence and test content.
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md, added PASS-2026-11-07-690.yaml. Claims remain at ≤1. History preserved.
+
+**RELEASE/ARCHIVE:** No new tag. Remains RESEARCH (not archive-queue).
+
+**RE-AUDIT:** Status confirmed RESEARCH. Termination conditions met for this repository.
+
+**Residual:** Full portfolio individual sweeps of remaining repositories incomplete. Operator actions on other items pending.
+
+## Prior Sweep-689 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-07 (Sweep-689 / Randomized Portfolio Completion Sweep)
 **Project / Version:** ADL Portfolio Governance / Sweep-689
 **Objective:** Random selection of one repository for full lifecycle completion. Preserve history. No claim elevation.
@@ -39,45 +80,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-688 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-07 (Sweep-688 / Randomized Portfolio Completion Sweep)
-**Project / Version:** ADL Portfolio Governance / Sweep-688
-**Objective:** Random selection of one repository for full lifecycle completion. Preserve history. No claim elevation.
-
-Preserve claim integrity.
-
-## Sweep-688: Randomized Sweep — ftmA.I.bot
-
-**SELECT:** Random selection from full portfolio (live search total_count=86): beyond-repair/ftmA.I.bot.
-
-**DISCOVER:**
-- Collection of incomplete Python stubs for Fantom trading, arbitrage, wallet checks, technical analysis, flash-loan patterns, etc.
-- Explicit note: main.py does not exist. No coherent entrypoint or runnable product.
-- Governance files present: ARCHIVED.md (Sweep-126 intent), CLAIM_STATUS.md (Claim 0), GOVERNANCE.md (Sweep-190), README with archive banner.
-- CI: archive-guard.yml runs non-executing tests/test_archive_invariants.py (entrypoint absent, claim banners, no key files).
-- No releases. GitHub archived flag false (operator-only).
-
-**AUDIT:**
-- Compliant with archive-queue status. No undefined critical components. No unsupported claims (explicit Claim 0). No critical security issues. Invariants CI present.
-- Classification held: ARCHIVED (archive-queue). Prior local labels consistent.
-
-**CLASSIFY:** ARCHIVED. Justification: Historical incomplete stubs; no further feature work; already documented as archive-queue with invariants enforcement.
-
-**PLAN:** Target state: ARCHIVED with governance docs current; actual GitHub archive flag queued for operator.
-
-**IMPLEMENT:** None (already meets termination for residual). Docs-only governance update.
-
-**TEST → CI:** N/A (no product change). Existing archive-guard invariants reconfirmed by presence.
-
-**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. Claims remain at Level 0. History preserved.
-
-**RELEASE/ARCHIVE:** No new tag. GitHub archive action remains in operator queue.
-
-**RE-AUDIT:** Status confirmed ARCHIVED. Termination conditions met for this repository.
-
-**Residual:** Operator to set GitHub archived flag when ready. Full portfolio individual sweeps of remaining repositories incomplete.
-
-## Prior Sweep-686 content preserved below.
-
-[Full prior content from Sweep-686 and earlier preserved in repository history.]
+[Full prior content from Sweep-688 and earlier preserved in repository history.]
