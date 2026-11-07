@@ -1,0 +1,72 @@
+PASS:
+  id: PASS-2026-11-07-683
+  parent_pass: PASS-2026-11-06-682
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE_SWEEPS
+  repositories_scanned: 86
+  repositories_changed: 0
+  capabilities_known: 70
+  capabilities_verified: 3
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-BOUNDED-REPO-AUDIT-M2
+  description: Audit m2-renormalization-law implementation vs claims; verify tests locally.
+  reason_selected: Next bounded residual classification gap per prior NEXT; non-pillar RESEARCH repo with runnable tests.
+
+DISCOVERY:
+  findings:
+    - Repo is Python, RESEARCH / Claim-0 provisional ansatz.
+    - README declares runnable sketch, parameter-free ratios, Stage-1 freeze.
+    - Has requirements.txt, tests, CI implied.
+    - Local clone + pytest: 10 passed in 0.11s.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-07-683.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - m2-renormalization-law: TESTED (pytest 10 passed)
+
+VERIFICATION:
+  tests_run:
+    - python -m pytest -q in cloned tree: 10 passed
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_RUN
+  invariants: PASS (Claim-0 held, no elevation, history preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - m2-renormalization-law tests pass locally; matches README claims of runnable sketch.
+    - No product claims; research status held.
+  failures: []
+  decisions:
+    - Hold Claim-0. Do not promote. Next is another residual or priority pillar residual.
+
+REMAINING:
+  incomplete:
+    - Full individual classification and sweeps of remaining repositories
+  blockers:
+    - Operator-only actions for archives and tags
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-BOUNDED-REPO-AUDIT-NEXT
+  action: Select next non-empty residual repository (e.g. coherence-drive or another recent RESEARCH), audit vs claims, verify if tests present.
+  reason: Continue closing residual classification gaps incrementally.
+  prerequisites:
+    - Preserve history. Claim ceiling held.
+
+PROVENANCE:
+  state_commit: this-commit
+  evidence:
+    - Local pytest 10 passed
+    - README and tree inspection
