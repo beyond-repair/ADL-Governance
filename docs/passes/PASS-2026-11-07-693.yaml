@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-11-07-693
+  parent_pass: PASS-2026-11-07-690
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 86 (live search total_count=86, incomplete_results=false)
+  repositories_changed: 1 (ADL-Governance: this pass record + history updates)
+  capabilities_known: prior + topological-pinch graph proxy localization
+  capabilities_verified: prior (remote inspection; CI present for pytest)
+  gaps_remaining: many (full residual classification, local execution, operator actions)
+
+OBJECTIVE:
+  id: GAP-RESIDUAL-CLASSIFY-002
+  description: Bounded remote source-tree, claim-status, and CI inspection of beyond-repair/topological-pinch; reconfirm RESEARCH / Claim ≤1 without mutation or claim elevation.
+  reason_selected: Next residual RESEARCH slice suggested by prior PASS-690 NEXT (topological-pinch or similar); advances capability graph for Coherence Drive family without operator gate.
+
+DISCOVERY:
+  findings:
+    - Repo language Python, default main, updated ~2026-10-02, has .github/workflows/ci.yml running pytest (numpy required).
+    - Structure: localization.py, report.py, tests/ (test_localization.py, test_report.py, test_docs.py), CLAIM_STATUS.md, README.md, FALSIFICATION_2026-10-01_PINCH.md, pyproject.toml, requirements.txt.
+    - CLAIM_STATUS.md: RESEARCH / hypothesis, RUNNABLE SKETCH — NOT A COMPLETE PRODUCT (Claim-0). experimental_validation: false. Historical 92% localization HYPOTHESIS — not reproduced. Graph-proxy eta = 0.5/0.4/0.1, not 0.92. Explicitly not thrust or continuum stress.
+    - README confirms same: graph residual proxy, not mesh, not Maxwell-stress, not thrust. Scale factor 0.6 observed, not 0.08 or 0.92.
+    - CI workflow present and targeted at pytest. No product surface or propulsion claims.
+    - Consistent with prior PORTFOLIO_STATE RESEARCH classification for topological-pinch (Sweep-172 notes).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-07-693.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepended Sweep-693)
+    - docs/OPERATOR_QUEUE.md (prepended Sweep-693)
+    - docs/PORTFOLIO_STATUS_REPORT.md (prepended Sweep-693)
+  commits:
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - topological-pinch: Graph-proxy localization CLAIMED|IMPLEMENTED|TESTED (tests present, CI configured). Historical 92% NOT REPRODUCED. Not VERIFIED as physics (no mesh/continuum), not INTEGRATED. RESEARCH / Claim ≤1 held. No thrust claims.
+
+VERIFICATION:
+  tests_run:
+    - none (remote inspection only; no local clone or test execution)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no catalog mutation, RESEARCH classifications preserved, history preserved, no claim elevation, no destructive change)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - topological-pinch is a dense RESEARCH repository focused on graph-proxy residual localization on gasket. Claim ceiling 1 held. CI present for tests. Explicit rejection of 92% reproduction and thrust/force claims. Falsification note on neck spectral collapse.
+    - Consistent with prior portfolio state and Sweep residuals.
+  failures:
+    - none
+  decisions:
+    - Hold RESEARCH / Claim ≤1. Do not promote. Do not expand claims. Next residual audit or priority reconfirm.
+
+REMAINING:
+  incomplete:
+    - Local execution of full pytest suite on topological-pinch
+    - Full classification of remaining residual repositories
+    - Operator actions (archive flags, tags, Dependabot merges)
+  blockers:
+    - Operator boundaries for release tags, archive flags, claim elevation
+    - Remote-only agent cannot execute local tests without clone
+  new_gaps:
+    - GAP-PINCH-VERIFY-001: Execute local pytest on topological-pinch to confirm tests
+    - GAP-RESIDUAL-CLASSIFY-003: Bounded audit of next residual (e.g. sierpinski-geometry-045 or another satellite)
+
+NEXT:
+  objective_id: GAP-RESIDUAL-CLASSIFY-003
+  action: Perform bounded remote inspection of next residual RESEARCH repo (sierpinski-geometry-045 or similar) and persist pass record.
+  reason: Continues incremental residual classification; advances capability graph; non-mutating discovery.
+  prerequisites:
+    - This pass record committed
+    - GitHub access
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search_repositories total_count=86
+    - get_repository_tree (recursive) on topological-pinch
+    - get_file_contents CLAIM_STATUS.md, README.md, ci.yml
+    - Prior PASS-2026-11-07-690, PORTFOLIO_STATE.md, SWEEP_HISTORY.md
+    - This file
