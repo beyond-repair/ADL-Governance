@@ -1,10 +1,30 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-07 (Sweep-692 / Portfolio Discovery & Pillar Verification)
-**Project / Version:** ADL Portfolio Governance / Sweep-692
-**Objective:** Full portfolio discovery reconfirmation and mandatory Phase-3 live verification of pillars. Preserve history. No claim elevation.
+**Updated:** 2026-11-07 (Sweep-693 / Residual Classification: topological-pinch)
+**Project / Version:** ADL Portfolio Governance / Sweep-693
+**Objective:** Bounded remote residual classification of topological-pinch. Preserve history. No claim elevation.
 
 Preserve claim integrity.
+
+## Sweep-693: Residual Classification: topological-pinch
+
+**DISCOVER:**
+- Live tree inspection of topological-pinch: Python, CI (pytest), localization.py / report.py / tests present.
+- CLAIM_STATUS.md and README.md confirm RESEARCH / hypothesis, Claim-0, experimental_validation=false, graph-proxy eta 0.5/0.4/0.1 (not 0.92), no thrust claims.
+
+**VERIFY:**
+- Classifications held. Consistent with prior Sweep-172. No claim elevation.
+- CI workflow present; remote inspection only (no local execution).
+
+**CLASSIFY:** No changes. RESEARCH / Claim ≤1 held.
+
+**CAPABILITY / GAP / REDUNDANCY:** Graph-proxy localization CLAIMED|IMPLEMENTED|TESTED. Physics/continuum not verified. No new demonstrated features claimed.
+
+**AUDIT:** No unsupported implementation claims. No new critical findings. Full individual classification of all 86 remains residual.
+
+**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-692 content preserved below.
 
 ## Sweep-692: Portfolio Discovery & Pillar Verification
 
