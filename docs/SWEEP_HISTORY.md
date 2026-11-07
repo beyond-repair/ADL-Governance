@@ -1,3 +1,20 @@
+## Sweep-693 / Residual Classification: topological-pinch
+
+- Timestamp: 2026-11-07T20:08Z UTC.
+- Scope: Bounded remote inspection of beyond-repair/topological-pinch. Preserve history. No claim elevation. No product mutations.
+- DISCOVER:
+  - Language Python, main updated ~2026-10-02, CI present (pytest).
+  - Structure: localization.py, report.py, tests/, CLAIM_STATUS.md, README.md, falsification notes.
+- VERIFY:
+  - CLAIM_STATUS: RESEARCH / hypothesis, Claim-0, experimental_validation=false. Graph-proxy eta 0.5/0.4/0.1, not 0.92. Not thrust.
+  - Consistent with prior Sweep-172 notes.
+- AUDIT: Classifications held. No new critical findings. Claims capped.
+- CLASSIFY: No changes.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md + new PASS yaml.
+- Residual: Full per-repository individual sweeps incomplete. Operator actions pending. Continue incremental.
+
+## Prior Sweep-692 content preserved below.
+
 ## Sweep-692 / Portfolio Discovery & Pillar Verification
 
 - Timestamp: 2026-11-07T19:16Z UTC.
