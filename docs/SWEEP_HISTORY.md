@@ -1,3 +1,24 @@
+## Sweep-685 / Agent Reconstruction Pass — Portfolio State Baseline
+
+- Timestamp: 2026-11-07T15:10Z UTC.
+- Scope: Initial recursive agent reconstruction of ecosystem from GitHub and persistent state. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Full portfolio (user:beyond-repair total_count=86) + governance and Nexus.
+- DISCOVER:
+  - Live search total_count=86 (incomplete_results=false).
+  - Sweep-684 residual confirmed: individual classification incomplete.
+  - Pillars states held. ADL-Nexus RESEARCH claim ≤1.
+- AUDIT:
+  - Governance pass system operational. Residuals and operator queue confirmed.
+- CLASSIFY: Held.
+- PLAN: Persist agent pass record for continuity. Met.
+- IMPLEMENT: Added docs/passes/PASS-2026-11-07-685.yaml.
+- TEST → CI: N/A.
+- DOCUMENT: This entry + pass YAML.
+- GOVERN: Claims capped. History preserved.
+- Residual: Individual classification incomplete. Operator actions pending. Next: bounded audit of residual repo (e.g. coherence-drive).
+
+## Prior Sweep-684 content preserved below.
+
 ## Sweep-684 / Master Directive v3.0 Completion Sweep — Inventory & Pillar Reconfirmation
 
 - Timestamp: 2026-11-07T14:30Z UTC.
