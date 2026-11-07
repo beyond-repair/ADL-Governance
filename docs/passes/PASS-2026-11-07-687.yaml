@@ -1,0 +1,84 @@
+PASS:
+  id: PASS-2026-11-07-687
+  parent_pass: PASS-2026-11-07-686
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 86 (live search total_count=86, incomplete_results=false)
+  repositories_changed: 1 (ADL-Governance: this pass record)
+  capabilities_known: prior + coherence-drive index/CLI/ledger/discovery archive
+  capabilities_verified: prior (docs-only remote)
+  gaps_remaining: many (full residual classification, CI on priority, operator actions, catalog expansion)
+
+OBJECTIVE:
+  id: GAP-COHERENCE-DRIVE-AUDIT-001
+  description: Bounded remote source-tree and claim-status inspection of beyond-repair/coherence-drive; reconfirm RESEARCH / Claim-0 / Stage-1 freeze without mutation or claim elevation.
+  reason_selected: Next residual RESEARCH slice suggested by OPERATOR_QUEUE Sweep-686; advances capability graph for Coherence Drive family without operator gate.
+
+DISCOVERY:
+  findings:
+    - Repo language Python, default main, pushed ~2026-10-31, no .github/workflows (no CI).
+    - Structure: coherence_drive/ (cli.py, ledger.py, paths.py, __main__.py), tests/ (test_claims.py, test_docs.py, test_ledger.py), discoveries/ (INDEX.md, DISCOVERY_LEDGER.md, failed-hypotheses/DISC-0002..0017, mathematics/DISC-0001..0012), extensive docs/ (MATH_THEORY_CLOSURE.md, LAYER_MAP.md, many PROOF_*_LOCK, CLAIM_STATUS.md).
+    - CLAIM_STATUS.md: RESEARCH, claim ≤2 symbolic Stage-1 freeze index; Claim-0 runnable sketch; experimental_validation=false, thrust_validated=false, energy_extraction_validated=false. Explicitly not a propulsion engine.
+    - README confirms research index, Stage 1 frozen, claim flags false; pytest checks docs presence and ledger consistency.
+    - Satellites referenced: m2-renormalization-law, topological-pinch, informational-flux-identity, etc.
+    - Feature matrix: Stage-1 docs VERIFIED present, discovery archive VERIFIED present, CLI VERIFIED present, docs-presence pytest VERIFIED present; propulsion simulator ABSENT.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-07-687.yaml (new)
+  commits:
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - coherence-drive: Research index + discovery ledger CLAIMED|IMPLEMENTED; CLI + ledger parser CLAIMED|IMPLEMENTED; docs-presence tests CLAIMED|IMPLEMENTED (files present). Not VERIFIED (not executed remotely), not INTEGRATED (standalone research). Stage-1 freeze and Claim-0 held. No CI.
+
+VERIFICATION:
+  tests_run:
+    - none (remote inspection only; no local clone or pytest execution)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no catalog mutation, RESEARCH classifications preserved, history preserved, no claim elevation, no destructive change, Stage-1 freeze respected)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - coherence-drive is a claim-capped RESEARCH index and discovery ledger with runnable Claim-0 sketch (CLI + pytest for docs/ledger), extensive failed-hypothesis archive, Stage-1 math freeze. No CI workflow. Explicitly rejects propulsion/thrust/energy-extraction claims.
+    - Consistent with prior PORTFOLIO_STATE and Sweep residuals.
+  failures:
+    - none
+  decisions:
+    - Hold RESEARCH / Claim-0 / ≤2. Do not promote. Do not add CI (not required at this claim level).
+    - Next: continue residual audits or reconfirm priority pillars.
+
+REMAINING:
+  incomplete:
+    - Local execution of pytest on coherence-drive
+    - Full classification of remaining ~80 residual repos
+    - Operator actions (archive flags, tags, Dependabot merges)
+    - Catalog expansion beyond locked inventory
+  blockers:
+    - Operator boundaries for release tags, archive flags, claim elevation
+    - Remote-only agent cannot execute local pytest without clone
+  new_gaps:
+    - GAP-COHERENCE-DRIVE-VERIFY-001: Execute local pytest -q on coherence-drive to confirm docs-presence and ledger checks
+    - GAP-RESIDUAL-CLASSIFY-001: Bounded audit of next residual (e.g. informational-flux-identity or topological-pinch)
+
+NEXT:
+  objective_id: GAP-RESIDUAL-CLASSIFY-001
+  action: Perform bounded remote inspection of next residual RESEARCH repo (informational-flux-identity or similar satellite) and persist pass record.
+  reason: Continues incremental residual classification; advances capability graph; non-mutating discovery.
+  prerequisites:
+    - This pass record committed
+    - GitHub access
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search_repositories total_count=86
+    - get_repository_tree (recursive) on coherence-drive
+    - get_file_contents README.md, CLAIM_STATUS.md
+    - Prior OPERATOR_QUEUE Sweep-686, PORTFOLIO_STATE.md
+    - This file
