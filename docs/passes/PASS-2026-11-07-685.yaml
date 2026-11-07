@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-11-07-685
+  parent_pass: PASS-2026-11-07-683
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE_SWEEPS
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 70
+  capabilities_verified: 3
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-AGENT-RECONSTRUCT-STATE
+  description: Reconstruct current ecosystem state from GitHub and persistent Nexus/Governance state for recursive continuation.
+  reason_selected: Initial agent execution; must establish verified baseline before selecting next bounded slice.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 86 public repositories.
+    - Governing source: ADL-Governance (latest Sweep-684 inventory reconfirmation 2026-11-07).
+    - Nexus: ADL-Nexus v0.3.2 RESEARCH claim ≤1; layered architecture present.
+    - Priority pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) ACTIVE with claim caps held; no new pushes.
+    - Residuals: full individual classification of ~80 repos incomplete; operator actions for archives/tags/PRs pending.
+    - Pass records up to PASS-2026-11-07-683; Sweep-684 in history.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-07-685.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Agent pass record persisted for continuity
+
+VERIFICATION:
+  tests_run:
+    - N/A (discovery only)
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_RUN
+  invariants: PASS (history preserved, claims not elevated, no product mutations)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio census 86 held.
+    - Sweep-684 residual recorded: classification incomplete.
+    - Governance pass system operational for recursive agents.
+  failures: []
+  decisions:
+    - Continue incremental residual classification. Next bounded audit of a non-pillar RESEARCH repo with potential tests.
+
+REMAINING:
+  incomplete:
+    - Full individual classification and sweeps of remaining repositories
+  blockers:
+    - Operator-only actions for archives, tags, PR merges
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-BOUNDED-REPO-AUDIT-COHERENCE
+  action: Select and audit beyond-repair/coherence-drive (or next residual with tests) vs claims; verify implementation and run tests if present.
+  reason: Highest-value next small slice to close residual classification gaps without claim elevation.
+  prerequisites:
+    - Preserve history. Claim ceiling held. No destructive changes.
+
+PROVENANCE:
+  state_commit: this-commit
+  evidence:
+    - Live GitHub search total_count=86
+    - Inspection of ADL-Governance docs/SWEEP_HISTORY.md, PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, repository_registry.md
+    - ADL-Nexus README and structure
