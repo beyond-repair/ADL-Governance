@@ -1,10 +1,33 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-07 (Sweep-693 / Residual Classification: topological-pinch)
-**Project / Version:** ADL Portfolio Governance / Sweep-693
-**Objective:** Bounded remote residual classification of topological-pinch. Preserve history. No claim elevation.
+**Updated:** 2026-11-07 (Sweep-694 / Residual Classification: sierpinski-geometry-045)
+**Project / Version:** ADL Portfolio Governance / Sweep-694
+**Objective:** Bounded remote residual classification of sierpinski-geometry-045. Preserve history. No claim elevation.
 
 Preserve claim integrity.
+
+## Sweep-694: Residual Classification: sierpinski-geometry-045
+
+**DISCOVER:**
+- Live tree inspection of sierpinski-geometry-045: Python, .github present, multiple scripts (sierpinski_generator.py, gasket_catalog.py, conductance_shear.py, etc.), tests present, CLAIM_STATUS.md / README.md / INDEX.md / FALSIFICATION.md.
+- CLAIM_STATUS.md confirms RESEARCH, Claim level 1, RUNNABLE SKETCH — NOT A COMPLETE PRODUCT (Claim-0). experimental_validation=false, thrust_validated=false, energy_extraction_validated=false.
+- Allowed: geometry generator (α=0.45 mesh 48v/36f), graph audits (N/E, flux zero on symmetric, α=0.45 not spectral thrust peak), conductance/shear diagnostics, Kigami/PCF locks, spectrum notes. Forbidden: thrust, EM, LDOS-as-force, α as critical value, etc.
+- Consistent with prior registry notes (Sweep-159e / Claim-0).
+
+**VERIFY:**
+- Classifications held. RESEARCH / Claim ≤1. No claim elevation.
+- CI workflow present (python-tests.yml); remote inspection only (no local execution).
+- Releases / tags: none.
+
+**CLASSIFY:** No changes. RESEARCH / Claim ≤1 held.
+
+**CAPABILITY / GAP / REDUNDANCY:** Geometry generator + graph algebra CLAIMED|IMPLEMENTED|TESTED (tests present). Not a field solve, not force claim, not DSI period. No new demonstrated features claimed. No duplicate canonical implementations.
+
+**AUDIT:** No unsupported implementation claims. No new critical findings. Full individual classification of all 86 remains residual.
+
+**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-693 content preserved below.
 
 ## Sweep-693: Residual Classification: topological-pinch
 
