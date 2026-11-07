@@ -1,3 +1,22 @@
+## Sweep-698 / Residual Classification: coherence-dynamics + Pillar Reconfirm
+
+- Timestamp: 2026-11-07T22:15Z UTC.
+- Scope: Bounded remote inspection of beyond-repair/coherence-dynamics. Phase-1 inventory reconfirm + Phase-3 pillar live verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER:
+  - Live search total_count=86, incomplete_results=false.
+  - coherence-dynamics tree: research structure (docs, theory, spectral, numerics, experiments, tests, .github/workflows). README: Stage A, mathematical physics, CI pytest.
+- VERIFY (pillars):
+  - forge-aegis main e7188d5: CI success run 37258127100.
+  - sovereign-clean-room: recent CI success on seem-completion-pass after float fixes (run 37215829476).
+  - BlockSwarm main 026c363: Foundry CI success run 40441811261.
+  - Digital_Double_virtual_workforce main ad0c3bd: Dependabot success post security pin.
+- AUDIT: Classifications held. coherence-dynamics RESEARCH. No new critical findings. Claims capped.
+- CLASSIFY: coherence-dynamics RESEARCH. Pillars ACTIVE held. No other changes.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- Residual: Full per-repository individual sweeps incomplete. Operator actions pending. Stop after cycle. Do not enter infinite review.
+
+## Prior Sweep-697 content preserved below.
+
 ## Sweep-697 / Residual Classification: smart_home_BCI
 
 - Timestamp: 2026-11-07T22:00Z UTC.
@@ -15,23 +34,4 @@
 
 ## Prior Sweep-696 content preserved below.
 
-## Sweep-696 / Pillar Re-Verification & Residual Confirmation
-
-- Timestamp: 2026-11-07T21:16Z UTC.
-- Scope: Bounded governed sweep — Phase-1 inventory reconfirmation + Phase-3 mandatory live verification of pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce). Preserve history. No claim elevation. No product mutations. No history rewrite.
-- DISCOVER:
-  - Live search total_count=86, incomplete_results=false.
-  - 86-name inventory reconfirmed; matches prior registry.
-- VERIFY (pillars):
-  - forge-aegis main `e7188d5`: CI success run 37258127100; README RUNNABLE SKETCH / software; tests documented.
-  - sovereign-clean-room main `4878918c`: CI present; recent success after precision fixes; VSA UNVERIFIED.
-  - BlockSwarm main `026c363`: Foundry CI success run 40441811261; SAGF invariant held.
-  - Digital_Double_virtual_workforce main `ad0c3bd`: security pin commit; Dependabot success; Python core verified in docs.
-- AUDIT: Classifications held. No new critical findings. Claims capped.
-- CLASSIFY: No changes.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- Residual: Full per-repository individual sweeps incomplete. Operator actions pending. Stop after cycle. Do not enter infinite review.
-
-## Prior Sweep-695 content preserved below.
-
-[Full prior content from Sweep-695 and earlier preserved in repository history.]
+[Full prior content from Sweep-696 and earlier preserved in repository history.]
