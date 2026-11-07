@@ -1,3 +1,20 @@
+## Sweep-694 / Residual Classification: sierpinski-geometry-045
+
+- Timestamp: 2026-11-07T20:15Z UTC.
+- Scope: Bounded remote inspection of beyond-repair/sierpinski-geometry-045. Preserve history. No claim elevation. No product mutations.
+- DISCOVER:
+  - Language Python, .github present, main updated prior, CI present (python-tests.yml / pytest).
+  - Structure: sierpinski_generator.py, gasket_catalog.py, conductance_shear.py, gasket_flux_audit.py, tests (test_*.py), CLAIM_STATUS.md, README.md, INDEX.md, FALSIFICATION.md, pyproject.toml, requirements.txt.
+- VERIFY:
+  - CLAIM_STATUS: RESEARCH, Claim level 1, RUNNABLE SKETCH — NOT A COMPLETE PRODUCT (Claim-0). experimental_validation=false, thrust/energy=false. Geometry + graph algebra only. α=0.45 not a thrust peak or critical value.
+  - Consistent with prior registry notes (Sweep-159e).
+- AUDIT: Classifications held. No new critical findings. Claims capped.
+- CLASSIFY: No changes.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md + new PASS yaml.
+- Residual: Full per-repository individual sweeps incomplete. Operator actions pending. Continue incremental.
+
+## Prior Sweep-693 content preserved below.
+
 ## Sweep-693 / Residual Classification: topological-pinch
 
 - Timestamp: 2026-11-07T20:08Z UTC.
