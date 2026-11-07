@@ -1,10 +1,33 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-07 (Sweep-694 / Residual Classification: sierpinski-geometry-045)
-**Project / Version:** ADL Portfolio Governance / Sweep-694
-**Objective:** Bounded remote residual classification of sierpinski-geometry-045. Preserve history. No claim elevation.
+**Updated:** 2026-11-07 (Sweep-695 / Residual Classification: sunder-cleanroom-vsa-adapter)
+**Project / Version:** ADL Portfolio Governance / Sweep-695
+**Objective:** Bounded remote residual classification of sunder-cleanroom-vsa-adapter (randomly selected). Preserve history. No claim elevation.
 
 Preserve claim integrity.
+
+## Sweep-695: Residual Classification: sunder-cleanroom-vsa-adapter
+
+**DISCOVER:**
+- Live tree inspection of sunder-cleanroom-vsa-adapter: Python, .github present, adapter/ package (contract.py, engine.py, local_ops.py, surfaces.py, validate.py), tests present (test_adapter.py, test_local_ops.py), README.md, docs/CODE_REVIEW.md, pyproject.toml, requirements.txt.
+- README.md confirms RESEARCH, Claim ≤1, claim-capped name-only surface contract (v0.1.1) between sunder VSAMemory (DEFAULT_DIM=4096) and sovereign-clean-room CleanRoomVSAEngine (DEFAULT_DIM=8192). Shared algebra names mapped NAME_ONLY. Dim mismatch is the contract. No runtime import. Closes Q-FUNC-002.
+- Allowed: locked paths/classes/method names, NAME_ONLY equivalence, dim difference documented, deterministic checker. Forbidden: runtime import, vector isomorphism, equal dims, production interop.
+- Consistent with prior registry RESEARCH classification and queue notes for Q-FUNC-002.
+
+**VERIFY:**
+- Classifications held. RESEARCH / Claim ≤1. No claim elevation.
+- CI workflow present (ci.yml running engine + pytest); remote inspection only (no local execution).
+- Releases / tags: none.
+
+**CLASSIFY:** No changes. RESEARCH / Claim ≤1 held.
+
+**CAPABILITY / GAP / REDUNDANCY:** Name-only VSA surface contract CLAIMED|IMPLEMENTED|TESTED (tests present). Not a runtime interop or algebra equality. No new demonstrated features claimed. No duplicate canonical implementations.
+
+**AUDIT:** No unsupported implementation claims. No new critical findings. Full individual classification of all 86 remains residual.
+
+**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-694 content preserved below.
 
 ## Sweep-694: Residual Classification: sierpinski-geometry-045
 
