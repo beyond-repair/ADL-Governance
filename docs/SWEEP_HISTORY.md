@@ -1,3 +1,20 @@
+## Sweep-697 / Residual Classification: smart_home_BCI
+
+- Timestamp: 2026-11-07T22:00Z UTC.
+- Scope: Bounded remote inspection of beyond-repair/smart_home_BCI (randomly selected). Preserve history. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER:
+  - Tree: .gitignore, ARCHIVED.md, CLAIM_STATUS.md, LICENSE, README.md, smart_home_bci.py. No .github, no tests, no workflows.
+  - Sketch only. Undefined imports (bci, SmartHome). Hard-coded LAN. Untrained Keras. Not runnable as closed system.
+- VERIFY:
+  - ARCHIVED / Claim 0 held (Sweep-087 lock, Sweep-107 re-audit). Listed in archive_queue.md. GitHub archived flag still false.
+  - Consistent with prior registry. Implementation of missing modules forbidden.
+- AUDIT: Classifications held. No new critical findings. Claims capped.
+- CLASSIFY: No changes.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- Residual: Full per-repository individual sweeps incomplete. Operator actions pending (archive flags). Continue incremental. Do not loop on locked ARCHIVED.
+
+## Prior Sweep-696 content preserved below.
+
 ## Sweep-696 / Pillar Re-Verification & Residual Confirmation
 
 - Timestamp: 2026-11-07T21:16Z UTC.
@@ -17,21 +34,4 @@
 
 ## Prior Sweep-695 content preserved below.
 
-## Sweep-695 / Residual Classification: sunder-cleanroom-vsa-adapter
-
-- Timestamp: 2026-11-07T21:03Z UTC.
-- Scope: Bounded remote inspection of beyond-repair/sunder-cleanroom-vsa-adapter (randomly selected). Preserve history. No claim elevation. No product mutations.
-- DISCOVER:
-  - Language Python, .github present, CI present (ci.yml / pytest + engine).
-  - Structure: adapter/ (contract.py, engine.py, local_ops.py, surfaces.py, validate.py), tests/ (test_adapter.py, test_local_ops.py), README.md, docs/CODE_REVIEW.md, pyproject.toml, requirements.txt.
-- VERIFY:
-  - README / contract: RESEARCH, Claim ≤1, name-only surface contract (v0.1.1). Dim mismatch 4096 ≠ 8192. NAME_ONLY for bind/unbind/similarity. No runtime import. Closes Q-FUNC-002. Forbidden claims enforced in tests.
-  - Consistent with prior registry RESEARCH classification and queue notes.
-- AUDIT: Classifications held. No new critical findings. Claims capped.
-- CLASSIFY: No changes.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md + new PASS yaml.
-- Residual: Full per-repository individual sweeps incomplete. Operator actions pending. Continue incremental.
-
-## Prior Sweep-694 content preserved below.
-
-[Full prior content from Sweep-694 and earlier preserved in repository history.]
+[Full prior content from Sweep-695 and earlier preserved in repository history.]

@@ -1,5 +1,36 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-07 (Sweep-697 / Residual Classification: smart_home_BCI)
+**Project / Version:** ADL Portfolio Governance / Sweep-697
+**Objective:** Bounded remote residual classification of smart_home_BCI (randomly selected). Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-697: Residual Classification: smart_home_BCI
+
+**DISCOVER:**
+- Live tree inspection of smart_home_BCI (main 84cfa71): .gitignore, ARCHIVED.md, CLAIM_STATUS.md, LICENSE, README.md, smart_home_bci.py.
+- Single-file 2023-era sketch. Imports (bci, SmartHome) undefined in tree. Hard-coded LAN address. Untrained Keras stub. No tests. GitHub Actions workflows: 0.
+- README.md / ARCHIVED.md / CLAIM_STATUS.md confirm ARCHIVED (Sweep-087 lock; Sweep-107 re-audit). Claim 0. Not a product, medical device, or verified BCI.
+- Listed in docs/archive_queue.md. GitHub archived flag still false.
+
+**VERIFY:**
+- Classifications held. ARCHIVED / Claim 0. No claim elevation.
+- Consistent with prior registry and archive queue.
+- No new product code. Implementation of missing modules forbidden in this tree.
+
+**CLASSIFY:** No changes. ARCHIVED held.
+
+**CAPABILITY / GAP / REDUNDANCY:** Historical sketch only. No demonstrated runnable features. No duplicate canonical implementations. Target state remains GitHub archive (operator).
+
+**AUDIT:** No unsupported implementation claims. No new critical findings. Full individual classification of all 86 remains residual.
+
+**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending on archive flags). Continue incremental bounded slices. Do not loop on locked ARCHIVED items.
+
+## Prior Sweep-696 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-07 (Sweep-696 / Pillar Re-Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-696
 **Objective:** Bounded governed sweep: Phase-1 inventory reconfirmation + Phase-3 live verification of mandatory pillars. Preserve history. No claim elevation. No product mutations.
@@ -29,35 +60,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-695 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-07 (Sweep-695 / Residual Classification: sunder-cleanroom-vsa-adapter)
-**Project / Version:** ADL Portfolio Governance / Sweep-695
-**Objective:** Bounded remote residual classification of sunder-cleanroom-vsa-adapter (randomly selected). Preserve history. No claim elevation.
-
-Preserve claim integrity.
-
-## Sweep-695: Residual Classification: sunder-cleanroom-vsa-adapter
-
-**DISCOVER:**
-- Live tree inspection of sunder-cleanroom-vsa-adapter: Python, .github present, adapter/ package (contract.py, engine.py, local_ops.py, surfaces.py, validate.py), tests present (test_adapter.py, test_local_ops.py), README.md, docs/CODE_REVIEW.md, pyproject.toml, requirements.txt.
-- README.md confirms RESEARCH, Claim ≤1, claim-capped name-only surface contract (v0.1.1) between sunder VSAMemory (DEFAULT_DIM=4096) and sovereign-clean-room CleanRoomVSAEngine (DEFAULT_DIM=8192). Shared algebra names mapped NAME_ONLY. Dim mismatch is the contract. No runtime import. Closes Q-FUNC-002.
-- Allowed: locked paths/classes/method names, NAME_ONLY equivalence, dim difference documented, deterministic checker. Forbidden: runtime import, vector isomorphism, equal dims, production interop.
-- Consistent with prior registry RESEARCH classification and queue notes for Q-FUNC-002.
-
-**VERIFY:**
-- Classifications held. RESEARCH / Claim ≤1. No claim elevation.
-- CI workflow present (ci.yml running engine + pytest); remote inspection only (no local execution).
-- Releases / tags: none.
-
-**CLASSIFY:** No changes. RESEARCH / Claim ≤1 held.
-
-**CAPABILITY / GAP / REDUNDANCY:** Name-only VSA surface contract CLAIMED|IMPLEMENTED|TESTED (tests present). Not a runtime interop or algebra equality. No new demonstrated features claimed. No duplicate canonical implementations.
-
-**AUDIT:** No unsupported implementation claims. No new critical findings. Full individual classification of all 86 remains residual.
-
-**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-694 content preserved below.
-
-[Full prior content from Sweep-694 and earlier preserved in repository history.]
+[Full prior content from Sweep-695 and earlier preserved in repository history.]
