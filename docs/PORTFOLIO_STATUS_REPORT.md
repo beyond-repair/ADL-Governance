@@ -1,5 +1,39 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-08 (Sweep-707 / Residual Classification: beyond-repair)
+**Project / Version:** ADL Portfolio Governance / Sweep-707
+**Objective:** Bounded remote residual classification of beyond-repair (profile README). Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-707: Residual Classification: beyond-repair
+
+**DISCOVER (Phase 1):**
+- Live search: total_count=86. Inventory reconfirmed.
+- beyond-repair: main 2e49a77. Tree: README.md, CLAIM_STATUS.md, GOVERNANCE.md only. No source, tests, workflows, or dependencies.
+- README: Profile index for Atomic Dream Labs. Explicitly "profile README only (not an ACTIVE product)". Census 86 (2026-11-06). Pillars and mapping artifacts listed. Ware recursion as software alignment constant only. Forbidden claims enumerated.
+- CLAIM_STATUS.md: Allowed pointers + claim-capped mapping + software constant. Forbidden experimental thrust/energy/AGI/production OS/product marketing.
+- GOVERNANCE.md: Classification RESEARCH (profile/index surface). Product runtime none. Tests/CI N/A. Claim level 0. Governing source ADL-Governance.
+
+**VERIFY:**
+- Claim-0 / RESEARCH held. Pure documentation index. No runtime or product claims. Census consistent.
+- No unsupported claims. Structure minimal and correct.
+
+**CLASSIFY:**
+- beyond-repair: RESEARCH / Claim 0. GitHub profile index surface. Not ACTIVE. Not a product.
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated: accurate pointers, claim caps, pillar map. Planned/residual: none (index complete).
+- No duplicate of product pillars. Canonical pointer only.
+
+**AUDIT:** No unsupported implementation claims. No CI surface. Claims capped. Termination conditions met for this repository (docs present, no undefined components, no security issues).
+
+**Residual:** Full portfolio residual remains (individual classification of remaining repositories incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-706 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-08 (Sweep-706 / Residual Classification: -Py2APK-main)
 **Project / Version:** ADL Portfolio Governance / Sweep-706
 **Objective:** Bounded remote residual classification of -Py2APK-main. Preserve history. No claim elevation. No product mutations.
@@ -33,39 +67,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-705 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-08 (Sweep-705 / Master Directive Portfolio Inventory & Four-Target Verification)
-**Project / Version:** ADL Portfolio Governance / Sweep-705
-**Objective:** Bounded Master Directive sweep. Live inventory of all 86 repositories. Root-tree verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Preserve history. No claim elevation. No product mutations.
-
-Preserve claim integrity.
-
-## Sweep-705: Master Directive Portfolio Inventory & Four-Target Verification
-
-**DISCOVER (Phase 1):**
-- Live search: total_count=86. Incomplete_results=false. Full name inventory reconfirmed (ADL-Governance through Sovereign-OS).
-- No undefined repositories.
-
-**VERIFY (Phase 3 — four mandated targets, root trees only):**
-- forge-aegis: README.md, CLAIM_STATUS.md, GOVERNANCE.md, SECURITY.md, .github/, fls/, python/, schemas/, rfc/, adr/, pyproject.toml present. Structure consistent with FLS/AEGIS package.
-- sovereign-clean-room: README.md, SECURITY.md, .github/, tests/, core/, bridge/, schemas/, pytest.ini present. Offline substrate present.
-- BlockSwarm: README.md, GOVERNANCE.md, SECURITY.md, .github/, contracts/, test/, foundry.toml, hardhat.config.js, legacy/ present. SAGF substrate present.
-- Digital_Double_virtual_workforce: README.md, CANONICAL.md, SECURITY.md, .github/, tests/, src/, digital_double/, package.json present. Product surface present.
-- Releases: none on the four (unchanged). No new critical CI or security findings at tree level.
-
-**CLASSIFY:**
-- Canonical domains held: Governance=ADL-Governance (ACTIVE), Agent Infrastructure=forge-aegis (ACTIVE early), Security=sovereign-clean-room (ACTIVE), Distributed Systems=BlockSwarm (ACTIVE), Workforce=Digital_Double_virtual_workforce (ACTIVE), Research Index=coherence-drive (RESEARCH).
-- Remaining repositories: RESEARCH satellites, SUPERSEDED variants, or ARCHIVED candidates. Full individual claim-level classification residual (prior 701–704 covered specific Coherence Drive satellites).
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated features remain those previously verified (code + tests + CI where present). Planned features labeled PLANNED/UNVERIFIED.
-- Dependency edges and canonical ownership unchanged from CANONICAL_REPOS.md. No new unsupported claims.
-
-**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending).
-
-**Residual:** Full portfolio residual remains. Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-704 content preserved below.
-
-[Full prior content from Sweep-704 and earlier preserved in repository history.]
+[Full prior content from Sweep-705 and earlier preserved in repository history.]
