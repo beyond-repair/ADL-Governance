@@ -1,5 +1,40 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-08 (Sweep-706 / Residual Classification: -Py2APK-main)
+**Project / Version:** ADL Portfolio Governance / Sweep-706
+**Objective:** Bounded remote residual classification of -Py2APK-main. Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-706: Residual Classification: -Py2APK-main
+
+**DISCOVER (Phase 1):**
+- Live search: total_count=86. Inventory reconfirmed.
+- -Py2APK-main: main ebe488f. Nested package under -Py2APK-main/-Py2APK-main/. Tree includes README.md, CLAIM_STATUS.md, ARCHIVED.md, pyproject.toml, py2apk/ (analyzer, builder, cli, etc.), tests/, .github/workflows/pytest.yml, android_project sketch.
+- README: Claim-0 Python→Android packaging sketch (Chaquopy/ONNX-era). Runnable CLI for analyze/doctor/dry-run/scaffold. No verified APK. Nested structure preserved.
+- CLAIM_STATUS.md: RUNNABLE SKETCH (Claim-0). Allowed: historical demo, SDK-free CLI. Forbidden: production converter, verified APK, security guarantees.
+- ARCHIVED.md: Originally Sweep-142 ARCHIVED; Claim-0 repair 2026-10-01 restored runnability. GitHub archive flag operator-only.
+- CI: pytest workflow present (install nested package, pytest -q). Releases: none. Tags: none.
+
+**VERIFY:**
+- Claim-0 / RESEARCH held. SDK-free pytest and CLI are demonstrated. Green CI is not APK evidence.
+- No production claims. Nested historical structure preserved. Claims capped.
+
+**CLASSIFY:**
+- -Py2APK-main: RESEARCH / Claim 0. Runnable sketch of Python-to-Android packaging ideas. Not ACTIVE. Historical Chaquopy experiment with Claim-0 repair. Archive flag residual (operator).
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated: CLI analyze/dry-run/scaffold, pytest suite, claim-capped docs. Planned/residual: real APK builds (requires SDK/Gradle/Chaquopy; not verified), store signing.
+- No duplicate of other product pillars. Standalone experiment.
+
+**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Full individual classification of all 86 remains residual. Operator actions pending.
+
+**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-705 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-08 (Sweep-705 / Master Directive Portfolio Inventory & Four-Target Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-705
 **Objective:** Bounded Master Directive sweep. Live inventory of all 86 repositories. Root-tree verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Preserve history. No claim elevation. No product mutations.
@@ -33,38 +68,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-704 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-08 (Sweep-704 / Residual Classification: m2-renormalization-law)
-**Project / Version:** ADL Portfolio Governance / Sweep-704
-**Objective:** Bounded remote residual classification of m2-renormalization-law. Preserve history. No claim elevation. No product mutations.
-
-Preserve claim integrity.
-
-## Sweep-704: Residual Classification: m2-renormalization-law
-
-**DISCOVER (Phase 1):**
-- Live search: total_count=86. Inventory reconfirmed.
-- m2-renormalization-law: main 577e0d9a. Tree: README.md, CLAIM_STATUS.md, FALSIFICATION.md, GOVERNANCE.md, m2/ package, scripts/parameter_free_sweep.py, tests/, .github/workflows/ci.yml, SPECTRUM_POINTER.md, LICENSE.
-- README: Provisional ansatz W(n) = 0.08 * exp(0.23*(n-3)). Claim-0 runnable sketch. Parameter-free ratios locked. Rejected hybrid 0.795:1:1.993. No force derivation.
-- CLAIM_STATUS: RESEARCH, Claim level 1 (provisional scaling ansatz), experimental_validation false.
-- CI: success run 41649997714 on main (2026-11-03). Releases: none. Dependabot: not queried (small research repo).
-
-**VERIFY:**
-- RESEARCH / Claim 1 held. Parameter-free sweep and pytest assert model locks and spectrum identities. Green CI is model check, not physical validation.
-- No derived law or experimental claims. Claims capped.
-
-**CLASSIFY:**
-- m2-renormalization-law: RESEARCH / Claim 1. Provisional scaling ansatz repository locking Stage-1 form and parameter-free ratio models. Not ACTIVE. Satellite of coherence-drive.
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated: machine-readable ansatz, parameter-free sweep script, pytest locks, claim-capped README. Planned/residual: any physical derivation or validation (forbidden without evidence), Stage-2 force chain (out of scope until evidence).
-- No duplicate of other science pillars. Supports coherence-drive scaling discussions.
-
-**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Full individual classification of all 86 remains residual. Operator actions pending.
-
-**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-702 content preserved below.
-
-[Full prior content from Sweep-702 and earlier preserved in repository history.]
+[Full prior content from Sweep-704 and earlier preserved in repository history.]
