@@ -1,0 +1,71 @@
+PASS:
+  id: PASS-2026-11-08-708
+  parent_pass: PASS-2026-11-08-707
+
+STATE:
+  global_status: residual classification continuing
+  repositories_scanned: 86
+  repositories_changed: 0
+  capabilities_known: ongoing
+  capabilities_verified: claim-capped only
+  gaps_remaining: full per-repo residual incomplete
+
+OBJECTIVE:
+  id: residual-class-ADL_NEXUS_COMMAND_CENTER
+  description: Bounded remote inspection and classification of ADL_NEXUS_COMMAND_CENTER
+  reason_selected: Recent creation (2026-11-04), no prior sweep entry observed in immediate history, potential committed local state
+
+DISCOVERY:
+  findings:
+    - Tree contains extensive .data/nexus-pglite database files committed
+    - No README.md present at root
+    - Structure suggests experimental command center / office surface related to ADL-Nexus
+    - No workflows observed in truncated tree
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-08-708.yaml
+  commits:
+    - pending this commit
+  capabilities_added_or_changed:
+    - classification entry only
+
+VERIFICATION:
+  tests_run:
+    - remote tree and contents inspection
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (history preserved, no claim elevation)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL_NEXUS_COMMAND_CENTER exists with committed local DB artifacts
+  failures:
+    - none
+  decisions:
+    - Classify as RESEARCH / Claim 0 pending full audit; flag committed .data as residual for operator review
+
+REMAINING:
+  incomplete:
+    - full source and claim audit of this repo
+    - full portfolio residual
+  blockers:
+    - none for this slice
+  new_gaps:
+    - committed local database in public repo
+
+NEXT:
+  objective_id: residual-class-next
+  action: Select next unaudited or residual repository for bounded classification
+  reason: Continue progressive coverage
+  prerequisites:
+    - this pass persisted
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - GitHub tree inspection 2026-11-08
