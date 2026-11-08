@@ -1,3 +1,21 @@
+## Sweep-708 / Residual Classification: ADL_NEXUS_COMMAND_CENTER
+
+- Timestamp: 2026-11-08T22:10Z UTC.
+- Scope: Bounded remote inspection of beyond-repair/ADL_NEXUS_COMMAND_CENTER (recent creation, residual). Preserve history. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER:
+  - Live tree: extensive .data/nexus-pglite committed database files; no root README.md observed.
+  - Structure consistent with experimental web/office command center surface related to ADL-Nexus family.
+  - No workflows in inspected prefix.
+- VERIFY:
+  - Claim-0 / RESEARCH held pending full source audit. Committed local state noted as residual.
+  - No production claims possible from inspected surface.
+- AUDIT: Classification residual open. No CI surface observed in prefix.
+- CLASSIFY: ADL_NEXUS_COMMAND_CENTER RESEARCH / Claim 0.
+- DOCUMENT: This entry + OPERATOR_QUEUE.md + PASS-2026-11-08-708.yaml.
+- Residual: Full per-repository individual sweeps incomplete. Operator actions pending (archive flags, tags). Committed .data flagged. Stop after cycle. Do not enter infinite review.
+
+## Prior Sweep-707 content preserved below.
+
 ## Sweep-707 / Residual Classification: beyond-repair
 
 - Timestamp: 2026-11-08T22:05Z UTC.
