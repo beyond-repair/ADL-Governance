@@ -1,5 +1,39 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-08 (Sweep-702 / Residual Classification: thrust-target-30)
+**Project / Version:** ADL Portfolio Governance / Sweep-702
+**Objective:** Bounded remote residual classification of thrust-target-30. Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-702: Residual Classification: thrust-target-30
+
+**DISCOVER (Phase 1):**
+- Live search: total_count=86. Inventory reconfirmed.
+- thrust-target-30: main 30d030aa. Tree: README.md, CLAIM_STATUS.md, GOVERNANCE.md, constants/target.json, tests/test_unit_identity.py, .github/workflows/unit-identity.yml, SPECTRAL_ENDPOINT_POINTER.md, LICENSE.
+- README: Design goal F/P = 30 μN/kW = 3e-8 N/W. Claim 0. Not measured device. No solver.
+- CLAIM_STATUS: RESEARCH, Claim level 0, experimental_validation false.
+- CI: unit-identity success run 36817676794 on main (2026-10-01). Releases: none. Dependabot: not queried (small constants repo).
+
+**VERIFY:**
+- RESEARCH / Claim 0 held. Unit identity test asserts conversion and claim invariants. Green CI is unit check, not physics validation.
+- No thruster or experimental claims. Claims capped.
+
+**CLASSIFY:**
+- thrust-target-30: RESEARCH / Claim 0. Constants / intent repository locking historical Coherence Drive design target. Not ACTIVE. Satellite of coherence-drive.
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated: machine-readable target constant, unit identity test + CI, claim-capped README. Planned/residual: any physical validation (forbidden without evidence), solver (out of scope).
+- No duplicate of other science pillars. Supports coherence-drive scaling discussions.
+
+**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Full individual classification of all 86 remains residual. Operator actions pending.
+
+**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-701 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-08 (Sweep-701 / Phase-3 Pillar Re-Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-701
 **Objective:** Bounded remote Phase-3 live verification of the four canonical pillars. Preserve history. No claim elevation. No product mutations.
