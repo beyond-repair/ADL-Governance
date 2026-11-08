@@ -1,5 +1,40 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-08 (Sweep-705 / Master Directive Portfolio Inventory & Four-Target Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-705
+**Objective:** Bounded Master Directive sweep. Live inventory of all 86 repositories. Root-tree verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-705: Master Directive Portfolio Inventory & Four-Target Verification
+
+**DISCOVER (Phase 1):**
+- Live search: total_count=86. Incomplete_results=false. Full name inventory reconfirmed (ADL-Governance through Sovereign-OS).
+- No undefined repositories.
+
+**VERIFY (Phase 3 — four mandated targets, root trees only):**
+- forge-aegis: README.md, CLAIM_STATUS.md, GOVERNANCE.md, SECURITY.md, .github/, fls/, python/, schemas/, rfc/, adr/, pyproject.toml present. Structure consistent with FLS/AEGIS package.
+- sovereign-clean-room: README.md, SECURITY.md, .github/, tests/, core/, bridge/, schemas/, pytest.ini present. Offline substrate present.
+- BlockSwarm: README.md, GOVERNANCE.md, SECURITY.md, .github/, contracts/, test/, foundry.toml, hardhat.config.js, legacy/ present. SAGF substrate present.
+- Digital_Double_virtual_workforce: README.md, CANONICAL.md, SECURITY.md, .github/, tests/, src/, digital_double/, package.json present. Product surface present.
+- Releases: none on the four (unchanged). No new critical CI or security findings at tree level.
+
+**CLASSIFY:**
+- Canonical domains held: Governance=ADL-Governance (ACTIVE), Agent Infrastructure=forge-aegis (ACTIVE early), Security=sovereign-clean-room (ACTIVE), Distributed Systems=BlockSwarm (ACTIVE), Workforce=Digital_Double_virtual_workforce (ACTIVE), Research Index=coherence-drive (RESEARCH).
+- Remaining repositories: RESEARCH satellites, SUPERSEDED variants, or ARCHIVED candidates. Full individual claim-level classification residual (prior 701–704 covered specific Coherence Drive satellites).
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated features remain those previously verified (code + tests + CI where present). Planned features labeled PLANNED/UNVERIFIED.
+- Dependency edges and canonical ownership unchanged from CANONICAL_REPOS.md. No new unsupported claims.
+
+**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending).
+
+**Residual:** Full portfolio residual remains. Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-704 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-08 (Sweep-704 / Residual Classification: m2-renormalization-law)
 **Project / Version:** ADL Portfolio Governance / Sweep-704
 **Objective:** Bounded remote residual classification of m2-renormalization-law. Preserve history. No claim elevation. No product mutations.
@@ -32,38 +67,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-702 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-08 (Sweep-702 / Residual Classification: thrust-target-30)
-**Project / Version:** ADL Portfolio Governance / Sweep-702
-**Objective:** Bounded remote residual classification of thrust-target-30. Preserve history. No claim elevation. No product mutations.
-
-Preserve claim integrity.
-
-## Sweep-702: Residual Classification: thrust-target-30
-
-**DISCOVER (Phase 1):**
-- Live search: total_count=86. Inventory reconfirmed.
-- thrust-target-30: main 30d030aa. Tree: README.md, CLAIM_STATUS.md, GOVERNANCE.md, constants/target.json, tests/test_unit_identity.py, .github/workflows/unit-identity.yml, SPECTRAL_ENDPOINT_POINTER.md, LICENSE.
-- README: Design goal F/P = 30 μN/kW = 3e-8 N/W. Claim 0. Not measured device. No solver.
-- CLAIM_STATUS: RESEARCH, Claim level 0, experimental_validation false.
-- CI: unit-identity success run 36817676794 on main (2026-10-01). Releases: none. Dependabot: not queried (small constants repo).
-
-**VERIFY:**
-- RESEARCH / Claim 0 held. Unit identity test asserts conversion and claim invariants. Green CI is unit check, not physics validation.
-- No thruster or experimental claims. Claims capped.
-
-**CLASSIFY:**
-- thrust-target-30: RESEARCH / Claim 0. Constants / intent repository locking historical Coherence Drive design target. Not ACTIVE. Satellite of coherence-drive.
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated: machine-readable target constant, unit identity test + CI, claim-capped README. Planned/residual: any physical validation (forbidden without evidence), solver (out of scope).
-- No duplicate of other science pillars. Supports coherence-drive scaling discussions.
-
-**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Full individual classification of all 86 remains residual. Operator actions pending.
-
-**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-701 content preserved below.
-
-[Full prior content from Sweep-701 and earlier preserved in repository history.]
+[Full prior content from Sweep-702 and earlier preserved in repository history.]
