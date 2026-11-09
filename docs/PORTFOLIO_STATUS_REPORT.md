@@ -1,5 +1,52 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-09 (Sweep-721 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-721
+**Objective:** Random selection of blacksite. DISCOVER/AUDIT/CLASSIFY. Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-721: blacksite
+
+**SELECT:** Random from full inventory (86 repos): `blacksite`.
+
+**DISCOVER:**
+- Tree: src/ (core, entities, systems, render), tests/ninja_loop.test.mjs, docs/ (ARCHITECTURE, gates, QA, etc.), public/index.html, package.json, .github/workflows/test.yml.
+- Dependencies: none external. Pure deterministic JS simulation + Canvas isometric presentation.
+- Tests: 16 comprehensive cases covering determinism, LOS/vision, abilities, full Ninja loop, routes.
+- CI: workflow runs npm test on push/PR. Sole run 39453722349 success.
+- Classification already RESEARCH / claim 0 (workspace, not shipped). Explicit non-claims in README and badges.
+
+**AUDIT:**
+- No undefined/undocumented components for prototype scope.
+- No stale registry entries relative to prior RESEARCH classification.
+- No critical CI failures (green; local verification 16/16 pass).
+- No duplicate canonical implementations.
+- No unresolved critical security issues (client-side, no network/secrets/deps).
+- No unsupported claims (claim 0 enforced).
+- Target state for RESEARCH claim-capped prototype is achieved.
+
+**CLASSIFY:** RESEARCH (held). Justification: experimental browser stealth roguelite workspace; claim-capped at 0; software readiness (tests+CI) demonstrated separately from claim elevation. Not an ACTIVE product surface.
+
+**PLAN / IMPLEMENT:**
+- No code changes required. Idempotent audit-only cycle. History preserved.
+- Documentation updates confined to ADL-Governance.
+
+**TEST / CI:**
+- Local clone + npm test: 16/16 pass. Remote CI green confirmed.
+
+**DOCUMENT / GOVERN:**
+- Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+- Claims not elevated. No unsupported statements introduced.
+
+**TERMINATION CHECK:** Conditions met for this repository under its RESEARCH classification and claim cap. Ready for next random selection.
+
+**Residual:** Full portfolio residual unchanged. Optional operator tag/release if desired.
+
+## Prior Sweep-720 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-09 (Sweep-720 / Master Directive Portfolio Governance)
 **Project / Version:** ADL Portfolio Governance / Sweep-720
 **Objective:** Bounded execution of Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
