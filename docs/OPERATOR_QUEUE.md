@@ -1,5 +1,27 @@
 # Operator Queue
 
+## Sweep-716: finite-gasket-spectral-derivatives
+
+No destructive code actions proposed this cycle.
+
+Actions:
+- Random selection: finite-gasket-spectral-derivatives (RESEARCH / claim ≤1).
+- Safe idempotent improvements pushed: MIT LICENSE added; CI expanded to install package and run full pytest suite (both test modules).
+- Commit on target: b56fb8899b57717af5105f32eaab75d8af6330cb.
+- Governance docs updated (PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file). Claims not elevated. History preserved.
+
+Residuals:
+- Full portfolio residual: individual classification, capability inventory, dependency graph, and gap analysis of remaining repositories incomplete.
+- Prior operator actions remain (archive flags, tags/releases on pillars, PR merges, security alert review).
+- New residual: inspect CI run results on the updated workflow for finite-gasket-spectral-derivatives; decide whether further residue-check automation or tagging is desired.
+- Claims capped. No new critical CI failures introduced.
+
+Continue incremental bounded slices or next random selection. Do not enter infinite autonomous review.
+
+## Prior Sweep-715 content preserved below.
+
+# Operator Queue
+
 ## Sweep-715: Master Directive Portfolio Governance Cycle
 
 No destructive code actions proposed this cycle.
