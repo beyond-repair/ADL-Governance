@@ -1,5 +1,47 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-09 (Sweep-716 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-716
+**Objective:** Random selection of finite-gasket-spectral-derivatives. DISCOVER/AUDIT/CLASSIFY/IMPLEMENT safe idempotent improvements. Preserve history. No claim elevation.
+
+Preserve claim integrity.
+
+## Sweep-716: finite-gasket-spectral-derivatives
+
+**SELECT:** Random from full inventory (86 repos): `finite-gasket-spectral-derivatives`.
+
+**DISCOVER:**
+- Tree: scripts/ (CLI, spectral_derivatives.py, many check_*.py for residue/gasket numerics), tests/, .github/workflows/kernel.yml, CLAIM_STATUS.md (extensive), COMPLETION_LOG.md, README.md (very large, claim-capped prose derivations), pyproject.toml.
+- Dependencies: NumPy; external geometry from sierpinski-geometry-045 (not vendored). Parent index: coherence-drive.
+- Tests: unit tests for kernel (test_spectral_derivatives.py) + CLI (test_cli.py). CI previously only ran the kernel file.
+- Classification already RESEARCH / claim ≤1 (finite discrete kernel identities). Continuum, selected W, force, thrust explicitly NOT CLAIMED.
+
+**AUDIT:**
+- No undefined components in core kernel/CLI.
+- Stale: missing LICENSE (noted in CLAIM_STATUS).
+- CI incomplete (only one test module). Package entry point maps scripts/ → gasket_spectral; works under install.
+- No critical security issues. Claims strictly capped; extensive numerical residue work remains supporting evidence, not elevated.
+
+**CLASSIFY:** RESEARCH (held). Justification: experimental finite-gasket spectral identities and supporting exact computations; no continuum or force claims; no product runtime.
+
+**PLAN / IMPLEMENT:**
+- Added MIT LICENSE.
+- Expanded CI workflow to install the package and run full pytest suite (both test files).
+- Commit: b56fb8899b57717af5105f32eaab75d8af6330cb on main.
+- Idempotent, non-destructive. No history rewrite.
+
+**TEST / CI:** Changes pushed; new workflow will execute on this push. Prior CI green. Local unit tests previously passed (per CLAIM_STATUS).
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No unsupported claims introduced. Claim cap held at ≤1.
+
+**TERMINATION CHECK:** Not fully met (open residue conjectures for larger k remain; operator may still tag or further harden). Safe improvements applied. Ready for re-audit or next random selection.
+
+**Residual:** Full portfolio residual unchanged. Operator may review new CI run results and decide on further residue-check automation or tagging.
+
+## Prior Sweep-715 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-09 (Sweep-715 / Master Directive Portfolio Governance)
 **Project / Version:** ADL Portfolio Governance / Sweep-715
 **Objective:** Bounded execution of Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
@@ -90,9 +132,6 @@ Preserve claim integrity.
 - CI: Dependabot runs success; core workflow green on main (ad0c3bd).
 - Tree: src/, tests/, docs/, digital_double/, package.json, vite.config.ts present.
 - Classification held: ACTIVE / software. Residual: merge reviewed Dependabot and evidence PRs (operator). Open non-critical alerts remain.
-
-**CLASSIFY:**
-- All four remain ACTIVE / software claim level (or RUNNABLE SKETCH for forge-aegis). Not elevated. Canonical pillars confirmed. Historical value preserved.
 
 **CAPABILITY / GAP / REDUNDANCY:**
 - Demonstrated capabilities unchanged: offline integrity slice (forge-aegis), VSA/clean-room CLI + gates (sovereign-clean-room), advice-only chain substrate (BlockSwarm), typed workforce agents (Digital_Double).
