@@ -1,3 +1,20 @@
+## Sweep-713 / Random Selection: RealityOS
+
+- Timestamp: 2026-11-09T18:02Z UTC.
+- Scope: Bounded random DISCOVER/AUDIT/CLASSIFY/DOCUMENT on one repository from full inventory. Preserve history. No claim elevation. No product mutations. No history rewrite.
+- SELECT: Random from total_count=86. Selected `RealityOS`.
+- DISCOVER:
+  - Tree (main @ 9c794098): backend/ FastAPI in-memory simulation (models, services/simulation.py + scenario.py, api/routes.py, agents stub), tests/test_simulation_engine.py (18 historically passed), demo.py, requirements.txt (pinned fastapi/uvicorn/pydantic/httpx2/pytest), .github/workflows/research-guard.yml, CLAIM_STATUS.md, GOVERNANCE.md, POLSIA_PROMPT.md, README.md, SECURITY.md.
+  - README + CLAIM_STATUS: Explicit RESEARCH, claim ≤1 RUNNABLE SKETCH. In-memory heuristic what-if only. No persistence, connectors, OS, or calibrated forecasts. Price heuristic documented (7% -> -35% revenue).
+  - CI: research-guard success on latest (run 37648961131 on current SHA). Dependabot: none open. No releases/tags.
+- VERIFY / AUDIT:
+  - Consistent with prior notes (Sweep-274). No unsupported claims. No critical CI failures. Claims capped at ≤1. Termination conditions met for RESEARCH sketch preservation.
+- CLASSIFY: RESEARCH (experimental, unvalidated). Held.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- Residual: None new for this repo. Full portfolio individual sweeps incomplete. Operator priors remain. Stop after cycle. Do not enter infinite review on RESEARCH items meeting termination.
+
+## Prior Sweep-712 content preserved below.
+
 ## Sweep-712 / Master Directive Portfolio Governance Cycle
 
 - Timestamp: 2026-11-09T17:24Z UTC.
@@ -18,23 +35,4 @@
 
 ## Prior Sweep-711 content preserved below.
 
-## Sweep-711 / Random Selection: fantom_trading_bot_2
-
-- Timestamp: 2026-11-09T17:00Z UTC.
-- Scope: Bounded random DISCOVER/AUDIT/CLASSIFY/DOCUMENT on one repository from full inventory. Preserve history. No claim elevation. No product mutations. No history rewrite.
-- SELECT: Random from total_count=86. Selected `fantom_trading_bot_2`.
-- DISCOVER:
-  - Tree: `.gitignore`, `ARCHIVED.md`, `README.md`, `fantom 19.py`. No tests/CI/requirements.
-  - README + ARCHIVED.md: Explicit ARCHIVE QUEUE / ARCHIVED (Sweep-079). Claim 0. Historical incomplete Python sketch with constant-returning stubs. No profit/live/product claim. FrontRunning/SandwichBot unimplemented.
-  - Code: Syntax issues, pure placeholders. No exchange client, no PnL.
-  - Branches: main only. Releases/tags: none.
-- VERIFY / AUDIT:
-  - Consistent with prior OPERATOR_QUEUE residual. No unsupported claims. No critical issues. Claims capped at 0.
-  - Termination conditions met for historical preservation.
-- CLASSIFY: ARCHIVED (historical, no further action). Locked.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- Residual: GitHub archive flag (operator-only, previously queued). Full portfolio individual sweeps incomplete. Stop after cycle. Do not enter infinite review on ARCHIVED items.
-
-## Prior Sweep-710 content preserved below.
-
-[Full prior content from Sweep-710 and earlier preserved in repository history.]
+[Full prior content from Sweep-711 and earlier preserved in repository history.]
