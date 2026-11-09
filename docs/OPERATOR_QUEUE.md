@@ -1,5 +1,23 @@
 # Operator Queue
 
+## Sweep-713: Random Selection — RealityOS
+
+No destructive code actions proposed this cycle.
+
+Actions:
+- Bounded random DISCOVER/AUDIT/CLASSIFY on `RealityOS` completed. Classification held: RESEARCH (in-memory heuristic sketch, claims capped at ≤1). CI green on main. Governance docs updated. No product mutations.
+
+Residuals:
+- Full portfolio residual: individual classification and sweeps of remaining repositories incomplete.
+- Prior operator actions remain: GitHub archive flag for archive-queue items (incl. smart_home_BCI, Quantumclustering, ftmA.I.bot, fantom_trading_bot_2); forge-aegis v0.1.0 tag/release; merge reviewed Dependabot and evidence PRs on Digital Double; merge residual PRs #1 and #3 on sovereign-clean-room; create v0.5.0-sagf tag/release on BlockSwarm.
+- New residual: none for RealityOS. Claims capped. No new critical CI or security findings. No open Dependabot.
+
+Continue incremental bounded slices. Next: next residual or random selection. Do not enter infinite autonomous review on RESEARCH items meeting termination.
+
+## Prior Sweep-712 content preserved below.
+
+# Operator Queue
+
 ## Sweep-712: Master Directive Portfolio Governance Cycle
 
 No destructive code actions proposed this cycle.
@@ -17,22 +35,4 @@ Continue incremental bounded slices. Next: next residual or random selection. Do
 
 ## Prior Sweep-711 content preserved below.
 
-# Operator Queue
-
-## Sweep-711: Random Selection — fantom_trading_bot_2
-
-No destructive code actions proposed this cycle.
-
-Actions:
-- Bounded random DISCOVER/AUDIT/CLASSIFY on `fantom_trading_bot_2` completed. Classification locked: ARCHIVED (historical incomplete sketch, claims capped at 0). Governance docs updated. No product mutations.
-
-Residuals:
-- Full portfolio residual: individual classification and sweeps of remaining repositories incomplete.
-- Prior operator actions remain: GitHub archive flag for archive-queue items (incl. smart_home_BCI, Quantumclustering, ftmA.I.bot, fantom_trading_bot_2); forge-aegis v0.1.0 tag/release; merge reviewed Dependabot and evidence PRs on Digital Double; merge residual PRs #1 and #3 on sovereign-clean-room; create v0.5.0-sagf tag/release on BlockSwarm.
-- New residual: none. Claims capped. No new critical CI or security findings.
-
-Continue incremental bounded slices. Next: next residual or random selection. Do not enter infinite autonomous review on completed or ARCHIVED items.
-
-## Prior Sweep-710 content preserved below.
-
-[Full prior content from Sweep-710 and earlier preserved in repository history.]
+[Full prior content from Sweep-711 and earlier preserved in repository history.]
