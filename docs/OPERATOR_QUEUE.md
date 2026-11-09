@@ -1,5 +1,26 @@
 # Operator Queue
 
+## Sweep-721: blacksite
+
+No destructive code actions proposed this cycle.
+
+Actions:
+- Random selection: blacksite (RESEARCH / claim 0 workspace).
+- Audit completed. Classification held. Local tests 16/16 pass. CI green confirmed. No code changes required on subject.
+- Governance docs updated (PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file). Claims not elevated. History preserved.
+
+Residuals:
+- Full portfolio residual: individual classification, capability inventory, dependency graph, and gap analysis of remaining repositories incomplete.
+- Prior operator actions remain (archive flags, tags/releases on pillars, PR merges, security alert review).
+- Optional: operator may create a tag/release on blacksite if desired (none currently present).
+- Claims capped. No new critical CI failures.
+
+Continue incremental bounded slices or next random selection. Do not enter infinite autonomous review.
+
+## Prior Sweep-720 content preserved below.
+
+# Operator Queue
+
 ## Sweep-720: Master Directive Portfolio Governance Cycle
 
 No destructive code actions proposed this cycle.
