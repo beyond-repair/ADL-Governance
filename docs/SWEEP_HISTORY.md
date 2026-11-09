@@ -1,3 +1,23 @@
+## Sweep-710 / Portfolio Confirmation & Priority Reverification
+
+- Timestamp: 2026-11-09T16:21Z UTC.
+- Scope: Bounded remote confirmation of full inventory and re-verification of four core pillars. Preserve history. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER:
+  - Live search total_count=86. Full inventory reconfirmed.
+  - forge-aegis: no releases/tags. CI latest success. RUNNABLE SKETCH held.
+  - sovereign-clean-room: no releases/tags. CI recent success. ACTIVE held.
+  - BlockSwarm: no releases/tags. CI latest success. ACTIVE held.
+  - Digital_Double_virtual_workforce: no releases/tags. CI green. ACTIVE held.
+- VERIFY:
+  - Claims held at software / RUNNABLE SKETCH. No elevation. Residuals operator-only.
+  - No unsupported claims. No new critical failures.
+- AUDIT: Classifications held. Claims capped. Termination conditions met for this bounded slice.
+- CLASSIFY: Priority pillars remain ACTIVE/software (forge-aegis slice RUNNABLE SKETCH). Canonical ownership confirmed.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- Residual: Full per-repository individual sweeps incomplete. Operator actions pending (tags, archive flags, PR merges). Stop after cycle. Do not enter infinite review.
+
+## Prior Sweep-709 content preserved below.
+
 ## Sweep-709 / Priority Live Verification: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce
 
 - Timestamp: 2026-11-09T15:48Z UTC.
@@ -18,22 +38,4 @@
 
 ## Prior Sweep-708 content preserved below.
 
-## Sweep-708 / Residual Classification: ADL_NEXUS_COMMAND_CENTER
-
-- Timestamp: 2026-11-08T22:10Z UTC.
-- Scope: Bounded remote inspection of beyond-repair/ADL_NEXUS_COMMAND_CENTER (recent creation, residual). Preserve history. No claim elevation. No product mutations. No history rewrite.
-- DISCOVER:
-  - Live tree: extensive .data/nexus-pglite committed database files; no root README.md observed.
-  - Structure consistent with experimental web/office command center surface related to ADL-Nexus family.
-  - No workflows in inspected prefix.
-- VERIFY:
-  - Claim-0 / RESEARCH held pending full source audit. Committed local state noted as residual.
-  - No production claims possible from inspected surface.
-- AUDIT: Classification residual open. No CI surface observed in prefix.
-- CLASSIFY: ADL_NEXUS_COMMAND_CENTER RESEARCH / Claim 0.
-- DOCUMENT: This entry + OPERATOR_QUEUE.md + PASS-2026-11-08-708.yaml.
-- Residual: Full per-repository individual sweeps incomplete. Operator actions pending (archive flags, tags). Committed .data flagged. Stop after cycle. Do not enter infinite review.
-
-## Prior Sweep-707 content preserved below.
-
-[Full prior content from Sweep-707 and earlier preserved in repository history.]
+[Full prior content from Sweep-708 and earlier preserved in repository history.]

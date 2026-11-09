@@ -1,5 +1,55 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-09 (Sweep-710 / Portfolio Confirmation & Priority Reverification)
+**Project / Version:** ADL Portfolio Governance / Sweep-710
+**Objective:** Bounded remote confirmation of full inventory and re-verification of four core pillars. Preserve history. No claim elevation. No product mutations. No history rewrite.
+
+Preserve claim integrity.
+
+## Sweep-710: Portfolio Confirmation & Priority Reverification
+
+**DISCOVER (Phase 1):**
+- Live search: total_count=86. Full inventory reconfirmed (names extracted; no undefined repositories).
+- Priority targets re-inspected live: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+
+**VERIFY (Phase 3 - Mandatory Live Verification):**
+
+### forge-aegis
+- Releases: none. Tags: none.
+- CI: latest runs success (e.g., run 37258127100 on e7188d5). Workflow present.
+- Classification held: RUNNABLE SKETCH / software claim. Residual: v0.1.0 tag/release (operator).
+
+### sovereign-clean-room
+- Releases: none. Tags: none.
+- CI: recent PR runs success after float tolerance fix. Workflow present.
+- Classification held: ACTIVE / software. Residual: merge residual PRs #1 and #3 (operator).
+
+### BlockSwarm
+- Releases: none. Tags: none.
+- CI: latest Foundry run 40441811261 success on 026c363.
+- Classification held: ACTIVE / software. Residual: v0.5.0-sagf tag/release (operator).
+
+### Digital_Double_virtual_workforce
+- Releases: none. Tags: none.
+- CI: Dependabot runs success; core workflow green on main.
+- Classification held: ACTIVE / software. Residual: merge reviewed Dependabot and evidence PRs (operator).
+
+**CLASSIFY:**
+- All four remain ACTIVE / software claim level (or RUNNABLE SKETCH for forge-aegis). Not elevated. Canonical pillars confirmed. Historical value preserved.
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated capabilities unchanged: offline integrity slice, VSA/clean-room CLI + gates, advice-only chain substrate, typed workforce agents.
+- Gaps unchanged: missing formal tags/releases on forge-aegis and BlockSwarm; pending PR merges. No duplicate canonical implementations of core pillars.
+- Full per-repo classification of remaining 82 repositories incomplete (residual).
+
+**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Exit criteria not fully met due to incomplete full-portfolio individual sweeps and operator actions.
+
+**Residual:** Full portfolio residual remains (individual classification incomplete). Operator actions pending (tags, archive flags, PR merges). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-709 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-09 (Sweep-709 / Priority Live Verification: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce)
 **Project / Version:** ADL Portfolio Governance / Sweep-709
 **Objective:** Bounded remote priority verification of the four core pillar repositories. Preserve history. No claim elevation. No product mutations. No history rewrite.
@@ -48,37 +98,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-708 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-08 (Sweep-708 / Residual Classification: ADL_NEXUS_COMMAND_CENTER)
-**Project / Version:** ADL Portfolio Governance / Sweep-708
-**Objective:** Bounded remote residual classification of ADL_NEXUS_COMMAND_CENTER. Preserve history. No claim elevation. No product mutations.
-
-Preserve claim integrity.
-
-## Sweep-708: Residual Classification: ADL_NEXUS_COMMAND_CENTER
-
-**DISCOVER (Phase 1):**
-- Live search: total_count=86. Inventory reconfirmed.
-- ADL_NEXUS_COMMAND_CENTER: recent. Tree includes extensive .data/nexus-pglite committed database files. No root README.md observed.
-- Structure consistent with experimental web/office command center surface related to ADL-Nexus family.
-- No workflows in inspected prefix.
-
-**VERIFY:**
-- Claim-0 / RESEARCH held pending full source audit. Committed local state noted as residual.
-- No production claims possible from inspected surface.
-
-**CLASSIFY:**
-- ADL_NEXUS_COMMAND_CENTER: RESEARCH / Claim 0. Experimental command center surface. Not ACTIVE.
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated: committed local DB files (operator review recommended). Planned/residual: full source audit, README, CI.
-- No duplicate of product pillars. Related to ADL-Nexus family.
-
-**AUDIT:** Classification residual open. No CI surface observed. Claims capped. Full individual classification of all 86 remains residual. Operator actions pending.
-
-**Residual:** Exit criteria not fully met (full per-repo sweeps incomplete; operator actions pending). Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-707 content preserved below.
-
-[Full prior content from Sweep-707 and earlier preserved in repository history.]
+[Full prior content from Sweep-708 and earlier preserved in repository history.]
