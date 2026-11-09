@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-11-09-717
+  parent_pass: PASS-2026-11-09-709
+
+STATE:
+  global_status: residual classification continuing
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: ongoing
+  capabilities_verified: claim-capped only
+  gaps_remaining: full per-repo residual incomplete
+
+OBJECTIVE:
+  id: residual-class-atomicdreamlabs1.1
+  description: Bounded remote inspection and classification of beyond-repair/atomicdreamlabs1.1
+  reason_selected: Recent update (2026-11-08), experimental web office residual, advances coverage without claim elevation
+
+DISCOVERY:
+  findings:
+    - Tree: src/, server/, public/, package.json, vite.config.ts, CLAIM_STATUS.md, AGENTS.md, .github absent in top-level listing. JS/TS web app structure.
+    - README.md: Explicit RESEARCH lifecycle (experimental web office). Claim software / claim-capped. Not claimed production kernel, live trading without operator, validated AGI or digital twin. One desk with Work/Sell/Build jobs. Operator holds COMMIT for money-spending or hosted actions.
+    - Feature inventory: experimental office surface CLAIMED and partially IMPLEMENTED (code present); production claims FORBIDDEN.
+    - Portfolio position: web frontend/office companion to ADL-Nexus Python kernel. Independent residual.
+    - No CI inspection this pass; claim caps preserved.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-09-717.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - Sweep-717 residual classification
+  capabilities_added_or_changed:
+    - classification entry only (atomicdreamlabs1.1 reconfirmed RESEARCH / claim-capped)
+
+VERIFICATION:
+  tests_run:
+    - remote tree and README contents inspection
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (history preserved, no claim elevation, no product mutation)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - atomicdreamlabs1.1 remains experimental web office RESEARCH surface. Code present for desk functions; production/AGI/trading claims forbidden and unsupported from inspected surface.
+  failures:
+    - none
+  decisions:
+    - Hold RESEARCH / claim-capped. Do not promote. Flag as residual complete for classification purposes.
+
+REMAINING:
+  incomplete:
+    - full portfolio residual classification of remaining repositories
+  blockers:
+    - none for this slice
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: residual-class-next
+  action: Select next unaudited or residual repository for bounded classification and persist pass record
+  reason: Continue progressive coverage of the 86-repo ecosystem
+  prerequisites:
+    - this pass persisted
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - GitHub get_repository_tree and get_file_contents on atomicdreamlabs1.1 (2026-11-09)
+    - Prior PASS-2026-11-09-709, live census total_count=86
+    - This file
