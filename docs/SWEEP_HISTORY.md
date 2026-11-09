@@ -1,3 +1,19 @@
+## Sweep-716 / Randomized Portfolio Completion — finite-gasket-spectral-derivatives
+
+- Timestamp: 2026-11-09T20:02Z UTC.
+- SELECT: Random from full 86-repo inventory → `finite-gasket-spectral-derivatives`.
+- DISCOVER: scripts/ (kernel, CLI, residue/gasket checks), tests/ (2 modules), CI workflow, extensive CLAIM_STATUS.md + COMPLETION_LOG.md, large claim-capped README. NumPy dep; external geometry parent.
+- AUDIT: RESEARCH / claim ≤1 already registered. Missing LICENSE. CI covered only kernel tests. No critical issues. Claims not elevated.
+- CLASSIFY: RESEARCH held (finite discrete kernel identities + supporting exact numerics; continuum/force/thrust forbidden).
+- PLAN/IMPLEMENT: Pushed MIT LICENSE + expanded CI to full pytest (install + both test files). Commit b56fb8899b57717af5105f32eaab75d8af6330cb. Idempotent, non-destructive.
+- TEST/CI: New workflow queued on push. Prior green. Local tests previously passed.
+- DOCUMENT: Updated PORTFOLIO_STATUS_REPORT.md, this file, OPERATOR_QUEUE.md. No unsupported claims.
+- GOVERN: Claim cap preserved. No security regressions.
+- TERMINATION: Partial (safe improvements done; residue open conjectures and operator review remain). Ready for next random or re-audit.
+- Residual: Full portfolio individual sweeps incomplete. Operator may inspect new CI run.
+
+## Prior Sweep-715 content preserved below.
+
 ## Sweep-715 / Master Directive Portfolio Governance Cycle
 
 - Timestamp: 2026-11-09T19:16Z UTC.
