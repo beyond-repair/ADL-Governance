@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-11-09-709
+  parent_pass: PASS-2026-11-08-708
+
+STATE:
+  global_status: residual classification continuing
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: ongoing
+  capabilities_verified: claim-capped only
+  gaps_remaining: full per-repo residual incomplete
+
+OBJECTIVE:
+  id: residual-class-ExoAxis-1
+  description: Bounded remote inspection and classification of beyond-repair/ExoAxis-1
+  reason_selected: Recent update (2026-11-08), documentation-only science pillar residual, advances coverage without claim elevation
+
+DISCOVERY:
+  findings:
+    - Tree: .github/, LICENSE, README.md, RESEARCH.md only. No source code, tests, or data files.
+    - README.md: Explicit RESEARCH lifecycle, Claim ≤1, not claimed measured efficacy or clinical results. Conceptual A/B/C conjugate architecture (pineal polyphenol, CB1 PAM, biased 5-HT2A). Sweep-085 lock noted: live tree documentation only.
+    - Feature inventory: conceptual architecture VERIFIED; executable pipeline UNVERIFIED (absent); clinical claims FORBIDDEN.
+    - Portfolio position: independent science pillar, no ACTIVE health-product owner.
+    - CI/workflows not inspected in detail but tree shows .github present; consistent with prior claim caps.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-09-709.yaml
+  commits:
+    - Sweep-709 residual classification
+  capabilities_added_or_changed:
+    - classification entry only (ExoAxis-1 reconfirmed RESEARCH / Claim ≤1)
+
+VERIFICATION:
+  tests_run:
+    - remote tree and README contents inspection
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (history preserved, no claim elevation, no product mutation)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ExoAxis-1 remains pure documentation RESEARCH surface for open-science network-pharmacology framework. No runtime or clinical claims possible from inspected tree.
+  failures:
+    - none
+  decisions:
+    - Hold RESEARCH / Claim ≤1. Do not promote. Flag as residual complete for classification purposes pending operator review if needed.
+
+REMAINING:
+  incomplete:
+    - full portfolio residual classification of remaining repositories
+  blockers:
+    - none for this slice
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: residual-class-next
+  action: Select next unaudited or residual repository for bounded classification and persist pass record
+  reason: Continue progressive coverage of the 86-repo ecosystem
+  prerequisites:
+    - this pass persisted
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - GitHub get_repository_tree and get_file_contents on ExoAxis-1 (2026-11-09)
+    - Prior PASS-2026-11-08-708, live census total_count=86
+    - This file
