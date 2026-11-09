@@ -1,5 +1,42 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-09 (Sweep-713 / Random Selection: RealityOS)
+**Project / Version:** ADL Portfolio Governance / Sweep-713
+**Objective:** Bounded random DISCOVER/AUDIT/CLASSIFY/DOCUMENT on one repository. Preserve history. No claim elevation. No product mutations. No history rewrite.
+
+Preserve claim integrity.
+
+## Sweep-713: Random Selection — RealityOS
+
+**SELECT:** Random from full inventory (total_count=86). Selected: `RealityOS`.
+
+**DISCOVER (Phase 1):**
+- Live tree (main @ 9c794098ad02f661e5521feea23ebe46706724b2): backend/ with FastAPI app (main.py, models/domain.py, services/simulation.py + scenario.py, api/routes.py, agents/simulation_quality.py stub), tests/test_simulation_engine.py, demo.py, requirements.txt (fastapi, uvicorn, pydantic, httpx2, pytest), .github/workflows/research-guard.yml, CLAIM_STATUS.md, GOVERNANCE.md, POLSIA_PROMPT.md, README.md, SECURITY.md, .gitignore.
+- README: Explicit RESEARCH lifecycle, claim ≤1 (local MVP heuristic / RUNNABLE SKETCH). In-memory what-if API only. No OS, no persistence, no live connectors, no calibrated forecasts. Heuristics for price/hire/supplier. Sibling to os-family-constitution-map, no SUPERSEDES.
+- CLAIM_STATUS.md: Classification RESEARCH, claim ≤1. Verified local pytest 18 passed, research-guard success on prior runs. Absences documented (SQLite, connectors, scheduled quality agent).
+- CI: research-guard.yml runs pytest on Python 3.12. Latest run 37648961131 success on current main SHA.
+- Dependabot: no open alerts. Branches: main only. Releases/tags: none.
+
+**AUDIT / VERIFY:**
+- Consistent with prior sweeps (Sweep-274 noted in CLAIM_STATUS). No undefined/undocumented components beyond documented sketch. No stale registry entries. No critical CI failures. No unsupported claims. No critical security issues. No duplicate canonical implementations of core heuristics.
+- Termination conditions met for RESEARCH preservation: docs complete, CI green, claims capped, tests present and historically green.
+
+**CLASSIFY:**
+- `RESEARCH` (experimental, unvalidated beyond local heuristic sketch). Held. Target state met for governed sketch. Claims held at ≤1.
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated: in-memory organization sketch + keyword what-if heuristics via FastAPI (price elasticity example verified in tests/docs).
+- Gaps: none actionable for promotion (explicitly no persistence, auth, connectors, or calibration; quality agent is stub). Residual: none new (no tag/release needed for RESEARCH).
+- No new redundancy identified.
+
+**AUDIT:** No unsupported implementation claims. Termination conditions met for this repository. Full portfolio residual remains.
+
+**Residual:** Operator actions from prior sweeps remain. Continue incremental bounded slices. Do not loop on RESEARCH items meeting termination.
+
+## Prior Sweep-712 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-09 (Sweep-712 / Master Directive Portfolio Governance)
 **Project / Version:** ADL Portfolio Governance / Sweep-712
 **Objective:** Bounded execution of Master Directive phases. Live verification of four core pillars. Full inventory confirmation. Preserve history. No claim elevation. No product mutations. No history rewrite.
@@ -57,42 +94,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-711 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-09 (Sweep-711 / Random Selection: fantom_trading_bot_2)
-**Project / Version:** ADL Portfolio Governance / Sweep-711
-**Objective:** Bounded random DISCOVER/AUDIT/CLASSIFY/DOCUMENT on one repository. Preserve history. No claim elevation. No product mutations. No history rewrite.
-
-Preserve claim integrity.
-
-## Sweep-711: Random Selection — fantom_trading_bot_2
-
-**SELECT:** Random from full inventory (total_count=86). Selected: `fantom_trading_bot_2`.
-
-**DISCOVER (Phase 1):**
-- Live tree (main @ 2d2e61a): `.gitignore`, `ARCHIVED.md`, `README.md`, `fantom 19.py`. No tests, no CI workflows, no requirements.
-- README: Explicit ARCHIVE QUEUE, Claim 0, historical 2023 sketch, no profit/live/product claim, strategies are names + constant-returning placeholders, FrontRunning/SandwichBot unimplemented stubs. Related portfolio names listed without SUPERSEDES.
-- ARCHIVED.md: Classification locked Sweep-079 as ARCHIVED. GitHub archive flag noted as operator-only.
-- Code: Incomplete Python with syntax issues, pure stubs, no exchange client, no measured PnL.
-- Branches: main only. Releases: none. Tags: none.
-
-**AUDIT / VERIFY:**
-- Consistent with prior governance notes (already in OPERATOR_QUEUE residual for archive flag).
-- No undefined components beyond the known incomplete sketch.
-- No stale registry entries. No critical CI (absent by design). No unsupported claims. No security issues. No duplicate canonical implementations.
-
-**CLASSIFY:**
-- `ARCHIVED` (historical, no further action). Locked. Target state met for preservation. Claims held at 0.
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated: none (historical sketch only).
-- Gaps: none actionable (already documented as non-runnable). Residual: GitHub `archived=true` flag (operator-only, previously queued).
-- No new redundancy identified.
-
-**AUDIT:** No unsupported implementation claims. Termination conditions met for this repository. Full portfolio residual remains.
-
-**Residual:** Operator archive flag for fantom_trading_bot_2 (and other archive-queue items). Continue incremental bounded slices. Do not loop on ARCHIVED items.
-
-## Prior Sweep-710 content preserved below.
-
-[Full prior content from Sweep-710 and earlier preserved in repository history.]
+[Full prior content from Sweep-711 and earlier preserved in repository history.]
