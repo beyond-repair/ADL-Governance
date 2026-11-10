@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-11-10-728
+  parent_pass: null
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: 55+
+  capabilities_verified: 25+
+  gaps_remaining: 11+
+
+OBJECTIVE:
+  id: GAP-SOVEREIGN-VSA-AUDIT
+  description: Audit of sovereign-clean-room; reconfirm ACTIVE status as canonical SEEM substrate, note VSA completeness UNVERIFIED, inspect core modules and CI.
+  reason_selected: High-priority ACTIVE pillar with residual VSA verification gap from PORTFOLIO_STATE; selected after recent random audits to close a known priority residual.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; census 86 public repos.
+    - sovereign-clean-room: Offline Clean-Room VSA / SEEM constitutional substrate. Core modules include clean_room_vsa.py, clean_room_memory.py, clean_room_attestation.py, capability_registry.py, memskill gates, SHACL/Z3 optional.
+    - Tree: extensive core/, tests/, docs/benchmarks/, skills/, schemas/, .github/workflows/python-tests.yml.
+    - Dependencies: Python 3.11-3.13, NumPy, PyNaCl; optional governance (pyshacl, z3).
+    - Tests present; CI workflow python-tests.yml.
+    - Classification ACTIVE. VSA completeness UNVERIFIED beyond unit tests per prior locked state. Explicit offline, no network, fail-closed.
+    - Decorative stability bars not measurements. Benchmark results only when execution_record.json marks run.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-10-728.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - (this commit)
+  capabilities_added_or_changed:
+    - sovereign-clean-room ACTIVE reconfirmation; VSA residual noted (governance)
+
+VERIFICATION:
+  tests_run:
+    - No live pytest this pass (remote inspection only; CI present by design).
+  code_review: NOT_RUN
+  security: PASS (offline, no secrets committed; keys local)
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation, history preserved, VSA not fabricated as verified)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - sovereign-clean-room remains the canonical ACTIVE SEEM runtime substrate.
+    - VSA completeness remains UNVERIFIED pending deeper operator or targeted verification.
+    - CI workflow present; prior successes noted in governance.
+  failures:
+    - None in this audit.
+  decisions:
+    - Idempotent audit-only; no code changes to subject. VSA verification deferred as operator/next slice.
+
+REMAINING:
+  incomplete:
+    - Full portfolio inventory residual.
+    - Targeted VSA completeness verification (beyond unit tests).
+  blockers:
+    - Operator for any claim elevation or deep VSA audit.
+  new_gaps:
+    - VSA completeness verification slice (priority residual).
+
+NEXT:
+  objective_id: GAP-VSA-VERIFY-SLICE
+  action: Select bounded VSA verification or next residual repo for DISCOVER/AUDIT.
+  reason: Priority residual closed for classification; next is either deep verify or continue inventory.
+  prerequisites:
+    - None.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - README.md, tree structure, core/clean_room_vsa.py presence
+    - python-tests.yml present
+    - Prior PORTFOLIO_STATE notes
+    - Governance files updated
