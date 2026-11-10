@@ -1,5 +1,54 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-10 (Sweep-726 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-726
+**Objective:** Random selection of momentum-closure. DISCOVER/AUDIT/CLASSIFY. Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-726: momentum-closure
+
+**SELECT:** Random from full inventory (86 repos): `momentum-closure`.
+
+**DISCOVER:**
+- Python package for classical momentum-closure bookkeeping: CD-N3 geometry helpers, SMA/coax RF-feed helpers, ConvergenceTensor (numerical tolerances/status only), far-field fixture `F = P a / (3c)`.
+- Tree: momentum_closure/ (cli.py, convergence/tensor.py, geometry/, rf_feed/, fixtures.py), tests/ (3 test files), docs/MOMENTUM_CLOSURE_FRAMEWORK_REVIEW.md, CLAIM_STATUS.md, GOVERNANCE.md, CLAIMS.md, COMPATIBLE_CLOSURE.md, pyproject.toml, .github/workflows/ci.yml + docs-presence.yml, README.md.
+- Dependencies: numpy>=1.24; optional pytest. Python >=3.10.
+- Tests: present (test_convergence_tensor.py, test_fixtures.py, test_geometry_feed.py). CLI audit expects midpoint mesh FAILED at 1e-3 (by design; not loosened).
+- CI: .github/workflows/ci.yml runs pytest on Python 3.12 after pip install -e ".[dev]". Docs-presence workflow present.
+- Classification already RESEARCH / claim level 1 (conceptual). Explicit UNSUPPORTED for mesh-converged residual, physical thrust, Ware momentum flux, energy extraction, full-wave/BEM.
+- Open PR #1 (docs-pinch-link, 2026-08-28) remains unmerged. PR #2 (far-field fixture) merged.
+
+**AUDIT:**
+- No undefined/undocumented components relative to L1 conceptual framework + bookkeeping helpers.
+- No stale registry entries; consistent with RESEARCH / claim ≤1 in PORTFOLIO_STATE and repository_registry.
+- No critical CI failures observed in prior governance notes (pytest CI success referenced).
+- No duplicate canonical implementations (evaluators live in stress-tensor-modification; this is surface-integral discipline layer).
+- No unresolved critical security issues (pure numerical bookkeeping, no secrets/network).
+- No unsupported claims (explicit claim caps and UNSUPPORTED tokens in CLAIM_STATUS.md / README).
+- Target state for RESEARCH / L1 (docs + unit tests + CI present, claims capped) is achieved.
+
+**CLASSIFY:** RESEARCH. Justification: Explicitly marked RESEARCH / claim level 1 in CLAIM_STATUS.md, GOVERNANCE.md, README. Conceptual surface-integral discipline + numerical bookkeeping only. No physical residual or thrust claims. Historical value preserved. No promotion without higher-evidence gates.
+
+**PLAN / IMPLEMENT:**
+- No code changes required on subject. Idempotent audit-only cycle. History preserved.
+- Documentation updates confined to ADL-Governance.
+
+**TEST / CI:**
+- Remote inspection confirms tests and CI workflow present. Prior notes record pytest success. Local re-run residual for operator if desired.
+
+**DOCUMENT / GOVERN:**
+- Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+- Claims not elevated. No unsupported statements introduced. Open PR #1 left for operator.
+
+**TERMINATION CHECK:** Conditions met for this repository under its RESEARCH classification. Ready for next random selection.
+
+**Residual:** Full portfolio residual unchanged. Optional operator merge of open PR #1 or tag if desired.
+
+## Prior Sweep-725 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-10 (Sweep-725 / Randomized Portfolio Completion)
 **Project / Version:** ADL Portfolio Governance / Sweep-725
 **Objective:** Random selection of new-program-1.01. DISCOVER/AUDIT/CLASSIFY. Preserve history. No claim elevation. No product mutations.
@@ -46,58 +95,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-724 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-10 (Sweep-724 / Master Directive Portfolio Governance)
-**Project / Version:** ADL Portfolio Governance / Sweep-724
-**Objective:** Bounded execution of Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
-
-Preserve claim integrity.
-
-## Sweep-724: Master Directive Portfolio Governance Cycle
-
-**DISCOVER (Phase 1):**
-- Live search: total_count=86. Full inventory reconfirmed via search_repositories. No undefined repositories. Inventory names snapshot confirmed. Recent activity on ADL-Nexus and ADL-Governance.
-
-**VERIFY (Phase 3 - Mandatory Live Verification):**
-
-### forge-aegis
-- Releases: none observed. Tags: none observed.
-- CI: workflow .github/workflows/ci.yml present. Latest referenced success on e7188d5.
-- Tree: python/, docs/, schemas/, CLAIM_STATUS.md, GOVERNANCE.md, SECURITY.md, fls/, rfc/, adr/, examples/ present. pyproject.toml confirms packaging.
-- Classification held: RUNNABLE SKETCH / software claim. Residual: v0.1.0 tag/release (operator).
-
-### sovereign-clean-room
-- Releases: none observed. Tags: none observed.
-- CI: workflows present under .github. Main branch tests previously green (37064696194 on 4878918c).
-- Tree: core/, tests/, docs/, schemas/, requirements.txt, bridge/, skills/, shapes/, scripts/ present.
-- Classification held: ACTIVE / software. Residual: merge residual PRs #1 and #3 (operator).
-
-### BlockSwarm
-- Releases: none observed. Tags: none observed.
-- CI: Foundry workflow active. Latest success on 026c363.
-- Tree: contracts/, test/, docs/, foundry.toml, script/, hardhat.config.js, legacy/ present.
-- Classification held: ACTIVE / software. Residual: v0.5.0-sagf tag/release (operator).
-
-### Digital_Double_virtual_workforce
-- Releases: none observed. Tags: none observed.
-- CI: Dependabot and core workflows green on main (ad0c3bd).
-- Tree: src/, tests/, docs/, digital_double/, package.json, vite.config.ts, pyproject.toml present. CANONICAL.md exists.
-- Classification held: ACTIVE / software. Residual: merge reviewed Dependabot and evidence PRs (operator). Open non-critical alerts remain.
-
-**CLASSIFY:**
-- All four remain ACTIVE / software claim level (or RUNNABLE SKETCH for forge-aegis). Not elevated. Canonical pillars confirmed. Historical value preserved. Full per-repo classification of remaining 82 repositories incomplete (residual).
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated capabilities unchanged: offline integrity slice (forge-aegis), VSA/clean-room CLI + gates (sovereign-clean-room), advice-only chain substrate (BlockSwarm), typed workforce agents (Digital_Double).
-- Gaps unchanged: missing formal tags/releases on forge-aegis and BlockSwarm; pending PR merges; open non-critical security alerts on Digital_Double.
-- No duplicate canonical implementations of core pillars identified in this cycle.
-- Dependency graph, capability matrix, and gap analysis for full portfolio residual.
-
-**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Exit criteria not fully met due to incomplete full-portfolio individual sweeps and operator actions.
-
-**Residual:** Full portfolio residual remains (individual classification, dependency mapping, capability matrix incomplete for all 86). Operator actions pending (tags, archive flags, PR merges, security alert review). Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-723 content preserved below.
-
-[Full prior content from Sweep-723 and earlier preserved in repository history.]
+[Full prior content from Sweep-724 and earlier preserved in repository history.]
