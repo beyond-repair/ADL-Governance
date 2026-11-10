@@ -1,3 +1,20 @@
+## Sweep-731 / PASS-2026-11-10-729 Flux Identity Audit
+
+- Timestamp: 2026-11-10T20:10Z UTC.
+- SELECT: Residual RESEARCH slice informational-flux-identity.
+- DISCOVER: Closed-surface flux identity + extensive gasket fractional-norm analysis. Python. CI present. CLAIM_STATUS RESEARCH / Claim-1, many VERIFIED theorems (limit settled Theorem AQ), no thrust.
+- AUDIT: Compliant with RESEARCH classification. Gaps documented (local pytest not run). No critical issues.
+- CLASSIFY: RESEARCH (justified: algebraic identity and fractional analysis without product or force claims).
+- PLAN/IMPLEMENT: Verify CI/docs (done). No code changes to subject. Governance docs updated.
+- TEST/CI: Workflow present. No live execution this pass.
+- DOCUMENT: This entry + pass YAML.
+- GOVERN: Claims not elevated. No unsupported statements. Residual: full matrix for remaining repos.
+- RELEASE/ARCHIVE: None (RESEARCH).
+- RE-AUDIT: Clean for this cycle.
+- Residual: Continue residual sweeps or VSA verification.
+
+## Prior Sweep-730 content preserved below.
+
 ## Sweep-730 / Randomized Portfolio Completion
 
 - Timestamp: 2026-11-10T20:02Z UTC.

@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-11-10-729
+  parent_pass: PASS-2026-11-10-728
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 86
+  repositories_changed: 1
+  capabilities_known: prior + flux identity / gasket fractional audit
+  capabilities_verified: prior (docs-only remote)
+  gaps_remaining: many (residual classification, VSA deep verify, full matrix)
+
+OBJECTIVE:
+  id: GAP-FLUX-IDENTITY-AUDIT-001
+  description: Bounded remote source-tree and claim-status inspection of beyond-repair/informational-flux-identity; reconfirm RESEARCH / Claim-1 without mutation or claim elevation.
+  reason_selected: Next residual RESEARCH slice from prior NEXT and coherence family; advances capability graph for closed-surface identity without operator gate.
+
+DISCOVERY:
+  findings:
+    - Repo language Python, default main, updated ~2026-10-31, has .github/workflows/ci.yml.
+    - Structure: scripts/ (cli.py, flux_identity.py, many gasket_fractional_*.py), docs/THEOREM_V.md, CLAIM_STATUS.md (large), README.md (large), pyproject.toml.
+    - CLAIM_STATUS.md: RESEARCH, claim ceiling 1 (finite-rectangle algebraic identity + explicit integer witness). Many VERIFIED theorems (A, AA–AQ etc.) for flux, fractional energy floors, limits settled by Theorem AQ. Explicitly NOT CLAIMED laboratory thrust, selected W, continuum limit, gasket force.
+    - CI workflow present. Tests implied by claim status references to tests/test_flux_identity.py.
+    - Description: Closed-surface identity for the frozen Coherence Drive residual: signed flux equals summed divergence. Aft-heavy absolute flux is not a net force.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-10-729.yaml (new)
+  commits:
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - informational-flux-identity: Flux identity + gasket fractional audit CLAIMED|IMPLEMENTED; CI present CLAIMED. Not VERIFIED (not executed remotely), not INTEGRATED. RESEARCH / Claim-1 held. No thrust.
+
+VERIFICATION:
+  tests_run:
+    - none (remote inspection only; no local clone or pytest execution)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no catalog mutation, RESEARCH classifications preserved, history preserved, no claim elevation, no destructive change)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - informational-flux-identity is a claim-capped RESEARCH repository documenting a closed-surface flux identity and extensive gasket fractional-norm analysis with settled limit (Theorem AQ) and positive floors. CI present. Explicitly rejects net-force/thrust interpretations.
+    - Consistent with prior Coherence Drive residual audits.
+  failures:
+    - none
+  decisions:
+    - Hold RESEARCH / Claim-1. Do not promote. Do not alter subject.
+    - Next: continue residual audits or VSA verification slice.
+
+REMAINING:
+  incomplete:
+    - Local execution of pytest on informational-flux-identity
+    - Full classification of remaining residual repos
+    - Targeted VSA completeness verification
+  blockers:
+    - Operator boundaries for claim elevation
+    - Remote-only agent cannot execute local pytest without clone
+  new_gaps:
+    - GAP-FLUX-IDENTITY-VERIFY-001: Execute local pytest -q on informational-flux-identity to confirm identity and theorem checks
+    - GAP-RESIDUAL-CLASSIFY-002: Bounded audit of next residual (e.g. topological-pinch or stress-tensor-modification)
+
+NEXT:
+  objective_id: GAP-RESIDUAL-CLASSIFY-002
+  action: Perform bounded remote inspection of next residual RESEARCH repo (topological-pinch or similar) and persist pass record.
+  reason: Continues incremental residual classification; advances capability graph; non-mutating discovery.
+  prerequisites:
+    - This pass record committed
+    - GitHub access
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search_repositories
+    - get_repository_tree (recursive) on informational-flux-identity
+    - get_file_contents CLAIM_STATUS.md (partial), README.md (partial)
+    - Prior PASS-2026-11-10-728, PORTFOLIO_STATE notes
+    - This file
