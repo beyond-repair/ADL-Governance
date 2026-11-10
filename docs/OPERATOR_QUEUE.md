@@ -1,5 +1,27 @@
 # Operator Queue
 
+## Sweep-735: Randomized Selection — fantom_trading_bot_2
+
+No destructive code actions proposed this cycle.
+
+Actions:
+- Randomly selected and re-audited `fantom_trading_bot_2`.
+- Classification: ARCHIVED (confirmed; already documented as ARCHIVE QUEUE).
+- Docs (README.md, ARCHIVED.md) already honest: Claim 0, no profit/live trading claims, stubs only.
+- Governance docs updated (PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file). Claims not elevated. History preserved.
+
+Residuals:
+- Operator-only: Apply GitHub `archived=true` flag if not already set (listed in archive_queue.md).
+- Full portfolio residual: detailed capability inventory, dependency graph, gap analysis for remaining repositories incomplete.
+- Prior operator actions remain (archive flags for other candidates, tags/releases on pillars, PR merges, security alert review).
+- Claims capped. No new critical CI failures. No unresolved critical security findings.
+
+Continue incremental bounded slices or next governed sweep. Do not enter infinite autonomous review.
+
+## Prior Sweep-734 content preserved below.
+
+# Operator Queue
+
 ## Sweep-734: Master Directive Portfolio Governance Confirmation
 
 No destructive code actions proposed this cycle.
@@ -20,27 +42,4 @@ Continue incremental bounded slices or next governed sweep. Do not enter infinit
 
 ## Prior Sweep-733 content preserved below.
 
-# Operator Queue
-
-## Sweep-733: Randomized Selection — -Entanglement-and-Emergence
-
-No destructive code actions proposed this cycle.
-
-Actions:
-- Randomly selected and fully audited `-Entanglement-and-Emergence`.
-- Classification: RESEARCH.
-- Local verification: 11 tests passed; CI workflow present and compatible.
-- Docs (README, RESEARCH.md, CLAIMS.md) already honest regarding non-claims (no proven Einstein derivation, no measured delays/lensing).
-- Governance docs updated (PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file). Claims not elevated. History preserved.
-
-Residuals:
-- Full portfolio residual: detailed capability inventory, dependency graph, gap analysis for remaining repositories incomplete.
-- Prior operator actions remain (archive flags for candidates, tags/releases on pillars, PR merges, security alert review).
-- Optional: larger-N simulations or additional metrics for this RESEARCH repo if desired by operator.
-- Claims capped. No new critical CI failures. No unresolved critical security findings.
-
-Continue incremental bounded slices or next governed sweep. Do not enter infinite autonomous review.
-
-## Prior Sweep-732 content preserved below.
-
-[Full prior content from Sweep-732 and earlier preserved in repository history.]
+[Full prior content from Sweep-733 and earlier preserved in repository history.]
