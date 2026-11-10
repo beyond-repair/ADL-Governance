@@ -1,3 +1,33 @@
+## Sweep-727 / Randomized Portfolio Completion — ADL-SEEM
+
+- Timestamp: 2026-11-10T19:02Z UTC.
+- SELECT: Random from full inventory (86 repos): `ADL-SEEM`.
+- DISCOVER:
+  - SEEM-specific constitution and governance twin to ADL-Governance. Policy documents only; no runtime code.
+  - Tree: README.md, CLAIM_STATUS.md, docs/ (CONSTITUTION.md, CLAIM_VALIDATION.md, LIFECYCLE.md, RESPONSE_CONTRACT.md, CANONICAL.md, and supporting docs), .github/workflows/docs-contract.yml.
+  - Dependencies: None (pure Markdown + YAML workflow).
+  - Tests: None; docs-contract workflow verifies required files and absence of stale claims.
+  - CI: docs-contract.yml present and aligned with required constitution files.
+  - Already classified ACTIVE as constitution. Claim level 0 (policy text). Canonical runtime pointer to sovereign-clean-room. Explicit forbidden of runtime/AGI claims.
+  - No open PRs. No issues observed.
+- AUDIT:
+  - No undefined/undocumented components relative to SEEM constitution role.
+  - No stale registry entries; consistent with ACTIVE / claim 0.
+  - No critical CI failures (docs-contract designed to pass).
+  - No duplicate canonical implementations (governance layer only; runtime is sovereign-clean-room).
+  - No unresolved critical security issues (documentation only).
+  - No unsupported claims (explicit caps in CLAIM_STATUS.md).
+  - Target state for ACTIVE constitution achieved.
+- CLASSIFY: ACTIVE. Justification: Explicitly ACTIVE as SEEM-specific constitution in README, CLAIM_STATUS.md, and ADL-Governance registry. Policy and lifecycle rules only. Not a shipped cognitive product. Canonical runtime pointer preserved.
+- PLAN/IMPLEMENT: Audit-only. No code or content changes to subject repo. History preserved. Idempotent.
+- TEST/CI: Remote inspection confirms docs-contract workflow present. Prior passes recorded success. Local verification residual for operator if desired.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements.
+- TERMINATION: Conditions met for this repository under its ACTIVE constitution classification. Ready for next random selection.
+- Residual: Full portfolio residual unchanged. Optional operator tag or review of linked sovereign-clean-room VSA completeness if desired.
+
+## Prior Sweep-726 content preserved below.
+
 ## Sweep-726 / Randomized Portfolio Completion — momentum-closure
 
 - Timestamp: 2026-11-10T18:01Z UTC.
@@ -27,33 +57,4 @@
 
 ## Prior Sweep-725 content preserved below.
 
-## Sweep-725 / Randomized Portfolio Completion — new-program-1.01
-
-- Timestamp: 2026-11-10T17:00Z UTC.
-- SELECT: Random from full inventory (86 repos): `new-program-1.01`.
-- DISCOVER:
-  - Early My Mind agent files. Small Python project with task delegation simulation.
-  - Tree: main.py, delegate_class.py, delegate_init.py, gpt_agent.py, my_mind.py, task_class.py, task_delegation.py, taskqueue_class.py, test_main.py, test_runner.py, agents.txt, tasks.txt, README.md.
-  - Dependencies: Standard library only. No external deps observed.
-  - Tests: test_main.py with empty unittest; test_runner.py present.
-  - CI: none observed. No .github/workflows.
-  - README marks SUPERSEDED, successor sovereign-clean-room, claim 0 historical.
-- AUDIT:
-  - No undefined/undocumented components relative to historical early agent prototype.
-  - No stale registry entries; consistent with SUPERSEDED status.
-  - No critical CI failures (no CI present).
-  - No duplicate canonical implementations (superseded by sovereign-clean-room).
-  - No unresolved critical security issues (simple local simulation, no secrets).
-  - No unsupported claims (explicit SUPERSEDED, claim 0).
-  - Target state for SUPERSEDED historical repo is achieved.
-- CLASSIFY: SUPERSEDED. Justification: Explicitly marked in README as SUPERSEDED with successor sovereign-clean-room. Early experimental agent files. Historical value preserved. No further feature work.
-- PLAN/IMPLEMENT: Audit-only. No code changes to subject repo. History preserved. Idempotent.
-- TEST/CI: Remote inspection confirms minimal tests. No remote CI runs. Local verification residual for operator if desired.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements.
-- TERMINATION: Conditions met for this repository under its SUPERSEDED classification. Ready for next random selection.
-- Residual: Full portfolio residual unchanged. Optional operator archive flag if desired.
-
-## Prior Sweep-724 content preserved below.
-
-[Full prior content from Sweep-724 and earlier preserved in repository history.]
+[Full prior content from Sweep-725 and earlier preserved in repository history.]
