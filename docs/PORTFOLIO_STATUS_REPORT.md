@@ -1,5 +1,59 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-10 (Sweep-724 / Master Directive Portfolio Governance)
+**Project / Version:** ADL Portfolio Governance / Sweep-724
+**Objective:** Bounded execution of Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
+
+Preserve claim integrity.
+
+## Sweep-724: Master Directive Portfolio Governance Cycle
+
+**DISCOVER (Phase 1):**
+- Live search: total_count=86. Full inventory reconfirmed via search_repositories. No undefined repositories. Inventory names snapshot confirmed. Recent activity on ADL-Nexus and ADL-Governance.
+
+**VERIFY (Phase 3 - Mandatory Live Verification):**
+
+### forge-aegis
+- Releases: none observed. Tags: none observed.
+- CI: workflow .github/workflows/ci.yml present. Latest referenced success on e7188d5.
+- Tree: python/, docs/, schemas/, CLAIM_STATUS.md, GOVERNANCE.md, SECURITY.md, fls/, rfc/, adr/, examples/ present. pyproject.toml confirms packaging.
+- Classification held: RUNNABLE SKETCH / software claim. Residual: v0.1.0 tag/release (operator).
+
+### sovereign-clean-room
+- Releases: none observed. Tags: none observed.
+- CI: workflows present under .github. Main branch tests previously green (37064696194 on 4878918c).
+- Tree: core/, tests/, docs/, schemas/, requirements.txt, bridge/, skills/, shapes/, scripts/ present.
+- Classification held: ACTIVE / software. Residual: merge residual PRs #1 and #3 (operator).
+
+### BlockSwarm
+- Releases: none observed. Tags: none observed.
+- CI: Foundry workflow active. Latest success on 026c363.
+- Tree: contracts/, test/, docs/, foundry.toml, script/, hardhat.config.js, legacy/ present.
+- Classification held: ACTIVE / software. Residual: v0.5.0-sagf tag/release (operator).
+
+### Digital_Double_virtual_workforce
+- Releases: none observed. Tags: none observed.
+- CI: Dependabot and core workflows green on main (ad0c3bd).
+- Tree: src/, tests/, docs/, digital_double/, package.json, vite.config.ts, pyproject.toml present. CANONICAL.md exists.
+- Classification held: ACTIVE / software. Residual: merge reviewed Dependabot and evidence PRs (operator). Open non-critical alerts remain.
+
+**CLASSIFY:**
+- All four remain ACTIVE / software claim level (or RUNNABLE SKETCH for forge-aegis). Not elevated. Canonical pillars confirmed. Historical value preserved. Full per-repo classification of remaining 82 repositories incomplete (residual).
+
+**CAPABILITY / GAP / REDUNDANCY:**
+- Demonstrated capabilities unchanged: offline integrity slice (forge-aegis), VSA/clean-room CLI + gates (sovereign-clean-room), advice-only chain substrate (BlockSwarm), typed workforce agents (Digital_Double).
+- Gaps unchanged: missing formal tags/releases on forge-aegis and BlockSwarm; pending PR merges; open non-critical security alerts on Digital_Double.
+- No duplicate canonical implementations of core pillars identified in this cycle.
+- Dependency graph, capability matrix, and gap analysis for full portfolio residual.
+
+**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Exit criteria not fully met due to incomplete full-portfolio individual sweeps and operator actions.
+
+**Residual:** Full portfolio residual remains (individual classification, dependency mapping, capability matrix incomplete for all 86). Operator actions pending (tags, archive flags, PR merges, security alert review). Continue incremental bounded slices. Do not loop.
+
+## Prior Sweep-723 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-10 (Sweep-723 / Randomized Portfolio Completion)
 **Project / Version:** ADL Portfolio Governance / Sweep-723
 **Objective:** Random selection of mendthegame. DISCOVER/AUDIT/CLASSIFY. Preserve history. No claim elevation. No product mutations.
@@ -46,58 +100,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-722 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-10 (Sweep-722 / Master Directive Portfolio Governance)
-**Project / Version:** ADL Portfolio Governance / Sweep-722
-**Objective:** Bounded execution of Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
-
-Preserve claim integrity.
-
-## Sweep-722: Master Directive Portfolio Governance Cycle
-
-**DISCOVER (Phase 1):**
-- Live search: total_count=86. Full inventory reconfirmed via search_repositories. No undefined repositories. Inventory snapshot saved locally for reference. Recent activity confirmed.
-
-**VERIFY (Phase 3 - Mandatory Live Verification):**
-
-### forge-aegis
-- Releases: none observed. Tags: none observed.
-- CI: workflow .github/workflows/ci.yml present. Latest referenced success on e7188d5.
-- Tree: python/, docs/, schemas/, CLAIM_STATUS.md, GOVERNANCE.md, SECURITY.md, fls/, rfc/, adr/, examples/ present. pyproject.toml confirms packaging.
-- Classification held: RUNNABLE SKETCH / software claim. Residual: v0.1.0 tag/release (operator).
-
-### sovereign-clean-room
-- Releases: none observed. Tags: none observed.
-- CI: workflows present under .github. Main branch tests previously green (37064696194 on 4878918c).
-- Tree: core/, tests/, docs/, schemas/, requirements.txt, bridge/, skills/, shapes/, scripts/ present.
-- Classification held: ACTIVE / software. Residual: merge residual PRs #1 and #3 (operator).
-
-### BlockSwarm
-- Releases: none observed. Tags: none observed.
-- CI: Foundry workflow active. Latest success on 026c363.
-- Tree: contracts/, test/, docs/, foundry.toml, script/, hardhat.config.js, legacy/ present.
-- Classification held: ACTIVE / software. Residual: v0.5.0-sagf tag/release (operator).
-
-### Digital_Double_virtual_workforce
-- Releases: none observed. Tags: none observed.
-- CI: Dependabot and core workflows green on main (ad0c3bd).
-- Tree: src/, tests/, docs/, digital_double/, package.json, vite.config.ts, pyproject.toml present. CANONICAL.md exists.
-- Classification held: ACTIVE / software. Residual: merge reviewed Dependabot and evidence PRs (operator). Open non-critical alerts remain.
-
-**CLASSIFY:**
-- All four remain ACTIVE / software claim level (or RUNNABLE SKETCH for forge-aegis). Not elevated. Canonical pillars confirmed. Historical value preserved. Full per-repo classification of remaining 82 repositories incomplete (residual).
-
-**CAPABILITY / GAP / REDUNDANCY:**
-- Demonstrated capabilities unchanged: offline integrity slice (forge-aegis), VSA/clean-room CLI + gates (sovereign-clean-room), advice-only chain substrate (BlockSwarm), typed workforce agents (Digital_Double).
-- Gaps unchanged: missing formal tags/releases on forge-aegis and BlockSwarm; pending PR merges; open non-critical security alerts on Digital_Double.
-- No duplicate canonical implementations of core pillars identified in this cycle.
-- Dependency graph, capability matrix, and gap analysis for full portfolio residual.
-
-**AUDIT:** No unsupported implementation claims. No new critical CI failures. Claims capped. Exit criteria not fully met due to incomplete full-portfolio individual sweeps and operator actions.
-
-**Residual:** Full portfolio residual remains (individual classification, dependency mapping, capability matrix incomplete for all 86). Operator actions pending (tags, archive flags, PR merges, security alert review). Continue incremental bounded slices. Do not loop.
-
-## Prior Sweep-721 content preserved below.
-
-[Full prior content from Sweep-721 and earlier preserved in repository history.]
+[Full prior content from Sweep-722 and earlier preserved in repository history.]
