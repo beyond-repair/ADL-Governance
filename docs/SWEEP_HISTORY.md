@@ -1,3 +1,31 @@
+## Sweep-723 / Randomized Portfolio Completion — mendthegame
+
+- Timestamp: 2026-11-10T16:01Z UTC.
+- SELECT: Random from full inventory (86 repos): `mendthegame`.
+- DISCOVER:
+  - Private Vite/TypeScript TanStack Start app-builder workspace. Single-player browser RPG (Silas Vance, maintenance auditor in Oakhaven). Character creation, dialogue, quests, companions, turn-based combat, regions, autosave to localStorage (ironman).
+  - Tree: src/ (game/ logic/maps/types/store/audio/fx, lib/), scripts/, .grok/ (skills/references/app-env), public/, package.json, vite.config.ts, AGENTS.md, README.md. No .github/workflows.
+  - Dependencies: React 19 + TanStack + Tailwind + Radix + zustand (preinstalled). Auth/db opt-in, currently off.
+  - Tests: npm test covers scripts tests, app-data/auth, src/game/pass3.test.ts (extensive dependency-combat, systems, save/load matrix).
+  - CI: none observed. Local runnable via npm run dev/test/typecheck/build.
+- AUDIT:
+  - No undefined/undocumented components relative to private workspace/prototype scope (AGENTS.md, .grok/references, game tests).
+  - No stale registry entries; claim-capped workspace consistent.
+  - No critical CI failures (no CI; tests structured for local).
+  - No duplicate canonical implementations (unique private game workspace).
+  - No unresolved critical security issues (client-side localStorage, auth off, no secrets).
+  - No unsupported claims (explicit claim 0 private workspace, not shipped product; badges and README enforce).
+  - Target state for RESEARCH claim-capped private workspace achieved.
+- CLASSIFY: RESEARCH held. Justification: experimental private browser RPG workspace; claim-capped at 0; software structure and tests demonstrate readiness separately from any higher claim; not promoted to ACTIVE product surface.
+- PLAN/IMPLEMENT: Audit-only. No code changes to subject repo. History preserved. Idempotent.
+- TEST/CI: Remote inspection confirms test scripts and extensive pass3.test.ts. No remote CI runs. Local verification residual for operator if desired.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements.
+- TERMINATION: Conditions met for this repository under its RESEARCH classification and claim cap. Ready for next random selection.
+- Residual: Full portfolio residual unchanged. Optional operator tag/release or CI addition if desired (none currently present).
+
+## Prior Sweep-722 content preserved below.
+
 ## Sweep-722 / Master Directive Portfolio Governance Cycle
 
 - Timestamp: 2026-11-10T15:25Z UTC.
@@ -18,32 +46,4 @@
 
 ## Prior Sweep-721 content preserved below.
 
-## Sweep-721 / Randomized Portfolio Completion — blacksite
-
-- Timestamp: 2026-11-09T23:01Z UTC.
-- SELECT: Random from full inventory (86 repos): `blacksite`.
-- DISCOVER:
-  - Browser-based isometric 3D stealth PvE roguelite prototype (Ninja operator, facility kernel).
-  - Tree: src/ (core simulation/input/replay/rng/pools, entities ninja/guard, systems facility/geometry, render isometric), tests/ninja_loop.test.mjs (16 cases), docs/ (architecture, gates, validation), public/, .github/workflows/test.yml, package.json.
-  - Dependencies: none external (pure Node/JS, Canvas). Deterministic fixed-timestep, seeded RNG, state hashing.
-  - Tests: comprehensive for determinism, vision, smoke, walls, movement, abilities, interact, full operation, routes.
-  - CI: workflow present; sole run 39453722349 success (conclusion success).
-- AUDIT:
-  - No undefined/undocumented components relative to prototype scope (docs cover architecture, gates, operators).
-  - No stale registry entries; prior classification RESEARCH consistent.
-  - No critical CI failures (green; local re-run 16/16 pass).
-  - No duplicate canonical implementations (unique game prototype).
-  - No unresolved critical security issues (no deps, no secrets, client-side).
-  - No unsupported claims (explicit claim 0 workspace, not shipped product; badges and README enforce).
-  - Target state for RESEARCH claim-capped prototype achieved.
-- CLASSIFY: RESEARCH held. Justification: experimental isometric stealth workspace; claim-capped at 0; CI/tests demonstrate software readiness separately from any higher claim; not promoted to ACTIVE product surface.
-- PLAN/IMPLEMENT: Audit-only. No code changes to subject repo. History preserved. Idempotent.
-- TEST/CI: Local npm test 16/16 pass. Remote CI green confirmed.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements.
-- TERMINATION: Conditions met for this repository under its RESEARCH classification and claim cap. Ready for next random selection.
-- Residual: Full portfolio residual unchanged. Optional operator tag/release if desired (none currently present).
-
-## Prior Sweep-720 content preserved below.
-
-[Full prior content from Sweep-720 and earlier preserved in repository history.]
+[Full prior content from Sweep-721 and earlier preserved in repository history.]
