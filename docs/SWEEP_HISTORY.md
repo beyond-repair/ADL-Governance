@@ -1,3 +1,23 @@
+## Sweep-724 / Master Directive Portfolio Governance Cycle
+
+- Timestamp: 2026-11-10T16:22Z UTC.
+- Scope: Bounded Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
+- DISCOVER:
+  - Live search total_count=86. Full inventory reconfirmed. No undefined repositories. Inventory names snapshot confirmed.
+  - forge-aegis: no releases/tags observed. CI workflow present; prior success on e7188d5. RUNNABLE SKETCH held. Tree confirms software slice (python/, fls/, schemas/, docs/).
+  - sovereign-clean-room: no releases/tags observed. CI main success prior (37064696194 on 4878918c). ACTIVE held. Tree confirms core/, tests/, bridge/, skills/.
+  - BlockSwarm: no releases/tags observed. CI latest Foundry success on 026c363. ACTIVE held. Tree confirms contracts/, foundry.toml, test/.
+  - Digital_Double_virtual_workforce: no releases/tags observed. CI green (Dependabot success on ad0c3bd). ACTIVE held. Tree confirms src/, tests/, digital_double/, CANONICAL.md.
+- VERIFY:
+  - Claims held at software / RUNNABLE SKETCH. No elevation. Residuals operator-only.
+  - No unsupported claims. No new critical CI failures. Security findings non-critical.
+- AUDIT: Classifications held. Claims capped. Termination conditions met for this bounded slice. Exit criteria not fully met due to incomplete full-portfolio individual sweeps.
+- CLASSIFY: Priority pillars remain ACTIVE/software (forge-aegis slice RUNNABLE SKETCH). Canonical ownership confirmed.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- Residual: Full per-repository individual sweeps, capability inventory, dependency graph incomplete. Operator actions pending (tags, archive flags, PR merges, security alert review). Stop after cycle. Do not enter infinite review.
+
+## Prior Sweep-723 content preserved below.
+
 ## Sweep-723 / Randomized Portfolio Completion — mendthegame
 
 - Timestamp: 2026-11-10T16:01Z UTC.
@@ -26,24 +46,4 @@
 
 ## Prior Sweep-722 content preserved below.
 
-## Sweep-722 / Master Directive Portfolio Governance Cycle
-
-- Timestamp: 2026-11-10T15:25Z UTC.
-- Scope: Bounded Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
-- DISCOVER:
-  - Live search total_count=86. Full inventory reconfirmed. No undefined repositories. Inventory snapshot generated for reference.
-  - forge-aegis: no releases/tags observed. CI workflow present; prior success on e7188d5. RUNNABLE SKETCH held. Tree confirms software slice (python/, fls/, schemas/, docs/).
-  - sovereign-clean-room: no releases/tags observed. CI main success prior (37064696194 on 4878918c). ACTIVE held. Tree confirms core/, tests/, bridge/, skills/.
-  - BlockSwarm: no releases/tags observed. CI latest Foundry success on 026c363. ACTIVE held. Tree confirms contracts/, foundry.toml, test/.
-  - Digital_Double_virtual_workforce: no releases/tags observed. CI green (Dependabot success on ad0c3bd). ACTIVE held. Tree confirms src/, tests/, digital_double/, CANONICAL.md.
-- VERIFY:
-  - Claims held at software / RUNNABLE SKETCH. No elevation. Residuals operator-only.
-  - No unsupported claims. No new critical CI failures. Security findings non-critical.
-- AUDIT: Classifications held. Claims capped. Termination conditions met for this bounded slice. Exit criteria not fully met due to incomplete full-portfolio individual sweeps.
-- CLASSIFY: Priority pillars remain ACTIVE/software (forge-aegis slice RUNNABLE SKETCH). Canonical ownership confirmed.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- Residual: Full per-repository individual sweeps, capability inventory, dependency graph incomplete. Operator actions pending (tags, archive flags, PR merges, security alert review). Stop after cycle. Do not enter infinite review.
-
-## Prior Sweep-721 content preserved below.
-
-[Full prior content from Sweep-721 and earlier preserved in repository history.]
+[Full prior content from Sweep-722 and earlier preserved in repository history.]
