@@ -1,5 +1,26 @@
 # Operator Queue
 
+## Sweep-725: new-program-1.01
+
+No destructive code actions proposed this cycle.
+
+Actions:
+- Random selection: new-program-1.01 (SUPERSEDED / claim 0 historical early agent files).
+- Audit completed. Classification held as SUPERSEDED. Successor sovereign-clean-room. Minimal tests present. No CI observed. No code changes required on subject.
+- Governance docs updated (PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file). Claims not elevated. History preserved.
+
+Residuals:
+- Full portfolio residual: individual classification, capability inventory, dependency graph, and gap analysis of remaining repositories incomplete.
+- Prior operator actions remain (archive flags, tags/releases on pillars, PR merges, security alert review).
+- Optional: operator may add GitHub archive flag for this SUPERSEDED repo if desired.
+- Claims capped. No new critical CI failures.
+
+Continue incremental bounded slices or next random selection. Do not enter infinite autonomous review.
+
+## Prior Sweep-724 content preserved below.
+
+# Operator Queue
+
 ## Sweep-724: Master Directive Portfolio Governance Cycle
 
 No destructive code actions proposed this cycle.
@@ -17,25 +38,4 @@ Continue incremental bounded slices. Next: next residual or random selection. Do
 
 ## Prior Sweep-723 content preserved below.
 
-# Operator Queue
-
-## Sweep-723: mendthegame
-
-No destructive code actions proposed this cycle.
-
-Actions:
-- Random selection: mendthegame (RESEARCH / claim 0 private workspace).
-- Audit completed. Classification held. Test scripts and extensive game logic tests (pass3.test.ts) confirmed present. No CI observed. No code changes required on subject.
-- Governance docs updated (PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file). Claims not elevated. History preserved.
-
-Residuals:
-- Full portfolio residual: individual classification, capability inventory, dependency graph, and gap analysis of remaining repositories incomplete.
-- Prior operator actions remain (archive flags, tags/releases on pillars, PR merges, security alert review).
-- Optional: operator may add CI workflow, create a tag/release, or run local npm test on mendthegame if desired (none currently present).
-- Claims capped. No new critical CI failures.
-
-Continue incremental bounded slices or next random selection. Do not enter infinite autonomous review.
-
-## Prior Sweep-722 content preserved below.
-
-[Full prior content from Sweep-722 and earlier preserved in repository history.]
+[Full prior content from Sweep-723 and earlier preserved in repository history.]

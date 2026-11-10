@@ -1,3 +1,32 @@
+## Sweep-725 / Randomized Portfolio Completion — new-program-1.01
+
+- Timestamp: 2026-11-10T17:00Z UTC.
+- SELECT: Random from full inventory (86 repos): `new-program-1.01`.
+- DISCOVER:
+  - Early My Mind agent files. Small Python project with task delegation simulation.
+  - Tree: main.py, delegate_class.py, delegate_init.py, gpt_agent.py, my_mind.py, task_class.py, task_delegation.py, taskqueue_class.py, test_main.py, test_runner.py, agents.txt, tasks.txt, README.md.
+  - Dependencies: Standard library only. No external deps observed.
+  - Tests: test_main.py with empty unittest; test_runner.py present.
+  - CI: none observed. No .github/workflows.
+  - README marks SUPERSEDED, successor sovereign-clean-room, claim 0 historical.
+- AUDIT:
+  - No undefined/undocumented components relative to historical early agent prototype.
+  - No stale registry entries; consistent with SUPERSEDED status.
+  - No critical CI failures (no CI present).
+  - No duplicate canonical implementations (superseded by sovereign-clean-room).
+  - No unresolved critical security issues (simple local simulation, no secrets).
+  - No unsupported claims (explicit SUPERSEDED, claim 0).
+  - Target state for SUPERSEDED historical repo is achieved.
+- CLASSIFY: SUPERSEDED. Justification: Explicitly marked in README as SUPERSEDED with successor sovereign-clean-room. Early experimental agent files. Historical value preserved. No further feature work.
+- PLAN/IMPLEMENT: Audit-only. No code changes to subject repo. History preserved. Idempotent.
+- TEST/CI: Remote inspection confirms minimal tests. No remote CI runs. Local verification residual for operator if desired.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements.
+- TERMINATION: Conditions met for this repository under its SUPERSEDED classification. Ready for next random selection.
+- Residual: Full portfolio residual unchanged. Optional operator archive flag if desired.
+
+## Prior Sweep-724 content preserved below.
+
 ## Sweep-724 / Master Directive Portfolio Governance Cycle
 
 - Timestamp: 2026-11-10T16:22Z UTC.
@@ -18,32 +47,4 @@
 
 ## Prior Sweep-723 content preserved below.
 
-## Sweep-723 / Randomized Portfolio Completion — mendthegame
-
-- Timestamp: 2026-11-10T16:01Z UTC.
-- SELECT: Random from full inventory (86 repos): `mendthegame`.
-- DISCOVER:
-  - Private Vite/TypeScript TanStack Start app-builder workspace. Single-player browser RPG (Silas Vance, maintenance auditor in Oakhaven). Character creation, dialogue, quests, companions, turn-based combat, regions, autosave to localStorage (ironman).
-  - Tree: src/ (game/ logic/maps/types/store/audio/fx, lib/), scripts/, .grok/ (skills/references/app-env), public/, package.json, vite.config.ts, AGENTS.md, README.md. No .github/workflows.
-  - Dependencies: React 19 + TanStack + Tailwind + Radix + zustand (preinstalled). Auth/db opt-in, currently off.
-  - Tests: npm test covers scripts tests, app-data/auth, src/game/pass3.test.ts (extensive dependency-combat, systems, save/load matrix).
-  - CI: none observed. Local runnable via npm run dev/test/typecheck/build.
-- AUDIT:
-  - No undefined/undocumented components relative to private workspace/prototype scope (AGENTS.md, .grok/references, game tests).
-  - No stale registry entries; claim-capped workspace consistent.
-  - No critical CI failures (no CI; tests structured for local).
-  - No duplicate canonical implementations (unique private game workspace).
-  - No unresolved critical security issues (client-side localStorage, auth off, no secrets).
-  - No unsupported claims (explicit claim 0 private workspace, not shipped product; badges and README enforce).
-  - Target state for RESEARCH claim-capped private workspace achieved.
-- CLASSIFY: RESEARCH held. Justification: experimental private browser RPG workspace; claim-capped at 0; software structure and tests demonstrate readiness separately from any higher claim; not promoted to ACTIVE product surface.
-- PLAN/IMPLEMENT: Audit-only. No code changes to subject repo. History preserved. Idempotent.
-- TEST/CI: Remote inspection confirms test scripts and extensive pass3.test.ts. No remote CI runs. Local verification residual for operator if desired.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements.
-- TERMINATION: Conditions met for this repository under its RESEARCH classification and claim cap. Ready for next random selection.
-- Residual: Full portfolio residual unchanged. Optional operator tag/release or CI addition if desired (none currently present).
-
-## Prior Sweep-722 content preserved below.
-
-[Full prior content from Sweep-722 and earlier preserved in repository history.]
+[Full prior content from Sweep-723 and earlier preserved in repository history.]

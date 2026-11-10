@@ -1,5 +1,53 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-10 (Sweep-725 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-725
+**Objective:** Random selection of new-program-1.01. DISCOVER/AUDIT/CLASSIFY. Preserve history. No claim elevation. No product mutations.
+
+Preserve claim integrity.
+
+## Sweep-725: new-program-1.01
+
+**SELECT:** Random from full inventory (86 repos): `new-program-1.01`.
+
+**DISCOVER:**
+- Early My Mind agent files. Small Python project with task delegation simulation.
+- Tree: main.py, delegate_class.py, delegate_init.py, gpt_agent.py, my_mind.py, task_class.py, task_delegation.py, taskqueue_class.py, test_main.py, test_runner.py, agents.txt, tasks.txt, README.md, .gitignore, .gitattributes.
+- Dependencies: Standard library only (time, unittest). No external deps observed.
+- Tests: test_main.py with empty unittest pass; test_runner.py present.
+- CI: none observed. No .github/workflows.
+- README already marks SUPERSEDED, successor sovereign-clean-room, claim 0 historical.
+
+**AUDIT:**
+- No undefined/undocumented components relative to historical early agent prototype.
+- No stale registry entries; consistent with SUPERSEDED status.
+- No critical CI failures (no CI present).
+- No duplicate canonical implementations (superseded by sovereign-clean-room).
+- No unresolved critical security issues (simple local simulation, no secrets).
+- No unsupported claims (explicit SUPERSEDED, claim 0).
+- Target state for SUPERSEDED historical repo is achieved.
+
+**CLASSIFY:** SUPERSEDED. Justification: Explicitly marked in README as SUPERSEDED with successor sovereign-clean-room. Early experimental agent files. Historical value preserved. No further feature work.
+
+**PLAN / IMPLEMENT:**
+- No code changes required on subject. Idempotent audit-only cycle. History preserved.
+- Documentation updates confined to ADL-Governance.
+
+**TEST / CI:**
+- Remote inspection confirms minimal tests. No remote CI runs. Local verification residual for operator if desired.
+
+**DOCUMENT / GOVERN:**
+- Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+- Claims not elevated. No unsupported statements introduced.
+
+**TERMINATION CHECK:** Conditions met for this repository under its SUPERSEDED classification. Ready for next random selection.
+
+**Residual:** Full portfolio residual unchanged. Optional operator archive flag if desired.
+
+## Prior Sweep-724 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-10 (Sweep-724 / Master Directive Portfolio Governance)
 **Project / Version:** ADL Portfolio Governance / Sweep-724
 **Objective:** Bounded execution of Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
@@ -52,52 +100,4 @@ Preserve claim integrity.
 
 ## Prior Sweep-723 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-10 (Sweep-723 / Randomized Portfolio Completion)
-**Project / Version:** ADL Portfolio Governance / Sweep-723
-**Objective:** Random selection of mendthegame. DISCOVER/AUDIT/CLASSIFY. Preserve history. No claim elevation. No product mutations.
-
-Preserve claim integrity.
-
-## Sweep-723: mendthegame
-
-**SELECT:** Random from full inventory (86 repos): `mendthegame`.
-
-**DISCOVER:**
-- Private Vite/TypeScript TanStack Start app-builder workspace. Single-player browser RPG (Silas Vance, maintenance auditor in Oakhaven). Character creation, dialogue, quests, companions, turn-based combat, regions, autosave to localStorage (ironman mode).
-- Tree: src/ (game/ logic, maps, types, store, audio, fx; lib/ auth/db helpers), scripts/, .grok/ (skills, references, app-env), public/, package.json, vite.config.ts, AGENTS.md, README.md. No .github/workflows observed.
-- Dependencies: React 19, TanStack, Tailwind, Radix, zustand, etc. (preinstalled). Auth/db opt-in, currently off (VITE_AUTH_ENABLED=false).
-- Tests: npm test runs scripts/**/*.test.mjs, app-data/auth tests, src/game/pass3.test.ts (extensive dependency-combat, systems, save/load matrix coverage).
-- CI: none observed. Local runnable via npm run dev / test / typecheck / build.
-- Classification already PRIVATE WORKSPACE / CLAIM 0. Explicit non-claims (not shipped game, not public release) in README and badges.
-
-**AUDIT:**
-- No undefined/undocumented components relative to private workspace/prototype scope (AGENTS.md, .grok/references, game logic tests).
-- No stale registry entries relative to claim-capped workspace.
-- No critical CI failures (no CI present; tests exist and are structured for local verification).
-- No duplicate canonical implementations (unique private game workspace).
-- No unresolved critical security issues (client-side localStorage, auth off, no secrets in tree).
-- No unsupported claims (claim 0 enforced; private, not product).
-- Target state for RESEARCH/private claim-capped workspace is achieved for audit purposes.
-
-**CLASSIFY:** RESEARCH (held). Justification: experimental private browser RPG workspace exported from app-builder; claim-capped at 0; software structure and tests present separately from any higher claim; not an ACTIVE product surface. Not promoted.
-
-**PLAN / IMPLEMENT:**
-- No code changes required on subject. Idempotent audit-only cycle. History preserved.
-- Documentation updates confined to ADL-Governance.
-
-**TEST / CI:**
-- Remote inspection confirms test scripts and extensive pass3.test.ts. No remote CI runs observed. Local verification residual for operator if desired.
-
-**DOCUMENT / GOVERN:**
-- Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
-- Claims not elevated. No unsupported statements introduced.
-
-**TERMINATION CHECK:** Conditions met for this repository under its RESEARCH classification and claim cap. Ready for next random selection.
-
-**Residual:** Full portfolio residual unchanged. Optional operator tag/release or CI addition if desired (none currently present).
-
-## Prior Sweep-722 content preserved below.
-
-[Full prior content from Sweep-722 and earlier preserved in repository history.]
+[Full prior content from Sweep-723 and earlier preserved in repository history.]
