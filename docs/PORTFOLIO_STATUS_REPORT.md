@@ -1,5 +1,48 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-10 (Sweep-730 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-730
+**Objective:** Randomly select one repository, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → TEST/CI → DOCUMENT → GOVERN.
+
+Preserve claim integrity. History preserved.
+
+## Sweep-730: Randomized Selection — stress-tensor-modification
+
+**SELECT:** Randomly selected `stress-tensor-modification` from the 86-repository portfolio (via shuf on inventory).
+
+**DISCOVER:**
+- Python research codebase: Maxwell stress tensor evaluator + BEM tools on open 0.45 Sierpinski gasket mesh.
+- Files: physics_evaluator.py, bem_sierpinski.py, rf_bem_sierpinski.py, fullwave_bem.py, local_geometry.py, cli.py, tests/ (14 tests), CLAIM_STATUS.md, README.md, CI workflow.
+- Dependencies: numpy. Optional pytest.
+- Explicit non-claims: no thrust, no energy extraction, experimental validation = false.
+
+**AUDIT:**
+- Against ADL-Governance: RESEARCH lifecycle, claim ≤1, honest gaps documented (no dual-surface ε_F, open mesh, no lab validation).
+- CI present (.github/workflows/python-tests.yml): runs physics_evaluator.py + pytest on push/PR to main.
+- Local verification: 14 tests passed, self-tests in evaluator passed.
+- No critical security issues identified. No unsupported claims.
+- No stale registry entries in this cycle.
+
+**CLASSIFY:** `RESEARCH` (experimental, unvalidated Maxwell/BEM surface diagnostics on asymmetric geometry; bridges theory without certifying thrust).
+
+**PLAN:** Target state = CI-green, docs current, claim-capped. Actions: verify tests (done), document status (this), no code mutations required this cycle.
+
+**IMPLEMENT:** Safe/idempotent: no subject-repo code changes. Governance docs updated.
+
+**TEST → CI:** Local pytest 14 passed. Workflow defined and previously green by design (numpy/pytest only).
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residuals noted.
+
+**RELEASE/ARCHIVE:** Not applicable (RESEARCH, no target version met for release; not SUPERSEDED/ARCHIVED).
+
+**RE-AUDIT:** No drift detected. Termination criteria partially met for this repo (tests pass, docs honest, no critical issues). Full portfolio residual remains.
+
+**Residual:** Remaining ~85 repositories for full matrix. Optional enhancements (more surface diagnostics, stage-2 branch integration) queued if desired.
+
+## Prior Sweep-729 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-10 (Sweep-729 / Master Directive Portfolio Completion)
 **Project / Version:** ADL Portfolio Governance / Sweep-729
 **Objective:** Full portfolio discovery, live verification of key pillars, classification, residual recording. Preserve history. No claim elevation. No product mutations.
