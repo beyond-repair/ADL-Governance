@@ -1,3 +1,32 @@
+## Sweep-726 / Randomized Portfolio Completion — momentum-closure
+
+- Timestamp: 2026-11-10T18:01Z UTC.
+- SELECT: Random from full inventory (86 repos): `momentum-closure`.
+- DISCOVER:
+  - Python package: classical momentum-closure bookkeeping (CD-N3 geometry, SMA/coax RF-feed, ConvergenceTensor tolerances only, far-field fixture F = P a / (3c)).
+  - Tree: momentum_closure/ (cli, convergence/tensor, geometry, rf_feed, fixtures), tests/ (3 files), docs/, CLAIM_STATUS.md, GOVERNANCE.md, pyproject.toml, .github/workflows/ci.yml + docs-presence.yml, README.md.
+  - Dependencies: numpy>=1.24; optional pytest. Python >=3.10.
+  - Tests present. CI workflow runs pytest on 3.12 after editable install.
+  - Already classified RESEARCH / claim level 1. Explicit UNSUPPORTED for physical residual, thrust, Ware flux, energy extraction, full-wave/BEM.
+  - Open PR #1 (docs-pinch-link) unmerged; PR #2 merged.
+- AUDIT:
+  - No undefined/undocumented components relative to L1 conceptual + bookkeeping.
+  - No stale registry entries; consistent with RESEARCH / claim ≤1.
+  - No critical CI failures (prior notes record pytest success).
+  - No duplicate canonical implementations (evaluators in stress-tensor-modification).
+  - No unresolved critical security issues (numerical only).
+  - No unsupported claims (explicit caps and tokens).
+  - Target state for RESEARCH / L1 achieved.
+- CLASSIFY: RESEARCH. Justification: Explicit RESEARCH / claim level 1 in CLAIM_STATUS.md, GOVERNANCE.md, README. Conceptual surface-integral discipline only. No physical claims. Historical value preserved.
+- PLAN/IMPLEMENT: Audit-only. No code changes to subject repo. History preserved. Idempotent.
+- TEST/CI: Remote inspection confirms tests + CI present. Local re-run residual for operator if desired.
+- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
+- GOVERN: Claim cap preserved. No elevation. No product mutation. No unsupported statements. Open PR left for operator.
+- TERMINATION: Conditions met for this repository under its RESEARCH classification. Ready for next random selection.
+- Residual: Full portfolio residual unchanged. Optional operator merge of open PR #1 or tag if desired.
+
+## Prior Sweep-725 content preserved below.
+
 ## Sweep-725 / Randomized Portfolio Completion — new-program-1.01
 
 - Timestamp: 2026-11-10T17:00Z UTC.
@@ -27,24 +56,4 @@
 
 ## Prior Sweep-724 content preserved below.
 
-## Sweep-724 / Master Directive Portfolio Governance Cycle
-
-- Timestamp: 2026-11-10T16:22Z UTC.
-- Scope: Bounded Master Directive phases. Live inventory confirmation and priority pillar verification. Preserve history. No claim elevation. No product mutations. No history rewrite.
-- DISCOVER:
-  - Live search total_count=86. Full inventory reconfirmed. No undefined repositories. Inventory names snapshot confirmed.
-  - forge-aegis: no releases/tags observed. CI workflow present; prior success on e7188d5. RUNNABLE SKETCH held. Tree confirms software slice (python/, fls/, schemas/, docs/).
-  - sovereign-clean-room: no releases/tags observed. CI main success prior (37064696194 on 4878918c). ACTIVE held. Tree confirms core/, tests/, bridge/, skills/.
-  - BlockSwarm: no releases/tags observed. CI latest Foundry success on 026c363. ACTIVE held. Tree confirms contracts/, foundry.toml, test/.
-  - Digital_Double_virtual_workforce: no releases/tags observed. CI green (Dependabot success on ad0c3bd). ACTIVE held. Tree confirms src/, tests/, digital_double/, CANONICAL.md.
-- VERIFY:
-  - Claims held at software / RUNNABLE SKETCH. No elevation. Residuals operator-only.
-  - No unsupported claims. No new critical CI failures. Security findings non-critical.
-- AUDIT: Classifications held. Claims capped. Termination conditions met for this bounded slice. Exit criteria not fully met due to incomplete full-portfolio individual sweeps.
-- CLASSIFY: Priority pillars remain ACTIVE/software (forge-aegis slice RUNNABLE SKETCH). Canonical ownership confirmed.
-- DOCUMENT: This entry + PORTFOLIO_STATUS_REPORT.md + OPERATOR_QUEUE.md.
-- Residual: Full per-repository individual sweeps, capability inventory, dependency graph incomplete. Operator actions pending (tags, archive flags, PR merges, security alert review). Stop after cycle. Do not enter infinite review.
-
-## Prior Sweep-723 content preserved below.
-
-[Full prior content from Sweep-723 and earlier preserved in repository history.]
+[Full prior content from Sweep-724 and earlier preserved in repository history.]
