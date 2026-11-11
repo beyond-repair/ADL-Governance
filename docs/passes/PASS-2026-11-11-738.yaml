@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-11-11-738
+  parent_pass: null
+
+STATE:
+  global_status: RECONSTRUCTED_FROM_LIVE
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 15
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-738
+  description: Reconstruct ecosystem from live GitHub search (total_count=87), governing docs in ADL-Governance (latest Sweep-737), ADL-Nexus structure, and persist continuity under ADL-BASILISK recursive directive.
+  reason_selected: Fresh agent session; Discover & Audit required; confirms census and sources for subsequent incremental slices.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; search total_count=87.
+    - Governing source: ADL-Governance (ACTIVE).
+    - Core platform: ADL-Nexus (RESEARCH, claim ≤1, v0.3.2, layers 0-8, local CLI, CI).
+    - Artifact graph: aegis-repo-graph (locked snapshot, RESEARCH).
+    - Latest prior sweep: Sweep-737 on sovereign-clean-room (ACTIVE, clean audit).
+    - Pass checker present; many historical YAMLs exist but recent sweeps may lack matching YAML.
+    - No fabrication.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-11-738.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Persistent pass record for reconstruction
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search total_count=87 confirmed
+    - API file reads confirmed
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history preserved, claims not elevated)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census at 87 repositories.
+    - ADL-Governance is constitution and pass persistence location.
+    - ADL-Nexus is local-first RESEARCH platform with claim ≤1.
+    - Recent activity is residual portfolio sweeps with no product mutations.
+  failures:
+    - None in this pass.
+  decisions:
+    - Persist this reconstruction as PASS-738 without elevating claims.
+    - Next action: deeper single-repo capability audit on ADL-Nexus or high-value residual.
+
+REMAINING:
+  incomplete:
+    - Full capability/dependency/authority graphs not materialized.
+    - Portfolio phases incomplete.
+  blockers:
+    - None.
+  new_gaps:
+    - YAML pass coverage for recent sweeps incomplete.
+
+NEXT:
+  objective_id: GAP-SINGLE-REPO-AUDIT-739
+  action: Select ADL-Nexus for detailed claimed-vs-implemented capability audit (layers, CLI, tests, adapters).
+  reason: Highest-value residual is verified inventory of the core platform rather than further census.
+  prerequisites:
+    - This pass persisted.
+    - API access.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___search_repositories total_count=87
+    - ADL-Governance SWEEP_HISTORY (Sweep-737), README
+    - ADL-Nexus README and tree
