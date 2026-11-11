@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-11-11-749
+  parent_pass: PASS-2026-11-11-748
+
+STATE:
+  global_status: DISCOVERY_IN_PROGRESS
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 16
+  capabilities_verified: 5
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-CLASSIFICATION-EXPANSION
+  description: Expand evidence-based classification draft to additional high-activity and governance-related repositories.
+  reason_selected: Next bounded residual from prior sweeps; builds graph model without claim elevation.
+
+DISCOVERY:
+  findings:
+    - Confirmed 87 public repositories via live search.
+    - Latest prior pass PASS-2026-11-11-748 reconfirmed SUPERSEDED status for new-program-1.01.
+    - ADL-Governance remains the ACTIVE governing constitution with extensive PASS history and check_passes.py tool.
+    - ADL-SEEM provides specialized constitution for SEEM lineage, pointing to sovereign-clean-room as canonical runtime.
+    - aegis-repo-graph maintains locked snapshot; drift to current inventory is a known gap.
+    - forge-aegis skill available for FLS Artifact Graph operations.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-11-749.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - pass-record-persistence
+    - classification-expansion
+
+VERIFICATION:
+  tests_run:
+    - not_run_this_pass (docs only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Incremental governance sweeps prioritize classification and history over code changes until residuals closed.
+    - Claim levels and lifecycle enforced via constitution; no elevation without evidence.
+  failures:
+    - None this pass.
+  decisions:
+    - Continue REUSE of existing PASS schema and additive history.
+    - Defer snapshot expansion and full matrix to subsequent passes or operator.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for remaining repositories.
+    - Dependency and capability graphs.
+    - Reconciliation of aegis-repo-graph lock with current 87-repo inventory.
+  blockers:
+    - Operator approval required for claim changes or archive actions.
+  new_gaps:
+    - Need for systematic capability status (CLAIMED/IMPLEMENTED/TESTED/VERIFIED/INTEGRATED) inventory.
+
+NEXT:
+  objective_id: GAP-NEXT-CLASSIFICATION-SLICE
+  action: Select and classify next 5-10 recently updated repositories with README and CI evidence, persist next PASS.
+  reason: Continues highest-value residual closure for ecosystem model.
+  prerequisites:
+    - This PASS persisted.
+    - No conflicting concurrent changes to governance docs.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live GitHub search total_count=87
+    - Prior PASS-748 and SWEEP_HISTORY contents
+    - READMEs of ADL-Governance, ADL-SEEM, aegis-repo-graph
