@@ -1,5 +1,30 @@
 # Operator Queue
 
+## Sweep-750: Classification Slice (Recent Repos)
+
+No destructive code actions proposed this cycle.
+
+Actions performed:
+- Selected and classified 5 recently updated repositories based on README and CI evidence.
+- ADL_Nexas2.0, ExoAxis-1, atomicdreamlabs1.1, ADL_NEXUS_COMMAND_CENTER, aegis-repo-graph all reconfirmed RESEARCH / claim ≤1.
+- Noted multiple app-builder-workspace experiments.
+- Persisted PASS-2026-11-11-750.yaml. Updated SWEEP_HISTORY.md and this file.
+- Claims not elevated. History additive. No changes to target code.
+
+Residuals / Manual interventions (escalate):
+- Complete full classification matrix for remaining repos.
+- Build dependency graph and capability inventory (CLAIMED/IMPLEMENTED/TESTED/VERIFIED/INTEGRATED).
+- Reconciliation plan for aegis-repo-graph lock vs current 87-repo inventory (operator-only expansion).
+- Merge pending PR for ADL_Nexas2.0 CI/LICENSE (from Sweep-745).
+- Confirm latest main CI green for sovereign-clean-room.
+- Security scanning and Dependabot review across portfolio.
+- Operator-only: Apply archived=true flags for SUPERSEDED candidates.
+- Inventory of app-builder workspaces relative to ADL-Nexus.
+
+Continue bounded incremental sweeps. Do not enter autonomous infinite review cycle.
+
+## Prior Sweep-748 content preserved below.
+
 ## Sweep-748: new-program-1.01 SUPERSEDED Reconfirm
 
 No destructive code actions proposed this cycle.
