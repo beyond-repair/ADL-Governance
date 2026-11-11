@@ -1,0 +1,84 @@
+PASS:
+  id: PASS-2026-11-11-750
+  parent_pass: PASS-2026-11-11-749
+
+STATE:
+  global_status: DISCOVERY_IN_PROGRESS
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 18
+  capabilities_verified: 5
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: GAP-NEXT-CLASSIFICATION-SLICE
+  description: Select and classify next 5 recently updated repositories with README and CI evidence.
+  reason_selected: Next bounded residual from PASS-749; expands ecosystem model without claim elevation.
+
+DISCOVERY:
+  findings:
+    - Confirmed 87 public repositories via live search (updated_at sorted).
+    - Selected slice: ADL_Nexas2.0, ExoAxis-1, atomicdreamlabs1.1, ADL_NEXUS_COMMAND_CENTER, aegis-repo-graph.
+    - ADL_Nexas2.0: Created 2026-11-11. RESEARCH, Claim ≤1. Grok App Builder workspace (Vite + TanStack Start + PGLite + Better Auth). No CI beyond Dependabot. Not verified Nexus integration.
+    - ExoAxis-1: RESEARCH, Claim ≤1. Open-science network-pharmacology framework. Docs-primary (README + LICENSE). Has docs-ci workflow. No executable pipeline or tests. Conceptual only.
+    - atomicdreamlabs1.1: RESEARCH (experimental web office). Claim-capped. JavaScript. Dependabot only. Distinct from Python ADL-Nexus kernel.
+    - ADL_NEXUS_COMMAND_CENTER: No root README. app-builder-workspace (similar stack to Nexas2.0). Dependabot only. Created 2026-11-04. RESEARCH / experimental.
+    - aegis-repo-graph: RESEARCH, Claim ≤1. Locked 72-repo Artifact Graph snapshot. Local checker and pytest. Drift to 87 known. Not live crawler or FLS compiler.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-11-750.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - classification-slice-expansion
+    - pass-record-persistence
+
+VERIFICATION:
+  tests_run:
+    - not_run_this_pass (docs only; no code changes to targets)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Multiple app-builder-workspace experiments (ADL_Nexas2.0, atomicdreamlabs1.1, ADL_NEXUS_COMMAND_CENTER) exist as RESEARCH under claim ≤1.
+    - ExoAxis-1 remains docs-capped research with docs-ci.
+    - aegis-repo-graph lock remains at 72; expansion operator-only.
+  failures:
+    - None this pass.
+  decisions:
+    - Continue additive classification without elevating claims or expanding locked graphs.
+    - Prefer REUSE of existing PASS schema.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for remaining repositories.
+    - Dependency and capability graphs.
+    - Reconciliation of aegis-repo-graph lock with current 87-repo inventory.
+  blockers:
+    - Operator approval required for claim changes, archive flags, or lock expansions.
+  new_gaps:
+    - Systematic inventory of app-builder workspaces and their relation to ADL-Nexus.
+
+NEXT:
+  objective_id: GAP-CONTINUE-CLASSIFICATION
+  action: Select and classify next 5-10 repositories (prefer ones without recent PASS classification), inspect README/CI/tests, persist next PASS.
+  reason: Continues highest-value residual closure for ecosystem model.
+  prerequisites:
+    - This PASS persisted.
+    - No conflicting concurrent changes to governance docs.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live GitHub search total_count=87
+    - README contents and workflows for selected repos
+    - Prior PASS-749
