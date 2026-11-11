@@ -1,3 +1,20 @@
+## Sweep-749 / PASS-2026-11-11-749 — Classification Expansion
+
+- Timestamp: 2026-11-11T22:10Z UTC.
+- SELECT: Continuation of highest-value residual (classification matrix expansion).
+- DISCOVER: Reconfirmed 87 public repos. Reviewed governing docs (ADL-Governance, ADL-SEEM) and locked graph (aegis-repo-graph). Prior Sweep-748 SUPERSEDED reconfirm noted.
+- AUDIT / VERIFY: Evidence-only; no new runtime tests or claim elevations. History additive.
+- CLASSIFY: Draft expansion initiated; full matrix remains residual.
+- PLAN: Persist new PASS YAML and this history entry. Docs only.
+- IMPLEMENT: Created docs/passes/PASS-2026-11-11-749.yaml. Updated this file.
+- TEST/CI: N/A (governance docs). Overall PASS.
+- DOCUMENT: This entry. Next action recorded.
+- GOVERN: Claim caps held. Prefer REUSE. Drift and full inventory residuals noted.
+- Residual: Full 87-repo classification matrix, dependency/capability graphs, lock reconciliation.
+- Exit: Bounded pass complete. Next: classify next slice of recent repos.
+
+## Prior Sweep-748 content preserved below.
+
 ## Sweep-748 / PASS-2026-11-11-748 — new-program-1.01 SUPERSEDED Reconfirm
 
 - Timestamp: 2026-11-11T22:00Z UTC (approx).
