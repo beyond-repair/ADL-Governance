@@ -1,5 +1,31 @@
 # Operator Queue
 
+## Sweep-746: Master Directive Bounded Sweep
+
+No destructive code actions proposed this cycle.
+
+Actions performed:
+- Confirmed 87 repositories via live search.
+- Mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce (CI, releases/tags, tests, docs, security advisories).
+- Partial classification based on evidence.
+- Updated PORTFOLIO_STATUS_REPORT.md, this file, SWEEP_HISTORY.md.
+- Claims not elevated beyond verified state. History additive.
+
+Residuals / Manual interventions (escalate):
+- Complete full classification (exactly one of ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED per repo for all 87).
+- Build complete dependency graph (internal/external, cycles, orphans, duplicates).
+- Full capability inventory (demonstrated vs planned) for all repos.
+- Gap analysis, redundancy detection, technology synergy, canonical architecture review, code review readiness.
+- Operator-only: Apply archived=true flags for SUPERSEDED candidates.
+- Create releases/tags for mature pillars when claim-capped readiness is met.
+- Confirm latest main CI green for sovereign-clean-room (recent PR failures noted).
+- Security scanning and Dependabot review across portfolio.
+- Merge pending PR for ADL_Nexas2.0 CI/LICENSE (from Sweep-745).
+
+Continue bounded incremental sweeps. Do not enter autonomous infinite review cycle.
+
+## Prior Sweep-745 content preserved below.
+
 ## Sweep-745: ADL_Nexas2.0 CI and LICENSE
 
 No destructive code actions proposed this cycle.
@@ -20,31 +46,4 @@ Continue bounded incremental sweeps.
 
 ## Prior Sweep-744 content preserved below.
 
-## Sweep-744: ADL_Nexas2.0 docs honesty
-
-No destructive code actions proposed this cycle.
-
-Actions:
-- Selected newest repo ADL_Nexas2.0 (created 2026-11-11, Vite/TanStack/PGLite app-builder workspace).
-- DISCOVER confirmed package.json, AGENTS.md, src/, no README.
-- CLASSIFY: RESEARCH (Grok App Builder experiment; claim ≤1).
-- Created README.md with governance banner (commit 3191d5c on ADL_Nexas2.0).
-- Updated SWEEP_HISTORY.md, this file, PORTFOLIO_STATUS_REPORT.md.
-- Claims not elevated. History preserved.
-
-Residuals / Manual interventions:
-- Complete full classification (exactly one of ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED per repo).
-- Build complete dependency graph (internal/external, cycles, orphans, duplicates).
-- Full capability inventory (demonstrated vs planned) for all repos.
-- Gap analysis, redundancy detection, technology synergy, canonical architecture review, code review readiness.
-- Operator-only: Apply archived=true flags for SUPERSEDED candidates (e.g., new-program-1.01).
-- Create releases/tags for mature pillars when ready.
-- Confirm latest main CI green for sovereign-clean-room.
-- Security scanning and Dependabot review across portfolio.
-- CI/workflows still absent on ADL_Nexas2.0.
-
-Continue bounded incremental sweeps. Do not enter autonomous infinite review cycle.
-
-## Prior Sweep-743 content preserved below.
-
-[Full prior content from Sweep-743 and earlier preserved in repository history.]
+[Full prior content from Sweep-744 and earlier preserved in repository history.]
