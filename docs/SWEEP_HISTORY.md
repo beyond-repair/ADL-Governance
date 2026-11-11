@@ -1,3 +1,20 @@
+## Sweep-747 / PASS-2026-11-11-747 — Classification Draft Initiation
+
+- Timestamp: 2026-11-11T21:08Z UTC.
+- SELECT: Highest-value residual from Sweep-746 (full classification matrix).
+- DISCOVER: Confirmed 87 repos. Key pillars and governance structure reviewed (READMEs, lifecycle policy, locked aegis-repo-graph snapshot).
+- AUDIT / VERIFY: Evidence-based only; no new CI runs. Claims held. History additive.
+- CLASSIFY: Draft initiation for high-activity (ADL-Governance ACTIVE, ADL-Nexus RESEARCH, forge-aegis RUNNABLE SKETCH). Remaining residual.
+- PLAN: Persist PASS YAML + history updates. No code changes to pillars. No snapshot expansion.
+- IMPLEMENT: Created docs/passes/PASS-2026-11-11-747.yaml. Updated this file and OPERATOR_QUEUE.md.
+- TEST/CI: Not applicable (docs only). Overall PASS.
+- DOCUMENT: This entry. Residuals and next action recorded.
+- GOVERN: Claim caps held. Prefer REUSE of PASS schema. Drift gap noted for later reconciliation.
+- Residual: Full matrix, dependency graph, capability inventory for 87. Pending ADL_Nexas2.0 PR. aegis-repo-graph lock vs current inventory drift.
+- Exit: Bounded pass complete. Next: expand classification draft to next 10 recent repos.
+
+## Prior Sweep-746 content preserved below.
+
 ## Sweep-746 / PASS-2026-11-11-746 — Master Directive Bounded Sweep
 
 - Timestamp: 2026-11-11T20:15Z UTC.
