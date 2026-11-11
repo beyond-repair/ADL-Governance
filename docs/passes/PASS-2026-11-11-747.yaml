@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-11-11-747
+  parent_pass: PASS-2026-11-11-746
+
+STATE:
+  global_status: DISCOVERY_IN_PROGRESS
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 5
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-CLASSIFICATION-MATRIX
+  description: Initiate evidence-based classification draft for high-activity repositories following Sweep-746 residuals.
+  reason_selected: Highest-value residual from prior sweep; full matrix required for graph construction; bounded to recent pillars and governance.
+
+DISCOVERY:
+  findings:
+    - Live search confirms 87 public repositories under user:beyond-repair.
+    - ADL-Governance is the governing source with PASS records, SWEEP_HISTORY, CLAIM_VALIDATION, LIFECYCLE policy.
+    - aegis-repo-graph holds locked 2026-09-04 snapshot of 72 repos + relationships; notes drift vs later searches of 83.
+    - Key pillars: ADL-Nexus (Python, local-first autonomous engineering platform, RESEARCH claim ≤1), forge-aegis (FLS ontology, RUNNABLE SKETCH), ADL_Nexas2.0 (recent JS, pending CI/LICENSE PR), BlockSwarm, Digital_Double_virtual_workforce, sovereign-clean-room.
+    - Lifecycle states defined: ACTIVE (CI required), RESEARCH (hypothesis-grade), FROZEN, SUPERSEDED, ARCHIVED.
+    - No fabricated verification; prior Sweep-746 verified CI green for selected pillars without elevating claims.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-11-747.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - pass-record-persistence
+    - classification-draft-initiation
+
+VERIFICATION:
+  tests_run:
+    - not_run_this_pass (no code changes to runtime)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem centered on ADL-Governance as constitution for claim levels 0-5 and lifecycle.
+    - Artifact Graph modeling via aegis-repo-graph and forge-aegis skill for FLS conformance.
+    - Incremental sweeps prefer documentation and classification over code changes until residuals closed.
+  failures:
+    - None this pass.
+  decisions:
+    - Continue bounded incremental classification; do not expand locked snapshots without operator approval.
+    - Prefer REUSE of existing PASS schema over new formats.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for all 87 repositories.
+    - Dependency graph construction.
+    - Capability inventory (CLAIMED/IMPLEMENTED/TESTED/VERIFIED/INTEGRATED).
+  blockers:
+    - None immediate; operator confirmation needed for any claim elevation or archive flags.
+  new_gaps:
+    - Drift between aegis-repo-graph locked catalog and current 87-repo inventory requires reconciliation plan.
+
+NEXT:
+  objective_id: GAP-CLASSIFICATION-DRAFT-EXPANSION
+  action: Expand classification draft to next 10 most-recently-updated repositories with evidence from READMEs and CI presence.
+  reason: Builds on this initiation; highest remaining residual for graph modeling.
+  prerequisites:
+    - This PASS persisted and history updated.
+    - No contradictory live changes to inventory.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live github___search_repositories total_count=87
+    - Readme contents from ADL-Governance and aegis-repo-graph
+    - SWEEP_HISTORY and OPERATOR_QUEUE from Sweep-746
