@@ -1,3 +1,18 @@
+## Sweep-740 / BASILISK Capability Audit — ADL-Nexus
+
+- Timestamp: 2026-11-11T17:10Z UTC.
+- SELECT: Continuation of ADL-BASILISK recursive directive; next from PASS-738.
+- DISCOVER: ADL-Nexus structure confirmed (layers 0-8 dirs, core CLI/kernel/pathways, 13 test files). Version 0.3.2. RESEARCH claim ≤1.
+- AUDIT: Capabilities classified CLAIMED|IMPLEMENTED|TESTED (partial). Live adapters UNSUPPORTED as stated. No claim elevation.
+- CLASSIFY: RESEARCH platform inventory updated in pass record. No lifecycle change.
+- PLAN/IMPLEMENT: Persisted PASS-2026-11-11-740.yaml. No product code changes.
+- TEST/CI: Structure verification via API only. Historical CI noted but not re-executed.
+- DOCUMENT: This entry + new pass YAML.
+- GOVERN: Invariants preserved. Docs ≠ full verification.
+- Residual: Runtime verification of tests/CLI; graph materialization; residual portfolio sweeps.
+
+## Prior Sweep-739 content preserved below.
+
 ## Sweep-739 / Randomized Portfolio Completion — new-program-1.01
 
 - Timestamp: 2026-11-11T17:01Z UTC.
