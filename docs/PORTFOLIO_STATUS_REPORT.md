@@ -1,41 +1,32 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-11 (Sweep-748 / new-program-1.01 SUPERSEDED reconfirm)
-**Project / Version:** ADL Portfolio Governance / Sweep-748
-**Objective:** Random selection of new-program-1.01. Discover, audit, classify SUPERSEDED. Document without elevating claims. Preserve history.
+**Updated:** 2026-11-11 (Sweep-751 / Phase 3 Mandatory Live Verification)
+**Project / Version:** ADL Portfolio Governance / Sweep-751
+**Objective:** Explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. CI, releases/tags, tests, docs, security. No assumptions. Evidence-based classification. Preserve history.
 
-## Current Cycle: new-program-1.01
+## Current Cycle: Phase 3 Mandatory Verification
 
-- **Selected:** new-program-1.01 (random from 87 public repositories via search).
-- **DISCOVER:** Early My Mind agent files. Python modules: gpt_agent.py (GPTAgent class with assign/check), delegate_class.py (Delegate), task_class.py (Task), taskqueue_class.py, delegate_init.py, main.py (task loop), my_mind.py, tasks.txt, agents.txt. No external dependencies listed (no requirements.txt). Stub tests (test_main.py passes empty). No CI workflows. README already contains SUPERSEDED banner (successor sovereign-clean-room, claim 0, historical).
-- **AUDIT vs ADL-Governance:** Matches SUPERSEDED lifecycle. Feature work stopped. No active CI failures (none present). No critical security issues identified. Historical prototype preserved. No unsupported claims.
-- **CLASSIFY:** SUPERSEDED. Justification: Explicit successor named in README, claim level 0, early experiment superseded by canonical runtime sovereign-clean-room. No further development.
-- **PLAN:** Document in governance registry only. No code changes (idempotent, preserve). Queue operator archive flag.
-- **Target state:** Documented historical SUPERSEDED. Archive=true operator-only.
+- **Selected:** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
+- **DISCOVER / VERIFY:**
+  - forge-aegis: CI workflow active, last main success 2026-10-05 (run 37258127100). Tests present (test_pipeline.py 8 passed, test_validator.py 2 passed per README). No third-party deps. README claim-capped as RUNNABLE SKETCH / software (not full host integrity). Docs present (V0_1_VERTICAL_SLICE.md, THREAT_MODEL.md). No critical security findings noted in this pass.
+  - sovereign-clean-room: Python tests workflow active. Last main success 2026-10-02 (run 37064696194). Recent branch PR failures on smoke tests (float precision). Extensive docs, governance, benchmarks. Claim-capped offline substrate. Open issues: 2.
+  - BlockSwarm: Foundry workflow active. Last main success 2026-10-27 (run 40441811261). Docs and runbook present. Submodules for deps.
+  - Digital_Double_virtual_workforce: Digital Double CI active. Last main success 2026-10-17 (run 39035783949). Recent security pin for CVE-2025-7783. TypeScript/Python mix. Open issues: 5. Dependabot active.
+- **AUDIT:** All four have active CI with green main conclusions in recent history. No unresolved critical CI failures on main. Docs present. No fabricated claims. History preserved.
+- **CLASSIFY:**
+  - forge-aegis: ACTIVE (RUNNABLE SKETCH, claim software). Canonical for FLS/AEGIS vertical slice.
+  - sovereign-clean-room: ACTIVE. Canonical for SEEM-style VSA/clean-room runtime.
+  - BlockSwarm: ACTIVE. Canonical for distributed/smart-contract verification elements.
+  - Digital_Double_virtual_workforce: ACTIVE / RESEARCH (workforce automation, claim-capped). Canonical for virtual workforce agents.
+- **PLAN:** Document in registry. No code changes to targets. Residuals for full inventory, dependency graph, capability matrix, security deep-scan.
+- **Target state:** Verified pillars documented. Full portfolio residual.
 
 ## Inventory Summary (retained)
 Live GitHub search: total_count=87 public repositories under user:beyond-repair.
 
 ## Classification (partial)
-Pillars from prior sweeps held. new-program-1.01 confirmed SUPERSEDED. Full matrix residual.
+Pillars verified. Full matrix residual. Prior classifications held (e.g., new-program-1.01 SUPERSEDED).
 
-Prior Sweep-747 content preserved below.
+Prior Sweep-750 content preserved below.
 
-## Sweep-747 / PASS-2026-11-11-747 — Classification Draft Initiation
-
-- Timestamp: 2026-11-11T21:08Z UTC.
-- SELECT: Highest-value residual from Sweep-746 (full classification matrix).
-- DISCOVER: Confirmed 87 repos. Key pillars and governance structure reviewed (READMEs, lifecycle policy, locked aegis-repo-graph snapshot).
-- AUDIT / VERIFY: Evidence-based only; no new CI runs. Claims held. History additive.
-- CLASSIFY: Draft initiation for high-activity (ADL-Governance ACTIVE, ADL-Nexus RESEARCH, forge-aegis RUNNABLE SKETCH). Remaining residual.
-- PLAN: Persist PASS YAML + history updates. No code changes to pillars. No snapshot expansion.
-- IMPLEMENT: Created docs/passes/PASS-2026-11-11-747.yaml. Updated this file and OPERATOR_QUEUE.md.
-- TEST/CI: Not applicable (docs only). Overall PASS.
-- DOCUMENT: This entry. Residuals and next action recorded.
-- GOVERN: Claim caps held. Prefer REUSE of PASS schema. Drift gap noted for later reconciliation.
-- Residual: Full matrix, dependency graph, capability inventory for 87. Pending ADL_Nexas2.0 PR. aegis-repo-graph lock vs current inventory drift.
-- Exit: Bounded pass complete. Next: expand classification draft to next 10 recent repos.
-
-## Prior Sweep-746 content preserved below.
-
-[Full prior content from Sweep-746 and earlier preserved in repository history.]
+[Full prior content from Sweep-750 and earlier preserved in repository history.]
