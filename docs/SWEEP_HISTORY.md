@@ -1,3 +1,20 @@
+## Sweep-750 / PASS-2026-11-11-750 — Classification Slice (Recent Repos)
+
+- Timestamp: 2026-11-11T23:09Z UTC.
+- SELECT: Next bounded slice from PASS-749 residual (recently updated repos).
+- DISCOVER: Confirmed 87 public repos. Inspected README/CI for ADL_Nexas2.0 (RESEARCH ≤1, app-builder, Dependabot only), ExoAxis-1 (RESEARCH ≤1, docs-primary + docs-ci), atomicdreamlabs1.1 (RESEARCH web office, Dependabot), ADL_NEXUS_COMMAND_CENTER (app-builder, no README, Dependabot), aegis-repo-graph (RESEARCH ≤1, locked 72-snapshot).
+- AUDIT / VERIFY: Evidence-only; no new runtime tests or claim elevations. History additive.
+- CLASSIFY: All selected remain RESEARCH / claim-capped. No promotions.
+- PLAN: Persist new PASS YAML and this history entry. Docs only.
+- IMPLEMENT: Created docs/passes/PASS-2026-11-11-750.yaml. Updated this file and OPERATOR_QUEUE.md.
+- TEST/CI: N/A (governance docs). Overall PASS.
+- DOCUMENT: This entry. Next action recorded.
+- GOVERN: Claim caps held. Prefer REUSE. Drift and full inventory residuals noted.
+- Residual: Full 87-repo classification matrix, dependency/capability graphs, lock reconciliation, app-builder inventory.
+- Exit: Bounded pass complete. Next: classify next slice of remaining repos.
+
+## Prior Sweep-749 content preserved below.
+
 ## Sweep-749 / PASS-2026-11-11-749 — Classification Expansion
 
 - Timestamp: 2026-11-11T22:10Z UTC.
