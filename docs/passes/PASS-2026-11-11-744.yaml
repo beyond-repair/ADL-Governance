@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-11-11-744
+  parent_pass: Sweep-743
+
+STATE:
+  global_status: RESEARCH-heavy portfolio under active governance; incremental sweeps ongoing
+  repositories_scanned: 87
+  repositories_changed: 2
+  capabilities_known: partial
+  capabilities_verified: claim-capped subsets
+  gaps_remaining: many
+
+OBJECTIVE:
+  id: GAP-DOC-ADL_Nexas2.0-README
+  description: Add minimal honest README.md to ADL_Nexas2.0 classifying RESEARCH / claim≤1
+  reason_selected: Newest repo lacked README; docs honesty is core invariant
+
+DISCOVERY:
+  findings:
+    - Portfolio total_count=87 confirmed
+    - ADL_Nexas2.0 is Vite/TanStack/PGLite Grok App Builder workspace with AGENTS.md, no prior README
+    - Fits RESEARCH pattern
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL_Nexas2.0
+    - beyond-repair/ADL-Governance
+  files:
+    - ADL_Nexas2.0/README.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+    - docs/PORTFOLIO_STATUS_REPORT.md
+    - docs/passes/PASS-2026-11-11-744.yaml
+  commits:
+    - 3191d5c (README)
+    - bd71423 (SWEEP_HISTORY)
+    - 79b7162 (OPERATOR_QUEUE)
+    - f185df6 (PORTFOLIO_STATUS_REPORT)
+  capabilities_added_or_changed:
+    - Documentation honesty for ADL_Nexas2.0
+
+VERIFICATION:
+  tests_run:
+    - NOT_RUN
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Inventory stable
+    - ADL_Nexas2.0 RESEARCH classification appropriate
+  failures: []
+  decisions:
+    - Classify RESEARCH; prefer governance reuse
+
+REMAINING:
+  incomplete:
+    - Full classification matrix
+    - Dependency graph
+    - Capability inventory
+  blockers: []
+  new_gaps:
+    - CI on ADL_Nexas2.0
+
+NEXT:
+  objective_id: GAP-CLASSIFY-NEXT-RECENT
+  action: Select next recently updated repo, DISCOVER, classify exactly one lifecycle state
+  reason: Continues classification residual
+  prerequisites:
+    - This pass persisted
+
+PROVENANCE:
+  state_commit: f185df67cb68aa6d65fa9f7af85594cb3feaad67
+  evidence:
+    - GitHub search total_count=87
+    - File contents package.json + AGENTS.md
+    - Commits listed above
