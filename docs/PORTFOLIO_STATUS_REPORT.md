@@ -1,10 +1,18 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-11 (Sweep-742 / Portfolio Governance & Completion Sweep)
-**Project / Version:** ADL Portfolio Governance / Sweep-742
-**Objective:** Full portfolio discovery, classification prep, mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Preserve claim integrity. No history rewrite. No fabrication.
+**Updated:** 2026-11-11 (Sweep-743 / Randomized Portfolio Completion Sweep)
+**Project / Version:** ADL Portfolio Governance / Sweep-743
+**Objective:** Random selection of new-program-1.01; DISCOVER/AUDIT/CLASSIFY confirmation. Preserve claim integrity. No history rewrite. No fabrication.
 
-## Inventory Summary (Phase 1)
+## Current Cycle: new-program-1.01
+
+- **Selected:** new-program-1.01 (random, seed-controlled for session)
+- **DISCOVER:** Tree: main.py, delegate_*.py, task_*.py, agents.txt, tasks.txt, minimal test_main.py (pass stub), README.md (status banner only). No CI workflows. Language: Python. Last push: 2026-10-01.
+- **AUDIT vs ADL-Governance:** Matches prior classification. Early My Mind agent task-delegation sketch. No substantive tests. No CI. Docs: honest SUPERSEDED banner present.
+- **CLASSIFY:** SUPERSEDED (successor: sovereign-clean-room; Claim 0 historical). Confirmed. No feature work to start here.
+- **Target state:** Achieved for classification and documentation honesty. Operator archive flag remains residual.
+
+## Inventory Summary (retained from Sweep-742)
 
 Live GitHub search: total_count=87 public repositories under user:beyond-repair.
 All inventoried via search_repositories. No private repos in scope for this sweep.
@@ -20,17 +28,16 @@ Canonical domains observed (preliminary):
 
 Full per-repo details (branches, releases, CI, tests, docs, security, deps) not exhaustively collected for all 87 due to scale; residuals recorded.
 
-## Classification (Phase 2) — Preliminary
+## Classification (Phase 2) — Updated
 
-Based on prior sweeps and live data:
 - ACTIVE candidates: sovereign-clean-room (CI present, docs extensive), BlockSwarm (CI green), Digital_Double_virtual_workforce (CI green), ADL-Governance, ADL-Nexus (partial)
 - RESEARCH: forge-aegis (FLS specs + runnable slice, claim-capped), many physics/math experiments
-- SUPERSEDED: new-program-1.01 (prior confirmed), others with explicit successors
+- SUPERSEDED: new-program-1.01 (re-confirmed Sweep-743), others with explicit successors
 - ARCHIVED: candidates pending operator flag
 
 Exact one-per-repo assignment incomplete; residual.
 
-## Mandatory Live Verification (Phase 3)
+## Mandatory Live Verification (retained)
 
 ### forge-aegis
 - Branches: main, finish/forge-aegis-v0.1-runnable, repair/docs-python3-venv, repair/v0.1-installable-slice
@@ -78,7 +85,7 @@ Preliminary: forge-aegis → Agent Infrastructure / FLS; sovereign-clean-room �
 
 ## Exit Criteria Status
 
-Failed: No full classification, incomplete dependency map, incomplete demonstrated/planned distinction for all, residual critical items.
-Recorded residuals. Stop. Do not loop.
+For new-program-1.01: SUPERSEDED confirmed; target state met (docs honest, no undefined components requiring action, no CI, no unsupported claims). Residuals: operator archive flag.
+Portfolio-wide: Failed full exit; residuals recorded. Stop. Do not loop.
 
-Prior content from Sweep-739 and earlier preserved in history.
+Prior content from Sweep-742 and earlier preserved in history.
