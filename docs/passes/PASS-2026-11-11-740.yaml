@@ -1,0 +1,81 @@
+PASS:
+  id: PASS-2026-11-11-740
+  parent_pass: PASS-2026-11-11-738
+
+STATE:
+  global_status: AUDITED_CORE_PLATFORM
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 9
+  capabilities_verified: 2
+  gaps_remaining: 14
+
+OBJECTIVE:
+  id: GAP-SINGLE-REPO-AUDIT-739
+  description: Detailed claimed-vs-implemented capability audit of ADL-Nexus (layers 0-8, CLI, tests, adapters).
+  reason_selected: Next action from PASS-738; highest-value residual is verified inventory of the core RESEARCH platform without claim elevation.
+
+DISCOVERY:
+  findings:
+    - ADL-Nexus version 0.3.2 confirmed in pyproject.toml and core/version.py.
+    - Layers 0-8 directories present; core/ contains kernel.py, nexus.py (CLI), pathways.py, objective.py.
+    - Tests directory has 13 files covering adapters, governance, pathways, workforce, integrity, etc.
+    - README claims code present for all layers, local CLI (run.py / nexus), 49 tests, stdlib-only, historical CI green (run 36847729267).
+    - Live adapters UNSUPPORTED; stubs only. Lifecycle RESEARCH, claim ≤1 enforced.
+    - No fabrication of test results.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-11-740.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Capability inventory for ADL-Nexus layers documented
+
+VERIFICATION:
+  tests_run:
+    - API file listings and content reads for structure, README, pyproject, version, tests list, CLAIM_VALIDATION
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claims not elevated, history preserved, docs ≠ implementation noted)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus has implemented code structure for layers 0-8 and core CLI/pathways (IMPLEMENTED).
+    - Test files exist (TESTED status partial; historical CI green not re-run here).
+    - Live interop UNSUPPORTED as claimed.
+  failures:
+    - None in this pass. Full local test execution not performed (sandbox limitation).
+  decisions:
+    - Classify capabilities as CLAIMED (README), IMPLEMENTED (dirs/code), TESTED (files + prior CI), not VERIFIED or INTEGRATED for live adapters.
+    - No claim elevation.
+
+REMAINING:
+  incomplete:
+    - Full local verification of tests and CLI runtime.
+    - Materialized capability/dependency graphs.
+    - Portfolio residual sweeps.
+  blockers:
+    - None for this slice.
+  new_gaps:
+    - Runtime verification of ADL-Nexus pathways under local execution.
+
+NEXT:
+  objective_id: GAP-RUNTIME-VERIFY-741
+  action: Clone and execute local tests/CLI for ADL-Nexus to elevate tested capabilities to verified where possible.
+  reason: Builds on inventory; closes verification gap for core platform.
+  prerequisites:
+    - This pass persisted.
+    - Ability to run Python in environment.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___get_file_contents on ADL-Nexus README, pyproject.toml, core/, tests/
+    - github___search_repositories total_count=87
+    - Prior PASS-738 and SWEEP_HISTORY
