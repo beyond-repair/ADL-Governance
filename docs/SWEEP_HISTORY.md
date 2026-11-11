@@ -1,3 +1,18 @@
+## Sweep-741 / BASILISK Runtime Verify — ADL-Nexus
+
+- Timestamp: 2026-11-11T18:10Z UTC.
+- SELECT: Continuation of ADL-BASILISK recursive directive; next from PASS-740.
+- DISCOVER: Cloned ADL-Nexus; confirmed v0.3.2, layers 0-8, 13 test files, stdlib-only.
+- AUDIT: Executed local pytest: 49 passed. CLI run.py --help and version check successful.
+- CLASSIFY: Core local capabilities elevated to VERIFIED. RESEARCH claim ≤1 preserved. Live adapters remain UNSUPPORTED.
+- PLAN/IMPLEMENT: Persisted PASS-2026-11-11-741.yaml. No product code changes.
+- TEST/CI: Deterministic local execution PASS (49 tests).
+- DOCUMENT: This entry + new pass YAML.
+- GOVERN: Invariants preserved. No claim elevation. Docs ≠ full ecosystem verification.
+- Residual: Graph materialization; residual portfolio sweeps.
+
+## Prior Sweep-740 content preserved below.
+
 ## Sweep-740 / BASILISK Capability Audit — ADL-Nexus
 
 - Timestamp: 2026-11-11T17:10Z UTC.

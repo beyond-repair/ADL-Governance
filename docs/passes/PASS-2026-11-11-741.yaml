@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-11-11-741
+  parent_pass: PASS-2026-11-11-740
+
+STATE:
+  global_status: CORE_PLATFORM_VERIFIED_LOCAL
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 9
+  capabilities_verified: 5
+  gaps_remaining: 13
+
+OBJECTIVE:
+  id: GAP-RUNTIME-VERIFY-741
+  description: Clone and execute local tests/CLI for ADL-Nexus to elevate tested capabilities to verified where possible.
+  reason_selected: Next action from PASS-740; highest-value residual is verified inventory of the core RESEARCH platform without claim elevation.
+
+DISCOVERY:
+  findings:
+    - Cloned ADL-Nexus to sandbox; version 0.3.2 confirmed.
+    - pytest installed; 49 tests passed in 0.39s.
+    - CLI run.py --help successful; core.version reports 0.3.2.
+    - Layers 0-8, core, tests, adapters present as previously inventoried.
+    - Stdlib-only dependencies confirmed; no external runtime failures.
+    - Live adapters remain UNSUPPORTED (stubs).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-11-741.yaml (new)
+    - docs/SWEEP_HISTORY.md (prepend)
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Local test suite VERIFIED (49 passed)
+    - CLI entry VERIFIED
+
+VERIFICATION:
+  tests_run:
+    - python3 -m pytest -q: 49 passed
+    - python3 run.py --help: success
+    - core.version: 0.3.2
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claims not elevated, history preserved, docs ≠ implementation for live interop)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Nexus local core (CLI, pathways, tests) is VERIFIED functional on clean clone.
+    - 49 tests pass; matches historical claim.
+    - Research platform remains claim ≤1; no product promotion.
+  failures:
+    - None. Full portfolio graphs still pending.
+  decisions:
+    - Elevate core local capabilities to VERIFIED based on deterministic execution.
+    - No claim elevation beyond RESEARCH.
+
+REMAINING:
+  incomplete:
+    - Materialized capability/dependency graphs.
+    - Portfolio residual sweeps for other repos.
+    - Live adapter verification (unsupported).
+  blockers:
+    - None for this slice.
+  new_gaps:
+    - None significant.
+
+NEXT:
+  objective_id: GAP-GRAPH-MATERIALIZE-742
+  action: Materialize a minimal capability and dependency graph from verified ADL-Nexus inventory and aegis-repo-graph snapshot.
+  reason: Builds on verified core; progresses global model without new code.
+  prerequisites:
+    - This pass persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Local clone + pytest 49 passed
+    - CLI --help and version check
+    - Prior PASS-740
