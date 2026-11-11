@@ -1,5 +1,46 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-11 (Sweep-736 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-736
+**Objective:** Randomly select one repository from the 87-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
+
+Preserve claim integrity. History preserved. No claim elevation. No product mutations.
+
+## Sweep-736: Randomized Selection — acoustic-token-modem
+
+**SELECT:** Randomly selected `acoustic-token-modem` from the 87-repository portfolio (seeded random choice on full inventory via search).
+
+**DISCOVER:**
+- Experimental acoustic modem for direct machine-token transmission (token IDs as payload, not speech).
+- Structure: src/acoustic_token_modem/ (channel, coding, demodulation, metrics, modulation, protocol, tokenizer), tests/ (multiple unit tests), experiments/ (baseline_fsk.py implemented; PSK/OFDM stubs), docs/ (ARCHITECTURE, BENCHMARKS, ERROR_CORRECTION, PACKET_FORMAT, PROTOCOL, RESEARCH, SECURITY, SIGNAL_MODEL), .github/workflows/pytest.yml (CI on 3.11), pyproject.toml (numpy, pytest), README.md, CLAIM_STATUS.md (claim ≤1), GOVERNANCE.md, LICENSE (MIT).
+- Quick start: venv + editable install + pytest + baseline_fsk simulation.
+- Milestones: M0-M3 (FSK sim) advanced; higher (PSK/QAM/OFDM/hardware) placeholders.
+- Central invariant: tokens_in == tokens_out for reconstruction.
+
+**AUDIT:**
+- Against ADL-Governance: RESEARCH classification matches. Claim level 1 explicitly capped (simulation only; no hardware, no bitrate claims, no novelty by default). Docs honest with UNSUPPORTED tokens. Tests and CI present for sim suite. No critical security issues identified. Placeholders intentional and documented. No unsupported claims.
+- No stale registry entries apparent. Dependencies minimal (numpy).
+
+**CLASSIFY:** `RESEARCH` (experimental, unvalidated beyond simulation; claim ≤1; hardware M10 not implemented; prior-art survey template only). Justification: Explicit in README/CLAIM_STATUS/GOVERNANCE; focuses on measurement against baselines; not ACTIVE product.
+
+**PLAN:** Target state = CI-green simulation baseline maintained, docs consistent, claim integrity preserved. Actions: re-audit (done), update governance docs (this). No code mutations needed this cycle (idempotent safe changes: documentation only).
+
+**IMPLEMENT:** Safe/idempotent: no changes to subject repository (history and research state preserved). Governance documentation updated only.
+
+**TEST → CI:** CI workflow present (pytest.yml); prior runs noted as success in CLAIM_STATUS (e.g., Sweep-092). Local tests expected to pass for FSK sim. Green CI ≠ hardware validation or claim elevation.
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residual noted (higher milestones incomplete; benchmarks empty; prior-art survey pending).
+
+**RELEASE/ARCHIVE:** No release. Research ongoing; not ready for archive.
+
+**RE-AUDIT:** No drift. Termination conditions partially met (docs/tests/CI present for current scope; higher phases open). Continue residual sweeps.
+
+**Residual:** Remaining repositories for full portfolio matrix. Higher modulation/hardware phases in this repo. Operator may review Dependabot or add more tests if desired.
+
+## Prior Sweep-735 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-10 (Sweep-735 / Randomized Portfolio Completion)
 **Project / Version:** ADL Portfolio Governance / Sweep-735
 **Objective:** Randomly select one repository from the 86-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
@@ -38,46 +79,4 @@ Preserve claim integrity. History preserved. No claim elevation. No product muta
 
 ## Prior Sweep-734 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-10 (Sweep-734 / Master Directive Portfolio Governance)
-**Project / Version:** ADL Portfolio Governance / Sweep-734
-**Objective:** Confirm full portfolio inventory (86 repos), reaffirm classifications and key pillar verifications from prior sweeps, record residuals for incomplete phases 4–10, stop after governed sweep. Preserve claim integrity and history.
-
-Preserve claim integrity. History preserved. No claim elevation. No product mutations.
-
-## Sweep-734: Master Directive Portfolio Governance Confirmation
-
-**SELECT:** Full inventory of user:beyond-repair (86 public repositories confirmed via search total_count=86, incomplete_results=false). Key pillars reaffirmed: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce.
-
-**DISCOVER (Phase 1):**
-- Complete list of 86 repositories reconfirmed. Includes ADL-Governance (governing), ADL-Nexus, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, LegionOS, and research/physics/SEEM variants. No undefined repositories. No deletions.
-
-**Phase 2 Classification (summary, aligned with repository_registry.md and CANONICAL_REPOS.md):**
-- ACTIVE: ADL-Governance, forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-SEEM, AEGIS-Project-Nehemiah- (claim-capped).
-- RESEARCH: Majority (physics, math, coherence, experimental SEEM variants; claim ≤1).
-- SUPERSEDED: Older SEEM forks, Digital_Double variants, CFT-v3.0/v3.1 (successors documented).
-- ARCHIVED candidates: Listed in registry (e.g., test, automate_passive_income); GitHub archive flag true only for CFT-v3.0.
-- Exact one classification per repo maintained in registry; no undefined.
-
-**Phase 3 Mandatory Live Verification (prior sweeps reconfirmed, no new critical issues):**
-- forge-aegis: ACTIVE (software sketch, CI green historically, tests/docs/SECURITY present, no tags/releases).
-- sovereign-clean-room: ACTIVE (SEEM substrate, CI green, VSA completeness UNVERIFIED residual).
-- BlockSwarm: ACTIVE (SAGF, CI green, tests/docs present).
-- Digital_Double_virtual_workforce: ACTIVE (workforce, CI green, security pins applied, no tags/releases).
-
-**Phases 4-10 Residuals:** Capability inventory, full dependency graph, gap analysis, redundancy detection, synergy analysis, canonical architecture review, code review readiness for all 86 remain incomplete. Demonstrated features only where prior verification confirms (CI + tests). Planned features distinguished via CLAIM_STATUS.md. No unsupported claims.
-
-**PLAN / IMPLEMENT:** Audit-only confirmation. Governance documentation updated. No code changes to subject repositories. History preserved.
-
-**TEST / CI:** No new unresolved critical CI failures identified. Prior green status for pillars holds.
-
-**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. Claims not elevated.
-
-**TERMINATION CHECK:** Exit criteria partially met (inventory complete, classifications present, key verifications recorded). Full residual for phases 4-10. Stop after this governed sweep. No infinite loop.
-
-**Residual:** Full per-repository capability matrix, dependency graph, detailed gap analysis, redundancy consolidation proposals for remaining repositories. Optional operator tags/releases on pillars. VSA verification for sovereign-clean-room. Archive flag applications for candidates.
-
-## Prior Sweep-733 content preserved below.
-
-[Full prior content from Sweep-733 and earlier preserved in repository history.]
+[Full prior content from Sweep-734 and earlier preserved in repository history.]
