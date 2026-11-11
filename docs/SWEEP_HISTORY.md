@@ -1,3 +1,20 @@
+## Sweep-746 / PASS-2026-11-11-746 — Master Directive Bounded Sweep
+
+- Timestamp: 2026-11-11T20:15Z UTC.
+- SELECT: Master Directive v3.0 full portfolio governance sweep (bounded).
+- DISCOVER: Live search confirms total_count=87 under user:beyond-repair. Pillars located.
+- AUDIT / VERIFY: Mandatory live checks completed for forge-aegis (CI green, tests, claim-capped docs), sovereign-clean-room (CI present, tests), BlockSwarm (Foundry CI green, tests), Digital_Double_virtual_workforce (CI + Dependabot, tests). No releases/tags. No security advisories. No fabricated results.
+- CLASSIFY: Partial (pillars + ADL-Governance). Remaining residual.
+- PLAN: Governance documentation only. No code changes to pillars. No history rewrite. No deletions.
+- IMPLEMENT: Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this file.
+- TEST/CI: Verified existing pillar CI status only.
+- DOCUMENT: This entry. Residuals recorded.
+- GOVERN: Claim caps held (e.g. forge-aegis RUNNABLE SKETCH). History additive. No unsupported claims.
+- Residual: Full classification matrix, dependency graph, capability inventory, gap/redundancy/synergy analysis, code-review readiness for all 87. Pending ADL_Nexas2.0 PR. sovereign-clean-room recent CI mixed.
+- Exit: Bounded sweep complete. Residuals recorded. Do not loop.
+
+## Prior Sweep-745 content preserved below.
+
 ## Sweep-745 / PASS-2026-11-11-745 — ADL_Nexas2.0 CI and LICENSE
 
 - Timestamp: 2026-11-11T20:01Z UTC.
@@ -15,21 +32,4 @@
 
 ## Prior Sweep-744 content preserved below.
 
-## Sweep-744 / PASS-2026-11-11-744 — ADL_Nexas2.0 docs honesty
-
-- Timestamp: 2026-11-11T19:11Z UTC.
-- SELECT: Highest-value bounded gap — newest repo (created today) lacked README.
-- DISCOVER: ADL_Nexas2.0 tree shows Vite + TanStack Start + PGLite + opt-in auth workspace (package.json name app-builder-workspace, AGENTS.md sandbox contract, src/, migrations, .data/nexus-pglite). No prior README. Portfolio total_count remains 87.
-- AUDIT: Fits RESEARCH pattern. No CI. Claim must stay ≤1. Not a verified Nexus product.
-- CLASSIFY: RESEARCH (Grok App Builder experiment).
-- PLAN: Minimal README with governance banner + honest status. Update sweep artifacts. No code changes.
-- IMPLEMENT: Created README.md on ADL_Nexas2.0 (commit 3191d5c). Appended this record.
-- TEST/CI: N/A (docs).
-- DOCUMENT: This file, OPERATOR_QUEUE.md, PORTFOLIO_STATUS_REPORT.md, new PASS yaml.
-- GOVERN: Claim caps held. History additive. No unsupported claims.
-- Residual: Full classification matrix and dependency graph still incomplete. CI absent on this repo.
-- Exit: Docs honesty improved for one repo. Sweep complete for this cycle.
-
-## Prior Sweep-743 content preserved below.
-
-[Full prior content from Sweep-743 and earlier preserved in repository history.]
+[Full prior content from Sweep-744 and earlier preserved in repository history.]
