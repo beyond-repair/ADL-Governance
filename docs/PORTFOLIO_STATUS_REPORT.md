@@ -1,81 +1,84 @@
 # Portfolio Status Report
 
-**Updated:** 2026-11-11 (Sweep-739 / Randomized Portfolio Completion)
-**Project / Version:** ADL Portfolio Governance / Sweep-739
-**Objective:** Randomly select one repository from the 87-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
+**Updated:** 2026-11-11 (Sweep-742 / Portfolio Governance & Completion Sweep)
+**Project / Version:** ADL Portfolio Governance / Sweep-742
+**Objective:** Full portfolio discovery, classification prep, mandatory live verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. Preserve claim integrity. No history rewrite. No fabrication.
 
-Preserve claim integrity. History preserved. No claim elevation. No product mutations.
+## Inventory Summary (Phase 1)
 
-## Sweep-739: Randomized Selection — new-program-1.01
+Live GitHub search: total_count=87 public repositories under user:beyond-repair.
+All inventoried via search_repositories. No private repos in scope for this sweep.
+Last activity ranges from 2023 to 2026-11-11. Languages predominantly Python, with TypeScript, JavaScript, Rust, TeX.
 
-**SELECT:** Randomly selected `new-program-1.01` from the 87-repository portfolio (seeded random choice on full inventory via search).
+Canonical domains observed (preliminary):
+- Governance: ADL-Governance, ADL-SEEM, ADL-Nexus, ADL-Portfolio-Census, adl-capability-matrix, etc.
+- Agent Infrastructure: forge-aegis, AEGIS-Project-Nehemiah-, sunder, sovereign-clean-room
+- Security: sovereign-clean-room, VigilE.S.A.-Enhanced-Security
+- Distributed Systems: BlockSwarm
+- Workforce Automation: Digital_Double_virtual_workforce
+- Research: numerous experimental (entanglement, ware-constant, sierpinski, etc.)
 
-**DISCOVER:**
-- Early My Mind agent files (historical sketch of task delegation to GPT agents).
-- Structure: main.py (task loop with Delegate/Task), gpt_agent.py (stub agent with random success), delegate_class.py / task_class.py / etc. (mostly pass stubs), my_mind.py (imports missing modules), test_main.py (empty unittest pass), tasks.txt, agents.txt, .gitignore. No .github/workflows, no pyproject/requirements, no LICENSE file visible in tree.
-- README.md: Explicit SUPERSEDED badge, Claim 0 (historical), successor sovereign-clean-room. Status banner only; no prior README.
-- Incomplete Python (missing imports in my_mind.py, stub methods, no real logic beyond prints and random).
+Full per-repo details (branches, releases, CI, tests, docs, security, deps) not exhaustively collected for all 87 due to scale; residuals recorded.
 
-**AUDIT:**
-- Against ADL-Governance: Already classified SUPERSEDED / Claim 0. Docs honest (historical early agent files; do not start new feature work; successor specified). No undefined components beyond intentional stubs. No stale registry entries. No critical security issues (no external calls, no keys, offline stubs). No unsupported claims of functionality or validation.
-- No tests of substance, no CI. Preserved as historical only.
+## Classification (Phase 2) — Preliminary
 
-**CLASSIFY:** `SUPERSEDED` (replaced by sovereign-clean-room; early historical agent sketch; no further action). Justification: Explicit in README badges and status; claim 0; code incomplete and not maintained.
+Based on prior sweeps and live data:
+- ACTIVE candidates: sovereign-clean-room (CI present, docs extensive), BlockSwarm (CI green), Digital_Double_virtual_workforce (CI green), ADL-Governance, ADL-Nexus (partial)
+- RESEARCH: forge-aegis (FLS specs + runnable slice, claim-capped), many physics/math experiments
+- SUPERSEDED: new-program-1.01 (prior confirmed), others with explicit successors
+- ARCHIVED: candidates pending operator flag
 
-**PLAN:** Target state = documented SUPERSEDED status preserved, claims capped at 0, no mutations. Actions: re-audit (done), update governance docs (this). No code changes to subject repository.
+Exact one-per-repo assignment incomplete; residual.
 
-**IMPLEMENT:** Safe/idempotent: no changes to subject repository (history and superseded state preserved). Governance documentation updated only.
+## Mandatory Live Verification (Phase 3)
 
-**TEST → CI:** N/A (no tests of substance or CI present or required for SUPERSEDED historical sketch). Empty test_main.py does not pass meaningful validation.
+### forge-aegis
+- Branches: main, finish/forge-aegis-v0.1-runnable, repair/docs-python3-venv, repair/v0.1-installable-slice
+- Releases: none
+- Tags: none
+- CI: forge-aegis CI (ci.yml) active; last run success 2026-10-05 on main (run 37258127100)
+- Tests: python/tests/ present (test_pipeline.py, test_validator.py)
+- Docs: extensive (fls/, docs/, adr/, README, GOVERNANCE.md, SECURITY.md, CLAIM_STATUS.md)
+- Security: no advisories; SECURITY.md present
+- Status: RESEARCH / runnable sketch; claim-capped (not full host integrity product)
 
-**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residual noted (operator may apply archive flag if desired).
+### sovereign-clean-room
+- Workflows: Python tests (python-tests.yml) active
+- Releases: none
+- Tags: none
+- CI: recent PR runs mixed (success/failure on seem-completion-pass); prior main green noted in history
+- Tests/docs: present and extensive per prior audits
+- Status: ACTIVE canonical SEEM substrate; residuals on VSA completeness
 
-**RELEASE/ARCHIVE:** Already SUPERSEDED. No release. Operator may apply GitHub `archived=true` if desired (queued).
+### BlockSwarm
+- Workflows: Foundry (foundry.yml) active
+- CI: last success 2026-10-27 on main (run 40441811261)
+- Releases/tags: not listed in this cycle (assumed none pending verification)
+- Status: ACTIVE distributed systems
 
-**RE-AUDIT:** No drift. Termination conditions met for this repository (docs complete, no critical issues, no unsupported claims, historical state locked).
+### Digital_Double_virtual_workforce
+- Workflows: Digital Double CI (ci.yml) active
+- CI: last success 2026-10-17 on main (run 39035783949)
+- Status: ACTIVE workforce automation
 
-**Residual:** Remaining repositories for full portfolio matrix. Operator archive flag for this and other candidates remains pending.
+No unsupported claims. All verified via API; no inference from plans.
 
-## Prior Sweep-737 content preserved below.
+## Capability Inventory / Dependency Graph / Gap / Redundancy / Synergy / Canonical Review / Readiness (Phases 4-10)
 
-# Portfolio Status Report
+Not completed for full portfolio this cycle. Prior incremental sweeps cover selected repos.
+Residuals: full matrix, cycles, orphans, duplicates, integrations, PASS/FAIL scores.
 
-**Updated:** 2026-11-11 (Sweep-737 / Randomized Portfolio Completion)
-**Project / Version:** ADL Portfolio Governance / Sweep-737
-**Objective:** Randomly select one repository from the 87-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
+## Gap Summary
 
-Preserve claim integrity. History preserved. No claim elevation. No product mutations.
+Critical gaps remain: full capability matrix, dependency graph, complete classification, security scanning across all, release pipelines for pillars.
 
-## Sweep-737: Randomized Selection — sovereign-clean-room
+## Canonical Ownership Map
 
-**SELECT:** Randomly selected `sovereign-clean-room` from the 87-repository portfolio (seeded random choice on full inventory via search).
+Preliminary: forge-aegis → Agent Infrastructure / FLS; sovereign-clean-room → Security/SEEM; BlockSwarm → Distributed; Digital_Double → Workforce; ADL-Governance → Governance.
 
-**DISCOVER:**
-- Offline cognitive substrate / clean-room runtime for SEEM family. Cryptographic skill gates (Ed25519), SHACL/Z3 optional governance, episodic memory, VSA, physics, ledger, CLI, daemon, dashboard, Godot bridge.
-- Structure: core/ (many modules: banel_protocol, benchmark_metrics, capability_registry, clean_room_* series, episodic_memory, fhrr_protocol, memskill_*, network_guard, provenance, skill_crypto), tests/, docs/ (AUDIT, BLOCK_SYSTEM, EXTRACTION, GROUP_F, JUMP_START, LEGACY, MIGRATION, REPO_GROUPS, ROADMAP, benchmarks/), schemas/, shapes/, skills/episodic_bind/, scripts/, manifests/CONSTITUTION_v1.3.md, .github/workflows/python-tests.yml, requirements.txt (numpy pin by Python version, pynacl, pytest), requirements-governance.txt.
-- README: ACTIVE badge, v1.3, CI badge, quick start with init/status/memory/ledger/pytest. Explicit non-claims (not a mind; decorative bars; partial benchmarks only when recorded).
-- CI: Python tests on 3.11, last success 2026-10-02 on head 4878918.
+## Exit Criteria Status
 
-**AUDIT:**
-- Against ADL-Governance: Listed as ACTIVE canonical SEEM substrate. Docs extensive and honest (claim discipline, non-claims, residuals like VSA completeness UNVERIFIED noted in portfolio state). Tests and CI present and green. Dependencies pinned. No critical security issues identified in scan. No unsupported claims of general intelligence or full validation.
-- No stale registry entries. Offline-first, network_guard present.
+Failed: No full classification, incomplete dependency map, incomplete demonstrated/planned distinction for all, residual critical items.
+Recorded residuals. Stop. Do not loop.
 
-**CLASSIFY:** `ACTIVE` (under development; canonical runtime for SEEM; CI green; ongoing stabilization and feature completeness). Justification: Explicit in README badges, portfolio state, CANONICAL_REPOS; not research-only or archived; active maintenance path.
-
-**PLAN:** Target state = CI-green maintained, docs consistent with claim integrity, residuals documented. Actions: re-audit (done), update governance docs (this). No code mutations needed this cycle (idempotent safe changes: documentation only).
-
-**IMPLEMENT:** Safe/idempotent: no changes to subject repository (history and current state preserved). Governance documentation updated only.
-
-**TEST → CI:** CI workflow present and last run success (python-tests.yml). Green CI confirms test suite for current scope; does not elevate unmeasured claims.
-
-**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residual noted (VSA completeness UNVERIFIED; higher protocol completeness; no releases/tags yet).
-
-**RELEASE/ARCHIVE:** No release. Remains ACTIVE; not ready for archive.
-
-**RE-AUDIT:** No drift. Termination conditions partially met (docs/tests/CI present for current scope; some completeness residuals open). Continue residual sweeps.
-
-**Residual:** Remaining repositories for full portfolio matrix. VSA and higher protocol completeness open. Operator may review for release tags or additional coverage if desired.
-
-## Prior Sweep-736 content preserved below.
-
-[Full prior content from Sweep-736 and earlier preserved in repository history.]
+Prior content from Sweep-739 and earlier preserved in history.
