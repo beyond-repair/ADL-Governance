@@ -1,3 +1,18 @@
+## Sweep-738 / BASILISK Reconstruction — Live Census
+
+- Timestamp: 2026-11-11T16:10Z UTC.
+- SELECT: Fresh agent session under ADL-BASILISK recursive directive.
+- DISCOVER: Live GitHub search total_count=87 for user:beyond-repair. Governing docs in ADL-Governance (latest Sweep-737). Core ADL-Nexus structure confirmed (RESEARCH, claim ≤1).
+- AUDIT: Census consistent. No product mutations. Claims not elevated.
+- CLASSIFY: Governance docs updated; portfolio state RECONSTRUCTED.
+- PLAN/IMPLEMENT: Persisted PASS-2026-11-11-738.yaml.
+- TEST/CI: API confirmation only.
+- DOCUMENT: This entry + new pass YAML.
+- GOVERN: Invariants preserved.
+- Residual: Continue incremental capability audits.
+
+## Prior Sweep-737 content preserved below.
+
 ## Sweep-737 / Randomized Portfolio Completion — sovereign-clean-room
 
 - Timestamp: 2026-11-11T16:00Z UTC.
