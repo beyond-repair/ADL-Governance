@@ -1,5 +1,45 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-11 (Sweep-739 / Randomized Portfolio Completion)
+**Project / Version:** ADL Portfolio Governance / Sweep-739
+**Objective:** Randomly select one repository from the 87-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
+
+Preserve claim integrity. History preserved. No claim elevation. No product mutations.
+
+## Sweep-739: Randomized Selection — new-program-1.01
+
+**SELECT:** Randomly selected `new-program-1.01` from the 87-repository portfolio (seeded random choice on full inventory via search).
+
+**DISCOVER:**
+- Early My Mind agent files (historical sketch of task delegation to GPT agents).
+- Structure: main.py (task loop with Delegate/Task), gpt_agent.py (stub agent with random success), delegate_class.py / task_class.py / etc. (mostly pass stubs), my_mind.py (imports missing modules), test_main.py (empty unittest pass), tasks.txt, agents.txt, .gitignore. No .github/workflows, no pyproject/requirements, no LICENSE file visible in tree.
+- README.md: Explicit SUPERSEDED badge, Claim 0 (historical), successor sovereign-clean-room. Status banner only; no prior README.
+- Incomplete Python (missing imports in my_mind.py, stub methods, no real logic beyond prints and random).
+
+**AUDIT:**
+- Against ADL-Governance: Already classified SUPERSEDED / Claim 0. Docs honest (historical early agent files; do not start new feature work; successor specified). No undefined components beyond intentional stubs. No stale registry entries. No critical security issues (no external calls, no keys, offline stubs). No unsupported claims of functionality or validation.
+- No tests of substance, no CI. Preserved as historical only.
+
+**CLASSIFY:** `SUPERSEDED` (replaced by sovereign-clean-room; early historical agent sketch; no further action). Justification: Explicit in README badges and status; claim 0; code incomplete and not maintained.
+
+**PLAN:** Target state = documented SUPERSEDED status preserved, claims capped at 0, no mutations. Actions: re-audit (done), update governance docs (this). No code changes to subject repository.
+
+**IMPLEMENT:** Safe/idempotent: no changes to subject repository (history and superseded state preserved). Governance documentation updated only.
+
+**TEST → CI:** N/A (no tests of substance or CI present or required for SUPERSEDED historical sketch). Empty test_main.py does not pass meaningful validation.
+
+**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residual noted (operator may apply archive flag if desired).
+
+**RELEASE/ARCHIVE:** Already SUPERSEDED. No release. Operator may apply GitHub `archived=true` if desired (queued).
+
+**RE-AUDIT:** No drift. Termination conditions met for this repository (docs complete, no critical issues, no unsupported claims, historical state locked).
+
+**Residual:** Remaining repositories for full portfolio matrix. Operator archive flag for this and other candidates remains pending.
+
+## Prior Sweep-737 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-11 (Sweep-737 / Randomized Portfolio Completion)
 **Project / Version:** ADL Portfolio Governance / Sweep-737
 **Objective:** Randomly select one repository from the 87-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
@@ -38,85 +78,4 @@ Preserve claim integrity. History preserved. No claim elevation. No product muta
 
 ## Prior Sweep-736 content preserved below.
 
-# Portfolio Status Report
-
-**Updated:** 2026-11-11 (Sweep-736 / Randomized Portfolio Completion)
-**Project / Version:** ADL Portfolio Governance / Sweep-736
-**Objective:** Randomly select one repository from the 87-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
-
-Preserve claim integrity. History preserved. No claim elevation. No product mutations.
-
-## Sweep-736: Randomized Selection — acoustic-token-modem
-
-**SELECT:** Randomly selected `acoustic-token-modem` from the 87-repository portfolio (seeded random choice on full inventory via search).
-
-**DISCOVER:**
-- Experimental acoustic modem for direct machine-token transmission (token IDs as payload, not speech).
-- Structure: src/acoustic_token_modem/ (channel, coding, demodulation, metrics, modulation, protocol, tokenizer), tests/ (multiple unit tests), experiments/ (baseline_fsk.py implemented; PSK/OFDM stubs), docs/ (ARCHITECTURE, BENCHMARKS, ERROR_CORRECTION, PACKET_FORMAT, PROTOCOL, RESEARCH, SECURITY, SIGNAL_MODEL), .github/workflows/pytest.yml (CI on 3.11), pyproject.toml (numpy, pytest), README.md, CLAIM_STATUS.md (claim ≤1), GOVERNANCE.md, LICENSE (MIT).
-- Quick start: venv + editable install + pytest + baseline_fsk simulation.
-- Milestones: M0-M3 (FSK sim) advanced; higher (PSK/QAM/OFDM/hardware) placeholders.
-- Central invariant: tokens_in == tokens_out for reconstruction.
-
-**AUDIT:**
-- Against ADL-Governance: RESEARCH classification matches. Claim level 1 explicitly capped (simulation only; no hardware, no bitrate claims, no novelty by default). Docs honest with UNSUPPORTED tokens. Tests and CI present for sim suite. No critical security issues identified. Placeholders intentional and documented. No unsupported claims.
-- No stale registry entries apparent. Dependencies minimal (numpy).
-
-**CLASSIFY:** `RESEARCH` (experimental, unvalidated beyond simulation; claim ≤1; hardware M10 not implemented; prior-art survey template only). Justification: Explicit in README/CLAIM_STATUS/GOVERNANCE; focuses on measurement against baselines; not ACTIVE product.
-
-**PLAN:** Target state = CI-green simulation baseline maintained, docs consistent, claim integrity preserved. Actions: re-audit (done), update governance docs (this). No code mutations needed this cycle (idempotent safe changes: documentation only).
-
-**IMPLEMENT:** Safe/idempotent: no changes to subject repository (history and research state preserved). Governance documentation updated only.
-
-**TEST → CI:** CI workflow present (pytest.yml); prior runs noted as success in CLAIM_STATUS (e.g., Sweep-092). Local tests expected to pass for FSK sim. Green CI ≠ hardware validation or claim elevation.
-
-**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residual noted (higher milestones incomplete; benchmarks empty; prior-art survey pending).
-
-**RELEASE/ARCHIVE:** No release. Research ongoing; not ready for archive.
-
-**RE-AUDIT:** No drift. Termination conditions partially met (docs/tests/CI present for current scope; higher phases open). Continue residual sweeps.
-
-**Residual:** Remaining repositories for full portfolio matrix. Higher modulation/hardware phases in this repo. Operator may review Dependabot or add more tests if desired.
-
-## Prior Sweep-735 content preserved below.
-
-# Portfolio Status Report
-
-**Updated:** 2026-11-10 (Sweep-735 / Randomized Portfolio Completion)
-**Project / Version:** ADL Portfolio Governance / Sweep-735
-**Objective:** Randomly select one repository from the 86-repo portfolio, DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT (safe) → DOCUMENT → GOVERN.
-
-Preserve claim integrity. History preserved. No claim elevation. No product mutations.
-
-## Sweep-735: Randomized Selection — fantom_trading_bot_2
-
-**SELECT:** Randomly selected `fantom_trading_bot_2` from the 86-repository portfolio (seeded random choice on full inventory).
-
-**DISCOVER:**
-- Historical 2023-era Python sketch: `fantom 19.py` with Strategy enum (TrendFollowing, BreakoutTrading, SwingTrading, Scalping, FrontRunning, SandwichBot) and placeholder helper functions returning constants (0.0, True, False).
-- Files: README.md (explicit ARCHIVE QUEUE, Claim 0, no profit/live trading claims), ARCHIVED.md (locked Sweep-079), .gitignore, the incomplete .py file. No tests, no CI workflows, no dependencies declared.
-- Branches: main only. Releases: none. Dependabot alerts: none open.
-- Explicit non-claims in README: not a live trading system, not validated strategy, FrontRunning/SandwichBot are unimplemented stubs.
-
-**AUDIT:**
-- Against ADL-Governance: Already classified ARCHIVED / ARCHIVE QUEUE. Docs honest (Claim 0). No undefined components beyond the intentional historical sketch. No stale registry entries. No critical security issues (no code that executes against funds). No unsupported claims.
-- Code is incomplete/broken Python (syntax issues in helpers, missing implementations). Preserved as historical only.
-
-**CLASSIFY:** `ARCHIVED` (historical trading experiment sketch from 2023; no further development intended; already documented as ARCHIVE QUEUE since Sweep-079). Justification: README and ARCHIVED.md explicitly state this; no active dependencies, no tests/CI expected for archival.
-
-**PLAN:** Target state = documented archival status preserved, claims capped at 0, no mutations. Actions: re-audit (done), update governance docs (this), queue any operator archive flag if not already applied.
-
-**IMPLEMENT:** Safe/idempotent: no changes to subject repository (history preserved). Governance documentation updated only.
-
-**TEST → CI:** N/A (no tests or CI present or required for ARCHIVED historical sketch).
-
-**DOCUMENT / GOVERN:** Updated this report, SWEEP_HISTORY.md, OPERATOR_QUEUE.md. No claim elevation. Residual noted (GitHub archive flag application is operator-only).
-
-**RELEASE/ARCHIVE:** Already in ARCHIVE QUEUE. No release. Operator may apply GitHub `archived=true` if desired (queued).
-
-**RE-AUDIT:** No drift. Termination conditions met for this repository (docs complete, no critical issues, no unsupported claims, historical state locked).
-
-**Residual:** Remaining repositories for full portfolio matrix. Operator archive flag for this and other candidates remains pending.
-
-## Prior Sweep-734 content preserved below.
-
-[Full prior content from Sweep-734 and earlier preserved in repository history.]
+[Full prior content from Sweep-736 and earlier preserved in repository history.]
