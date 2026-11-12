@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-11-12-757
+  parent_pass: PASS-2026-11-12-756
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 5
+  capabilities_verified: 2
+  gaps_remaining: 19
+
+OBJECTIVE:
+  id: GAP-DEEP-AUDIT-INFORMATIONAL-FLUX
+  description: Perform bounded deep audit of informational-flux-identity: structure, CI, core identity script, claim status.
+  reason_selected: Next action from previous pass; recent high activity; closes one unknown capability state.
+
+DISCOVERY:
+  findings:
+    - Structure: scripts/ with flux_identity.py and dozens of gasket_fractional_* modules; large CLAIM_STATUS.md (158k), README (282k), GASKET.md (1M); docs/THEOREM_V.md; pyproject.toml; CI workflow.
+    - CI: .github/workflows/ci.yml runs python -m unittest tests/test_flux_identity.py after pip install numpy.
+    - Core: flux_identity.py implements exact integer witness for closed-rectangle flux identity (signed net = div sum = 0; absolute right-face 349/366); asserts match recorded figures.
+    - Claims: Explicit ceiling 1; many theorems on fractional gasket operators VERIFIED in scripts; no continuum, no thrust, no selected W.
+    - Classification: RESEARCH confirmed.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-757.yaml
+    - docs/SWEEP_HISTORY.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - informational-flux-identity core identity status confirmed
+
+VERIFICATION:
+  tests_run:
+    - Structural tree and key file inspection PASS
+    - CI workflow present and targets known test
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Core flux identity has executable witness with asserts.
+    - Claim ceiling ≤1 with extensive non-claims.
+    - CI exists for the identity test.
+  failures: []
+  decisions:
+    - No claim elevation.
+    - No code changes in target repo this pass.
+
+REMAINING:
+  incomplete:
+    - Full runtime execution of all gasket scripts not performed (size).
+    - CI green status not re-observed this pass.
+  blockers: []
+  new_gaps:
+    - Optional: local or CI re-verification of identity test.
+
+NEXT:
+  objective_id: GAP-VERIFY-CI-INFORMATIONAL-FLUX
+  action: Trigger or observe CI status on informational-flux-identity main; record result.
+  reason: Confirms verification boundary for the audited capability.
+  prerequisites:
+    - No claim elevation.
+    - Preserve history.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Tree recursive confirmed dozens of scripts.
+    - flux_identity.py asserts reviewed.
+    - ci.yml content reviewed.
