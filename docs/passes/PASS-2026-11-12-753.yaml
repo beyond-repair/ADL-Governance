@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-11-12-753
+  parent_pass: PASS-2026-11-12-751
+
+STATE:
+  global_status: OBSERVATION_FROZEN
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 16
+  capabilities_verified: 5
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: GAP-OBSERVATION-FREEZE-2026-11-12
+  description: Add graph/observed_2026_11_12.py (sorted 87 names) and extend graph/drift.py with observation_reconfirm_2026_11_12; persist without touching catalog.py.
+  reason_selected: Exact NEXT action from PASS-2026-11-12-751.
+
+DISCOVERY:
+  findings:
+    - Live GitHub search user:beyond-repair (2026-11-12): total_count=87, incomplete_results=false.
+    - Delta from frozen 2026-11-03 (85 names): +2 (ADL_NEXUS_COMMAND_CENTER, ADL_Nexas2.0).
+    - aegis-repo-graph catalog remains locked at 2026-09-04 snapshot (72 RepositoryArtifacts).
+    - observation_reconfirm functions exist up to 2026-11-03; no mutation of locked state.
+
+CHANGES:
+  repositories:
+    - beyond-repair/aegis-repo-graph
+  files:
+    - graph/observed_2026_11_12.py (new)
+    - graph/drift.py (extended with observation_reconfirm_2026_11_12)
+  commits:
+    - cc7851c39bf1fcad38bc809760f85460bd0ca8e0 (observed file)
+    - a646e52002b064e54b3709dac62fed719d7d6785 (drift.py)
+  capabilities_added_or_changed:
+    - frozen-observation-2026-11-12
+    - drift-reconfirm-function
+
+VERIFICATION:
+  tests_run:
+    - local syntax parse of both files: PASS
+    - no catalog.py mutation (confirmed by not touching the file)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (locked catalog not mutated; history preserved; claim level unchanged)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - 2026-11-12 observation frozen with exactly 87 sorted names matching live search.
+    - reconfirm function correctly computes later_only = ('ADL_NEXUS_COMMAND_CENTER', 'ADL_Nexas2.0') relative to 2026-11-03.
+    - Catalog lock and operator-only expansion rule preserved.
+  failures:
+    - None this pass.
+  decisions:
+    - Document only; do not rewrite catalog.py or raise claim.
+    - Persist this PASS in ADL-Governance to close the slice.
+    - Used id 753 to avoid collision with history entry labeled 752 that has no YAML.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for the 22+ new names since lock.
+    - Capability and dependency graphs.
+    - Operator decision on catalog expansion.
+  blockers:
+    - Operator approval required for any catalog rewrite or claim change.
+  new_gaps:
+    - None; observation freeze complete.
+
+NEXT:
+  objective_id: GAP-CLASSIFY-NEW-REPOS
+  action: Select one high-activity new repository (e.g. ADL_Nexas2.0 or informational-flux-identity) for bounded deep audit and classification against ADL-Governance lifecycle/claim rules; persist findings without claim elevation.
+  reason: Highest-value residual after graph observation is current; advances capability graph.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=87 extracted to sorted tuple
+    - Commits cc7851c and a646e52 in aegis-repo-graph
+    - No change to graph/catalog.py
