@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-11-12-751
+  parent_pass: PASS-2026-11-12-750
+
+STATE:
+  global_status: DRIFT_DOCUMENTED
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 16
+  capabilities_verified: 5
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-AEGIS-GRAPH-RECONCILE
+  description: Inspect aegis-repo-graph locked catalog vs live 87-repo inventory; document name drift without altering locked state.
+  reason_selected: Highest-value residual from PASS-750 NEXT action.
+
+DISCOVERY:
+  findings:
+    - Locked catalog (graph/catalog.py, 2026-09-04 snapshot): 72 RepositoryArtifacts.
+    - Live GitHub search user:beyond-repair (2026-11-12): total_count=87, incomplete_results=false.
+    - Observed-only (new since lock): 22 names including ADL-Nexus, ADL_Nexas2.0, ADL_NEXUS_COMMAND_CENTER, informational-flux-identity, finite-gasket-spectral-derivatives, Open-Energy-Fusion, atomicdreamlabs1.1, coherence-dynamics, mend, etc.
+    - Catalog-only (absent from live search): 7 names including planned queue items (sunder-aegis-bridge, clean-room-skill-export), spelling variant CFT-v3.3-IQG-Unified-Framework vs CFTv3.3-..., and legacy (MyCore, SuperAGI, bolt.new, docs).
+    - Existing drift witnesses (name_drift, observation_reconfirm_*) stop at 2026-11-03 (85 names). No live crawl; catalog remains locked.
+    - Expanding the 2026-09-04 lock remains operator-only per repo contract.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-751.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - drift-documentation
+    - pass-record-persistence
+
+VERIFICATION:
+  tests_run:
+    - deterministic name-set comparison (local Python set difference): 22 observed-only, 7 catalog-only
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (locked catalog not mutated; history preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Inventory has grown from locked 72 to live 87; 15 net new public repositories since September 2024 snapshot.
+    - aegis-repo-graph correctly refuses to auto-expand the lock; observation files are the correct non-mutating mechanism.
+    - Spelling variants and planned-but-uncreated queue names explain part of catalog-only set.
+  failures:
+    - None this pass.
+  decisions:
+    - Document only; do not rewrite catalog.py or raise claim.
+    - Next bounded action should freeze a 2026-11-12 observation file in aegis-repo-graph (name-only) and add reconfirm function, still without catalog mutation.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for the 22 new names.
+    - Capability and dependency graphs.
+    - Operator decision on whether/when to expand the locked catalog.
+  blockers:
+    - Operator approval required for any catalog rewrite or claim change.
+  new_gaps:
+    - Need frozen observation artifact for 2026-11-12 to keep drift witnesses current.
+
+NEXT:
+  objective_id: GAP-OBSERVATION-FREEZE-2026-11-12
+  action: Add graph/observed_2026_11_12.py (sorted 87 names) and extend graph/drift.py with observation_reconfirm_2026_11_12; run local pytest if possible; persist without touching catalog.py.
+  reason: Completes the non-mutating drift documentation started here; enables future automated reconfirm.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=87
+    - Local set-difference computation against catalog rows extracted from graph/catalog.py
+    - aegis-repo-graph README and CLAIM_STATUS confirming lock is operator-only
