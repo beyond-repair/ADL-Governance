@@ -153,3 +153,45 @@ Drift numbers match live extraction vs catalog.py rows.
 - No releases on active pillars.
 
 **Outcome:** Governed sweep complete for current cycle. Residuals recorded. Stop. No autonomous loop.
+
+## Sweep-753 / PASS-2026-11-12-753
+
+**Selected Slice:** Freeze 2026-11-12 observation in aegis-repo-graph and extend drift reconfirm.
+
+### DISCOVER
+- Live inventory confirmed at 87 names.
+- Delta from 2026-11-03 frozen: +2 names (ADL_NEXUS_COMMAND_CENTER, ADL_Nexas2.0).
+- Catalog remains locked (operator-only expansion).
+
+### AUDIT
+- No catalog.py mutation.
+- Existing reconfirm pattern followed.
+- Claim level unchanged (≤1).
+
+### CLASSIFY
+**Label:** RESEARCH (governance documentation)
+**Justification:** Non-mutating observation freeze.
+
+### PLAN
+Add observed_2026_11_12.py + observation_reconfirm_2026_11_12; persist PASS.
+
+### IMPLEMENT
+Commits in aegis-repo-graph: cc7851c (observed), a646e52 (drift.py).
+Persisted PASS-2026-11-12-753.yaml.
+
+### TEST → CI
+Local syntax validation PASS; no runtime tests required for this documentation slice.
+
+### DOCUMENT
+This history update + HEADINGS + PASS record.
+
+### GOVERN
+Preserves locked catalog and history; uses existing schemas.
+
+### RELEASE/ARCHIVE
+N/A.
+
+### RE-AUDIT
+Observation matches live search; reconfirm function present.
+
+**Outcome:** Observation freeze complete. Ready for next bounded classification slice.
