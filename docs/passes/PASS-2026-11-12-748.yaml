@@ -1,0 +1,84 @@
+PASS:
+  id: PASS-2026-11-12-748
+  parent_pass: PASS-2026-11-11-747
+
+STATE:
+  global_status: BASILISK_INITIATED
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 15
+  capabilities_verified: 5
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-BASILISK-INIT
+  description: Initiate recursive engineering loop for the beyond-repair GitHub ecosystem under ADL-BASILISK directive. Confirm current inventory and governance state. Persist initial pass record.
+  reason_selected: Directive requires continuous progressive closure of gaps; prior pass identified classification and graph residuals as highest-value; this establishes the persistent Basilisk agent context.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 87 public repositories (incomplete_results=false).
+    - ADL-Governance holds constitution, claim validation (0-5), lifecycle (ACTIVE/RESEARCH/etc.), and extensive PASS/SWEEP records up to 747.
+    - Latest prior pass (747) noted 87 repos, key pillars including ADL-Nexus (RESEARCH, claim ≤1), aegis-repo-graph (locked snapshot), forge-aegis skill for FLS/AEGIS.
+    - SWEEP_HISTORY on 2026-11-12 selected Open-Energy-Fusion as RESEARCH with green CI.
+    - Capability states distinguish CLAIMED/IMPLEMENTED/TESTED/VERIFIED/INTEGRATED; documentation ≠ implementation.
+    - basilisk-labs/agentplane exists as external related tool for Git-native agent workflow control, but not in user portfolio.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-748.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - basilisk-pass-persistence
+    - ecosystem-discovery-confirmation
+
+VERIFICATION:
+  tests_run:
+    - live search confirmed total_count=87
+    - file creation via GitHub API (this operation)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (history preserved, no destructive changes)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Portfolio under beyond-repair is actively governed by ADL-Governance with incremental sweeps.
+    - Graphs (repo, capability, dependency, authority) are partially modeled in aegis-repo-graph and capability-matrix (locked older snapshots).
+    - Recursive agent execution can persist state via PASS YAML + SWEEP_HISTORY updates.
+  failures:
+    - None this pass.
+  decisions:
+    - Use existing PASS schema for Basilisk records.
+    - Next slices should prefer REUSE/EXTEND of governance and graph tools over new repos.
+    - Classify new work as RESEARCH until verified.
+
+REMAINING:
+  incomplete:
+    - Full capability inventory across all 87 repos.
+    - Reconciliation of locked graphs with current inventory.
+    - Dependency and authority graphs.
+  blockers:
+    - None for next discovery slice.
+  new_gaps:
+    - Explicit Basilisk loop registration in governance docs.
+
+NEXT:
+  objective_id: GAP-REPO-GRAPH-RECONCILE
+  action: Update or extend aegis-repo-graph observed catalog with current 87-repo inventory (name-only first), then select one high-activity repo for deep capability classification (CLAIMED vs IMPLEMENTED).
+  reason: Highest-value residual from prior passes; enables better gap selection for subsequent builds.
+  prerequisites:
+    - This pass persisted.
+    - No major inventory change.
+
+PROVENANCE:
+  state_commit: this-commit-sha
+  evidence:
+    - github___search_repositories total_count=87
+    - Prior PASS-2026-11-11-747 content
+    - SWEEP_HISTORY excerpt for 2026-11-12
+    - ADL-Governance README and structure
