@@ -1,0 +1,88 @@
+PASS:
+  id: PASS-2026-11-12-754
+  parent_pass: PASS-2026-11-12-753
+
+STATE:
+  global_status: CLASSIFICATION_UPDATED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 16
+  capabilities_verified: 5
+  gaps_remaining: 9
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-ADL_Nexas2.0
+  description: Bounded deep audit and classification of high-activity new repository ADL_Nexas2.0 against ADL-Governance lifecycle/claim rules; persist findings without claim elevation.
+  reason_selected: Exact NEXT action from PASS-2026-11-12-753; newest repo, provisional in prior status report.
+
+DISCOVERY:
+  findings:
+    - Repo created 2026-11-11; language JavaScript; no description originally; README now explicit.
+    - README badges and body: LIFECYCLE RESEARCH, CLAIM ≤1, links to ADL-Governance, explicitly NOT CLAIMED production app-builder / live Nexus integration / AGI / autonomous workforce.
+    - AGENTS.md: Grok App Builder sandbox contract (Vite + TanStack Start workspace).
+    - package.json: app-builder-workspace; scripts include typecheck, test (node --test on several *.test.*), lint; deps @electric-sql/pglite, better-auth (opt-in), TanStack, Vite, etc.
+    - src/lib/nexus/: company.ts, domain.ts, engine.ts, company-store.ts — local Nexus-related orchestration sketches (plans, departments, no verified remote integration).
+    - .data/nexus-pglite/: local PGLite snapshot present.
+    - Branches: main (3191d5c), dependabot/npm_and_yarn/..., sweep/ci-and-license (has .github/workflows/ci.yml for Node 22 typecheck+test + MIT LICENSE).
+    - No .github/workflows on main; CI not yet green on default branch.
+    - Tests present in package.json script; local execution NOT_RUN this pass (sandbox constraint).
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-754.yaml (new)
+    - docs/SWEEP_HISTORY.md (appended heading + cycle)
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - classification-confirmed-ADL_Nexas2.0-RESEARCH-claim-leq1
+
+VERIFICATION:
+  tests_run:
+    - README claim language inspection: PASS (explicit ≤1, no unsupported product claims)
+    - Tree/structure presence of tests and CI branch: PASS (files exist)
+    - Runtime tests or CI execution: NOT_RUN
+  code_review: NOT_RUN
+  security: NOT_RUN (Dependabot branch present; no advisories checked this slice)
+  integration: NOT_APPLICABLE (local workspace; no verified Nexus pathway)
+  invariants: PASS (no claim elevation; history preserved; governance link present)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL_Nexas2.0 is a RESEARCH Grok App Builder experiment with explicit Claim ≤1 and governance linkage.
+    - Local Nexus sketches exist but are not verified integrations.
+    - CI workflow and LICENSE prepared on sweep/ci-and-license branch but not merged to main.
+  failures:
+    - None this pass.
+  decisions:
+    - Confirm RESEARCH / Claim ≤1; do not promote.
+    - Do not merge CI in this slice (operator or next bounded action).
+    - Persist this PASS to close the classification gap for this repo.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for remaining new names since lock.
+    - Capability and dependency graphs.
+    - Runtime verification of ADL_Nexas2.0 tests.
+    - Operator decision on catalog expansion and CI merge.
+  blockers:
+    - Operator approval required for catalog rewrite, claim change, or release.
+  new_gaps:
+    - CI not active on main for ADL_Nexas2.0.
+
+NEXT:
+  objective_id: GAP-CLASSIFY-NEXT-RESEARCH
+  action: Select next high-activity RESEARCH repository (e.g. informational-flux-identity or another recent) for bounded deep audit and classification confirmation; or merge/verify CI for ADL_Nexas2.0 if operator-approved.
+  reason: Continues progressive closure of classification and verification gaps without claim elevation.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live tree and README from beyond-repair/ADL_Nexas2.0@main
+    - Branches list
+    - sweep/ci-and-license contents
+    - No mutation of claim levels or catalog
