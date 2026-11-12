@@ -1,0 +1,64 @@
+PASS:
+  id: PASS-2026-11-12-756
+  parent_pass: null
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 20
+OBJECTIVE:
+  id: GAP-DISCOVERY-INIT
+  description: Reconstruct ecosystem from GitHub live inventory and governance state; confirm 87 public repositories; persist initiation record.
+  reason_selected: Directive requires discover/audit before any change; highest-value first slice is accurate state reconstruction.
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; public_repos reported 82, live search total_count 87.
+    - ADL-Governance is the constitution with CLAIM_VALIDATION, LIFECYCLE, SWEEP_HISTORY, and PASS schema.
+    - aegis-repo-graph holds locked 2026-09-04 catalog of 72 repository artifacts.
+    - Recent activity on informational-flux-identity (pushed 2026-11-12).
+    - atomicdreamlabs1.1 has experimental ADL Nexus web office.
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-756.yaml
+  commits:
+    - pending
+  capabilities_added_or_changed: []
+VERIFICATION:
+  tests_run:
+    - Live GitHub search user:beyond-repair returned total_count=87, incomplete_results=false
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+KNOWLEDGE:
+  confirmed:
+    - Governance constitution and PASS schema exist and are active.
+    - Live public inventory is 87 repositories.
+  failures: []
+  decisions:
+    - No catalog mutation; operator-only expansion remains.
+    - No claim elevation.
+REMAINING:
+  incomplete:
+    - Full capability graph and dependency graph incomplete.
+    - Drift between locked catalog and live 87 names not fully reconciled in this pass.
+  blockers: []
+  new_gaps:
+    - Deep classification of high-activity RESEARCH repos (e.g. informational-flux-identity)
+NEXT:
+  objective_id: GAP-DEEP-AUDIT-INFORMATIONAL-FLUX
+  action: Perform bounded deep audit of beyond-repair/informational-flux-identity (structure, tests, claims, CI); classify and record residuals.
+  reason: Highest recent push activity; closes one unknown capability state.
+  prerequisites:
+    - Preserve history.
+    - Do not elevate claims beyond observed evidence.
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - github___search_repositories total_count=87
+    - get_me login=beyond-repair
