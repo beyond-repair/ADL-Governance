@@ -1,5 +1,48 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Deep Audit — 2026-11-12 / PASS-2026-11-12-757
+
+**Selected Slice:** Bounded deep audit of informational-flux-identity.
+
+### DISCOVER
+- Structure: scripts/ with flux_identity.py and dozens of gasket_fractional_* modules; large CLAIM_STATUS.md (158k), README (282k), GASKET.md (1M); docs/THEOREM_V.md; pyproject.toml; CI workflow.
+- CI: .github/workflows/ci.yml runs python -m unittest tests/test_flux_identity.py after pip install numpy.
+- Core: flux_identity.py implements exact integer witness for closed-rectangle flux identity (signed net = div sum = 0; absolute right-face 349/366); asserts match recorded figures.
+- Claims: Explicit ceiling 1; many theorems on fractional gasket operators VERIFIED in scripts; no continuum, no thrust, no selected W.
+
+### AUDIT
+- Compliant with RESEARCH / claim-capped status.
+- Core identity has executable asserts.
+- Large documentation residual; full script runtime not executed this pass.
+- CI present but green status not re-observed.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Experimental mathematical physics on finite gasket flux identity and fractional operators. Explicit non-claims. Claim ≤1. Matches LIFECYCLE.
+
+### PLAN
+Target: Confirm classification and verification boundary. No elevation.
+
+### IMPLEMENT
+Persisted PASS-2026-11-12-757.yaml. This history update.
+
+### TEST → CI
+Structural verification PASS. Runtime tests NOT_RUN this pass.
+
+### DOCUMENT
+PASS record + this history update.
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH.
+
+### RE-AUDIT
+Structure and core script match classification. No drift introduced.
+
+**Outcome:** Deep audit complete. Core identity confirmed. Ready for CI verification or next slice.
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-12 (informational-flux-identity)
 
 **Selected Repository:** informational-flux-identity (random selection from portfolio)
