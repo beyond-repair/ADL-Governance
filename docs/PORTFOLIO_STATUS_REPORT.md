@@ -1,13 +1,13 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-12T18:20Z (Sweep Cycle: Full Inventory + Phase-3 Verification)
+**Last Updated:** 2026-11-12T20:20Z (Sweep Cycle: Confirmation + Residual Recording)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
 
 ## Inventory Summary
 - Total: 87 (prior registry Sweep-652: 86; drift +1)
-- New since prior census: `ADL_Nexas2.0` (created 2026-11-11, JS, no description, last push 2026-11-11)
+- New since prior census: `ADL_Nexas2.0` (created 2026-11-11, JS, classified RESEARCH in Sweep-754)
 - GitHub archived flag: only `CFT-v3.0` (confirmed prior)
 - All others public, non-archived
 
@@ -48,11 +48,11 @@
 **No assumptions. All above from direct API observation.**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from repository_registry.md (Sweep-652) with live confirmation of pillars. New entry:
+Inherited from repository_registry.md (Sweep-652) with live confirmation of pillars. ADL_Nexas2.0 confirmed RESEARCH (Sweep-754).
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
-| ADL_Nexas2.0 | RESEARCH / UNVERIFIED | Recent creation, no description, tree not deep-read this cycle | 2026-11-12 metadata only |
+| ADL_Nexas2.0 | RESEARCH | Experimental Grok App Builder workspace; claim-capped ≤1; no verified remote integrations | 2026-11-12 Sweep-754 |
 | (others) | Per registry | ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED | Prior sweeps + this confirmation for 4 pillars |
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah- (partial)
@@ -76,10 +76,10 @@ Inherited from repository_registry.md (Sweep-652) with live confirmation of pill
 - Shared: Governance patterns in ADL-Governance / ADL-SEEM
 
 ## Gap Summary
-- Critical: Full deep classification of 80+ RESEARCH repos pending (this cycle bounded to pillars + inventory)
+- Critical: Full deep classification of 80+ RESEARCH repos pending (this cycle bounded to pillars + inventory + ADL_Nexas2.0)
 - Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room
 - Low: Documentation drift in some SUPERSEDED
-- New repo ADL_Nexas2.0 requires tree read next cycle
+- ADL_Nexas2.0 classified RESEARCH; residual CI inactive on main
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -96,7 +96,7 @@ Inherited from repository_registry.md (Sweep-652) with live confirmation of pill
 - Critical CI: NONE on pillars
 - Critical security: NONE open on pillars
 - Duplicate canonical: NONE identified this cycle
-- All classified: PARTIAL (new one provisional)
+- All classified: PARTIAL (ADL_Nexas2.0 now RESEARCH; others per registry)
 - Dependencies mapped: HIGH-LEVEL only
 - Demonstrated vs Planned: Distinguished
 - Docs updated: THIS FILE + history + queue
@@ -104,6 +104,6 @@ Inherited from repository_registry.md (Sweep-652) with live confirmation of pill
 **Residuals recorded. Sweep stops here. No infinite loop.**
 
 ## Next Actions
-- Deep-read ADL_Nexas2.0 tree
 - Expand capability matrix for high-activity RESEARCH
 - Operator review of ARCHIVE queue
+- Optional release tags for pillars
