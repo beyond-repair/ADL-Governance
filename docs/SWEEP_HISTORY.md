@@ -1,5 +1,45 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Discovery Initiation — 2026-11-12 / PASS-2026-11-12-756
+
+**Selected Slice:** Ecosystem discovery confirmation and recursive loop initiation.
+
+### DISCOVER
+- Live inventory: 87 public repositories under user:beyond-repair (search total_count=87, incomplete_results=false).
+- Governance: ADL-Governance constitution, claim levels, existing PASS schema, SWEEP_HISTORY.
+- Key related: aegis-repo-graph (locked 72-artifact catalog), informational-flux-identity (recent push).
+
+### AUDIT
+- Prior residual: classification matrix and graph reconciliation open.
+- No new code changes; state persistence only.
+
+### CLASSIFY
+**Label:** RESEARCH (governance process)
+**Justification:** Incremental agent-driven discovery; no claim elevation.
+
+### PLAN
+Next: bounded deep audit of high-activity RESEARCH repo (informational-flux-identity).
+
+### IMPLEMENT
+Persisted PASS-2026-11-12-756.yaml.
+
+### TEST → CI
+API write success; no runtime tests required.
+
+### DOCUMENT
+This history update + PASS record.
+
+### GOVERN
+Preserves history; uses existing schemas.
+
+### RELEASE/ARCHIVE
+N/A.
+
+### RE-AUDIT
+State reconstructible from Git + this record.
+
+**Outcome:** Basilisk loop initiated for this agent session. Ready for next bounded slice.
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-12 (atomicdreamlabs1.1)
 
 **Selected Repository:** atomicdreamlabs1.1
