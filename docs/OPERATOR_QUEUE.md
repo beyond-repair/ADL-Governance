@@ -1,5 +1,30 @@
 # Operator Queue
 
+## Sweep-752: Randomized Portfolio Completion Sweep
+
+No destructive code actions proposed this cycle.
+
+Actions performed:
+- Randomly selected finite-gasket-spectral-derivatives from full portfolio.
+- DISCOVER/AUDIT: Confirmed RESEARCH classification, claim ≤1, CI workflow (pytest), extensive claim-capped docs, tests present. No unsupported claims or critical issues.
+- CLASSIFY: RESEARCH (finite discrete kernel / spectral identities). Canonical under cap.
+- Updated PORTFOLIO_STATUS_REPORT.md, SWEEP_HISTORY.md, this file.
+- Claims not elevated. History additive. No changes to target code.
+
+Residuals / Manual interventions (escalate):
+- Complete full classification matrix for remaining ~86 repos.
+- Build dependency graph and capability inventory (CLAIMED/IMPLEMENTED/TESTED/VERIFIED/INTEGRATED).
+- Reconciliation plan for aegis-repo-graph lock vs current 87-repo inventory (operator-only expansion).
+- Merge pending PR for ADL_Nexas2.0 CI/LICENSE (from Sweep-745).
+- Deep security scanning (Dependabot, secret scan, supply-chain) across portfolio.
+- Operator-only: Apply archived=true flags for SUPERSEDED candidates.
+- Inventory of app-builder workspaces relative to ADL-Nexus.
+- Full capability matrix and gap analysis.
+
+Continue bounded incremental sweeps. Do not enter autonomous infinite review cycle. Exit criteria not fully met due to residual full inventory.
+
+## Prior Sweep-751 content preserved below.
+
 ## Sweep-751: Phase 3 Mandatory Live Verification
 
 No destructive code actions proposed this cycle.
