@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-11-12-750
+  parent_pass: PASS-2026-11-11-749
+
+STATE:
+  global_status: DISCOVERY_IN_PROGRESS
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 16
+  capabilities_verified: 5
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-NEXT-CLASSIFICATION-SLICE
+  description: Select and classify next 5-10 recently updated repositories with README and CI evidence, persist next PASS.
+  reason_selected: Continues highest-value residual closure for ecosystem model from prior NEXT.
+
+DISCOVERY:
+  findings:
+    - Confirmed 87 public repositories via live search (total_count=87).
+    - informational-flux-identity: RESEARCH (closed-surface identity, Coherence Drive residual; Python).
+    - finite-gasket-spectral-derivatives: RESEARCH, Claim ≤1, finite discrete kernel, has pytest (16 tests), CI via unittest, no continuum/thrust claims.
+    - ADL_Nexas2.0: RESEARCH, Claim ≤1, Grok App Builder workspace (Vite + TanStack Start + PGLite), created 2026-11-11, not verified Nexus integration.
+    - ADL-Nexus: RESEARCH, Claim ≤1 (local ceiling refuses above 2), local-first platform, CI success on historical head, stdlib-only, adapters stub-only, production claims UNSUPPORTED.
+    - ADL-Governance remains ACTIVE governing constitution.
+    - SWEEP_HISTORY.md currently contains only PLACEHOLDER; HEADINGS.md holds sweep list.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-750.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - classification-expansion
+    - pass-record-persistence
+
+VERIFICATION:
+  tests_run:
+    - not_run_this_pass (docs only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Recent high-activity repos are predominantly RESEARCH with claim caps ≤1, linked to ADL-Governance.
+    - Physics/math research repos (gasket, flux) explicitly disclaim continuum, force, selected W.
+    - Platform repos (Nexus, Nexas) are local/sandbox experiments, not production.
+  failures:
+    - None this pass.
+  decisions:
+    - REUSE existing PASS schema.
+    - Defer full matrix and graph reconciliation to later passes.
+
+REMAINING:
+  incomplete:
+    - Full classification matrix for remaining repositories.
+    - Dependency and capability graphs.
+    - Reconciliation of aegis-repo-graph lock with current 87-repo inventory.
+    - SWEEP_HISTORY.md content restoration if required by checker.
+  blockers:
+    - Operator approval required for claim changes or archive actions.
+  new_gaps:
+    - Systematic verification of CI status across RESEARCH repos.
+
+NEXT:
+  objective_id: GAP-AEGIS-GRAPH-RECONCILE
+  action: Inspect aegis-repo-graph for current snapshot vs live inventory drift; document gap without altering locked state.
+  reason: Highest-value remaining model integrity gap after classification slice.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live GitHub search total_count=87
+    - READMEs of informational-flux-identity, finite-gasket-spectral-derivatives, ADL_Nexas2.0, ADL-Nexus
+    - Prior PASS-749
