@@ -84,3 +84,43 @@ N/A.
 State reconstructible from Git + this record.
 
 **Outcome:** Basilisk loop initiated. Ready for next bounded slice.
+
+## Sweep-751 / PASS-2026-11-12-751
+
+**Selected Slice:** aegis-repo-graph locked catalog vs live 87-repo inventory drift documentation.
+
+### DISCOVER
+- Locked catalog: 72 RepositoryArtifacts (2026-09-04).
+- Live search: 87 public repos (2026-11-12, incomplete_results=false).
+- Drift: 22 observed-only, 7 catalog-only (including planned queue names and spelling variants).
+
+### AUDIT
+- Catalog lock is operator-only; existing drift.py witnesses stop at 2026-11-03.
+- No claim elevation or catalog mutation.
+
+### CLASSIFY
+**Label:** RESEARCH (governance documentation)
+**Justification:** Non-mutating observation of inventory growth.
+
+### PLAN
+Document gap; next freeze observation file in aegis-repo-graph.
+
+### IMPLEMENT
+Persisted PASS-2026-11-12-751.yaml + this history update.
+
+### TEST → CI
+Local set-difference confirmed; no runtime code change.
+
+### DOCUMENT
+PASS record + SWEEP_HISTORY heading.
+
+### GOVERN
+Preserves locked state; uses existing PASS schema.
+
+### RELEASE/ARCHIVE
+N/A.
+
+### RE-AUDIT
+Drift numbers match live extraction vs catalog.py rows.
+
+**Outcome:** Name drift documented. Ready for observation freeze.
