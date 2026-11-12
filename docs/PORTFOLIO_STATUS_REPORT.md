@@ -1,5 +1,32 @@
 # Portfolio Status Report
 
+**Updated:** 2026-11-12 (Sweep-752 / Randomized Portfolio Completion Sweep)
+**Project / Version:** ADL Portfolio Governance / Sweep-752
+**Objective:** Random selection of one repository from the full portfolio; perform DISCOVER → AUDIT → CLASSIFY → PLAN → DOCUMENT cycle for finite-gasket-spectral-derivatives. Evidence-based. Preserve history.
+
+## Current Cycle: Randomized Sweep-752
+
+- **Selected (random):** finite-gasket-spectral-derivatives
+- **DISCOVER:** Python package (pyproject.toml v0.1.0). Core: spectral derivatives of discrete kernel K = ω^{2}I − W L on finite Sierpinski gasket graphs. CLI via gasket-spectral. Tests in tests/. CI workflow (.github/workflows/kernel.yml) runs pytest on push/PR. Extensive mathematical README with locked identities, truncation remainders, hypergeometric forms, multiplicity theorems. CLAIM_STATUS.md present. No continuum limit, no selected W, no thrust claims.
+- **AUDIT:** Compared against ADL-Governance. Classification RESEARCH already declared in README. Claim ≤ 1. CI present and configured for tests. Docs comprehensive and claim-capped. No unsupported claims identified. No critical security issues noted in this pass. No duplicate canonical implementations. History preserved.
+- **CLASSIFY:** RESEARCH (experimental mathematical numerics / finite discrete kernel; unvalidated for continuum or physical force). Canonical for finite-gasket W-derivative identities under claim cap.
+- **PLAN:** Target state CI-green + documented RESEARCH terminal. No code changes required this cycle. Residuals: full portfolio matrix, dependency graph, security deep-scan.
+- **IMPLEMENT:** Governance docs only. No target repo modifications.
+- **TEST/CI:** Workflow exists; last activity consistent with recent pushes. No failures flagged in this audit.
+- **DOCUMENT:** This update + SWEEP_HISTORY.md + OPERATOR_QUEUE.md.
+- **GOVERN:** Claim caps held. No elevations. Prefer REUSE. Idempotent docs update.
+- **Target state:** RESEARCH terminal verified for this repo. Full portfolio residual remains.
+
+## Inventory Summary (retained)
+Live GitHub search: total_count=87 public repositories under user:beyond-repair.
+
+## Classification (partial)
+finite-gasket-spectral-derivatives: RESEARCH. Pillars previously verified. Full matrix residual.
+
+Prior Sweep-751 content preserved below.
+
+# Portfolio Status Report
+
 **Updated:** 2026-11-11 (Sweep-751 / Phase 3 Mandatory Live Verification)
 **Project / Version:** ADL Portfolio Governance / Sweep-751
 **Objective:** Explicit verification of forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce. CI, releases/tags, tests, docs, security. No assumptions. Evidence-based classification. Preserve history.
