@@ -195,3 +195,47 @@ N/A.
 Observation matches live search; reconfirm function present.
 
 **Outcome:** Observation freeze complete. Ready for next bounded classification slice.
+
+## Sweep-754 / PASS-2026-11-12-754
+
+**Selected Slice:** Bounded deep audit and classification of ADL_Nexas2.0.
+
+### DISCOVER
+- Created 2026-11-11; JS; README explicit RESEARCH / Claim ≤1 with governance link and non-claims.
+- AGENTS.md Grok App Builder sandbox contract.
+- package.json: Vite/TanStack/PGLite/opt-in auth; test/typecheck scripts present.
+- src/lib/nexus local sketches; .data/nexus-pglite snapshot.
+- Branches include sweep/ci-and-license with CI workflow + LICENSE; not on main.
+
+### AUDIT
+- Explicit claim cap matches governance.
+- No unsupported product/integration claims.
+- Tests present but runtime NOT_RUN.
+- CI prepared but inactive on main.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Experimental Grok App Builder workspace; claim-capped ≤1; no verified remote integrations or production claims. Matches LIFECYCLE.
+
+### PLAN
+Confirm classification; no elevation; no code mutation this slice.
+
+### IMPLEMENT
+Persisted PASS-2026-11-12-754.yaml + this history update.
+
+### TEST → CI
+Structural verification PASS; runtime tests NOT_RUN.
+
+### DOCUMENT
+PASS record + SWEEP_HISTORY heading.
+
+### GOVERN
+Preserves claim levels, history, and locked catalog.
+
+### RELEASE/ARCHIVE
+N/A.
+
+### RE-AUDIT
+README and structure match classification; no drift introduced.
+
+**Outcome:** Classification confirmed for ADL_Nexas2.0. Ready for next bounded slice.
