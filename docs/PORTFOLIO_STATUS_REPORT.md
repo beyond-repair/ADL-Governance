@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-12T21:02Z (Sweep Cycle: atomicdreamlabs1.1 CI addition)
+**Last Updated:** 2026-11-12T22:00Z (Sweep Cycle: informational-flux-identity DISCOVER)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -10,6 +10,12 @@
 - New since prior census: `ADL_Nexas2.0` (created 2026-11-11, JS, classified RESEARCH in Sweep-754)
 - GitHub archived flag: only `CFT-v3.0` (confirmed prior)
 - All others public, non-archived
+
+## Recent Sweep: informational-flux-identity
+- Classification: RESEARCH (confirmed this cycle)
+- Action: DISCOVER/AUDIT completed; large docs (README, GASKET.md); CI present; no code changes.
+- Status: RESEARCH claim-capped; termination conditions partial pending full CI verification.
+- Claims: Unchanged (≤1)
 
 ## Recent Sweep: atomicdreamlabs1.1
 - Classification: RESEARCH (confirmed)
@@ -54,10 +60,11 @@
 **No assumptions. All above from direct API observation.**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from repository_registry.md (Sweep-652) with live confirmation of pillars. ADL_Nexas2.0 confirmed RESEARCH (Sweep-754). atomicdreamlabs1.1 RESEARCH with new CI.
+Inherited from repository_registry.md (Sweep-652) with live confirmation of pillars. ADL_Nexas2.0 confirmed RESEARCH (Sweep-754). atomicdreamlabs1.1 RESEARCH with new CI. informational-flux-identity RESEARCH this cycle.
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; large docs; CI present | 2026-11-12 this sweep |
 | ADL_Nexas2.0 | RESEARCH | Experimental Grok App Builder workspace; claim-capped ≤1; no verified remote integrations | 2026-11-12 Sweep-754 |
 | atomicdreamlabs1.1 | RESEARCH | Experimental web office; CI workflow added this cycle; claim-capped | 2026-11-12 |
 | (others) | Per registry | ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED | Prior sweeps + this confirmation for 4 pillars |
@@ -83,10 +90,11 @@ Inherited from repository_registry.md (Sweep-652) with live confirmation of pill
 - Shared: Governance patterns in ADL-Governance / ADL-SEEM
 
 ## Gap Summary
-- Critical: Full deep classification of 80+ RESEARCH repos pending (this cycle bounded to pillars + inventory + ADL_Nexas2.0 + atomicdreamlabs1.1)
+- Critical: Full deep classification of 80+ RESEARCH repos pending (this cycle bounded to pillars + inventory + ADL_Nexas2.0 + atomicdreamlabs1.1 + informational-flux-identity)
 - Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room
 - Low: Documentation drift in some SUPERSEDED
 - atomicdreamlabs1.1: CI workflow added; green status pending
+- informational-flux-identity: DISCOVER complete; full CI re-verify residual
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -103,7 +111,7 @@ Inherited from repository_registry.md (Sweep-652) with live confirmation of pill
 - Critical CI: NONE on pillars
 - Critical security: NONE open on pillars
 - Duplicate canonical: NONE identified this cycle
-- All classified: PARTIAL (ADL_Nexas2.0 and atomicdreamlabs1.1 confirmed RESEARCH; others per registry)
+- All classified: PARTIAL (ADL_Nexas2.0 and atomicdreamlabs1.1 confirmed RESEARCH; informational-flux-identity this cycle; others per registry)
 - Dependencies mapped: HIGH-LEVEL only
 - Demonstrated vs Planned: Distinguished
 - Docs updated: THIS FILE + history + queue
@@ -115,3 +123,4 @@ Inherited from repository_registry.md (Sweep-652) with live confirmation of pill
 - Operator review of ARCHIVE queue
 - Optional release tags for pillars
 - Monitor CI run on atomicdreamlabs1.1
+- Deep dive residual on informational-flux-identity CI if needed
