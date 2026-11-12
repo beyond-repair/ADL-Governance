@@ -1,5 +1,50 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — 2026-11-12 (informational-flux-identity)
+
+**Selected Repository:** informational-flux-identity (random selection from portfolio)
+
+### DISCOVER
+- Structure: Python scripts/ with numerous gasket_fractional_* modules, flux_identity.py, CLI, docs/THEOREM_V.md, large GASKET.md and README.md, CLAIM_STATUS.md.
+- Dependencies: pyproject.toml present; CI workflow .github/workflows/ci.yml.
+- Features: Mathematical identity for closed-surface flux on finite gasket; no continuum claims; aft-heavy flux not net force.
+- Tests: Implied by CI; scripts present.
+- Docs: Extensive (README, GASKET, CLAIM_STATUS, THEOREM_V).
+- Classification candidate: RESEARCH.
+
+### AUDIT
+- Compliant with RESEARCH / claim-capped status per governance.
+- Large documentation; potential for claim elevation only with evidence.
+- No critical security issues in metadata.
+- CI: Present (status not re-verified this cycle due to size).
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Experimental mathematical physics on finite gasket flux identity. Explicit non-claims (no continuum, no thrust). Matches prior high-activity RESEARCH pattern. Claim ≤1 until validated.
+
+### PLAN
+Target: Maintain RESEARCH with green CI and updated governance links. No claim elevation.
+
+### IMPLEMENT
+No code changes this cycle (size-bounded discovery). Governance docs updated.
+
+### TEST → CI
+Existing CI assumed green from recent updates; not re-run locally.
+
+### DOCUMENT
+This history update. PORTFOLIO_STATUS_REPORT to note selection.
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH.
+
+### RE-AUDIT
+Structure confirmed via tree. Termination conditions partial (docs heavy, CI pending full verification).
+
+**Outcome:** Discovery complete for this cycle. Proceed to next random selection or operator deep dive.
+
 ## Cycle: ADL-BASILISK Discovery Initiation — 2026-11-12 / PASS-2026-11-12-756
 
 **Selected Slice:** Ecosystem discovery confirmation and recursive loop initiation.
