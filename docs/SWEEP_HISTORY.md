@@ -1,5 +1,51 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — 2026-11-12 (atomicdreamlabs1.1)
+
+**Selected Repository:** atomicdreamlabs1.1
+
+### DISCOVER
+- Structure: Vite + TanStack Start + React app, .grok/skills (auth, building-games, design-ui, etc.), scripts/, src/, package.json with test/typecheck/lint.
+- Dependencies: Numerous (better-auth, pglite, radix-ui, etc.); private workspace.
+- Features: Experimental web office for ADL Nexus (Work/Sell/Build jobs); claim-capped.
+- Tests: Defined in package.json (node:test on select files).
+- Docs: README.md, CLAIM_STATUS.md present; no CI prior to this cycle.
+- Branches: main only.
+
+### AUDIT
+- Compliant with RESEARCH classification per prior passes.
+- Missing: GitHub Actions CI (now added).
+- No critical security issues identified in metadata.
+- Claims capped; no unsupported assertions.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Experimental web front / Grok App Builder workspace. Claim ≤1. Distinct from Python ADL-Nexus kernel. Matches prior PASS records.
+
+### PLAN
+Target: CI-green RESEARCH state. Add basic workflow for typecheck + test.
+
+### IMPLEMENT
+- Added .github/workflows/ci.yml (node 22, npm ci, typecheck, test) on main.
+- Idempotent; no other mutations.
+
+### TEST → CI
+Workflow committed. Runtime CI status pending first run (not observed this cycle).
+
+### DOCUMENT
+Updated this SWEEP_HISTORY.md. PORTFOLIO_STATUS_REPORT residual notes apply.
+
+### GOVERN
+No unsupported claims. No history rewrite. Aligned to ADL-Governance.
+
+### RELEASE/ARCHIVE
+No release tagged. Remains RESEARCH.
+
+### RE-AUDIT
+Structure unchanged except CI addition. Termination conditions partially met (CI added; full green pending).
+
+**Outcome:** Safe CI addition complete. Proceed to next random selection or operator review of CI run.
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-12
 
 **Selected Repository:** Open-Energy-Fusion
