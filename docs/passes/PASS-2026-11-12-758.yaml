@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-11-12-758
+  parent_pass: PASS-2026-11-12-757
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 5
+  capabilities_verified: 3
+  gaps_remaining: 18
+
+OBJECTIVE:
+  id: GAP-VERIFY-CI-INFORMATIONAL-FLUX
+  description: Observe and record CI status for informational-flux-identity main to confirm verification boundary of core flux identity.
+  reason_selected: Next action from previous pass; recent high activity; closes CI green uncertainty.
+
+DISCOVERY:
+  findings:
+    - CI workflow: .github/workflows/ci.yml runs python -m unittest tests/test_flux_identity.py after pip install numpy on ubuntu-latest Python 3.12.
+    - Latest runs: run 43323162183 (2026-11-12T22:47:38Z) conclusion success on head 84cb64b; prior runs 123-120 also success.
+    - Total workflow runs: 126; recent all completed success.
+    - Core test targets the flux identity asserts reviewed in prior audit.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-12-758.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - informational-flux-identity CI green status confirmed for core identity test
+
+VERIFICATION:
+  tests_run:
+    - GitHub Actions list_workflow_runs: latest 5 runs all success
+    - Workflow definition matches expected test target
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - CI is green on main for the flux identity unit test.
+    - Verification boundary for core identity now includes observed success.
+  failures: []
+  decisions:
+    - No claim elevation.
+    - No code changes in target repo.
+
+REMAINING:
+  incomplete:
+    - Full runtime of all gasket_fractional scripts not performed.
+    - Broader capability matrix incomplete.
+  blockers: []
+  new_gaps:
+    - Optional deep verification of additional theorems if prioritized.
+
+NEXT:
+  objective_id: GAP-DEEP-AUDIT-NEXT-HIGH-ACTIVITY
+  action: Select and perform bounded deep audit of next high-activity RESEARCH repository (e.g., finite-gasket-spectral-derivatives or atomicdreamlabs1.1 CI status).
+  reason: Continues progressive closure of capability unknowns while preserving claim caps.
+  prerequisites:
+    - No claim elevation.
+    - Preserve history.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Actions API list_workflow_runs returned success conclusions.
+    - ci.yml content confirmed.
