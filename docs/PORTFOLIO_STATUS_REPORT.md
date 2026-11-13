@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-13T16:19Z (Sweep Cycle: Master Directive v3.0 Confirmation)
+**Last Updated:** 2026-11-13T17:01Z (Sweep Cycle: Random CFTv3.3-IQG-Unified-Framework Reconfirm)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -11,7 +11,7 @@
 - All others public, non-archived
 - New/recent: ADL_Nexas2.0 (2026-11-11), atomicdreamlabs1.1, informational-flux-identity (recent activity); finite-gasket-spectral-derivatives deep audit 2026-11-13
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-13T16:19Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-13T17:01Z)
 
 ### forge-aegis
 - Branches: main (e7188d5), finish/forge-aegis-v0.1-runnable, repair/* 
@@ -52,6 +52,7 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| CFTv3.3-IQG-Unified-Framework | RESEARCH | Consistency ledger; symbol lock n-3; docs-ci green; claim ≤2; Bullet FAIL retained | 2026-11-13 |
 | informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; large docs; CI present | 2026-11-12 |
 | ADL_Nexas2.0 | RESEARCH | Experimental Grok App Builder workspace; claim-capped ≤1; no verified remote integrations | 2026-11-12 Sweep-754 |
 | atomicdreamlabs1.1 | RESEARCH | Experimental web office; CI workflow added; claim-capped | 2026-11-12 |
@@ -74,6 +75,7 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - BlockSwarm: Foundry Solidity contracts | VERIFIED
 - Digital_Double_virtual_workforce: TS workforce automation scaffold | VERIFIED (security pin)
 - finite-gasket-spectral-derivatives: Core spectral derivatives kernel + CI | VERIFIED (claim ≤1)
+- CFTv3.3-IQG-Unified-Framework: Docs-presence + symbol-lock tests | VERIFIED (claim ≤2; not physics)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
