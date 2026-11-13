@@ -1,5 +1,49 @@
 # Sweep History
 
+## Cycle: Random Selection CFTv3.3-IQG-Unified-Framework Reconfirm — 2026-11-13T17:01Z
+
+**Selected Slice:** Random portfolio selection of CFTv3.3-IQG-Unified-Framework. Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
+
+### DISCOVER
+- Tree: docs-only consistency ledger (README.md, RESEARCH.md, CONSISTENCY.md, GOVERNANCE.md, .tex/.md, tests/test_docs.py, test_symbol_lock.py, .github/workflows/ci.yml).
+- Classification locked RESEARCH, claim ≤ 2. Explicit non-claims (no thruster, no experimental confirmation, Bullet FAIL retained).
+- Symbol lock: frozen W(n) = 0.08 e^{0.23(n-3)}; deprecated n-1.
+- CI: docs-ci workflow; latest run 37531114934 (2026-10-06) success on head 5e7e5ba91e13ddfe6bc405d2da6a4dc0d0245ace.
+- No releases/tags. No security advisories.
+
+### AUDIT
+- Compliant with RESEARCH / claim-capped status.
+- Docs-presence and symbol-lock tests present and CI-green.
+- No undefined components, no stale entries, no critical CI failures, no unsupported claims, no duplicate canonical (points to satellites).
+- Bullet Cluster remains FAIL as recorded.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Synthesis / consistency ledger for CFT/IQG. Not ACTIVE product runtime. Claim ≤ 2. Matches LIFECYCLE and prior sweeps (254, 106).
+
+### PLAN
+Target: Reconfirm classification, green CI, no elevation. Update governance docs only.
+
+### IMPLEMENT
+No mutations to capability repo. Governance docs updated (this cycle).
+
+### TEST → CI
+Actions API: docs-ci success. Structural review PASS. Local tests not re-run (CI authoritative).
+
+### DOCUMENT
+PORTFOLIO_STATUS_REPORT.md updated with row. This SWEEP_HISTORY.md entry. OPERATOR_QUEUE.md unchanged (no new items).
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance. Explicit non-claims retained.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH (do not archive while serving as symbol ledger).
+
+### RE-AUDIT
+Structure, claim cap, CI status, and conflict register match classification. No drift. Termination conditions met for RESEARCH ledger.
+
+**Outcome:** Reconfirm complete. Repo meets termination for current target state. Ready for next random selection.
+
 ## Cycle: Master Directive v3.0 Confirmation Sweep — 2026-11-13T16:19Z
 
 **Selected Slice:** Portfolio inventory reconfirmation + Phase-3 pillar status re-verification + residual recording under Master Directive v3.0.
