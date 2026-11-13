@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-13T17:19Z (Master Directive v3.0 Sweep)
+**Last Updated:** 2026-11-13T19:01Z (Random Selection new-program-1.01 Sweep)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -56,6 +56,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| new-program-1.01 | SUPERSEDED | Early My Mind agent files; successor sovereign-clean-room; claim 0 historical; README banner explicit; termination MET | 2026-11-13 |
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Consistency ledger; symbol lock n-3; docs-ci green; claim ≤2; Bullet FAIL retained | 2026-11-13 |
 | informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; CI green | 2026-11-13 |
 | ADL_Nexas2.0 | RESEARCH | Experimental; claim-capped ≤1 | 2026-11-12 |
@@ -70,7 +71,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
 **RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
-**SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3
+**SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room
 **ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required)
 
 ## Capability Inventory (Demonstrated Only)
