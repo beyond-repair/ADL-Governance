@@ -1,9 +1,8 @@
 # Operator Queue
 
-**Updated:** 2026-11-13T16:19Z (Master Directive v3.0 Confirmation cycle)
+**Updated:** 2026-11-13T17:13Z (PASS-2026-11-13-760)
 
 ## Pending / Escalated
-- **informational-flux-identity:** DISCOVER/AUDIT complete. Classification RESEARCH confirmed. Large docs residual; optional full CI re-verify.
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
 - **atomicdreamlabs1.1:** CI workflow added; monitor first run for green status. Classification RESEARCH confirmed.
 - **finite-gasket-spectral-derivatives:** Deep audit complete (PASS-2026-11-13-759). RESEARCH, core CI green. Residual: advanced residue claims not all CI-tested.
@@ -19,7 +18,6 @@ None this cycle. All actions non-destructive documentation updates.
 - Deep verification of high-activity RESEARCH repos next cycle.
 - Reconciliation of any remaining catalog drift in aegis-repo-graph.
 - Confirm CI green on atomicdreamlabs1.1.
-- Optional deep dive on informational-flux-identity scripts/CI.
 - Full capability matrix and dependency graph expansion (residual).
 
 **No pending destructive actions.**
