@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-13T20:02Z (Random Selection new-program-1.01 Reconfirm)
+**Last Updated:** 2026-11-13T21:00Z (Random Selection RealityOS Reconfirm)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -56,6 +56,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| RealityOS | RESEARCH | In-memory what-if API heuristic; claim ≤1; CI research-guard green; README/CLAIM_STATUS explicit non-claims; termination MET for sketch | 2026-11-13 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files; successor sovereign-clean-room; claim 0 historical; README banner explicit; termination MET | 2026-11-13 |
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Consistency ledger; symbol lock n-3; docs-ci green; claim ≤2; Bullet FAIL retained | 2026-11-13 |
 | informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; CI green | 2026-11-13 |
@@ -82,6 +83,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - finite-gasket-spectral-derivatives: Core spectral derivatives kernel + CI | VERIFIED (claim ≤1)
 - CFTv3.3-IQG-Unified-Framework: Docs-presence + symbol-lock tests | VERIFIED (claim ≤2; not physics)
 - informational-flux-identity: Core flux identity + CI | VERIFIED (claim ≤1)
+- RealityOS: In-memory SimulationEngine + FastAPI what-if heuristics + pytest | VERIFIED (claim ≤1; research-guard CI)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
