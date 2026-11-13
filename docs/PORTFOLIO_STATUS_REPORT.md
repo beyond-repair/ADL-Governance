@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-13T17:01Z (Sweep Cycle: Random CFTv3.3-IQG-Unified-Framework Reconfirm)
+**Last Updated:** 2026-11-13T17:13Z (PASS-2026-11-13-760)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -53,7 +53,7 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Consistency ledger; symbol lock n-3; docs-ci green; claim ≤2; Bullet FAIL retained | 2026-11-13 |
-| informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; large docs; CI present | 2026-11-12 |
+| informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; large docs; CI green on Theorem ED head | 2026-11-13 PASS-760 |
 | ADL_Nexas2.0 | RESEARCH | Experimental Grok App Builder workspace; claim-capped ≤1; no verified remote integrations | 2026-11-12 Sweep-754 |
 | atomicdreamlabs1.1 | RESEARCH | Experimental web office; CI workflow added; claim-capped | 2026-11-12 |
 | finite-gasket-spectral-derivatives | RESEARCH | Finite discrete kernel identities; CI green on core; claim ≤1 | 2026-11-13 |
@@ -76,6 +76,7 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - Digital_Double_virtual_workforce: TS workforce automation scaffold | VERIFIED (security pin)
 - finite-gasket-spectral-derivatives: Core spectral derivatives kernel + CI | VERIFIED (claim ≤1)
 - CFTv3.3-IQG-Unified-Framework: Docs-presence + symbol-lock tests | VERIFIED (claim ≤2; not physics)
+- informational-flux-identity: Core flux identity + CI | VERIFIED (claim ≤1)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
@@ -91,7 +92,6 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room
 - Low: Documentation drift in some SUPERSEDED
 - atomicdreamlabs1.1: CI workflow added; green status pending first run
-- informational-flux-identity: DISCOVER complete; full CI re-verify residual
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -120,4 +120,3 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - Operator review of ARCHIVE queue
 - Optional release tags for pillars
 - Monitor CI run on atomicdreamlabs1.1
-- Deep dive residual on informational-flux-identity CI if needed
