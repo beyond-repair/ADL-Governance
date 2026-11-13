@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Updated:** 2026-11-13T21:15Z (ADL-BASILISK PASS-2026-11-13-762)
+**Updated:** 2026-11-13T21:20Z (Confirmation Sweep)
 
 ## Pending / Escalated
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
