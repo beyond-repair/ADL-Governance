@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Residual Close — 2026-11-13 / PASS-2026-11-13-760
+
+**Selected Slice:** Bounded residual close on informational-flux-identity CI re-verify under ADL-BASILISK.
+
+### DISCOVER
+- Structure: scripts/ (flux_identity.py, cli.py, extensive gasket_fractional_*), tests/, pyproject.toml, .github/workflows/ci.yml, large docs (CLAIM_STATUS.md, GASKET.md, README.md).
+- Latest head 417b34c (Theorem ED, 2026-11-13T16:14Z): explicit THEOREM/OBSERVED/KEPT FAILURE/kept limits; non-claims retained (no Psi_info, Stage 2 blocked, functions on a graph, not a flux, not thrust).
+- Prior same-day commits EC/EB/EA/DZ same discipline.
+
+### AUDIT
+- Compliant with RESEARCH / claim ≤1.
+- flux-identity CI: latest 5 main runs all success (run 43460759867 on 417b34c success; total_count=135).
+- Core numpy path CI-covered; advanced arb/flint local-only as documented.
+- No new unsupported claims.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Finite gasket flux identity computations. Explicit non-claims. Claim ≤1. Matches LIFECYCLE and prior.
+
+### PLAN
+Target: Confirm CI green, close residual, no elevation.
+
+### IMPLEMENT
+Persisted PASS-2026-11-13-760.yaml. HEADINGS.md updated. This history. Status/queue updates follow.
+
+### TEST → CI
+Actions API: success. Structural review PASS.
+
+### DOCUMENT
+PASS + history + headings.
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH.
+
+### RE-AUDIT
+Structure, non-claims, and CI status match classification. No drift. Residual closed.
+
+**Outcome:** CI residual closed. RESEARCH reconfirmed. Ready for next bounded slice.
+
 ## Cycle: Random Selection CFTv3.3-IQG-Unified-Framework Reconfirm — 2026-11-13T17:01Z
 
 **Selected Slice:** Random portfolio selection of CFTv3.3-IQG-Unified-Framework. Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
@@ -169,4 +211,3 @@ No release. No archive actions (operator queue for candidates).
 Inventory matches live search. Pillar status stable (releases empty). Exit criteria partially met; residuals documented.
 
 **Outcome:** Governed reconfirmation sweep complete. Residuals recorded. Stop. No autonomous infinite review cycle.
-
