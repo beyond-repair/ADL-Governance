@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-11-13-763
+  parent_pass: PASS-2026-11-13-761
+
+STATE:
+  global_status: RESEARCH-majority portfolio; pillars CI-green; residual matrix open
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: >50 (high-level)
+  capabilities_verified: pillars + recent RESEARCH kernels
+  gaps_remaining: capability-matrix deep expansion; archive operator decisions; atomicdreamlabs1.1 CI red
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-LOCKFILE-SYNC
+  description: Update package-lock.json in atomicdreamlabs1.1 to restore npm ci sync, then re-observe CI green.
+  reason_selected: Next residual from prior pass NEXT; highest-value small slice to close documented CI uncertainty without claim elevation.
+
+DISCOVERY:
+  findings:
+    - CI workflow updated to pin node-version: '22.12.0'.
+    - New CI run 43516882726 completed with failure: still Missing: lru-cache@11.5.3 from lock file.
+    - Local Node 20 regeneration with --ignore-engines produced small lockfile delta (staged, not pushed due to auth/identity).
+    - Sandbox lacks Node 22.12+ for matching regeneration.
+    - Classification RESEARCH confirmed; no claim elevation.
+
+CHANGES:
+  repositories:
+    - atomicdreamlabs1.1
+  files:
+    - .github/workflows/ci.yml
+  commits:
+    - 58cde43b5d0fb597d53d6d2936f974c8e83b6a8c (ci pin)
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - Actions API list_workflow_runs: run 43516882726 conclusion=failure
+    - Job logs: npm ci EUSAGE Missing lru-cache@11.5.3 (post-pin)
+    - Local npm install --package-lock-only --ignore-engines: success with delta
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap, RESEARCH)
+  overall: BLOCKED
+
+KNOWLEDGE:
+  confirmed:
+    - Pinning Node to 22.12.0 does not resolve the lockfile desync; regeneration under matching environment required.
+    - RESEARCH / claim ≤1 reconfirmed.
+  failures:
+    - Lockfile not synced; CI remains red.
+  decisions:
+    - Record BLOCKED. No further mutation this pass. Next requires matching Node environment for lockfile regen.
+
+REMAINING:
+  incomplete:
+    - package-lock.json sync under Node >=22.12 and CI re-verification.
+  blockers:
+    - Sandbox Node 20.20.2 does not match package engines (>=22.12.0) or CI target.
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-LOCKFILE-SYNC
+  action: Regenerate package-lock.json under Node 22.12+ (or Actions-equivalent), commit, and re-observe CI.
+  reason: Closes the residual with verified matching environment; preserves claim caps.
+  prerequisites:
+    - Node >=22.12 available for regeneration.
+    - No claim elevation.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Commit 58cde43b5d0fb597d53d6d2936f974c8e83b6a8c
+    - Actions run 43516882726 failure logs
+    - Local regeneration delta observed
