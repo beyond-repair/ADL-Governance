@@ -1,5 +1,46 @@
 # Sweep History
 
+## Cycle: Random Selection new-program-1.01 SUPERSEDED Reconfirm — 2026-11-13T23:00Z
+
+**Selected Slice:** Random portfolio selection of new-program-1.01 (Python choice with seed 42 from full inventory of 87). Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
+
+### DISCOVER
+- Tree: main.py, delegate_class.py, delegate_init.py, gpt_agent.py, my_mind.py, task_class.py, task_delegation.py, taskqueue_class.py, test_main.py, test_runner.py, agents.txt, tasks.txt, README.md, .gitignore, .gitattributes. No .github/workflows.
+- README.md: Explicit SUPERSEDED banner. Early My Mind agent files. No README existed. Canonical successor: sovereign-clean-room. Claim 0 historical. Lifecycle SUPERSEDED. Do not start new feature work.
+- Code: Incomplete stubs (e.g., test_main.py is pass; Delegate methods are pass). Historical early agent delegation sketch.
+- No CI workflows. No releases/tags observed. Distinct from ACTIVE pillars.
+
+### AUDIT
+- Compliant with SUPERSEDED / claim 0 / historical. Explicit successor and non-claims in README. Tests are stubs (non-functional). No undefined/undocumented components beyond historical stubs (README covers status). No stale registry. No critical CI failures (none present; not required for SUPERSEDED). No duplicate canonical (successor is sovereign-clean-room). No unsupported claims. No critical security issues.
+- Termination conditions met for SUPERSEDED historical target state.
+
+### CLASSIFY
+**Label:** SUPERSEDED
+**Justification:** Early My Mind agent files; successor sovereign-clean-room; claim 0 historical; README banner explicit. Matches LIFECYCLE and prior registry. Do not elevate or revive.
+
+### PLAN
+Target: Reconfirm classification, no elevation, preserve history. Update governance docs only. No mutations to capability repo.
+
+### IMPLEMENT
+No mutations to new-program-1.01 (historical, SUPERSEDED). Governance docs updated (this cycle). No history rewrites. No deletions.
+
+### TEST → CI
+No CI workflow present. Tests are empty stubs. Structural review PASS for SUPERSEDED. Local execution not required (historical).
+
+### DOCUMENT
+PORTFOLIO_STATUS_REPORT.md updated with reconfirm. This SWEEP_HISTORY.md entry. OPERATOR_QUEUE.md timestamp updated (no new items; already listed as archive candidate).
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance. Explicit SUPERSEDED and successor retained. Claim 0 held.
+
+### RELEASE/ARCHIVE
+No release. Remains SUPERSEDED. Archive decision operator-only (already in queue).
+
+### RE-AUDIT
+Structure, claim cap 0, README banner, successor link, and stub nature match classification. No drift. Termination conditions met for SUPERSEDED historical.
+
+**Outcome:** Reconfirm complete. Repo meets termination for current target state (SUPERSEDED, claim 0, docs clear, no feature work). Ready for next random selection.
+
 ## Cycle: Master Directive v3.0 Portfolio Completion Sweep — 2026-11-13T22:17Z
 
 **Selected Slice:** Full portfolio live inventory (search total_count=87, incomplete_results=false) + Phase-3 mandatory live verification of pillars under Master Directive v3.0. Bounded confirmation; residuals retained. No deep RESEARCH expansion this cycle.
