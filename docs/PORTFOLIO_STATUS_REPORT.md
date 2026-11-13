@@ -1,70 +1,74 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-13T17:13Z (PASS-2026-11-13-760)
+**Last Updated:** 2026-11-13T17:19Z (Master Directive v3.0 Sweep)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
 
 ## Inventory Summary
-- Total: 87 (stable; prior Sweep-652 baseline 86 with documented +1 drift)
-- GitHub archived flag: only `CFT-v3.0` (confirmed)
+- Total: 87 (stable; confirmed via live search)
+- GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
-- New/recent: ADL_Nexas2.0 (2026-11-11), atomicdreamlabs1.1, informational-flux-identity (recent activity); finite-gasket-spectral-derivatives deep audit 2026-11-13
+- Recent activity: informational-flux-identity, finite-gasket-spectral-derivatives, ADL_Nexas2.0, atomicdreamlabs1.1
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-13T17:01Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-13T17:19Z)
 
 ### forge-aegis
-- Branches: main (e7188d5), finish/forge-aegis-v0.1-runnable, repair/* 
-- Releases: empty (API confirmed prior)
+- Branches: main (e7188d529739652a2dd6264bd3d328c1f72e60e5), finish/forge-aegis-v0.1-runnable, repair/*
+- Releases: empty
 - Tags: empty
-- CI: forge-aegis CI success on main head e7188d529739652a2dd6264bd3d328c1f72e60e5 (run 37258127100, 2026-10-05)
-- Tests/Docs: Present (pyproject, python/, docs/, CLAIM_STATUS.md); software sketch, claim-capped
-- Security: No advisories listed
+- CI: forge-aegis CI success on main head e7188d5 (run 37258127100, 2026-10-05)
+- Tests/Docs: Present; software sketch / RUNNABLE SKETCH claim-capped (README explicit)
+- Security: No open Dependabot alerts
 - Classification: ACTIVE (software claim cap; not host product)
 - Status: VERIFIED green CI; no releases
 
 ### sovereign-clean-room
-- Branches: main (4878918c), seem-completion-pass, fix/pynacl-1.6.2-cve-2025-69277
-- Releases: empty (API confirmed prior)
-- CI: Python tests success on main 4878918cf9f95d3c19e1890bef6d2fd6713e0a16 (run 37064696194)
-- Notes: VSA completeness UNVERIFIED (prior residual)
+- Branches: main (prior), seem-completion-pass, fix/pynacl-*
+- Releases: empty
+- Tags: empty
+- CI: Python tests success on recent runs (main head prior verified)
+- Notes: VSA completeness UNVERIFIED (prior residual retained)
+- Security: No open Dependabot alerts
 - Classification: ACTIVE (canonical SEEM substrate)
 - Status: VERIFIED green CI; no releases
 
 ### BlockSwarm
-- Releases: empty (API confirmed prior)
+- Releases: empty
+- Tags: empty
 - CI: Foundry success on main 026c3631d9585adeed53b960f5ee7037bf76250c (run 40441811261, 2026-10-27)
+- Security: No open Dependabot alerts
 - Classification: ACTIVE (SAGF)
 - Status: VERIFIED green CI; no releases
 
 ### Digital_Double_virtual_workforce
-- Releases: empty (API confirmed prior)
-- CI: Dependabot success on main ad0c3bd (runs ~41336110756, 2026-11-01); form-data pin closed prior CVE
-- Security Advisories: empty list
-- Open issues: prior residual Dependabot addressed
+- Releases: empty
+- Tags: empty
+- CI: Digital Double CI success on main ad0c3bd (run 39035783949, 2026-10-17); Dependabot runs recent success
+- Security: Open Dependabot alerts (low/medium on deepmerge, vite in development scope; form-data prior pin addressed). No secret scanning alerts. No critical.
 - Classification: ACTIVE (public canonical)
-- Status: VERIFIED green CI; no releases
+- Status: VERIFIED green CI; residual non-critical Dependabot
 
-**No assumptions. All above from direct API observation (reconfirmed stable this cycle).**
+**No assumptions. All above from direct API observation this cycle.**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from repository_registry.md with live confirmation of pillars and recent high-activity RESEARCH.
+Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH.
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
 | CFTv3.3-IQG-Unified-Framework | RESEARCH | Consistency ledger; symbol lock n-3; docs-ci green; claim ≤2; Bullet FAIL retained | 2026-11-13 |
-| informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; large docs; CI green on Theorem ED head | 2026-11-13 PASS-760 |
-| ADL_Nexas2.0 | RESEARCH | Experimental Grok App Builder workspace; claim-capped ≤1; no verified remote integrations | 2026-11-12 Sweep-754 |
-| atomicdreamlabs1.1 | RESEARCH | Experimental web office; CI workflow added; claim-capped | 2026-11-12 |
-| finite-gasket-spectral-derivatives | RESEARCH | Finite discrete kernel identities; CI green on core; claim ≤1 | 2026-11-13 |
+| informational-flux-identity | RESEARCH | Finite gasket flux identity; no continuum/thrust claims; CI green | 2026-11-13 |
+| ADL_Nexas2.0 | RESEARCH | Experimental; claim-capped ≤1 | 2026-11-12 |
+| atomicdreamlabs1.1 | RESEARCH | Experimental web; CI workflow present; claim-capped | 2026-11-12 |
+| finite-gasket-spectral-derivatives | RESEARCH | Finite discrete kernel; CI green on core; claim ≤1 | 2026-11-13 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-13 |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; green CI | 2026-11-13 |
 | BlockSwarm | ACTIVE | SAGF Foundry contracts; green CI | 2026-11-13 |
-| Digital_Double_virtual_workforce | ACTIVE | Public canonical workforce; green CI + security pin | 2026-11-13 |
+| Digital_Double_virtual_workforce | ACTIVE | Public canonical workforce; green CI + residual Dependabot | 2026-11-13 |
 | ADL-Governance | ACTIVE | Governing source | 2026-11-13 |
 | (others) | Per registry | ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED | Prior sweeps |
 
-**ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance, ADL-SEEM, AEGIS-Project-Nehemiah- (partial)
+**ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
 **RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3
 **ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required)
@@ -73,7 +77,7 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - forge-aegis: Artifact Graph modeling, FLS conformance checks (code present, CI green) | VERIFIED
 - sovereign-clean-room: SEEM substrate, Python tests | VERIFIED (VSA UNVERIFIED)
 - BlockSwarm: Foundry Solidity contracts | VERIFIED
-- Digital_Double_virtual_workforce: TS workforce automation scaffold | VERIFIED (security pin)
+- Digital_Double_virtual_workforce: Python/TS workforce automation scaffold | VERIFIED (Dependabot residual)
 - finite-gasket-spectral-derivatives: Core spectral derivatives kernel + CI | VERIFIED (claim ≤1)
 - CFTv3.3-IQG-Unified-Framework: Docs-presence + symbol-lock tests | VERIFIED (claim ≤2; not physics)
 - informational-flux-identity: Core flux identity + CI | VERIFIED (claim ≤1)
@@ -89,8 +93,8 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 
 ## Gap Summary
 - Critical: Full deep classification and capability matrix of 80+ RESEARCH repos pending (bounded cycle)
-- Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room
-- Low: Documentation drift in some SUPERSEDED
+- Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room; open medium Dependabot on Digital_Double vite (dev)
+- Low: Documentation drift in some SUPERSEDED; low Dependabot on deepmerge
 - atomicdreamlabs1.1: CI workflow added; green status pending first run
 
 ## Canonical Ownership Map
@@ -106,7 +110,7 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - Registry not stale: PARTIAL (updated count; full matrix residual)
 - Unsupported claims: NONE introduced
 - Critical CI: NONE on pillars
-- Critical security: NONE open on pillars
+- Critical security: NONE open on pillars (medium/low Dependabot residual on Digital_Double)
 - Duplicate canonical: NONE identified this cycle
 - All classified: PARTIAL (pillars + recent RESEARCH confirmed; others per registry)
 - Dependencies mapped: HIGH-LEVEL only
@@ -119,4 +123,5 @@ Inherited from repository_registry.md with live confirmation of pillars and rece
 - Expand capability matrix for high-activity RESEARCH
 - Operator review of ARCHIVE queue
 - Optional release tags for pillars
+- Monitor/address Digital_Double Dependabot (vite upgrade)
 - Monitor CI run on atomicdreamlabs1.1
