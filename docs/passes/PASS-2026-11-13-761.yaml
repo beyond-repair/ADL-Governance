@@ -1,0 +1,72 @@
+PASS:
+  id: PASS-2026-11-13-761
+  parent_pass: PASS-2026-11-13-760
+
+STATE:
+  global_status: RESEARCH-majority portfolio; pillars CI-green; residual matrix open
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: >50 (high-level)
+  capabilities_verified: pillars + recent RESEARCH kernels
+  gaps_remaining: capability-matrix deep expansion; archive operator decisions; atomicdreamlabs1.1 CI red
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-MONITOR
+  description: Bounded observation of atomicdreamlabs1.1 CI status on main after workflow addition. Confirm green or identify residual.
+  reason_selected: Next residual in OPERATOR_QUEUE from prior pass; highest-value small slice closing documented uncertainty without mutation or claim elevation.
+
+DISCOVERY:
+  findings:
+    - CI workflow present: .github/workflows/ci.yml (node 22, npm ci, typecheck, test).
+    - Latest CI runs on main: conclusion=failure (runs 43306368919, 43306127761).
+    - Failure root cause: npm ci EUSAGE — package.json and package-lock.json out of sync (Missing: lru-cache@11.5.3 from lock file).
+    - Dependabot dynamic run also failure.
+    - Classification RESEARCH confirmed; no claim elevation warranted.
+    - Lockfile regeneration prepared locally (npm install --package-lock-only); small delta (30 lines).
+
+CHANGES:
+  repositories: []
+  files: []
+  commits: []
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - Actions API list_workflow_runs: latest CI runs conclusion=failure
+    - Job logs: npm ci failure on lockfile desync
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap, RESEARCH)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - atomicdreamlabs1.1 CI is red on main due to lockfile/package.json desync after CI addition.
+    - RESEARCH / claim ≤1 reconfirmed; no promotion.
+  failures:
+    - CI not green; residual open.
+  decisions:
+    - No mutation this pass. Record residual. Next: sync lockfile.
+
+REMAINING:
+  incomplete:
+    - package-lock.json sync and CI re-verification.
+  blockers: []
+  new_gaps:
+    - GAP-ATOMICDREAMLABS-LOCKFILE-SYNC
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-LOCKFILE-SYNC
+  action: Update package-lock.json in atomicdreamlabs1.1 to restore npm ci sync, then re-observe CI green.
+  reason: Closes the discovered CI residual with minimal change; preserves claim caps.
+  prerequisites:
+    - Local lockfile regeneration verified.
+    - No claim elevation.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Actions runs 43306368919 failure logs (npm ci EUSAGE)
+    - Workflow file observation
+    - Local npm install --package-lock-only success with delta
