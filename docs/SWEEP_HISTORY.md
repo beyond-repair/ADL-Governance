@@ -1,5 +1,48 @@
 # Sweep History
 
+## Cycle: Random Selection new-program-1.01 SUPERSEDED Reconfirm — 2026-11-13T19:01Z
+
+**Selected Slice:** Random portfolio selection of new-program-1.01. Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
+
+### DISCOVER
+- Tree: Early My Mind agent files (main.py, delegate_*.py, task_*.py, gpt_agent.py, my_mind.py, stub tests, agents.txt, tasks.txt, .gitignore). No CI workflows. No LICENSE visible in tree.
+- README.md: Explicit SUPERSEDED banner. Successor: sovereign-clean-room. Claim 0 historical. "Do not start new feature work here."
+- No releases/tags observed. No security advisories expected for historical sketch.
+- Prior passes (e.g. Sweep-459, PASS-424, PASS-357, PASS-749) already locked SUPERSEDED, termination MET.
+
+### AUDIT
+- Compliant with SUPERSEDED / claim 0. Points to canonical successor. No active development, no unsupported claims.
+- Stub tests only (unittest pass). No CI. Code is early experimental agent delegation sketch.
+- No undefined components remaining (README covers status). No stale registry (listed in archive queue). No critical CI (none present). No duplicate canonical (superseded by sovereign-clean-room).
+- No critical security issues.
+
+### CLASSIFY
+**Label:** SUPERSEDED
+**Justification:** Early My Mind agent files. Explicitly superseded by sovereign-clean-room. Claim 0 historical. Matches LIFECYCLE, README banner, prior sweeps, and archive queue. Do not elevate.
+
+### PLAN
+Target: Reconfirm classification, no elevation, preserve history. Update governance docs only. Operator archive remains queued (no auto-archive).
+
+### IMPLEMENT
+No mutations to capability repo (new-program-1.01). Governance docs updated (this cycle). No history rewrites. No deletions.
+
+### TEST → CI
+No CI present. Structural review PASS. Stub tests not re-executed (non-blocking for SUPERSEDED).
+
+### DOCUMENT
+PORTFOLIO_STATUS_REPORT.md updated with row. This SWEEP_HISTORY.md entry. OPERATOR_QUEUE.md unchanged (already lists as archive candidate).
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance. Explicit non-claims and successor pointer retained.
+
+### RELEASE/ARCHIVE
+No release. Remains SUPERSEDED. Archive decision operator-only (queued).
+
+### RE-AUDIT
+Structure, README banner, successor pointer, and prior classification match. No drift. Termination conditions met for SUPERSEDED historical sketch.
+
+**Outcome:** Reconfirm complete. Repo meets termination for current target state (SUPERSEDED, docs clear, no active work). Ready for next random selection.
+
 ## Cycle: Master Directive v3.0 Governed Confirmation Sweep — 2026-11-13T17:19Z
 
 **Selected Slice:** Portfolio inventory reconfirmation + Phase-3 pillar live verification (CI/releases/tags/security) + residual recording under Master Directive v3.0.
