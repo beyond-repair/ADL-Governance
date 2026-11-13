@@ -1,5 +1,46 @@
 # Sweep History
 
+## Cycle: Random Selection new-program-1.01 SUPERSEDED Reconfirm (Session) — 2026-11-13T20:02Z
+
+**Selected Slice:** Random portfolio selection of new-program-1.01 (seed 42). Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive. Prior cycle at 19:01Z already locked SUPERSEDED.
+
+### DISCOVER
+- Tree unchanged: Early My Mind agent files (main.py, delegate_*.py, task_*.py, gpt_agent.py, my_mind.py, stub tests, agents.txt, tasks.txt, .gitignore). No CI workflows. No LICENSE visible in tree.
+- README.md: Explicit SUPERSEDED banner. Successor: sovereign-clean-room. Claim 0 historical. "Do not start new feature work here."
+- No new commits, releases, tags, or security issues since prior cycle.
+
+### AUDIT
+- Compliant with SUPERSEDED / claim 0. Points to canonical successor. No active development, no unsupported claims.
+- No undefined components remaining. No stale registry. No critical CI. No duplicate canonical. No critical security issues.
+- Termination conditions met.
+
+### CLASSIFY
+**Label:** SUPERSEDED
+**Justification:** Early My Mind agent files. Explicitly superseded by sovereign-clean-room. Claim 0 historical. Matches LIFECYCLE, README banner, prior sweeps, and archive queue. Do not elevate.
+
+### PLAN
+Target: Reconfirm classification, no elevation, preserve history. Update governance docs only. Operator archive remains queued (no auto-archive).
+
+### IMPLEMENT
+No mutations to capability repo (new-program-1.01). Governance docs updated (this cycle). No history rewrites. No deletions.
+
+### TEST → CI
+No CI present. Structural review PASS. Stub tests not re-executed (non-blocking for SUPERSEDED).
+
+### DOCUMENT
+PORTFOLIO_STATUS_REPORT.md timestamp updated. This SWEEP_HISTORY.md entry. OPERATOR_QUEUE.md unchanged (already lists as archive candidate).
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance. Explicit non-claims and successor pointer retained.
+
+### RELEASE/ARCHIVE
+No release. Remains SUPERSEDED. Archive decision operator-only (queued).
+
+### RE-AUDIT
+Structure, README banner, successor pointer, and prior classification match. No drift. Termination conditions met for SUPERSEDED historical sketch.
+
+**Outcome:** Reconfirm complete. Repo meets termination for current target state (SUPERSEDED, docs clear, no active work). Ready for next random selection.
+
 ## Cycle: Random Selection new-program-1.01 SUPERSEDED Reconfirm — 2026-11-13T19:01Z
 
 **Selected Slice:** Random portfolio selection of new-program-1.01. Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
