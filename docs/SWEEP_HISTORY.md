@@ -1,5 +1,48 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Deep Audit — 2026-11-13 / PASS-2026-11-13-759
+
+**Selected Slice:** Bounded deep audit of finite-gasket-spectral-derivatives to confirm structure, claim cap, core kernel, and CI status.
+
+### DISCOVER
+- Structure: scripts/spectral_derivatives.py, cli.py, check_residue_* modules, residue C code; tests/; pyproject.toml; .github/workflows/kernel.yml; large CLAIM_STATUS.md / README.
+- Classification: RESEARCH, claim ≤1. Non-claims: continuum, selected W, force, thrust.
+- Core kernel and CLI implemented; tests present.
+- CI: spectral-kernel workflow; latest run 43324985244 (2026-11-12T23:00:07Z) success on 8427d4f; recent runs success.
+
+### AUDIT
+- Compliant with RESEARCH / claim-capped status.
+- Core functions CI-tested green.
+- Advanced residue claims supported by scripts and finite computations, not all in CI tests.
+- No new unsupported claims.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Finite discrete kernel identities and supporting residue computations. Explicit non-claims. Claim ≤1. Matches LIFECYCLE.
+
+### PLAN
+Target: Confirm classification, core verification boundary, CI green. No elevation.
+
+### IMPLEMENT
+Persisted PASS-2026-11-13-759.yaml. This history update. HEADINGS.md updated.
+
+### TEST → CI
+Actions API observation: success on kernel.yml. Structural review PASS.
+
+### DOCUMENT
+PASS record + this history update + HEADINGS.
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH.
+
+### RE-AUDIT
+Structure, CLAIM_STATUS, and CI status match classification. No drift.
+
+**Outcome:** Deep audit complete. Core kernel and CI green confirmed. Ready for next bounded slice.
+
 ## Cycle: Master Directive v3.0 Reconfirmation Sweep — 2026-11-12T23:18Z
 
 **Selected Slice:** Portfolio inventory reconfirmation + Phase-3 pillar releases/branches re-verification + residual recording under Master Directive v3.0.
