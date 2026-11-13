@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-11-13-762
+  parent_pass: PASS-2026-11-13-761
+
+STATE:
+  global_status: RESEARCH-majority portfolio; pillars CI-green; residual matrix open
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: >50 (high-level)
+  capabilities_verified: pillars + recent RESEARCH kernels
+  gaps_remaining: capability-matrix deep expansion; archive operator decisions; atomicdreamlabs1.1 CI red (lockfile)
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-LOCKFILE-SYNC
+  description: Update package-lock.json in atomicdreamlabs1.1 to restore npm ci sync, then re-observe CI green.
+  reason_selected: Next residual from prior pass OPERATOR_QUEUE and PASS-761 NEXT; highest-value small slice to close CI red without claim elevation.
+
+DISCOVERY:
+  findings:
+    - Current main HEAD package-lock.json contains nested node_modules/nitro/node_modules/lru-cache@11.5.3 marked optional/peer.
+    - Local Node 22.11.0 / npm 10.9.0: npm install --package-lock-only reported up to date; full regenerate produced larger incompatible lockfile.
+    - npm ci with original lockfile succeeded locally on Node 22.11.0 after clean install, but GitHub Actions CI (node-version: '22') fails with Missing: lru-cache@11.5.3.
+    - CI runs 43306368919 and 43306127761 remain failure; no newer successful run.
+    - Classification remains RESEARCH; claim cap preserved.
+
+CHANGES:
+  repositories: []
+  files: []
+  commits: []
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - Local Node 22.11.0 npm ci on original lockfile: success (post clean)
+    - Actions API: latest CI runs still conclusion=failure
+    - Log inspection: confirmed EUSAGE Missing lru-cache@11.5.3
+  code_review: PASS
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (no claim elevation, RESEARCH)
+  overall: BLOCKED
+
+KNOWLEDGE:
+  confirmed:
+    - Lockfile desync persists in CI environment despite local success on Node 22.11.0.
+    - Nested optional/peer lru-cache entry is present but not satisfying CI npm ci validation.
+  failures:
+    - Full lockfile regeneration introduced additional Invalid/Missing entries (ajv versions etc.).
+    - No safe minimal delta produced that was verified to pass npm ci in CI-like environment.
+  decisions:
+    - No mutation committed. Record as BLOCKED. Next: obtain CI-compatible lockfile or pin Node version in workflow.
+
+REMAINING:
+  incomplete:
+    - package-lock.json sync that passes npm ci on GitHub Actions Node 22.
+  blockers:
+    - Environment mismatch between local Node 22.11.0 and Actions '22' (likely newer patch) causing different peer/optional resolution.
+  new_gaps:
+    - GAP-ATOMICDREAMLABS-NODE-PIN or GAP-ATOMICDREAMLABS-LOCKFILE-CI-COMPAT
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-LOCKFILE-CI-COMPAT
+  action: Either pin workflow node-version to 22.11.0 or regenerate lockfile under Actions-equivalent npm and commit verified sync.
+  reason: Resolves the residual CI red with minimal risk; preserves RESEARCH claim cap.
+  prerequisites:
+    - Verified npm ci success under matching Node/npm.
+    - No claim elevation.
+
+PROVENANCE:
+  state_commit: (this commit)
+  evidence:
+    - Local npm ci success on Node 22.11.0 with original lockfile
+    - Actions runs still failing
+    - Nested lru-cache@11.5.3 entry inspection
