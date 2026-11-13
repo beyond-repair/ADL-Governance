@@ -1,10 +1,10 @@
 # Operator Queue
 
-**Updated:** 2026-11-13T19:12Z (ADL-BASILISK PASS-2026-11-13-761)
+**Updated:** 2026-11-13T21:15Z (ADL-BASILISK PASS-2026-11-13-762)
 
 ## Pending / Escalated
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
-- **atomicdreamlabs1.1:** CI residual OPEN — main CI red due to package-lock.json / package.json desync (Missing lru-cache@11.5.3). Lockfile regeneration prepared. Classification RESEARCH confirmed. Next: sync lockfile and re-verify.
+- **atomicdreamlabs1.1:** CI residual OPEN — main CI red due to package-lock.json / package.json desync (Missing lru-cache@11.5.3). PASS-762 BLOCKED on environment mismatch (local Node 22.11.0 succeeds, Actions '22' fails). Classification RESEARCH confirmed. Next: pin node-version or regenerate under Actions-equivalent npm.
 - **finite-gasket-spectral-derivatives:** Deep audit complete (PASS-2026-11-13-759). RESEARCH, core CI green. Residual: advanced residue claims not all CI-tested.
 - **Archive candidates (from registry):** Operator decision required for GitHub archive flag on: RepoRover-, DevelopTool-Unified-Dev-Environment, -Py2APK-main, AtomicNexusAI, genieGPT, Agent-Snake, fantom bots, smart_home_BCI, automate_passive_income, Quantumclustering, quantum_A.I._optimization.py, test, new-program-1.01, btc-trading, Code_Generation_AI_Program, potential-garbanzo, FortiTrade_Multi-Strategy. No auto-archive.
 - **Releases:** Optional tag/release for pillars if desired (forge-aegis v0.1, BlockSwarm, etc.). Not destructive. Confirmed empty this cycle.
@@ -16,7 +16,7 @@
 None this cycle. All actions non-destructive documentation updates.
 
 ## Manual Interventions
-- Sync package-lock.json in atomicdreamlabs1.1 and re-observe CI.
+- Resolve atomicdreamlabs1.1 lockfile CI compatibility (pin Node or regenerate under matching npm).
 - Deep verification of high-activity RESEARCH repos next cycle.
 - Reconciliation of any remaining catalog drift in aegis-repo-graph.
 - Full capability matrix and dependency graph expansion (residual).
