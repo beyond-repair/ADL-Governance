@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-11-13-759
+  parent_pass: PASS-2026-11-12-758
+
+STATE:
+  global_status: RESEARCH_PORTFOLIO_ACTIVE
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 5
+  capabilities_verified: 3
+  gaps_remaining: 17
+
+OBJECTIVE:
+  id: GAP-DEEP-AUDIT-FINITE-GASKET
+  description: Bounded deep audit of finite-gasket-spectral-derivatives to confirm structure, claim cap, core kernel implementation, and CI green status for spectral-kernel workflow.
+  reason_selected: Next high-activity RESEARCH repository after informational-flux-identity; continues progressive closure of verification boundaries.
+
+DISCOVERY:
+  findings:
+    - Structure: scripts/ with spectral_derivatives.py, cli.py, numerous check_residue_* and residue_* C/Python modules for advanced residue conditions; tests/ for kernel and CLI; pyproject.toml; .github/workflows/kernel.yml; large CLAIM_STATUS.md and README.
+    - Classification: RESEARCH, claim ≤1 (finite discrete kernel identities). Explicit non-claims for continuum, selected W, force, thrust.
+    - Core: spectral_derivatives.py implements gamma_loop, dgamma_dw, v_second on eigenvalue lists; CLI gasket-spectral for kernel and decimation; tests cover kernel and CLI (locally tested per CLAIM_STATUS).
+    - CI: kernel.yml workflow named spectral-kernel; latest runs (e.g., 43324985244 on 2026-11-12T23:00:07Z head 8427d4f) conclusion success; total 64 runs, recent all success.
+    - Advanced claims (residue sums S_k !=0 up to k=53, mult theorems, etc.) are CLAIMED with supporting scripts and finite exact computations, not all in the CI test suite.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-13-759.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/passes/HEADINGS.md
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - finite-gasket-spectral-derivatives core kernel and CI green status confirmed; claim-capped advanced theorems noted as CLAIMED not fully CI-tested.
+
+VERIFICATION:
+  tests_run:
+    - GitHub Actions list_workflow_runs on kernel.yml: latest runs success
+    - Structure and CLAIM_STATUS.md reviewed for classification and evidence boundaries
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Core spectral derivative functions and CLI are implemented and CI-tested.
+    - CI green on main for spectral-kernel.
+    - Claim cap ≤1 and RESEARCH lifecycle preserved; no elevation.
+  failures: []
+  decisions:
+    - No claim elevation.
+    - No code changes in target repo.
+    - Advanced residue computations remain supporting evidence, not promoted to VERIFIED in CI.
+
+REMAINING:
+  incomplete:
+    - Full runtime of all residue check scripts and C binaries not performed this pass.
+    - Broader capability matrix and dependency graph incomplete.
+  blockers: []
+  new_gaps:
+    - Optional verification of next high-activity repo (e.g., atomicdreamlabs1.1) or deeper residue runtime if prioritized.
+
+NEXT:
+  objective_id: GAP-DEEP-AUDIT-NEXT-HIGH-ACTIVITY
+  action: Select and perform bounded deep audit or CI observation of next high-activity RESEARCH repository (e.g., atomicdreamlabs1.1 or ADL_Nexas2.0).
+  reason: Continues progressive closure of capability unknowns while preserving claim caps and history.
+  prerequisites:
+    - No claim elevation.
+    - Preserve history.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Repository tree, CLAIM_STATUS.md, README excerpts, Actions API list_workflow_runs showing success conclusions.
