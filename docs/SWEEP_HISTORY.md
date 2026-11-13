@@ -1,5 +1,43 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK PASS-2026-11-13-762 BLOCKED lockfile — 2026-11-13T21:14Z / PASS-2026-11-13-762
+
+**Selected Slice:** GAP-ATOMICDREAMLABS-LOCKFILE-SYNC from PASS-761 NEXT. Attempt to sync package-lock.json for atomicdreamlabs1.1 CI green.
+
+### DISCOVER
+- atomicdreamlabs1.1 CI red on main due to npm ci EUSAGE Missing lru-cache@11.5.3.
+- Nested optional/peer entry present in lockfile under nitro.
+- Local Node 22.11.0 npm ci succeeds; Actions node-version '22' fails.
+
+### AUDIT
+- RESEARCH classification confirmed. No claim elevation. CI residual open.
+
+### CLASSIFY
+**Label:** RESEARCH (unchanged)
+
+### PLAN
+Target: Minimal lockfile update to restore npm ci. No elevation.
+
+### IMPLEMENT
+No mutation committed. Environment mismatch prevented verified safe delta.
+
+### TEST → CI
+Local verification mixed; Actions still failure. Overall BLOCKED.
+
+### DOCUMENT
+This SWEEP_HISTORY.md entry. New PASS-2026-11-13-762.yaml persisted. OPERATOR_QUEUE.md updated.
+
+### GOVERN
+No unsupported claims. History preserved. Claim caps held.
+
+### RELEASE/ARCHIVE
+No change.
+
+### RE-AUDIT
+Blocker identified: Node/npm resolution mismatch between local and Actions.
+
+**Outcome:** BLOCKED. Next: pin node-version or regenerate under matching environment.
+
 ## Cycle: Random Selection RealityOS RESEARCH Reconfirm — 2026-11-13T21:00Z
 
 **Selected Slice:** Random portfolio selection of RealityOS (from partial inventory list via Python choice). Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
