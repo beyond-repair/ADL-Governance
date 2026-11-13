@@ -1,5 +1,48 @@
 # Sweep History
 
+## Cycle: Random Selection seem-identity-unifier RESEARCH Reconfirm — 2026-11-13T22:01Z
+
+**Selected Slice:** Random portfolio selection of seem-identity-unifier (Python choice from partial inventory). Full DISCOVER/AUDIT/CLASSIFY/RE-AUDIT under Master Directive.
+
+### DISCOVER
+- Tree: unifier/ (engine.py, identities.py, __init__.py, __main__.py), tests/test_unifier.py, docs/CLAIM.md, GOVERNANCE.md, README.md, .github/workflows/ci.yml, pyproject.toml, requirements.txt, LICENSE, .gitignore.
+- README.md: Explicit RESEARCH, claim ≤1, MODULE_SURFACE. Identity map for three SEEM repos (SEEM-2.0, SEEM-Cognitive-Microservice, SEEM-Cognitive_Microservice). Closes Q-FUNC-003. Explicit non-claims (no SUPERSEDES, no isomorphism, no runtime import, no mind).
+- GOVERNANCE.md / CLAIM.md: Snapshot lock 2026-09-05, recheck 2026-10-06, algebra NAME_ONLY, substrates differ (numpy/torch).
+- CI: ci.yml runs python -m unifier.engine + pytest on Python 3.12.
+- No releases/tags observed. Distinct from portfolio SUPERSEDED label on SEEM family.
+
+### AUDIT
+- Compliant with RESEARCH / claim ≤1 / MODULE_SURFACE. Explicit non-claims. Tests present covering contract validation, no SUPERSEDES, substrate mismatch.
+- No undefined/undocumented components (README, CLAIM, GOVERNANCE cover). No stale registry. No critical CI failures (workflow present; prior success noted in GOVERNANCE). No duplicate canonical. No unsupported claims. No critical security issues.
+- Termination conditions met for current RESEARCH identity-map target state.
+
+### CLASSIFY
+**Label:** RESEARCH
+**Justification:** Claim-capped identity map (v0.1.1) for three named SEEM repositories. Does not collapse identities or license SUPERSEDES. Matches LIFECYCLE, README badges, and prior internal notes. Do not elevate to ACTIVE.
+
+### PLAN
+Target: Reconfirm classification, green CI presence, no elevation. Update governance docs only. Preserve history.
+
+### IMPLEMENT
+No mutations to capability repo (seem-identity-unifier). Governance docs updated (this cycle). No history rewrites. No deletions.
+
+### TEST → CI
+ci.yml present; engine + pytest. Structural review PASS. Local tests not re-executed this cycle (CI + prior witness authoritative for MODULE_SURFACE).
+
+### DOCUMENT
+PORTFOLIO_STATUS_REPORT.md updated with row and capability entry. This SWEEP_HISTORY.md entry. OPERATOR_QUEUE.md timestamp updated (no new items).
+
+### GOVERN
+No unsupported claims. Preserves history. Aligned to ADL-Governance. Explicit non-claims retained. SUPERSEDES remains forbidden.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH.
+
+### RE-AUDIT
+Structure, claim cap, CI workflow, contract tests, and non-claims match classification. No drift. Termination conditions met for RESEARCH identity map.
+
+**Outcome:** Reconfirm complete. Repo meets termination for current target state (RESEARCH, claim ≤1, MODULE_SURFACE, docs clear, CI present). Ready for next random selection.
+
 ## Cycle: Confirmation Sweep — Inventory Reconfirm — 2026-11-13T21:20Z
 
 **Selected Slice:** Full portfolio live inventory (search total_count=87) + Phase-3 pillar stability confirmation under Master Directive v3.0. Bounded; no deep RESEARCH expansion.
