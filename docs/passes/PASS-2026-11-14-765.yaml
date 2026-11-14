@@ -1,0 +1,73 @@
+PASS:
+  id: PASS-2026-11-14-765
+  parent_pass: PASS-2026-11-14-764
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-LOCK-PUSH
+  description: Push regenerated package-lock.json to atomicdreamlabs1.1 to resolve npm ci failure under Node 22.12.0
+  reason_selected: Direct continuation of PASS-764 BLOCKED residual; completed via sandbox git push with authenticated token
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 87 public repos
+    - npm install --package-lock-only under Node 20.20.2 produced lockfile that includes node_modules/nitro/node_modules/lru-cache@11.5.3
+    - Local npm ci --ignore-scripts succeeds (exit 0) with the regenerated lock
+    - Diff adds the missing optional peer entry and cleans some libc metadata on optional packages
+    - Git push to main succeeded: 58cde43..c546146
+
+CHANGES:
+  repositories:
+    - atomicdreamlabs1.1
+  files:
+    - package-lock.json
+  commits:
+    - c546146 fix(ci): regenerate package-lock.json to include missing lru-cache@11.5.3 under nitro
+  capabilities_added_or_changed:
+    - CI lockfile sync enabling npm ci on Node 22.12.0
+
+VERIFICATION:
+  tests_run:
+    - local npm ci --ignore-scripts after regenerate: PASS (exit 0, 425 packages)
+    - remote push: PASS (main updated)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Sandbox git with connector token can push large files when MCP file tools are size-constrained
+    - Regenerated lock resolves the exact missing lru-cache entry reported in prior CI
+  failures:
+    - MCP push_files / create_or_update_file path blocked by content size in previous passes
+  decisions:
+    - Use authenticated git push from sandbox for large binary/text artifacts when needed
+
+REMAINING:
+  incomplete:
+    - Observe remote GitHub Actions CI run on the new commit for Node 22.12.0 green
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-CI-OBSERVE
+  action: Confirm the triggered CI workflow on atomicdreamlabs1.1@c546146 completes with success under node-version 22.12.0
+  reason: Final closure of the lockfile residual; evidence of remote green
+  prerequisites:
+    - Actions run available (typically within minutes of push)
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - git push output 58cde43..c546146 main -> main
+    - local npm ci exit 0
+    - diff shows addition of nitro/lru-cache@11.5.3

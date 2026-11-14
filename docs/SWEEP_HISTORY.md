@@ -136,3 +136,42 @@ Termination conditions for this repo (as RESEARCH): No undefined/undocumented co
 **Outcome:** Re-audit complete. Classification locked RESEARCH. Core termination MET. Residual: advanced residue claims supporting-only (not CI). Ready for next random selection.
 
 [Prior cycles from 2026-11-14T21:30Z and earlier retained in full history; see commit history for complete record.]
+
+## Cycle: CI Lockfile Closure — atomicdreamlabs1.1 — 2026-11-14T23:15Z
+
+**Selected Repository:** atomicdreamlabs1.1 (continuation of OPERATOR_QUEUE residual)
+
+### DISCOVER
+- package-lock.json missing lru-cache@11.5.3 under nitro (optional peer).
+- npm ci fails on Node 22.12.0 CI.
+- Regeneration under local Node 20 adds the entry; local npm ci succeeds.
+
+### AUDIT
+- RESEARCH classification held. No claim elevation. Change is lockfile only (dependency resolution metadata).
+
+### CLASSIFY
+**Label:** RESEARCH (unchanged)
+**Justification:** CI residual closed; no product claims.
+
+### PLAN
+Push regenerated lock via authenticated git from sandbox. Record PASS-765.
+
+### IMPLEMENT
+package-lock.json updated and pushed (c546146).
+
+### TEST → CI
+Local npm ci PASS. Remote CI triggered by push (observation deferred to next pass).
+
+### DOCUMENT
+PASS-2026-11-14-765.yaml added. SWEEP_HISTORY.md and OPERATOR_QUEUE.md updated.
+
+### GOVERN
+Claim ≤1 held. History preserved. No unsupported claims.
+
+### RELEASE/ARCHIVE
+None. Remains RESEARCH.
+
+### RE-AUDIT
+Lockfile residual closed locally. Remote CI observation pending.
+
+**Outcome:** Push complete. Residual reduced. Ready for CI confirmation.
