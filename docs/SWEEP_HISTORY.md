@@ -1,5 +1,43 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Pass — atomicdreamlabs1.1 lockfile sync prep — 2026-11-14T20:10Z
+
+**Selected Slice:** GAP-ATOMICDREAMLABS-CI-LOCK — regenerate package-lock.json to resolve npm ci EUSAGE (Missing lru-cache@11.5.3).
+
+### DISCOVER
+- Confirmed live CI failure on main (run 43516882726) at npm ci step.
+- Local clone + npm ci reproduced "Missing: lru-cache@11.5.3 from lock file".
+- npm install --package-lock-only produced small delta; subsequent local npm ci succeeded (exit 0).
+
+### AUDIT
+- RESEARCH classification held. No claim elevation. Change is lockfile-only, non-destructive.
+
+### CLASSIFY
+**Label:** No change. RESEARCH retained.
+
+### PLAN
+Prepare lockfile sync; persist pass record; push deferred due to content size in agent context.
+
+### IMPLEMENT
+Lockfile regenerated locally. Pass record PASS-2026-11-14-763 committed. No remote lockfile update this cycle.
+
+### TEST → CI
+Local verification: npm ci PASS post-regenerate. Remote remains FAIL pending push.
+
+### DOCUMENT
+This entry. Pass YAML persisted.
+
+### GOVERN
+Claim caps held. History preserved.
+
+### RELEASE/ARCHIVE
+No change.
+
+### RE-AUDIT
+Overall BLOCKED on remote push. Next recoverable: commit the regenerated lockfile and re-observe CI.
+
+**Outcome:** Preparation complete. Residual remains open until push. Ready for next pass.
+
 ## Cycle: Master Directive v3.0 Governed Sweep — 2026-11-14T19:17Z
 
 **Selected Slice:** Full portfolio live inventory (search total_count=87, incomplete_results=false) + Phase-3 mandatory live verification of pillars under Master Directive v3.0. Bounded confirmation; residuals retained. No deep RESEARCH expansion this cycle. One governed sweep; stopped on residuals.
