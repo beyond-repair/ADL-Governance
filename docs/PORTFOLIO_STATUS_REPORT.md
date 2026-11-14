@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-14T19:17Z (Master Directive v3.0 Governed Sweep)
+**Last Updated:** 2026-11-14T21:01Z (Randomized Portfolio Completion Sweep — new-program-1.01)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -10,7 +10,7 @@
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T19:17Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T21:01Z)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -52,6 +52,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-14 |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; green CI | 2026-11-14 |
@@ -62,7 +63,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
 **RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
-**SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room
+**SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room (reconfirmed this cycle)
 **ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required). Includes FortiTrade_Multi-Strategy (reconfirmed).
 
 ## Capability Inventory (Demonstrated Only)
@@ -96,12 +97,12 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Exit Criteria Status
 - Inventory complete: YES (87)
-- Registry not stale: PARTIAL (updated count + pillars; full matrix residual)
+- Registry not stale: PARTIAL (updated count + pillars + new-program-1.01 reconfirm; full matrix residual)
 - Unsupported claims: NONE introduced
 - Critical CI: NONE on pillars
 - Critical security: NONE open on pillars (medium/low Dependabot residual on Digital_Double)
 - Duplicate canonical: NONE identified this cycle
-- All classified: PARTIAL (pillars + recent RESEARCH confirmed; others per registry)
+- All classified: PARTIAL (pillars + recent RESEARCH/SUPERSEDED confirmed; others per registry)
 - Dependencies mapped: HIGH-LEVEL only
 - Demonstrated vs Planned: Distinguished
 - Docs updated: THIS FILE + history + queue
@@ -110,7 +111,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Next Actions
 - Expand capability matrix for high-activity RESEARCH
-- Operator review of ARCHIVE queue (incl. FortiTrade_Multi-Strategy)
+- Operator review of ARCHIVE queue (incl. FortiTrade_Multi-Strategy, new-program-1.01 as SUPERSEDED)
 - Optional release tags for pillars
 - Monitor/address Digital_Double Dependabot (vite upgrade)
 - Monitor CI run on atomicdreamlabs1.1
