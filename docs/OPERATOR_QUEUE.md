@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Updated:** 2026-11-14T21:01Z (Randomized Portfolio Completion Sweep — new-program-1.01)
+**Updated:** 2026-11-14T21:30Z (Master Directive v3.0 Governed Sweep)
 
 ## Pending / Escalated
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).

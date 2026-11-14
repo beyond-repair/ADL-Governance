@@ -1,16 +1,16 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-14T21:01Z (Randomized Portfolio Completion Sweep — new-program-1.01)
+**Last Updated:** 2026-11-14T21:30Z (Master Directive v3.0 Governed Sweep)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
 
 ## Inventory Summary
-- Total: 87 (stable; confirmed via live search on 2026-11-14)
+- Total: 87 (stable; confirmed via live multi-page search on 2026-11-14)
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T21:01Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T21:30Z)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -23,7 +23,7 @@
 ### sovereign-clean-room
 - Releases: empty
 - Tags: empty
-- CI: Python tests success on main head 4878918cf9f95d3c19e1890bef6d2fd6713e0a16 (prior run); recent PR runs mixed success/failure on feature branches
+- CI: Python tests success on main head 4878918cf9f95d3c19e1890bef6d2fd6713e0a16 (run 37064696194)
 - Notes: VSA completeness UNVERIFIED (prior residual retained)
 - Security: No open Dependabot alerts / advisories
 - Classification: ACTIVE (canonical SEEM substrate)
@@ -97,7 +97,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Exit Criteria Status
 - Inventory complete: YES (87)
-- Registry not stale: PARTIAL (updated count + pillars + new-program-1.01 reconfirm; full matrix residual)
+- Registry not stale: PARTIAL (updated count + pillars; full matrix residual)
 - Unsupported claims: NONE introduced
 - Critical CI: NONE on pillars
 - Critical security: NONE open on pillars (medium/low Dependabot residual on Digital_Double)
