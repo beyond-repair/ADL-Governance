@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Updated:** 2026-11-14T19:00Z (Randomized Sweep: FortiTrade_Multi-Strategy Re-audit)
+**Updated:** 2026-11-14T19:17Z (Master Directive v3.0 Governed Sweep)
 
 ## Pending / Escalated
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
