@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-14T22:15Z (Randomized Sweep: finite-gasket-spectral-derivatives Re-audit)
+**Last Updated:** 2026-11-14T22:20Z (Master Directive v3.0 Confirmation Sweep)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -10,7 +10,7 @@
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T22:15Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T22:20Z)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -48,11 +48,11 @@
 **No assumptions. All above from direct API observation this cycle (releases/tags empty, CI green on pillars, inventory 87).**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH + this cycle's random selection.
+Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH + this cycle's confirmation.
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
-| finite-gasket-spectral-derivatives | RESEARCH | Claim ≤1 finite discrete kernel identities on gasket; CI green (spectral-kernel workflow runs pytest); CLI + unit tests present; advanced residue/math claims prose + supporting scripts (not all in CI); no continuum/selected-W/force; termination MET for RESEARCH | 2026-11-14 |
+| finite-gasket-spectral-derivatives | RESEARCH | Claim ≤1 finite discrete kernel identities on gasket; CI green; CLI + unit tests present; advanced residue/math claims prose + supporting scripts (not all in CI); no continuum/selected-W/force; termination MET for RESEARCH | 2026-11-14 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-14 |
