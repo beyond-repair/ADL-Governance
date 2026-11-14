@@ -1,0 +1,71 @@
+PASS:
+  id: PASS-2026-11-14-764
+  parent_pass: PASS-2026-11-14-763
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 8
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-LOCK-PUSH
+  description: Push regenerated package-lock.json to atomicdreamlabs1.1 to resolve npm ci failure under Node 22.12.0
+  reason_selected: Direct continuation of PASS-763 BLOCKED residual; highest-value small slice to restore CI green for RESEARCH repo
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 87 public repos
+    - package.json engines and TanStack packages require Node >=22.12.0
+    - Local Node 20.20.2 npm install --ignore-scripts produced a lockfile with which npm ci succeeds (exit 0)
+    - Prior remote CI fails on npm ci due to missing packages in lockfile
+    - Tool argument size for ~285kB lockfile content remains a practical blocker for single-file update
+
+CHANGES:
+  repositories: []
+  files: []
+  commits: []
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - local npm ci after full npm install on Node 20: PASS (exit 0, 456 packages)
+    - remote CI: FAIL (historical, npm ci missing entries)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: BLOCKED
+
+KNOWLEDGE:
+  confirmed:
+    - Lockfile can be regenerated under Node 20 such that npm ci succeeds locally
+    - Node version mismatch contributes to resolution differences but does not prevent local success
+  failures:
+    - Direct large-content transfer via create_or_update_file / push_files not completed this pass due to size
+  decisions:
+    - Record local verification; defer push to next pass or operator/manual upload
+
+REMAINING:
+  incomplete:
+    - Transfer and commit regenerated package-lock.json to main
+    - Confirm remote CI green on Node 22.12.0
+  blockers:
+    - Large file content size (~285kB) for tool argument transfer
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-CI-LOCK-PUSH
+  action: Complete transfer of verified package-lock.json (or regenerate under Node 22 if available) and push to beyond-repair/atomicdreamlabs1.1 main; observe CI
+  reason: Closes the residual CI failure for this RESEARCH repository
+  prerequisites:
+    - Mechanism to transfer large lockfile content or alternative git push path
+    - Confirmation that Node 22 resolution matches the regenerated lock
+
+PROVENANCE:
+  state_commit: 235763d9601f0524dae3802938d95a10f614b9c1
+  evidence:
+    - Local npm ci log exit 0 post-install on Node 20.20.2
+    - package-lock.json size 285005 bytes
