@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Updated:** 2026-11-14T16:21Z (Master Directive v3.0 Governed Sweep Reconfirm)
+**Updated:** 2026-11-14T17:19Z (Master Directive v3.0 Governed Sweep Reconfirm)
 
 ## Pending / Escalated
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
