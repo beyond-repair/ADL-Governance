@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-14T18:15Z (Master Directive v3.0 Governed Sweep Reconfirm)
+**Last Updated:** 2026-11-14T19:00Z (Randomized Sweep: FortiTrade_Multi-Strategy Re-audit)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -9,7 +9,7 @@
 - Total: 87 (stable; confirmed via live search on 2026-11-14)
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
-- Recent activity: informational-flux-identity, finite-gasket-spectral-derivatives, ADL_Nexas2.0, atomicdreamlabs1.1, ADL-Governance
+- Recent activity: informational-flux-identity, finite-gasket-spectral-derivatives, ADL_Nexas2.0, atomicdreamlabs1.1, ADL-Governance, FortiTrade_Multi-Strategy (governance docs)
 
 ## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T18:15Z)
 
@@ -49,10 +49,11 @@
 **No assumptions. All above from direct API observation this cycle (releases/tags empty, CI green on pillars, inventory 87).**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH.
+Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH + this cycle's random selection.
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch (RSI/signal rules + Pine + FastAPI webhook + CSV sim); CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files; successor sovereign-clean-room; claim 0 historical; README banner explicit; termination MET; reconfirmed 2026-11-13 | 2026-11-13 |
 | seem-identity-unifier | RESEARCH | Claim-capped identity map for three SEEM repos (Q-FUNC-003); no SUPERSEDES; CI present; claim ≤1; termination MET for MODULE_SURFACE | 2026-11-13 |
 | RealityOS | RESEARCH | In-memory what-if API heuristic; claim ≤1; CI research-guard green; README/CLAIM_STATUS explicit non-claims; termination MET for sketch | 2026-11-13 |
@@ -71,7 +72,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
 **RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room
-**ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required)
+**ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required). Includes FortiTrade_Multi-Strategy (reconfirmed).
 
 ## Capability Inventory (Demonstrated Only)
 - forge-aegis: Artifact Graph modeling, FLS conformance checks (code present, CI green) | VERIFIED
@@ -83,6 +84,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - informational-flux-identity: Core flux identity + CI | VERIFIED (claim ≤1)
 - RealityOS: In-memory SimulationEngine + FastAPI what-if heuristics + pytest | VERIFIED (claim ≤1; research-guard CI)
 - seem-identity-unifier: Deterministic identity map + contract validation tests (no runtime import) | VERIFIED (claim ≤1; MODULE_SURFACE)
+- FortiTrade_Multi-Strategy: Deterministic offline RSI/signal decision + FastAPI webhook + CSV backtest + Pine Script paste (Claim 0; not live trading) | VERIFIED historical sketch
 - new-program-1.01: Historical early agent stubs (no capability; SUPERSEDED) | VERIFIED historical
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
@@ -110,12 +112,12 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Exit Criteria Status
 - Inventory complete: YES (87)
-- Registry not stale: PARTIAL (updated count; full matrix residual)
+- Registry not stale: PARTIAL (updated count + FortiTrade; full matrix residual)
 - Unsupported claims: NONE introduced
 - Critical CI: NONE on pillars
 - Critical security: NONE open on pillars (medium/low Dependabot residual on Digital_Double)
 - Duplicate canonical: NONE identified this cycle
-- All classified: PARTIAL (pillars + recent RESEARCH confirmed; others per registry)
+- All classified: PARTIAL (pillars + recent RESEARCH + FortiTrade confirmed; others per registry)
 - Dependencies mapped: HIGH-LEVEL only
 - Demonstrated vs Planned: Distinguished
 - Docs updated: THIS FILE + history + queue
@@ -124,7 +126,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Next Actions
 - Expand capability matrix for high-activity RESEARCH
-- Operator review of ARCHIVE queue
+- Operator review of ARCHIVE queue (incl. FortiTrade_Multi-Strategy)
 - Optional release tags for pillars
 - Monitor/address Digital_Double Dependabot (vite upgrade)
 - Monitor CI run on atomicdreamlabs1.1
