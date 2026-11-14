@@ -1,11 +1,11 @@
 # Operator Queue
 
-**Updated:** 2026-11-14T21:30Z (Master Directive v3.0 Governed Sweep)
+**Updated:** 2026-11-14T22:15Z (Randomized Sweep: finite-gasket-spectral-derivatives Re-audit)
 
 ## Pending / Escalated
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
 - **atomicdreamlabs1.1:** CI residual OPEN — lockfile desync confirmed (Missing lru-cache@11.5.3). Local regeneration prepared (npm install --package-lock-only); npm ci now succeeds locally. PASS-2026-11-14-763 records preparation. Next: push regenerated package-lock.json and confirm remote CI green under node 22.12.0. Classification RESEARCH confirmed.
-- **finite-gasket-spectral-derivatives:** Deep audit complete (PASS-2026-11-13-759). RESEARCH, core CI green. Residual: advanced residue claims not all CI-tested.
+- **finite-gasket-spectral-derivatives:** Deep audit complete (PASS-2026-11-13-759). RESEARCH, core CI green (spectral-kernel). Residual: advanced residue claims not all CI-tested (supporting scripts present; reconfirmed this cycle).
 - **Archive candidates (from registry):** Operator decision required for GitHub archive flag on: RepoRover-, DevelopTool-Unified-Dev-Environment, -Py2APK-main, AtomicNexusAI, genieGPT, Agent-Snake, fantom bots, smart_home_BCI, automate_passive_income, Quantumclustering, quantum_A.I._optimization.py, test, new-program-1.01 (reconfirmed SUPERSEDED this cycle; successor sovereign-clean-room, Claim 0), btc-trading, Code_Generation_AI_Program, potential-garbanzo, FortiTrade_Multi-Strategy (reconfirmed ARCHIVED queue / Claim 0 this cycle). No auto-archive.
 - **Releases:** Optional tag/release for pillars if desired (forge-aegis v0.1, BlockSwarm, etc.). Not destructive. Confirmed empty this cycle.
 - **sovereign-clean-room VSA:** Completeness remains UNVERIFIED; operator review of claim cap.
@@ -22,5 +22,6 @@ None this cycle. All actions non-destructive documentation updates.
 - Full capability matrix and dependency graph expansion (residual).
 - Address Digital_Double vite Dependabot (non-critical).
 - Operator review of archive candidates including FortiTrade_Multi-Strategy and new-program-1.01 (SUPERSEDED).
+- Optional: integrate residue supporting scripts into CI for finite-gasket-spectral-derivatives if desired (non-destructive).
 
 **No pending destructive actions.**
