@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-11-14-763
+  parent_pass: PASS-2026-11-13-761
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 8
+  gaps_remaining: 12
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-LOCK
+  description: Resolve package-lock.json / package.json desync causing npm ci failure in atomicdreamlabs1.1 CI under Node 22.12.0
+  reason_selected: Highest-value residual from OPERATOR_QUEUE (PASS-762 BLOCKED); small, verifiable, non-destructive sync of lockfile restores green CI for RESEARCH repo
+
+DISCOVERY:
+  findings:
+    - Live inventory 87 public repos confirmed
+    - atomicdreamlabs1.1 CI failing on npm ci with "Missing: lru-cache@11.5.3 from lock file"
+    - Local reproduction on Node 20 confirmed same error
+    - npm install --package-lock-only regenerated lockfile; subsequent npm ci succeeds locally
+    - Diff is minor optional-dep metadata; engines require >=22.12.0 for some TanStack packages
+
+CHANGES:
+  repositories:
+    - atomicdreamlabs1.1
+  files:
+    - package-lock.json
+  commits:
+    - pending push
+  capabilities_added_or_changed:
+    - CI lockfile sync (enables npm ci)
+
+VERIFICATION:
+  tests_run:
+    - local npm ci after regenerate: PASS (exit 0)
+    - prior remote CI runs: FAIL (npm ci)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: BLOCKED
+
+KNOWLEDGE:
+  confirmed:
+    - Lockfile desync was the root cause of CI failure
+    - Regeneration under current npm resolves the missing entry
+  failures:
+    - Previous pin to 22.12.0 did not resolve lock sync
+  decisions:
+    - Prefer lockfile regeneration over further Node pin changes
+
+REMAINING:
+  incomplete:
+    - Push updated package-lock.json to main
+    - Observe remote CI success on Node 22.12.0
+  blockers:
+    - Large file content transfer for update
+  new_gaps:
+    - None
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-CI-LOCK-PUSH
+  action: Commit regenerated package-lock.json to beyond-repair/atomicdreamlabs1.1 main and confirm CI green
+  reason: Completes the residual closure for this RESEARCH repo
+  prerequisites:
+    - Valid blob SHA for update
+    - Network write access confirmed
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Local npm ci log (exit 0 post-regenerate)
+    - Prior CI job conclusion failure on npm ci
