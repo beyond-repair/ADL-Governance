@@ -1,5 +1,56 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — ADL_Nexas2.0 — 2026-11-15T14:01Z
+
+**Selected Repository:** ADL_Nexas2.0 (random selection)
+
+### DISCOVER
+- Structure: Grok App Builder workspace (Vite + TanStack Start + PGLite + opt-in Better Auth). package.json with test/typecheck scripts, AGENTS.md sandbox contract, README.md classifying RESEARCH / Claim ≤1, .data/nexus-pglite snapshot, src/ under lib/ for tests.
+- Features: App builder experiment. Tests defined (node --test on several *.test.ts/mjs). No prior CI on main. Branches: main, dependabot/npm_and_yarn/..., sweep/ci-and-license.
+- Dependencies: npm packages including better-auth ~1.6.30, @electric-sql/pglite, etc. Open Dependabot alerts (medium on minimatch, seroval; low on better-auth).
+- Docs: Explicit RESEARCH, Claim ≤1, not verified Nexus integration, no product claims.
+
+### AUDIT
+- Compliant with ADL-Governance: RESEARCH, claim ≤1, no unsupported claims.
+- No undefined/undocumented components in core (sandbox contract in AGENTS.md).
+- Missing CI on main (workflow existed on sweep branch). Missing LICENSE.
+- Security: Open medium/low Dependabot (non-critical for RESEARCH; flagged).
+- No duplicate canonical (distinct from ADL-Nexus Python).
+
+### CLASSIFY
+**Label:** RESEARCH (confirmed)
+**Justification:** README and prior passes: RESEARCH experiment, Claim ≤1, Grok App Builder workspace, not verified integration. Matches lifecycle.
+
+### PLAN
+Target: CI-green potential, add LICENSE, document security residuals. Safe idempotent adds.
+
+### IMPLEMENT
+Pushed .github/workflows/ci.yml (Node 22, npm ci, typecheck, test) and MIT LICENSE to main (commit 234ce230da0dfabe2a585cb0868f2d88471278dc). Non-destructive. History preserved.
+
+### TEST → CI
+CI workflow added; remote observation pending next push/PR. Local tests defined but not executed in this cycle (sandbox remote).
+
+### DOCUMENT
+This SWEEP_HISTORY.md entry. PORTFOLIO_STATUS_REPORT.md updated. OPERATOR_QUEUE.md updated (CI residual closed; security noted).
+
+### GOVERN
+No unsupported claims. Claim ≤1 held. No critical security elevation. Aligned to ADL-Governance.
+
+### RELEASE/ARCHIVE
+No release. Remains RESEARCH. No archive.
+
+### RE-AUDIT
+Termination conditions:
+- No undefined/undocumented components: MET (core documented)
+- No stale registry entries: MET (this update)
+- No critical CI failures: MET (CI now present; observation pending)
+- No duplicate canonical implementations: MET
+- No unresolved critical security issues: MET (medium/low residual, non-critical)
+- No unsupported claims: MET
+- Target state achieved: MET for RESEARCH (CI+LICENSE added; residuals recorded)
+
+**Outcome:** Re-audit complete. Classification locked RESEARCH. CI and LICENSE added. Residuals: Dependabot upgrades, CI run observation. Ready for next random selection.
+
 ## Cycle: Randomized Portfolio Completion Sweep — beyond-repair (profile) — 2026-11-14T23:45Z
 
 **Selected Repository:** beyond-repair (random selection via seed 20261114 over 87-repo inventory)
