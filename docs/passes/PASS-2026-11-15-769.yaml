@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-11-15-769
+  parent_pass: PASS-2026-11-15-768
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 9
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-GREEN
+  description: Fix npm test script so shell expands test file glob, allowing CI test step to execute after typecheck success
+  reason_selected: Direct continuation of PASS-768 NEXT; remote CI on auth fix still failed due to literal glob in package.json test script
+
+DISCOVERY:
+  findings:
+    - CI runs on 2b478c2 (and prior) failed with exit code 1 in ~54s
+    - Local reproduction: node --test 'scripts/**/*.test.mjs' fails with 'Could not find ... scripts/**/*.test.mjs' because quotes prevent shell expansion
+    - typecheck (tsc --noEmit) passes locally after auth alignment
+    - scripts/*.test.mjs expands correctly and runs (195 tests, 9 fail locally on Node 20; full suite status on Node 22 pending remote)
+
+CHANGES:
+  repositories:
+    - beyond-repair/atomicdreamlabs1.1
+  files:
+    - package.json
+  commits:
+    - 0464ceb1624f4518e85a3c998ccaeeb128bd8628
+  capabilities_added_or_changed:
+    - Test script now uses unquoted scripts/*.test.mjs so npm test can locate and run script tests
+
+VERIFICATION:
+  tests_run:
+    - Local typecheck: PASS (tsc --noEmit exit 0)
+    - Local scripts test expansion: PASS (files found and executed; 186/195 passed on Node 20)
+    - Remote CI: PENDING (push triggers new run)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation; RESEARCH classification preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Quoted globs in npm scripts are not expanded by shell; literal path is passed to node --test
+    - Auth type alignment from prior pass is sufficient for tsc
+  failures:
+    - Previous CI failures were not type errors but test script invocation failure
+  decisions:
+    - Minimal change to package.json test script; prefer shell expansion over adding a dedicated test runner
+
+REMAINING:
+  incomplete:
+    - Observe remote CI on new head 0464ceb to confirm typecheck + test green
+    - Investigate 9 failing script tests if they persist on Node 22.12
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-CI-OBSERVE
+  action: Observe CI workflow run on atomicdreamlabs1.1 commit 0464ceb1624f4518e85a3c998ccaeeb128bd8628; confirm both typecheck and test steps succeed
+  reason: Closes the verification loop on the CI script fix; next smallest evidence step
+  prerequisites:
+    - Workflow run starts (push to main typically triggers)
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Local npm ci + tsc --noEmit success
+    - Local node --test scripts/*.test.mjs execution (partial passes)
+    - Commit 0464ceb on atomicdreamlabs1.1
+    - Actions page showing prior failures on quoted glob
