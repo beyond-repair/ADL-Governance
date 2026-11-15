@@ -1,9 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-14T23:45Z (Randomized Sweep — beyond-repair profile)
+**Updated:** 2026-11-15T14:02Z (Randomized Sweep — ADL_Nexas2.0)
 
 ## Pending / Escalated
-- **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI residual on main (workflow prepared on other branch).
+- **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI workflow + MIT LICENSE pushed to main (commit 234ce230da0dfabe2a585cb0868f2d88471278dc). Remote CI observation pending. Open Dependabot: medium (minimatch CVE-2026-118764, seroval CVE-2026-116583/116582), low (better-auth GHSA-44jh-23m7-hpcf). Non-critical for RESEARCH; upgrade residual.
 - **atomicdreamlabs1.1:** Lockfile regenerated and pushed (c546146). Local npm ci PASS. Remote CI observation pending. Classification RESEARCH confirmed.
 - **finite-gasket-spectral-derivatives:** Deep audit complete (PASS-2026-11-13-759). RESEARCH, core CI green (spectral-kernel). Residual: advanced residue claims not all CI-tested (supporting scripts present; reconfirmed this cycle).
 - **sunder-cleanroom-vsa-adapter:** Deep audit complete this cycle. RESEARCH, CI green. Termination MET. No residuals.
@@ -15,9 +15,11 @@
 - **No critical security escalations.**
 
 ## Destructive Proposals
-None this cycle. All actions non-destructive documentation updates.
+None this cycle. All actions non-destructive documentation updates + safe CI/LICENSE adds.
 
 ## Manual Interventions
+- Observe remote CI run on ADL_Nexas2.0 main after workflow addition.
+- Optional: upgrade Dependabot deps in ADL_Nexas2.0 (minimatch, seroval, better-auth) if desired (non-destructive).
 - Push regenerated package-lock.json for atomicdreamlabs1.1 and verify CI green (observation pending).
 - Deep verification of high-activity RESEARCH repos next cycle.
 - Reconciliation of any remaining catalog drift in aegis-repo-graph.
