@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-15T19:05Z (Randomized Sweep — coherence-dynamics)
+**Updated:** 2026-11-15T19:16Z (Master Directive v3.0 Portfolio Governance Sweep)
 
 ## Pending / Escalated
+- **Master Directive Sweep:** Inventory confirmed at 87. Phase-3 pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) CI green, no critical security. Full deep classification/capability matrix of remaining RESEARCH repos residual. Sweep stopped after recording residuals. No infinite loop.
 - **coherence-dynamics:** Classification RESEARCH confirmed. Mathematical physics research foundation for effective responses from coarse-graining and correlations. Stage A audit/formalization. Claim ≤1. CI green (success on runs 40989331725/40989292280). Explicit no a priori Ware Constant or force; evidence labels present. Termination MET for RESEARCH. No residuals.
 - **Open-Energy-Fusion:** Classification RESEARCH confirmed. Measurement-first multi-domain energy arbitration (graph + net-useful-benefit dispatcher + simulation campaign vs priority EMS). Claim ≤1; YELLOW INVESTIGATE gate. CI workflow present; local pytest 12 passed. Explicit no hardware / thrust / energy-extraction claims. Termination MET for RESEARCH. Residual: optional remote CI observation (expected green).
 - **m2-renormalization-law:** Classification RESEARCH confirmed. Provisional Stage-1 scaling ansatz \(W(n)=0.08\,e^{0.23(n-3)}\); Claim level 1; parameter-free ratio locks (Model A/B); CI + local pytest green (10 passed). Explicit non-claims and rejected hybrid documented. Termination MET for RESEARCH. No residuals.
@@ -14,7 +15,7 @@
 - **informational-flux-identity:** Deep this cycle. RESEARCH, CI green (run 43728360716). Claim-capped theorems. Termination MET. No residuals.
 - **sunder-cleanroom-vsa-adapter:** Deep audit complete this cycle. RESEARCH, CI green. Termination MET. No residuals.
 - **beyond-repair (profile):** Deep audit complete this cycle. RESEARCH (profile index), Claim 0. Termination MET. No residuals. Census note minor drift noted (non-critical).
-- **Archive candidates (from registry):** Operator decision required for GitHub archive flag on: RepoRover-, DevelopTool-Unified-Dev-Environment, -Py2APK-main, AtomicNexusAI, genieGPT, Agent-Snake, fantom bots, smart_home_BCI, automate_passive_income, Quantumclustering, quantum_A.I._optimization.py, test, new-program-1.01 (reconfirmed SUPERSEDED this cycle; successor sovereign-clean-room, Claim 0), btc-trading, Code_Generation_AI_Program, potential-garbanzo, FortiTrade_Multi-Strategy (reconfirmed ARCHIVED queue / Claim 0 this cycle). No auto-archive.
+- **Archive candidates (from registry):** Operator decision required for GitHub archive flag on: RepoRover-, DevelopTool-Unified-Dev-Environment, -Py2APK-main, AtomicNexusAI, genieGPT, Agent-Snake, fantom bots, smart_home_BCI, automate_passive_income, Quantumclustering, quantum_A.I._optimization.py, test, new-program-1.01 (SUPERSEDED; successor sovereign-clean-room, Claim 0), btc-trading, Code_Generation_AI_Program, potential-garbanzo, FortiTrade_Multi-Strategy (ARCHIVED queue / Claim 0). No auto-archive.
 - **Releases:** Optional tag/release for pillars if desired (forge-aegis v0.1, BlockSwarm, etc.). Not destructive. Confirmed empty this cycle.
 - **sovereign-clean-room VSA:** Completeness remains UNVERIFIED; operator review of claim cap.
 - **Digital_Double_virtual_workforce:** Open Dependabot alerts (medium on vite CVE-2026-112946 / GHSA-rq7h-c2jc-7f22 in dev scope; low on deepmerge). Prior form-data pin closed. Upgrade vite to >=6.4.4 or later patched. Not critical (dev dependency, conditional exploit).
