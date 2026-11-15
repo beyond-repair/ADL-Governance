@@ -1,0 +1,74 @@
+PASS:
+  id: PASS-2026-11-15-768
+  parent_pass: PASS-2026-11-15-767
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 1
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-TYPECHECK-AUTH
+  description: Apply minimal type surface alignment to atomicdreamlabs1.1 auth client/server so tsc --noEmit passes against better-auth ~1.7.7
+  reason_selected: Continuation of PASS-767 NEXT; highest-value residual CI blocker on an ACTIVE-adjacent research app
+
+DISCOVERY:
+  findings:
+    - Confirmed errors: genericOAuthClient missing from better-auth/client/plugins; signInWithOAuth2 / signIn.oauth2 removed in 1.7
+    - Official 1.7 upgrade guide: remove genericOAuthClient(); replace signIn.oauth2({providerId}) with signIn.social({provider}); server signInWithOAuth2 → signInSocial
+    - Generic OAuth providers now register as first-class social providers; callback path /api/auth/callback/:id
+
+CHANGES:
+  repositories:
+    - beyond-repair/atomicdreamlabs1.1
+  files:
+    - src/lib/auth/client.ts
+    - src/lib/auth/popup.server.ts
+  commits:
+    - b9bb8b7ecd9fd3b8d27282d649d9e4859c3c44f8 (client.ts)
+    - 2b478c2ccee84df3cef9f9b45e7244c0fcae8216 (popup.server.ts)
+  capabilities_added_or_changed:
+    - Auth client/server OAuth initiation path aligned to 1.7 social surface (claim-capped; no new capability)
+
+VERIFICATION:
+  tests_run:
+    - Static alignment to better-auth 1.7 upgrade guide: PASS (code matches documented migration)
+    - Remote typecheck not yet re-observed (CI trigger expected on push)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no claim elevation; RESEARCH classification preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - better-auth 1.7 removes dedicated genericOAuthClient plugin and oauth2 endpoints; social path is canonical
+    - Minimal patch sufficient; no dependency bump required for typecheck recovery
+  failures:
+    - Initial push_files attempt used placeholder content (corrected in follow-up commits)
+  decisions:
+    - Prefer surface alignment over pinning older better-auth
+    - Preserve existing popup/bearer preview flow
+
+REMAINING:
+  incomplete:
+    - Observe remote CI typecheck + test green on new head
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-CI-GREEN
+  action: Trigger or observe CI workflow on atomicdreamlabs1.1 head 2b478c2ccee84df3cef9f9b45e7244c0fcae8216; confirm typecheck and test steps succeed
+  reason: Closes verification loop on the type alignment; next smallest evidence step
+  prerequisites:
+    - Workflow run starts (push to main typically triggers)
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - better-auth.com/docs/guides/1-7-upgrade-guide Generic OAuth section
+    - Commits b9bb8b7 and 2b478c2 on atomicdreamlabs1.1
+    - PASS-2026-11-15-766/767 residual description
