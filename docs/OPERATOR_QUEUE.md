@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-15T18:02Z (Randomized Sweep — Open-Energy-Fusion)
+**Updated:** 2026-11-15T19:05Z (Randomized Sweep — coherence-dynamics)
 
 ## Pending / Escalated
+- **coherence-dynamics:** Classification RESEARCH confirmed. Mathematical physics research foundation for effective responses from coarse-graining and correlations. Stage A audit/formalization. Claim ≤1. CI green (success on runs 40989331725/40989292280). Explicit no a priori Ware Constant or force; evidence labels present. Termination MET for RESEARCH. No residuals.
 - **Open-Energy-Fusion:** Classification RESEARCH confirmed. Measurement-first multi-domain energy arbitration (graph + net-useful-benefit dispatcher + simulation campaign vs priority EMS). Claim ≤1; YELLOW INVESTIGATE gate. CI workflow present; local pytest 12 passed. Explicit no hardware / thrust / energy-extraction claims. Termination MET for RESEARCH. Residual: optional remote CI observation (expected green).
 - **m2-renormalization-law:** Classification RESEARCH confirmed. Provisional Stage-1 scaling ansatz \(W(n)=0.08\,e^{0.23(n-3)}\); Claim level 1; parameter-free ratio locks (Model A/B); CI + local pytest green (10 passed). Explicit non-claims and rejected hybrid documented. Termination MET for RESEARCH. No residuals.
 - **coherence-drive:** Classification RESEARCH confirmed. Research index / discovery ledger; Stage 1 frozen; claim ≤2; Claim-0 runnable sketch with pytest for docs presence and claim flags. No Actions CI present. Termination MET for RESEARCH. Residual: optional Actions CI addition (non-destructive).
