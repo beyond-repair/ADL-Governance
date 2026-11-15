@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-14T23:45Z (Randomized Sweep — beyond-repair profile)
+**Last Updated:** 2026-11-15T14:02Z (Randomized Sweep — ADL_Nexas2.0)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -10,7 +10,7 @@
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T23:45Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-15T14:02Z for selected)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -45,6 +45,14 @@
 - Classification: ACTIVE (public canonical)
 - Status: VERIFIED green CI; residual non-critical Dependabot
 
+### ADL_Nexas2.0
+- Releases: empty
+- Tags: empty
+- CI: Workflow added this cycle (Node 22 npm ci + typecheck + test) on main (commit 234ce230da0dfabe2a585cb0868f2d88471278dc); observation pending
+- Security: Open Dependabot (medium minimatch/seroval, low better-auth). Non-critical for RESEARCH
+- Classification: RESEARCH (Claim ≤1, Grok App Builder workspace; not verified Nexus)
+- Status: CI+LICENSE added; residuals recorded
+
 **No assumptions. All above from direct API observation this cycle (releases/tags empty, CI green on pillars, inventory 87).**
 
 ## Classification Matrix (Evidence-Based)
@@ -53,6 +61,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
 | beyond-repair | RESEARCH | Profile README index only; Claim 0; no runtime; explicit not ACTIVE product; termination MET | 2026-11-14 |
+| ADL_Nexas2.0 | RESEARCH | Grok App Builder workspace (Vite+TanStack+PGLite); Claim ≤1; CI+LICENSE added; no product/Nexus verification; termination MET for RESEARCH | 2026-11-15 |
 | sunder-cleanroom-vsa-adapter | RESEARCH | Claim ≤1 name-only VSA surface contract (Q-FUNC-002); dim mismatch 4096≠8192 documented; CI green; checker + unit tests present; no runtime interop; termination MET for RESEARCH | 2026-11-14 |
 | finite-gasket-spectral-derivatives | RESEARCH | Claim ≤1 finite discrete kernel identities on gasket; CI green; CLI + unit tests present; advanced residue/math claims prose + supporting scripts (not all in CI); no continuum/selected-W/force; termination MET for RESEARCH | 2026-11-14 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
@@ -76,6 +85,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Digital_Double_virtual_workforce: Python/TS workforce automation scaffold | VERIFIED (Dependabot residual)
 - finite-gasket-spectral-derivatives: Spectral kernel CLI + unit tests for gamma_loop etc. | VERIFIED (core); advanced residue claims supporting scripts only
 - sunder-cleanroom-vsa-adapter: Deterministic name-only VSA contract checker | VERIFIED
+- ADL_Nexas2.0: App builder workspace with defined tests; CI added | VERIFIED (core scripts); remote CI observation pending
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
@@ -88,10 +98,11 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Gap Summary
 - Critical: Full deep classification and capability matrix of 80+ RESEARCH repos pending (bounded cycle)
-- Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room; open medium Dependabot on Digital_Double vite (dev)
+- Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room; open medium Dependabot on Digital_Double vite (dev); ADL_Nexas2.0 Dependabot residual
 - Low: Documentation drift in some SUPERSEDED; low Dependabot on deepmerge
 - atomicdreamlabs1.1: CI residual (lockfile/Node mismatch) — lockfile pushed; remote CI observation pending
 - finite-gasket-spectral-derivatives: advanced residue claims not fully CI-tested (supporting scripts present)
+- ADL_Nexas2.0: remote CI observation pending after workflow addition
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -106,7 +117,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Registry not stale: PARTIAL (updated count + pillars + recent RESEARCH; full matrix residual)
 - Unsupported claims: NONE introduced
 - Critical CI: NONE on pillars or recent RESEARCH
-- Critical security: NONE open on pillars (medium/low Dependabot residual on Digital_Double)
+- Critical security: NONE open on pillars (medium/low Dependabot residual on Digital_Double and ADL_Nexas2.0)
 - Duplicate canonical: NONE identified this cycle
 - All classified: PARTIAL (pillars + recent RESEARCH/SUPERSEDED confirmed; others per registry)
 - Dependencies mapped: HIGH-LEVEL only
@@ -120,5 +131,6 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Operator review of ARCHIVE queue (incl. FortiTrade_Multi-Strategy, new-program-1.01 as SUPERSEDED)
 - Optional release tags for pillars
 - Monitor/address Digital_Double Dependabot (vite upgrade)
-- Monitor CI run on atomicdreamlabs1.1
+- Monitor CI run on atomicdreamlabs1.1 and ADL_Nexas2.0
 - Optional: integrate more residue checks into CI for finite-gasket-spectral-derivatives (non-destructive)
+- Optional: address ADL_Nexas2.0 Dependabot (non-critical)
