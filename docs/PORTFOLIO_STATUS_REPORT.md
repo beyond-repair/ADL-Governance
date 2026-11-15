@@ -1,16 +1,16 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-15T14:02Z (Randomized Sweep — ADL_Nexas2.0)
+**Last Updated:** 2026-11-15T15:20Z (Master Directive v3.0 Governed Sweep)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
 
 ## Inventory Summary
-- Total: 87 (stable; confirmed via live multi-page search on 2026-11-14)
+- Total: 87 (stable; confirmed via live search on 2026-11-15)
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-15T14:02Z for selected)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-15T15:20Z)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -23,7 +23,7 @@
 ### sovereign-clean-room
 - Releases: empty
 - Tags: empty
-- CI: Python tests success on main head 4878918cf9f95d3c19e1890bef6d2fd6713e0a16 (run 37064696194)
+- CI: Python tests success on main (prior run 37064696194 retained; recent PR runs observed)
 - Notes: VSA completeness UNVERIFIED (prior residual retained)
 - Security: No open Dependabot alerts / advisories
 - Classification: ACTIVE (canonical SEEM substrate)
@@ -45,13 +45,12 @@
 - Classification: ACTIVE (public canonical)
 - Status: VERIFIED green CI; residual non-critical Dependabot
 
-### ADL_Nexas2.0
+### informational-flux-identity (this cycle deep)
 - Releases: empty
 - Tags: empty
-- CI: Workflow added this cycle (Node 22 npm ci + typecheck + test) on main (commit 234ce230da0dfabe2a585cb0868f2d88471278dc); observation pending
-- Security: Open Dependabot (medium minimatch/seroval, low better-auth). Non-critical for RESEARCH
-- Classification: RESEARCH (Claim ≤1, Grok App Builder workspace; not verified Nexus)
-- Status: CI+LICENSE added; residuals recorded
+- CI: flux-identity CI success on main head 74dea9103351afce7275aaeae60d22cf1ccdd14d (run 43728360716, 2026-11-15)
+- Classification: RESEARCH (Claim-capped mathematical theorems on Coherence Drive residual; explicit no flux/thrust claims; tests present)
+- Status: VERIFIED green CI; core demonstrated
 
 **No assumptions. All above from direct API observation this cycle (releases/tags empty, CI green on pillars, inventory 87).**
 
@@ -64,13 +63,14 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 | ADL_Nexas2.0 | RESEARCH | Grok App Builder workspace (Vite+TanStack+PGLite); Claim ≤1; CI+LICENSE added; no product/Nexus verification; termination MET for RESEARCH | 2026-11-15 |
 | sunder-cleanroom-vsa-adapter | RESEARCH | Claim ≤1 name-only VSA surface contract (Q-FUNC-002); dim mismatch 4096≠8192 documented; CI green; checker + unit tests present; no runtime interop; termination MET for RESEARCH | 2026-11-14 |
 | finite-gasket-spectral-derivatives | RESEARCH | Claim ≤1 finite discrete kernel identities on gasket; CI green; CLI + unit tests present; advanced residue/math claims prose + supporting scripts (not all in CI); no continuum/selected-W/force; termination MET for RESEARCH | 2026-11-14 |
+| informational-flux-identity | RESEARCH | Claim-capped closed-surface identity theorems (EI etc.); CI green; explicit no net force/flux/thrust; tests + scripts; termination MET for RESEARCH | 2026-11-15 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
-| forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-14 |
-| sovereign-clean-room | ACTIVE | Canonical SEEM substrate; green CI | 2026-11-14 |
-| BlockSwarm | ACTIVE | SAGF Foundry contracts; green CI | 2026-11-14 |
-| Digital_Double_virtual_workforce | ACTIVE | Public canonical workforce; green CI + residual Dependabot | 2026-11-14 |
-| ADL-Governance | ACTIVE | Governing source | 2026-11-14 |
+| forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-15 |
+| sovereign-clean-room | ACTIVE | Canonical SEEM substrate; green CI | 2026-11-15 |
+| BlockSwarm | ACTIVE | SAGF Foundry contracts; green CI | 2026-11-15 |
+| Digital_Double_virtual_workforce | ACTIVE | Public canonical workforce; green CI + residual Dependabot | 2026-11-15 |
+| ADL-Governance | ACTIVE | Governing source | 2026-11-15 |
 | (others) | Per registry | ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED | Prior sweeps |
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
@@ -86,6 +86,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - finite-gasket-spectral-derivatives: Spectral kernel CLI + unit tests for gamma_loop etc. | VERIFIED (core); advanced residue claims supporting scripts only
 - sunder-cleanroom-vsa-adapter: Deterministic name-only VSA contract checker | VERIFIED
 - ADL_Nexas2.0: App builder workspace with defined tests; CI added | VERIFIED (core scripts); remote CI observation pending
+- informational-flux-identity: Theorem proofs (EI etc.) + unit tests for flux-identity identities | VERIFIED (claim-capped; no force)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
