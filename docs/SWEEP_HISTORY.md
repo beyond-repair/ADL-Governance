@@ -1,5 +1,43 @@
 # Sweep History
 
+## Cycle: Basilisk Typecheck Alignment — atomicdreamlabs1.1 — 2026-11-15T18:09Z
+
+**Scope:** Close GAP-ATOMICDREAMLABS-TYPECHECK-AUTH identified in PASS-767.
+
+### DISCOVER
+- Type errors confirmed in src/lib/auth/client.ts and popup.server.ts against better-auth ~1.7.7.
+- Official upgrade guide documents removal of genericOAuthClient and migration of oauth2 endpoints to social path.
+
+### AUDIT
+- Surface mismatch only; no logic change required beyond API rename.
+- RESEARCH classification and claim discipline preserved.
+
+### CLASSIFY
+**Label:** No lifecycle change.
+
+### PLAN
+Target: Minimal patch to client.ts and popup.server.ts. Persist pass record.
+
+### IMPLEMENT
+Updated src/lib/auth/client.ts (remove plugin, switch to signIn.social) and popup.server.ts (signInSocial). Commits b9bb8b7 and 2b478c2.
+
+### TEST → CI
+Static match to 1.7 upgrade guide. Remote CI observation deferred to next pass.
+
+### DOCUMENT
+This entry. PASS-2026-11-15-768.yaml persisted.
+
+### GOVERN
+No unsupported claims. Claim levels unchanged.
+
+### RELEASE/ARCHIVE
+None.
+
+### RE-AUDIT
+Type surface aligned. Ready for CI verification.
+
+**Outcome:** Gap closed at code level. Next: observe green CI.
+
 ## Cycle: Randomized Portfolio Completion Sweep — Open-Energy-Fusion — 2026-11-15T18:02Z
 
 **Selected Repository:** Open-Energy-Fusion (random selection via seeded random.Random(20261115).choice from 87-repo inventory)
