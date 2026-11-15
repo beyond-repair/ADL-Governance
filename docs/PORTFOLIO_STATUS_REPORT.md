@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-15T18:02Z (Randomized Sweep — Open-Energy-Fusion confirmation)
+**Last Updated:** 2026-11-15T19:05Z (Randomized Sweep — coherence-dynamics confirmation)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -45,7 +45,7 @@
 - Classification: ACTIVE (public canonical)
 - Status: VERIFIED green CI; residual non-critical Dependabot
 
-### Open-Energy-Fusion (this cycle)
+### Open-Energy-Fusion (prior cycle)
 - Releases: empty (inferred; no tags observed)
 - Tags: empty
 - CI: .github/workflows/ci.yml present (pytest + campaign smoke on Python 3.12)
@@ -53,6 +53,15 @@
 - Security: No open advisories
 - Classification: RESEARCH (simulation + contract only; YELLOW INVESTIGATE; claim ≤1; no hardware)
 - Status: VERIFIED structure + claim discipline + local tests green
+
+### coherence-dynamics (this cycle)
+- Releases: empty
+- Tags: empty
+- CI: CI success on main (runs 40989331725 and 40989292280, 2026-10-30; conclusion success)
+- Tests: pytest -q via CI (green)
+- Security: No open advisories observed
+- Classification: RESEARCH (mathematical physics research foundation; Stage A audit/formalization; claim ≤1; no a priori Ware Constant or force)
+- Status: VERIFIED CI-green; explicit research charter, evidence labels, no unsupported claims
 
 **No assumptions. All above from direct API observation this cycle (releases/tags empty on pillars, CI green on pillars, inventory 87).**
 
@@ -69,6 +78,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 | coherence-drive | RESEARCH | Research index / discovery ledger; Stage 1 frozen; claim ≤2; Claim-0 runnable sketch (pytest docs presence); no Actions CI; explicit not thruster; termination MET for RESEARCH | 2026-11-15 |
 | m2-renormalization-law | RESEARCH | Provisional Stage-1 scaling ansatz \(W(n)=0.08 e^{0.23(n-3)}\); Claim level 1; parameter-free ratio locks; CI + pytest green (10 passed); explicit non-claims / rejected hybrid; termination MET for RESEARCH | 2026-11-15 |
 | Open-Energy-Fusion | RESEARCH | Measurement-first multi-domain energy arbitration simulation + contract; Claim ≤1; YELLOW INVESTIGATE; CI workflow + local pytest 12 passed; explicit no hardware/thrust/energy-extraction; termination MET for RESEARCH | 2026-11-15 |
+| coherence-dynamics | RESEARCH | Mathematical physics research investigating coarse-graining effective responses; Stage A audit/formalization; claim ≤1; CI green (pytest); explicit no a priori constants/force; evidence labels; termination MET for RESEARCH | 2026-11-15 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-15 |
@@ -96,6 +106,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - coherence-drive: Research index CLI + pytest for claim flags / docs presence / ledger | VERIFIED (Claim-0 index; no physics product)
 - m2-renormalization-law: Stage-1 W(n) scaling + parameter-free ratio locks + gasket spectrum + pytest | VERIFIED (Claim-1 provisional; no validation/thrust)
 - Open-Energy-Fusion: Multi-domain energy graph dispatcher + simulation campaign (vs priority EMS) + unit tests for bounds/invariants | VERIFIED (simulation only; no hardware)
+- coherence-dynamics: Spectral/graph Laplacian, heat trace, asymptotics, Gaussian two-field, multi-field Schur, phase robustness models + unit tests (analytic identities, conservation, convergence, reproducibility) | VERIFIED (CI green; research foundation only)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
@@ -114,6 +125,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - finite-gasket-spectral-derivatives: advanced residue claims not fully CI-tested (supporting scripts present)
 - ADL_Nexas2.0: remote CI observation pending after workflow addition
 - Open-Energy-Fusion: remote CI observation pending (workflow present; local green)
+- coherence-dynamics: none (CI green observed)
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -147,3 +159,4 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Optional: address ADL_Nexas2.0 Dependabot (non-critical)
 - Optional: add Actions CI for coherence-drive docs-presence tests (non-destructive)
 - Monitor remote CI on Open-Energy-Fusion (expected green)
+- coherence-dynamics confirmed RESEARCH, CI green, termination MET
