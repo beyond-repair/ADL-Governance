@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-11-15-767
+  parent_pass: PASS-2026-11-15-766
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-ECOSYSTEM-DISCOVERY-BASELINE
+  description: Reconstruct current GitHub ecosystem state from live inventory, governance docs, and latest pass chain; confirm highest-value next slice
+  reason_selected: Initial Basilisk directive execution; establish persistent baseline for recursive continuation without conversation history
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 87 public repositories
+    - Core ACTIVE pillars: Digital_Double_virtual_workforce, sovereign-clean-room, BlockSwarm, forge-aegis (RELEASE_BLOCKED_BY_OPERATOR)
+    - Governance registry in ADL-Governance current as of 2026-11-15; live census 87
+    - Latest pass PASS-2026-11-15-766 blocked on atomicdreamlabs1.1 CI typecheck (better-auth ~1.7.7 client/plugin surface mismatch)
+    - RESEARCH cluster around Coherence Drive / CFT / flux-identity / spectral derivatives remains claim-capped with local tests green where present
+    - adl-function-census drift observation refreshed to 87
+    - No critical security escalations; operator-only archive/release decisions pending
+
+CHANGES:
+  repositories: []
+  files: []
+  commits: []
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - Live GitHub search user:beyond-repair total_count=87: PASS
+    - ADL-Governance docs/PORTFOLIO_STATE.md and OPERATOR_QUEUE.md consistent with inventory: PASS
+    - PASS-2026-11-15-766 content retrieved and next objective confirmed: PASS
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem under active governed recursive passes; claim discipline held
+    - Next bounded gap is atomicdreamlabs1.1 typecheck alignment with better-auth 1.7.7
+    - Import path for genericOAuthClient may have moved to better-auth/plugins/generic-oauth/client in 1.7 series; signIn.oauth2 surface may require migration to signIn.social
+  failures: []
+  decisions:
+    - Select GAP-ATOMICDREAMLABS-TYPECHECK-AUTH as highest-value next slice (continuation of prior NEXT)
+    - No new repositories; reuse existing
+    - Preserve RESEARCH classification
+
+REMAINING:
+  incomplete:
+    - Apply minimal type surface alignment patch to atomicdreamlabs1.1/src/lib/auth/*
+    - Re-observe remote CI green
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-TYPECHECK-AUTH
+  action: Update client.ts import of genericOAuthClient to better-auth/plugins/generic-oauth/client (or remove plugin if standard social path suffices); adjust signInWithOAuth2 / signIn.oauth2 calls to current InferAPI surface; push and observe CI typecheck + test
+  reason: Closes residual CI failure identified in PASS-766; smallest verifiable change
+  prerequisites:
+    - Local or CI typecheck reproduction
+    - Confirm exact export path in better-auth@1.7.7
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___search_repositories total_count=87
+    - docs/PORTFOLIO_STATE.md, docs/OPERATOR_QUEUE.md, docs/SWEEP_HISTORY.md retrieved
+    - PASS-2026-11-15-766.yaml content
+    - better-auth docs and source references for 1.7 Generic OAuth client API changes
