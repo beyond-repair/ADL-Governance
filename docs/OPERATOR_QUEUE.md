@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-15T16:05Z (Randomized Sweep — adl-function-census)
+**Updated:** 2026-11-15T16:25Z (Governed Sweep — coherence-drive)
 
 ## Pending / Escalated
+- **coherence-drive:** Classification RESEARCH confirmed. Research index / discovery ledger; Stage 1 frozen; claim ≤2; Claim-0 runnable sketch with pytest for docs presence and claim flags. No Actions CI present. Termination MET for RESEARCH. Residual: optional Actions CI addition (non-destructive).
 - **adl-function-census:** Classification RESEARCH confirmed. Drift observation refreshed to 2026-11-15 search_total=87 (not a re-lock). CI green locally; remote expected. Termination MET. No residuals.
 - **ADL_Nexas2.0:** Classification RESEARCH confirmed. CI workflow + MIT LICENSE pushed to main (commit 234ce230da0dfabe2a585cb0868f2d88471278dc). Remote CI observation pending. Open Dependabot: medium (minimatch CVE-2026-118764, seroval CVE-2026-116583/116582), low (better-auth GHSA-44jh-23m7-hpcf). Non-critical for RESEARCH; upgrade residual.
 - **atomicdreamlabs1.1:** Lockfile regenerated and pushed (c546146). Local npm ci PASS. Remote CI observation pending. Classification RESEARCH confirmed.
@@ -29,5 +30,6 @@ None this cycle. All actions non-destructive documentation updates.
 - Address Digital_Double vite Dependabot (non-critical).
 - Operator review of archive candidates including FortiTrade_Multi-Strategy and new-program-1.01 (SUPERSEDED).
 - Optional: integrate residue supporting scripts into CI for finite-gasket-spectral-derivatives if desired (non-destructive).
+- Optional: add Actions CI for coherence-drive docs-presence tests (non-destructive).
 
 **No pending destructive actions.**
