@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-14T23:18Z (Master Directive v3.0 Governed Sweep)
+**Last Updated:** 2026-11-14T23:45Z (Randomized Sweep — beyond-repair profile)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -10,7 +10,7 @@
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T23:18Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-14T23:45Z)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -52,6 +52,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
+| beyond-repair | RESEARCH | Profile README index only; Claim 0; no runtime; explicit not ACTIVE product; termination MET | 2026-11-14 |
 | sunder-cleanroom-vsa-adapter | RESEARCH | Claim ≤1 name-only VSA surface contract (Q-FUNC-002); dim mismatch 4096≠8192 documented; CI green; checker + unit tests present; no runtime interop; termination MET for RESEARCH | 2026-11-14 |
 | finite-gasket-spectral-derivatives | RESEARCH | Claim ≤1 finite discrete kernel identities on gasket; CI green; CLI + unit tests present; advanced residue/math claims prose + supporting scripts (not all in CI); no continuum/selected-W/force; termination MET for RESEARCH | 2026-11-14 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
