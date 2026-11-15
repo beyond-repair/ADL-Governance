@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-11-15-766
+  parent_pass: PASS-2026-11-14-765
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-OBSERVE
+  description: Confirm the triggered CI workflow on atomicdreamlabs1.1@c546146 completes with success under node-version 22.12.0
+  reason_selected: Direct continuation of PASS-765 NEXT; highest-value bounded slice to close lockfile residual with remote evidence
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 87 public repos
+    - CI workflow run 43652080963 on commit c546146 completed with failure
+    - npm ci step succeeded (exit 0)
+    - typecheck step failed (tsc --noEmit)
+    - Local reproduction on Node 20.20.2 after npm ci --ignore-scripts: two type errors in src/lib/auth/
+      - client.ts: genericOAuthClient not exported from better-auth/client/plugins
+      - popup.server.ts: signInWithOAuth2 missing on InferAPI type
+    - better-auth pinned ~1.7.7; type surface mismatch with current client code
+
+CHANGES:
+  repositories: []
+  files: []
+  commits: []
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - remote CI npm ci on Node 22.12.0: PASS
+    - remote CI typecheck: FAIL
+    - local npm ci --ignore-scripts: PASS (425 packages)
+    - local npm run typecheck: FAIL (2 errors, better-auth API)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: BLOCKED
+
+KNOWLEDGE:
+  confirmed:
+    - Lockfile regeneration resolved npm ci under Node 22.12.0
+    - Residual is TypeScript compatibility with better-auth ~1.7.7 client plugins and server API inference
+  failures:
+    - Typecheck fails due to missing exports/properties in installed better-auth types
+  decisions:
+    - Classify typecheck residual as next bounded gap; do not elevate claims
+
+REMAINING:
+  incomplete:
+    - Align auth client code with better-auth ~1.7.7 type surface or update dependency
+    - Achieve green CI typecheck + test on atomicdreamlabs1.1
+  blockers:
+    - Type errors in src/lib/auth/client.ts and popup.server.ts
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-TYPECHECK-AUTH
+  action: Diagnose better-auth ~1.7.7 client/plugin exports and InferAPI surface; apply minimal patch to src/lib/auth/* so tsc --noEmit passes, then push and re-observe CI
+  reason: Closes the remaining CI failure after lockfile sync; smallest change preserving RESEARCH classification
+  prerequisites:
+    - Local typecheck reproduction confirmed
+    - No broader dependency bump required if surface alignment is possible
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Actions run 43652080963 conclusion=failure, npm ci success, typecheck failure
+    - Local typecheck output: TS2305 genericOAuthClient, TS2339 signInWithOAuth2
