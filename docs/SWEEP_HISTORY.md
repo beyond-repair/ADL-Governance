@@ -1,5 +1,43 @@
 # Sweep History
 
+## Cycle: Basilisk Recursive Discovery Baseline — 2026-11-15T17:11Z
+
+**Scope:** Initial execution of ADL-BASILISK recursive engineering directive. Live inventory reconstruction + governance state confirmation + next-gap selection.
+
+### DISCOVER
+- Live search: 87 public repositories confirmed for user:beyond-repair.
+- Governance: ADL-Governance PASS chain current through PASS-2026-11-15-766 (BLOCKED on atomicdreamlabs1.1 typecheck). PORTFOLIO_STATE.md and OPERATOR_QUEUE.md consistent.
+- Pillars and RESEARCH cluster classifications retained; claim discipline observed.
+
+### AUDIT
+- Inventory stable. No new critical issues identified. Residuals from prior passes retained (atomicdreamlabs1.1 type surface, sovereign-clean-room VSA, non-critical Dependabot, archive candidates).
+
+### CLASSIFY
+**Label:** No changes. ACTIVE / RESEARCH / SUPERSEDED as previously locked.
+
+### PLAN
+Target: Persist discovery pass record. Select continuation of GAP-ATOMICDREAMLABS-TYPECHECK-AUTH as highest-value next slice. No capability mutations.
+
+### IMPLEMENT
+Created docs/passes/PASS-2026-11-15-767.yaml. History preserved.
+
+### TEST → CI
+Governance checker expected to accept new YAML (nested schema, id match). No capability tests run this pass.
+
+### DOCUMENT
+This entry. Pass record is the authoritative provenance.
+
+### GOVERN
+Claim levels unchanged. No unsupported claims. Aligned to constitution.
+
+### RELEASE/ARCHIVE
+None.
+
+### RE-AUDIT
+Baseline established. Termination for discovery MET. Ready for next bounded action on atomicdreamlabs1.1 auth types.
+
+**Outcome:** Discovery complete. Next action explicitly recorded. Recursive loop continues.
+
 ## Cycle: Randomized Portfolio Completion Sweep — m2-renormalization-law — 2026-11-15T17:02Z
 
 **Selected Repository:** m2-renormalization-law (random selection via shuf from 87-repo inventory)
