@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-11-15-770
+  parent_pass: PASS-2026-11-15-769
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 9
+
+OBJECTIVE:
+  id: GAP-ATOMICDREAMLABS-CI-OBSERVE
+  description: Observe CI on atomicdreamlabs1.1 0464ceb and resolve residual 9 test failures so typecheck+test both green
+  reason_selected: Direct NEXT from PASS-769; closes verification loop on CI script + auth alignment
+
+DISCOVERY:
+  findings:
+    - Remote CI run 43767872808 on 0464ceb completed with failure; 195 tests, 186 pass, 9 fail
+    - Failures concentrated in scripts/grok-pwa-plugin.test.mjs (site.json title "ADL NEXUS" and public/og.jpg override document/appName/host fallbacks) and one migration-plan.test.mjs (shop SQL files present in globbed dir)
+    - Local clone + npm test reproduces exactly the same 9 failures
+    - Minimal isolation (explicit site: {} or empty cwd) + updated migration assertion makes local scripts suite 195/195 pass
+
+CHANGES:
+  repositories: []
+  files: []
+  commits: []
+  capabilities_added_or_changed: []
+
+VERIFICATION:
+  tests_run:
+    - Remote CI on 0464ceb: FAIL (9 test failures documented)
+    - Local scripts/*.test.mjs after isolation patch: PASS (195/195)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (RESEARCH, no claim elevation)
+  overall: BLOCKED
+
+KNOWLEDGE:
+  confirmed:
+    - Baked site.json and on-disk public/og.jpg take precedence in injectGrokPwaHead when not isolated in tests
+    - Shop order migrations are intentional in migrations/ root
+  failures:
+    - Push of verified local patches blocked in this session by argument size limits on push_files tool
+  decisions:
+    - Prefer test isolation over changing production site.json or removing public assets
+
+REMAINING:
+  incomplete:
+    - Push the verified test patches to atomicdreamlabs1.1 main
+    - Observe new CI run for green status
+  blockers:
+    - Current agent session push_files argument size prevents embedding full test file contents
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-CI-PUSH-OBSERVE
+  action: Push the locally-verified test isolation patches (grok-pwa-plugin.test.mjs + migration-plan.test.mjs) to atomicdreamlabs1.1 and observe CI green on the new head
+  reason: Completes the CI green verification started in PASS-769
+  prerequisites:
+    - Ability to push full file contents or use an alternative commit method
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Actions run 43767872808 failure logs (9 fails)
+    - Local /tmp/adl-test npm test before/after patches (195 pass after)
+    - site.json title ADL NEXUS and migrations/0001_shop_orders.sql presence
