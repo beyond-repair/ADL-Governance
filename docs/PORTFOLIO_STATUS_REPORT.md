@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-15T17:02Z (Randomized Sweep — m2-renormalization-law confirmation)
+**Last Updated:** 2026-11-15T18:02Z (Randomized Sweep — Open-Energy-Fusion confirmation)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -45,13 +45,14 @@
 - Classification: ACTIVE (public canonical)
 - Status: VERIFIED green CI; residual non-critical Dependabot
 
-### coherence-drive (prior cycle deep)
+### Open-Energy-Fusion (this cycle)
 - Releases: empty (inferred; no tags observed)
 - Tags: empty
-- CI: No .github/workflows present (docs-presence pytest only; no Actions CI)
-- Tests: pytest for docs presence, claim flags false, ledger consistency (Claim-0 runnable sketch)
-- Classification: RESEARCH (research index / discovery ledger; Stage 1 frozen; claim ≤2; explicit not thruster/product; claim flags false)
-- Status: VERIFIED structure + claim discipline; no CI Actions; core demonstrated as index
+- CI: .github/workflows/ci.yml present (pytest + campaign smoke on Python 3.12)
+- Tests: Local clone PYTHONPATH=src pytest tests -q → 12 passed
+- Security: No open advisories
+- Classification: RESEARCH (simulation + contract only; YELLOW INVESTIGATE; claim ≤1; no hardware)
+- Status: VERIFIED structure + claim discipline + local tests green
 
 **No assumptions. All above from direct API observation this cycle (releases/tags empty on pillars, CI green on pillars, inventory 87).**
 
@@ -67,6 +68,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 | informational-flux-identity | RESEARCH | Claim-capped closed-surface identity theorems (EI etc.); CI green; explicit no net force/flux/thrust; tests + scripts; termination MET for RESEARCH | 2026-11-15 |
 | coherence-drive | RESEARCH | Research index / discovery ledger; Stage 1 frozen; claim ≤2; Claim-0 runnable sketch (pytest docs presence); no Actions CI; explicit not thruster; termination MET for RESEARCH | 2026-11-15 |
 | m2-renormalization-law | RESEARCH | Provisional Stage-1 scaling ansatz \(W(n)=0.08 e^{0.23(n-3)}\); Claim level 1; parameter-free ratio locks; CI + pytest green (10 passed); explicit non-claims / rejected hybrid; termination MET for RESEARCH | 2026-11-15 |
+| Open-Energy-Fusion | RESEARCH | Measurement-first multi-domain energy arbitration simulation + contract; Claim ≤1; YELLOW INVESTIGATE; CI workflow + local pytest 12 passed; explicit no hardware/thrust/energy-extraction; termination MET for RESEARCH | 2026-11-15 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-15 |
@@ -93,6 +95,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - informational-flux-identity: Theorem proofs (EI etc.) + unit tests for flux-identity identities | VERIFIED (claim-capped; no force)
 - coherence-drive: Research index CLI + pytest for claim flags / docs presence / ledger | VERIFIED (Claim-0 index; no physics product)
 - m2-renormalization-law: Stage-1 W(n) scaling + parameter-free ratio locks + gasket spectrum + pytest | VERIFIED (Claim-1 provisional; no validation/thrust)
+- Open-Energy-Fusion: Multi-domain energy graph dispatcher + simulation campaign (vs priority EMS) + unit tests for bounds/invariants | VERIFIED (simulation only; no hardware)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
@@ -110,6 +113,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - atomicdreamlabs1.1: CI residual (lockfile/Node mismatch) — lockfile pushed; remote CI observation pending
 - finite-gasket-spectral-derivatives: advanced residue claims not fully CI-tested (supporting scripts present)
 - ADL_Nexas2.0: remote CI observation pending after workflow addition
+- Open-Energy-Fusion: remote CI observation pending (workflow present; local green)
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -142,3 +146,4 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Optional: integrate more residue checks into CI for finite-gasket-spectral-derivatives (non-destructive)
 - Optional: address ADL_Nexas2.0 Dependabot (non-critical)
 - Optional: add Actions CI for coherence-drive docs-presence tests (non-destructive)
+- Monitor remote CI on Open-Energy-Fusion (expected green)

@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-15T17:02Z (Randomized Sweep — m2-renormalization-law)
+**Updated:** 2026-11-15T18:02Z (Randomized Sweep — Open-Energy-Fusion)
 
 ## Pending / Escalated
+- **Open-Energy-Fusion:** Classification RESEARCH confirmed. Measurement-first multi-domain energy arbitration (graph + net-useful-benefit dispatcher + simulation campaign vs priority EMS). Claim ≤1; YELLOW INVESTIGATE gate. CI workflow present; local pytest 12 passed. Explicit no hardware / thrust / energy-extraction claims. Termination MET for RESEARCH. Residual: optional remote CI observation (expected green).
 - **m2-renormalization-law:** Classification RESEARCH confirmed. Provisional Stage-1 scaling ansatz \(W(n)=0.08\,e^{0.23(n-3)}\); Claim level 1; parameter-free ratio locks (Model A/B); CI + local pytest green (10 passed). Explicit non-claims and rejected hybrid documented. Termination MET for RESEARCH. No residuals.
 - **coherence-drive:** Classification RESEARCH confirmed. Research index / discovery ledger; Stage 1 frozen; claim ≤2; Claim-0 runnable sketch with pytest for docs presence and claim flags. No Actions CI present. Termination MET for RESEARCH. Residual: optional Actions CI addition (non-destructive).
 - **adl-function-census:** Classification RESEARCH confirmed. Drift observation refreshed to 2026-11-15 search_total=87 (not a re-lock). CI green locally; remote expected. Termination MET. No residuals.
@@ -22,6 +23,7 @@
 None this cycle. All actions non-destructive documentation updates.
 
 ## Manual Interventions
+- Observe remote CI run on Open-Energy-Fusion main (workflow present; expected green).
 - Observe remote CI run on ADL_Nexas2.0 main after workflow addition.
 - Optional: upgrade Dependabot deps in ADL_Nexas2.0 (minimatch, seroval, better-auth) if desired (non-destructive).
 - Push regenerated package-lock.json for atomicdreamlabs1.1 and verify CI green (observation pending).
