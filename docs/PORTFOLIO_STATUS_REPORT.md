@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-15T19:16Z (Master Directive v3.0 Portfolio Governance Sweep)
+**Last Updated:** 2026-11-15T20:05Z (Randomized Portfolio Completion Sweep — FortiTrade_Multi-Strategy)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -48,7 +48,7 @@
 **No assumptions. All above from direct API observation this cycle (releases/tags empty on pillars, CI green on pillars, inventory 87).**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH.
+Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH + this cycle's re-audit.
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
@@ -62,7 +62,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 | Open-Energy-Fusion | RESEARCH | Measurement-first multi-domain energy arbitration simulation + contract; Claim ≤1; YELLOW INVESTIGATE; CI workflow + local pytest 12 passed; explicit no hardware/thrust/energy-extraction; termination MET for RESEARCH | 2026-11-15 |
 | coherence-dynamics | RESEARCH | Mathematical physics research investigating coarse-graining effective responses; Stage A audit/formalization; claim ≤1; CI green (pytest); explicit no a priori constants/force; evidence labels; termination MET for RESEARCH | 2026-11-15 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
-| FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
+| FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch (CSV backtest + FastAPI webhook + Pine); CI green historically (run 37663744493); explicit ARCHIVE QUEUE banner; no profit/live/product claims; tests present; termination MET for sketch | 2026-11-15 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-15 |
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; green CI | 2026-11-15 |
 | BlockSwarm | ACTIVE | SAGF Foundry contracts; green CI | 2026-11-15 |
@@ -74,7 +74,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
 **RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room
-**ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required). Includes FortiTrade_Multi-Strategy.
+**ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required). Includes FortiTrade_Multi-Strategy (reconfirmed this cycle).
 
 ## Capability Inventory (Demonstrated Only)
 - forge-aegis: Artifact Graph modeling, FLS conformance checks (code present, CI green) | VERIFIED
@@ -89,6 +89,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - m2-renormalization-law: Stage-1 W(n) scaling + parameter-free ratio locks + gasket spectrum + pytest | VERIFIED (Claim-1 provisional; no validation/thrust)
 - Open-Energy-Fusion: Multi-domain energy graph dispatcher + simulation campaign (vs priority EMS) + unit tests for bounds/invariants | VERIFIED (simulation only; no hardware)
 - coherence-dynamics: Spectral/graph Laplacian, heat trace, asymptotics, Gaussian two-field, multi-field Schur, phase robustness models + unit tests (analytic identities, conservation, convergence, reproducibility) | VERIFIED (CI green; research foundation only)
+- FortiTrade_Multi-Strategy: Offline RSI/signal decision engine + CSV backtest + FastAPI webhook + Pine Script sketch + unit tests | VERIFIED (Claim-0; no live orders/profit)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
@@ -108,6 +109,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - ADL_Nexas2.0: remote CI observation pending after workflow addition
 - Open-Energy-Fusion: remote CI observation pending (workflow present; local green)
 - coherence-dynamics: none (CI green observed)
+- FortiTrade_Multi-Strategy: none (historical CI green; archive queue; Claim 0)
 
 ## Canonical Ownership Map
 - Governance: ADL-Governance
@@ -142,3 +144,4 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Optional: add Actions CI for coherence-drive docs-presence tests (non-destructive)
 - Monitor remote CI on Open-Energy-Fusion (expected green)
 - coherence-dynamics confirmed RESEARCH, CI green, termination MET
+- FortiTrade_Multi-Strategy reconfirmed ARCHIVED queue, Claim 0, termination MET
