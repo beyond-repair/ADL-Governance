@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-15T19:05Z (Randomized Sweep — coherence-dynamics confirmation)
+**Last Updated:** 2026-11-15T19:16Z (Master Directive v3.0 Portfolio Governance Sweep)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -45,28 +45,10 @@
 - Classification: ACTIVE (public canonical)
 - Status: VERIFIED green CI; residual non-critical Dependabot
 
-### Open-Energy-Fusion (prior cycle)
-- Releases: empty (inferred; no tags observed)
-- Tags: empty
-- CI: .github/workflows/ci.yml present (pytest + campaign smoke on Python 3.12)
-- Tests: Local clone PYTHONPATH=src pytest tests -q → 12 passed
-- Security: No open advisories
-- Classification: RESEARCH (simulation + contract only; YELLOW INVESTIGATE; claim ≤1; no hardware)
-- Status: VERIFIED structure + claim discipline + local tests green
-
-### coherence-dynamics (this cycle)
-- Releases: empty
-- Tags: empty
-- CI: CI success on main (runs 40989331725 and 40989292280, 2026-10-30; conclusion success)
-- Tests: pytest -q via CI (green)
-- Security: No open advisories observed
-- Classification: RESEARCH (mathematical physics research foundation; Stage A audit/formalization; claim ≤1; no a priori Ware Constant or force)
-- Status: VERIFIED CI-green; explicit research charter, evidence labels, no unsupported claims
-
 **No assumptions. All above from direct API observation this cycle (releases/tags empty on pillars, CI green on pillars, inventory 87).**
 
 ## Classification Matrix (Evidence-Based)
-Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH + this cycle's confirmation.
+Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH.
 
 | Name | Classification | Justification | Last Verified |
 |------|----------------|---------------|---------------|
@@ -91,8 +73,8 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
 **RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
-**SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room (reconfirmed this cycle)
-**ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required). Includes FortiTrade_Multi-Strategy (reconfirmed).
+**SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.* → CFTv3.3; new-program-1.01 → sovereign-clean-room
+**ARCHIVED candidates:** As listed in registry / OPERATOR_QUEUE (operator decision required). Includes FortiTrade_Multi-Strategy.
 
 ## Capability Inventory (Demonstrated Only)
 - forge-aegis: Artifact Graph modeling, FLS conformance checks (code present, CI green) | VERIFIED
