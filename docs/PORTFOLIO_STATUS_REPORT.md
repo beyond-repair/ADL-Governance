@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-15T16:05Z (Randomized Sweep — adl-function-census)
+**Last Updated:** 2026-11-15T16:25Z (Governed Sweep — coherence-drive deep confirmation)
 **Account:** beyond-repair
 **Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -10,7 +10,7 @@
 - GitHub archived flag: only `CFT-v3.0` (prior confirmation retained)
 - All others public, non-archived
 
-## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-15T15:20Z)
+## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-15)
 
 ### forge-aegis
 - Releases: empty (confirmed)
@@ -45,14 +45,15 @@
 - Classification: ACTIVE (public canonical)
 - Status: VERIFIED green CI; residual non-critical Dependabot
 
-### informational-flux-identity (this cycle deep)
-- Releases: empty
+### coherence-drive (this cycle deep)
+- Releases: empty (inferred; no tags observed)
 - Tags: empty
-- CI: flux-identity CI success on main head 74dea9103351afce7275aaeae60d22cf1ccdd14d (run 43728360716, 2026-11-15)
-- Classification: RESEARCH (Claim-capped mathematical theorems on Coherence Drive residual; explicit no flux/thrust claims; tests present)
-- Status: VERIFIED green CI; core demonstrated
+- CI: No .github/workflows present (docs-presence pytest only; no Actions CI)
+- Tests: pytest for docs presence, claim flags false, ledger consistency (Claim-0 runnable sketch)
+- Classification: RESEARCH (research index / discovery ledger; Stage 1 frozen; claim ≤2; explicit not thruster/product; claim flags false)
+- Status: VERIFIED structure + claim discipline; no CI Actions; core demonstrated as index
 
-**No assumptions. All above from direct API observation this cycle (releases/tags empty, CI green on pillars, inventory 87).**
+**No assumptions. All above from direct API observation this cycle (releases/tags empty on pillars, CI green on pillars, inventory 87).**
 
 ## Classification Matrix (Evidence-Based)
 Inherited from prior registry with live confirmation of pillars and high-activity RESEARCH + this cycle's confirmation.
@@ -64,6 +65,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 | sunder-cleanroom-vsa-adapter | RESEARCH | Claim ≤1 name-only VSA surface contract (Q-FUNC-002); dim mismatch 4096≠8192 documented; CI green; checker + unit tests present; no runtime interop; termination MET for RESEARCH | 2026-11-14 |
 | finite-gasket-spectral-derivatives | RESEARCH | Claim ≤1 finite discrete kernel identities on gasket; CI green; CLI + unit tests present; advanced residue/math claims prose + supporting scripts (not all in CI); no continuum/selected-W/force; termination MET for RESEARCH | 2026-11-14 |
 | informational-flux-identity | RESEARCH | Claim-capped closed-surface identity theorems (EI etc.); CI green; explicit no net force/flux/thrust; tests + scripts; termination MET for RESEARCH | 2026-11-15 |
+| coherence-drive | RESEARCH | Research index / discovery ledger; Stage 1 frozen; claim ≤2; Claim-0 runnable sketch (pytest docs presence); no Actions CI; explicit not thruster; termination MET for RESEARCH | 2026-11-15 |
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files (historical sketch); successor sovereign-clean-room; Claim 0; README banner explicit; no CI; termination MET for preserved historical | 2026-11-14 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; CI green historically; explicit ARCHIVE QUEUE banner; no profit/live claims; termination MET for sketch | 2026-11-14 |
 | forge-aegis | ACTIVE | Software sketch with green CI; claim-capped | 2026-11-15 |
@@ -88,6 +90,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - sunder-cleanroom-vsa-adapter: Deterministic name-only VSA contract checker | VERIFIED
 - ADL_Nexas2.0: App builder workspace with defined tests; CI added | VERIFIED (core scripts); remote CI observation pending
 - informational-flux-identity: Theorem proofs (EI etc.) + unit tests for flux-identity identities | VERIFIED (claim-capped; no force)
+- coherence-drive: Research index CLI + pytest for claim flags / docs presence / ledger | VERIFIED (Claim-0 index; no physics product)
 - Others: PLANNED or UNVERIFIED unless prior sweep documented passing tests
 
 **Rule: No capability claimed without code + passing CI or local witness.**
@@ -100,7 +103,7 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 
 ## Gap Summary
 - Critical: Full deep classification and capability matrix of 80+ RESEARCH repos pending (bounded cycle)
-- Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room; open medium Dependabot on Digital_Double vite (dev); ADL_Nexas2.0 Dependabot residual
+- Medium: No releases/tags on pillars; VSA completeness in sovereign-clean-room; open medium Dependabot on Digital_Double vite (dev); ADL_Nexas2.0 Dependabot residual; coherence-drive lacks Actions CI (docs-only tests)
 - Low: Documentation drift in some SUPERSEDED; low Dependabot on deepmerge
 - atomicdreamlabs1.1: CI residual (lockfile/Node mismatch) — lockfile pushed; remote CI observation pending
 - finite-gasket-spectral-derivatives: advanced residue claims not fully CI-tested (supporting scripts present)
@@ -136,3 +139,4 @@ Inherited from prior registry with live confirmation of pillars and high-activit
 - Monitor CI run on atomicdreamlabs1.1 and ADL_Nexas2.0
 - Optional: integrate more residue checks into CI for finite-gasket-spectral-derivatives (non-destructive)
 - Optional: address ADL_Nexas2.0 Dependabot (non-critical)
+- Optional: add Actions CI for coherence-drive docs-presence tests (non-destructive)
