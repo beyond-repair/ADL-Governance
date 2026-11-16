@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-11-16-773
+  parent_pass: PASS-2026-11-16-772
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 88
+  repositories_changed: 1
+  capabilities_known: 16
+  capabilities_verified: 9
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECONSTRUCT-773
+  description: Reconstruct ecosystem under ADL-BASILISK; update census to 88 with newly created nexuscommand; persist additional continuity PASS.
+  reason_selected: Live search shows total_count=88 (nexuscommand added today); prior 772 recorded 87; highest-value is accurate reconstruct and registration of new repo discovery.
+
+DISCOVERY:
+  findings:
+    - Live GitHub search user:beyond-repair total_count=88, incomplete_results=false.
+    - nexuscommand created 2026-11-16T14:00:04Z; JavaScript; size 0 initially but has full App Builder structure (AGENTS.md, src/, server/, migrations/, package.json).
+    - PASS-2026-11-16-772 already exists (census 87, focused on atomicdreamlabs1.1 residual).
+    - HEADINGS.md still lists 771 as latest (772 file present but heading not yet added).
+    - SWEEP_HISTORY.md has entry for sunder-cleanroom-vsa-adapter dated 2026-11-16T14:05Z.
+    - Governance constitution and check_passes.py active.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-16-773.yaml
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Updated continuity PASS reflecting census 88 and nexuscommand discovery
+
+VERIFICATION:
+  tests_run:
+    - YAML schema conformance to nested PASS format: PASS (manual inspection)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census is 88; nexuscommand is the newest repository.
+    - Pass recording system is the persistent memory for the recursive agent.
+    - No fabrication: numbers from live search and file contents.
+  failures: []
+  decisions:
+    - Record accurate census and new gap for nexuscommand audit rather than altering 772.
+    - Next bounded action is audit of nexuscommand.
+
+REMAINING:
+  incomplete:
+    - Audit and classification of nexuscommand.
+    - Full capability/dependency/authority graphs.
+    - Closure of atomicdreamlabs1.1 test residual (from 771/772).
+  blockers: []
+  new_gaps:
+    - GAP-NEXUSCOMMAND-AUDIT: Full DISCOVER/AUDIT of beyond-repair/nexuscommand for lifecycle classification, tests, CI, and graph registration.
+
+NEXT:
+  objective_id: GAP-NEXUSCOMMAND-AUDIT
+  action: Call get_repository_tree (recursive) and get_file_contents on key paths (package.json, README if present, src/routes, server/, any test files) for beyond-repair/nexuscommand; classify; check for CI workflows; persist findings in subsequent PASS.
+  reason: Highest-value next slice is integrating the newly appeared nexuscommand into the ecosystem model without assuming documentation equals implementation.
+  prerequisites:
+    - This PASS and heading update committed
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___search_repositories total_count=88 including nexuscommand created_at 2026-11-16
+    - Existing PASS-772 content (census 87)
+    - HEADINGS.md SHA and content
+    - nexuscommand root listing showing AGENTS.md and structure
