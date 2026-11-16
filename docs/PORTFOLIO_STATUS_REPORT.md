@@ -1,15 +1,15 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-16T02:00Z (Randomized Portfolio Completion Sweep — new-program-1.01 reconfirmation)
+**Last Updated:** 2026-11-16T14:05Z (Randomized Portfolio Completion Sweep — sunder-cleanroom-vsa-adapter)
 **Account:** beyond-repair
-**Live Inventory:** 87 public repositories (search total_count=87, incomplete_results=false)
+**Live Inventory:** 88 repositories (search total_count=88, incomplete_results=false; includes private)
 **Governing Source:** ADL-Governance
 
 ## Inventory Summary
-* Total: 87 (stable; confirmed via live search on 2026-11-16)
+* Total: 88 (confirmed via live search on 2026-11-16; public ~83-87)
 * GitHub archived flag: only CFT-v3.0 (prior confirmation retained)
-* All others public, non-archived
-* Private remainder includes mendthegame (RESEARCH, CI scaffolded)
+* All others public or private, non-archived
+* Private remainder includes mendthegame (RESEARCH, CI scaffolded), blacksite, etc.
 
 ## Phase-3 Mandatory Live Verification (Reconfirmed 2026-11-16)
 ### forge-aegis
@@ -29,6 +29,7 @@ ACTIVE. Last push 2026-10-17. CI green historically + residual Dependabot (non-c
 | sovereign-clean-room | ACTIVE | Canonical SEEM substrate; green CI | 2026-11-16 |
 | BlockSwarm | ACTIVE | SAGF Foundry contracts; green CI; termination MET | 2026-11-16 |
 | Digital_Double_virtual_workforce | ACTIVE | Public canonical workforce; green CI + residual Dependabot | 2026-11-16 |
+| sunder-cleanroom-vsa-adapter | RESEARCH | Claim-capped name-only VSA surface contract (MODULE_SURFACE, Claim ≤1); CI present (pytest + engine); dims mismatch locked; no runtime interop | 2026-11-16 |
 | Code_Generation_AI_Program | ARCHIVED | Empty repository by design; Claim 0; inventory CI present; no generator; archive-queue; termination MET for empty archive | 2026-11-16 |
 | ADL_NEXUS_COMMAND_CENTER | RESEARCH | Grok App Builder workspace; Claim ≤1; CI scaffold added | 2026-11-16 |
 | FortiTrade_Multi-Strategy | ARCHIVED | Claim-0 runnable trading sketch; archive queue | 2026-11-16 |
@@ -36,7 +37,7 @@ ACTIVE. Last push 2026-10-17. CI green historically + residual Dependabot (non-c
 | new-program-1.01 | SUPERSEDED | Early My Mind agent files; Claim 0 historical; successor sovereign-clean-room; banner present; termination MET | 2026-11-16 |
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
-**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes private mendthegame
+**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes private mendthegame; sunder-cleanroom-vsa-adapter (Q-FUNC-002 closer)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; new-program-1.01 → sovereign-clean-room
 **ARCHIVED:** Code_Generation_AI_Program (queue), FortiTrade_Multi-Strategy (queue), CFT-v3.0 (GitHub archived)
 
