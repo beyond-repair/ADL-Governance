@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-16T00:23Z (Master Directive v3.0 Portfolio Governance Sweep — Confirmation)
+**Updated:** 2026-11-16T01:00Z (Randomized Portfolio Completion Sweep — new-program-1.01 SUPERSEDED confirmation)
 
 ## Pending / Escalated
+- **new-program-1.01:** Confirmed SUPERSEDED (early My Mind agent stubs). Successor: sovereign-clean-room. Banner present. Termination conditions MET. Archive candidate — GitHub archive flag remains operator decision. No functional work.
 - **BlockSwarm:** Confirmed ACTIVE. Termination conditions MET. Optional tag/release (v0.5.0-sagf candidate) remains operator-only. No functional work required.
 - **Code_Generation_AI_Program:** Confirmed ARCHIVED (recommended), Claim 0, empty by design with inventory CI. GitHub archived flag remains false — operator decision required to set archive flag if desired. No functional work.
 - **atomicdreamlabs1.1 CI:** Test script glob fixed in package.json (commit 0464ceb). Pending remote Actions observation for green typecheck+test on Node 22.12. Prior failures were invocation errors, not type errors.
@@ -21,7 +22,7 @@ None this cycle. All actions non-destructive documentation updates.
 
 ## Manual Interventions
 - Observe remote CI on atomicdreamlabs1.1 head 0464ceb and other recently updated RESEARCH repos.
-- Operator review of archive candidates (including Code_Generation_AI_Program).
+- Operator review of archive candidates (including Code_Generation_AI_Program and new-program-1.01).
 - Address non-critical Dependabot in Digital_Double if desired.
 - Optional deep verification of high-activity RESEARCH repos next cycle.
 - Reconciliation of catalog drift if any.
