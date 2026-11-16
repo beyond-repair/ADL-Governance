@@ -1,0 +1,76 @@
+PASS:
+  id: PASS-2026-11-16-772
+  parent_pass: PASS-2026-11-15-771
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 87
+  repositories_changed: 0
+  capabilities_known: 15
+  capabilities_verified: 9
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: GAP-BASILISK-RECON-772
+  description: Reconstruct ecosystem from live GitHub under ADL-BASILISK; confirm census stability at 87 and residual PWA test placeholder on atomicdreamlabs1.1; persist continuity pass.
+  reason_selected: Fresh agent execution of recursive core loop; Discover & Audit required before next slice; highest-value is confirming no drift and recording the open test residual from prior pass.
+
+DISCOVERY:
+  findings:
+    - Authenticated user beyond-repair, live search total_count=87, incomplete_results=false.
+    - Latest prior pass PASS-2026-11-15-771 restored migration-plan.test.mjs; grok-pwa-plugin.test.mjs remains CONTENT_FROM_FILE_GROK placeholder.
+    - Known-good full test content exists at commit d15e4a7e (506 lines, syntax valid).
+    - SWEEP_HISTORY shows recent random audits confirming SUPERSEDED and ACTIVE statuses; pillars green historically.
+    - ADL-Governance last push recent; pass records up to 771 present.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-16-772.yaml
+  commits:
+    - pending
+  capabilities_added_or_changed:
+    - Persistent YAML pass record for post-771 reconstruction
+
+VERIFICATION:
+  tests_run:
+    - local node --check on restored candidate: PASS (syntax)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: NOT_APPLICABLE
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Census stable at 87 public repositories.
+    - PWA test file residual remains the next concrete CI gap on atomicdreamlabs1.1.
+    - Full prior content recoverable from d15e4a7e.
+  failures:
+    - Full content restore commit left as short placeholder in intermediate step; corrected in record.
+  decisions:
+    - Persist reconstruction without elevating claims.
+    - Next action is exact restore of grok-pwa-plugin.test.mjs from known-good + optional isolation.
+
+REMAINING:
+  incomplete:
+    - Full restore and CI green on atomicdreamlabs1.1 tests.
+    - Portfolio-wide capability/dependency/authority graphs.
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-ATOMICDREAMLABS-PWA-TEST-RESTORE
+  action: Update scripts/grok-pwa-plugin.test.mjs on atomicdreamlabs1.1 to the full content from commit d15e4a7e87c8d2d36b4fda68dde3592cc6cd3826, verify node --check, push, and observe next CI.
+  reason: Directly closes the remaining test placeholder residual identified in PASS-771.
+  prerequisites:
+    - Known-good content available
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live GitHub search total_count=87
+    - PASS-771 content
+    - Current grok-pwa-plugin.test.mjs is placeholder
+    - Local syntax check on candidate file PASS
