@@ -1,5 +1,57 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — new-program-1.01 — 2026-11-16T02:00Z
+
+**Scope:** Random selection of one repository from the full portfolio (87). Full DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → DOCUMENT → GOVERN cycle. Bounded. Reconfirmation of prior cycle.
+
+### SELECT
+Randomly selected `new-program-1.01` (early My Mind agent / task scaffolding, Python). Note: Same as immediately prior cycle at T01:00Z; re-audit performed.
+
+### DISCOVER
+- 15 paths: main.py (hardcoded Task list + Delegate loop), delegate_class.py / task_class.py / gpt_agent.py / my_mind.py / delegate_init.py (stubs), test_main.py (empty unittest pass), tasks.txt, agents.txt, README.md with SUPERSEDED banner.
+- No .github/workflows, no requirements.txt, no CI.
+- README banner present: SUPERSEDED, successor sovereign-clean-room, Claim 0 historical, "Do not start new feature work here."
+- Default branch main. Historical early agent files.
+
+### AUDIT
+Compared against ADL-Governance LIFECYCLE.md and CLAIM_VALIDATION.md. Historical stubs only. Banner matches supersede rules. No critical security, no untracked runtime deps, no unsupported claims (Claim 0). No duplicate of successor.
+
+### CLASSIFY
+**Label:** SUPERSEDED
+**Justification:** Explicit README banner naming successor sovereign-clean-room; feature work stopped; Claim 0 historical. Aligns with LIFECYCLE SUPERSEDED path. Already noted as archive candidate in OPERATOR_QUEUE.
+
+### PLAN
+Target state: Confirmed SUPERSEDED, governance registry current, archive readiness recorded (operator decision remains for GitHub archive flag). No functional code changes.
+
+### IMPLEMENT
+Governance documentation updated only. History preserved. No deletions, no history rewrites. No code changes in subject repository.
+
+### TEST → CI
+No CI present (expected). Stub tests. No critical failures. Not required for SUPERSEDED termination.
+
+### DOCUMENT
+This SWEEP_HISTORY.md entry. PORTFOLIO_STATUS_REPORT.md updated with classification. OPERATOR_QUEUE.md noted (archive candidate confirmed).
+
+### GOVERN
+No unsupported claims. Claim 0 held. Evidence hierarchy: README banner + tree > priors. Aligned to ADL-Governance constitution. Idempotent.
+
+### RELEASE/ARCHIVE
+No release. GitHub archive flag remains operator-only. Not auto-archived.
+
+### RE-AUDIT
+Termination conditions for this repo:
+- No undefined/undocumented components: MET (historical stubs + banner)
+- No stale registry entries: UPDATED
+- No critical CI failures: MET (none)
+- No duplicate canonical implementations: MET (successor named)
+- No unresolved critical security issues: MET
+- No unsupported claims: MET
+- Target state achieved: YES (SUPERSEDED confirmed)
+
+**Outcome:** new-program-1.01 reconfirmed SUPERSEDED. Termination conditions met. Cycle complete. Next random selection deferred.
+
+[Prior cycles retained; see full history in previous commits.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — new-program-1.01 — 2026-11-16T01:00Z
 
 **Scope:** Random selection of one repository from the full portfolio (87). Full DISCOVER → AUDIT → CLASSIFY → PLAN → IMPLEMENT → DOCUMENT → GOVERN cycle. Bounded.
