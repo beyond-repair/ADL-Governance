@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-17T15:40Z (Randomized Portfolio Completion Sweep — fantom_trading_bot_2)
+**Last Updated:** 2026-11-17T19:03Z (Randomized Portfolio Completion Sweep — nexuscommand)
 **Account:** beyond-repair
 **Live Inventory:** 88 repositories (search total_count=88, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -37,9 +37,10 @@ ACTIVE. Last push 2026-10-17. CI green historically + residual Dependabot (non-c
 | new-program-1.01 | SUPERSEDED | Early agent files; successor sovereign-clean-room | 2026-11-16 |
 | Code_Generation_AI_Program | ARCHIVED | Empty by design; Claim 0 | 2026-11-16 |
 | fantom_trading_bot_2 | ARCHIVED | Historical 2023 Python sketch with placeholders; no tests/CI; claim 0; in archive queue | 2026-11-17 |
+| nexuscommand | RESEARCH | TanStack Start virtual company command center; tests present; CI workflow added; claim-capped ≤2; no production validation | 2026-11-17 |
 
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
-**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2)
+**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes nexuscommand
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce
 **ARCHIVED:** Code_Generation_AI_Program (queue), FortiTrade_Multi-Strategy (queue), CFT-v3.0 (GitHub archived), fantom_trading_bot_2 (queue, confirmed)
 
