@@ -1,5 +1,40 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Recursive Engineering Directive — Initial Discovery — 2026-11-17T22:13Z
+
+**Selected Objective:** GAP-DISCOVER-001 (ecosystem reconstruction)
+
+### DISCOVER
+Authenticated GitHub user beyond-repair. Live search returned 88 public repositories. Key governing and core repositories inspected: ADL-Governance (constitution, passes, claim levels, check_passes.py), ADL-Nexus (local-first RESEARCH platform, claim ≤1), nexuscommand (recent RESEARCH command surface with new CI scaffold), aegis-repo-graph (locked Artifact Graph snapshot). OPERATOR_QUEUE and SWEEP_HISTORY reviewed.
+
+### AUDIT
+Governance model is active and claim-capped. Recent prior cycle (nexuscommand) documented. No open issues in ADL-Governance. Artifact graph is not a live crawl. No contradictions with existing invariants.
+
+### CLASSIFY
+No new repository classifications this cycle. Ecosystem remains under existing lifecycle classes. This cycle is pure discovery/persist.
+
+### PLAN
+Persist machine- and human-readable pass record. Update history and queue. Do not alter code or claim levels.
+
+### IMPLEMENT
+Created docs/passes/PASS-2026-11-17-260.yaml. Updated this file and OPERATOR_QUEUE.md. No destructive changes.
+
+### TEST → CI
+Docs-only. Invariants preserved. No tests executed (not applicable).
+
+### DOCUMENT / GOVERN
+Pass record matches nested schema. History heading added. Queue updated with residuals and next action.
+
+### RELEASE/ARCHIVE
+N/A.
+
+### RE-AUDIT
+State preserved. Ready for next bounded slice.
+
+**Outcome:** Initial reconstruction persisted as PASS-2026-11-17-260. Next: observe nexuscommand remote CI (GAP-CI-001).
+
+[Prior cycles retained; see full history in previous commits.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — nexuscommand — 2026-11-17T19:03Z
 
 **Selected Repository:** nexuscommand (random selection via portfolio inventory)
