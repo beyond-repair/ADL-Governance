@@ -1,0 +1,84 @@
+PASS:
+  id: PASS-2026-11-17-260
+  parent_pass: null
+
+STATE:
+  global_status: INITIAL_RECONSTRUCTION
+  repositories_scanned: 88
+  repositories_changed: 0
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: many
+
+OBJECTIVE:
+  id: GAP-DISCOVER-001
+  description: Reconstruct current GitHub ecosystem state from live search, governance docs, and key repos (ADL-Governance, ADL-Nexus, nexuscommand, aegis-repo-graph). Distinguish CLAIMED | IMPLEMENTED | TESTED | VERIFIED | INTEGRATED.
+  reason_selected: First execution of ADL-BASILISK recursive directive; no prior persistent Nexus state for this loop; highest-value is accurate discovery before any build.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; 88 public repositories confirmed via search.
+    - ADL-Governance is the governing constitution with claim levels 0-5, lifecycle classes (ACTIVE/RESEARCH/SUPERSEDED/ARCHIVED), pass records, and check_passes.py.
+    - Recent sweep (2026-11-17T19:03Z) classified nexuscommand as RESEARCH, added claim-capped README and CI scaffold.
+    - aegis-repo-graph holds locked 2026-09-04 Artifact Graph (72 repos); later name sets of 83 observed; expansion operator-only.
+    - ADL-Nexus is RESEARCH (claim ≤1), local-first platform with pathways, green historical CI, no production claims.
+    - OPERATOR_QUEUE lists residuals: full capability/dependency graphs, deep classification of remaining RESEARCH repos, observe remote CI, operator archive decisions.
+    - No open issues in ADL-Governance at discovery time.
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-17-260.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - persisted initial discovery pass record
+
+VERIFICATION:
+  tests_run:
+    - none (docs only)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (history-preserving, claim-capped, no fabrication)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem size 88 repos under beyond-repair.
+    - Governance model is active and recent sweeps document classification and scaffolding.
+    - Artifact graph is snapshot-locked; live crawl not claimed.
+  failures:
+    - none
+  decisions:
+    - Persist this reconstruction as PASS-2026-11-17-260 before selecting build slices.
+    - Prefer reuse of existing governance over new repos.
+
+REMAINING:
+  incomplete:
+    - Full capability matrix and dependency graph for all RESEARCH repos.
+    - Deep audit of high-activity repos (nexuscommand, ADL-Nexus, etc.).
+    - Observation of remote CI for newly scaffolded workflows.
+  blockers:
+    - none for discovery
+  new_gaps:
+    - GAP-GRAPH-001: Expand or reconfirm Artifact Graph against current 88-name inventory (operator-gated).
+    - GAP-CI-001: Confirm green status of nexuscommand CI.
+    - GAP-CLASSIFY-001: Systematic classification of remaining unclassified or residual RESEARCH repositories.
+
+NEXT:
+  objective_id: GAP-CI-001
+  action: Observe and record remote CI status for nexuscommand (and any other recently scaffolded); if green, update status; if not, diagnose without fabricating.
+  reason: Highest-value small slice; verification of recent work; unblocks confidence in scaffolding.
+  prerequisites:
+    - GitHub Actions run available for the CI workflow.
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - Live GitHub search of user:beyond-repair (total_count: 88)
+    - Contents of ADL-Governance README, SWEEP_HISTORY.md, OPERATOR_QUEUE.md
+    - Contents of nexuscommand README.md
+    - Contents of aegis-repo-graph README.md
+    - Contents of ADL-Nexus README.md
