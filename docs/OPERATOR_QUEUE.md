@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-17T15:40Z (Randomized Portfolio Completion Sweep — fantom_trading_bot_2)
+**Updated:** 2026-11-17T19:03Z (Randomized Portfolio Completion Sweep — nexuscommand)
 
 ## Pending / Escalated
+- **Randomized Sweep (nexuscommand):** Classified RESEARCH. README.md and .github/workflows/ci.yml added (claim-capped). Remote CI pending first green run. Termination conditions partially met; residual observe CI.
 - **Randomized Sweep (fantom_trading_bot_2):** Confirmed ARCHIVED. Historical sketch; termination conditions MET. Already in archive_queue.md. GitHub archived flag remains false — operator decision.
 - **Master Directive Sweep:** Inventory confirmed at 88 (live search). Phase-3 pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) CI green historically, no critical security. Full deep classification/capability matrix/dependency graph/gap analysis/redundancy/synergy/architecture review/code review readiness of remaining RESEARCH repos residual. Sweep stopped after recording residuals. No infinite loop. Exit criteria partially unmet.
 - **forge-aegis:** Reconfirmed ACTIVE (RUNNABLE SKETCH). Claim-capped. No functional work required.
@@ -15,15 +16,15 @@
 - **Code_Generation_AI_Program:** Confirmed ARCHIVED (recommended). GitHub archived flag remains false — operator decision.
 - **Archive candidates:** Operator decision required for GitHub archive flag on historical/SUPERSEDED/ARCHIVED queue repos (incl. fantom_trading_bot_2). No auto-archive.
 - **Releases:** Optional tag/release for pillars if desired. Confirmed empty.
-- **Remote CI observations:** Pending for recently scaffolded RESEARCH repos. Expected green.
+- **Remote CI observations:** Pending for recently scaffolded RESEARCH repos (incl. nexuscommand). Expected green.
 - **No critical security escalations.**
 - **Full capability matrix and dependency graph expansion residual.**
 
 ## Destructive Proposals
-None this cycle. All actions non-destructive documentation updates. Archive flag is operator-only.
+None this cycle. All actions non-destructive documentation updates and CI scaffolding. Archive flag is operator-only.
 
 ## Manual Interventions
-- Observe remote CI on recently updated RESEARCH repos.
+- Observe remote CI on recently updated RESEARCH repos (nexuscommand CI newly added).
 - Operator review of archive candidates (incl. fantom_trading_bot_2).
 - Address non-critical Dependabot in Digital_Double if desired.
 - Optional deep verification of high-activity RESEARCH repos next cycle.
