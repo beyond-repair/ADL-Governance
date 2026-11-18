@@ -1,0 +1,83 @@
+PASS:
+  id: PASS-2026-11-18-774
+  parent_pass: PASS-2026-11-16-773
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 88
+  repositories_changed: 1
+  capabilities_known: 17
+  capabilities_verified: 9
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: GAP-NEXUSCOMMAND-AUDIT
+  description: Full DISCOVER/AUDIT of beyond-repair/nexuscommand for lifecycle classification, tests, CI, and graph registration readiness.
+  reason_selected: Next action from PASS-773; newest repository requiring integration into ecosystem model without equating documentation to implementation.
+
+DISCOVERY:
+  findings:
+    - nexuscommand is a TanStack Start (React 19 + Vite) local-first application: NEXUS Command Center for missions, department handoffs, owner acceptance.
+    - README classifies RESEARCH, Claim Level ≤2; no production, AGI, or autonomous spend claims. Agents cannot deploy/spend/self-accept.
+    - package.json: scripts for dev, build, typecheck, test (node --test on src/lib/nexus/*.test.ts etc.), lint. Deps include @electric-sql/pglite, better-auth, tanstack, radix, zod, etc.
+    - CI workflow present: .github/workflows/ci.yml runs npm ci, typecheck, test on push/PR to main (Node 22).
+    - AGENTS.md present (App Builder workspace contract).
+    - Large .data/nexus-pglite directory with PG files (local DB state).
+    - Open issues: 1 (from search).
+    - No full test file listing confirmed via search (0 hits for *.test.ts), but package.json references them; existence UNVERIFIED beyond script presence.
+    - GitHub integration claimed read-only.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-18-774.yaml
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Classified nexuscommand as RESEARCH / Claim ≤2; CI and test scripts IMPLEMENTED (TESTED/VERIFIED status requires future local or CI evidence).
+
+VERIFICATION:
+  tests_run:
+    - Remote inspection of CI YAML and package.json scripts: PASS (structure valid)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim caps respected; no fabrication)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - nexuscommand exists as experimental command surface with local pglite, TanStack Start, and CI scaffold.
+    - Classification RESEARCH / ≤2 matches README and governance norms.
+    - Next gap is verification of actual test passage or residual issues.
+  failures: []
+  decisions:
+    - Do not elevate claim beyond ≤2 without evidence of measured efficacy.
+    - Register as RESEARCH in future graph updates; no SUPERSEDES.
+
+REMAINING:
+  incomplete:
+    - Local or CI evidence of test passage for nexuscommand.
+    - Full capability/dependency/authority graphs update to include nexuscommand.
+    - Closure of prior residuals (e.g., atomicdreamlabs1.1 from previous passes).
+  blockers: []
+  new_gaps:
+    - GAP-NEXUSCOMMAND-TEST-EVIDENCE: Obtain or trigger CI run evidence for npm test / typecheck on nexuscommand.
+
+NEXT:
+  objective_id: GAP-NEXUSCOMMAND-TEST-EVIDENCE
+  action: Check GitHub Actions status for nexuscommand CI runs (list workflow runs or search recent), or inspect any test files present; if green, note verified; else document residual. Then update graph registration candidate.
+  reason: Highest-value next is confirming TESTED status beyond CLAIMED scripts.
+  prerequisites:
+    - This PASS committed
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - github___get_repository_tree for nexuscommand (CI present, structure)
+    - package.json contents (scripts, deps)
+    - README.md classification
+    - CI YAML contents
+    - Live census 88 from prior PASS
