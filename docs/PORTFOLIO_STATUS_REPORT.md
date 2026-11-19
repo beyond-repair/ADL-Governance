@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-19T01:03Z (UTC) (Randomized Portfolio Completion Sweep — fantom_trading_bot_2)
+**Last Updated:** 2026-11-19T04:01Z (UTC) (Randomized Portfolio Completion Sweep — -ware-constant-derivation)
 **Account:** beyond-repair
 **Live Inventory:** 88 repositories (search total_count=88, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -16,9 +16,9 @@ Complete inventory of 88 repositories under user:beyond-repair obtained via sear
 
 ## Phase-2 Classification (stable)
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
-**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes -text-informational-fork-protocol- (CI scaffolded), nexuscommand, ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster
+**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes -text-informational-fork-protocol- (CI scaffolded), nexuscommand, ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster (-ware-constant-derivation reconfirmed this cycle: Claim ≤2, RUNNABLE SKETCH, extensive verifiers + CI present, 0.08 not derived)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce
-**ARCHIVED:** test (confirmed), Code_Generation_AI_Program (queue), FortiTrade_Multi-Strategy (queue), CFT-v3.0 (GitHub archived), fantom_trading_bot_2 (queue, reconfirmed this cycle: incomplete Python sketch, Claim 0, ARCHIVED.md present, termination conditions MET), Quantumclustering (empty placeholder, Claim 0, ARCHIVED.md present, termination conditions MET)
+**ARCHIVED:** test (confirmed), Code_Generation_AI_Program (queue), FortiTrade_Multi-Strategy (queue), CFT-v3.0 (GitHub archived), fantom_trading_bot_2 (queue, reconfirmed prior cycle: incomplete Python sketch, Claim 0, ARCHIVED.md present, termination conditions MET), Quantumclustering (empty placeholder, Claim 0, ARCHIVED.md present, termination conditions MET)
 
 ## Phase-3 Mandatory Live Verification (pillars retained)
 Live CI/releases/tags/security evidence retained and cross-checked this cycle:
