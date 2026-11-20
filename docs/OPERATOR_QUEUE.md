@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-19T23:05Z (UTC) (Randomized Portfolio Completion Sweep — acoustic-token-modem)
+**Updated:** 2026-11-20T14:03Z (UTC) (Randomized Portfolio Completion Sweep — CFT-v3.1)
 
 ## Pending / Escalated
+- **Randomized Sweep:** CFT-v3.1 classified SUPERSEDED (historical paper snapshot, claim 0, successor CFTv3.3-IQG-Unified-Framework). README consistent. No tests/CI/code changes. Archive flag pending operator. No critical issues. Next random or deep if desired.
 - **Randomized Sweep:** acoustic-token-modem classified RESEARCH (Claim ≤1 FSK simulation). CI + tests for core present. Placeholders for advanced modulations residual. No critical issues. Next random or deep if desired.
 - **Randomized Sweep:** informational-flux-identity classified RESEARCH (Claim ≤1 identity). CI + tests for core present. Large generated files (GASKET.md, CLAIM_STATUS.md) residual for operator size/review. Deep gasket scripts residual. No critical issues. Next random or deep if desired.
 - **Master Directive Sweep v3.0:** Inventory confirmed at 89 (live search). Phase-3 pillars (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce) status live-verified this cycle: CI green on latest main runs, no releases/tags, non-critical Dependabot residuals only on Digital_Double (vite medium), docs and tests present, claim-capped. Full deep classification/capability matrix/dependency graph/gap analysis/redundancy/synergy/architecture review/code review readiness of remaining RESEARCH repos residual. Sweep stopped after recording residuals. No infinite loop. Exit criteria partially unmet.
@@ -22,7 +23,7 @@ None this cycle. All actions non-destructive documentation updates. Archive flag
 
 ## Manual Interventions
 - Observe remote CI on recently updated RESEARCH repos — next recommended action.
-- Operator review of archive candidates.
+- Operator review of archive candidates (incl. CFT-v3.1).
 - Address non-critical Dependabot in Digital_Double if desired.
 - Optional deep verification of high-activity RESEARCH repos next cycle.
 - Optional release tagging for pillars if desired.
