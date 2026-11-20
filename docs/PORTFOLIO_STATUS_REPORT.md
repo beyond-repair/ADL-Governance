@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-19T23:05Z (UTC) (Randomized Portfolio Completion Sweep — acoustic-token-modem)
+**Last Updated:** 2026-11-20T14:03Z (UTC) (Randomized Portfolio Completion Sweep — CFT-v3.1)
 **Account:** beyond-repair
 **Live Inventory:** 89 repositories (search total_count=89, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -26,6 +26,9 @@ Live CI/releases/tags/security evidence this cycle (2026-11-19T21:21Z):
 - sovereign-clean-room: CI present; recent PR runs success after float precision fixes (e.g. 37215829476 success); canonical SEEM; VSA completeness UNVERIFIED residual; releases/tags empty; Dependabot open: 0
 - BlockSwarm: CI success (latest run 40441811261, head 026c363, conclusion success); termination conditions MET; releases/tags empty; Dependabot open: 0
 - Digital_Double_virtual_workforce: CI success (Dependabot runs, e.g. 41336110959 success); non-critical Dependabot residuals (vite medium GHSA-rq7h-c2jc-7f22 etc.); 5 open issues; releases empty
+
+## Randomized Sweep Residual (CFT-v3.1)
+DISCOVER/AUDIT/CLASSIFY complete: SUPERSEDED. Historical paper snapshot (Paper1_Theoretical_Foundation.tex, Paper2_Empirical_Verification.tex). README explicitly SUPERSEDED with successor CFTv3.3-IQG-Unified-Framework and claim 0. No code, tests, or CI. No new feature work. Archive flag pending operator. No critical issues. Target state: documented SUPERSEDED, preserved.
 
 ## Randomized Sweep Residual (acoustic-token-modem)
 DISCOVER/AUDIT/CLASSIFY complete: RESEARCH. FSK simulation with token roundtrip tests + pytest CI. Placeholders for advanced modulations. Claim-capped (simulation only, no hardware). No critical issues. Target CI-green documented. Deep experiment residual.
