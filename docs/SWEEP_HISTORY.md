@@ -1,5 +1,50 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — CFT-v3.1 — 2026-11-20T14:03Z (UTC)
+
+**Scope:** Randomly selected repository: beyond-repair/CFT-v3.1 from portfolio of 89.
+
+### SELECT
+Random selection from live inventory (search total_count=89).
+
+### DISCOVER
+Tree: CFT_v3.1_Papers/docs/ containing Paper1_Theoretical_Foundation.tex and Paper2_Empirical_Verification.tex. README.md present.
+Features: Historical theoretical and empirical papers for CFT v3.1 (superseded).
+Dependencies: None (pure documentation/LaTeX snapshot).
+Tests: None.
+CI: None.
+Docs: README explicitly marks SUPERSEDED, claim 0, successor CFTv3.3-IQG-Unified-Framework, and points to ware-constant-phenomenology for canonical math.
+
+### AUDIT
+Against ADL-Governance: Correctly classified SUPERSEDED. No unsupported claims (claim 0). Historical work preserved. No critical security issues. No active development. Listed in archive candidates. No duplicates of canonical CFT.
+
+### CLASSIFY
+**SUPERSEDED** (replaced by CFTv3.3-IQG-Unified-Framework). Justification: Explicit in README and portfolio registry; legacy paper snapshot only; no further action beyond preservation and operator archive decision.
+
+### PLAN
+Target state: Documented SUPERSEDED, preserved, archive pending operator. Actions: Log classification; confirm no drift. No code changes (idempotent, preservation).
+
+### IMPLEMENT
+Safe documentation updates only in ADL-Governance. No changes to selected repo (preservation). Destructive none.
+
+### TEST → CI
+Not applicable. No tests or CI present (historical docs only).
+
+### DOCUMENT
+Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this SWEEP_HISTORY.md.
+
+### GOVERN
+No unsupported claims. Claim 0 enforced. No untracked dependencies.
+
+### RELEASE/ARCHIVE
+Archive flag operator-only (already in queue). No release. Historical preserved.
+
+### RE-AUDIT
+No drift introduced. Classification stable. Termination conditions for this repo met for SUPERSEDED state (no undefined components, docs consistent, no critical issues, target documented). Full portfolio residuals remain.
+
+### OUTCOME
+Cycle complete for CFT-v3.1. Logged. Next random selection or operator review.
+
 ## Cycle: Randomized Portfolio Completion Sweep — acoustic-token-modem — 2026-11-19T23:05Z (UTC)
 
 **Scope:** Randomly selected repository: beyond-repair/acoustic-token-modem from portfolio of 89.
