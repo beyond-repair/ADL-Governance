@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-11-20-776
+  parent_pass: PASS-2026-11-19-775
+
+STATE:
+  global_status: DIAGNOSED
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 17
+  capabilities_verified: 9
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-NEXUSCOMMAND-CI-FIX
+  description: Diagnose and apply minimal fix for nexuscommand CI failure so that test:nexus can be verified.
+  reason_selected: Explicit NEXT from PASS-775; verification boundary for existing tests is highest-value.
+
+DISCOVERY:
+  findings:
+    - Live CI run 44672838425 (push of lockfile fix) failed on npm test; npm ci and typecheck succeeded.
+    - Failure isolated to "npm run test:nexus exited 1" (scripts/run-all-tests.mjs).
+    - test:app and test:scripts appear to have completed in logs; nexus suite is the residual.
+    - package.json test:nexus uses node --experimental-strip-types --test on src/lib/nexus/*.test.ts.
+    - Full failure assertion not extracted due to log truncation; exact failing subtest remains residual.
+    - Recent commit fixed prior npm ci mismatch; current failure is test-level.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-20-776.yaml
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Recorded CI failure location: test:nexus suite; prior lockfile issue closed.
+
+VERIFICATION:
+  tests_run:
+    - Remote Actions inspection of run 44672838425: FAIL on test step (evidence collected)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (no fabrication; failure recorded)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - npm ci and typecheck now pass after lockfile regeneration.
+    - Remaining CI failure is inside the nexus test suite.
+  failures:
+    - test:nexus exits non-zero; exact assertion not yet isolated in this pass.
+  decisions:
+    - Do not mark tests VERIFIED until green CI.
+    - Next pass must isolate the failing test file/subtest before code change.
+
+REMAINING:
+  incomplete:
+    - Identify exact failing test in src/lib/nexus/*.test.ts.
+    - Apply minimal fix and re-verify green CI.
+  blockers: []
+  new_gaps:
+    - GAP-NEXUSCOMMAND-TEST-ISOLATE: Retrieve full failing subtest output from job logs or local reproduction.
+
+NEXT:
+  objective_id: GAP-NEXUSCOMMAND-TEST-ISOLATE
+  action: Fetch complete job log for 136077588158 or run test:nexus locally/in sandbox to extract the failing assertion; then apply the smallest fix and push for new CI.
+  reason: Isolation is required before any code change; avoids blind edits.
+  prerequisites:
+    - This PASS committed
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Actions run: https://github.com/beyond-repair/nexuscommand/actions/runs/44672838425
+    - Job steps confirm typecheck PASS, test FAIL
+    - scripts/run-all-tests.mjs and package.json test:nexus script
