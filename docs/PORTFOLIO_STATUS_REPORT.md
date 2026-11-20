@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-20T14:03Z (UTC) (Randomized Portfolio Completion Sweep — CFT-v3.1)
+**Last Updated:** 2026-11-20T19:00Z (UTC) (Randomized Portfolio Completion Sweep — sunder-cleanroom-vsa-adapter)
 **Account:** beyond-repair
 **Live Inventory:** 89 repositories (search total_count=89, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -16,7 +16,7 @@ Complete inventory of 89 repositories under user:beyond-repair obtained via sear
 
 ## Phase-2 Classification (stable)
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
-**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes informational-flux-identity (Claim ≤1 mathematical identity, CI/tests for core, gasket scripts experimental), -text-informational-fork-protocol- (CI scaffolded), nexuscommand (TanStack Start local-first command center, claim ≤2, tests/CI scaffolded), ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster, acoustic-token-modem (Claim ≤1 FSK simulation, stubs for PSK/QAM/OFDM, pytest CI)
+**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes informational-flux-identity (Claim ≤1 mathematical identity, CI/tests for core, gasket scripts experimental), -text-informational-fork-protocol- (CI scaffolded), nexuscommand (TanStack Start local-first command center, claim ≤2, tests/CI scaffolded), ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster, acoustic-token-modem (Claim ≤1 FSK simulation, stubs for PSK/QAM/OFDM, pytest CI), sunder-cleanroom-vsa-adapter (Claim ≤1 name-only VSA surface contract, dim mismatch 4096≠8192, pytest CI)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.1 → CFTv3.3-IQG-Unified-Framework
 **ARCHIVED:** test, Code_Generation_AI_Program, FortiTrade_Multi-Strategy, CFT-v3.0 (GitHub archived), fantom_trading_bot_2, Quantumclustering
 
@@ -26,6 +26,9 @@ Live CI/releases/tags/security evidence this cycle (2026-11-19T21:21Z):
 - sovereign-clean-room: CI present; recent PR runs success after float precision fixes (e.g. 37215829476 success); canonical SEEM; VSA completeness UNVERIFIED residual; releases/tags empty; Dependabot open: 0
 - BlockSwarm: CI success (latest run 40441811261, head 026c363, conclusion success); termination conditions MET; releases/tags empty; Dependabot open: 0
 - Digital_Double_virtual_workforce: CI success (Dependabot runs, e.g. 41336110959 success); non-critical Dependabot residuals (vite medium GHSA-rq7h-c2jc-7f22 etc.); 5 open issues; releases empty
+
+## Randomized Sweep Residual (sunder-cleanroom-vsa-adapter)
+DISCOVER/AUDIT/CLASSIFY complete: RESEARCH. Claim-capped name-only surface adapter (v0.1.1) for Q-FUNC-002. Explicit dim mismatch and NAME_ONLY mappings. pytest tests + CI present. No runtime interop. No critical issues. Target CI-green documented. Deep surface residual.
 
 ## Randomized Sweep Residual (CFT-v3.1)
 DISCOVER/AUDIT/CLASSIFY complete: SUPERSEDED. Historical paper snapshot (Paper1_Theoretical_Foundation.tex, Paper2_Empirical_Verification.tex). README explicitly SUPERSEDED with successor CFTv3.3-IQG-Unified-Framework and claim 0. No code, tests, or CI. No new feature work. Archive flag pending operator. No critical issues. Target state: documented SUPERSEDED, preserved.
