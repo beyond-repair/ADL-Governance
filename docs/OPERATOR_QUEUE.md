@@ -1,8 +1,9 @@
 # Operator Queue
 
-**Updated:** 2026-11-20T19:00Z (UTC) (Randomized Portfolio Completion Sweep — sunder-cleanroom-vsa-adapter)
+**Updated:** 2026-11-20T22:22Z (UTC) (Randomized Portfolio Completion Sweep — My-mind-A.I.)
 
 ## Pending / Escalated
+- **Randomized Sweep:** My-mind-A.I. classified SUPERSEDED (early agent sketch, claim 0, successor sovereign-clean-room). README/CLAIMS consistent. CI fails due to missing environment.yml (workflow not editable with current token). Tests for simulation present. Archive flag pending operator. No critical issues. Next random or deep if desired.
 - **Randomized Sweep:** sunder-cleanroom-vsa-adapter classified RESEARCH (Claim ≤1 name-only VSA surface contract, dim mismatch locked). CI + tests for contract present. No runtime interop. No critical issues. Next random or deep if desired.
 - **Randomized Sweep:** CFT-v3.1 classified SUPERSEDED (historical paper snapshot, claim 0, successor CFTv3.3-IQG-Unified-Framework). README consistent. No tests/CI/code changes. Archive flag pending operator. No critical issues. Next random or deep if desired.
 - **Randomized Sweep:** acoustic-token-modem classified RESEARCH (Claim ≤1 FSK simulation). CI + tests for core present. Placeholders for advanced modulations residual. No critical issues. Next random or deep if desired.
@@ -12,7 +13,7 @@
 - **sovereign-clean-room:** Live reconfirmed ACTIVE (canonical SEEM). CI present with recent success. VSA completeness UNVERIFIED residual; operator review of claim cap. Dependabot open: 0.
 - **BlockSwarm:** Live reconfirmed ACTIVE. CI success (run 40441811261). Termination conditions MET. Optional tag/release remains operator-only. Dependabot open: 0.
 - **Digital_Double_virtual_workforce:** Live reconfirmed ACTIVE. CI success. Residual non-critical Dependabot (vite medium). Open issues: 5.
-- **Archive candidates:** Operator decision required for GitHub archive flag on historical/SUPERSEDED/ARCHIVED queue repos (incl. CFT-v3.1, test, fantom_trading_bot_2, Quantumclustering). No auto-archive.
+- **Archive candidates:** Operator decision required for GitHub archive flag on historical/SUPERSEDED/ARCHIVED queue repos (incl. My-mind-A.I., CFT-v3.1, test, fantom_trading_bot_2, Quantumclustering). No auto-archive.
 - **Releases:** Optional tag/release for pillars if desired. Confirmed empty.
 - **Remote CI observations:** Pending for recently scaffolded RESEARCH repos (incl. sunder-cleanroom-vsa-adapter, acoustic-token-modem, informational-flux-identity). Expected green.
 - **No critical security escalations.** Medium Dependabot residuals noted for Digital_Double (vite).
@@ -24,7 +25,7 @@ None this cycle. All actions non-destructive documentation updates. Archive flag
 
 ## Manual Interventions
 - Observe remote CI on recently updated RESEARCH repos — next recommended action.
-- Operator review of archive candidates (incl. CFT-v3.1).
+- Operator review of archive candidates (incl. My-mind-A.I., CFT-v3.1).
 - Address non-critical Dependabot in Digital_Double if desired.
 - Optional deep verification of high-activity RESEARCH repos next cycle.
 - Optional release tagging for pillars if desired.
@@ -32,5 +33,6 @@ None this cycle. All actions non-destructive documentation updates. Archive flag
 - Optional review of large generated docs in informational-flux-identity.
 - Optional deep signal processing review in acoustic-token-modem.
 - Optional deep surface review in sunder-cleanroom-vsa-adapter.
+- For My-mind-A.I.: Consider workflow scope token to fix CI or leave as historical.
 
 **No pending destructive actions.**
