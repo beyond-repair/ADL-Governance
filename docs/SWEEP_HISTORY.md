@@ -1,5 +1,50 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — sunder-cleanroom-vsa-adapter — 2026-11-20T19:00Z (UTC)
+
+**Scope:** Randomly selected repository: beyond-repair/sunder-cleanroom-vsa-adapter from portfolio of 89.
+
+### SELECT
+Random selection from live inventory (search total_count=89).
+
+### DISCOVER
+Tree: adapter/ (contract.py, engine.py, local_ops.py, surfaces.py, validate.py, __init__.py, __main__.py), tests/ (test_adapter.py, test_local_ops.py), .github/workflows/ci.yml, pyproject.toml, requirements.txt, docs/CODE_REVIEW.md, README.md, LICENSE, .gitignore.
+Features: Claim-capped name-only surface contract (v0.1.1) between sunder VSAMemory (DEFAULT_DIM=4096) and sovereign-clean-room CleanRoomVSAEngine (DEFAULT_DIM=8192). Deterministic checker. Closes Q-FUNC-002. No runtime imports or isomorphism.
+Dependencies: None runtime (pytest for tests). No external package imports of sunder or clean-room.
+Tests: pytest suite validating contract, dimensions mismatch, NAME_ONLY mappings, unmapped names, queue.
+CI: .github/workflows/ci.yml runs python -m adapter.engine and pytest on Python 3.12.
+Docs: README with lifecycle RESEARCH, claim ≤1, explicit not-claimed list, install/run instructions.
+
+### AUDIT
+Against ADL-Governance: Correctly claim-capped (MODULE_SURFACE, no runtime interop). No unsupported claims. CI present. Tests present. No critical security issues. No Dependabot alerts. No releases/tags. Historical work preserved. No duplicates of canonical VSA surfaces.
+
+### CLASSIFY
+**RESEARCH** (experimental claim-capped surface adapter; claim ≤1). Justification: Aligns with portfolio RESEARCH for experimental/contract-only surfaces; core contract verified by tests and CI; no ACTIVE product surface or runtime claims.
+
+### PLAN
+Target state: CI-green (configured), docs consistent with claim cap, classification logged. Actions: Document in governance; no code changes (idempotent, preservation). Residual deep review of surfaces if needed.
+
+### IMPLEMENT
+Safe documentation updates only in ADL-Governance. No changes to selected repo (preservation). Destructive none.
+
+### TEST → CI
+CI workflow present (ci.yml); expected green on contract validation and pytest. Not re-run this cycle (remote observation residual).
+
+### DOCUMENT
+Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this SWEEP_HISTORY.md.
+
+### GOVERN
+No unsupported claims elevated. Claim cap enforced. No untracked dependencies.
+
+### RELEASE/ARCHIVE
+Not applicable. RESEARCH residual. No tag. No archive needed.
+
+### RE-AUDIT
+No drift introduced. Classification stable. Termination conditions for this repo partially met (tests/CI present, docs updated, no critical issues, no undefined components); residual deep surface review and full portfolio remain.
+
+### OUTCOME
+Cycle complete for sunder-cleanroom-vsa-adapter. Logged. Next random selection or operator review.
+
 ## Cycle: Randomized Portfolio Completion Sweep — CFT-v3.1 — 2026-11-20T14:03Z (UTC)
 
 **Scope:** Randomly selected repository: beyond-repair/CFT-v3.1 from portfolio of 89.
