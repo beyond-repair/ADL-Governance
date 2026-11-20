@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-11-19-775
+  parent_pass: PASS-2026-11-18-774
+
+STATE:
+  global_status: RECONSTRUCTED
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 17
+  capabilities_verified: 9
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-NEXUSCOMMAND-TEST-EVIDENCE
+  description: Obtain CI run evidence for npm test / typecheck on beyond-repair/nexuscommand; confirm TESTED status or residual failure.
+  reason_selected: Next action from PASS-774; highest-value is verifying claimed test scripts beyond structure.
+
+DISCOVERY:
+  findings:
+    - Live census: 89 public repos (search total_count); nexuscommand2 created 2026-11-19 (no README yet).
+    - nexuscommand CI workflow exists and ran on commit 628ecb8 (ci: add typecheck and test workflow) on 2026-11-17: FAILED after 10s (exit code 1 on test job).
+    - Dependabot runs succeeded/failed separately; no subsequent green CI for the test workflow observed.
+    - Test files IMPLEMENTED: multiple src/lib/**/*.test.ts present (e.g. company.test.ts, engine.test.ts, auth tests); package.json scripts reference them.
+    - No local execution performed; remote CI evidence shows failure, thus TESTED/VERIFIED status not achieved.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-19-775.yaml
+    - docs/passes/HEADINGS.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - Documented CI failure residual for nexuscommand; tests remain IMPLEMENTED but not TESTED/VERIFIED.
+
+VERIFICATION:
+  tests_run:
+    - Remote inspection of Actions runs and tree: PASS (evidence collected, no fabrication)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_RUN
+  invariants: PASS (claim caps respected; failure recorded as knowledge)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - nexuscommand has test files and CI scaffold; initial CI run failed.
+    - nexuscommand2 is a new repo requiring future audit.
+  failures:
+    - CI workflow for typecheck+test failed on first push (2026-11-17).
+  decisions:
+    - Do not mark nexuscommand tests as VERIFIED until green CI or local evidence.
+    - Treat CI failure as persistent residual gap.
+
+REMAINING:
+  incomplete:
+    - Root cause and fix for nexuscommand CI failure (likely npm ci, typecheck, or test error).
+    - Audit of nexuscommand2.
+    - Graph registration for nexuscommand.
+  blockers: []
+  new_gaps:
+    - GAP-NEXUSCOMMAND-CI-FIX: Diagnose and repair the failing CI workflow so tests can be verified green.
+
+NEXT:
+  objective_id: GAP-NEXUSCOMMAND-CI-FIX
+  action: Retrieve full CI log for run 44154397711 (or re-trigger if possible), identify failing step (npm ci / typecheck / test), apply minimal fix in nexuscommand, re-verify via new CI run or local equivalent.
+  reason: Highest-value next is closing the verification boundary for existing tests.
+  prerequisites:
+    - This PASS committed
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Actions page: https://github.com/beyond-repair/nexuscommand/actions (run 44154397711 failed)
+    - get_repository_tree src/lib (test files present)
+    - package.json and ci.yml contents
+    - Live search total_count=89
