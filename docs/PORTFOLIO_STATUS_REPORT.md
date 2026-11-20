@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-19T22:01Z (UTC) (Randomized Portfolio Completion Sweep — informational-flux-identity)
+**Last Updated:** 2026-11-19T23:05Z (UTC) (Randomized Portfolio Completion Sweep — acoustic-token-modem)
 **Account:** beyond-repair
 **Live Inventory:** 89 repositories (search total_count=89, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -16,7 +16,7 @@ Complete inventory of 89 repositories under user:beyond-repair obtained via sear
 
 ## Phase-2 Classification (stable)
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
-**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes informational-flux-identity (Claim ≤1 mathematical identity, CI/tests for core, gasket scripts experimental), -text-informational-fork-protocol- (CI scaffolded), nexuscommand (TanStack Start local-first command center, claim ≤2, tests/CI scaffolded), ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster
+**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes informational-flux-identity (Claim ≤1 mathematical identity, CI/tests for core, gasket scripts experimental), -text-informational-fork-protocol- (CI scaffolded), nexuscommand (TanStack Start local-first command center, claim ≤2, tests/CI scaffolded), ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster, acoustic-token-modem (Claim ≤1 FSK simulation, stubs for PSK/QAM/OFDM, pytest CI)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce; CFT-v3.1 → CFTv3.3-IQG-Unified-Framework
 **ARCHIVED:** test, Code_Generation_AI_Program, FortiTrade_Multi-Strategy, CFT-v3.0 (GitHub archived), fantom_trading_bot_2, Quantumclustering
 
@@ -27,8 +27,8 @@ Live CI/releases/tags/security evidence this cycle (2026-11-19T21:21Z):
 - BlockSwarm: CI success (latest run 40441811261, head 026c363, conclusion success); termination conditions MET; releases/tags empty; Dependabot open: 0
 - Digital_Double_virtual_workforce: CI success (Dependabot runs, e.g. 41336110959 success); non-critical Dependabot residuals (vite medium GHSA-rq7h-c2jc-7f22 etc.); 5 open issues; releases empty
 
-## Randomized Sweep Residual (informational-flux-identity)
-DISCOVER/AUDIT/CLASSIFY complete: RESEARCH. Core flux identity has unittest + CI (numpy). Large generated docs residual. Claim-capped (no thrust). No critical issues. Target CI-green documented. Deep gasket script analysis residual.
+## Randomized Sweep Residual (acoustic-token-modem)
+DISCOVER/AUDIT/CLASSIFY complete: RESEARCH. FSK simulation with token roundtrip tests + pytest CI. Placeholders for advanced modulations. Claim-capped (simulation only, no hardware). No critical issues. Target CI-green documented. Deep experiment residual.
 
 ## Phases 4–10 Residuals
 Capability inventory, dependency graph, gap analysis, redundancy detection, technology synergy, canonical architecture review, code review readiness: full per-repository deep verification of remaining RESEARCH/SUPERSEDED majority residual. Evidence hierarchy Code > Documentation > Roadmap enforced. No unsupported implementation claims. Sweep stopped after recording residuals. No infinite loop.
