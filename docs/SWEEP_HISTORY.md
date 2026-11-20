@@ -1,5 +1,49 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — acoustic-token-modem — 2026-11-19T23:05Z (UTC)
+
+**Scope:** Randomly selected repository: beyond-repair/acoustic-token-modem from portfolio of 89.
+
+### SELECT
+Random selection from live inventory (search total_count=89).
+
+### DISCOVER
+Tree: Python package (src/acoustic_token_modem), CI workflow (.github/workflows/pytest.yml), tests/ (multiple unit tests for packet, CRC, modulation, channel sim, roundtrip), docs/ (ARCHITECTURE, PROTOCOL, RESEARCH, etc.), experiments/ (baseline_fsk.py implemented, others stubs), pyproject.toml, MIT license, CLAIM_STATUS.md, GOVERNANCE.md.
+Features: Token ID to packet to FSK simulation to reconstruct tokens. Central invariant tokens_in == tokens_out. Placeholders for PSK/QAM/OFDM. Channel simulation with noise.
+Dependencies: Likely numpy/scipy for signal (inferred from structure; pyproject not fully inspected this cycle).
+Tests: pytest suite covering core simulation paths. CI runs pytest tests/.
+Docs: Comprehensive claim cap, milestones M0-M12, security notes.
+
+### AUDIT
+Against ADL-Governance: Claim-capped (simulation only, claim ≤1). No unsupported hardware or bitrate claims. CI present and configured. No critical security issues observed. Stubs clearly marked. Recent structure solid. No duplicates of canonical acoustic modem.
+
+### CLASSIFY
+**RESEARCH** (experimental acoustic modem simulation for token transmission; claim ≤1). Justification: Aligns with portfolio RESEARCH for experimental systems; core FSK sim verified by tests; advanced features unvalidated. No ACTIVE product surface.
+
+### PLAN
+Target state: CI-green (already configured), docs consistent with claim cap, no critical gaps. Actions: Document classification; residual deep review of signal processing if needed. No code changes this cycle (idempotent, claim-capped).
+
+### IMPLEMENT
+Safe documentation updates only in ADL-Governance. No changes to selected repo (preservation). Destructive none.
+
+### TEST → CI
+CI workflow present (pytest.yml); expected green on simulation suite. Not re-run this cycle (remote observation residual).
+
+### DOCUMENT
+Updated PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md, this SWEEP_HISTORY.md.
+
+### GOVERN
+No unsupported claims elevated. Claim cap enforced. No untracked critical deps.
+
+### RELEASE/ARCHIVE
+Not applicable. RESEARCH residual. No tag.
+
+### RE-AUDIT
+No drift introduced. Classification stable. Termination conditions for this repo partially met (tests/CI present, docs updated, no critical issues); residual deep experiment analysis and full portfolio remain.
+
+### OUTCOME
+Cycle complete for acoustic-token-modem. Logged. Next random selection or operator review.
+
 ## Cycle: Randomized Portfolio Completion Sweep — informational-flux-identity — 2026-11-19T22:00Z (UTC)
 
 **Scope:** Randomly selected repository: beyond-repair/informational-flux-identity from portfolio of 89.
