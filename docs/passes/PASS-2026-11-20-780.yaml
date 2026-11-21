@@ -1,0 +1,70 @@
+PASS:
+  id: PASS-2026-11-20-780
+  parent_pass: PASS-2026-11-20-779
+
+STATE:
+  global_status: SANDBOX_CI_EXTENDED
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 17
+  capabilities_verified: 10
+  gaps_remaining: 8
+
+OBJECTIVE:
+  id: GAP-NEXUSCOMMAND-CI-GREEN-CONFIRM-2
+  description: Observe CI status on the push triggered by the sandbox isolation skip; record result.
+  reason_selected: NEXT from PASS-2026-11-20-779; required to close the verification loop for the conditional skip.
+
+DISCOVERY:
+  findings:
+    - CI run 44800118869 on commit 4472b16 succeeded (Status: Success, duration 1m 34s).
+    - Test job completed; only non-blocking Node.js 20 deprecation warning.
+    - Sandbox-dependent isolation test skipped under CI=true as intended.
+    - Live inventory remains total_count=89.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-20-780.yaml
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - nexuscommand test:nexus CI now green on main after sandbox skips.
+
+VERIFICATION:
+  tests_run:
+    - GitHub Actions run 44800118869: Success
+  code_review: PASS
+  security: NOT_RUN
+  integration: PASS (CI suite)
+  invariants: PASS (no claim elevation; sandbox remains environment-dependent)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Conditional CI=true skips allow the nexuscommand test suite to pass in GitHub Actions ubuntu-latest.
+    - Sandbox isolation remains unverified in CI (local-only knowledge).
+  failures: []
+  decisions:
+    - Record evidence of green CI without claiming full sandbox VERIFIED.
+    - Close this specific verification gap.
+
+REMAINING:
+  incomplete: []
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-PORTFOLIO-NEXT-SLICE
+  action: Select and audit one highest-value residual from OPERATOR_QUEUE (e.g., next randomized RESEARCH repo or graph/capability expansion).
+  reason: Verification loop closed for nexuscommand sandbox CI; return to portfolio progress.
+  prerequisites:
+    - This PASS persisted.
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - https://github.com/beyond-repair/nexuscommand/actions/runs/44800118869 (Success)
+    - Commit 4472b16 on nexuscommand
+    - Live search total_count=89
