@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-21T14:00Z (UTC) (Randomized Portfolio Completion Sweep — topological-pinch)
+**Last Updated:** 2026-11-21T15:02Z (UTC) (Randomized Portfolio Completion Sweep — scale-functional-I)
 **Account:** beyond-repair
 **Live Inventory:** 89 repositories (search total_count=89, incomplete_results=false)
 **Governing Source:** ADL-Governance
@@ -16,7 +16,7 @@ Complete inventory of 89 repositories under user:beyond-repair obtained via sear
 
 ## Phase-2 Classification (stable)
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
-**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes informational-flux-identity (Claim ≤1 mathematical identity, CI/tests for core, gasket scripts experimental), -text-informational-fork-protocol- (CI scaffolded), nexuscommand (TanStack Start local-first command center, claim ≤2, tests/CI scaffolded), ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster, acoustic-token-modem (Claim ≤1 FSK simulation, stubs for PSK/QAM/OFDM, pytest CI), sunder-cleanroom-vsa-adapter (Claim ≤1 name-only VSA surface contract, dim mismatch 4096≠8192, pytest CI), topological-pinch (Claim 0–1 graph-proxy localization hypothesis, pytest CI, historical 92% not reproduced)
+**RESEARCH:** Majority of physics/math/experimental (claim ≤1 or ≤2); includes informational-flux-identity (Claim ≤1 mathematical identity, CI/tests for core, gasket scripts experimental), -text-informational-fork-protocol- (CI scaffolded), nexuscommand (TanStack Start local-first command center, claim ≤2, tests/CI scaffolded), ADL-Nexus, Project-Cold-Boot, Coherence Drive / Ware Constant cluster, acoustic-token-modem (Claim ≤1 FSK simulation, stubs for PSK/QAM/OFDM, pytest CI), sunder-cleanroom-vsa-adapter (Claim ≤1 name-only VSA surface contract, dim mismatch 4096≠8192, pytest CI), topological-pinch (Claim 0–1 graph-proxy localization hypothesis, pytest CI, historical 92% not reproduced), scale-functional-I (Claim 1 declared I=Perimeter/sqrt(Area), no stationary point on tested dumbbells, pytest CI)
 **SUPERSEDED:** SEEM-* family → sovereign-clean-room; DigitalDouble* variants → Digital_Double_virtual_workforce (incl. Digital_Double_Virtual_Workforce_4. claim 0); CFT-v3.1 → CFTv3.3-IQG-Unified-Framework; My-mind-A.I. → sovereign-clean-room (early agent sketch, claim 0)
 **ARCHIVED:** test, Code_Generation_AI_Program, FortiTrade_Multi-Strategy, CFT-v3.0 (GitHub archived), fantom_trading_bot_2, Quantumclustering
 
@@ -26,6 +26,9 @@ Live CI/releases/tags/security evidence this cycle (2026-11-21T14:00Z):
 - sovereign-clean-room: CI present; recent PR runs success after float precision fixes (e.g. 37215829476 success); canonical SEEM; VSA completeness UNVERIFIED residual; releases/tags empty; Dependabot open: 0
 - BlockSwarm: CI success (latest run 40441811261, head 026c363, conclusion success); termination conditions MET; releases/tags empty; Dependabot open: 0
 - Digital_Double_virtual_workforce: CI success (Dependabot runs, e.g. 41336110959 success); non-critical Dependabot residuals (vite medium GHSA-rq7h-c2jc-7f22 etc.); 5 open issues; releases empty
+
+## Randomized Sweep Residual (scale-functional-I)
+DISCOVER/AUDIT/CLASSIFY complete: RESEARCH. Claim-capped (1) declared scale functional I = Perimeter / sqrt(Area) on lattice dumbbells. beta_I has no zero on tested Neumann/Dirichlet families (chamber 8/10). 0.08 not an input. Lattice Seeley proxy rejected (a0 < 0). RUNNABLE SKETCH. pytest (13 passed locally) + ci.yml present. No critical issues. No releases/tags. Target CI-green documented. Deep continuum residual outside this repo.
 
 ## Randomized Sweep Residual (topological-pinch)
 DISCOVER/AUDIT/CLASSIFY complete: RESEARCH. Claim-capped (0–1) graph-proxy localization metric on Sierpinski gasket (localization.py). Historical ~92% aft-face figure explicitly not reproduced (eta 0.5/0.4/0.1). RUNNABLE SKETCH, not mesh/BEM/Maxwell stress. pytest (10 passed locally) + docs-ci.yml present. No critical issues. No releases/tags. Target CI-green documented. Deep mesh residual remains outside this repo.
