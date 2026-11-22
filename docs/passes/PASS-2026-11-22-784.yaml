@@ -1,0 +1,68 @@
+PASS:
+  id: PASS-2026-11-22-784
+  parent_pass: PASS-2026-11-22-783
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Classification audit of residual RESEARCH repository nexuscommand2
+  reason_selected: Next highest-value bounded slice after graph reconfirm; new name without prior classification artifact
+
+DISCOVERY:
+  findings:
+    - nexuscommand2 is a JavaScript application with committed local Postgres data under .data/nexus-pglite
+    - No README or prior CLAIM_STATUS present at audit start
+    - Experimental command-center style surface consistent with sibling nexuscommand
+
+CHANGES:
+  repositories:
+    - nexuscommand2
+  files:
+    - CLAIM_STATUS.md
+  commits:
+    - 9ed7b1ba310854223c3ac0e3cad70b04416cd648
+  capabilities_added_or_changed:
+    - none (classification documentation only)
+
+VERIFICATION:
+  tests_run:
+    - not_run (docs-only)
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - nexuscommand2 classified RESEARCH, claim ≤1
+    - No production or autonomy claims supported
+  failures: []
+  decisions:
+    - Claim-capped documentation added; no functional changes
+
+REMAINING:
+  incomplete:
+    - Full systematic classification of remaining residual RESEARCH repos
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select next residual RESEARCH repository for classification audit
+  reason: Continue incremental closure of classification gap
+  prerequisites:
+    - Live GitHub access
+
+PROVENANCE:
+  state_commit: pending
+  evidence:
+    - CLAIM_STATUS.md committed to nexuscommand2
+    - Tree inspection confirming experimental local-data presence
