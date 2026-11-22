@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — coherence-dynamics — 2026-11-22T20:10Z (UTC)
+
+**Scope:** Randomly selected residual RESEARCH repository coherence-dynamics from portfolio of 89.
+
+### SELECT
+Next residual for GAP-CLASSIFY-001.
+
+### DISCOVER
+Tree SHA ca90e0a177864d6147d1903b203069cb87569f1d, 76 paths. Contains models/, spectral/, numerics/, tests/, research_log/, docs/, CI workflow running pytest. README declares Stage A, no a priori constants or physical claims.
+
+### AUDIT
+Against ADL-Governance: Classification RESEARCH (Claim ≤1). Mathematical research with tests and CI. No product claims. Ware Constant historical only.
+
+### CLASSIFY
+RESEARCH. Justification: Research foundation with models and tests; no executable product surface; claim level ≤1; promotion blocked until evidence supports higher claims.
+
+### PLAN
+Target state: RESEARCH, claim-≤1, CI green, termination conditions for class met. Actions: Reconfirm evidence; update governing docs only. No code changes to subject repository.
+
+### IMPLEMENT
+No mutations to coherence-dynamics. Updated governing docs in ADL-Governance (this commit).
+
+### TEST → CI
+Subject has pytest CI. Expected green. No new code to test.
+
+### DOCUMENT
+This history entry, status report, operator queue, pass record.
+
+### GOVERN
+No unsupported claims. Claim levels enforced. No critical security. Destructive actions none.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical work preserved. Termination conditions MET for RESEARCH classification.
+
+### RE-AUDIT
+No drift. Tree stable. Classification unchanged. Docs contract holds.
+
+### OUTCOME
+Cycle complete for coherence-dynamics. Reconfirmed RESEARCH claim-≤1 with tests, termination met. Next residual or operator review.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — SovereignOS — 2026-11-22T20:00Z (UTC)
 
 **Scope:** Randomly selected repository SovereignOS from portfolio of 89.

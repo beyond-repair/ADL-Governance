@@ -5,35 +5,34 @@ PASS:
 STATE:
   global_status: RESEARCH_MAINTENANCE
   repositories_scanned: 89
-  repositories_changed: 1
+  repositories_changed: 0
   capabilities_known: 0
   capabilities_verified: 0
   gaps_remaining: 1
 
 OBJECTIVE:
   id: GAP-CLASSIFY-001
-  description: Reconstruct current ecosystem state from GitHub and persist continuation record after prior classification of nexuscommand2
-  reason_selected: Fresh agent session required full discovery of governance, graph, and residual gaps before selecting next slice
+  description: Classification audit of residual RESEARCH repository coherence-dynamics
+  reason_selected: Next highest-value bounded slice; mathematical physics research with code and tests, not yet recently classified in this cycle
 
 DISCOVERY:
   findings:
-    - Authenticated as beyond-repair; 89 public repositories confirmed via search
-    - aegis-repo-graph holds frozen observations including 2026-11-22 with total_count 89
-    - ADL-Governance is the governing source with PASS records up to 784 and OPERATOR_QUEUE updated 2026-11-22
-    - nexuscommand and nexuscommand2 are experimental RESEARCH command-center surfaces with local pglite data
-    - atomicdreamlabs1.1 is classified RESEARCH with CLAIM_STATUS.md present
-    - Priority ACTIVE pillars remain forge-aegis (RELEASE_BLOCKED), sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce
-    - Residual gap is systematic classification of remaining RESEARCH repositories
+    - Tree contains models/, spectral/, numerics/, tests/, research_log/, CI workflow
+    - README declares Stage A audit and formalization, no Ware Constant as target, no physical claims
+    - pytest-based tests present; claim-capped research foundation
 
 CHANGES:
   repositories:
     - ADL-Governance
   files:
     - docs/passes/PASS-2026-11-22-785.yaml
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
   commits:
-    - pending (this commit)
+    - this commit
   capabilities_added_or_changed:
-    - none (state reconstruction only)
+    - none (classification documentation only)
 
 VERIFICATION:
   tests_run:
@@ -46,31 +45,27 @@ VERIFICATION:
 
 KNOWLEDGE:
   confirmed:
-    - Ecosystem inventory stable at 89 names
-    - Governance and graph meta-repositories operational and claim-capped
-    - Classification residual open as highest-value incremental gap
+    - coherence-dynamics reconfirmed RESEARCH, claim ≤1
+    - Mathematical models and tests present; no product or physical claims
   failures: []
   decisions:
-    - No functional code changes this pass; persist reconstruction for continuity
-    - Prefer classification documentation over new repository creation
+    - Claim-capped reconfirm; no functional changes to subject repo
 
 REMAINING:
   incomplete:
-    - Systematic classification of residual RESEARCH repos beyond those already audited this cycle
+    - Full systematic classification of remaining residual RESEARCH repos
   blockers: []
   new_gaps: []
 
 NEXT:
   objective_id: GAP-CLASSIFY-001
-  action: Select and classify next residual RESEARCH repository lacking recent CLAIM_STATUS or PORTFOLIO_STATE entry (e.g., inspect Code_Generation_AI_Program or high-activity unlisted RESEARCH)
-  reason: Continue incremental closure of the classification gap identified in OPERATOR_QUEUE
+  action: Select next residual RESEARCH repository for classification audit
+  reason: Continue incremental closure of classification gap
   prerequisites:
-    - Live GitHub access to inspect target repo tree and README
+    - Live GitHub access
 
 PROVENANCE:
   state_commit: this commit
   evidence:
-    - github___search_repositories total_count 89
-    - aegis-repo-graph observed_2026_11_22.py
-    - ADL-Governance PORTFOLIO_STATE.md and OPERATOR_QUEUE.md
-    - Prior PASS-2026-11-22-784 for nexuscommand2
+    - Tree inspection of coherence-dynamics
+    - README claim-capping
