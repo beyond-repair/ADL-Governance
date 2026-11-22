@@ -1,0 +1,16 @@
+id: PASS-2026-11-22-782
+sweep: 782
+date: 2026-11-22T15:05Z
+repo: seem-identity-unifier
+classification: RESEARCH
+claim_cap: MODULE_SURFACE
+status: TERMINATION_MET
+actions:
+  - bumped pytest pin 8.3.5 -> 9.0.3 in requirements.txt and pyproject.toml to close medium Dependabot GHSA-6w46-j5rx-g56g (CVE-2025-71176 tmpdir handling)
+  - CI expected green post-push
+  - no claim elevation
+  - no identity collapse
+evidence:
+  - prior CI success on head c6840c956859760ef98151538c3b60956a18fbcf
+  - tests lock contract (no SUPERSEDES, NAME_ONLY algebra, substrate mismatch, NOT_CLAIMED mind/isomorphism)
+notes: Safe non-destructive dependency update only. Historical snapshot locks preserved.
