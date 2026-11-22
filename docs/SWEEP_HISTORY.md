@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — fantom-smart-contracts-first-bot — 2026-11-22T22:05Z (UTC)
+
+**Scope:** Randomly selected repository fantom-smart-contracts-first-bot from portfolio of 89.
+
+### SELECT
+Random selection via random.choice over live inventory. Archive-queue candidate.
+
+### DISCOVER
+Tree (master, SHA 967531bc5cd51f38afaa8d10c18a7c72bcd10d49): README.md, .gitignore, multiple incomplete .rs sketches (fantom N.rs / fanton rust N.rs), .vs/ Visual Studio artifacts. No Cargo.toml, no tests, no .github/workflows, no CI. README self-marks ARCHIVE QUEUE / Claim 0.
+
+### AUDIT
+Against ADL-Governance / LIFECYCLE / archive_queue.md: Historical incomplete Rust trading strategy sketches. Not functional smart contracts. No profit/live/product claims. No critical security. No CI/tests required for ARCHIVED class. .vs/ junk noted (non-destructive ignore preferred). Historical work preserved.
+
+### CLASSIFY
+ARCHIVED. Justification: Listed in archive_queue.md; Claim 0; incomplete sketches only; no further development intended. Termination conditions for ARCHIVED class MET after adding ARCHIVED.md (GitHub archive flag remains operator-only).
+
+### PLAN
+Target state: ARCHIVED, Claim 0 locked, ARCHIVED.md present, README updated, governing docs updated. Actions: Add ARCHIVED.md, update README banner, update PORTFOLIO_STATUS_REPORT / SWEEP_HISTORY / OPERATOR_QUEUE. No destructive changes.
+
+### IMPLEMENT
+Created ARCHIVED.md. Updated README.md (lifecycle to ARCHIVED, link to ARCHIVED.md). Updated governing docs (this commit).
+
+### TEST → CI
+No tests or CI present (expected for ARCHIVED). No new runnable code. Governance updates non-breaking.
+
+### DOCUMENT
+This history entry, status report, operator queue. Subject README + ARCHIVED.md.
+
+### GOVERN
+No unsupported claims. Claim 0 enforced. No critical security. Destructive actions none (archive flag queued).
+
+### RELEASE/ARCHIVE
+No release. No GitHub archive (operator-only). Historical work preserved. Termination conditions MET for class.
+
+### RE-AUDIT
+Tree stable post-docs. Classification consistent. No drift. .vs/ residual non-critical.
+
+### OUTCOME
+Cycle complete for fantom-smart-contracts-first-bot. Classified ARCHIVED Claim 0 with documentation. Next residual or operator review for GitHub archive flag.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Basilisk Reconstruction + nexuscommand Classification — 2026-11-22T21:08Z (UTC)
 
 **Scope:** Live reconstruction under ADL-BASILISK directive; classification confirmation for residual/new repo nexuscommand.
