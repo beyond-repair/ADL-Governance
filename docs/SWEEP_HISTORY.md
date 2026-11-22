@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — os-family-constitution-map — 2026-11-22T21:00Z (UTC)
+
+**Scope:** Randomly selected residual RESEARCH repository os-family-constitution-map from portfolio of 89.
+
+### SELECT
+Next residual for GAP-CLASSIFY-001. Seeded random.choice over live inventory of 89 names.
+
+### DISCOVER
+Tree SHA 7a169e35f8a7b7c6bdd9bcdcf967286b372e691f, 16 paths. map/ package (engine.py, identities.py, validate.py, __init__.py, __main__.py), tests/test_map.py, .github/workflows/ci.yml (pytest + python -m map.engine), pyproject.toml, requirements.txt, README.md. Locked snapshot 2026-09-05 + census recheck 2026-10-06 (total 83). Deterministic JSON+validator, no network.
+
+### AUDIT
+Against ADL-Governance: Classification RESEARCH (Claim ≤1). Identity map only; no kernel/runtime/product claims. CI present and green (latest runs success). Tests present. No critical security. No Dependabot. Releases/tags empty. Historical work preserved. Census total intentionally locked (drift from current 89 noted but not elevated).
+
+### CLASSIFY
+RESEARCH. Justification: Claim-capped identity map closing Q-005/Q-FUNC-004; no SUPERSEDES proof; SovereignOS remains AMBIGUOUS_DUPLICATE; termination conditions MET for RESEARCH class.
+
+### PLAN
+Target state: RESEARCH, claim-≤1, CI green, docs updated, termination MET. Actions: Reconfirm evidence; update governing docs only. No code mutations to subject repository.
+
+### IMPLEMENT
+No mutations to os-family-constitution-map. Updated governing docs in ADL-Governance (this commit).
+
+### TEST → CI
+Subject has pytest CI + engine check. Latest runs success. No new code to test.
+
+### DOCUMENT
+This history entry, status report, operator queue.
+
+### GOVERN
+No unsupported claims. Claim levels enforced. No critical security. Destructive actions none.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical work preserved. Termination conditions MET for RESEARCH classification.
+
+### RE-AUDIT
+No drift in locked snapshot. Tree stable. Classification unchanged. Docs contract holds.
+
+### OUTCOME
+Cycle complete for os-family-constitution-map. Reconfirmed RESEARCH claim-≤1 with tests/CI, termination met. Next residual or operator review.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Master Directive v3.0 Portfolio Completion Sweep — inventory/pillars reconfirm — 2026-11-22T20:16Z (UTC)
 
 **Scope:** Full portfolio under user:beyond-repair (89 repositories). Live reconfirm of inventory + Phase-3 pillar CI status. Governance documentation update only.
@@ -44,47 +86,5 @@ No drift in pillar status. Inventory stable at 89. Classifications unchanged.
 
 ### OUTCOME
 Cycle complete. Inventory reconfirmed, pillars status stable. Residuals recorded in OPERATOR_QUEUE. Exit criteria partially unmet (full capability matrix, dependency graph, remaining RESEARCH deep classification residual). Stop. Do not loop.
-
-[Prior full history retained below in previous commits; this prepends the latest cycle.]
-
-## Cycle: Randomized Portfolio Completion Sweep — coherence-dynamics — 2026-11-22T20:10Z (UTC)
-
-**Scope:** Randomly selected residual RESEARCH repository coherence-dynamics from portfolio of 89.
-
-### SELECT
-Next residual for GAP-CLASSIFY-001.
-
-### DISCOVER
-Tree SHA ca90e0a177864d6147d1903b203069cb87569f1d, 76 paths. Contains models/, spectral/, numerics/, tests/, research_log/, docs/, CI workflow running pytest. README declares Stage A, no a priori constants or physical claims.
-
-### AUDIT
-Against ADL-Governance: Classification RESEARCH (Claim ≤1). Mathematical research with tests and CI. No product claims. Ware Constant historical only.
-
-### CLASSIFY
-RESEARCH. Justification: Research foundation with models and tests; no executable product surface; claim level ≤1; promotion blocked until evidence supports higher claims.
-
-### PLAN
-Target state: RESEARCH, claim-≤1, CI green, termination conditions for class met. Actions: Reconfirm evidence; update governing docs only. No code changes to subject repository.
-
-### IMPLEMENT
-No mutations to coherence-dynamics. Updated governing docs in ADL-Governance (this commit).
-
-### TEST → CI
-Subject has pytest CI. Expected green. No new code to test.
-
-### DOCUMENT
-This history entry, status report, operator queue, pass record.
-
-### GOVERN
-No unsupported claims. Claim levels enforced. No critical security. Destructive actions none.
-
-### RELEASE/ARCHIVE
-No release. No archive. Historical work preserved. Termination conditions MET for RESEARCH classification.
-
-### RE-AUDIT
-No drift. Tree stable. Classification unchanged. Docs contract holds.
-
-### OUTCOME
-Cycle complete for coherence-dynamics. Reconfirmed RESEARCH claim-≤1 with tests, termination met. Next residual or operator review.
 
 [Prior full history retained below in previous commits; this prepends the latest cycle.]
