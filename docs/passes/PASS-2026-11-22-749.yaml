@@ -1,0 +1,85 @@
+PASS:
+  id: PASS-2026-11-22-749
+  parent_pass: PASS-2026-11-12-748
+
+STATE:
+  global_status: BASILISK_ACTIVE
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 16
+  capabilities_verified: 6
+  gaps_remaining: 11
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-NEXUSCOMMAND
+  description: Reconstruct ecosystem post latest sweep (os-family-constitution-map RESEARCH), confirm census 89, classify nexuscommand as RESEARCH claim ≤2 with CI green.
+  reason_selected: Highest-value residual from OPERATOR_QUEUE is GAP-CLASSIFY-001; nexuscommand is new high-activity repo (Nov 16 creation, recent CI success) requiring classification confirmation to close gap incrementally.
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; live search total_count=89 (incomplete_results=false).
+    - Latest SWEEP_HISTORY cycle 2026-11-22T21:00Z classified os-family-constitution-map as RESEARCH claim ≤1, CI green, termination MET.
+    - nexuscommand: TanStack Start command center, README claims RESEARCH ≤2, tree has src/, server/, tests implied, CI workflow present, latest run 45059373193 success on main.
+    - ADL-Governance, aegis-repo-graph, ADL-Nexus remain central for state and graphs.
+    - No critical security escalations; medium Dependabot residuals on Digital_Double noted.
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-22-749.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - nexuscommand-classification-confirmation
+    - basilisk-continuity-pass
+
+VERIFICATION:
+  tests_run:
+    - live search confirmed total_count=89
+    - nexuscommand Actions list confirmed latest CI success
+    - file creation/update via GitHub API (this operation)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (history preserved, no destructive changes, claim levels enforced)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Inventory stable at 89 public repositories.
+    - nexuscommand is RESEARCH (experimental multi-agent command surface, claim ≤2), CI green after prior fixes, no production claims.
+    - Governance persistence via PASS YAML + history updates remains operational.
+  failures:
+    - None this pass.
+  decisions:
+    - Prefer classification confirmation over new feature build for residual RESEARCH/active-dev repos.
+    - Next slices continue residual classification or graph reconciliation.
+
+REMAINING:
+  incomplete:
+    - Full capability matrix and dependency graph for all 89.
+    - Systematic classification of remaining residual RESEARCH repos.
+    - Graph update in aegis-repo-graph for current inventory.
+  blockers:
+    - None for next classification slice.
+  new_gaps:
+    - nexuscommand2 classification (similar new repo).
+
+NEXT:
+  objective_id: GAP-CLASSIFY-NEXUSCOMMAND2
+  action: Classify nexuscommand2 similarly (inspect tree, CI, README claims) and update governance if needed.
+  reason: Adjacent new high-activity repo; closes related residual before broader graph work.
+  prerequisites:
+    - This pass persisted.
+    - Inventory unchanged.
+
+PROVENANCE:
+  state_commit: this-commit-sha
+  evidence:
+    - github___search_repositories total_count=89
+    - nexuscommand Actions run 45059373193 conclusion=success
+    - nexuscommand README classification
+    - Prior SWEEP_HISTORY and OPERATOR_QUEUE
