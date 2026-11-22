@@ -1,6 +1,6 @@
 # Operator Queue
 
-**Updated:** 2026-11-22T17:20Z (UTC) (Master Directive v3.0 Portfolio Completion Sweep — inventory reconfirm + Phase-3 live verification)
+**Updated:** 2026-11-22T18:15Z (UTC) (Master Directive v3.0 Portfolio Completion Sweep — inventory/pillars reconfirm)
 
 ## Pending / Escalated
 - **GAP-GRAPH-001 closed prior cycle:** Frozen observation updated in aegis-repo-graph to 2026-11-22 with total_count 89. Delta +2 (nexuscommand, nexuscommand2). No catalog rewrite, no claim elevation.
