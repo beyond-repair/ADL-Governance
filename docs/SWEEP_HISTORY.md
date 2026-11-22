@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Basilisk Reconstruction + nexuscommand Classification — 2026-11-22T21:08Z (UTC)
+
+**Scope:** Live reconstruction under ADL-BASILISK directive; classification confirmation for residual/new repo nexuscommand.
+
+### SELECT
+Highest-value bounded gap GAP-CLASSIFY-001 residual; selected nexuscommand (new Nov 16, recent activity, CI green).
+
+### DISCOVER
+Census total_count=89 confirmed. Tree for nexuscommand: TanStack Start app (src/, server/, package.json, vite.config.ts, CI workflow). README self-classifies RESEARCH claim ≤2. Latest Actions run success.
+
+### AUDIT
+Against constitution: Classification RESEARCH (Claim ≤2). Experimental command surface; no production/autonomous spend claims. CI present and green. Tests present (npm test). No critical security. Historical work preserved.
+
+### CLASSIFY
+RESEARCH. Justification: Self-documented claim-capped; CI green; no SUPERSEDES or product promotion; termination conditions for class MET (experimental, owner-initiated steps).
+
+### PLAN
+Target: RESEARCH claim-≤2 locked, CI green, docs updated. Actions: Persist PASS, update history and queue. No mutations to subject repo.
+
+### IMPLEMENT
+Created docs/passes/PASS-2026-11-22-749.yaml. Updated this history and OPERATOR_QUEUE (subsequent commit).
+
+### TEST → CI
+Subject CI green. Governance files updated; check_passes.py expected to pass on new YAML schema.
+
+### DOCUMENT
+This history entry, operator queue, PASS YAML.
+
+### GOVERN
+No unsupported claims. Claim levels enforced. No critical security. Destructive actions none.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical work preserved.
+
+### RE-AUDIT
+Inventory stable. Classification consistent with README. No drift.
+
+### OUTCOME
+Cycle complete for nexuscommand classification confirmation. Residual GAP-CLASSIFY-001 continues; next nexuscommand2 or graph reconcile.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — os-family-constitution-map — 2026-11-22T21:00Z (UTC)
 
 **Scope:** Randomly selected residual RESEARCH repository os-family-constitution-map from portfolio of 89.
