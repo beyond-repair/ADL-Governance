@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Classification Audit — -text-informational-fork-protocol- — 2026-11-22T23:10Z (UTC)
+
+**Scope:** Residual RESEARCH repository -text-informational-fork-protocol- (Informational Fork Protocol companion).
+
+### SELECT
+Next residual for GAP-CLASSIFY-001 after mendthegame. No prior CLAIM_STATUS.md. Self-classifies RESEARCH Claim-0.
+
+### DISCOVER
+Tree (main, SHA 8341d99308b1af851d8d52ef6c25455828f22a9e): final_verification.py CLI, tests/, protocol docs (FIELD_EQUATIONS, IFP_DOC_*), pyproject.toml, README.md. README self-classifies RESEARCH / Claim ≤1 runnable sketch. Companion to ware-constant-phenomenology.
+
+### AUDIT
+Against ADL-Governance: Classification RESEARCH (Claim ≤1). Runnable arithmetic audit; no experimental validation of non-local retrieval or Ware Constant. Tests present (pytest). No critical security. Historical work preserved.
+
+### CLASSIFY
+RESEARCH. Justification: Self-documented claim ≤1; protocol hypothesis documentation + Claim-0 CLI; no SUPERSEDES or product promotion; termination conditions for class MET after adding CLAIM_STATUS.md.
+
+### PLAN
+Target: RESEARCH claim-≤1 locked, CLAIM_STATUS.md present, governing docs updated. Actions: Add CLAIM_STATUS.md to subject, persist PASS, update history and queue. No functional mutations.
+
+### IMPLEMENT
+Created CLAIM_STATUS.md in -text-informational-fork-protocol- (commit 436e6d6af76a5e368b7c681060a7e80c76660336). Created docs/passes/PASS-2026-11-22-788.yaml. Updated this history and OPERATOR_QUEUE.
+
+### TEST → CI
+Subject has pytest. No new runnable code. Governance updates non-breaking.
+
+### DOCUMENT
+This history entry, operator queue, PASS YAML, subject CLAIM_STATUS.md.
+
+### GOVERN
+No unsupported claims. Claim ≤1 enforced. No critical security. Destructive actions none.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical work preserved. Termination conditions MET for class.
+
+### RE-AUDIT
+Tree stable post-docs. Classification consistent with README. No drift.
+
+### OUTCOME
+Cycle complete for -text-informational-fork-protocol-. Classified RESEARCH Claim ≤1 with documentation. Residual GAP-CLASSIFY-001 continues; next residual without CLAIM_STATUS.md.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — sovereign-clean-room — 2026-11-22T23:15Z (UTC)
 
 **Scope:** Randomly selected repository sovereign-clean-room from portfolio of 89.
