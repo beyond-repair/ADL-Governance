@@ -1,0 +1,20 @@
+id: PASS-2026-11-22-781
+cycle: Randomized Portfolio Completion Sweep — coherence-drive
+timestamp: 2026-11-22T15:00Z
+selected_repo: coherence-drive
+classification: RESEARCH
+claim_ceiling: 2
+termination_conditions_met: true
+actions:
+  - documentation_update_only
+  - no_code_mutation
+notes: |
+  Research index and discovery ledger for Coherence Drive Stage-1 freeze.
+  Claim ≤2 symbolic; Claim-0 runnable sketch.
+  Extensive failed-hypothesis archive (DISC-0001..0017).
+  experimental_validation/thrust/energy_extraction all false.
+  No elevation of W≈0.08.
+  Pytest for docs-presence and ledger consistency present.
+residuals:
+  - Full Phases 4-10 for remaining RESEARCH repos
+  - Systematic classification of residual cluster
