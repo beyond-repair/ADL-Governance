@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Classification Audit — mendthegame — 2026-11-22T22:12Z (UTC)
+
+**Scope:** Residual RESEARCH repository mendthegame (private workspace RPG prototype).
+
+### SELECT
+Next residual for GAP-CLASSIFY-001 after prior classifications. No prior CLAIM_STATUS.md.
+
+### DISCOVER
+Tree (main): Vite/TypeScript app with src/, server/, package.json, tests, README.md. README self-classifies PRIVATE WORKSPACE / CLAIM 0, not a shipped game. Local playable browser RPG prototype.
+
+### AUDIT
+Against ADL-Governance: Classification RESEARCH (Claim 0). Private prototype; no public product claims. Tests present (npm test). No critical security. Historical work preserved.
+
+### CLASSIFY
+RESEARCH. Justification: Self-documented claim 0; private workspace; no SUPERSEDES or product promotion; termination conditions for class MET after adding CLAIM_STATUS.md.
+
+### PLAN
+Target: RESEARCH claim-0 locked, CLAIM_STATUS.md present, governing docs updated. Actions: Add CLAIM_STATUS.md to subject, persist PASS, update history and queue. No functional mutations.
+
+### IMPLEMENT
+Created CLAIM_STATUS.md in mendthegame (commit efab7d08ee0d64e51d3de97865ca5d2c65aa2cdd). Created docs/passes/PASS-2026-11-22-787.yaml. Updated OPERATOR_QUEUE and this history.
+
+### TEST → CI
+Subject has npm test. No new runnable code. Governance updates non-breaking.
+
+### DOCUMENT
+This history entry, operator queue, PASS YAML, subject CLAIM_STATUS.md.
+
+### GOVERN
+No unsupported claims. Claim 0 enforced. No critical security. Destructive actions none.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical work preserved. Termination conditions MET for class.
+
+### RE-AUDIT
+Tree stable post-docs. Classification consistent with README. No drift.
+
+### OUTCOME
+Cycle complete for mendthegame. Classified RESEARCH Claim 0 with documentation. Residual GAP-CLASSIFY-001 continues; next residual without CLAIM_STATUS.md.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — fantom-smart-contracts-first-bot — 2026-11-22T22:05Z (UTC)
 
 **Scope:** Randomly selected repository fantom-smart-contracts-first-bot from portfolio of 89.
