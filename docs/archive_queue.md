@@ -16,7 +16,7 @@ Check off when `gh repo archive` succeeds.
 - [ ] beyond-repair/AtomicNexusAI
 - [ ] beyond-repair/DevelopTool-Unified-Dev-Environment
 - [ ] beyond-repair/fantom_trading_bot_2
-- [ ] beyond-repair/fantom-smart-contracts-first-bot
+- [ ] beyond-repair/fantom-smart-contracts-first-bot  (ARCHIVED.md added 2026-11-22; Claim 0)
 - [ ] beyond-repair/ftmA.I.bot
 - [ ] beyond-repair/smart_home_BCI
 - [ ] beyond-repair/automate_passive_income
