@@ -1,5 +1,45 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Reconstruction Pass — 2026-11-22T03:07Z (UTC)
+
+**Scope:** Initial reconstruction of the accessible GitHub ecosystem (user:beyond-repair, 89 repositories) under the recursive engineering directive. No random selection; baseline discovery.
+
+### SELECT
+Highest-value first action: reconstruct current state from live GitHub search and governance artifacts before any further mutation.
+
+### DISCOVER
+Authenticated as beyond-repair. Live search total_count: 89. Central artifacts: ADL-Governance (constitution, passes, claims), ADL-Nexus (RESEARCH platform). Active pillars identified. Pass history up to 778. Latest prior randomized cycle: VigilE.S.A.-Enhanced-Security ARCHIVED Claim-0.
+
+### AUDIT
+Against constitution and claim policy: No unsupported claims introduced. Lifecycle distinctions preserved (ACTIVE / RESEARCH / ARCHIVED). Evidence hierarchy respected (live API > documentation).
+
+### CLASSIFY
+Governance remains ACTIVE/MAINTAIN. Nexus remains RESEARCH. No reclassifications this pass.
+
+### PLAN
+Target: Persist machine-readable pass record and update history artifacts so a fresh agent can continue. No code changes to any functional repository.
+
+### IMPLEMENT
+Created docs/passes/PASS-2026-11-22-779.yaml. Updated docs/passes/HEADINGS.md and this file.
+
+### TEST → CI
+Not applicable (docs-only). Prior CI on governance expected to remain green.
+
+### DOCUMENT
+This history entry, new PASS YAML, HEADINGS update.
+
+### GOVERN
+Claim levels unchanged. No elevation. History preserved.
+
+### RELEASE/ARCHIVE
+None.
+
+### RE-AUDIT
+Baseline established. No drift from prior locked state.
+
+### OUTCOME
+Reconstruction pass complete. Next: continue incremental gap closure via small verified slices (e.g., random RESEARCH reconfirm or graph expansion).
+
 ## Cycle: Randomized Portfolio Completion Sweep — VigilE.S.A.-Enhanced-Security — 2026-11-22T03:00Z (UTC)
 
 **Scope:** Randomly selected repository VigilE.S.A.-Enhanced-Security from beyond-repair portfolio (89 repos).
