@@ -1,12 +1,12 @@
 # Operator Queue
 
-**Updated:** 2026-11-22T21:00Z (UTC) (Randomized Portfolio Completion Sweep — os-family-constitution-map)
+**Updated:** 2026-11-22T21:08Z (UTC) (Basilisk Reconstruction + nexuscommand Classification)
 
 ## Pending / Escalated
+- **GAP-CLASSIFY-001 residual:** Systematic classification of residual RESEARCH repos. nexuscommand reconfirmed this cycle (Claim ≤2 experimental command center, CI green, termination MET for class). Next recommended: nexuscommand2 or other residual.
 - **GAP-GRAPH-001 closed prior cycle:** Frozen observation updated in aegis-repo-graph to 2026-11-22 with total_count 89. Delta +2 (nexuscommand, nexuscommand2). No catalog rewrite, no claim elevation.
-- **GAP-CLASSIFY-001 residual:** Systematic classification of residual RESEARCH repos. Next recommended bounded action. os-family-constitution-map reconfirmed this cycle (Claim ≤1 locked identity map, CI green, termination MET).
 - **Master Directive Sweep v3.0 (prior):** Inventory confirmed at 89. Pillars status live-reverified (CI green, releases/tags empty, non-critical Dependabot on Digital_Double). Full deep classification residual.
-- **os-family-constitution-map (this cycle):** Reconfirmed RESEARCH (Claim ≤1 deterministic identity map for Sovereign/Legion/Reality OS family; locked snapshot 2026-09-05 + 2026-10-06 recheck total 83; SovereignOS AMBIGUOUS_DUPLICATE; no live crawler; pytest CI green; termination MET for class). No functional work required. Census total lock intentional (current inventory 89).
+- **os-family-constitution-map (prior cycle):** Reconfirmed RESEARCH (Claim ≤1 locked identity map, CI green, termination MET).
 - **SovereignOS (prior cycle):** Reconfirmed RESEARCH (Claim 0 unvalidated concept sketch / architectural notes only, docs-only tree + docs-ci, no Human Kernel/Control Plane/holarchy/knowledge graph/sandbox runtime, open questions unresolved, OS-family related, termination MET for class). No functional work required. Consolidation operator decision.
 - **LegionOS (prior cycle):** Reconfirmed RESEARCH (Claim 0 architectural holarchy sketch, docs-only tree + docs-ci, no runtime, open questions unresolved, termination MET for class). No functional work required.
 - **Code_Generation_AI_Program:** Reconfirmed ARCHIVED (empty archive-queue, claim 0, inventory CI, termination MET). GitHub archived flag remains false (operator-only).
@@ -28,6 +28,6 @@ None this cycle. All actions non-destructive documentation updates.
 - Address non-critical Dependabot in Digital_Double if desired (vite medium).
 - Optional deep verification of high-activity RESEARCH repos next cycle.
 - Optional release tagging for pillars if desired.
-- Select next residual RESEARCH repo for classification (GAP-CLASSIFY-001).
+- Select next residual RESEARCH repo for classification (GAP-CLASSIFY-001), recommended nexuscommand2.
 
 **No pending destructive actions.**
