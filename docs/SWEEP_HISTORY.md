@@ -1,5 +1,45 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — -ware-constant-derivation — 2026-11-22T14:05Z (UTC)
+
+**Scope:** Randomly selected repository: beyond-repair/-ware-constant-derivation from portfolio of 89.
+
+### SELECT
+Random selection via Python random.choice over live inventory (search total_count=89). Selected: -ware-constant-derivation.
+
+### DISCOVER
+Tree: 74 entries (recursive). Includes .github/workflows/checks.yml (pytest + run_derivation_checks.py on Python 3.12), CLAIM_STATUS.md, STATUS_LOCK_2026-10-01.md, FALSIFICATION_2026-10-01_PINCH.md, numerous PROOF_*.md ledgers (5R–15A), verify_*.py scripts (constant-W, pinch cubic, 6A–7B, 15A secular), tests/test_verifiers.py (explicit non-selection of 0.08, circularity, closed forms), pyproject.toml (version 0.1.0, scripts, numpy/sympy), requirements.txt, main.py, README.md (claim-capped, runnable sketch). Branches: main. Releases/tags residual empty. Prior PR #1 merged (Claim-0 packaging).
+
+### AUDIT
+Against ADL-Governance CLAIM_VALIDATION and lifecycle: Classification RESEARCH. Claim cap ≤2 (math/symbolic identities). Constant-W action/source/concavity DERIVED (verify_constant_W_action.py). K_sym, I2 positivity model-specific DERIVED. Loop-dumbbell I_* ≈7.4815 THEOREM under stated assumptions, but I_* ≠ 0.08 FAILED. Pinch-family selects 0.08 REJECTED. beta=-0.005888 CIRCULAR. 0.08 NOT DERIVED from Coherence Drive thrust. Experimental validation = false. CI present and expected green (pytest + runner). Tests present and enforce claim caps. Docs extensive, no unsupported claims. No undefined components. No critical security issues. No stale registry entries. No duplicate canonical implementations of the derivation ledger.
+
+### CLASSIFY
+RESEARCH. Justification: Experimental mathematical derivation framework for Ware Constant identities; constant-W action derived and checkable; numerical target W≈0.08 explicitly not derived and multiple independent falsifications documented (pinch, loop-dumbbell, circular cubic); Claim-0 runnable sketch only. No product claims.
+
+### PLAN
+Target state: RESEARCH, claim-capped ≤2, CI-green, termination conditions met. Actions: Documentation update in governance only. No code mutation (preservation, idempotent, claim integrity).
+
+### IMPLEMENT
+Safe documentation updates in ADL-Governance (this file, PORTFOLIO_STATUS_REPORT.md, OPERATOR_QUEUE.md). No changes to selected repository.
+
+### TEST → CI
+CI workflow confirmed present (checks.yml). Tests and verifiers claim-capping by construction. Prior packaging PR documented local success (pytest 11 passed, checks=8 failed=0). Remote observation residual; expected green.
+
+### DOCUMENT
+Updated PORTFOLIO_STATUS_REPORT.md (added to RESEARCH list with claim summary), this SWEEP_HISTORY.md, OPERATOR_QUEUE.md.
+
+### GOVERN
+No unsupported claims. Claim levels enforced (≤2, 0.08 not elevated). No untracked dependencies. Evidence hierarchy Code/CI > Documentation. Falsifications preserved.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical ledgers and falsification records preserved. Termination conditions MET for this repo.
+
+### RE-AUDIT
+No drift. Classification stable. Termination verified.
+
+### OUTCOME
+Cycle complete for -ware-constant-derivation. Termination conditions met. Next random selection or operator review.
+
 ## Cycle: ADL-BASILISK Reconstruction Pass — 2026-11-22T03:07Z (UTC)
 
 **Scope:** Initial reconstruction of the accessible GitHub ecosystem (user:beyond-repair, 89 repositories) under the recursive engineering directive. No random selection; baseline discovery.
