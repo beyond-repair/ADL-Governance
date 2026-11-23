@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-11-23-790
+  parent_pass: PASS-2026-11-23-789
+
+STATE:
+  global_status: RESEARCH residual classification continuing
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: GAP-CLASSIFY-001 residual
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Classify residual RESEARCH repo coherence-dynamics without prior CLAIM_STATUS.md
+  reason_selected: Next residual without CLAIM_STATUS.md; mathematical physics research foundation related to coherence cluster
+
+DISCOVERY:
+  findings:
+    - Tree on main (SHA ca90e0a177864d6147d1903b203069cb87569f1d): Python research structure (theory/, spectral/, numerics/, models/, tests/, research_log/), CI pytest workflow, README Stage A audit/formalization, no CLAIM_STATUS.md prior
+    - Related to coherence-drive cluster; Ware Constant historical context only
+    - No production or physical thrust claims
+
+CHANGES:
+  repositories:
+    - beyond-repair/coherence-dynamics
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md (created in subject)
+    - docs/passes/PASS-2026-11-23-790.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - 8e31ef194ffba3fc6e0609b7015098ac1119ab4a (subject CLAIM_STATUS)
+  capabilities_added_or_changed:
+    - Claim ceiling locked at ≤1 for coherence-dynamics
+
+VERIFICATION:
+  tests_run:
+    - none (docs only; subject has pytest but not run here)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap enforced, no elevation)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - coherence-dynamics is RESEARCH Claim ≤1 mathematical research foundation (Stage A); not product or physical theory
+  failures:
+    - none
+  decisions:
+    - Add CLAIM_STATUS.md to lock classification; no functional code changes
+
+REMAINING:
+  incomplete:
+    - Full capability matrix and dependency graph
+    - Remaining residuals without CLAIM_STATUS.md
+  blockers:
+    - none
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select next residual RESEARCH repo without CLAIM_STATUS.md for classification
+  reason: Systematic residual closure continues
+  prerequisites:
+    - Live inventory stable
+
+PROVENANCE:
+  state_commit: pending governance update
+  evidence:
+    - Tree observation ca90e0a177864d6147d1903b203069cb87569f1d
+    - CLAIM_STATUS.md commit 8e31ef194ffba3fc6e0609b7015098ac1119ab4a
