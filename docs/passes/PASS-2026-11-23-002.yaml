@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-11-23-002
+  parent_pass: PASS-2026-11-23-001
+
+STATE:
+  global_status: ACTIVE_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: 55
+  capabilities_verified: 55
+  gaps_remaining: 34
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001-exoaxis
+  description: Classify residual ExoAxis-1 as RESEARCH Claim ≤1 and add CLAIM_STATUS.md
+  reason_selected: Next residual without CLAIM_STATUS.md per OPERATOR_QUEUE; docs-only open-science pharmacology rationale; highest-value bounded documentation slice
+
+DISCOVERY:
+  findings:
+    - Tree docs-only: README.md, RESEARCH.md, LICENSE, docs-ci.yml
+    - RESEARCH.md already locks RESEARCH Claim ≤1 (Sweep-085/700)
+    - No application source, models, or pharmacology tests
+    - Consistent self-documentation; termination MET for class
+
+CHANGES:
+  repositories:
+    - beyond-repair/ExoAxis-1
+    - beyond-repair/ADL-Governance
+  files:
+    - ExoAxis-1/CLAIM_STATUS.md
+    - ADL-Governance/docs/OPERATOR_QUEUE.md
+    - ADL-Governance/docs/SWEEP_HISTORY.md
+    - ADL-Governance/docs/passes/PASS-2026-11-23-002.yaml
+  commits:
+    - 6ef84aa24fea76788886975dedbf8d09b0f05693
+    - 01252080afb3ec00567e511cce5d670058f2e403
+    - f7002880116374a1c645c55a2c43ffe4539fab13
+  capabilities_added_or_changed:
+    - CLAIM_STATUS.md documentation for ExoAxis-1
+
+VERIFICATION:
+  tests_run:
+    - None applicable (docs-only)
+  code_review: NOT_RUN
+  security: PASS
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ExoAxis-1 is RESEARCH Claim ≤1 conceptual framework
+    - CLAIM_STATUS.md now present and consistent
+  failures: []
+  decisions:
+    - REUSE existing RESEARCH.md classification; EXTEND with CLAIM_STATUS.md only
+    - No claim elevation; no functional changes
+
+REMAINING:
+  incomplete:
+    - Full residual classification for ~33 other repos without CLAIM_STATUS.md
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001-next
+  action: Select and classify next residual repository without CLAIM_STATUS.md
+  reason: Continue progressive closure of GAP-CLASSIFY-001
+  prerequisites:
+    - Live inventory remains accessible
+
+PROVENANCE:
+  state_commit: f7002880116374a1c645c55a2c43ffe4539fab13
+  evidence:
+    - https://github.com/beyond-repair/ExoAxis-1/commit/6ef84aa24fea76788886975dedbf8d09b0f05693
+    - https://github.com/beyond-repair/ADL-Governance/commit/01252080afb3ec00567e511cce5d670058f2e403
+    - https://github.com/beyond-repair/ADL-Governance/commit/f7002880116374a1c645c55a2c43ffe4539fab13
