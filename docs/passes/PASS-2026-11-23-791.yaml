@@ -1,0 +1,77 @@
+PASS:
+  id: PASS-2026-11-23-791
+  parent_pass: PASS-2026-11-23-790
+
+STATE:
+  global_status: RESEARCH residual classification continuing
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: GAP-CLASSIFY-001 residual
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Classify residual RESEARCH repo LegionOS without prior CLAIM_STATUS.md
+  reason_selected: Next residual without CLAIM_STATUS.md identified via live audit; OS-family architectural holarchy sketch consistent with prior status report
+
+DISCOVERY:
+  findings:
+    - Tree on main (SHA 9f3fcec53fe8d1bc1f4d199657d65fac14c4b724): docs/, tests/ (docs presence), README.md, RESEARCH.md, GOVERNANCE.md, SECURITY.md, LICENSE, .github/. No executable product surface. No CLAIM_STATUS.md prior.
+    - README and RESEARCH.md self-classify as RESEARCH Claim 0 unvalidated concept sketch / architectural notes only. Docs-ci only. No Human Kernel/Control Plane/holarchy runtime, knowledge graph, or sandbox.
+    - Related to OS-family (SovereignOS, RealityOS); consolidation operator decision.
+    - Latest prior docs-ci success noted in RESEARCH.md (run 36847754196 on 9f795f65).
+
+CHANGES:
+  repositories:
+    - beyond-repair/LegionOS
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md (created in subject)
+    - docs/passes/PASS-2026-11-23-791.yaml
+  commits:
+    - 700c95effcc37842ecbeb4ac25dc781b91f4d526 (subject CLAIM_STATUS)
+  capabilities_added_or_changed:
+    - Claim ceiling locked at 0 for LegionOS; classification reconfirmed RESEARCH
+
+VERIFICATION:
+  tests_run:
+    - none (docs only; subject has docs-presence CI not re-run here)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap enforced, no elevation, history preserved)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - LegionOS is RESEARCH Claim 0 unvalidated concept sketch / architectural holarchy notes only; docs-only tree + docs-ci; no product surface or runtime claims.
+    - Persistent pass records enable fresh-agent continuity under ADL-BASILISK recursive loop.
+  failures:
+    - none
+  decisions:
+    - Add CLAIM_STATUS.md to lock classification; no functional code changes. Next residual selection continues.
+
+REMAINING:
+  incomplete:
+    - Full capability matrix and dependency graph expansion
+    - Remaining residuals without CLAIM_STATUS.md
+    - OS-family consolidation (operator decision)
+  blockers:
+    - none
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select next residual RESEARCH repo without CLAIM_STATUS.md for classification and CLAIM_STATUS.md addition
+  reason: Systematic residual closure continues; highest-value bounded slice remains classification of un-locked RESEARCH items
+  prerequisites:
+    - Live inventory stable at 89
+
+PROVENANCE:
+  state_commit: pending governance update
+  evidence:
+    - Tree observation 9f3fcec53fe8d1bc1f4d199657d65fac14c4b724
+    - CLAIM_STATUS.md commit 700c95effcc37842ecbeb4ac25dc781b91f4d526
+    - Prior status report and RESEARCH.md consistency
