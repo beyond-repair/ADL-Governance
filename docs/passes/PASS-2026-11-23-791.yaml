@@ -29,8 +29,13 @@ CHANGES:
   files:
     - CLAIM_STATUS.md (created in subject)
     - docs/passes/PASS-2026-11-23-791.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
   commits:
     - 700c95effcc37842ecbeb4ac25dc781b91f4d526 (subject CLAIM_STATUS)
+    - cc8b304befa9ac363cb3c6377544edc981cffaa0 (pass record)
+    - 1fb35f1280374ce74d0c3826b5580bcac61fc11c (history)
+    - df0c95f073c1ded657575e475150d13f5dd665d7 (queue)
   capabilities_added_or_changed:
     - Claim ceiling locked at 0 for LegionOS; classification reconfirmed RESEARCH
 
@@ -70,8 +75,9 @@ NEXT:
     - Live inventory stable at 89
 
 PROVENANCE:
-  state_commit: pending governance update
+  state_commit: df0c95f073c1ded657575e475150d13f5dd665d7
   evidence:
     - Tree observation 9f3fcec53fe8d1bc1f4d199657d65fac14c4b724
     - CLAIM_STATUS.md commit 700c95effcc37842ecbeb4ac25dc781b91f4d526
     - Prior status report and RESEARCH.md consistency
+    - Governance updates 1fb35f1280374ce74d0c3826b5580bcac61fc11c and df0c95f073c1ded657575e475150d13f5dd665d7
