@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: Randomized Portfolio Completion Sweep — ExoAxis-1 — 2026-11-23T03:07Z (UTC)
+
+**Scope:** Selected residual repository ExoAxis-1 from portfolio of 89 (no prior CLAIM_STATUS.md).
+
+### SELECT
+Next residual for GAP-CLASSIFY-001. Docs-only open-science pharmacology rationale.
+
+### DISCOVER
+Tree (main, SHA 9fca9dc04bc07d1e5ae290824d83c4f9a094bffa): README.md (conceptual A/B/C conjugate architecture, claim-capped), RESEARCH.md (RESEARCH lock, Sweep-085/700), LICENSE (CC-BY-4.0), .github/workflows/ci.yml (docs-only presence check). No application source, models, data, or pharmacology tests.
+
+### AUDIT
+Against ADL-Governance: Classification RESEARCH (Claim ≤1 conceptual network-pharmacology framework / open-science rationale). Docs complete (README, RESEARCH.md). Minimal docs-ci present. No unsupported claims. No critical security. Termination conditions for RESEARCH class MET (documented, claim-capped, no further required action for class). Consistent with existing RESEARCH.md.
+
+### CLASSIFY
+RESEARCH. Justification: Self-documented in README and RESEARCH.md; docs-only tree; Claim ≤1; no product or clinical claims; independent of other clusters.
+
+### PLAN
+Target: Confirm RESEARCH claim-≤1, add CLAIM_STATUS.md for completeness, update governing docs. Actions: Create CLAIM_STATUS.md in subject, prepend this cycle to history, update operator queue. No functional mutations.
+
+### IMPLEMENT
+Created CLAIM_STATUS.md in ExoAxis-1 (commit 6ef84aa24fea76788886975dedbf8d09b0f05693). Updated OPERATOR_QUEUE.md, this SWEEP_HISTORY.md. No other code changes.
+
+### TEST → CI
+Subject has docs-ci only (presence check, not applicable for pharmacology). Governance updates non-breaking.
+
+### DOCUMENT
+This history entry, operator queue, CLAIM_STATUS.md.
+
+### GOVERN
+No unsupported claims. Claim level ≤1 enforced. No critical security. Destructive actions none.
+
+### RELEASE/ARCHIVE
+No release. No archive. Historical work preserved. Termination conditions MET for class. GitHub archive flag remains operator-only.
+
+### RE-AUDIT
+Tree stable. Classification consistent with README and RESEARCH.md. No drift.
+
+### OUTCOME
+Cycle complete for ExoAxis-1. Classified RESEARCH (Claim ≤1 conceptual framework). CLAIM_STATUS.md added. No residuals for this repo. Next residual for GAP-CLASSIFY-001 continues.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — mendthegame — 2026-11-23T03:00Z (UTC)
 
 **Scope:** Randomly selected repository mendthegame from portfolio of 89.
