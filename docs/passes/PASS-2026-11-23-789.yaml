@@ -1,0 +1,75 @@
+PASS:
+  id: PASS-2026-11-23-789
+  parent_pass: PASS-2026-11-22-788
+
+STATE:
+  global_status: RESEARCH residual classification continuing
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: unknown
+  capabilities_verified: unknown
+  gaps_remaining: GAP-CLASSIFY-001 residual
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Classify residual RESEARCH repo ADL_NEXUS_COMMAND_CENTER without prior CLAIM_STATUS.md
+  reason_selected: Next residual without CLAIM_STATUS.md after thrust-target-30; Grok App Builder scaffold
+
+DISCOVERY:
+  findings:
+    - Tree on main (pre-commit SHA e9f6620ffc81516198251c0e631458f241639150): Vite + TanStack Start + PGLite + Better Auth scaffold, AGENTS.md, tests in package.json, committed .data/ PGLite, no CLAIM_STATUS.md prior
+    - README self-classifies RESEARCH Claim ≤1 experimental sketch; not canonical ADL-Nexus kernel
+    - No production claims; CI Dependabot only
+
+CHANGES:
+  repositories:
+    - beyond-repair/ADL_NEXUS_COMMAND_CENTER
+    - beyond-repair/ADL-Governance
+  files:
+    - CLAIM_STATUS.md (created in subject)
+    - docs/passes/PASS-2026-11-23-789.yaml
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - 51d7f09caa912ba1f32d9300b7db9f844ae6978e (subject CLAIM_STATUS)
+  capabilities_added_or_changed:
+    - Claim ceiling locked at ≤1 for ADL_NEXUS_COMMAND_CENTER
+
+VERIFICATION:
+  tests_run:
+    - none (docs only; subject has npm test but not run here)
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (claim cap enforced, no elevation)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL_NEXUS_COMMAND_CENTER is RESEARCH Claim ≤1 Grok App Builder experimental scaffold; not product-canonical
+  failures:
+    - none
+  decisions:
+    - Add CLAIM_STATUS.md to lock classification; no functional code changes
+
+REMAINING:
+  incomplete:
+    - Full capability matrix and dependency graph
+    - Remaining residuals without CLAIM_STATUS.md
+  blockers:
+    - none
+  new_gaps:
+    - none
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select next residual RESEARCH repo without CLAIM_STATUS.md for classification
+  reason: Systematic residual closure continues
+  prerequisites:
+    - Live inventory stable
+
+PROVENANCE:
+  state_commit: pending governance update
+  evidence:
+    - Tree observation e9f6620ffc81516198251c0e631458f241639150
+    - CLAIM_STATUS.md commit 51d7f09caa912ba1f32d9300b7db9f844ae6978e
