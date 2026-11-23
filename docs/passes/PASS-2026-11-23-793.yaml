@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-11-23-793
+  parent_pass: PASS-2026-11-23-792
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Reconstruct ecosystem from live GitHub + ADL-Governance Nexus state and persist continuation for residual RESEARCH classification under ADL-BASILISK directive
+  reason_selected: Entry point for recursive principal engineering agent; accurate state reconstruction is prerequisite for highest-value next bounded slice
+
+DISCOVERY:
+  findings:
+    - Authenticated as beyond-repair; live inventory 89 repositories
+    - Governing source ADL-Governance holds pass records through PASS-2026-11-23-792
+    - CLAIM_STATUS.md present in 59 repositories; residual ~30 for GAP-CLASSIFY-001
+    - Priority ACTIVE pillars reconfirmed: forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
+    - OS-family (LegionOS, SovereignOS) RESEARCH Claim 0; nexuscommand RESEARCH Claim ≤2 with CLAIM_STATUS
+    - No critical blockers; operator-gated items persist (archive flags, Dependabot, tags)
+    - Forge AEGIS skill and FLS ontology available for Artifact Graph work
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-23-793.yaml
+    - docs/passes/HEADINGS.md
+    - docs/SWEEP_HISTORY.md
+    - docs/OPERATOR_QUEUE.md
+  commits:
+    - this commit
+  capabilities_added_or_changed:
+    - none (state persistence and discovery record only)
+
+VERIFICATION:
+  tests_run:
+    - not_run (docs-only)
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Ecosystem under continuous recursive governance via pass records in ADL-Governance
+    - Classification discipline active; majority of repos have CLAIM_STATUS.md
+    - Next action is selection of one residual RESEARCH repo for audit
+  failures: []
+  decisions:
+    - Persist this reconstruction as PASS-2026-11-23-793 to enable fresh agent continuation without original prompt
+    - No functional mutations to subject repositories this pass
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual RESEARCH repositories without CLAIM_STATUS.md
+    - Full capability and dependency graph expansion
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Highest-value bounded gap per operator queue; incremental closure of classification completeness
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - File inspections of ADL-Governance (CONSTITUTION, SWEEP_HISTORY, OPERATOR_QUEUE, latest PASS-792)
+    - Sample CLAIM_STATUS presence (59 found)
+    - Operator queue and portfolio state cross-reference

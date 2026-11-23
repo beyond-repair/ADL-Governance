@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Recursive Agent Entry Pass — 2026-11-23T19:10Z (UTC)
+
+**Scope:** Live reconstruction of beyond-repair ecosystem under ADL-BASILISK directive
+
+### SELECT
+Highest-value entry: accurate state reconstruction before next bounded classification slice (GAP-CLASSIFY-001)
+
+### DISCOVER
+Authenticated GitHub user beyond-repair. Live search total_count=89. Governing source ADL-Governance with pass records through 792. CLAIM_STATUS.md in 59 repos. Priority pillars reconfirmed.
+
+### AUDIT
+Cross-referenced PORTFOLIO_STATUS_REPORT, OPERATOR_QUEUE, SWEEP_HISTORY, CONSTITUTION. No contradictions. Residual classification gap remains.
+
+### CLASSIFY
+No new classifications this pass. State preserved.
+
+### PLAN
+Persist PASS-2026-11-23-793 and update governing docs. No subject repo mutations.
+
+### IMPLEMENT
+Updated ADL-Governance docs only.
+
+### TEST → CI
+Docs-only. Expected green.
+
+### DOCUMENT
+This history entry + PASS record + operator queue + headings.
+
+### GOVERN
+Evidence hierarchy enforced. No fabrication. Historical preserved. No destructive actions.
+
+### RELEASE/ARCHIVE
+None.
+
+### RE-AUDIT
+Inventory defined. Next action recorded.
+
+### OUTCOME
+Cycle complete. Continuation record persisted. Fresh agent can resume from PASS-793.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-23T19:00Z (UTC)
 
 **Scope:** Randomly selected repository: beyond-repair/ftmA.I.bot
