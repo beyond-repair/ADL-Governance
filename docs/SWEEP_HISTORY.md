@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: GAP-CLASSIFY-001 Residual — 2026-11-24T14:20Z (UTC)
+
+**Scope:** Selected residual RESEARCH repository lacking CLAIM_STATUS.md: beyond-repair/blacksite
+
+### SELECT
+Next bounded action from PASS-2026-11-23-793. Live inventory 89. Code search confirmed 60 CLAIM_STATUS.md prior. Selected blacksite (RESEARCH per locked portfolio state).
+
+### DISCOVER
+Tree: README.md (Claim 0 badges, private workspace, play instructions, engineering gates PASS), .github/, docs/, package.json, public/, src/ (core, entities, systems, render), tests/. Main SHA prior to change 913b07fbc6e9a78911f964dc76266071104d6471. No prior CLAIM_STATUS.md.
+
+### AUDIT
+Compared against ADL-Governance. Classified RESEARCH in PORTFOLIO_STATE / STATUS_REPORT. README consistent with Claim 0 experimental isometric stealth prototype (Ninja operator, deterministic sim, not shipped game). CI green previously verified (Sweep-435). No critical security issues. No unsupported claims.
+
+### CLASSIFY
+Assigned/reconfirmed: RESEARCH. Justification: Experimental private browser PvE roguelite workspace / isometric stealth prototype. Claim 0. Not ACTIVE product. Termination MET for class.
+
+### PLAN
+Target state: CLAIM_STATUS.md present. Safe documentation-only. No functional mutations.
+
+### IMPLEMENT
+Added CLAIM_STATUS.md to blacksite (RESEARCH / Claim 0, explicit non-claims, evidence). Persisted PASS-2026-11-24-794.yaml in this repo.
+
+### TEST → CI
+Subject repo: documentation-only addition. Prior CI green. Governing docs documentation-only; expected green.
+
+### DOCUMENT
+CLAIM_STATUS.md created (commit 510921e3edc5de49b1e0373ac28805c1eaf04e4b). PASS-2026-11-24-794.yaml created (commit a439fdab4056e721d4b95701cf4e253276b3407f). This history entry.
+
+### GOVERN
+No unsupported claims elevated. Claim remains 0. History preserved. No deletion. Evidence: code/docs > model priors. RESEARCH invariants held.
+
+### RELEASE/ARCHIVE
+Termination MET for RESEARCH / Claim 0 class. No archive flag change (operator-only). No tag.
+
+### RE-AUDIT
+No new drift. Classification gap reduced by 1. All termination conditions for class met.
+
+### OUTCOME
+Cycle complete for blacksite. CLAIM_STATUS.md added. Pass record persisted. Next residual classification deferred.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-24T14:03Z (UTC)
 
 **Scope:** Randomly selected repository: beyond-repair/SEEM-2.0-Self-Evolving-Emergent-Mind
