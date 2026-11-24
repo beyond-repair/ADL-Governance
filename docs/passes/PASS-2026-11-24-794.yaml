@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-11-24-794
+  parent_pass: PASS-2026-11-23-793
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason_selected: Next bounded action from PASS-2026-11-23-793; highest-value incremental closure of classification completeness
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 89 repositories
+    - CLAIM_STATUS.md present in 60 repositories prior to this pass
+    - Selected residual: blacksite (RESEARCH per prior locked state)
+    - blacksite: private browser PvE roguelite workspace / experimental isometric stealth prototype; Claim 0; CI green previously verified; no prior CLAIM_STATUS.md
+    - README confirms Claim 0, not a shipped game; engineering gates PASS as documented
+
+CHANGES:
+  repositories:
+    - blacksite
+    - ADL-Governance
+  files:
+    - blacksite/CLAIM_STATUS.md
+    - docs/passes/PASS-2026-11-24-794.yaml
+  commits:
+    - blacksite: 510921e3edc5de49b1e0373ac28805c1eaf04e4b
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - Classification completeness improved by one residual RESEARCH repo
+
+VERIFICATION:
+  tests_run:
+    - not_run (docs-only)
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - blacksite is RESEARCH / Claim 0 experimental prototype (isometric stealth, Ninja operator, deterministic sim)
+    - CLAIM_STATUS.md added with explicit non-claims and evidence references
+    - Classification gap reduced by 1
+  failures: []
+  decisions:
+    - REUSE existing RESEARCH classification from portfolio state; EXTEND by adding standard CLAIM_STATUS.md
+    - No functional code changes; documentation only
+    - Preserve history; no archive or claim elevation
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual RESEARCH repositories without CLAIM_STATUS.md (~28 remaining)
+    - Full capability and dependency graph expansion
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; same highest-value bounded gap
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - Code search: 60 CLAIM_STATUS.md prior
+    - blacksite tree and README inspection
+    - Commit 510921e3edc5de49b1e0373ac28805c1eaf04e4b on blacksite
+    - Prior PASS-2026-11-23-793 next action
