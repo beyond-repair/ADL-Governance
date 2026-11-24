@@ -1,6 +1,6 @@
 # Sweep History
 
-## Cycle: GAP-CLASSIFY-001 Residual — 2026-11-24T14:20Z (UTC)
+## Cycle: GAP-CLASSIFY-001 Residual — 2026-11-24T14:20Z (UTC) / PASS-2026-11-24-794
 
 **Scope:** Selected residual RESEARCH repository lacking CLAIM_STATUS.md: beyond-repair/blacksite
 
