@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-11-25-796
+  parent_pass: PASS-2026-11-24-795
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason_selected: Next bounded action from PASS-2026-11-24-795; highest-value incremental closure of classification completeness
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 89 repositories
+    - CLAIM_STATUS.md present in 65 repositories prior to this pass
+    - Selected residual: seem-identity-unifier (RESEARCH per README and prior locks)
+    - seem-identity-unifier: claim-capped identity map (v0.1.1) for three SEEM repositories; closes Q-FUNC-003; Claim ≤1; CI green; no prior CLAIM_STATUS.md
+    - README confirms RESEARCH / Claim ≤1 / explicit non-claims (no mind, no identity collapse, no SUPERSEDES)
+
+CHANGES:
+  repositories:
+    - seem-identity-unifier
+    - ADL-Governance
+  files:
+    - seem-identity-unifier/CLAIM_STATUS.md
+    - docs/passes/PASS-2026-11-25-796.yaml
+  commits:
+    - seem-identity-unifier: 2202c315d6e786c3f857b264911d6a73388d3004
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - Classification completeness improved by one residual RESEARCH repo
+
+VERIFICATION:
+  tests_run:
+    - not_run (docs-only)
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - seem-identity-unifier is RESEARCH / Claim ≤1 (deterministic identity checker for three distinct SEEM repos; no collapse)
+    - CLAIM_STATUS.md added with explicit non-claims and evidence references
+    - Classification gap reduced by 1
+  failures: []
+  decisions:
+    - REUSE existing RESEARCH classification from README and portfolio locks; EXTEND by adding standard CLAIM_STATUS.md
+    - No functional code changes; documentation only
+    - Preserve history; no archive or claim elevation
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual RESEARCH repositories without CLAIM_STATUS.md (~23 remaining)
+    - Full capability and dependency graph expansion
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; same highest-value bounded gap
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - Code search: 65 CLAIM_STATUS.md prior
+    - seem-identity-unifier tree, README, and CI inspection
+    - Commit 2202c315d6e786c3f857b264911d6a73388d3004 on seem-identity-unifier
+    - Prior PASS-2026-11-24-795 next action
