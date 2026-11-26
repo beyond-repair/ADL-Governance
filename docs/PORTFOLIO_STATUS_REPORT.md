@@ -1,6 +1,6 @@
 # Portfolio Status Report
 
-**Last Updated:** 2026-11-25T21:05Z (UTC) (Randomized Sweep — beyond-repair profile census drift correction)
+**Last Updated:** 2026-11-26T03:16Z (UTC) (Master Directive v3.0 — full inventory + mandatory pillar live reconfirmation)
 
 **Account:** beyond-repair
 
@@ -9,13 +9,13 @@
 **Governing Source:** ADL-Governance
 
 ## Inventory Summary
-* Total: 89 (confirmed via live GitHub search on 2026-11-25; public_repos reported ~84, search includes all accessible)
+* Total: 89 (confirmed via live GitHub search on 2026-11-26; public_repos reported ~84, search includes all accessible)
 * GitHub archived flag: only CFT-v3.0
 * All others non-archived
 * Private remainder includes mendthegame (RESEARCH), blacksite, atomicdreamlabs, etc.
 
 ## Phase-1 Portfolio Discovery
-Complete inventory of 89 repositories under user:beyond-repair obtained via search (perPage=30 pagination). Key metadata extracted. No undefined repositories. Reconfirmed this Master Directive v3.0 cycle. Full name list extracted and verified.
+Complete inventory of 89 repositories under user:beyond-repair obtained via search (perPage=100). Key metadata extracted. No undefined repositories. Reconfirmed this Master Directive v3.0 cycle. Full name list extracted and verified.
 
 ## Phase-2 Classification (stable)
 **ACTIVE (pillars + governance):** forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce, ADL-Governance
@@ -26,7 +26,7 @@ Complete inventory of 89 repositories under user:beyond-repair obtained via sear
 
 **ARCHIVED:** test, Code_Generation_AI_Program (empty archive-queue, claim 0, inventory CI green, termination MET; GitHub flag false), FortiTrade_Multi-Strategy (Claim 0 runnable sketch, pytest CI green, CLAIM_STATUS.md added 2026-11-23, archive-queue, termination MET for class; GitHub flag false), CFT-v3.0 (GitHub archived), fantom_trading_bot_2, Quantumclustering (Claim 0 empty historical placeholder, ARCHIVED.md/README present, CLAIM_STATUS.md added 2026-11-23, termination MET for class; GitHub flag false), VigilE.S.A.-Enhanced-Security (Claim-0 runnable sketch, mock security demos only, claim0-tests CI, offensive paths no-op), **fantom-smart-contracts-first-bot (Claim 0 incomplete Rust trading sketches, ARCHIVED.md/README present, CLAIM_STATUS.md added 2026-11-25, no CI/tests, archive-queue, termination MET for class; GitHub flag false)**, ftmA.I.bot (Claim 0 incomplete Fantom trading stubs / historical Auto-GPT-style collection, ARCHIVED.md + GOVERNANCE.md + CLAIM_STATUS.md present, non-executing archive-guard tests, CI run 36925900968 still queued since 2026-10-01, termination MET for class except CI conclusion; GitHub flag false), genieGPT (Claim 0 empty historical stub / name-only, README/ARCHIVED.md/CLAIM_STATUS.md/GOVERNANCE.md/SECURITY.md present, no application/model/API code/tests/CI, termination MET for class, reconfirmed 2026-11-24T21:01Z; GitHub flag false)
 
-## Phase-3 Mandatory Live Verification (pillars) — live reconfirmed 2026-11-25T17:22Z
+## Phase-3 Mandatory Live Verification (pillars) — live reconfirmed 2026-11-26T03:16Z
 - forge-aegis: CI success on main (latest run 37258127100, head e7188d529739652a2dd6264bd3d328c1f72e60e5, conclusion success); tree confirmed (python/aegis_pipeline.py, tests, schemas, fls, ci.yml); RUNNABLE SKETCH; claim-capped; releases/tags empty; Dependabot open: 0; security advisories empty
 - sovereign-clean-room: CI success on recent PR activity (run 37215829476 success); canonical SEEM substrate; VSA completeness UNVERIFIED residual; releases/tags empty; Dependabot open: 0; open PRs noted (#1, #3); security advisories empty
 - BlockSwarm: CI success on main (latest Foundry run 40441811261, head 026c3631d9585adeed53b960f5ee7037bf76250c, conclusion success); termination conditions MET; releases/tags empty; Dependabot open: 0; security advisories empty
