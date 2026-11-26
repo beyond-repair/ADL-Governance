@@ -1,0 +1,80 @@
+PASS:
+  id: PASS-2026-11-26-797
+  parent_pass: PASS-2026-11-25-796
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: 0
+  capabilities_verified: 0
+  gaps_remaining: 1
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason_selected: Next bounded action from PASS-2026-11-25-796; highest-value incremental closure of classification completeness
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 89 repositories
+    - CLAIM_STATUS.md present in 67 repositories prior to this pass
+    - Selected residual: Project-Cold-Boot (RESEARCH per README Claim-0 runnable sketch)
+    - Project-Cold-Boot: Godot 4 vertical slice (SCAN → SNAP → SUNDER), dual-timeline, deterministic mutation log; Claim-0; no prior CLAIM_STATUS.md; GOVERNANCE.md present
+    - README confirms RUNNABLE SKETCH / Claim-0 foundation prototype; not commercial game or formal proof
+
+CHANGES:
+  repositories:
+    - Project-Cold-Boot
+    - ADL-Governance
+  files:
+    - Project-Cold-Boot/CLAIM_STATUS.md
+    - docs/passes/PASS-2026-11-26-797.yaml
+  commits:
+    - Project-Cold-Boot: b337042b54d37c6f3982db717348416fc073f772
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - Classification completeness improved by one residual RESEARCH repo
+
+VERIFICATION:
+  tests_run:
+    - not_run (docs-only)
+  code_review: NOT_RUN
+  security: NOT_APPLICABLE
+  integration: NOT_APPLICABLE
+  invariants: PASS
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Project-Cold-Boot is RESEARCH / Claim-0 (playable Godot vertical slice prototype)
+    - CLAIM_STATUS.md added with explicit non-claims and evidence references
+    - Classification gap reduced by 1
+  failures: []
+  decisions:
+    - REUSE existing RESEARCH / Claim-0 classification from README and GOVERNANCE.md; EXTEND by adding standard CLAIM_STATUS.md
+    - No functional code changes; documentation only
+    - Preserve history; no archive or claim elevation
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual RESEARCH repositories without CLAIM_STATUS.md (~22 remaining)
+    - Full capability and dependency graph expansion
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; same highest-value bounded gap
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - Code search: 67 CLAIM_STATUS.md prior
+    - Project-Cold-Boot tree, README, and GOVERNANCE.md inspection
+    - Commit b337042b54d37c6f3982db717348416fc073f772 on Project-Cold-Boot
+    - Prior PASS-2026-11-25-796 next action
