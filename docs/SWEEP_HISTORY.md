@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Residual Classification — 2026-11-27T23:10Z (UTC) / PASS-2026-11-27-799
+
+**Scope:** Residual repository: Agent-Snake (lacking CLAIM_STATUS.md)
+
+### SELECT
+Selected from residual list (repos without indexed CLAIM_STATUS.md) as next bounded slice for GAP-CLASSIFY-001.
+
+### DISCOVER
+Tree: README.md (explicit ARCHIVE QUEUE / Claim 0 / Early AutoGPT-module note), ARCHIVED.md, preserved sketch files (autogpt_*.py, train_*.py, test_*.py, CSV data). No product code, no CI, no CLAIM_STATUS.md prior.
+
+### AUDIT
+Compared against ADL-Governance LIFECYCLE and CLAIM_VALIDATION. Consistent with ARCHIVED / Claim 0. Historical sketch only. No unsupported claims.
+
+### CLASSIFY
+Confirmed: ARCHIVED (archive queue). Justification: Explicit in README and ARCHIVED.md; tree contains only historical sketches; no unique capability or product.
+
+### PLAN
+Add CLAIM_STATUS.md documenting classification and evidence. Persist PASS record. Update this history. No functional or destructive changes. Preserve history.
+
+### IMPLEMENT
+Created CLAIM_STATUS.md in Agent-Snake (commit 925a09b0dc5043340f2de125a05fe0f2742da12a). Created docs/passes/PASS-2026-11-27-799.yaml (commit 6e32cd81a484fc8bb36c1b8f5aab3c967694020c). Updated this history.
+
+### TEST → CI
+Documentation-only. Subject has no CI. Governing docs docs-only. No functional change.
+
+### DOCUMENT
+This history entry prepended. PASS yaml persisted with full record.
+
+### GOVERN
+No unsupported claims elevated. Claim remains 0. History preserved. Evidence hierarchy observed (docs/code > intuition).
+
+### RELEASE/ARCHIVE
+Termination MET for ARCHIVED class. No tag. GitHub archive flag operator-only.
+
+### RE-AUDIT
+No new drift. Classification stable. Documentation gap (local CLAIM_STATUS) closed.
+
+### OUTCOME
+Cycle complete for Agent-Snake. CLAIM_STATUS.md added. Residual reduced. Next: continue GAP-CLASSIFY-001 residual selection.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-27T21:05Z (UTC)
 
 **Scope:** Randomly selected repository: sunder-cleanroom-vsa-adapter
