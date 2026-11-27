@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-11-27-799
+  parent_pass: PASS-2026-11-26-798
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: 17
+  capabilities_verified: 10
+  gaps_remaining: 19
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason_selected: Next action from prior pass; residual classification completeness is high-value incremental closure
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 89 repositories
+    - Indexed code search reports 69 CLAIM_STATUS.md files (lag possible); residual list computed from full repo names vs indexed
+    - Agent-Snake selected: README already states ARCHIVE QUEUE / Claim 0 / historical AutoGPT-module note; tree has only preserved sketch files; ARCHIVED.md present; no CLAIM_STATUS.md prior
+    - No product, trained agent, or CI claims in the tree
+
+CHANGES:
+  repositories:
+    - Agent-Snake
+    - ADL-Governance
+  files:
+    - Agent-Snake/CLAIM_STATUS.md
+    - docs/passes/PASS-2026-11-27-799.yaml
+  commits:
+    - Agent-Snake: 925a09b0dc5043340f2de125a05fe0f2742da12a
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - Agent-Snake classification elevated from implicit (README) to explicit documented ARCHIVED / Claim 0
+
+VERIFICATION:
+  tests_run:
+    - File creation confirmed via GitHub API response with commit SHA
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (no claim elevation; matches existing README evidence)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - Agent-Snake is historical sketch / ARCHIVE QUEUE / Claim 0
+    - CLAIM_STATUS.md now present and consistent with prior docs
+    - Residual count reduced by 1
+  failures: []
+  decisions:
+    - Classify as ARCHIVED / Claim 0 based on explicit README and tree evidence
+    - Do not set GitHub archive flag (operator-only)
+    - Continue residual classification next
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual repositories without CLAIM_STATUS.md (~19)
+    - Full capability and dependency graph expansion
+    - Other residuals (e.g. CI verification for certain pillars if needed)
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; one residual closed this pass
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - Agent-Snake commit 925a09b0dc5043340f2de125a05fe0f2742da12a
+    - Prior PASS-2026-11-26-798
+    - Residual list from repo inventory vs indexed CLAIM_STATUS
