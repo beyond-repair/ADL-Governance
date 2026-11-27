@@ -1,0 +1,78 @@
+PASS:
+  id: PASS-2026-11-26-798
+  parent_pass: PASS-2026-11-26-797
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 1
+  capabilities_known: 17
+  capabilities_verified: 10
+  gaps_remaining: 10
+
+OBJECTIVE:
+  id: GAP-NEXUSCOMMAND-CI-VERIFY
+  description: Reconstruct ecosystem and confirm status of nexuscommand CI residual from prior passes
+  reason_selected: Prior residual GAP-NEXUSCOMMAND-CI-FIX was high-value verification boundary; live Actions show recent green runs, closing the known failure
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 89 repositories
+    - CLAIM_STATUS.md coverage higher than indexed code search (live checks confirm many recent additions; indexed total ~68 lagged)
+    - nexuscommand CI workflow: latest runs on main are success (run 45059373193 on 2026-11-22 for CLAIM_STATUS commit; prior run 44800118869 also success after sandbox test skips)
+    - Initial failure on 2026-11-17 resolved by subsequent commits skipping CI-incompatible sandbox tests
+    - nexuscommand classified RESEARCH / Claim ≤2 with CLAIM_STATUS.md present
+
+CHANGES:
+  repositories:
+    - ADL-Governance
+  files:
+    - docs/passes/PASS-2026-11-26-798.yaml
+  commits:
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - nexuscommand tests elevated from IMPLEMENTED (failed CI) to TESTED (green CI evidence)
+
+VERIFICATION:
+  tests_run:
+    - Remote Actions list for nexuscommand: recent runs success
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (no claim elevation beyond evidence)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - nexuscommand CI is green on main (sandbox tests skipped in CI)
+    - Prior residual CI failure closed
+    - Classification coverage progressing; indexing lag on code search
+  failures: []
+  decisions:
+    - Record CI success as verified TESTED status for nexuscommand tests
+    - Do not elevate to VERIFIED without deeper local or multi-run evidence
+    - Continue classification as parallel residual
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual RESEARCH repositories without CLAIM_STATUS.md
+    - Full capability and dependency graph expansion
+    - Other residuals (e.g. atomicdreamlabs1.1 CI if still failing)
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual RESEARCH repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; verification boundary for nexuscommand advanced
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - Actions runs: 45059373193 success, 44800118869 success
+    - CLAIM_STATUS.md on nexuscommand
+    - Prior PASS-2026-11-26-797
+    - Parent residual from PASS-2026-11-19-775
