@@ -1,10 +1,11 @@
 # Operator Queue
 
-**Updated:** 2026-11-27T00:02Z (UTC) (Randomized Portfolio Completion Sweep — genieGPT reconfirmation)
+**Updated:** 2026-11-27T14:04Z (UTC) (Randomized Portfolio Completion Sweep — nexuscommand2)
 
 ## Pending / Escalated
-- **GAP-CLASSIFY-001 residual:** Systematic classification of residual RESEARCH repos. CLAIM_STATUS.md present in 65 of 89 (atomicdreamlabs added 2026-11-26). Next recommended: select next residual without CLAIM_STATUS.md and add classification if justified. Recent confirmations retained (Digital-Double_Mobile, blacksite, LegionOS, SovereignOS, ExoAxis-1, mendthegame, Quantumclustering, coherence-dynamics, nexuscommand, FortiTrade_Multi-Strategy, SEEM-2.0-Self-Evolving-Emergent-Mind, genieGPT, DigitalDoubleVirtualWorkforce3.5, -Entanglement-and-Emergence, fantom-smart-contracts-first-bot, atomicdreamlabs).
+- **GAP-CLASSIFY-001 residual:** Systematic classification of residual RESEARCH repos. CLAIM_STATUS.md present in 65 of 89 (atomicdreamlabs added 2026-11-26). Next recommended: select next residual without CLAIM_STATUS.md and add classification if justified. Recent confirmations retained (Digital-Double_Mobile, blacksite, LegionOS, SovereignOS, ExoAxis-1, mendthegame, Quantumclustering, coherence-dynamics, nexuscommand, FortiTrade_Multi-Strategy, SEEM-2.0-Self-Evolving-Emergent-Mind, genieGPT, DigitalDoubleVirtualWorkforce3.5, -Entanglement-and-Emergence, fantom-smart-contracts-first-bot, atomicdreamlabs, nexuscommand2).
 - **Master Directive Sweep v3.0:** Inventory confirmed at 89. Pillars status live-reverified (forge-aegis, sovereign-clean-room, BlockSwarm, Digital_Double_virtual_workforce CI green). Full deep classification residual. Exit criteria partially unmet; stop after one sweep. Do not loop.
+- **nexuscommand2:** Classified RESEARCH (Claim ≤1). CLAIM_STATUS.md + README.md present. Experimental TanStack Start app-builder workspace. Local tests present, no CI. Open Dependabot alerts (minimatch medium, better-auth family low) — operator review recommended (non-critical for experimental workspace). Committed .data/nexus-pglite residual (historical; .gitignore now excludes future). Termination MET for class. GitHub archive flag operator-only if desired.
 - **atomicdreamlabs:** Classified RESEARCH (Claim 0). CLAIM_STATUS.md added 2026-11-26. Private Vite/TS app-builder workspace. Tests present, no CI. Open Dependabot alerts (seroval high, better-auth medium/high) — operator review recommended (non-critical for private workspace). Termination MET for class. GitHub archive flag operator-only if desired.
 - **ftmA.I.bot:** Classified ARCHIVED (Claim 0). archive-guard CI still queued. Termination MET for class except CI conclusion. GitHub archive flag operator-only.
 - **FortiTrade_Multi-Strategy:** Reconfirmed ARCHIVED (Claim 0). CLAIM_STATUS.md added 2026-11-23. pytest CI green. Termination MET for class. GitHub archive flag operator-only.
@@ -22,12 +23,12 @@
 - **Full capability matrix and dependency graph expansion residual.**
 
 ## Destructive Proposals
-None this cycle. All actions non-destructive documentation updates. GitHub archive flag remains operator-only. Description edit is settings-level (operator). Dependabot fixes operator-only for private workspace.
+None this cycle. All actions non-destructive documentation updates. GitHub archive flag remains operator-only. Description edit is settings-level (operator). Dependabot fixes operator-only for experimental workspace. .data cleanup (git filter or removal of committed state) operator-only if desired.
 
 ## Manual Interventions
 - Select next residual RESEARCH repo for classification (GAP-CLASSIFY-001).
 - Operator review of archive candidates.
-- Address non-critical Dependabot if desired (including atomicdreamlabs seroval/better-auth).
+- Address non-critical Dependabot if desired (including nexuscommand2 minimatch/better-auth and atomicdreamlabs seroval/better-auth).
 - Optional deep verification of high-activity RESEARCH repos next cycle.
 - Review open PRs on sovereign-clean-room if desired.
 - OS-family consolidation decision if desired.
@@ -36,5 +37,7 @@ None this cycle. All actions non-destructive documentation updates. GitHub archi
 - Optional: set GitHub archive flag on DigitalDoubleVirtualWorkforce3.5 if desired (`gh repo archive beyond-repair/DigitalDoubleVirtualWorkforce3.5 --yes`).
 - Optional: set GitHub archive flag on fantom-smart-contracts-first-bot if desired.
 - Optional: set GitHub archive flag on atomicdreamlabs if desired.
+- Optional: set GitHub archive flag on nexuscommand2 if desired.
+- Optional: remove committed .data/ from nexuscommand2 history if desired (operator-only, history-preserving preferred).
 
 **No pending destructive actions.**
