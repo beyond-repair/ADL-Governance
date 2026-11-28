@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Residual Classification — 2026-11-28T14:14Z (UTC) / PASS-2026-11-28-801
+
+**Scope:** Residual repository: ADL-Mathematical-Proofs (lacking CLAIM_STATUS.md)
+
+### SELECT
+Selected from residual list (repos without indexed CLAIM_STATUS.md) as next bounded slice for GAP-CLASSIFY-001. Newly created repository (2026-11-28).
+
+### DISCOVER
+Tree: README.md (explicit mathematical proofs/formalizations around ADL frameworks, Ware Constant as research convention, Coherence Drive), docs/M1-source-reconciliation.md, assumptions/ registries, outline proofs, empty formalizations/notebooks/proofs with .gitkeep. No product code, no CI, no tests, no CLAIM_STATUS.md prior.
+
+### AUDIT
+Compared against ADL-Governance LIFECYCLE and CLAIM_VALIDATION. Consistent with RESEARCH / Claim ≤ 1. Mathematical framework only. No unsupported claims of validation or product.
+
+### CLASSIFY
+Confirmed: RESEARCH. Justification: Explicit in README; tree contains research formalization scaffolding; claim capped per policy for Ware/CFT content.
+
+### PLAN
+Add CLAIM_STATUS.md documenting classification and evidence. Persist PASS record. Update this history. No functional or destructive changes. Preserve history.
+
+### IMPLEMENT
+Created CLAIM_STATUS.md in ADL-Mathematical-Proofs (commit c8db4e692a239c66f15ce187aaf488aa50b1a733). Created docs/passes/PASS-2026-11-28-801.yaml (commit d0f2420e5348ece4f1b9546c7660b2ceab190960). Updated this history.
+
+### TEST → CI
+Documentation-only. Subject has no CI. Governing docs docs-only. No functional change.
+
+### DOCUMENT
+This history entry prepended. PASS yaml persisted with full record.
+
+### GOVERN
+No unsupported claims elevated. Claim remains ≤ 1. History preserved. Evidence hierarchy observed (docs/code > intuition).
+
+### RELEASE/ARCHIVE
+Ongoing RESEARCH. No tag. GitHub archive flag operator-only.
+
+### RE-AUDIT
+No new drift. Classification stable. Documentation gap (local CLAIM_STATUS) closed.
+
+### OUTCOME
+Cycle complete for ADL-Mathematical-Proofs. CLAIM_STATUS.md added. Residual reduced. Next: continue GAP-CLASSIFY-001 residual selection.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Randomized Portfolio Completion Sweep — 2026-11-28T14:05Z (UTC)
 
 **Scope:** Randomly selected repository: fantom-smart-contracts-first-bot
