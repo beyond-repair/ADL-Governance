@@ -1,5 +1,47 @@
 # Sweep History
 
+## Cycle: ADL-BASILISK Residual Classification — 2026-11-28T03:08Z (UTC) / PASS-2026-11-28-800
+
+**Scope:** Residual repository: new-program-1.01 (lacking CLAIM_STATUS.md)
+
+### SELECT
+Selected from residual list (repos without indexed CLAIM_STATUS.md) as next bounded slice for GAP-CLASSIFY-001.
+
+### DISCOVER
+Tree: README.md (explicit SUPERSEDED / Claim 0 / Early My Mind agent files / successor sovereign-clean-room), preserved sketch files (main.py, delegate_*.py, task_*.py, test stubs). No product code, no CI, no CLAIM_STATUS.md prior.
+
+### AUDIT
+Compared against ADL-Governance LIFECYCLE and CLAIM_VALIDATION. Consistent with SUPERSEDED / Claim 0. Historical sketch only. No unsupported claims.
+
+### CLASSIFY
+Confirmed: SUPERSEDED. Justification: Explicit in README; tree contains only historical sketches; no unique capability or product.
+
+### PLAN
+Add CLAIM_STATUS.md documenting classification and evidence. Persist PASS record. Update this history. No functional or destructive changes. Preserve history.
+
+### IMPLEMENT
+Created CLAIM_STATUS.md in new-program-1.01 (commit a281ab208312a002e4e7b7df3ace044f7631eaf3). Created docs/passes/PASS-2026-11-28-800.yaml (commit 3c78aed5b772c0f69fa8f544fd3bef740d2671a1). Updated this history.
+
+### TEST → CI
+Documentation-only. Subject has no CI. Governing docs docs-only. No functional change.
+
+### DOCUMENT
+This history entry prepended. PASS yaml persisted with full record.
+
+### GOVERN
+No unsupported claims elevated. Claim remains 0. History preserved. Evidence hierarchy observed (docs/code > intuition).
+
+### RELEASE/ARCHIVE
+Termination MET for SUPERSEDED class. No tag. GitHub archive flag operator-only.
+
+### RE-AUDIT
+No new drift. Classification stable. Documentation gap (local CLAIM_STATUS) closed.
+
+### OUTCOME
+Cycle complete for new-program-1.01. CLAIM_STATUS.md added. Residual reduced. Next: continue GAP-CLASSIFY-001 residual selection.
+
+[Prior full history retained below in previous commits; this prepends the latest cycle.]
+
 ## Cycle: Master Directive v3.0 Residual Classification — 2026-11-27T23:20Z (UTC)
 
 **Scope:** Residual repository: test (lacking CLAIM_STATUS.md)
