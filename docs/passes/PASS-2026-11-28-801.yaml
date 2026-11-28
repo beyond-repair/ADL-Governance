@@ -1,0 +1,82 @@
+PASS:
+  id: PASS-2026-11-28-801
+  parent_pass: PASS-2026-11-28-800
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 90
+  repositories_changed: 2
+  capabilities_known: 17
+  capabilities_verified: 10
+  gaps_remaining: 17
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Select and audit one residual repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason_selected: Next action from prior pass; residual classification completeness is high-value incremental closure. Selected newly created ADL-Mathematical-Proofs (created 2026-11-28).
+
+DISCOVERY:
+  findings:
+    - Live inventory now 90 repositories (prior 89 + new ADL-Mathematical-Proofs and others)
+    - Indexed code search reports 72 CLAIM_STATUS.md files
+    - Residual list computed: 18 before this pass
+    - ADL-Mathematical-Proofs selected: README frames as mathematical proofs/formalizations around ADL frameworks (Ware Constant as research convention, Coherence Drive); tree has docs, assumptions registries, outline, empty formalization dirs; no product, CI, or tests; no CLAIM_STATUS.md prior
+    - Explicit methodology follows ADL-SEEM; no experimental or product claims
+
+CHANGES:
+  repositories:
+    - ADL-Mathematical-Proofs
+    - ADL-Governance
+  files:
+    - ADL-Mathematical-Proofs/CLAIM_STATUS.md
+    - docs/passes/PASS-2026-11-28-801.yaml
+  commits:
+    - ADL-Mathematical-Proofs: c8db4e692a239c66f15ce187aaf488aa50b1a733
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - ADL-Mathematical-Proofs classification elevated from implicit (README) to explicit documented RESEARCH / Claim ≤ 1
+
+VERIFICATION:
+  tests_run:
+    - File creation confirmed via GitHub API response with commit SHA
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (no claim elevation; matches existing README and tree evidence; aligns with CLAIM_VALIDATION policy)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - ADL-Mathematical-Proofs is RESEARCH / mathematical formalizations / Claim ≤ 1
+    - CLAIM_STATUS.md now present and consistent with prior docs and policy
+    - Residual count reduced by 1
+    - Live portfolio count is 90
+  failures: []
+  decisions:
+    - Classify as RESEARCH / Claim ≤ 1 based on explicit README, tree, and governance policy
+    - Do not set GitHub archive flag (operator-only)
+    - Continue residual classification next
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual repositories without CLAIM_STATUS.md (~17)
+    - Full capability and dependency graph expansion
+    - Other residuals (e.g. CI verification for certain pillars if needed)
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; one residual closed this pass
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=90
+    - ADL-Mathematical-Proofs commit c8db4e692a239c66f15ce187aaf488aa50b1a733
+    - Prior PASS-2026-11-28-800
+    - Residual list from repo inventory vs indexed CLAIM_STATUS
+    - README.md and tree evidence in subject repo
