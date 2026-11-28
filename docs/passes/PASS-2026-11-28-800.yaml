@@ -1,0 +1,79 @@
+PASS:
+  id: PASS-2026-11-28-800
+  parent_pass: PASS-2026-11-27-799
+
+STATE:
+  global_status: RESEARCH_MAINTENANCE
+  repositories_scanned: 89
+  repositories_changed: 2
+  capabilities_known: 17
+  capabilities_verified: 10
+  gaps_remaining: 17
+
+OBJECTIVE:
+  id: GAP-CLASSIFY-001
+  description: Select and audit one residual repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason_selected: Next action from prior pass; residual classification completeness is high-value incremental closure
+
+DISCOVERY:
+  findings:
+    - Live inventory remains 89 repositories
+    - Indexed code search reports ~71 CLAIM_STATUS.md files; residual list computed from full repo names vs indexed (~18 before this pass)
+    - new-program-1.01 selected: README already states SUPERSEDED / Claim 0 / successor sovereign-clean-room; tree has only preserved early agent sketch files; no CLAIM_STATUS.md prior
+    - No product, trained agent, or CI claims in the tree
+
+CHANGES:
+  repositories:
+    - new-program-1.01
+    - ADL-Governance
+  files:
+    - new-program-1.01/CLAIM_STATUS.md
+    - docs/passes/PASS-2026-11-28-800.yaml
+  commits:
+    - new-program-1.01: a281ab208312a002e4e7b7df3ace044f7631eaf3
+    - ADL-Governance: this commit
+  capabilities_added_or_changed:
+    - new-program-1.01 classification elevated from implicit (README) to explicit documented SUPERSEDED / Claim 0
+
+VERIFICATION:
+  tests_run:
+    - File creation confirmed via GitHub API response with commit SHA
+  code_review: NOT_RUN
+  security: NOT_RUN
+  integration: NOT_APPLICABLE
+  invariants: PASS (no claim elevation; matches existing README evidence)
+  overall: PASS
+
+KNOWLEDGE:
+  confirmed:
+    - new-program-1.01 is historical early agent sketch / SUPERSEDED / Claim 0
+    - CLAIM_STATUS.md now present and consistent with prior docs
+    - Residual count reduced by 1
+  failures: []
+  decisions:
+    - Classify as SUPERSEDED / Claim 0 based on explicit README and tree evidence
+    - Do not set GitHub archive flag (operator-only)
+    - Continue residual classification next
+
+REMAINING:
+  incomplete:
+    - Systematic classification of remaining residual repositories without CLAIM_STATUS.md (~17)
+    - Full capability and dependency graph expansion
+    - Other residuals (e.g. CI verification for certain pillars if needed)
+  blockers: []
+  new_gaps: []
+
+NEXT:
+  objective_id: GAP-CLASSIFY-001
+  action: Select and audit one residual repository lacking CLAIM_STATUS.md; add classification file if justified
+  reason: Continue incremental closure of classification completeness; one residual closed this pass
+  prerequisites:
+    - Live GitHub access to user:beyond-repair repositories
+
+PROVENANCE:
+  state_commit: this commit
+  evidence:
+    - Live search total_count=89
+    - new-program-1.01 commit a281ab208312a002e4e7b7df3ace044f7631eaf3
+    - Prior PASS-2026-11-27-799
+    - Residual list from repo inventory vs indexed CLAIM_STATUS
